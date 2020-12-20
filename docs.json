@@ -1,0 +1,8 @@
+{
+    "input": "./",
+    "output": "./docs",
+  
+    "siteLogo": {
+        "text": "Retype"
+    }
+  }
