@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "path": "/api/Ext/Net/Core/Base/",
+      "label": "Base",
+      "searchLabel": "base"
+    },
+    {
+      "path": "/api/Ext/Net/Core/Button/",
+      "label": "Button",
+      "searchLabel": "button"
+    },
+    {
+      "path": "/api/Ext/Net/Core/Component/",
+      "label": "Component",
+      "searchLabel": "component"
+    },
+    {
+      "path": "/api/Ext/Net/Core/Container/",
+      "label": "Container",
+      "searchLabel": "container"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "path": "/guides/components/",
+      "label": "Components",
+      "searchLabel": "components"
+    },
+    {
+      "path": "/guides/options/",
+      "label": "Options",
+      "searchLabel": "options"
+    }
+  ]
+}
