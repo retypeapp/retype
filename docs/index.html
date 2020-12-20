@@ -112,7 +112,159 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="docs-sidebar-right-toggle"></div>
                 
-                <h1 id="welcome-to-retype">Welcome to Retype</h1>
+                <h1 id="retype-cli">Retype CLI</h1>
+<h2 id="commands">Commands</h2>
+<h3 id="retype"><code>retype</code></h3>
+<pre><code>Usage:
+  retype [options] [command]
+
+Options:
+  --version         Show version information
+  -h, --help        Show help and usage information
+
+Commands:
+  init &lt;path&gt;               Initializes a new Retype project
+  build &lt;input&gt; &lt;output&gt;    Generate a static documentation Website
+</code></pre>
+<h3 id="retype-init"><code>retype init</code></h3>
+<pre><code>init:
+  Initializes a new Retype project
+
+Usage:
+  retype init [options] [&lt;path&gt;]
+
+Arguments:
+  &lt;path&gt;    Project directory path
+
+Options:
+  -v, --verbose     Verbose logging
+  -h, --help        Show help and usage information
+</code></pre>
+<h3 id="retype-build"><code>retype build</code></h3>
+<pre><code>build:
+  Generate a static documentation Website
+
+Usage:
+  retype build [options] [&lt;input&gt; [&lt;output&gt;]]
+
+Arguments:
+  &lt;input&gt;     Input directory
+  &lt;output&gt;    Output directory
+
+Options:
+  -c, --config &lt;config&gt;    Path to a configuration json file
+  -v, --verbose            Verbose logging
+  -h, --help               Show help and usage information
+</code></pre>
+<h3 id="retype-run"><code>retype run</code></h3>
+<pre><code>run:
+  Serves a static documentation Website
+
+Usage:
+  retype run [options] [&lt;input&gt;]
+
+Arguments:
+  &lt;input&gt;    Input directory
+
+Options:
+  -c, --config &lt;config&gt;    Path to a configuration json file
+  -v, --verbose            Verbose logging
+  -h, --help               Show help and usage information
+</code></pre>
+<h2 id="docs.json-options"><code>docs.json</code> options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>input</code></td>
+<td><code>string</code></td>
+<td><code>./</code></td>
+<td>Custom path to the input directory</td>
+</tr>
+<tr>
+<td><code>output</code></td>
+<td><code>string</code></td>
+<td><code>./docs</code></td>
+<td>Custom path to the output directory</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>siteLogo</code></td>
+<td></td>
+<td></td>
+<td>Logo config</td>
+</tr>
+<tr>
+<td><code>siteLogo.text</code></td>
+<td><code>string</code></td>
+<td><code>Retype</code></td>
+<td>Logo Text (displayed when no logo images)</td>
+</tr>
+<tr>
+<td><code>siteLogo.img</code></td>
+<td><code>string</code></td>
+<td></td>
+<td>Name of Logo file (light theme) located under <code>$(input)/_resources/img/</code></td>
+</tr>
+<tr>
+<td><code>siteLogo.imgDark</code></td>
+<td><code>string</code></td>
+<td></td>
+<td>Name of Logo file (dark theme) located under <code>$(input)/_resources/img/</code></td>
+</tr>
+<tr>
+<td><code>siteLogo.showLabel</code></td>
+<td><code>string</code></td>
+<td><code>true</code></td>
+<td>Specifies if Logo label should be rendered</td>
+</tr>
+<tr>
+<td><code>siteLogo.labelText</code></td>
+<td><code>string</code></td>
+<td><code>docs</code></td>
+<td>Logo label text</td>
+</tr>
+</tbody>
+</table>
+<h2 id="template-arguments">Template arguments</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{{ content }}</code></td>
+<td><code>string</code></td>
+<td>Content of the MD file being processed</td>
+</tr>
+<tr>
+<td><code>{{ root }}</code></td>
+<td><code>string</code></td>
+<td>Root directory path relative to the MD file. Ends with <code>/</code></td>
+</tr>
+<tr>
+<td><code>{{ resources }}</code></td>
+<td><code>string</code></td>
+<td>Resources directory path relative to the MD file. Ends with <code>/</code></td>
+</tr>
+</tbody>
+</table>
 
     
                 <!-- Required only on API pages -->
