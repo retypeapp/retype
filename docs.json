@@ -4,5 +4,11 @@
   
     "siteLogo": {
         "text": "Retype"
-    }
+    },
+
+    "nav": [{
+            "name": "/",
+            "icon": "home"
+        }
+    ]
   }

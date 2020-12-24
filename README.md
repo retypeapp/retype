@@ -1,3 +1,6 @@
+---
+title: Home
+---
 # Retype CLI
 
 ## Commands
