@@ -1,6 +1,6 @@
 {
-    "input": "./",
-    "output": "./docs",
+    "output": "docs",
+    "version": "1.0.0",
   
     "siteLogo": {
         "text": "Retype"
