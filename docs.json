@@ -3,11 +3,12 @@
     "version": "1.0.0",
   
     "siteLogo": {
-        "text": "Retype"
-    },
+        "img": "retype-logo.svg",
+        "imgDark": "retype-logo-dark.svg"
+     },
 
     "nav": [{
-            "name": "/",
+            "path": "/",
             "icon": "home"
         }
     ]
