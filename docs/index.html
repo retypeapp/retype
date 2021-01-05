@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
         <title>Home</title>
-        <meta name="description" content="Inject page description here" />
+
+        <meta name="description" content="Option " />
 
         <script>(function(){var el=document.documentElement,m=localStorage.getItem("doc_theme"),wm=window.matchMedia;if(m==="dark"||(!m&&wm&&wm("(prefers-color-scheme: dark)").matches)){el.classList.add("dark")}else{el.classList.remove("dark")}})();</script>
 
@@ -18,14 +19,17 @@
     <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
     <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
         <!-- Mobile menu button skeleton -->
-        <button v-cloak class="skeleton flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
         <div v-cloak id="docs-sidebar-toggle"></div>
 
         <!-- Logo -->
         <div class="flex">
             <div class="flex items-center md:pl-6 md:w-72">
                 <span class="dark:text-white text-2xl font-semibold">
-                    <a href="./">Retype</a>
+                    <a href="./">
+                        <img class="dark:hidden" src="resources/img/retype-logo.svg">
+                        <img class="hidden dark:block" src="resources/img/retype-logo-dark.svg">
+                    </a>
                 </span>
                 <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
             </div>
@@ -333,7 +337,5 @@ Options:
         <script>window.__DOCS__ = { "title": "Home", icon: "file" }</script>
         <script type="text/javascript" src="resources/js/config.js"></script>
         <script type="text/javascript" src="resources/js/docs.js"></script>
-
-        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
