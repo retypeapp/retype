@@ -1,5 +1,5 @@
 var __DOCS_CONFIG__ = {
-  "id": "fu0Y1eLsYY+ZzI9ciVz175Aw2LPtyNtwQ/D",
+  "id": "8Zz51K+g8gUQfKQZ3lfsyD175SUCvCD4w+g",
   "base": "/",
   "version": "1.0.0",
   "searchPlaceholder": "Search docs",
