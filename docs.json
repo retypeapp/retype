@@ -1,6 +1,7 @@
 {
     "output": "docs",
     "version": "1.0.0",
+    "cname": "retype.com",
   
     "siteLogo": {
         "img": "retype-logo.svg",
