@@ -2,12 +2,15 @@
     "output": "docs",
     "version": "1.0.0",
     "cname": "retype.com",
-    "title": " | Retype | Generate, publish, and share documentation",
   
-    "siteLogo": {
-        "img": "retype-logo.svg",
-        "imgDark": "retype-logo-dark.svg"
+    "identity": {
+        "logo": "retype-logo.svg",
+        "logoDark": "retype-logo-dark.svg"
      },
+
+    "meta": {
+        "title": " | Retype - Generate, publish, and share documentation"
+    },
 
     "nav": [{
             "path": "/",
