@@ -16,5 +16,9 @@
             "path": "/",
             "icon": "home"
         }
-    ]
+    ],
+
+    "footer": {
+        "copyright": "© Copyright {{ year }}. [Object.NET, Inc.](https://object.net/) All rights reserved."
+      }
   }
