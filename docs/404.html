@@ -3,12 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
 
     <title>Not Found | Retype - Generate, publish, and share documentation</title>
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -25,8 +29,8 @@
             <div class="flex items-center px-2 md:px-6 md:w-72">
                 <span class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
                     <a href="/">
-                        <img class="dark:hidden" src="/resources/img/retype-logo.svg">
-                        <img class="hidden dark:block" src="/resources/img/retype-logo-dark.svg">
+                        <img class="dark:hidden" src="/static/retype-logo.svg">
+                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
                 
@@ -158,8 +162,5 @@
         <div id="docs-overlay-target"></div>
 
         <script>window.__DOCS__ = null</script>
-
-        <script type="text/javascript" src="/resources/js/config.js"></script>
-        <script type="text/javascript" src="/resources/js/retype.js"></script>
     </body>
 </html>

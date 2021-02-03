@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
 
     <title>Home | Retype - Generate, publish, and share documentation</title>
 
@@ -11,6 +12,9 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -19,16 +23,16 @@
     <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
     <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
         <!-- Mobile menu button skeleton -->
-        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 mb-px" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
         <div v-cloak id="docs-sidebar-toggle"></div>
 
         <!-- Logo -->
         <div class="flex items-center h-full py-2">
             <div class="flex items-center px-2 md:px-6 md:w-72">
-                <span class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
+                <span class="text-2xl font-semibold leading-snug dark:text-white line-clamp-1 md:line-clamp-2">
                     <a href="/">
-                        <img class="dark:hidden" src="/resources/img/retype-logo.svg">
-                        <img class="hidden dark:block" src="/resources/img/retype-logo-dark.svg">
+                        <img class="dark:hidden" src="/static/retype-logo.svg">
+                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
                 
@@ -53,7 +57,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
                     </div>
 
-                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400"
                     style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
                 </div>
 
@@ -85,14 +89,14 @@
 
     <div class="container relative flex bg-white">
         <!-- Sidebar Skeleton -->
-<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+<div v-cloak class="fixed flex flex-col flex-shrink-0 h-screen transition-transform duration-300 ease-in-out bg-gray-100 border-r border-gray-200 sidebar top-20 w-72 md:sticky skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="mt-6 px-6">
-        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    <div class="px-6 mt-6">
+        <input class="w-full h-8 px-3 py-2 text-sm transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-6">
+    <div class="pl-6 mt-6 mb-4">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -103,7 +107,7 @@
 
     <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
         <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    class="flex items-center justify-center h-16 text-gray-400 transition-colors duration-150 ease-in flex-nowrap dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300"
     target="_blank"
     href="https://retype.com"
     rel="noopener"
@@ -123,7 +127,7 @@
         >
 
             <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    class="flex items-center justify-center h-16 text-gray-400 transition-colors duration-150 ease-in flex-nowrap dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300"
     target="_blank"
     href="https://retype.com"
     rel="noopener"
@@ -343,12 +347,12 @@ Options:
                 <doc-toolbar-member-filter-no-results />
             </div>
         </main>
-        <footer class="flex flex-wrap items-center justify-between border-t dark:border-dark-650 pt-6 mb-8">
+        <footer class="flex flex-wrap items-center justify-between pt-6 mb-8 border-t dark:border-dark-650">
     <div>
         <ul class="flex flex-wrap items-center text-sm">
         </ul>
     </div>
-    <div class="py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"></div>
+    <div class="py-2 text-sm leading-relaxed text-gray-500 dark:text-dark-350"></div>
 </footer>
 
     </div>
@@ -357,9 +361,9 @@ Options:
     <!-- Sidebar right skeleton-->
     <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
         <div class="pl-5">
-            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
-            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
-            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full dark:bg-dark-600 loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full dark:bg-dark-600 loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full dark:bg-dark-600 loading"></div>
         </div>
     </div>
     
@@ -378,9 +382,6 @@ Options:
         <div id="docs-overlay-target"></div>
 
         <script>window.__DOCS__ = { "title": "Home", icon: "file" }</script>
-
-        <script type="text/javascript" src="/resources/js/config.js"></script>
-        <script type="text/javascript" src="/resources/js/retype.js"></script>
 
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>

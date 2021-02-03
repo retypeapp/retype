@@ -4,8 +4,8 @@
     "cname": "retype.com",
   
     "identity": {
-        "logo": "retype-logo.svg",
-        "logoDark": "retype-logo-dark.svg"
+        "logo": "/static/retype-logo.svg",
+        "logoDark": "/static/retype-logo-dark.svg"
      },
 
     "meta": {
