@@ -24,13 +24,13 @@ Choose one of the following lines and run within your local Command line or Term
 
 ```sh
 # npm
-npm install --global retypeapp
+npm install --global ********
 
 # Yarn
-yarn global add retypeapp
+yarn global add ********
 
 # dotnet
-dotnet tool install --global retypeapp
+dotnet tool install --global ********
 ```
 
 Next, from your command line, navigate to a location where you have one or more Markdown `.md` files, and then run the following sequence of commands. 
