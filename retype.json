@@ -13,8 +13,28 @@
     },
 
     "nav": [{
+            "label": "Welcome",
             "path": "/",
             "icon": "home"
+        }
+    ],
+
+    "links": [
+        {
+            "text": "Getting Started",
+            "link": "/getting-started"
+        },
+        {
+            "text": "GitHub",
+            "link": "https://github.com/retypeapp/retype"
+        }, 
+        {
+            "text": "Discussions",
+            "link": "https://github.com/retypeapp/retype/discussions"
+        }, 
+        {
+            "text": "Issues",
+            "link": "https://github.com/retypeapp/retype/issues"
         }
     ],
 

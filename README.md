@@ -1,97 +1,52 @@
----
-title: Home
----
-# Retype CLI
+# Welcome to Retype :smile:
 
-## Commands
+Retype is an :sparkles: ultra-high-performance-magical :sparkles: generator that builds a website based on simple text files. This lets you focus on writing while Retype builds the rest. 
 
-### `retype`
+![Write anything, let Retype build the rest](static/retype-hero.png)
 
-```
-Usage:
-  retype [options] [command]
+No coding is required and just one Markdown `.md` file, such as a `README.md`, will get you started.
 
-Options:
-  --version         Show version information
-  -h, --help        Show help and usage information
+A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes but only a few seconds. :+1:
 
-Commands:
-  init <path>               Initializes a new Retype project
-  build <input> <output>    Generate a static documentation Website
-```
+:::success COMING SOON
 
-### `retype init`
+Retype will also be able to build amazing reference documentation based upon your projects source code. Currently, TypeScript and C# projects are being supported (JavaScript next), with plans for many more languages supported in the future.
 
-```
-init:
-  Initializes a new Retype project
+Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library's source code, code comments, and metadata.
 
-Usage:
-  retype init [options] [<path>]
+:::
 
-Arguments:
-  <path>    Project directory path
+## Quick start
 
-Options:
-  -v, --verbose     Verbose logging
-  -h, --help        Show help and usage information
+You can install Retype using `npm`, `yarn`, or the `dotnet` CLI. 
+
+Choose one of the following lines and run within your local Command line or Terminal:
+
+```sh
+# npm
+npm install --global retypeapp
+
+# Yarn
+yarn global add retypeapp
+
+# dotnet
+dotnet tool install --global retypeapp
 ```
 
-### `retype build`
+Next, from your command line, navigate to a location where you have one or more Markdown `.md` files, and then run the following sequence of commands. 
 
 ```
-build:
-  Generate a static documentation Website
-
-Usage:
-  retype build [options] [<input> [<output>]]
-
-Arguments:
-  <input>     Input directory
-  <output>    Output directory
-
-Options:
-  -c, --config <config>    Path to a configuration json file
-  -v, --verbose            Verbose logging
-  -h, --help               Show help and usage information
+retype init
+retype build
+retype run
 ```
 
-### `retype run`
+That's it! Your new Retype website should be up and running. 
 
-```
-run:
-  Serves a static documentation Website
+::: 
 
-Usage:
-  retype run [options] [<input>]
+Obviously you will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. You only need one of those three, although all three could be installed on your machine too. It's up to you. :raised_hands:
 
-Arguments:
-  <input>    Input directory
+All operating systems are supported, including Mac, Windows, and Linux.
 
-Options:
-  -c, --config <config>    Path to a configuration json file
-  -v, --verbose            Verbose logging
-  -h, --help               Show help and usage information
-```
-
-## `docs.json` options
-
-| Option               | Type     | Default value | Description                                                              |
-| -------------------- | -------- | ------------- | ------------------------------------------------------------------------ |
-| `input`              | `string` | `./`          | Custom path to the input directory                                       |
-| `output`             | `string` | `./docs`      | Custom path to the output directory                                      |
-|                      |          |               |                                                                          |
-| `siteLogo`           |          |               | Logo config                                                              |
-| `siteLogo.text`      | `string` | `Retype`      | Logo Text (displayed when no logo images)                                |
-| `siteLogo.img`       | `string` |               | Name of Logo file (light theme) located under `$(input)/_resources/img/` |
-| `siteLogo.imgDark`   | `string` |               | Name of Logo file (dark theme) located under `$(input)/_resources/img/`  |
-| `siteLogo.showLabel` | `string` | `true`        | Specifies if Logo label should be rendered                               |
-| `siteLogo.labelText` | `string` | `docs`        | Logo label text                                                          |
-
-## Template arguments
-
-| Option            | Type     | Description                                                     |
-| ----------------- | -------- | --------------------------------------------------------------- |
-| `{{ content }}`   | `string` | Content of the MD file being processed                          |
-| `{{ root }}`      | `string` | Root directory path relative to the MD file. Ends with `/`      |
-| `{{ resources }}` | `string` | Resources directory path relative to the MD file. Ends with `/` |
+:::

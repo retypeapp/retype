@@ -1,201 +1,248 @@
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+Retype Software License Agreement
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+Version 1.0.0
 
-   1. Definitions.
+THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN OBJECT.NET, INC. ("We," "Us")
+AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",
+"Your") IN RELATION TO THE RETYPE SOFTWARE LIBRARY(IES) (THE "Software"), IN BOTH SOURCE AND OBJECT
+CODE FORM, AND/OR ALL RELATED MATERIALS.
 
-      "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING THE SOFTWARE, YOU ACCEPT THE FOLLOWING TERMS
+AND CONDITIONS. IF YOU DO NOT AGREE WITH ANY OF THE TERMS OR CONDITIONS OF THIS LICENSE AGREEMENT,
+DO NOT PROCEED WITH THE DOWNLOADING, COPYING, INSTALLATION OR ANY OTHER USE OF THE SOFTWARE OR ANY
+PORTION THEREOF AS YOU HAVE NO RIGHTS TO DO SO. THE SOFTWARE IS PROTECTED BY UNITED STATES
+COPYRIGHT LAWS AND INTERNATIONAL COPYRIGHT LAWS, AS WELL AS OTHER INTELLECTUAL PROPERTY LAWS AND
+TREATIES. THE SOFTWARE IS LICENSED, NOT SOLD.
 
-      "Licensor" shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+THIS LICENSE AGREEMENT DESCRIBES YOUR RIGHTS AND RESTRICTIONS WITH RESPECT TO THE SOFTWARE AND
+ITS COMPONENTS.
 
-      "Legal Entity" shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+1. DEFINITIONS
 
-      "You" (or "Your") shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+"Application" means any software, application, or elements that Your Designated Users develop using
+the Software or Modifications in accordance with this Agreement; provided that any such Application
+(i) must have substantially different functionality than the Software, and (ii) must not allow any
+third party to use the Software or Modifications, or any portion thereof, for software development
+or application development purposes.
 
-      "Source" form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+"Designated User" shall mean a single distinct person for whom You have purchased a license to use
+the Software, whether such person is an employee acting within the scope of their employment with
+You or Your consultant or contractor acting within the scope of the services they provide for You.
+A Designated User can be replaced with a new Designated User only after being a Designated User
+for a minimum of six (6) months.
 
-      "Object" form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
+"End User" means an end user of Your Application who acquires a license to such solely for their
+own internal use and not for distribution, resale, user interface design, or software development
+purposes.
 
-      "Work" shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+"Modification" means: a) any addition to or deletion from the contents of a file included in the
+original Software or previous Modifications created by You, and/or b) any new file that leverages
+any part of the original Software or previous Modifications.
 
-      "Derivative Works" shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
+"Sample Code" means sample source code included with the Software and designated as "sample code,"
+"samples," "sample application code," and/or "snippets," and/or found in directories labeled
+"samples", "learn", "docs", "examples" or "examples explorer".
 
-      "Contribution" shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, "submitted"
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as "Not a Contribution."
+2. LICENSE GRANT
 
-      "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
+Subject to the payment of the fee required, and subject to your compliance with all of the terms
+and conditions of this Agreement, We grant to You a revocable, non-exclusive, non-transferable and
+non-sublicensable license (i) for Designated User(s) to use the Software to create Modifications
+and Applications; (ii) for You to distribute the Software and/or Modifications to End Users solely
+as integrated into the Applications; and (iii) for End Users to use the Software as integrated into
+Your Applications in accordance with the terms of this Agreement.
 
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
+In addition to the other terms contained herein, We grant to You a revocable, non-exclusive,
+non-transferable and non-sublicensable license to install and use the Software (the "Free License")
+for Your internal evaluation, review, and production purposes. The Free License may contain
+restricted functionality. You are explicitly not permitted to distribute the Software to any user
+outside the Organization on whose behalf you have undertaken this license. We reserve the right to
+terminate Your License at any time in Our absolute and sole discretion. Without the purchase and
+inclusion of a License Key, the Software may contain restricted functionality, which from
+time-to-time may differ in its limitations. If you wish to remove these restrictions, you are
+required to purchase a Retype License Key; otherwise you must leave this limitation intact and not
+attempt to modify or circumvent it in any way.
 
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
+In addition to the other terms contained herein, in the event You have downloaded or received beta
+or pre-release versions of the Software (the "Beta Software") from Us, We grant to You a revocable,
+non-exclusive, non-transferable and non-sublicensable license to install and use the Beta Software
+strictly for Your internal evaluation and review purposes and not for production purposes (the
+"Beta License"). You are explicitly not permitted to distribute the Software to any user outside
+the Organization on whose behalf you have undertaken this license. Your rights to use the Beta
+Software will immediately terminate upon the earlier of (i) the expiration of the evaluation period
+established by Us, or (ii) such time that You purchase a license to a non-evaluation version of the
+Software. We reserve the right to terminate Your Beta License at any time in Our absolute and sole
+discretion.
 
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
+YOU ACKNOWLEDGE THAT TRIAL AND/OR BETA SOFTWARE MIGHT PLACE WATERMARKS ON OUTPUT, CONTAIN LIMITED
+FUNCTIONALITY, FUNCTION FOR A LIMITED PERIOD OF TIME, OR LIMIT THE FUNCTIONALITY OR TIME OF
+FUNCTIONING OF ANY OUTPUT. ACCESS TO AND/OR USE OF ANY FILES OR OUTPUT CREATED WITH SUCH SOFTWARE
+IS ENTIRELY AT YOUR OWN RISK. WE ARE LICENSING THE SOFTWARE ON AN "AS IS" BASIS AT YOUR OWN RISK
+AND WE DISCLAIM ANY WARRANTY OR LIABILITY TO YOU OF ANY KIND.
 
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
+You may modify the "Sample Code" solely for the purposes of designing, developing and testing Your
+own Applications. However, You are permitted to use, copy and redistribute Your modified Sample
+Code only if all of the following conditions are met: (a) You include Our copyright notice (if any)
+with Your Application, including every location in which any other copyright notice appears in such
+Application; and (b) You do not otherwise use Our name, logos or other of Our trademarks to market
+Your Application, unless otherwise agree by Us in writing.
 
-      (b) You must cause any modified files to carry prominent notices
-          stating that You changed the files; and
+3. OWNERSHIP
 
-      (c) You must retain, in the Source form of any Derivative Works
-          that You distribute, all copyright, patent, trademark, and
-          attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
-          the Derivative Works; and
+This is a license agreement and not an agreement for sale. We reserve ownership of all intellectual
+property rights inherent in or relating to the Software, which include, but are not limited to, all
+copyright, patent rights, all rights in relation to registered and unregistered trademarks
+(including service marks), confidential information (including trade secrets and know-how) and all
+rights other than those expressly granted by this Agreement.
 
-      (d) If the Work includes a "NOTICE" text file as part of its
-          distribution, then any Derivative Works that You distribute must
-          include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
-          within a display generated by the Derivative Works, if and
-          wherever such third-party notices normally appear. The contents
-          of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
-          that such additional attribution notices cannot be construed
-          as modifying the License.
+We may provide You with source code so that You can create Modifications and Applications. While You
+retain all rights to any original work authored by You as part of the Modifications, We continue to
+own all copyright and other intellectual property rights in the Software.
 
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
+You must not remove, obscure or interfere with any copyright, acknowledgment, attribution,
+trademark, warning or disclaimer statement affixed to, incorporated in or otherwise applied in
+connection with the Software.
 
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
+4. PROHIBITED USES
 
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
+You may not redistribute the Software or Modifications other than by including the Software or a
+portion thereof within Your Application. You may not redistribute the Software or Modifications as
+part of any Application that can be described as a development toolkit or library, an application
+builder, a website builder or any Application that is intended for use by software, application, or
+website developers or designers. You may not redistribute any part of the Software documentation.
+You may not change or remove the copyright notice from any of the files included in the Software or
+Modifications.
 
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
+UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE FOR AN APPLICATION THAT IS INTENDED FOR SOFTWARE OR
+APPLICATION DEVELOPMENT PURPOSES.
 
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
+UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE (INCLUDING WITHOUT LIMITATION THE SOURCE CODE
+THEREOF) AS THE BASIS FOR OR IN CONNECTION WITH A PRODUCT THAT CONTAINS THE SAME, OR SUBSTANTIALLY
+THE SAME, FUNCTIONALITY AS THE SOFTWARE.
 
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
+You are required to ensure that the Software is not reused by or with any applications other than
+those with which You distribute it as permitted herein. For example, if You install the Software on
+a customer's server, that customer is not permitted to use the Software independently of Your
+Application, and must be informed as such.
 
-   END OF TERMS AND CONDITIONS
+5. TERMINATION
 
-   APPENDIX: How to apply the Apache License to your work.
+This Agreement and Your right to use the Software and Modifications will terminate immediately if
+You fail to comply with any of the terms and conditions of this Agreement. Upon termination, You
+agree to immediately cease using and destroy the Software or Modifications, including all
+accompanying documents. The provisions of sections 4, 5, 6, 7, 8, 9, and 11 will survive any
+termination of this Agreement.
 
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
+6. DISCLAIMER OF WARRANTIES
 
-   Copyright [yyyy] [name of copyright owner]
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE AND OUR RESELLERS DISCLAIM ALL WARRANTIES AND
+CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND TITLE AND NON-INFRINGEMENT, WITH REGARD TO
+THE SOFTWARE. WE DO NOT GUARANTEE THAT THE OPERATION OF THE SOFTWARE OR THE CODE IT PRODUCES WILL
+BE UNINTERRUPTED OR ERROR-FREE, AND YOU ACKNOWLEDGE THAT IT IS NOT TECHNICALLY PRACTICABLE FOR US
+TO DO SO.
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+7. LIMITATION OF LIABILITIES
 
-       http://www.apache.org/licenses/LICENSE-2.0
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE OR OUR RESELLERS BE LIABLE
+UNDER ANY LEGAL OR EQUITABLE THEORY FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES
+WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS
+INTERRUPTION, LOSS OF BUSINESS INFORMATION OR ANY OTHER PECUNIARY LAW) ARISING OUT OF THE USE OF OR
+INABILITY TO USE THE SOFTWARE OR THE CODE IT PRODUCES OR ANY OTHER SUBJECT MATTER RELATING TO THIS
+AGREEMENT, EVEN IF WE OR OUR RESELLERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY
+CASE, OUR ENTIRE LIABILITY WITH RESPECT TO ANY SUBJECT MATTER RELATING TO THIS AGREEMENT SHALL BE
+LIMITED TO THE GREATER OF (I) THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE OR (II) ONE HUNDRED
+DOLLARS ($100).
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+8. PAYMENT AND TAXES
+
+If credit has been extended to You by Us, all payments under this Agreement are due within thirty
+(30) days of the date We mail an invoice to You. If We have not extended credit to You, You shall
+be required to make payment concurrent with the delivery of the Software by Us. Any value added
+tax, use tax, sales tax or similar tax ("Transaction Taxes") shall be your sole responsibility.
+Each party shall pay all taxes (including, but not limited to, taxes based upon its income) or
+levies imposed on it under applicable laws, regulations and tax treaties as a result of this
+Agreement and any payments made hereunder (including those required to be withheld or deducted
+from payments); provided that You shall be responsible for all Transactions Taxes and shall pay or
+reimburse Us for the same upon invoice. Each party shall furnish evidence of such paid taxes as is
+sufficient to enable the other party to obtain any credits available to it, including original
+withholding tax certificates. Notwithstanding the foregoing, Software ordered through Our resellers
+is subject to the fees and payment terms set forth on the applicable reseller invoice.
+
+9. MISCELLANEOUS
+
+The license granted herein applies only to the version of the Software available when purchased in
+connection with the terms of this Agreement, and to any updates and/or upgrades to which you may be
+entitled. Any previous or subsequent license granted to You for use of the Software shall be
+governed by the terms and conditions of the agreement entered in connection with purchase or
+download of that version of the Software. You agree that you will comply with all applicable laws
+and regulations with respect to the Software, including without limitation all export and re-export
+control laws and regulations.
+
+While redistributing the Software or Modifications thereof as part of Your Application, You may
+choose to offer acceptance of support, warranty, indemnity, or other liability obligations and/or
+rights consistent with this Agreement. However, in accepting such obligations, You may act only on
+Your own behalf and on Your sole responsibility, not on our behalf. You shall indemnify Us and our
+resellers, or at Our option, defend Us and our resellers against any claim, suit or proceeding
+brought against Us or our resellers (i) arising by reason of Your accepting any such support,
+warranty, indemnity or additional liability; or (ii) arising out of the use, reproduction or
+distribution of Your Application, except to the extent such claim is solely based on the inclusion
+of the Software therein. Further, You agree only to distribute the Software pursuant to an
+enforceable written agreement for Our benefit that includes all the limitations and restrictions of
+this Agreement and is as protective of Us and Software as is this Agreement. For clarity, You must
+purchase Designated User licenses for each contractor or consultant who uses the Software to create
+an Application on your behalf (including system integrators), whether or not such contractor or
+consultant has its own license to the Software.
+
+You agree to be identified as a customer of ours and You agree that We may refer to You by name,
+trade name and trademark, if applicable, and may briefly describe Your business in our marketing
+materials and web site.
+
+You may not assign or transfer this Agreement without Our prior written consent. This Agreement
+may be assigned by Us in whole or part and will inure to the benefit of Our successors and
+assigns. Notwithstanding the foregoing, in any instance in which You transfer ownership of an
+Application on a work for hire basis, You may assign licenses for the total Designated Users that
+have used the Software to develop said Application under this Agreement to another party (Assignee)
+provided (i) you provide written notice to Us prior to the effective date of such assignment; and
+(ii) there is a written agreement, wherein the Assignee accepts the terms of this Agreement. Upon
+any such transfer, the Assignee may appoint new Designated Users.
+
+You acknowledge that this Agreement is complete and is the exclusive representation of our 
+agreement. No oral or written information given by Us, Our resellers, or otherwise on Our behalf 
+shall create a warranty or collateral contract, or in any way increase the scope of this Agreement
+in any way, and You may not rely on any such oral or written information. No term or condition 
+contained in any purchase order shall have any force or effect.
+
+There are no implied licenses or other implied rights granted under this Agreement, and all rights,
+save for those expressly granted hereunder, shall remain with Us and our licensors. In addition, no
+licenses or immunities are granted to the combination of the Software and/or Modifications, as
+applicable, with any other software or hardware not delivered by Us or Our resellers to You under
+this Agreement. Your rights under this Agreement apply only to Software, Modifications, and/or
+Applications for which all Designated Users are duly licensed hereunder.
+
+If any provision in this Agreement shall be determined to be invalid, such provision shall be 
+deemed omitted; the remainder of this Agreement shall continue in full force and effect. If any
+remedy provided is determined to have failed for its essential purpose, all limitations of
+liability and exclusions of damages set forth in this Agreement shall remain in effect.
+
+This Agreement may be modified only by a written instrument signed by an authorized representative
+of each party. The failure of either party to enforce any provision of this Agreement may not be
+deemed a waiver of that or any other provision of this Agreement.
+
+This Agreement is governed by the law of the Province of Alberta, Canada and all parties
+irrevocably submit to the jurisdiction of the courts of the Province of Alberta and further agree
+to commence any litigation which may arise hereunder in the courts located in the judicial district
+of Edmonton, Alberta, Canada.
+
+If the Software or any related documentation is licensed to the U.S. Government or any agency
+thereof, it will be considered to be "commercial computer software" or "commercial computer
+software documentation," as those terms are used in 48 CFR § 12.212 or 48 CFR § 227.7202, and is
+being licensed with only those rights as are granted to all other licensees as set forth in this
+Agreement.
+
+                     Copyright 2008-2021 Object.NET, Inc., All rights reserved.
+                  
+                                       Object.NET, Inc.
+                                       +1(888)775-5888
+                                     licensing@object.net
+                                          object.net
