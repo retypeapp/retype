@@ -2,7 +2,7 @@
 
 Retype is an :sparkles: ultra-high-performance-magical :sparkles: generator that builds a website based on simple text files. This lets you focus on writing while Retype builds the rest. 
 
-![Write anything, let Retype build the rest](static/retype-hero.png)
+![Write anything, let Retype build the rest](static/retype-hero.svg)
 
 No coding is required and just one Markdown `.md` file, such as a `README.md`, will get you started.
 
