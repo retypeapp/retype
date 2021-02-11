@@ -1,6 +1,9 @@
-Retype Software License Agreement
+---
+label: LICENSE
+---
+# Retype Software License Agreement
 
-Version 1.0.0
+#### Version 1.0.0
 
 THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN OBJECT.NET, INC. ("We," "Us")
 AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",
@@ -17,7 +20,7 @@ TREATIES. THE SOFTWARE IS LICENSED, NOT SOLD.
 THIS LICENSE AGREEMENT DESCRIBES YOUR RIGHTS AND RESTRICTIONS WITH RESPECT TO THE SOFTWARE AND
 ITS COMPONENTS.
 
-1. DEFINITIONS
+## 1. DEFINITIONS
 
 "Application" means any software, application, or elements that Your Designated Users develop using
 the Software or Modifications in accordance with this Agreement; provided that any such Application
@@ -43,7 +46,7 @@ any part of the original Software or previous Modifications.
 "samples," "sample application code," and/or "snippets," and/or found in directories labeled
 "samples", "learn", "docs", "examples" or "examples explorer".
 
-2. LICENSE GRANT
+## 2. LICENSE GRANT
 
 Subject to the payment of the fee required, and subject to your compliance with all of the terms
 and conditions of this Agreement, We grant to You a revocable, non-exclusive, non-transferable and
@@ -87,7 +90,7 @@ with Your Application, including every location in which any other copyright not
 Application; and (b) You do not otherwise use Our name, logos or other of Our trademarks to market
 Your Application, unless otherwise agree by Us in writing.
 
-3. OWNERSHIP
+## 3. OWNERSHIP
 
 This is a license agreement and not an agreement for sale. We reserve ownership of all intellectual
 property rights inherent in or relating to the Software, which include, but are not limited to, all
@@ -103,7 +106,7 @@ You must not remove, obscure or interfere with any copyright, acknowledgment, at
 trademark, warning or disclaimer statement affixed to, incorporated in or otherwise applied in
 connection with the Software.
 
-4. PROHIBITED USES
+## 4. PROHIBITED USES
 
 You may not redistribute the Software or Modifications other than by including the Software or a
 portion thereof within Your Application. You may not redistribute the Software or Modifications as
@@ -125,7 +128,7 @@ those with which You distribute it as permitted herein. For example, if You inst
 a customer's server, that customer is not permitted to use the Software independently of Your
 Application, and must be informed as such.
 
-5. TERMINATION
+## 5. TERMINATION
 
 This Agreement and Your right to use the Software and Modifications will terminate immediately if
 You fail to comply with any of the terms and conditions of this Agreement. Upon termination, You
@@ -133,7 +136,7 @@ agree to immediately cease using and destroy the Software or Modifications, incl
 accompanying documents. The provisions of sections 4, 5, 6, 7, 8, 9, and 11 will survive any
 termination of this Agreement.
 
-6. DISCLAIMER OF WARRANTIES
+## 6. DISCLAIMER OF WARRANTIES
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE AND OUR RESELLERS DISCLAIM ALL WARRANTIES AND
 CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
@@ -142,7 +145,7 @@ THE SOFTWARE. WE DO NOT GUARANTEE THAT THE OPERATION OF THE SOFTWARE OR THE CODE
 BE UNINTERRUPTED OR ERROR-FREE, AND YOU ACKNOWLEDGE THAT IT IS NOT TECHNICALLY PRACTICABLE FOR US
 TO DO SO.
 
-7. LIMITATION OF LIABILITIES
+## 7. LIMITATION OF LIABILITIES
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE OR OUR RESELLERS BE LIABLE
 UNDER ANY LEGAL OR EQUITABLE THEORY FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES
@@ -154,7 +157,7 @@ CASE, OUR ENTIRE LIABILITY WITH RESPECT TO ANY SUBJECT MATTER RELATING TO THIS A
 LIMITED TO THE GREATER OF (I) THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE OR (II) ONE HUNDRED
 DOLLARS ($100).
 
-8. PAYMENT AND TAXES
+## 8. PAYMENT AND TAXES
 
 If credit has been extended to You by Us, all payments under this Agreement are due within thirty
 (30) days of the date We mail an invoice to You. If We have not extended credit to You, You shall
@@ -169,7 +172,7 @@ sufficient to enable the other party to obtain any credits available to it, incl
 withholding tax certificates. Notwithstanding the foregoing, Software ordered through Our resellers
 is subject to the fees and payment terms set forth on the applicable reseller invoice.
 
-9. MISCELLANEOUS
+## 9. MISCELLANEOUS
 
 The license granted herein applies only to the version of the Software available when purchased in
 connection with the terms of this Agreement, and to any updates and/or upgrades to which you may be
@@ -239,10 +242,3 @@ thereof, it will be considered to be "commercial computer software" or "commerci
 software documentation," as those terms are used in 48 CFR § 12.212 or 48 CFR § 227.7202, and is
 being licensed with only those rights as are granted to all other licensees as set forth in this
 Agreement.
-
-                     Copyright 2008-2021 Object.NET, Inc., All rights reserved.
-                  
-                                       Object.NET, Inc.
-                                       +1(888)775-5888
-                                     licensing@object.net
-                                          object.net
