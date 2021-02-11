@@ -5,7 +5,8 @@
   
     "identity": {
         "logo": "/static/retype-logo.svg",
-        "logoDark": "/static/retype-logo-dark.svg"
+        "logoDark": "/static/retype-logo-dark.svg",
+        "label": "v1.0"
      },
 
     "meta": {
@@ -13,7 +14,7 @@
     },
 
     "nav": [{
-            "label": "Welcome",
+            "label": "Home",
             "path": "/",
             "icon": "home"
         }
@@ -22,7 +23,7 @@
     "links": [
         {
             "text": "Getting Started",
-            "link": "/getting-started"
+            "link": "/getting_started"
         },
         {
             "text": "GitHub",
@@ -39,6 +40,16 @@
     ],
 
     "footer": {
-        "copyright": "© Copyright {{ year }}. [Object.NET, Inc.](https://object.net/) All rights reserved."
+        "copyright": "© Copyright {{ year }}. [Object.NET, Inc.](https://object.net/) All rights reserved.",
+        "links": [
+            {
+                "text": "LICENSE",
+                "link": "/LICENSE"
+            }, 
+            {
+                "text": "About",
+                "link": "/about"
+            }
+        ]
       }
   }

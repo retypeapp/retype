@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>retype.json | Retype - Generate, publish, and share documentation</title>
+    <title>About | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Configuration options for `retype.json`." />
+    <meta name="description" content="Retype is built by the team at Object.NET. Please feel free to contact us at hello@object.net." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -35,7 +35,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -46,7 +46,7 @@
             <nav class="hidden md:flex">
                 <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                     <li class="md:mr-6">
-                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/getting-started">Getting Started</a>
+                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/getting_started">Getting Started</a>
                     </li>
                     <li class="md:mr-6">
                         <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
@@ -142,7 +142,7 @@
                 <nav>
                     <ul class="flex flex-wrap justify-center items-center">
                         <li class="mr-6">
-                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/getting-started">Getting Started</a>
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/getting_started">Getting Started</a>
                         </li>
                         <li class="mr-6">
                             <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype">GitHub</a>
@@ -183,85 +183,14 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="retype-json" class="break-words">
+<doc-anchor-target id="about" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-json">#</doc-anchor-trigger>
-        <span>retype.json</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#about">#</doc-anchor-trigger>
+        <span>About</span>
     </h1>
 </doc-anchor-target>
-<p>Configuration options for <code v-pre>retype.json</code>.</p>
-<doc-anchor-target id="options">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h2>
-</doc-anchor-target>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>input</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>./</code></td>
-<td>Custom path to the input directory</td>
-</tr>
-<tr>
-<td><code v-pre>output</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>./docs</code></td>
-<td>Custom path to the output directory</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>siteLogo</code></td>
-<td></td>
-<td></td>
-<td>Logo config</td>
-</tr>
-<tr>
-<td><code v-pre>siteLogo.text</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>Retype</code></td>
-<td>Logo Text (displayed when no logo images)</td>
-</tr>
-<tr>
-<td><code v-pre>siteLogo.img</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Name of Logo file (light theme) located under <code v-pre>$(input)/_resources/img/</code></td>
-</tr>
-<tr>
-<td><code v-pre>siteLogo.imgDark</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Name of Logo file (dark theme) located under <code v-pre>$(input)/_resources/img/</code></td>
-</tr>
-<tr>
-<td><code v-pre>siteLogo.showLabel</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>true</code></td>
-<td>Specifies if Logo label should be rendered</td>
-</tr>
-<tr>
-<td><code v-pre>siteLogo.labelText</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>docs</code></td>
-<td>Logo label text</td>
-</tr>
-</tbody>
-</table>
+<p>Retype is built by the team at <a href="https://object.net">Object.NET</a>. Please feel free to contact us at <a href="mailto:hello@object.net">hello@object.net</a>.</p>
+<p>Retype first went public on February 11, 2021 with the release of version <code v-pre>1.0.0</code>.</p>
 
     
                 <!-- Required only on API pages -->
@@ -271,6 +200,12 @@
         <footer class="flex flex-wrap items-center justify-between border-t dark:border-dark-650 pt-6 mb-8">
     <div>
         <ul class="flex flex-wrap items-center text-sm">
+            <li>
+                <a href="/LICENSE" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">LICENSE</a>
+            </li>
+            <li>
+                <a href="/about" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">About</a>
+            </li>
         </ul>
     </div>
     <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. <a href="https://object.net/">Object.NET, Inc.</a> All rights reserved.</p>
@@ -303,7 +238,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "retype.json", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "About", icon: "file" }</script>
 
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
