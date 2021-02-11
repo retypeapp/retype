@@ -1,4 +1,4 @@
-# Page Configuration
+# Page configuration
 
 ## YAML Front Matter parameters
 

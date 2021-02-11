@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>Project Configuration | Retype - Generate, publish, and share documentation</title>
+    <title>Project configuration | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Retype will read your projects `retype.json` file for additional instructions on how to configure and generate your new website." />
+    <meta name="description" content="Retype will read the `retype.json` file for additional instructions on how to configure your project." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -186,18 +186,19 @@
 <doc-anchor-target id="project-configuration" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#project-configuration">#</doc-anchor-trigger>
-        <span>Project Configuration</span>
+        <span>Project configuration</span>
     </h1>
 </doc-anchor-target>
-<p>Retype will read your projects <code v-pre>retype.json</code> file for additional instructions on how to configure and generate your new website.</p>
-<doc-alert type="primary"><p>After making a change to the <code v-pre>retype.json</code>, you should run <code v-pre>retype build</code> to generate a fresh new build of the website.</p>
+<p>Retype will read the <code v-pre>retype.json</code> file for additional instructions on how to configure your project.</p>
+<p>The <code v-pre>retype.json</code> is typically stored in the root of your project, although the file can be placed elsewhere. Please ensure the <code v-pre>input</code> and <code v-pre>output</code> paths are correct if moved to a different location.</p>
+<doc-alert type="primary"><p>After making a change to the <code v-pre>retype.json</code>, you should run <code v-pre>retype build</code> to generate a ✨ sparkly ✨ fresh new build of the project.</p>
 </doc-alert>
 <p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step. See below for a full list of <a href="#options">Options</a>.</p>
 <p>Running the command <code v-pre>retype init</code> will create a default <code v-pre>retype.json</code> file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.</p>
-<doc-anchor-target id="sample">
+<doc-anchor-target id="sample-retype-json">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sample">#</doc-anchor-trigger>
-        <span>Sample</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-retype-json">#</doc-anchor-trigger>
+        <span>Sample <code v-pre>retype.json</code></span>
     </h4>
 </doc-anchor-target>
 <pre v-highlight:json><code v-pre>{
@@ -581,7 +582,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Project Configuration", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Project configuration", icon: "file" }</script>
 
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>

@@ -1,16 +1,18 @@
-# Project Configuration
+# Project configuration
 
-Retype will read your projects `retype.json` file for additional instructions on how to configure and generate your new website. 
+Retype will read the `retype.json` file for additional instructions on how to configure your project. 
+
+The `retype.json` is typically stored in the root of your project, although the file can be placed elsewhere. Please ensure the `input` and `output` paths are correct if moved to a different location.
 
 :::
-After making a change to the `retype.json`, you should run `retype build` to generate a fresh new build of the website.
+After making a change to the `retype.json`, you should run `retype build` to generate a :sparkles: sparkly :sparkles: fresh new build of the project.
 :::
 
 The `retype.json` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.json` is a good first step. See below for a full list of [Options](#options).
 
 Running the command `retype init` will create a default `retype.json` file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.
 
-#### Sample
+#### Sample `retype.json`
 
 ```json
 {
