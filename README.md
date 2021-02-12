@@ -55,4 +55,4 @@ All operating systems are supported, including Mac, Windows, and Linux.
 
 ## License
 
-Please see the [LICENSE](about/LICENSE.md) for details.
+Please see the [LICENSE](LICENSE.md) for details.
