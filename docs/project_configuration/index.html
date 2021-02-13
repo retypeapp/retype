@@ -104,11 +104,11 @@
 <div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="mt-6 px-6">
+    <div class="flex items-center h-16 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-6">
+    <div class="pl-6 mb-4 mt-1">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -193,7 +193,7 @@
 <p>The <code v-pre>retype.json</code> is typically stored in the root of your project, although the file can be placed elsewhere. Please ensure the <code v-pre>input</code> and <code v-pre>output</code> paths are correct if moved to a different location.</p>
 <doc-alert type="primary"><p>After making a change to the <code v-pre>retype.json</code>, you should run <code v-pre>retype build</code> to generate a ✨ sparkly ✨ fresh new build of the project.</p>
 </doc-alert>
-<p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step. See below for a full list of <a href="#options">Options</a>.</p>
+<p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step. See below for a full list of <a href="#options">options</a>.</p>
 <p>Running the command <code v-pre>retype init</code> will create a default <code v-pre>retype.json</code> file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.</p>
 <doc-anchor-target id="sample-retype-json">
     <h4>
@@ -352,36 +352,6 @@
 <td><code v-pre>string</code></td>
 <td><code v-pre>#e1edff</code></td>
 <td>Background color</td>
-</tr>
-<tr>
-<td><code v-pre>identity.colors.sidebar</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Sidebar colors</td>
-</tr>
-<tr>
-<td><code v-pre>identity.colors.sidebar.background</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>#eee</code></td>
-<td>Background color</td>
-</tr>
-<tr>
-<td><code v-pre>identity.colors.sidebar.border</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>#ccc</code></td>
-<td>Border color</td>
-</tr>
-<tr>
-<td><code v-pre>identity.colors.sidebar.link</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>#333</code></td>
-<td>Link color</td>
-</tr>
-<tr>
-<td><code v-pre>identity.colors.sidebar.linkHover</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>#444</code></td>
-<td>Link color on mouse hover</td>
 </tr>
 <tr>
 <td><code v-pre>links</code></td>
@@ -544,9 +514,6 @@
         <footer class="flex flex-wrap items-center justify-between border-t dark:border-dark-650 pt-6 mb-8">
     <div>
         <ul class="flex flex-wrap items-center text-sm">
-            <li>
-                <a href="/LICENSE" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">LICENSE</a>
-            </li>
             <li>
                 <a href="/about" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">About</a>
             </li>

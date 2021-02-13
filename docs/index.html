@@ -104,11 +104,11 @@
 <div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="mt-6 px-6">
+    <div class="flex items-center h-16 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-6">
+    <div class="pl-6 mb-4 mt-1">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -194,7 +194,7 @@
 <p>No coding is required and just one Markdown file, such as a <a href="https://www.makeareadme.com/"><code v-pre>README.md</code></a>, will get you started.</p>
 <p>View the <a href="https://github.com/retypeapp/retype/blob/main/README.md">source</a> used to generate this very page.</p>
 <p>A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes but only a few seconds. 👍</p>
-<doc-alert type="success" title="COMING SOON"><p>Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages supported in the future.</p>
+<doc-alert type="success" title="COMING SOON"><p>Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.</p>
 <p>Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library's source code, code comments, and metadata.</p>
 </doc-alert>
 <doc-anchor-target id="quick-start">
@@ -213,7 +213,7 @@ yarn global add retypeapp
 
 # dotnet
 dotnet tool install --global retypeapp</code></pre>
-<p>Next, from your command line, navigate to a location where you have one or more Markdown <code v-pre>.md</code> files, then run the following sequence of commands.</p>
+<p>Next, from your command line, navigate to a folder location where you have one or more Markdown <code v-pre>.md</code> files, then run the following commands.</p>
 <pre v-highlight><code v-pre>retype init
 retype build
 retype run</code></pre>
@@ -227,7 +227,7 @@ retype run</code></pre>
         <span>License</span>
     </h2>
 </doc-anchor-target>
-<p>Please see the <a href="about/LICENSE.md">LICENSE</a> for details.</p>
+<p>Please see the <a href="LICENSE">LICENSE</a> for details.</p>
 
     
                 <!-- Required only on API pages -->
@@ -237,9 +237,6 @@ retype run</code></pre>
         <footer class="flex flex-wrap items-center justify-between border-t dark:border-dark-650 pt-6 mb-8">
     <div>
         <ul class="flex flex-wrap items-center text-sm">
-            <li>
-                <a href="/LICENSE" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">LICENSE</a>
-            </li>
             <li>
                 <a href="/about" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">About</a>
             </li>

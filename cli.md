@@ -4,11 +4,13 @@ The Retype CLI is clean and simple. There are basically just three options, `ret
 
 :::
 
-Be sure to review the configuration options available within the `retype.json`  as it does unlock a lot more power, flexibility, and customization.
+Be sure to review the [configuration options](project_configuration.md) available within the `retype.json`  as it does unlock a lot more power, flexibility, and customization.
 
 :::
 
-Let's go through each of the `retype` CLI commands.
+Let's go through each of the `retype` CLI commands, or be sure to check out the [Getting Started](getting_started.md) guide for step by instructions on using each of these commands.
+
+## Commands
 
 ### `retype init`
 

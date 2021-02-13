@@ -12,7 +12,7 @@ A new Retype powered website can be up and running within seconds once Retype is
 
 :::success COMING SOON
 
-Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages supported in the future.
+Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.
 
 Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library's source code, code comments, and metadata.
 
@@ -35,7 +35,7 @@ yarn global add retypeapp
 dotnet tool install --global retypeapp
 ```
 
-Next, from your command line, navigate to a location where you have one or more Markdown `.md` files, then run the following sequence of commands. 
+Next, from your command line, navigate to a folder location where you have one or more Markdown `.md` files, then run the following commands.
 
 ```
 retype init

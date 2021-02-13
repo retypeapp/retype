@@ -1,8 +1,22 @@
 # Getting Started
 
-You can install Retype using `npm`, `yarn`, or the `dotnet` CLI. 
+Getting started with Retype is super quick and you can be up and running within seconds. Check out the [Quick Start](README.md#quick-start) for the condensed process, or continue here with the full details and expanded steps. 
 
-Choose one of the following lines and run within your local Command line or Terminal:
+## Prerequisites
+
+Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI. 
+
+You only need one of those three as a prerequisite, although all three could be installed on your computer too. It's up to you. :raised_hands:
+
+| Package Manager | Supported Platforms |
+| --- | --- |
+| [`npm`](https://www.npmjs.com/get-npm) | `Mac`, `Win`, `Linux` |
+| [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) | `Mac`, `Win`, `Linux` |
+| [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) | `Mac`, `Win`, `Linux` |
+
+## Install
+
+It takes just a few seconds to install Retype using any of the following commands. Choose a command for a Package Manager you have installed on your computer.
 
 ```sh
 # npm
@@ -15,20 +29,138 @@ yarn global add retypeapp
 dotnet tool install --global retypeapp
 ```
 
-Next, from your command line, navigate to a location where you have one or more Markdown `.md` files, then run the following sequence of commands. 
+:::
+
+If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install --global retypeapp` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run at the same performance.
+
+:::
+
+## Init
+
+The next step is to create a `retype.json` configuration file for you project. The `retype.json` file isn't _actually_ required, but you will want to make [customizations](project_configurations.md) to your project and this is how those instructions are passed to Retype.
+
+You can manually create a `retype.json` file, or you can have Retype stub out a basic file with a few initial values by running the command `retype init`.
+
+From your command line, navigate to any folder location where you have one or more Markdown `.md` files, such as the root of a GitHub project, then run the following command: 
 
 ```
 retype init
+```
+
+Calling the `retype init` command will create a simple `retype.json` file with the following default values:
+
+#### Sample `retype.json`
+
+```json
+{
+  "input": ".",
+  "output": "./retype",
+
+  "identity": 
+  {
+    "title": "Project Name",
+    "label": "Docs"
+  },
+
+  "links": [
+    {
+      "text": "Getting Started",
+      "link": "https://retype.com/getting_started/"
+    }
+  ],
+
+  "nav": [
+    {
+      "path": "/",
+      "icon": "home"
+    }
+  ],
+
+  "footer": {
+    "copyright": "© Copyright {{ year }}. All rights reserved."
+  }
+}
+```
+
+All the configs are optional, but the above demonstrates a few of the options you will typically want to start with. See the [Project Configuration](project_configuration.md) docs for a full list of all options.
+
+To change the title of the project, revise the `identity.title` config. For instance, let's change to `"Company X"`:
+
+```json
+{
+  "identity": 
+  {
+    "title": "Company X",
+  }
+}
+```
+
+## Build
+
+To generate your new website, run the command `retype build`. 
+
+```
 retype build
+```
+
+Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the `retype.json`. By default, the `output` location is a new folder named `retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder. 
+
+If the `.md` documentation files for your project were located not in the root (`.`) but in a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
+
+```json
+{
+  "input": "docs",
+  "output": "website",
+}
+```
+
+Let's say you wanted the your new Retype website to run from within a `docs` folder which was then also inside of a root `website` folder, then you would configure:
+
+```json
+{
+  "input": "docs",
+  "output": "website/docs"
+}
+```
+
+If you are hosting your website using [gh-pages by GitHub](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site), you should output to the `docs` folder. You could then move your `.md` files into a different subfolder and configure as follows:
+
+```json
+{
+  "input": "src",
+  "output": "docs"
+}
+```
+
+The `input` and `output` configs provide an unlimited flexibility to instruct Retype on where to get your project `.md` files and where to output the generated website.
+
+## Run
+
+To view the new Retype generated website, just run the command `retype run`.
+
+```
 retype run
 ```
 
-That's it! Your new Retype website should be up and running. 
+**That's it!** Your new Retype website should be up and running.
 
-:::
+The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any web server, including as a GitHub [gh-pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site) website.
 
-Obviously you will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. You only need one of those three, although all three could be installed on your machine too. It's up to you. :raised_hands:
+You can also use any other local web server instead of `retype run`. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be [live-server](https://www.npmjs.com/package/live-server) or [static-server](https://www.npmjs.com/package/static-server).
 
-All operating systems are supported, including Mac, Windows, and Linux.
+## Uninstall
 
-:::
+Done with Retype? It's okay, we understand. :cry: 
+
+Removing Retype is just as simple as installing. Use the same Package Manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
+
+```sh
+# npm
+npm uninstall --global retypeapp
+
+# yarn
+yarn global remove retypeapp
+
+# dotnet
+dotnet tool uninstall --global retypeapp
+```

@@ -8,7 +8,7 @@ The `retype.json` is typically stored in the root of your project, although the 
 After making a change to the `retype.json`, you should run `retype build` to generate a :sparkles: sparkly :sparkles: fresh new build of the project.
 :::
 
-The `retype.json` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.json` is a good first step. See below for a full list of [Options](#options).
+The `retype.json` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.json` is a good first step. See below for a full list of [options](#options).
 
 Running the command `retype init` will create a default `retype.json` file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.
 
@@ -67,11 +67,6 @@ Running the command `retype init` will create a default `retype.json` file. The 
 | `identity.colors.label`              | `object` |                            | Logo label colors                                                                                                               |
 | `identity.colors.label.text`         | `string` | `#1f7aff`                  | Text color                                                                                                                      |
 | `identity.colors.label.background`   | `string` | `#e1edff`                  | Background color                                                                                                                |
-| `identity.colors.sidebar`            | `object` |                            | Sidebar colors                                                                                                                  |
-| `identity.colors.sidebar.background` | `string` | `#eee`                     | Background color                                                                                                                |
-| `identity.colors.sidebar.border`     | `string` | `#ccc`                     | Border color                                                                                                                    |
-| `identity.colors.sidebar.link`       | `string` | `#333`                     | Link color                                                                                                                      |
-| `identity.colors.sidebar.linkHover`  | `string` | `#444`                     | Link color on mouse hover                                                                                                       |
 | `links`                              | `array`  |                            | Top-level navigation link configuration                                                                                         |
 | `links[].text`                       | `string` |                            | Navigation link text                                                                                                            |
 | `links[].link`                       | `string` |                            | Navigation link URL                                                                                                             |

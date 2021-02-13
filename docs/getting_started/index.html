@@ -7,7 +7,7 @@
 
     <title>Getting Started | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="You can install Retype using `npm`, `yarn`, or the `dotnet` CLI." />
+    <meta name="description" content="Getting started with Retype is super quick and you can be up and running within seconds. Check out the " />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -104,11 +104,11 @@
 <div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="mt-6 px-6">
+    <div class="flex items-center h-16 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-6">
+    <div class="pl-6 mb-4 mt-1">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -189,8 +189,44 @@
         <span>Getting Started</span>
     </h1>
 </doc-anchor-target>
-<p>You can install Retype using <code v-pre>npm</code>, <code v-pre>yarn</code>, or the <code v-pre>dotnet</code> CLI.</p>
-<p>Choose one of the following lines and run within your local Command line or Terminal:</p>
+<p>Getting started with Retype is super quick and you can be up and running within seconds. Check out the <a href="#quick-start">Quick Start</a> for the condensed process, or continue here with the full details and expanded steps.</p>
+<doc-anchor-target id="prerequisites">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
+        <span>Prerequisites</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype is installed using either <a href="https://www.npmjs.com/get-npm"><code v-pre>npm</code></a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable"><code v-pre>yarn</code></a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core"><code v-pre>dotnet</code></a> CLI.</p>
+<p>You only need one of those three as a prerequisite, although all three could be installed on your computer too. It's up to you. 🙌</p>
+<table>
+<thead>
+<tr>
+<th>Package Manager</th>
+<th>Supported Platforms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.npmjs.com/get-npm"><code v-pre>npm</code></a></td>
+<td><code v-pre>Mac</code>, <code v-pre>Win</code>, <code v-pre>Linux</code></td>
+</tr>
+<tr>
+<td><a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable"><code v-pre>yarn</code></a></td>
+<td><code v-pre>Mac</code>, <code v-pre>Win</code>, <code v-pre>Linux</code></td>
+</tr>
+<tr>
+<td><a href="https://dotnet.microsoft.com/download/dotnet-core"><code v-pre>dotnet</code></a></td>
+<td><code v-pre>Mac</code>, <code v-pre>Win</code>, <code v-pre>Linux</code></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="install">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#install">#</doc-anchor-trigger>
+        <span>Install</span>
+    </h2>
+</doc-anchor-target>
+<p>It takes just a few seconds to install Retype using any of the following commands. Choose a command for a Package Manager you have installed on your computer.</p>
 <pre v-highlight:bash><code v-pre># npm
 npm install --global retypeapp
 
@@ -199,14 +235,113 @@ yarn global add retypeapp
 
 # dotnet
 dotnet tool install --global retypeapp</code></pre>
-<p>Next, from your command line, navigate to a location where you have one or more Markdown <code v-pre>.md</code> files, then run the following sequence of commands.</p>
-<pre v-highlight><code v-pre>retype init
-retype build
-retype run</code></pre>
-<p>That's it! Your new Retype website should be up and running.</p>
-<doc-alert type="primary"><p>Obviously you will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. You only need one of those three, although all three could be installed on your machine too. It's up to you. 🙌</p>
-<p>All operating systems are supported, including Mac, Windows, and Linux.</p>
+<doc-alert type="primary"><p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install --global retypeapp</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run at the same performance.</p>
 </doc-alert>
+<doc-anchor-target id="init">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#init">#</doc-anchor-trigger>
+        <span>Init</span>
+    </h2>
+</doc-anchor-target>
+<p>The next step is to create a <code v-pre>retype.json</code> configuration file for you project. The <code v-pre>retype.json</code> file isn't <em>actually</em> required, but you will want to make <a href="project_configurations.md">customizations</a> to your project and this is how those instructions are passed to Retype.</p>
+<p>You can manually create a <code v-pre>retype.json</code> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
+<p>From your command line, navigate to any folder location where you have one or more Markdown <code v-pre>.md</code> files, such as the root of a GitHub project, then run the following command:</p>
+<pre v-highlight><code v-pre>retype init</code></pre>
+<p>Calling the <code v-pre>retype init</code> command will create a simple <code v-pre>retype.json</code> file with the following default values:</p>
+<doc-anchor-target id="sample-retype-json">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-retype-json">#</doc-anchor-trigger>
+        <span>Sample <code v-pre>retype.json</code></span>
+    </h4>
+</doc-anchor-target>
+<pre v-highlight:json><code v-pre>{
+  &quot;input&quot;: &quot;.&quot;,
+  &quot;output&quot;: &quot;./retype&quot;,
+
+  &quot;identity&quot;: 
+  {
+    &quot;title&quot;: &quot;Project Name&quot;,
+    &quot;label&quot;: &quot;Docs&quot;
+  },
+
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Getting Started&quot;,
+      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
+    }
+  ],
+
+  &quot;nav&quot;: [
+    {
+      &quot;path&quot;: &quot;/&quot;,
+      &quot;icon&quot;: &quot;home&quot;
+    }
+  ],
+
+  &quot;footer&quot;: {
+    &quot;copyright&quot;: &quot;© Copyright {{ year }}. All rights reserved.&quot;
+  }
+}</code></pre>
+<p>All the configs are optional, but the above demonstrates a few of the options you will typically want to start with. See the <a href="../project_configuration">Project Configuration</a> docs for a full list of all options.</p>
+<p>To change the title of the project, revise the <code v-pre>identity.title</code> config. For instance, let's change to <code v-pre>&quot;Company X&quot;</code>:</p>
+<pre v-highlight:json><code v-pre>{
+  &quot;identity&quot;: 
+  {
+    &quot;title&quot;: &quot;Company X&quot;,
+  }
+}</code></pre>
+<doc-anchor-target id="build">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#build">#</doc-anchor-trigger>
+        <span>Build</span>
+    </h2>
+</doc-anchor-target>
+<p>To generate your new website, run the command <code v-pre>retype build</code>.</p>
+<pre v-highlight><code v-pre>retype build</code></pre>
+<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.json</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
+<p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but in a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
+<pre v-highlight:json><code v-pre>{
+  &quot;input&quot;: &quot;docs&quot;,
+  &quot;output&quot;: &quot;website&quot;,
+}</code></pre>
+<p>Let's say you wanted the your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
+<pre v-highlight:json><code v-pre>{
+  &quot;input&quot;: &quot;docs&quot;,
+  &quot;output&quot;: &quot;website/docs&quot;
+}</code></pre>
+<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">gh-pages by GitHub</a>, you should output to the <code v-pre>docs</code> folder. You could then move your <code v-pre>.md</code> files into a different subfolder and configure as follows:</p>
+<pre v-highlight:json><code v-pre>{
+  &quot;input&quot;: &quot;src&quot;,
+  &quot;output&quot;: &quot;docs&quot;
+}</code></pre>
+<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide an unlimited flexibility to instruct Retype on where to get your project <code v-pre>.md</code> files and where to output the generated website.</p>
+<doc-anchor-target id="run">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run">#</doc-anchor-trigger>
+        <span>Run</span>
+    </h2>
+</doc-anchor-target>
+<p>To view the new Retype generated website, just run the command <code v-pre>retype run</code>.</p>
+<pre v-highlight><code v-pre>retype run</code></pre>
+<p><strong>That's it!</strong> Your new Retype website should be up and running.</p>
+<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any web server, including as a GitHub <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">gh-pages</a> website.</p>
+<p>You can also use any other local web server instead of <code v-pre>retype run</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
+<doc-anchor-target id="uninstall">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uninstall">#</doc-anchor-trigger>
+        <span>Uninstall</span>
+    </h2>
+</doc-anchor-target>
+<p>Done with Retype? It's okay, we understand. 😢</p>
+<p>Removing Retype is just as simple as installing. Use the same Package Manager to uninstall as you did to install. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> uninstall command to remove.</p>
+<pre v-highlight:bash><code v-pre># npm
+npm uninstall --global retypeapp
+
+# yarn
+yarn global remove retypeapp
+
+# dotnet
+dotnet tool uninstall --global retypeapp</code></pre>
 
     
                 <!-- Required only on API pages -->
@@ -216,9 +351,6 @@ retype run</code></pre>
         <footer class="flex flex-wrap items-center justify-between border-t dark:border-dark-650 pt-6 mb-8">
     <div>
         <ul class="flex flex-wrap items-center text-sm">
-            <li>
-                <a href="/LICENSE" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">LICENSE</a>
-            </li>
             <li>
                 <a href="/about" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">About</a>
             </li>
