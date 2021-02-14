@@ -152,7 +152,7 @@ You can also use any other local web server instead of `retype run`. Retype only
 
 Done with Retype? It's okay, we understand. :cry: 
 
-Removing Retype is just as simple as installing. Use the same Package Manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
+Uninstalling Retype is just as simple as installing. Use the same Package Manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
 
 ```sh
 # npm
@@ -164,3 +164,5 @@ yarn global remove retypeapp
 # dotnet
 dotnet tool uninstall --global retypeapp
 ```
+
+Any Retype related files within your project can be deleted, such as the `retype.json`.
