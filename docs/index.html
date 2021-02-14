@@ -104,11 +104,11 @@
 <div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="flex items-center h-16 px-6">
+    <div class="mt-6 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-1">
+    <div class="pl-6 mb-4 mt-6">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -193,7 +193,7 @@
 <p><img src="static/retype-hero.svg" alt="Write anything, let Retype build the rest" /></p>
 <p>No coding is required and just one Markdown file, such as a <a href="https://www.makeareadme.com/"><code v-pre>README.md</code></a>, will get you started.</p>
 <p>View the <a href="https://github.com/retypeapp/retype/blob/main/README.md">source</a> used to generate this very page.</p>
-<p>A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes but only a few seconds. 👍</p>
+<p>A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. 👍</p>
 <doc-alert type="success" title="COMING SOON"><p>Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.</p>
 <p>Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library's source code, code comments, and metadata.</p>
 </doc-alert>
@@ -221,13 +221,18 @@ retype run</code></pre>
 <doc-alert type="primary"><p>Obviously you will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. You only need one of those three, although all three could be installed on your machine too. It's up to you. 🙌</p>
 <p>All operating systems are supported, including Mac, Windows, and Linux.</p>
 </doc-alert>
-<doc-anchor-target id="license">
+<doc-anchor-target id="key-features">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#license">#</doc-anchor-trigger>
-        <span>License</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#key-features">#</doc-anchor-trigger>
+        <span>Key features</span>
     </h2>
 </doc-anchor-target>
-<p>Please see the <a href="LICENSE">LICENSE</a> for details.</p>
+<p><strong>🎉 Just works –</strong> Retype has been built to be easy to use and should <em>&quot;just work&quot;</em> out-of-the-box without any special configuration or troublesome setup.</p>
+<p><strong>⚡ Lightning fast –</strong> Don't blink. Retype was built for speed.</p>
+<p><strong>💪 Powerful –</strong> Project level <a href="project_configuration">configuration</a> using <code v-pre>retype.json</code> unlocks many more Retype features and customization.</p>
+<p><strong>✅ Easy install –</strong> <a href="/getting_started">Installation</a> takes only a few seconds. Then you need at least one Markdown <code v-pre>.md</code> file which Retype will start building a new website from.</p>
+<p><strong>✏️ Simple formatting –</strong> Pages are <a href="/formatting">formatted</a> using Markdown syntax. Some <a href="/page_configuration">page level configuration</a> is possible, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
+<p><strong>💻 Host anywhere –</strong> Retype generates a basic HTML website that can be hosted on any web hosting service, such as <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">gh-pages by GitHub</a>. No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.</p>
 
     
                 <!-- Required only on API pages -->

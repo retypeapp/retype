@@ -7,7 +7,7 @@
 
     <title>About | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Retype is built by the team at Object.NET. Please feel free to contact us at hello@object.net." />
+    <meta name="description" content="Retype is professionally built and supported by the team at Object.NET." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -104,11 +104,11 @@
 <div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="flex items-center h-16 px-6">
+    <div class="mt-6 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-1">
+    <div class="pl-6 mb-4 mt-6">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -189,8 +189,127 @@
         <span>About</span>
     </h1>
 </doc-anchor-target>
-<p>Retype is built by the team at <a href="https://object.net">Object.NET</a>. Please feel free to contact us at <a href="mailto:hello@object.net">hello@object.net</a>.</p>
-<p>Retype first went public on February 11, 2021 with the release of version <code v-pre>1.0.0</code>.</p>
+<p><a href="https://retype.com/">Retype</a> is professionally built and supported by the team at <a href="https://object.net">Object.NET</a>.</p>
+<p>Technical support questions are best asked in the <a href="https://github.com/retypeapp/retype/discussions">Discussion</a> forum, or create an <a href="https://github.com/retypeapp/retype/issues">Issue</a> if you find a defect or would like to submit a feature request.</p>
+<p>Please feel free to contact us at <a href="mailto:hello@object.net">hello@object.net</a>.</p>
+<doc-anchor-target id="release-history">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#release-history">#</doc-anchor-trigger>
+        <span>Release history</span>
+    </h2>
+</doc-anchor-target>
+<p>The entire release history of Retype is available on <a href="https://www.npmjs.com/package/retypeapp">NPM</a> or <a href="https://nuget.org/packages/retypeapp">NuGet</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Release date</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>v1.0.0</code></td>
+<td>2021-02-11</td>
+<td>First public release.</td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="roadmap">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#roadmap">#</doc-anchor-trigger>
+        <span>Roadmap</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="v1-1-0">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v1-1-0">#</doc-anchor-trigger>
+        <span><code v-pre>v1.1.0</code></span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>New Button component</li>
+<li>New Badge component</li>
+<li>New Tab component</li>
+<li>New <code v-pre>retype watch</code> command</li>
+<li>Much more...</li>
+</ol>
+<doc-anchor-target id="v1-2-0">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v1-2-0">#</doc-anchor-trigger>
+        <span><code v-pre>v1.2.0</code></span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Build reference API for C# libraries</li>
+<li>Build reference API for TypeScript libraries</li>
+<li>Much more...</li>
+</ol>
+<doc-anchor-target id="credits">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#credits">#</doc-anchor-trigger>
+        <span>Credits</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype is only made possible because of the hard work of other amazing open-source and commercial projects.</p>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>License</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://retype.com/">Retype</a></td>
+<td><a href="/LICENSE">Retype</a></td>
+<td>Magical static site generator</td>
+</tr>
+<tr>
+<td><a href="https://github.com/xoofx/markdig">Markdig</a></td>
+<td><a href="https://github.com/xoofx/markdig/blob/master/license.txt">BSD-2-Clause</a></td>
+<td>Markdown parsing</td>
+</tr>
+<tr>
+<td><a href="https://github.com/scriban/scriban">Scriban</a></td>
+<td><a href="https://github.com/scriban/scriban/blob/master/license.txt">BSD-2-Clause</a></td>
+<td>Templating</td>
+</tr>
+<tr>
+<td><a href="https://mojee.io">Mojee</a></td>
+<td><a href="https://docs.mojee.io/LICENSE/">Mojee</a></td>
+<td>Emoji parsing</td>
+</tr>
+<tr>
+<td><a href="https://vuejs.org/">Vue.js</a></td>
+<td><a href="https://github.com/vuejs/vue/blob/dev/LICENSE">MIT</a></td>
+<td>Client UI framework</td>
+</tr>
+<tr>
+<td><a href="http://lunrjs.com/">Lunr</a></td>
+<td><a href="https://github.com/olivernn/lunr.js/blob/master/LICENSE">MIT</a></td>
+<td>Search</td>
+</tr>
+<tr>
+<td><a href="https://prismjs.com/">Prism</a></td>
+<td><a href="https://github.com/PrismJS/prism/blob/master/LICENSE">MIT</a></td>
+<td>Code sample formatting</td>
+</tr>
+<tr>
+<td><a href="https://clipboardjs.com">Clipboard.js</a></td>
+<td><a href="https://clipboardjs.com/">MIT</a></td>
+<td>Code block copy to clipboard</td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="license">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#license">#</doc-anchor-trigger>
+        <span>License</span>
+    </h2>
+</doc-anchor-target>
+<p>Please see the Retype <a href="../LICENSE">LICENSE</a>.</p>
 
     
                 <!-- Required only on API pages -->

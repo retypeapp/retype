@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>Retype CLI | Retype - Generate, publish, and share documentation</title>
+    <title>Formatting | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="The Retype CLI is clean and simple. There are basically just three options, `retype init`, `retype build`" />
+    <meta name="description" content="Markdown `.md` pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -183,79 +183,275 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="retype-cli" class="break-words">
+<doc-anchor-target id="formatting" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-cli">#</doc-anchor-trigger>
-        <span>Retype CLI</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#formatting">#</doc-anchor-trigger>
+        <span>Formatting</span>
     </h1>
 </doc-anchor-target>
-<p>The Retype CLI is clean and simple. There are basically just three options, <code v-pre>retype init</code>, <code v-pre>retype build</code>, and <code v-pre>retype run</code>.</p>
-<doc-alert type="primary"><p>Be sure to review the <a href="../project_configuration">configuration options</a> available within the <code v-pre>retype.json</code>  as it does unlock a lot more power, flexibility, and customization.</p>
+<p>Markdown <code v-pre>.md</code> pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier.</p>
+<p>No special software is required to create an <code v-pre>.md</code> file. Any basic text editor will do.</p>
+<p>Please see <a href="https://www.markdownguide.org/cheat-sheet/">markdownguide.org</a> for a full demonstration of the formatting possibilities and best practices.</p>
+<doc-alert type="primary"><p>View the actual <a href="https://github.com/retypeapp/retype/blob/main/formatting.md"><code v-pre>formatting.md</code></a> file used to create this page.</p>
 </doc-alert>
-<p>Let's go through each of the <code v-pre>retype</code> CLI commands, or be sure to check out the <a href="../getting_started">Getting Started</a> guide for step by instructions on using each of these commands.</p>
-<doc-anchor-target id="commands">
+<doc-anchor-target id="quick-start">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#commands">#</doc-anchor-trigger>
-        <span>Commands</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#quick-start">#</doc-anchor-trigger>
+        <span>Quick start</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="retype-init">
+<p>The following sample demonstrates a very basic <code v-pre>.md</code> page sample with page title and one paragraph.</p>
+<pre v-highlight:markdown><code v-pre># Page title here
+
+This is just a paragraph. </code></pre>
+<p>We can build on the above by more formatting options such as <strong>bold</strong> text, images, and lists.</p>
+<pre v-highlight:markdown><code v-pre># Page title here
+
+This is just a paragraph. 
+
+The page can contain both [internal](/README.md) and [external](https://example.com) links.
+
+![Your logo](logo.png)
+
+Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
+
+#### Lists
+
+- First item
+- Second item
+- Third item
+
+1. First item
+2. Second item
+3. Third item
+
+&gt; &quot;Cool! This is a quotation.&quot;
+
+:::
+Need to draw attention to something? Use an alert.
+:::</code></pre>
+<p>At a very basic level, to create a new page for your Retype project, do the following:</p>
+<ol>
+<li>Create a <code v-pre>.md</code> file</li>
+<li>Add a <code v-pre># title</code></li>
+<li>Start writing</li>
+</ol>
+<p>In addition to the standard Markdown options (see <a href="https://www.markdownguide.org/cheat-sheet/">cheat sheet</a>), Retype includes some nice extras...</p>
+<doc-anchor-target id="emojis-tada">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#emojis-tada">#</doc-anchor-trigger>
+        <span>Emojis 🎉</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype uses <a href="https://mojee.io">Mojee.io</a> to find emoji <code v-pre>:shortcodes:</code> within your document and replace with actual emoji characters. 👍</p>
+<p>You can place emoji <code v-pre>:shortcodes:</code> anywhere within your document, such as <code v-pre>:smile:</code> 😄 or <code v-pre>:unicorn_face:</code> 🦄.</p>
+<p>Use Mojee to <a href="https://mojee.io/emojis/">search</a> for the emojis your love and paste the <code v-pre>:shortcode:</code> into your <code v-pre>.md</code> document.</p>
+<table>
+<thead>
+<tr>
+<th>😀</th>
+<th>😃</th>
+<th>😄</th>
+<th>😁</th>
+<th>😆</th>
+<th>😅</th>
+<th>😂</th>
+<th>😉</th>
+<th>😊</th>
+<th>😇</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>😍</td>
+<td>😘</td>
+<td>☺️</td>
+<td>😚</td>
+<td>😋</td>
+<td>😛</td>
+<td>😜</td>
+<td>😝</td>
+<td>😐</td>
+<td>😑</td>
+</tr>
+<tr>
+<td>😶</td>
+<td>😏</td>
+<td>😒</td>
+<td>😬</td>
+<td>😌</td>
+<td>😔</td>
+<td>😪</td>
+<td>😴</td>
+<td>😷</td>
+<td>😎</td>
+</tr>
+<tr>
+<td>😕</td>
+<td>😳</td>
+<td>😥</td>
+<td>😢</td>
+<td>😭</td>
+<td>😱</td>
+<td>😖</td>
+<td>😣</td>
+<td>😞</td>
+<td>😓</td>
+</tr>
+<tr>
+<td>😩</td>
+<td>😫</td>
+<td>😤</td>
+<td>😡</td>
+<td>😠</td>
+<td>😈</td>
+<td>💀</td>
+<td>😻</td>
+<td>🙈</td>
+<td>🙊</td>
+</tr>
+<tr>
+<td>💋</td>
+<td>💘</td>
+<td>💖</td>
+<td>💗</td>
+<td>💓</td>
+<td>💞</td>
+<td>💕</td>
+<td>💔</td>
+<td>❤️</td>
+<td>💛</td>
+</tr>
+<tr>
+<td>💚</td>
+<td>💙</td>
+<td>💜</td>
+<td>💯</td>
+<td>💥</td>
+<td>👋</td>
+<td>✋</td>
+<td>👌</td>
+<td>✌️</td>
+<td>👈</td>
+</tr>
+<tr>
+<td>👉</td>
+<td>👇</td>
+<td>👍</td>
+<td>👊</td>
+<td>👏</td>
+<td>🙌</td>
+<td>🙏</td>
+<td>💪</td>
+<td>👀</td>
+<td>💁</td>
+</tr>
+<tr>
+<td>🌸</td>
+<td>🌹</td>
+<td>🌚</td>
+<td>☀️</td>
+<td>⭐</td>
+<td>⚡</td>
+<td>🔥</td>
+<td>✨</td>
+<td>🎉</td>
+<td>♥️</td>
+</tr>
+<tr>
+<td>👑</td>
+<td>🎶</td>
+<td>📷</td>
+<td>➡️</td>
+<td>⬅️</td>
+<td>▶️</td>
+<td>♻️</td>
+<td>✅</td>
+<td>✔️</td>
+<td>🔴</td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="alerts">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#alerts">#</doc-anchor-trigger>
+        <span>Alerts</span>
+    </h2>
+</doc-anchor-target>
+<p>Alert components help to highlight important messages for the reader.</p>
+<p>To create an alert, just surround a block of text with <code v-pre>:::</code>.</p>
+<pre v-highlight:markdown><code v-pre>:::
+This is an alert.
+:::</code></pre>
+<doc-alert type="primary"><p>This is an alert.</p>
+</doc-alert>
+<p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>type</code> immediately after the <code v-pre>:::</code>, such as <code v-pre>:::danger</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>info</code> or none</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td><code v-pre>success</code></td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code v-pre>caution</code></td>
+<td>Orange</td>
+</tr>
+<tr>
+<td><code v-pre>danger</code></td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code v-pre>note</code></td>
+<td>Dark or Light depending on time of day</td>
+</tr>
+</tbody>
+</table>
+<p>Alerts can also have titles. Add a space then add your title, such as <code v-pre>::: Title here</code> or <code v-pre>:::danger Title here</code>.</p>
+<doc-anchor-target id="alert-demo">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-init">#</doc-anchor-trigger>
-        <span><code v-pre>retype init</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#alert-demo">#</doc-anchor-trigger>
+        <span>Alert demo</span>
     </h3>
 </doc-anchor-target>
-<p>Create a new <code v-pre>retype.json</code> configuration file if one is not already present.</p>
-<pre v-highlight><code v-pre>init:
-  Initialize a new Retype project
+<pre v-highlight><code v-pre>:::info Info
+This is a `info` alert.
+:::
 
-Usage:
-  retype init [options] [&lt;path&gt;]
+:::success Success
+This is a `success` alert.
+:::
 
-Arguments:
-  &lt;path&gt;    Path to the project root [Optional]
+:::caution Caution
+This is a `caution` alert.
+:::
 
-Options:
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information</code></pre>
-<doc-anchor-target id="retype-build">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-build">#</doc-anchor-trigger>
-        <span><code v-pre>retype build</code></span>
-    </h3>
-</doc-anchor-target>
-<p>Build a new website based upon the <code v-pre>.md</code> files available.</p>
-<pre v-highlight><code v-pre>build:
-  Generate a static website
+:::danger Danger
+This is a `danger` alert.
+:::
 
-Usage:
-  retype build [options] [&lt;path&gt;]
-
-Arguments:
-  &lt;path&gt;    Path to the project root or retype.json [Optional]
-
-Options:
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information</code></pre>
-<doc-anchor-target id="retype-run">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-run">#</doc-anchor-trigger>
-        <span><code v-pre>retype run</code></span>
-    </h3>
-</doc-anchor-target>
-<p>Starts up your new Retype website and opens in a web browser.</p>
-<pre v-highlight><code v-pre>run:
-  Serve a static website
-
-Usage:
-  retype run [options] [&lt;path&gt;]
-
-Arguments:
-  &lt;path&gt;    Path to the project root or retype.json [Optional]
-
-Options:
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information</code></pre>
+:::note Note
+This is a `note` alert, with dark and light modes.
+:::</code></pre>
+<doc-alert type="primary" title="Info"><p>This is a <code v-pre>info</code> alert.</p>
+</doc-alert>
+<doc-alert type="success" title="Success"><p>This is a <code v-pre>success</code> alert.</p>
+</doc-alert>
+<doc-alert type="warning" title="Caution"><p>This is a <code v-pre>caution</code> alert.</p>
+</doc-alert>
+<doc-alert type="danger" title="Danger"><p>This is a <code v-pre>danger</code> alert.</p>
+</doc-alert>
+<doc-alert type="contrast" title="Note"><p>This is a <code v-pre>note</code> alert, with dark and light modes.</p>
+</doc-alert>
 
     
                 <!-- Required only on API pages -->
@@ -300,7 +496,7 @@ Options:
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Retype CLI", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Formatting", icon: "file" }</script>
 
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
