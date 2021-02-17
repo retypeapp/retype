@@ -53,19 +53,31 @@ All operating systems are supported, including Mac, Windows, and Linux.
 
 :::
 
-## Key features
+## Features
 
-**:tada: It just works –** Retype has been built to be easy to use and should _"just work"_ out-of-the-box without any special configuration or troublesome setup.
+#### :tada: It just works
 
-**:zap: Lightning fast –** Don't blink. Retype was built for speed.
+Retype has been built to be easy to use and should _"just work"_ out-of-the-box without any special configuration or troublesome setup.
 
-**:white_check_mark: Easy install –** [Installation](/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from. 
+#### :zap: Lightning fast
 
-**:muscle: Powerful –** Project level [configuration](project_configuration.md) using `retype.json` unlocks many more Retype features and customization.
+Don't blink. Retype was built for speed.
 
-**:pencil2: Simple formatting –** Pages are [formatted](/formatting.md) using Markdown syntax. Page level [configuration](/page_configuration.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+#### :white_check_mark: Easy install
 
-**:computer: Host anywhere –** Retype generates a basic HTML website that you can host on any web hosting service, such as [gh-pages by GitHub](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
+[Installation](/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from. 
+
+#### :muscle: Powerful
+
+Project level [configuration](project_configuration.md) using `retype.json` unlocks many more Retype features and customization.
+
+#### :pencil2: Simple formatting
+
+Pages are [formatted](/formatting.md) using Markdown syntax. Page level [configuration](/page_configuration.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+
+#### :computer: Host anywhere
+
+Retype generates a basic HTML website that you can host on any web hosting service, such as [gh-pages by GitHub](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
 
 ## Support
 
