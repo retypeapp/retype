@@ -59,10 +59,16 @@ All operating systems are supported, including Mac, Windows, and Linux.
 
 **:zap: Lightning fast –** Don't blink. Retype was built for speed.
 
-**:muscle: Powerful –** Project level [configuration](project_configuration.md) using `retype.json` unlocks many more Retype features and customization.
-
 **:white_check_mark: Easy install –** [Installation](/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from. 
 
-**:pencil2: Simple formatting –** Pages are [formatted](/formatting.md) using Markdown syntax. Some [page level configuration](/page_configuration.md) is possible, such as customizing the navigation `label` or `description` used by search engines.
+**:muscle: Powerful –** Project level [configuration](project_configuration.md) using `retype.json` unlocks many more Retype features and customization.
 
-**:computer: Host anywhere –** Retype generates a basic HTML website that can be hosted on any web hosting service, such as [gh-pages by GitHub](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
+**:pencil2: Simple formatting –** Pages are [formatted](/formatting.md) using Markdown syntax. Page level [configuration](/page_configuration.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+
+**:computer: Host anywhere –** Retype generates a basic HTML website that you can host on any web hosting service, such as [gh-pages by GitHub](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
+
+## Support
+
+Technical support questions are best asked in the [Discussions](https://github.com/retypeapp/retype/discussions). The discussions are monitored 24 hours a day and we will do our best to assist.
+
+If you find a defect or would like to submit a feature request, please create an [Issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.

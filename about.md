@@ -4,7 +4,7 @@
 
 Technical support questions are best asked in the [Discussion](https://github.com/retypeapp/retype/discussions) forum, or create an [Issue](https://github.com/retypeapp/retype/issues) if you find a defect or would like to submit a feature request.
 
-Please feel free to contact us at [hello@object.net](mailto:hello@object.net).
+Do you have a general inquiry? Please feel free to contact us at [hello@object.net](mailto:hello@object.net).
 
 ## Release history
 

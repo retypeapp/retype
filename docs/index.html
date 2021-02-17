@@ -30,6 +30,7 @@
         <div class="flex items-center h-full py-2">
             <div class="flex items-center px-2 md:px-6 md:w-72">
                 <span class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
+                <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
                     <a href="/">
                         <img class="dark:hidden" src="/static/retype-logo.svg">
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
@@ -105,10 +106,12 @@
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
     <div class="mt-6 px-6">
+    <div class="flex items-center h-16 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
     <div class="pl-6 mb-4 mt-6">
+    <div class="pl-6 mb-4 mt-1">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -229,10 +232,18 @@ retype run</code></pre>
 </doc-anchor-target>
 <p><strong>🎉 It just works –</strong> Retype has been built to be easy to use and should <em>&quot;just work&quot;</em> out-of-the-box without any special configuration or troublesome setup.</p>
 <p><strong>⚡ Lightning fast –</strong> Don't blink. Retype was built for speed.</p>
-<p><strong>💪 Powerful –</strong> Project level <a href="project_configuration">configuration</a> using <code v-pre>retype.json</code> unlocks many more Retype features and customization.</p>
 <p><strong>✅ Easy install –</strong> <a href="/getting_started">Installation</a> takes only a few seconds. Then you need at least one Markdown <code v-pre>.md</code> file which Retype will start building a new website from.</p>
-<p><strong>✏️ Simple formatting –</strong> Pages are <a href="/formatting">formatted</a> using Markdown syntax. Some <a href="/page_configuration">page level configuration</a> is possible, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
-<p><strong>💻 Host anywhere –</strong> Retype generates a basic HTML website that can be hosted on any web hosting service, such as <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">gh-pages by GitHub</a>. No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.</p>
+<p><strong>💪 Powerful –</strong> Project level <a href="project_configuration">configuration</a> using <code v-pre>retype.json</code> unlocks many more Retype features and customization.</p>
+<p><strong>✏️ Simple formatting –</strong> Pages are <a href="/formatting">formatted</a> using Markdown syntax. Page level <a href="/page_configuration">configuration</a> is available, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
+<p><strong>💻 Host anywhere –</strong> Retype generates a basic HTML website that you can host on any web hosting service, such as <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">gh-pages by GitHub</a>. No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.</p>
+<doc-anchor-target id="support">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#support">#</doc-anchor-trigger>
+        <span>Support</span>
+    </h2>
+</doc-anchor-target>
+<p>Technical support questions are best asked in the <a href="https://github.com/retypeapp/retype/discussions">Discussions</a>. The discussions are monitored 24 hours a day and we will do our best to assist.</p>
+<p>If you find a defect or would like to submit a feature request, please create an <a href="https://github.com/retypeapp/retype/issues">Issue</a> and we will investigate right away.</p>
 
     
                 <!-- Required only on API pages -->
