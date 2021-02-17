@@ -27,7 +27,7 @@
         <!-- Logo -->
         <div class="flex items-center h-full py-2">
             <div class="flex items-center px-2 md:px-6 md:w-72">
-                <span class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
+                <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
                     <a href="/">
                         <img class="dark:hidden" src="/static/retype-logo.svg">
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
@@ -102,11 +102,11 @@
 <div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
-    <div class="mt-6 px-6">
+    <div class="flex items-center h-16 px-6">
         <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
     </div>
 
-    <div class="pl-6 mb-4 mt-6">
+    <div class="pl-6 mb-4 mt-1">
         <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
