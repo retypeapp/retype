@@ -59,7 +59,7 @@ At a very basic level, to create a new page for your Retype project, do the foll
 
 In addition to the standard Markdown options (see [cheat sheet](https://www.markdownguide.org/cheat-sheet/)), Retype includes some nice extras...
 
-## Emojis :tada:
+## Emojis :heart_eyes_cat:
 
 Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:
 

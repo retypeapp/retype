@@ -1,12 +1,12 @@
 # Welcome to Retype :smile:
 
-Retype is an :sparkles: ultra-high-performance-magical :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest. 
+[Retype](https://retype.com/) is an :sparkles: ultra-high-performance-magical :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest. 
 
 ![Write anything, let Retype build the rest](static/retype-hero.svg)
 
 No coding is required and just one Markdown file, such as a [`README.md`](https://www.makeareadme.com/), will get you started. 
 
-View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
+The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
 
 A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
 
