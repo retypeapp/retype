@@ -25,8 +25,8 @@
         <div v-cloak id="docs-sidebar-toggle"></div>
 
         <!-- Logo -->
-        <div class="flex items-center h-full py-2">
-            <div class="flex items-center px-2 md:px-6 md:w-72">
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
                 <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
                     <a href="/">
                         <img class="dark:hidden" src="/static/retype-logo.svg">
@@ -99,7 +99,7 @@
 
     <div class="container relative flex bg-white">
         <!-- Sidebar Skeleton -->
-<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-72 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
 
     <!-- Render this div, if config.showSidebarFilter is `true` -->
     <div class="flex items-center h-16 px-6">
@@ -171,8 +171,7 @@
 
 
         <div class="flex-grow min-w-0 dark:bg-dark-850">
-            <!-- inject "toolbar" template here on api pages -->
-
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
             <div class="max-w-lg mx-auto mt-20 text-center px-6 sm:px-16 md:px-8">
     <div class="px-8 md:p-0 text-gray-300 dark:text-dark-650">
         <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-6" style="max-width: 313px" fill="currentColor" viewBox="0 0 313 164"><path d="M156.17 0c-22.28 0-48.83 10.93-48.83 63.03 0 52.36 26.55 63.35 48.83 63.35 22.28 0 48.83-10.99 48.83-63.35C205 10.93 178.45 0 156.17 0zm0 118.38c-27.47 0-40.83-18.1-40.83-55.35C115.35 26 128.7 8 156.17 8 183.65 8 197 26 197 63.03c0 37.24-13.35 55.35-40.83 55.35z"/><path d="M156.17 25.53c-22.03 0-22.03 24.4-22.03 37.5 0 13.22 0 37.82 22.03 37.82s22.03-24.6 22.03-37.82c0-13.11 0-37.5-22.03-37.5zm0 67.32c-10.49 0-14.03-7.53-14.03-29.82 0-21.78 3.67-29.5 14.03-29.5s14.03 7.72 14.03 29.5c0 22.3-3.54 29.82-14.03 29.82zM58.05 37.48a5.95 5.95 0 00-6.73 2.44l-20.51 31a5.986 5.986 0 00-.28 6.15 5.992 5.992 0 005.29 3.16h20.5c3.31 0 6-2.69 6-6v-31a5.95 5.95 0 00-4.27-5.75zm-3.72 34.75H39.54l14.78-22.35v22.35z"/><path d="M93.95 72.23h-6.8v-63c0-3.31-2.69-6-6-6H54.37c-1.96 0-3.8.96-4.92 2.56L1.08 74.98A5.946 5.946 0 000 78.42v18.91c0 3.31 2.69 6 6 6h46.45v14.29c0 3.31 2.69 6 6 6h22.69c3.31 0 6-2.69 6-6v-14.29h6.8c3.31 0 6-2.69 6-6v-19.1c.01-3.31-2.68-6-5.99-6zm-2 23.1h-6.8c-3.31 0-6 2.69-6 6v14.29h-18.7v-14.29c0-3.31-2.69-6-6-6H8V79.05l47.41-67.82h23.73v63c0 3.31 2.69 6 6 6h6.8v15.1zM306.95 72.23h-6.8v-63c0-3.31-2.69-6-6-6h-26.77c-1.96 0-3.8.96-4.92 2.56l-48.37 69.19a5.946 5.946 0 00-1.08 3.44v18.91c0 3.31 2.69 6 6 6h46.45v14.29c0 3.31 2.69 6 6 6h22.69c3.31 0 6-2.69 6-6v-14.29h6.8c3.31 0 6-2.69 6-6v-19.1c0-3.31-2.69-6-6-6zm-2 23.1h-6.8c-3.31 0-6 2.69-6 6v14.29h-18.69v-14.29c0-3.31-2.69-6-6-6H221V79.05l47.41-67.82h23.73v63c0 3.31 2.69 6 6 6h6.8v15.1z"/><path d="M271.05 37.48a5.95 5.95 0 00-6.73 2.44l-20.51 31a5.986 5.986 0 00-.28 6.15 5.992 5.992 0 005.29 3.16h20.5c3.31 0 6-2.69 6-6v-31a5.95 5.95 0 00-4.27-5.75zm-3.72 34.75h-14.78l14.78-22.35v22.35z"/><g><ellipse cx="158.97" cy="158.2" rx="36.9" ry="5.95"/></g></svg>
