@@ -77,7 +77,7 @@ Pages are [formatted](/formatting.md) using Markdown syntax. Page level [configu
 
 #### :computer: Host anywhere
 
-Retype generates a basic HTML website that you can host on any web hosting service, such as [gh-pages by GitHub](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
+Retype generates a basic HTML website that you can host on any web hosting service, such as [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
 
 ## Support
 
