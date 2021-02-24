@@ -1,4 +1,4 @@
-- [Home](README.md)
+- [Welcome to Retype](README.md)
 - [Getting Started](getting_started.md)
 - [Formatting](formatting.md)
 - [Project config](project_configuration.md)

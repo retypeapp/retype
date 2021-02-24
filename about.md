@@ -18,19 +18,22 @@ Version | Release date | Comments
 
 ### `v1.1.0`
 
-1. New Button component
-2. New Badge component
-3. New Tab component
-4. New `retype watch` command
-5. Much more...
+- New Tab component
+- New Button component
+- New Badge component
+- New Collapsible region component
+- New `retype watch` command
+- Much more...
 
 ### `v1.2.0`
 
-1. Build reference API for C# libraries
-2. Build reference API for TypeScript libraries
-3. Much more...
+- Build reference API's for C# libraries
 
-## Credits
+### `v1.3.0`
+
+- Build reference API's for TypeScript libraries
+
+## Credits :clap:
 
 Retype is only made possible because of the hard work of other amazing open-source and commercial projects. 
 

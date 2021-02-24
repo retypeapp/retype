@@ -13,13 +13,6 @@
         "title": " | Retype - Generate, publish, and share documentation"
     },
 
-    "nav": [{
-            "label": "Home",
-            "path": "/",
-            "icon": "home"
-        }
-    ],
-
     "links": [
         {
             "text": "Getting Started",
