@@ -4,9 +4,9 @@ Retype will read the `retype.json` file for additional instructions on how to co
 
 The `retype.json` is typically stored in the root of your project, although the file can be placed elsewhere. Please ensure the `input` and `output` paths are correct if moved to a different location.
 
-:::
+!!!
 After making a change to the `retype.json`, you should run `retype build` to generate a :sparkles: sparkly :sparkles: fresh new build of the project.
-:::
+!!!
 
 The `retype.json` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.json` is a good first step. See below for a full list of [options](#options).
 

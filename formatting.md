@@ -6,9 +6,9 @@ No special software is required to create an `.md` file. Any basic text editor w
 
 Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a full demonstration of the formatting possibilities and best practices.
 
-:::
+!!!
 View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/formatting.md) file used to create this page.
-:::
+!!!
 
 ## Quick start
 
@@ -46,9 +46,9 @@ Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples
 
 > "Cool! This is a quotation."
 
-:::
+!!!
 Need to draw attention to something? Use an alert.
-:::
+!!!
 ```
 
 At a very basic level, to create a new page for your Retype project, do the following:
@@ -83,19 +83,19 @@ Use Mojee to [search](https://mojee.io/emojis/) for the emojis your love and pas
 
 Alert components help to highlight important messages for the reader.
 
-To create an alert, just surround a block of text with `:::`.
+To create an alert, just surround a block of text with `!!!`.
 
 ```md
-:::
+!!!
 This is an alert.
-:::
+!!!
 ```
 
-:::
+!!!
 This is an alert.
-:::
+!!!
 
-Alerts come in 6 different flavors which can be specified by passing a `type` immediately after the `:::`, such as `:::danger`.
+Alerts come in 6 different flavors which can be specified by passing a `type` immediately after the `!!!`, such as `!!!danger`.
 
 Style | Color
 --- | ---
@@ -105,48 +105,48 @@ Style | Color
 `danger` | Red
 `note` | Dark or Light depending on time of day
 
-Alerts can also have titles. Add a space then add your title, such as `::: Title here` or `:::danger Title here`.
+Alerts can also have titles. Add a space then add your title, such as `!!! Title here` or `!!!danger Title here`.
 
 ### Alert demo
 
 ```
-:::info Info
+!!!info Info
 This is a `info` alert.
-:::
+!!!
 
-:::success Success
+!!!success Success
 This is a `success` alert.
-:::
+!!!
 
-:::caution Caution
+!!!caution Caution
 This is a `caution` alert.
-:::
+!!!
 
-:::danger Danger
+!!!danger Danger
 This is a `danger` alert.
-:::
+!!!
 
-:::note Note
+!!!note Note
 This is a `note` alert, with dark and light modes.
-:::
+!!!
 ```
 
-:::info Info
+!!!info Info
 This is a `info` alert.
-:::
+!!!
 
-:::success Success
+!!!success Success
 This is a `success` alert.
-:::
+!!!
 
-:::caution Caution
+!!!caution Caution
 This is a `caution` alert.
-:::
+!!!
 
-:::danger Danger
+!!!danger Danger
 This is a `danger` alert.
-:::
+!!!
 
-:::note Note
+!!!note Note
 This is a `note` alert, with dark and light modes.
-:::
+!!!

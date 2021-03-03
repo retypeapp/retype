@@ -10,13 +10,13 @@ The [retype.com](https://retype.com/) website was generated using Retype. View t
 
 A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
 
-:::success COMING SOON
+!!!success COMING SOON
 
 Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.
 
 Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library's source code, code comments, and metadata.
 
-:::
+!!!
 
 ## Quick start
 
@@ -45,13 +45,13 @@ retype run
 
 That's it! Your new Retype website should be up and running. 
 
-:::
+!!!
 
 You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
 
 All operating systems are supported, including Mac, Windows, and Linux.
 
-:::
+!!!
 
 ## Features
 

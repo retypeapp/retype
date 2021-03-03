@@ -29,11 +29,11 @@ yarn global add retypeapp
 dotnet tool install --global retypeapp
 ```
 
-:::
+!!!
 
 If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install --global retypeapp` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run at the same performance.
 
-:::
+!!!
 
 ## Init
 

@@ -35,7 +35,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.0</span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -200,11 +200,14 @@
     </h2>
 </doc-anchor-target>
 <p>The following sample demonstrates a very basic <code v-pre>.md</code> page sample with page title and one paragraph.</p>
-<pre v-highlight:markdown><code v-pre># Page title here
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
 
 This is just a paragraph. </code></pre>
+</doc-codeblock></div>
 <p>We can build on the above by more formatting options such as <strong>bold</strong> text, images, and lists.</p>
-<pre v-highlight:markdown><code v-pre># Page title here
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
 
 This is just a paragraph. 
 
@@ -226,9 +229,10 @@ Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples
 
 &gt; &quot;Cool! This is a quotation.&quot;
 
-:::
+!!!
 Need to draw attention to something? Use an alert.
-:::</code></pre>
+!!!</code></pre>
+</doc-codeblock></div>
 <p>At a very basic level, to create a new page for your Retype project, do the following:</p>
 <ol>
 <li>Create a <code v-pre>.md</code> file</li>
@@ -236,9 +240,9 @@ Need to draw attention to something? Use an alert.
 <li>Start writing</li>
 </ol>
 <p>In addition to the standard Markdown options (see <a href="https://www.markdownguide.org/cheat-sheet/">cheat sheet</a>), Retype includes some nice extras...</p>
-<doc-anchor-target id="emojis-heart_eyes_cat">
+<doc-anchor-target id="emojis">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#emojis-heart_eyes_cat">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#emojis">#</doc-anchor-trigger>
         <span>Emojis <span class="docs-emoji">😻</span></span>
     </h2>
 </doc-anchor-target>
@@ -378,13 +382,15 @@ Need to draw attention to something? Use an alert.
     </h2>
 </doc-anchor-target>
 <p>Alert components help to highlight important messages for the reader.</p>
-<p>To create an alert, just surround a block of text with <code v-pre>:::</code>.</p>
-<pre v-highlight:markdown><code v-pre>:::
+<p>To create an alert, just surround a block of text with <code v-pre>!!!</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markdown"><code v-pre class="language-markdown">!!!
 This is an alert.
-:::</code></pre>
+!!!</code></pre>
+</doc-codeblock></div>
 <doc-alert type="primary"><p>This is an alert.</p>
 </doc-alert>
-<p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>type</code> immediately after the <code v-pre>:::</code>, such as <code v-pre>:::danger</code>.</p>
+<p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>type</code> immediately after the <code v-pre>!!!</code>, such as <code v-pre>!!!danger</code>.</p>
 <table>
 <thead>
 <tr>
@@ -415,32 +421,34 @@ This is an alert.
 </tr>
 </tbody>
 </table>
-<p>Alerts can also have titles. Add a space then add your title, such as <code v-pre>::: Title here</code> or <code v-pre>:::danger Title here</code>.</p>
+<p>Alerts can also have titles. Add a space then add your title, such as <code v-pre>!!! Title here</code> or <code v-pre>!!!danger Title here</code>.</p>
 <doc-anchor-target id="alert-demo">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#alert-demo">#</doc-anchor-trigger>
         <span>Alert demo</span>
     </h3>
 </doc-anchor-target>
-<pre v-highlight><code v-pre>:::info Info
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">!!!info Info
 This is a `info` alert.
-:::
+!!!
 
-:::success Success
+!!!success Success
 This is a `success` alert.
-:::
+!!!
 
-:::caution Caution
+!!!caution Caution
 This is a `caution` alert.
-:::
+!!!
 
-:::danger Danger
+!!!danger Danger
 This is a `danger` alert.
-:::
+!!!
 
-:::note Note
+!!!note Note
 This is a `note` alert, with dark and light modes.
-:::</code></pre>
+!!!</code></pre>
+</doc-codeblock></div>
 <doc-alert type="primary" title="Info"><p>This is a <code v-pre>info</code> alert.</p>
 </doc-alert>
 <doc-alert type="success" title="Success"><p>This is a <code v-pre>success</code> alert.</p>

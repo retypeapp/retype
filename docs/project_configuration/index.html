@@ -35,7 +35,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.0</span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -192,7 +192,7 @@
 <p>The <code v-pre>retype.json</code> is typically stored in the root of your project, although the file can be placed elsewhere. Please ensure the <code v-pre>input</code> and <code v-pre>output</code> paths are correct if moved to a different location.</p>
 <doc-alert type="primary"><p>After making a change to the <code v-pre>retype.json</code>, you should run <code v-pre>retype build</code> to generate a <span class="docs-emoji">✨</span> sparkly <span class="docs-emoji">✨</span> fresh new build of the project.</p>
 </doc-alert>
-<p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step. See below for a full list of <a href="#options">options</a>.</p>
+<p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step. See below for a full list of <doc-anchor-trigger to="#options">options</doc-anchor-trigger>.</p>
 <p>Running the command <code v-pre>retype init</code> will create a default <code v-pre>retype.json</code> file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.</p>
 <doc-anchor-target id="sample-retype-json">
     <h4>
@@ -200,7 +200,8 @@
         <span>Sample <code v-pre>retype.json</code></span>
     </h4>
 </doc-anchor-target>
-<pre v-highlight:json><code v-pre>{
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;.&quot;,
   &quot;output&quot;: &quot;./retype&quot;,
 
@@ -228,6 +229,7 @@
     &quot;copyright&quot;: &quot;© Copyright {{ year }}. All rights reserved.&quot;
   }
 }</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="options">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
@@ -398,13 +400,13 @@
 <td></td>
 <td></td>
 <td></td>
-<td>- Octicons icon name, e.g. <code v-pre>home</code> (see more: <a href="https://primer.style/octicons/">https://primer.style/octicons/</a>)</td>
+<td>- Octicons icon name, e.g. <code v-pre>home</code> (see more: <doc-anchor-trigger to="https://primer.style/octicons/">https://primer.style/octicons/</doc-anchor-trigger>)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
-<td>- Emoji shortcode, e.g. <code v-pre>:smile:</code> (see more: <a href="https://mojee.io/emojis/">https://mojee.io/emojis/</a>)</td>
+<td>- Emoji shortcode, e.g. <code v-pre>:smile:</code> (see more: <doc-anchor-trigger to="https://mojee.io/emojis/">https://mojee.io/emojis/</doc-anchor-trigger>)</td>
 </tr>
 <tr>
 <td></td>

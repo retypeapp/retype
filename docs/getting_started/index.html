@@ -35,7 +35,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.0</span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -188,7 +188,7 @@
         <span>Getting Started</span>
     </h1>
 </doc-anchor-target>
-<p>Getting started with Retype is super quick and you can be up and running within seconds. Check out the <a href="#quick-start">Quick Start</a> for the condensed process, or continue here with the full details and expanded steps.</p>
+<p>Getting started with Retype is super quick and you can be up and running within seconds. Check out the <a href="..#quick-start">Quick Start</a> for the condensed process, or continue here with the full details and expanded steps.</p>
 <doc-anchor-target id="prerequisites">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
@@ -226,7 +226,8 @@
     </h2>
 </doc-anchor-target>
 <p>It takes just a few seconds to install Retype using any of the following commands. Choose a command for a Package Manager you have installed on your computer.</p>
-<pre v-highlight:bash><code v-pre># npm
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-bash"><code v-pre class="language-bash"># npm
 npm install --global retypeapp
 
 # Yarn
@@ -234,6 +235,7 @@ yarn global add retypeapp
 
 # dotnet
 dotnet tool install --global retypeapp</code></pre>
+</doc-codeblock></div>
 <doc-alert type="primary"><p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install --global retypeapp</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run at the same performance.</p>
 </doc-alert>
 <doc-anchor-target id="init">
@@ -245,7 +247,9 @@ dotnet tool install --global retypeapp</code></pre>
 <p>The next step is to create a <code v-pre>retype.json</code> configuration file for you project. The <code v-pre>retype.json</code> file isn&#39;t <em>actually</em> required, but you will want to make <a href="project_configurations.md">customizations</a> to your project and this is how those instructions are passed to Retype.</p>
 <p>You can manually create a <code v-pre>retype.json</code> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
 <p>From your command line, navigate to any folder location where you have one or more Markdown <code v-pre>.md</code> files, such as the root of a GitHub project, then run the following command:</p>
-<pre v-highlight><code v-pre>retype init</code></pre>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">retype init</code></pre>
+</doc-codeblock></div>
 <p>Calling the <code v-pre>retype init</code> command will create a simple <code v-pre>retype.json</code> file with the following default values:</p>
 <doc-anchor-target id="sample-retype-json">
     <h4>
@@ -253,7 +257,8 @@ dotnet tool install --global retypeapp</code></pre>
         <span>Sample <code v-pre>retype.json</code></span>
     </h4>
 </doc-anchor-target>
-<pre v-highlight:json><code v-pre>{
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;.&quot;,
   &quot;output&quot;: &quot;./retype&quot;,
 
@@ -281,14 +286,17 @@ dotnet tool install --global retypeapp</code></pre>
     &quot;copyright&quot;: &quot;© Copyright {{ year }}. All rights reserved.&quot;
   }
 }</code></pre>
+</doc-codeblock></div>
 <p>All the configs are optional, but the above demonstrates a few of the options you will typically want to start with. See the <a href="../project_configuration">Project Configuration</a> docs for a full list of all options.</p>
 <p>To change the title of the project, revise the <code v-pre>identity.title</code> config. For instance, let&#39;s change to <code v-pre>&quot;Company X&quot;</code>:</p>
-<pre v-highlight:json><code v-pre>{
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;identity&quot;: 
   {
     &quot;title&quot;: &quot;Company X&quot;,
   }
 }</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="build">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#build">#</doc-anchor-trigger>
@@ -296,23 +304,31 @@ dotnet tool install --global retypeapp</code></pre>
     </h2>
 </doc-anchor-target>
 <p>To generate your new website, run the command <code v-pre>retype build</code>.</p>
-<pre v-highlight><code v-pre>retype build</code></pre>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
+</doc-codeblock></div>
 <p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.json</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
 <p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but in a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
-<pre v-highlight:json><code v-pre>{
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;docs&quot;,
   &quot;output&quot;: &quot;website&quot;,
 }</code></pre>
+</doc-codeblock></div>
 <p>Let&#39;s say you wanted the your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
-<pre v-highlight:json><code v-pre>{
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;docs&quot;,
   &quot;output&quot;: &quot;website/docs&quot;
 }</code></pre>
+</doc-codeblock></div>
 <p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>, you should output to the <code v-pre>docs</code> folder. You could then move your <code v-pre>.md</code> files into a different subfolder and configure as follows:</p>
-<pre v-highlight:json><code v-pre>{
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;src&quot;,
   &quot;output&quot;: &quot;docs&quot;
 }</code></pre>
+</doc-codeblock></div>
 <p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide an unlimited flexibility to instruct Retype on where to get your project <code v-pre>.md</code> files and where to output the generated website.</p>
 <doc-anchor-target id="run">
     <h2>
@@ -321,7 +337,9 @@ dotnet tool install --global retypeapp</code></pre>
     </h2>
 </doc-anchor-target>
 <p>To view the new Retype generated website, just run the command <code v-pre>retype run</code>.</p>
-<pre v-highlight><code v-pre>retype run</code></pre>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">retype run</code></pre>
+</doc-codeblock></div>
 <p><strong>That&#39;s it!</strong> Your new Retype website should be up and running.</p>
 <p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any web server, including as a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> website.</p>
 <p>You can also use any other local web server instead of <code v-pre>retype run</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
@@ -333,7 +351,8 @@ dotnet tool install --global retypeapp</code></pre>
 </doc-anchor-target>
 <p>Done with Retype? It&#39;s okay, we understand. <span class="docs-emoji">😢</span></p>
 <p>Uninstalling Retype is just as simple as installing. Use the same Package Manager to uninstall as you did to install. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> uninstall command to remove.</p>
-<pre v-highlight:bash><code v-pre># npm
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-bash"><code v-pre class="language-bash"># npm
 npm uninstall --global retypeapp
 
 # yarn
@@ -341,6 +360,7 @@ yarn global remove retypeapp
 
 # dotnet
 dotnet tool uninstall --global retypeapp</code></pre>
+</doc-codeblock></div>
 <p>Any Retype related files within your project can be deleted, such as the <code v-pre>retype.json</code>.</p>
 
     

@@ -35,7 +35,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.0</span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -182,9 +182,9 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="welcome-to-retype-smile" class="break-words">
+<doc-anchor-target id="welcome-to-retype" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#welcome-to-retype-smile">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#welcome-to-retype">#</doc-anchor-trigger>
         <span>Welcome to Retype <span class="docs-emoji">😄</span></span>
     </h1>
 </doc-anchor-target>
@@ -204,7 +204,8 @@
 </doc-anchor-target>
 <p>You can install Retype using <code v-pre>npm</code>, <code v-pre>yarn</code>, or the <code v-pre>dotnet</code> CLI.</p>
 <p>Choose one of the following lines and run within your local Command line or Terminal:</p>
-<pre v-highlight:bash><code v-pre># npm
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-bash"><code v-pre class="language-bash"># npm
 npm install --global retypeapp
 
 # Yarn
@@ -212,10 +213,13 @@ yarn global add retypeapp
 
 # dotnet
 dotnet tool install --global retypeapp</code></pre>
+</doc-codeblock></div>
 <p>Next, from your command line, navigate to a folder location where you have one or more Markdown <code v-pre>.md</code> files, then run the following commands.</p>
-<pre v-highlight><code v-pre>retype init
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">retype init
 retype build
 retype run</code></pre>
+</doc-codeblock></div>
 <p>That&#39;s it! Your new Retype website should be up and running.</p>
 <doc-alert type="primary"><p>You will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It&#39;s up to you. <span class="docs-emoji">🙌</span></p>
 <p>All operating systems are supported, including Mac, Windows, and Linux.</p>
