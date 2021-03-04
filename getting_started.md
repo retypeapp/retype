@@ -18,16 +18,22 @@ You only need one of those three as a prerequisite, although all three could be 
 
 It takes just a few seconds to install Retype using any of the following commands. Choose a command for a Package Manager you have installed on your computer.
 
-```sh
-# npm
-npm install --global retypeapp
-
-# Yarn
-yarn global add retypeapp
-
-# dotnet
-dotnet tool install --global retypeapp
+||| NPM
 ```
+npm install --global retypeapp
+retype watch
+```
+||| Yarn
+```
+yarn global add retypeapp
+retype watch
+```
+||| dotnet
+```
+dotnet tool install --global retypeapp
+retype watch
+```
+|||
 
 !!!
 

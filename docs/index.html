@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>Welcome to Retype &#128516; | Retype - Generate, publish, and share documentation</title>
+    <title>Welcome to Retype | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Retype is an :sparkles: ultra-high-performance-magical :sparkles: generator that builds a website based on simple text files." />
+    <meta name="description" content="Retype is an :sparkles: ultra-high-performance :sparkles: generator that builds a website based on simple text files." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -185,17 +185,14 @@
 <doc-anchor-target id="welcome-to-retype" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#welcome-to-retype">#</doc-anchor-trigger>
-        <span>Welcome to Retype <span class="docs-emoji">😄</span></span>
+        <span>Welcome to Retype</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://retype.com/">Retype</a> is an <span class="docs-emoji">✨</span> ultra-high-performance-magical <span class="docs-emoji">✨</span> generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.</p>
+<p><a href="https://retype.com/">Retype</a> is an <span class="docs-emoji">✨</span> ultra-high-performance <span class="docs-emoji">✨</span> generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.</p>
 <p><img src="static/retype-hero.svg" alt="Write anything, let Retype build the rest" /></p>
 <p>No coding is required and just one Markdown file, such as a <a href="https://www.makeareadme.com/"><code v-pre>README.md</code></a>, will get you started.</p>
 <p>The <a href="https://retype.com/">retype.com</a> website was generated using Retype. View the <a href="https://github.com/retypeapp/retype/blob/main/README.md">source</a> used to generate this very page.</p>
 <p>A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. <span class="docs-emoji">👍</span></p>
-<doc-alert type="success" title="COMING SOON"><p>Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.</p>
-<p>Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library&#39;s source code, code comments, and metadata.</p>
-</doc-alert>
 <doc-anchor-target id="quick-start">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#quick-start">#</doc-anchor-trigger>
@@ -203,26 +200,47 @@
     </h2>
 </doc-anchor-target>
 <p>You can install Retype using <code v-pre>npm</code>, <code v-pre>yarn</code>, or the <code v-pre>dotnet</code> CLI.</p>
-<p>Choose one of the following lines and run within your local Command line or Terminal:</p>
+<p>From your command line, navigate to a folder location where you have one or more Markdown <code v-pre>.md</code> files, then choose one of the following tools to first install <code v-pre>retypeapp</code> and then start by using <code v-pre>retype watch</code>:</p>
+<doc-tabs>
+<doc-tab id="npm">
+<template #title>NPM</template>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-bash"><code v-pre class="language-bash"># npm
-npm install --global retypeapp
-
-# Yarn
-yarn global add retypeapp
-
-# dotnet
-dotnet tool install --global retypeapp</code></pre>
+<pre class="language-none"><code v-pre class="language-none">npm install --global retypeapp
+retype watch</code></pre>
 </doc-codeblock></div>
-<p>Next, from your command line, navigate to a folder location where you have one or more Markdown <code v-pre>.md</code> files, then run the following commands.</p>
+</doc-tab>
+<doc-tab id="yarn">
+<template #title>Yarn</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp
+retype watch</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="dotnet">
+<template #title>dotnet</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install --global retypeapp
+retype watch</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<p>That&#39;s it! Your new Retype website should be up and running.</p>
+<p>If a change is detected, such as editing and saving a <code v-pre>.md</code> file, your Retype website will be updated almost instantly within the browser.</p>
+<doc-alert type="primary">
+<p>You will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It&#39;s up to you. <span class="docs-emoji">🙌</span></p>
+<p>All operating systems are supported, including Mac, Windows, and Linux.</p>
+</doc-alert>
+<p>The <code v-pre>retype watch</code> command runs the following three commands and listens for any new changes in your content.</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-none"><code v-pre class="language-none">retype init
 retype build
 retype run</code></pre>
 </doc-codeblock></div>
-<p>That&#39;s it! Your new Retype website should be up and running.</p>
-<doc-alert type="primary"><p>You will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It&#39;s up to you. <span class="docs-emoji">🙌</span></p>
-<p>All operating systems are supported, including Mac, Windows, and Linux.</p>
+<p>After running <code v-pre>retype watch</code>, edit any <code v-pre>.md</code> file and see your change appear in the browser.</p>
+<doc-alert type="success">
+<template #title>COMING SOON</template>
+<p>Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.</p>
+<p>Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library&#39;s source code, code comments, and metadata.</p>
 </doc-alert>
 <doc-anchor-target id="features">
     <h2>
@@ -324,7 +342,7 @@ retype run</code></pre>
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Welcome to Retype <span class=\"docs-emoji\">😄</span>", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Welcome to Retype", icon: "file" }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

@@ -1,6 +1,6 @@
-# Welcome to Retype :smile:
+# Welcome to Retype
 
-[Retype](https://retype.com/) is an :sparkles: ultra-high-performance-magical :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest. 
+[Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
 
 ![Write anything, let Retype build the rest](static/retype-hero.svg)
 
@@ -10,6 +10,49 @@ The [retype.com](https://retype.com/) website was generated using Retype. View t
 
 A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
 
+## Quick start
+
+You can install Retype using `npm`, `yarn`, or the `dotnet` CLI. 
+
+From your command line, navigate to a folder location where you have one or more Markdown `.md` files, then choose one of the following tools to first install `retypeapp` and then start by using `retype watch`:
+
+||| NPM
+```
+npm install --global retypeapp
+retype watch
+```
+||| Yarn
+```
+yarn global add retypeapp
+retype watch
+```
+||| dotnet
+```
+dotnet tool install --global retypeapp
+retype watch
+```
+|||
+
+That's it! Your new Retype website should be up and running. 
+
+If a change is detected, such as editing and saving a `.md` file, your Retype website will be updated almost instantly within the browser.
+
+!!!
+You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
+
+All operating systems are supported, including Mac, Windows, and Linux.
+!!!
+
+The `retype watch` command runs the following three commands and listens for any new changes in your content.
+
+```
+retype init
+retype build
+retype run
+```
+
+After running `retype watch`, edit any `.md` file and see your change appear in the browser.
+
 !!!success COMING SOON
 
 Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.
@@ -18,40 +61,6 @@ Point Retype at a TypeScript or C# project, and reference documentation will be 
 
 !!!
 
-## Quick start
-
-You can install Retype using `npm`, `yarn`, or the `dotnet` CLI. 
-
-Choose one of the following lines and run within your local Command line or Terminal:
-
-```sh
-# npm
-npm install --global retypeapp
-
-# Yarn
-yarn global add retypeapp
-
-# dotnet
-dotnet tool install --global retypeapp
-```
-
-Next, from your command line, navigate to a folder location where you have one or more Markdown `.md` files, then run the following commands.
-
-```
-retype init
-retype build
-retype run
-```
-
-That's it! Your new Retype website should be up and running. 
-
-!!!
-
-You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
-
-All operating systems are supported, including Mac, Windows, and Linux.
-
-!!!
 
 ## Features
 

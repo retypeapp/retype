@@ -226,17 +226,31 @@
     </h2>
 </doc-anchor-target>
 <p>It takes just a few seconds to install Retype using any of the following commands. Choose a command for a Package Manager you have installed on your computer.</p>
+<doc-tabs>
+<doc-tab id="npm">
+<template #title>NPM</template>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-bash"><code v-pre class="language-bash"># npm
-npm install --global retypeapp
-
-# Yarn
-yarn global add retypeapp
-
-# dotnet
-dotnet tool install --global retypeapp</code></pre>
+<pre class="language-none"><code v-pre class="language-none">npm install --global retypeapp
+retype watch</code></pre>
 </doc-codeblock></div>
-<doc-alert type="primary"><p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install --global retypeapp</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run at the same performance.</p>
+</doc-tab>
+<doc-tab id="yarn">
+<template #title>Yarn</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp
+retype watch</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="dotnet">
+<template #title>dotnet</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install --global retypeapp
+retype watch</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-alert type="primary">
+<p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install --global retypeapp</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run at the same performance.</p>
 </doc-alert>
 <doc-anchor-target id="init">
     <h2>
