@@ -195,13 +195,8 @@
 </doc-alert>
 <p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step. See below for a full list of <doc-anchor-trigger to="#options">options</doc-anchor-trigger>.</p>
 <p>Running the command <code v-pre>retype init</code> will create a default <code v-pre>retype.json</code> file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.</p>
-<doc-anchor-target id="sample-retype-json">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-retype-json">#</doc-anchor-trigger>
-        <span>Sample <code v-pre>retype.json</code></span>
-    </h4>
-</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample retype.json</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;.&quot;,
   &quot;output&quot;: &quot;./retype&quot;,
@@ -290,6 +285,12 @@
 <td>Common title suffix</td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td><code v-pre>identity</code></td>
 <td><code v-pre>object</code></td>
 <td></td>
@@ -356,6 +357,12 @@
 <td>Background color</td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td><code v-pre>links</code></td>
 <td><code v-pre>array</code></td>
 <td></td>
@@ -374,46 +381,10 @@
 <td>Navigation link URL</td>
 </tr>
 <tr>
-<td><code v-pre>nav</code></td>
-<td><code v-pre>array</code></td>
-<td></td>
-<td>Sidebar root-level navigation configuraton</td>
-</tr>
-<tr>
-<td><code v-pre>nav[].path</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Relative path as it appears in the url</td>
-</tr>
-<tr>
-<td><code v-pre>nav[].label</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Optional label. When set, overrides the item label inferred from title</td>
-</tr>
-<tr>
-<td><code v-pre>nav[].icon</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Optional item icon. Could be one from the following options:</td>
-</tr>
-<tr>
 <td></td>
 <td></td>
 <td></td>
-<td>- Octicons icon name, e.g. <code v-pre>home</code> (see more: <doc-anchor-trigger to="https://primer.style/octicons/">https://primer.style/octicons/</doc-anchor-trigger>)</td>
-</tr>
-<tr>
 <td></td>
-<td></td>
-<td></td>
-<td>- Emoji shortcode, e.g. <code v-pre>:smile:</code> (see more: <doc-anchor-trigger to="https://mojee.io/emojis/">https://mojee.io/emojis/</doc-anchor-trigger>)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>- Svg element (<code v-pre>&lt;svg&gt;..&lt;/svg&gt;</code>)</td>
 </tr>
 <tr>
 <td><code v-pre>footer</code></td>
@@ -446,6 +417,12 @@
 <td>Navigation link URL</td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td><code v-pre>plugins</code></td>
 <td><code v-pre>object</code></td>
 <td></td>
@@ -468,6 +445,12 @@
 <td><code v-pre>string</code></td>
 <td></td>
 <td>Google Analytics ID</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><code v-pre>search</code></td>
@@ -504,6 +487,48 @@
 <td><code v-pre>string</code></td>
 <td><code v-pre>Sorry, no results found.</code></td>
 <td>Message rendered when no results were found</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code v-pre>code</code></td>
+<td><code v-pre>object</code></td>
+<td></td>
+<td>Source code reference configuration</td>
+</tr>
+<tr>
+<td><code v-pre>code.input</code></td>
+<td><code v-pre>string</code></td>
+<td></td>
+<td>Path to a project file, or a project directory</td>
+</tr>
+<tr>
+<td><code v-pre>code.output</code></td>
+<td><code v-pre>string</code></td>
+<td><code v-pre>./api</code></td>
+<td>Custom path to the API output directory. Relative to <code v-pre>output</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code v-pre>snippets</code></td>
+<td><code v-pre>object</code></td>
+<td></td>
+<td>Snippets configuration</td>
+</tr>
+<tr>
+<td><code v-pre>lineNumbers</code></td>
+<td><code v-pre>array</code></td>
+<td></td>
+<td>Enables line numbers for the pecified languages. The <code v-pre>*</code> (any language) and <code v-pre>none</code> (no language) wildcards are supported.</td>
 </tr>
 </tbody>
 </table>

@@ -12,9 +12,7 @@ The `retype.json` file is actually optional (not required), but is recommended a
 
 Running the command `retype init` will create a default `retype.json` file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.
 
-#### Sample `retype.json`
-
-```json
+```json Sample retype.json
 {
   "input": ".",
   "output": "./retype",
@@ -56,6 +54,7 @@ Running the command `retype init` will create a default `retype.json` file. The 
 | `cname`                              | `string` |                            | If specified, a `CNAME` file with the value provided will be created                                                            |
 | `meta`                               | `object` |                            | Meta configuration                                                                                                              |
 | `meta.title`                         | `string` |                            | Common title suffix                                                                                                             |
+|                                      |          |                            |                                                                                                                                 |
 | `identity`                           | `object` |                            | Identity configuration                                                                                                          |
 | `identity.title`                     | `string` | `Project Name`             | Logo Title. Displayed when `$(logo)` and `$(logoDark)` are not configured                                                       |
 | `identity.label`                     | `string` |                            | Optional Logo Label text.                                                                                                       |
@@ -67,28 +66,32 @@ Running the command `retype init` will create a default `retype.json` file. The 
 | `identity.colors.label`              | `object` |                            | Logo label colors                                                                                                               |
 | `identity.colors.label.text`         | `string` | `#1f7aff`                  | Text color                                                                                                                      |
 | `identity.colors.label.background`   | `string` | `#e1edff`                  | Background color                                                                                                                |
+|                                      |          |                            |                                                                                                                                 |
 | `links`                              | `array`  |                            | Top-level navigation link configuration                                                                                         |
 | `links[].text`                       | `string` |                            | Navigation link text                                                                                                            |
 | `links[].link`                       | `string` |                            | Navigation link URL                                                                                                             |
-| `nav`                                | `array`  |                            | Sidebar root-level navigation configuraton                                                                                      |
-| `nav[].path`                         | `string` |                            | Relative path as it appears in the url                                                                                          |
-| `nav[].label`                        | `string` |                            | Optional label. When set, overrides the item label inferred from title                                                          |
-| `nav[].icon`                         | `string` |                            | Optional item icon. Could be one from the following options:                                                                    |
-|                                      |          |                            | - Octicons icon name, e.g. `home` (see more: https://primer.style/octicons/)                                                    |
-|                                      |          |                            | - Emoji shortcode, e.g. `:smile:` (see more: https://mojee.io/emojis/)                                                          |
-|                                      |          |                            | - Svg element (`<svg>..</svg>`)                                                                                                 |
+|                                      |          |                            |                                                                                                                                 |
 | `footer`                             | `object` |                            | Footer configuration                                                                                                            |
 | `footer.copyright`                   | `string` |                            | Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable |
 | `footer.links`                       | `array`  |                            | Footer navigation link configuration                                                                                            |
 | `footer.links[].text`                | `string` |                            | Navigation link text                                                                                                            |
 | `footer.links[].link`                | `string` |                            | Navigation link URL                                                                                                             |
+|                                      |          |                            |                                                                                                                                 |
 | `plugins`                            | `object` |                            | Plugin configuration                                                                                                            |
 | `plugins.google`                     | `object` |                            | Google Plugin configuration                                                                                                     |
 | `plugins.google.analytics`           | `object` |                            | Google Analytics configuration                                                                                                  |
 | `plugins.google.analytics.id`        | `string` |                            | Google Analytics ID                                                                                                             |
+|                                      |          |                            |                                                                                                                                 |
 | `search`                             | `object` |                            | Search configuration                                                                                                            |
 | `search.minChars`                    | `number` | 3                          | Min number of characters required in a search query                                                                             |
 | `search.maxResults`                  | `number` | 20                         | Max number of search results to render                                                                                          |
 | `search.placeholder`                 | `string` | `Search`                   | Placeholder text rendered on the search component                                                                               |
 | `search.hotkeys`                     | `array`  | `["/"]`                    | Hotkeys (KeyboardEvent.key) enabling the search component                                                                       |
 | `search.noResultsFoundMsg`           | `string` | `Sorry, no results found.` | Message rendered when no results were found                                                                                     |
+|                                      |          |                            |                                                                                                                                 |
+| `code`                               | `object` |                            | Source code reference configuration                                                                                             |
+| `code.input`                         | `string` |                            | Path to a project file, or a project directory                                                                                  |
+| `code.output`                        | `string` | `./api`                    | Custom path to the API output directory. Relative to `output`                                                                   |
+|                                      |          |                            |                                                                                                                                 |
+| `snippets`                           | `object` |                            | Snippets configuration                                                                                                          |
+| `lineNumbers`                        | `array`  |                            | Enables line numbers for the pecified languages. The `*` (any language) and `none` (no language) wildcards are supported.       |

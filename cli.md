@@ -12,6 +12,34 @@ Let's go through each of the `retype` CLI commands, or be sure to check out the 
 
 ## Commands
 
+### `retype watch`
+
+The `retype watch` command is equivalent to running the following three commands in sequence:
+
+```
+retype init
+retype build
+retype run
+```
+
+`retype watch` will also watch for file changes and will automatically update the website in the browser with the updated page.
+
+```
+watch:
+  Serve a static website and watch for file changes.
+
+Usage:
+  retype watch [options] [<path>]
+
+Arguments:
+  <path>    Path to the project root or retype.json [Optional]
+
+Options:
+  -c, --code        Watch for code changes
+  -v, --verbose     Verbose logging
+  -?, -h, --help    Show help and usage information
+```
+
 ### `retype init`
 
 Create a new `retype.json` configuration file if one is not already present.

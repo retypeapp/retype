@@ -392,34 +392,50 @@ This is an alert.
 <doc-alert variant="primary">
 <p>This is an alert.</p>
 </doc-alert>
-<p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>type</code> immediately after the <code v-pre>!!!</code>, such as <code v-pre>!!!danger</code>.</p>
+<p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>variant</code> immediately after the <code v-pre>!!!</code>, such as <code v-pre>!!!danger</code>.</p>
 <table>
 <thead>
 <tr>
-<th>Style</th>
+<th>Variant</th>
 <th>Color</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>info</code> or none</td>
-<td>Blue</td>
+<td><code v-pre>primary</code> (default)</td>
+<td><code v-pre>blue</code></td>
+</tr>
+<tr>
+<td><code v-pre>secondary</code></td>
+<td><code v-pre>gray</code></td>
 </tr>
 <tr>
 <td><code v-pre>success</code></td>
-<td>Green</td>
-</tr>
-<tr>
-<td><code v-pre>caution</code></td>
-<td>Yellow</td>
+<td><code v-pre>green</code></td>
 </tr>
 <tr>
 <td><code v-pre>danger</code></td>
-<td>Red</td>
+<td><code v-pre>red</code></td>
 </tr>
 <tr>
-<td><code v-pre>note</code></td>
-<td>Dark or Light depending on time of day</td>
+<td><code v-pre>warning</code></td>
+<td><code v-pre>yellow</code></td>
+</tr>
+<tr>
+<td><code v-pre>info</code></td>
+<td><code v-pre>light-blue</code></td>
+</tr>
+<tr>
+<td><code v-pre>light</code></td>
+<td><code v-pre>light</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark</code></td>
+<td><code v-pre>dark</code></td>
+</tr>
+<tr>
+<td><code v-pre>contrast</code></td>
+<td><code v-pre>light</code> or <code v-pre>dark</code> depending on time of day</td>
 </tr>
 </tbody>
 </table>
@@ -431,46 +447,411 @@ This is an alert.
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">!!!info Info
-This is a `info` alert.
+<pre class="language-none"><code v-pre class="language-none">!!!primary Primary
+This is a `primary` alert.
+!!!
+
+!!!secondary Secondary
+This is a `secondary` alert.
 !!!
 
 !!!success Success
 This is a `success` alert.
 !!!
 
-!!!caution Caution
-This is a `caution` alert.
-!!!
-
 !!!danger Danger
 This is a `danger` alert.
 !!!
 
-!!!note Note
-This is a `note` alert, with dark and light modes.
+!!!warning Warning
+This is a `warning` alert.
+!!!
+
+!!!info Info
+This is a `info` alert.
+!!!
+
+!!!light Light
+This is a `light` alert.
+!!!
+
+!!!dark Dark
+This is a `dark` alert.
+!!!
+
+!!!contrast Contrast
+This is a `contrast` alert.
 !!!</code></pre>
 </doc-codeblock></div>
-<doc-alert variant="info">
-<template #title>Info</template>
-<p>This is a <code v-pre>info</code> alert.</p>
+<doc-alert variant="primary">
+<template #title>Primary</template>
+<p>This is a <code v-pre>primary</code> alert.</p>
+</doc-alert>
+<doc-alert variant="secondary">
+<template #title>Secondary</template>
+<p>This is a <code v-pre>secondary</code> alert.</p>
 </doc-alert>
 <doc-alert variant="success">
 <template #title>Success</template>
 <p>This is a <code v-pre>success</code> alert.</p>
 </doc-alert>
-<doc-alert variant="primary">
-<template #title>caution Caution</template>
-<p>This is a <code v-pre>caution</code> alert.</p>
-</doc-alert>
 <doc-alert variant="danger">
 <template #title>Danger</template>
 <p>This is a <code v-pre>danger</code> alert.</p>
 </doc-alert>
-<doc-alert variant="primary">
-<template #title>note Note</template>
-<p>This is a <code v-pre>note</code> alert, with dark and light modes.</p>
+<doc-alert variant="warning">
+<template #title>Warning</template>
+<p>This is a <code v-pre>warning</code> alert.</p>
 </doc-alert>
+<doc-alert variant="info">
+<template #title>Info</template>
+<p>This is a <code v-pre>info</code> alert.</p>
+</doc-alert>
+<doc-alert variant="light">
+<template #title>Light</template>
+<p>This is a <code v-pre>light</code> alert.</p>
+</doc-alert>
+<doc-alert variant="dark">
+<template #title>Dark</template>
+<p>This is a <code v-pre>dark</code> alert.</p>
+</doc-alert>
+<doc-alert variant="contrast">
+<template #title>Contrast</template>
+<p>This is a <code v-pre>contrast</code> alert.</p>
+</doc-alert>
+<doc-anchor-target id="tabs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tabs">#</doc-anchor-trigger>
+        <span>Tabs</span>
+    </h2>
+</doc-anchor-target>
+<p>Tabs are super simple to configure by just surrounding a block of text with <code v-pre>|||</code> and including a <code v-pre>title</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">||| Tab 1
+This is a Tab
+|||</code></pre>
+</doc-codeblock></div>
+<doc-tabs>
+<doc-tab id="tab-1">
+<template #title>Tab 1</template>
+<p>This is a Tab</p>
+</doc-tab>
+</doc-tabs>
+<p>Multiple Tabs can be configured by stacking <code v-pre>|||</code> blocks.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">||| Tab 1
+This is a Tab
+||| Tab 2
+This is another Tab
+|||</code></pre>
+</doc-codeblock></div>
+<doc-tabs>
+<doc-tab id="tab-1">
+<template #title>Tab 1</template>
+<p>This is a Tab</p>
+</doc-tab>
+<doc-tab id="tab-2">
+<template #title>Tab 2</template>
+<p>This is another Tab</p>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="panels">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#panels">#</doc-anchor-trigger>
+        <span>Panels</span>
+    </h2>
+</doc-anchor-target>
+<p>A Panel is created by surrounding a block of content with <code v-pre>+++</code> and including a <code v-pre>title</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">+++ My Panel
+This is a Panel. Expanded by default.
++++</code></pre>
+</doc-codeblock></div>
+<doc-panel id="my-panel">
+<template #title>My Panel</template>
+<p>This is a Panel. Expanded by default.</p>
+</doc-panel>
+<p>By default, Panels are collapsible and will be in there expanded state. You can configure Panels to initially render in their collapsed state by using <code v-pre>++-</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">++- My Panel
+This is a collapsed Panel. :+1:
++++</code></pre>
+</doc-codeblock></div>
+<doc-panel id="my-panel" collapsed>
+<template #title>My Panel</template>
+<p>This is a collapsed Panel. <span class="docs-emoji">👍</span></p>
+</doc-panel>
+<doc-anchor-target id="lists">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lists">#</doc-anchor-trigger>
+        <span>Lists</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="checklist">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#checklist">#</doc-anchor-trigger>
+        <span>Checklist</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">- [x] Item 1
+- [x] Item 2
+- [ ] Item 3</code></pre>
+</doc-codeblock></div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 1</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 2</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Item 3</li>
+</ul>
+<doc-anchor-target id="bullet-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bullet-list">#</doc-anchor-trigger>
+        <span>Bullet list</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">- Item 4
+- Item 5
+- Item 6</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Item 4</li>
+<li>Item 5</li>
+<li>Item 6</li>
+</ul>
+<doc-anchor-target id="numbered-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#numbered-list">#</doc-anchor-trigger>
+        <span>Numbered list</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">1. Item 7
+2. Item 8
+3. Item 9</code></pre>
+</doc-codeblock></div>
+<ol>
+<li>Item 7</li>
+<li>Item 8</li>
+<li>Item 9</li>
+</ol>
+<doc-anchor-target id="buttons">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#buttons">#</doc-anchor-trigger>
+        <span>Buttons</span>
+    </h2>
+</doc-anchor-target>
+<p>A Button uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!button</code> type.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[Click me](https://example.com/)         &lt;-- a link
+
+[!button Click me](https://example.com/) &lt;-- a button</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="basic">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic">#</doc-anchor-trigger>
+        <span>Basic</span>
+    </h3>
+</doc-anchor-target>
+<p><doc-button margin="0px 8px 0px 0px">No link</doc-button>
+<doc-button href="configuration.md" margin="0px 8px 0px 0px">Internal link</doc-button>
+<doc-button href="https://retype.com/" margin="0px 8px 0px 0px">External link</doc-button></p>
+<doc-anchor-target id="variants">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#variants">#</doc-anchor-trigger>
+        <span>Variants</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;primary&quot; text=&quot;Primary&quot;]</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>primary</code> (default)</td>
+<td><doc-button variant="primary">Primary</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>secondary</code></td>
+<td><doc-button variant="secondary">Secondary</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>success</code></td>
+<td><doc-button variant="success">Success</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>danger</code></td>
+<td><doc-button variant="danger">Danger</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>warning</code></td>
+<td><doc-button variant="warning">Warning</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>info</code></td>
+<td><doc-button variant="info">Info</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>light</code></td>
+<td><doc-button variant="light">Light</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>dark</code></td>
+<td><doc-button variant="dark">Dark</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>contrast</code></td>
+<td><doc-button variant="contrast">Contrast</doc-button></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="corners">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#corners">#</doc-anchor-trigger>
+        <span>Corners</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button text=&quot;Default&quot;]
+[!button corners=&quot;square&quot; text=&quot;Square&quot;]
+[!button corners=&quot;pill&quot; text=&quot;Button Pill&quot;]</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td><doc-button>Default</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>square</code></td>
+<td><doc-button corners="square">Square</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>pill</code></td>
+<td><doc-button corners="pill">Button Pill</doc-button></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="size">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#size">#</doc-anchor-trigger>
+        <span>Size</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button size=&quot;m&quot; text=&quot;Medium&quot;]</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>xs</code></td>
+<td><doc-button size="xs">XSmall</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>s</code></td>
+<td><doc-button size="s">Small</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>m</code> (default)</td>
+<td><doc-button size="m">Medium</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>l</code></td>
+<td><doc-button size="l">Large</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>xl</code></td>
+<td><doc-button size="xl">XLarge</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>2xl</code></td>
+<td><doc-button size="2xl">2XLarge</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>3xl</code></td>
+<td><doc-button size="3xl">3XLarge</doc-button></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="icon-and-emoji">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#icon-and-emoji">#</doc-anchor-trigger>
+        <span>Icon and Emoji</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="octicons">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#octicons">#</doc-anchor-trigger>
+        <span>Octicons</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;info&quot; icon=&quot;person&quot; text=&quot;User&quot;]
+[!button variant=&quot;primary&quot; icon=&quot;paper-airplane&quot; iconAlign=&quot;right&quot; text=&quot;Send&quot;]</code></pre>
+</doc-codeblock></div>
+<p><doc-button variant="info" margin="0px 8px 0px 0px"><template #icon><path fill-rule="evenodd" d="M12 2.5a5.5 5.5 0 00-3.096 10.047 9.005 9.005 0 00-5.9 8.18.75.75 0 001.5.045 7.5 7.5 0 0114.993 0 .75.75 0 101.499-.044 9.005 9.005 0 00-5.9-8.181A5.5 5.5 0 0012 2.5zM8 8a4 4 0 118 0 4 4 0 01-8 0z"/></template>User</doc-button>
+<doc-button variant="primary" icon-align="right"><template #icon><path fill-rule="evenodd" d="M1.513 1.96a1.374 1.374 0 011.499-.21l19.335 9.215a1.146 1.146 0 010 2.07L3.012 22.25a1.374 1.374 0 01-1.947-1.46L2.49 12 1.065 3.21a1.374 1.374 0 01.448-1.25zm2.375 10.79l-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 010 1.5H3.888z"/></template>Send</doc-button></p>
+<doc-anchor-target id="emoji">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#emoji">#</doc-anchor-trigger>
+        <span>Emoji</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;light&quot; icon=&quot;:heart:&quot; text=&quot;Like&quot;]
+[!button variant=&quot;info&quot; icon=&quot;:rocket:&quot; iconAlign=&quot;right&quot; text=&quot;Rocket&quot;]</code></pre>
+</doc-codeblock></div>
+<p><doc-button variant="light" margin="0px 8px 0px 0px" emoji="2764-FE0F">Like</doc-button>
+<doc-button variant="info" emoji="1F680" icon-align="right">Rocket</doc-button></p>
+<doc-anchor-target id="image">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image">#</doc-anchor-trigger>
+        <span>Image</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button icon=&quot;/static/retype-logo.svg&quot;]</code></pre>
+</doc-codeblock></div>
+<p><doc-button></doc-button></p>
+<p><doc-button href="https://retype.com/"><template #icon><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></template>Visit website</doc-button></p>
+<doc-anchor-target id="inline">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#inline">#</doc-anchor-trigger>
+        <span>Inline</span>
+    </h3>
+</doc-anchor-target>
+<p>This is a paragraph with a <doc-button size="xs" margin="0px 4px">Button</doc-button>.</p>
+<doc-anchor-target id="block">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#block">#</doc-anchor-trigger>
+        <span>Block</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button Button 1]
+
+[!button Button 2]</code></pre>
+</doc-codeblock></div>
+<p><doc-button>Button 1</doc-button></p>
+<p><doc-button>Button 2</doc-button></p>
 
     
                 <!-- Required only on API pages -->

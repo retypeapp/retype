@@ -95,58 +95,301 @@ This is an alert.
 This is an alert.
 !!!
 
-Alerts come in 6 different flavors which can be specified by passing a `type` immediately after the `!!!`, such as `!!!danger`.
+Alerts come in 6 different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
 
-Style | Color
---- | ---
-`info` or none | Blue
-`success` | Green
-`caution` | Yellow
-`danger` | Red
-`note` | Dark or Light depending on time of day
+| Variant | Color |
+| --- | --- |
+| `primary` (default) | `blue` |
+| `secondary` | `gray` |
+| `success` | `green` |
+| `danger` | `red` | 
+| `warning` | `yellow` |
+| `info` | `light-blue` |
+| `light` | `light` |
+| `dark` | `dark` |
+| `contrast` | `light` or `dark` depending on time of day |
 
 Alerts can also have titles. Add a space then add your title, such as `!!! Title here` or `!!!danger Title here`.
 
 ### Alert demo
 
 ```
-!!!info Info
-This is a `info` alert.
+!!!primary Primary
+This is a `primary` alert.
+!!!
+
+!!!secondary Secondary
+This is a `secondary` alert.
 !!!
 
 !!!success Success
 This is a `success` alert.
 !!!
 
-!!!caution Caution
-This is a `caution` alert.
-!!!
-
 !!!danger Danger
 This is a `danger` alert.
 !!!
 
-!!!note Note
-This is a `note` alert, with dark and light modes.
+!!!warning Warning
+This is a `warning` alert.
+!!!
+
+!!!info Info
+This is a `info` alert.
+!!!
+
+!!!light Light
+This is a `light` alert.
+!!!
+
+!!!dark Dark
+This is a `dark` alert.
+!!!
+
+!!!contrast Contrast
+This is a `contrast` alert.
 !!!
 ```
 
-!!!info Info
-This is a `info` alert.
+!!!primary Primary
+This is a `primary` alert.
+!!!
+
+!!!secondary Secondary
+This is a `secondary` alert.
 !!!
 
 !!!success Success
 This is a `success` alert.
 !!!
 
-!!!caution Caution
-This is a `caution` alert.
-!!!
-
 !!!danger Danger
 This is a `danger` alert.
 !!!
 
-!!!note Note
-This is a `note` alert, with dark and light modes.
+!!!warning Warning
+This is a `warning` alert.
 !!!
+
+!!!info Info
+This is a `info` alert.
+!!!
+
+!!!light Light
+This is a `light` alert.
+!!!
+
+!!!dark Dark
+This is a `dark` alert.
+!!!
+
+!!!contrast Contrast
+This is a `contrast` alert.
+!!!
+
+## Tabs
+
+Tabs are super simple to configure by just surrounding a block of text with `|||` and including a `title`.
+
+```md
+||| Tab 1
+This is a Tab
+|||
+```
+
+||| Tab 1
+This is a Tab
+|||
+
+Multiple Tabs can be configured by stacking `|||` blocks. 
+
+```md
+||| Tab 1
+This is a Tab
+||| Tab 2
+This is another Tab
+|||
+```
+
+||| Tab 1
+This is a Tab
+||| Tab 2
+This is another Tab
+|||
+
+## Panels
+
+A Panel is created by surrounding a block of content with `+++` and including a `title`.
+
+```
++++ My Panel
+This is a Panel. Expanded by default.
++++
+```
+
++++ My Panel
+This is a Panel. Expanded by default.
++++
+
+By default, Panels are collapsible and will be in there expanded state. You can configure Panels to initially render in their collapsed state by using `++-`.
+
+```
+++- My Panel
+This is a collapsed Panel. :+1:
++++
+```
+
+++- My Panel
+This is a collapsed Panel. :+1:
++++
+
+## Lists 
+
+### Checklist
+
+```md
+- [x] Item 1
+- [x] Item 2
+- [ ] Item 3
+```
+
+- [x] Item 1
+- [x] Item 2
+- [ ] Item 3
+
+### Bullet list
+
+```md
+- Item 4
+- Item 5
+- Item 6
+```
+
+- Item 4
+- Item 5
+- Item 6
+
+### Numbered list
+
+```
+1. Item 7
+2. Item 8
+3. Item 9
+```
+
+1. Item 7
+2. Item 8
+3. Item 9
+
+## Buttons
+
+A Button uses the same syntax as a hyperlink, but is prefixed with a `!button` type.
+
+```md
+[Click me](https://example.com/)         <-- a link
+
+[!button Click me](https://example.com/) <-- a button
+```
+
+### Basic
+
+[!button text="No link" margin="0 8 0 0"]
+[!button text="Internal link" margin="0 8 0 0"](configuration.md)
+[!button text="External link" margin="0 8 0 0"](https://retype.com/)
+
+### Variants
+
+```md
+[!button variant="primary" text="Primary"]
+```
+
+| Variant | Example |
+| --- | --- |
+| `primary` (default) | [!button variant="primary" text="Primary"] |
+| `secondary` | [!button variant="secondary" text="Secondary"] |
+| `success` | [!button variant="success" text="Success"] |
+| `danger` | [!button variant="danger" text="Danger"] |
+| `warning` | [!button variant="warning" text="Warning"] |
+| `info` | [!button variant="info" text="Info"] |
+| `light` | [!button variant="light" text="Light"] |
+| `dark` | [!button variant="dark" text="Dark"] |
+| `contrast` | [!button variant="contrast" text="Contrast"] |
+
+### Corners
+
+```md
+[!button text="Default"]
+[!button corners="square" text="Square"]
+[!button corners="pill" text="Button Pill"]
+```
+
+| Size | Example |
+| --- | --- |
+| Default | [!button text="Default"] |
+| `square` | [!button corners="square" text="Square"] |
+| `pill` | [!button corners="pill" text="Button Pill"] |
+
+### Size
+
+```md
+[!button size="m" text="Medium"]
+```
+
+| Size | Example |
+| --- | --- |
+| `xs` | [!button size="xs" text="XSmall"] |
+| `s` | [!button size="s" text="Small"] |
+| `m` (default) | [!button size="m" text="Medium"] |
+| `l` | [!button size="l" text="Large"] |
+| `xl` | [!button size="xl" text="XLarge"] | 
+| `2xl` | [!button size="2xl" text="2XLarge"] | 
+| `3xl` | [!button size="3xl" text="3XLarge"] |
+
+### Icon and Emoji
+
+#### Octicons
+
+```md
+[!button variant="info" icon="person" text="User"]
+[!button variant="primary" icon="paper-airplane" iconAlign="right" text="Send"]
+```
+
+[!button variant="info" icon="person" text="User" margin="0 8 0 0"]
+[!button variant="primary" icon="paper-airplane" iconAlign="right" text="Send"]
+
+#### Emoji
+
+```md
+[!button variant="light" icon=":heart:" text="Like"]
+[!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
+```
+
+[!button variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
+[!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
+
+
+#### Image
+
+```md
+[!button icon="/static/retype-logo.svg"]
+```
+
+[!button icon="/static/retype-logo.svg"]
+
+[!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](https://retype.com/)
+
+### Inline
+
+This is a paragraph with a [!button size="xs" text="Button" margin="0 4"].
+
+### Block
+
+```md
+[!button Button 1]
+
+[!button Button 2]
+```
+
+[!button Button 1]
+
+[!button Button 2]

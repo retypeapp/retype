@@ -55,9 +55,7 @@ retype init
 
 Calling the `retype init` command will create a simple `retype.json` file with the following default values:
 
-#### Sample `retype.json`
-
-```json
+```json Sample retype.json
 {
   "input": ".",
   "output": "./retype",
