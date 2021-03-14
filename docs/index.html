@@ -204,21 +204,21 @@
 <doc-tabs>
 <doc-tab id="npm">
 <template #title>NPM</template>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">npm install --global retypeapp
 retype watch</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab id="yarn">
 <template #title>Yarn</template>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp
 retype watch</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab id="dotnet">
 <template #title>dotnet</template>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">dotnet tool install --global retypeapp
 retype watch</code></pre>
 </doc-codeblock></div>
@@ -226,18 +226,18 @@ retype watch</code></pre>
 </doc-tabs>
 <p>That&#39;s it! Your new Retype website should be up and running.</p>
 <p>If a change is detected, such as editing and saving a <code v-pre>.md</code> file, your Retype website will be updated almost instantly within the browser.</p>
-<doc-alert type="primary">
+<doc-alert variant="primary">
 <p>You will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/#mac-stable">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It&#39;s up to you. <span class="docs-emoji">🙌</span></p>
 <p>All operating systems are supported, including Mac, Windows, and Linux.</p>
 </doc-alert>
 <p>The <code v-pre>retype watch</code> command runs the following three commands and listens for any new changes in your content.</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype init
 retype build
 retype run</code></pre>
 </doc-codeblock></div>
 <p>After running <code v-pre>retype watch</code>, edit any <code v-pre>.md</code> file and see your change appear in the browser.</p>
-<doc-alert type="success">
+<doc-alert variant="success">
 <template #title>COMING SOON</template>
 <p>Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.</p>
 <p>Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library&#39;s source code, code comments, and metadata.</p>

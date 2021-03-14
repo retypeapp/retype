@@ -101,7 +101,7 @@ Style | Color
 --- | ---
 `info` or none | Blue
 `success` | Green
-`caution` | Orange
+`caution` | Yellow
 `danger` | Red
 `note` | Dark or Light depending on time of day
 

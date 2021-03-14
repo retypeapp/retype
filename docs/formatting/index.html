@@ -191,7 +191,7 @@
 <p>Markdown <code v-pre>.md</code> pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier.</p>
 <p>No special software is required to create an <code v-pre>.md</code> file. Any basic text editor will do.</p>
 <p>Please see <a href="https://www.markdownguide.org/cheat-sheet/">markdownguide.org</a> for a full demonstration of the formatting possibilities and best practices.</p>
-<doc-alert type="primary">
+<doc-alert variant="primary">
 <p>View the actual <a href="https://github.com/retypeapp/retype/blob/main/formatting.md"><code v-pre>formatting.md</code></a> file used to create this page.</p>
 </doc-alert>
 <doc-anchor-target id="quick-start">
@@ -201,13 +201,13 @@
     </h2>
 </doc-anchor-target>
 <p>The following sample demonstrates a very basic <code v-pre>.md</code> page sample with page title and one paragraph.</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
 
 This is just a paragraph. </code></pre>
 </doc-codeblock></div>
 <p>We can build on the above by more formatting options such as <strong>bold</strong> text, images, and lists.</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
 
 This is just a paragraph. 
@@ -384,12 +384,12 @@ Need to draw attention to something? Use an alert.
 </doc-anchor-target>
 <p>Alert components help to highlight important messages for the reader.</p>
 <p>To create an alert, just surround a block of text with <code v-pre>!!!</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">!!!
 This is an alert.
 !!!</code></pre>
 </doc-codeblock></div>
-<doc-alert type="primary">
+<doc-alert variant="primary">
 <p>This is an alert.</p>
 </doc-alert>
 <p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>type</code> immediately after the <code v-pre>!!!</code>, such as <code v-pre>!!!danger</code>.</p>
@@ -411,7 +411,7 @@ This is an alert.
 </tr>
 <tr>
 <td><code v-pre>caution</code></td>
-<td>Orange</td>
+<td>Yellow</td>
 </tr>
 <tr>
 <td><code v-pre>danger</code></td>
@@ -430,7 +430,7 @@ This is an alert.
         <span>Alert demo</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">!!!info Info
 This is a `info` alert.
 !!!
@@ -451,24 +451,24 @@ This is a `danger` alert.
 This is a `note` alert, with dark and light modes.
 !!!</code></pre>
 </doc-codeblock></div>
-<doc-alert type="primary">
+<doc-alert variant="info">
 <template #title>Info</template>
 <p>This is a <code v-pre>info</code> alert.</p>
 </doc-alert>
-<doc-alert type="success">
+<doc-alert variant="success">
 <template #title>Success</template>
 <p>This is a <code v-pre>success</code> alert.</p>
 </doc-alert>
-<doc-alert type="warning">
-<template #title>Caution</template>
+<doc-alert variant="primary">
+<template #title>caution Caution</template>
 <p>This is a <code v-pre>caution</code> alert.</p>
 </doc-alert>
-<doc-alert type="danger">
+<doc-alert variant="danger">
 <template #title>Danger</template>
 <p>This is a <code v-pre>danger</code> alert.</p>
 </doc-alert>
-<doc-alert type="contrast">
-<template #title>Note</template>
+<doc-alert variant="primary">
+<template #title>note Note</template>
 <p>This is a <code v-pre>note</code> alert, with dark and light modes.</p>
 </doc-alert>
 
