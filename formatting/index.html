@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <title>Formatting | Retype - Generate, publish, and share documentation</title>
+
+    <meta name="description" content="Markdown `.md` pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier." />
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/resources/css/retype.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
+                    <a href="/">
+                        <img class="dark:hidden" src="/static/retype-logo.svg">
+                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
+                    </a>
+                </span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+                <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                    <li class="md:mr-6">
+                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/getting_started">Getting Started</a>
+                    </li>
+                    <li class="md:mr-6">
+                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+                    </li>
+                    <li class="md:mr-6">
+                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+                    </li>
+                    <li class="md:mr-6">
+                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/getting_started">Getting Started</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype">GitHub</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype/issues">Issues</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="formatting" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#formatting">#</doc-anchor-trigger>
+        <span>Formatting</span>
+    </h1>
+</doc-anchor-target>
+<p>Markdown <code v-pre>.md</code> pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier.</p>
+<p>No special software is required to create an <code v-pre>.md</code> file. Any basic text editor will do.</p>
+<p>Please see <a href="https://www.markdownguide.org/cheat-sheet/">markdownguide.org</a> for a full demonstration of the formatting possibilities and best practices.</p>
+<doc-alert variant="primary">
+<p>View the actual <a href="https://github.com/retypeapp/retype/blob/main/formatting.md"><code v-pre>formatting.md</code></a> file used to create this page.</p>
+</doc-alert>
+<doc-anchor-target id="quick-start">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#quick-start">#</doc-anchor-trigger>
+        <span>Quick start</span>
+    </h2>
+</doc-anchor-target>
+<p>The following sample demonstrates a very basic <code v-pre>.md</code> page sample with page title and one paragraph.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
+
+This is just a paragraph. </code></pre>
+</doc-codeblock></div>
+<p>We can build on the above by more formatting options such as <strong>bold</strong> text, images, and lists.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
+
+This is just a paragraph. 
+
+The page can contain both [internal](/README.md) and [external](https://example.com) links.
+
+![Your logo](logo.png)
+
+Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
+
+#### Lists
+
+- First item
+- Second item
+- Third item
+
+1. First item
+2. Second item
+3. Third item
+
+&gt; &quot;Cool! This is a quotation.&quot;
+
+!!!
+Need to draw attention to something? Use an alert.
+!!!</code></pre>
+</doc-codeblock></div>
+<p>At a very basic level, to create a new page for your Retype project, do the following:</p>
+<ol>
+<li>Create a <code v-pre>.md</code> file</li>
+<li>Add a <code v-pre># title</code></li>
+<li>Start writing</li>
+</ol>
+<p>In addition to the standard Markdown options (see <a href="https://www.markdownguide.org/cheat-sheet/">cheat sheet</a>), Retype includes some nice extras...</p>
+<doc-anchor-target id="emojis">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#emojis">#</doc-anchor-trigger>
+        <span>Emojis <span class="docs-emoji">😻</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Retype uses <a href="https://mojee.io">Mojee.io</a> to find emoji <code v-pre>:shortcodes:</code> within your document and replace with actual emoji characters. <span class="docs-emoji">👍</span></p>
+<p>You can place emoji <code v-pre>:shortcodes:</code> anywhere within your document, such as <code v-pre>:smile:</code> <span class="docs-emoji">😄</span> or <code v-pre>:unicorn_face:</code> <span class="docs-emoji">🦄</span>.</p>
+<p>Use Mojee to <a href="https://mojee.io/emojis/">search</a> for the emojis your love and paste the <code v-pre>:shortcode:</code> into your <code v-pre>.md</code> document.</p>
+<table>
+<thead>
+<tr>
+<th><span class="docs-emoji">😀</span></th>
+<th><span class="docs-emoji">😃</span></th>
+<th><span class="docs-emoji">😄</span></th>
+<th><span class="docs-emoji">😁</span></th>
+<th><span class="docs-emoji">😆</span></th>
+<th><span class="docs-emoji">😅</span></th>
+<th><span class="docs-emoji">😂</span></th>
+<th><span class="docs-emoji">😉</span></th>
+<th><span class="docs-emoji">😊</span></th>
+<th><span class="docs-emoji">😇</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="docs-emoji">😍</span></td>
+<td><span class="docs-emoji">😘</span></td>
+<td><span class="docs-emoji">☺️</span></td>
+<td><span class="docs-emoji">😚</span></td>
+<td><span class="docs-emoji">😋</span></td>
+<td><span class="docs-emoji">😛</span></td>
+<td><span class="docs-emoji">😜</span></td>
+<td><span class="docs-emoji">😝</span></td>
+<td><span class="docs-emoji">😐</span></td>
+<td><span class="docs-emoji">😑</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">😶</span></td>
+<td><span class="docs-emoji">😏</span></td>
+<td><span class="docs-emoji">😒</span></td>
+<td><span class="docs-emoji">😬</span></td>
+<td><span class="docs-emoji">😌</span></td>
+<td><span class="docs-emoji">😔</span></td>
+<td><span class="docs-emoji">😪</span></td>
+<td><span class="docs-emoji">😴</span></td>
+<td><span class="docs-emoji">😷</span></td>
+<td><span class="docs-emoji">😎</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">😕</span></td>
+<td><span class="docs-emoji">😳</span></td>
+<td><span class="docs-emoji">😥</span></td>
+<td><span class="docs-emoji">😢</span></td>
+<td><span class="docs-emoji">😭</span></td>
+<td><span class="docs-emoji">😱</span></td>
+<td><span class="docs-emoji">😖</span></td>
+<td><span class="docs-emoji">😣</span></td>
+<td><span class="docs-emoji">😞</span></td>
+<td><span class="docs-emoji">😓</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">😩</span></td>
+<td><span class="docs-emoji">😫</span></td>
+<td><span class="docs-emoji">😤</span></td>
+<td><span class="docs-emoji">😡</span></td>
+<td><span class="docs-emoji">😠</span></td>
+<td><span class="docs-emoji">😈</span></td>
+<td><span class="docs-emoji">💀</span></td>
+<td><span class="docs-emoji">😻</span></td>
+<td><span class="docs-emoji">🙈</span></td>
+<td><span class="docs-emoji">🙊</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">💋</span></td>
+<td><span class="docs-emoji">💘</span></td>
+<td><span class="docs-emoji">💖</span></td>
+<td><span class="docs-emoji">💗</span></td>
+<td><span class="docs-emoji">💓</span></td>
+<td><span class="docs-emoji">💞</span></td>
+<td><span class="docs-emoji">💕</span></td>
+<td><span class="docs-emoji">💔</span></td>
+<td><span class="docs-emoji">❤️</span></td>
+<td><span class="docs-emoji">💛</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">💚</span></td>
+<td><span class="docs-emoji">💙</span></td>
+<td><span class="docs-emoji">💜</span></td>
+<td><span class="docs-emoji">💯</span></td>
+<td><span class="docs-emoji">💥</span></td>
+<td><span class="docs-emoji">👋</span></td>
+<td><span class="docs-emoji">✋</span></td>
+<td><span class="docs-emoji">👌</span></td>
+<td><span class="docs-emoji">✌️</span></td>
+<td><span class="docs-emoji">👈</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">👉</span></td>
+<td><span class="docs-emoji">👇</span></td>
+<td><span class="docs-emoji">👍</span></td>
+<td><span class="docs-emoji">👊</span></td>
+<td><span class="docs-emoji">👏</span></td>
+<td><span class="docs-emoji">🙌</span></td>
+<td><span class="docs-emoji">🙏</span></td>
+<td><span class="docs-emoji">💪</span></td>
+<td><span class="docs-emoji">👀</span></td>
+<td><span class="docs-emoji">💁</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">🌸</span></td>
+<td><span class="docs-emoji">🌹</span></td>
+<td><span class="docs-emoji">🌚</span></td>
+<td><span class="docs-emoji">☀️</span></td>
+<td><span class="docs-emoji">⭐</span></td>
+<td><span class="docs-emoji">⚡</span></td>
+<td><span class="docs-emoji">🔥</span></td>
+<td><span class="docs-emoji">✨</span></td>
+<td><span class="docs-emoji">🎉</span></td>
+<td><span class="docs-emoji">♥️</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">👑</span></td>
+<td><span class="docs-emoji">🎶</span></td>
+<td><span class="docs-emoji">📷</span></td>
+<td><span class="docs-emoji">➡️</span></td>
+<td><span class="docs-emoji">⬅️</span></td>
+<td><span class="docs-emoji">▶️</span></td>
+<td><span class="docs-emoji">♻️</span></td>
+<td><span class="docs-emoji">✅</span></td>
+<td><span class="docs-emoji">✔️</span></td>
+<td><span class="docs-emoji">🔴</span></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="alerts">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#alerts">#</doc-anchor-trigger>
+        <span>Alerts</span>
+    </h2>
+</doc-anchor-target>
+<p>Alert components help to highlight important messages for the reader.</p>
+<p>To create an alert, just surround a block of text with <code v-pre>!!!</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">!!!
+This is an alert.
+!!!</code></pre>
+</doc-codeblock></div>
+<doc-alert variant="primary">
+<p>This is an alert.</p>
+</doc-alert>
+<p>Alerts come in 6 different flavors which can be specified by passing a <code v-pre>variant</code> immediately after the <code v-pre>!!!</code>, such as <code v-pre>!!!danger</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>primary</code> (default)</td>
+<td><code v-pre>blue</code></td>
+</tr>
+<tr>
+<td><code v-pre>secondary</code></td>
+<td><code v-pre>gray</code></td>
+</tr>
+<tr>
+<td><code v-pre>success</code></td>
+<td><code v-pre>green</code></td>
+</tr>
+<tr>
+<td><code v-pre>danger</code></td>
+<td><code v-pre>red</code></td>
+</tr>
+<tr>
+<td><code v-pre>warning</code></td>
+<td><code v-pre>yellow</code></td>
+</tr>
+<tr>
+<td><code v-pre>info</code></td>
+<td><code v-pre>light-blue</code></td>
+</tr>
+<tr>
+<td><code v-pre>light</code></td>
+<td><code v-pre>light</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark</code></td>
+<td><code v-pre>dark</code></td>
+</tr>
+<tr>
+<td><code v-pre>contrast</code></td>
+<td><code v-pre>light</code> or <code v-pre>dark</code> depending on time of day</td>
+</tr>
+</tbody>
+</table>
+<p>Alerts can also have titles. Add a space then add your title, such as <code v-pre>!!! Title here</code> or <code v-pre>!!!danger Title here</code>.</p>
+<doc-anchor-target id="alert-demo">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#alert-demo">#</doc-anchor-trigger>
+        <span>Alert demo</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">!!!primary Primary
+This is a `primary` alert.
+!!!
+
+!!!secondary Secondary
+This is a `secondary` alert.
+!!!
+
+!!!success Success
+This is a `success` alert.
+!!!
+
+!!!danger Danger
+This is a `danger` alert.
+!!!
+
+!!!warning Warning
+This is a `warning` alert.
+!!!
+
+!!!info Info
+This is a `info` alert.
+!!!
+
+!!!light Light
+This is a `light` alert.
+!!!
+
+!!!dark Dark
+This is a `dark` alert.
+!!!
+
+!!!contrast Contrast
+This is a `contrast` alert.
+!!!</code></pre>
+</doc-codeblock></div>
+<doc-alert variant="primary">
+<template #title>Primary</template>
+<p>This is a <code v-pre>primary</code> alert.</p>
+</doc-alert>
+<doc-alert variant="secondary">
+<template #title>Secondary</template>
+<p>This is a <code v-pre>secondary</code> alert.</p>
+</doc-alert>
+<doc-alert variant="success">
+<template #title>Success</template>
+<p>This is a <code v-pre>success</code> alert.</p>
+</doc-alert>
+<doc-alert variant="danger">
+<template #title>Danger</template>
+<p>This is a <code v-pre>danger</code> alert.</p>
+</doc-alert>
+<doc-alert variant="warning">
+<template #title>Warning</template>
+<p>This is a <code v-pre>warning</code> alert.</p>
+</doc-alert>
+<doc-alert variant="info">
+<template #title>Info</template>
+<p>This is a <code v-pre>info</code> alert.</p>
+</doc-alert>
+<doc-alert variant="light">
+<template #title>Light</template>
+<p>This is a <code v-pre>light</code> alert.</p>
+</doc-alert>
+<doc-alert variant="dark">
+<template #title>Dark</template>
+<p>This is a <code v-pre>dark</code> alert.</p>
+</doc-alert>
+<doc-alert variant="contrast">
+<template #title>Contrast</template>
+<p>This is a <code v-pre>contrast</code> alert.</p>
+</doc-alert>
+<doc-anchor-target id="tabs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tabs">#</doc-anchor-trigger>
+        <span>Tabs</span>
+    </h2>
+</doc-anchor-target>
+<p>Tabs are super simple to configure by just surrounding a block of text with <code v-pre>|||</code> and including a <code v-pre>title</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">||| Tab 1
+This is a Tab
+|||</code></pre>
+</doc-codeblock></div>
+<doc-tabs>
+<doc-tab id="tab-1">
+<template #title>Tab 1</template>
+<p>This is a Tab</p>
+</doc-tab>
+</doc-tabs>
+<p>Multiple Tabs can be configured by stacking <code v-pre>|||</code> blocks.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">||| Tab 1
+This is a Tab
+||| Tab 2
+This is another Tab
+|||</code></pre>
+</doc-codeblock></div>
+<doc-tabs>
+<doc-tab id="tab-1">
+<template #title>Tab 1</template>
+<p>This is a Tab</p>
+</doc-tab>
+<doc-tab id="tab-2">
+<template #title>Tab 2</template>
+<p>This is another Tab</p>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="panels">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#panels">#</doc-anchor-trigger>
+        <span>Panels</span>
+    </h2>
+</doc-anchor-target>
+<p>A Panel is created by surrounding a block of content with <code v-pre>+++</code> and including a <code v-pre>title</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">+++ My Panel
+This is a Panel. Expanded by default.
++++</code></pre>
+</doc-codeblock></div>
+<doc-panel id="my-panel">
+<template #title>My Panel</template>
+<p>This is a Panel. Expanded by default.</p>
+</doc-panel>
+<p>By default, Panels are collapsible and will be in there expanded state. You can configure Panels to initially render in their collapsed state by using <code v-pre>++-</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">++- My Panel
+This is a collapsed Panel. :+1:
++++</code></pre>
+</doc-codeblock></div>
+<doc-panel id="my-panel" collapsed>
+<template #title>My Panel</template>
+<p>This is a collapsed Panel. <span class="docs-emoji">👍</span></p>
+</doc-panel>
+<doc-anchor-target id="lists">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lists">#</doc-anchor-trigger>
+        <span>Lists</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="checklist">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#checklist">#</doc-anchor-trigger>
+        <span>Checklist</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">- [x] Item 1
+- [x] Item 2
+- [ ] Item 3</code></pre>
+</doc-codeblock></div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 1</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 2</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Item 3</li>
+</ul>
+<doc-anchor-target id="bullet-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bullet-list">#</doc-anchor-trigger>
+        <span>Bullet list</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">- Item 4
+- Item 5
+- Item 6</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Item 4</li>
+<li>Item 5</li>
+<li>Item 6</li>
+</ul>
+<doc-anchor-target id="numbered-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#numbered-list">#</doc-anchor-trigger>
+        <span>Numbered list</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">1. Item 7
+2. Item 8
+3. Item 9</code></pre>
+</doc-codeblock></div>
+<ol>
+<li>Item 7</li>
+<li>Item 8</li>
+<li>Item 9</li>
+</ol>
+<doc-anchor-target id="buttons">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#buttons">#</doc-anchor-trigger>
+        <span>Buttons</span>
+    </h2>
+</doc-anchor-target>
+<p>A Button uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!button</code> type.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[Click me](https://example.com/)         &lt;-- a link
+
+[!button Click me](https://example.com/) &lt;-- a button</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="basic">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic">#</doc-anchor-trigger>
+        <span>Basic</span>
+    </h3>
+</doc-anchor-target>
+<p><doc-button margin="0px 8px 0px 0px">No link</doc-button>
+<doc-button href="configuration.md" margin="0px 8px 0px 0px">Internal link</doc-button>
+<doc-button href="https://retype.com/" margin="0px 8px 0px 0px">External link</doc-button></p>
+<doc-anchor-target id="variants">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#variants">#</doc-anchor-trigger>
+        <span>Variants</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;primary&quot; text=&quot;Primary&quot;]</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>primary</code> (default)</td>
+<td><doc-button variant="primary">Primary</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>secondary</code></td>
+<td><doc-button variant="secondary">Secondary</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>success</code></td>
+<td><doc-button variant="success">Success</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>danger</code></td>
+<td><doc-button variant="danger">Danger</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>warning</code></td>
+<td><doc-button variant="warning">Warning</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>info</code></td>
+<td><doc-button variant="info">Info</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>light</code></td>
+<td><doc-button variant="light">Light</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>dark</code></td>
+<td><doc-button variant="dark">Dark</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>contrast</code></td>
+<td><doc-button variant="contrast">Contrast</doc-button></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="corners">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#corners">#</doc-anchor-trigger>
+        <span>Corners</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button text=&quot;Default&quot;]
+[!button corners=&quot;square&quot; text=&quot;Square&quot;]
+[!button corners=&quot;pill&quot; text=&quot;Button Pill&quot;]</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td><doc-button>Default</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>square</code></td>
+<td><doc-button corners="square">Square</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>pill</code></td>
+<td><doc-button corners="pill">Button Pill</doc-button></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="size">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#size">#</doc-anchor-trigger>
+        <span>Size</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button size=&quot;m&quot; text=&quot;Medium&quot;]</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>xs</code></td>
+<td><doc-button size="xs">XSmall</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>s</code></td>
+<td><doc-button size="s">Small</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>m</code> (default)</td>
+<td><doc-button size="m">Medium</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>l</code></td>
+<td><doc-button size="l">Large</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>xl</code></td>
+<td><doc-button size="xl">XLarge</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>2xl</code></td>
+<td><doc-button size="2xl">2XLarge</doc-button></td>
+</tr>
+<tr>
+<td><code v-pre>3xl</code></td>
+<td><doc-button size="3xl">3XLarge</doc-button></td>
+</tr>
+</tbody>
+</table>
+<doc-anchor-target id="icon-and-emoji">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#icon-and-emoji">#</doc-anchor-trigger>
+        <span>Icon and Emoji</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="octicons">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#octicons">#</doc-anchor-trigger>
+        <span>Octicons</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;info&quot; icon=&quot;person&quot; text=&quot;User&quot;]
+[!button variant=&quot;primary&quot; icon=&quot;paper-airplane&quot; iconAlign=&quot;right&quot; text=&quot;Send&quot;]</code></pre>
+</doc-codeblock></div>
+<p><doc-button variant="info" margin="0px 8px 0px 0px"><template #icon><path fill-rule="evenodd" d="M12 2.5a5.5 5.5 0 00-3.096 10.047 9.005 9.005 0 00-5.9 8.18.75.75 0 001.5.045 7.5 7.5 0 0114.993 0 .75.75 0 101.499-.044 9.005 9.005 0 00-5.9-8.181A5.5 5.5 0 0012 2.5zM8 8a4 4 0 118 0 4 4 0 01-8 0z"/></template>User</doc-button>
+<doc-button variant="primary" icon-align="right"><template #icon><path fill-rule="evenodd" d="M1.513 1.96a1.374 1.374 0 011.499-.21l19.335 9.215a1.146 1.146 0 010 2.07L3.012 22.25a1.374 1.374 0 01-1.947-1.46L2.49 12 1.065 3.21a1.374 1.374 0 01.448-1.25zm2.375 10.79l-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 010 1.5H3.888z"/></template>Send</doc-button></p>
+<doc-anchor-target id="emoji">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#emoji">#</doc-anchor-trigger>
+        <span>Emoji</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;light&quot; icon=&quot;:heart:&quot; text=&quot;Like&quot;]
+[!button variant=&quot;info&quot; icon=&quot;:rocket:&quot; iconAlign=&quot;right&quot; text=&quot;Rocket&quot;]</code></pre>
+</doc-codeblock></div>
+<p><doc-button variant="light" margin="0px 8px 0px 0px" emoji="2764-FE0F">Like</doc-button>
+<doc-button variant="info" emoji="1F680" icon-align="right">Rocket</doc-button></p>
+<doc-anchor-target id="image">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image">#</doc-anchor-trigger>
+        <span>Image</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button icon=&quot;/static/retype-logo.svg&quot;]</code></pre>
+</doc-codeblock></div>
+<p><doc-button></doc-button></p>
+<p><doc-button href="https://retype.com/"><template #icon><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></template>Visit website</doc-button></p>
+<doc-anchor-target id="inline">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#inline">#</doc-anchor-trigger>
+        <span>Inline</span>
+    </h3>
+</doc-anchor-target>
+<p>This is a paragraph with a <doc-button size="xs" margin="0px 4px">Button</doc-button>.</p>
+<doc-anchor-target id="block">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#block">#</doc-anchor-trigger>
+        <span>Block</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!button Button 1]
+
+[!button Button 2]</code></pre>
+</doc-codeblock></div>
+<p><doc-button>Button 1</doc-button></p>
+<p><doc-button>Button 2</doc-button></p>
+
+    
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+        </main>
+        <footer class="flex flex-wrap items-center justify-between border-t dark:border-dark-650 pt-6 mb-8">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+            <li>
+                <a href="/about" class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>&#169; Copyright 2021. <a href="https://object.net/">Object.NET, Inc.</a> All rights reserved.</p>
+</div>
+</footer>
+
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Formatting", icon: "file" }</script>
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    </body>
+</html>
