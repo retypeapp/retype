@@ -1,0 +1,25 @@
+name: Publish documentation Website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish documentation to retype branch.
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+
+      - uses: fabriciomurta/ragha-build@v1
+
+      - uses: fabriciomurta/ragha-github@v1
+        with:
+          update-branch: true
