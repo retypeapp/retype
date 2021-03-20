@@ -294,7 +294,7 @@ A Button uses the same syntax as a hyperlink, but is prefixed with a `!button` t
 ### Basic
 
 [!button text="No link" margin="0 8 0 0"]
-[!button text="Internal link" margin="0 8 0 0"](configuration.md)
+[!button text="Internal link" margin="0 8 0 0"](project_configuration.md)
 [!button text="External link" margin="0 8 0 0"](https://retype.com/)
 
 ### Variants
