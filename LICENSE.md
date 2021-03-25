@@ -1,5 +1,6 @@
 ---
 label: LICENSE
+layout: page
 ---
 # Retype Software License Agreement
 
