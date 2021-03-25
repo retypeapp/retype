@@ -18,8 +18,8 @@ jobs:
         with:
           dotnet-version: 5.0.x
 
-      - uses: fabriciomurta/ragha-build@v1
+      - uses: fabriciomurta/ragha-build@v1.2.0
 
-      - uses: fabriciomurta/ragha-github@v1
+      - uses: fabriciomurta/ragha-github@v1.2.0
         with:
           update-branch: true
