@@ -1,3 +1,6 @@
+---
+order: 400
+---
 # Formatting
 
 Markdown `.md` pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier. 

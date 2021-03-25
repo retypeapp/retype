@@ -1,3 +1,6 @@
+---
+order: 500
+---
 # Getting Started
 
 Getting started with Retype is super quick and you can be up and running within seconds. Check out the [Quick Start](README.md#quick-start) for the condensed process, or continue here with the full details and expanded steps. 

@@ -1,3 +1,7 @@
+---
+order: 200
+label: Page config
+---
 # Page configuration
 
 ## YAML Front Matter parameters

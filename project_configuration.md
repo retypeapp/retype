@@ -1,3 +1,7 @@
+---
+order: 300
+label: Project config
+---
 # Project configuration
 
 Retype will read the `retype.json` file for additional instructions on how to configure your project. 

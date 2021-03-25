@@ -1,6 +1,0 @@
-- [Welcome](README.md)
-- [Getting Started](getting_started.md)
-- [Formatting](formatting.md)
-- [Project config](project_configuration.md)
-- [Page config](page_configuration.md)
-- [Retype CLI](cli.md)

@@ -1,3 +1,6 @@
+---
+order: 100
+---
 # Retype CLI
 
 The Retype CLI is clean and simple. There are basically just three options, `retype init`, `retype build`, and `retype run`.
