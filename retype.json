@@ -1,13 +1,13 @@
 {
     "input": "./",
-    "output": "retype",
+    "output": ".retype",
     "version": "1.1.0",
     "cname": "retype.com",
   
     "identity": {
         "logo": "/static/retype-logo.svg",
         "logoDark": "/static/retype-logo-dark.svg",
-        "label": "v1.1"
+        "label": "Docs"
      },
 
     "meta": {
@@ -16,8 +16,8 @@
 
     "links": [
         {
-            "text": "Getting Started",
-            "link": "/getting_started"
+            "text": "Home",
+            "link": "/"
         },
         {
             "text": "GitHub",
