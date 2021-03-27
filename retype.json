@@ -14,6 +14,10 @@
         "title": " | Retype - Generate, publish, and share documentation"
     },
 
+    "edit": {
+        "repo": "https://github.com/retypeapp/retype/"
+    },
+
     "links": [
         {
             "text": "Home",
