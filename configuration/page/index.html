@@ -7,7 +7,7 @@
 
     <title>Page configuration | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Option " />
+    <meta name="description" content="Individual `.md` pages can be configured using the Front Matter section added to the top of the page." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -142,7 +142,7 @@
                 <nav>
                     <ul class="flex flex-wrap justify-center items-center">
                         <li class="mr-6">
-                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/">Home</a>
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/README.md">Home</a>
                         </li>
                         <li class="mr-6">
                             <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype">GitHub</a>
@@ -188,81 +188,263 @@
         <span>Page configuration</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="yaml-front-matter-parameters">
+<p>Individual <code v-pre>.md</code> pages can be configured using the Front Matter section added to the top of the page.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">sample.md</div>
+<pre class="language-markdown"><code v-pre class="language-markdown">---
+label: Sample
+layout: page
+order: 100
+---
+# Sample page
+
+This is a sample page demonstrating Front Matter configs.</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="separate-yml-configuration">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#yaml-front-matter-parameters">#</doc-anchor-trigger>
-        <span>YAML Front Matter parameters</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#separate-yml-configuration">#</doc-anchor-trigger>
+        <span>Separate <code v-pre>.yml</code> configuration</span>
     </h2>
 </doc-anchor-target>
+<p>If you would prefer to keep the configuration separate and out of the <code v-pre>.md</code> content page, the options can be moved into a paired <code v-pre>.yml</code> file.</p>
+<p>For instance, <code v-pre>sample.md</code> would need a matching <code v-pre>sample.yml</code> file. The separate <code v-pre>.yml</code> file must have the exact same filename as the matching <code v-pre>.md</code> page.</p>
+<p>Both <code v-pre>.yml</code> and <code v-pre>.yaml</code> extensions are supported.</p>
+<p>Adding your configs into the top Front Matter section of a <code v-pre>.md</code> page, or into a separate <code v-pre>.yml</code> file is just a matter of preference. Both techniques produce the same result.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">sample.md</div>
+<pre class="language-markdown"><code v-pre class="language-markdown"># Sample page
+
+This is a sample page demonstrating Front Matter configs.</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">sample.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">label: Sample
+layout: page
+order: 100</code></pre>
+</doc-codeblock></div>
+<doc-alert variant="primary">
+<p>If you add a config to both locations, the Front Matter of a <code v-pre>.md</code> page take precedence.</p>
+</doc-alert>
+<p>See <a href="../folder">Folder configuration</a> for details on how to configure a folder.</p>
+<doc-anchor-target id="options">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="description">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#description">#</doc-anchor-trigger>
+        <span>description</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="description-string">
+<template #title>description : <code v-pre>string</code></template>
+<p>A custom description of the current page.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">description: This is a custom description for this page</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="hidden">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hidden">#</doc-anchor-trigger>
+        <span>hidden</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="hidden-boolean">
+<template #title>hidden : <code v-pre>boolean</code></template>
+<p>Hides the current page in the navigation and from the search results. Default is <code v-pre>false</code>.</p>
+<p>Set to <code v-pre>true</code> to hide.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">hidden: true</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="icon">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
+        <span>icon</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="icon-string">
+<template #title>icon : <code v-pre>string</code></template>
+<p>Custom icon for the navigation node of the current page. Default is <code v-pre>null</code>.</p>
+<p>Options include using an <a href="https://octicons-primer.vercel.app/octicons/">Octicon</a> name, <a href="https://mojee.io/emojis/">Emoji</a> shortcode, or <code v-pre>&lt;svg&gt;</code> element.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Octicon</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: rocket</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Emoji shortcode</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: &quot;:rocket:&quot;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">SVG element</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: &quot;&lt;svg&gt;...&lt;/svg&gt;</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="label">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
+        <span>label</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="label-string">
+<template #title>label : <code v-pre>string</code></template>
+<p>Custom label for the navigation node for the current page. Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">title: Custom label</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="layout">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#layout">#</doc-anchor-trigger>
+        <span>layout</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="layout-string">
+<template #title>layout : <code v-pre>string</code></template>
+<p>The layout for the page. Default is <code v-pre>default</code>.</p>
+<p>Supported values: <code v-pre>default</code>, <code v-pre>central</code>, <code v-pre>page</code>.</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Type</th>
+<th>Layout</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>title</code></td>
-<td><code v-pre>string</code></td>
-<td>Custom title for the current page</td>
+<td><code v-pre>default</code></td>
+<td>The default layout for all <code v-pre>.md</code> pages. The page is added to the main navigation.</td>
 </tr>
 <tr>
-<td><code v-pre>label</code></td>
-<td><code v-pre>string</code></td>
-<td>Sidebar nav item custom label for the current page</td>
+<td><code v-pre>page</code></td>
+<td>Similar to <code v-pre>default</code> layout, but is not added to the main navigation.</td>
 </tr>
 <tr>
-<td><code v-pre>description</code></td>
-<td><code v-pre>string</code></td>
-<td>Custom description of the current page</td>
-</tr>
-<tr>
-<td><code v-pre>icon</code></td>
-<td><code v-pre>string</code></td>
-<td>Sidebar nav item custom icon for the current page. Could be one from the following:</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>- Octicons icon name, e.g. <code v-pre>home</code> (see more: <a href="https://primer.style/octicons/">https://primer.style/octicons/</a>)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>- Emoji shortcode, e.g. <code v-pre>:smile:</code> (see more: <a href="https://mojee.io/emojis/">https://mojee.io/emojis/</a>)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>- Svg element (<code v-pre>&lt;svg&gt;..&lt;/svg&gt;</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>hide</code></td>
-<td><code v-pre>boolean</code></td>
-<td>Set to <code v-pre>true</code> to hide this page from the navigation menu and search results.</td>
+<td><code v-pre>central</code></td>
+<td>A page with no left or right columns.</td>
 </tr>
 </tbody>
 </table>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">layout: page</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="order">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#order">#</doc-anchor-trigger>
+        <span>order</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="order-string">
+<template #title>order : <code v-pre>string</code></template>
+<p>A custom stack order within the navigation.</p>
+<p>Options can include:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A number such as <code v-pre>100</code> or <code v-pre>-100</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any string value that will be slotted into the <code v-pre>A -&gt; Z</code> alpha ordering of all navigation nodes</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A <a href="https://semver.org/">SemVer</a> value such as <code v-pre>v2.0</code></li>
+</ul>
+<p>In order of precedence, the <code v-pre>order</code> would be applied by:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">number (high)
+alpha (a)
+neutral (by alpha)
+alpha (z)
+vSemver (newest)
+vSemver (oldest)
+number (low)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="order-by-number">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-number">#</doc-anchor-trigger>
+        <span>Order by number</span>
+    </h4>
+</doc-anchor-target>
+<p>Larger number = order higher in the stack.</p>
+<p>No order number or <code v-pre>0</code> = order by alpha</p>
+<p>Smaller number = order lower in the stack.</p>
+<p>If multiple pages have the same <code v-pre>order</code> number, secondary ordering in that cluster is by alpha.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">+
+0
+-</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="order-by-alpha">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-alpha">#</doc-anchor-trigger>
+        <span>Order by alpha</span>
+    </h4>
+</doc-anchor-target>
+<p>Order values by alpha.</p>
+<p><code v-pre>a</code> = higher
+<code v-pre>z</code> = lower</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Alpha
+Bravo
+Charlie
+Zulu</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="order-by-vsemver">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-vsemver">#</doc-anchor-trigger>
+        <span>Order by <code v-pre>v{semver}</code></span>
+    </h4>
+</doc-anchor-target>
+<p>Order by <a href="https://semver.org/">semver</a> with latest release at the top</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">v5.0.1
+v5
+v4.0
+v3.1
+v3.0
+v2.0
+v1.0</code></pre>
+</doc-codeblock></div>
+<p>Items prefixed with <code v-pre>v</code> and mixed with other alpha values would be grouped at the end of</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">alpha
+bravo
+yankee
+zulu
+v3.0
+v2.1-beta
+v2.0
+v1.0
+v1.0-beta
+v1.0-alpha</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">layout: 100</code></pre>
+</doc-codeblock></div>
+</doc-panel>
 
     
                 <!-- Required only on API pages -->
                 <doc-toolbar-member-filter-no-results />
             </div>
 
-            
+            <div class="mt-14 flex flex-wrap items-center justify-between">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/page.md" target="_blank" rel="noopener">
+        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        <span>Edit this page</span>
+    </a>
+
+    <!--<p class="my-2.5 text-gray-500 dark:text-dark-350 text-sm">Last updated on <strong>2021-03-14</strong> by <strong>Geoffrey McGill</strong></p>-->
+</div>
+
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="p-6 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/project_configuration">
+        <a class="p-6 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/configuration/project">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-            <span>Project config</span>
+            <span>Project</span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="p-6 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/cli">
-            <span>Retype CLI</span>
+        <a class="p-6 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/configuration/folder">
+            <span>Folder</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
     </div>
