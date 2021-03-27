@@ -18,8 +18,8 @@ jobs:
         with:
           dotnet-version: 5.0.x
 
-      - uses: retypeapp/action-build@v1.2.0
+      - uses: retypeapp/action-build@main
 
-      - uses: retypeapp/action-github@v1.2.0
+      - uses: retypeapp/action-github@main
         with:
           update-branch: true
