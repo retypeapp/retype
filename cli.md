@@ -1,5 +1,6 @@
 ---
-order: 100
+order: -100
+icon: terminal
 ---
 # Retype CLI
 
@@ -43,6 +44,8 @@ Options:
   -?, -h, --help    Show help and usage information
 ```
 
+---
+
 ### `retype init`
 
 Create a new `retype.json` configuration file if one is not already present.
@@ -58,9 +61,12 @@ Arguments:
   <path>    Path to the project root [Optional]
 
 Options:
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information
+  --override <override>    JSON configuration overriding retype.json values
+  -v, --verbose            Verbose logging
+  -?, -h, --help           Show help and usage information
 ```
+
+---
 
 ### `retype build`
 
@@ -77,9 +83,14 @@ Arguments:
   <path>    Path to the project root or retype.json [Optional]
 
 Options:
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information
+  --output <output>        Custom path to the output directory
+  --license <license>      Retype license key
+  --override <override>    JSON configuration overriding retype.json values
+  -v, --verbose            Verbose logging
+  -?, -h, --help           Show help and usage information
 ```
+
+---
 
 ### `retype run`
 

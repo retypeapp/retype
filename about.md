@@ -13,18 +13,25 @@ Do you have a general inquiry? Please feel free to contact us at [hello@object.n
 
 The entire package release history of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) or [NuGet](https://nuget.org/packages/retypeapp). 
 
-### `v1.3.0`
+### `v1.4.0`
 
 Expected: Q2 2021
 
-- [ ] Even cleaner upgrade to Reytpe from GitBook experience
 - [ ] New `includes` support
 - [ ] New Accordion component
 - [ ] New Badge component
-- [ ] New `blog` layout
-- [ ] New `icon` and `iconAlign` configs on links
 - [ ] Beta2 of building C# project reference documentation
 - [x] Many more...
+
+### `v1.3.0`
+
+Expected: April 2021
+
+- [x] New `blog` layout
+- [x] New image alignment and captions
+- [x] Even cleaner upgrade to Reytpe from GitBook experience
+- [x] New `icon` and `iconAlign` configs on links
+- [x] Several bug fixes
 
 ### `v1.2.0`
 

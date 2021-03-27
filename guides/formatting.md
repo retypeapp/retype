@@ -1,16 +1,16 @@
 ---
-order: 400
+icon: note
 ---
 # Formatting
 
-Markdown `.md` pages are plain text documents with a simple readable syntax format that aims at making writing for the internet easier. 
+Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier. 
 
 No special software is required to create an `.md` file. Any basic text editor will do.
 
 Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a full demonstration of the formatting possibilities and best practices.
 
 !!!
-View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/formatting.md) file used to create this page.
+View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/guides/formatting.md) file used to create this page.
 !!!
 
 ## Quick start
@@ -56,7 +56,7 @@ Need to draw attention to something? Use an alert.
 
 At a very basic level, to create a new page for your Retype project, do the following:
 
-1. Create a `.md` file
+1. Create an `.md` file
 2. Add a `# title`
 3. Start writing
 
@@ -68,7 +68,7 @@ Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within you
 
 You can place emoji `:shortcodes:` anywhere within your document, such as `:smile:` :smile: or `:unicorn_face:` :unicorn_face:. 
 
-Use Mojee to [search](https://mojee.io/emojis/) for the emojis your love and paste the `:shortcode:` into your `.md` document.
+Use Mojee to [search](https://mojee.io/emojis/) for your favorite emojis and paste the `:shortcode:` into your `.md` document.
 
 :grinning: | :smiley: | :smile: | :grin: | :satisfied: | :sweat_smile: | :joy: | :wink: | :blush: | :innocent:
  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -86,7 +86,7 @@ Use Mojee to [search](https://mojee.io/emojis/) for the emojis your love and pas
 
 Alert components help to highlight important messages for the reader.
 
-To create an alert, just surround a block of text with `!!!`.
+To create an alert, just surround a block of text or any markdown content with `!!!`.
 
 ```md
 !!!
@@ -97,6 +97,22 @@ This is an alert.
 !!!
 This is an alert.
 !!!
+
+### Alert title
+
+Alerts can also have titles. Add a space, then add your title, such as `!!! My title`.
+
+```md
+!!! My title
+This is an alert.
+!!!
+```
+
+!!! My title
+This is an alert.
+!!!
+
+### Alert variants
 
 Alerts come in 6 different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
 
@@ -111,8 +127,6 @@ Alerts come in 6 different flavors which can be specified by passing a `variant`
 | `light` | `light` |
 | `dark` | `dark` |
 | `contrast` | `light` or `dark` depending on time of day |
-
-Alerts can also have titles. Add a space then add your title, such as `!!! Title here` or `!!!danger Title here`.
 
 ### Alert demo
 
@@ -204,6 +218,8 @@ This is a Tab
 This is a Tab
 |||
 
+### Multiple tabs
+
 Multiple Tabs can be configured by stacking `|||` blocks. 
 
 ```md
@@ -233,6 +249,8 @@ This is a Panel. Expanded by default.
 +++ My Panel
 This is a Panel. Expanded by default.
 +++
+
+### Collapsed panel
 
 By default, Panels are collapsible and will be in there expanded state. You can configure Panels to initially render in their collapsed state by using `++-`.
 

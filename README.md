@@ -1,5 +1,6 @@
 ---
 label: Welcome
+icon: home
 ---
 # Welcome to Retype
 
@@ -17,7 +18,9 @@ A new Retype powered website can be up and running within seconds once Retype is
 
 You can install Retype using `npm`, `yarn`, or the `dotnet` CLI. 
 
-From your command line, navigate to a folder location where you have one or more Markdown `.md` files, then choose one of the following tools to first install `retypeapp` and then start by using `retype watch`:
+From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
+
+Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` command:
 
 ||| NPM
 ```
@@ -38,13 +41,15 @@ retype watch
 
 That's it! Your new Retype website should be up and running. 
 
-If a change is detected, such as editing and saving a `.md` file, your Retype website will be updated almost instantly within the browser.
-
 !!!
 You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
 
 All operating systems are supported, including Mac, Windows, and Linux.
 !!!
+
+## Live reload
+
+If a change is detected, such as editing and saving an `.md` file, your Retype website will be updated almost instantly within the browser.
 
 The `retype watch` command runs the following three commands and listens for any new changes in your content.
 
@@ -56,11 +61,11 @@ retype run
 
 After running `retype watch`, edit any `.md` file and see your change appear in the browser.
 
-!!!success COMING SOON
+!!! COMING SOON
 
-Retype can also build amazing reference documentation based upon your projects source code. TypeScript and C# projects are supported (JavaScript next), with plans for many more languages in the future.
+Retype can also build amazing reference documentation based upon your projects source code. C# projects are currently in beta support, TypeScript is coming soon, and there are plans for many more languages in the future.
 
-Point Retype at a TypeScript or C# project, and reference documentation will be generated based on your library's source code, code comments, and metadata.
+Just point Retype at a C# project and reference documentation will be generated based on your library's source code, code comments, and metadata.
 
 !!!
 
@@ -77,15 +82,15 @@ Don't blink. Retype was built for speed.
 
 #### :white_check_mark: Easy install
 
-[Installation](/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from. 
+[Installation](guides/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from. 
 
 #### :muscle: Powerful
 
-Project level [configuration](project_configuration.md) using `retype.json` unlocks many more Retype features and customization.
+Project level [configuration](configuration/project.md) using `retype.json` unlocks many more Retype features and customization.
 
 #### :pencil2: Simple formatting
 
-Pages are [formatted](/formatting.md) using Markdown syntax. Page level [configuration](/page_configuration.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+Pages are [formatted](guides/formatting.md) using Markdown syntax. Page level [configuration](configuration/page.md) is available, such as customizing the navigation `label` or `description` used by search engines.
 
 #### :computer: Host anywhere
 
