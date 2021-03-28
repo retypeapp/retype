@@ -885,6 +885,32 @@ This is a collapsed Panel. :+1:
 </doc-codeblock></div>
 <p><doc-button>Button 1</doc-button></p>
 <p><doc-button>Button 2</doc-button></p>
+<doc-anchor-target id="code-blocks">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-blocks">#</doc-anchor-trigger>
+        <span>Code blocks</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype includes the functionality to set a title on your markdown code blocks.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">``` Code block title
+var msg = &quot;Set a code block title&quot;;
+```</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Code block title</div>
+<pre class="language-none"><code v-pre class="language-none">var msg = &quot;Set a code block title&quot;;</code></pre>
+</doc-codeblock></div>
+<p>The title can be used in conjunction with the code reference type.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">```js Code block title
+var msg = &quot;Set a code block title&quot;;
+```</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Code block title</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">var msg = &quot;Set a code block title&quot;;</code></pre>
+</doc-codeblock></div>
 
     
                 <!-- Required only on API pages -->
