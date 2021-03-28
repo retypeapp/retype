@@ -414,3 +414,29 @@ This is a paragraph with a [!button size="xs" text="Button" margin="0 4"].
 [!button Button 1]
 
 [!button Button 2]
+
+## Code blocks
+
+Retype includes the functionality to set a title on your markdown code blocks.
+
+~~~
+``` Code block title
+var msg = "Set a code block title";
+```
+~~~
+
+``` Code block title
+var msg = "Set a code block title";
+```
+
+The title can be used in conjunction with the code reference type.
+
+~~~
+```js Code block title
+var msg = "Set a code block title";
+```
+~~~
+
+```js Code block title
+var msg = "Set a code block title";
+```
