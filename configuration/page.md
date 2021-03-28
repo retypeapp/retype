@@ -1,5 +1,5 @@
 ---
-label: Page
+label: Page config
 order: 100
 icon: file
 ---
