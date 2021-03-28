@@ -30,9 +30,9 @@ Expected: Q2 2021
 
 Expected: Early April 2021
 
-- [x] New `blog` layout
-- [x] New image alignment and captions
-- [x] Even cleaner upgrade to Reytpe from GitBook experience
+- [ ] New `blog` layout
+- [ ] New image alignment and captions
+- [ ] Even cleaner upgrade to Reytpe from GitBook experience
 - [x] New `icon` and `iconAlign` configs on links
 - [x] Several bug fixes
 
@@ -54,13 +54,13 @@ Released: 2021-02-25
 
 Released: 2021-03-12
 
-- [x] New Tab component
-- [x] New Button component
-- [x] New Panel component with expand/collapse
+- [x] New [Tab](guides/formatting.md#tabs) component
+- [x] New [Button](guides/formatting.md#buttons) component
+- [x] New [Panel](guides/formatting.md#panels) component with expand/collapse
 - [x] New `retype watch` command ([docs](cli.md#retype-watch))
 - [x] New _Live Reload_ when using `retype watch`
 - [x] New `.yml` option for Page or Folder configs
-- [x] New code block titles
+- [x] New code block [titles](guides/formatting.md#code-blocks)
 - [x] Enable line-numbering in code blocks
 
 ## `v1.0.0`
