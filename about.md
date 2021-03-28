@@ -18,7 +18,7 @@ Library | License | Role
 [Retype](https://retype.com/) | [Retype](/LICENSE.md) | Magical static site generator
 [Markdig](https://github.com/xoofx/markdig) | [BSD-2-Clause](https://github.com/xoofx/markdig/blob/master/license.txt) | Markdown parsing
 [Scriban](https://github.com/scriban/scriban) | [BSD-2-Clause](https://github.com/scriban/scriban/blob/master/license.txt) | Templating
-[Mojee](https://mojee.io) | [Mojee](https://docs.mojee.io/LICENSE/) | Emoji parsing
+[Mojee](https://mojee.io) | [Mojee](https://docs.mojee.io/license/) | Emoji parsing
 [Vue.js](https://vuejs.org/) | [MIT](https://github.com/vuejs/vue/blob/dev/LICENSE) | Client UI framework
 [Lunr](http://lunrjs.com/) | [MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE) | Search
 [Prism](https://prismjs.com/) | [MIT](https://github.com/PrismJS/prism/blob/master/LICENSE) | Code sample formatting
