@@ -59,6 +59,23 @@ description: This is a custom description for this page
 ```
 +++
 
+### expanded
+
++++ expanded : `boolean`
+
+Determines whether this [folder](foulder.md) should be expanded in the tree navigation on initial page load. Default is `false`.
+
+Set to `true` to expand the folder node in the navigation.
+
+```yml
+expanded: true
+```
+
+The `expanded` option only applies to [folders](folder.md) when configured within an `index.yml` folder configuration file.
+
+Setting `expanded: true` within the page Front Matter or paired `.yml` file will have not effect. 
++++
+
 ### hidden
 
 +++ hidden : `boolean`
