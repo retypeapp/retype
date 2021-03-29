@@ -30,12 +30,9 @@
         <div class="flex items-center justify-between h-full py-2 md:w-75">
             <div class="flex items-center px-2 md:px-6">
                 <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
-                    <a href="/">
-                        <img class="dark:hidden" src="/static/retype-logo.svg">
-                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
-                    </a>
+                    <a href="/">Project Name</a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -203,6 +200,11 @@
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">icon: gear</code></pre>
 </doc-codeblock></div>
+<p>Expand the folder node in the tree navigation with the <a href="../page#expanded">expanded</a> config.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">index.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
+</doc-codeblock></div>
 <p>Move a folder up to the top of the navigation by setting the <a href="../page#order">order</a>. The larger the number, the higher in the stack it will be placed.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
@@ -223,7 +225,7 @@
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">hidden: true</code></pre>
 </doc-codeblock></div>
-<p>Another option to completely ignore a folder (or a file) would be to prefix the folder name (or file name) with an underscore (<code v-pre>_</code>). For example <code v-pre>_Guides</code> would instruct Retype to ignore the folder.</p>
+<p>Another option to completely ignore a folder or a file would be to prefix the folder-name or file-name with an underscore <code v-pre>_</code>. For instance, <code v-pre>_guides</code> would instruct Retype to ignore the folder.</p>
 
     
                 <!-- Required only on API pages -->

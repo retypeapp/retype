@@ -30,12 +30,9 @@
         <div class="flex items-center justify-between h-full py-2 md:w-75">
             <div class="flex items-center px-2 md:px-6">
                 <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
-                    <a href="/">
-                        <img class="dark:hidden" src="/static/retype-logo.svg">
-                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
-                    </a>
+                    <a href="/">Project Name</a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -244,6 +241,22 @@ order: 100</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">description: This is a custom description for this page</code></pre>
 </doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="expanded">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#expanded">#</doc-anchor-trigger>
+        <span>expanded</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="expanded-boolean">
+<template #title>expanded : <code v-pre>boolean</code></template>
+<p>Determines whether this <a href="foulder.md">folder</a> should be expanded in the tree navigation on initial page load. Default is <code v-pre>false</code>.</p>
+<p>Set to <code v-pre>true</code> to expand the folder node in the navigation.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>expanded</code> option only applies to <a href="../folder">folders</a> when configured within an <code v-pre>index.yml</code> folder configuration file.</p>
+<p>Setting <code v-pre>expanded: true</code> within the page Front Matter or paired <code v-pre>.yml</code> file will have not effect.</p>
 </doc-panel>
 <doc-anchor-target id="hidden">
     <h3>
