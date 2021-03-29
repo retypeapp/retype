@@ -1,4 +1,4 @@
-name: Publish documentation Website to GitHub Pages
+name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    name: Publish documentation to retype branch.
+    name: Publish to retype branch
 
     runs-on: ubuntu-latest
 
@@ -18,8 +18,8 @@ jobs:
         with:
           dotnet-version: 5.0.x
 
-      - uses: retypeapp/action-build@main
+      - uses: retypeapp/action-build@v1
 
-      - uses: retypeapp/action-github@main
+      - uses: retypeapp/action-github@v1
         with:
           update-branch: true
