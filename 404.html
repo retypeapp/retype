@@ -28,9 +28,12 @@
         <div class="flex items-center justify-between h-full py-2 md:w-75">
             <div class="flex items-center px-2 md:px-6">
                 <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
-                    <a href="/">Project Name</a>
+                    <a href="/">
+                        <img class="dark:hidden" src="/static/retype-logo.svg">
+                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
+                    </a>
                 </span>
-                
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -39,21 +42,21 @@
         <div class="flex justify-between md:flex-grow">
             <!-- Top Nav -->
             <nav class="hidden md:flex">
-                <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
-                    <li class="md:mr-6">
-                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
-                    </li>
-                    <li class="md:mr-6">
-                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
-                    </li>
-                    <li class="md:mr-6">
-                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
-                    </li>
-                    <li class="md:mr-6">
-                        <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
-                    </li>
-                </ul>
-            </nav>
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
+        </li>
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+        </li>
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+        </li>
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+        </li>
+    </ul>
+</nav>
 
             <!-- Header Right Skeleton -->
             <div v-cloak class="flex justify-end flex-grow skeleton">
