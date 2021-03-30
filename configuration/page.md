@@ -73,7 +73,7 @@ expanded: true
 
 The `expanded` option only applies to [folders](folder.md) when configured within an `index.yml` folder configuration file.
 
-Setting `expanded: true` within the page Front Matter or paired `.yml` file will have not effect. 
+Setting `expanded: true` within the Front Matter of an `.md` page or the paired `.yml` file will be ignored. 
 +++
 
 ### hidden

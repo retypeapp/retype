@@ -7,10 +7,10 @@ icon: file-directory
 Using the same `.yml` technique and options as [Page configuration](page.md), a folder can be configured using a separate `index.yml` file placed inside the folder.
 
 !!!
-Folders support the same properties a pages, although a such as `description` and `layout` would not be applicable.
+Folders support the same properties a [pages](page.md), although properties such as [`description`](page.md#description) and [`layout`](page.md#layout) would not be applicable in the context of a folder configuration. 
 !!!
 
-### Samples
+## Samples
 
 Set a custom [icon](page.md#icon) for the folder.
 
