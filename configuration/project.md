@@ -44,28 +44,217 @@ Running the command `retype init` will create a default `retype.json` file. The 
 
 ## Options
 
+### input
+
++++ input : `string`
+
+Custom path to the input directory. Default is `.`.
+
+The path is relative to the `retype.json` location.
+
+```json Sample: Change input location to /src folder
+{
+  "input": "./src"
+}
+```
++++
+
+### output
+
++++ output : `string`
+
+Custom path to the output directory. Default is `.retype`.
+
+The path is relative to the `retype.json` location.
+
+```json Sample: Change output location to /docs folder
+{
+  "output": "./docs"
+}
+```
++++
+
+### base
+
++++ base : `string`
+
+Base subfolder path appended to all URL's. Default is `null` or empty string.
+
+If you deploy the build website to a subfolder of another website, use the `base` to ensure the URL's correclty resolve. 
+
+For instance, let's say your main site is `https://example.com` and will remain unchanged.  If you would like to deploy the Retype built website into a `/docs` subfolder, with the final URL of `https://example.com/docs`, then setting `"base": "docs"` would be required.
+
+```json Sample: Change output location to /docs folder
+{
+  "base": "docs"
+}
+```
+
+Another common scenario for setting a `base` is when using GitHub Pages **without** a custom `CANME`. 
+
+For instance, if your GitHub organization was `CompanyX` and your repo was named `my-repo`, the URL to your GitHub Pages hosted website would be:
+
+```
+https://companyx.github.io/my-repo/
+```
+
+The Retype generated wesite would require `"base": "my-repo"` to be set within your projects `retype.json` file in order to properly resolve the URL paths during build.
+
+The `retype.json` file for that scenario would be...
+
+```json retype.json
+{
+  "base": "my-repo"
+}
+```
+
+...and the GitHub Pages configuration within your repo Settings would be:
+
+![GitHub Pages configuration](../static/project-base-config-github-pages.png)
++++
+
+### cname
+
++++ cname : `string`
+
+If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [output](#output). Default is `null`.
+
+```json Sample: Host docs.example.com website using GitHub pages
+{
+  "cname": "docs.example.com"
+}
+```
++++
+
+### favicon
+
++++ favicon : `string`
+
+A custom path to a `.ico` or `.png` file to be used as the `favicon`. Default is `null`.
+
+The path is relative to the [input](#input).
+
+```json Sample: favicon is stored in the /static folder
+{
+  "favicon": "static/favicon.png"
+}
+```
+
+By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
++++
+
+## `meta`
+
+Meta tag configuration.
+
+### `title`
+
++++ title : `string`
+
+Common site-wide suffix appended to the html `<title>` element of all pages. Default is `null`.
+
+```json Sample: Append this string to all page meta tag titles
+{
+  "meta": {
+    "title": " | Example.com - Widgets for the internet"
+  }
+}
+```
+
+If we had an `About us` page, the final `<title>` with the `title` value above would be:
+
+```html
+<title>About us | Example.com - Widgets for the internet</title>
+```
++++
+
+## `branding`
+
+Branding configuration.
+
+### `title`
+
++++ title : `string`
+
+Logo Title. Displayed when [logo](#logo) and [logoDark](#logoDark) are not configured. Default is `Project Name`.
+
+```json Sample: Set the website title
+{
+  "branding": {
+    "title": "Example.com"
+  }
+}
+```
+
+The above `title` would create the following branding title in the upper-left corner of the generated website.
+
+![GitHub Pages configuration](../static/project-branding-title.png)
++++
+
+### `label`
+
++++ label : `string`
+
+Optional Logo Label text. Default is `Docs`.
+
+```json Sample: Set a custom label
+{
+  "branding": {
+    "label": "v2.2"
+  }
+}
+```
+The above `label` would be rendered as the following label in the upper-left corner of the generated website.
+
+![GitHub Pages configuration](../static/project-branding-title.png)
++++
+
+### `logo`
+
++++ logo : `string`
+
+One of the following:
+
+1. The path to a logo file (light theme), relative to the [input](#input), or
+2. An inline `<svg>` logo
+
+Default is `null`.
+
+```json Sample: Set a custom label
+{
+  "branding": {
+    "logo": "static/logo.png"
+  }
+}
+```
++++
+
+### `logoDark`
+
++++ logoDark : `string`
+
+One of the following:
+
+1. The path to a logo file (dark theme), relative to the [input](#input), or
+2. An inline `<svg>` logo
+
+Default is `null`.
+
+```json Sample: Set a custom label
+{
+  "branding": {
+    "logo": "static/logo.png",
+    "logoDark": "static/logo-dark.png"
+  }
+}
+```
++++
+
+
+## Options
+
 | Option                               | Type      | Default value              | Description                                                                                                                     |
 | ------------------------------------ | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `input`                              | `string`  | `.`                        | Custom path to the input directory                                                                                              |
-| `output`                             | `string`  | `.retype`                  | Custom path to the output directory                                                                                             |
-| `version`                            | `string`  | `1.0.0`                    | Version label. Set to `null` to hide                                                                                            |
-| `base`                               | `string`  | `/`                        | Base subfolder path appended to URL                                                                                             |
-| `cname`                              | `string`  |                            | If specified, a `CNAME` file with the corresponding content will be emitted                                                     |
-| `favicon`                            | `string`  |                            | Custom path to a favicon. Relative to the `input` directory                                                                     |
-|                                      |           |                            |                                                                                                                                 |
-| `license`                            | `string`  |                            | Retype license key                                                                                                              |
-|                                      |           |                            |                                                                                                                                 |
-| `meta`                               | `object`  |                            | Meta configuration                                                                                                              |
-| `meta.title`                         | `string`  |                            | Common title suffix                                                                                                             |
-|                                      |           |                            |                                                                                                                                 |
-| `branding`                           | `object`  |                            | Branding configuration                                                                                                          |
-| `branding.title`                     | `string`  | `Project Name`             | Logo Title. Displayed when `logo` and `logoDark` are not configured                                                             |
-| `branding.label`                     | `string`  |                            | Optional Logo Label text.                                                                                                       |
-| `branding.logo`                      | `string`  |                            | One of the following:                                                                                                           |
-|                                      |           |                            | - Name of Logo file (light theme), relative to the `input` directory                                                            |
-|                                      |           |                            | - Inline SVG logo                                                                                                               |
-| `branding.logoDark`                  | `string`  |                            | Name of Logo file (dark theme), relative to the `input` directory. Ignored if the `logo` is configured with a SVG image         |
-|                                      |           |                            |                                                                                                                                 |
 | `branding.colors`                    | `object`  |                            | Custom color configuration                                                                                                      |
 | `branding.colors.label`              | `object`  |                            | Logo label colors                                                                                                               |
 | `branding.colors.label.text`         | `string`  | `#1f7aff`                  | Text color                                                                                                                      |
@@ -74,6 +263,8 @@ Running the command `retype init` will create a default `retype.json` file. The 
 | `links`                              | `array`   |                            | Top-level navigation link configuration                                                                                         |
 | `links[].text`                       | `string`  |                            | Navigation link text                                                                                                            |
 | `links[].link`                       | `string`  |                            | Navigation link URL                                                                                                             |
+| `links[].icon`                       | `string`  |                            | An icon for this link                                                                                                           |
+| `links[].iconPosition`               | `string`  |                            | The icon position for the icon. Either `left` or `right`. Default is `left`                                                     |
 |                                      |           |                            |                                                                                                                                 |
 | `footer`                             | `object`  |                            | Footer configuration                                                                                                            |
 | `footer.copyright`                   | `string`  |                            | Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable |
