@@ -4,7 +4,7 @@ icon: terminal
 ---
 # Retype CLI
 
-The Retype CLI is clean and simple. There are basically just three options, `retype init`, `retype build`, and `retype run`.
+The Retype CLI is clean and simple. The majority of the time you will run just one command: `retype watch`
 
 !!!
 
