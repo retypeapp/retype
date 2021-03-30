@@ -24,17 +24,17 @@ Expected: Q2 2021
 - [ ] New Badge component
 - [ ] Beta2 of building C# project reference documentation
 - [ ] Super fast incremental build process
+- [ ] Even cleaner upgrade to Reytpe from GitBook experience
+- [ ] New image alignment and captions
+- [x] New `blog` layout
 - [x] Several bug fixes
 
 ## `v1.3.0`
 
-Expected: Early April 2021
+Released: 2021-03-30
 
-- [ ] New `blog` layout
-- [ ] New image alignment and captions
-- [ ] Even cleaner upgrade to Reytpe from GitBook experience
-- [x] New `icon` and `iconAlign` configs on links
-- [x] Several bug fixes
+- [x] New `icon` and `iconAlign` configs on [`links`](configuration/project.md#links)
+- [x] A few important bug fixes
 
 ## `v1.2.0`
 
@@ -44,9 +44,9 @@ Released: 2021-02-25
 - [x] New `page` layout
 - [x] New `Edit this page` link
 - [x] New `Previous | Next` buttons
-- [x] New `order` Page level config
-- [x] New `hidden` Page level config
-- [x] New `favicon` Project config available in `retype.json`
+- [x] New [`order`](configuration/page.md#order) Page level config
+- [x] New [`hidden`](configuration/page.md#hidden) Page level config
+- [x] New [`favicon`](configuration/project.md#favicon) Project config available in `retype.json`
 - [x] New beta1 of building C# project reference documentation
 - [x] New GitHub Actions for Retype
 
