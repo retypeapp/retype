@@ -222,6 +222,236 @@
         <span>Options</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="input">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#input">#</doc-anchor-trigger>
+        <span>input</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="input-string">
+<template #title>input : <code v-pre>string</code></template>
+<p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
+<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Change input location to /src folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;input&quot;: &quot;./src&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="output">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#output">#</doc-anchor-trigger>
+        <span>output</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="output-string">
+<template #title>output : <code v-pre>string</code></template>
+<p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
+<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Change output location to /docs folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;output&quot;: &quot;./docs&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="base">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
+        <span>base</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="base-string">
+<template #title>base : <code v-pre>string</code></template>
+<p>Base subfolder path appended to all URL&#39;s. Default is <code v-pre>null</code> or empty string.</p>
+<p>If you deploy the build website to a subfolder of another website, use the <code v-pre>base</code> to ensure the URL&#39;s correclty resolve.</p>
+<p>For instance, let&#39;s say your main site is <code v-pre>https://example.com</code> and will remain unchanged.  If you would like to deploy the Retype built website into a <code v-pre>/docs</code> subfolder, with the final URL of <code v-pre>https://example.com/docs</code>, then setting <code v-pre>&quot;base&quot;: &quot;docs&quot;</code> would be required.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Change output location to /docs folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;base&quot;: &quot;docs&quot;
+}</code></pre>
+</doc-codeblock></div>
+<p>Another common scenario for setting a <code v-pre>base</code> is when using GitHub Pages <strong>without</strong> a custom <code v-pre>CANME</code>.</p>
+<p>For instance, if your GitHub organization was <code v-pre>CompanyX</code> and your repo was named <code v-pre>my-repo</code>, the URL to your GitHub Pages hosted website would be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">https://companyx.github.io/my-repo/</code></pre>
+</doc-codeblock></div>
+<p>The Retype generated wesite would require <code v-pre>&quot;base&quot;: &quot;my-repo&quot;</code> to be set within your projects <code v-pre>retype.json</code> file in order to properly resolve the URL paths during build.</p>
+<p>The <code v-pre>retype.json</code> file for that scenario would be...</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.json</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;base&quot;: &quot;my-repo&quot;
+}</code></pre>
+</doc-codeblock></div>
+<p>...and the GitHub Pages configuration within your repo Settings would be:</p>
+<p><doc-anchor-trigger to="../../static/project-base-config-github-pages.png">GitHub Pages configuration</doc-anchor-trigger></p>
+</doc-panel>
+<doc-anchor-target id="cname">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cname">#</doc-anchor-trigger>
+        <span>cname</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="cname-string">
+<template #title>cname : <code v-pre>string</code></template>
+<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;cname&quot;: &quot;docs.example.com&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="favicon">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#favicon">#</doc-anchor-trigger>
+        <span>favicon</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="favicon-string">
+<template #title>favicon : <code v-pre>string</code></template>
+<p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
+<p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: favicon is stored in the /static folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;favicon&quot;: &quot;static/favicon.png&quot;
+}</code></pre>
+</doc-codeblock></div>
+<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger> root.</p>
+</doc-panel>
+<doc-anchor-target id="meta">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#meta">#</doc-anchor-trigger>
+        <span><code v-pre>meta</code></span>
+    </h2>
+</doc-anchor-target>
+<p>Meta tag configuration.</p>
+<doc-anchor-target id="title">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
+        <span><code v-pre>title</code></span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="title-string">
+<template #title>title : <code v-pre>string</code></template>
+<p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Append this string to all page meta tag titles</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;meta&quot;: {
+    &quot;title&quot;: &quot; | Example.com - Widgets for the internet&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>If we had an <code v-pre>About us</code> page, the final <code v-pre>&lt;title&gt;</code> with the <code v-pre>title</code> value above would be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;title&gt;About us | Example.com - Widgets for the internet&lt;/title&gt;</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="branding">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
+        <span><code v-pre>branding</code></span>
+    </h2>
+</doc-anchor-target>
+<p>Branding configuration.</p>
+<doc-anchor-target id="title-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
+        <span><code v-pre>title</code></span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="title-string">
+<template #title>title : <code v-pre>string</code></template>
+<p>Logo Title. Displayed when <doc-anchor-trigger to="#logo">logo</doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark">logoDark</doc-anchor-trigger> are not configured. Default is <code v-pre>Project Name</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Set the website title</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;title&quot;: &quot;Example.com&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>The above <code v-pre>title</code> would create the following branding title in the upper-left corner of the generated website.</p>
+<p><doc-anchor-trigger to="../../static/project-branding-title.png">GitHub Pages configuration</doc-anchor-trigger></p>
+</doc-panel>
+<doc-anchor-target id="label">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
+        <span><code v-pre>label</code></span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="label-string">
+<template #title>label : <code v-pre>string</code></template>
+<p>Optional Logo Label text. Default is <code v-pre>Docs</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Set a custom label</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;label&quot;: &quot;v2.2&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>The above <code v-pre>label</code> would be rendered as the following label in the upper-left corner of the generated website.</p>
+<p><doc-anchor-trigger to="../../static/project-branding-title.png">GitHub Pages configuration</doc-anchor-trigger></p>
+</doc-panel>
+<doc-anchor-target id="logo">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#logo">#</doc-anchor-trigger>
+        <span><code v-pre>logo</code></span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="logo-string">
+<template #title>logo : <code v-pre>string</code></template>
+<p>One of the following:</p>
+<ol>
+<li>The path to a logo file (light theme), relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
+<li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
+</ol>
+<p>Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Set a custom label</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;logo&quot;: &quot;static/logo.png&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="logodark">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#logodark">#</doc-anchor-trigger>
+        <span><code v-pre>logoDark</code></span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="logodark-string">
+<template #title>logoDark : <code v-pre>string</code></template>
+<p>One of the following:</p>
+<ol>
+<li>The path to a logo file (dark theme), relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
+<li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
+</ol>
+<p>Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Set a custom label</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;logo&quot;: &quot;static/logo.png&quot;,
+    &quot;logoDark&quot;: &quot;static/logo-dark.png&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="options-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-1">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h2>
+</doc-anchor-target>
 <table>
 <thead>
 <tr>
@@ -232,126 +462,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code v-pre>input</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>.</code></td>
-<td>Custom path to the input directory</td>
-</tr>
-<tr>
-<td><code v-pre>output</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>.retype</code></td>
-<td>Custom path to the output directory</td>
-</tr>
-<tr>
-<td><code v-pre>version</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>1.0.0</code></td>
-<td>Version label. Set to <code v-pre>null</code> to hide</td>
-</tr>
-<tr>
-<td><code v-pre>base</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>/</code></td>
-<td>Base subfolder path appended to URL</td>
-</tr>
-<tr>
-<td><code v-pre>cname</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>If specified, a <code v-pre>CNAME</code> file with the corresponding content will be emitted</td>
-</tr>
-<tr>
-<td><code v-pre>favicon</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Custom path to a favicon. Relative to the <code v-pre>input</code> directory</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>license</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Retype license key</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>meta</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Meta configuration</td>
-</tr>
-<tr>
-<td><code v-pre>meta.title</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Common title suffix</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>branding</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Branding configuration</td>
-</tr>
-<tr>
-<td><code v-pre>branding.title</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>Project Name</code></td>
-<td>Logo Title. Displayed when <code v-pre>logo</code> and <code v-pre>logoDark</code> are not configured</td>
-</tr>
-<tr>
-<td><code v-pre>branding.label</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Optional Logo Label text.</td>
-</tr>
-<tr>
-<td><code v-pre>branding.logo</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>One of the following:</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>- Name of Logo file (light theme), relative to the <code v-pre>input</code> directory</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>- Inline SVG logo</td>
-</tr>
-<tr>
-<td><code v-pre>branding.logoDark</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Name of Logo file (dark theme), relative to the <code v-pre>input</code> directory. Ignored if the <code v-pre>logo</code> is configured with a SVG image</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr>
 <td><code v-pre>branding.colors</code></td>
 <td><code v-pre>object</code></td>
@@ -399,6 +509,18 @@
 <td><code v-pre>string</code></td>
 <td></td>
 <td>Navigation link URL</td>
+</tr>
+<tr>
+<td><code v-pre>links[].icon</code></td>
+<td><code v-pre>string</code></td>
+<td></td>
+<td>An icon for this link</td>
+</tr>
+<tr>
+<td><code v-pre>links[].iconPosition</code></td>
+<td><code v-pre>string</code></td>
+<td></td>
+<td>The icon position for the icon. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code></td>
 </tr>
 <tr>
 <td></td>
