@@ -5,7 +5,11 @@ layout: page
 
 [Retype](https://retype.com/) is professionally built and supported by the team at [Object.NET](https://object.net).
 
-Technical support questions are best asked in the [Discussion](https://github.com/retypeapp/retype/discussions) forum, or create an [Issue](https://github.com/retypeapp/retype/issues) if you find a defect or would like to submit a feature request.
+Technical support questions are best asked in the [Discussion](https://github.com/retypeapp/retype/discussions) forum.
+
+Did you find a bug? Please create an [Issue](https://github.com/retypeapp/retype/issues). 
+
+Would you like to make a feature request. Please either start a [Discussion](https://github.com/retypeapp/retype/discussions) or create an [Issue](https://github.com/retypeapp/retype/issues).
 
 Do you have a general inquiry? Please feel free to contact us at [hello@object.net](mailto:hello@object.net).
 
