@@ -1,7 +1,6 @@
 {
     "input": "./",
     "output": ".retype",
-    "version": "1.3.0",
     "cname": "retype.com",
 
     "branding": {
