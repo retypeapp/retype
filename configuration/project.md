@@ -87,7 +87,7 @@ Allowed wildcards: `?`, `*`
 
 ```json Sample: Ignore pages in a folder
 {
-  "exclude": "draft/"
+  "exclude": ["draft/"]
 }
 ```
 
