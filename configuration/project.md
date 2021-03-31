@@ -72,6 +72,25 @@ The path is relative to the `retype.json` location.
   "output": "./docs"
 }
 ```
+
++++
+
+### exclude
+
++++ exclude : `array`
+
+Array of folder and file path patterns to exclude from the build process.
+
+Relative paths are relative to the `input`.
+
+Allowed wildcards: `?`, `*`
+
+```json Sample: Ignore pages in a folder
+{
+  "exclude": "draft/"
+}
+```
+
 +++
 
 ### base
