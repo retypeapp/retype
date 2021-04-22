@@ -15,25 +15,34 @@ Expected: Q3 2021
 - [ ] Early support for TypeScript API reference doc generation
 - [x] Many more features planned
 
-## `v1.5.0`
+## `v1.6.0`
 
 Expected: Q2 2021
 
 - [ ] New Accordion component
-- [ ] New Badge component
-- [ ] New beta release of building C# project reference documentation
+- [ ] Another beta release of building C# project reference documentation
 - [ ] New `includes` support
-- [x] Feature requests? Please start a [discussion](https://github.com/retypeapp/retype/discussions/)
+
+## `v1.5.0`
+
+Expected: Q2 2021
+
+- [ ] New Badge component
+- [ ] New `/blog` summary page
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.4.0`
 
-Expected: Early Q2 2021
+Released: 2021-04-12
 
-- [ ] Even cleaner upgrade to Reytpe from GitBook experience
-- [ ] New super fast incremental build process
-- [ ] New image alignment and captions
-- [x] New `blog` layout
-- [x] Other enhancements and bug fixes
+- [x] Even cleaner upgrade to Reytype from GitBook experience
+- [x] New super fast incremental build process
+- [x] New image alignment and captions
+- [x] New `exclude` config for `retype.json`
+- [x] New `blog` layout and `/blog` folder defaults
+- [x] New `[!file]` component
+- [x] New `[!ref]` component
+- [x] Many other minor enhancements and bug fixes
 
 ## `v1.3.0`
 

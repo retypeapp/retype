@@ -3,7 +3,7 @@ icon: note
 ---
 # Formatting
 
-Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier. 
+Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
 
 No special software is required to create an `.md` file. Any basic text editor will do.
 
@@ -21,7 +21,7 @@ The following sample demonstrates a very basic `.md` page sample with page title
 ```md
 # Page title here
 
-This is just a paragraph. 
+This is just a paragraph.
 ```
 
 We can build on the above by more formatting options such as **bold** text, images, and lists.
@@ -29,7 +29,7 @@ We can build on the above by more formatting options such as **bold** text, imag
 ```md
 # Page title here
 
-This is just a paragraph. 
+This is just a paragraph.
 
 The page can contain both [internal](/README.md) and [external](https://example.com) links.
 
@@ -66,7 +66,7 @@ In addition to the standard Markdown options (see [cheat sheet](https://www.mark
 
 Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:
 
-You can place emoji `:shortcodes:` anywhere within your document, such as `:smile:` :smile: or `:unicorn_face:` :unicorn_face:. 
+You can place emoji `:shortcodes:` anywhere within your document, such as `:smile:` :smile: or `:unicorn_face:` :unicorn_face:.
 
 Use Mojee to [search](https://mojee.io/emojis/) for your favorite emojis and paste the `:shortcode:` into your `.md` document.
 
@@ -121,7 +121,7 @@ Alerts come in 6 different flavors which can be specified by passing a `variant`
 | `primary` (default) | `blue` |
 | `secondary` | `gray` |
 | `success` | `green` |
-| `danger` | `red` | 
+| `danger` | `red` |
 | `warning` | `yellow` |
 | `info` | `light-blue` |
 | `light` | `light` |
@@ -220,13 +220,15 @@ This is a Tab
 
 ### Multiple tabs
 
-Multiple Tabs can be configured by stacking `|||` blocks. 
+Multiple Tabs can be configured by stacking `|||` blocks.
 
 ```md
 ||| Tab 1
 This is a Tab
 ||| Tab 2
 This is another Tab
+||| Tab 3
+Wow! Yet another tab :+1:
 |||
 ```
 
@@ -234,6 +236,8 @@ This is another Tab
 This is a Tab
 ||| Tab 2
 This is another Tab
+||| Tab 3
+Wow! Yet another tab :+1:
 |||
 
 ## Panels
@@ -264,7 +268,7 @@ This is a collapsed Panel. :+1:
 This is a collapsed Panel. :+1:
 +++
 
-## Lists 
+## Lists
 
 ### Checklist
 
@@ -362,8 +366,8 @@ A Button uses the same syntax as a hyperlink, but is prefixed with a `!button` t
 | `s` | [!button size="s" text="Small"] |
 | `m` (default) | [!button size="m" text="Medium"] |
 | `l` | [!button size="l" text="Large"] |
-| `xl` | [!button size="xl" text="XLarge"] | 
-| `2xl` | [!button size="2xl" text="2XLarge"] | 
+| `xl` | [!button size="xl" text="XLarge"] |
+| `2xl` | [!button size="2xl" text="2XLarge"] |
 | `3xl` | [!button size="3xl" text="3XLarge"] |
 
 ### Icon and Emoji
