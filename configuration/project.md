@@ -42,9 +42,7 @@ Running the command `retype init` will create a default `retype.json` file. The 
 }
 ```
 
-## Options
-
-### input
+## input
 
 +++ input : `string`
 
@@ -52,14 +50,14 @@ Custom path to the input directory. Default is `.`.
 
 The path is relative to the `retype.json` location.
 
-```json Sample: Change input location to /src folder
+```json Change input location to /src folder
 {
   "input": "./src"
 }
 ```
 +++
 
-### output
+## output
 
 +++ output : `string`
 
@@ -74,13 +72,13 @@ The path is relative to the `retype.json` location.
 ```
 +++
 
-### base
+## base
 
 +++ base : `string`
 
 Base subfolder path appended to all URL's. Default is `null` or empty string.
 
-If you deploy the build website to a subfolder of another website, use the `base` to ensure the URL's correclty resolve. 
+If you deploy the build website to a subfolder of another website, use the `base` to ensure the URL's correclty resolve.
 
 For instance, let's say your main site is `https://example.com` and will remain unchanged.  If you would like to deploy the Retype built website into a `/docs` subfolder, with the final URL of `https://example.com/docs`, then setting `"base": "docs"` would be required.
 
@@ -90,7 +88,7 @@ For instance, let's say your main site is `https://example.com` and will remain 
 }
 ```
 
-Another common scenario for setting a `base` is when using GitHub Pages **without** a custom `CANME`. 
+Another common scenario for setting a `base` is when using GitHub Pages **without** a custom `CANME`.
 
 For instance, if your GitHub organization was `CompanyX` and your repo was named `my-repo`, the URL to your GitHub Pages hosted website would be:
 
@@ -113,7 +111,7 @@ The `retype.json` file for that scenario would be...
 ![GitHub Pages configuration](../static/project-base-config-github-pages.png)
 +++
 
-### cname
+## cname
 
 +++ cname : `string`
 
@@ -126,7 +124,33 @@ If specified, a `CNAME` file with the corresponding value will be created and ad
 ```
 +++
 
-### favicon
+## exclude
+
++++ exclude : `array`
+Retype can exclude files or folders from being built by configuring an `exclude` string array within your projects `retype.json` file.
+
+Exclude patterns are similar to allowable patterns within a `.gitignore` file. Wildcards `*` are allowed.
+
+The following sample demonstrates how to exclude an entire `draft/` folder, any folder that ends with `*_temp/`, and one specific `/src/temp.md` file.
+
+```json Exclude patterns
+{
+  "exclude": [
+    "draft/",
+    "*_temp/",
+    "/src/temp.md"
+  ]
+}
+```
+
+You could exclude everything in your project with by adding `"exclude": [ "*" ]`.
+
+!!!
+Any file are folder prefixed with an underscore `_` are also excluded.
+!!!
++++
+
+## favicon
 
 +++ favicon : `string`
 
@@ -134,7 +158,7 @@ A custom path to a `.ico` or `.png` file to be used as the `favicon`. Default is
 
 The path is relative to the [input](#input).
 
-```json Sample: favicon is stored in the /static folder
+```json Favicon is stored in the /static folder
 {
   "favicon": "static/favicon.png"
 }
@@ -143,17 +167,17 @@ The path is relative to the [input](#input).
 By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
 +++
 
-## `meta`
+## meta
 
 Meta tag configuration.
 
-### `title`
+### title
 
 +++ title : `string`
 
 Common site-wide suffix appended to the html `<title>` element of all pages. Default is `null`.
 
-```json Sample: Append this string to all page meta tag titles
+```json Append this string to all page meta tag titles
 {
   "meta": {
     "title": " | Example.com - Widgets for the internet"
@@ -168,17 +192,17 @@ If we had an `About us` page, the final `<title>` with the `title` value above w
 ```
 +++
 
-## `branding`
+## branding
 
 Branding configuration.
 
-### `title`
+### title
 
 +++ title : `string`
 
 Logo Title. Displayed when [logo](#logo) and [logoDark](#logoDark) are not configured. Default is `Project Name`.
 
-```json Sample: Set the website title
+```json Set the website title
 {
   "branding": {
     "title": "Example.com"
@@ -191,13 +215,13 @@ The above `title` would create the following branding title in the upper-left co
 ![GitHub Pages configuration](../static/project-branding-title.png)
 +++
 
-### `label`
+### label
 
 +++ label : `string`
 
 Optional Logo Label text. Default is `Docs`.
 
-```json Sample: Set a custom label
+```json Set a custom label
 {
   "branding": {
     "label": "v2.2"
@@ -209,7 +233,7 @@ The above `label` would be rendered as the following label in the upper-left cor
 ![GitHub Pages configuration](../static/project-branding-title.png)
 +++
 
-### `logo`
+### logo
 
 +++ logo : `string`
 
@@ -220,7 +244,7 @@ One of the following:
 
 Default is `null`.
 
-```json Sample: Set a custom label
+```json Set a custom label
 {
   "branding": {
     "logo": "static/logo.png"
@@ -229,7 +253,7 @@ Default is `null`.
 ```
 +++
 
-### `logoDark`
+### logoDark
 
 +++ logoDark : `string`
 
@@ -240,7 +264,7 @@ One of the following:
 
 Default is `null`.
 
-```json Sample: Set a custom label
+```json Set a custom label
 {
   "branding": {
     "logo": "static/logo.png",
@@ -251,7 +275,7 @@ Default is `null`.
 +++
 
 
-## Options
+## Additional options
 
 | Option                               | Type      | Default value              | Description                                                                                                                     |
 | ------------------------------------ | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |

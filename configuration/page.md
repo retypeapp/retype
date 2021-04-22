@@ -20,13 +20,13 @@ This is a sample page demonstrating Front Matter configs.
 
 ## Separate `.yml` configuration
 
-If you would prefer to keep the configuration separate and out of the `.md` content page, the options can be moved into a paired `.yml` file. 
+If you would prefer to keep the configuration separate and out of the `.md` content page, the options can be moved into a paired `.yml` file.
 
 For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as the matching `.md` page.
 
 Both `.yml` and `.yaml` extensions are supported.
 
-Adding your configs into the top Front Matter section of a `.md` page, or into a separate `.yml` file is just a matter of preference. Both techniques produce the same result. 
+Adding your configs into the top Front Matter section of a `.md` page, or into a separate `.yml` file is just a matter of preference. Both techniques produce the same result.
 
 ```md sample.md
 # Sample page
@@ -44,7 +44,7 @@ order: 100
 If you add a config to both locations, the Front Matter of a `.md` page take precedence.
 !!!
 
-See [Folder configuration](folder.md) for details on how to configure a folder. 
+See [Folder configuration](folder.md) for details on how to configure a folder.
 
 ## Options
 
@@ -73,7 +73,7 @@ expanded: true
 
 The `expanded` option only applies to [folders](folder.md) when configured within an `index.yml` folder configuration file.
 
-Setting `expanded: true` within the Front Matter of an `.md` page or the paired `.yml` file will be ignored. 
+Setting `expanded: true` within the Front Matter of an `.md` page or the paired `.yml` file will be ignored.
 +++
 
 ### hidden
@@ -127,13 +127,14 @@ title: Custom label
 
 The layout for the page. Default is `default`.
 
-Supported values: `default`, `central`, `page`.
+Supported values: `default`, `central`, `page`, and `blog`.
 
 Layout | Description
 --- | ---
 `default` | The default layout for all `.md` pages. The page is added to the main navigation.
 `page` | Similar to `default` layout, but is not added to the main navigation.
-`central` | A page with no left or right columns.
+`central` | A page with no left or right sidebar columns.
+`blog` | A blog page layout. Blog pages are not added to the main navigation and include blog specific `< Newer` and `Older >` navigation buttons at the bottom of each blog page.
 
 ```yml
 layout: page
@@ -166,7 +167,7 @@ number (low)
 
 #### Order by number
 
-Larger number = order higher in the stack. 
+Larger number = order higher in the stack.
 
 No order number or `0` = order by alpha
 
@@ -182,7 +183,7 @@ If multiple pages have the same `order` number, secondary ordering in that clust
 
 #### Order by alpha
 
-Order values by alpha. 
+Order values by alpha.
 
 `a` = higher
 `z` = lower
@@ -208,7 +209,7 @@ v2.0
 v1.0
 ```
 
-Items prefixed with `v` and mixed with other alpha values would be grouped at the end of 
+Items prefixed with `v` and mixed with other alpha values would be grouped at the end of
 ```
 alpha
 bravo

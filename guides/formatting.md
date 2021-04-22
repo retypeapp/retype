@@ -444,3 +444,54 @@ var msg = "Set a code block title";
 ```js Code block title
 var msg = "Set a code block title";
 ```
+
+## File download
+
+A static file download component can be configured by using the `!file` specifier in a link.
+
+```md File download component
+[!file Sample](../static/sample.txt)
+```
+
+[!file Sample](../static/sample.txt)
+
+Clicking anywhere within the file download component will trigger the web browser to download the static file.
+
+## Reference link
+
+A special type of reference link can be configured by using the `!ref` specifier in a link.
+
+```md Reference link component
+[!ref Getting Started](../guides/getting_started.md)
+```
+
+[!ref Getting Started](../guides/getting_started.md)
+
+Clicking anywhere within the reference link component will navigate to that new page.
+
+From a functionality perspective, there is no difference betwen a `!ref` component and a regular hyperlink. The difference between the two is just how they are presented.
+
+## Image alignment
+
+Retype includes extra functionality for the custom alignment of images on the page.
+
+For instance, you can specify for an image to align to the left or right and have the text flow around the image.
+
+Another `plus` option for Blog pages or pages with `layout: central` help to position the image slightly overlapping the left or right content margins.
+
+Position | Markdown | Description
+--- | --- | ---
+`center`     | `![Caption](photo.jpg)`   | Center aligned in its container (default)
+`left`       | `-![Caption](photo.jpg)`  | Float left aligned
+`leftplus`   | `--![Caption](photo.jpg)` | Float left aligned with some negative left offset
+`right`      | `![Caption](photo.jpg)-`  | Float right aligned
+`rightplus`  | `![Caption](photo.jpg)--` | Float right aligned with some negative right offset
+`centerplus` | `-![Caption](photo.jpg)-` | Center aligned plus negative offset both sides
+
+Here's a sample page demonstrating all the image alignment scenarios, see...
+
+[!ref Image alignment options](image_alignment.md)
+
+!!!
+The `plus` alignment options only apply when the page `layout` is `central` or `blog`. For default page layouts with a left (navigation) and right (table of contents) sidebar columns, the `plus` positions will fallback to their non-plus equivalents. For example, `rightplus` will fallback to `right`. The `centerplus` will fallback to `center`.
+!!!
