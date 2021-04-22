@@ -693,7 +693,7 @@ This is a collapsed Panel. :+1:
     </h3>
 </doc-anchor-target>
 <p><doc-button margin="0px 8px 0px 0px">No link</doc-button>
-<doc-button href="project_configuration.md" margin="0px 8px 0px 0px">Internal link</doc-button>
+<doc-button href="../../configuration/project" margin="0px 8px 0px 0px">Internal link</doc-button>
 <doc-button href="https://retype.com/" margin="0px 8px 0px 0px">External link</doc-button></p>
 <doc-anchor-target id="variants">
     <h3>
@@ -917,6 +917,128 @@ var msg = &quot;Set a code block title&quot;;
 <div class="codeblock-title">Code block title</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">var msg = &quot;Set a code block title&quot;;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="file-download">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#file-download">#</doc-anchor-trigger>
+        <span>File download</span>
+    </h2>
+</doc-anchor-target>
+<p>A static file download component can be configured by using the <code v-pre>!file</code> specifier in a link.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">File download component</div>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!file Sample](../static/sample.txt)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Sample</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>sample.txt</span>
+        <span class="inline-block ml-2">36B</span>
+    </div>
+    <a href="/static/sample.txt" class="absolute block inset-0" target="_blank" download="sample.txt"></a>
+</div>
+</p>
+<p>Clicking anywhere within the file download component will trigger the web browser to download the static file.</p>
+<doc-anchor-target id="reference-link">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reference-link">#</doc-anchor-trigger>
+        <span>Reference link</span>
+    </h2>
+</doc-anchor-target>
+<p>A special type of reference link can be configured by using the <code v-pre>!ref</code> specifier in a link.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Reference link component</div>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!ref Getting Started](../guides/getting_started.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Getting Started</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/guides/getting_started</span>
+    </div>
+    <a href="/guides/getting_started" class="absolute block inset-0"></a>
+</div>
+</p>
+<p>Clicking anywhere within the reference link component will navigate to that new page.</p>
+<p>From a functionality perspective, there is no difference betwen a <code v-pre>!ref</code> component and a regular hyperlink. The difference between the two is just how they are presented.</p>
+<doc-anchor-target id="image-alignment">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image-alignment">#</doc-anchor-trigger>
+        <span>Image alignment</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype includes extra functionality for the custom alignment of images on the page.</p>
+<p>For instance, you can specify for an image to align to the left or right and have the text flow around the image.</p>
+<p>Another <code v-pre>plus</code> option for Blog pages or pages with <code v-pre>layout: central</code> help to position the image slightly overlapping the left or right content margins.</p>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Markdown</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>center</code></td>
+<td><code v-pre>![Caption](photo.jpg)</code></td>
+<td>Center aligned in its container (default)</td>
+</tr>
+<tr>
+<td><code v-pre>left</code></td>
+<td><code v-pre>-![Caption](photo.jpg)</code></td>
+<td>Float left aligned</td>
+</tr>
+<tr>
+<td><code v-pre>leftplus</code></td>
+<td><code v-pre>--![Caption](photo.jpg)</code></td>
+<td>Float left aligned with some negative left offset</td>
+</tr>
+<tr>
+<td><code v-pre>right</code></td>
+<td><code v-pre>![Caption](photo.jpg)-</code></td>
+<td>Float right aligned</td>
+</tr>
+<tr>
+<td><code v-pre>rightplus</code></td>
+<td><code v-pre>![Caption](photo.jpg)--</code></td>
+<td>Float right aligned with some negative right offset</td>
+</tr>
+<tr>
+<td><code v-pre>centerplus</code></td>
+<td><code v-pre>-![Caption](photo.jpg)-</code></td>
+<td>Center aligned plus negative offset both sides</td>
+</tr>
+</tbody>
+</table>
+<p>Here&#39;s a sample page demonstrating all the image alignment scenarios, see...</p>
+<p>
+<div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Image alignment options</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/guides/image_alignment</span>
+    </div>
+    <a href="/guides/image_alignment" class="absolute block inset-0"></a>
+</div>
+</p>
+<doc-alert variant="primary">
+<p>The <code v-pre>plus</code> alignment options only apply when the page <code v-pre>layout</code> is <code v-pre>central</code> or <code v-pre>blog</code>. For default page layouts with a left (navigation) and right (table of contents) sidebar columns, the <code v-pre>plus</code> positions will fallback to their non-plus equivalents. For example, <code v-pre>rightplus</code> will fallback to <code v-pre>right</code>. The <code v-pre>centerplus</code> will fallback to <code v-pre>center</code>.</p>
+</doc-alert>
 
     
                 <!-- Required only on API pages -->

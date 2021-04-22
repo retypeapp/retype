@@ -219,34 +219,28 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="options">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h2>
-</doc-anchor-target>
 <doc-anchor-target id="input">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#input">#</doc-anchor-trigger>
         <span>input</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <doc-panel id="input-string">
 <template #title>input : <code v-pre>string</code></template>
 <p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
 <p>The path is relative to the <code v-pre>retype.json</code> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Change input location to /src folder</div>
+<div class="codeblock-title">Change input location to /src folder</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;input&quot;: &quot;./src&quot;
 }</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="output">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#output">#</doc-anchor-trigger>
         <span>output</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <doc-panel id="output-string">
 <template #title>output : <code v-pre>string</code></template>
@@ -260,10 +254,10 @@
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="base">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
         <span>base</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <doc-panel id="base-string">
 <template #title>base : <code v-pre>string</code></template>
@@ -297,10 +291,10 @@
 </p>
 </doc-panel>
 <doc-anchor-target id="cname">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#cname">#</doc-anchor-trigger>
         <span>cname</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <doc-panel id="cname-string">
 <template #title>cname : <code v-pre>string</code></template>
@@ -312,18 +306,44 @@
 }</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<doc-anchor-target id="exclude">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#exclude">#</doc-anchor-trigger>
+        <span>exclude</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="exclude-array">
+<template #title>exclude : <code v-pre>array</code></template>
+<p>Retype can exclude files or folders from being built by configuring an <code v-pre>exclude</code> string array within your projects <code v-pre>retype.json</code> file.</p>
+<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. Wildcards <code v-pre>*</code> are allowed.</p>
+<p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Exclude patterns</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;exclude&quot;: [
+    &quot;draft/&quot;,
+    &quot;*_temp/&quot;,
+    &quot;/src/temp.md&quot;
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<p>You could exclude everything in your project with by adding <code v-pre>&quot;exclude&quot;: [ &quot;*&quot; ]</code>.</p>
+<doc-alert variant="primary">
+<p>Any file are folder prefixed with an underscore <code v-pre>_</code> are also excluded.</p>
+</doc-alert>
+</doc-panel>
 <doc-anchor-target id="favicon">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#favicon">#</doc-anchor-trigger>
         <span>favicon</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <doc-panel id="favicon-string">
 <template #title>favicon : <code v-pre>string</code></template>
 <p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
 <p>The path is relative to the <a href="#input">input</a>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: favicon is stored in the /static folder</div>
+<div class="codeblock-title">Favicon is stored in the /static folder</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;favicon&quot;: &quot;static/favicon.png&quot;
 }</code></pre>
@@ -333,21 +353,21 @@
 <doc-anchor-target id="meta">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#meta">#</doc-anchor-trigger>
-        <span><code v-pre>meta</code></span>
+        <span>meta</span>
     </h2>
 </doc-anchor-target>
 <p>Meta tag configuration.</p>
 <doc-anchor-target id="title">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
-        <span><code v-pre>title</code></span>
+        <span>title</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="title-string">
 <template #title>title : <code v-pre>string</code></template>
 <p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Append this string to all page meta tag titles</div>
+<div class="codeblock-title">Append this string to all page meta tag titles</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;meta&quot;: {
     &quot;title&quot;: &quot; | Example.com - Widgets for the internet&quot;
@@ -362,21 +382,21 @@
 <doc-anchor-target id="branding">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
-        <span><code v-pre>branding</code></span>
+        <span>branding</span>
     </h2>
 </doc-anchor-target>
 <p>Branding configuration.</p>
 <doc-anchor-target id="title-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
-        <span><code v-pre>title</code></span>
+        <span>title</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="title-string">
 <template #title>title : <code v-pre>string</code></template>
 <p>Logo Title. Displayed when <a href="#logo">logo</a> and <a href="#logoDark">logoDark</a> are not configured. Default is <code v-pre>Project Name</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Set the website title</div>
+<div class="codeblock-title">Set the website title</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;branding&quot;: {
     &quot;title&quot;: &quot;Example.com&quot;
@@ -393,14 +413,14 @@
 <doc-anchor-target id="label">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
-        <span><code v-pre>label</code></span>
+        <span>label</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="label-string">
 <template #title>label : <code v-pre>string</code></template>
 <p>Optional Logo Label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Set a custom label</div>
+<div class="codeblock-title">Set a custom label</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;branding&quot;: {
     &quot;label&quot;: &quot;v2.2&quot;
@@ -417,7 +437,7 @@
 <doc-anchor-target id="logo">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#logo">#</doc-anchor-trigger>
-        <span><code v-pre>logo</code></span>
+        <span>logo</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="logo-string">
@@ -429,7 +449,7 @@
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Set a custom label</div>
+<div class="codeblock-title">Set a custom label</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;branding&quot;: {
     &quot;logo&quot;: &quot;static/logo.png&quot;
@@ -440,7 +460,7 @@
 <doc-anchor-target id="logodark">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#logodark">#</doc-anchor-trigger>
-        <span><code v-pre>logoDark</code></span>
+        <span>logoDark</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="logodark-string">
@@ -452,7 +472,7 @@
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Set a custom label</div>
+<div class="codeblock-title">Set a custom label</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;branding&quot;: {
     &quot;logo&quot;: &quot;static/logo.png&quot;,
@@ -461,10 +481,10 @@
 }</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="options-1">
+<doc-anchor-target id="additional-options">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options-1">#</doc-anchor-trigger>
-        <span>Options</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#additional-options">#</doc-anchor-trigger>
+        <span>Additional options</span>
     </h2>
 </doc-anchor-target>
 <table>
@@ -736,11 +756,11 @@
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/github_actions">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/image_alignment">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">GitHub Actions</span>
+                <span class="block mt-1">Image alignment demo</span>
             </span>
         </a>
     </div>
