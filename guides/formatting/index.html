@@ -204,13 +204,13 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
 
-This is just a paragraph. </code></pre>
+This is just a paragraph.</code></pre>
 </doc-codeblock></div>
 <p>We can build on the above by more formatting options such as <strong>bold</strong> text, images, and lists.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
 
-This is just a paragraph. 
+This is just a paragraph.
 
 The page can contain both [internal](/README.md) and [external](https://example.com) links.
 
@@ -570,6 +570,8 @@ This is a Tab
 This is a Tab
 ||| Tab 2
 This is another Tab
+||| Tab 3
+Wow! Yet another tab :+1:
 |||</code></pre>
 </doc-codeblock></div>
 <doc-tabs>
@@ -580,6 +582,10 @@ This is another Tab
 <doc-tab id="tab-2">
 <template #title>Tab 2</template>
 <p>This is another Tab</p>
+</doc-tab>
+<doc-tab id="tab-3">
+<template #title>Tab 3</template>
+<p>Wow! Yet another tab <span class="docs-emoji">👍</span></p>
 </doc-tab>
 </doc-tabs>
 <doc-anchor-target id="panels">
