@@ -29,6 +29,7 @@ Expected: Q2 2021
 
 - [ ] New Badge component
 - [ ] New `/blog` summary page
+- [ ] New `route` page config
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.4.0`
@@ -37,11 +38,11 @@ Released: 2021-04-12
 
 - [x] Even cleaner upgrade to Reytype from GitBook experience
 - [x] New super fast incremental build process
-- [x] New image alignment and captions
-- [x] New `exclude` config for `retype.json`
+- [x] New [image alignment](guides/formatting.md#image-alignment) and captions
+- [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
-- [x] New `[!file]` component
-- [x] New `[!ref]` component
+- [x] New [`[!file]`](guides/formatting.md#file-download) component
+- [x] New [`[!ref]`](guides/formatting.md#reference-link) component
 - [x] Many other minor enhancements and bug fixes
 
 ## `v1.3.0`
