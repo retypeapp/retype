@@ -5,7 +5,7 @@ icon: file
 ---
 # Page configuration
 
-Individual `.md` pages can be configured using the Front Matter section added to the top of the page.
+Individual `.md` pages can be configured using the [Front Matter](../faq.md) section added to the top of the page.
 
 ```md sample.md
 ---
@@ -41,7 +41,7 @@ order: 100
 ```
 
 !!!
-If you add a config to both locations, the Front Matter of a `.md` page take precedence.
+If you add a config to both locations, the [Front Matter](../faq.md) of a `.md` page take precedence.
 !!!
 
 See [Folder configuration](folder.md) for details on how to configure a folder.
