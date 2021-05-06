@@ -5,7 +5,7 @@ icon: file
 ---
 # Page configuration
 
-Individual `.md` pages can be configured using the [Front Matter](../faq.md) section added to the top of the page.
+Individual `.md` pages can be configured using the page [metadata](../faq.md#what-is-page-metadata) section added to the top of the page.
 
 ```md sample.md
 ---
@@ -15,23 +15,23 @@ order: 100
 ---
 # Sample page
 
-This is a sample page demonstrating Front Matter configs.
+This is a sample page demonstrating page metadata.
 ```
 
 ## Separate `.yml` configuration
 
-If you would prefer to keep the configuration separate and out of the `.md` content page, the options can be moved into a paired `.yml` file.
+If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the options can be moved into a paired `.yml` file.
 
 For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as the matching `.md` page.
 
 Both `.yml` and `.yaml` extensions are supported.
 
-Adding your configs into the top Front Matter section of a `.md` page, or into a separate `.yml` file is just a matter of preference. Both techniques produce the same result.
+Adding your configs into the top metadata section of a `.md` page, or into a separate `.yml` file is just a matter of preference. Both techniques produce the same result.
 
 ```md sample.md
 # Sample page
 
-This is a sample page demonstrating Front Matter configs.
+This is a sample page demonstrating page metadata.
 ```
 
 ```yml sample.yml
@@ -41,7 +41,7 @@ order: 100
 ```
 
 !!!
-If you add a config to both locations, the [Front Matter](../faq.md) of a `.md` page take precedence.
+If you add a config to both locations, the [page metadata](../faq.md#what-is-page-metadata) take precedence.
 !!!
 
 See [Folder configuration](folder.md) for details on how to configure a folder.
@@ -73,7 +73,7 @@ expanded: true
 
 The `expanded` option only applies to [folders](folder.md) when configured within an `index.yml` folder configuration file.
 
-Setting `expanded: true` within the Front Matter of an `.md` page or the paired `.yml` file will be ignored.
+Setting `expanded: true` within the metadata of an `.md` page or the paired `.yml` file will be ignored.
 +++
 
 ### hidden

@@ -27,11 +27,11 @@ retype watch
 ```
 |||
 
-## What is "Front Matter"?
+## What is page metadata?
 
-Front Matter is an optional block of YAML [page configuration](configuration/page.md) that can be placed at the top of any Markdown `.md` page.
+The page metadata is an optional block of [configuration](configuration/page.md) that can be placed at the top of any Markdown `.md` page. This block of configuration can also be referred to as the page **Front Matter**.
 
-The Front Matter block must be the first item at the top of the `.md` page and must be added between `---` lines above and below the configs.
+The block of page metadata must be the first item at the top of the `.md` page and must be added between `---` lines above and below the configs.
 
 ```md sample.md
 ---
@@ -40,6 +40,6 @@ icon: rocket
 # Your page title here
 ```
 
-The Front Matter section is completely optional.
+The page metadata is completely optional and typically only required when you want to override the Retype defaults.
 
-You can also add YAML page configuration to a separate `.yml` file, see [page config](configuration/page.md#separate-yml-configuration) options.
+You can also add page metadata into a separate `.yml` file, see [page config](configuration/page.md#separate-yml-configuration) options.
