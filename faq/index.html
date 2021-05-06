@@ -219,14 +219,14 @@ retype watch</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="what-is-front-matter">
+<doc-anchor-target id="what-is-page-metadata">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-front-matter">#</doc-anchor-trigger>
-        <span>What is &quot;Front Matter&quot;?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-page-metadata">#</doc-anchor-trigger>
+        <span>What is page metadata?</span>
     </h2>
 </doc-anchor-target>
-<p>Front Matter is an optional block of YAML <a href="../configuration/page">page configuration</a> that can be placed at the top of any Markdown <code v-pre>.md</code> page.</p>
-<p>The Front Matter block must be the first item at the top of the <code v-pre>.md</code> page and must be added between <code v-pre>---</code> lines above and below the configs.</p>
+<p>The page metadata is an optional block of <a href="../configuration/page">configuration</a> that can be placed at the top of any Markdown <code v-pre>.md</code> page. This block of configuration can also be referred to as the page <strong>Front Matter</strong>.</p>
+<p>The block of page metadata must be the first item at the top of the <code v-pre>.md</code> page and must be added between <code v-pre>---</code> lines above and below the configs.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre class="language-markdown"><code v-pre class="language-markdown">---
@@ -234,8 +234,8 @@ icon: rocket
 ---
 # Your page title here</code></pre>
 </doc-codeblock></div>
-<p>The Front Matter section is completely optional.</p>
-<p>You can also add YAML page configuration to a separate <code v-pre>.yml</code> file, see <a href="../configuration/page/#separate-yml-configuration">page config</a> options.</p>
+<p>The page metadata is completely optional and typically only required when you want to override the Retype defaults.</p>
+<p>You can also add page metadata into a separate <code v-pre>.yml</code> file, see <a href="../configuration/page/#separate-yml-configuration">page config</a> options.</p>
 
     
                 <!-- Required only on API pages -->

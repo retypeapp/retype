@@ -7,7 +7,7 @@
 
     <title>Page configuration | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Individual `.md` pages can be configured using the Front Matter section added to the top of the page." />
+    <meta name="description" content="Individual `.md` pages can be configured using the page metadata section added to the top of the page." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -188,7 +188,7 @@
         <span>Page configuration</span>
     </h1>
 </doc-anchor-target>
-<p>Individual <code v-pre>.md</code> pages can be configured using the <a href="../../faq">Front Matter</a> section added to the top of the page.</p>
+<p>Individual <code v-pre>.md</code> pages can be configured using the page <a href="../../faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre class="language-markdown"><code v-pre class="language-markdown">---
@@ -198,7 +198,7 @@ order: 100
 ---
 # Sample page
 
-This is a sample page demonstrating Front Matter configs.</code></pre>
+This is a sample page demonstrating page metadata.</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="separate-yml-configuration">
     <h2>
@@ -206,15 +206,15 @@ This is a sample page demonstrating Front Matter configs.</code></pre>
         <span>Separate <code v-pre>.yml</code> configuration</span>
     </h2>
 </doc-anchor-target>
-<p>If you would prefer to keep the configuration separate and out of the <code v-pre>.md</code> content page, the options can be moved into a paired <code v-pre>.yml</code> file.</p>
+<p>If you would prefer to keep the page metadata separated and placed outside of the <code v-pre>.md</code> content page, the options can be moved into a paired <code v-pre>.yml</code> file.</p>
 <p>For instance, <code v-pre>sample.md</code> would need a matching <code v-pre>sample.yml</code> file. The separate <code v-pre>.yml</code> file must have the exact same filename as the matching <code v-pre>.md</code> page.</p>
 <p>Both <code v-pre>.yml</code> and <code v-pre>.yaml</code> extensions are supported.</p>
-<p>Adding your configs into the top Front Matter section of a <code v-pre>.md</code> page, or into a separate <code v-pre>.yml</code> file is just a matter of preference. Both techniques produce the same result.</p>
+<p>Adding your configs into the top metadata section of a <code v-pre>.md</code> page, or into a separate <code v-pre>.yml</code> file is just a matter of preference. Both techniques produce the same result.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre class="language-markdown"><code v-pre class="language-markdown"># Sample page
 
-This is a sample page demonstrating Front Matter configs.</code></pre>
+This is a sample page demonstrating page metadata.</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.yml</div>
@@ -223,7 +223,7 @@ layout: page
 order: 100</code></pre>
 </doc-codeblock></div>
 <doc-alert variant="primary">
-<p>If you add a config to both locations, the <a href="../../faq">Front Matter</a> of a <code v-pre>.md</code> page take precedence.</p>
+<p>If you add a config to both locations, the <a href="../../faq/#what-is-page-metadata">page metadata</a> take precedence.</p>
 </doc-alert>
 <p>See <a href="../folder">Folder configuration</a> for details on how to configure a folder.</p>
 <doc-anchor-target id="options">
@@ -259,7 +259,7 @@ order: 100</code></pre>
 <pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>expanded</code> option only applies to <a href="../folder">folders</a> when configured within an <code v-pre>index.yml</code> folder configuration file.</p>
-<p>Setting <code v-pre>expanded: true</code> within the Front Matter of an <code v-pre>.md</code> page or the paired <code v-pre>.yml</code> file will be ignored.</p>
+<p>Setting <code v-pre>expanded: true</code> within the metadata of an <code v-pre>.md</code> page or the paired <code v-pre>.yml</code> file will be ignored.</p>
 </doc-panel>
 <doc-anchor-target id="hidden">
     <h3>
