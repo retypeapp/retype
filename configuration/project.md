@@ -167,30 +167,6 @@ The path is relative to the [input](#input).
 By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
 +++
 
-## meta
-
-Meta tag configuration.
-
-### title
-
-+++ title : `string`
-
-Common site-wide suffix appended to the html `<title>` element of all pages. Default is `null`.
-
-```json Append this string to all page meta tag titles
-{
-  "meta": {
-    "title": " | Example.com - Widgets for the internet"
-  }
-}
-```
-
-If we had an `About us` page, the final `<title>` with the `title` value above would be:
-
-```html
-<title>About us | Example.com - Widgets for the internet</title>
-```
-+++
 
 ## branding
 
@@ -274,6 +250,69 @@ Default is `null`.
 ```
 +++
 
+## meta
+
+Meta tag configuration.
+
+### title
+
++++ title : `string`
+
+Common site-wide suffix appended to the html `<title>` element of all pages. Default is `null`.
+
+```json Append this string to all page meta tag titles
+{
+  "meta": {
+    "title": " | Example.com - Widgets for the internet"
+  }
+}
+```
+
+If we had an `About us` page, the final `<title>` with the `title` value above would be:
+
+```html
+<title>About us | Example.com - Widgets for the internet</title>
+```
++++
+
+## snippets
+
+The `snippets` configuration allows for custom configuration of code block snippet formatting, including the project wide enabling of [line numbering](../guides/formatting.md#line-numbers).
+
+### lineNumbers
+
++++ lineNumbers : `string[]`
+
+An array of code block reference language strings to enable line numbering on. Default is `null`.
+
+~~~json Enable line numbering for `js` and `json` code blocks site wide
+{
+  "snippets": {
+    "lineNumbers": [ "js", "json" ]
+  }
+}
+~~~
+
+Configuring the `"*"` wildcard will enable line numbering for **all** code block types, including code blocks with no explicit reference language.
+
+~~~json Enable line numbering for all code blocks site wide
+{
+  "snippets": {
+    "lineNumbers": [ "*" ]
+  }
+}
+~~~
+
+Enabling line numbering site wide on code blocks with no explicit reference language is configured with the none `"none"` specifier.
+
+~~~json Enable line numbering for all unspecified code blocks site wide
+{
+  "snippets": {
+    "lineNumbers": [ "none" ]
+  }
+}
+~~~
++++
 
 ## Additional options
 
@@ -316,6 +355,3 @@ Default is `null`.
 | `code`                               | `object`  |                            | Source code reference configuration                                                                                             |
 | `code.input`                         | `string`  |                            | Path to a project file, or a project directory                                                                                  |
 | `code.output`                        | `string`  | `./api`                    | Custom path to the API output directory. Relative to `output`                                                                   |
-|                                      |           |                            |                                                                                                                                 |
-| `snippets`                           | `object`  |                            | Snippets configuration                                                                                                          |
-| `lineNumbers`                        | `array`   |                            | Enables line numbers for the specified languages. The `*` (any language) and `none` (no language) wildcards are supported.      |
