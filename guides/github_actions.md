@@ -12,7 +12,7 @@ Currently, there are two Retype related GitHub Actions:
 
 The first, **Build Action** will automatically build your Retype powered website with each new change that is committed.
 
-The second, **GitHub Pages Action** will automatically publish your newly built website so it's available to host from GitHub Pages.
+The second, **GitHub Pages Action** will automatically publish your newly built website to a branch in Github so it's available to host from GitHub Pages. By default, the `retype` branch is used, but of course that is also configurable.
 
 Automatically deploying to GitHub Pages requires a basic `retype.yml` configuration file to be added to your GitHub repo and some simple project configuration.
 
