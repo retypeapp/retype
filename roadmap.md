@@ -9,7 +9,7 @@ Need a new feature in Retype? :eyes: Start a [discussion](https://github.com/ret
 
 ## `v2.0.0`
 
-Expected: Q3 2021
+Expected: Early Q3 2021
 
 - [ ] Full support for C# API reference doc generation
 - [ ] Early support for TypeScript API reference doc generation
@@ -17,20 +17,25 @@ Expected: Q3 2021
 
 ## `v1.6.0`
 
-Expected: Q2 2021
+Expected: Late Q2 2021
 
 - [ ] New Accordion component
 - [ ] Another beta release of building C# project reference documentation
 - [ ] New `includes` support
+- [ ] New `/blog` summary page
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.5.0`
 
-Expected: Q2 2021
+Expected: Mid Q2 2021
 
-- [ ] New Badge component
-- [ ] New `/blog` summary page
-- [ ] New `route` page config
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+- [x] New [Badge](guides/formatting.md#badge) component
+- [x] New syntax highlighting support for all code block languages
+- [x] New [`route`](configuration/page.md#route) page config
+- [x] New [`port`](configuration/project.md#port) project config
+- [x] Larger font-size for `h1`, `h2`, and `h3` headers
+- [x] Improved handing of special chars within file names
+- [x] Improved handling of `.md` pages created by GitHub Wiki
 
 ## `v1.4.0`
 
@@ -52,7 +57,7 @@ Released: 2021-03-30
 - [x] New GitHub Actions for Retype
 - [x] New [`expanded`](configuration/page.md#expanded) config on [folder](configuration/folder.md) configuration
 - [x] New `icon` and `iconAlign` configs on [`links`](configuration/project.md#links)
-- [x] A few important bug fixes
+- [x] Several important bug fixes
 
 ## `v1.2.0`
 
