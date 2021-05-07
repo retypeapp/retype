@@ -42,7 +42,7 @@ Expected: Mid Q2 2021
 Released: 2021-04-12
 
 - [x] Even cleaner upgrade to Reytype from GitBook experience
-- [x] New super fast incremental build process
+- [x] New super fast [`retype watch`](cli.md#retype-watch) incremental build process
 - [x] New [image alignment](guides/formatting.md#image-alignment) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
@@ -54,19 +54,19 @@ Released: 2021-04-12
 
 Released: 2021-03-30
 
-- [x] New GitHub Actions for Retype
+- [x] New GitHub [Actions](guides/github_actions.md) for Retype
 - [x] New [`expanded`](configuration/page.md#expanded) config on [folder](configuration/folder.md) configuration
-- [x] New `icon` and `iconAlign` configs on [`links`](configuration/project.md#links)
+- [x] New [`icon`](configuration/project.md#icon) and [`iconAlign`](configuration/project.md#iconalign) configs on [`links`](configuration/project.md#links)
 - [x] Several important bug fixes
 
 ## `v1.2.0`
 
 Released: 2021-03-25
 
-- [x] New `central` layout
-- [x] New `page` layout
-- [x] New `Edit this page` link
-- [x] New `Previous | Next` buttons
+- [x] New [`central`](configuration/page.md#layout) layout
+- [x] New [`page`](configuration/page.md#layout) layout
+- [x] New [`Edit this page`](configuration/project.md#edit) link
+- [x] New `Previous | Next` footer navigation buttons for pages
 - [x] New [`order`](configuration/page.md#order) Page level config
 - [x] New [`hidden`](configuration/page.md#hidden) Page level config
 - [x] New [`favicon`](configuration/project.md#favicon) Project config available in `retype.json`
@@ -79,11 +79,11 @@ Released: 2021-03-12
 - [x] New [Tab](guides/formatting.md#tabs) component
 - [x] New [Button](guides/formatting.md#buttons) component
 - [x] New [Panel](guides/formatting.md#panels) component with expand/collapse
-- [x] New `retype watch` command ([docs](cli.md#retype-watch))
-- [x] New _Live Reload_ when using `retype watch`
-- [x] New `.yml` option for Page or Folder configs
+- [x] New [`retype watch`](cli.md#retype-watch) command
+- [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
+- [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
 - [x] New code block [titles](guides/formatting.md#code-blocks)
-- [x] Enable line-numbering in code blocks
+- [x] Enable [line-numbering](guides/formatting.md#line-numbers) in code blocks
 
 ## `v1.0.0`
 
