@@ -42,6 +42,8 @@ Running the command `retype init` will create a default `retype.json` file. The 
 }
 ```
 
+---
+
 ## base
 
 +++ base : `string`
@@ -80,6 +82,8 @@ The `retype.json` file for that scenario would be...
 
 ![GitHub Pages configuration](../static/project-base-config-github-pages.png)
 +++
+
+---
 
 ## branding
 
@@ -163,6 +167,8 @@ Default is `null`.
 ```
 +++
 
+---
+
 ## cname
 
 +++ cname : `string`
@@ -175,6 +181,8 @@ If specified, a `CNAME` file with the corresponding value will be created and ad
 }
 ```
 +++
+
+---
 
 ## edit
 
@@ -247,6 +255,8 @@ A custom label for the link. Default is `"Edit this page"`.
 ```
 +++
 
+---
+
 ## exclude
 
 +++ exclude : `array`
@@ -273,6 +283,8 @@ Any file are folder prefixed with an underscore `_` are also excluded.
 !!!
 +++
 
+---
+
 ## favicon
 
 +++ favicon : `string`
@@ -290,6 +302,41 @@ The path is relative to the [input](#input).
 By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
 +++
 
+---
+
+## footer
+
++++ copyright : `string`
+Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable.
+
+```json
+{
+  "footer": {
+    "copyright": "© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved.",
+  }
+}
+```
++++
+
++++ links : `object`
+Same configuration options as page level [`links`](#links).
+
+```json
+{
+  "footer": {
+    "links": [
+      {
+        "text": "License",
+        "link": "license.md"
+      }
+    ]
+  }
+}
+```
++++
+
+---
+
 ## input
 
 +++ input : `string`
@@ -304,6 +351,8 @@ The path is relative to the `retype.json` location.
 }
 ```
 +++
+
+---
 
 ## links
 
@@ -391,9 +440,9 @@ Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/)
 ```
 +++
 
-### iconPosition
+### iconAlign
 
-+++ iconPosition : `string`
++++ iconAlign : `string`
 
 The position for the icon relative to the link `text`. Either `left` or `right`. Default is `left`.
 
@@ -404,12 +453,14 @@ The position for the icon relative to the link `text`. Either `left` or `right`.
       "text": "Demos",
       "link": "https://demo.example.com/",
       "icon": "link-external",
-      "iconPosition": "right"
+      "iconAlign": "right"
     }
   ]
 }
 ```
 +++
+
+---
 
 ## meta
 
@@ -436,6 +487,8 @@ If we had an `About us` page, the final `<title>` with the `title` value above w
 ```
 +++
 
+---
+
 ## output
 
 +++ output : `string`
@@ -450,6 +503,8 @@ The path is relative to the `retype.json` location.
 }
 ```
 +++
+
+---
 
 ## port
 
@@ -467,6 +522,8 @@ If the default port is already being used by another service, Retype will auto-i
 
 If a custom `port` is explicitly configured in the `retype.json`, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
 +++
+
+---
 
 ## snippets
 
@@ -507,6 +564,8 @@ Enabling line numbering site wide on code blocks with no explicit reference lang
 ~~~
 +++
 
+---
+
 ## Additional options
 
 | Option                               | Type      | Default value              | Description                                                                                                                     |
@@ -514,12 +573,7 @@ Enabling line numbering site wide on code blocks with no explicit reference lang
 | `branding.colors`                    | `object`  |                            | Custom color configuration                                                                                                      |
 | `branding.colors.label`              | `object`  |                            | Logo label colors                                                                                                               |
 | `branding.colors.label.text`         | `string`  | `#1f7aff`                  | Text color                                                                                                                      |
-| `branding.colors.label.background`   | `string`  | `#e1edff`                  | Background color                                                                                                                ||                                      |           |                            |                                                                                                                                 |
-| `footer`                             | `object`  |                            | Footer configuration                                                                                                            |
-| `footer.copyright`                   | `string`  |                            | Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable |
-| `footer.links`                       | `array`   |                            | Footer navigation link configuration                                                                                            |
-| `footer.links[].text`                | `string`  |                            | Navigation link text                                                                                                            |
-| `footer.links[].link`                | `string`  |                            | Navigation link URL                                                                                                             |
+| `branding.colors.label.background`   | `string`  | `#e1edff`                  | Background color                                                                                                                |
 |                                      |           |                            |                                                                                                                                 |
 | `plugins`                            | `object`  |                            | Plugin configuration                                                                                                            |
 | `plugins.googleAnalytics`            | `object`  |                            | Google Analytics plugin configuration                                                                                           |
