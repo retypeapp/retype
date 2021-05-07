@@ -1,18 +1,16 @@
 # Badge
 
-Similar to [Button](button.md) components, a Badge uses the same syntax as a hyperlink, but is prefixed with a `!badge` type.
+Similar to a [Button](button.md) component, a Badge uses the same syntax as a hyperlink, but is prefixed with a `!badge` type.
 
 ```md
-[New](https://example.com/)        <-- a link
+[Badge](https://example.com/)        <-- a normal link
 
-[!badge New](https://example.com/) <-- a badge
+[!badge Badge]                       <-- Badge with no link
+
+[!badge Badge](https://example.com/) <-- Badge with a link
 ```
 
-## Basic
-
-[!badge text="New" margin="0 8 0 0" variant="danger"]
-[!badge text="Internal link" margin="0 8 0 0"](../configuration/project.md)
-[!badge text="External link" margin="0 8 0 0"](https://retype.com/)
+[!badge Badge]
 
 ## Variants
 
@@ -53,7 +51,7 @@ Similar to [Button](button.md) components, a Badge uses the same syntax as a hyp
 ### Octicons
 
 ```md
-[!badge variant="info" icon="person" text="User"]
+[!badge variant="info" icon="person" text="User" margin="0 8 0 0"]
 [!badge variant="primary" icon="paper-airplane" iconAlign="right" text="Send"]
 ```
 

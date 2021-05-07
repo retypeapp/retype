@@ -1,18 +1,16 @@
 # Button
 
-A Button uses the same syntax as a hyperlink, but is prefixed with a `!button` type.
+Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyperlink, but is prefixed with a `!button` type.
 
 ```md
-[Click me](https://example.com/)         <-- a link
+[Button](https://example.com/)         <-- a normal link
 
-[!button Click me](https://example.com/) <-- a button
+[!button Button]                       <-- Button with no link
+
+[!button Button](https://example.com/) <-- Button with a link
 ```
 
-## Basic
-
-[!button text="No link" margin="0 8 0 0"]
-[!button text="Internal link" margin="0 8 0 0"](../configuration/project.md)
-[!button text="External link" margin="0 8 0 0"](https://retype.com/)
+[!button text="Button"](https://retype.com/)
 
 ## Variants
 
