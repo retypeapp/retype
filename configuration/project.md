@@ -80,14 +80,14 @@ The `retype.json` file for that scenario would be...
 
 ...and the GitHub Pages configuration within your repo Settings would be:
 
-![GitHub Pages configuration](../static/project-base-config-github-pages.png)
+![](../static/project-base-config-github-pages.png)
 +++
 
 ---
 
 ## branding
 
-Branding configuration.
+Branding configuration for your Retype generated website.
 
 ### title
 
@@ -121,7 +121,7 @@ Optional Logo Label text. Default is `Docs`.
   }
 }
 ```
-The above `label` would be rendered as the following label in the upper-left corner of the generated website.
+The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#title) or [`logo`](#logo).
 
 ![GitHub Pages configuration](../static/project-branding-title.png)
 +++
@@ -132,7 +132,7 @@ The above `label` would be rendered as the following label in the upper-left cor
 
 One of the following:
 
-1. The path to a logo file (light theme), relative to the [input](#input), or
+1. The path to a logo file relative to the [input](#input), or
 2. An inline `<svg>` logo
 
 Default is `null`.
@@ -152,7 +152,7 @@ Default is `null`.
 
 One of the following:
 
-1. The path to a logo file (dark theme), relative to the [input](#input), or
+1. The path to a logo file (dark mode) relative to the [input](#input), or
 2. An inline `<svg>` logo
 
 Default is `null`.
@@ -162,6 +162,46 @@ Default is `null`.
   "branding": {
     "logo": "static/logo.png",
     "logoDark": "static/logo-dark.png"
+  }
+}
+```
++++
+
+### colors
+
+Custom color configuration.
+
+#### label.text
+
++++ label.text : `string`
+Set a custom label text color. Default is `#1f7aff`.
+
+```json
+{
+  "branding": {
+    "colors": {
+      "label": {
+        "text": "#ffffff"
+      }
+    }
+  }
+}
+```
++++
+
+#### label.background
+
++++ label.background : `string`
+Set a custom label background color. Default is `#e1edff`.
+
+```json
+{
+  "branding": {
+    "colors": {
+      "label": {
+        "background": "#ff0000"
+      }
+    }
   }
 }
 ```
@@ -425,7 +465,7 @@ An icon to use with the link. Default is `null`.
 }
 ```
 
-Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, or `<svg>` element.
+Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, a path to the icon file.
 
 ```yml Octicon
 "icon": "rocket"
@@ -436,7 +476,11 @@ Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/)
 ```
 
 ```yml SVG element
-"icon": "<svg>...</svg>
+"icon": "<svg>...</svg>"
+```
+
+```yml Path
+"icon": "../static/rocket.png"
 ```
 +++
 
@@ -506,6 +550,28 @@ The path is relative to the `retype.json` location.
 
 ---
 
+## plugins
+
+### googleAnalytics
+
+Add Google Analytics to your website.
+
++++ googleAnalytics.id : `string`
+Google Analytics ID value.
+
+```json
+{
+  "plugins": {
+    "googleAnalytics": {
+      "id": "UA-12345678-1"
+    }
+  }
+}
+```
++++
+
+---
+
 ## port
 
 +++ port : `number`
@@ -521,6 +587,82 @@ A custom port for the internal Retype web server to use when hosting locally. De
 If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
 
 If a custom `port` is explicitly configured in the `retype.json`, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
++++
+
+---
+
+## search
+
+Customization of the website search component.
+
+### minChars
+
++++ minChars : `number`
+Min number of characters required in a search query. Defualt is `3`.
+
+```json
+{
+  "search": {
+    "minChars": 3
+  }
+}
+```
++++
+
+### maxResults
+
++++ maxResults : `number`
+Max number of search results to render. Defualt is `20`.
+
+```json
+{
+  "search": {
+    "maxResults": 20
+  }
+}
+```
++++
+
+### placeholder
+
++++ placeholder : `string`
+Placeholder text rendered on the search component. Defualt is `"Search"`.
+
+```json
+{
+  "search": {
+    "placeholder": "Search"
+  }
+}
+```
++++
+
+### hotkeys
+
++++ hotkeys : `string[]`
+Keyboard key to set the cursor focus into the search field. Defualt is `["/"]`.
+
+```json
+{
+  "search": {
+    "hotkeys": ["/"]
+  }
+}
+```
++++
+
+### noResultsFoundMsg
+
++++ noResultsFoundMsg : `string`
+Message rendered when no results were found. Defualt is `"Sorry, no results found."`.
+
+```json
+{
+  "search": {
+    "noResultsFoundMsg": "Sorry, no results found."
+  }
+}
+```
 +++
 
 ---
@@ -570,22 +712,6 @@ Enabling line numbering site wide on code blocks with no explicit reference lang
 
 | Option                               | Type      | Default value              | Description                                                                                                                     |
 | ------------------------------------ | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `branding.colors`                    | `object`  |                            | Custom color configuration                                                                                                      |
-| `branding.colors.label`              | `object`  |                            | Logo label colors                                                                                                               |
-| `branding.colors.label.text`         | `string`  | `#1f7aff`                  | Text color                                                                                                                      |
-| `branding.colors.label.background`   | `string`  | `#e1edff`                  | Background color                                                                                                                |
-|                                      |           |                            |                                                                                                                                 |
-| `plugins`                            | `object`  |                            | Plugin configuration                                                                                                            |
-| `plugins.googleAnalytics`            | `object`  |                            | Google Analytics plugin configuration                                                                                           |
-| `plugins.googleAnalytics.id`         | `string`  |                            | Google Analytics ID                                                                                                             |
-|                                      |           |                            |                                                                                                                                 |
-| `search`                             | `object`  |                            | Search configuration                                                                                                            |
-| `search.minChars`                    | `number`  | 3                          | Min number of characters required in a search query                                                                             |
-| `search.maxResults`                  | `number`  | 20                         | Max number of search results to render                                                                                          |
-| `search.placeholder`                 | `string`  | `Search`                   | Placeholder text rendered on the search component                                                                               |
-| `search.hotkeys`                     | `array`   | `["/"]`                    | Hotkeys (KeyboardEvent.key) enabling the search component                                                                       |
-| `search.noResultsFoundMsg`           | `string`  | `Sorry, no results found.` | Message rendered when no results were found                                                                                     |
-|                                      |           |                            |                                                                                                                                 |
 | `code`                               | `object`  |                            | Source code reference configuration                                                                                             |
 | `code.input`                         | `string`  |                            | Path to a project file, or a project directory                                                                                  |
 | `code.output`                        | `string`  | `./api`                    | Custom path to the API output directory. Relative to `output`                                                                   |
