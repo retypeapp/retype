@@ -86,16 +86,16 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 ### Image
 
 ```md
-[!button icon="/static/retype-logo.svg"]
+[!button icon="../static/retype-logo.svg"]
 ```
 
-[!button icon="/static/retype-logo.svg"]
+[!button icon="../static/retype-logo.svg"]
 
 [!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](https://retype.com/)
 
 ## Inline
 
-This is a paragraph with a [!button size="xs" text="Button" margin="0 4"].
+This is a paragraph with an inline [!button text="Button"].
 
 ## Block
 

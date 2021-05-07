@@ -28,7 +28,7 @@ This is an alert.
 This is an alert.
 !!!
 
-Some basic Markdown options and emoji `:shortcodes:` are supported in the titles.
+Some basic Markdown syntax and emoji `:shortcodes:` are supported in the titles.
 
 ```md
 !!! :zap: [Getting Started](../guides/getting_started.md) :zap:
