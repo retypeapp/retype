@@ -1,4 +1,3 @@
-
 # Panel
 
 A Panel is created by surrounding a block of content with `+++` and including a `title`.

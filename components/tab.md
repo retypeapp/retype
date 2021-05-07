@@ -1,4 +1,3 @@
-
 # Tab
 
 The Tab component is super simple to configure by just surrounding a block of text with `|||` and including a text value for the tab.
