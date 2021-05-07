@@ -97,7 +97,7 @@ hidden: true
 
 Custom icon for the navigation node of the current page. Default is `null`.
 
-Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, or `<svg>` element.
+Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, a path to the icon file.
 
 ```yml Octicon
 icon: rocket
@@ -108,7 +108,11 @@ icon: ":rocket:"
 ```
 
 ```yml SVG element
-icon: "<svg>...</svg>
+icon: "<svg>...</svg>"
+```
+
+```yml Path
+icon: "../static/rocket.png"
 ```
 +++
 
