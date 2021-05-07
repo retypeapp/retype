@@ -29,7 +29,7 @@ Expected: Late Q2 2021
 
 Expected: Mid Q2 2021
 
-- [x] New [Badge](guides/formatting.md#badge) component
+- [x] New [Badge](components/badge.md) component
 - [x] New syntax highlighting support for all code block languages
 - [x] New [`route`](configuration/page.md#route) page config
 - [x] New [`port`](configuration/project.md#port) project config
@@ -46,8 +46,8 @@ Released: 2021-04-12
 - [x] New [image alignment](guides/formatting.md#image-alignment) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
-- [x] New [`[!file]`](guides/formatting.md#file-download) component
-- [x] New [`[!ref]`](guides/formatting.md#reference-link) component
+- [x] New [`[!file]`](components/file_download.md) component
+- [x] New [`[!ref]`](components/reference_link.md) component
 - [x] Many other minor enhancements and bug fixes
 
 ## `v1.3.0`
@@ -76,9 +76,9 @@ Released: 2021-03-25
 
 Released: 2021-03-12
 
-- [x] New [Tab](guides/formatting.md#tabs) component
-- [x] New [Button](guides/formatting.md#buttons) component
-- [x] New [Panel](guides/formatting.md#panels) component with expand/collapse
+- [x] New [Tab](components/tab.md) component
+- [x] New [Button](components/button.md) component
+- [x] New [Panel](components/panel.md) component with expand/collapse
 - [x] New [`retype watch`](cli.md#retype-watch) command
 - [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
