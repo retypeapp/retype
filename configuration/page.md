@@ -46,6 +46,8 @@ If you add a config to both locations, the [page metadata](../faq.md#what-is-pag
 
 See [Folder configuration](folder.md) for details on how to configure a folder.
 
+---
+
 ## Options
 
 ### description
