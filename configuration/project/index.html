@@ -14,6 +14,7 @@
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -192,7 +193,7 @@
 <p>The <code v-pre>retype.json</code> file is typically stored in the root of your project, although can be placed elsewhere. Please ensure the <code v-pre>input</code> and <code v-pre>output</code> paths are correct if moved to a different location.</p>
 <doc-alert variant="primary">
 <p>After making a change to the <code v-pre>retype.json</code>, if you are running <code v-pre>retype watch</code>, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.</p>
-<p>If you started the local web server using <code v-pre>retype run</code>, you&#39;ll need to call <code v-pre>retype build</code> to regenerate a <span class="docs-emoji">✨</span> sparkly <span class="docs-emoji">✨</span> fresh new build of the project, then manually refresh your web browser to see update.</p>
+<p>If you started the local web server using <code v-pre>retype run</code>, you&#x27;ll need to call <code v-pre>retype build</code> to regenerate a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see update.</p>
 </doc-alert>
 <p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step.</p>
 <p>Running the command <code v-pre>retype init</code> will create a default <code v-pre>retype.json</code> file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.</p>
@@ -261,9 +262,9 @@
 </doc-anchor-target>
 <doc-panel id="base-string">
 <template #title>base : <code v-pre>string</code></template>
-<p>Base subfolder path appended to all URL&#39;s. Default is <code v-pre>null</code> or empty string.</p>
-<p>If you deploy the build website to a subfolder of another website, use the <code v-pre>base</code> to ensure the URL&#39;s correclty resolve.</p>
-<p>For instance, let&#39;s say your main site is <code v-pre>https://example.com</code> and will remain unchanged.  If you would like to deploy the Retype built website into a <code v-pre>/docs</code> subfolder, with the final URL of <code v-pre>https://example.com/docs</code>, then setting <code v-pre>&quot;base&quot;: &quot;docs&quot;</code> would be required.</p>
+<p>Base subfolder path appended to all URL&#x27;s. Default is <code v-pre>null</code> or empty string.</p>
+<p>If you deploy the build website to a subfolder of another website, use the <code v-pre>base</code> to ensure the URL&#x27;s correclty resolve.</p>
+<p>For instance, let&#x27;s say your main site is <code v-pre>https://example.com</code> and will remain unchanged.  If you would like to deploy the Retype built website into a <code v-pre>/docs</code> subfolder, with the final URL of <code v-pre>https://example.com/docs</code>, then setting <code v-pre>&quot;base&quot;: &quot;docs&quot;</code> would be required.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample: Change output location to /docs folder</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -298,7 +299,7 @@
 </doc-anchor-target>
 <doc-panel id="cname-string">
 <template #title>cname : <code v-pre>string</code></template>
-<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <a href="#output">output</a>. Default is <code v-pre>null</code>.</p>
+<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -341,14 +342,14 @@
 <doc-panel id="favicon-string">
 <template #title>favicon : <code v-pre>string</code></template>
 <p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
-<p>The path is relative to the <a href="#input">input</a>.</p>
+<p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Favicon is stored in the /static folder</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;favicon&quot;: &quot;static/favicon.png&quot;
 }</code></pre>
 </doc-codeblock></div>
-<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <a href="#input">input</a>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <a href="#output">output</a> root.</p>
+<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger> root.</p>
 </doc-panel>
 <doc-anchor-target id="branding">
     <h2>
@@ -365,7 +366,7 @@
 </doc-anchor-target>
 <doc-panel id="title-string">
 <template #title>title : <code v-pre>string</code></template>
-<p>Logo Title. Displayed when <a href="#logo">logo</a> and <a href="#logoDark">logoDark</a> are not configured. Default is <code v-pre>Project Name</code>.</p>
+<p>Logo Title. Displayed when <doc-anchor-trigger to="#logo">logo</doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark">logoDark</doc-anchor-trigger> are not configured. Default is <code v-pre>Project Name</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set the website title</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -415,7 +416,7 @@
 <template #title>logo : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
-<li>The path to a logo file (light theme), relative to the <a href="#input">input</a>, or</li>
+<li>The path to a logo file (light theme), relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
 <li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
@@ -438,7 +439,7 @@
 <template #title>logoDark : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
-<li>The path to a logo file (dark theme), relative to the <a href="#input">input</a>, or</li>
+<li>The path to a logo file (dark theme), relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
 <li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
@@ -781,11 +782,11 @@
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/image_alignment">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/github_actions">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Image alignment demo</span>
+                <span class="block mt-1">GitHub Actions</span>
             </span>
         </a>
     </div>
@@ -814,7 +815,7 @@
 </ul>
 
     </div>
-    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>&#169; Copyright 2021. <a href="https://object.net/">Object.NET, Inc.</a> All rights reserved.</p>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. <a href="https://object.net/">Object.NET, Inc.</a> All rights reserved.</p>
 </div>
 </footer>
 
