@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>About | Retype - Generate, publish, and share documentation</title>
+    <title>File download | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Retype is professionally built and supported by the team at Object.NET." />
+    <meta name="description" content="A static file download component can be configured by using the `!file` specifier in a link." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -182,87 +183,32 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="about" class="break-words">
+<doc-anchor-target id="file-download" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#about">#</doc-anchor-trigger>
-        <span>About</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#file-download">#</doc-anchor-trigger>
+        <span>File download</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://retype.com/">Retype</a> is professionally built and supported by the team at <a href="https://object.net">Object.NET</a>.</p>
-<p>Technical support questions are best asked in the <a href="https://github.com/retypeapp/retype/discussions">Discussion</a> forum.</p>
-<p>Did you find a bug? Please create an <a href="https://github.com/retypeapp/retype/issues">Issue</a>.</p>
-<p>Would you like to make a feature request. Please either start a <a href="https://github.com/retypeapp/retype/discussions">Discussion</a> or create an <a href="https://github.com/retypeapp/retype/issues">Issue</a>.</p>
-<p>Do you have a general inquiry? Please feel free to contact us at <a href="mailto:hello@object.net">hello@object.net</a>.</p>
-<doc-anchor-target id="credits">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#credits">#</doc-anchor-trigger>
-        <span>Credits <span class="docs-emoji">&#x1F44F;</span></span>
-    </h2>
-</doc-anchor-target>
-<p>Retype is only made possible because of the hard work of other amazing open-source and commercial projects.</p>
-<table>
-<thead>
-<tr>
-<th>Library</th>
-<th>License</th>
-<th>Role</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://retype.com/">Retype</a></td>
-<td><a href="/license">Retype</a></td>
-<td>Magical static site generator</td>
-</tr>
-<tr>
-<td><a href="https://github.com/xoofx/markdig">Markdig</a></td>
-<td><a href="https://github.com/xoofx/markdig/blob/master/license.txt">BSD-2-Clause</a></td>
-<td>Markdown parsing</td>
-</tr>
-<tr>
-<td><a href="https://github.com/scriban/scriban">Scriban</a></td>
-<td><a href="https://github.com/scriban/scriban/blob/master/license.txt">BSD-2-Clause</a></td>
-<td>Templating</td>
-</tr>
-<tr>
-<td><a href="https://mojee.io">Mojee</a></td>
-<td><a href="https://docs.mojee.io/license/">Mojee</a></td>
-<td>Emoji parsing and handling</td>
-</tr>
-<tr>
-<td><a href="https://vuejs.org/">Vue.js</a></td>
-<td><a href="https://github.com/vuejs/vue/blob/dev/LICENSE">MIT</a></td>
-<td>Client UI framework</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hotwired/turbo/">Turbo</a></td>
-<td><a href="https://github.com/hotwired/turbo/blob/main/MIT-LICENSE">MIT</a></td>
-<td>HTML over the wire</td>
-</tr>
-<tr>
-<td><a href="http://lunrjs.com/">Lunr</a></td>
-<td><a href="https://github.com/olivernn/lunr.js/blob/master/LICENSE">MIT</a></td>
-<td>Search index</td>
-</tr>
-<tr>
-<td><a href="https://prismjs.com/">Prism</a></td>
-<td><a href="https://github.com/PrismJS/prism/blob/master/LICENSE">MIT</a></td>
-<td>Code sample formatting</td>
-</tr>
-<tr>
-<td><a href="https://clipboardjs.com">Clipboard.js</a></td>
-<td><a href="https://clipboardjs.com/">MIT</a></td>
-<td>Code block copy to clipboard</td>
-</tr>
-</tbody>
-</table>
-<doc-anchor-target id="license">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#license">#</doc-anchor-trigger>
-        <span>License</span>
-    </h2>
-</doc-anchor-target>
-<p>Please see the Retype <a href="../license">LICENSE</a>.</p>
+<p>A static file download component can be configured by using the <code v-pre>!file</code> specifier in a link.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!file Sample](../static/sample.txt)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Sample</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>sample.txt</span>
+        <span class="inline-block ml-2">36B</span>
+    </div>
+    <a href="/static/sample.txt" class="absolute block inset-0" target="_blank" download="sample.txt"></a>
+</div>
+</p>
+<p>Clicking anywhere within the file download component will trigger the web browser to download the static file.</p>
 
     
                 <!-- Required only on API pages -->
@@ -270,7 +216,7 @@
             </div>
 
             <div class="mt-14 flex flex-wrap items-center justify-between">
-    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/about.md" target="_blank" rel="noopener">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/file_download.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Edit this page</span>
     </a>
@@ -278,6 +224,27 @@
     <!--<p class="my-2.5 text-gray-500 dark:text-dark-350 text-sm">Last updated on <strong>2021-03-14</strong> by <strong>Geoffrey McGill</strong></p>-->
 </div>
 
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Button</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-6 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/panel">
+            <span>
+                <span class="block text-right text-xs font-normal text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Panel</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
 
 
         </main>
@@ -323,7 +290,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "About", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "File download", icon: "file" }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

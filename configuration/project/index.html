@@ -36,7 +36,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.4</span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.5</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -220,40 +220,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="input">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#input">#</doc-anchor-trigger>
-        <span>input</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="input-string">
-<template #title>input : <code v-pre>string</code></template>
-<p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
-<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Change input location to /src folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;./src&quot;
-}</code></pre>
-</doc-codeblock></div>
-</doc-panel>
-<doc-anchor-target id="output">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#output">#</doc-anchor-trigger>
-        <span>output</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="output-string">
-<template #title>output : <code v-pre>string</code></template>
-<p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
-<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Change output location to /docs folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;output&quot;: &quot;./docs&quot;
-}</code></pre>
-</doc-codeblock></div>
-</doc-panel>
+<hr />
 <doc-anchor-target id="base">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
@@ -286,78 +253,19 @@
 </doc-codeblock></div>
 <p>...and the GitHub Pages configuration within your repo Settings would be:</p>
 <p><figure class="content-center">
-    <img src="../../static/project-base-config-github-pages.png" alt="GitHub Pages configuration" />
-    <figcaption class="caption">GitHub Pages configuration</figcaption>
+    <img src="../../static/project-base-config-github-pages.png" alt="" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
 </doc-panel>
-<doc-anchor-target id="cname">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cname">#</doc-anchor-trigger>
-        <span>cname</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="cname-string">
-<template #title>cname : <code v-pre>string</code></template>
-<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;cname&quot;: &quot;docs.example.com&quot;
-}</code></pre>
-</doc-codeblock></div>
-</doc-panel>
-<doc-anchor-target id="exclude">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#exclude">#</doc-anchor-trigger>
-        <span>exclude</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="exclude-array">
-<template #title>exclude : <code v-pre>array</code></template>
-<p>Retype can exclude files or folders from being built by configuring an <code v-pre>exclude</code> string array within your projects <code v-pre>retype.json</code> file.</p>
-<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. Wildcards <code v-pre>*</code> are allowed.</p>
-<p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Exclude patterns</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;exclude&quot;: [
-    &quot;draft/&quot;,
-    &quot;*_temp/&quot;,
-    &quot;/src/temp.md&quot;
-  ]
-}</code></pre>
-</doc-codeblock></div>
-<p>You could exclude everything in your project with by adding <code v-pre>&quot;exclude&quot;: [ &quot;*&quot; ]</code>.</p>
-<doc-alert variant="primary">
-<p>Any file are folder prefixed with an underscore <code v-pre>_</code> are also excluded.</p>
-</doc-alert>
-</doc-panel>
-<doc-anchor-target id="favicon">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#favicon">#</doc-anchor-trigger>
-        <span>favicon</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="favicon-string">
-<template #title>favicon : <code v-pre>string</code></template>
-<p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
-<p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Favicon is stored in the /static folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;favicon&quot;: &quot;static/favicon.png&quot;
-}</code></pre>
-</doc-codeblock></div>
-<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger> root.</p>
-</doc-panel>
+<hr />
 <doc-anchor-target id="branding">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
         <span>branding</span>
     </h2>
 </doc-anchor-target>
-<p>Branding configuration.</p>
+<p>Branding configuration for your Retype generated website.</p>
 <doc-anchor-target id="title">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
@@ -399,7 +307,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-<p>The above <code v-pre>label</code> would be rendered as the following label in the upper-left corner of the generated website.</p>
+<p>The <code v-pre>label</code> is rendered as the following label in the upper-left corner of the generated website, to the right of the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger> or <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger>.</p>
 <p><figure class="content-center">
     <img src="../../static/project-branding-title.png" alt="GitHub Pages configuration" />
     <figcaption class="caption">GitHub Pages configuration</figcaption>
@@ -416,7 +324,7 @@
 <template #title>logo : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
-<li>The path to a logo file (light theme), relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
+<li>The path to a logo file relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
 <li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
@@ -439,7 +347,7 @@
 <template #title>logoDark : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
-<li>The path to a logo file (dark theme), relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
+<li>The path to a logo file (dark mode) relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
 <li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
@@ -453,6 +361,374 @@
 }</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<doc-anchor-target id="colors">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#colors">#</doc-anchor-trigger>
+        <span>colors</span>
+    </h3>
+</doc-anchor-target>
+<p>Custom color configuration.</p>
+<doc-anchor-target id="label-text">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#label-text">#</doc-anchor-trigger>
+        <span>label.text</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="label-text-string">
+<template #title>label.text : <code v-pre>string</code></template>
+<p>Set a custom label text color. Default is <code v-pre>#1f7aff</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;colors&quot;: {
+      &quot;label&quot;: {
+        &quot;text&quot;: &quot;#ffffff&quot;
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="label-background">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#label-background">#</doc-anchor-trigger>
+        <span>label.background</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="label-background-string">
+<template #title>label.background : <code v-pre>string</code></template>
+<p>Set a custom label background color. Default is <code v-pre>#e1edff</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;colors&quot;: {
+      &quot;label&quot;: {
+        &quot;background&quot;: &quot;#ff0000&quot;
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="cname">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cname">#</doc-anchor-trigger>
+        <span>cname</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="cname-string">
+<template #title>cname : <code v-pre>string</code></template>
+<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;cname&quot;: &quot;docs.example.com&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="edit">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#edit">#</doc-anchor-trigger>
+        <span>edit</span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>edit</code> config allows for enabling and customization of the <code v-pre>Edit this page</code> links on content pages.</p>
+<doc-alert variant="primary">
+<p>Check out the bottom of this page for a working sample of <code v-pre>Edit this page</code>.</p>
+</doc-alert>
+<doc-anchor-target id="repo">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#repo">#</doc-anchor-trigger>
+        <span>repo</span>
+    </h3>
+</doc-anchor-target>
+<p>The repository URL where the source files for this project are located.</p>
+<doc-panel id="repo-string">
+<template #title>repo : <code v-pre>string</code></template>
+<p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;edit&quot;: {
+    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="branch">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#branch">#</doc-anchor-trigger>
+        <span>branch</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="branch-string">
+<template #title>branch : <code v-pre>string</code></template>
+<p>Point to a custom branch within the repo. Default is <code v-pre>main</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;edit&quot;: {
+    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;,
+    &quot;branch&quot;: &quot;website&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="base-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-1">#</doc-anchor-trigger>
+        <span>base</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="base-string">
+<template #title>base : <code v-pre>string</code></template>
+<p>A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.</p>
+<p>The following sample demonstrates a scenario where the content files are located within the <code v-pre>/docs</code> sub-folder of the repo.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;edit&quot;: {
+    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;,
+    &quot;base&quot;: &quot;docs&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="label-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#label-1">#</doc-anchor-trigger>
+        <span>label</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="label-string">
+<template #title>label : <code v-pre>string</code></template>
+<p>A custom label for the link. Default is <code v-pre>&quot;Edit this page&quot;</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;edit&quot;: {
+    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;,
+    &quot;label&quot;: &quot;Edit on GitHub&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="exclude">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#exclude">#</doc-anchor-trigger>
+        <span>exclude</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="exclude-array">
+<template #title>exclude : <code v-pre>array</code></template>
+<p>Retype can exclude files or folders from being built by configuring an <code v-pre>exclude</code> string array within your projects <code v-pre>retype.json</code> file.</p>
+<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. Wildcards <code v-pre>*</code> are allowed.</p>
+<p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Exclude patterns</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;exclude&quot;: [
+    &quot;draft/&quot;,
+    &quot;*_temp/&quot;,
+    &quot;/src/temp.md&quot;
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<p>You could exclude everything in your project with by adding <code v-pre>&quot;exclude&quot;: [ &quot;*&quot; ]</code>.</p>
+<doc-alert variant="primary">
+<p>Any file are folder prefixed with an underscore <code v-pre>_</code> are also excluded.</p>
+</doc-alert>
+</doc-panel>
+<hr />
+<doc-anchor-target id="favicon">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#favicon">#</doc-anchor-trigger>
+        <span>favicon</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="favicon-string">
+<template #title>favicon : <code v-pre>string</code></template>
+<p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
+<p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Favicon is stored in the /static folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;favicon&quot;: &quot;static/favicon.png&quot;
+}</code></pre>
+</doc-codeblock></div>
+<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger> root.</p>
+</doc-panel>
+<hr />
+<doc-anchor-target id="footer">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#footer">#</doc-anchor-trigger>
+        <span>footer</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="copyright-string">
+<template #title>copyright : <code v-pre>string</code></template>
+<p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;footer&quot;: {
+    &quot;copyright&quot;: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved.&quot;,
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-panel id="links-object">
+<template #title>links : <code v-pre>object</code></template>
+<p>Same configuration options as page level <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;footer&quot;: {
+    &quot;links&quot;: [
+      {
+        &quot;text&quot;: &quot;License&quot;,
+        &quot;link&quot;: &quot;license.md&quot;
+      }
+    ]
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="input">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#input">#</doc-anchor-trigger>
+        <span>input</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="input-string">
+<template #title>input : <code v-pre>string</code></template>
+<p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
+<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Change input location to /src folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;input&quot;: &quot;./src&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="links">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#links">#</doc-anchor-trigger>
+        <span>links</span>
+    </h2>
+</doc-anchor-target>
+<p>Custom links added to the top-bar navigation of all pages.</p>
+<p>The following sample demonstrates a basic <code v-pre>links</code> scenario which would add one link to the top of all pages.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Getting Started&quot;,
+      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="text">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#text">#</doc-anchor-trigger>
+        <span>text</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="text-string">
+<template #title>text : <code v-pre>string</code></template>
+<p>The link text label.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Demos&quot;,
+      &quot;link&quot;: &quot;https://demo.example.com/&quot;
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="link">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#link">#</doc-anchor-trigger>
+        <span>link</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="link-string">
+<template #title>link : <code v-pre>string</code></template>
+<p>The URL to use for the link. The link can be internal or external.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;About us&quot;,
+      &quot;link&quot;: &quot;/about/&quot;
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="icon">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
+        <span>icon</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="icon-string">
+<template #title>icon : <code v-pre>string</code></template>
+<p>An icon to use with the link. Default is <code v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Issues&quot;,
+      &quot;link&quot;: &quot;https://github.com/retypeapp/retype/issues/&quot;,
+      &quot;icon&quot;: &quot;bug&quot;
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<p>Options include using an <a href="https://octicons-primer.vercel.app/octicons/">Octicon</a> name, <a href="https://mojee.io/emojis/">Emoji</a> shortcode, <code v-pre>&lt;svg&gt;</code> element, a path to the icon file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Octicon</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;rocket&quot;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Emoji shortcode</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;:rocket:&quot;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">SVG element</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;&lt;svg&gt;...&lt;/svg&gt;&quot;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Path</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;../static/rocket.png&quot;</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="iconalign">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#iconalign">#</doc-anchor-trigger>
+        <span>iconAlign</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="iconalign-string">
+<template #title>iconAlign : <code v-pre>string</code></template>
+<p>The position for the icon relative to the link <code v-pre>text</code>. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Demos&quot;,
+      &quot;link&quot;: &quot;https://demo.example.com/&quot;,
+      &quot;icon&quot;: &quot;link-external&quot;,
+      &quot;iconAlign&quot;: &quot;right&quot;
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
 <doc-anchor-target id="meta">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#meta">#</doc-anchor-trigger>
@@ -482,13 +758,170 @@
 <pre class="language-markup"><code v-pre class="language-markup">&lt;title&gt;About us | Example.com - Widgets for the internet&lt;/title&gt;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<hr />
+<doc-anchor-target id="output">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#output">#</doc-anchor-trigger>
+        <span>output</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="output-string">
+<template #title>output : <code v-pre>string</code></template>
+<p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
+<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample: Change output location to /docs folder</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;output&quot;: &quot;./docs&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="plugins">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#plugins">#</doc-anchor-trigger>
+        <span>plugins</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="googleanalytics">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#googleanalytics">#</doc-anchor-trigger>
+        <span>googleAnalytics</span>
+    </h3>
+</doc-anchor-target>
+<p>Add Google Analytics to your website.</p>
+<doc-panel id="googleanalytics-id-string">
+<template #title>googleAnalytics.id : <code v-pre>string</code></template>
+<p>Google Analytics ID value.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;plugins&quot;: {
+    &quot;googleAnalytics&quot;: {
+      &quot;id&quot;: &quot;UA-12345678-1&quot;
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="port">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port">#</doc-anchor-trigger>
+        <span>port</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="port-number">
+<template #title>port : <code v-pre>number</code></template>
+<p>A custom port for the internal Retype web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;port&quot;: 5005
+}</code></pre>
+</doc-codeblock></div>
+<p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
+<p>If a custom <code v-pre>port</code> is explicitly configured in the <code v-pre>retype.json</code>, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the <code v-pre>port</code> was explicitly configured, Retype will not attempt to auto-increment.</p>
+</doc-panel>
+<hr />
+<doc-anchor-target id="search">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
+        <span>search</span>
+    </h2>
+</doc-anchor-target>
+<p>Customization of the website search component.</p>
+<doc-anchor-target id="minchars">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#minchars">#</doc-anchor-trigger>
+        <span>minChars</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="minchars-number">
+<template #title>minChars : <code v-pre>number</code></template>
+<p>Min number of characters required in a search query. Defualt is <code v-pre>3</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;search&quot;: {
+    &quot;minChars&quot;: 3
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="maxresults">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#maxresults">#</doc-anchor-trigger>
+        <span>maxResults</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="maxresults-number">
+<template #title>maxResults : <code v-pre>number</code></template>
+<p>Max number of search results to render. Defualt is <code v-pre>20</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;search&quot;: {
+    &quot;maxResults&quot;: 20
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="placeholder">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder">#</doc-anchor-trigger>
+        <span>placeholder</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="placeholder-string">
+<template #title>placeholder : <code v-pre>string</code></template>
+<p>Placeholder text rendered on the search component. Defualt is <code v-pre>&quot;Search&quot;</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;search&quot;: {
+    &quot;placeholder&quot;: &quot;Search&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="hotkeys">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hotkeys">#</doc-anchor-trigger>
+        <span>hotkeys</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="hotkeys-string">
+<template #title>hotkeys : <code v-pre>string[]</code></template>
+<p>Keyboard key to set the cursor focus into the search field. Defualt is <code v-pre>[&quot;/&quot;]</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;search&quot;: {
+    &quot;hotkeys&quot;: [&quot;/&quot;]
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="noresultsfoundmsg">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#noresultsfoundmsg">#</doc-anchor-trigger>
+        <span>noResultsFoundMsg</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="noresultsfoundmsg-string">
+<template #title>noResultsFoundMsg : <code v-pre>string</code></template>
+<p>Message rendered when no results were found. Defualt is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;search&quot;: {
+    &quot;noResultsFoundMsg&quot;: &quot;Sorry, no results found.&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
 <doc-anchor-target id="snippets">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#snippets">#</doc-anchor-trigger>
         <span>snippets</span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>snippets</code> configuration allows for custom configuration of code block snippet formatting, including the project wide enabling of <a href="../../guides/formatting/#line-numbers">line numbering</a>.</p>
+<p>The <code v-pre>snippets</code> configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of <a href="../../guides/formatting/#line-numbers">line numbering</a>.</p>
 <doc-anchor-target id="linenumbers">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#linenumbers">#</doc-anchor-trigger>
@@ -525,6 +958,7 @@
 }</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<hr />
 <doc-anchor-target id="additional-options">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#additional-options">#</doc-anchor-trigger>
@@ -541,210 +975,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code v-pre>branding.colors</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Custom color configuration</td>
-</tr>
-<tr>
-<td><code v-pre>branding.colors.label</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Logo label colors</td>
-</tr>
-<tr>
-<td><code v-pre>branding.colors.label.text</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>#1f7aff</code></td>
-<td>Text color</td>
-</tr>
-<tr>
-<td><code v-pre>branding.colors.label.background</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>#e1edff</code></td>
-<td>Background color</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>links</code></td>
-<td><code v-pre>array</code></td>
-<td></td>
-<td>Top-level navigation link configuration</td>
-</tr>
-<tr>
-<td><code v-pre>links[].text</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Navigation link text</td>
-</tr>
-<tr>
-<td><code v-pre>links[].link</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Navigation link URL</td>
-</tr>
-<tr>
-<td><code v-pre>links[].icon</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>An icon for this link</td>
-</tr>
-<tr>
-<td><code v-pre>links[].iconPosition</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>The icon position for the icon. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>footer</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Footer configuration</td>
-</tr>
-<tr>
-<td><code v-pre>footer.copyright</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable</td>
-</tr>
-<tr>
-<td><code v-pre>footer.links</code></td>
-<td><code v-pre>array</code></td>
-<td></td>
-<td>Footer navigation link configuration</td>
-</tr>
-<tr>
-<td><code v-pre>footer.links[].text</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Navigation link text</td>
-</tr>
-<tr>
-<td><code v-pre>footer.links[].link</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Navigation link URL</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>edit</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Edit plugin configuration</td>
-</tr>
-<tr>
-<td><code v-pre>edit.repo</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Repository URL</td>
-</tr>
-<tr>
-<td><code v-pre>edit.branch</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>main</code></td>
-<td>Optional repo branch</td>
-</tr>
-<tr>
-<td><code v-pre>edit.base</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Optional base path within the repo branch</td>
-</tr>
-<tr>
-<td><code v-pre>edit.label</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>Edit this page</code></td>
-<td>Edit link label</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>plugins</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Plugin configuration</td>
-</tr>
-<tr>
-<td><code v-pre>plugins.googleAnalytics</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Google Analytics plugin configuration</td>
-</tr>
-<tr>
-<td><code v-pre>plugins.googleAnalytics.id</code></td>
-<td><code v-pre>string</code></td>
-<td></td>
-<td>Google Analytics ID</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code v-pre>search</code></td>
-<td><code v-pre>object</code></td>
-<td></td>
-<td>Search configuration</td>
-</tr>
-<tr>
-<td><code v-pre>search.minChars</code></td>
-<td><code v-pre>number</code></td>
-<td>3</td>
-<td>Min number of characters required in a search query</td>
-</tr>
-<tr>
-<td><code v-pre>search.maxResults</code></td>
-<td><code v-pre>number</code></td>
-<td>20</td>
-<td>Max number of search results to render</td>
-</tr>
-<tr>
-<td><code v-pre>search.placeholder</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>Search</code></td>
-<td>Placeholder text rendered on the search component</td>
-</tr>
-<tr>
-<td><code v-pre>search.hotkeys</code></td>
-<td><code v-pre>array</code></td>
-<td><code v-pre>[&quot;/&quot;]</code></td>
-<td>Hotkeys (KeyboardEvent.key) enabling the search component</td>
-</tr>
-<tr>
-<td><code v-pre>search.noResultsFoundMsg</code></td>
-<td><code v-pre>string</code></td>
-<td><code v-pre>Sorry, no results found.</code></td>
-<td>Message rendered when no results were found</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr>
 <td><code v-pre>code</code></td>
 <td><code v-pre>object</code></td>
@@ -782,11 +1012,11 @@
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/github_actions">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/tab">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">GitHub Actions</span>
+                <span class="block mt-1">Tab</span>
             </span>
         </a>
     </div>

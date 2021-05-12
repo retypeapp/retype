@@ -35,7 +35,7 @@
                         <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
                     </a>
                 </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.4</span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.5</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -196,7 +196,7 @@
         <span><code v-pre>v2.0.0</code></span>
     </h2>
 </doc-anchor-target>
-<p>Expected: Q3 2021</p>
+<p>Expected: Early Q3 2021</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Full support for C# API reference doc generation</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Early support for TypeScript API reference doc generation</li>
@@ -208,11 +208,13 @@
         <span><code v-pre>v1.6.0</code></span>
     </h2>
 </doc-anchor-target>
-<p>Expected: Q2 2021</p>
+<p>Expected: Late Q2 2021</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> New Accordion component</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Another beta release of building C# project reference documentation</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>includes</code> support</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>/blog</code> summary page</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
 </ul>
 <doc-anchor-target id="v1-5-0">
     <h2>
@@ -220,12 +222,15 @@
         <span><code v-pre>v1.5.0</code></span>
     </h2>
 </doc-anchor-target>
-<p>Expected: Q2 2021</p>
+<p>Expected: Mid Q2 2021</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New Badge component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>/blog</code> summary page</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>route</code> page config</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/badge">Badge</a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New syntax highlighting support for all code block languages</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#route"><code v-pre>route</code></a> page config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#port"><code v-pre>port</code></a> project config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Larger font-size for <code v-pre>h1</code>, <code v-pre>h2</code>, and <code v-pre>h3</code> headers</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Improved handing of special chars within file names</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Improved handling of <code v-pre>.md</code> pages created by GitHub Wiki</li>
 </ul>
 <doc-anchor-target id="v1-4-0">
     <h2>
@@ -236,12 +241,12 @@
 <p>Released: 2021-04-12</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Even cleaner upgrade to Reytype from GitBook experience</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New super fast incremental build process</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New super fast <a href="../cli/#retype-watch"><code v-pre>retype watch</code></a> incremental build process</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../guides/formatting/#image-alignment">image alignment</a> and captions</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#exclude"><code v-pre>exclude</code></a> config for <code v-pre>retype.json</code></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>blog</code> layout and <code v-pre>/blog</code> folder defaults</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../guides/formatting/#file-download"><code v-pre>[!file]</code></a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../guides/formatting/#reference-link"><code v-pre>[!ref]</code></a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/file_download"><code v-pre>[!file]</code></a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/reference_link"><code v-pre>[!ref]</code></a> component</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Many other minor enhancements and bug fixes</li>
 </ul>
 <doc-anchor-target id="v1-3-0">
@@ -252,10 +257,10 @@
 </doc-anchor-target>
 <p>Released: 2021-03-30</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New GitHub Actions for Retype</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New GitHub <a href="../guides/github_actions">Actions</a> for Retype</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#expanded"><code v-pre>expanded</code></a> config on <a href="../configuration/folder">folder</a> configuration</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>icon</code> and <code v-pre>iconAlign</code> configs on <a href="../configuration/project/#links"><code v-pre>links</code></a></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A few important bug fixes</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#icon"><code v-pre>icon</code></a> and <a href="../configuration/project/#iconalign"><code v-pre>iconAlign</code></a> configs on <a href="../configuration/project/#links"><code v-pre>links</code></a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Several important bug fixes</li>
 </ul>
 <doc-anchor-target id="v1-2-0">
     <h2>
@@ -265,10 +270,10 @@
 </doc-anchor-target>
 <p>Released: 2021-03-25</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>central</code> layout</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>page</code> layout</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>Edit this page</code> link</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>Previous | Next</code> buttons</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#layout"><code v-pre>central</code></a> layout</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#layout"><code v-pre>page</code></a> layout</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#edit"><code v-pre>Edit this page</code></a> link</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>Previous | Next</code> footer navigation buttons for pages</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#order"><code v-pre>order</code></a> Page level config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#hidden"><code v-pre>hidden</code></a> Page level config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#favicon"><code v-pre>favicon</code></a> Project config available in <code v-pre>retype.json</code></li>
@@ -282,14 +287,14 @@
 </doc-anchor-target>
 <p>Released: 2021-03-12</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../guides/formatting/#tabs">Tab</a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../guides/formatting/#buttons">Button</a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../guides/formatting/#panels">Panel</a> component with expand/collapse</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>retype watch</code> command (<a href="../cli/#retype-watch">docs</a>)</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <em>Live Reload</em> when using <code v-pre>retype watch</code></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>.yml</code> option for Page or Folder configs</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/tab">Tab</a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/button">Button</a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/panel">Panel</a> component with expand/collapse</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../cli/#retype-watch"><code v-pre>retype watch</code></a> command</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New Live Reload when using <a href="../cli/#retype-watch"><code v-pre>retype watch</code></a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#separate-yml-configuration"><code v-pre>.yml</code></a> option for Page or Folder configs</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New code block <a href="../guides/formatting/#code-blocks">titles</a></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Enable line-numbering in code blocks</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Enable <a href="../guides/formatting/#line-numbers">line-numbering</a> in code blocks</li>
 </ul>
 <doc-anchor-target id="v1-0-0">
     <h2>
