@@ -6,9 +6,9 @@ icon: home
 
 [Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
 
-![Write anything, let Retype build the rest](static/retype-hero.svg)
+![](static/retype-hero.svg)
 
-No coding is required and just one Markdown file, such as a [`README.md`](https://www.makeareadme.com/), will get you started. 
+No coding is required and just one Markdown file, such as a [`README.md`](https://www.makeareadme.com/), will get you started.
 
 The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
 
@@ -16,7 +16,7 @@ A new Retype powered website can be up and running within seconds once Retype is
 
 ## Quick start
 
-You can install Retype using `npm`, `yarn`, or the `dotnet` CLI. 
+You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
 From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
 
@@ -39,7 +39,7 @@ retype watch
 ```
 |||
 
-That's it! Your new Retype website should be up and running. 
+That's it! Your new Retype website should be up and running.
 
 !!!
 You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
@@ -82,7 +82,7 @@ Don't blink. Retype was built for speed.
 
 #### :white_check_mark: Easy install
 
-[Installation](guides/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from. 
+[Installation](guides/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from.
 
 #### :muscle: Powerful
 
@@ -90,7 +90,7 @@ Project level [configuration](configuration/project.md) using `retype.json` unlo
 
 #### :pencil2: Simple formatting
 
-Pages are [formatted](guides/formatting.md) using Markdown syntax. Page level [configuration](configuration/page.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [Components](components/). Page level [configuration](configuration/page.md) is available, such as customizing the navigation `label` or `description` used by search engines.
 
 #### :computer: Host anywhere
 

@@ -6,7 +6,7 @@
     "branding": {
         "logo": "/static/retype-logo.svg",
         "logoDark": "/static/retype-logo-dark.svg",
-        "label": "v1.4"
+        "label": "v1.5"
      },
 
     "meta": {

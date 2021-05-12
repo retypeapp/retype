@@ -42,35 +42,7 @@ Running the command `retype init` will create a default `retype.json` file. The 
 }
 ```
 
-## input
-
-+++ input : `string`
-
-Custom path to the input directory. Default is `.`.
-
-The path is relative to the `retype.json` location.
-
-```json Change input location to /src folder
-{
-  "input": "./src"
-}
-```
-+++
-
-## output
-
-+++ output : `string`
-
-Custom path to the output directory. Default is `.retype`.
-
-The path is relative to the `retype.json` location.
-
-```json Sample: Change output location to /docs folder
-{
-  "output": "./docs"
-}
-```
-+++
+---
 
 ## base
 
@@ -108,69 +80,14 @@ The `retype.json` file for that scenario would be...
 
 ...and the GitHub Pages configuration within your repo Settings would be:
 
-![GitHub Pages configuration](../static/project-base-config-github-pages.png)
+![](../static/project-base-config-github-pages.png)
 +++
 
-## cname
-
-+++ cname : `string`
-
-If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [output](#output). Default is `null`.
-
-```json Sample: Host docs.example.com website using GitHub pages
-{
-  "cname": "docs.example.com"
-}
-```
-+++
-
-## exclude
-
-+++ exclude : `array`
-Retype can exclude files or folders from being built by configuring an `exclude` string array within your projects `retype.json` file.
-
-Exclude patterns are similar to allowable patterns within a `.gitignore` file. Wildcards `*` are allowed.
-
-The following sample demonstrates how to exclude an entire `draft/` folder, any folder that ends with `*_temp/`, and one specific `/src/temp.md` file.
-
-```json Exclude patterns
-{
-  "exclude": [
-    "draft/",
-    "*_temp/",
-    "/src/temp.md"
-  ]
-}
-```
-
-You could exclude everything in your project with by adding `"exclude": [ "*" ]`.
-
-!!!
-Any file are folder prefixed with an underscore `_` are also excluded.
-!!!
-+++
-
-## favicon
-
-+++ favicon : `string`
-
-A custom path to a `.ico` or `.png` file to be used as the `favicon`. Default is `null`.
-
-The path is relative to the [input](#input).
-
-```json Favicon is stored in the /static folder
-{
-  "favicon": "static/favicon.png"
-}
-```
-
-By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
-+++
-
+---
 
 ## branding
 
-Branding configuration.
+Branding configuration for your Retype generated website.
 
 ### title
 
@@ -204,7 +121,7 @@ Optional Logo Label text. Default is `Docs`.
   }
 }
 ```
-The above `label` would be rendered as the following label in the upper-left corner of the generated website.
+The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#title) or [`logo`](#logo).
 
 ![GitHub Pages configuration](../static/project-branding-title.png)
 +++
@@ -215,7 +132,7 @@ The above `label` would be rendered as the following label in the upper-left cor
 
 One of the following:
 
-1. The path to a logo file (light theme), relative to the [input](#input), or
+1. The path to a logo file relative to the [input](#input), or
 2. An inline `<svg>` logo
 
 Default is `null`.
@@ -235,7 +152,7 @@ Default is `null`.
 
 One of the following:
 
-1. The path to a logo file (dark theme), relative to the [input](#input), or
+1. The path to a logo file (dark mode) relative to the [input](#input), or
 2. An inline `<svg>` logo
 
 Default is `null`.
@@ -249,6 +166,345 @@ Default is `null`.
 }
 ```
 +++
+
+### colors
+
+Custom color configuration.
+
+#### label.text
+
++++ label.text : `string`
+Set a custom label text color. Default is `#1f7aff`.
+
+```json
+{
+  "branding": {
+    "colors": {
+      "label": {
+        "text": "#ffffff"
+      }
+    }
+  }
+}
+```
++++
+
+#### label.background
+
++++ label.background : `string`
+Set a custom label background color. Default is `#e1edff`.
+
+```json
+{
+  "branding": {
+    "colors": {
+      "label": {
+        "background": "#ff0000"
+      }
+    }
+  }
+}
+```
++++
+
+---
+
+## cname
+
++++ cname : `string`
+
+If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [output](#output). Default is `null`.
+
+```json Sample: Host docs.example.com website using GitHub pages
+{
+  "cname": "docs.example.com"
+}
+```
++++
+
+---
+
+## edit
+
+The `edit` config allows for enabling and customization of the `Edit this page` links on content pages.
+
+!!!
+Check out the bottom of this page for a working sample of `Edit this page`.
+!!!
+
+### repo
+
+The repository URL where the source files for this project are located.
+
++++ repo : `string`
+Setting a `repo` value will enable the `Edit this page` links on all content pages.
+
+```json
+{
+  "edit": {
+    "repo": "https://github.com/your-organization/your-repo"
+  }
+}
+```
++++
+
+### branch
+
++++ branch : `string`
+Point to a custom branch within the repo. Default is `main`.
+
+```json
+{
+  "edit": {
+    "repo": "https://github.com/your-organization/your-repo",
+    "branch": "website"
+  }
+}
+```
++++
+
+### base
+
++++ base : `string`
+A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.
+
+The following sample demonstrates a scenario where the content files are located within the `/docs` sub-folder of the repo.
+
+```json
+{
+  "edit": {
+    "repo": "https://github.com/your-organization/your-repo",
+    "base": "docs"
+  }
+}
+```
++++
+
+### label
+
++++ label : `string`
+A custom label for the link. Default is `"Edit this page"`.
+
+```
+{
+  "edit": {
+    "repo": "https://github.com/your-organization/your-repo",
+    "label": "Edit on GitHub"
+  }
+}
+```
++++
+
+---
+
+## exclude
+
++++ exclude : `array`
+Retype can exclude files or folders from being built by configuring an `exclude` string array within your projects `retype.json` file.
+
+Exclude patterns are similar to allowable patterns within a `.gitignore` file. Wildcards `*` are allowed.
+
+The following sample demonstrates how to exclude an entire `draft/` folder, any folder that ends with `*_temp/`, and one specific `/src/temp.md` file.
+
+```json Exclude patterns
+{
+  "exclude": [
+    "draft/",
+    "*_temp/",
+    "/src/temp.md"
+  ]
+}
+```
+
+You could exclude everything in your project with by adding `"exclude": [ "*" ]`.
+
+!!!
+Any file are folder prefixed with an underscore `_` are also excluded.
+!!!
++++
+
+---
+
+## favicon
+
++++ favicon : `string`
+
+A custom path to a `.ico` or `.png` file to be used as the `favicon`. Default is `null`.
+
+The path is relative to the [input](#input).
+
+```json Favicon is stored in the /static folder
+{
+  "favicon": "static/favicon.png"
+}
+```
+
+By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
++++
+
+---
+
+## footer
+
++++ copyright : `string`
+Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable.
+
+```json
+{
+  "footer": {
+    "copyright": "© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved.",
+  }
+}
+```
++++
+
++++ links : `object`
+Same configuration options as page level [`links`](#links).
+
+```json
+{
+  "footer": {
+    "links": [
+      {
+        "text": "License",
+        "link": "license.md"
+      }
+    ]
+  }
+}
+```
++++
+
+---
+
+## input
+
++++ input : `string`
+
+Custom path to the input directory. Default is `.`.
+
+The path is relative to the `retype.json` location.
+
+```json Change input location to /src folder
+{
+  "input": "./src"
+}
+```
++++
+
+---
+
+## links
+
+Custom links added to the top-bar navigation of all pages.
+
+The following sample demonstrates a basic `links` scenario which would add one link to the top of all pages.
+
+```json
+{
+  "links": [
+    {
+      "text": "Getting Started",
+      "link": "https://retype.com/getting_started/"
+    }
+  ]
+}
+```
+
+### text
+
++++ text : `string`
+
+The link text label.
+
+```json
+{
+  "links": [
+    {
+      "text": "Demos",
+      "link": "https://demo.example.com/"
+    }
+  ]
+}
+```
++++
+
+### link
+
++++ link : `string`
+
+The URL to use for the link. The link can be internal or external.
+
+```json
+{
+  "links": [
+    {
+      "text": "About us",
+      "link": "/about/"
+    }
+  ]
+}
+```
++++
+
+### icon
+
++++ icon : `string`
+
+An icon to use with the link. Default is `null`.
+
+```json
+{
+  "links": [
+    {
+      "text": "Issues",
+      "link": "https://github.com/retypeapp/retype/issues/",
+      "icon": "bug"
+    }
+  ]
+}
+```
+
+Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, a path to the icon file.
+
+```yml Octicon
+"icon": "rocket"
+```
+
+```yml Emoji shortcode
+"icon": ":rocket:"
+```
+
+```yml SVG element
+"icon": "<svg>...</svg>"
+```
+
+```yml Path
+"icon": "../static/rocket.png"
+```
++++
+
+### iconAlign
+
++++ iconAlign : `string`
+
+The position for the icon relative to the link `text`. Either `left` or `right`. Default is `left`.
+
+```json
+{
+  "links": [
+    {
+      "text": "Demos",
+      "link": "https://demo.example.com/",
+      "icon": "link-external",
+      "iconAlign": "right"
+    }
+  ]
+}
+```
++++
+
+---
 
 ## meta
 
@@ -275,9 +531,145 @@ If we had an `About us` page, the final `<title>` with the `title` value above w
 ```
 +++
 
+---
+
+## output
+
++++ output : `string`
+
+Custom path to the output directory. Default is `.retype`.
+
+The path is relative to the `retype.json` location.
+
+```json Sample: Change output location to /docs folder
+{
+  "output": "./docs"
+}
+```
++++
+
+---
+
+## plugins
+
+### googleAnalytics
+
+Add Google Analytics to your website.
+
++++ googleAnalytics.id : `string`
+Google Analytics ID value.
+
+```json
+{
+  "plugins": {
+    "googleAnalytics": {
+      "id": "UA-12345678-1"
+    }
+  }
+}
+```
++++
+
+---
+
+## port
+
++++ port : `number`
+
+A custom port for the internal Retype web server to use when hosting locally. Default is `5000`.
+
+```json
+{
+  "port": 5005
+}
+```
+
+If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
+
+If a custom `port` is explicitly configured in the `retype.json`, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
++++
+
+---
+
+## search
+
+Customization of the website search component.
+
+### minChars
+
++++ minChars : `number`
+Min number of characters required in a search query. Defualt is `3`.
+
+```json
+{
+  "search": {
+    "minChars": 3
+  }
+}
+```
++++
+
+### maxResults
+
++++ maxResults : `number`
+Max number of search results to render. Defualt is `20`.
+
+```json
+{
+  "search": {
+    "maxResults": 20
+  }
+}
+```
++++
+
+### placeholder
+
++++ placeholder : `string`
+Placeholder text rendered on the search component. Defualt is `"Search"`.
+
+```json
+{
+  "search": {
+    "placeholder": "Search"
+  }
+}
+```
++++
+
+### hotkeys
+
++++ hotkeys : `string[]`
+Keyboard key to set the cursor focus into the search field. Defualt is `["/"]`.
+
+```json
+{
+  "search": {
+    "hotkeys": ["/"]
+  }
+}
+```
++++
+
+### noResultsFoundMsg
+
++++ noResultsFoundMsg : `string`
+Message rendered when no results were found. Defualt is `"Sorry, no results found."`.
+
+```json
+{
+  "search": {
+    "noResultsFoundMsg": "Sorry, no results found."
+  }
+}
+```
++++
+
+---
+
 ## snippets
 
-The `snippets` configuration allows for custom configuration of code block snippet formatting, including the project wide enabling of [line numbering](../guides/formatting.md#line-numbers).
+The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](../guides/formatting.md#line-numbers).
 
 ### lineNumbers
 
@@ -314,44 +706,12 @@ Enabling line numbering site wide on code blocks with no explicit reference lang
 ~~~
 +++
 
+---
+
 ## Additional options
 
 | Option                               | Type      | Default value              | Description                                                                                                                     |
 | ------------------------------------ | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `branding.colors`                    | `object`  |                            | Custom color configuration                                                                                                      |
-| `branding.colors.label`              | `object`  |                            | Logo label colors                                                                                                               |
-| `branding.colors.label.text`         | `string`  | `#1f7aff`                  | Text color                                                                                                                      |
-| `branding.colors.label.background`   | `string`  | `#e1edff`                  | Background color                                                                                                                |
-|                                      |           |                            |                                                                                                                                 |
-| `links`                              | `array`   |                            | Top-level navigation link configuration                                                                                         |
-| `links[].text`                       | `string`  |                            | Navigation link text                                                                                                            |
-| `links[].link`                       | `string`  |                            | Navigation link URL                                                                                                             |
-| `links[].icon`                       | `string`  |                            | An icon for this link                                                                                                           |
-| `links[].iconPosition`               | `string`  |                            | The icon position for the icon. Either `left` or `right`. Default is `left`                                                     |
-|                                      |           |                            |                                                                                                                                 |
-| `footer`                             | `object`  |                            | Footer configuration                                                                                                            |
-| `footer.copyright`                   | `string`  |                            | Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable |
-| `footer.links`                       | `array`   |                            | Footer navigation link configuration                                                                                            |
-| `footer.links[].text`                | `string`  |                            | Navigation link text                                                                                                            |
-| `footer.links[].link`                | `string`  |                            | Navigation link URL                                                                                                             |
-|                                      |           |                            |                                                                                                                                 |
-| `edit`                               | `object`  |                            | Edit plugin configuration                                                                                                       |
-| `edit.repo`                          | `string`  |                            | Repository URL                                                                                                                  |
-| `edit.branch`                        | `string`  | `main`                     | Optional repo branch                                                                                                            |
-| `edit.base`                          | `string`  |                            | Optional base path within the repo branch                                                                                       |
-| `edit.label`                         | `string`  | `Edit this page`           | Edit link label                                                                                                                 |
-|                                      |           |                            |                                                                                                                                 |
-| `plugins`                            | `object`  |                            | Plugin configuration                                                                                                            |
-| `plugins.googleAnalytics`            | `object`  |                            | Google Analytics plugin configuration                                                                                           |
-| `plugins.googleAnalytics.id`         | `string`  |                            | Google Analytics ID                                                                                                             |
-|                                      |           |                            |                                                                                                                                 |
-| `search`                             | `object`  |                            | Search configuration                                                                                                            |
-| `search.minChars`                    | `number`  | 3                          | Min number of characters required in a search query                                                                             |
-| `search.maxResults`                  | `number`  | 20                         | Max number of search results to render                                                                                          |
-| `search.placeholder`                 | `string`  | `Search`                   | Placeholder text rendered on the search component                                                                               |
-| `search.hotkeys`                     | `array`   | `["/"]`                    | Hotkeys (KeyboardEvent.key) enabling the search component                                                                       |
-| `search.noResultsFoundMsg`           | `string`  | `Sorry, no results found.` | Message rendered when no results were found                                                                                     |
-|                                      |           |                            |                                                                                                                                 |
 | `code`                               | `object`  |                            | Source code reference configuration                                                                                             |
 | `code.input`                         | `string`  |                            | Path to a project file, or a project directory                                                                                  |
 | `code.output`                        | `string`  | `./api`                    | Custom path to the API output directory. Relative to `output`                                                                   |
