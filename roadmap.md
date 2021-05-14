@@ -43,7 +43,7 @@ Released: 2021-04-12
 
 - [x] Even cleaner upgrade to Reytype from GitBook experience
 - [x] New super fast [`retype watch`](cli.md#retype-watch) incremental build process
-- [x] New [image alignment](guides/formatting.md#image-alignment) and captions
+- [x] New [image alignment](components/image.md#alignment-options) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
 - [x] New [`[!file]`](components/file_download.md) component
@@ -82,8 +82,8 @@ Released: 2021-03-12
 - [x] New [`retype watch`](cli.md#retype-watch) command
 - [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
-- [x] New code block [titles](guides/formatting.md#code-blocks)
-- [x] Enable [line-numbering](guides/formatting.md#line-numbers) in code blocks
+- [x] New code block [title](components/code_block.md#title)
+- [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks
 
 ## `v1.0.0`
 

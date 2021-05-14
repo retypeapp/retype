@@ -1,4 +1,4 @@
-# Emojis :heart_eyes_cat:
+# Emoji :heart_eyes_cat:
 
 Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:
 

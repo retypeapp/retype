@@ -90,7 +90,7 @@ Project level [configuration](configuration/project.md) using `retype.json` unlo
 
 #### :pencil2: Simple formatting
 
-Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [Components](components/). Page level [configuration](configuration/page.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [components](components/). Page level [configuration](configuration/page.md) is available, such as customizing the navigation `label` or `description` used by search engines.
 
 #### :computer: Host anywhere
 
