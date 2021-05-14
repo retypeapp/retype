@@ -1,4 +1,4 @@
-# Code Blocks
+# Code blocks
 
 ~~~ Sample code block
 ```
