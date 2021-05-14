@@ -7,14 +7,13 @@
 
     <title>List | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Item 1" />
+    <meta name="description" content="Retype includes broad support for creating lists of items, including unordered and ordered lists." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -195,14 +194,27 @@
         <span>List</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="checklist">
+<p>Retype includes broad support for creating lists of items, including unordered and ordered lists.</p>
+<doc-anchor-target id="unordered-lists">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#checklist">#</doc-anchor-trigger>
-        <span>Checklist</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unordered-lists">#</doc-anchor-trigger>
+        <span>Unordered lists</span>
     </h2>
 </doc-anchor-target>
+<ol>
+<li><code v-pre>- [x]</code> for <doc-anchor-trigger to="#checklist">checked</doc-anchor-trigger> item</li>
+<li><code v-pre>- [ ]</code> for <doc-anchor-trigger to="#checklist">unchecked</doc-anchor-trigger> item</li>
+<li><code v-pre>-</code> for <doc-anchor-trigger to="#bullet">bullet</doc-anchor-trigger></li>
+</ol>
+<doc-anchor-target id="checklist">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#checklist">#</doc-anchor-trigger>
+        <span>Checklist</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">- [x] Item 1
+<div class="codeblock-title">Sample checklist with checked and unchecked items</div>
+<pre class="language-none"><code v-pre class="language-none">- [x] Item 1
 - [x] Item 2
 - [ ] Item 3</code></pre>
 </doc-codeblock></div>
@@ -211,38 +223,128 @@
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 2</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Item 3</li>
 </ul>
-<doc-anchor-target id="bullet-list">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bullet-list">#</doc-anchor-trigger>
-        <span>Bullet list</span>
-    </h2>
+<doc-anchor-target id="bullet">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bullet">#</doc-anchor-trigger>
+        <span>Bullet</span>
+    </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">- Item 4
-- Item 5
-- Item 6</code></pre>
+<div class="codeblock-title">Sample unordered list</div>
+<pre class="language-none"><code v-pre class="language-none">- Item 1
+- Item 2
+- Item 3</code></pre>
 </doc-codeblock></div>
 <ul>
-<li>Item 4</li>
-<li>Item 5</li>
-<li>Item 6</li>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
 </ul>
-<doc-anchor-target id="numbered-list">
+<hr />
+<doc-anchor-target id="ordered-lists">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#numbered-list">#</doc-anchor-trigger>
-        <span>Numbered list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ordered-lists">#</doc-anchor-trigger>
+        <span>Ordered lists</span>
     </h2>
 </doc-anchor-target>
+<ol>
+<li><code v-pre>1.</code> for <doc-anchor-trigger to="#numbers">numbers</doc-anchor-trigger> (default)</li>
+<li><code v-pre>a.</code> for <doc-anchor-trigger to="#letters">lowercase</doc-anchor-trigger> letters</li>
+<li><code v-pre>A.</code> for <doc-anchor-trigger to="#uppercase-letters">uppercase</doc-anchor-trigger> letters</li>
+<li><code v-pre>i.</code> for <doc-anchor-trigger to="#lowercase-roman-numerals">lowercase</doc-anchor-trigger> Roman numerals</li>
+<li><code v-pre>I.</code> for <doc-anchor-trigger to="#uppercase-roman-numerals">uppercase</doc-anchor-trigger> Roman numerals</li>
+</ol>
+<doc-anchor-target id="numbers">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#numbers">#</doc-anchor-trigger>
+        <span>Numbers</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">1. Item 7
-2. Item 8
-3. Item 9</code></pre>
+<div class="codeblock-title">Sample ordered list</div>
+<pre class="language-none"><code v-pre class="language-none">1. Item 1
+2. Item 2
+3. Item 3</code></pre>
 </doc-codeblock></div>
 <ol>
-<li>Item 7</li>
-<li>Item 8</li>
-<li>Item 9</li>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
 </ol>
+<doc-anchor-target id="lowercase-letters">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lowercase-letters">#</doc-anchor-trigger>
+        <span>Lowercase letters</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample for lowercase letter list</div>
+<pre class="language-none"><code v-pre class="language-none">a. Item 1
+b. Item 2
+c. Item 3</code></pre>
+</doc-codeblock></div>
+<ol type="a">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<doc-anchor-target id="uppercase-letters">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uppercase-letters">#</doc-anchor-trigger>
+        <span>Uppercase letters</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample for uppercase letter list</div>
+<pre class="language-none"><code v-pre class="language-none">A. Item 1
+B. Item 2
+C. Item 3</code></pre>
+</doc-codeblock></div>
+<ol type="A">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<doc-alert variant="primary">
+<p>Uppercase letter ordered lists are not broadly supported across all web browsers, so the above sample might render as a lowercase letter list for you. Hopefully, support within the web browsers will improve over time.</p>
+</doc-alert>
+<doc-anchor-target id="lowercase-roman-numerals">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lowercase-roman-numerals">#</doc-anchor-trigger>
+        <span>Lowercase Roman numerals</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample for lowercase Roman numeral list</div>
+<pre class="language-none"><code v-pre class="language-none">i. Item 1
+ii. Item 2
+iii. Item 3</code></pre>
+</doc-codeblock></div>
+<ol type="i">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<doc-anchor-target id="uppercase-roman-numerals">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uppercase-roman-numerals">#</doc-anchor-trigger>
+        <span>Uppercase Roman numerals</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample for uppercase Roman numeral list</div>
+<pre class="language-none"><code v-pre class="language-none">I. Item 1
+II. Item 2
+III. Item 3</code></pre>
+</doc-codeblock></div>
+<ol type="I">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<doc-alert variant="primary">
+<p>Uppercase Roman numeral ordered lists are not broadly supported across all web browsers, so the above sample might render as a lowercase Roman numeral list for you. Hopefully, support within the web browsers will improve over time.</p>
+</doc-alert>
 
     
                 <!-- Required only on API pages -->
