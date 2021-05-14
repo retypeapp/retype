@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>Code blocks | Retype - Generate, publish, and share documentation</title>
+    <title>Code snippet | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Retype includes the functionality to set a title on your markdown code blocks." />
+    <meta name="description" content="A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -183,20 +183,32 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="code-blocks" class="break-words">
+<doc-anchor-target id="code-snippet" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#code-blocks">#</doc-anchor-trigger>
-        <span>Code blocks</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-snippet">#</doc-anchor-trigger>
+        <span>Code snippet</span>
     </h1>
 </doc-anchor-target>
+<p>A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page.</p>
+<p>A common scenario for using the code snippet component is to include a portion of a source code file located elsewhere within the project.</p>
+<p>The syntax for a code snippet component is:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample code block</div>
-<pre class="language-none"><code v-pre class="language-none">```
-A basic code block
-```</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; :::</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="sample">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample">#</doc-anchor-trigger>
+        <span>Sample</span>
+    </h2>
+</doc-anchor-target>
+<p>In the following sample, we reference a local <a href="static/sample.js"><code v-pre>sample.js</code></a> file and get the first two lines of the file.</p>
+<p>Here is the <code v-pre>:::code</code> component we use, and the actual results below:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">A basic code block</code></pre>
+<pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
+// https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="options">
     <h2>
@@ -204,72 +216,81 @@ A basic code block
         <span>Options</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="source">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#source">#</doc-anchor-trigger>
+        <span><code v-pre>source</code></span>
+    </h3>
+</doc-anchor-target>
+<p>The <code v-pre>source</code> is the local path to a file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; :::</code></pre>
+</doc-codeblock></div>
+<p>Typically, the <code v-pre>source</code> file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the <code v-pre>source</code> can be located anywhere accessible in the local file system, but if you are using the Retype <a href="../../guides/github_actions">GitHub Action</a>, the file must be within the same repo.</p>
+<hr />
+<doc-anchor-target id="range">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#range">#</doc-anchor-trigger>
+        <span><code v-pre>range</code></span>
+    </h3>
+</doc-anchor-target>
+<p>A <code v-pre>range</code> of lines to include from the <code v-pre>source</code> file can configured, instead of including the entire contents of the file. If no <code v-pre>range</code> is configured, the entire contents of the file will be included.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; range=&quot;&lt;range&gt;&quot; :::</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>range</code> accepts a comma separated list of individual line numbers or a dash separated range, such as <code v-pre>2-24</code> to include only lines #2 to #24 of the file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">range=&quot;2&quot;           // A single line
+range=&quot;2-24&quot;        // A range of lines
+range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
+</doc-codeblock></div>
+<hr />
 <doc-anchor-target id="title">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
-        <span>Title</span>
+        <span><code v-pre>title</code></span>
     </h3>
 </doc-anchor-target>
-<p>Retype includes the functionality to set a title on your markdown code blocks.</p>
+<p>An optional <code v-pre>title</code> can be specified.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">``` Code block title
-var msg = &quot;Set a code block title&quot;;
-```</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code language=&quot;&lt;lang-ref&gt;&quot; title=&quot;&lt;title&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
+<p>Let&#x27;s add a <code v-pre>title</code> to our <code v-pre>sample.js</code> code snippet. Within the <code v-pre>.md</code> file, the configuration would look like...</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Code block title</div>
-<pre class="language-none"><code v-pre class="language-none">var msg = &quot;Set a code block title&quot;;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;static/sample.js&quot; range=&quot;1-2&quot; title=&quot;sample.js&quot; :::</code></pre>
 </doc-codeblock></div>
-<p>The title can be used in conjunction with the code reference type.</p>
+<p>...and the final result would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">```js Code block title
-var msg = &quot;Set a code block title&quot;;
-```</code></pre>
+<div class="codeblock-title">sample.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
+// https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Code block title</div>
-<pre class="language-javascript"><code v-pre class="language-javascript">var msg = &quot;Set a code block title&quot;;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="line-numbers">
+<hr />
+<doc-anchor-target id="language">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#line-numbers">#</doc-anchor-trigger>
-        <span>Line numbers</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#language">#</doc-anchor-trigger>
+        <span><code v-pre>language</code></span>
     </h3>
 </doc-anchor-target>
-<p>Adding or removing line numbering to your code blocks can be configured by adding the <code v-pre>#</code> specifier character to the first line after the reference language.</p>
+<p>The final code blocks allow for a language type to be configured which enables code syntax highlighting within the code block.</p>
+<p>The <code v-pre>language</code> property can be set with any reference language value supported by the Markdown <a href="../code_block">code blocks</a> in Retype.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">```js #
-var msg = &quot;hello, world&quot;;
-```</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; language=&quot;&lt;language&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-javascript"><code v-pre class="language-javascript">var msg = &quot;hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-<p>You can also add a title after the <code v-pre>#</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">```js # Your title here
-var msg = &quot;hello, world&quot;;
-```</code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Your title here</div>
-<pre class="language-javascript"><code v-pre class="language-javascript">var msg = &quot;hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="disable-line-numbers">
+<p>By default, Reytpe will try to intelligently determine the <code v-pre>language</code> based on the file extension of the <code v-pre>source</code> and the automatically set the <code v-pre>language</code> property. For instance, if the <code v-pre>source</code> file is a JavaScript <code v-pre>.js</code> file, Retype will set the <code v-pre>language</code> of the code snippet to <code v-pre>js</code>.</p>
+<p>If the <code v-pre>language</code> property is explicitly set, Retype will use that value. If the <code v-pre>language</code> cannot be determined by Retype, no language reference is set and the code block is rendered without syntax highlighting.</p>
+<hr />
+<doc-anchor-target id="region">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#disable-line-numbers">#</doc-anchor-trigger>
-        <span>Disable line numbers</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#region">#</doc-anchor-trigger>
+        <span><code v-pre>region</code></span>
     </h3>
 </doc-anchor-target>
-<p>Explicitly disabling the line numbering within code blocks is possible by using the <code v-pre>!#</code> specifier instead of <code v-pre>#</code>:</p>
+<p>For C# files with a <code v-pre>.cs</code> file extension, an optional <code v-pre>region</code> name can be configured instead of a <doc-anchor-trigger to="#range"><code v-pre>range</code></doc-anchor-trigger> which will make a copy of all lines between the named <code v-pre>#region</code> and <code v-pre>#endregion</code> directives. The lines containing the <code v-pre>#region</code> and <code v-pre>#endregion</code> directives should not be included in the new code block.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">```js !#
-var msg = &quot;&quot;;
-```</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; region=&quot;&lt;region-name&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">var msg = &quot;&quot;;</code></pre>
-</doc-codeblock></div>
+<p>If the copied code block from the <code v-pre>region</code> is indented, the left indentation will be removed from the file output so that the code block is normalized with a left-aligned positioning.</p>
 
     
                 <!-- Required only on API pages -->
@@ -277,7 +298,7 @@ var msg = &quot;&quot;;
             </div>
 
             <div class="mt-14 flex flex-wrap items-center justify-between">
-    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/code_blocks.md" target="_blank" rel="noopener">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/code_snippet.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Edit this page</span>
     </a>
@@ -287,20 +308,20 @@ var msg = &quot;&quot;;
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/button">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/code_block">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Button</span>
+                <span class="block mt-1">Code block</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="px-6 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/code_snippets">
+        <a class="px-6 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/emoji">
             <span>
                 <span class="block text-right text-xs font-normal text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">Code snippets</span>
+                <span class="block mt-1">Emoji <span class="docs-emoji">&#x1F63B;</span></span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
@@ -351,7 +372,7 @@ var msg = &quot;&quot;;
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Code blocks", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Code snippet", icon: "file" }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
