@@ -1,6 +1,6 @@
 # Code snippets
 
-Code snippets allow you to include the content of another text file or a portion of that file into a code block on another any page.
+Code snippets allow you to include the content of another text file or a portion of that file into a code block on another page.
 
 A common scenario for using the code snippet component is to include a portion of a source code file located elsewhere within the project.
 
