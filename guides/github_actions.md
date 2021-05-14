@@ -145,8 +145,8 @@ For a custom domain or subdomain where the `cname` config is set, you can remove
 - [x] Add a `retype.yml` file, see [step 1](#step-1-add-retype-yml-workflow).
 - [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages).
 - [x] Set the branch to `retype`, see [branch config](#pick-a-branch).
-- [x] If hosting on `github.io`, you will likely require setting the [`base`](../configuration/project.md#base) config with your repo name, see [base config](#add-base-if-github-io).
-- [x] If hosting on a custom domain or subdomain, you should set the `cname` config, see [custom domain](#custom-domain).
+- [x] If hosting on `github.io`, you will need to set the [`base`](../configuration/project.md#base) config with your repo name, see [base config](#add-base-if-github-io), or
+- [x] If hosting on a custom domain or subdomain, you should set the [`cname`](../configuration/project.md#cname) config, see [custom domain](#custom-domain).
 - [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
 - [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
 
