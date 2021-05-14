@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
-    <title>Formatting | Retype - Generate, publish, and share documentation</title>
+    <title>Emojis &#128571; | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier." />
+    <meta name="description" content="Retype uses Mojee.io to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:" />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -183,128 +182,141 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="formatting" class="break-words">
+<doc-anchor-target id="emojis" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#formatting">#</doc-anchor-trigger>
-        <span>Formatting</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#emojis">#</doc-anchor-trigger>
+        <span>Emojis <span class="docs-emoji">&#x1F63B;</span></span>
     </h1>
 </doc-anchor-target>
-<p>Markdown <code v-pre>.md</code> pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.</p>
-<p>No special software is required to create an <code v-pre>.md</code> file. Any basic text editor will do. Just save the file with a <code v-pre>.md</code> file extension.</p>
-<p>Please see <a href="https://www.markdownguide.org/cheat-sheet/">markdownguide.org</a> for a full demonstration of the formatting possibilities and best practices.</p>
-<doc-alert variant="primary">
-<p>View the actual <a href="https://github.com/retypeapp/retype/blob/main/guides/formatting.md"><code v-pre>formatting.md</code></a> file used to create this page.</p>
-</doc-alert>
-<doc-anchor-target id="quick-start">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#quick-start">#</doc-anchor-trigger>
-        <span>Quick start</span>
-    </h2>
-</doc-anchor-target>
-<p>The following sample demonstrates a very basic <code v-pre>.md</code> page sample with page title and one paragraph.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
-
-This is a paragraph.</code></pre>
-</doc-codeblock></div>
-<p>We can build on the above sample by adding more content and formatting, such as <strong>bold</strong> text, images, and lists.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
-
-This is a paragraph.
-
-Both [internal](README.md) and [external](https://example.com) links work.
-
-![Your logo](logo.png)
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
-## Lists
-
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-&gt; &quot;Cool! This is a quotation.&quot;
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!</code></pre>
-</doc-codeblock></div>
-<p>At a very basic level, to create a new page for your Retype project, do the following:</p>
-<ol>
-<li>Make a new <code v-pre>sample.md</code> file</li>
-<li>Add a <code v-pre># title</code></li>
-<li>Start writing</li>
-</ol>
-<doc-anchor-target id="components">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#components">#</doc-anchor-trigger>
-        <span>Components</span>
-    </h2>
-</doc-anchor-target>
-<p>In addition to the standard Markdown options, Retype includes many custom <a href="../../components">components</a> so you can easily add extra <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span><span class="docs-emoji">&#x1F48E;</span> flair <span class="docs-emoji">&#x1F48E;</span></span>
-</span>
- to your document.</p>
-<p>The most commonly used Retype components include <a href="../../components/alert">Alert</a> and <a href="../../components/tab">Tab</a>:</p>
-<doc-anchor-target id="alert">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#alert">#</doc-anchor-trigger>
-        <span>Alert</span>
-    </h3>
-</doc-anchor-target>
-<doc-alert variant="primary">
-<p>This is an Alert</p>
-</doc-alert>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample <a href="../components/alert.md">Alert</a> component</div>
-<pre class="language-none"><code v-pre class="language-none">!!!
-This is an Alert
-!!!</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="tab">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tab">#</doc-anchor-trigger>
-        <span>Tab</span>
-    </h3>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab id="tab-1">
-<template #title>Tab 1</template>
-<p>This is Tab 1</p>
-</doc-tab>
-<doc-tab id="tab-2">
-<template #title>Tab 2</template>
-<p>This is another Tab</p>
-</doc-tab>
-</doc-tabs>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample <a href="../components/tab.md">Tab</a> component</div>
-<pre class="language-none"><code v-pre class="language-none">||| Tab 1
-This is Tab 1
-||| Tab 2
-This is another Tab
-|||</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
-    <div class="flex items-center text-blue-500 dark:text-blue-400">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">See all components</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/components</span>
-    </div>
-    <a href="/components" class="absolute block inset-0"></a>
-</div>
-</p>
+<p>Retype uses <a href="https://mojee.io">Mojee.io</a> to find emoji <code v-pre>:shortcodes:</code> within your document and replace with actual emoji characters. <span class="docs-emoji">&#x1F44D;</span></p>
+<p>You can place emoji <code v-pre>:shortcodes:</code> anywhere within your document, such as <code v-pre>:smile:</code> <span class="docs-emoji">&#x1F604;</span> or <code v-pre>:unicorn_face:</code> <span class="docs-emoji">&#x1F984;</span>.</p>
+<p>Use Mojee to <a href="https://mojee.io/emojis/">search</a> for your favorite emojis and paste the <code v-pre>:shortcode:</code> into your <code v-pre>.md</code> document.</p>
+<table>
+<thead>
+<tr>
+<th><span class="docs-emoji">&#x1F600;</span></th>
+<th><span class="docs-emoji">&#x1F603;</span></th>
+<th><span class="docs-emoji">&#x1F604;</span></th>
+<th><span class="docs-emoji">&#x1F601;</span></th>
+<th><span class="docs-emoji">&#x1F606;</span></th>
+<th><span class="docs-emoji">&#x1F605;</span></th>
+<th><span class="docs-emoji">&#x1F602;</span></th>
+<th><span class="docs-emoji">&#x1F609;</span></th>
+<th><span class="docs-emoji">&#x1F60A;</span></th>
+<th><span class="docs-emoji">&#x1F607;</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="docs-emoji">&#x1F60D;</span></td>
+<td><span class="docs-emoji">&#x1F618;</span></td>
+<td><span class="docs-emoji">&#x263A;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x1F61A;</span></td>
+<td><span class="docs-emoji">&#x1F60B;</span></td>
+<td><span class="docs-emoji">&#x1F61B;</span></td>
+<td><span class="docs-emoji">&#x1F61C;</span></td>
+<td><span class="docs-emoji">&#x1F61D;</span></td>
+<td><span class="docs-emoji">&#x1F610;</span></td>
+<td><span class="docs-emoji">&#x1F611;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F636;</span></td>
+<td><span class="docs-emoji">&#x1F60F;</span></td>
+<td><span class="docs-emoji">&#x1F612;</span></td>
+<td><span class="docs-emoji">&#x1F62C;</span></td>
+<td><span class="docs-emoji">&#x1F60C;</span></td>
+<td><span class="docs-emoji">&#x1F614;</span></td>
+<td><span class="docs-emoji">&#x1F62A;</span></td>
+<td><span class="docs-emoji">&#x1F634;</span></td>
+<td><span class="docs-emoji">&#x1F637;</span></td>
+<td><span class="docs-emoji">&#x1F60E;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F615;</span></td>
+<td><span class="docs-emoji">&#x1F633;</span></td>
+<td><span class="docs-emoji">&#x1F625;</span></td>
+<td><span class="docs-emoji">&#x1F622;</span></td>
+<td><span class="docs-emoji">&#x1F62D;</span></td>
+<td><span class="docs-emoji">&#x1F631;</span></td>
+<td><span class="docs-emoji">&#x1F616;</span></td>
+<td><span class="docs-emoji">&#x1F623;</span></td>
+<td><span class="docs-emoji">&#x1F61E;</span></td>
+<td><span class="docs-emoji">&#x1F613;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F629;</span></td>
+<td><span class="docs-emoji">&#x1F62B;</span></td>
+<td><span class="docs-emoji">&#x1F624;</span></td>
+<td><span class="docs-emoji">&#x1F621;</span></td>
+<td><span class="docs-emoji">&#x1F620;</span></td>
+<td><span class="docs-emoji">&#x1F608;</span></td>
+<td><span class="docs-emoji">&#x1F480;</span></td>
+<td><span class="docs-emoji">&#x1F63B;</span></td>
+<td><span class="docs-emoji">&#x1F648;</span></td>
+<td><span class="docs-emoji">&#x1F64A;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F48B;</span></td>
+<td><span class="docs-emoji">&#x1F498;</span></td>
+<td><span class="docs-emoji">&#x1F496;</span></td>
+<td><span class="docs-emoji">&#x1F497;</span></td>
+<td><span class="docs-emoji">&#x1F493;</span></td>
+<td><span class="docs-emoji">&#x1F49E;</span></td>
+<td><span class="docs-emoji">&#x1F495;</span></td>
+<td><span class="docs-emoji">&#x1F494;</span></td>
+<td><span class="docs-emoji">&#x2764;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x1F49B;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F49A;</span></td>
+<td><span class="docs-emoji">&#x1F499;</span></td>
+<td><span class="docs-emoji">&#x1F49C;</span></td>
+<td><span class="docs-emoji">&#x1F4AF;</span></td>
+<td><span class="docs-emoji">&#x1F4A5;</span></td>
+<td><span class="docs-emoji">&#x1F44B;</span></td>
+<td><span class="docs-emoji">&#x270B;</span></td>
+<td><span class="docs-emoji">&#x1F44C;</span></td>
+<td><span class="docs-emoji">&#x270C;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x1F448;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F449;</span></td>
+<td><span class="docs-emoji">&#x1F447;</span></td>
+<td><span class="docs-emoji">&#x1F44D;</span></td>
+<td><span class="docs-emoji">&#x1F44A;</span></td>
+<td><span class="docs-emoji">&#x1F44F;</span></td>
+<td><span class="docs-emoji">&#x1F64C;</span></td>
+<td><span class="docs-emoji">&#x1F64F;</span></td>
+<td><span class="docs-emoji">&#x1F4AA;</span></td>
+<td><span class="docs-emoji">&#x1F440;</span></td>
+<td><span class="docs-emoji">&#x1F481;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F338;</span></td>
+<td><span class="docs-emoji">&#x1F339;</span></td>
+<td><span class="docs-emoji">&#x1F31A;</span></td>
+<td><span class="docs-emoji">&#x2600;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x2B50;</span></td>
+<td><span class="docs-emoji">&#x26A1;</span></td>
+<td><span class="docs-emoji">&#x1F525;</span></td>
+<td><span class="docs-emoji">&#x2728;</span></td>
+<td><span class="docs-emoji">&#x1F389;</span></td>
+<td><span class="docs-emoji">&#x2665;&#xFE0F;</span></td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x1F451;</span></td>
+<td><span class="docs-emoji">&#x1F3B6;</span></td>
+<td><span class="docs-emoji">&#x1F4F7;</span></td>
+<td><span class="docs-emoji">&#x27A1;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x2B05;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x25B6;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x267B;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
+<td><span class="docs-emoji">&#x2714;&#xFE0F;</span></td>
+<td><span class="docs-emoji">&#x1F534;</span></td>
+</tr>
+</tbody>
+</table>
 
     
                 <!-- Required only on API pages -->
@@ -312,7 +324,7 @@ This is another Tab
             </div>
 
             <div class="mt-14 flex flex-wrap items-center justify-between">
-    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/guides/formatting.md" target="_blank" rel="noopener">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/emoji.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Edit this page</span>
     </a>
@@ -322,20 +334,20 @@ This is another Tab
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/getting_started">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/code_snippets">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Getting Started</span>
+                <span class="block mt-1">Code snippets</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="px-6 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/github_actions">
+        <a class="px-6 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/file_download">
             <span>
                 <span class="block text-right text-xs font-normal text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">GitHub Actions</span>
+                <span class="block mt-1">File download</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
@@ -386,7 +398,7 @@ This is another Tab
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Formatting", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Emojis <span class=\"docs-emoji\">&#x1F63B;</span>", icon: "file" }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
