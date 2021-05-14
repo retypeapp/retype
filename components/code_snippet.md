@@ -24,7 +24,7 @@ Here is the `:::code` component we use, and the actual results below:
 
 ## Options
 
-### `source`
+### source
 
 The `source` is the local path to a file.
 
@@ -36,7 +36,7 @@ Typically, the `source` file must be located within the same repository. At leas
 
 ---
 
-### `range`
+### range
 
 A `range` of lines to include from the `source` file can configured, instead of including the entire contents of the file. If no `range` is configured, the entire contents of the file will be included.
 
@@ -54,7 +54,7 @@ range="2,12-24,26"  // A combination of ranges
 
 ---
 
-### `title`
+### title
 
 An optional `title` can be specified.
 
@@ -74,7 +74,7 @@ Let's add a `title` to our `sample.js` code snippet. Within the `.md` file, the 
 
 ---
 
-### `language`
+### language
 
 The final code blocks allow for a language type to be configured which enables code syntax highlighting within the code block.
 
@@ -90,7 +90,7 @@ If the `language` property is explicitly set, Retype will use that value. If the
 
 ---
 
-### `region`
+### region
 
 For C# files with a `.cs` file extension, an optional `region` name can be configured instead of a [`range`](#range) which will make a copy of all lines between the named `#region` and `#endregion` directives. The lines containing the `#region` and `#endregion` directives should not be included in the new code block.
 
