@@ -10,21 +10,23 @@ The syntax for a code snippet component is:
 :::code source="<path-to-file>" :::
 ```
 
+---
+
 ## Sample
 
-In the following sample, we reference a local [`../static/sample.js`](static/../static/sample.js) file and get the first two lines of the file.
+In the following sample, we reference a local [`../static/sample.js`](../static/sample.js) file and get the first two lines of the file.
 
 Here is the `:::code` component we use, and the actual results below:
 
 ```
-:::code source="static/../static/sample.js" range="1-2" :::
+:::code source="../static/sample.js" range="1-2" :::
 ```
 
-:::code source="static/../static/sample.js" range="1-2" :::
+:::code source="../static/sample.js" range="1-2" :::
 
-## Options
+---
 
-### source
+## Source
 
 The `source` is the local path to a file.
 
@@ -36,7 +38,7 @@ Typically, the `source` file must be located within the same repository. At leas
 
 ---
 
-### range
+## Range
 
 A `range` of lines to include from the `source` file can configured, instead of including the entire contents of the file. If no `range` is configured, the entire contents of the file will be included.
 
@@ -54,7 +56,7 @@ range="2,12-24,26"  // A combination of ranges
 
 ---
 
-### title
+## Title
 
 An optional `title` can be specified.
 
@@ -65,16 +67,16 @@ An optional `title` can be specified.
 Let's add a `title` to our `../static/sample.js` code snippet. Within the `.md` file, the configuration would look like...
 
 ```
-:::code source="static/../static/sample.js" range="1-2" title="../static/sample.js" :::
+:::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
 ```
 
 ...and the final result would be:
 
-:::code source="static/../static/sample.js" range="1-2" title="../static/sample.js" :::
+:::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
 
 ---
 
-### language
+## Language
 
 The final code blocks allow for a language type to be configured which enables code syntax highlighting within the code block.
 
@@ -90,7 +92,7 @@ If the `language` property is explicitly set, Retype will use that value. If the
 
 ---
 
-### region
+## Region
 
 For C# files with a `.cs` file extension, an optional `region` name can be configured instead of a [`range`](#range) which will make a copy of all lines between the named `#region` and `#endregion` directives. The lines containing the `#region` and `#endregion` directives should not be included in the new code block.
 
