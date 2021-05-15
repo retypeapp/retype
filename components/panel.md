@@ -12,6 +12,8 @@ This is a Panel. Expanded by default.
 This is a Panel. Expanded by default.
 +++
 
+---
+
 ## Collapsed panel
 
 By default, Panels are collapsible and will be in there expanded state. You can configure Panels to initially render in their collapsed state by using `++-`.

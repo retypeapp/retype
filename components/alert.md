@@ -14,6 +14,8 @@ This is an alert.
 This is an alert.
 !!!
 
+---
+
 ## Title
 
 Alerts can also have titles. Add a space, then add your title, such as `!!! My title`.
@@ -40,6 +42,8 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!
 
+---
+
 ## Variants
 
 Alerts come in 6 different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
@@ -55,6 +59,8 @@ Alerts come in 6 different flavors which can be specified by passing a `variant`
 | `light` | `light` |
 | `dark` | `dark` |
 | `contrast` | `light` or `dark` depending on time of day |
+
+---
 
 ## Samples
 

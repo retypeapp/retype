@@ -12,6 +12,8 @@ This is a Tab
 This is a Tab
 |||
 
+---
+
 ## Multiple tabs
 
 Multiple Tabs can be configured by stacking `|||` blocks.

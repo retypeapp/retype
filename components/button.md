@@ -12,6 +12,8 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 
 [!button text="Button"](https://retype.com/)
 
+---
+
 ## Variants
 
 ```md
@@ -30,6 +32,8 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 | `dark` | [!button variant="dark" text="Dark"] |
 | `contrast` | [!button variant="contrast" text="Contrast"] |
 
+---
+
 ## Corners
 
 ```md
@@ -43,6 +47,8 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 | Default | [!button text="Default"] |
 | `square` | [!button corners="square" text="Square"] |
 | `pill` | [!button corners="pill" text="Button Pill"] |
+
+---
 
 ## Size
 
@@ -59,6 +65,8 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 | `xl` | [!button size="xl" text="XLarge"] |
 | `2xl` | [!button size="2xl" text="2XLarge"] |
 | `3xl` | [!button size="3xl" text="3XLarge"] |
+
+---
 
 ## Icon and Emoji
 
@@ -82,7 +90,6 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 [!button variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
 
-
 ### Image
 
 ```md
@@ -93,9 +100,13 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 
 [!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](https://retype.com/)
 
+---
+
 ## Inline
 
 This is a paragraph with an inline [!button text="Button"].
+
+---
 
 ## Block
 
