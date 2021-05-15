@@ -13,6 +13,8 @@ Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a
 View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/guides/formatting.md) file used to create this page.
 !!!
 
+---
+
 ## Quick start
 
 The following sample demonstrates a very basic `.md` page sample with page title and one paragraph.
@@ -36,6 +38,8 @@ Both [internal](README.md) and [external](https://example.com) links work.
 
 Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
 
+---
+
 ## Lists
 
 - First item
@@ -58,6 +62,8 @@ At a very basic level, to create a new page for your Retype project, do the foll
 1. Make a new `sample.md` file
 2. Add a `# title`
 3. Start writing
+
+---
 
 ## Components
 

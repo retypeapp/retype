@@ -12,7 +12,7 @@ If you ain't got no time for that, just run the following two commands on a fold
 
 ||| npm
 ```
-npm install --global retypeapp
+npm install retypeapp --global
 retype watch
 ```
 ||| yarn
@@ -22,10 +22,12 @@ retype watch
 ```
 ||| dotnet
 ```
-dotnet tool install --global retypeapp
+dotnet tool install retypeapp --global
 retype watch
 ```
 |||
+
+---
 
 ## What is page metadata?
 

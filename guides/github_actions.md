@@ -16,6 +16,8 @@ The second, **GitHub Pages Action** will automatically publish your newly built 
 
 Automatically deploying to GitHub Pages requires a basic `retype.yml` configuration file to be added to your GitHub repo and some simple project configuration.
 
+---
+
 ## Step 1: Add `retype.yml` workflow
 
 Add the following `retype.yml` file to your GitHub project within the `.github/workflows/` folder.
@@ -53,6 +55,8 @@ jobs:
 The above `retype.yml` workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch. If the `retype` branch is not available, the GitHub Action will automatically create the branch.
 
 Commit your `retype.yml` file and push to your repo.
+
+---
 
 ## Step 2: Configure GitHub Pages
 
@@ -139,6 +143,8 @@ There's one more config we need to add so Retype knows you're using a custom dom
 !!!
 For a custom domain or subdomain where the `cname` config is set, you can remove the `base` config we added in the [step](#add-base-if-github-io) above.
 !!!
+
+---
 
 ## Summary
 
