@@ -5,29 +5,40 @@ icon: versions
 
 The entire package release history of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) or [NuGet](https://nuget.org/packages/retypeapp).
 
-Need a new feature in Retype? :eyes: Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :speech_balloon:
+Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :speech_balloon:
 
 ## `v2.0.0`
 
-Expected: Early Q3 2021
+Expected: Mid Q3 2021
 
 - [ ] Full support for C# API reference doc generation
 - [ ] Early support for TypeScript API reference doc generation
 - [x] Many more features planned
+
+## `v1.7.0`
+
+Expected: Early Q3 2021
+
+- [ ] New `includes` support
+- [ ] Open Graph and Twitter card support
+- [ ] New page dependecy graph to improve incremental build performance
+- [ ] Another beta release of building C# project reference documentation
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.6.0`
 
 Expected: Late Q2 2021
 
 - [ ] New Accordion component
-- [ ] Another beta release of building C# project reference documentation
-- [ ] New `includes` support
+- [ ] New Tags component for pages
 - [ ] New `/blog` summary page
+- [ ] Several minor enhancements and minor bug fixes
+- [ ] Performance improvements for [components](components/readme.md)
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.5.0`
 
-Expected: Mid Q2 2021
+Released: 2021-05-12
 
 - [x] New [Badge](components/badge.md) component
 - [x] New syntax highlighting support for all code block languages
