@@ -6,21 +6,11 @@ Retype includes broad support for creating lists of items, including [unordered]
 
 ## Unordered lists
 
-1. `- [x]` for [checked](#checklist) item
-2. `- [ ]` for [unchecked](#checklist) item
-3. `-` for [bullet](#bullet)
+Unordered list variations include:
 
-### Checklist
-
-``` Sample checklist with checked and unchecked items
-- [x] Item 1
-- [x] Item 2
-- [ ] Item 3
-```
-
-- [x] Item 1
-- [x] Item 2
-- [ ] Item 3
+1. `-` for [bullet](#bullet)
+2. `- [x]` for [checked](#checklist) item
+3. `- [ ]` for [unchecked](#checklist) item
 
 ### Bullet
 
@@ -34,9 +24,23 @@ Retype includes broad support for creating lists of items, including [unordered]
 - Item 2
 - Item 3
 
+### Task list
+
+``` Sample task list with checked and unchecked items
+- [x] Item 1
+- [x] Item 2
+- [ ] Item 3
+```
+
+- [x] Item 1
+- [x] Item 2
+- [ ] Item 3
+
 ---
 
 ## Ordered lists
+
+Ordered list variations include:
 
 1. `1.` for [numbers](#numbers) (default)
 2. `a.` for [lowercase](#letters) letters
