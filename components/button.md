@@ -1,16 +1,32 @@
 # Button
 
-Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyperlink, but is prefixed with a `!button` type.
+Similar to a [Badge](badge.md), the Button component uses the same syntax as a hyperlink, but is prefixed with a `!button` identifier.
 
+||| Sample
 ```md
-[Button](https://example.com/)         <-- a normal link
+[Button](button.md)         <-- a normal link
 
-[!button Button]                       <-- Button with no link
-
-[!button Button](https://example.com/) <-- Button with a link
+[!button Button](button.md) <-- Button with a link
 ```
+||| Run
+[Button](button.md)         <-- a normal link
 
-[!button text="Button"](https://retype.com/)
+[!button Button](button.md) <-- Button with a link
+|||
+
+The link part is optional and can be ommitted. Users would generally expect that clicking on a Button would trigger some action, such as navigating to a new page, so configuring the Button with a link is recommended.
+
+||| Sample
+```md
+[Button](button.md)         <-- a normal link
+
+[!button Button]            <-- Button without a link
+```
+||| Run
+[Button](button.md)         <-- a normal link
+
+[!button Button]            <-- Button without a link
+|||
 
 ---
 
@@ -44,7 +60,7 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 
 | Size | Example |
 | --- | --- |
-| Default | [!button text="Default"] |
+| `round` (default) | [!button text="Default"] |
 | `square` | [!button corners="square" text="Square"] |
 | `pill` | [!button corners="pill" text="Button Pill"] |
 
@@ -72,6 +88,8 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 
 ### Octicons
 
+[Octicons](https://octicons-primer.vercel.app/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+
 ```md
 [!button variant="info" icon="person" text="User"]
 [!button variant="primary" icon="paper-airplane" iconAlign="right" text="Send"]
@@ -82,6 +100,8 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 
 ### Emoji
 
+Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes.
+
 ```md
 [!button variant="light" icon=":heart:" text="Like"]
 [!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
@@ -90,7 +110,9 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 [!button variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
 
-### Image
+### Image file
+
+Any image file can be used as the `icon`.
 
 ```md
 [!button icon="../static/retype-logo.svg"]
@@ -98,24 +120,12 @@ Similar to a [Badge](badge.md) component, a Button uses the same syntax as a hyp
 
 [!button icon="../static/retype-logo.svg"]
 
-[!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](https://retype.com/)
+### SVG image
 
----
+The `icon` can also be set with an inline `<svg>` element.
 
-## Inline
-
-This is a paragraph with an inline [!button text="Button"].
-
----
-
-## Block
-
-```md
-[!button Button 1]
-
-[!button Button 2]
+```
+[!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](button.md)
 ```
 
-[!button Button 1]
-
-[!button Button 2]
+[!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](button.md)
