@@ -1,6 +1,6 @@
 # Tab
 
-The Tab component is super simple to configure by just surrounding a block of text with `|||` and including a text value for the tab.
+With Retype, a Tab component is super simple to configure by surrounding a block of text with `|||` and including a title for the tab.
 
 ```md
 ||| Tab 1
@@ -16,7 +16,7 @@ This is a Tab
 
 ## Multiple tabs
 
-Multiple Tabs can be configured by stacking `|||` blocks.
+Multiple Tabs can be configured by stacking `|||` blocks and adding a title for each tab.
 
 ```md
 ||| Tab 1

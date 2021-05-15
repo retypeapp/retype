@@ -38,7 +38,7 @@ An optional `title` attribute for the resulting HTML `<img>` element can be set 
 ![This is an optional caption](../static/sample.jpg "This is an optional title")
 ```
 
-Hold you mouse pointer over the image to see the title.
+Hold your mouse pointer over the image to see the title.
 
 ![This is an optional caption](../static/sample.jpg "This is an optional title")
 
@@ -58,7 +58,7 @@ By default, images are not links, but it's easy to make your image into a link b
 
 ## Alignment options
 
-If an image is configured on a separate line by itself, Retype includes extra functionality for the custom alignment of images on the page. For instance, you can specify the left or right alignment of an image and have the text flow around the image.
+If an image is configured on a separate line, Retype includes extra functionality for the custom alignment of images on the page. For instance, you can specify the left or right alignment of an image and have the text flow around the image.
 
 !!!
 If an image is defined inline with other text on the same line, the image will be treated as an inline image and Retype alignment options will be ignored.
