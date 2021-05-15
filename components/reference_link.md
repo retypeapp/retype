@@ -2,7 +2,21 @@
 
 A special type of reference link can be configured by using the `!ref` specifier in a link.
 
-```md Reference link component
+```md
+[!ref](../guides/getting_started.md)
+```
+
+[!ref](../guides/getting_started.md)
+
+By default, the text of the link is not required if the `.md` page you are linking to is within the project. Retype will automatically use the `label` of the `.md` page as the link text.
+
+---
+
+## Custom text
+
+The text of the link can be explicitly set by passing as the first part of the component config. In the following sample, we explicitly set the reference link text to `Getting Started`.
+
+```md
 [!ref Getting Started](../guides/getting_started.md)
 ```
 
