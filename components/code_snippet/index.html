@@ -195,32 +195,28 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
+<hr />
 <doc-anchor-target id="sample">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#sample">#</doc-anchor-trigger>
         <span>Sample</span>
     </h2>
 </doc-anchor-target>
-<p>In the following sample, we reference a local <a href="static/sample.js"><code v-pre>sample.js</code></a> file and get the first two lines of the file.</p>
+<p>In the following sample, we reference a local <a href="../static/sample.js"><code v-pre>../static/sample.js</code></a> file and get the first two lines of the file.</p>
 <p>Here is the <code v-pre>:::code</code> component we use, and the actual results below:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="options">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h2>
-</doc-anchor-target>
+<hr />
 <doc-anchor-target id="source">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#source">#</doc-anchor-trigger>
-        <span>source</span>
-    </h3>
+        <span>Source</span>
+    </h2>
 </doc-anchor-target>
 <p>The <code v-pre>source</code> is the local path to a file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -229,10 +225,10 @@
 <p>Typically, the <code v-pre>source</code> file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the <code v-pre>source</code> can be located anywhere accessible in the local file system, but if you are using the Retype <a href="../../guides/github_actions">GitHub Action</a>, the file must be within the same repo.</p>
 <hr />
 <doc-anchor-target id="range">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#range">#</doc-anchor-trigger>
-        <span>range</span>
-    </h3>
+        <span>Range</span>
+    </h2>
 </doc-anchor-target>
 <p>A <code v-pre>range</code> of lines to include from the <code v-pre>source</code> file can configured, instead of including the entire contents of the file. If no <code v-pre>range</code> is configured, the entire contents of the file will be included.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -246,31 +242,31 @@ range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="title">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h3>
+        <span>Title</span>
+    </h2>
 </doc-anchor-target>
 <p>An optional <code v-pre>title</code> can be specified.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">:::code language=&quot;&lt;lang-ref&gt;&quot; title=&quot;&lt;title&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
-<p>Let&#x27;s add a <code v-pre>title</code> to our <code v-pre>sample.js</code> code snippet. Within the <code v-pre>.md</code> file, the configuration would look like...</p>
+<p>Let&#x27;s add a <code v-pre>title</code> to our <code v-pre>../static/sample.js</code> code snippet. Within the <code v-pre>.md</code> file, the configuration would look like...</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;static/sample.js&quot; range=&quot;1-2&quot; title=&quot;sample.js&quot; :::</code></pre>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; title=&quot;../static/sample.js&quot; :::</code></pre>
 </doc-codeblock></div>
 <p>...and the final result would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">sample.js</div>
+<div class="codeblock-title">../static/sample.js</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="language">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#language">#</doc-anchor-trigger>
-        <span>language</span>
-    </h3>
+        <span>Language</span>
+    </h2>
 </doc-anchor-target>
 <p>The final code blocks allow for a language type to be configured which enables code syntax highlighting within the code block.</p>
 <p>The <code v-pre>language</code> property can be set with any reference language value supported by the Markdown <a href="../code_block">code blocks</a> in Retype.</p>
@@ -281,10 +277,10 @@ range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
 <p>If the <code v-pre>language</code> property is explicitly set, Retype will use that value. If the <code v-pre>language</code> cannot be determined by Retype, no language reference is set and the code block is rendered without syntax highlighting.</p>
 <hr />
 <doc-anchor-target id="region">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#region">#</doc-anchor-trigger>
-        <span>region</span>
-    </h3>
+        <span>Region</span>
+    </h2>
 </doc-anchor-target>
 <p>For C# files with a <code v-pre>.cs</code> file extension, an optional <code v-pre>region</code> name can be configured instead of a <doc-anchor-trigger to="#range"><code v-pre>range</code></doc-anchor-trigger> which will make a copy of all lines between the named <code v-pre>#region</code> and <code v-pre>#endregion</code> directives. The lines containing the <code v-pre>#region</code> and <code v-pre>#endregion</code> directives should not be included in the new code block.</p>
 <div class="codeblock-wrapper"><doc-codeblock>

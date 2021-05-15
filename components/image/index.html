@@ -7,13 +7,14 @@
 
     <title>Image | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Retype includes extra functionality for the custom alignment of images on the page." />
+    <meta name="description" content="The image component embeds an image in your document. You can point to image files stored within the project, or an external URL." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -188,18 +189,81 @@
         <span>Image</span>
     </h1>
 </doc-anchor-target>
+<p>The image component embeds an image in your document. You can point to image files stored within the project, or an external URL.</p>
+<p>Checkout the <a href="https://www.markdownguide.org/basic-syntax/#images-1">Markdown Guide</a> for more details on configuring images.</p>
+<hr />
+<doc-anchor-target id="basic-syntax">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-syntax">#</doc-anchor-trigger>
+        <span>Basic syntax</span>
+    </h2>
+</doc-anchor-target>
+<p>To add an image to your document, a similar syntax to links is used but prefixed with an exclamation mark <code v-pre>!</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">![Optional caption here](../path/to/image.jpg)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](../static/sample.jpg)</code></pre>
 </doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../../static/sample.jpg" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<hr />
+<doc-anchor-target id="optional-caption">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#optional-caption">#</doc-anchor-trigger>
+        <span>Optional caption</span>
+    </h2>
+</doc-anchor-target>
+<p>An optional caption below the image can be set by adding your caption text between the <code v-pre>[]</code> brackets. The following sample demonstrates adding a caption:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](../static/sample.jpg)</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../../static/sample.jpg" alt="This is an optional caption" />
+    <figcaption class="caption">This is an optional caption</figcaption>
+</figure>
+</p>
+<hr />
+<doc-anchor-target id="optional-title">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#optional-title">#</doc-anchor-trigger>
+        <span>Optional title</span>
+    </h2>
+</doc-anchor-target>
+<p>An optional <code v-pre>title</code> attribute for the resulting HTML <code v-pre>&lt;img&gt;</code> element can be set by adding the title text after the link. The title can be used differently within different browsers, but is typically shown as a tooltip when mouse pointer is held over the image. The following sample demonstrates adding a title:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](../static/sample.jpg &quot;This is an optional title&quot;)</code></pre>
+</doc-codeblock></div>
+<p>Hold you mouse pointer over the image to see the title.</p>
+<p><figure class="content-center">
+    <img src="../../static/sample.jpg" alt="This is an optional caption" title="This is an optional title" />
+    <figcaption class="caption">This is an optional caption</figcaption>
+</figure>
+</p>
+<hr />
+<doc-anchor-target id="links">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#links">#</doc-anchor-trigger>
+        <span>Links</span>
+    </h2>
+</doc-anchor-target>
+<p>By default, images are not links, but it&#x27;s easy to make your image into a link by just wrapping the image in a link.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[![](../static/sample.jpg)](https://retype.com)</code></pre>
+</doc-codeblock></div>
+<p><a href="https://retype.com"><img src="../../static/sample.jpg" alt="" /></a></p>
+<hr />
 <doc-anchor-target id="alignment-options">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#alignment-options">#</doc-anchor-trigger>
         <span>Alignment options</span>
     </h2>
 </doc-anchor-target>
-<p>Retype includes extra functionality for the custom alignment of images on the page.</p>
-<p>For instance, you can specify for an image to align to the left or right and have the text flow around the image.</p>
-<p>Another <code v-pre>plus</code> option for Blog pages or pages with <code v-pre>layout: central</code> help to position the image slightly overlapping the left or right content margins.</p>
+<p>If an image is configured on a separate line by itself, Retype includes extra functionality for the custom alignment of images on the page. For instance, you can specify the left or right alignment of an image and have the text flow around the image.</p>
+<doc-alert variant="primary">
+<p>If an image is defined inline with other text on the same line, the image will be treated as an inline image and Retype alignment options will be ignored.</p>
+</doc-alert>
+<p>An additional <code v-pre>plus</code> option for Blog pages or pages with <code v-pre>layout: central</code> will help to position the image slightly overlapping the left or right content margins.</p>
 <table>
 <thead>
 <tr>
@@ -241,7 +305,7 @@
 </tr>
 </tbody>
 </table>
-<p>Here&#x27;s a sample page demonstrating all the image alignment scenarios, see...</p>
+<p>Here&#x27;s a sample page demonstrating all the image alignment scenarios, including <code v-pre>plus</code> options:</p>
 <p>
 <div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
     <div class="flex items-center text-blue-500 dark:text-blue-400">
