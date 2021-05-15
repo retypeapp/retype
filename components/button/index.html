@@ -7,7 +7,7 @@
 
     <title>Button | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Similar to a Badge component, a Button uses the same syntax as a hyperlink, but is prefixed with a `!button`" />
+    <meta name="description" content="Similar to a Badge, the Button component uses the same syntax as a hyperlink, but is prefixed with a " />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -189,15 +189,38 @@
         <span>Button</span>
     </h1>
 </doc-anchor-target>
-<p>Similar to a <a href="../badge">Badge</a> component, a Button uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!button</code> type.</p>
+<p>Similar to a <a href="../badge">Badge</a>, the Button component uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!button</code> identifier.</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[Button](https://example.com/)         &lt;-- a normal link
+<pre class="language-markdown"><code v-pre class="language-markdown">[Button](button.md)         &lt;-- a normal link
 
-[!button Button]                       &lt;-- Button with no link
-
-[!button Button](https://example.com/) &lt;-- Button with a link</code></pre>
+[!button Button](button.md) &lt;-- Button with a link</code></pre>
 </doc-codeblock></div>
-<p><doc-button href="https://retype.com/">Button</doc-button></p>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
+<p><a href="">Button</a>         &lt;-- a normal link</p>
+<p><doc-button>Button</doc-button> &lt;-- Button with a link</p>
+</doc-tab>
+</doc-tabs>
+<p>The link part is optional and can be ommitted. Users would generally expect that clicking on a Button would trigger some action, such as navigating to a new page, so configuring the Button with a link is recommended.</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[Button](button.md)         &lt;-- a normal link
+
+[!button Button]            &lt;-- Button without a link</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
+<p><a href="">Button</a>         &lt;-- a normal link</p>
+<p><doc-button>Button</doc-button>            &lt;-- Button without a link</p>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="variants">
     <h2>
@@ -275,7 +298,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Default</td>
+<td><code v-pre>round</code> (default)</td>
 <td><doc-button>Default</doc-button></td>
 </tr>
 <tr>
@@ -349,6 +372,7 @@
         <span>Octicons</span>
     </h3>
 </doc-anchor-target>
+<p><a href="https://octicons-primer.vercel.app/octicons/">Octicons</a> can be used as an icon by settiing the <code v-pre>icon</code> property with the name of the Octicon.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;info&quot; icon=&quot;person&quot; text=&quot;User&quot;]
 [!button variant=&quot;primary&quot; icon=&quot;paper-airplane&quot; iconAlign=&quot;right&quot; text=&quot;Send&quot;]</code></pre>
@@ -361,45 +385,35 @@
         <span>Emoji</span>
     </h3>
 </doc-anchor-target>
+<p>Emoji <code v-pre>:shortcodes:</code> can be used for the icon. Please see <a href="https://mojee.io/emojis">Mojee</a> for a full list of supported Emoji shortcodes.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;light&quot; icon=&quot;:heart:&quot; text=&quot;Like&quot;]
 [!button variant=&quot;info&quot; icon=&quot;:rocket:&quot; iconAlign=&quot;right&quot; text=&quot;Rocket&quot;]</code></pre>
 </doc-codeblock></div>
 <p><doc-button variant="light" margin="0px 8px 0px 0px" emoji="2764-FE0F">Like</doc-button>
 <doc-button variant="info" emoji="1F680" icon-align="right">Rocket</doc-button></p>
-<doc-anchor-target id="image">
+<doc-anchor-target id="image-file">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#image">#</doc-anchor-trigger>
-        <span>Image</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image-file">#</doc-anchor-trigger>
+        <span>Image file</span>
     </h3>
 </doc-anchor-target>
+<p>Any image file can be used as the <code v-pre>icon</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!button icon=&quot;../static/retype-logo.svg&quot;]</code></pre>
 </doc-codeblock></div>
 <p><doc-button></doc-button></p>
-<p><doc-button href="https://retype.com/"><template #icon><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></template>Visit website</doc-button></p>
-<hr />
-<doc-anchor-target id="inline">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#inline">#</doc-anchor-trigger>
-        <span>Inline</span>
-    </h2>
+<doc-anchor-target id="svg-image">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#svg-image">#</doc-anchor-trigger>
+        <span>SVG image</span>
+    </h3>
 </doc-anchor-target>
-<p>This is a paragraph with an inline <doc-button>Button</doc-button>.</p>
-<hr />
-<doc-anchor-target id="block">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#block">#</doc-anchor-trigger>
-        <span>Block</span>
-    </h2>
-</doc-anchor-target>
+<p>The <code v-pre>icon</code> can also be set with an inline <code v-pre>&lt;svg&gt;</code> element.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[!button Button 1]
-
-[!button Button 2]</code></pre>
+<pre class="language-none"><code v-pre class="language-none">[!button icon=&quot;&lt;svg width=&amp;quot;24&amp;quot; height=&amp;quot;24&amp;quot;&gt;&lt;path fill-rule=&amp;quot;evenodd&amp;quot; d=&amp;quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&amp;quot;&gt;&lt;/path&gt;&lt;/svg&gt;&quot; text=&quot;Visit website&quot;](button.md)</code></pre>
 </doc-codeblock></div>
-<p><doc-button>Button 1</doc-button></p>
-<p><doc-button>Button 2</doc-button></p>
+<p><doc-button><template #icon><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></template>Visit website</doc-button></p>
 
     
                 <!-- Required only on API pages -->

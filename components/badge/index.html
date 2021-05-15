@@ -7,7 +7,7 @@
 
     <title>Badge | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Similar to a Button component, a Badge uses the same syntax as a hyperlink, but is prefixed with a `!badge`" />
+    <meta name="description" content="Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a " />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -189,18 +189,44 @@
         <span>Badge</span>
     </h1>
 </doc-anchor-target>
-<p>Similar to a <a href="../button">Button</a> component, a Badge uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!badge</code> type.</p>
+<p>Similar to a <a href="../button">Button</a>, the Badge component uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!badge</code> identifier.</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[Badge](https://example.com/)        &lt;-- a normal link
+<pre class="language-markdown"><code v-pre class="language-markdown">[Badge](badge.md)        &lt;-- a normal link
 
-[!badge Badge]                       &lt;-- Badge with no link
-
-[!badge Badge](https://example.com/) &lt;-- Badge with a link</code></pre>
+[!badge Badge](badge.md) &lt;-- Badge with a link</code></pre>
 </doc-codeblock></div>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
+<p><a href="">Badge</a>        &lt;-- a normal link</p>
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Badge</span>
 </span>
-</p>
+ &lt;-- Badge with a link</p>
+</doc-tab>
+</doc-tabs>
+<p>The link part is optional and can be ommitted.</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[Badge](badge.md)        &lt;-- a normal link
+
+[!badge Badge]           &lt;-- Badge without a link</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
+<p><a href="">Badge</a>        &lt;-- a normal link</p>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Badge</span>
+</span>
+           &lt;-- Badge without a link</p>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="variants">
     <h2>
@@ -305,7 +331,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Default</td>
+<td><code v-pre>round</code> (default)</td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Default</span>
 </span>
@@ -409,6 +435,7 @@
         <span>Octicons</span>
     </h3>
 </doc-anchor-target>
+<p><a href="https://octicons-primer.vercel.app/octicons/">Octicons</a> can be used as an icon by settiing the <code v-pre>icon</code> property with the name of the Octicon.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!badge variant=&quot;info&quot; icon=&quot;person&quot; text=&quot;User&quot; margin=&quot;0 8 0 0&quot;]
 [!badge variant=&quot;primary&quot; icon=&quot;paper-airplane&quot; iconAlign=&quot;right&quot; text=&quot;Send&quot;]</code></pre>
@@ -428,6 +455,7 @@
         <span>Emoji</span>
     </h3>
 </doc-anchor-target>
+<p>Emoji <code v-pre>:shortcodes:</code> can be used for the icon. Please see <a href="https://mojee.io/emojis">Mojee</a> for a full list of supported Emoji shortcodes.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!badge variant=&quot;light&quot; icon=&quot;:heart:&quot; text=&quot;Like&quot;]
 [!badge variant=&quot;info&quot; icon=&quot;:rocket:&quot; iconAlign=&quot;right&quot; text=&quot;Rocket&quot;]</code></pre>
@@ -441,22 +469,33 @@
     <span class="docs-emoji ml-2">&#x1F680;</span>
 </span>
 </p>
-<doc-anchor-target id="image">
+<doc-anchor-target id="image-file">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#image">#</doc-anchor-trigger>
-        <span>Image</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image-file">#</doc-anchor-trigger>
+        <span>Image file</span>
     </h3>
 </doc-anchor-target>
+<p>Any image file can be used as the <code v-pre>icon</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!badge icon=&quot;../static/retype-logo.svg&quot;]</code></pre>
 </doc-codeblock></div>
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
 </span>
 </p>
-<p><a href="https://retype.com/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+<doc-anchor-target id="svg-image">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#svg-image">#</doc-anchor-trigger>
+        <span>SVG image</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code v-pre>icon</code> can also be set with an inline <code v-pre>&lt;svg&gt;</code> element.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">[!badge icon=&quot;&lt;svg width=&amp;quot;24&amp;quot; height=&amp;quot;24&amp;quot;&gt;&lt;path fill-rule=&amp;quot;evenodd&amp;quot; d=&amp;quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&amp;quot;&gt;&lt;/path&gt;&lt;/svg&gt;&quot; text=&quot;Visit website&quot;](badge.md)</code></pre>
+</doc-codeblock></div>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></g></svg></span>
     <span>Visit website</span>
-</a>
+</span>
 </p>
 
     

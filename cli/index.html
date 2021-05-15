@@ -14,6 +14,7 @@
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -190,31 +191,32 @@
 </doc-anchor-target>
 <p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code v-pre>retype watch</code></p>
 <doc-alert variant="primary">
-<p>Be sure to review the <a href="project_configuration.md">configuration options</a> available within the <code v-pre>retype.json</code>  as it does unlock a lot more power, flexibility, and customization.</p>
+<p>Be sure to review the <a href="../configuration/project">configuration options</a> available within the <code v-pre>retype.json</code>  as it does unlock a lot more power, flexibility, and customization.</p>
 </doc-alert>
-<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands, or be sure to check out the <a href="getting_started.md">Getting Started</a> guide for step by instructions on using each of these commands.</p>
-<doc-anchor-target id="commands">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#commands">#</doc-anchor-trigger>
-        <span>Commands</span>
-    </h2>
-</doc-anchor-target>
+<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands, or be sure to check out the <a href="../guides/getting_started">Getting Started</a> guide for step by instructions on using each of these commands.</p>
+<hr />
 <doc-anchor-target id="retype-watch">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-watch">#</doc-anchor-trigger>
         <span><code v-pre>retype watch</code></span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype watch</code> command is equivalent to running the following three commands in sequence:</p>
+<p>The <code v-pre>retype watch</code> command is the easiest way to get your project built and running in a browser within seconds, although <code v-pre>retype watch</code> is just shortcut for a sequence of other commands that could be executed individually.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype init
 retype build
 retype run</code></pre>
 </doc-codeblock></div>
-<p><code v-pre>retype watch</code> will also watch for file changes and will automatically update the website in the browser with the updated page.</p>
+<p>The <code v-pre>retype watch</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
+<doc-anchor-target id="options">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">watch:
-  Serve a static website and watch for file changes.
+  Serve a static website, watch for file changes
 
 Usage:
   retype watch [options] [&lt;path&gt;]
@@ -223,18 +225,65 @@ Arguments:
   &lt;path&gt;    Path to the project root or retype.json [Optional]
 
 Options:
-  -c, --code        Watch for code changes
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information</code></pre>
+  -c, --code             Watch for code changes
+  --license &lt;license&gt;    Retype license key
+  --port &lt;port&gt;          Custom TCP port
+  -v, --verbose          Verbose logging
+  -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype-init">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-init">#</doc-anchor-trigger>
         <span><code v-pre>retype init</code></span>
+    </h2>
+</doc-anchor-target>
+<p>You can manually create a <code v-pre>retype.json</code> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
+<p>From your command line, navigate to any folder location where you have one or more Markdown <code v-pre>.md</code> files, such as the root of a GitHub project, then run the following command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype init</code></pre>
+</doc-codeblock></div>
+<p>Calling the <code v-pre>retype init</code> command will create a simple <code v-pre>retype.json</code> file with the following default values:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample retype.json</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;input&quot;: &quot;.&quot;,
+  &quot;output&quot;: &quot;.retype&quot;,
+
+  &quot;branding&quot;: {
+    &quot;title&quot;: &quot;Project Name&quot;,
+    &quot;label&quot;: &quot;Docs&quot;
+  },
+
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Getting Started&quot;,
+      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
+    }
+  ],
+
+  &quot;footer&quot;: {
+    &quot;copyright&quot;: &quot;© Copyright {{ year }}. All rights reserved.&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the <a href="../configuration/project">Project configuration</a> docs for a full list of all options.</p>
+<p>To change the title of the project, revise the <code v-pre>branding.title</code> config. For instance, let&#x27;s change to <code v-pre>&quot;Company X&quot;</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;branding&quot;: {
+    &quot;title&quot;: &quot;Company X&quot;,
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>If there is already a <code v-pre>retype.json</code> file within the project, runnin the <code v-pre>retype init</code> command will not create a new <code v-pre>retype.json</code> file.</p>
+<p>The <code v-pre>retype.json</code> file isn&#x27;t <em>actually</em> required, but you will want to make custom <a href="../configuration/project">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
+<doc-anchor-target id="options-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-1">#</doc-anchor-trigger>
+        <span>Options</span>
     </h3>
 </doc-anchor-target>
-<p>Create a new <code v-pre>retype.json</code> configuration file if one is not already present.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">init:
   Initialize a new Retype project
@@ -252,12 +301,44 @@ Options:
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype-build">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-build">#</doc-anchor-trigger>
         <span><code v-pre>retype build</code></span>
+    </h2>
+</doc-anchor-target>
+<p>To generate your new website, run the command <code v-pre>retype build</code>. This command builds a new website based upon the <code v-pre>.md</code> files within the <a href="../configuration/project"><code v-pre>input</code></a> location.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
+</doc-codeblock></div>
+<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.json</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
+<p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;input&quot;: &quot;docs&quot;,
+  &quot;output&quot;: &quot;website&quot;,
+}</code></pre>
+</doc-codeblock></div>
+<p>Let&#x27;s say you wanted the your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;input&quot;: &quot;docs&quot;,
+  &quot;output&quot;: &quot;website/docs&quot;
+}</code></pre>
+</doc-codeblock></div>
+<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code v-pre>docs</code> folder, you could then move your <code v-pre>.md</code> files into a different subfolder and configure as follows:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;input&quot;: &quot;src&quot;,
+  &quot;output&quot;: &quot;docs&quot;
+}</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files and where to output the generated website.</p>
+<doc-anchor-target id="options-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-2">#</doc-anchor-trigger>
+        <span>Options</span>
     </h3>
 </doc-anchor-target>
-<p>Build a new website based upon the <code v-pre>.md</code> files available.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">build:
   Generate a static website
@@ -277,12 +358,23 @@ Options:
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype-run">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-run">#</doc-anchor-trigger>
         <span><code v-pre>retype run</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>retype run</code> command starts up your new Retype website and opens in a web browser.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype run</code></pre>
+</doc-codeblock></div>
+<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any webserver or hosting service, such a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>.</p>
+<p>You can also use any other local web server instead of <code v-pre>retype run</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
+<doc-anchor-target id="options-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-3">#</doc-anchor-trigger>
+        <span>Options</span>
     </h3>
 </doc-anchor-target>
-<p>Starts up your new Retype website and opens in a web browser.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">run:
   Serve a static website
@@ -294,6 +386,7 @@ Arguments:
   &lt;path&gt;    Path to the project root or retype.json [Optional]
 
 Options:
+  --port &lt;port&gt;     Custom TCP port
   -v, --verbose     Verbose logging
   -?, -h, --help    Show help and usage information</code></pre>
 </doc-codeblock></div>

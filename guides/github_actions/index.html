@@ -198,6 +198,7 @@
 <p>The first, <strong>Build Action</strong> will automatically build your Retype powered website with each new change that is committed.</p>
 <p>The second, <strong>GitHub Pages Action</strong> will automatically publish your newly built website to a branch in Github so it&#x27;s available to host from GitHub Pages. By default, the <code v-pre>retype</code> branch is used, but of course that is also configurable.</p>
 <p>Automatically deploying to GitHub Pages requires a basic <code v-pre>retype.yml</code> configuration file to be added to your GitHub repo and some simple project configuration.</p>
+<hr />
 <doc-anchor-target id="step-1-add-retype-yml-workflow">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retype-yml-workflow">#</doc-anchor-trigger>
@@ -236,6 +237,7 @@ jobs:
 </doc-codeblock></div>
 <p>The above <code v-pre>retype.yml</code> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code v-pre>main</code> branch, and then deploy your new Retype powered website to a <code v-pre>retype</code> branch. If the <code v-pre>retype</code> branch is not available, the GitHub Action will automatically create the branch.</p>
 <p>Commit your <code v-pre>retype.yml</code> file and push to your repo.</p>
+<hr />
 <doc-anchor-target id="step-2-configure-github-pages">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-configure-github-pages">#</doc-anchor-trigger>
@@ -328,6 +330,7 @@ jobs:
 <doc-alert variant="primary">
 <p>For a custom domain or subdomain where the <code v-pre>cname</code> config is set, you can remove the <code v-pre>base</code> config we added in the <doc-anchor-trigger to="#add-base-if-github-io">step</doc-anchor-trigger> above.</p>
 </doc-alert>
+<hr />
 <doc-anchor-target id="summary">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>

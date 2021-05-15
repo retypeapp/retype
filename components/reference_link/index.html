@@ -191,7 +191,32 @@
 </doc-anchor-target>
 <p>A special type of reference link can be configured by using the <code v-pre>!ref</code> specifier in a link.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Reference link component</div>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!ref](../guides/getting_started.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="mb-6 px-4 py-3 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Getting Started</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/guides/getting_started</span>
+    </div>
+    <a href="/guides/getting_started" class="absolute block inset-0"></a>
+</div>
+</p>
+<p>By default, the text of the link is not required if the <code v-pre>.md</code> page you are linking to is within the project. Retype will automatically use the <code v-pre>label</code> of the <code v-pre>.md</code> page as the link text.</p>
+<hr />
+<doc-anchor-target id="custom-text">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-text">#</doc-anchor-trigger>
+        <span>Custom text</span>
+    </h2>
+</doc-anchor-target>
+<p>The text of the link can be explicitly set by passing as the first part of the component config. In the following sample, we explicitly set the reference link text to <code v-pre>Getting Started</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!ref Getting Started](../guides/getting_started.md)</code></pre>
 </doc-codeblock></div>
 <p>

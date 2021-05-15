@@ -14,7 +14,6 @@
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
@@ -190,7 +189,11 @@
     </h1>
 </doc-anchor-target>
 <p>Getting started with Retype is super quick and you can be up and running within seconds.</p>
-<p>Check out the <a href="../../#quick-start">Quick start</a> for the condensed process, or continue here with the full details and expanded steps.</p>
+<p>Check out the <a href="../../#quick-start">Quick start</a> for the condensed process or continue here with the detailed instructions.</p>
+<doc-alert variant="primary">
+<p>Please see the <a href="../../cli">Retype CLI</a> for full details on each command.</p>
+</doc-alert>
+<hr />
 <doc-anchor-target id="prerequisites">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
@@ -221,18 +224,19 @@
 </tr>
 </tbody>
 </table>
+<hr />
 <doc-anchor-target id="install">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#install">#</doc-anchor-trigger>
         <span>Install</span>
     </h2>
 </doc-anchor-target>
-<p>It takes just a few seconds to install Retype using any of the following commands. Choose a command for a Package Manager you have installed on your computer.</p>
+<p>It takes just a few seconds to install Retype using any of the following commands. Choose a command based on a Package Manager you have installed on your computer.</p>
 <doc-tabs>
 <doc-tab id="npm">
 <template #title>npm</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">npm install --global retypeapp
+<pre class="language-none"><code v-pre class="language-none">npm install retypeapp --global
 retype watch</code></pre>
 </doc-codeblock></div>
 </doc-tab>
@@ -246,112 +250,44 @@ retype watch</code></pre>
 <doc-tab id="dotnet">
 <template #title>dotnet</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">dotnet tool install --global retypeapp
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global
 retype watch</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
 <p>That&#x27;s it! <span class="docs-emoji">&#x1F389;</span> Your new Retype website should be up and running. <span class="docs-emoji">&#x1F389;</span></p>
 <doc-alert variant="primary">
-<p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install --global retypeapp</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance.</p>
+<p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance.</p>
 </doc-alert>
-<doc-anchor-target id="commands">
+<hr />
+<doc-anchor-target id="update">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#commands">#</doc-anchor-trigger>
-        <span>Commands</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#update">#</doc-anchor-trigger>
+        <span>Update</span>
     </h2>
 </doc-anchor-target>
-<p>Using the <code v-pre>retype watch</code> command is the easiest way to get your project built and running in a browser within seconds, although <code v-pre>retype watch</code> is just shortcut for a sequence of other commands that can be executed individually.</p>
-<doc-anchor-target id="retype-init">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-init">#</doc-anchor-trigger>
-        <span><code v-pre>retype init</code></span>
-    </h3>
-</doc-anchor-target>
-<p>The next step is to create a <code v-pre>retype.json</code> configuration file for you project. The <code v-pre>retype.json</code> file isn&#x27;t <em>actually</em> required, but you will want to make custom <a href="../../configuration/project">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
-<p>You can manually create a <code v-pre>retype.json</code> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
-<p>From your command line, navigate to any folder location where you have one or more Markdown <code v-pre>.md</code> files, such as the root of a GitHub project, then run the following command:</p>
+<p>Update to the latest release of Retype using on of the following commands for the Package Manager that you initially installed Retype with. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> update command to update Retype locally.</p>
+<doc-tabs>
+<doc-tab id="npm">
+<template #title>npm</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype init</code></pre>
+<pre class="language-none"><code v-pre class="language-none">npm update retypeapp --global</code></pre>
 </doc-codeblock></div>
-<p>Calling the <code v-pre>retype init</code> command will create a simple <code v-pre>retype.json</code> file with the following default values:</p>
+</doc-tab>
+<doc-tab id="yarn">
+<template #title>yarn</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample retype.json</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;.&quot;,
-  &quot;output&quot;: &quot;.retype&quot;,
-
-  &quot;branding&quot;: {
-    &quot;title&quot;: &quot;Project Name&quot;,
-    &quot;label&quot;: &quot;Docs&quot;
-  },
-
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Getting Started&quot;,
-      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
-    }
-  ],
-
-  &quot;footer&quot;: {
-    &quot;copyright&quot;: &quot;© Copyright {{ year }}. All rights reserved.&quot;
-  }
-}</code></pre>
+<pre class="language-none"><code v-pre class="language-none">yarn global upgrade retypeapp</code></pre>
 </doc-codeblock></div>
-<p>All the configs are optional, but the above demonstrates a few of the options you will typically want to start with. See the <a href="../../configuration/project">Project configuration</a> docs for a full list of all options.</p>
-<p>To change the title of the project, revise the <code v-pre>branding.title</code> config. For instance, let&#x27;s change to <code v-pre>&quot;Company X&quot;</code>:</p>
+</doc-tab>
+<doc-tab id="dotnet">
+<template #title>dotnet</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;title&quot;: &quot;Company X&quot;,
-  }
-}</code></pre>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool update retypeapp --global</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="retype-build">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-build">#</doc-anchor-trigger>
-        <span><code v-pre>retype build</code></span>
-    </h3>
-</doc-anchor-target>
-<p>To generate your new website, run the command <code v-pre>retype build</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
-</doc-codeblock></div>
-<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.json</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
-<p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;docs&quot;,
-  &quot;output&quot;: &quot;website&quot;,
-}</code></pre>
-</doc-codeblock></div>
-<p>Let&#x27;s say you wanted the your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;docs&quot;,
-  &quot;output&quot;: &quot;website/docs&quot;
-}</code></pre>
-</doc-codeblock></div>
-<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code v-pre>docs</code> folder, you could then move your <code v-pre>.md</code> files into a different subfolder and configure as follows:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;src&quot;,
-  &quot;output&quot;: &quot;docs&quot;
-}</code></pre>
-</doc-codeblock></div>
-<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files and where to output the generated website.</p>
-<doc-anchor-target id="retype-run">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-run">#</doc-anchor-trigger>
-        <span><code v-pre>retype run</code></span>
-    </h3>
-</doc-anchor-target>
-<p>To view your Retype generated website, just run the command <code v-pre>retype run</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype run</code></pre>
-</doc-codeblock></div>
-<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any webserver or hosting service, such a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>.</p>
-<p>You can also use any other local web server instead of <code v-pre>retype run</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
+</doc-tab>
+</doc-tabs>
+<hr />
 <doc-anchor-target id="uninstall">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#uninstall">#</doc-anchor-trigger>
@@ -364,7 +300,7 @@ retype watch</code></pre>
 <doc-tab id="npm">
 <template #title>npm</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">npm uninstall --global retypeapp</code></pre>
+<pre class="language-none"><code v-pre class="language-none">npm uninstall retypeapp --global</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab id="yarn">
@@ -376,11 +312,11 @@ retype watch</code></pre>
 <doc-tab id="dotnet">
 <template #title>dotnet</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">dotnet tool uninstall --global retypeapp</code></pre>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool uninstall retypeapp --global</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<p>Any Retype related files within your project can be deleted, such as the <code v-pre>retype.json</code>.</p>
+<p>Any Retype related files within your project can be deleted, such as the <code v-pre>retype.json</code> file and the generated <code v-pre>.retype</code> folder.</p>
 
     
                 <!-- Required only on API pages -->

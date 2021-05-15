@@ -195,22 +195,22 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
-<hr />
-<doc-anchor-target id="sample">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sample">#</doc-anchor-trigger>
-        <span>Sample</span>
-    </h2>
-</doc-anchor-target>
 <p>In the following sample, we reference a local <a href="../static/sample.js"><code v-pre>../static/sample.js</code></a> file and get the first two lines of the file.</p>
-<p>Here is the <code v-pre>:::code</code> component we use, and the actual results below:</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
 </doc-codeblock></div>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
 </doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="source">
     <h2>
@@ -222,7 +222,51 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
-<p>Typically, the <code v-pre>source</code> file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the <code v-pre>source</code> can be located anywhere accessible in the local file system, but if you are using the Retype <a href="../../guides/github_actions">GitHub Action</a>, the file must be within the same repo.</p>
+<p>Typically, the <code v-pre>source</code> file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the <code v-pre>source</code> can be located anywhere accessible in the local file system, although if you are using the Retype <a href="../../guides/github_actions">GitHub Action</a>, the file must be within the same repo or accessible by the Action.</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; :::</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
+// https://github.com/JS-Beginners/Calculator-JavaScript-Project
+(function () {
+
+    let screen = document.querySelector(&quot;.screen&quot;);
+    let buttons = document.querySelectorAll(&quot;.btn&quot;);
+    let clear = document.querySelector(&quot;.btn-clear&quot;);
+    let equal = document.querySelector(&quot;.btn-equal&quot;);
+
+    // retrieve data from numbers that are clicked
+    buttons.forEach(function (button) {
+        button.addEventListener(&quot;click&quot;, function (e) {
+            let value = e.target.dataset.num;
+            screen.value += value;
+        })
+    });
+
+    equal.addEventListener(&quot;click&quot;, function (e) {
+        if (screen.value === &quot;&quot;) {
+            screen.value = &quot;Please Enter a Value&quot;;
+        } else {
+            let answer = eval(screen.value);
+            screen.value = answer;
+        }
+    })
+
+    clear.addEventListener(&quot;click&quot;, function (e) {
+        screen.value = &quot;&quot;;
+    })
+
+})();</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="range">
     <h2>
@@ -240,6 +284,22 @@
 range=&quot;2-24&quot;        // A range of lines
 range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
 </doc-codeblock></div>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
+// https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<p>If the copied code block from the <code v-pre>range</code> is indented, the left indentation will be removed from the file output so that the code block is normalized with a left-aligned positioning.</p>
 <hr />
 <doc-anchor-target id="title">
     <h2>
@@ -252,15 +312,22 @@ range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
 <pre class="language-none"><code v-pre class="language-none">:::code language=&quot;&lt;lang-ref&gt;&quot; title=&quot;&lt;title&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
 <p>Let&#x27;s add a <code v-pre>title</code> to our <code v-pre>../static/sample.js</code> code snippet. Within the <code v-pre>.md</code> file, the configuration would look like...</p>
+<doc-tabs>
+<doc-tab id="sample">
+<template #title>Sample</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; title=&quot;../static/sample.js&quot; :::</code></pre>
 </doc-codeblock></div>
-<p>...and the final result would be:</p>
+</doc-tab>
+<doc-tab id="run">
+<template #title>Run</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">../static/sample.js</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
 </doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="language">
     <h2>

@@ -202,28 +202,12 @@
         <span>Unordered lists</span>
     </h2>
 </doc-anchor-target>
+<p>Unordered list variations include:</p>
 <ol>
+<li><code v-pre>-</code> for <doc-anchor-trigger to="#bullet">bullet</doc-anchor-trigger></li>
 <li><code v-pre>- [x]</code> for <doc-anchor-trigger to="#checklist">checked</doc-anchor-trigger> item</li>
 <li><code v-pre>- [ ]</code> for <doc-anchor-trigger to="#checklist">unchecked</doc-anchor-trigger> item</li>
-<li><code v-pre>-</code> for <doc-anchor-trigger to="#bullet">bullet</doc-anchor-trigger></li>
 </ol>
-<doc-anchor-target id="checklist">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#checklist">#</doc-anchor-trigger>
-        <span>Checklist</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample checklist with checked and unchecked items</div>
-<pre class="language-none"><code v-pre class="language-none">- [x] Item 1
-- [x] Item 2
-- [ ] Item 3</code></pre>
-</doc-codeblock></div>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 1</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 2</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Item 3</li>
-</ul>
 <doc-anchor-target id="bullet">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#bullet">#</doc-anchor-trigger>
@@ -241,6 +225,23 @@
 <li>Item 2</li>
 <li>Item 3</li>
 </ul>
+<doc-anchor-target id="task-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#task-list">#</doc-anchor-trigger>
+        <span>Task list</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample task list with checked and unchecked items</div>
+<pre class="language-none"><code v-pre class="language-none">- [x] Item 1
+- [x] Item 2
+- [ ] Item 3</code></pre>
+</doc-codeblock></div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 1</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Item 2</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Item 3</li>
+</ul>
 <hr />
 <doc-anchor-target id="ordered-lists">
     <h2>
@@ -248,6 +249,7 @@
         <span>Ordered lists</span>
     </h2>
 </doc-anchor-target>
+<p>Ordered list variations include:</p>
 <ol>
 <li><code v-pre>1.</code> for <doc-anchor-trigger to="#numbers">numbers</doc-anchor-trigger> (default)</li>
 <li><code v-pre>a.</code> for <doc-anchor-trigger to="#letters">lowercase</doc-anchor-trigger> letters</li>

@@ -7,7 +7,7 @@
 
     <title>Panel | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="A Panel is created by surrounding a block of content with `+++` and including a `title`." />
+    <meta name="description" content="A Panel is created by surrounding a block of content with `+++` and including a `title` for the Panel." />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -188,7 +188,7 @@
         <span>Panel</span>
     </h1>
 </doc-anchor-target>
-<p>A Panel is created by surrounding a block of content with <code v-pre>+++</code> and including a <code v-pre>title</code>.</p>
+<p>A Panel is created by surrounding a block of content with <code v-pre>+++</code> and including a <code v-pre>title</code> for the Panel.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">+++ My Panel
 This is a Panel. Expanded by default.
@@ -205,7 +205,7 @@ This is a Panel. Expanded by default.
         <span>Collapsed panel</span>
     </h2>
 </doc-anchor-target>
-<p>By default, Panels are collapsible and will be in there expanded state. You can configure Panels to initially render in their collapsed state by using <code v-pre>++-</code>.</p>
+<p>By default, Panels are collapsible and will initially render in their expanded state. You can configure Panels to initially render in their collapsed state by using <code v-pre>++-</code> specifier.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">++- My Panel
 This is a collapsed Panel. :+1:
