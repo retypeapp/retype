@@ -14,17 +14,19 @@ The [retype.com](https://retype.com/) website was generated using Retype. View t
 
 A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
 
+---
+
 ## Quick start
 
 You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
 From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
 
-Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` command:
+Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` [command](cli.md#retype-watch):
 
 ||| NPM
 ```
-npm install --global retypeapp
+npm install retypeapp --global
 retype watch
 ```
 ||| Yarn
@@ -34,7 +36,7 @@ retype watch
 ```
 ||| dotnet
 ```
-dotnet tool install --global retypeapp
+dotnet tool install retypeapp --global
 retype watch
 ```
 |||
@@ -46,6 +48,8 @@ You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://cla
 
 All operating systems are supported, including Mac, Windows, and Linux.
 !!!
+
+---
 
 ## Live reload
 
@@ -69,6 +73,7 @@ Just point Retype at a C# project and reference documentation will be generated 
 
 !!!
 
+---
 
 ## Features
 
@@ -96,8 +101,12 @@ Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [co
 
 Retype generates a basic HTML website that you can host on any web hosting service, such as [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
 
+---
+
 ## Support
 
 Technical support questions are best asked in the [Discussions](https://github.com/retypeapp/retype/discussions). The discussions are monitored 24 hours a day and we will do our best to assist.
 
 If you find a defect or would like to submit a feature request, please create an [Issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
+
+Do you have a general inquiry? Please feel free to contact us at hello@object.net.
