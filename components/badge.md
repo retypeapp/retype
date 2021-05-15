@@ -12,6 +12,8 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 
 [!badge Badge]
 
+---
+
 ## Variants
 
 ```md
@@ -30,6 +32,24 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 | `dark` | [!badge variant="dark" text="Dark"] |
 | `contrast` | [!badge variant="contrast" text="Contrast"] |
 
+---
+
+## Corners
+
+```md
+[!badge text="Default"]
+[!badge corners="square" text="Square"]
+[!badge corners="pill" text="Button Pill"]
+```
+
+| Size | Example |
+| --- | --- |
+| Default | [!badge text="Default"] |
+| `square` | [!badge corners="square" text="Square"] |
+| `pill` | [!badge corners="pill" text="Button Pill"] |
+
+---
+
 ## Size
 
 ```md
@@ -45,6 +65,8 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 | `xl` | [!badge size="xl" text="XLarge"] |
 | `2xl` | [!badge size="2xl" text="2XLarge"] |
 | `3xl` | [!badge size="3xl" text="3XLarge"] |
+
+---
 
 ## Icon and Emoji
 
@@ -67,3 +89,13 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 
 [!badge variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!badge variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
+
+### Image
+
+```md
+[!badge icon="../static/retype-logo.svg"]
+```
+
+[!badge icon="../static/retype-logo.svg"]
+
+[!badge icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](https://retype.com/)
