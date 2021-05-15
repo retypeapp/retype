@@ -12,15 +12,15 @@ The syntax for a code snippet component is:
 
 ## Sample
 
-In the following sample, we reference a local [`sample.js`](static/sample.js) file and get the first two lines of the file.
+In the following sample, we reference a local [`../static/sample.js`](static/../static/sample.js) file and get the first two lines of the file.
 
 Here is the `:::code` component we use, and the actual results below:
 
 ```
-:::code source="static/sample.js" range="1-2" :::
+:::code source="static/../static/sample.js" range="1-2" :::
 ```
 
-:::code source="static/sample.js" range="1-2" :::
+:::code source="static/../static/sample.js" range="1-2" :::
 
 ## Options
 
@@ -62,15 +62,15 @@ An optional `title` can be specified.
 :::code language="<lang-ref>" title="<title>" :::
 ```
 
-Let's add a `title` to our `sample.js` code snippet. Within the `.md` file, the configuration would look like...
+Let's add a `title` to our `../static/sample.js` code snippet. Within the `.md` file, the configuration would look like...
 
 ```
-:::code source="static/sample.js" range="1-2" title="sample.js" :::
+:::code source="static/../static/sample.js" range="1-2" title="../static/sample.js" :::
 ```
 
 ...and the final result would be:
 
-:::code source="static/sample.js" range="1-2" title="sample.js" :::
+:::code source="static/../static/sample.js" range="1-2" title="../static/sample.js" :::
 
 ---
 
