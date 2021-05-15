@@ -1,16 +1,32 @@
 # Badge
 
-Similar to a [Button](button.md) component, a Badge uses the same syntax as a hyperlink, but is prefixed with a `!badge` type.
+Similar to a [Button](button.md), the Badge component uses the same syntax as a hyperlink, but is prefixed with a `!badge` identifier.
 
+||| Sample
 ```md
-[Badge](https://example.com/)        <-- a normal link
+[Badge](badge.md)        <-- a normal link
 
-[!badge Badge]                       <-- Badge with no link
-
-[!badge Badge](https://example.com/) <-- Badge with a link
+[!badge Badge](badge.md) <-- Badge with a link
 ```
+||| Run
+[Badge](badge.md)        <-- a normal link
 
-[!badge Badge]
+[!badge Badge](badge.md) <-- Badge with a link
+|||
+
+The link part is optional and can be ommitted.
+
+||| Sample
+```md
+[Badge](badge.md)        <-- a normal link
+
+[!badge Badge]           <-- Badge without a link
+```
+||| Run
+[Badge](badge.md)        <-- a normal link
+
+[!badge Badge]           <-- Badge without a link
+|||
 
 ---
 
@@ -44,7 +60,7 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 
 | Size | Example |
 | --- | --- |
-| Default | [!badge text="Default"] |
+| `round` (default) | [!badge text="Default"] |
 | `square` | [!badge corners="square" text="Square"] |
 | `pill` | [!badge corners="pill" text="Button Pill"] |
 
@@ -72,6 +88,8 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 
 ### Octicons
 
+[Octicons](https://octicons-primer.vercel.app/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+
 ```md
 [!badge variant="info" icon="person" text="User" margin="0 8 0 0"]
 [!badge variant="primary" icon="paper-airplane" iconAlign="right" text="Send"]
@@ -82,6 +100,8 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 
 ### Emoji
 
+Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes.
+
 ```md
 [!badge variant="light" icon=":heart:" text="Like"]
 [!badge variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
@@ -90,7 +110,9 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 [!badge variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!badge variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
 
-### Image
+### Image file
+
+Any image file can be used as the `icon`.
 
 ```md
 [!badge icon="../static/retype-logo.svg"]
@@ -98,4 +120,12 @@ Similar to a [Button](button.md) component, a Badge uses the same syntax as a hy
 
 [!badge icon="../static/retype-logo.svg"]
 
-[!badge icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](https://retype.com/)
+### SVG image
+
+The `icon` can also be set with an inline `<svg>` element.
+
+```
+[!badge icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](badge.md)
+```
+
+[!badge icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](badge.md)
