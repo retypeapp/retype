@@ -465,7 +465,7 @@ An icon to use with the link. Default is `null`.
 }
 ```
 
-Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, a path to the icon file.
+Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 "icon": "rocket"
