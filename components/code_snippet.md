@@ -10,19 +10,15 @@ The syntax for a code snippet component is:
 :::code source="<path-to-file>" :::
 ```
 
----
-
-## Sample
-
 In the following sample, we reference a local [`../static/sample.js`](../static/sample.js) file and get the first two lines of the file.
 
-Here is the `:::code` component we use, and the actual results below:
-
+||| Sample
 ```
 :::code source="../static/sample.js" range="1-2" :::
 ```
-
+||| Run
 :::code source="../static/sample.js" range="1-2" :::
+|||
 
 ---
 
@@ -34,7 +30,15 @@ The `source` is the local path to a file.
 :::code source="<path-to-file>" :::
 ```
 
-Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, but if you are using the Retype [GitHub Action](../guides/github_actions.md), the file must be within the same repo.
+Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](../guides/github_actions.md), the file must be within the same repo or accessible by the Action.
+
+||| Sample
+```
+:::code source="../static/sample.js" :::
+```
+||| Run
+:::code source="../static/sample.js" :::
+|||
 
 ---
 
@@ -54,6 +58,16 @@ range="2-24"        // A range of lines
 range="2,12-24,26"  // A combination of ranges
 ```
 
+||| Sample
+```
+:::code source="../static/sample.js" range="1-2" :::
+```
+||| Run
+:::code source="../static/sample.js" range="1-2" :::
+|||
+
+If the copied code block from the `range` is indented, the left indentation will be removed from the file output so that the code block is normalized with a left-aligned positioning.
+
 ---
 
 ## Title
@@ -66,13 +80,13 @@ An optional `title` can be specified.
 
 Let's add a `title` to our `../static/sample.js` code snippet. Within the `.md` file, the configuration would look like...
 
+||| Sample
 ```
 :::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
 ```
-
-...and the final result would be:
-
+||| Run
 :::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
+|||
 
 ---
 
