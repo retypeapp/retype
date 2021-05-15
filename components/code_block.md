@@ -2,17 +2,17 @@
 
 Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.
 
-~~~ Sample code block
+||| Sample
+~~~
 ```
 A basic code block
 ```
 ~~~
-
-The above code block sample would render on the website as the following:
-
+||| Run
 ```
 A basic code block
 ```
+|||
 
 ---
 
@@ -22,15 +22,17 @@ Optional syntax highlighting of the code within the code block can be configured
 
 In the following sample, we configure JavaScript syntax highlighting for the code block by adding the `js` language identifier.
 
-~~~ Code block with JavaScript syntax highlighting
+||| Sample
+~~~
 ```js
-var msg = "hello, world";
+const msg = "hello, world";
 ```
 ~~~
-
+||| Run
 ```js
-var msg = "hello, world";
+const msg = "hello, world";
 ```
+|||
 
 ---
 
@@ -38,27 +40,31 @@ var msg = "hello, world";
 
 Retype includes the functionality to set a title on your markdown code blocks.
 
+||| Sample
 ~~~
 ``` Code block title
-var msg = "Set a code block title";
+const msg = "Set a code block title";
 ```
 ~~~
-
+||| Run
 ``` Code block title
-var msg = "Set a code block title";
+const msg = "Set a code block title";
 ```
+|||
 
 The title can be used in conjunction with the code reference type.
 
+||| Sample
 ~~~
 ```js Code block title
-var msg = "Set a code block title";
+const msg = "Set a code block title";
 ```
 ~~~
-
+||| Run
 ```js Code block title
-var msg = "Set a code block title";
+const msg = "Set a code block title";
 ```
+|||
 
 ---
 
@@ -66,27 +72,31 @@ var msg = "Set a code block title";
 
 Adding or removing line numbering for your code blocks can be configured by adding the `#` specifier character to the first line after the reference language.
 
+||| Sample
 ~~~
 ```js #
-var msg = "hello, world";
+const msg = "hello, world";
 ```
 ~~~
-
+||| Run
 ```js #
-var msg = "hello, world";
+const msg = "hello, world";
 ```
+|||
 
 You can also add a title after the `#`:
 
+||| Sample
 ~~~
 ```js # Your title here
-var msg = "hello, world";
+const msg = "hello, world";
 ```
 ~~~
-
+||| Run
 ```js # Your title here
-var msg = "hello, world";
+const msg = "hello, world";
 ```
+|||
 
 Line numbering can also be configured at the project level using the [`snippets`](../configuration/project.md#snippets) config on your projects `retype.json` file. For instance, instructing Retype to add line numbering to all `js` and `json` code blocks across the website would require the following config:
 
@@ -126,12 +136,14 @@ const msg = "Hello, world";
 
 Explicitly disabling the line numbering within code blocks is possible by using the `!#` specifier instead of `#`. This is expecially useful if the site wide [`snippets`](http://localhost:5000/configuration/project/#snippets) has been configured within your project `retype.json` file.
 
+||| Sample
 ~~~
 ```js !#
 const msg = "Hello, world";
 ```
 ~~~
-
+||| Run
 ```js !#
 const msg = "Hello, world";
 ```
+|||
