@@ -2,30 +2,16 @@
 
 Similar to a [Badge](badge.md), the Button component uses the same syntax as a hyperlink, but is prefixed with a `!button` identifier.
 
-||| Sample
+||| Demo
+[Normal link](button.md)
+
+[!button Button](button.md)
+||| Source
 ```md
-[Button](button.md)         <-- a normal link
+[Normal link](button.md)
 
-[!button Button](button.md) <-- Button with a link
+[!button Button](button.md
 ```
-||| Run
-[Button](button.md)         <-- a normal link
-
-[!button Button](button.md) <-- Button with a link
-|||
-
-The link part is optional and can be ommitted. Users would generally expect that clicking on a Button would trigger some action, such as navigating to a new page, so configuring the Button with a link is recommended.
-
-||| Sample
-```md
-[Button](button.md)         <-- a normal link
-
-[!button Button]            <-- Button without a link
-```
-||| Run
-[Button](button.md)         <-- a normal link
-
-[!button Button]            <-- Button without a link
 |||
 
 ---
