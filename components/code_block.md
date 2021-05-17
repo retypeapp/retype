@@ -2,16 +2,16 @@
 
 Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.
 
+||| Demo
+```
+A basic code block
+```
 ||| Source
 ~~~
 ```
 A basic code block
 ```
 ~~~
-||| Demo
-```
-A basic code block
-```
 |||
 
 ---
