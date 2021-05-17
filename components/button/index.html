@@ -191,34 +191,18 @@
 </doc-anchor-target>
 <p>Similar to a <a href="../badge">Badge</a>, the Button component uses the same syntax as a hyperlink, but is prefixed with a <code v-pre>!button</code> identifier.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<p><a href="">Normal link</a></p>
+<p><doc-button>Button</doc-button></p>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[Button](button.md)         &lt;-- a normal link
+<pre class="language-markdown"><code v-pre class="language-markdown">[Normal link](button.md)
 
-[!button Button](button.md) &lt;-- Button with a link</code></pre>
+[!button Button](button.md</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<p><a href="">Button</a>         &lt;-- a normal link</p>
-<p><doc-button>Button</doc-button> &lt;-- Button with a link</p>
-</doc-tab>
-</doc-tabs>
-<p>The link part is optional and can be ommitted. Users would generally expect that clicking on a Button would trigger some action, such as navigating to a new page, so configuring the Button with a link is recommended.</p>
-<doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[Button](button.md)         &lt;-- a normal link
-
-[!button Button]            &lt;-- Button without a link</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<p><a href="">Button</a>         &lt;-- a normal link</p>
-<p><doc-button>Button</doc-button>            &lt;-- Button without a link</p>
 </doc-tab>
 </doc-tabs>
 <hr />

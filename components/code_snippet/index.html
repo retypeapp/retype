@@ -197,17 +197,17 @@
 </doc-codeblock></div>
 <p>In the following sample, we reference a local <a href="../static/sample.js"><code v-pre>../static/sample.js</code></a> file and get the first two lines of the file.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -223,15 +223,10 @@
 <pre class="language-none"><code v-pre class="language-none">:::code source=&quot;&lt;path-to-file&gt;&quot; :::</code></pre>
 </doc-codeblock></div>
 <p>Typically, the <code v-pre>source</code> file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the <code v-pre>source</code> can be located anywhere accessible in the local file system, although if you are using the Retype <a href="../../guides/github_actions">GitHub Action</a>, the file must be within the same repo or accessible by the Action.</p>
+<p>In the following demo, we link to the <code v-pre>sample.js</code> file and include the entire contents of that file into the code block:</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; :::</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project
@@ -266,6 +261,12 @@
 })();</code></pre>
 </doc-codeblock></div>
 </doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; :::</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 </doc-tabs>
 <hr />
 <doc-anchor-target id="range">
@@ -284,18 +285,19 @@
 range=&quot;2-24&quot;        // A range of lines
 range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
 </doc-codeblock></div>
+<p>In the following demo, we link to the <code v-pre>sample.js</code> file and include the first two lines of that file into the code block.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; :::</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -313,18 +315,18 @@ range=&quot;2,12-24,26&quot;  // A combination of ranges</code></pre>
 </doc-codeblock></div>
 <p>Let&#x27;s add a <code v-pre>title</code> to our <code v-pre>../static/sample.js</code> code snippet. Within the <code v-pre>.md</code> file, the configuration would look like...</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; title=&quot;../static/sample.js&quot; :::</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">../static/sample.js</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">// Simple calculator app
 // https://github.com/JS-Beginners/Calculator-JavaScript-Project</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::code source=&quot;../static/sample.js&quot; range=&quot;1-2&quot; title=&quot;../static/sample.js&quot; :::</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>

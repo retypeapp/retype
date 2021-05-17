@@ -191,16 +191,16 @@
 </doc-anchor-target>
 <p>Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```
 A basic code block
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">A basic code block</code></pre>
 </doc-codeblock></div>
@@ -216,18 +216,18 @@ A basic code block
 <p>Optional syntax highlighting of the code within the code block can be configured by adding a language identifier immediately after the opening triple backticks.</p>
 <p>In the following sample, we configure JavaScript syntax highlighting for the code block by adding the <code v-pre>js</code> language identifier.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -240,37 +240,37 @@ const msg = &quot;hello, world&quot;;
 </doc-anchor-target>
 <p>Retype includes the functionality to set a title on your markdown code blocks.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Code block title</div>
+<pre class="language-none"><code v-pre class="language-none">const msg = &quot;Set a code block title&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">``` Code block title
 const msg = &quot;Set a code block title&quot;;
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Code block title</div>
-<pre class="language-none"><code v-pre class="language-none">const msg = &quot;Set a code block title&quot;;</code></pre>
-</doc-codeblock></div>
-</doc-tab>
 </doc-tabs>
 <p>The title can be used in conjunction with the code reference type.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Code block title</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Set a code block title&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js Code block title
 const msg = &quot;Set a code block title&quot;;
 ```</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Code block title</div>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Set a code block title&quot;;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -283,36 +283,36 @@ const msg = &quot;Set a code block title&quot;;
 </doc-anchor-target>
 <p>Adding or removing line numbering for your code blocks can be configured by adding the <code v-pre>#</code> specifier character to the first line after the reference language.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js #
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-</doc-tab>
 </doc-tabs>
 <p>You can also add a title after the <code v-pre>#</code>:</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Your title here</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js # Your title here
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Your title here</div>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -354,18 +354,18 @@ const msg = &quot;Hello, world&quot;;
 </doc-anchor-target>
 <p>Explicitly disabling the line numbering within code blocks is possible by using the <code v-pre>!#</code> specifier instead of <code v-pre>#</code>. This is expecially useful if the site wide <a href="http://localhost:5000/configuration/project/#snippets"><code v-pre>snippets</code></a> has been configured within your project <code v-pre>retype.json</code> file.</p>
 <doc-tabs>
-<doc-tab id="sample">
-<template #title>Sample</template>
+<doc-tab id="demo">
+<template #title>Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="source">
+<template #title>Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js !#
 const msg = &quot;Hello, world&quot;;
 ```</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="run">
-<template #title>Run</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
