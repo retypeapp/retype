@@ -3,27 +3,23 @@
 Similar to a [Button](button.md), the Badge component uses the same syntax as a hyperlink, but is prefixed with a `!badge` identifier.
 
 ||| Demo
-[Normal link](badge.md)
-
 [!badge Badge](badge.md)
+
+[Normal link](badge.md)
 ||| Source
 ```md
-[Normal link](badge.md)
-
 [!badge Badge](badge.md)
+
+[Normal link](badge.md)
 ```
 |||
 
 With the Badge component, the destination is optional and can be ommitted.
 
 ||| Demo
-[Normal link](badge.md)
-
 [!badge Badge]
 ||| Source
 ```md
-[Normal link](badge.md)
-
 [!badge Badge]
 ```
 |||
