@@ -10,7 +10,7 @@ The syntax for a code snippet component is:
 :::code source="<path-to-file>" :::
 ```
 
-In the following sample, we reference a local [`../static/sample.js`](../static/sample.js) file and get the first two lines of the file.
+In the following sample, we reference a local `../static/sample.js` file and get the first two lines of the file.
 
 ||| Demo
 :::code source="../static/sample.js" range="1-2" :::
