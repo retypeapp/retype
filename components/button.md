@@ -8,7 +8,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 [Normal link](button.md)
 ||| Source
 ```md
-[!button Button](button.md
+[!button Button](button.md)
 
 [Normal link](button.md)
 ```
