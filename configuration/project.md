@@ -346,6 +346,8 @@ By default, Retype will look for a `favicon.ico` or `favicon.png` within the roo
 
 ## footer
 
+### copyright
+
 +++ copyright : `string`
 Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable.
 
@@ -357,6 +359,8 @@ Site-wide copyright statement that will be added to the footer of each page. Sup
 }
 ```
 +++
+
+### links (footer)
 
 +++ links : `object`
 Same configuration options as page level [`links`](#links).
