@@ -1,6 +1,5 @@
 ---
 icon: tools
-expanded: true
 ---
 # Components
 
