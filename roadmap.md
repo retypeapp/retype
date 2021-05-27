@@ -19,7 +19,10 @@ Expected: Mid Q3 2021
 
 Expected: Early Q3 2021
 
-- [ ] New `includes` support
+- [ ] New `partials` support
+- [ ] New `variables` support
+- [ ] New `/blog` summary page
+- [ ] New Accordion component
 - [ ] Open Graph and Twitter card support
 - [ ] New page dependecy graph to improve incremental build performance
 - [ ] Another beta release of building C# project reference documentation
@@ -29,10 +32,13 @@ Expected: Early Q3 2021
 
 Expected: Late Q2 2021
 
-- [ ] New Accordion component
-- [ ] New Tags component for pages
-- [ ] New `/blog` summary page
-- [ ] Several minor enhancements and minor bug fixes
+- [ ] New Column component
+- [ ] New Grid component
+- [ ] New FlexGrid component
+- [ ] New Tags feature for pages
+- [ ] New icon shortcode support
+- [ ] New Heroku web hosting demo
+- [ ] Many small enhancements and bug fixes
 - [ ] Performance improvements for [components](components/readme.md)
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
