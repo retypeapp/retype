@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 # Code snippet
 
 A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page.

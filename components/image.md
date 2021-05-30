@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 # Image
 
 The image component embeds an image in your document. You can point to image files stored within the project, or an external URL.

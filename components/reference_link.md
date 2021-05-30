@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 # Reference link
 
 A special type of reference link can be configured by using the `!ref` specifier in a link.

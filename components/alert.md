@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 # Alert
 
 Alert components help to highlight important messages for the reader.
