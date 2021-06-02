@@ -60,7 +60,7 @@ For instance, let's say your main site is `https://example.com` and will remain 
 }
 ```
 
-Another common scenario for setting a `base` is when using GitHub Pages **without** a custom `CANME`.
+Another common scenario for setting a `base` is when using GitHub Pages **without** a custom `CNAME`.
 
 For instance, if your GitHub organization was `CompanyX` and your repo was named `my-repo`, the URL to your GitHub Pages hosted website would be:
 
