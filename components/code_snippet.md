@@ -15,13 +15,13 @@ The syntax for a code snippet component is:
 
 In the following sample, we reference a local `../static/sample.js` file and get the first two lines of the file.
 
-||| Demo
++++  Demo
 :::code source="../static/sample.js" range="1-2" :::
-||| Source
++++  Source
 ```
 :::code source="../static/sample.js" range="1-2" :::
 ```
-|||
++++
 
 ---
 
@@ -37,13 +37,13 @@ Typically, the `source` file must be located within the same repository. At leas
 
 In the following demo, we link to the `sample.js` file and include the entire contents of that file into the code block:
 
-||| Demo
++++  Demo
 :::code source="../static/sample.js" :::
-||| Source
++++  Source
 ```
 :::code source="../static/sample.js" :::
 ```
-|||
++++
 
 ---
 
@@ -65,13 +65,13 @@ range="2,12-24,26"  // A combination of ranges
 
 In the following demo, we link to the `sample.js` file and include the first two lines of that file into the code block.
 
-||| Demo
++++  Demo
 :::code source="../static/sample.js" range="1-2" :::
-||| Source
++++  Source
 ```
 :::code source="../static/sample.js" range="1-2" :::
 ```
-|||
++++
 
 If the copied code block from the `range` is indented, the left indentation will be removed from the file output so that the code block is normalized with a left-aligned positioning.
 
@@ -87,13 +87,13 @@ An optional `title` can be specified.
 
 Let's add a `title` to our `../static/sample.js` code snippet. Within the `.md` file, the configuration would look like...
 
-||| Demo
++++  Demo
 :::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
-||| Source
++++  Source
 ```
 :::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
 ```
-|||
++++
 
 ---
 
