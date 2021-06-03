@@ -5,7 +5,7 @@ tags: [component]
 
 A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page.
 
-A common scenario for using the code snippet component is to include a portion of a source code file located elsewhere within the project.
+A common scenario for using the code snippet component is to include a portion of a source code file located elsewhere within your repository, but not explicitly within the documentation. For instance, you could include code samples directly from the source code of the project you are documenting, or import code being used within a working demo.
 
 The syntax for a code snippet component is:
 
