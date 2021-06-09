@@ -1,5 +1,6 @@
 ---
 icon: note
+tags: [guide]
 ---
 # Formatting
 
