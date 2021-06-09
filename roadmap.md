@@ -35,18 +35,20 @@ Expected: Early Q3 2021
 - [ ] New Grid component
 - [ ] New FlexGrid component
 - [ ] New Stacked Panel component
+- [x] New Heroku web hosting demo
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.6.0`
 
-Expected: Late Q2 2021
+Released: 2021-06-09
 
 - [x] New Tags feature for pages
 - [x] New icon shortcode support
-- [x] New Heroku web hosting demo
-- [x] Many small enhancements and bug fixes
-- [x] Performance improvements for [components](components/readme.md)
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+- [x] New `include` project config
+- [x] New `exclude` project config
+- [x] Improved `<table>` styling
+- [x] Dozens of small enhancements and bug fixes
+- [x] Performance boost for [components](components/readme.md)
 
 ## `v1.5.0`
 
