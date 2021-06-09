@@ -2,6 +2,7 @@
 label: Project config
 order: 200
 icon: package
+tags: [config]
 ---
 # Project configuration
 
