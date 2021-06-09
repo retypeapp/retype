@@ -49,7 +49,7 @@ Expected: Late Q2 2021
 Released: 2021-06-09
 
 - [x] New `tags` config for pages
-- [x] New `:icon-shortcode:` component
+- [x] New [`:icon-shortcode:`](components/icon.md) component
 - [x] New `include` project config
 - [x] New `exclude` project config
 - [x] Improved `<table>` styling
