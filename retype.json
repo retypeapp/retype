@@ -46,7 +46,7 @@
         ]
     },
 
-    "plugins": {
+    "integrations": {
         "crisp": {
             "id": "9ec0e13c-1299-4c3f-a5e9-ff39363c6960"
         },
