@@ -26,3 +26,9 @@ By default, Panels are collapsible and will initially render in their expanded s
 This is a collapsed Panel. :+1:
 ===
 ```
+
+==- My Panel
+
+This is a collapsed Panel. :+1:
+
+===
