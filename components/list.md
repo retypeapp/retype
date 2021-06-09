@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 ## List
 
 Retype includes broad support for creating lists of items, including [unordered](#unordered-lists) and [ordered](#ordered-lists) lists.

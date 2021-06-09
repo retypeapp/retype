@@ -6,26 +6,26 @@ label: FAQ
 
 ## How do I install Retype?
 
-Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](guides/getting_started.md) guide for detailed installation instructions.
+Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](guides/getting-started.md) guide for detailed installation instructions.
 
-If you ain't got no time for that, just run the following two commands on a folder that contains at least one `.md` file, depending on your preferred [package manager](guides/getting_started.md#prerequisites).
+If you ain't got no time for that, just run the following two commands on a folder that contains at least one `.md` file, depending on your preferred [package manager](guides/getting-started.md#prerequisites).
 
-||| npm
++++  npm
 ```
 npm install retypeapp --global
 retype watch
 ```
-||| yarn
++++  yarn
 ```
 yarn global add retypeapp
 retype watch
 ```
-||| dotnet
++++  dotnet
 ```
 dotnet tool install retypeapp --global
 retype watch
 ```
-|||
++++
 
 ---
 

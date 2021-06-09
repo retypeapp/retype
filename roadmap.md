@@ -15,38 +15,46 @@ Expected: Mid Q3 2021
 - [ ] Early support for TypeScript API reference doc generation
 - [x] Many more features planned
 
-## `v1.8.0`
+## `v1.9.0`
 
 Expected: Mid Q3 2021
 
 - [ ] New `partials` support
 - [ ] New `variables` support
-- [ ] Open Graph and Twitter card support
-- [ ] New page dependecy graph to improve incremental build performance
 - [ ] Another beta release of building C# project reference documentation
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.7.0`
+## `v1.8.0`
 
 Expected: Early Q3 2021
 
 - [ ] New `/blog` summary page
+- [ ] Open Graph and Twitter card support
+- [ ] New page dependecy graph to improve incremental build performance
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+
+## `v1.7.0` [!badge text="NEXT" variant="info"]
+
+Expected: Late Q2 2021
+
 - [ ] New Column component
 - [ ] New Grid component
 - [ ] New FlexGrid component
 - [ ] New Stacked Panel component
+- [ ] New `target` config for all `links` within `retype.json`
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.6.0`
+## `v1.6.0` [!badge text="LATEST" variant="info"]
 
-Expected: Late Q2 2021
+Released: 2021-06-09
 
-- [x] New Tags feature for pages
-- [x] New icon shortcode support
-- [x] New Heroku web hosting demo
-- [x] Many small enhancements and bug fixes
-- [x] Performance improvements for [components](components/readme.md)
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+- [x] New `tags` config for pages
+- [x] New [`:icon-shortcode:`](components/icon.md) component
+- [x] New `include` project config
+- [x] New `exclude` project config
+- [x] Improved `<table>` styling
+- [x] Performance boost for [components](components/readme.md)
+- [x] Dozens of enhancements, optimizations, and adjustments
 
 ## `v1.5.0`
 
@@ -64,20 +72,20 @@ Released: 2021-05-12
 
 Released: 2021-04-12
 
-- [x] Even cleaner upgrade to Reytype from GitBook experience
+- [x] Even cleaner upgrade to Retype from GitBook experience
 - [x] New super fast [`retype watch`](cli.md#retype-watch) incremental build process
 - [x] New [image alignment](components/image.md#alignment-options) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
-- [x] New [`[!file]`](components/file_download.md) component
-- [x] New [`[!ref]`](components/reference_link.md) component
+- [x] New [`[!file]`](components/file-download.md) component
+- [x] New [`[!ref]`](components/reference-link.md) component
 - [x] Many other minor enhancements and bug fixes
 
 ## `v1.3.0`
 
 Released: 2021-03-30
 
-- [x] New GitHub [Actions](guides/github_actions.md) for Retype
+- [x] New GitHub [Actions](guides/github-actions.md) for Retype
 - [x] New [`expanded`](configuration/page.md#expanded) config on [folder](configuration/folder.md) configuration
 - [x] New [`icon`](configuration/project.md#icon) and [`iconAlign`](configuration/project.md#iconalign) configs on [`links`](configuration/project.md#links)
 - [x] Several important bug fixes
@@ -105,7 +113,7 @@ Released: 2021-03-12
 - [x] New [`retype watch`](cli.md#retype-watch) command
 - [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
-- [x] New code block [title](components/code_block.md#title)
+- [x] New code block [title](components/code-block.md#title)
 - [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks
 
 ## `v1.0.0`

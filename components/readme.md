@@ -1,6 +1,5 @@
 ---
 icon: tools
-expanded: true
 ---
 # Components
 
@@ -9,12 +8,13 @@ Retype flavored Markdown supports custom components, including:
 - [Alert](alert.md)
 - [Badge](badge.md)
 - [Button](button.md)
-- [Code block](code_block.md)
-- [Code snippet](code_snippet.md)
+- [Code block](code-block.md)
+- [Code snippet](code-snippet.md)
 - [Emoji](emoji.md)
-- [File download](file_download.md)
+- [File download](file-download.md)
+- [Icon](icon.md)
 - [Image](image.md)
 - [List](list.md)
 - [Panel](panel.md)
-- [Reference link](reference_link.md)
+- [Reference link](reference-link.md)
 - [Tab](tab.md)

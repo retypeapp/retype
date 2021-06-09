@@ -6,7 +6,7 @@
     "branding": {
         "logo": "/static/retype-logo.svg",
         "logoDark": "/static/retype-logo-dark.svg",
-        "label": "v1.5"
+        "label": "v1.6"
      },
 
     "meta": {
@@ -46,7 +46,7 @@
         ]
     },
 
-    "plugins": {
+    "integrations": {
         "crisp": {
             "id": "9ec0e13c-1299-4c3f-a5e9-ff39363c6960"
         },

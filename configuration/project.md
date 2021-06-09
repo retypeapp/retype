@@ -2,6 +2,7 @@
 label: Project config
 order: 200
 icon: package
+tags: [config]
 ---
 # Project configuration
 
@@ -673,7 +674,7 @@ Message rendered when no results were found. Defualt is `"Sorry, no results foun
 
 ## snippets
 
-The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](../components/code_block.md#line-numbers).
+The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](../components/code-block.md#line-numbers).
 
 ### lineNumbers
 
