@@ -31,7 +31,7 @@ retype watch
 
 ## What is page metadata?
 
-The page metadata is an optional block of [configuration](configuration/page.md) that can be placed at the top of any Markdown `.md` page. This block of configuration can also be referred to as the page **Front Matter**.
+The page metadata is an optional block of [configuration](configuration/page.md) that can be placed at the top of any Markdown `.md` page. This block of configuration can also be referred to as the page [Front Matter](https://jekyllrb.com/docs/front-matter/).
 
 The block of page metadata must be the first item at the top of the `.md` page and must be added between `---` lines above and below the configs.
 
