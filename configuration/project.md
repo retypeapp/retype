@@ -46,7 +46,7 @@ Running the command `retype init` will create a default `retype.json` file. The 
 
 ## base
 
-+++ base : `string`
+=== base : `string`
 
 Base subfolder path appended to all URL's. Default is `null` or empty string.
 
@@ -81,7 +81,7 @@ The `retype.json` file for that scenario would be...
 ...and the GitHub Pages configuration within your repo Settings would be:
 
 ![](../static/project-base-config-github-pages.png)
-+++
+===
 
 ---
 
@@ -91,7 +91,7 @@ Branding configuration for your Retype generated website.
 
 ### title
 
-+++ title : `string`
+=== title : `string`
 
 Logo Title. Displayed when [logo](#logo) and [logoDark](#logoDark) are not configured. Default is `Project Name`.
 
@@ -105,12 +105,12 @@ Logo Title. Displayed when [logo](#logo) and [logoDark](#logoDark) are not confi
 
 The above `title` would create the following branding title in the upper-left corner of the generated website.
 
-![GitHub Pages configuration](../static/project-branding-title.png)
-+++
+![](../static/project-branding-title.png)
+===
 
 ### label
 
-+++ label : `string`
+=== label : `string`
 
 Optional Logo Label text. Default is `Docs`.
 
@@ -123,12 +123,12 @@ Optional Logo Label text. Default is `Docs`.
 ```
 The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#title) or [`logo`](#logo).
 
-![GitHub Pages configuration](../static/project-branding-title.png)
-+++
+![](../static/project-branding-title.png)
+===
 
 ### logo
 
-+++ logo : `string`
+=== logo : `string`
 
 One of the following:
 
@@ -144,11 +144,11 @@ Default is `null`.
   }
 }
 ```
-+++
+===
 
 ### logoDark
 
-+++ logoDark : `string`
+=== logoDark : `string`
 
 One of the following:
 
@@ -165,7 +165,7 @@ Default is `null`.
   }
 }
 ```
-+++
+===
 
 ### colors
 
@@ -173,7 +173,7 @@ Custom color configuration.
 
 #### label.text
 
-+++ label.text : `string`
+=== label.text : `string`
 Set a custom label text color. Default is `#1f7aff`.
 
 ```json
@@ -187,11 +187,11 @@ Set a custom label text color. Default is `#1f7aff`.
   }
 }
 ```
-+++
+===
 
 #### label.background
 
-+++ label.background : `string`
+=== label.background : `string`
 Set a custom label background color. Default is `#e1edff`.
 
 ```json
@@ -205,13 +205,13 @@ Set a custom label background color. Default is `#e1edff`.
   }
 }
 ```
-+++
+===
 
 ---
 
 ## cname
 
-+++ cname : `string`
+=== cname : `string`
 
 If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [output](#output). Default is `null`.
 
@@ -220,7 +220,7 @@ If specified, a `CNAME` file with the corresponding value will be created and ad
   "cname": "docs.example.com"
 }
 ```
-+++
+===
 
 ---
 
@@ -236,7 +236,7 @@ Check out the bottom of this page for a working sample of `Edit this page`.
 
 The repository URL where the source files for this project are located.
 
-+++ repo : `string`
+=== repo : `string`
 Setting a `repo` value will enable the `Edit this page` links on all content pages.
 
 ```json
@@ -246,11 +246,11 @@ Setting a `repo` value will enable the `Edit this page` links on all content pag
   }
 }
 ```
-+++
+===
 
 ### branch
 
-+++ branch : `string`
+=== branch : `string`
 Point to a custom branch within the repo. Default is `main`.
 
 ```json
@@ -261,11 +261,11 @@ Point to a custom branch within the repo. Default is `main`.
   }
 }
 ```
-+++
+===
 
 ### base
 
-+++ base : `string`
+=== base : `string`
 A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.
 
 The following sample demonstrates a scenario where the content files are located within the `/docs` sub-folder of the repo.
@@ -278,11 +278,11 @@ The following sample demonstrates a scenario where the content files are located
   }
 }
 ```
-+++
+===
 
 ### label
 
-+++ label : `string`
+=== label : `string`
 A custom label for the link. Default is `"Edit this page"`.
 
 ```
@@ -293,13 +293,13 @@ A custom label for the link. Default is `"Edit this page"`.
   }
 }
 ```
-+++
+===
 
 ---
 
 ## exclude
 
-+++ exclude : `array`
+=== exclude : `array`
 Retype can exclude files or folders from being built by configuring an `exclude` string array within your projects `retype.json` file.
 
 Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?` and `*` are allowed.
@@ -321,13 +321,13 @@ You could exclude everything in your project with by adding `"exclude": [ "*" ]`
 !!!
 Any file are folder prefixed with an underscore `_` are also excluded.
 !!!
-+++
+===
 
 ---
 
 ## favicon
 
-+++ favicon : `string`
+=== favicon : `string`
 
 A custom path to a `.ico` or `.png` file to be used as the `favicon`. Default is `null`.
 
@@ -340,7 +340,7 @@ The path is relative to the [input](#input).
 ```
 
 By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
-+++
+===
 
 ---
 
@@ -348,7 +348,7 @@ By default, Retype will look for a `favicon.ico` or `favicon.png` within the roo
 
 ### copyright
 
-+++ copyright : `string`
+=== copyright : `string`
 Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and `{{ year }}` variable.
 
 ```json
@@ -358,11 +358,11 @@ Site-wide copyright statement that will be added to the footer of each page. Sup
   }
 }
 ```
-+++
+===
 
 ### links (footer)
 
-+++ links : `object`
+=== links : `object`
 Same configuration options as page level [`links`](#links).
 
 ```json
@@ -377,13 +377,13 @@ Same configuration options as page level [`links`](#links).
   }
 }
 ```
-+++
+===
 
 ---
 
 ## input
 
-+++ input : `string`
+=== input : `string`
 
 Custom path to the input directory. Default is `.`.
 
@@ -394,7 +394,7 @@ The path is relative to the `retype.json` location.
   "input": "./src"
 }
 ```
-+++
+===
 
 ---
 
@@ -417,7 +417,7 @@ The following sample demonstrates a basic `links` scenario which would add one l
 
 ### text
 
-+++ text : `string`
+=== text : `string`
 
 The link text label.
 
@@ -431,11 +431,11 @@ The link text label.
   ]
 }
 ```
-+++
+===
 
 ### link
 
-+++ link : `string`
+=== link : `string`
 
 The URL to use for the link. The link can be internal or external.
 
@@ -449,11 +449,11 @@ The URL to use for the link. The link can be internal or external.
   ]
 }
 ```
-+++
+===
 
 ### icon
 
-+++ icon : `string`
+=== icon : `string`
 
 An icon to use with the link. Default is `null`.
 
@@ -486,11 +486,11 @@ Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/)
 ```yml Path
 "icon": "../static/rocket.png"
 ```
-+++
+===
 
 ### iconAlign
 
-+++ iconAlign : `string`
+=== iconAlign : `string`
 
 The position for the icon relative to the link `text`. Either `left` or `right`. Default is `left`.
 
@@ -506,7 +506,7 @@ The position for the icon relative to the link `text`. Either `left` or `right`.
   ]
 }
 ```
-+++
+===
 
 ---
 
@@ -516,7 +516,7 @@ Meta tag configuration.
 
 ### title
 
-+++ title : `string`
+=== title : `string`
 
 Common site-wide suffix appended to the html `<title>` element of all pages. Default is `null`.
 
@@ -533,13 +533,13 @@ If we had an `About us` page, the final `<title>` with the `title` value above w
 ```html
 <title>About us | Example.com - Widgets for the internet</title>
 ```
-+++
+===
 
 ---
 
 ## output
 
-+++ output : `string`
+=== output : `string`
 
 Custom path to the output directory. Default is `.retype`.
 
@@ -550,7 +550,7 @@ The path is relative to the `retype.json` location.
   "output": "./docs"
 }
 ```
-+++
+===
 
 ---
 
@@ -560,7 +560,7 @@ The path is relative to the `retype.json` location.
 
 Add Google Analytics to your website.
 
-+++ googleAnalytics.id : `string`
+=== googleAnalytics.id : `string`
 Google Analytics ID value.
 
 ```json
@@ -572,13 +572,13 @@ Google Analytics ID value.
   }
 }
 ```
-+++
+===
 
 ---
 
 ## port
 
-+++ port : `number`
+=== port : `number`
 
 A custom port for the internal Retype web server to use when hosting locally. Default is `5000`.
 
@@ -591,7 +591,7 @@ A custom port for the internal Retype web server to use when hosting locally. De
 If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
 
 If a custom `port` is explicitly configured in the `retype.json`, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
-+++
+===
 
 ---
 
@@ -601,7 +601,7 @@ Customization of the website search component.
 
 ### minChars
 
-+++ minChars : `number`
+=== minChars : `number`
 Min number of characters required in a search query. Defualt is `3`.
 
 ```json
@@ -611,11 +611,11 @@ Min number of characters required in a search query. Defualt is `3`.
   }
 }
 ```
-+++
+===
 
 ### maxResults
 
-+++ maxResults : `number`
+=== maxResults : `number`
 Max number of search results to render. Defualt is `20`.
 
 ```json
@@ -625,11 +625,11 @@ Max number of search results to render. Defualt is `20`.
   }
 }
 ```
-+++
+===
 
 ### placeholder
 
-+++ placeholder : `string`
+=== placeholder : `string`
 Placeholder text rendered on the search component. Defualt is `"Search"`.
 
 ```json
@@ -639,11 +639,11 @@ Placeholder text rendered on the search component. Defualt is `"Search"`.
   }
 }
 ```
-+++
+===
 
 ### hotkeys
 
-+++ hotkeys : `string[]`
+=== hotkeys : `string[]`
 Keyboard key to set the cursor focus into the search field. Defualt is `["/"]`.
 
 ```json
@@ -653,11 +653,11 @@ Keyboard key to set the cursor focus into the search field. Defualt is `["/"]`.
   }
 }
 ```
-+++
+===
 
 ### noResultsFoundMsg
 
-+++ noResultsFoundMsg : `string`
+=== noResultsFoundMsg : `string`
 Message rendered when no results were found. Defualt is `"Sorry, no results found."`.
 
 ```json
@@ -667,7 +667,7 @@ Message rendered when no results were found. Defualt is `"Sorry, no results foun
   }
 }
 ```
-+++
+===
 
 ---
 
@@ -677,7 +677,7 @@ The `snippets` configuration allows for the project with custom configuration of
 
 ### lineNumbers
 
-+++ lineNumbers : `string[]`
+=== lineNumbers : `string[]`
 
 An array of code block reference language strings to enable line numbering on. Default is `null`.
 
@@ -708,7 +708,7 @@ Enabling line numbering site wide on code blocks with no explicit reference lang
   }
 }
 ~~~
-+++
+===
 
 ---
 
