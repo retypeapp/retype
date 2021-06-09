@@ -15,40 +15,46 @@ Expected: Mid Q3 2021
 - [ ] Early support for TypeScript API reference doc generation
 - [x] Many more features planned
 
-## `v1.8.0`
+## `v1.9.0`
 
 Expected: Mid Q3 2021
 
 - [ ] New `partials` support
 - [ ] New `variables` support
-- [ ] Open Graph and Twitter card support
-- [ ] New page dependecy graph to improve incremental build performance
 - [ ] Another beta release of building C# project reference documentation
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.7.0`
+## `v1.8.0`
 
 Expected: Early Q3 2021
 
 - [ ] New `/blog` summary page
+- [ ] Open Graph and Twitter card support
+- [ ] New page dependecy graph to improve incremental build performance
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+
+## `v1.7.0` [!badge text="NEXT" variant="info"]
+
+Expected: Late Q2 2021
+
 - [ ] New Column component
 - [ ] New Grid component
 - [ ] New FlexGrid component
 - [ ] New Stacked Panel component
-- [x] New Heroku web hosting demo
+- [ ] New `target` config for all `links` within `retype.json`
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.6.0`
+## `v1.6.0` [!badge text="LATEST" variant="info"]
 
 Released: 2021-06-09
 
-- [x] New Tags feature for pages
-- [x] New icon shortcode support
+- [x] New `tags` config for pages
+- [x] New `:icon-shortcode:` component
 - [x] New `include` project config
 - [x] New `exclude` project config
 - [x] Improved `<table>` styling
-- [x] Dozens of small enhancements and bug fixes
 - [x] Performance boost for [components](components/readme.md)
+- [x] Dozens of enhancements, optimizations, and adjustments
 
 ## `v1.5.0`
 
@@ -66,7 +72,7 @@ Released: 2021-05-12
 
 Released: 2021-04-12
 
-- [x] Even cleaner upgrade to Reytype from GitBook experience
+- [x] Even cleaner upgrade to Retype from GitBook experience
 - [x] New super fast [`retype watch`](cli.md#retype-watch) incremental build process
 - [x] New [image alignment](components/image.md#alignment-options) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
