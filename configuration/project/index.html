@@ -229,8 +229,7 @@
         <span>base</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="base-string">
+<doc-panel id="base-string">
 <template #title>base : <code v-pre>string</code></template>
 <p>Base subfolder path appended to all URL&#x27;s. Default is <code v-pre>null</code> or empty string.</p>
 <p>If you deploy the build website to a subfolder of another website, use the <code v-pre>base</code> to ensure the URL&#x27;s correclty resolve.</p>
@@ -260,8 +259,7 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="branding">
     <h2>
@@ -276,8 +274,7 @@
         <span>title</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="title-string">
+<doc-panel id="title-string">
 <template #title>title : <code v-pre>string</code></template>
 <p>Logo Title. Displayed when <doc-anchor-trigger to="#logo">logo</doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark">logoDark</doc-anchor-trigger> are not configured. Default is <code v-pre>Project Name</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -290,20 +287,18 @@
 </doc-codeblock></div>
 <p>The above <code v-pre>title</code> would create the following branding title in the upper-left corner of the generated website.</p>
 <p><figure class="content-center">
-    <img src="../../static/project-branding-title.png" alt="GitHub Pages configuration" />
-    <figcaption class="caption">GitHub Pages configuration</figcaption>
+    <img src="../../static/project-branding-title.png" alt="" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="label">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
         <span>label</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="label-string">
+<doc-panel id="label-string">
 <template #title>label : <code v-pre>string</code></template>
 <p>Optional Logo Label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -316,20 +311,18 @@
 </doc-codeblock></div>
 <p>The <code v-pre>label</code> is rendered as the following label in the upper-left corner of the generated website, to the right of the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger> or <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger>.</p>
 <p><figure class="content-center">
-    <img src="../../static/project-branding-title.png" alt="GitHub Pages configuration" />
-    <figcaption class="caption">GitHub Pages configuration</figcaption>
+    <img src="../../static/project-branding-title.png" alt="" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="logo">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#logo">#</doc-anchor-trigger>
         <span>logo</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="logo-string">
+<doc-panel id="logo-string">
 <template #title>logo : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
@@ -345,16 +338,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="logodark">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#logodark">#</doc-anchor-trigger>
         <span>logoDark</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="logodark-string">
+<doc-panel id="logodark-string">
 <template #title>logoDark : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
@@ -371,8 +362,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="colors">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#colors">#</doc-anchor-trigger>
@@ -386,8 +376,7 @@
         <span>label.text</span>
     </h4>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="label-text-string">
+<doc-panel id="label-text-string">
 <template #title>label.text : <code v-pre>string</code></template>
 <p>Set a custom label text color. Default is <code v-pre>#1f7aff</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -401,16 +390,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="labelbackground">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#labelbackground">#</doc-anchor-trigger>
         <span>label.background</span>
     </h4>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="label-background-string">
+<doc-panel id="label-background-string">
 <template #title>label.background : <code v-pre>string</code></template>
 <p>Set a custom label background color. Default is <code v-pre>#e1edff</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -424,8 +411,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="cname">
     <h2>
@@ -433,8 +419,7 @@
         <span>cname</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="cname-string">
+<doc-panel id="cname-string">
 <template #title>cname : <code v-pre>string</code></template>
 <p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -443,8 +428,7 @@
   &quot;cname&quot;: &quot;docs.example.com&quot;
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="edit">
     <h2>
@@ -463,8 +447,7 @@
     </h3>
 </doc-anchor-target>
 <p>The repository URL where the source files for this project are located.</p>
-<doc-tabs>
-<doc-tab id="repo-string">
+<doc-panel id="repo-string">
 <template #title>repo : <code v-pre>string</code></template>
 <p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -474,16 +457,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="branch">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#branch">#</doc-anchor-trigger>
         <span>branch</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="branch-string">
+<doc-panel id="branch-string">
 <template #title>branch : <code v-pre>string</code></template>
 <p>Point to a custom branch within the repo. Default is <code v-pre>main</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -494,16 +475,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="base-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#base-1">#</doc-anchor-trigger>
         <span>base</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="base-string">
+<doc-panel id="base-string">
 <template #title>base : <code v-pre>string</code></template>
 <p>A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.</p>
 <p>The following sample demonstrates a scenario where the content files are located within the <code v-pre>/docs</code> sub-folder of the repo.</p>
@@ -515,16 +494,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="label-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#label-1">#</doc-anchor-trigger>
         <span>label</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="label-string">
+<doc-panel id="label-string">
 <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the link. Default is <code v-pre>&quot;Edit this page&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -535,8 +512,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="exclude">
     <h2>
@@ -544,8 +520,7 @@
         <span>exclude</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="exclude-array">
+<doc-panel id="exclude-array">
 <template #title>exclude : <code v-pre>array</code></template>
 <p>Retype can exclude files or folders from being built by configuring an <code v-pre>exclude</code> string array within your projects <code v-pre>retype.json</code> file.</p>
 <p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code> and <code v-pre>*</code> are allowed.</p>
@@ -564,8 +539,7 @@
 <doc-alert variant="primary">
 <p>Any file are folder prefixed with an underscore <code v-pre>_</code> are also excluded.</p>
 </doc-alert>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="favicon">
     <h2>
@@ -573,8 +547,7 @@
         <span>favicon</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="favicon-string">
+<doc-panel id="favicon-string">
 <template #title>favicon : <code v-pre>string</code></template>
 <p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
 <p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
@@ -585,8 +558,7 @@
 }</code></pre>
 </doc-codeblock></div>
 <p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger> root.</p>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="footer">
     <h2>
@@ -600,8 +572,7 @@
         <span>copyright</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="copyright-string">
+<doc-panel id="copyright-string">
 <template #title>copyright : <code v-pre>string</code></template>
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -611,16 +582,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="links-footer">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#links-footer">#</doc-anchor-trigger>
         <span>links (footer)</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="links-object">
+<doc-panel id="links-object">
 <template #title>links : <code v-pre>object</code></template>
 <p>Same configuration options as page level <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -635,8 +604,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="input">
     <h2>
@@ -644,8 +612,7 @@
         <span>input</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="input-string">
+<doc-panel id="input-string">
 <template #title>input : <code v-pre>string</code></template>
 <p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
 <p>The path is relative to the <code v-pre>retype.json</code> location.</p>
@@ -655,8 +622,7 @@
   &quot;input&quot;: &quot;./src&quot;
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="links">
     <h2>
@@ -682,8 +648,7 @@
         <span>text</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="text-string">
+<doc-panel id="text-string">
 <template #title>text : <code v-pre>string</code></template>
 <p>The link text label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -696,16 +661,14 @@
   ]
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="link">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#link">#</doc-anchor-trigger>
         <span>link</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="link-string">
+<doc-panel id="link-string">
 <template #title>link : <code v-pre>string</code></template>
 <p>The URL to use for the link. The link can be internal or external.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -718,16 +681,14 @@
   ]
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="icon">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
         <span>icon</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="icon-string">
+<doc-panel id="icon-string">
 <template #title>icon : <code v-pre>string</code></template>
 <p>An icon to use with the link. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -758,16 +719,14 @@
 <div class="codeblock-title">Path</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;../static/rocket.png&quot;</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="iconalign">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#iconalign">#</doc-anchor-trigger>
         <span>iconAlign</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="iconalign-string">
+<doc-panel id="iconalign-string">
 <template #title>iconAlign : <code v-pre>string</code></template>
 <p>The position for the icon relative to the link <code v-pre>text</code>. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -782,8 +741,7 @@
   ]
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="meta">
     <h2>
@@ -798,8 +756,7 @@
         <span>title</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="title-string">
+<doc-panel id="title-string">
 <template #title>title : <code v-pre>string</code></template>
 <p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -814,8 +771,7 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;title&gt;About us | Example.com - Widgets for the internet&lt;/title&gt;</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="output">
     <h2>
@@ -823,8 +779,7 @@
         <span>output</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="output-string">
+<doc-panel id="output-string">
 <template #title>output : <code v-pre>string</code></template>
 <p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
 <p>The path is relative to the <code v-pre>retype.json</code> location.</p>
@@ -834,8 +789,7 @@
   &quot;output&quot;: &quot;./docs&quot;
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="plugins">
     <h2>
@@ -850,8 +804,7 @@
     </h3>
 </doc-anchor-target>
 <p>Add Google Analytics to your website.</p>
-<doc-tabs>
-<doc-tab id="googleanalytics-id-string">
+<doc-panel id="googleanalytics-id-string">
 <template #title>googleAnalytics.id : <code v-pre>string</code></template>
 <p>Google Analytics ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -863,8 +816,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="port">
     <h2>
@@ -872,8 +824,7 @@
         <span>port</span>
     </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="port-number">
+<doc-panel id="port-number">
 <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -883,8 +834,7 @@
 </doc-codeblock></div>
 <p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
 <p>If a custom <code v-pre>port</code> is explicitly configured in the <code v-pre>retype.json</code>, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the <code v-pre>port</code> was explicitly configured, Retype will not attempt to auto-increment.</p>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="search">
     <h2>
@@ -899,8 +849,7 @@
         <span>minChars</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="minchars-number">
+<doc-panel id="minchars-number">
 <template #title>minChars : <code v-pre>number</code></template>
 <p>Min number of characters required in a search query. Defualt is <code v-pre>3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -910,16 +859,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="maxresults">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#maxresults">#</doc-anchor-trigger>
         <span>maxResults</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="maxresults-number">
+<doc-panel id="maxresults-number">
 <template #title>maxResults : <code v-pre>number</code></template>
 <p>Max number of search results to render. Defualt is <code v-pre>20</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -929,16 +876,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="placeholder">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder">#</doc-anchor-trigger>
         <span>placeholder</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="placeholder-string">
+<doc-panel id="placeholder-string">
 <template #title>placeholder : <code v-pre>string</code></template>
 <p>Placeholder text rendered on the search component. Defualt is <code v-pre>&quot;Search&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -948,16 +893,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="hotkeys">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#hotkeys">#</doc-anchor-trigger>
         <span>hotkeys</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="hotkeys-string">
+<doc-panel id="hotkeys-string">
 <template #title>hotkeys : <code v-pre>string[]</code></template>
 <p>Keyboard key to set the cursor focus into the search field. Defualt is <code v-pre>[&quot;/&quot;]</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -967,16 +910,14 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <doc-anchor-target id="noresultsfoundmsg">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#noresultsfoundmsg">#</doc-anchor-trigger>
         <span>noResultsFoundMsg</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="noresultsfoundmsg-string">
+<doc-panel id="noresultsfoundmsg-string">
 <template #title>noResultsFoundMsg : <code v-pre>string</code></template>
 <p>Message rendered when no results were found. Defualt is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -986,8 +927,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="snippets">
     <h2>
@@ -1002,8 +942,7 @@
         <span>lineNumbers</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="linenumbers-string">
+<doc-panel id="linenumbers-string">
 <template #title>lineNumbers : <code v-pre>string[]</code></template>
 <p>An array of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1032,8 +971,7 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 <hr />
 <doc-anchor-target id="additional-options">
     <h2>

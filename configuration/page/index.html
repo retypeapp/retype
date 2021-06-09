@@ -230,35 +230,27 @@ order: 100</code></pre>
 </doc-alert>
 <p>See <a href="../folder">Folder configuration</a> for details on how to configure a folder.</p>
 <hr />
-<doc-anchor-target id="options">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h2>
-</doc-anchor-target>
 <doc-anchor-target id="description">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#description">#</doc-anchor-trigger>
         <span>description</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="description-string">
+<doc-panel id="description-string">
 <template #title>description : <code v-pre>string</code></template>
 <p>A custom description of the current page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">description: This is a custom description for this page</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="expanded">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#expanded">#</doc-anchor-trigger>
         <span>expanded</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="expanded-boolean">
+<doc-panel id="expanded-boolean">
 <template #title>expanded : <code v-pre>boolean</code></template>
 <p>Determines whether this <a href="foulder.md">folder</a> should be expanded in the tree navigation on initial page load. Default is <code v-pre>false</code>.</p>
 <p>Set to <code v-pre>true</code> to expand the folder node in the navigation.</p>
@@ -267,32 +259,30 @@ order: 100</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>expanded</code> option only applies to <a href="../folder">folders</a> when configured within an <code v-pre>index.yml</code> folder configuration file.</p>
 <p>Setting <code v-pre>expanded: true</code> within the metadata of an <code v-pre>.md</code> page or the paired <code v-pre>.yml</code> file will be ignored.</p>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="hidden">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#hidden">#</doc-anchor-trigger>
         <span>hidden</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="hidden-boolean">
+<doc-panel id="hidden-boolean">
 <template #title>hidden : <code v-pre>boolean</code></template>
 <p>Hides the current page in the navigation and from the search results. Default is <code v-pre>false</code>.</p>
 <p>Set to <code v-pre>true</code> to hide.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">hidden: true</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="icon">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
         <span>icon</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="icon-string">
+<doc-panel id="icon-string">
 <template #title>icon : <code v-pre>string</code></template>
 <p>Custom icon for the navigation node of the current page. Default is <code v-pre>null</code>.</p>
 <p>Options include using an <a href="https://octicons-primer.vercel.app/octicons/">Octicon</a> name, <a href="https://mojee.io/emojis/">Emoji</a> shortcode, <code v-pre>&lt;svg&gt;</code> element, or a path to an image file.</p>
@@ -312,31 +302,29 @@ order: 100</code></pre>
 <div class="codeblock-title">Path</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">icon: &quot;../static/rocket.png&quot;</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="label">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
         <span>label</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="label-string">
+<doc-panel id="label-string">
 <template #title>label : <code v-pre>string</code></template>
 <p>Custom label for the navigation node for the current page. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">title: Custom label</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="layout">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#layout">#</doc-anchor-trigger>
         <span>layout</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="layout-string">
+<doc-panel id="layout-string">
 <template #title>layout : <code v-pre>string</code></template>
 <p>The layout for the page. Default is <code v-pre>default</code>.</p>
 <p>Supported values: <code v-pre>default</code>, <code v-pre>central</code>, <code v-pre>page</code>, and <code v-pre>blog</code>.</p>
@@ -369,16 +357,15 @@ order: 100</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">layout: page</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="order">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order">#</doc-anchor-trigger>
         <span>order</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="order-string">
+<doc-panel id="order-string">
 <template #title>order : <code v-pre>string</code></template>
 <p>A custom stack order within the navigation.</p>
 <p>Options can include:</p>
@@ -387,7 +374,7 @@ order: 100</code></pre>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any string value that will be slotted into the <code v-pre>A -&gt; Z</code> alpha ordering of all navigation nodes</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A <a href="https://semver.org/">SemVer</a> value such as <code v-pre>v2.0</code></li>
 </ul>
-<p>In order of precedence, the <code v-pre>order</code> would be applied by:</p>
+<p>In order of precedence, the <code v-pre>order</code> would be applied with the following priority:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">number (high)
 alpha (a)
@@ -398,10 +385,10 @@ vSemver (oldest)
 number (low)</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="order-by-number">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-number">#</doc-anchor-trigger>
         <span>Order by number</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
 <p>Larger number = order higher in the stack.</p>
 <p>No order number or <code v-pre>0</code> = order by alpha</p>
@@ -413,10 +400,10 @@ number (low)</code></pre>
 -</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="order-by-alpha">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-alpha">#</doc-anchor-trigger>
         <span>Order by alpha</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
 <p>Order values by alpha.</p>
 <p><code v-pre>a</code> = higher
@@ -428,10 +415,10 @@ Charlie
 Zulu</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="order-by-vsemver">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-vsemver">#</doc-anchor-trigger>
         <span>Order by <code v-pre>v{semver}</code></span>
-    </h4>
+    </h3>
 </doc-anchor-target>
 <p>Order by <a href="https://semver.org/">semver</a> with latest release at the top</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -456,16 +443,15 @@ v1.0
 v1.0-beta
 v1.0-alpha</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
+<hr />
 <doc-anchor-target id="route">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#route">#</doc-anchor-trigger>
         <span>route</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="route-string">
+<doc-panel id="route-string">
 <template #title>route : <code v-pre>string</code></template>
 <p>A custom URL path for this page or folder which overrides the default path generated by Retype.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -522,8 +508,7 @@ route: /tutorials
 </tr>
 </tbody>
 </table>
-</doc-tab>
-</doc-tabs>
+</doc-panel>
 
 
 <div class="flex items-center mt-6 mb-6">
