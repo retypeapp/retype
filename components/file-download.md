@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 # File download
 
 A static file download component can be configured by using the `!file` specifier in a link.

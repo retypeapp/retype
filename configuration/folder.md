@@ -1,13 +1,14 @@
 ---
 label: Folder config
 icon: file-directory
+tags: [config]
 ---
 # Folder configuration
 
 Using the same `.yml` technique and options as [Page configuration](page.md), a folder can be configured using a separate `index.yml` file placed inside the folder.
 
 !!!
-Folders support the same properties a [pages](page.md), although properties such as [`description`](page.md#description) and [`layout`](page.md#layout) would not be applicable in the context of a folder configuration. 
+Folders support the same properties a [pages](page.md), although properties such as [`description`](page.md#description) and [`layout`](page.md#layout) would not be applicable in the context of a folder configuration.
 !!!
 
 ## Samples
@@ -24,7 +25,7 @@ Expand the folder node in the tree navigation with the [expanded](page.md#expand
 expanded: true
 ```
 
-Move a folder up to the top of the navigation by setting the [order](page.md#order). The larger the number, the higher in the stack it will be placed. 
+Move a folder up to the top of the navigation by setting the [order](page.md#order). The larger the number, the higher in the stack it will be placed.
 
 ```yml index.yml
 order: 1000

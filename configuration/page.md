@@ -2,6 +2,7 @@
 label: Page config
 order: 100
 icon: file
+tags: [config]
 ---
 # Page configuration
 

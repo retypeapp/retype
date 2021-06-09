@@ -1,3 +1,6 @@
+---
+tags: [component]
+---
 # Image
 
 The image component embeds an image in your document. You can point to image files stored within the project, or an external URL.
@@ -77,7 +80,7 @@ Position | Markdown | Description
 
 Here's a sample page demonstrating all the image alignment scenarios, including `plus` options:
 
-[!ref Image alignment demo](image_alignment_demo.md)
+[!ref Image alignment demo](image-alignment-demo.md)
 
 The `plus` alignment options only apply when the page is `layout: central` or `layout: blog`.
 

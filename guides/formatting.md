@@ -1,5 +1,6 @@
 ---
 icon: note
+tags: [guide]
 ---
 # Formatting
 
@@ -85,18 +86,18 @@ This is an Alert
 
 ### Tab
 
-||| Tab 1
++++  Tab 1
 This is Tab 1
-||| Tab 2
++++  Tab 2
 This is another Tab
-|||
++++
 
 ~~~ Sample [Tab](../components/tab.md) component
-||| Tab 1
++++  Tab 1
 This is Tab 1
-||| Tab 2
++++  Tab 2
 This is another Tab
-|||
++++
 ~~~
 
 [!ref See all components](../components)
