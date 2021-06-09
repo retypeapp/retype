@@ -12,7 +12,7 @@ Be sure to review the [configuration options](configuration/project.md) availabl
 
 !!!
 
-Let's go through each of the `retype` CLI commands, or be sure to check out the [Getting Started](guides/getting_started.md) guide for step by instructions on using each of these commands.
+Let's go through each of the `retype` CLI commands, or be sure to check out the [Getting Started](guides/getting-started.md) guide for step by instructions on using each of these commands.
 
 ---
 

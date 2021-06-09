@@ -87,7 +87,7 @@ Don't blink. Retype was built for speed.
 
 #### :white_check_mark: Easy install
 
-[Installation](guides/getting_started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from.
+[Installation](guides/getting-started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from.
 
 #### :muscle: Powerful
 

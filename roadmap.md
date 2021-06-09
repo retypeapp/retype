@@ -77,15 +77,15 @@ Released: 2021-04-12
 - [x] New [image alignment](components/image.md#alignment-options) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
-- [x] New [`[!file]`](components/file_download.md) component
-- [x] New [`[!ref]`](components/reference_link.md) component
+- [x] New [`[!file]`](components/file-download.md) component
+- [x] New [`[!ref]`](components/reference-link.md) component
 - [x] Many other minor enhancements and bug fixes
 
 ## `v1.3.0`
 
 Released: 2021-03-30
 
-- [x] New GitHub [Actions](guides/github_actions.md) for Retype
+- [x] New GitHub [Actions](guides/github-actions.md) for Retype
 - [x] New [`expanded`](configuration/page.md#expanded) config on [folder](configuration/folder.md) configuration
 - [x] New [`icon`](configuration/project.md#icon) and [`iconAlign`](configuration/project.md#iconalign) configs on [`links`](configuration/project.md#links)
 - [x] Several important bug fixes
@@ -113,7 +113,7 @@ Released: 2021-03-12
 - [x] New [`retype watch`](cli.md#retype-watch) command
 - [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
-- [x] New code block [title](components/code_block.md#title)
+- [x] New code block [title](components/code-block.md#title)
 - [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks
 
 ## `v1.0.0`

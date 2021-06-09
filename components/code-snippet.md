@@ -33,7 +33,7 @@ The `source` is the local path to a file.
 :::code source="<path-to-file>" :::
 ```
 
-Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](../guides/github_actions.md), the file must be within the same repo or accessible by the Action.
+Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](../guides/github-actions.md), the file must be within the same repo or accessible by the Action.
 
 In the following demo, we link to the `sample.js` file and include the entire contents of that file into the code block:
 
@@ -101,7 +101,7 @@ Let's add a `title` to our `../static/sample.js` code snippet. Within the `.md` 
 
 The final code blocks allow for a language type to be configured which enables code syntax highlighting within the code block.
 
-The `language` property can be set with any reference language value supported by the Markdown [code blocks](code_block.md) in Retype.
+The `language` property can be set with any reference language value supported by the Markdown [code blocks](code-block.md) in Retype.
 
 ```
 :::code source="<path-to-file>" language="<language>" :::
