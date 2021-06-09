@@ -10,7 +10,7 @@
 
     <title>Badge | Retype - Generate, publish, and share documentation</title>
 
-    <meta name="description" content="Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a " />
+    <meta name="description" content="Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a" />
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -33,13 +33,12 @@
         <!-- Logo -->
         <div class="flex items-center justify-between h-full py-2 md:w-75">
             <div class="flex items-center px-2 md:px-6">
-                <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
-                    <a href="/">
-                        <img class="dark:hidden" src="/static/retype-logo.svg">
-                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
-                    </a>
-                </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.5</span>
+                <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                    <span class="flex-grow-0 flex-shrink-0 overflow-hidden">
+                        <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
+                        <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
+                    </span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -196,10 +195,9 @@
 <doc-tabs>
 <doc-tab id="demo">
 <template #title>Demo</template>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+<p><a href="" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Badge</span>
-</span>
-</p>
+</a></p>
 <p><a href="">Normal link</a></p>
 </doc-tab>
 <doc-tab id="source">
@@ -217,8 +215,7 @@
 <template #title>Demo</template>
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Badge</span>
-</span>
-</p>
+</span></p>
 </doc-tab>
 <doc-tab id="source">
 <template #title>Source</template>
@@ -237,7 +234,7 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!badge variant=&quot;primary&quot; text=&quot;Primary&quot;]</code></pre>
 </doc-codeblock></div>
-<table>
+<table class="comfortable">
 <thead>
 <tr>
 <th>Variant</th>
@@ -249,64 +246,55 @@
 <td><code v-pre>primary</code> (default)</td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Primary</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>secondary</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-6 px-2 text-xs rounded-md">
     <span>Secondary</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>success</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
     <span>Success</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>danger</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
     <span>Danger</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>warning</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
     <span>Warning</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>info</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>Info</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>light</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Light</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>dark</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-white bg-gray-700 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>Dark</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>contrast</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
     <span>Contrast</span>
-</span>
-</td>
+</span></td>
 </tr>
 </tbody>
 </table>
@@ -322,7 +310,7 @@
 [!badge corners=&quot;square&quot; text=&quot;Square&quot;]
 [!badge corners=&quot;pill&quot; text=&quot;Button Pill&quot;]</code></pre>
 </doc-codeblock></div>
-<table>
+<table class="comfortable">
 <thead>
 <tr>
 <th>Size</th>
@@ -334,22 +322,19 @@
 <td><code v-pre>round</code> (default)</td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Default</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>square</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs">
     <span>Square</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>pill</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-full">
     <span>Button Pill</span>
-</span>
-</td>
+</span></td>
 </tr>
 </tbody>
 </table>
@@ -363,7 +348,7 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">[!badge size=&quot;m&quot; text=&quot;Medium&quot;]</code></pre>
 </doc-codeblock></div>
-<table>
+<table class="comfortable">
 <thead>
 <tr>
 <th>Size</th>
@@ -375,50 +360,43 @@
 <td><code v-pre>xs</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-4.5 px-1.5 text-3xs rounded">
     <span>XSmall</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>s</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-5 px-1.5 text-2xs rounded">
     <span>Small</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>m</code> (default)</td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Medium</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>l</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-8 px-3 text-sm rounded-md">
     <span>Large</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>xl</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-8 px-4 text-base rounded-md">
     <span>XLarge</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>2xl</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-14 px-4 text-lg rounded-md">
     <span>2XLarge</span>
-</span>
-</td>
+</span></td>
 </tr>
 <tr>
 <td><code v-pre>3xl</code></td>
 <td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-16 px-5 text-xl rounded-md">
     <span>3XLarge</span>
-</span>
-</td>
+</span></td>
 </tr>
 </tbody>
 </table>
@@ -447,8 +425,7 @@
 <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Send</span>
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path fill-rule="evenodd" d="M1.513 1.96a1.374 1.374 0 011.499-.21l19.335 9.215a1.146 1.146 0 010 2.07L3.012 22.25a1.374 1.374 0 01-1.947-1.46L2.49 12 1.065 3.21a1.374 1.374 0 01.448-1.25zm2.375 10.79l-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 010 1.5H3.888z"/></g></svg></span>
-</span>
-</p>
+</span></p>
 <doc-anchor-target id="emoji">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#emoji">#</doc-anchor-trigger>
@@ -467,8 +444,7 @@
 <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>Rocket</span>
     <span class="docs-emoji ml-2">&#x1F680;</span>
-</span>
-</p>
+</span></p>
 <doc-anchor-target id="image-file">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#image-file">#</doc-anchor-trigger>
@@ -480,8 +456,8 @@
 <pre class="language-markdown"><code v-pre class="language-markdown">[!badge icon=&quot;../static/retype-logo.svg&quot;]</code></pre>
 </doc-codeblock></div>
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-</span>
-</p>
+    <span><img class="mb-px inline-flex mr-2" width="18" src="/static/retype-logo.svg" /></span>
+</span></p>
 <doc-anchor-target id="svg-image">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#svg-image">#</doc-anchor-trigger>
@@ -492,18 +468,27 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">[!badge icon=&quot;&lt;svg width=&amp;quot;24&amp;quot; height=&amp;quot;24&amp;quot;&gt;&lt;path fill-rule=&amp;quot;evenodd&amp;quot; d=&amp;quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&amp;quot;&gt;&lt;/path&gt;&lt;/svg&gt;&quot; text=&quot;Visit website&quot;](badge.md)</code></pre>
 </doc-codeblock></div>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+<p><a href="" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></g></svg></span>
     <span>Visit website</span>
-</span>
-</p>
+</a></p>
 
-    
+
+<div class="flex items-center mt-6 mb-6">
+    <span>
+        <a href="/tags/">
+            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+        </a>
+        <a href="/tags/component/" class="inline-flex items-center justify-center h-6 px-2 mr-2 text-xs font-medium leading-none text-blue-500 border border-blue-500 rounded-md no-link whitespace-nowrap dark:text-blue-400 dark:border-blue-400">component</a>
+    </span>
+</div>
+
+
                 <!-- Required only on API pages -->
                 <doc-toolbar-member-filter-no-results />
             </div>
 
-            <div class="mt-14 flex flex-wrap items-center justify-between">
+            <div class="flex flex-wrap items-center justify-between mt-14">
     <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/badge.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Edit this page</span>
@@ -514,7 +499,7 @@
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/alert">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/alert">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
@@ -524,9 +509,9 @@
     </div>
 
     <div class="w-1/2">
-        <a class="px-6 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/button">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/button">
             <span>
-                <span class="block text-right text-xs font-normal text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                 <span class="block mt-1">Button</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>

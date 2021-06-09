@@ -33,13 +33,12 @@
         <!-- Logo -->
         <div class="flex items-center justify-between h-full py-2 md:w-75">
             <div class="flex items-center px-2 md:px-6">
-                <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
-                    <a href="/">
-                        <img class="dark:hidden" src="/static/retype-logo.svg">
-                        <img class="hidden dark:block" src="/static/retype-logo-dark.svg">
-                    </a>
-                </span>
-                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.5</span>
+                <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                    <span class="flex-grow-0 flex-shrink-0 overflow-hidden">
+                        <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
+                        <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
+                    </span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -196,7 +195,7 @@
 <doc-alert variant="primary">
 <p>Be sure to review the <a href="../configuration/project">configuration options</a> available within the <code v-pre>retype.json</code>  as it does unlock a lot more power, flexibility, and customization.</p>
 </doc-alert>
-<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands, or be sure to check out the <a href="../guides/getting_started">Getting Started</a> guide for step by instructions on using each of these commands.</p>
+<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands, or be sure to check out the <a href="../guides/getting-started">Getting Started</a> guide for step by instructions on using each of these commands.</p>
 <hr />
 <doc-anchor-target id="retype-watch">
     <h2>
@@ -394,12 +393,14 @@ Options:
   -?, -h, --help    Show help and usage information</code></pre>
 </doc-codeblock></div>
 
-    
+
+
+
                 <!-- Required only on API pages -->
                 <doc-toolbar-member-filter-no-results />
             </div>
 
-            <div class="mt-14 flex flex-wrap items-center justify-between">
+            <div class="flex flex-wrap items-center justify-between mt-14">
     <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/cli.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Edit this page</span>
@@ -410,7 +411,7 @@ Options:
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/roadmap">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/roadmap">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
