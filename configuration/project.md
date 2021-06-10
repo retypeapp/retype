@@ -777,8 +777,8 @@ Enabling line numbering site wide on code blocks with no explicit reference lang
 
 ## Additional options
 
-| Option                               | Type      | Default value              | Description                                                                                                                     |
-| ------------------------------------ | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `code`                               | `object`  |                            | Source code reference configuration                                                                                             |
-| `code.input`                         | `string`  |                            | Path to a project file, or a project directory                                                                                  |
-| `code.output`                        | `string`  | `./api`                    | Custom path to the API output directory. Relative to `output`                                                                   |
+| Option                              | Type      | Default value              | Description                                                   |
+| ----------------------------------- | --------- | -------------------------- | ------------------------------------------------------------- |
+| `api`                               | `object`  |                            | API reference doc generation                                  |
+| `api.input`                         | `string`  |                            | Path to a project file or a project directory                 |
+| `api.output`                        | `string`  | `./api`                    | Custom path to the API output directory. Relative to `output` |
