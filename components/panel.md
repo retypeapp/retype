@@ -15,6 +15,8 @@ This is a Panel. Expanded by default.
 This is a Panel. Expanded by default.
 ===
 
+The `title` must be separated from the opening `===` by one space. The pattern `=== My Panel` will work as expected, and `===My Panel` will not.
+
 ---
 
 ## Collapsed

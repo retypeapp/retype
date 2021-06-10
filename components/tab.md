@@ -15,6 +15,8 @@ This is a Tab
 This is a Tab
 +++
 
+The tab `title` must be separated from the opening `+++` by one space. The pattern `+++ Tab ` will work as expected, and `+++Tab 1` will not.
+
 ---
 
 ## Multiple tabs

@@ -69,6 +69,12 @@ const msg = "Set a code block title";
 ~~~
 +++
 
+The `title` must be separated from the opening fence by one space.
+
+The pattern `` ``` Code block title`` will work as expected and `` ```Code block title`` will not.
+
+If a code language is used, separate the `title` from the `lang` by one space. The pattern `` ```js Code block title`` will work as expected.
+
 ---
 
 ## Line numbers
