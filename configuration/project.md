@@ -300,7 +300,7 @@ A custom label for the link. Default is `"Edit this page"`.
 
 ## exclude
 
-=== exclude : `array`
+=== exclude : `list`
 Retype can exclude files or folders from being built by configuring an `exclude` string array within your projects `retype.json` file.
 
 Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?` and `*` are allowed.
