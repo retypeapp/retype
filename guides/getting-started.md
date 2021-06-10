@@ -21,19 +21,19 @@ Please see the [Retype CLI](../cli.md) for full details on each command.
 
 Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
-You only need one of those three as a prerequisite, although all three could be installed on your computer too. It's up to you. :raised_hands:
+You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you. :raised_hands:
 
 | Package Manager | Supported Platforms |
 | --- | --- |
-| [`npm`](https://www.npmjs.com/get-npm) | `Mac`, `Win`, `Linux` |
-| [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) | `Mac`, `Win`, `Linux` |
-| [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) | `Mac`, `Win`, `Linux` |
+| [`npm`](https://www.npmjs.com/get-npm) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
+| [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
+| [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
 
 ---
 
 ## Install
 
-It takes just a few seconds to install Retype using any of the following commands. Choose a command based on a Package Manager you have installed on your computer.
+It takes just a few seconds to install Retype using any of the following commands. Choose a command based on a package manager you have installed on your computer.
 
 +++  npm
 ```
@@ -64,7 +64,7 @@ If you already have the `dotnet` CLI installed on your machine, installing using
 
 ## Update
 
-Update to the latest release of Retype using on of the following commands for the Package Manager that you initially installed Retype with. For instance, if you used `npm` to install Retype, run the `npm` update command to update Retype locally.
+Update to the latest release of Retype using on of the following commands for the package manager that you initially installed Retype with. For instance, if you used `npm` to install Retype, run the `npm` update command to update Retype locally.
 
 +++  npm
 ```
@@ -86,7 +86,7 @@ dotnet tool update retypeapp --global
 
 Done with Retype? It's okay, we understand. :cry:
 
-Uninstalling Retype is just as simple as installing. Use the same Package Manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
+Uninstalling Retype is just as simple as installing. Use the same package manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
 
 +++  npm
 ```
