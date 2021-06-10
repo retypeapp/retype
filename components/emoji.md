@@ -1,5 +1,5 @@
 ---
-tags: [component]
+tags: [component, icon]
 ---
 # Emoji :heart_eyes_cat:
 
