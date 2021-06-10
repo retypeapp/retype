@@ -522,8 +522,8 @@
 </doc-anchor-target>
 <doc-panel id="exclude-list">
 <template #title>exclude : <code v-pre>list</code></template>
-<p>Retype can exclude files or folders from being built by configuring an <code v-pre>exclude</code> string array within your projects <code v-pre>retype.json</code> file.</p>
-<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code> and <code v-pre>*</code> are allowed.</p>
+<p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> by configuring an <code v-pre>exclude</code> list within your projects <code v-pre>retype.json</code> file.</p>
+<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exclude patterns</div>
@@ -537,8 +537,10 @@
 </doc-codeblock></div>
 <p>You could exclude everything in your project with by adding <code v-pre>&quot;exclude&quot;: [ &quot;*&quot; ]</code>.</p>
 <doc-alert variant="primary">
-<p>Any file are folder prefixed with an underscore <code v-pre>_</code> are also excluded.</p>
+<p>By default, any file or folder name prefixed with a <code v-pre>.</code> or a <code v-pre>_</code> will be excluded.</p>
+<p>As well, any <code v-pre>node_modules</code> folder will be excluded.</p>
 </doc-alert>
+<p>To explicitly include any files or folders that might have been excluded, please see the <doc-anchor-trigger to="#include"><code v-pre>include</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="favicon">
@@ -604,6 +606,49 @@
   }
 }</code></pre>
 </doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="include">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#include">#</doc-anchor-trigger>
+        <span>include</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="include-list">
+<template #title>include : <code v-pre>list</code></template>
+<p>Retype can explicitly include files or folders that might have been excluded by default or excluded within the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
+<p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, and <code v-pre>!</code> are supported.</p>
+<p>The following sample demonstrates how to include all <code v-pre>.py</code> files and the entire contents of any <code v-pre>www</code> folder within the project.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Include patterns</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;include&quot;: [
+    &quot;*.py&quot;,
+    &quot;**/www/**&quot;
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<p>You could explicitly include everything in your project with <code v-pre>&quot;include&quot;: [ &quot;*&quot; ]</code>, BUT be careful as all files within your <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
+<p>Retype treats all <code v-pre>.md</code> and <code v-pre>.yml</code> files as parsable content files that will be converted into <code v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code v-pre>output</code> unchanged and become static files that can be linked to.</p>
+<p>By default, if Retype finds any of the following file types, they will be automatically included and copied over to the <code v-pre>output</code> unchanged. If you need any other file types, they would need to be explicitly added to the <code v-pre>include</code> config.</p>
+<p>Included file types:</p>
+<ul>
+<li><code v-pre>.gif</code></li>
+<li><code v-pre>.heif</code></li>
+<li><code v-pre>.jpeg</code></li>
+<li><code v-pre>.jpg</code></li>
+<li><code v-pre>.png</code></li>
+<li><code v-pre>.svg</code></li>
+<li><code v-pre>.webp</code></li>
+<li><code v-pre>.ai</code></li>
+<li><code v-pre>.bmp</code></li>
+<li><code v-pre>.eps</code></li>
+<li><code v-pre>.pdf</code></li>
+<li><code v-pre>.tiff</code></li>
+<li><code v-pre>.txt</code></li>
+<li><code v-pre>.zip</code></li>
+</ul>
+<p>If you would rather not include certain file types or specific files, please add the pattern to the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="input">
@@ -945,7 +990,7 @@
 </doc-anchor-target>
 <doc-panel id="linenumbers-string">
 <template #title>lineNumbers : <code v-pre>string[]</code></template>
-<p>An array of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
+<p>A llist of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for <code v-pre>js</code> and <code v-pre>json</code> code blocks site wide</div>
 <pre class="language-json"><code v-pre class="language-json">{
