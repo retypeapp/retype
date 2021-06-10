@@ -5,11 +5,11 @@ tags: [component]
 
 Similar to a [Button](button.md), the Badge component uses the same syntax as a hyperlink, but is prefixed with a `!badge` identifier.
 
-+++  Demo
++++ Demo
 [!badge Badge](badge.md)
 
 [Normal link](badge.md)
-+++  Source
++++ Source
 ```md
 [!badge Badge](badge.md)
 
@@ -19,9 +19,9 @@ Similar to a [Button](button.md), the Badge component uses the same syntax as a 
 
 With the Badge component, the destination is optional and can be ommitted.
 
-+++  Demo
++++ Demo
 [!badge Badge]
-+++  Source
++++ Source
 ```md
 [!badge Badge]
 ```

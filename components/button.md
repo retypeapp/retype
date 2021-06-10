@@ -5,11 +5,11 @@ tags: [component]
 
 Similar to a [Badge](badge.md), the Button component uses the same syntax as a hyperlink, but is prefixed with a `!button` identifier.
 
-+++  Demo
++++ Demo
 [!button Button](button.md)
 
 [Normal link](button.md)
-+++  Source
++++ Source
 ```md
 [!button Button](button.md)
 

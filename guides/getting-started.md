@@ -35,17 +35,17 @@ You only need one of those three package managers as a prerequisite, although al
 
 It takes just a few seconds to install Retype using any of the following commands. Choose a command based on a package manager you have installed on your computer.
 
-+++  npm
++++ npm
 ```
 npm install retypeapp --global
 retype watch
 ```
-+++  yarn
++++ yarn
 ```
 yarn global add retypeapp
 retype watch
 ```
-+++  dotnet
++++ dotnet
 ```
 dotnet tool install retypeapp --global
 retype watch
@@ -66,15 +66,15 @@ If you already have the `dotnet` CLI installed on your machine, installing using
 
 Update to the latest release of Retype using on of the following commands for the package manager that you initially installed Retype with. For instance, if you used `npm` to install Retype, run the `npm` update command to update Retype locally.
 
-+++  npm
++++ npm
 ```
 npm update retypeapp --global
 ```
-+++  yarn
++++ yarn
 ```
 yarn global upgrade retypeapp
 ```
-+++  dotnet
++++ dotnet
 ```
 dotnet tool update retypeapp --global
 ```
@@ -88,15 +88,15 @@ Done with Retype? It's okay, we understand. :cry:
 
 Uninstalling Retype is just as simple as installing. Use the same package manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
 
-+++  npm
++++ npm
 ```
 npm uninstall retypeapp --global
 ```
-+++  yarn
++++ yarn
 ```
 yarn global remove retypeapp
 ```
-+++  dotnet
++++ dotnet
 ```
 dotnet tool uninstall retypeapp --global
 ```
