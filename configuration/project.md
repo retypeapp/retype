@@ -301,9 +301,9 @@ A custom label for the link. Default is `"Edit this page"`.
 ## exclude
 
 === exclude : `list`
-Retype can exclude files or folders from being built by configuring an `exclude` string array within your projects `retype.json` file.
+Retype can exclude files or folders from being built or copied to the [`output`](#output) by configuring an `exclude` list within your projects `retype.json` file.
 
-Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?` and `*` are allowed.
+Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, and `!` are supported.
 
 The following sample demonstrates how to exclude an entire `draft/` folder, any folder that ends with `*_temp/`, and one specific `/src/temp.md` file.
 
@@ -320,8 +320,12 @@ The following sample demonstrates how to exclude an entire `draft/` folder, any 
 You could exclude everything in your project with by adding `"exclude": [ "*" ]`.
 
 !!!
-Any file are folder prefixed with an underscore `_` are also excluded.
+By default, any file or folder name prefixed with a `.` or a `_` will be excluded.
+
+As well, any `node_modules` folder will be excluded.
 !!!
+
+To explicitly include any files or folders that might have been excluded, please see the [`include`](#include) config.
 ===
 
 ---
@@ -378,6 +382,53 @@ Same configuration options as page level [`links`](#links).
   }
 }
 ```
+===
+
+---
+
+## include
+
+=== include : `list`
+Retype can explicitly include files or folders that might have been excluded by default or excluded within the [`exclude`](#exclude) config.
+
+Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, and `!` are supported.
+
+The following sample demonstrates how to include all `.py` files and the entire contents of any `www` folder within the project.
+
+```json Include patterns
+{
+  "include": [
+    "*.py",
+    "**/www/**"
+  ]
+}
+```
+
+You could explicitly include everything in your project with `"include": [ "*" ]`, BUT be careful as all files within your [`input`](#input) will be publicly availble once your website is published. We would not recommend doing this, but it's your call. :fearful:
+
+Retype treats all `.md` and `.yml` files as parsable content files that will be converted into `.html` files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
+
+By default, if Retype finds any of the following file types, they will be automatically included and copied over to the `output` unchanged. If you need any other file types, they would need to be explicitly added to the `include` config.
+
+Included file types:
+
+- `.gif`
+- `.heif`
+- `.jpeg`
+- `.jpg`
+- `.png`
+- `.svg`
+- `.webp`
+- `.ai`
+- `.bmp`
+- `.eps`
+- `.pdf`
+- `.tiff`
+- `.txt`
+- `.zip`
+
+If you would rather not include certain file types or specific files, please add the pattern to the [`exclude`](#exclude) config.
+
 ===
 
 ---
@@ -682,7 +733,7 @@ The `snippets` configuration allows for the project with custom configuration of
 
 === lineNumbers : `string[]`
 
-An array of code block reference language strings to enable line numbering on. Default is `null`.
+A llist of code block reference language strings to enable line numbering on. Default is `null`.
 
 ~~~json Enable line numbering for `js` and `json` code blocks site wide
 {
