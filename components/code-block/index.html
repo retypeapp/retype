@@ -276,6 +276,9 @@ const msg = &quot;Set a code block title&quot;;
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+<p>The <code v-pre>title</code> must be separated from the opening fence by one space.</p>
+<p>The pattern <code v-pre> ``` Code block title</code> will work as expected and <code v-pre> ```Code block title</code> will not.</p>
+<p>If a code language is used, separate the <code v-pre>title</code> from the <code v-pre>lang</code> by one space. The pattern <code v-pre> ```js Code block title</code> will work as expected.</p>
 <hr />
 <doc-anchor-target id="line-numbers">
     <h2>
