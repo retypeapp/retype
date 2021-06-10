@@ -630,25 +630,33 @@
 </doc-codeblock></div>
 <p>You could explicitly include everything in your project with <code v-pre>&quot;include&quot;: [ &quot;*&quot; ]</code>, BUT be careful as all files within your <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
 <p>Retype treats all <code v-pre>.md</code> and <code v-pre>.yml</code> files as parsable content files that will be converted into <code v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code v-pre>output</code> unchanged and become static files that can be linked to.</p>
-<p>By default, if Retype finds any of the following file types, they will be automatically included and copied over to the <code v-pre>output</code> unchanged. If you need any other file types, they would need to be explicitly added to the <code v-pre>include</code> config.</p>
+<p>By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the <code v-pre>output</code> unchanged. If you require any other file types, they would need to be explicitly added to the <code v-pre>include</code> config.</p>
 <p>Included file types:</p>
 <ul>
-<li><code v-pre>.gif</code></li>
-<li><code v-pre>.heif</code></li>
-<li><code v-pre>.jpeg</code></li>
-<li><code v-pre>.jpg</code></li>
-<li><code v-pre>.png</code></li>
-<li><code v-pre>.svg</code></li>
-<li><code v-pre>.webp</code></li>
-<li><code v-pre>.ai</code></li>
-<li><code v-pre>.bmp</code></li>
-<li><code v-pre>.eps</code></li>
-<li><code v-pre>.pdf</code></li>
-<li><code v-pre>.tiff</code></li>
-<li><code v-pre>.txt</code></li>
-<li><code v-pre>.zip</code></li>
+<li><code v-pre>*.gif</code></li>
+<li><code v-pre>*.heif</code></li>
+<li><code v-pre>*.jpeg</code></li>
+<li><code v-pre>*.jpg</code></li>
+<li><code v-pre>*.png</code></li>
+<li><code v-pre>*.svg</code></li>
+<li><code v-pre>*.webp</code></li>
+<li><code v-pre>*.ai</code></li>
+<li><code v-pre>*.bmp</code></li>
+<li><code v-pre>*.eps</code></li>
+<li><code v-pre>*.pdf</code></li>
+<li><code v-pre>*.tiff</code></li>
+<li><code v-pre>*.txt</code></li>
+<li><code v-pre>*.zip</code></li>
 </ul>
-<p>If you would rather not include certain file types or specific files, please add the pattern to the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
+<p>By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the <code v-pre>output</code> unchanged. If you require any other folders, please add to the <code v-pre>include</code> config.</p>
+<p>Included folders:</p>
+<ul>
+<li><code v-pre>**/static/**</code></li>
+<li><code v-pre>**/public/**</code></li>
+<li><code v-pre>**/assets/**</code></li>
+<li><code v-pre>**/resources/**</code></li>
+</ul>
+<p>If you would rather not include certain folders, files, or file types, please add the pattern to the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="input">
