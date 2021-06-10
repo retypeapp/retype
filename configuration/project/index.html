@@ -624,6 +624,34 @@
 </doc-codeblock></div>
 </doc-panel>
 <hr />
+<doc-anchor-target id="integrations">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#integrations">#</doc-anchor-trigger>
+        <span>integrations</span>
+    </h2>
+</doc-anchor-target>
+<p>More <code v-pre>integrations</code> will be added over time. Do you have an integration suggestion? <a href="https://github.com/retypeapp/retype/discussions">let us know</a>.</p>
+<doc-anchor-target id="googleanalytics">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#googleanalytics">#</doc-anchor-trigger>
+        <span>googleAnalytics</span>
+    </h3>
+</doc-anchor-target>
+<p>Add Google Analytics to your website.</p>
+<doc-panel id="googleanalytics-id-string">
+<template #title>googleAnalytics.id : <code v-pre>string</code></template>
+<p>Google Analytics ID value.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;plugins&quot;: {
+    &quot;googleAnalytics&quot;: {
+      &quot;id&quot;: &quot;UA-12345678-1&quot;
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
 <doc-anchor-target id="links">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#links">#</doc-anchor-trigger>
@@ -787,33 +815,6 @@
 <div class="codeblock-title">Sample: Change output location to /docs folder</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;output&quot;: &quot;./docs&quot;
-}</code></pre>
-</doc-codeblock></div>
-</doc-panel>
-<hr />
-<doc-anchor-target id="plugins">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plugins">#</doc-anchor-trigger>
-        <span>plugins</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="googleanalytics">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#googleanalytics">#</doc-anchor-trigger>
-        <span>googleAnalytics</span>
-    </h3>
-</doc-anchor-target>
-<p>Add Google Analytics to your website.</p>
-<doc-panel id="googleanalytics-id-string">
-<template #title>googleAnalytics.id : <code v-pre>string</code></template>
-<p>Google Analytics ID value.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;plugins&quot;: {
-    &quot;googleAnalytics&quot;: {
-      &quot;id&quot;: &quot;UA-12345678-1&quot;
-    }
-  }
 }</code></pre>
 </doc-codeblock></div>
 </doc-panel>
