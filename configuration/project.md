@@ -408,26 +408,35 @@ You could explicitly include everything in your project with `"include": [ "*" ]
 
 Retype treats all `.md` and `.yml` files as parsable content files that will be converted into `.html` files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
 
-By default, if Retype finds any of the following file types, they will be automatically included and copied over to the `output` unchanged. If you need any other file types, they would need to be explicitly added to the `include` config.
+By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the `output` unchanged. If you require any other file types, they would need to be explicitly added to the `include` config.
 
 Included file types:
 
-- `.gif`
-- `.heif`
-- `.jpeg`
-- `.jpg`
-- `.png`
-- `.svg`
-- `.webp`
-- `.ai`
-- `.bmp`
-- `.eps`
-- `.pdf`
-- `.tiff`
-- `.txt`
-- `.zip`
+- `*.gif`
+- `*.heif`
+- `*.jpeg`
+- `*.jpg`
+- `*.png`
+- `*.svg`
+- `*.webp`
+- `*.ai`
+- `*.bmp`
+- `*.eps`
+- `*.pdf`
+- `*.tiff`
+- `*.txt`
+- `*.zip`
 
-If you would rather not include certain file types or specific files, please add the pattern to the [`exclude`](#exclude) config.
+By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the `output` unchanged. If you require any other folders, please add to the `include` config.
+
+Included folders:
+
+- `**/static/**`
+- `**/public/**`
+- `**/assets/**`
+- `**/resources/**`
+
+If you would rather not include certain folders, files, or file types, please add the pattern to the [`exclude`](#exclude) config.
 
 ===
 
