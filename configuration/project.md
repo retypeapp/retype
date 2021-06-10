@@ -399,6 +399,30 @@ The path is relative to the `retype.json` location.
 
 ---
 
+## integrations
+
+More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/discussions).
+
+### googleAnalytics
+
+Add Google Analytics to your website.
+
+=== googleAnalytics.id : `string`
+Google Analytics ID value.
+
+```json
+{
+  "plugins": {
+    "googleAnalytics": {
+      "id": "UA-12345678-1"
+    }
+  }
+}
+```
+===
+
+---
+
 ## links
 
 Custom links added to the top-bar navigation of all pages.
@@ -549,28 +573,6 @@ The path is relative to the `retype.json` location.
 ```json Sample: Change output location to /docs folder
 {
   "output": "./docs"
-}
-```
-===
-
----
-
-## plugins
-
-### googleAnalytics
-
-Add Google Analytics to your website.
-
-=== googleAnalytics.id : `string`
-Google Analytics ID value.
-
-```json
-{
-  "plugins": {
-    "googleAnalytics": {
-      "id": "UA-12345678-1"
-    }
-  }
 }
 ```
 ===
