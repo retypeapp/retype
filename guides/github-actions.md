@@ -81,7 +81,7 @@ Your GitHub Pages config should now look similar to the following:
 
 ![](../static/github-actions-enable-pages.png)
 
-!!! Enforec HTTPS
+!!! Enforce HTTPS
 We recommend that you check the **Enforce HTTPS** checkbox.
 !!!
 
@@ -149,7 +149,7 @@ For a custom domain or subdomain where the `cname` config is set, you can remove
 
 ## Summary
 
-- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retype-yml-workflow).
+- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow).
 - [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages).
 - [x] Set the branch to `retype`, see [branch config](#pick-a-branch).
 - [x] If hosting on `github.io`, you will need to set the [`base`](../configuration/project.md#base) config with your repo name, see [base config](#add-base-if-github-io), or
