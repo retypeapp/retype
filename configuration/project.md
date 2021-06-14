@@ -33,7 +33,7 @@ Running the command `retype init` will create a default `retype.json` file. The 
   "links": [
     {
       "text": "Getting Started",
-      "link": "https://retype.com/getting_started/"
+      "link": "https://retype.com/getting-started/"
     }
   ],
 
@@ -494,7 +494,7 @@ The following sample demonstrates a basic `links` scenario which would add one l
   "links": [
     {
       "text": "Getting Started",
-      "link": "https://retype.com/getting_started/"
+      "link": "https://retype.com/getting-started/"
     }
   ]
 }

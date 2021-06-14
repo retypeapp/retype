@@ -75,7 +75,7 @@ Calling the `retype init` command will create a simple `retype.json` file with t
   "links": [
     {
       "text": "Getting Started",
-      "link": "https://retype.com/getting_started/"
+      "link": "https://retype.com/getting-started/"
     }
   ],
 
