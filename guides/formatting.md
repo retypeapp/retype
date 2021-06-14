@@ -64,6 +64,10 @@ At a very basic level, to create a new page for your Retype project, do the foll
 2. Add a `# title`
 3. Start writing
 
+### Editing the landing page
+You may see that the landing page for your Retype project is blank. You can change this by simply renaming the Markdown file from whatever it is to `readme.md`. Retype will automatically reconfigure the website to make the landing page match the content on `readme.md`.
+
+
 ---
 
 ## Components
