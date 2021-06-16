@@ -247,11 +247,11 @@
     </h2>
 </doc-anchor-target>
 <!-- FIXME FIXME FIXME FIXME
-Assign the correct buildpack name/address (https://github.com/retypeapp/heroku-buildpack or just retypeapp/heroku-buildpack, or whatever is published to Heroku Elements)
+Assign the elements' address (something like retypeapp/heroku-buildpack, whatever is published to Heroku Elements)
 FIXME FIXME FIXME FIXME -->
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set Retype Buildpack using the Heroku CLI</div>
-<pre class="language-bash"><code v-pre class="language-bash">heroku buildpacks:set https://github.com/fabriciomurta/retype-buildpack</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">heroku buildpacks:set https://github.com/retypeapp/heroku-buildpack</code></pre>
 </doc-codeblock></div>
 <p>This will do the actual magic: With this, once the documentation project is pushed to Heroku, our dedicated buildpack will kick in and handle the documentation build!</p>
 <hr />
@@ -266,9 +266,6 @@ FIXME FIXME FIXME FIXME -->
 <div class="codeblock-title">Push the repository</div>
 <pre class="language-bash"><code v-pre class="language-bash">git push heroku main</code></pre>
 </doc-codeblock></div>
-<!-- FIXME FIXME FIXME
-This is currently not true but the goal is to make the cached download effective before release
-FIXME FIXME FIXME -->
 <p>The <code v-pre>git push</code> process should take a few seconds to complete. Once it is done, the last lines of output should show the full URL to your app. With the app name used in this guide, it would be <strong><a href="https://my-app-name.herokuapp.com/">https://my-app-name.herokuapp.com/</a></strong>.</p>
 <doc-alert variant="primary">
 <template #title>The project is built remotely</template>
@@ -318,15 +315,12 @@ FIXME FIXME FIXME -->
         <span>Further Reading</span>
     </h2>
 </doc-anchor-target>
-<!-- FIXME FIXME FIXME
-Update the path to Retype buildpack's README file
-FIXME FIXME FIXME -->
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Install Retype to build locally, see <a href="getting-started">Getting Started</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Details on <code v-pre>retype watch</code>, see <a href="../../#quick-start">Quick Start</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Accepted configuration settings in <strong>retype.json</strong>, see <a href="../../configuration/project">Configuration &gt; Project</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Troubleshoot Heroku push/build issues, see <a href="https://github.com/fabriciomurta/retype-buildpack/blob/master/README.md#troubleshooting">Retype Buildpack&#x27;s README Troubleshooting section</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More information on Retype Buildpack, see <a href="https://github.com/fabriciomurta/retype-buildpack/blob/master/README.md#troubleshooting">README in Retype Buildpack&#x27;s repo</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Troubleshoot Heroku push/build issues, see <a href="https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting">Retype Buildpack&#x27;s README Troubleshooting section</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More information on Retype Buildpack, see <a href="https://github.com/retypeapp/heroku-buildpack/blob/main/README.md">README in Retype Buildpack&#x27;s repo</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Create account in Heroku, see <a href="https://heroku.com">Heroku website</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Download the Heroku CLI, see <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Heroku CLI documentation, see <a href="https://devcenter.heroku.com/categories/command-line">Command Line Article in Heroku dev center</a></li>
