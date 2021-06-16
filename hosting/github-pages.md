@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # GitHub Pages
 
 Hosting your Retype built website on GitHub Pages is free and easy to setup.
