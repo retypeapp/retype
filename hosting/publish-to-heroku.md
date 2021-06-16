@@ -55,11 +55,10 @@ If you are not logged already, you can log in to Heroku with the CLI by issuing 
 ## Step 3: Enable Retype Buildpack
 
 <!-- FIXME FIXME FIXME FIXME
-Assign the correct buildpack name/address (https://github.com/retypeapp/heroku-buildpack or just retypeapp/heroku-buildpack, or whatever is published to Heroku Elements)
+Assign the elements' address (something like retypeapp/heroku-buildpack, whatever is published to Heroku Elements)
 FIXME FIXME FIXME FIXME -->
-
 ```bash Set Retype Buildpack using the Heroku CLI
-heroku buildpacks:set https://github.com/fabriciomurta/retype-buildpack
+heroku buildpacks:set https://github.com/retypeapp/heroku-buildpack
 ```
 
 This will do the actual magic: With this, once the documentation project is pushed to Heroku, our dedicated buildpack will kick in and handle the documentation build!
@@ -74,9 +73,6 @@ Now, simply push the repository to heroku using the **git** command:
 git push heroku main
 ```
 
-<!-- FIXME FIXME FIXME
-This is currently not true but the goal is to make the cached download effective before release
-FIXME FIXME FIXME -->
 The `git push` process should take a few seconds to complete. Once it is done, the last lines of output should show the full URL to your app. With the app name used in this guide, it would be **https://my-app-name.herokuapp.com/**.
 
 !!! The project is built remotely
@@ -119,14 +115,11 @@ If there are various **retype.json** files across the repository, we can't guara
 
 ## Further Reading
 
-<!-- FIXME FIXME FIXME
-Update the path to Retype buildpack's README file
-FIXME FIXME FIXME -->
 - [x] Install Retype to build locally, see [Getting Started](getting-started).
 - [x] Details on `retype watch`, see [Quick Start](../README.md#quick-start).
 - [x] Accepted configuration settings in **retype.json**, see [Configuration > Project](../configuration/project.md).
-- [x] Troubleshoot Heroku push/build issues, see [Retype Buildpack's README Troubleshooting section](https://github.com/fabriciomurta/retype-buildpack/blob/master/README.md#troubleshooting).
-- [x] More information on Retype Buildpack, see [README in Retype Buildpack's repo](https://github.com/fabriciomurta/retype-buildpack/blob/master/README.md#troubleshooting).
+- [x] Troubleshoot Heroku push/build issues, see [Retype Buildpack's README Troubleshooting section](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting).
+- [x] More information on Retype Buildpack, see [README in Retype Buildpack's repo](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md).
 - [x] Create account in Heroku, see [Heroku website](https://heroku.com).
 - [x] Download the Heroku CLI, see [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 - [x] Heroku CLI documentation, see [Command Line Article in Heroku dev center](https://devcenter.heroku.com/categories/command-line)
