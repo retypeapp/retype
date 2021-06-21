@@ -1,5 +1,4 @@
 ---
-icon: git-compare
 tags: [guide]
 ---
 # GitHub Actions
