@@ -60,13 +60,32 @@ Need to draw attention to something? Use an alert.
 
 At a very basic level, to create a new page for your Retype project, do the following:
 
-1. Make a new `sample.md` file
+1. Make a `readme.md` file
 2. Add a `# title`
 3. Start writing
 
-### Editing the landing page
-You may see that the landing page for your Retype project is blank. You can change this by simply renaming the Markdown file from whatever it is to `readme.md`. Retype will automatically reconfigure the website to make the landing page match the content on `readme.md`.
+### Home page
 
+Ideally, your project will include a default file (`readme.md`, `index.md`, or `default.md`) within the root of the project. If a default file is present within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.
+
+Those default files can also be placed inside of any folder within the project. Given the following folder and file structure, where `Guides` is a folder...
+
+```
+|-- Guides
+    |-- readme.md
+    |-- getting-started.md
+|-- readme.md
+```
+
+...Retype will create three pages in your website and the pages will be available at the following locations:
+
+1. `/`
+2. `/guides/`
+3. `/guides/getting-started/`
+
+!!!
+If your home page is empty or blank, double check that you have a default page in the root of your project folder. The default file can be named `readme.md`, `index.md`, or `default.md`.
+!!!
 
 ---
 
