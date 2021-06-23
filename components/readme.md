@@ -10,6 +10,7 @@ Retype flavored Markdown supports custom components, including:
 - [Button](button.md)
 - [Code block](code-block.md)
 - [Code snippet](code-snippet.md)
+- [Column](column.md)
 - [Emoji](emoji.md)
 - [File download](file-download.md)
 - [Icon](icon.md)
