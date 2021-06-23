@@ -33,7 +33,7 @@ Running the command `retype init` will create a default `retype.json` file. The 
   "links": [
     {
       "text": "Getting Started",
-      "link": "https://retype.com/getting-started/"
+      "link": "https://retype.com/getting_started/"
     }
   ],
 
@@ -368,7 +368,7 @@ Site-wide copyright statement that will be added to the footer of each page. Sup
 ### links (footer)
 
 === links : `object`
-Same configuration options as page level [`links`](#links).
+The `footer.links` have the same configuration options as [`links`](#links).
 
 ```json
 {
@@ -487,14 +487,14 @@ Google Analytics ID value.
 
 Custom links added to the top-bar navigation of all pages.
 
-The following sample demonstrates a basic `links` scenario which would add one link to the top of all pages.
+The following sample demonstrates a basic `links` scenario which would add one link to the top bar of all pages.
 
 ```json
 {
   "links": [
     {
       "text": "Getting Started",
-      "link": "https://retype.com/getting-started/"
+      "link": "https://retype.com/getting_started/"
     }
   ]
 }
@@ -522,7 +522,9 @@ The link text label.
 
 === link : `string`
 
-The URL to use for the link. The link can be internal or external.
+The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
+
+If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
 
 ```json
 {
@@ -591,6 +593,43 @@ The position for the icon relative to the link `text`. Either `left` or `right`.
   ]
 }
 ```
+===
+
+
+### target
+
+=== target : `string`
+
+Sets the `target` attribute of the hyperlink and specifies which window or tab to open the link into.
+
+```json
+{
+  "links": [
+    {
+      "text": "Demos",
+      "link": "https://demo.example.com/",
+      "target": "blank"
+    }
+  ]
+}
+```
+
+If no `target` is configured, the link will open in the current tab.
+
+The `target` can be set to any value, although `blank` is common and will open the link in a new tab. Retype will automatically transform the value `blank` into `_blank` which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.
+
+There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
+
+Config `target` value | Runtime `target` value
+--- | ---
+`blank` | `_blank`
+`parent` | `_parent`
+`top` | `_top`
+`self` | `_self`
+`news1` | `news1`
+`nEWs2` | `news2`
+`recent NEWS` | `recent-news`
+
 ===
 
 ---
