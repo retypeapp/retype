@@ -21,37 +21,41 @@ Expected: Mid Q3 2021
 
 - [ ] New `partials` support
 - [ ] New `variables` support
+- [ ] New page dependecy graph to improve incremental build performance
 - [ ] Another beta release of building C# project reference documentation
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.8.0`
+## `v1.8.0` [!badge text="NEXT" variant="info"]
 
 Expected: Early Q3 2021
 
 - [ ] New `/blog` summary page
 - [ ] Open Graph and Twitter card support
-- [ ] New page dependecy graph to improve incremental build performance
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
-
-## `v1.7.0` [!badge text="NEXT" variant="info"]
-
-Expected: Late Q2 2021
-
-- [ ] New Column component
 - [ ] New Grid component
 - [ ] New FlexGrid component
 - [ ] New Stacked Panel component
-- [ ] New `target` config for all `links` within `retype.json`
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.6.0` [!badge text="LATEST" variant="info"]
+## `v1.7.0` [!badge text="LATEST" variant="info"]
+
+Released: 2021-06-23
+
+- [x] Super improved handling of áccënt characters
+- [x] Mermaid diagram and visualization support
+- [x] New [Column](components/column.md) component
+- [x] New [`target`](configuration/project.md#target) config for all `links` within `retype.json`
+- [x] Added default page support for [`default.md`](guides/formatting/#home-page)
+- [x] New hover style on [Badge](components/badge/) component when links
+- [x] About a dozen other minor enhancements, optimizations, and adjustments
+
+## `v1.6.0`
 
 Released: 2021-06-09
 
-- [x] New `tags` config for pages
+- [x] New [`tags`](configuration/page/#tags) config for pages
 - [x] New [`:icon-shortcode:`](components/icon.md) component
-- [x] New `include` project config
-- [x] New `exclude` project config
+- [x] New [`include`](configuration/project/#include) project config
+- [x] New [`exclude`](configuration/project/#exclude) project config
 - [x] Improved `<table>` styling
 - [x] Performance boost for [components](components/readme.md)
 - [x] Dozens of enhancements, optimizations, and adjustments
@@ -61,11 +65,11 @@ Released: 2021-06-09
 Released: 2021-05-12
 
 - [x] New [Badge](components/badge.md) component
-- [x] New syntax highlighting support for all code block languages
+- [x] New [syntax highlighting](components/code-block/#syntax-highlighting) support for all code block languages
 - [x] New [`route`](configuration/page.md#route) page config
 - [x] New [`port`](configuration/project.md#port) project config
 - [x] Larger font-size for `h1`, `h2`, and `h3` headers
-- [x] Improved handing of special chars within file names
+- [x] Improved handing of special characters within file names
 - [x] Improved handling of `.md` pages created by GitHub Wiki
 
 ## `v1.4.0`
