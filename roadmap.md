@@ -31,14 +31,15 @@ Expected: Early Q3 2021
 
 - [ ] New `/blog` summary page
 - [ ] New FlexGrid component
-- [ ] New Stacked Panel component
+- [ ] Improved handling of Docusaurus, MkDocs, and GitBook config files
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.7.0` [!badge text="LATEST" variant="info"]
 
-Released: 2021-06-23
+Released: 2021-06-24
 
 - [x] New [Column](components/column.md) component
+- [x] New stacking [Panels](components/panel.md#stacking) component
 - [x] New Open Graph and Twitter card support
 - [x] New [Mermaid](components/mermaid.md) diagram and visualization support
 - [x] New [`target`](configuration/project.md#target) config for all `links` within `retype.json`
@@ -76,7 +77,7 @@ Released: 2021-05-12
 Released: 2021-04-12
 
 - [x] Even cleaner upgrade to Retype from GitBook experience
-- [x] New super fast [`retype watch`](cli.md#retype-watch) incremental build process
+- [x] New super fast [`retype watch`](guides/cli.md#retype-watch) incremental build process
 - [x] New [image alignment](components/image.md#alignment-options) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
@@ -113,8 +114,8 @@ Released: 2021-03-12
 - [x] New [Tab](components/tab.md) component
 - [x] New [Button](components/button.md) component
 - [x] New [Panel](components/panel.md) component with expand/collapse
-- [x] New [`retype watch`](cli.md#retype-watch) command
-- [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
+- [x] New [`retype watch`](guides/#retype-watch) command
+- [x] New Live Reload when using [`retype watch`](guides/cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
 - [x] New code block [title](components/code-block.md#title)
 - [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks
