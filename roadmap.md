@@ -30,8 +30,6 @@ Expected: Mid Q3 2021
 Expected: Early Q3 2021
 
 - [ ] New `/blog` summary page
-- [ ] Open Graph and Twitter card support
-- [ ] New Grid component
 - [ ] New FlexGrid component
 - [ ] New Stacked Panel component
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
@@ -40,13 +38,14 @@ Expected: Early Q3 2021
 
 Released: 2021-06-23
 
-- [x] Super improved handling of áccënt characters
-- [x] Mermaid diagram and visualization support
 - [x] New [Column](components/column.md) component
+- [x] New Open Graph and Twitter card support
+- [x] New [Mermaid](components/mermaid.md) diagram and visualization support
 - [x] New [`target`](configuration/project.md#target) config for all `links` within `retype.json`
-- [x] Added default page support for [`default.md`](guides/formatting/#home-page)
-- [x] New hover style on [Badge](components/badge/) component when links
-- [x] About a dozen other minor enhancements, optimizations, and adjustments
+- [x] New default page support for [`default.md`](guides/formatting/#home-page)
+- [x] New hover style on [Badge](components/badge.md) component when links
+- [x] Super improved handling of áccënt characters
+- [x] A dozen other minor enhancements, optimizations, and adjustments
 
 ## `v1.6.0`
 
