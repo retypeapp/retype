@@ -61,7 +61,7 @@ By default, images are not links, but it's easy to make your image into a link b
 
 ## Alignment options
 
-If an image is configured on a separate line, Retype includes extra functionality for the custom alignment of images on the page. For instance, you can specify the left or right alignment of an image and have the text flow around the image.
+If an image is configured on a separate line, Retype includes extra functionality for the custom alignment of images on the page. For instance, you can specify the left or right alignment of an image and have the text flow around the image. Check out the [Image alignment :icon-image:](image-alignment-demo.md) demo.
 
 !!!
 If an image is defined inline with other text on the same line, the image will be treated as an inline image and Retype alignment options will be ignored.
@@ -85,3 +85,5 @@ Here's a sample page demonstrating all the image alignment scenarios, including 
 The `plus` alignment options only apply when the page is `layout: central` or `layout: blog`.
 
 For default page layouts with a left navigation and/or the right table of contents, the `plus` positions will fallback to their non-plus equivalents. For instance, `rightplus` will fallback to `right` and the `centerplus` will fallback to `center`.
+
+Photo by [carlos aranda](https://unsplash.com/@carlosaranda) on [Unsplash](https://unsplash.com/).
