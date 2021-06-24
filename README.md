@@ -22,7 +22,7 @@ You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
 From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
 
-Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` [command](cli.md#retype-watch):
+Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` [command](guides/cli.md#retype-watch):
 
 +++ NPM
 ```

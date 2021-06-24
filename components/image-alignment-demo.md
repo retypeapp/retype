@@ -3,7 +3,7 @@ layout: central
 ---
 # Image alignment demo
 
-Please see [image alignment docs](image.md#image-alignment) for more details.
+Please see [image alignment](image.md#image-alignment) docs for more details.
 
 ### Center (default)
 
@@ -41,6 +41,8 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 ### Centerplus
 
---![`centerplus` align](../static/sample.jpg)--
+--![`centerplus` align](../static/sample-large.jpg)--
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+
+Photo by [carlos aranda](https://unsplash.com/@carlosaranda) on [Unsplash](https://unsplash.com/).

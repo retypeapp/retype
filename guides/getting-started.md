@@ -11,7 +11,7 @@ Check out the [Quick start](../README.md#quick-start) for the condensed process 
 
 !!!
 
-Please see the [Retype CLI](../cli.md) for full details on each command.
+Please see the [Retype CLI](cli.md) for full details on each command.
 
 !!!
 

@@ -6,7 +6,7 @@
     "branding": {
         "logo": "/static/retype-logo.svg",
         "logoDark": "/static/retype-logo-dark.svg",
-        "label": "v1.6"
+        "label": "v1.7"
      },
 
     "meta": {
@@ -24,15 +24,18 @@
         },
         {
             "text": "GitHub",
-            "link": "https://github.com/retypeapp/retype"
+            "link": "https://github.com/retypeapp/retype",
+            "target": "blank"
         },
         {
             "text": "Discussions",
-            "link": "https://github.com/retypeapp/retype/discussions"
+            "link": "https://github.com/retypeapp/retype/discussions",
+            "target": "blank"
         },
         {
             "text": "Issues",
-            "link": "https://github.com/retypeapp/retype/issues"
+            "link": "https://github.com/retypeapp/retype/issues",
+            "target": "blank"
         }
     ],
 
@@ -41,7 +44,7 @@
         "links": [
             {
                 "text": "About",
-                "link": "/about"
+                "link": "about.md"
             }
         ]
     },

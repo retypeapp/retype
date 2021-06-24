@@ -8,11 +8,13 @@ The Retype CLI is clean and simple. The majority of the time you will run just o
 
 !!!
 
-Be sure to review the [configuration options](configuration/project.md) available within the `retype.json`  as it does unlock a lot more power, flexibility, and customization.
+Be sure to review the [project](../configuration/project.md) options available within the `retype.json`  as it does unlock a lot more power, flexibility, and customization.
 
 !!!
 
-Let's go through each of the `retype` CLI commands, or be sure to check out the [Getting Started](guides/getting-started.md) guide for step by instructions on using each of these commands.
+The `--help` option can be passed with any command to get additional details, for instance `retype watch --help` will return all options for the `retype watch` command.
+
+Let's go through each of the `retype` CLI commands, or be sure to check out the [Getting Started](getting-started.md) guide for step by instructions on using each of these commands.
 
 ---
 
@@ -85,7 +87,7 @@ Calling the `retype init` command will create a simple `retype.json` file with t
 }
 ```
 
-All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the [Project configuration](configuration/project.md) docs for a full list of all options.
+All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the [project](../configuration/project.md) configuration docs for a full list of all options.
 
 To change the title of the project, revise the `branding.title` config. For instance, let's change to `"Company X"`:
 
@@ -99,7 +101,7 @@ To change the title of the project, revise the `branding.title` config. For inst
 
 If there is already a `retype.json` file within the project, runnin the `retype init` command will not create a new `retype.json` file.
 
-The `retype.json` file isn't _actually_ required, but you will want to make custom [configurations](configuration/project.md) to your project and this is how those instructions are passed to Retype.
+The `retype.json` file is not _actually_ required, but you will want to make custom [configurations](../configuration/project.md) to your project and this is how those instructions are passed to Retype.
 
 ### Options
 
@@ -123,7 +125,7 @@ Options:
 
 ## `retype build`
 
-To generate your new website, run the command `retype build`. This command builds a new website based upon the `.md` files within the [`input`](configuration/project.md) location.
+To generate your new website, run the command `retype build`. This command builds a new website based upon the `.md` files within the [`input`](../configuration/project.md) location.
 
 ```
 retype build

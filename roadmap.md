@@ -21,37 +21,41 @@ Expected: Mid Q3 2021
 
 - [ ] New `partials` support
 - [ ] New `variables` support
+- [ ] New page dependecy graph to improve incremental build performance
 - [ ] Another beta release of building C# project reference documentation
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.8.0`
+## `v1.8.0` [!badge text="NEXT" variant="info"]
 
 Expected: Early Q3 2021
 
 - [ ] New `/blog` summary page
-- [ ] Open Graph and Twitter card support
-- [ ] New page dependecy graph to improve incremental build performance
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
-
-## `v1.7.0` [!badge text="NEXT" variant="info"]
-
-Expected: Late Q2 2021
-
-- [ ] New Column component
-- [ ] New Grid component
 - [ ] New FlexGrid component
-- [ ] New Stacked Panel component
-- [ ] New `target` config for all `links` within `retype.json`
+- [ ] Improved handling of Docusaurus, MkDocs, and GitBook config files
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.6.0` [!badge text="LATEST" variant="info"]
+## `v1.7.0` [!badge text="LATEST" variant="info"]
+
+Released: 2021-06-24
+
+- [x] New [Column](components/column.md) component
+- [x] New stacking [Panels](components/panel.md#stacking) component
+- [x] New Open Graph and Twitter card support
+- [x] New [Mermaid](components/mermaid.md) diagram and visualization support
+- [x] New [`target`](configuration/project.md#target) config for all `links` within `retype.json`
+- [x] New default page support for [`default.md`](guides/formatting/#home-page)
+- [x] New hover style on [Badge](components/badge.md) component when links
+- [x] Super improved handling of áccënt characters
+- [x] A dozen other minor enhancements, optimizations, and adjustments
+
+## `v1.6.0`
 
 Released: 2021-06-09
 
-- [x] New `tags` config for pages
+- [x] New [`tags`](configuration/page/#tags) config for pages
 - [x] New [`:icon-shortcode:`](components/icon.md) component
-- [x] New `include` project config
-- [x] New `exclude` project config
+- [x] New [`include`](configuration/project/#include) project config
+- [x] New [`exclude`](configuration/project/#exclude) project config
 - [x] Improved `<table>` styling
 - [x] Performance boost for [components](components/readme.md)
 - [x] Dozens of enhancements, optimizations, and adjustments
@@ -61,11 +65,11 @@ Released: 2021-06-09
 Released: 2021-05-12
 
 - [x] New [Badge](components/badge.md) component
-- [x] New syntax highlighting support for all code block languages
+- [x] New [syntax highlighting](components/code-block/#syntax-highlighting) support for all code block languages
 - [x] New [`route`](configuration/page.md#route) page config
 - [x] New [`port`](configuration/project.md#port) project config
 - [x] Larger font-size for `h1`, `h2`, and `h3` headers
-- [x] Improved handing of special chars within file names
+- [x] Improved handing of special characters within file names
 - [x] Improved handling of `.md` pages created by GitHub Wiki
 
 ## `v1.4.0`
@@ -73,7 +77,7 @@ Released: 2021-05-12
 Released: 2021-04-12
 
 - [x] Even cleaner upgrade to Retype from GitBook experience
-- [x] New super fast [`retype watch`](cli.md#retype-watch) incremental build process
+- [x] New super fast [`retype watch`](guides/cli.md#retype-watch) incremental build process
 - [x] New [image alignment](components/image.md#alignment-options) and captions
 - [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
 - [x] New `blog` layout and `/blog` folder defaults
@@ -110,8 +114,8 @@ Released: 2021-03-12
 - [x] New [Tab](components/tab.md) component
 - [x] New [Button](components/button.md) component
 - [x] New [Panel](components/panel.md) component with expand/collapse
-- [x] New [`retype watch`](cli.md#retype-watch) command
-- [x] New Live Reload when using [`retype watch`](cli.md#retype-watch)
+- [x] New [`retype watch`](guides/#retype-watch) command
+- [x] New Live Reload when using [`retype watch`](guides/cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
 - [x] New code block [title](components/code-block.md#title)
 - [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks

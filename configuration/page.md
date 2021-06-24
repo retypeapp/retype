@@ -123,6 +123,34 @@ icon: "../static/rocket.png"
 
 ---
 
+## image
+
+=== image : `string`
+
+By default, Retype will try to find the first image on the page and use that image as the feature image to highlight when creating a summary of the page.
+
+You can customize the feature image by setting the `image` config to any local path or external image hosted elsewhere.
+
+### Local path
+
+Configure a path to a local file stored within the project.
+
+```yml
+image: ../static/feature-image1.jpg
+```
+
+### External image
+
+Configure a URL to any image hosted elsewhere.
+
+```yml
+image: https://example.com/static/feature-image1.jpg
+```
+
+===
+
+---
+
 ## label
 
 === label : `string`
