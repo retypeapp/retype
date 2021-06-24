@@ -8,10 +8,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
+    <!-- Primary Meta Tags -->
     <title>Welcome to Retype | Retype - Generate, publish, and share documentation</title>
-
+    <meta name="title" content="Welcome to Retype | Retype - Generate, publish, and share documentation">
     <meta name="description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files." />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/">
+    <meta property="og:title" content="Welcome to Retype | Retype - Generate, publish, and share documentation">
+    <meta property="og:description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files.">
+    <meta property="og:image" content="https://retype.com/static/retype-hero.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://retype.com/">
+    <meta property="twitter:title" content="Welcome to Retype | Retype - Generate, publish, and share documentation">
+    <meta property="twitter:description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files.">
+    <meta property="twitter:image" content="https://retype.com/static/retype-hero.svg">
+    
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
@@ -37,7 +52,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -51,13 +66,13 @@
             <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype" target="_blank">GitHub</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions" target="_blank">Discussions</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues" target="_blank">Issues</a>
         </li>
     </ul>
 </nav>
@@ -123,7 +138,7 @@
         <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -162,7 +177,7 @@
             <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -208,7 +223,7 @@
 </doc-anchor-target>
 <p>You can install Retype using <code v-pre>npm</code>, <code v-pre>yarn</code>, or the <code v-pre>dotnet</code> CLI.</p>
 <p>From your command line, navigate to a folder location where you have one or more Markdown <code v-pre>.md</code> files, such as a GitHub project.</p>
-<p>Next, choose one of the following tools to first install <code v-pre>retypeapp</code> and then start Retype by using the <code v-pre>retype watch</code> <a href="cli/#retype-watch">command</a>:</p>
+<p>Next, choose one of the following tools to first install <code v-pre>retypeapp</code> and then start Retype by using the <code v-pre>retype watch</code> <a href="guides/cli/#retype-watch">command</a>:</p>
 <doc-tabs>
 <doc-tab id="npm">
 <template #title>NPM</template>
@@ -284,21 +299,21 @@ retype run</code></pre>
         <span><span class="docs-emoji">&#x2705;</span> Easy install</span>
     </h4>
 </doc-anchor-target>
-<p><a href="guides/getting-started">Installation</a> takes only a few seconds. Then you need at least one Markdown <code v-pre>.md</code> file which Retype will start building a new website from.</p>
+<p><a href="guides/getting-started/">Installation</a> takes only a few seconds. Then you need at least one Markdown <code v-pre>.md</code> file which Retype will start building a new website from.</p>
 <doc-anchor-target id="muscle-powerful">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#muscle-powerful">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x1F4AA;</span> Powerful</span>
     </h4>
 </doc-anchor-target>
-<p>Project level <a href="configuration/project">configuration</a> using <code v-pre>retype.json</code> unlocks many more Retype features and customization.</p>
+<p>Project level <a href="configuration/project/">configuration</a> using <code v-pre>retype.json</code> unlocks many more Retype features and customization.</p>
 <doc-anchor-target id="pencil2-simple-formatting">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#pencil2-simple-formatting">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x270F;&#xFE0F;</span> Simple formatting</span>
     </h4>
 </doc-anchor-target>
-<p>Pages are <a href="guides/formatting">formatted</a> using Markdown syntax and Retype <a href="components">components</a>. Page level <a href="configuration/page">configuration</a> is available, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
+<p>Pages are <a href="guides/formatting/">formatted</a> using Markdown syntax and Retype <a href="components/">components</a>. Page level <a href="configuration/page/">configuration</a> is available, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
 <doc-anchor-target id="computer-host-anywhere">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#computer-host-anywhere">#</doc-anchor-trigger>
@@ -338,7 +353,7 @@ retype run</code></pre>
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/getting-started">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/getting-started/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                 <span class="block mt-1">Getting Started</span>
@@ -356,7 +371,7 @@ retype run</code></pre>
     <div>
         <ul class="flex flex-wrap items-center text-sm">
     <li>
-        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about">About</a>
+        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about/">About</a>
     </li>
 </ul>
 
@@ -392,7 +407,7 @@ retype run</code></pre>
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Welcome", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Welcome", icon: "file", hasPrism: false, hasMermaid: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

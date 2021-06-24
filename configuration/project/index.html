@@ -8,17 +8,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
+    <!-- Primary Meta Tags -->
     <title>Project configuration | Retype - Generate, publish, and share documentation</title>
+    <meta name="title" content="Project configuration | Retype - Generate, publish, and share documentation">
+    <meta name="description" content="Retype will read the retype.json file for additional instructions on how to configure and build your project." />
 
-    <meta name="description" content="Retype will read the `retype.json` file for additional instructions on how to configure and build your project." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/configuration/project/">
+    <meta property="og:title" content="Project configuration | Retype - Generate, publish, and share documentation">
+    <meta property="og:description" content="Retype will read the retype.json file for additional instructions on how to configure and build your project.">
+    <meta property="og:image" content="https://retype.com/static/project-base-config-github-pages.png">
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://retype.com/configuration/project/">
+    <meta property="twitter:title" content="Project configuration | Retype - Generate, publish, and share documentation">
+    <meta property="twitter:description" content="Retype will read the retype.json file for additional instructions on how to configure and build your project.">
+    <meta property="twitter:image" content="https://retype.com/static/project-base-config-github-pages.png">
+    
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -38,7 +53,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -52,13 +67,13 @@
             <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype" target="_blank">GitHub</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions" target="_blank">Discussions</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues" target="_blank">Issues</a>
         </li>
     </ul>
 </nav>
@@ -124,7 +139,7 @@
         <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -163,7 +178,7 @@
             <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -213,7 +228,7 @@
   &quot;links&quot;: [
     {
       &quot;text&quot;: &quot;Getting Started&quot;,
-      &quot;link&quot;: &quot;https://retype.com/getting-started/&quot;
+      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
     }
   ],
 
@@ -230,7 +245,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="base-string">
-<template #title>base : <code v-pre>string</code></template>
+    <template #title>base : <code v-pre>string</code></template>
 <p>Base subfolder path appended to all URL&#x27;s. Default is <code v-pre>null</code> or empty string.</p>
 <p>If you deploy the build website to a subfolder of another website, use the <code v-pre>base</code> to ensure the URL&#x27;s correclty resolve.</p>
 <p>For instance, let&#x27;s say your main site is <code v-pre>https://example.com</code> and will remain unchanged.  If you would like to deploy the Retype built website into a <code v-pre>/docs</code> subfolder, with the final URL of <code v-pre>https://example.com/docs</code>, then setting <code v-pre>&quot;base&quot;: &quot;docs&quot;</code> would be required.</p>
@@ -275,7 +290,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="title-string">
-<template #title>title : <code v-pre>string</code></template>
+    <template #title>title : <code v-pre>string</code></template>
 <p>Logo Title. Displayed when <doc-anchor-trigger to="#logo">logo</doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark">logoDark</doc-anchor-trigger> are not configured. Default is <code v-pre>Project Name</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set the website title</div>
@@ -299,7 +314,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="label-string">
-<template #title>label : <code v-pre>string</code></template>
+    <template #title>label : <code v-pre>string</code></template>
 <p>Optional Logo Label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
@@ -323,7 +338,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="logo-string">
-<template #title>logo : <code v-pre>string</code></template>
+    <template #title>logo : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
 <li>The path to a logo file relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
@@ -346,7 +361,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="logodark-string">
-<template #title>logoDark : <code v-pre>string</code></template>
+    <template #title>logoDark : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
 <li>The path to a logo file (dark mode) relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
@@ -377,7 +392,7 @@
     </h4>
 </doc-anchor-target>
 <doc-panel id="label-text-string">
-<template #title>label.text : <code v-pre>string</code></template>
+    <template #title>label.text : <code v-pre>string</code></template>
 <p>Set a custom label text color. Default is <code v-pre>#1f7aff</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -398,7 +413,7 @@
     </h4>
 </doc-anchor-target>
 <doc-panel id="label-background-string">
-<template #title>label.background : <code v-pre>string</code></template>
+    <template #title>label.background : <code v-pre>string</code></template>
 <p>Set a custom label background color. Default is <code v-pre>#e1edff</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -420,7 +435,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="cname-string">
-<template #title>cname : <code v-pre>string</code></template>
+    <template #title>cname : <code v-pre>string</code></template>
 <p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
@@ -448,7 +463,7 @@
 </doc-anchor-target>
 <p>The repository URL where the source files for this project are located.</p>
 <doc-panel id="repo-string">
-<template #title>repo : <code v-pre>string</code></template>
+    <template #title>repo : <code v-pre>string</code></template>
 <p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -465,7 +480,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="branch-string">
-<template #title>branch : <code v-pre>string</code></template>
+    <template #title>branch : <code v-pre>string</code></template>
 <p>Point to a custom branch within the repo. Default is <code v-pre>main</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -483,7 +498,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="base-string">
-<template #title>base : <code v-pre>string</code></template>
+    <template #title>base : <code v-pre>string</code></template>
 <p>A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.</p>
 <p>The following sample demonstrates a scenario where the content files are located within the <code v-pre>/docs</code> sub-folder of the repo.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -502,7 +517,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="label-string">
-<template #title>label : <code v-pre>string</code></template>
+    <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the link. Default is <code v-pre>&quot;Edit this page&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">{
@@ -521,7 +536,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="exclude-list">
-<template #title>exclude : <code v-pre>list</code></template>
+    <template #title>exclude : <code v-pre>list</code></template>
 <p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> by configuring an <code v-pre>exclude</code> list within your projects <code v-pre>retype.json</code> file.</p>
 <p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
@@ -550,7 +565,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="favicon-string">
-<template #title>favicon : <code v-pre>string</code></template>
+    <template #title>favicon : <code v-pre>string</code></template>
 <p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
 <p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -575,7 +590,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="copyright-string">
-<template #title>copyright : <code v-pre>string</code></template>
+    <template #title>copyright : <code v-pre>string</code></template>
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -592,8 +607,8 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="links-object">
-<template #title>links : <code v-pre>object</code></template>
-<p>Same configuration options as page level <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
+    <template #title>links : <code v-pre>object</code></template>
+<p>The <code v-pre>footer.links</code> have the same configuration options as <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;footer&quot;: {
@@ -615,7 +630,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="include-list">
-<template #title>include : <code v-pre>list</code></template>
+    <template #title>include : <code v-pre>list</code></template>
 <p>Retype can explicitly include files or folders that might have been excluded by default or excluded within the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 <p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to include all <code v-pre>.py</code> files and the entire contents of any <code v-pre>www</code> folder within the project.</p>
@@ -666,7 +681,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="input-string">
-<template #title>input : <code v-pre>string</code></template>
+    <template #title>input : <code v-pre>string</code></template>
 <p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
 <p>The path is relative to the <code v-pre>retype.json</code> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -692,7 +707,7 @@
 </doc-anchor-target>
 <p>Add Google Analytics to your website.</p>
 <doc-panel id="googleanalytics-id-string">
-<template #title>googleAnalytics.id : <code v-pre>string</code></template>
+    <template #title>googleAnalytics.id : <code v-pre>string</code></template>
 <p>Google Analytics ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -712,13 +727,13 @@
     </h2>
 </doc-anchor-target>
 <p>Custom links added to the top-bar navigation of all pages.</p>
-<p>The following sample demonstrates a basic <code v-pre>links</code> scenario which would add one link to the top of all pages.</p>
+<p>The following sample demonstrates a basic <code v-pre>links</code> scenario which would add one link to the top bar of all pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;links&quot;: [
     {
       &quot;text&quot;: &quot;Getting Started&quot;,
-      &quot;link&quot;: &quot;https://retype.com/getting-started/&quot;
+      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
     }
   ]
 }</code></pre>
@@ -730,7 +745,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="text-string">
-<template #title>text : <code v-pre>string</code></template>
+    <template #title>text : <code v-pre>string</code></template>
 <p>The link text label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -750,8 +765,9 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="link-string">
-<template #title>link : <code v-pre>string</code></template>
-<p>The URL to use for the link. The link can be internal or external.</p>
+    <template #title>link : <code v-pre>string</code></template>
+<p>The URL to use for the link. The link can be a <code v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
+<p>If a <code v-pre>.md</code> file set, such as <code v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code v-pre>sample.md</code> value will be replaced with the path to the actual generated HTML file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;links&quot;: [
@@ -770,7 +786,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="icon-string">
-<template #title>icon : <code v-pre>string</code></template>
+    <template #title>icon : <code v-pre>string</code></template>
 <p>An icon to use with the link. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -808,7 +824,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="iconalign-string">
-<template #title>iconAlign : <code v-pre>string</code></template>
+    <template #title>iconAlign : <code v-pre>string</code></template>
 <p>The position for the icon relative to the link <code v-pre>text</code>. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -822,6 +838,68 @@
   ]
 }</code></pre>
 </doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="target">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#target">#</doc-anchor-trigger>
+        <span>target</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="target-string">
+    <template #title>target : <code v-pre>string</code></template>
+<p>Sets the <code v-pre>target</code> attribute of the hyperlink and specifies which window or tab to open the link into.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;links&quot;: [
+    {
+      &quot;text&quot;: &quot;Demos&quot;,
+      &quot;link&quot;: &quot;https://demo.example.com/&quot;,
+      &quot;target&quot;: &quot;blank&quot;
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<p>If no <code v-pre>target</code> is configured, the link will open in the current tab.</p>
+<p>The <code v-pre>target</code> can be set to any value, although <code v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code v-pre>blank</code> into <code v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
+<p>There are several other values that may be prefixed with an <code v-pre>_</code> character, including <code v-pre>self</code>, <code v-pre>parent</code>, and <code v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code v-pre>target</code> values.</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Config <code v-pre>target</code> value</th>
+<th>Runtime <code v-pre>target</code> value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>blank</code></td>
+<td><code v-pre>_blank</code></td>
+</tr>
+<tr>
+<td><code v-pre>parent</code></td>
+<td><code v-pre>_parent</code></td>
+</tr>
+<tr>
+<td><code v-pre>top</code></td>
+<td><code v-pre>_top</code></td>
+</tr>
+<tr>
+<td><code v-pre>self</code></td>
+<td><code v-pre>_self</code></td>
+</tr>
+<tr>
+<td><code v-pre>news1</code></td>
+<td><code v-pre>news1</code></td>
+</tr>
+<tr>
+<td><code v-pre>nEWs2</code></td>
+<td><code v-pre>news2</code></td>
+</tr>
+<tr>
+<td><code v-pre>recent NEWS</code></td>
+<td><code v-pre>recent-news</code></td>
+</tr>
+</tbody>
+</table>
 </doc-panel>
 <hr />
 <doc-anchor-target id="meta">
@@ -838,7 +916,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="title-string">
-<template #title>title : <code v-pre>string</code></template>
+    <template #title>title : <code v-pre>string</code></template>
 <p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Append this string to all page meta tag titles</div>
@@ -861,7 +939,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="output-string">
-<template #title>output : <code v-pre>string</code></template>
+    <template #title>output : <code v-pre>string</code></template>
 <p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
 <p>The path is relative to the <code v-pre>retype.json</code> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -879,7 +957,7 @@
     </h2>
 </doc-anchor-target>
 <doc-panel id="port-number">
-<template #title>port : <code v-pre>number</code></template>
+    <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -904,7 +982,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="minchars-number">
-<template #title>minChars : <code v-pre>number</code></template>
+    <template #title>minChars : <code v-pre>number</code></template>
 <p>Min number of characters required in a search query. Defualt is <code v-pre>3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -921,7 +999,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="maxresults-number">
-<template #title>maxResults : <code v-pre>number</code></template>
+    <template #title>maxResults : <code v-pre>number</code></template>
 <p>Max number of search results to render. Defualt is <code v-pre>20</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -938,7 +1016,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="placeholder-string">
-<template #title>placeholder : <code v-pre>string</code></template>
+    <template #title>placeholder : <code v-pre>string</code></template>
 <p>Placeholder text rendered on the search component. Defualt is <code v-pre>&quot;Search&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -955,7 +1033,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="hotkeys-string">
-<template #title>hotkeys : <code v-pre>string[]</code></template>
+    <template #title>hotkeys : <code v-pre>string[]</code></template>
 <p>Keyboard key to set the cursor focus into the search field. Defualt is <code v-pre>[&quot;/&quot;]</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -972,7 +1050,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="noresultsfoundmsg-string">
-<template #title>noResultsFoundMsg : <code v-pre>string</code></template>
+    <template #title>noResultsFoundMsg : <code v-pre>string</code></template>
 <p>Message rendered when no results were found. Defualt is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -997,7 +1075,7 @@
     </h3>
 </doc-anchor-target>
 <doc-panel id="linenumbers-string">
-<template #title>lineNumbers : <code v-pre>string[]</code></template>
+    <template #title>lineNumbers : <code v-pre>string[]</code></template>
 <p>A llist of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for <code v-pre>js</code> and <code v-pre>json</code> code blocks site wide</div>
@@ -1070,7 +1148,9 @@
         <a href="/tags/">
             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
         </a>
-        <a href="/tags/config/" class="inline-flex items-center justify-center h-6 px-2 mr-2 text-xs font-medium leading-none text-blue-500 border border-blue-500 rounded-md no-link whitespace-nowrap dark:text-blue-400 dark:border-blue-400">config</a>
+        <span class="mr-2"><a href="/tags/config/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>config</span>
+</a></span>
     </span>
 </div>
 
@@ -1090,7 +1170,7 @@
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/tab">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/tab/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
@@ -1100,7 +1180,7 @@
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/configuration/page">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/configuration/page/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                 <span class="block mt-1">Page config</span>
@@ -1118,7 +1198,7 @@
     <div>
         <ul class="flex flex-wrap items-center text-sm">
     <li>
-        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about">About</a>
+        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about/">About</a>
     </li>
 </ul>
 
@@ -1154,7 +1234,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Project config", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Project config", icon: "file", hasPrism: true, hasMermaid: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

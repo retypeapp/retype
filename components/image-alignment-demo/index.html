@@ -8,10 +8,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
+    <!-- Primary Meta Tags -->
     <title>Image alignment demo | Retype - Generate, publish, and share documentation</title>
-
+    <meta name="title" content="Image alignment demo | Retype - Generate, publish, and share documentation">
     <meta name="description" content="Please see image alignment docs for more details." />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/components/image-alignment-demo/">
+    <meta property="og:title" content="Image alignment demo | Retype - Generate, publish, and share documentation">
+    <meta property="og:description" content="Please see image alignment docs for more details.">
+    <meta property="og:image" content="https://retype.com/static/sample.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://retype.com/components/image-alignment-demo/">
+    <meta property="twitter:title" content="Image alignment demo | Retype - Generate, publish, and share documentation">
+    <meta property="twitter:description" content="Please see image alignment docs for more details.">
+    <meta property="twitter:image" content="https://retype.com/static/sample.jpg">
+    
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
@@ -35,7 +50,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -49,13 +64,13 @@
             <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype" target="_blank">GitHub</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions" target="_blank">Discussions</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues" target="_blank">Issues</a>
         </li>
     </ul>
 </nav>
@@ -121,7 +136,7 @@
         <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -160,7 +175,7 @@
             <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -187,7 +202,7 @@
         <span>Image alignment demo</span>
     </h1>
 </doc-anchor-target>
-<p>Please see <a href="../image/#image-alignment">image alignment docs</a> for more details.</p>
+<p>Please see <a href="../image/#image-alignment">image alignment</a> docs for more details.</p>
 <doc-anchor-target id="center-default">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#center-default">#</doc-anchor-trigger>
@@ -257,11 +272,12 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-centerplus">
-    <img src="../../static/sample.jpg" class="w-full" alt="centerplus align" />
+    <img src="../../static/sample-large.jpg" class="w-full" alt="centerplus align" />
     <figcaption class="caption"><code v-pre>centerplus</code> align</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+<p>Photo by <a href="https://unsplash.com/@carlosaranda">carlos aranda</a> on <a href="https://unsplash.com/">Unsplash</a>.</p>
 
 
 
@@ -282,7 +298,7 @@
         <div class="pt-3">
             <ul class="flex flex-wrap items-center text-sm">
     <li>
-        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about">About</a>
+        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about/">About</a>
     </li>
 </ul>
 
@@ -294,7 +310,7 @@
     <div class="flex sm:justify-center"><a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -313,7 +329,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Image alignment demo", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Image alignment demo", icon: "file", hasPrism: false, hasMermaid: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

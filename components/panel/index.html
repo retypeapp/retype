@@ -8,17 +8,30 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
+    <!-- Primary Meta Tags -->
     <title>Panel | Retype - Generate, publish, and share documentation</title>
+    <meta name="title" content="Panel | Retype - Generate, publish, and share documentation">
+    <meta name="description" content="A Panel is created by surrounding a block of content with === and including a title for the Panel." />
 
-    <meta name="description" content="A Panel is created by surrounding a block of content with `===` and including a `title` for the Panel." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/components/panel/">
+    <meta property="og:title" content="Panel | Retype - Generate, publish, and share documentation">
+    <meta property="og:description" content="A Panel is created by surrounding a block of content with === and including a title for the Panel.">
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://retype.com/components/panel/">
+    <meta property="twitter:title" content="Panel | Retype - Generate, publish, and share documentation">
+    <meta property="twitter:description" content="A Panel is created by surrounding a block of content with === and including a title for the Panel.">
+    
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -38,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -52,13 +65,13 @@
             <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype" target="_blank">GitHub</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions" target="_blank">Discussions</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues" target="_blank">Issues</a>
         </li>
     </ul>
 </nav>
@@ -124,7 +137,7 @@
         <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -163,7 +176,7 @@
             <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -198,10 +211,32 @@ This is a Panel. Expanded by default.
 ===</code></pre>
 </doc-codeblock></div>
 <doc-panel id="my-panel">
-<template #title>My Panel</template>
+    <template #title>My Panel</template>
 <p>This is a Panel. Expanded by default.</p>
 </doc-panel>
 <p>The <code v-pre>title</code> must be separated from the opening <code v-pre>===</code> by one space. The pattern <code v-pre>=== My Panel</code> will work as expected, and <code v-pre>===My Panel</code> will not.</p>
+<p>Multiple Panels can be <doc-anchor-trigger to="#stacking">stacked</doc-anchor-trigger> by repeating Panel component configurations.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">=== Panel 1
+Content 1
+=== Panel 2
+Content 2
+===</code></pre>
+</doc-codeblock></div>
+<doc-panels>
+   <doc-panel id="panel-1">
+       <template #title>Panel 1</template>
+<p>Content 1</p>
+   </doc-panel>
+   <doc-panel id="panel-2">
+       <template #title>Panel 2</template>
+<p>Content 2</p>
+   </doc-panel>
+</doc-panels>
+<doc-alert variant="primary">
+<p>Currently, Panel components cannot be nested within each other, only stacked. We&#x27;re hoping to support nesting Panels in a future release. <a href="https://github.com/retypeapp/retype/discussions">Let us know</a> if you require the functionality.</p>
+<p>All other components can be nested within any Panel component.</p>
+</doc-alert>
 <hr />
 <doc-anchor-target id="collapsed">
     <h2>
@@ -216,7 +251,7 @@ This is a collapsed Panel. :+1:
 ===</code></pre>
 </doc-codeblock></div>
 <doc-panel id="my-panel" collapsed>
-<template #title>My Panel</template>
+    <template #title>My Panel</template>
 <p>This is a collapsed Panel. <span class="docs-emoji">&#x1F44D;</span></p>
 </doc-panel>
 <p>Either just the opening <code v-pre>==-</code> can be configured, or both opening and closing <code v-pre>==-</code> can be used.</p>
@@ -226,7 +261,7 @@ This is another collapsed Panel.
 ==-</code></pre>
 </doc-codeblock></div>
 <doc-panel id="my-panel" collapsed>
-<template #title>My Panel</template>
+    <template #title>My Panel</template>
 <p>This is another collapsed Panel.</p>
 </doc-panel>
 <hr />
@@ -236,7 +271,7 @@ This is another collapsed Panel.
         <span>Inner content</span>
     </h2>
 </doc-anchor-target>
-<p>Any content can be added inside a Panel, include other components such as a code block and tables.</p>
+<p>Any content can be added inside a Panel, include other components such as a <a href="../code-block/">code block</a> and tables.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">=== Code Sample
 ```js
@@ -252,7 +287,7 @@ prop2 | type2 | value2 | A `type2` property
 ===</code></pre>
 </doc-codeblock></div>
 <doc-panel id="code-sample">
-<template #title>Code Sample</template>
+    <template #title>Code Sample</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;
 
@@ -283,6 +318,55 @@ console.log(msg);</code></pre>
 </tbody>
 </table>
 </doc-panel>
+<hr />
+<doc-anchor-target id="stacking">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#stacking">#</doc-anchor-trigger>
+        <span>Stacking</span>
+    </h2>
+</doc-anchor-target>
+<p>Multiple Panel components can be <em>stacked</em> into a group by repeating Panel component configurations.</p>
+<p>A basic scenario is grouping two Panels:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">=== Panel 1
+Content for the **first** panel.
+=== Panel 2
+Content for the **second** panel.
+===</code></pre>
+</doc-codeblock></div>
+<doc-panels>
+   <doc-panel id="panel-1">
+       <template #title>Panel 1</template>
+<p>Content for the <strong>first</strong> panel.</p>
+   </doc-panel>
+   <doc-panel id="panel-2">
+       <template #title>Panel 2</template>
+<p>Content for the <strong>second</strong> panel.</p>
+   </doc-panel>
+</doc-panels>
+<p>As well, individual Panels within a stack can be configured as collapsed.</p>
+<p>The following sample demonstrates a two-panel stack with the second Panel being collapsed.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">=== Expanded Panel
+
+Panels are expanded by default, but can be configured as collapsed too!
+
+==- Collapsed Panel
+
+Add any content or components inside a Panel.
+
+===</code></pre>
+</doc-codeblock></div>
+<doc-panels>
+   <doc-panel id="expanded-panel">
+       <template #title>Expanded Panel</template>
+<p>Panels are expanded by default, but can be configured as collapsed too!</p>
+   </doc-panel>
+   <doc-panel id="collapsed-panel" collapsed>
+       <template #title>Collapsed Panel</template>
+<p><span class="docs-emoji">&#x1F973;</span> You found me!</p>
+   </doc-panel>
+</doc-panels>
 
 
 <div class="flex items-center mt-6 mb-6">
@@ -290,7 +374,9 @@ console.log(msg);</code></pre>
         <a href="/tags/">
             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
         </a>
-        <a href="/tags/component/" class="inline-flex items-center justify-center h-6 px-2 mr-2 text-xs font-medium leading-none text-blue-500 border border-blue-500 rounded-md no-link whitespace-nowrap dark:text-blue-400 dark:border-blue-400">component</a>
+        <span class="mr-2"><a href="/tags/component/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>component</span>
+</a></span>
     </span>
 </div>
 
@@ -310,7 +396,7 @@ console.log(msg);</code></pre>
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/list">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/list/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
@@ -320,7 +406,7 @@ console.log(msg);</code></pre>
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/reference-link">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/reference-link/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                 <span class="block mt-1">Reference link</span>
@@ -338,7 +424,7 @@ console.log(msg);</code></pre>
     <div>
         <ul class="flex flex-wrap items-center text-sm">
     <li>
-        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about">About</a>
+        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about/">About</a>
     </li>
 </ul>
 
@@ -374,7 +460,7 @@ console.log(msg);</code></pre>
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Panel", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Panel", icon: "file", hasPrism: true, hasMermaid: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

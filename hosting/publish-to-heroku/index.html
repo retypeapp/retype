@@ -8,17 +8,30 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
 
+    <!-- Primary Meta Tags -->
     <title>Publish to Heroku | Retype - Generate, publish, and share documentation</title>
-
+    <meta name="title" content="Publish to Heroku | Retype - Generate, publish, and share documentation">
     <meta name="description" content="Easily publish your documentation using Heroku by just uploading the raw project and letting Retype build for you!" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/hosting/publish-to-heroku/">
+    <meta property="og:title" content="Publish to Heroku | Retype - Generate, publish, and share documentation">
+    <meta property="og:description" content="Easily publish your documentation using Heroku by just uploading the raw project and letting Retype build for you!">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://retype.com/hosting/publish-to-heroku/">
+    <meta property="twitter:title" content="Publish to Heroku | Retype - Generate, publish, and share documentation">
+    <meta property="twitter:description" content="Easily publish your documentation using Heroku by just uploading the raw project and letting Retype build for you!">
+    
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
     <script type="text/javascript" src="/resources/js/retype.js" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -38,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.6</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -52,13 +65,13 @@
             <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/">Home</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype">GitHub</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype" target="_blank">GitHub</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions">Discussions</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/discussions" target="_blank">Discussions</a>
         </li>
         <li class="md:mr-6">
-            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues">Issues</a>
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/retypeapp/retype/issues" target="_blank">Issues</a>
         </li>
     </ul>
 </nav>
@@ -124,7 +137,7 @@
         <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -163,7 +176,7 @@
             <a
     class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
-    href="https://retype.com"
+    href="https://retype.com/"
     rel="noopener"
 >
     <span class="text-xs whitespace-nowrap">Powered by</span>
@@ -232,7 +245,7 @@
 </doc-codeblock></div>
 <doc-alert variant="primary">
 <template #title>Replace <code v-pre>my-app-name</code></template>
-<p>Remember to replace <code v-pre>my-app-name</code> with the app name of your preference. The name of the app is prefixed to the public app address. With the code above it would be:
+<p>Remember to replace <code v-pre>my-app-name</code> with the app name of your preference. The name of the app is prefixed to the public app address. With the code above it would be:<br />
 <strong><a href="https://my-app-name.herokuapp.com/">https://my-app-name.herokuapp.com/</a></strong>.</p>
 </doc-alert>
 <doc-alert variant="primary">
@@ -290,7 +303,7 @@ FIXME FIXME FIXME FIXME -->
 <li>the full path to the file. The specified file will then be used as <strong>retype.json</strong> regardless of its name; also specified via Heroku config var](<a href="https://devcenter.heroku.com/articles/config-vars">https://devcenter.heroku.com/articles/config-vars</a>) <code v-pre>RETYPE_CONFIG</code></li>
 </ul>
 <p>If there&#x27;s no <strong>retype.json</strong> file in the repository, just run <code v-pre>retype watch</code> and adjust the settings to your liking in the just-created <strong>retype.json</strong>, then commit it. Your project would then be ready to be pushed to Heroku.</p>
-<p>See <a href="../../#quick-start">Quick Start</a> for details on <code v-pre>retype watch</code>, and see <a href="../../configuration/project">Configuration &gt; Project</a> for possible <strong>retype.json</strong> config values.</p>
+<p>See <a href="../../#quick-start">Quick Start</a> for details on <code v-pre>retype watch</code>, and see <a href="../../configuration/project/">Configuration &gt; Project</a> for possible <strong>retype.json</strong> config values.</p>
 <doc-alert variant="primary">
 <template #title>Several <strong>retype.json</strong> files in the repo</template>
 <p>If there are various <strong>retype.json</strong> files across the repository, we can&#x27;t guarantee which one the buildpack is going to pick, and it is a good idea to use the <code v-pre>RETYPE_CONFIG</code> config var to indicate where the intended configuration file is to be found within the repo.</p>
@@ -318,7 +331,7 @@ FIXME FIXME FIXME FIXME -->
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Install Retype to build locally, see <a href="getting-started">Getting Started</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Details on <code v-pre>retype watch</code>, see <a href="../../#quick-start">Quick Start</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Accepted configuration settings in <strong>retype.json</strong>, see <a href="../../configuration/project">Configuration &gt; Project</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Accepted configuration settings in <strong>retype.json</strong>, see <a href="../../configuration/project/">Configuration &gt; Project</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Troubleshoot Heroku push/build issues, see <a href="https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting">Retype Buildpack&#x27;s README Troubleshooting section</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More information on Retype Buildpack, see <a href="https://github.com/retypeapp/heroku-buildpack/blob/main/README.md">README in Retype Buildpack&#x27;s repo</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Create account in Heroku, see <a href="https://heroku.com">Heroku website</a>.</li>
@@ -332,9 +345,15 @@ FIXME FIXME FIXME FIXME -->
         <a href="/tags/">
             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
         </a>
-        <a href="/tags/guide/" class="inline-flex items-center justify-center h-6 px-2 mr-2 text-xs font-medium leading-none text-blue-500 border border-blue-500 rounded-md no-link whitespace-nowrap dark:text-blue-400 dark:border-blue-400">guide</a>
-        <a href="/tags/heroku/" class="inline-flex items-center justify-center h-6 px-2 mr-2 text-xs font-medium leading-none text-blue-500 border border-blue-500 rounded-md no-link whitespace-nowrap dark:text-blue-400 dark:border-blue-400">heroku</a>
-        <a href="/tags/publish/" class="inline-flex items-center justify-center h-6 px-2 mr-2 text-xs font-medium leading-none text-blue-500 border border-blue-500 rounded-md no-link whitespace-nowrap dark:text-blue-400 dark:border-blue-400">publish</a>
+        <span class="mr-2"><a href="/tags/guide/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>guide</span>
+</a></span>
+        <span class="mr-2"><a href="/tags/heroku/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>heroku</span>
+</a></span>
+        <span class="mr-2"><a href="/tags/publish/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>publish</span>
+</a></span>
     </span>
 </div>
 
@@ -361,7 +380,7 @@ FIXME FIXME FIXME FIXME -->
     <div>
         <ul class="flex flex-wrap items-center text-sm">
     <li>
-        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about">About</a>
+        <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about/">About</a>
     </li>
 </ul>
 
@@ -397,7 +416,7 @@ FIXME FIXME FIXME FIXME -->
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Publish to Heroku", icon: "file" }</script>
+        <script>window.__DOCS__ = { "title": "Publish to Heroku", icon: "file", hasPrism: true, hasMermaid: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
