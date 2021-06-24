@@ -1,13 +1,15 @@
 ---
 tags: [component]
 ---
-# Mermaid
+# :mermaid: Mermaid
 
-[Mermaid](https://mermaid-js.github.io/mermaid) is a diagramming and charting tool that can be defined inside of Markdown code blocks.
+[Mermaid](https://mermaid-js.github.io/mermaid) is a diagramming and charting tool that can be defined inside Markdown code blocks.
+
+![](../static/mermaid-header.png)
 
 ## Component syntax
 
-With a similar syntax to code blocks, creating a Mermaid diagram or chart requires a `` ``` `` code fence with the inclusion of the `mermaid` specifier.
+With a similar syntax to code blocks, creating a Mermaid diagram requires a `` ``` `` code fence with the inclusion of the `mermaid` specifier.
 
 ~~~ Sample Mermaid diagram
 ```mermaid
@@ -67,6 +69,8 @@ graph LR
 
 ### Flowchart
 
+More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/flowchart).
+
 ~~~
 ```mermaid
 graph TD;
@@ -86,6 +90,8 @@ graph TD;
 ```
 
 ### Sequence diagram
+
+More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/sequenceDiagram).
 
 ~~~
 ```mermaid
@@ -119,6 +125,8 @@ sequenceDiagram
 
 ### Gantt diagram
 
+More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/gantt).
+
 ~~~
 ```mermaid
 gantt
@@ -149,6 +157,8 @@ Future task2              :         des4, after des3, 5d
 
 ### Class diagram
 
+More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/classDiagram).
+
 ~~~
 ```mermaid
 classDiagram
@@ -185,44 +195,54 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-### Git graph
+### Entity Relationship
+
+More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram).
 
 ~~~
 ```mermaid
-gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 ~~~
 
 ```mermaid
-gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
+
+### User Journey
+
+More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/user-journey).
+
+~~~
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
+~~~
+
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
+
+[!ref :mermaid: Mermaid website](https://mermaid-js.github.io/mermaid/)
