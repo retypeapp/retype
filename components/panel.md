@@ -53,7 +53,7 @@ This is another collapsed Panel.
 
 ## Inner content
 
-Any content can be added inside a Panel, include other components such as a code block and tables.
+Any content can be added inside a Panel, include other components such as a [code block](code-block.md) and tables.
 
 ~~~
 === Code Sample
