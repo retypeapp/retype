@@ -22,11 +22,12 @@ Library | License | Role
 [Retype](https://retype.com/) | [Retype](/LICENSE.md) | Magical static site generator
 [Markdig](https://github.com/xoofx/markdig) | [BSD-2-Clause](https://github.com/xoofx/markdig/blob/master/license.txt) | Markdown parsing
 [Scriban](https://github.com/scriban/scriban) | [BSD-2-Clause](https://github.com/scriban/scriban/blob/master/license.txt) | Templating
-[Mojee](https://mojee.io) | [Mojee](https://docs.mojee.io/license/) | Emoji parsing and handling
+[Mojee](https://mojee.io) | [Mojee](https://docs.mojee.io/license/) | [Emoji](components/emoji.md) parsing and handling
 [Vue.js](https://vuejs.org/) | [MIT](https://github.com/vuejs/vue/blob/dev/LICENSE) | Client UI framework
 [Turbo](https://github.com/hotwired/turbo/) | [MIT](https://github.com/hotwired/turbo/blob/main/MIT-LICENSE) | HTML over the wire
 [Lunr](http://lunrjs.com/) | [MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE) | Search index
-[Prism](https://prismjs.com/) | [MIT](https://github.com/PrismJS/prism/blob/master/LICENSE) | Code sample formatting
+[Prism](https://prismjs.com/) | [MIT](https://github.com/PrismJS/prism/blob/master/LICENSE) | [Code block](components/code-block.md#syntax-highlighting) formatting
+[Mermaid](https://mermaid-js.github.io/mermaid/) | [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE) | [Mermaid](components/mermaid.md) diagrams
 [Clipboard.js](https://clipboardjs.com) | [MIT](https://clipboardjs.com/) | Code block copy to clipboard
 
 ## License
