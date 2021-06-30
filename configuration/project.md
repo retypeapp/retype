@@ -472,7 +472,7 @@ Google Analytics ID value.
 
 ```json
 {
-  "plugins": {
+  "integrations": {
     "googleAnalytics": {
       "id": "UA-12345678-1"
     }
