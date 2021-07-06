@@ -538,7 +538,7 @@
 <doc-panel id="exclude-list">
     <template #title>exclude : <code v-pre>list</code></template>
 <p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> by configuring an <code v-pre>exclude</code> list within your projects <code v-pre>retype.json</code> file.</p>
-<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, and <code v-pre>!</code> are supported.</p>
+<p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exclude patterns</div>
@@ -632,7 +632,7 @@
 <doc-panel id="include-list">
     <template #title>include : <code v-pre>list</code></template>
 <p>Retype can explicitly include files or folders that might have been excluded by default or excluded within the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
-<p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, and <code v-pre>!</code> are supported.</p>
+<p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to include all <code v-pre>.py</code> files and the entire contents of any <code v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Include patterns</div>
