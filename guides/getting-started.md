@@ -19,14 +19,14 @@ Please see the [Retype CLI](cli.md) for full details on each command.
 
 ## Prerequisites
 
-Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
+Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
 You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you. :raised_hands:
 
 | Package Manager | Supported Platforms |
 | --- | --- |
 | [`npm`](https://www.npmjs.com/get-npm) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
-| [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
+| [`yarn`](https://classic.yarnpkg.com/en/docs/install/) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
 | [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
 
 ---

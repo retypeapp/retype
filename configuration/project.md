@@ -303,7 +303,7 @@ A custom label for the link. Default is `"Edit this page"`.
 === exclude : `list`
 Retype can exclude files or folders from being built or copied to the [`output`](#output) by configuring an `exclude` list within your projects `retype.json` file.
 
-Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, and `!` are supported.
+Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
 The following sample demonstrates how to exclude an entire `draft/` folder, any folder that ends with `*_temp/`, and one specific `/src/temp.md` file.
 
@@ -391,7 +391,7 @@ The `footer.links` have the same configuration options as [`links`](#links).
 === include : `list`
 Retype can explicitly include files or folders that might have been excluded by default or excluded within the [`exclude`](#exclude) config.
 
-Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, and `!` are supported.
+Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
 The following sample demonstrates how to include all `.py` files and the entire contents of any `www` folder within the project.
 

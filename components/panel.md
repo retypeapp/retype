@@ -49,7 +49,7 @@ All other components can be nested within any Panel component.
 
 ## Collapsed
 
-By default, Panels are collapsible and will initially render in their expanded state. You can configure Panels to initially render in their collapsed state by using `++-` specifier.
+By default, Panels are collapsible and will initially render in their expanded state. You can configure Panels to initially render in their collapsed state by using `==-` specifier.
 
 ```
 ==- My Panel

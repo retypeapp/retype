@@ -44,7 +44,7 @@ retype watch
 That's it! Your new Retype website should be up and running.
 
 !!!
-You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
+You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
 
 All operating systems are supported, including Mac, Windows, and Linux.
 !!!

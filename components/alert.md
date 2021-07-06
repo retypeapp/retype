@@ -49,7 +49,7 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
 
 ## Variants
 
-Alerts come in 6 different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
+Alerts come in nine different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
 
 | Variant | Color |
 | --- | --- |

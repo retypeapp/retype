@@ -4,7 +4,7 @@ layout: page
 ---
 # Retype Software License Agreement
 
-#### Version 1.0.0
+#### Version 1.7.0
 
 THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN OBJECT.NET, INC. ("We," "Us")
 AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",
@@ -211,10 +211,10 @@ provided (i) you provide written notice to Us prior to the effective date of suc
 (ii) there is a written agreement, wherein the Assignee accepts the terms of this Agreement. Upon
 any such transfer, the Assignee may appoint new Designated Users.
 
-You acknowledge that this Agreement is complete and is the exclusive representation of our 
-agreement. No oral or written information given by Us, Our resellers, or otherwise on Our behalf 
+You acknowledge that this Agreement is complete and is the exclusive representation of our
+agreement. No oral or written information given by Us, Our resellers, or otherwise on Our behalf
 shall create a warranty or collateral contract, or in any way increase the scope of this Agreement
-in any way, and You may not rely on any such oral or written information. No term or condition 
+in any way, and You may not rely on any such oral or written information. No term or condition
 contained in any purchase order shall have any force or effect.
 
 There are no implied licenses or other implied rights granted under this Agreement, and all rights,
@@ -224,7 +224,7 @@ applicable, with any other software or hardware not delivered by Us or Our resel
 this Agreement. Your rights under this Agreement apply only to Software, Modifications, and/or
 Applications for which all Designated Users are duly licensed hereunder.
 
-If any provision in this Agreement shall be determined to be invalid, such provision shall be 
+If any provision in this Agreement shall be determined to be invalid, such provision shall be
 deemed omitted; the remainder of this Agreement shall continue in full force and effect. If any
 remedy provided is determined to have failed for its essential purpose, all limitations of
 liability and exclusions of damages set forth in this Agreement shall remain in effect.

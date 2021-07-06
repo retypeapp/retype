@@ -69,9 +69,7 @@ const msg = "Set a code block title";
 ~~~
 +++
 
-The `title` must be separated from the opening fence by one space.
-
-The pattern `` ``` Code block title`` will work as expected and `` ```Code block title`` will not.
+The `title` should be separated from the opening fence by one space, for example the pattern `` ``` Code block title`` is recommended.
 
 If a code language is used, separate the `title` from the `lang` by one space. The pattern `` ```js Code block title`` will work as expected.
 
@@ -107,7 +105,7 @@ const msg = "hello, world";
 ~~~
 +++
 
-The `#` must be separated from the opening `` ``` `` by one space. The pattern `` ``` #`` would work and the pattern `` ```#`` would not.
+The `#` should be separated from the opening `` ``` `` by one space, for example the pattern  `` ``` #`` is recommended.
 
 If a title is added, the title must also be separated from the `#` by one space. For instance, the pattern `` ``` # Your title here`` would work as expected and the pattern `` ``` #Your title here`` would not.
 

@@ -158,7 +158,7 @@ image: https://example.com/static/feature-image1.jpg
 Custom label for the navigation node for the current page. Default is `null`.
 
 ```yml
-title: Custom label
+label: Custom label
 ```
 ===
 

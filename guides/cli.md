@@ -43,7 +43,7 @@ Arguments:
   <path>    Path to the project root or retype.json [Optional]
 
 Options:
-  -c, --code             Watch for code changes
+  -a, --api              Watch for API changes
   --license <license>    Retype license key
   --port <port>          Custom TCP port
   -v, --verbose          Verbose logging

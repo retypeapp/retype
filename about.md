@@ -7,7 +7,7 @@ layout: page
 
 Technical support questions are best asked in the [Discussion](https://github.com/retypeapp/retype/discussions) forum.
 
-Did you find a bug? Please create an [Issue](https://github.com/retypeapp/retype/issues). 
+Did you find a bug? Please create an [Issue](https://github.com/retypeapp/retype/issues).
 
 Would you like to make a feature request. Please either start a [Discussion](https://github.com/retypeapp/retype/discussions) or create an [Issue](https://github.com/retypeapp/retype/issues).
 
@@ -15,7 +15,7 @@ Do you have a general inquiry? Please feel free to contact us at [hello@object.n
 
 ## Credits :clap:
 
-Retype is only made possible because of the hard work of other amazing open-source and commercial projects. 
+Retype is only made possible because of the hard work of other amazing open-source and commercial projects.
 
 Library | License | Role
 --- | --- | ---
@@ -29,6 +29,7 @@ Library | License | Role
 [Prism](https://prismjs.com/) | [MIT](https://github.com/PrismJS/prism/blob/master/LICENSE) | [Code block](components/code-block.md#syntax-highlighting) formatting
 [Mermaid](https://mermaid-js.github.io/mermaid/) | [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE) | [Mermaid](components/mermaid.md) diagrams
 [Clipboard.js](https://clipboardjs.com) | [MIT](https://clipboardjs.com/) | Code block copy to clipboard
+[YamlDotNet](https://github.com/aaubry/YamlDotNet) | [MIT](https://github.com/aaubry/YamlDotNet/blob/master/LICENSE.txt) | YAML parsing
 
 ## License
 

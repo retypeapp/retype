@@ -88,7 +88,3 @@ To get the tab URL with the anchor, right-click on the tab and select `Copy Link
 ```
 
 [Tab anchor link](#tab-3)
-
-!!!warning
-Currently, automatically selecting the correct Tab from an anchor link is broken. We're working on this defect and expect to have it fixed in the `v1.7.0` release.
-!!!
