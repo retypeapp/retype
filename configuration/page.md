@@ -368,3 +368,36 @@ tags:
 ```
 
 ===
+
+---
+
+## title
+
+=== title : `string`
+
+The `title` config instructs Retype to add a primary `# Page Title` to your page, but it is recommended to manually add a `# Page Title` to each of your pages, instead of setting a `title`. As a general rule, the actual content of your page should not be configured in the page metadata.
+
+!!!
+The `title` is primarily used to support backwards compatibiity with the `.md` content style from other older legacy static site generator applications.
+!!!
+
+The following sample demonstrates setting the `title` config instead of explicitly using a `# Page Title` to your page.
+
+```
+---
+title: Getting Started
+---
+Some content here.
+```
+
+Try to avoid using the `title` config. Please add a real page `# Page Title` to your document. The `# Page Title` will be rendered in HTML as `<h1>Page Title</h1>`.
+
+For example, the sample above should ideally be written as the following instead of using a `title` config.
+
+```
+# Getting Started
+
+Some content here.
+```
+
+===
