@@ -291,7 +291,8 @@
 </doc-anchor-target>
 <doc-panel id="title-string">
     <template #title>title : <code v-pre>string</code></template>
-<p>Logo Title. Displayed when <doc-anchor-trigger to="#logo">logo</doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark">logoDark</doc-anchor-trigger> are not configured. Default is <code v-pre>Project Name</code>.</p>
+<p>The main text title added to the upper-left corner of the generated website.</p>
+<p>The <code v-pre>title</code> can be used in conjunction with <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark"><code v-pre>logoDark</code></doc-anchor-trigger>. If a <code v-pre>title</code> and <code v-pre>logo</code> are configured, both will be added to the website. If only a <code v-pre>title</code> is configured, only the text title is used. If only a <code v-pre>logo</code> and/or <code v-pre>logoDark</code> are configured, only the logos are used.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set the website title</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -315,7 +316,7 @@
 </doc-anchor-target>
 <doc-panel id="label-string">
     <template #title>label : <code v-pre>string</code></template>
-<p>Optional Logo Label text. Default is <code v-pre>Docs</code>.</p>
+<p>Optional logo label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -341,7 +342,7 @@
     <template #title>logo : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
-<li>The path to a logo file relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
+<li>The path to a logo file relative to the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>, or</li>
 <li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
@@ -364,7 +365,7 @@
     <template #title>logoDark : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
-<li>The path to a logo file (dark mode) relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>, or</li>
+<li>The path to a logo file (dark mode) relative to the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>, or</li>
 <li>An inline <code v-pre>&lt;svg&gt;</code> logo</li>
 </ol>
 <p>Default is <code v-pre>null</code>.</p>
@@ -436,7 +437,7 @@
 </doc-anchor-target>
 <doc-panel id="cname-string">
     <template #title>cname : <code v-pre>string</code></template>
-<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
+<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -567,14 +568,14 @@
 <doc-panel id="favicon-string">
     <template #title>favicon : <code v-pre>string</code></template>
 <p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
-<p>The path is relative to the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>.</p>
+<p>The path is relative to the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Favicon is stored in the /static folder</div>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;favicon&quot;: &quot;static/favicon.png&quot;
 }</code></pre>
 </doc-codeblock></div>
-<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input">input</doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output">output</doc-anchor-trigger> root.</p>
+<p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> root.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="footer">
