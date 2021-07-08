@@ -908,7 +908,40 @@
         <span>meta</span>
     </h2>
 </doc-anchor-target>
-<p>Meta tag configuration.</p>
+<p>Project wide meta tag configuration options.</p>
+<doc-anchor-target id="base-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-2">#</doc-anchor-trigger>
+        <span>base</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="base-string">
+    <template #title>base : <code v-pre>string</code></template>
+<p>The <code v-pre>meta.base</code> config is used to explicitly build the <code v-pre>content</code> attribute value for Open Graph and Twitter <a href="https://metatags.io/">meta tags</a>.</p>
+<p>If a <doc-anchor-trigger to="#cname"><code v-pre>cname</code></doc-anchor-trigger> is configured and <code v-pre>meta.base</code> has not, Retype will use the <code v-pre>cname</code>.</p>
+<p>If both <code v-pre>meta.base</code> and <code v-pre>cname</code> are not configured, Retype will have to use a relative path, such as <code v-pre>/getting-started/</code> instead of <code v-pre>https://example.com/getting-started</code>.</p>
+<p>Relative paths are not recommended for both Open Graph and Twitter meta tags, so explicitly setting <code v-pre>meta.base</code> is recommended.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Explicitly set meta tag content path</div>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;meta&quot;: {
+    &quot;base&quot;: &quot;https://example.com&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>In the sample above, you could also simplify the value with <code v-pre>&quot;base&quot;: &quot;example.com&quot;</code>. Retype will then assume the <code v-pre>https</code> protocol and prepend the value with <code v-pre>https://</code>. It would be better to explicitly configure <code v-pre>base</code> with the base URL of your final site, but Retype will try its best to determine automatically.</p>
+<p>The <code v-pre>base</code> value is used by Retype to generate meta tag values such as the following:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;!-- Open Graph / Facebook --&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;https://example.com/&quot;&gt;
+
+&lt;!-- Twitter --&gt;
+&lt;meta property=&quot;twitter:url&quot; content=&quot;https://example.com/&quot;&gt;</code></pre>
+</doc-codeblock></div>
+<doc-alert variant="primary">
+<p>If setting the <code v-pre>meta.base</code> property, you might need <doc-anchor-trigger to="#cname"><code v-pre>cname</code></doc-anchor-trigger> too.</p>
+</doc-alert>
+</doc-panel>
 <doc-anchor-target id="title-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
