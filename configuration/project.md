@@ -94,7 +94,9 @@ Branding configuration for your Retype generated website.
 
 === title : `string`
 
-Logo Title. Displayed when [logo](#logo) and [logoDark](#logoDark) are not configured. Default is `Project Name`.
+The main text title added to the upper-left corner of the generated website.
+
+The `title` can be used in conjunction with [`logo`](#logo) and [`logoDark`](#logoDark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
 
 ```json Set the website title
 {
@@ -113,7 +115,7 @@ The above `title` would create the following branding title in the upper-left co
 
 === label : `string`
 
-Optional Logo Label text. Default is `Docs`.
+Optional logo label text. Default is `Docs`.
 
 ```json Set a custom label
 {
@@ -133,7 +135,7 @@ The `label` is rendered as the following label in the upper-left corner of the g
 
 One of the following:
 
-1. The path to a logo file relative to the [input](#input), or
+1. The path to a logo file relative to the [`input`](#input), or
 2. An inline `<svg>` logo
 
 Default is `null`.
@@ -153,7 +155,7 @@ Default is `null`.
 
 One of the following:
 
-1. The path to a logo file (dark mode) relative to the [input](#input), or
+1. The path to a logo file (dark mode) relative to the [`input`](#input), or
 2. An inline `<svg>` logo
 
 Default is `null`.
@@ -214,7 +216,7 @@ Set a custom label background color. Default is `#e1edff`.
 
 === cname : `string`
 
-If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [output](#output). Default is `null`.
+If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [`output`](#output). Default is `null`.
 
 ```json Sample: Host docs.example.com website using GitHub pages
 {
@@ -336,7 +338,7 @@ To explicitly include any files or folders that might have been excluded, please
 
 A custom path to a `.ico` or `.png` file to be used as the `favicon`. Default is `null`.
 
-The path is relative to the [input](#input).
+The path is relative to the [`input`](#input).
 
 ```json Favicon is stored in the /static folder
 {
@@ -344,7 +346,7 @@ The path is relative to the [input](#input).
 }
 ```
 
-By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [input](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [output](#output) root.
+By default, Retype will look for a `favicon.ico` or `favicon.png` within the root of the [`input`](#input). The `favicon` config would typically only be used if you want to store the `favicon` file in a subfolder of the [`output`](#output) root.
 ===
 
 ---
