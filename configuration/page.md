@@ -324,6 +324,8 @@ File path | Old URL | New URL
 `/guides/configuration.md` | `/guides/configuration` | `/tutorials/configuration`
 ===
 
+---
+
 ## tags
 
 === tags : `list`
