@@ -81,21 +81,6 @@ Setting `expanded: true` within the metadata of an `.md` page or the paired `.ym
 
 ---
 
-## hidden
-
-=== hidden : `boolean`
-
-Hides the current page in the navigation and from the search results. Default is `false`.
-
-Set to `true` to hide.
-
-```yml
-hidden: true
-```
-===
-
----
-
 ## icon
 
 === icon : `string`
