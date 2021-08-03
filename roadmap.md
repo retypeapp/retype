@@ -15,26 +15,39 @@ Expected: Mid Q3 2021
 - [ ] Early support for TypeScript API reference doc generation
 - [x] Many more features planned
 
-## `v1.9.0`
+## `v1.10.0`
+
+Expected: Early Q4 2021
+
+- [ ] Another beta release of building C# project reference documentation
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+
+
+## `v1.9.0` [!badge text="NEXT" variant="info"]
 
 Expected: Mid Q3 2021
 
 - [ ] New `partials` support
 - [ ] New `variables` support
-- [ ] New page dependecy graph to improve incremental build performance
-- [ ] Another beta release of building C# project reference documentation
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
-
-## `v1.8.0` [!badge text="NEXT" variant="info"]
-
-Expected: Early Q3 2021
-
-- [ ] New `/blog` summary page
-- [ ] New FlexGrid component
 - [ ] Improved handling of Docusaurus, MkDocs, and GitBook config files
+- [x] New page dependecy graph to improve incremental build performance
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.7.0` [!badge text="LATEST" variant="info"]
+## `v1.8.0` [!badge text="LATEST" variant="info"]
+
+Released: 2021-08-03
+
+- [x] New `retype.yml` project configuration file format
+- [x] New [`url`](configuration/project.md#urml) project config for setting your website URL
+- [x] New auto-generate a `sitemap.xml` file to inform search engines which pages to crawl
+- [x] New auto-generate a `robots.txt` file
+- [x] New Open Graph and Twitter meta tags added to every page
+- [x] New `/blog` summary page
+- [x] New [`author`](configuration/page.md#author), [`category`](configuration/page.md#category), and [`date`](configuration/page.md#date) page configs
+- [x] New [`redirect`](configuration/page.md#redirect) page config
+- [x] New [`visibility`](configuration/page.md#visibility) page config
+
+## `v1.7.0`
 
 Released: 2021-06-24
 
@@ -46,7 +59,6 @@ Released: 2021-06-24
 - [x] New default page support for [`default.md`](guides/formatting/#home-page)
 - [x] New hover style on [Badge](components/badge.md) component when links
 - [x] Super improved handling of áccënt characters
-- [x] A dozen other minor enhancements, optimizations, and adjustments
 
 ## `v1.6.0`
 
