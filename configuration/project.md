@@ -599,44 +599,6 @@ Config `target` value | Runtime `target` value
 
 Project wide meta tag configuration options.
 
-### base
-
-=== base : `string`
-
-The `meta.base` config is used to explicitly build the `content` attribute value for Open Graph and Twitter [meta tags](https://metatags.io/).
-
-If a [`cname`](#cname) is configured and `meta.base` has not, Retype will use the `cname`.
-
-If both `meta.base` and `cname` are not configured, Retype will have to use a relative path, such as `/getting-started/` instead of `https://example.com/getting-started`.
-
-Relative paths are not recommended for both Open Graph and Twitter meta tags, so explicitly setting `meta.base` is recommended.
-
-```json Explicitly set meta tag content path
-{
-  "meta": {
-    "base": "https://example.com"
-  }
-}
-```
-
-In the sample above, you could also simplify the value with `"base": "example.com"`. Retype will then assume the `https` protocol and prepend the value with `https://`. It would be better to explicitly configure `base` with the base URL of your final site, but Retype will try its best to determine automatically.
-
-The `base` value is used by Retype to generate meta tag values such as the following:
-
-```html
-<!-- Open Graph / Facebook -->
-<meta property="og:url" content="https://example.com/">
-
-<!-- Twitter -->
-<meta property="twitter:url" content="https://example.com/">
-```
-
-!!!
-If setting the `meta.base` property, you might need [`cname`](#cname) too.
-!!!
-
-===
-
 ### title
 
 === title : `string`
