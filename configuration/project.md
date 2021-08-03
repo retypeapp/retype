@@ -328,7 +328,6 @@ Included file types:
 - `*.pdf`
 - `*.tiff`
 - `*.txt`
-- `*.zip`
 
 By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the `output` unchanged. If you require any other folders, please add to the `include` config.
 
