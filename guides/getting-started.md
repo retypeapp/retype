@@ -33,7 +33,7 @@ You only need one of those three package managers as a prerequisite, although al
 
 ## Install
 
-It takes just a few seconds to install Retype using any of the following commands. Choose a command based on a package manager you have installed on your computer.
+It takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.
 
 +++ npm
 ```
@@ -56,7 +56,7 @@ That's it! :tada: Your new Retype website should be up and running. :tada:
 
 !!!
 
-If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance.
+If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance. The `dotnet` package size is the smallest.
 
 !!!
 
@@ -102,4 +102,4 @@ dotnet tool uninstall retypeapp --global
 ```
 +++
 
-Any Retype related files within your project can be deleted, such as the `retype.json` file and the generated `.retype` folder.
+All Retype related files and folders within your project can be deleted, such as the `retype.yml` file and the generated `.retype` folder.

@@ -1,0 +1,42 @@
+input: ./
+output: .retype
+url: retype.com
+
+branding:
+  logo: /static/retype-logo.svg
+  logoDark: /static/retype-logo-dark.svg
+  label: v1.8
+
+meta:
+  title:  "| Retype - Generate publish and share documentation"
+
+edit:
+  repo: https://github.com/retypeapp/retype/
+
+links:
+  - text: Home
+    link: /README.md
+
+  - text: GitHub
+    link: https://github.com/retypeapp/retype
+    target: blank
+
+  - text: Discussions
+    link: https://github.com/retypeapp/retype/discussions
+    target: blank
+
+  - text: Issues
+    link: https://github.com/retypeapp/retype/issues
+    target: blank
+
+footer:
+  copyright: © Copyright {{ year }}. [Object.NET Inc.](https://object.net/) All rights reserved.
+  links:
+    - text: About
+      link: about.md
+
+integrations:
+  crisp:
+    id: 9ec0e13c-1299-4c3f-a5e9-ff39363c6960
+  googleAnalytics:
+    id: G-HLTYMRVPG4
