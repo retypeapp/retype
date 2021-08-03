@@ -9,31 +9,31 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Project configuration | Retype - Generate, publish, and share documentation</title>
-    <meta name="title" content="Project configuration | Retype - Generate, publish, and share documentation">
-    <meta name="description" content="Retype will read the retype.json file for additional instructions on how to configure and build your project." />
+    <title>Project configuration| Retype - Generate publish and share documentation</title>
+    <meta name="title" content="Project configuration| Retype - Generate publish and share documentation">
+    <meta name="description" content="Retype will read the retype.yml file for additional instructions on how to configure and build your project." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/configuration/project/">
-    <meta property="og:title" content="Project configuration | Retype - Generate, publish, and share documentation">
-    <meta property="og:description" content="Retype will read the retype.json file for additional instructions on how to configure and build your project.">
-    <meta property="og:image" content="https://retype.com/static/project-base-config-github-pages.png">
+    <meta property="og:title" content="Project configuration| Retype - Generate publish and share documentation">
+    <meta property="og:description" content="Retype will read the retype.yml file for additional instructions on how to configure and build your project.">
+    <meta property="og:image" content="https://retype.com/static/project-branding-title.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/configuration/project/">
-    <meta property="twitter:title" content="Project configuration | Retype - Generate, publish, and share documentation">
-    <meta property="twitter:description" content="Retype will read the retype.json file for additional instructions on how to configure and build your project.">
-    <meta property="twitter:image" content="https://retype.com/static/project-base-config-github-pages.png">
+    <meta property="twitter:title" content="Project configuration| Retype - Generate publish and share documentation">
+    <meta property="twitter:description" content="Retype will read the retype.yml file for additional instructions on how to configure and build your project.">
+    <meta property="twitter:image" content="https://retype.com/static/project-branding-title.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css" rel="stylesheet" />
+    <link href="/resources/css/retype.css?v=1.8.681335866478" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.681335866478" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.8" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.681335866478" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -53,7 +53,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.8</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -206,75 +206,44 @@
         <span>Project configuration</span>
     </h1>
 </doc-anchor-target>
-<p>Retype will read the <code v-pre>retype.json</code> file for additional instructions on how to configure and build your project.</p>
-<p>The <code v-pre>retype.json</code> file is typically stored in the root of your project, although can be placed elsewhere. Please ensure the <code v-pre>input</code> and <code v-pre>output</code> paths are correct if moved to a different location.</p>
-<doc-alert variant="primary">
-<p>After making a change to the <code v-pre>retype.json</code>, if you are running <code v-pre>retype watch</code>, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.</p>
-<p>If you started the local web server using <code v-pre>retype run</code>, you&#x27;ll need to call <code v-pre>retype build</code> to regenerate a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see update.</p>
-</doc-alert>
-<p>The <code v-pre>retype.json</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.json</code> is a good first step.</p>
-<p>Running the command <code v-pre>retype init</code> will create a default <code v-pre>retype.json</code> file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.</p>
+<p>Retype will read the <code v-pre>retype.yml</code> file for additional instructions on how to configure and build your project.</p>
+<p>The <code v-pre>retype.yml</code> file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the <code v-pre>input</code> and <code v-pre>output</code> paths are correct if moved to a different location.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>After making a change to the <code v-pre>retype.yml</code>, if you are running <code v-pre>retype watch</code>, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.</p>
+<p>If you started the local web server using <code v-pre>retype run</code>, you&#x27;ll need to call <code v-pre>retype build</code> to regenerate a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see the update.</p>
+        </div>
+    </div>
+</div>
+<p>The <code v-pre>retype.yml</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.yml</code> is a good first step.</p>
+<p>If you run the command <code v-pre>retype watch</code> and do not have a <code v-pre>retype.yml</code> project configuration file within the root of your project, Retype will auto-generate a simple <code v-pre>retype.yml</code> file for your project. You can then edit the file to customize your project.</p>
+<p>You can also explicitly have Retype generate a <code v-pre>retype.yml</code> file by running the command <code v-pre>retype init</code>.</p>
+<p>The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample retype.json</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;.&quot;,
-  &quot;output&quot;: &quot;.retype&quot;,
-
-  &quot;branding&quot;: {
-    &quot;title&quot;: &quot;Project Name&quot;,
-    &quot;label&quot;: &quot;Docs&quot;
-  },
-
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Getting Started&quot;,
-      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
-    }
-  ],
-
-  &quot;footer&quot;: {
-    &quot;copyright&quot;: &quot;© Copyright {{ year }}. All rights reserved.&quot;
-  }
-}</code></pre>
+<div class="codeblock-title">Sample retype.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: Project Name
+  label: Docs
+links:
+- text: Getting Started
+  link: https://retype.com/guides/getting-started/
+footer:
+  copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
-<hr />
-<doc-anchor-target id="base">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
-        <span>base</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="base-string">
-    <template #title>base : <code v-pre>string</code></template>
-<p>Base subfolder path appended to all URL&#x27;s. Default is <code v-pre>null</code> or empty string.</p>
-<p>If you deploy the build website to a subfolder of another website, use the <code v-pre>base</code> to ensure the URL&#x27;s correclty resolve.</p>
-<p>For instance, let&#x27;s say your main site is <code v-pre>https://example.com</code> and will remain unchanged.  If you would like to deploy the Retype built website into a <code v-pre>/docs</code> subfolder, with the final URL of <code v-pre>https://example.com/docs</code>, then setting <code v-pre>&quot;base&quot;: &quot;docs&quot;</code> would be required.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Change output location to /docs folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;base&quot;: &quot;docs&quot;
-}</code></pre>
-</doc-codeblock></div>
-<p>Another common scenario for setting a <code v-pre>base</code> is when using GitHub Pages <strong>without</strong> a custom <code v-pre>CNAME</code>.</p>
-<p>For instance, if your GitHub organization was <code v-pre>CompanyX</code> and your repo was named <code v-pre>my-repo</code>, the URL to your GitHub Pages hosted website would be:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">https://companyx.github.io/my-repo/</code></pre>
-</doc-codeblock></div>
-<p>The Retype generated wesite would require <code v-pre>&quot;base&quot;: &quot;my-repo&quot;</code> to be set within your projects <code v-pre>retype.json</code> file in order to properly resolve the URL paths during build.</p>
-<p>The <code v-pre>retype.json</code> file for that scenario would be...</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.json</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;base&quot;: &quot;my-repo&quot;
-}</code></pre>
-</doc-codeblock></div>
-<p>...and the GitHub Pages configuration within your repo Settings would be:</p>
-<p><figure class="content-center">
-    <img src="../../static/project-base-config-github-pages.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</doc-panel>
 <hr />
 <doc-anchor-target id="branding">
     <h2>
@@ -295,11 +264,8 @@
 <p>The <code v-pre>title</code> can be used in conjunction with <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark"><code v-pre>logoDark</code></doc-anchor-trigger>. If a <code v-pre>title</code> and <code v-pre>logo</code> are configured, both will be added to the website. If only a <code v-pre>title</code> is configured, only the text title is used. If only a <code v-pre>logo</code> and/or <code v-pre>logoDark</code> are configured, only the logos are used.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set the website title</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;title&quot;: &quot;Example.com&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  title: Example.com</code></pre>
 </doc-codeblock></div>
 <p>The above <code v-pre>title</code> would create the following branding title in the upper-left corner of the generated website.</p>
 <p><figure class="content-center">
@@ -319,11 +285,8 @@
 <p>Optional logo label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;label&quot;: &quot;v2.2&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  label: Docs</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>label</code> is rendered as the following label in the upper-left corner of the generated website, to the right of the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger> or <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger>.</p>
 <p><figure class="content-center">
@@ -348,11 +311,8 @@
 <p>Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;logo&quot;: &quot;static/logo.png&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  logo: static/logo.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="logodark">
@@ -371,12 +331,9 @@
 <p>Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;logo&quot;: &quot;static/logo.png&quot;,
-    &quot;logoDark&quot;: &quot;static/logo-dark.png&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  logo: static/logo.png
+  logoDark: static/logo-dark.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="colors">
@@ -396,15 +353,10 @@
     <template #title>label.text : <code v-pre>string</code></template>
 <p>Set a custom label text color. Default is <code v-pre>#1f7aff</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;colors&quot;: {
-      &quot;label&quot;: {
-        &quot;text&quot;: &quot;#ffffff&quot;
-      }
-    }
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  colors:
+    label:
+      text: #ffffff</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="labelbackground">
@@ -417,15 +369,10 @@
     <template #title>label.background : <code v-pre>string</code></template>
 <p>Set a custom label background color. Default is <code v-pre>#e1edff</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;branding&quot;: {
-    &quot;colors&quot;: {
-      &quot;label&quot;: {
-        &quot;background&quot;: &quot;#ff0000&quot;
-      }
-    }
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  colors:
+    label:
+      background: #ff0000</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -439,10 +386,8 @@
     <template #title>cname : <code v-pre>string</code></template>
 <p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Host docs.example.com website using GitHub pages</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;cname&quot;: &quot;docs.example.com&quot;
-}</code></pre>
+<div class="codeblock-title">Host docs.example.com website using GitHub pages</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">cname: docs.example.com</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -453,9 +398,23 @@
     </h2>
 </doc-anchor-target>
 <p>The <code v-pre>edit</code> config allows for enabling and customization of the <code v-pre>Edit this page</code> links on content pages.</p>
-<doc-alert variant="primary">
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
 <p>Check out the bottom of this page for a working sample of <code v-pre>Edit this page</code>.</p>
-</doc-alert>
+        </div>
+    </div>
+</div>
 <doc-anchor-target id="repo">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#repo">#</doc-anchor-trigger>
@@ -467,11 +426,8 @@
     <template #title>repo : <code v-pre>string</code></template>
 <p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;edit&quot;: {
-    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+  repo: &quot;https://github.com/your-organization/your-repo&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="branch">
@@ -484,17 +440,14 @@
     <template #title>branch : <code v-pre>string</code></template>
 <p>Point to a custom branch within the repo. Default is <code v-pre>main</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;edit&quot;: {
-    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;,
-    &quot;branch&quot;: &quot;website&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+  repo: &quot;https://github.com/your-organization/your-repo&quot;
+  branch: website</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="base-1">
+<doc-anchor-target id="base">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
         <span>base</span>
     </h3>
 </doc-anchor-target>
@@ -503,12 +456,9 @@
 <p>A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.</p>
 <p>The following sample demonstrates a scenario where the content files are located within the <code v-pre>/docs</code> sub-folder of the repo.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;edit&quot;: {
-    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;,
-    &quot;base&quot;: &quot;docs&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+  repo: &quot;https://github.com/your-organization/your-repo&quot;
+  base: docs</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="label-1">
@@ -521,12 +471,9 @@
     <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the link. Default is <code v-pre>&quot;Edit this page&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">{
-  &quot;edit&quot;: {
-    &quot;repo&quot;: &quot;https://github.com/your-organization/your-repo&quot;,
-    &quot;label&quot;: &quot;Edit on GitHub&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+  repo: &quot;https://github.com/your-organization/your-repo&quot;
+  label: Edit on GitHub</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -538,24 +485,35 @@
 </doc-anchor-target>
 <doc-panel id="exclude-list">
     <template #title>exclude : <code v-pre>list</code></template>
-<p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> by configuring an <code v-pre>exclude</code> list within your projects <code v-pre>retype.json</code> file.</p>
+<p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> by configuring an <code v-pre>exclude</code> list within your projects <code v-pre>retype.yml</code> file.</p>
 <p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exclude patterns</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;exclude&quot;: [
-    &quot;draft/&quot;,
-    &quot;*_temp/&quot;,
-    &quot;/src/temp.md&quot;
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">exclude:
+  - &quot;draft/&quot;
+  - &quot;*_temp/&quot;
+  - &quot;/src/temp.md&quot;</code></pre>
 </doc-codeblock></div>
-<p>You could exclude everything in your project with by adding <code v-pre>&quot;exclude&quot;: [ &quot;*&quot; ]</code>.</p>
-<doc-alert variant="primary">
+<p>You could exclude everything in your project with by adding <code v-pre>exclude: [ * ]</code>.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
 <p>By default, any file or folder name prefixed with a <code v-pre>.</code> or a <code v-pre>_</code> will be excluded.</p>
 <p>As well, any <code v-pre>node_modules</code> folder will be excluded.</p>
-</doc-alert>
+        </div>
+    </div>
+</div>
 <p>To explicitly include any files or folders that might have been excluded, please see the <doc-anchor-trigger to="#include"><code v-pre>include</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr />
@@ -571,9 +529,7 @@
 <p>The path is relative to the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Favicon is stored in the /static folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;favicon&quot;: &quot;static/favicon.png&quot;
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">favicon: static/favicon.png</code></pre>
 </doc-codeblock></div>
 <p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> root.</p>
 </doc-panel>
@@ -594,11 +550,8 @@
     <template #title>copyright : <code v-pre>string</code></template>
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;footer&quot;: {
-    &quot;copyright&quot;: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved.&quot;,
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">footer:
+  copyright: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="links-footer">
@@ -611,16 +564,10 @@
     <template #title>links : <code v-pre>object</code></template>
 <p>The <code v-pre>footer.links</code> have the same configuration options as <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;footer&quot;: {
-    &quot;links&quot;: [
-      {
-        &quot;text&quot;: &quot;License&quot;,
-        &quot;link&quot;: &quot;license.md&quot;
-      }
-    ]
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">footer:
+  links:
+    - text: License
+      link: license.md</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -637,14 +584,11 @@
 <p>The following sample demonstrates how to include all <code v-pre>.py</code> files and the entire contents of any <code v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Include patterns</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;include&quot;: [
-    &quot;*.py&quot;,
-    &quot;**/www/**&quot;
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">include:
+  - *.py
+  - **/www/**</code></pre>
 </doc-codeblock></div>
-<p>You could explicitly include everything in your project with <code v-pre>&quot;include&quot;: [ &quot;*&quot; ]</code>, BUT be careful as all files within your <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
+<p>You could explicitly include everything in your project with <code v-pre>include: [ * ]</code>, BUT be careful as all files within your <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
 <p>Retype treats all <code v-pre>.md</code> and <code v-pre>.yml</code> files as parsable content files that will be converted into <code v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code v-pre>output</code> unchanged and become static files that can be linked to.</p>
 <p>By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the <code v-pre>output</code> unchanged. If you require any other file types, they would need to be explicitly added to the <code v-pre>include</code> config.</p>
 <p>Included file types:</p>
@@ -662,7 +606,6 @@
 <li><code v-pre>*.pdf</code></li>
 <li><code v-pre>*.tiff</code></li>
 <li><code v-pre>*.txt</code></li>
-<li><code v-pre>*.zip</code></li>
 </ul>
 <p>By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the <code v-pre>output</code> unchanged. If you require any other folders, please add to the <code v-pre>include</code> config.</p>
 <p>Included folders:</p>
@@ -684,12 +627,10 @@
 <doc-panel id="input-string">
     <template #title>input : <code v-pre>string</code></template>
 <p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
-<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
+<p>The path is relative to the <code v-pre>retype.yml</code> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Change input location to /src folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;input&quot;: &quot;./src&quot;
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">input: ./src</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -711,13 +652,9 @@
     <template #title>googleAnalytics.id : <code v-pre>string</code></template>
 <p>Google Analytics ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;integrations&quot;: {
-    &quot;googleAnalytics&quot;: {
-      &quot;id&quot;: &quot;UA-12345678-1&quot;
-    }
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  googleAnalytics:
+    id: UA-12345678-1</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -730,14 +667,9 @@
 <p>Custom links added to the top-bar navigation of all pages.</p>
 <p>The following sample demonstrates a basic <code v-pre>links</code> scenario which would add one link to the top bar of all pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Getting Started&quot;,
-      &quot;link&quot;: &quot;https://retype.com/getting_started/&quot;
-    }
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Getting Started
+    link: https://retype.com/getting_started/</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="text">
     <h3>
@@ -749,14 +681,9 @@
     <template #title>text : <code v-pre>string</code></template>
 <p>The link text label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Demos&quot;,
-      &quot;link&quot;: &quot;https://demo.example.com/&quot;
-    }
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Demos
+    link: https://demo.example.com/</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="link">
@@ -770,14 +697,9 @@
 <p>The URL to use for the link. The link can be a <code v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
 <p>If a <code v-pre>.md</code> file set, such as <code v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code v-pre>sample.md</code> value will be replaced with the path to the actual generated HTML file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;About us&quot;,
-      &quot;link&quot;: &quot;/about/&quot;
-    }
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: About us
+    link: /about/</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="icon">
@@ -790,32 +712,27 @@
     <template #title>icon : <code v-pre>string</code></template>
 <p>An icon to use with the link. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Issues&quot;,
-      &quot;link&quot;: &quot;https://github.com/retypeapp/retype/issues/&quot;,
-      &quot;icon&quot;: &quot;bug&quot;
-    }
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Issues
+    link: https://github.com/retypeapp/retype/issues/
+    icon: bug</code></pre>
 </doc-codeblock></div>
 <p>Options include using an <a href="https://octicons-primer.vercel.app/octicons/">Octicon</a> name, <a href="https://mojee.io/emojis/">Emoji</a> shortcode, <code v-pre>&lt;svg&gt;</code> element, or a path to an image file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Octicon</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;rocket&quot;</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: rocket</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Emoji shortcode</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;:rocket:&quot;</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: :rocket:</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">SVG element</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;&lt;svg&gt;...&lt;/svg&gt;&quot;</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: &lt;svg&gt;...&lt;/svg&gt;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Path</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">&quot;icon&quot;: &quot;../static/rocket.png&quot;</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">icon: ../static/rocket.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="iconalign">
@@ -828,16 +745,11 @@
     <template #title>iconAlign : <code v-pre>string</code></template>
 <p>The position for the icon relative to the link <code v-pre>text</code>. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Demos&quot;,
-      &quot;link&quot;: &quot;https://demo.example.com/&quot;,
-      &quot;icon&quot;: &quot;link-external&quot;,
-      &quot;iconAlign&quot;: &quot;right&quot;
-    }
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Demos
+    link: https://demo.example.com/
+    icon: link-external
+    iconAlign: right</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="target">
@@ -850,15 +762,10 @@
     <template #title>target : <code v-pre>string</code></template>
 <p>Sets the <code v-pre>target</code> attribute of the hyperlink and specifies which window or tab to open the link into.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;links&quot;: [
-    {
-      &quot;text&quot;: &quot;Demos&quot;,
-      &quot;link&quot;: &quot;https://demo.example.com/&quot;,
-      &quot;target&quot;: &quot;blank&quot;
-    }
-  ]
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Demos
+    link: https://demo.example.com/
+    target: blank</code></pre>
 </doc-codeblock></div>
 <p>If no <code v-pre>target</code> is configured, the link will open in the current tab.</p>
 <p>The <code v-pre>target</code> can be set to any value, although <code v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code v-pre>blank</code> into <code v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
@@ -910,39 +817,6 @@
     </h2>
 </doc-anchor-target>
 <p>Project wide meta tag configuration options.</p>
-<doc-anchor-target id="base-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base-2">#</doc-anchor-trigger>
-        <span>base</span>
-    </h3>
-</doc-anchor-target>
-<doc-panel id="base-string">
-    <template #title>base : <code v-pre>string</code></template>
-<p>The <code v-pre>meta.base</code> config is used to explicitly build the <code v-pre>content</code> attribute value for Open Graph and Twitter <a href="https://metatags.io/">meta tags</a>.</p>
-<p>If a <doc-anchor-trigger to="#cname"><code v-pre>cname</code></doc-anchor-trigger> is configured and <code v-pre>meta.base</code> has not, Retype will use the <code v-pre>cname</code>.</p>
-<p>If both <code v-pre>meta.base</code> and <code v-pre>cname</code> are not configured, Retype will have to use a relative path, such as <code v-pre>/getting-started/</code> instead of <code v-pre>https://example.com/getting-started</code>.</p>
-<p>Relative paths are not recommended for both Open Graph and Twitter meta tags, so explicitly setting <code v-pre>meta.base</code> is recommended.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Explicitly set meta tag content path</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;meta&quot;: {
-    &quot;base&quot;: &quot;https://example.com&quot;
-  }
-}</code></pre>
-</doc-codeblock></div>
-<p>In the sample above, you could also simplify the value with <code v-pre>&quot;base&quot;: &quot;example.com&quot;</code>. Retype will then assume the <code v-pre>https</code> protocol and prepend the value with <code v-pre>https://</code>. It would be better to explicitly configure <code v-pre>base</code> with the base URL of your final site, but Retype will try its best to determine automatically.</p>
-<p>The <code v-pre>base</code> value is used by Retype to generate meta tag values such as the following:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;!-- Open Graph / Facebook --&gt;
-&lt;meta property=&quot;og:url&quot; content=&quot;https://example.com/&quot;&gt;
-
-&lt;!-- Twitter --&gt;
-&lt;meta property=&quot;twitter:url&quot; content=&quot;https://example.com/&quot;&gt;</code></pre>
-</doc-codeblock></div>
-<doc-alert variant="primary">
-<p>If setting the <code v-pre>meta.base</code> property, you might need <doc-anchor-trigger to="#cname"><code v-pre>cname</code></doc-anchor-trigger> too.</p>
-</doc-alert>
-</doc-panel>
 <doc-anchor-target id="title-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
@@ -954,11 +828,8 @@
 <p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Append this string to all page meta tag titles</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;meta&quot;: {
-    &quot;title&quot;: &quot; | Example.com - Widgets for the internet&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">meta:
+  title: &quot; | Example.com - Widgets for the internet&quot;</code></pre>
 </doc-codeblock></div>
 <p>If we had an <code v-pre>About us</code> page, the final <code v-pre>&lt;title&gt;</code> with the <code v-pre>title</code> value above would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -977,10 +848,8 @@
 <p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
 <p>The path is relative to the <code v-pre>retype.json</code> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample: Change output location to /docs folder</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;output&quot;: &quot;./docs&quot;
-}</code></pre>
+<div class="codeblock-title">Change output location to /docs folder</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">output: ./docs</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -994,12 +863,10 @@
     <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;port&quot;: 5005
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">port: 5005</code></pre>
 </doc-codeblock></div>
 <p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
-<p>If a custom <code v-pre>port</code> is explicitly configured in the <code v-pre>retype.json</code>, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the <code v-pre>port</code> was explicitly configured, Retype will not attempt to auto-increment.</p>
+<p>If a custom <code v-pre>port</code> is explicitly configured in the <code v-pre>retype.yml</code>, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the <code v-pre>port</code> was explicitly configured, Retype will not attempt to auto-increment.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="search">
@@ -1019,11 +886,8 @@
     <template #title>minChars : <code v-pre>number</code></template>
 <p>Min number of characters required in a search query. Defualt is <code v-pre>3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;search&quot;: {
-    &quot;minChars&quot;: 3
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  minChars: 3</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="maxresults">
@@ -1036,11 +900,8 @@
     <template #title>maxResults : <code v-pre>number</code></template>
 <p>Max number of search results to render. Defualt is <code v-pre>20</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;search&quot;: {
-    &quot;maxResults&quot;: 20
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  maxResults: 20</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="placeholder">
@@ -1053,11 +914,8 @@
     <template #title>placeholder : <code v-pre>string</code></template>
 <p>Placeholder text rendered on the search component. Defualt is <code v-pre>&quot;Search&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;search&quot;: {
-    &quot;placeholder&quot;: &quot;Search&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  placeholder: Search</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="hotkeys">
@@ -1066,15 +924,13 @@
         <span>hotkeys</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="hotkeys-string">
-    <template #title>hotkeys : <code v-pre>string[]</code></template>
+<doc-panel id="hotkeys-list">
+    <template #title>hotkeys : <code v-pre>list</code></template>
 <p>Keyboard key to set the cursor focus into the search field. Defualt is <code v-pre>[&quot;/&quot;]</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;search&quot;: {
-    &quot;hotkeys&quot;: [&quot;/&quot;]
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  hotkeys:
+    - &quot;/&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="noresultsfoundmsg">
@@ -1087,11 +943,8 @@
     <template #title>noResultsFoundMsg : <code v-pre>string</code></template>
 <p>Message rendered when no results were found. Defualt is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;search&quot;: {
-    &quot;noResultsFoundMsg&quot;: &quot;Sorry, no results found.&quot;
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  noResultsFoundMsg: Sorry, no results found.</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -1108,34 +961,29 @@
         <span>lineNumbers</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="linenumbers-string">
-    <template #title>lineNumbers : <code v-pre>string[]</code></template>
-<p>A llist of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
+<doc-panel id="linenumbers-list">
+    <template #title>lineNumbers : <code v-pre>list</code></template>
+<p>A list of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for <code v-pre>js</code> and <code v-pre>json</code> code blocks site wide</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;snippets&quot;: {
-    &quot;lineNumbers&quot;: [ &quot;js&quot;, &quot;json&quot; ]
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">snippets:
+  lineNumbers:
+    - js
+    - json</code></pre>
 </doc-codeblock></div>
 <p>Configuring the <code v-pre>&quot;*&quot;</code> wildcard will enable line numbering for <strong>all</strong> code block types, including code blocks with no explicit reference language.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for all code blocks site wide</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;snippets&quot;: {
-    &quot;lineNumbers&quot;: [ &quot;*&quot; ]
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">snippets:
+  lineNumbers:
+    - *</code></pre>
 </doc-codeblock></div>
 <p>Enabling line numbering site wide on code blocks with no explicit reference language is configured with the none <code v-pre>&quot;none&quot;</code> specifier.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for all unspecified code blocks site wide</div>
-<pre class="language-json"><code v-pre class="language-json">{
-  &quot;snippets&quot;: {
-    &quot;lineNumbers&quot;: [ &quot;none&quot; ]
-  }
-}</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">snippets:
+  lineNumbers:
+    - none</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -1237,7 +1085,7 @@
 </ul>
 
     </div>
-    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. <a href="https://object.net/">Object.NET, Inc.</a> All rights reserved.</p>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. <a href="https://object.net/">Object.NET Inc.</a> All rights reserved.</p>
 </div>
 </footer>
 
