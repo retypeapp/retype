@@ -42,7 +42,7 @@ Released: 2021-06-24
 - [x] New stacking [Panels](components/panel.md#stacking) component
 - [x] New Open Graph and Twitter card support
 - [x] New [Mermaid](components/mermaid.md) diagram and visualization support
-- [x] New [`target`](configuration/project.md#target) config for all `links` within `retype.json`
+- [x] New [`target`](configuration/project.md#target) config for all `links` within `retype.yml`
 - [x] New default page support for [`default.md`](guides/formatting/#home-page)
 - [x] New hover style on [Badge](components/badge.md) component when links
 - [x] Super improved handling of áccënt characters
@@ -79,7 +79,7 @@ Released: 2021-04-12
 - [x] Even cleaner upgrade to Retype from GitBook experience
 - [x] New super fast [`retype watch`](guides/cli.md#retype-watch) incremental build process
 - [x] New [image alignment](components/image.md#alignment-options) and captions
-- [x] New [`exclude`](configuration/project.md#exclude) config for `retype.json`
+- [x] New [`exclude`](configuration/project.md#exclude) config for `retype.yml`
 - [x] New `blog` layout and `/blog` folder defaults
 - [x] New [`[!file]`](components/file-download.md) component
 - [x] New [`[!ref]`](components/reference-link.md) component
@@ -104,7 +104,7 @@ Released: 2021-03-25
 - [x] New `Previous | Next` footer navigation buttons for pages
 - [x] New [`order`](configuration/page.md#order) Page level config
 - [x] New [`hidden`](configuration/page.md#hidden) Page level config
-- [x] New [`favicon`](configuration/project.md#favicon) Project config available in `retype.json`
+- [x] New [`favicon`](configuration/project.md#favicon) Project config available in `retype.yml`
 - [x] New beta release of building C# project reference documentation
 
 ## `v1.1.0`

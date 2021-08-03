@@ -2,9 +2,6 @@ input: ./
 output: .retype
 url: example.com
 
-server:
-    port: 3333
-
 branding:
     logo: /static/retype-logo.svg
     logoDark: /static/retype-logo-dark.svg

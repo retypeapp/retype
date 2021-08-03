@@ -6,19 +6,19 @@ tags: [config]
 ---
 # Project configuration
 
-Retype will read the `retype.json` file for additional instructions on how to configure and build your project.
+Retype will read the `retype.yml` file for additional instructions on how to configure and build your project.
 
-The `retype.json` file is typically stored in the root of your project, although can be placed elsewhere. Please ensure the `input` and `output` paths are correct if moved to a different location.
+The `retype.yml` file is typically stored in the root of your project, although can be placed elsewhere. Please ensure the `input` and `output` paths are correct if moved to a different location.
 
 !!!
-After making a change to the `retype.json`, if you are running `retype watch`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
+After making a change to the `retype.yml`, if you are running `retype watch`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
 
 If you started the local web server using `retype run`, you'll need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see update.
 !!!
 
-The `retype.json` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.json` is a good first step.
+The `retype.yml` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.yml` is a good first step.
 
-Running the command `retype init` will create a default `retype.json` file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.
+Running the command `retype init` will create a default `retype.yml` file. The following sample demonstrates a common set of configuration options and everything can be customized to your requirements.
 
 ```json Sample retype.json
 {

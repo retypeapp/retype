@@ -91,7 +91,7 @@ Don't blink. Retype was built for speed.
 
 #### :muscle: Powerful
 
-Project level [configuration](configuration/project.md) using `retype.json` unlocks many more Retype features and customization.
+Project level [configuration](configuration/project.md) using `retype.yml` unlocks many more Retype features and customization.
 
 #### :pencil2: Simple formatting
 

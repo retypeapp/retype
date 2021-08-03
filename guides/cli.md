@@ -8,7 +8,7 @@ The Retype CLI is clean and simple. The majority of the time you will run just o
 
 !!!
 
-Be sure to review the [project](../configuration/project.md) options available within the `retype.json`  as it does unlock a lot more power, flexibility, and customization.
+Be sure to review the [project](../configuration/project.md) options available within the `retype.yml`  as it does unlock a lot more power, flexibility, and customization.
 
 !!!
 
