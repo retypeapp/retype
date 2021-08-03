@@ -45,47 +45,6 @@ Running the command `retype init` will create a default `retype.yml` file. The f
 
 ---
 
-## base
-
-=== base : `string`
-
-Base subfolder path appended to all URL's. Default is `null` or empty string.
-
-If you deploy the build website to a subfolder of another website, use the `base` to ensure the URL's correclty resolve.
-
-For instance, let's say your main site is `https://example.com` and will remain unchanged.  If you would like to deploy the Retype built website into a `/docs` subfolder, with the final URL of `https://example.com/docs`, then setting `"base": "docs"` would be required.
-
-```json Sample: Change output location to /docs folder
-{
-  "base": "docs"
-}
-```
-
-Another common scenario for setting a `base` is when using GitHub Pages **without** a custom `CNAME`.
-
-For instance, if your GitHub organization was `CompanyX` and your repo was named `my-repo`, the URL to your GitHub Pages hosted website would be:
-
-```
-https://companyx.github.io/my-repo/
-```
-
-The Retype generated wesite would require `"base": "my-repo"` to be set within your projects `retype.json` file in order to properly resolve the URL paths during build.
-
-The `retype.json` file for that scenario would be...
-
-```json retype.json
-{
-  "base": "my-repo"
-}
-```
-
-...and the GitHub Pages configuration within your repo Settings would be:
-
-![](../static/project-base-config-github-pages.png)
-===
-
----
-
 ## branding
 
 Branding configuration for your Retype generated website.
