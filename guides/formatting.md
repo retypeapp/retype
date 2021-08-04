@@ -91,7 +91,7 @@ If your home page is empty or blank, double check that you have a default page i
 
 ## Components
 
-In addition to the standard Markdown options, Retype includes many custom [components](../components) so you can easily add extra [!badge :gem: flair :gem:] to your document.
+In addition to the standard Markdown options, Retype includes many custom [components](../components/readme.md) so you can easily add extra [!badge :gem: flair :gem:] to your document.
 
 The most commonly used Retype components include [Alert](../components/alert.md) and [Tab](../components/tab.md):
 
@@ -123,4 +123,4 @@ This is another Tab
 +++
 ~~~
 
-[!ref See all components](../components)
+[!ref See all components](../components/readme.md)
