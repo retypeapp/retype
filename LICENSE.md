@@ -4,7 +4,7 @@ layout: page
 ---
 # Retype Software License Agreement
 
-#### Version 1.8.1
+#### Version 1.8.2
 
 THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN OBJECT.NET, INC. ("We," "Us")
 AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",
