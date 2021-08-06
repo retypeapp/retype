@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.681416613430" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.1.681536572026" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.681416613430" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.8" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.681416613430" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.1.681536572026" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.8.1" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.1.681536572026" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -346,7 +346,7 @@ jobs:
         <span>Use the same workflow for GitHub Pages and FTP sync</span>
     </h3>
 </doc-anchor-target>
-<p>In the simplest case scenario, where the <code v-pre>base</code> setting is the same for both the GitHub Pages and FTP host, simply set up the branch (<code v-pre>retype</code> by default) used by the <strong>git-ftp action</strong> as the GitHub Pages&#x27; branch. See the <a href="../guides/github-actions">GitHub Actions Guide</a> for more information.</p>
+<p>In the simplest case scenario, where the <code v-pre>base</code> setting is the same for both the GitHub Pages and FTP host, simply set up the branch (<code v-pre>retype</code> by default) used by the <strong>git-ftp action</strong> as the GitHub Pages&#x27; branch. See the <a href="../../guides/github-actions/">GitHub Actions Guide</a> for more information.</p>
 <p>Going forward, it will probably be the case that different values for <code v-pre>base</code> will be necessary for each published website. In this case, the following workflow can be used:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to FTP

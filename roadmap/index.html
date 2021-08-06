@@ -27,10 +27,10 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.681416613430" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.1.681536572026" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.681416613430" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.8" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.1.681536572026" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.8.1" defer data-turbo-track="reload"></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -211,7 +211,7 @@
         <span><code v-pre>v2.0.0</code></span>
     </h2>
 </doc-anchor-target>
-<p>Expected: Mid Q3 2021</p>
+<p>Expected: 2022</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Full support for C# API reference doc generation</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Early support for TypeScript API reference doc generation</li>
@@ -225,6 +225,8 @@
 </doc-anchor-target>
 <p>Expected: Early Q4 2021</p>
 <ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>partials</code> support</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>variables</code> support</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Another beta release of building C# project reference documentation</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
 </ul>
@@ -238,10 +240,9 @@
 </doc-anchor-target>
 <p>Expected: Mid Q3 2021</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>partials</code> support</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>variables</code> support</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Improved link resolution</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Improved handling of Docusaurus, MkDocs, and GitBook config files</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New page dependecy graph to improve incremental build performance</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New page dependecy graph to improve incremental build performance <span class="docs-emoji">&#x1F4AF;</span></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
 </ul>
 <doc-anchor-target id="v180-">
@@ -277,7 +278,7 @@
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New Open Graph and Twitter card support</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/mermaid/">Mermaid</a> diagram and visualization support</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#target"><code v-pre>target</code></a> config for all <code v-pre>links</code> within <code v-pre>retype.yml</code></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New default page support for <a href="guides/formatting/#home-page"><code v-pre>default.md</code></a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New default page support for <a href="../guides/formatting/#home-page"><code v-pre>default.md</code></a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New hover style on <a href="../components/badge/">Badge</a> component when links</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Super improved handling of áccënt characters</li>
 </ul>
@@ -289,10 +290,10 @@
 </doc-anchor-target>
 <p>Released: 2021-06-09</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="configuration/page/#tags"><code v-pre>tags</code></a> config for pages</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#tags"><code v-pre>tags</code></a> config for pages</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/icon/"><code v-pre>:icon-shortcode:</code></a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="configuration/project/#include"><code v-pre>include</code></a> project config</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="configuration/project/#exclude"><code v-pre>exclude</code></a> project config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#include"><code v-pre>include</code></a> project config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#exclude"><code v-pre>exclude</code></a> project config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Improved <code v-pre>&lt;table&gt;</code> styling</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Performance boost for <a href="../components/">components</a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Dozens of enhancements, optimizations, and adjustments</li>
@@ -306,7 +307,7 @@
 <p>Released: 2021-05-12</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/badge/">Badge</a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="components/code-block/#syntax-highlighting">syntax highlighting</a> support for all code block languages</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/code-block/#syntax-highlighting">syntax highlighting</a> support for all code block languages</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#route"><code v-pre>route</code></a> page config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#port"><code v-pre>port</code></a> project config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Larger font-size for <code v-pre>h1</code>, <code v-pre>h2</code>, and <code v-pre>h3</code> headers</li>
