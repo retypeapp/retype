@@ -9,7 +9,7 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 ## `v2.0.0`
 
-Expected: Mid Q3 2021
+Expected: 2022
 
 - [ ] Full support for C# API reference doc generation
 - [ ] Early support for TypeScript API reference doc generation
@@ -19,6 +19,8 @@ Expected: Mid Q3 2021
 
 Expected: Early Q4 2021
 
+- [ ] New `partials` support
+- [ ] New `variables` support
 - [ ] Another beta release of building C# project reference documentation
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
@@ -27,10 +29,9 @@ Expected: Early Q4 2021
 
 Expected: Mid Q3 2021
 
-- [ ] New `partials` support
-- [ ] New `variables` support
+- [ ] Improved link resolution
 - [ ] Improved handling of Docusaurus, MkDocs, and GitBook config files
-- [x] New page dependecy graph to improve incremental build performance
+- [x] New page dependecy graph to improve incremental build performance :100:
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.8.0` [!badge text="LATEST" variant="info"]

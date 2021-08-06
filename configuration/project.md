@@ -8,7 +8,7 @@ tags: [config]
 
 Retype will read the `retype.yml` file for additional instructions on how to configure and build your project.
 
-The `retype.yml` file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the `input` and `output` paths are correct if moved to a different location.
+The `retype.yml` file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
 
 !!!
 After making a change to the `retype.yml`, if you are running `retype watch`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
