@@ -76,7 +76,7 @@ Position | Markdown | Description
 `leftplus`   | `--![Caption](photo.jpg)` | Float left aligned with some negative left offset
 `right`      | `![Caption](photo.jpg)-`  | Float right aligned
 `rightplus`  | `![Caption](photo.jpg)--` | Float right aligned with some negative right offset
-`centerplus` | `-![Caption](photo.jpg)-` | Center aligned plus negative offset both sides
+`centerplus` | `--![Caption](photo.jpg)--` | Center aligned plus negative offset both sides
 
 Here's a sample page demonstrating all the image alignment scenarios, including `plus` options:
 
