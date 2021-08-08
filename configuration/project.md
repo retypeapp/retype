@@ -190,20 +190,6 @@ edit:
 ```
 ===
 
-### base
-
-=== base : `string`
-A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.
-
-The following sample demonstrates a scenario where the content files are located within the `/docs` sub-folder of the repo.
-
-```yml
-edit:
-  repo: "https://github.com/your-organization/your-repo"
-  base: docs
-```
-===
-
 ### label
 
 === label : `string`
@@ -273,7 +259,7 @@ Site-wide copyright statement that will be added to the footer of each page. Sup
 
 ```yml
 footer:
-  copyright: "© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved."
+  copyright: "© Copyright {{ year }}. [Example, Inc.](https://example.com/) All rights reserved."
 ```
 ===
 
@@ -649,6 +635,48 @@ snippets:
   lineNumbers:
     - none
 ```
+===
+
+---
+
+## url
+
+=== url : `string`
+
+The base URL of your website.
+
+```yml
+url: example.com
+```
+
+The `url` can also be a sub-domain.
+
+```yml
+url: docs.example.com
+```
+
+If you deploy your Retype generated website into the subfolder of another website, add the subfolder in the `url`. For example, if the website will be available at `https://example.com/docs`, add that `docs` folder name to the `url`.
+
+```yml
+url: example.com/docs
+```
+
+If no protocol is supplied, such as `https` or `http`, Retype will assume `https`. A protocol can be explicitly defined by passing in the `url`.
+
+```yml
+url: http://example.com/docs/
+```
+
+Another common scenario for setting a `url` is when using [GitHub Pages](../guides/github-actions.md) **without** a custom `CNAME`.
+
+For instance, if your GitHub organization was `CompanyX` and your repo was named `docs`, the URL to your GitHub Pages hosted website would be `https://companyx.github.io/docs/`.
+
+Retype needs to know where your website will be hosted, so the `url` configuration for the above scenario would be:
+
+```yml
+url: companyx.github.io/docs
+```
+
 ===
 
 ---

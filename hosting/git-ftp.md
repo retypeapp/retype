@@ -112,25 +112,21 @@ For example, the final expected docs URL will become:
 https://www.mywebsite.com/docs/
 ```
 
-Along with that, Retype will require the [`base`](../configuration/project.md#base) config to be added to the `retype.json` file. The following sample demonstrates how the `base` would be configured for this scenario. For your project, replace `"base": "docs"` with `"base": "<directory>"` where `<directory>` is the path to the Retype website within the whole one.
+Along with that, Retype will require the [`url`](../configuration/project.md#url) config to be added to the `retype.yml` project configuration file. The following sample demonstrates how the `url` would be configured for this scenario.
 
-```json Sample: Set base if using github.io
-{
-  "input": "./",
-  "output": ".retype",
-  "base": "docs"
-}
+```yml
+url: example.com
 ```
 
-See [base](../configuration/project.md#base) documentation.
+See [url](../configuration/project.md#url) for additional details.
 
 ---
 
 ### Use the same workflow for GitHub Pages and FTP sync
 
-In the simplest case scenario, where the `base` setting is the same for both the GitHub Pages and FTP host, simply set up the branch (`retype` by default) used by the **git-ftp action** as the GitHub Pages' branch. See the [GitHub Actions Guide](../guides/github-actions) for more information.
+In the simplest case scenario, where the `url` setting is the same for both the GitHub Pages and FTP host, simply set up the branch (`retype` by default) used by the **git-ftp action** as the GitHub Pages' branch. See the [GitHub Actions Guide](../guides/github-actions) for more information.
 
-Going forward, it will probably be the case that different values for `base` will be necessary for each published website. In this case, the following workflow can be used:
+Going forward, it will probably be the case that different values for `url` will be necessary for each published website. In this case, the following workflow can be used:
 
 ```yaml
 name: Publish Retype powered website to FTP
@@ -156,7 +152,7 @@ jobs:
       - name: Build documentation for GitHub Pages
         uses: retypeapp/action-build@v1
         with:
-          base: my-repo-name
+          url: companyx.github.io/docs
 
       - name: Publish built documentation to GitHub Pages
         uses: retypeapp/action-github-pages@v1
@@ -182,17 +178,17 @@ jobs:
 
 There are three key changes in the workflow if compared to the initial guide's example:
 
-**1. specify `base` every time the `action-build` is called**
+**1. specify `url` every time the `action-build` is called**
 
-The `base` setting is passed to retype during build process; so if the website is built with a given `base`, a rebuild must take place before it can contemplate a different `base` value. So we need to rebuild for both publishes.
+The `url` setting is passed to retype during build process; so if the website is built with a given `url`, a rebuild must take place before it can contemplate a different `url` value. So we need to rebuild for both publishes.
 
 !!!info Dedicated retype.json files
-It is also possible to specify different `retype.json` files for even more flexibility by just using `config: <retypejson-file>` instead of `base: <value>`. The `<retypejson-file>` bit should be replaced with the path to the desired configuration file (default is `/retype.json`).
+It is also possible to specify different `retype.yml` files for even more flexibility by just using `config: <retype-file>` instead of `url: <value>`. The `<retype-file>` bit should be replaced with the path to the desired configuration file (default is `/retype.yml`).
 !!!
 
 **2. specify a different `branch` where to push the website history**
 
-If the same branch is used to hold both versions, the `base` change above will always imply changes in the branch; this may not only pollute history by changing the base back and forth, but may also force git-ftp to always push all files as the change history will contain most files instead of just what really changed.
+If the same branch is used to hold both versions, the `url` change above will always imply changes in the branch; this may not only pollute history by changing the url back and forth, but may also force git-ftp to always push all files as the change history will contain most files instead of just what really changed.
 
 !!!info Same branch in different dirs
 Alternatively to different branch names, it is possible to use **different directories in a same branch**. It is important though, not to nest those directories. See examples about this in the [git-ftp Action's README](https://github.com/retypeapp/action-git-ftp).

@@ -85,7 +85,7 @@ Your GitHub Pages config should now look similar to the following:
 We recommend that you check the **Enforce HTTPS** checkbox.
 !!!
 
-### Add `base` if github.io
+### Set a `url`
 
 With the above sample, GitHub will provide a unique `github.io` subdomain. Your website will be available from a subfolder of that subdomain. In our scenario, our website will be available in the `/retype/` subfolder.
 
@@ -95,19 +95,19 @@ For example, the URL will use the following pattern:
 https://<organization>.github.io/<repo>/
 ```
 
-If a Retype generated website is hosted from a subfolder, Retype requires a [`base`](../configuration/project.md#base) config to be added to the `retype.json` file. The following sample demonstrates how the `base` would be configured for our scenario. For your project, replace `"base": "retype"` with `"base": "<repo>"` where `<repo>` is your repo name.
+You would then set the `url` configuration with the following, where `<organization>` is replaced with your GitHub organization name and `<repo>` is replaced with your repository name.
 
-```json Sample: Set base if using github.io
-{
-  "input": "./",
-  "output": ".retype",
-  "base": "retype"
-}
+```yml
+url: <organization>.github.io/<repo>/
 ```
 
-If your repository was called `docs`, you would set `"base": "docs"`. If your repository was called `my-website`, you would set `"base": "my-website"`.
+If your GitHub organization name was `CompanyX` and your repo name was `Docs`, your `url` config would be:
 
-See [base](../configuration/project.md#base) documentation.
+```yml
+url: companyx.github.io/docs/
+```
+
+See [url](../configuration/project.md#url) documentation.
 
 ### Custom domain
 
@@ -117,43 +117,26 @@ Just enter your domain or subdomain name in the **Custom domain** field and clic
 
 ![](../static/github-actions-configure-custom-domain.png)
 
-If your website will be available at `https://example.com`, enter `example.com`.
+If your website will be available at `https://example.com`, enter `example.com` as the **Custom domain** value.
 
 If your website will be available at `https://docs.example.com`, enter `docs.example.com`.
 
 You will then need to [configure the DNS](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/) for your domain name.
 
-There's one more config we need to add so Retype knows you're using a custom domain or subdomain name. Please set the [`cname`](../configuration/project.md#cname) config within your project's `retype.json` file with the same value.
+The last step would be updating the [`url`](../configuration/project.md#url) project configuration with the same value. For example, if your website will be available at `https://example.com`, use the following `url` configuration:
 
-```json Sample: retype.json if using a custom domain name
-{
-  "input": "./",
-  "output": ".retype",
-  "cname": "example.com"
-}
+```yml
+url: example.com
 ```
-
-```json Sample: retype.json if using a custom subdomain name
-{
-  "input": "./",
-  "output": ".retype",
-  "cname": "docs.example.com"
-}
-```
-
-!!!
-For a custom domain or subdomain where the `cname` config is set, you can remove the `base` config we added in the [step](#add-base-if-github-io) above.
-!!!
 
 ---
 
 ## Summary
 
-- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow).
-- [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages).
-- [x] Set the branch to `retype`, see [branch config](#pick-a-branch).
-- [x] If hosting on `github.io`, you will need to set the [`base`](../configuration/project.md#base) config with your repo name, see [base config](#add-base-if-github-io), or
-- [x] If hosting on a custom domain or subdomain, you should set the [`cname`](../configuration/project.md#cname) config, see [custom domain](#custom-domain).
+- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
+- [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages)
+- [x] Set the branch to `retype`, see [branch config](#pick-a-branch)
+- [x] Set the [`url`](../configuration/project.md#url)
 - [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
 - [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
 
