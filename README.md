@@ -65,6 +65,7 @@ retype run
 
 After running `retype watch`, edit any `.md` file and see your change appear in the browser.
 
+<!--
 !!! COMING SOON
 
 Retype can also build amazing reference documentation based upon your projects source code. C# projects are currently in beta support, TypeScript is coming soon, and there are plans for many more languages in the future.
@@ -72,6 +73,7 @@ Retype can also build amazing reference documentation based upon your projects s
 Just point Retype at a C# project and reference documentation will be generated based on your library's source code, code comments, and metadata.
 
 !!!
+-->
 
 ---
 
