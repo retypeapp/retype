@@ -68,7 +68,7 @@ Usually hosting providers inform a value to fill in the `ftp-root` parameter. So
 
 ## Step 2: Configure Secrets
 
-See the `${{ secrets.KEYWORD }}` occurrences in the sample `retype.json` above? These are **GitHub Encrypted Secrets**, that are used to keep sensitive information away from the public.
+See the `${{ secrets.KEYWORD }}` occurrences in the sample `retype.yml` above? These are **GitHub Encrypted Secrets**, that are used to keep sensitive information away from the public.
 
 To get started, navigate to the <kbd>Settings</kbd> > <kbd>Secrets</kbd> page of your GitHub repository. There, create **new repository secrets** for each parameter:
 
@@ -182,7 +182,7 @@ There are three key changes in the workflow if compared to the initial guide's e
 
 The `url` setting is passed to retype during build process; so if the website is built with a given `url`, a rebuild must take place before it can contemplate a different `url` value. So we need to rebuild for both publishes.
 
-!!!info Dedicated retype.json files
+!!!info Dedicated retype.yml files
 It is also possible to specify different `retype.yml` files for even more flexibility by just using `config: <retype-file>` instead of `url: <value>`. The `<retype-file>` bit should be replaced with the path to the desired configuration file (default is `/retype.yml`).
 !!!
 

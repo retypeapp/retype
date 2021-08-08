@@ -87,19 +87,19 @@ The Retype Buildpack will use your project data to build the documentation, and 
 
 ## Publishing your own project
 
-Any documentation project set up to be built with retype can be replaced in [step 1](#step-1-clone-this-websites-repository). The buildpack requires a **retype.json** file in order to build the documentation. The file may be provided in different ways:
+Any documentation project set up to be built with retype can be replaced in [step 1](#step-1-clone-this-websites-repository). The buildpack requires a **retype.yml** file in order to build the documentation. The file may be provided in different ways:
 
-- a **retype.json** file at the root of the repository
-- a **retype.json** file anywhere in the repository
-- the full path to a directory containing **retype.json**, specified via the [Heroku config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`
-- the full path to the file. The specified file will then be used as **retype.json** regardless of its name; also specified via Heroku config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`
+- a **retype.yml** file at the root of the repository
+- a **retype.yml** file anywhere in the repository
+- the full path to a directory containing **retype.yml**, specified via the [Heroku config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`
+- the full path to the file. The specified file will then be used as **retype.yml** regardless of its name; also specified via Heroku config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`
 
-If there's no **retype.json** file in the repository, just run `retype watch` and adjust the settings to your liking in the just-created **retype.json**, then commit it. Your project would then be ready to be pushed to Heroku.
+If there's no **retype.yml** file in the repository, just run `retype watch` and adjust the settings to your liking in the just-created **retype.yml**, then commit it. Your project would then be ready to be pushed to Heroku.
 
-See [Quick Start](../README.md#quick-start) for details on `retype watch`, and see [Configuration > Project](../configuration/project.md) for possible **retype.json** config values.
+See [Quick Start](../README.md#quick-start) for details on `retype watch`, and see [Configuration > Project](../configuration/project.md) for possible **retype.yml** config values.
 
-!!! Several **retype.json** files in the repo
-If there are various **retype.json** files across the repository, we can't guarantee which one the buildpack is going to pick, and it is a good idea to use the `RETYPE_CONFIG` config var to indicate where the intended configuration file is to be found within the repo.
+!!! Several **retype.yml** files in the repo
+If there are various **retype.yml** files across the repository, we can't guarantee which one the buildpack is going to pick, and it is a good idea to use the `RETYPE_CONFIG` config var to indicate where the intended configuration file is to be found within the repo.
 !!!
 
 ---
@@ -117,7 +117,7 @@ If there are various **retype.json** files across the repository, we can't guara
 
 - [x] Install Retype to build locally, see [Getting Started](getting-started).
 - [x] Details on `retype watch`, see [Quick Start](../README.md#quick-start).
-- [x] Accepted configuration settings in **retype.json**, see [Configuration > Project](../configuration/project.md).
+- [x] Accepted configuration settings in **retype.yml**, see [Configuration > Project](../configuration/project.md).
 - [x] Troubleshoot Heroku push/build issues, see [Retype Buildpack's README Troubleshooting section](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting).
 - [x] More information on Retype Buildpack, see [README in Retype Buildpack's repo](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md).
 - [x] Create account in Heroku, see [Heroku website](https://heroku.com).

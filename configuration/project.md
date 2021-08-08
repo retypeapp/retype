@@ -528,7 +528,7 @@ If we had an `About us` page, the final `<title>` with the `title` value above w
 
 Custom path to the output directory. Default is `.retype`.
 
-The path is relative to the `retype.json` location.
+The path is relative to the `retype.yml` location.
 
 ```yml Change output location to /docs folder
 output: ./docs
