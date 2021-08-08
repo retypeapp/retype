@@ -146,13 +146,26 @@ branding:
 
 ## cname
 
-=== cname : `string`
+=== cname : `boolean` or `string`
 
-If specified, a `CNAME` file with the corresponding value will be created and added to the root of the [`output`](#output). Default is `null`.
+!!!
+In general, you should not require setting the `cname`. Please set the [`url`](#url).
+!!!
 
-```yml Host docs.example.com website using GitHub pages
+By default, if the [`url`](#url) is set, Retype will automatically generate a `CNAME` file. This can be disabled by setting `cname: false`.
+
+```yml Disable CNAME file generation
+cname: false
+```
+
+If you do want a `CNAME` file generated, but for some reason require a value different than what the `url` creates, you can explicitly set instruct Retype to generate the `CNAME` with a different value.
+
+This would be a highly unusual scenario, but Retype does allow you to configure these values separately, just in case you need it. We **HIGHLY** recommend that you just stick with setting the [`url`](#url).
+
+```yml Custom CNAME file value
 cname: docs.example.com
 ```
+
 ===
 
 ---
