@@ -39,7 +39,7 @@ Expected: Mid Q3 2021
 Released: 2021-08-03
 
 - [x] New [`retype.yml`](configuration/project.md) project configuration file format
-- [x] New [`url`](configuration/project.md#urml) project config for setting your website URL
+- [x] New [`url`](configuration/project.md#url) project config for setting your website URL
 - [x] New auto-generate a `sitemap.xml` file to inform search engines which pages to crawl
 - [x] New auto-generate a `robots.txt` file
 - [x] New Open Graph and Twitter meta tags added to every page
