@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.681584582877" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.681808906475" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.681584582877" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.681808906475" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.681584582877" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.681808906475" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -216,14 +216,14 @@ order: 100
 
 This is a sample page demonstrating page metadata.</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="separate-yml-configuration">
+<doc-anchor-target id="separate-yml-file">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#separate-yml-configuration">#</doc-anchor-trigger>
-        <span>Separate <code v-pre>.yml</code> configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#separate-yml-file">#</doc-anchor-trigger>
+        <span>Separate <code v-pre>.yml</code> file</span>
     </h2>
 </doc-anchor-target>
 <p>If you would prefer to keep the page metadata separated and placed outside of the <code v-pre>.md</code> content page, the options can be moved into a paired <code v-pre>.yml</code> file.</p>
-<p>For instance, <code v-pre>sample.md</code> would need a matching <code v-pre>sample.yml</code> file. The separate <code v-pre>.yml</code> file must have the exact same filename as the matching <code v-pre>.md</code> page.</p>
+<p>For instance, <code v-pre>sample.md</code> would need a matching <code v-pre>sample.yml</code> file. The separate <code v-pre>.yml</code> file must have the exact same filename as its paired <code v-pre>.md</code> page.</p>
 <p>Both <code v-pre>.yml</code> and <code v-pre>.yaml</code> extensions are supported.</p>
 <p>Adding your configs into the top metadata section of a <code v-pre>.md</code> page, or into a separate <code v-pre>.yml</code> file is just a matter of preference. Both techniques produce the same result.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -255,7 +255,135 @@ order: 100</code></pre>
         </div>
     </div>
 </div>
-<p>See <a href="../folder/">Folder configuration</a> for details on how to configure a folder.</p>
+<p>See <a href="../folder/">folder configuration</a> for details on how to configure a folder.</p>
+<hr />
+<doc-anchor-target id="author">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#author">#</doc-anchor-trigger>
+        <span>author</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>The configuration name <code v-pre>authors</code> is also supported. The name <code v-pre>authors</code> is an alias of <code v-pre>author</code> and both can be used interchangeably.</p>
+        </div>
+    </div>
+</div>
+<doc-panel id="author-string-list-or-object">
+    <template #title>author : <code v-pre>string</code>, <code v-pre>list</code>, or <code v-pre>object</code></template>
+<p>The author or multiple authors of this page.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">author: Frank</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">author: frank@example.com</code></pre>
+</doc-codeblock></div>
+<p>An author object can also be configured with specific values for the <code v-pre>lable</code>, <code v-pre>link</code>, and <code v-pre>avatar</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">author:
+  name: Frank Esposito
+  link: https://twitter.com/frank # custom link take precedence
+  avatar: https://example.com/frank.jpg # custom avatar takes precedence</code></pre>
+</doc-codeblock></div>
+<p>Possible options for the <code v-pre>avatar</code> include:</p>
+<ol>
+<li>Path to local image</li>
+<li>URL to an external image</li>
+<li>Inline SVG</li>
+<li><a href="../../components/icon/">Icon</a> shortcode</li>
+<li><a href="../../components/emoji/">Emoji</a> shortcode</li>
+</ol>
+<p>The <code v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added by their email address.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">authors: [Frank, Annette Jones, steffen@example.com]</code></pre>
+</doc-codeblock></div>
+<p>Mixed author types are also permitted, including adding a list of authors by name, email, or author configuration objects.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">// Mix of author types
+authors:
+  - name: Frank Esposito
+    link: https://twitter.com/frank
+    avatar: https://example.com/frank.jpg
+  - Annette Jones
+  - steffen@example.com</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="category">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#category">#</doc-anchor-trigger>
+        <span>category</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>The configuration name <code v-pre>categories</code> is also supported. The name <code v-pre>categories</code> is an alias of <code v-pre>category</code> and both can be used interchangeably.</p>
+        </div>
+    </div>
+</div>
+<doc-panel id="category-string-or-list">
+    <template #title>category : <code v-pre>string</code> or <code v-pre>list</code></template>
+<p>A category for this page.</p>
+<p>A single <code v-pre>category</code> or a list of <code v-pre>categories</code> can be configured in each <code v-pre>.md</code> page you would like to categorize.</p>
+<p>The <code v-pre>category</code> is meant to be a broad grouping of content, where <doc-anchor-trigger to="#tags"><code v-pre>tags</code></doc-anchor-trigger> are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
+<p>All of the following are acceptable techniques for configuring a single <code v-pre>category</code> or multiple <code v-pre>categories</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+category: news
+categories: news
+category: [news, general]
+categories: [news, general]
+category:
+  - news
+  - general
+categories:
+  - news
+  - general
+---</code></pre>
+</doc-codeblock></div>
+<p>If a <code v-pre>category</code> is configured in the page metadata, the category is added to the top of the page under the main title.</p>
+<p>Individual category summary pages will be automatically generated by Retype at <code v-pre>&lt;url&gt;/categories/&lt;category&gt;</code>, plus an additional <code v-pre>&lt;url&gt;/categories</code> index page which lists all categories in the project.</p>
+</doc-panel>
+<hr />
+<doc-anchor-target id="date">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#date">#</doc-anchor-trigger>
+        <span>date</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="date-string">
+    <template #title>date : <code v-pre>string</code></template>
+<p>A custom publish date for this page.</p>
+<p>If a <code v-pre>date</code> is configured, Retype will add the <strong>Published</strong> date to the top of the page, just under the main title.</p>
+<p>The date must be provided in the <code v-pre>yyyy-mm-dd</code> ISO format or <code v-pre>yyyy-mm-ddThh:mm</code> if you want to include a date and a time.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">date: 2020-11-25 # November 25, 2020
+date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>date</code> is used by Retype to order blog pages. Newer blog pages are ordered first.</p>
+</doc-panel>
 <hr />
 <doc-anchor-target id="description">
     <h2>
@@ -489,6 +617,28 @@ v1.0-alpha</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
+<doc-anchor-target id="redirect">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#redirect">#</doc-anchor-trigger>
+        <span>redirect</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="redirect-string">
+    <template #title>redirect : <code v-pre>string</code></template>
+<p>Redirect requests for this page to another location.</p>
+<p>The <code v-pre>redirect</code> can be set to another page within this project, or an external link.</p>
+<p>For example, you have an existing <code v-pre>setup.md</code> page and you want to move the content to <code v-pre>getting-started.md</code>, but other websites might still be linking to your old <code v-pre>example.com/setup/</code> page and you want to ensure those links still work. You would then set the following <code v-pre>redirect</code> page config in <code v-pre>setup.md</code> to redirect to <code v-pre>getting-started.md</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+redirect: getting-started.md
+---
+
+# Setup</code></pre>
+</doc-codeblock></div>
+<p>Retype will automaticially handle any incoming <code v-pre>example.com/setup</code> requests and redirect to the new <code v-pre>example.com/getting-started</code> location.</p>
+<p>Retype is also smart enough to scan your project for any <code v-pre>setup.md</code> links and replace those with a link directly to <code v-pre>getting-started.md</code>.</p>
+</doc-panel>
+<hr />
 <doc-anchor-target id="route">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#route">#</doc-anchor-trigger>
@@ -565,8 +715,28 @@ route: /tutorials
 <doc-panel id="tags-list">
     <template #title>tags : <code v-pre>list</code></template>
 <p>A list of tags can be added to the metadata at the top of each <code v-pre>.md</code> page you would like to tag.</p>
+<p>The <code v-pre>tags</code> are meant to describe specific details of the content in that page. Tags are similar to <doc-anchor-trigger to="#category"><code v-pre>category</code></doc-anchor-trigger>, although <code v-pre>category</code> is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
 <p>If tags are configured in the page metadata, a list of tag links are added to the bottom of the page. See the bottom of this page for a working sample.</p>
 <p>Individual tag summary pages will be automatically generated by Retype at <a href="https://retype.com/tags/guide/"><code v-pre>&lt;url&gt;/tags/&lt;tag&gt;</code></a>, plus an additional <a href="https://retype.com/tags/"><code v-pre>&lt;url&gt;/tags</code></a> index page which lists all tags and their count used within the project.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Check out the pages of this website configured with the <a href="/tags/guide/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>guide</span>
+</a> tag.</p>
+        </div>
+    </div>
+</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample tags configuration</div>
 <pre class="language-none"><code v-pre class="language-none">---
@@ -591,9 +761,9 @@ Some content here.</code></pre>
 <div class="codeblock-title">Sample tags list</div>
 <pre class="language-none"><code v-pre class="language-none">---
 tags:
-    - guide
-    - config options
-    - installation
+  - guide
+  - config options
+  - installation
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -638,6 +808,31 @@ Some content here.</code></pre>
 
 Some content here.</code></pre>
 </doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="visibility">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#visibility">#</doc-anchor-trigger>
+        <span>visibility</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="visibility-public-hidden">
+    <template #title>visibility : <code v-pre>public|hidden</code></template>
+<p>Configure the visibility of the page to be <code v-pre>hidden</code> or <code v-pre>public</code>. Default is <code v-pre>public</code>.</p>
+<p>If a page is configued to be <code v-pre>visibility: hidden</code>, the page is still created but will not be included in the page navigation or search results.</p>
+<p>The following sample demonstrates hidding a page:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">---
+visibility: hidden
+---
+# A hidden page
+
+This page will be hidden from the menu and search results.</code></pre>
+</doc-codeblock></div>
+<p>The page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page. Retype would ensure no <em>generated</em> links or references to the hidden page are created. If on a public page, a link to a hidden page is made, the link will work and the hidden page will be visible.</p>
+<p>The History <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.998 2.5A9.503 9.503 0 003.378 8H5.75a.75.75 0 010 1.5H2a1 1 0 01-1-1V4.75a.75.75 0 011.5 0v1.697A10.997 10.997 0 0111.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 011.5-.037 9.5 9.5 0 009.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5z"/><path d="M12.5 7.25a.75.75 0 00-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 00.744-1.302L12.5 12.315V7.25z"/></g></g></svg> component will continue to function as normal. Any hidden page visited would still be logged in the history, although that history is only available to the visitor.</p>
+<p>Setting <code v-pre>visibility: hidden</code> on a page is a good way to create a <em>draft</em> or <em>secret</em> page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.</p>
+<p>Retype does not show you the link to this page, but it uses the same naming convention as all other pages is used. For instance, if your site is hosted at <code v-pre>https://example.com</code> and the page was called <code v-pre>my-secret-page.md</code>, the URL would be <code v-pre>https://example.com/my-secret-page/</code>.</p>
 </doc-panel>
 
 

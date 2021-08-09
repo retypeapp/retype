@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.681584582877" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.681808906475" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.681584582877" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.681808906475" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.681584582877" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.681808906475" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -351,15 +351,15 @@ FIXME FIXME FIXME FIXME -->
         <span>Publishing your own project</span>
     </h2>
 </doc-anchor-target>
-<p>Any documentation project set up to be built with retype can be replaced in <doc-anchor-trigger to="#step-1-clone-this-websites-repository">step 1</doc-anchor-trigger>. The buildpack requires a <strong>retype.json</strong> file in order to build the documentation. The file may be provided in different ways:</p>
+<p>Any documentation project set up to be built with retype can be replaced in <doc-anchor-trigger to="#step-1-clone-this-websites-repository">step 1</doc-anchor-trigger>. The buildpack requires a <strong>retype.yml</strong> file in order to build the documentation. The file may be provided in different ways:</p>
 <ul>
-<li>a <strong>retype.json</strong> file at the root of the repository</li>
-<li>a <strong>retype.json</strong> file anywhere in the repository</li>
-<li>the full path to a directory containing <strong>retype.json</strong>, specified via the <a href="https://devcenter.heroku.com/articles/config-vars">Heroku config var</a> <code v-pre>RETYPE_CONFIG</code></li>
-<li>the full path to the file. The specified file will then be used as <strong>retype.json</strong> regardless of its name; also specified via Heroku config var](<a href="https://devcenter.heroku.com/articles/config-vars">https://devcenter.heroku.com/articles/config-vars</a>) <code v-pre>RETYPE_CONFIG</code></li>
+<li>a <strong>retype.yml</strong> file at the root of the repository</li>
+<li>a <strong>retype.yml</strong> file anywhere in the repository</li>
+<li>the full path to a directory containing <strong>retype.yml</strong>, specified via the <a href="https://devcenter.heroku.com/articles/config-vars">Heroku config var</a> <code v-pre>RETYPE_CONFIG</code></li>
+<li>the full path to the file. The specified file will then be used as <strong>retype.yml</strong> regardless of its name; also specified via Heroku config var](<a href="https://devcenter.heroku.com/articles/config-vars">https://devcenter.heroku.com/articles/config-vars</a>) <code v-pre>RETYPE_CONFIG</code></li>
 </ul>
-<p>If there&#x27;s no <strong>retype.json</strong> file in the repository, just run <code v-pre>retype watch</code> and adjust the settings to your liking in the just-created <strong>retype.json</strong>, then commit it. Your project would then be ready to be pushed to Heroku.</p>
-<p>See <a href="../../#quick-start">Quick Start</a> for details on <code v-pre>retype watch</code>, and see <a href="../../configuration/project/">Configuration &gt; Project</a> for possible <strong>retype.json</strong> config values.</p>
+<p>If there&#x27;s no <strong>retype.yml</strong> file in the repository, just run <code v-pre>retype watch</code> and adjust the settings to your liking in the just-created <strong>retype.yml</strong>, then commit it. Your project would then be ready to be pushed to Heroku.</p>
+<p>See <a href="../../#quick-start">Quick Start</a> for details on <code v-pre>retype watch</code>, and see <a href="../../configuration/project/">Configuration &gt; Project</a> for possible <strong>retype.yml</strong> config values.</p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -373,8 +373,8 @@ FIXME FIXME FIXME FIXME -->
             </svg>
         </div>
         <div class="pr-5 ml-3">
-            <h5>Several <strong>retype.json</strong> files in the repo</h5>
-<p>If there are various <strong>retype.json</strong> files across the repository, we can&#x27;t guarantee which one the buildpack is going to pick, and it is a good idea to use the <code v-pre>RETYPE_CONFIG</code> config var to indicate where the intended configuration file is to be found within the repo.</p>
+            <h5>Several <strong>retype.yml</strong> files in the repo</h5>
+<p>If there are various <strong>retype.yml</strong> files across the repository, we can&#x27;t guarantee which one the buildpack is going to pick, and it is a good idea to use the <code v-pre>RETYPE_CONFIG</code> config var to indicate where the intended configuration file is to be found within the repo.</p>
         </div>
     </div>
 </div>
@@ -401,7 +401,7 @@ FIXME FIXME FIXME FIXME -->
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Install Retype to build locally, see <a href="getting-started">Getting Started</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Details on <code v-pre>retype watch</code>, see <a href="../../#quick-start">Quick Start</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Accepted configuration settings in <strong>retype.json</strong>, see <a href="../../configuration/project/">Configuration &gt; Project</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Accepted configuration settings in <strong>retype.yml</strong>, see <a href="../../configuration/project/">Configuration &gt; Project</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Troubleshoot Heroku push/build issues, see <a href="https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting">Retype Buildpack&#x27;s README Troubleshooting section</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More information on Retype Buildpack, see <a href="https://github.com/retypeapp/heroku-buildpack/blob/main/README.md">README in Retype Buildpack&#x27;s repo</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Create account in Heroku, see <a href="https://heroku.com">Heroku website</a>.</li>

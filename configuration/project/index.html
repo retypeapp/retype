@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.681584582877" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.681808906475" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.681584582877" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.681808906475" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.681584582877" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.681808906475" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -382,11 +382,34 @@ footer:
         <span>cname</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="cname-string">
-    <template #title>cname : <code v-pre>string</code></template>
-<p>If specified, a <code v-pre>CNAME</code> file with the corresponding value will be created and added to the root of the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. Default is <code v-pre>null</code>.</p>
+<doc-panel id="cname-boolean-or-string">
+    <template #title>cname : <code v-pre>boolean</code> or <code v-pre>string</code></template>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>In general, you should not require setting the <code v-pre>cname</code>. Please set the <doc-anchor-trigger to="#url"><code v-pre>url</code></doc-anchor-trigger>.</p>
+        </div>
+    </div>
+</div>
+<p>By default, if the <doc-anchor-trigger to="#url"><code v-pre>url</code></doc-anchor-trigger> is set, Retype will automatically generate a <code v-pre>CNAME</code> file. This can be disabled by setting <code v-pre>cname: false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Host docs.example.com website using GitHub pages</div>
+<div class="codeblock-title">Disable CNAME file generation</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">cname: false</code></pre>
+</doc-codeblock></div>
+<p>If you do want a <code v-pre>CNAME</code> file generated, but for some reason require a value different than what the <code v-pre>url</code> creates, you can explicitly set instruct Retype to generate the <code v-pre>CNAME</code> with a different value.</p>
+<p>This would be a highly unusual scenario, but Retype does allow you to configure these values separately, just in case you need it. We <strong>HIGHLY</strong> recommend that you just stick with setting the <doc-anchor-trigger to="#url"><code v-pre>url</code></doc-anchor-trigger>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Custom CNAME file value</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">cname: docs.example.com</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -427,7 +450,12 @@ footer:
 <p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">edit:
-  repo: &quot;https://github.com/your-organization/your-repo&quot;</code></pre>
+  repo: &quot;https://github.com/&lt;your-organization&gt;/&lt;your-repo&gt;/&quot;</code></pre>
+</doc-codeblock></div>
+<p>You can also configurate the links to point directly to the <code v-pre>/edit/</code> view of the page:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+  repo: &quot;https://github.com/&lt;your-organization&gt;/&lt;your-repo&gt;/edit/&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="branch">
@@ -443,22 +471,6 @@ footer:
 <pre class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/your-organization/your-repo&quot;
   branch: website</code></pre>
-</doc-codeblock></div>
-</doc-panel>
-<doc-anchor-target id="base">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
-        <span>base</span>
-    </h3>
-</doc-anchor-target>
-<doc-panel id="base-string">
-    <template #title>base : <code v-pre>string</code></template>
-<p>A base folder within from the root of the project where the source content files are located. By default, the root of the repo is assumed.</p>
-<p>The following sample demonstrates a scenario where the content files are located within the <code v-pre>/docs</code> sub-folder of the repo.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">edit:
-  repo: &quot;https://github.com/your-organization/your-repo&quot;
-  base: docs</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="label-1">
@@ -551,7 +563,7 @@ footer:
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">footer:
-  copyright: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.come/) All rights reserved.&quot;</code></pre>
+  copyright: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.com/) All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="links-footer">
@@ -580,6 +592,24 @@ footer:
 <doc-panel id="include-list">
     <template #title>include : <code v-pre>list</code></template>
 <p>Retype can explicitly include files or folders that might have been excluded by default or excluded within the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>If you create a link to local static file, such as <code v-pre>.zip</code> file, Retype will automatically copy that file to the generated website.</p>
+<p>That file or file type does not need to be explicitly configured to be included. Retype assumes that if you created a link to the file, you wanted that file published and it will be included in the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>.</p>
+        </div>
+    </div>
+</div>
 <p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
 <p>The following sample demonstrates how to include all <code v-pre>.py</code> files and the entire contents of any <code v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -846,27 +876,11 @@ footer:
 <doc-panel id="output-string">
     <template #title>output : <code v-pre>string</code></template>
 <p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
-<p>The path is relative to the <code v-pre>retype.json</code> location.</p>
+<p>The path is relative to the <code v-pre>retype.yml</code> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Change output location to /docs folder</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">output: ./docs</code></pre>
 </doc-codeblock></div>
-</doc-panel>
-<hr />
-<doc-anchor-target id="port">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#port">#</doc-anchor-trigger>
-        <span>port</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="port-number">
-    <template #title>port : <code v-pre>number</code></template>
-<p>A custom port for the internal Retype web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">port: 5005</code></pre>
-</doc-codeblock></div>
-<p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
-<p>If a custom <code v-pre>port</code> is explicitly configured in the <code v-pre>retype.yml</code>, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the <code v-pre>port</code> was explicitly configured, Retype will not attempt to auto-increment.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="search">
@@ -947,6 +961,75 @@ footer:
   noResultsFoundMsg: Sorry, no results found.</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<doc-anchor-target id="server">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#server">#</doc-anchor-trigger>
+        <span>server</span>
+    </h2>
+</doc-anchor-target>
+<p>Custom configuration for the built in Retype development web server.</p>
+<doc-anchor-target id="host">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#host">#</doc-anchor-trigger>
+        <span>host</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="host-string">
+    <template #title>host : <code v-pre>string</code></template>
+<p>Serve the website from this host location. Default is <code v-pre>localhost</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">server:
+  host: 127.0.0.1</code></pre>
+</doc-codeblock></div>
+<p>By default, the Retype development web server will serve from <code v-pre>http://localhost:5000</code>, although the port could be dynamically assigned if port <code v-pre>5000</code> is already in use.</p>
+<p>A custom port value can also be assigned.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">server:
+  host: 127.0.0.1:5005</code></pre>
+</doc-codeblock></div>
+<p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype watch --host 127.0.0.1              # serve from a custom host
+retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="port">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port">#</doc-anchor-trigger>
+        <span>port</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="port-number">
+    <template #title>port : <code v-pre>number</code></template>
+<p>A custom port for the internal Retype development web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">server:
+  port: 5005</code></pre>
+</doc-codeblock></div>
+<p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
+<p>If a custom <code v-pre>port</code> is explicitly configured in the <code v-pre>retype.yml</code> and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the <code v-pre>port</code> was explicitly configured, Retype will not attempt to auto-increment.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>The port number can also be included in the <doc-anchor-trigger to="#host"><code v-pre>host</code></doc-anchor-trigger> config.</p>
+        </div>
+    </div>
+</div>
+<p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype watch --port 5005  # serve from a custom port</code></pre>
+</doc-codeblock></div>
+</doc-panel>
 <hr />
 <doc-anchor-target id="snippets">
     <h2>
@@ -984,6 +1067,38 @@ footer:
 <pre class="language-yaml"><code v-pre class="language-yaml">snippets:
   lineNumbers:
     - none</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="url">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#url">#</doc-anchor-trigger>
+        <span>url</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="url-string">
+    <template #title>url : <code v-pre>string</code></template>
+<p>The base URL of your website.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>url</code> can also be a sub-domain.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: docs.example.com</code></pre>
+</doc-codeblock></div>
+<p>If you deploy your Retype generated website into the subfolder of another website, add the subfolder in the <code v-pre>url</code>. For example, if the website will be available at <code v-pre>https://example.com/docs</code>, add that <code v-pre>docs</code> folder name to the <code v-pre>url</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: example.com/docs</code></pre>
+</doc-codeblock></div>
+<p>If no protocol is supplied, such as <code v-pre>https</code> or <code v-pre>http</code>, Retype will assume <code v-pre>https</code>. A protocol can be explicitly defined by passing in the <code v-pre>url</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: http://example.com/docs/</code></pre>
+</doc-codeblock></div>
+<p>Another common scenario for setting a <code v-pre>url</code> is when using <a href="../../guides/github-actions/">GitHub Pages</a> <strong>without</strong> a custom <code v-pre>CNAME</code>.</p>
+<p>For instance, if your GitHub organization was <code v-pre>CompanyX</code> and your repo was named <code v-pre>docs</code>, the URL to your GitHub Pages hosted website would be <code v-pre>https://companyx.github.io/docs/</code>.</p>
+<p>Retype needs to know where your website will be hosted, so the <code v-pre>url</code> configuration for the above scenario would be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: companyx.github.io/docs</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
