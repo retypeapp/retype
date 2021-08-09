@@ -23,7 +23,7 @@ This is a sample page demonstrating page metadata.
 
 If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the options can be moved into a paired `.yml` file.
 
-For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as the matching `.md` page.
+For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as its paired `.md` page.
 
 Both `.yml` and `.yaml` extensions are supported.
 
@@ -46,6 +46,65 @@ If you add a config to both locations, the [page metadata](../faq.md#what-is-pag
 !!!
 
 See [Folder configuration](folder.md) for details on how to configure a folder.
+
+---
+
+## author
+
+!!!
+
+The configuration name `authors` is also supported. The name `authors` is an alias of `author` and both can be used interchangeably.
+
+!!!
+
+=== author : `string`, `list`, or `object`
+
+The author or multiple authors of this page.
+
+```yml
+author: Frank
+```
+
+```yml
+author: frank@example.com
+```
+
+An author object can also be configured with specific values for the `lable`, `link`, and `avatar`.
+
+```yml
+author:
+  name: Frank Esposito
+  link: https://twitter.com/frank # custom link take precedence
+  avatar: https://example.com/frank.jpg # custom avatar takes precedence
+```
+
+Possible options for the `avatar` include:
+
+1. Path to local image
+2. URL to an external image
+3. Inline SVG
+4. [Icon](../components/icon.md) shortcode
+4. [Emoji](../components/emoji.md) shortcode
+
+The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added by their email address.
+
+```yml
+authors: [Frank, Annette Jones, steffen@example.com]
+```
+
+Mixed author types are also permitted, including adding a list of authors by name, email, or author configuration objects.
+
+```yml
+// Mix of author types
+authors:
+  - name: Frank Esposito
+    link: https://twitter.com/frank
+    avatar: https://example.com/frank.jpg
+  - Annette Jones
+  - steffen@example.com
+```
+
+===
 
 ---
 
