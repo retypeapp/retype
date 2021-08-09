@@ -19,7 +19,6 @@ Retype is only made possible because of the hard work of other amazing open-sour
 
 Library | License | Version | Role
 --- | --- | --- | ---
-[Retype](https://retype.com/) | [Retype](/LICENSE.md) | `1.8.2` | Static site generator
 [Markdig](https://github.com/xoofx/markdig) | [BSD-2-Clause](https://github.com/xoofx/markdig/blob/master/license.txt) | `0.24.0` | Markdown parsing
 [Scriban](https://github.com/scriban/scriban) | [BSD-2-Clause](https://github.com/scriban/scriban/blob/master/license.txt) | `3.6.0` | Templating
 [Mojee](https://mojee.io) | [Mojee](https://docs.mojee.io/license/) | `1.2.0` | [Emoji](components/emoji.md) parsing and handling
