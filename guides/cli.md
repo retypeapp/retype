@@ -14,7 +14,9 @@ Be sure to review the [project](../configuration/project.md) options available w
 
 The `--help` option can be passed with any command to get additional details, for instance `retype watch --help` will return all options for the `retype watch` command.
 
-Let's go through each of the `retype` CLI commands, or be sure to check out the [Getting Started](getting-started.md) guide for step by instructions on using each of these commands.
+The command `retype --version` will return the current version number of your Retype install. See all public Retype [releases](https://github.com/retypeapp/retype/releases).
+
+Let's go through each of the `retype` CLI commands and be sure to check out the [Getting Started](getting-started.md) guide for step by instructions on using each of these commands.
 
 ---
 
