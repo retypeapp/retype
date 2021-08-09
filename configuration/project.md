@@ -553,23 +553,6 @@ output: ./docs
 
 ---
 
-## port
-
-=== port : `number`
-
-A custom port for the internal Retype web server to use when hosting locally. Default is `5000`.
-
-```yml
-port: 5005
-```
-
-If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
-
-If a custom `port` is explicitly configured in the `retype.yml`, and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
-===
-
----
-
 ## search
 
 Customization of the website search component.
@@ -628,6 +611,68 @@ Message rendered when no results were found. Defualt is `"Sorry, no results foun
 search:
   noResultsFoundMsg: Sorry, no results found.
 ```
+===
+
+## server
+
+Custom configuration for the built in Retype development web server.
+
+### host
+
+=== host : `string`
+
+Serve the website from this host location. Default is `localhost`.
+
+```yml
+server:
+  host: 127.0.0.1
+```
+
+By default, the Retype development web server will serve from `http://localhost:5000`, although the port could be dynamically assigned if port `5000` is already in use.
+
+A custom port value can also be assigned.
+
+```
+server:
+  host: 127.0.0.1:5005
+```
+
+A custom `--host` value can also be passed as an argument to the [`retype watch`](../guides/cli.md#options) and [`retype run`](../guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
+
+```
+retype watch --host 127.0.0.1              # serve from a custom host
+retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port
+```
+
+===
+
+### port
+
+=== port : `number`
+
+A custom port for the internal Retype development web server to use when hosting locally. Default is `5000`.
+
+```
+server:
+  port: 5005
+```
+
+If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
+
+If a custom `port` is explicitly configured in the `retype.yml` and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
+
+!!!
+
+The port number can also be included in the [`host`](#host) config.
+
+!!!
+
+A custom `--port` value can also be passed as an argument to the [`retype watch`](../guides/cli.md#options) and [`retype run`](../guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
+
+```
+retype watch --port 5005  # serve from a custom port
+```
+
 ===
 
 ---
