@@ -11,7 +11,7 @@ meta:
   title:  "| Retype - Generate publish and share documentation"
 
 edit:
-  repo: github.com/retypeapp/retype/
+  repo: github.com/retypeapp/retype
 
 links:
   - text: Home

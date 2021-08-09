@@ -187,8 +187,16 @@ Setting a `repo` value will enable the `Edit this page` links on all content pag
 
 ```yml
 edit:
-  repo: "https://github.com/your-organization/your-repo"
+  repo: "https://github.com/<your-organization>/<your-repo>/"
 ```
+
+You can also configurate the links to point directly to the `/edit/` view of the page:
+
+```yml
+edit:
+  repo: "https://github.com/<your-organization>/<your-repo>/edit/"
+```
+
 ===
 
 ### branch
