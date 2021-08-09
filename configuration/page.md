@@ -19,7 +19,7 @@ order: 100
 This is a sample page demonstrating page metadata.
 ```
 
-## Separate `.yml` configuration
+## Separate `.yml` file
 
 If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the options can be moved into a paired `.yml` file.
 
@@ -45,7 +45,7 @@ order: 100
 If you add a config to both locations, the [page metadata](../faq.md#what-is-page-metadata) take precedence.
 !!!
 
-See [Folder configuration](folder.md) for details on how to configure a folder.
+See [folder configuration](folder.md) for details on how to configure a folder.
 
 ---
 
