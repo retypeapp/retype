@@ -23,7 +23,7 @@ Library | License | Version | Role
 [Markdig](https://github.com/xoofx/markdig) | [BSD-2-Clause](https://github.com/xoofx/markdig/blob/master/license.txt) | `0.24.0` | Markdown parsing
 [Scriban](https://github.com/scriban/scriban) | [BSD-2-Clause](https://github.com/scriban/scriban/blob/master/license.txt) | `3.6.0` | Templating
 [Mojee](https://mojee.io) | [Mojee](https://docs.mojee.io/license/) | `1.2.0` | [Emoji](components/emoji.md) parsing and handling
-[Octicons](https://octicons-primer.vercel.app/octicons/) | [MIT](https://github.com/primer/octicons/blob/main/LICENSE) | `15.0.0` | [Emoji](components/emoji.md) parsing and handling
+[Octicons](https://octicons-primer.vercel.app/octicons/) | [MIT](https://github.com/primer/octicons/blob/main/LICENSE) | `15.0.0` | Default bundled [icons](components/icon.md)
 [Vue.js](https://vuejs.org/) | [MIT](https://github.com/vuejs/vue/blob/dev/LICENSE) | `3.0.11` | Client UI framework
 [Turbo](https://turbo.hotwired.dev/) | [MIT](https://github.com/hotwired/turbo/blob/main/MIT-LICENSE) | `7.0.0-beta` | HTML over the wire
 [Lunr](http://lunrjs.com/) | [MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE) | `2.3.9` | Search index
