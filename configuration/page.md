@@ -256,6 +256,32 @@ v1.0-alpha
 
 ---
 
+## redirect
+
+=== redirect : `string`
+
+Redirect requests for this page to another location.
+
+The `redirect` can be set to another page within this project, or an external link.
+
+For example, you have an existing `setup.md` page and you want to move the content to `getting-started.md`, but other websites might still be linking to your old `example.com/setup/` page and you want to ensure those links still work. You would then set the following `redirect` page config in `setup.md` to redirect to `getting-started.md`.
+
+```yml
+---
+redirect: getting-started.md
+---
+
+# Setup
+```
+
+Retype will automaticially handle any incoming `example.com/setup` requests and redirect to the new `example.com/getting-started` location.
+
+Retype is also smart enough to scan your project for any `setup.md` links and replace those with a link directly to `getting-started.md`.
+
+===
+
+---
+
 ## route
 
 === route : `string`
