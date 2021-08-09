@@ -412,3 +412,34 @@ Some content here.
 ```
 
 ===
+
+---
+
+## visibility
+
+=== visibility : `public|hidden`
+
+Configure the visibility of the page to be `hidden` or `public`. Default is `public`.
+
+If a page is configued to be `visibility: hidden`, the page is still created but will not be included in the page navigation or search results.
+
+The following sample demonstrates hidding a page:
+
+```md
+---
+visibility: hidden
+---
+# A hidden page
+
+This page will be hidden from the menu and search results.
+```
+
+The page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page. Retype would ensure no _generated_ links or references to the hidden page are created. If on a public page, a link to a hidden page is made, the link will work and the hidden page will be visible.
+
+The History :icon-history: component will continue to function as normal. Any hidden page visited would still be logged in the history, although that history is only available to the visitor.
+
+Setting `visibility: hidden` on a page is a good way to create a _draft_ or _secret_ page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.
+
+Retype does not show you the link to this page, but it uses the same naming convention as all other pages is used. For instance, if your site is hosted at `https://example.com` and the page was called `my-secret-page.md`, the URL would be `https://example.com/my-secret-page/`.
+
+===

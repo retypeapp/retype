@@ -43,10 +43,10 @@ Change the folder [label](page.md#label) used for the navigation node label.
 label: Custom label
 ```
 
-Hide a folder by setting the [hidden](page.md#hidden) configuration.
+Hide a folder by setting the [visibility](page.md#visibility) configuration.
 
 ```yml index.yml
-hidden: true
+visibility: hidden
 ```
 
-Another option to completely ignore a folder or a file would be to prefix the folder-name or file-name with an underscore `_`. For instance, `_guides` would instruct Retype to ignore the folder.
+Another option to completely ignore a folder or a file would be to prefix the folder-name or file-name with an underscore `_`. For instance, naming a folder `_guides` would instruct Retype to ignore the folder.
