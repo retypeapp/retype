@@ -296,6 +296,14 @@ footer:
 === include : `list`
 Retype can explicitly include files or folders that might have been excluded by default or excluded within the [`exclude`](#exclude) config.
 
+!!!
+
+If you create a link to local static file, such as `.zip` file, Retype will automatically copy that file to the generated website.
+
+That file or file type does not need to be explicitly configured to be included. Retype assumes that if you created a link to the file, you wanted that file published and it will be included in the [`output`](#output).
+
+!!!
+
 Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
 The following sample demonstrates how to include all `.py` files and the entire contents of any `www` folder within the project.
