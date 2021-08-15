@@ -49,4 +49,4 @@ Hide a folder by setting the [visibility](page.md#visibility) configuration.
 visibility: hidden
 ```
 
-Another option to completely ignore a folder or a file would be to prefix the folder-name or file-name with an underscore `_`. For instance, naming a folder `_guides` would instruct Retype to ignore the folder.
+Another option to completely ignore a folder or a file would be to prefix the folder name or file name with an underscore `_`. For instance, naming a folder `_guides` would instruct Retype to ignore the folder.

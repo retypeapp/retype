@@ -62,20 +62,26 @@ The configuration name `authors` is also supported. The name `authors` is an ali
 The author or multiple authors of this page.
 
 ```yml
+---
 author: Frank
+---
 ```
 
 ```yml
+---
 author: frank@example.com
+---
 ```
 
 An author object can also be configured with specific values for the `lable`, `link`, and `avatar`.
 
 ```yml
+---
 author:
   name: Frank Esposito
   link: https://twitter.com/frank # custom link take precedence
   avatar: https://example.com/frank.jpg # custom avatar takes precedence
+---
 ```
 
 Possible options for the `avatar` include:
@@ -89,19 +95,23 @@ Possible options for the `avatar` include:
 The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added by their email address.
 
 ```yml
+---
 authors: [Frank, Annette Jones, steffen@example.com]
+---
 ```
 
 Mixed author types are also permitted, including adding a list of authors by name, email, or author configuration objects.
 
 ```yml
-// Mix of author types
+---
+# Mix of author types
 authors:
   - name: Frank Esposito
     link: https://twitter.com/frank
     avatar: https://example.com/frank.jpg
   - Annette Jones
   - steffen@example.com
+---
 ```
 
 ===
@@ -304,17 +314,26 @@ Options can include:
 - [x] Any string value that will be slotted into the `A -> Z` alpha ordering of all navigation nodes
 - [x] A [SemVer](https://semver.org/) value such as `v2.0`
 
-In order of precedence, the `order` would be applied with the following priority:
+If the `order` is set with a number, a larger positive number will give more _weight_ or _priority_ to that page and Retype will _bubble up_ that page in the navigation. For instance, a page configured with `order: 100` will be higher in the navigation than a page configured with `order: 10`.
 
-```
-number (high)
-alpha (a)
-neutral (by alpha)
-alpha (z)
-vSemver (newest)
-vSemver (oldest)
-number (low)
-```
+Similarily, a page configured with `order: -100` will be lower in the navigation than a page configured with `order: -10` or any page where no `order` is set.
+
+!!!
+
+The position of folders within the navigation can be [ordered](folder.md) too using the same `order` technique.
+
+!!!
+
+In order of precedence, the `order` of a page in the navigation would be determined with the following priority:
+
+Value type | Description
+--- | ---
+`number` (positive) | A larger positive number gets more _weight_ or _priority_ and is pushed higher in the navigation. Largest number at the top. Example: `order: 100` will be ordered above `order: 10`.
+`alpha` (high) | Setting `order` with an alpha-numeric value is possible and those pages will be ordered against the `label` value of all other pages that do not have an `order` configured.  Example: `order: alpha` will be ordered above `order: beta` or a page configured with `label: bravo`.
+no `order` set | If no `order` is configured, all pages will be ordered alphabetically based on its `label`, `title`, the first `h1` title, or the file name values. The `label` config has the highest priorty.
+`alpha` (low) | Example: `order: zulu` will be ordered below `order: zebra` or a page configured with `label: yakee`.
+`vSemver` (newer) | Page `order` configured with a [semver](https://semver.org/) value are ordered with the newest version above an older version. These pages are also moved towards the bottom of the navigation. Example: `order: v1.1` will be ordered above `order: v1.0`.
+`number` (negative) | A negative number gets less _weight_ or _priority_ and is pushed to the bottom of the navigation. Setting the `order` with a negative number is a simple way to push a page to the bottom ofthe navigation. Example: `order: -100` will be ordered below `order: -10`.
 
 ### Order by number
 
