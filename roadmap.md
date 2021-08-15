@@ -31,27 +31,58 @@ Expected: Mid Q3 2021
 
 - [ ] Improved link resolution
 - [ ] Improved handling of Docusaurus, MkDocs, and GitBook config files
-- [x] New page dependecy graph to improve incremental build performance :100:
+- [x] New page dependecy graph to improve incremental build performance :zap: :100: :zap:
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.8.0` [!badge text="LATEST" variant="info"]
+## `v1.8.2` [!badge text="LATEST" variant="info"]
 
-Released: 2021-08-03
+Released: [2021-08-06](https://github.com/retypeapp/retype/releases/tag/v1.8.2)
+
+- [x] Update expired NPM Access Token to fix broken NPM package publishing from [`v1.8.1`](#v181)
+
+## `v1.8.1`
+
+Released: [2021-08-05](https://github.com/retypeapp/retype/releases/tag/v1.8.1)
+
+- [x] Add broader checks for unresolved links, see [#112](https://github.com/retypeapp/retype/issues/112). For instance, if a link to `../components` is created, Retype will now try to resolve the path to any of the following:
+```
+../components.md
+../components/index.md
+../components/readme.md
+../components/default.md
+```
+- [x] Allow inline Markdown components for [`author`](configuration/page/#author), [`title`](configuration/page/#title), and [`label`](configuration/page/#label) page configs, see [#114](https://github.com/retypeapp/retype/issues/114). Block-level Markdown components will be ignored for those configs.
+
+!!!warning
+
+This release failed to run properly if the NPM package was installed. 🧐 We didn't notice that our NPM Access Token had expired between the `v1.8.0` and `v1.8.1` releases. The expired NPM token caused our automated release process to fail. Sorry about that. :weary: Once we figured out what was going wrong, a new NPM Access Token was set and [`v1.8.2`](https://github.com/retypeapp/retype/releases/tag/v1.8.2) was released. We have added NPM token pre-checks and verifications to the automated release process to hopefully prevent the issue from ever happening again.
+
+!!!
+
+## `v1.8.0`
+
+Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 
 - [x] New [`retype.yml`](configuration/project.md) project configuration file format
 - [x] New [`url`](configuration/project.md#url) project config for setting your website URL
 - [x] New auto-generate a `sitemap.xml` file to inform search engines which pages to crawl
 - [x] New auto-generate a `robots.txt` file
-- [x] New Open Graph and Twitter meta tags added to every page
+- [x] New Open Graph and Twitter meta tags generated for every page
 - [x] New [`server.host`](configuration/project.md#host) and [`server.port`](configuration/project.md#port) project configs
-- [x] New `/blog` summary page
+- [x] New `/blog` summary for any `.md` page added to a `/blog` folder
 - [x] New [`author`](configuration/page.md#author), [`category`](configuration/page.md#category), and [`date`](configuration/page.md#date) page configs
 - [x] New [`redirect`](configuration/page.md#redirect) page config
 - [x] New [`visibility`](configuration/page.md#visibility) page config
+- [x] New process to handle the manual creation of a [`CNAME`](configuration/project/#cname) file and copy to output
+- [x] New automated process to check for new Octicons release and merge update
+- [x] Update to latest [Octicons](components/icon/#new-octicons) icon release
+- [x] Improve the CLI experience, see [#103](https://github.com/retypeapp/retype/issues/103)
+- [x] Fix excessive bottom padding on blockquotes, see [#74](https://github.com/retypeapp/retype/issues/74)
+
 
 ## `v1.7.0`
 
-Released: 2021-06-24
+Released: [2021-06-24](https://github.com/retypeapp/retype/releases/tag/v1.7.0)
 
 - [x] New [Column](components/column.md) component
 - [x] New stacking [Panels](components/panel.md#stacking) component
@@ -64,7 +95,7 @@ Released: 2021-06-24
 
 ## `v1.6.0`
 
-Released: 2021-06-09
+Released: [2021-06-09](https://github.com/retypeapp/retype/releases/tag/v1.6.0)
 
 - [x] New [`tags`](configuration/page/#tags) config for pages
 - [x] New [`:icon-shortcode:`](components/icon.md) component
