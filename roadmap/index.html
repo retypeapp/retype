@@ -27,9 +27,9 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.682292025670" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.682380697571" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682292025670" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682380697571" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
 </head>
     <body>
@@ -242,29 +242,79 @@
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Improved link resolution</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Improved handling of Docusaurus, MkDocs, and GitBook config files</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New page dependecy graph to improve incremental build performance <span class="docs-emoji">&#x1F4AF;</span></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New page dependecy graph to improve incremental build performance <span class="docs-emoji">&#x26A1;</span> <span class="docs-emoji">&#x1F4AF;</span> <span class="docs-emoji">&#x26A1;</span></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
 </ul>
-<doc-anchor-target id="v180-">
+<doc-anchor-target id="v182-">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v180-">#</doc-anchor-trigger>
-        <span><code v-pre>v1.8.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v182-">#</doc-anchor-trigger>
+        <span><code v-pre>v1.8.2</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
             <span>LATEST</span>
         </span></span>
     </h2>
 </doc-anchor-target>
-<p>Released: 2021-08-03</p>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.8.2">2021-08-06</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Update expired NPM Access Token to fix broken NPM package publishing from <doc-anchor-trigger to="#v181"><code v-pre>v1.8.1</code></doc-anchor-trigger></li>
+</ul>
+<doc-anchor-target id="v181">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v181">#</doc-anchor-trigger>
+        <span><code v-pre>v1.8.1</code></span>
+    </h2>
+</doc-anchor-target>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.8.1">2021-08-05</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add broader checks for unresolved links, see <a href="https://github.com/retypeapp/retype/issues/112">#112</a>. For instance, if a link to <code v-pre>../components</code> is created, Retype will now try to resolve the path to any of the following:</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">../components.md
+../components/index.md
+../components/readme.md
+../components/default.md</code></pre>
+</doc-codeblock></div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Allow inline Markdown components for <a href="../configuration/page/#author"><code v-pre>author</code></a>, <a href="../configuration/page/#title"><code v-pre>title</code></a>, and <a href="../configuration/page/#label"><code v-pre>label</code></a> page configs, see <a href="https://github.com/retypeapp/retype/issues/114">#114</a>. Block-level Markdown components will be ignored for those configs.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>This release failed to run properly if the NPM package was installed. <span class="docs-emoji">&#x1F9D0;</span> We didn&#x27;t notice that our NPM Access Token had expired between the <code v-pre>v1.8.0</code> and <code v-pre>v1.8.1</code> releases. The expired NPM token caused our automated release process to fail. Sorry about that. <span class="docs-emoji">&#x1F629;</span> Once we figured out what was going wrong, a new NPM Access Token was set and <a href="https://github.com/retypeapp/retype/releases/tag/v1.8.2"><code v-pre>v1.8.2</code></a> was released. We have added NPM token pre-checks and verifications to the automated release process to hopefully prevent the issue from ever happening again.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="v180">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v180">#</doc-anchor-trigger>
+        <span><code v-pre>v1.8.0</code></span>
+    </h2>
+</doc-anchor-target>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.8.0">2021-08-03</a></p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/"><code v-pre>retype.yml</code></a> project configuration file format</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#url"><code v-pre>url</code></a> project config for setting your website URL</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New auto-generate a <code v-pre>sitemap.xml</code> file to inform search engines which pages to crawl</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New auto-generate a <code v-pre>robots.txt</code> file</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New Open Graph and Twitter meta tags added to every page</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New Open Graph and Twitter meta tags generated for every page</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#host"><code v-pre>server.host</code></a> and <a href="../configuration/project/#port"><code v-pre>server.port</code></a> project configs</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>/blog</code> summary page</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <code v-pre>/blog</code> summary for any <code v-pre>.md</code> page added to a <code v-pre>/blog</code> folder</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#author"><code v-pre>author</code></a>, <a href="../configuration/page/#category"><code v-pre>category</code></a>, and <a href="../configuration/page/#date"><code v-pre>date</code></a> page configs</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#redirect"><code v-pre>redirect</code></a> page config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#visibility"><code v-pre>visibility</code></a> page config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New process to handle the manual creation of a <a href="../configuration/project/#cname"><code v-pre>CNAME</code></a> file and copy to output</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New automated process to check for new Octicons release and merge update</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Update to latest <a href="../components/icon/#new-octicons">Octicons</a> icon release</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Improve the CLI experience, see <a href="https://github.com/retypeapp/retype/issues/103">#103</a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Fix excessive bottom padding on blockquotes, see <a href="https://github.com/retypeapp/retype/issues/74">#74</a></li>
 </ul>
 <doc-anchor-target id="v170">
     <h2>
@@ -272,7 +322,7 @@
         <span><code v-pre>v1.7.0</code></span>
     </h2>
 </doc-anchor-target>
-<p>Released: 2021-06-24</p>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.7.0">2021-06-24</a></p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/column/">Column</a> component</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New stacking <a href="../components/panel/#stacking">Panels</a> component</li>
@@ -289,7 +339,7 @@
         <span><code v-pre>v1.6.0</code></span>
     </h2>
 </doc-anchor-target>
-<p>Released: 2021-06-09</p>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.6.0">2021-06-09</a></p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/page/#tags"><code v-pre>tags</code></a> config for pages</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/icon/"><code v-pre>:icon-shortcode:</code></a> component</li>
