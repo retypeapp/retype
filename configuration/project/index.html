@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.682444699051" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.682989509407" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682444699051" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682989509407" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.682444699051" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.682989509407" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -898,7 +898,7 @@ footer:
 </doc-anchor-target>
 <doc-panel id="minchars-number">
     <template #title>minChars : <code v-pre>number</code></template>
-<p>Min number of characters required in a search query. Defualt is <code v-pre>3</code>.</p>
+<p>Min number of characters required in a search query. Default is <code v-pre>3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   minChars: 3</code></pre>
@@ -912,7 +912,7 @@ footer:
 </doc-anchor-target>
 <doc-panel id="maxresults-number">
     <template #title>maxResults : <code v-pre>number</code></template>
-<p>Max number of search results to render. Defualt is <code v-pre>20</code>.</p>
+<p>Max number of search results to render. Default is <code v-pre>20</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   maxResults: 20</code></pre>
@@ -926,7 +926,7 @@ footer:
 </doc-anchor-target>
 <doc-panel id="placeholder-string">
     <template #title>placeholder : <code v-pre>string</code></template>
-<p>Placeholder text rendered on the search component. Defualt is <code v-pre>&quot;Search&quot;</code>.</p>
+<p>Placeholder text rendered on the search component. Default is <code v-pre>&quot;Search&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   placeholder: Search</code></pre>
@@ -940,7 +940,7 @@ footer:
 </doc-anchor-target>
 <doc-panel id="hotkeys-list">
     <template #title>hotkeys : <code v-pre>list</code></template>
-<p>Keyboard key to set the cursor focus into the search field. Defualt is <code v-pre>[&quot;/&quot;]</code>.</p>
+<p>Keyboard key to set the cursor focus into the search field. Default is <code v-pre>[&quot;/&quot;]</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   hotkeys:
@@ -955,7 +955,7 @@ footer:
 </doc-anchor-target>
 <doc-panel id="noresultsfoundmsg-string">
     <template #title>noResultsFoundMsg : <code v-pre>string</code></template>
-<p>Message rendered when no results were found. Defualt is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
+<p>Message rendered when no results were found. Default is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   noResultsFoundMsg: Sorry, no results found.</code></pre>
