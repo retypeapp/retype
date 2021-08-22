@@ -560,7 +560,7 @@ Customization of the website search component.
 ### minChars
 
 === minChars : `number`
-Min number of characters required in a search query. Defualt is `3`.
+Min number of characters required in a search query. Default is `3`.
 
 ```yml
 search:
@@ -571,7 +571,7 @@ search:
 ### maxResults
 
 === maxResults : `number`
-Max number of search results to render. Defualt is `20`.
+Max number of search results to render. Default is `20`.
 
 ```yml
 search:
@@ -582,7 +582,7 @@ search:
 ### placeholder
 
 === placeholder : `string`
-Placeholder text rendered on the search component. Defualt is `"Search"`.
+Placeholder text rendered on the search component. Default is `"Search"`.
 
 ```yml
 search:
@@ -593,7 +593,7 @@ search:
 ### hotkeys
 
 === hotkeys : `list`
-Keyboard key to set the cursor focus into the search field. Defualt is `["/"]`.
+Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
 
 ```yml
 search:
@@ -605,7 +605,7 @@ search:
 ### noResultsFoundMsg
 
 === noResultsFoundMsg : `string`
-Message rendered when no results were found. Defualt is `"Sorry, no results found."`.
+Message rendered when no results were found. Default is `"Sorry, no results found."`.
 
 ```yml
 search:
