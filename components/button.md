@@ -73,6 +73,36 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 
 ---
 
+## Target
+
+Sets the `target` attribute of the button and specifies which window or tab to open the link into.
+
+[!button target="blank" text="Retype"](https://retype.com/)
+
+```md
+[!button target="blank" text="Retype"](https://retype.com/)
+```
+
+If no `target` is configured, the link will open in the current tab.
+
+The `target` can be set to any value, although `blank` is common and will open the link in a new tab. Retype will automatically transform the value `blank` into `_blank` which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.
+
+There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
+
+Config `target` value | Runtime `target` value
+--- | ---
+`blank` | `_blank`
+`parent` | `_parent`
+`top` | `_top`
+`self` | `_self`
+`news1` | `news1`
+`nEWs2` | `news2`
+`recent NEWS` | `recent-news`
+
+See also the [`links.target`](../configuration/project.md#target) configuration.
+
+---
+
 ## Icon and Emoji
 
 ### Octicons
