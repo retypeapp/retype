@@ -197,7 +197,7 @@ description: This is a custom description for this page
 
 === expanded : `boolean`
 
-Determines whether this [folder](foulder.md) should be expanded in the tree navigation on initial page load. Default is `false`.
+Determines whether this [folder](folder.md) should be expanded in the tree navigation on initial page load. Default is `false`.
 
 Set to `true` to expand the folder node in the navigation.
 
@@ -379,7 +379,8 @@ v2.0
 v1.0
 ```
 
-Items prefixed with `v` and mixed with other alpha values would be grouped at the end of
+Items prefixed with `v` would be grouped below the alpha ordered items.
+
 ```
 alpha
 bravo

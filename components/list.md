@@ -12,8 +12,8 @@ Retype includes broad support for creating lists of items, including [unordered]
 Unordered list variations include:
 
 1. `-` for [bullet](#bullet)
-2. `- [x]` for [checked](#checklist) item
-3. `- [ ]` for [unchecked](#checklist) item
+2. `- [x]` for [checked](#task-list) item
+3. `- [ ]` for [unchecked](#task-list) item
 
 ### Bullet
 

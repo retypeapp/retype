@@ -50,7 +50,7 @@ Branding configuration for your Retype generated website.
 
 The main text title added to the upper-left corner of the generated website.
 
-The `title` can be used in conjunction with [`logo`](#logo) and [`logoDark`](#logoDark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
+The `title` can be used in conjunction with [`logo`](#logo) and [`logoDark`](#logodark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
 
 ```yml Set the website title
 branding:

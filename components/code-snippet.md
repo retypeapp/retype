@@ -107,7 +107,7 @@ The `language` property can be set with any reference language value supported b
 :::code source="<path-to-file>" language="<language>" :::
 ```
 
-By default, Reytpe will try to intelligently determine the `language` based on the file extension of the `source` and the automatically set the `language` property. For instance, if the `source` file is a JavaScript `.js` file, Retype will set the `language` of the code snippet to `js`.
+By default, Retype will try to intelligently determine the `language` based on the file extension of the `source` and the automatically set the `language` property. For instance, if the `source` file is a JavaScript `.js` file, Retype will set the `language` of the code snippet to `js`.
 
 If the `language` property is explicitly set, Retype will use that value. If the `language` cannot be determined by Retype, no language reference is set and the code block is rendered without syntax highlighting.
 

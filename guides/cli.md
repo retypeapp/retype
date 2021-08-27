@@ -122,7 +122,7 @@ To generate your new website, run the command `retype build`. This command build
 retype build
 ```
 
-Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the `retype.yml`. By default, the `output` location is a new folder named `retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.
+Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the `retype.yml`. By default, the `output` location is a new folder named `.retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.
 
 If the `.md` documentation files for your project were located not in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
 
