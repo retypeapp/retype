@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.682989509407" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.683360881275" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682989509407" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683360881275" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.682989509407" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.683360881275" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -330,7 +330,7 @@ Options:
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
 </doc-codeblock></div>
-<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.yml</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
+<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.yml</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
 <p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: docs

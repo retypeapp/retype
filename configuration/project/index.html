@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.682989509407" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.683360881275" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682989509407" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683360881275" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.682989509407" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.683360881275" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -261,7 +261,7 @@ footer:
 <doc-panel id="title-string">
     <template #title>title : <code v-pre>string</code></template>
 <p>The main text title added to the upper-left corner of the generated website.</p>
-<p>The <code v-pre>title</code> can be used in conjunction with <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger> and <doc-anchor-trigger to="#logoDark"><code v-pre>logoDark</code></doc-anchor-trigger>. If a <code v-pre>title</code> and <code v-pre>logo</code> are configured, both will be added to the website. If only a <code v-pre>title</code> is configured, only the text title is used. If only a <code v-pre>logo</code> and/or <code v-pre>logoDark</code> are configured, only the logos are used.</p>
+<p>The <code v-pre>title</code> can be used in conjunction with <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger> and <doc-anchor-trigger to="#logodark"><code v-pre>logoDark</code></doc-anchor-trigger>. If a <code v-pre>title</code> and <code v-pre>logo</code> are configured, both will be added to the website. If only a <code v-pre>title</code> is configured, only the text title is used. If only a <code v-pre>logo</code> and/or <code v-pre>logoDark</code> are configured, only the logos are used.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set the website title</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">branding:

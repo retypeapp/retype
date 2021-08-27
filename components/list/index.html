@@ -27,9 +27,9 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.682989509407" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.683360881275" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682989509407" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683360881275" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
 </head>
     <body>
@@ -220,8 +220,8 @@
 <p>Unordered list variations include:</p>
 <ol>
 <li><code v-pre>-</code> for <doc-anchor-trigger to="#bullet">bullet</doc-anchor-trigger></li>
-<li><code v-pre>- [x]</code> for <doc-anchor-trigger to="#checklist">checked</doc-anchor-trigger> item</li>
-<li><code v-pre>- [ ]</code> for <doc-anchor-trigger to="#checklist">unchecked</doc-anchor-trigger> item</li>
+<li><code v-pre>- [x]</code> for <doc-anchor-trigger to="#task-list">checked</doc-anchor-trigger> item</li>
+<li><code v-pre>- [ ]</code> for <doc-anchor-trigger to="#task-list">unchecked</doc-anchor-trigger> item</li>
 </ol>
 <doc-anchor-target id="bullet">
     <h3>

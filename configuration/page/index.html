@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.682989509407" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.8.2.683360881275" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.682989509407" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683360881275" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.682989509407" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.683360881275" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -417,7 +417,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 </doc-anchor-target>
 <doc-panel id="expanded-boolean">
     <template #title>expanded : <code v-pre>boolean</code></template>
-<p>Determines whether this <a href="foulder.md">folder</a> should be expanded in the tree navigation on initial page load. Default is <code v-pre>false</code>.</p>
+<p>Determines whether this <a href="../folder/">folder</a> should be expanded in the tree navigation on initial page load. Default is <code v-pre>false</code>.</p>
 <p>Set to <code v-pre>true</code> to expand the folder node in the navigation.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
@@ -656,7 +656,7 @@ v3.0
 v2.0
 v1.0</code></pre>
 </doc-codeblock></div>
-<p>Items prefixed with <code v-pre>v</code> and mixed with other alpha values would be grouped at the end of</p>
+<p>Items prefixed with <code v-pre>v</code> would be grouped below the alpha ordered items.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">alpha
 bravo
