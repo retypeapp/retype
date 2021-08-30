@@ -335,6 +335,8 @@ no `order` set | If no `order` is configured, all pages will be ordered alphabet
 `vSemver` (newer) | Page `order` configured with a [semver](https://semver.org/) value are ordered with the newest version above an older version. These pages are also moved towards the bottom of the navigation. Example: `order: v1.1` will be ordered above `order: v1.0`.
 `number` (negative) | A negative number gets less _weight_ or _priority_ and is pushed to the bottom of the navigation. Setting the `order` with a negative number is a simple way to push a page to the bottom ofthe navigation. Example: `order: -100` will be ordered below `order: -10`.
 
+By default, the home page of the website has an order of `10000`. To add a page in the navigation just above the home page, set a value of `order: 10001` or greater. To add a page in the navigation just below the home page, set a value of `order: 9999` or lower. To move the home page to the bottom of the navigation, set a negative value, such as `order: -10000`.
+
 ### Order by number
 
 Larger number = order higher in the stack.
