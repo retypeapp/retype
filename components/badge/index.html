@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.8.2.683360881275" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.9.683663848448" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683360881275" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.8.2.683360881275" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683663848448" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.683663848448" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.8.2</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -421,6 +421,62 @@
 </tr>
 </tbody>
 </table>
+<hr />
+<doc-anchor-target id="target">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#target">#</doc-anchor-trigger>
+        <span>Target</span>
+    </h2>
+</doc-anchor-target>
+<p>Sets the <code v-pre>target</code> attribute of the badge and specifies which window or tab to open the link into.</p>
+<p><a href="https://retype.com/" target="_blank" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Retype</span>
+</a></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!badge target=&quot;blank&quot; text=&quot;Retype&quot;](https://retype.com/)</code></pre>
+</doc-codeblock></div>
+<p>If no <code v-pre>target</code> is configured, the link will open in the current tab.</p>
+<p>The <code v-pre>target</code> can be set to any value, although <code v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code v-pre>blank</code> into <code v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
+<p>There are several other values that may be prefixed with an <code v-pre>_</code> character, including <code v-pre>self</code>, <code v-pre>parent</code>, and <code v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code v-pre>target</code> values.</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Config <code v-pre>target</code> value</th>
+<th>Runtime <code v-pre>target</code> value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>blank</code></td>
+<td><code v-pre>_blank</code></td>
+</tr>
+<tr>
+<td><code v-pre>parent</code></td>
+<td><code v-pre>_parent</code></td>
+</tr>
+<tr>
+<td><code v-pre>top</code></td>
+<td><code v-pre>_top</code></td>
+</tr>
+<tr>
+<td><code v-pre>self</code></td>
+<td><code v-pre>_self</code></td>
+</tr>
+<tr>
+<td><code v-pre>news1</code></td>
+<td><code v-pre>news1</code></td>
+</tr>
+<tr>
+<td><code v-pre>nEWs2</code></td>
+<td><code v-pre>news2</code></td>
+</tr>
+<tr>
+<td><code v-pre>recent NEWS</code></td>
+<td><code v-pre>recent-news</code></td>
+</tr>
+</tbody>
+</table>
+<p>See also the <a href="../../configuration/project/#target"><code v-pre>links.target</code></a> configuration.</p>
 <hr />
 <doc-anchor-target id="icon-and-emoji">
     <h2>
