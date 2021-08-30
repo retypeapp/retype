@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.683664672547" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.9.683669545127" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683664672547" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683669545127" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.683664672547" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.683669545127" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -239,8 +239,8 @@ branding:
   title: Project Name
   label: Docs
 links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
 footer:
   copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
@@ -984,7 +984,7 @@ footer:
 <p>By default, the Retype development web server will serve from <code v-pre>http://localhost:5000</code>, although the port could be dynamically assigned if port <code v-pre>5000</code> is already in use.</p>
 <p>A custom port value can also be assigned.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">server:
   host: 127.0.0.1:5005</code></pre>
 </doc-codeblock></div>
 <p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
@@ -1003,7 +1003,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype development web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">server:
   port: 5005</code></pre>
 </doc-codeblock></div>
 <p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
@@ -1028,6 +1028,41 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype watch --port 5005  # serve from a custom port</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="watch">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#watch">#</doc-anchor-trigger>
+        <span>watch</span>
+    </h3>
+</doc-anchor-target>
+<p>Custom configuration for the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> command.</p>
+<doc-panel id="mode-string">
+    <template #title>mode : <code v-pre>string</code></template>
+<p>Instructs the Retype development web server to use the specified mode.</p>
+<p>Default is <code v-pre>memory</code>.</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>memory</code></td>
+<td>No output files are written to a disk. Retype serves a website from the in-memory storage.</td>
+</tr>
+<tr>
+<td><code v-pre>disk</code></td>
+<td>Output files are written to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> directory, and updated with each incremental build accordingly.</td>
+</tr>
+</tbody>
+</table>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">server:
+  watch:
+    mode: disk</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
