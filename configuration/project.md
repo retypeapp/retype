@@ -32,8 +32,8 @@ branding:
   title: Project Name
   label: Docs
 links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
@@ -501,15 +501,15 @@ The `target` can be set to any value, although `blank` is common and will open t
 
 There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
 
-Config `target` value | Runtime `target` value
---- | ---
-`blank` | `_blank`
-`parent` | `_parent`
-`top` | `_top`
-`self` | `_self`
-`news1` | `news1`
-`nEWs2` | `news2`
-`recent NEWS` | `recent-news`
+| Config `target` value | Runtime `target` value |
+| --------------------- | ---------------------- |
+| `blank`               | `_blank`               |
+| `parent`              | `_parent`              |
+| `top`                 | `_top`                 |
+| `self`                | `_self`                |
+| `news1`               | `news1`                |
+| `nEWs2`               | `news2`                |
+| `recent NEWS`         | `recent-news`          |
 
 ===
 
@@ -632,7 +632,7 @@ By default, the Retype development web server will serve from `http://localhost:
 
 A custom port value can also be assigned.
 
-```
+```yml
 server:
   host: 127.0.0.1:5005
 ```
@@ -652,7 +652,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port
 
 A custom port for the internal Retype development web server to use when hosting locally. Default is `5000`.
 
-```
+```yml
 server:
   port: 5005
 ```
@@ -671,6 +671,29 @@ A custom `--port` value can also be passed as an argument to the [`retype watch`
 
 ```
 retype watch --port 5005  # serve from a custom port
+```
+
+===
+
+### watch
+
+Custom configuration for the [`retype watch`](../guides/cli.md#options) command.
+
+=== mode : `string`
+
+Instructs the Retype development web server to use the specified mode.
+
+Default is `memory`.
+
+| Mode     | Description                                                                                              |
+| -------- | -------------------------------------------------------------------------------------------------------- |
+| `memory` | No output files are written to a disk. Retype serves a website from the in-memory storage.               |
+| `disk`   | Output files are written to the [`output`](#output) directory, and updated with each incremental build accordingly. |
+
+```yml
+server:
+  watch:
+    mode: disk
 ```
 
 ===
@@ -757,8 +780,8 @@ url: companyx.github.io/docs
 
 ## Additional options
 
-| Option                              | Type      | Default value              | Description                                                   |
-| ----------------------------------- | --------- | -------------------------- | ------------------------------------------------------------- |
-| `api`                               | `object`  |                            | API reference doc generation                                  |
-| `api.input`                         | `string`  |                            | Path to a project file or a project directory                 |
-| `api.output`                        | `string`  | `./api`                    | Custom path to the API output directory. Relative to `output` |
+| Option       | Type     | Default value | Description                                                   |
+| ------------ | -------- | ------------- | ------------------------------------------------------------- |
+| `api`        | `object` |               | API reference doc generation                                  |
+| `api.input`  | `string` |               | Path to a project file or a project directory                 |
+| `api.output` | `string` | `./api`       | Custom path to the API output directory. Relative to `output` |
