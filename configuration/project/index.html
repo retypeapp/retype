@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.683669545127" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.9.683738185146" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683669545127" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683738185146" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.683669545127" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.683738185146" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -1039,7 +1039,9 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>Custom configuration for the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> command.</p>
 <doc-panel id="mode-string">
     <template #title>mode : <code v-pre>string</code></template>
-<p>Instructs the Retype development web server to use the specified mode.</p>
+<p>During <code v-pre>retype watch</code>, the <code v-pre>mode</code> configuration instructs the web server on where to host files from.</p>
+<p>If <code v-pre>memory</code>, the entire website is built and then stored in memory during development with no files being written to disk.</p>
+<p>If <code v-pre>disk</code>, the entire website is built and written to disk, then the web server will host those files from their disk location.</p>
 <p>Default is <code v-pre>memory</code>.</p>
 <table class="comfortable">
 <thead>
@@ -1064,6 +1066,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
   watch:
     mode: disk</code></pre>
 </doc-codeblock></div>
+<p>The command <a href="../../guides/cli/#retype-build"><code v-pre>retype build</code></a> will always build and write all files to disk. The <code v-pre>memory</code> configuration is not an option with <code v-pre>retype build</code>. The Retype <a href="..guides/github-actions.md">GitHub Action</a> uses <code v-pre>retype build</code>. The command <code v-pre>retype watch</code> is only to be used during local development.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="snippets">
