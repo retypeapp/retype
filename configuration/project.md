@@ -681,13 +681,17 @@ Custom configuration for the [`retype watch`](../guides/cli.md#options) command.
 
 === mode : `string`
 
-Instructs the Retype development web server to use the specified mode.
+During `retype watch`, the `mode` configuration instructs the web server on where to host files from.
+
+If `memory`, the entire website is built and then stored in memory during development with no files being written to disk.
+
+If `disk`, the entire website is built and written to disk, then the web server will host those files from their disk location.
 
 Default is `memory`.
 
-| Mode     | Description                                                                                              |
-| -------- | -------------------------------------------------------------------------------------------------------- |
-| `memory` | No output files are written to a disk. Retype serves a website from the in-memory storage.               |
+| Mode     | Description |
+| -------- | ----------- |
+| `memory` | No output files are written to a disk. Retype serves a website from the in-memory storage. |
 | `disk`   | Output files are written to the [`output`](#output) directory, and updated with each incremental build accordingly. |
 
 ```yml
@@ -695,6 +699,8 @@ server:
   watch:
     mode: disk
 ```
+
+The command [`retype build`](../guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](..guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
 
 ===
 
