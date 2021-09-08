@@ -13,28 +13,34 @@ Expected: 2022
 
 - [ ] Full support for C# API reference doc generation
 - [ ] Early support for TypeScript API reference doc generation
+- [ ] New `partials` support
+- [ ] New `variables` support
 - [x] Many more features planned
 
-## `v1.10.0`
+## `v1.10.0` [!badge text="NEXT" variant="info"]
 
 Expected: Early Q4 2021
 
-- [ ] New `partials` support
-- [ ] New `variables` support
-- [ ] Another beta release of building C# project reference documentation
+- [ ] New Retype Pro with increased page limit and Retype branding removal option
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
+## `v1.9.0` [!badge text="LATEST" variant="info"]
 
-## `v1.9.0` [!badge text="NEXT" variant="info"]
+Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
-Expected: Mid Q3 2021
+- [x] Incremental build during [`retype watch`](guides/cli/#retype-watch) with page dependency graph
+- [x] Ability to run `retype watch` with in-memory output. Turned on by default, see [`server.watch.mode`](configuration/project/#watch) to configure.
+- [x] New platform specific NPM packages:
+  1. [`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86)
+  2. [`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64)
+  3. [`retypeapp-linux-x64`](https://www.npmjs.com/package/retypeapp-linux-x64)
+  4. [`retypeapp-darwin-x64`](https://www.npmjs.com/package/retypeapp-darwin-x64)
+- [x] Lazy Prism and Mermaid plugin execution for hidden content
+- [x] Keep scroll position on full page reload during `retype watch`
+- [x] Build is so fast now that the client refresh interval can be tightened up to `100ms`
+- [x] Add [`target`](components/button/#target) property for linkable components, such as [Button](components/button/) and [Badge](components/badge/)
 
-- [ ] Improved link resolution
-- [ ] Improved handling of Docusaurus, MkDocs, and GitBook config files
-- [x] New page dependecy graph to improve incremental build performance :zap: :100: :zap:
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
-
-## `v1.8.2` [!badge text="LATEST" variant="info"]
+## `v1.8.2`
 
 Released: [2021-08-06](https://github.com/retypeapp/retype/releases/tag/v1.8.2)
 
@@ -78,7 +84,6 @@ Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 - [x] Update to latest [Octicons](components/icon/#new-octicons) icon release
 - [x] Improve the CLI experience, see [#103](https://github.com/retypeapp/retype/issues/103)
 - [x] Fix excessive bottom padding on blockquotes, see [#74](https://github.com/retypeapp/retype/issues/74)
-
 
 ## `v1.7.0`
 
