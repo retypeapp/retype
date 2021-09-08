@@ -22,6 +22,7 @@ Expected: 2022
 Expected: Early Q4 2021
 
 - [ ] New Retype Pro with increased page limit and Retype branding removal option
+- [ ] New [MathJax](https://www.mathjax.org/) support
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.9.0` [!badge text="LATEST" variant="info"]
