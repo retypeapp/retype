@@ -27,9 +27,9 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.683738185146" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.9.684379571250" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683738185146" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.684379571250" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
 </head>
     <body>
@@ -215,42 +215,52 @@
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Full support for C# API reference doc generation</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> Early support for TypeScript API reference doc generation</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>partials</code> support</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>variables</code> support</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Many more features planned</li>
 </ul>
-<doc-anchor-target id="v1100">
+<doc-anchor-target id="v1100-">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v1100">#</doc-anchor-trigger>
-        <span><code v-pre>v1.10.0</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v1100-">#</doc-anchor-trigger>
+        <span><code v-pre>v1.10.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+            <span>NEXT</span>
+        </span></span>
     </h2>
 </doc-anchor-target>
 <p>Expected: Early Q4 2021</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>partials</code> support</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>variables</code> support</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Another beta release of building C# project reference documentation</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> New Retype Pro with increased page limit and Retype branding removal option</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
 </ul>
 <doc-anchor-target id="v190-">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#v190-">#</doc-anchor-trigger>
         <span><code v-pre>v1.9.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-            <span>NEXT</span>
+            <span>LATEST</span>
         </span></span>
     </h2>
 </doc-anchor-target>
-<p>Expected: Mid Q3 2021</p>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.9.0">2021-08-30</a></p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Improved link resolution</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Improved handling of Docusaurus, MkDocs, and GitBook config files</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New page dependecy graph to improve incremental build performance <span class="docs-emoji">&#x26A1;</span> <span class="docs-emoji">&#x1F4AF;</span> <span class="docs-emoji">&#x26A1;</span></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Incremental build during <a href="../guides/cli/#retype-watch"><code v-pre>retype watch</code></a> with page dependency graph</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Ability to run <code v-pre>retype watch</code> with in-memory output. Turned on by default, see <a href="../configuration/project/#watch"><code v-pre>server.watch.mode</code></a> to configure.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New platform specific NPM packages:
+<ol>
+<li><a href="https://www.npmjs.com/package/retypeapp-win-x86"><code v-pre>retypeapp-win-x86</code></a></li>
+<li><a href="https://www.npmjs.com/package/retypeapp-win-x64"><code v-pre>retypeapp-win-x64</code></a></li>
+<li><a href="https://www.npmjs.com/package/retypeapp-linux-x64"><code v-pre>retypeapp-linux-x64</code></a></li>
+<li><a href="https://www.npmjs.com/package/retypeapp-darwin-x64"><code v-pre>retypeapp-darwin-x64</code></a></li>
+</ol>
+</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Lazy Prism and Mermaid plugin execution for hidden content</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Keep scroll position on full page reload during <code v-pre>retype watch</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Build is so fast now that the client refresh interval can be tightened up to <code v-pre>100ms</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add <a href="../components/button/#target"><code v-pre>target</code></a> property for linkable components, such as <a href="../components/button/">Button</a> and <a href="../components/badge/">Badge</a></li>
 </ul>
-<doc-anchor-target id="v182-">
+<doc-anchor-target id="v182">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v182-">#</doc-anchor-trigger>
-        <span><code v-pre>v1.8.2</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-            <span>LATEST</span>
-        </span></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v182">#</doc-anchor-trigger>
+        <span><code v-pre>v1.8.2</code></span>
     </h2>
 </doc-anchor-target>
 <p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.8.2">2021-08-06</a></p>
