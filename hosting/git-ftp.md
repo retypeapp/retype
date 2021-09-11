@@ -43,10 +43,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 5.0.x
-
       - uses: retypeapp/action-build@v1
 
       - uses: retypeapp/action-git-ftp@v1
@@ -144,10 +140,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 5.0.x
 
       - name: Build documentation for GitHub Pages
         uses: retypeapp/action-build@v1
