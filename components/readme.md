@@ -1,6 +1,7 @@
 ---
 icon: tools
 ---
+
 # Components
 
 Retype flavored Markdown supports custom components, including:
@@ -16,6 +17,7 @@ Retype flavored Markdown supports custom components, including:
 - [Icon](icon.md)
 - [Image](image.md)
 - [List](list.md)
+- [Math formula](math-formula.md)
 - [Mermaid](mermaid.md)
 - [Panel](panel.md)
 - [Reference link](reference-link.md)
