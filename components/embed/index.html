@@ -9,18 +9,21 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>publish | Retype - Generate publish and share documentation</title>
-    <meta name="title" content="publish | Retype - Generate publish and share documentation">
+    <title>Embed | Retype - Generate publish and share documentation</title>
+    <meta name="title" content="Embed | Retype - Generate publish and share documentation">
+    <meta name="description" content="The embed component helps with content embedding." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://retype.com/tags/publish/">
-    <meta property="og:title" content="publish | Retype - Generate publish and share documentation">
+    <meta property="og:url" content="https://retype.com/components/embed/">
+    <meta property="og:title" content="Embed | Retype - Generate publish and share documentation">
+    <meta property="og:description" content="The embed component helps with content embedding.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://retype.com/tags/publish/">
-    <meta property="twitter:title" content="publish | Retype - Generate publish and share documentation">
+    <meta property="twitter:url" content="https://retype.com/components/embed/">
+    <meta property="twitter:title" content="Embed | Retype - Generate publish and share documentation">
+    <meta property="twitter:description" content="The embed component helps with content embedding.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -28,6 +31,7 @@
 
     <script type="text/javascript" src="/resources/js/config.js?v=1.9.685768939874" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.685768939874" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,36 +198,212 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="tag-publish" class="break-words">
+<doc-anchor-target id="embed" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tag-publish">#</doc-anchor-trigger>
-        <span>Tag: publish</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#embed">#</doc-anchor-trigger>
+        <span>Embed</span>
     </h1>
 </doc-anchor-target>
-<p>See all <a href="/tags/">tags</a>.</p>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="/hosting/git-ftp/">
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Hosting</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">FTP sync using git history</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website to any FTP host.</p></div>
+<p>The <code v-pre>embed</code> component helps with content embedding.</p>
+<p>The embed component syntax is similar to many other Retype components. The <code v-pre>!embed</code> keyword is used to specify the component and a link to the resource is included.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed](link)</code></pre>
+</doc-codeblock></div>
+<p>The link is the full URL to the embedded resource. For instance, embeding a YouTube or Vimeo video would require the following component syntax:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>The above Retype component would render as follows:</p>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
     </div>
-</a>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="/hosting/publish-to-heroku/">
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Hosting</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Publish to Heroku</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">Easily publish your documentation using Heroku by just uploading the raw project and letting Retype build for you!</p></div>
+</figure>
+</p>
+<p>The following options allow for customization of the embed component.</p>
+<hr />
+<doc-anchor-target id="aspect">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aspect">#</doc-anchor-trigger>
+        <span>Aspect</span>
+    </h2>
+</doc-anchor-target>
+<p>Specifies the video&#x27;s pixel aspect ratio.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed aspect=&quot;4:3&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-3/4">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
     </div>
-</a>
+</figure>
+</p>
+<p>The setting accepts a number of keyword values according to the list below, each reflecting the embedded area&#x27;s aspect ratio:</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Accepted values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>1:1</code></td>
+</tr>
+<tr>
+<td><code v-pre>4:3</code></td>
+</tr>
+<tr>
+<td><code v-pre>16:9</code> (default)</td>
+</tr>
+<tr>
+<td><code v-pre>21:9</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<doc-anchor-target id="el">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el">#</doc-anchor-trigger>
+        <span>El</span>
+    </h2>
+</doc-anchor-target>
+<p>Specifies which HTML element should be used to wrap the embedded content.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed el=&quot;embed&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <embed class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></embed>
+    </div>
+</figure>
+</p>
+<p>The setting accepts a number of keyword values according to the list below, each resembling its respective HTML tag in the rendered page:</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Accepted values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>embed</code></td>
+</tr>
+<tr>
+<td><code v-pre>iframe</code> (default)</td>
+</tr>
+<tr>
+<td><code v-pre>video</code></td>
+</tr>
+<tr>
+<td><code v-pre>object</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<doc-anchor-target id="height">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#height">#</doc-anchor-trigger>
+        <span>Height</span>
+    </h2>
+</doc-anchor-target>
+<p>Specifies a height for the embedded content&#x27;s area.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed height=&quot;120&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden" style="height: 120px; ">
+        <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+    </div>
+</figure>
+</p>
+<doc-anchor-target id="text">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#text">#</doc-anchor-trigger>
+        <span>Text</span>
+    </h2>
+</doc-anchor-target>
+<p>Adds a caption to the embedded content.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed text=&quot;Test Video&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+    </div>
+    <figcaption class="caption">Test Video</figcaption>
+</figure>
+</p>
+<hr />
+<doc-anchor-target id="width">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#width">#</doc-anchor-trigger>
+        <span>Width</span>
+    </h2>
+</doc-anchor-target>
+<p>Specifies a width for the embedded content&#x27;s area.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed width=&quot;300&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden" style="max-width: 300px;">
+        <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+    </div>
+</figure>
+</p>
 
 
+<div class="flex items-center mt-6 mb-6">
+    <span>
+        <a href="/tags/">
+            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+        </a>
+        <span class="mr-2"><a href="/tags/component/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>component</span>
+</a></span>
+    </span>
+</div>
 
 
                 <!-- Required only on API pages -->
                 <doc-toolbar-member-filter-no-results />
             </div>
 
-            
+            <div class="flex flex-wrap items-center justify-between mt-14">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/embed.md" target="_blank" rel="noopener">
+        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        <span>Edit this page</span>
+    </a>
+
+    <!--<p class="my-2.5 text-gray-500 dark:text-dark-350 text-sm">Last updated on <strong>2021-03-14</strong> by <strong>Geoffrey McGill</strong></p>-->
+</div>
+
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/column/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Column</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/emoji/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Emoji 😻</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
 
 
         </main>
@@ -269,7 +449,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "publish", icon: "file", hasPrism: false, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "Embed", icon: "file", hasPrism: true, hasMermaid: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
