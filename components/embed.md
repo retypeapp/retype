@@ -5,23 +5,23 @@ tags: [component]
 
 The `embed` component helps with content embedding.
 
-In Retype's markdown, the syntax is similar to linking, using the `!embed` keyword as the link text:
+The embed component syntax is similar to many other Retype components. The `!embed` keyword is used to specify the component and a link to the resource is included.
 
 ```md
 [!embed](link)
 ```
 
-Where the link is the full URL for the embedded resource. For instance, for an youtube video, it would be:
+The link is the full URL to the embedded resource. For instance, embeding a YouTube or Vimeo video would require the following component syntax:
 
 ```md
 [!embed](https://www.youtube.com/embed/C0DPdy98e4c)
 ```
 
-The markdown above results in:
+The above Retype component would render as follows:
 
 [!embed](https://www.youtube.com/embed/C0DPdy98e4c)
 
-The component also accepts some options to customize how the embedded content is set up in the page, as detailed in below.
+The following options allow for customization of the embed component.
 
 ---
 
@@ -98,36 +98,3 @@ Specifies a width for the embedded content's area.
 ```
 
 [!embed width="300"](https://www.youtube.com/embed/C0DPdy98e4c)
-
-
-## Samples
-
-```md
-[!embed](https://www.teachertube.com/embed/videos/507196)
-```
-
-[!embed](https://www.teachertube.com/embed/videos/507196)
-
----
-
-```md
-[!embed text="The Nomadic Civilization"](https://www.teachertube.com/embed/videos/503142)
-```
-
-[!embed text="The Nomadic Civilization"](https://www.teachertube.com/embed/videos/503142)
-
----
-
-```md
-[!embed aspect="4:3"](https://www.youtube.com/embed/T18NCobS43c)
-```
-
-[!embed aspect="4:3"](https://www.youtube.com/embed/T18NCobS43c)
-
-Retype is also capable of handling normal youtube URLs as embedded content.
-
-```md
-[!embed](https://www.youtube.com/watch?v=C0DPdy98e4c)
-```
-
-[!embed](https://www.youtube.com/watch?v=C0DPdy98e4c)
