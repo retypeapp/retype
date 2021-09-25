@@ -704,6 +704,38 @@ The command [`retype build`](../guides/cli.md#retype-build) will always build an
 
 ===
 
+=== polling : `boolean` or `number`
+
+Tells `retype watch` how it should look for file changes.
+
+If `false`, the usual filesystem subscription is used to check for file changes.
+
+If `true`, it will poll for file changes in the project's [input directory](#input) every second.
+
+If a **number** is provided, then Retype will poll for changes using the number as the amount of milliseconds between checks.
+
+Default is `false`.
+
+| Polling  | Description |
+| -------- | ----------- |
+| `false`  | Use filesystem subscription to receive file change notifications within Retype's [input directory](#input). |
+| `true`   | Polls Retype's [input directory](#input) for changes every second (1000ms). |
+| a number | Polls Retype's [input directory](#input) for changes using the specified amount, in milliseconds, as the delay between checks. |
+
+```yml
+server:
+  watch:
+    polling: true
+```
+
+!!! Performance Warning
+Disk polling may be a costly operation, especially in projects with a large amount of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). Use low delay between polls with care, and adjust from the default if input access is particularly slow or complex.
+
+Increased polling intervals may hurt the experience of `retype watch` where changes takes a longer time to reflect in the open page.
+!!!
+
+===
+
 ---
 
 ## snippets
