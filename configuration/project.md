@@ -704,6 +704,38 @@ The command [`retype build`](../guides/cli.md#retype-build) will always build an
 
 ===
 
+=== polling : `boolean` or `number`
+
+Instructs `retype watch` on how it should listen for file changes.
+
+If `false`, the native filesystem event listeners are used to monitor for file changes.
+
+If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second)
+
+The poll interval is configurable by setting a `number` value. For instance, setting `polling: 500` would configure a 500ms interval.
+
+Default is `false`.
+
+| Polling  | Description |
+| -------- | ----------- |
+| `false`  | Use native filesystem event listeners to receive file change notifications the project [input](#input) directory. |
+| `true`   | Poll the [input](#input) directory for changes every 1000 milliseconds (1 second). |
+| `number` | Poll the [input](#input) directory in milliseconds. |
+
+```yml
+server:
+  watch:
+    polling: true
+```
+
+!!! Performance Warning
+Disk polling may be a costly operation, especially in projects with a large quantity of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). If configuring the poll interval, please adjust the value down in steps, monitoring performance as the poll interval decreases.
+
+On the flip side, increasing the polling interval may cause an annoying experience during `retype watch` as file changes will require a longer time before reflected in the browser.
+!!!
+
+===
+
 ---
 
 ## snippets
