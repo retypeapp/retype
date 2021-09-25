@@ -706,21 +706,21 @@ The command [`retype build`](../guides/cli.md#retype-build) will always build an
 
 === polling : `boolean` or `number`
 
-Tells `retype watch` how it should look for file changes.
+Instructs `retype watch` on how it should listen for file changes.
 
-If `false`, the usual filesystem subscription is used to check for file changes.
+If `false`, the native filesystem event listeners are used to monitor for file changes.
 
-If `true`, it will poll for file changes in the project's [input directory](#input) every second.
+If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second)
 
-If a **number** is provided, then Retype will poll for changes using the number as the amount of milliseconds between checks.
+The poll interval is configurable by setting a `number` value. For instance, setting `polling: 500` would configure a 500ms interval.
 
 Default is `false`.
 
 | Polling  | Description |
 | -------- | ----------- |
-| `false`  | Use filesystem subscription to receive file change notifications within Retype's [input directory](#input). |
-| `true`   | Polls Retype's [input directory](#input) for changes every second (1000ms). |
-| a number | Polls Retype's [input directory](#input) for changes using the specified amount, in milliseconds, as the delay between checks. |
+| `false`  | Use native filesystem event listeners to receive file change notifications the project [input](#input) directory. |
+| `true`   | Poll the [input](#input) directory for changes every 1000 milliseconds (1 second). |
+| `number` | Poll the [input](#input) directory in milliseconds. |
 
 ```yml
 server:
@@ -729,9 +729,9 @@ server:
 ```
 
 !!! Performance Warning
-Disk polling may be a costly operation, especially in projects with a large amount of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). Use low delay between polls with care, and adjust from the default if input access is particularly slow or complex.
+Disk polling may be a costly operation, especially in projects with a large quantity of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). If configuring the poll interval, please adjust the value down in steps, monitoring performance as the poll interval decreases.
 
-Increased polling intervals may hurt the experience of `retype watch` where changes takes a longer time to reflect in the open page.
+On the flip side, increasing the polling interval may cause an annoying experience during `retype watch` as file changes will require a longer time before reflected in the browser.
 !!!
 
 ===
