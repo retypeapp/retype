@@ -2,9 +2,9 @@
 tags: [component]
 ---
 
-# Math formula
+# Math formulas
 
-Retype supports rendering of math formulas built according to the [LaTeX](https://en.wikipedia.org/wiki/LaTeX) grammar. Internally Retype is powered by [$\KaTeX$](https://katex.org/) library, and supports any function the library supports.
+Retype supports rendering math formulas built according to the [LaTeX](https://en.wikipedia.org/wiki/LaTeX) grammar. Internally Retype is powered by [$\KaTeX$](https://katex.org/) library, and supports any function the library does.
 
 Math equations can be inlined or rendered as separate blocks.
 
@@ -22,7 +22,7 @@ This formula $\displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \s
 
 ## Block syntax
 
-A block math equation should be wrapped in `$$` tokens placed on separate lines. Block equatations are center aligned.
+A block math equation should be wrapped around with the `$$` token. Block equations are center aligned.
 
 ```latex The $$ multiline formula block
 $$
@@ -38,7 +38,7 @@ $$
 
 ## LaTeX code highlighting
 
-LaTeX syntax can be highlighted by adding `latex` language specifier to code blocks.
+Math formula blocks can benefit of syntax highlighting by adding the `latex` language specifier to code blocks.
 
 ||| Demo
 
