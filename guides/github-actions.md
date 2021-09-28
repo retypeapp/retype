@@ -19,6 +19,19 @@ Automatically deploying to GitHub Pages requires a basic `retype.yml` configurat
 
 ---
 
+## Summary
+
+- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
+- [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages)
+- [x] Set the branch to `retype`, see [branch config](#pick-a-branch)
+- [x] Set the [`url`](../configuration/project.md#url)
+- [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
+- [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
+
+All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](../configuration/project.md) options for full details.
+
+---
+
 ## Step 1: Add `retype.yml` workflow
 
 Add the following `retype.yml` file to your GitHub project within the `.github/workflows/` folder.
@@ -124,16 +137,3 @@ The last step would be updating the [`url`](../configuration/project.md#url) pro
 ```yml
 url: example.com
 ```
-
----
-
-## Summary
-
-- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
-- [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages)
-- [x] Set the branch to `retype`, see [branch config](#pick-a-branch)
-- [x] Set the [`url`](../configuration/project.md#url)
-- [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
-- [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
-
-All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](../configuration/project.md) options for full details.
