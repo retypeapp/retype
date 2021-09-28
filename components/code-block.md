@@ -145,7 +145,9 @@ const msg = "Hello, world";
 
 ## Disable line numbers
 
-Explicitly disabling the line numbering within code blocks is possible by using the `!#` specifier instead of `#`. This is expecially useful if the site wide [`snippets`](http://localhost:5000/configuration/project/#snippets) has been configured within your project `retype.yml` file.
+Explicitly disabling the line numbering within code blocks is possible by using the `!#` specifier instead of `#`.
+
+Disabling line numbers on a specific code block can be helpful if site wide [`snippets`](http://localhost:5000/configuration/project/#snippets) line numbering has been configured within your project `retype.yml` file.
 
 +++ Demo
 ```js !#
