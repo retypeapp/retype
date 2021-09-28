@@ -679,6 +679,8 @@ retype watch --port 5005  # serve from a custom port
 
 Custom configuration for the [`retype watch`](../guides/cli.md#options) command.
 
+### watch.mode
+
 === mode : `string`
 
 During `retype watch`, the `mode` configuration instructs the web server on where to host files from.
@@ -703,6 +705,8 @@ server:
 The command [`retype build`](../guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](..guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
 
 ===
+
+### watch.polling
 
 === polling : `boolean` or `number`
 
