@@ -5,17 +5,17 @@ tags: [component]
 
 Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.
 
-+++ Demo
+||| Demo
 ```
 A basic code block
 ```
-+++ Source
+||| Source
 ~~~
 ```
 A basic code block
 ```
 ~~~
-+++
+|||
 
 ---
 
@@ -25,17 +25,17 @@ Optional syntax highlighting of the code within the code block can be configured
 
 In the following sample, we configure JavaScript syntax highlighting for the code block by adding the `js` language identifier.
 
-+++ Demo
+||| Demo
 ```js
 const msg = "hello, world";
 ```
-+++ Source
+||| Source
 ~~~
 ```js
 const msg = "hello, world";
 ```
 ~~~
-+++
+|||
 
 ---
 
@@ -79,17 +79,17 @@ If a code language is used, separate the `title` from the `lang` by one space. T
 
 Adding or removing line numbering for your code blocks can be configured by adding the `#` specifier character to the first line after the reference language.
 
-+++ Demo
+||| Demo
 ```js #
 const msg = "hello, world";
 ```
-+++ Source
+||| Source
 ~~~
 ```js #
 const msg = "hello, world";
 ```
 ~~~
-+++
+|||
 
 You can also add a title after the `#`:
 
@@ -121,42 +121,30 @@ Line numbering can also be configured at the project level using the [`snippets`
 
 With the above `snippets` config, then you would not have to add the `#` specifier to each code block. All `js` and `json` code blocks would automatically get line numbers.
 
-~~~ Without `snippets` config
+||| Without `snippets` config
 ```js #
 const msg = "Hello, world";
 ```
-~~~
-
-~~~ With `snippets` config
+||| With `snippets` config
 ```js
 const msg = "Hello, world";
 ```
-~~~
-
-If you configure a site wide `snippets` for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the [`!#`](#disable-line-numbers) specifier to the code block instance.
-
-~~~ Remove line numbers if `snippets` config
-```js !#
-const msg = "Hello, world";
-```
-~~~
+|||
 
 ---
 
 ## Disable line numbers
 
-Explicitly disabling the line numbering within code blocks is possible by using the `!#` specifier instead of `#`.
+If you configure a site wide [`snippets`](http://localhost:5000/configuration/project/#snippets) for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the [`!#`](#disable-line-numbers) specifier to the code block instance.
 
-Disabling line numbers on a specific code block can be helpful if site wide [`snippets`](http://localhost:5000/configuration/project/#snippets) line numbering has been configured within your project `retype.yml` file.
-
-+++ Demo
+||| Demo
 ```js !#
 const msg = "Hello, world";
 ```
-+++ Source
+||| Source
 ~~~
 ```js !#
 const msg = "Hello, world";
 ```
 ~~~
-+++
+|||
