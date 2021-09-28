@@ -199,6 +199,26 @@ edit:
 
 ===
 
+### base
+
+An optional base path to a directory within the repository.
+
+=== base : `string`
+
+The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
+
+The following sample demonstrates how `edit.base` would be configured if the `.md` pages for this project are stored within the `/src/docs/` sub-directory within the repo.
+
+```yml
+edit:
+  repo: "https://github.com/your-organization/your-repo"
+  base: /src/docs
+```
+
+The final **Edit this page** URL constructed by Retype for the sample above would be `https://github.com/your-organization/your-repo/blob/main/src/docs/your-page.md`.
+
+===
+
 ### branch
 
 === branch : `string`
