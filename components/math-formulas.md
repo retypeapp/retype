@@ -4,13 +4,13 @@ tags: [component]
 
 # Math formulas
 
-Retype supports rendering math formulas built according to the [LaTeX](https://en.wikipedia.org/wiki/LaTeX) grammar. Internally Retype is powered by [$\KaTeX$](https://katex.org/) library, and supports any function the library does.
+Retype supports rendering math formulas written according to the [LaTeX](https://en.wikipedia.org/wiki/LaTeX) grammar. Internally, Retype is powered by [$\KaTeX$](https://katex.org/) and supports all syntax of the library.
 
-Math equations can be inlined or rendered as separate blocks.
+Math equations can be rendered inline by wrapping the equation in `$` characters, or as separate blocks by fencing the equation in `$$` characters.
 
 ## Inline syntax
 
-An inline math equation should be wrapped in `$` characters.
+An inline math equation is wrapped in `$` characters.
 
 ```latex Inline formula
 $\displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$
@@ -22,7 +22,7 @@ This formula $\displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \s
 
 ## Block syntax
 
-A block math equation should be wrapped around with the `$$` token. Block equations are center aligned.
+A block math equation is wrapped with `$$` characters. Block equations are center aligned when rendered to the finished page.
 
 ```latex The $$ multiline formula block
 $$
@@ -38,7 +38,7 @@ $$
 
 ## LaTeX code highlighting
 
-Math formula blocks can benefit of syntax highlighting by adding the `latex` language specifier to code blocks.
+Math formula blocks can benefit from syntax highlighting by adding the `latex` language specifier to code blocks.
 
 ||| Demo
 
@@ -51,13 +51,13 @@ Math formula blocks can benefit of syntax highlighting by adding the `latex` lan
 
 ||| Source
 
-````
+~~~
 ```latex
 \bigg\{ \;\mathbb{F}[x]\text{-modules } V\; \bigg\}
 \longleftrightarrow
 \bigg\{ \substack{\text{$\mathbb{F}$-vector spaces $V$ with a}
 \\ \text{linear map $T : V \rightarrow V$}} \bigg\}
 ```
-````
+~~~
 
 |||
