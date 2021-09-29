@@ -47,6 +47,9 @@ Math formula blocks can benefit from syntax highlighting by adding the `latex` l
 \longleftrightarrow
 \bigg\{ \substack{\text{$\mathbb{F}$-vector spaces $V$ with a}
 \\ \text{linear map $T : V \rightarrow V$}} \bigg\}
+
+
+
 ```
 
 ||| Source
