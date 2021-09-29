@@ -83,14 +83,6 @@ author:
 ---
 ```
 
-Possible options for the `avatar` config include:
-
-1. Path to local image
-2. URL to an external image
-3. Inline SVG
-4. [Icon](../components/icon.md) shortcode
-4. [Emoji](../components/emoji.md) shortcode
-
 The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added by their email address.
 
 ```yml
@@ -115,6 +107,24 @@ authors:
     email: jane.doe@example.com
 ---
 ```
+
+#### Values for the `avatar` config
+
+Possible values include:
+
+1. Path to an image in the local website (`/static/sample.jpg`, `../static/sample.jpg`)
+2. Full image URL (`https://example.com/profiles/my-profile.png`)
+3. Inline SVG (`<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">...</svg>`)
+4. [Icon](../components/icon.md) shortcode (`person`, `person-fill`)
+5. [Emoji](../components/emoji.md) shortcode (`":bearded_person:"`, `":red_haired_woman:"`)
+
+#### Gravatar support
+
+Retype will pull the avatar's picture from [the gravatar website](https://gravatar.com) if the three conditions below are met in an `author` entry:
+
+- `avatar` is not specified
+- `email` is provided (or the string value is an email)
+- the `integrations.gravatar.enabled` project config is `true` (Retype's default)
 
 ===
 
