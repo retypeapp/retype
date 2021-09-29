@@ -530,6 +530,25 @@ There are several other values that may be prefixed with an `_` character, inclu
 
 ---
 
+## markdown
+
+Markdown configuration options.
+
+### lineBreaks
+
+=== lineBreaks : `string`
+
+Switches between `soft` and `hard` line break modes. The option instructs Retype in what way a regular line ending should be handled.
+
+- in `soft` mode, regular line breaks are processed as [soft breaks](https://spec.commonmark.org/0.30/#soft-line-breaks) (no `<br />` is emitted to HTML markup), unless a line contains 2+ spaces before a line break.
+- in `hard` mode, regular line breaks are always emitted as `<br />` HTML elements.
+
+Default is `soft`.
+
+===
+
+---
+
 ## meta
 
 Project wide meta tag configuration options.
