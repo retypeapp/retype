@@ -159,6 +159,55 @@ branding:
 
 ---
 
+## cache
+
+Cache configuration options.
+
+### busting
+
+Cache busting configuration for the website resources.
+Helps to ensure a loaded page refers to the most recent javascript and CSS resources.
+
+=== strategy : `string`
+
+Specifies the approach Retype will use for cache invalidating. 
+
+| Strategy     | Description |
+| ------------ | ----------- |
+| `none`       | Cache invalidation is disabled. |
+| `path`       | Cache invalidation is achieved by concatinating a version token with a file name. |
+| `query`      | Cache invalidation is achieved by using a query parameter with a version token value. |
+
+Default is `query`.
+
+Below are demo URLs generated for corresponding `cache.busting.strategy` values.
+
+~~~html `strategy: none`
+<script type="text/javascript" src="/resources/js/retype.js" />
+~~~
+
+~~~html `strategy: path`
+<script type="text/javascript" src="/resources/js/retype.v1.10.js" />
+~~~
+
+~~~html `strategy: query`
+<script type="text/javascript" src="/resources/js/retype.js?v=1.10" />
+~~~
+
+===
+
+=== token : `string`
+
+An optional unique token used for website resource cache invalidation.
+
+- If specified, the provided value is used for all invalidatable resources as is.
+- If not specified, the default token having the following structure is used:  
+`{Retype version}.{total milliseconds elapsed since 2000-01-01}`
+
+===
+
+---
+
 ## cname
 
 === cname : `boolean` or `string`
