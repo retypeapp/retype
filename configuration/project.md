@@ -112,6 +112,21 @@ branding:
 ```
 ===
 
+### logoAlign
+
+=== logoAlign : `string`
+
+Set a logo image alignment relative to the [`title`](#title). Supported values: `left`, `right`.
+
+Default is `left`.
+
+```yml
+branding:
+  logo: static/logo.png
+  logoAlign: right
+```
+===
+
 ### colors
 
 Custom color configuration.
