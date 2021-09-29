@@ -42,7 +42,7 @@ order: 100
 ```
 
 !!!
-If you add a config to both locations, the [page metadata](../faq.md#what-is-page-metadata) take precedence.
+If you add a config to both locations, the page [metadata](../faq.md#what-is-page-metadata) take precedence.
 !!!
 
 See [folder configuration](folder.md) for details on how to configure a folder.
@@ -73,12 +73,13 @@ author: frank@example.com
 ---
 ```
 
-An author object can also be configured with specific values for the `lable`, `link`, and `avatar`.
+An author object can also be configured with specific values for the `name`, `email`, `link`, and `avatar`.
 
 ```yml
 ---
 author:
   name: Frank Esposito
+  email: frank@example.com
   link: https://twitter.com/frank # custom link take precedence
   avatar: https://example.com/frank.jpg # custom avatar takes precedence
 ---
@@ -92,7 +93,7 @@ Possible options for the `avatar` include:
 4. [Icon](../components/icon.md) shortcode
 4. [Emoji](../components/emoji.md) shortcode
 
-The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added by their email address.
+The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.
 
 ```yml
 ---
@@ -107,6 +108,7 @@ Mixed author types are also permitted, including adding a list of authors by nam
 # Mix of author types
 authors:
   - name: Frank Esposito
+    email: frank@example.com
     link: https://twitter.com/frank
     avatar: https://example.com/frank.jpg
   - Annette Jones
