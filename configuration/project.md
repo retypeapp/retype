@@ -414,6 +414,36 @@ integrations:
 
 ---
 
+### gravatar
+
+Specific setting to control Retype integration with the Gravatar profile pictures service.
+
+This feature is basically used by the [page.authors](page.md#author) configuration.
+
+=== gravatar.enabled : `boolean`
+
+Whether Gravatar should be used to pull profile pictures. Default is `true`. Use `false` to always show the default picture or specified resource.
+
+!!!
+
+Disabling Gravatar will also reset the default avatar icon to Retype style's one.
+
+!!!
+
+===
+
+=== gravatar.default : `string`
+
+The default profile picture to return from Gravatar queries whenever there's no picture assigned to the queried email address. Default value is `mp`.
+
+!!! Accepted input
+
+This config accepts either a full URL for the image to be used as default profile picture, or a **keyword** as listed in [Default Image documentation entry in Gravatar website](https://en.gravatar.com/site/implement/images#default-image). At the time of the writing of this article, the following was supported: `404`, `mp` (our default), `identicon`, `monsterid`, `wavatar`, `retro`, `robohash`, `blank`.
+
+!!!
+
+---
+
 ## links
 
 Custom links added to the top-bar navigation of all pages.
