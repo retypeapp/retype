@@ -46,7 +46,7 @@ Unordered list variations include:
 Ordered list variations include:
 
 1. `1.` for [numbers](#numbers) (default)
-2. `a.` for [lowercase](#letters) letters
+2. `a.` for [lowercase](#lowercase-letters) letters
 3. `A.` for [uppercase](#uppercase-letters) letters
 4. `i.` for [lowercase](#lowercase-roman-numerals) Roman numerals
 5. `I.` for [uppercase](#uppercase-roman-numerals) Roman numerals

@@ -134,10 +134,10 @@ Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.
 Any image file can be used as the `icon`.
 
 ```md
-[!button icon="../static/retype-logo.svg"]
+[!button icon="../static/retype-icon.svg"]
 ```
 
-[!button icon="../static/retype-logo.svg"]
+[!button icon="../static/retype-icon.svg"]
 
 ### SVG image
 

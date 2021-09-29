@@ -144,10 +144,10 @@ Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.
 Any image file can be used as the `icon`.
 
 ```md
-[!badge icon="../static/retype-logo.svg"]
+[!badge icon="../static/retype-icon.svg"]
 ```
 
-[!badge icon="../static/retype-logo.svg"]
+[!badge icon="../static/retype-icon.svg"]
 
 ### SVG image
 
