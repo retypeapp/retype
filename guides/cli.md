@@ -8,7 +8,7 @@ The Retype CLI is clean and simple. The majority of the time you will run just o
 
 !!!
 
-Be sure to review the [project](../configuration/project.md) options available within the `retype.yml`  as it does unlock a lot more power, flexibility, and customization.
+Be sure to review the [project](../configuration/project.md) options available within the `retype.yml` as it does unlock a lot more power, flexibility, and customization.
 
 !!!
 
@@ -75,8 +75,8 @@ branding:
   title: Project Name
   label: Docs
 links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
@@ -199,3 +199,81 @@ Options:
   -v, --verbose     Verbose logging
   -?, -h, --help    Show help and usage information
 ```
+
+## Usage of `--override`
+
+The Retype CLI commands supporting the `--override` option allow to modify configuration loaded from a `retype.yml` file prior to execution. 
+
+The `--override` option is helpful in certain scenarios like generating websites having different `url` config from the same sources, without the need to maintain several `retype.yml` files.
+
+The CLI expects an **escaped** json object passed as the option value. Then Retype merges `retype.yml` configuration with the provided json object in the way that colliding configs from the latter win. The `--override` json object may contain duplicates that will be processed sequentially.
+
+#### Override a single top-level config
+
+~~~yml `retype.yml`
+url: https://retype.com
+~~~
+
+The command below will build the webisite with `url: https://beta.retype.com`.
+
+```
+retype build --override "{ \"url\": \"https://beta.retype.com\" }"
+```
+
+Passing `null` will remove the corresponding config value, so the website will be built like if `url` was not configured at all:
+
+```
+retype build --override "{ \"url\": null }"
+```
+
+#### Override a single nested config
+
+When overriding a nested config, all parent keys must be included too.
+
+The sample below will build a website having `title: Retype` and `label: beta`.
+
+~~~yml `retype.yml`
+branding:
+  title: Retype
+  label: v1.10
+~~~
+
+```
+retype build --override "{ \"branding\": { \"label\": \"beta\"} }"
+```
+
+#### Override a complex config object
+
+In order to override a complex object completely, it needs to be removed first. 
+
+The sample below will build a website having `label: beta` and no title.
+
+~~~yml `retype.yml`
+branding:
+  title: Retype
+  label: v1.10
+~~~
+
+```
+retype build --override "{ \"branding\": null, \"branding\": { \"label\": \"beta\"} }"
+```
+
+!!!
+Please pay attention that duplicated keys are applied sequentially. Thus, it's important to place `null` before the overriding object.
+!!!
+
+#### Add new item to an array
+
+The following command will add the `GitHub` link to the `links` configuration array.
+
+~~~yml `retype.yml`
+links:
+  - link: Retype
+    text: https://retype.com
+~~~
+
+```
+retype build --override "{ \"links\": [ { \"link\": \"https://github.com/retypeapp/retype\", \"text\": \"GitHub\" } ] }"
+```
+
+In order to replace an array items, the array needs to be removed first, and then overridden with an array of desired items.
