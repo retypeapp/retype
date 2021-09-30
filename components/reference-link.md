@@ -35,8 +35,8 @@ From a functionality perspective, there is no difference betwen a `!ref` compone
 
 The `icon` used for the reference link component can be customized using a name/value pair syntax for the `text` and `icon` attributes. This allows for setting a custom `icon` and `text` value at the same time. The `icon` attribute can be initialize with one of the following:
 - [Octicon](https://octicons-primer.vercel.app/octicons/) name
-- emoji `:shortcode:` (please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes)
-- image file URL
+- Emoji `:shortcode:` (please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes)
+- Image file URL
 
 The following samples demonstrate setting a custom `icon`:
 
@@ -50,7 +50,7 @@ The following samples demonstrate setting a custom `icon`:
 [!ref icon=":rocket:"](../guides/getting-started.md)
 [!ref icon="../static/retype-icon.svg"](../guides/getting-started.md)
 
-By default, the referred page title is used as the component text value but the text can be customized by explicityly passing a separate `text` value.
+By default, the referred page title is used as the component text value and the text can be customized by explicitly passing a separate `text` value.
 
 ```
 [!ref icon="rocket" text="To the moon"](../guides/getting-started.md)
