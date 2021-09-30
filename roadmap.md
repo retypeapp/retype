@@ -17,15 +17,25 @@ Expected: 2022
 - [ ] New `variables` support
 - [x] Many more features planned
 
-## `v1.10.0` [!badge text="NEXT" variant="info"]
+## `v1.11.0` [!badge text="NEXT" variant="info"]
 
-Expected: Early Q4 2021
+Expected: Late Q4 2021
 
 - [ ] New Retype Pro with increased page limit and Retype branding removal option
 - [ ] New [MathJax](https://www.mathjax.org/) support
-- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+- [ ] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.9.0` [!badge text="LATEST" variant="info"]
+## `v1.10.0` [!badge text="LATEST" variant="info"]
+
+Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
+
+- [x] New [$\KaTeX$](components/math-formulas.md) math typesetting library support.
+- [x] Auto generate RSS feed for blog posts.
+- [x] New [`server.watch.polling`](configuration/project.md#watchpolling) configuration option.
+- [x] Gravatar support for [`author`](configuration/page.md#author) avatars.
+- [x] Support [`target`](components/reference-link.md#target) and [`icon`](components/reference-link.md#custom-icon) attributes in [`[!ref]`](components/reference-link.md) components.
+
+## `v1.9.0`
 
 Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
