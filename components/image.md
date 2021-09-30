@@ -87,3 +87,19 @@ The `plus` alignment options only apply when the page is `layout: central` or `l
 For default page layouts with a left navigation and/or the right table of contents, the `plus` positions will fallback to their non-plus equivalents. For instance, `rightplus` will fallback to `right` and the `centerplus` will fallback to `center`.
 
 Photo by [carlos aranda](https://unsplash.com/@carlosaranda) on [Unsplash](https://unsplash.com/).
+
+## Tilde base URL token
+
+This component support tilde url tokens. They are especially useful in case retype is deployed as a subdirectory in a domain, e.g. `http://example.com/docs`. Links starting with `~` are prefixed the base directory retype is expected to be running at.
+
+From the examples above, most of them retrieve `/static/sample.jpg` by its relative path to this page, `../static/sample.jpg`. Using tokens, it is possible to safely use a link that could be copy-pasted to other articles without need to fix paths:
+
+```md
+![](~/static/sample.jpg)
+```
+
+![](~/static/sample.jpg)
+
+!!!
+In this case, if the website URL were `http://example.com/docs`, then the resolved link would have been `http://example.com/docs/static/sample.jpg.
+!!!

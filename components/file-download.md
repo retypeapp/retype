@@ -48,3 +48,19 @@ By default, the file name is used as the component text value but the text can b
 ```
 
 [!file icon="rocket" text="To the moon"](../static/sample.txt)
+
+## Tilde base URL token
+
+This component support tilde url tokens. They are especially useful in case retype is deployed as a subdirectory in a domain, e.g. `http://example.com/docs`. Links starting with `~` are prefixed the base directory retype is expected to be running at.
+
+From the examples above, most of them retrieve `/static/sample.txt` by its relative path to this page, `../static/sample.txt`. Using tokens, it is possible to safely use a link that could be copy-pasted to other articles without need to fix paths:
+
+```md
+[!file](~/static/sample.txt)
+```
+
+[!file](~/static/sample.txt)
+
+!!!
+In this case, if the website URL were `http://example.com/docs`, then the resolved link would have been `http://example.com/docs/static/sample.txtr.
+!!!
