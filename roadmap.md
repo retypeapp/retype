@@ -29,11 +29,11 @@ Expected: Late Q4 2021
 
 Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
-- [x] New [$\KaTeX$](https://katex.org) math typesetting library support.
+- [x] New [$\KaTeX$](components/math-formulas.md) math typesetting library support.
 - [x] Auto generate RSS feed for blog posts.
-- [x] New `server.watch.polling` configuration option.
-- [x] Gravatar support for avatars.
-- [x] Support `target` and `icon` attributes in `[!ref]` components.
+- [x] New [`server.watch.polling`](configuration/project.md#watchpolling) configuration option.
+- [x] Gravatar support for [`author`](configuration/page.md#author) avatars.
+- [x] Support [`target`](components/reference-link.md#target) and [`icon`](components/reference-link.md#custom-icon) attributes in [`[!ref]`](components/reference-link.md) components.
 
 ## `v1.9.0`
 
