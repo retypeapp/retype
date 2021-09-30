@@ -112,6 +112,21 @@ branding:
 ```
 ===
 
+### logoAlign
+
+=== logoAlign : `string`
+
+Set a logo image alignment relative to the [`title`](#title). Supported values include `left` and `right`.
+
+Default is `left`.
+
+```yml
+branding:
+  logo: static/logo.png
+  logoAlign: right
+```
+===
+
 ### colors
 
 Custom color configuration.
@@ -140,6 +155,55 @@ branding:
     label:
       background: #ff0000
 ```
+===
+
+---
+
+## cache
+
+Cache configuration options.
+
+### busting
+
+Cache busting configuration for the website resources.
+Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.
+
+=== strategy : `string`
+
+Specifies the approach Retype will use for cache invalidation. 
+
+| Strategy     | Description |
+| ------------ | ----------- |
+| `none`       | Cache invalidation is disabled. |
+| `path`       | Cache invalidation is achieved by concatinating the file name with a version token. |
+| `query`      | Cache invalidation is achieved by adding a query parameter with a version token value. |
+
+Default is `query`.
+
+Below are demo URLs generated for corresponding `cache.busting.strategy` options:
+
+~~~html `strategy: none`
+<script type="text/javascript" src="/resources/js/retype.js" />
+~~~
+
+~~~html `strategy: path`
+<script type="text/javascript" src="/resources/js/retype.v1.10.js" />
+~~~
+
+~~~html `strategy: query`
+<script type="text/javascript" src="/resources/js/retype.js?v=1.10" />
+~~~
+
+===
+
+=== token : `string`
+
+An optional unique token used for website resource cache invalidation.
+
+- If specified, the provided value is used for all invalidatable resources as is.
+- If not specified, the default token having the following structure is used:  
+`{Retype version}.{total milliseconds elapsed since 2000-01-01}`
+
 ===
 
 ---
@@ -510,6 +574,25 @@ There are several other values that may be prefixed with an `_` character, inclu
 | `news1`               | `news1`                |
 | `nEWs2`               | `news2`                |
 | `recent NEWS`         | `recent-news`          |
+
+===
+
+---
+
+## markdown
+
+Markdown configuration options.
+
+### lineBreaks
+
+=== lineBreaks : `string`
+
+Switches between `soft` and `hard` line break modes. The option instructs Retype in what way a regular line ending should be handled.
+
+- in `soft` mode, regular line breaks are processed as [soft breaks](https://spec.commonmark.org/0.30/#soft-line-breaks) (no `<br />` is emitted to HTML markup), unless a line contains 2+ spaces before a line break.
+- in `hard` mode, regular line breaks are always emitted as `<br />` HTML elements.
+
+Default is `soft`.
 
 ===
 

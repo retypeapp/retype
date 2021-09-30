@@ -320,7 +320,7 @@ Similarily, a page configured with `order: -100` will be lower in the navigation
 
 !!!
 
-The position of folders within the navigation can be [ordered](folder.md) too using the same `order` technique.
+The position of folders within the navigation can be [ordered](folder.md) too using the same `order` technique with the only difference that folders are always pinned to the top of their `order` group.
 
 !!!
 
