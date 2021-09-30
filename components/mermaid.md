@@ -1,7 +1,8 @@
 ---
 tags: [component]
+icon: ":mermaid:"
 ---
-# :mermaid: Mermaid
+# Mermaid
 
 [Mermaid](https://mermaid-js.github.io/mermaid) is a diagramming and charting tool that can be defined inside Markdown code blocks.
 
