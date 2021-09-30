@@ -48,7 +48,7 @@ The following samples demonstrate setting a custom `icon`:
 [!file icon=":rocket:"](../static/sample.txt)
 [!file icon="../static/retype-icon.svg"](../static/sample.txt)
 
-By default, the referred page title is used as the component text value and the text can be customized by explicitly passing a separate `text` value.
+By default, the file name is used as the component text value and the text can be customized by explicitly passing a separate `text` value.
 
 ```
 [!file icon="rocket" text="To the moon"](../static/sample.txt)
