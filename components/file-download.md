@@ -31,17 +31,24 @@ Clicking anywhere within the file download component will trigger the web browse
 
 ## Custom icon
 
-The `icon` used for the file download component can be customized using a name/value pair syntax for the `text` and `icon` attributes. This allows for setting a custom `icon` and `text` value at the same time.
+The `icon` used for the file download component can be customized using a name/value pair syntax for the `text` and `icon` attributes. This allows for setting a custom `icon` and `text` value at the same time. The `icon` attribute can be initialize with one of the following:
+- [Octicon](https://octicons-primer.vercel.app/octicons/) name
+- Emoji `:shortcode:` (please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes)
+- Image file URL
 
-The following sample demonstrates setting a custom `icon`:
+The following samples demonstrate setting a custom `icon`:
 
 ```
 [!file icon="rocket"](../static/sample.txt)
+[!file icon=":rocket:"](../static/sample.txt)
+[!file icon="../static/retype-icon.svg"](../static/sample.txt)
 ```
 
 [!file icon="rocket"](../static/sample.txt)
+[!file icon=":rocket:"](../static/sample.txt)
+[!file icon="../static/retype-icon.svg"](../static/sample.txt)
 
-By default, the file name is used as the component text value but the text can be customized by explicityly passing a separate `text` value.
+By default, the referred page title is used as the component text value and the text can be customized by explicitly passing a separate `text` value.
 
 ```
 [!file icon="rocket" text="To the moon"](../static/sample.txt)
