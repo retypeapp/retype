@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686349863043" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686277644031" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686349863043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686349863043" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -53,7 +53,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -216,6 +216,22 @@
 <p>The second, <strong>GitHub Pages Action</strong> will automatically publish your newly built website to a branch in Github so it&#x27;s available to host from GitHub Pages. By default, the <code v-pre>retype</code> branch is used, but of course that is also configurable.</p>
 <p>Automatically deploying to GitHub Pages requires a basic <code v-pre>retype.yml</code> configuration file to be added to your GitHub repo and some simple project configuration.</p>
 <hr />
+<doc-anchor-target id="summary">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
+        <span>Summary</span>
+    </h2>
+</doc-anchor-target>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add a <code v-pre>retype.yml</code> file, see <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">step 1</doc-anchor-trigger></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure GitHub Pages, see <doc-anchor-trigger to="#step-2-configure-github-pages">step 2</doc-anchor-trigger></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the branch to <code v-pre>retype</code>, see <doc-anchor-trigger to="#pick-a-branch">branch config</doc-anchor-trigger></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the <a href="../../configuration/project/#url"><code v-pre>url</code></a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-build">Build Action</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-github-pages">GitHub Pages Action</a>.</li>
+</ul>
+<p>All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the <a href="../../configuration/project/">Project Configuration</a> options for full details.</p>
+<hr />
 <doc-anchor-target id="step-1-add-retypeyml-workflow">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retypeyml-workflow">#</doc-anchor-trigger>
@@ -339,22 +355,6 @@ jobs:
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
 </doc-codeblock></div>
-<hr />
-<doc-anchor-target id="summary">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
-        <span>Summary</span>
-    </h2>
-</doc-anchor-target>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add a <code v-pre>retype.yml</code> file, see <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">step 1</doc-anchor-trigger></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure GitHub Pages, see <doc-anchor-trigger to="#step-2-configure-github-pages">step 2</doc-anchor-trigger></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the branch to <code v-pre>retype</code>, see <doc-anchor-trigger to="#pick-a-branch">branch config</doc-anchor-trigger></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the <a href="../../configuration/project/#url"><code v-pre>url</code></a></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-build">Build Action</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-github-pages">GitHub Pages Action</a>.</li>
-</ul>
-<p>All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the <a href="../../configuration/project/">Project Configuration</a> options for full details.</p>
 
 
 <div class="flex items-center mt-6 mb-6">
@@ -448,7 +448,7 @@ jobs:
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "GitHub Actions", icon: "file", hasPrism: true, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "GitHub Actions", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

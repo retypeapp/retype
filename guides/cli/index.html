@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686349863043" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686277644031" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686349863043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686349863043" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -218,7 +218,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <code v-pre>retype.yml</code>  as it does unlock a lot more power, flexibility, and customization.</p>
+<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <code v-pre>retype.yml</code> as it does unlock a lot more power, flexibility, and customization.</p>
         </div>
     </div>
 </div>
@@ -285,8 +285,8 @@ branding:
   title: Project Name
   label: Docs
 links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
 footer:
   copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
@@ -405,6 +405,101 @@ Options:
   -v, --verbose     Verbose logging
   -?, -h, --help    Show help and usage information</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="usage-of---override">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#usage-of---override">#</doc-anchor-trigger>
+        <span>Usage of <code v-pre>--override</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The Retype CLI commands supporting the <code v-pre>--override</code> option allow to modify configuration loaded from a <code v-pre>retype.yml</code> file prior to execution.</p>
+<p>The <code v-pre>--override</code> option is helpful in certain scenarios like generating websites having different <code v-pre>url</code> config from the same sources, without the need to maintain several <code v-pre>retype.yml</code> files.</p>
+<p>The CLI expects an <strong>escaped</strong> json object passed as the option value. Then Retype merges <code v-pre>retype.yml</code> configuration with the provided json object in the way that colliding configs from the latter win. The <code v-pre>--override</code> json object may contain duplicates that will be processed sequentially.</p>
+<doc-anchor-target id="override-a-single-top-level-config">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#override-a-single-top-level-config">#</doc-anchor-trigger>
+        <span>Override a single top-level config</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: https://retype.com</code></pre>
+</doc-codeblock></div>
+<p>The command below will build the webisite with <code v-pre>url: https://beta.retype.com</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: \&quot;https://beta.retype.com\&quot; }&quot;</code></pre>
+</doc-codeblock></div>
+<p>Passing <code v-pre>null</code> will remove the corresponding config value, so the website will be built like if <code v-pre>url</code> was not configured at all:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: null }&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="override-a-single-nested-config">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#override-a-single-nested-config">#</doc-anchor-trigger>
+        <span>Override a single nested config</span>
+    </h4>
+</doc-anchor-target>
+<p>When overriding a nested config, all parent keys must be included too.</p>
+<p>The sample below will build a website having <code v-pre>title: Retype</code> and <code v-pre>label: beta</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  title: Retype
+  label: v1.10</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: { \&quot;label\&quot;: \&quot;beta\&quot;} }&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="override-a-complex-config-object">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#override-a-complex-config-object">#</doc-anchor-trigger>
+        <span>Override a complex config object</span>
+    </h4>
+</doc-anchor-target>
+<p>In order to override a complex object completely, it needs to be removed first.</p>
+<p>The sample below will build a website having <code v-pre>label: beta</code> and no title.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  title: Retype
+  label: v1.10</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: null, \&quot;branding\&quot;: { \&quot;label\&quot;: \&quot;beta\&quot;} }&quot;</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Please pay attention that duplicated keys are applied sequentially. Thus, it&#x27;s important to place <code v-pre>null</code> before the overriding object.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="add-new-item-to-an-array">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#add-new-item-to-an-array">#</doc-anchor-trigger>
+        <span>Add new item to an array</span>
+    </h4>
+</doc-anchor-target>
+<p>The following command will add the <code v-pre>GitHub</code> link to the <code v-pre>links</code> configuration array.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<pre class="language-yaml"><code v-pre class="language-yaml">links:
+  - link: Retype
+    text: https://retype.com</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;links\&quot;: [ { \&quot;link\&quot;: \&quot;https://github.com/retypeapp/retype\&quot;, \&quot;text\&quot;: \&quot;GitHub\&quot; } ] }&quot;</code></pre>
+</doc-codeblock></div>
+<p>In order to replace an array items, the array needs to be removed first, and then overridden with an array of desired items.</p>
 
 
 
@@ -488,7 +583,7 @@ Options:
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Retype CLI", icon: "file", hasPrism: true, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "Retype CLI", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

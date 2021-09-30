@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686349863043" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686277644031" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686349863043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686349863043" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -251,7 +251,7 @@ order: 100</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>If you add a config to both locations, the <a href="../../faq/#what-is-page-metadata">page metadata</a> take precedence.</p>
+<p>If you add a config to both locations, the page <a href="../../faq/#what-is-page-metadata">metadata</a> take precedence.</p>
         </div>
     </div>
 </div>
@@ -293,11 +293,12 @@ author: Frank
 author: frank@example.com
 ---</code></pre>
 </doc-codeblock></div>
-<p>An author object can also be configured with specific values for the <code v-pre>lable</code>, <code v-pre>link</code>, and <code v-pre>avatar</code>.</p>
+<p>An author object can also be configured with specific values for the <code v-pre>name</code>, <code v-pre>email</code>, <code v-pre>link</code>, and <code v-pre>avatar</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">---
 author:
   name: Frank Esposito
+  email: frank@example.com
   link: https://twitter.com/frank # custom link take precedence
   avatar: https://example.com/frank.jpg # custom avatar takes precedence
 ---</code></pre>
@@ -310,7 +311,7 @@ author:
 <li><a href="../../components/icon/">Icon</a> shortcode</li>
 <li><a href="../../components/emoji/">Emoji</a> shortcode</li>
 </ol>
-<p>The <code v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added by their email address.</p>
+<p>The <code v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">---
 authors: [Frank, Annette Jones, steffen@example.com]
@@ -322,6 +323,7 @@ authors: [Frank, Annette Jones, steffen@example.com]
 # Mix of author types
 authors:
   - name: Frank Esposito
+    email: frank@example.com
     link: https://twitter.com/frank
     avatar: https://example.com/frank.jpg
   - Annette Jones
@@ -982,7 +984,7 @@ This page will be hidden from the menu and search results.</code></pre>
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Page config", icon: "file", hasPrism: true, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "Page config", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

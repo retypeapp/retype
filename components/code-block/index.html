@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686349863043" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686277644031" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686349863043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686349863043" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -205,22 +205,26 @@
     </h1>
 </doc-anchor-target>
 <p>Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.</p>
-<doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
+        <span>Demo</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
+        <span>Source</span>
+    </div>
+    <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">A basic code block</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-<doc-tab id="source">
-<template #title>Source</template>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```
 A basic code block
 ```</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+    </div>
+</div>
 <hr />
 <doc-anchor-target id="syntax-highlighting">
     <h2>
@@ -230,22 +234,26 @@ A basic code block
 </doc-anchor-target>
 <p>Optional syntax highlighting of the code within the code block can be configured by adding a language identifier immediately after the opening triple backticks.</p>
 <p>In the following sample, we configure JavaScript syntax highlighting for the code block by adding the <code v-pre>js</code> language identifier.</p>
-<doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
+        <span>Demo</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
+        <span>Source</span>
+    </div>
+    <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-<doc-tab id="source">
-<template #title>Source</template>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+    </div>
+</div>
 <hr />
 <doc-anchor-target id="title">
     <h2>
@@ -299,22 +307,26 @@ const msg = &quot;Set a code block title&quot;;
     </h2>
 </doc-anchor-target>
 <p>Adding or removing line numbering for your code blocks can be configured by adding the <code v-pre>#</code> specifier character to the first line after the reference language.</p>
-<doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
+        <span>Demo</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
+        <span>Source</span>
+    </div>
+    <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-<doc-tab id="source">
-<template #title>Source</template>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js #
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+    </div>
+</div>
 <p>You can also add a title after the <code v-pre>#</code>:</p>
 <doc-tabs>
 <doc-tab id="demo">
@@ -345,25 +357,24 @@ const msg = &quot;hello, world&quot;;
 }</code></pre>
 </doc-codeblock></div>
 <p>With the above <code v-pre>snippets</code> config, then you would not have to add the <code v-pre>#</code> specifier to each code block. All <code v-pre>js</code> and <code v-pre>json</code> code blocks would automatically get line numbers.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Without <code v-pre>snippets</code> config</div>
-<pre class="language-none"><code v-pre class="language-none">```js #
-const msg = &quot;Hello, world&quot;;
-```</code></pre>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
+        <span>Without <code v-pre>snippets</code> config</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
+        <span>With <code v-pre>snippets</code> config</span>
+    </div>
+    <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
 </doc-codeblock></div>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">With <code v-pre>snippets</code> config</div>
-<pre class="language-none"><code v-pre class="language-none">```js
-const msg = &quot;Hello, world&quot;;
-```</code></pre>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
 </doc-codeblock></div>
-<p>If you configure a site wide <code v-pre>snippets</code> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Remove line numbers if <code v-pre>snippets</code> config</div>
-<pre class="language-none"><code v-pre class="language-none">```js !#
-const msg = &quot;Hello, world&quot;;
-```</code></pre>
-</doc-codeblock></div>
+    </div>
+</div>
 <hr />
 <doc-anchor-target id="disable-line-numbers">
     <h2>
@@ -371,23 +382,27 @@ const msg = &quot;Hello, world&quot;;
         <span>Disable line numbers</span>
     </h2>
 </doc-anchor-target>
-<p>Explicitly disabling the line numbering within code blocks is possible by using the <code v-pre>!#</code> specifier instead of <code v-pre>#</code>. This is expecially useful if the site wide <a href="http://localhost:5000/configuration/project/#snippets"><code v-pre>snippets</code></a> has been configured within your project <code v-pre>retype.yml</code> file.</p>
-<doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
+<p>If you configure a site wide <a href="http://localhost:5000/configuration/project/#snippets"><code v-pre>snippets</code></a> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
+        <span>Demo</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
+        <span>Source</span>
+    </div>
+    <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-<doc-tab id="source">
-<template #title>Source</template>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js !#
 const msg = &quot;Hello, world&quot;;
 ```</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+    </div>
+</div>
 
 
 <div class="flex items-center mt-6 mb-6">
@@ -481,7 +496,7 @@ const msg = &quot;Hello, world&quot;;
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Code block", icon: "file", hasPrism: true, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "Code block", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

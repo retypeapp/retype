@@ -1,0 +1,8 @@
+/**
+ * KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the web.
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Emily Eisenberg <https://github.com/xymostech>, Sophie Alpert <https://github.com/sophiebits>
+ * @namespace
+ * @public
+ */

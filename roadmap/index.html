@@ -27,10 +27,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686349863043" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686349863043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <link href="/resources/css/katex.css?v=1.10" rel="stylesheet" />
+    <script id="katex-js" type="text/javascript" src="/resources/js/katex.js?v=1.10" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -50,7 +52,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -219,26 +221,40 @@
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <code v-pre>variables</code> support</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Many more features planned</li>
 </ul>
-<doc-anchor-target id="v1100-">
+<doc-anchor-target id="v1110-">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v1100-">#</doc-anchor-trigger>
-        <span><code v-pre>v1.10.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v1110-">#</doc-anchor-trigger>
+        <span><code v-pre>v1.11.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
             <span>NEXT</span>
         </span></span>
     </h2>
 </doc-anchor-target>
-<p>Expected: Early Q4 2021</p>
+<p>Expected: Late Q4 2021</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> New Retype Pro with increased page limit and Retype branding removal option</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" /> New <a href="https://www.mathjax.org/">MathJax</a> support</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Any feature requests? Please <a href="https://github.com/retypeapp/retype/discussions/">let us know</a></li>
 </ul>
-<doc-anchor-target id="v190-">
+<doc-anchor-target id="v1100-">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v190-">#</doc-anchor-trigger>
-        <span><code v-pre>v1.9.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v1100-">#</doc-anchor-trigger>
+        <span><code v-pre>v1.10.0</code> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
             <span>LATEST</span>
         </span></span>
+    </h2>
+</doc-anchor-target>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.10.0">2021-09-30</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../components/math-formulas/"><span class="math">\KaTeX</span></a> math typesetting library support.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Auto generate RSS feed for blog posts.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> New <a href="../configuration/project/#watchpolling"><code v-pre>server.watch.polling</code></a> configuration option.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Gravatar support for <a href="../configuration/page/#author"><code v-pre>author</code></a> avatars.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Support <a href="../components/reference-link/#target"><code v-pre>target</code></a> and <a href="../components/reference-link/#custom-icon"><code v-pre>icon</code></a> attributes in <a href="../components/reference-link/"><code v-pre>[!ref]</code></a> components.</li>
+</ul>
+<doc-anchor-target id="v190">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v190">#</doc-anchor-trigger>
+        <span><code v-pre>v1.9.0</code></span>
     </h2>
 </doc-anchor-target>
 <p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v1.9.0">2021-08-30</a></p>
@@ -528,7 +544,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Roadmap", icon: "file", hasPrism: false, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "Roadmap", icon: "file", hasPrism: false, hasMermaid: false, hasMath: true }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>

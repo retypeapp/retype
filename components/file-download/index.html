@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686349863043" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686277644031" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686349863043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686349863043" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -258,10 +258,17 @@
         <span>Custom icon</span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>icon</code> used for the file download component can be customized using a name/value pair syntax for the <code v-pre>text</code> and <code v-pre>icon</code> attributes. This allows for setting a custom <code v-pre>icon</code> and <code v-pre>text</code> value at the same time.</p>
-<p>The following sample demonstrates setting a custom <code v-pre>icon</code>:</p>
+<p>The <code v-pre>icon</code> used for the file download component can be customized using a name/value pair syntax for the <code v-pre>text</code> and <code v-pre>icon</code> attributes. This allows for setting a custom <code v-pre>icon</code> and <code v-pre>text</code> value at the same time. The <code v-pre>icon</code> attribute can be initialize with one of the following:</p>
+<ul>
+<li><a href="https://octicons-primer.vercel.app/octicons/">Octicon</a> name</li>
+<li>Emoji <code v-pre>:shortcode:</code> (please see <a href="https://mojee.io/emojis">Mojee</a> for a full list of supported Emoji shortcodes)</li>
+<li>Image file URL</li>
+</ul>
+<p>The following samples demonstrate setting a custom <code v-pre>icon</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot;](../static/sample.txt)</code></pre>
+<pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot;](../static/sample.txt)
+[!file icon=&quot;:rocket:&quot;](../static/sample.txt)
+[!file icon=&quot;../static/retype-icon.svg&quot;](../static/sample.txt)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -277,8 +284,34 @@
     </div>
     <a href="/static/sample.txt" class="absolute block inset-0" target="_blank" download="sample.txt"></a>
 </div>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <span class="docs-emoji">&#x1F680;</span>
+        </span>
+        <span class="inline-block font-medium ml-2">sample.txt</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>sample.txt</span>
+        <span class="inline-block ml-2">36B</span>
+    </div>
+    <a href="/static/sample.txt" class="absolute block inset-0" target="_blank" download="sample.txt"></a>
+</div>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <img width="20" src="/static/retype-icon.svg" />
+        </span>
+        <span class="inline-block font-medium ml-2">sample.txt</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>sample.txt</span>
+        <span class="inline-block ml-2">36B</span>
+    </div>
+    <a href="/static/sample.txt" class="absolute block inset-0" target="_blank" download="sample.txt"></a>
+</div>
 </p>
-<p>By default, the file name is used as the component text value but the text can be customized by explicityly passing a separate <code v-pre>text</code> value.</p>
+<p>By default, the file name is used as the component text value and the text can be customized by explicitly passing a separate <code v-pre>text</code> value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot; text=&quot;To the moon&quot;](../static/sample.txt)</code></pre>
 </doc-codeblock></div>
@@ -390,7 +423,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "File download", icon: "file", hasPrism: true, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "File download", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
