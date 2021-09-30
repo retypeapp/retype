@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.9.686239302587" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.9.686277644031" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686239302587" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.686277644031" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686239302587" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.686277644031" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -336,6 +336,22 @@ footer:
   logoDark: static/logo-dark.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<doc-anchor-target id="logoalign">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#logoalign">#</doc-anchor-trigger>
+        <span>logoAlign</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="logoalign-string">
+    <template #title>logoAlign : <code v-pre>string</code></template>
+<p>Set a logo image alignment relative to the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger>. Supported values include <code v-pre>left</code> and <code v-pre>right</code>.</p>
+<p>Default is <code v-pre>left</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  logo: static/logo.png
+  logoAlign: right</code></pre>
+</doc-codeblock></div>
+</doc-panel>
 <doc-anchor-target id="colors">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#colors">#</doc-anchor-trigger>
@@ -374,6 +390,71 @@ footer:
     label:
       background: #ff0000</code></pre>
 </doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="cache">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cache">#</doc-anchor-trigger>
+        <span>cache</span>
+    </h2>
+</doc-anchor-target>
+<p>Cache configuration options.</p>
+<doc-anchor-target id="busting">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#busting">#</doc-anchor-trigger>
+        <span>busting</span>
+    </h3>
+</doc-anchor-target>
+<p>Cache busting configuration for the website resources.
+Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.</p>
+<doc-panel id="strategy-string">
+    <template #title>strategy : <code v-pre>string</code></template>
+<p>Specifies the approach Retype will use for cache invalidation.</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>none</code></td>
+<td>Cache invalidation is disabled.</td>
+</tr>
+<tr>
+<td><code v-pre>path</code></td>
+<td>Cache invalidation is achieved by concatinating the file name with a version token.</td>
+</tr>
+<tr>
+<td><code v-pre>query</code></td>
+<td>Cache invalidation is achieved by adding a query parameter with a version token value.</td>
+</tr>
+</tbody>
+</table>
+<p>Default is <code v-pre>query</code>.</p>
+<p>Below are demo URLs generated for corresponding <code v-pre>cache.busting.strategy</code> options:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>strategy: none</code></div>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js&quot; /&gt;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>strategy: path</code></div>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.v1.10.js&quot; /&gt;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>strategy: query</code></div>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js?v=1.10&quot; /&gt;</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-panel id="token-string">
+    <template #title>token : <code v-pre>string</code></template>
+<p>An optional unique token used for website resource cache invalidation.</p>
+<ul>
+<li>If specified, the provided value is used for all invalidatable resources as is.</li>
+<li>If not specified, the default token having the following structure is used:<br />
+<code v-pre>{Retype version}.{total milliseconds elapsed since 2000-01-01}</code></li>
+</ul>
 </doc-panel>
 <hr />
 <doc-anchor-target id="cname">
@@ -838,6 +919,29 @@ footer:
 </tr>
 </tbody>
 </table>
+</doc-panel>
+<hr />
+<doc-anchor-target id="markdown">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#markdown">#</doc-anchor-trigger>
+        <span>markdown</span>
+    </h2>
+</doc-anchor-target>
+<p>Markdown configuration options.</p>
+<doc-anchor-target id="linebreaks">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linebreaks">#</doc-anchor-trigger>
+        <span>lineBreaks</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="linebreaks-string">
+    <template #title>lineBreaks : <code v-pre>string</code></template>
+<p>Switches between <code v-pre>soft</code> and <code v-pre>hard</code> line break modes. The option instructs Retype in what way a regular line ending should be handled.</p>
+<ul>
+<li>in <code v-pre>soft</code> mode, regular line breaks are processed as <a href="https://spec.commonmark.org/0.30/#soft-line-breaks">soft breaks</a> (no <code v-pre>&lt;br /&gt;</code> is emitted to HTML markup), unless a line contains 2+ spaces before a line break.</li>
+<li>in <code v-pre>hard</code> mode, regular line breaks are always emitted as <code v-pre>&lt;br /&gt;</code> HTML elements.</li>
+</ul>
+<p>Default is <code v-pre>soft</code>.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="meta">
