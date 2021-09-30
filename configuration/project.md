@@ -116,7 +116,7 @@ branding:
 
 === logoAlign : `string`
 
-Set a logo image alignment relative to the [`title`](#title). Supported values: `left`, `right`.
+Set a logo image alignment relative to the [`title`](#title). Supported values include `left` and `right`.
 
 Default is `left`.
 
@@ -166,21 +166,21 @@ Cache configuration options.
 ### busting
 
 Cache busting configuration for the website resources.
-Helps to ensure a loaded page refers to the most recent javascript and CSS resources.
+Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.
 
 === strategy : `string`
 
-Specifies the approach Retype will use for cache invalidating. 
+Specifies the approach Retype will use for cache invalidation. 
 
 | Strategy     | Description |
 | ------------ | ----------- |
 | `none`       | Cache invalidation is disabled. |
-| `path`       | Cache invalidation is achieved by concatinating a version token with a file name. |
-| `query`      | Cache invalidation is achieved by using a query parameter with a version token value. |
+| `path`       | Cache invalidation is achieved by concatinating the file name with a version token. |
+| `query`      | Cache invalidation is achieved by adding a query parameter with a version token value. |
 
 Default is `query`.
 
-Below are demo URLs generated for corresponding `cache.busting.strategy` values.
+Below are demo URLs generated for corresponding `cache.busting.strategy` options:
 
 ~~~html `strategy: none`
 <script type="text/javascript" src="/resources/js/retype.js" />
