@@ -416,13 +416,15 @@ integrations:
 
 ### gravatar
 
-Specific setting to control Retype integration with the Gravatar profile pictures service.
+Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used used by the [page.authors](page.md#author) configuration.
 
-This feature is basically used by the [page.authors](page.md#author) configuration.
+### gravatar.enabled
 
 === gravatar.enabled : `boolean`
 
-Whether Gravatar should be used to pull profile pictures. Default is `true`. Use `false` to always show the default picture or specified resource.
+Whether Gravatar should be used to pull profile pictures. Default is `true`. 
+
+Set as `false` to always show the default picture or specified resource.
 
 !!!
 
@@ -432,15 +434,28 @@ Disabling Gravatar will also reset the default avatar icon to Retype style's one
 
 ===
 
+### gravatar.default
+
 === gravatar.default : `string`
 
-The default profile picture to return from Gravatar queries whenever there's no picture assigned to the queried email address. Default value is `mp`.
+The default profile picture to return from Gravatar queries whenever there is no picture assigned to the queried email address. Default value is `mp`.
 
-!!! Accepted input
+Either a full URL to the image can be configured or one of the options listed below:
 
-This config accepts either a full URL for the image to be used as default profile picture, or a **keyword** as listed in [Default Image documentation entry in Gravatar website](https://en.gravatar.com/site/implement/images#default-image). At the time of the writing of this article, the following was supported: `404`, `mp` (our default), `identicon`, `monsterid`, `wavatar`, `retro`, `robohash`, `blank`.
+| Value | Sample |
+| --- | --- |
+| `404` | Broken image |
+| `mp` (default) | ![](../static/gravatar-sample-mp.png) |
+| `identicon` | ![](../static/gravatar-sample-identicon.png) |
+| `monsterid` | ![](../static/gravatar-sample-monsterid.png) |
+| `wavatar` | ![](../static/gravatar-sample-wavatar.png) |
+| `retro` | ![](../static/gravatar-sample-retro.png) |
+| `robohash` | ![](../static/gravatar-sample-robohash.png) |
+| `blank` | Blank image |
 
-!!!
+Please see the [Default Image](https://en.gravatar.com/site/implement/images#default-image) documentation on the Gravatar website.
+
+===
 
 ---
 
