@@ -509,13 +509,13 @@ Please see the [Default Image](https://en.gravatar.com/site/implement/images#def
 
 === gravatar.enabled : `boolean`
 
-Whether Gravatar should be used to pull profile pictures. Default is `true`. 
+Whether Retype should use Gravatar to pull profile images. Default is `true`. 
 
-Set as `false` to always show the default picture or specified resource.
+Setting to `false` will show the default image or specified resource.
 
 !!!
 
-Disabling Gravatar will also reset the default avatar icon to Retype style's one.
+Disabling Gravatar will also reset the default avatar to the Retype default.
 
 !!!
 
