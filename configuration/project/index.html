@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.10.686364972710" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.686405914552" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686364972710" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.686405914552" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686364972710" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.686405914552" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -794,34 +794,6 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </h3>
 </doc-anchor-target>
 <p>Specific setting to control Retype integration with the <a href="https://gravatar.com/">Gravatar</a> profile picture service and used used by the <a href="../page/#author">page.authors</a> configuration.</p>
-<doc-anchor-target id="gravatarenabled">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gravatarenabled">#</doc-anchor-trigger>
-        <span>gravatar.enabled</span>
-    </h3>
-</doc-anchor-target>
-<doc-panel id="gravatar-enabled-boolean">
-    <template #title>gravatar.enabled : <code v-pre>boolean</code></template>
-<p>Whether Gravatar should be used to pull profile pictures. Default is <code v-pre>true</code>.</p>
-<p>Set as <code v-pre>false</code> to always show the default picture or specified resource.</p>
-<div class="flex mb-6">
-    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3">
-<p>Disabling Gravatar will also reset the default avatar icon to Retype style&#x27;s one.</p>
-        </div>
-    </div>
-</div>
-</doc-panel>
 <doc-anchor-target id="gravatardefault">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#gravatardefault">#</doc-anchor-trigger>
@@ -875,6 +847,34 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </tbody>
 </table>
 <p>Please see the <a href="https://en.gravatar.com/site/implement/images#default-image">Default Image</a> documentation on the Gravatar website.</p>
+</doc-panel>
+<doc-anchor-target id="gravatarenabled">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gravatarenabled">#</doc-anchor-trigger>
+        <span>gravatar.enabled</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="gravatar-enabled-boolean">
+    <template #title>gravatar.enabled : <code v-pre>boolean</code></template>
+<p>Whether Retype should use Gravatar to pull profile images. Default is <code v-pre>true</code>.</p>
+<p>Setting to <code v-pre>false</code> will show the default image or specified resource.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Disabling Gravatar will also reset the default avatar to the Retype default.</p>
+        </div>
+    </div>
+</div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="links">
