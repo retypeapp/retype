@@ -28,12 +28,13 @@ Expected: Late Q4 2021
 
 Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0) [:icon-comment-discussion:](https://github.com/retypeapp/retype/discussions/161)
 
-- [x] New [$\KaTeX$](components/math-formulas.md) math typesetting library support.
-- [x] New Auto generate RSS feed for blog posts.
-- [x] New [`server.watch.polling`](configuration/project.md#watchpolling) configuration option.
-- [x] New Gravatar support for [`author`](configuration/page.md#author) avatars.
-- [x] New [project](https://retype.com/configuration/project/#gravatar) option to configure a [default](https://retype.com/configuration/project/#gravatardefault) Gravatar image.
-- [x] Support [`target`](components/reference-link.md#target) and [`icon`](components/reference-link.md#custom-icon) attributes in [`[!ref]`](components/reference-link.md) components.
+- [x] New [$\KaTeX$](components/math-formulas.md) math typesetting library support
+- [x] New Auto generate RSS feed for blog posts
+- [x] New [`server.watch.polling`](configuration/project.md#watchpolling) project option
+- [x] New Gravatar support for [`author`](configuration/page.md#author) avatars
+- [x] New [project](https://retype.com/configuration/project/#gravatar) option to configure a [default](https://retype.com/configuration/project/#gravatardefault) Gravatar image
+- [x] New [`target`](components/reference-link.md#target) and [`icon`](components/reference-link.md#custom-icon) attributes on [`[!ref]`](components/reference-link.md) component
+- [x] New smarter link resolution logic
 
 ## `v1.9.0`
 
