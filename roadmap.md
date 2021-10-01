@@ -26,7 +26,7 @@ Expected: Late Q4 2021
 
 ## `v1.10.0` [!badge text="LATEST" variant="info"]
 
-Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
+Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0) [:icon-comment-discussion:](https://github.com/retypeapp/retype/discussions/161)
 
 - [x] New [$\KaTeX$](components/math-formulas.md) math typesetting library support.
 - [x] New Auto generate RSS feed for blog posts.
@@ -37,7 +37,7 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 ## `v1.9.0`
 
-Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
+Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0) [:icon-comment-discussion:](https://github.com/retypeapp/retype/discussions/138)
 
 - [x] Incremental build during [`retype watch`](guides/cli/#retype-watch) with page dependency graph
 - [x] Ability to run `retype watch` with in-memory output. Turned on by default, see [`server.watch.mode`](configuration/project/#watch) to configure.
