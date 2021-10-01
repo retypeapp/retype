@@ -482,22 +482,6 @@ integrations:
 
 Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used used by the [page.authors](page.md#author) configuration.
 
-### gravatar.enabled
-
-=== gravatar.enabled : `boolean`
-
-Whether Gravatar should be used to pull profile pictures. Default is `true`. 
-
-Set as `false` to always show the default picture or specified resource.
-
-!!!
-
-Disabling Gravatar will also reset the default avatar icon to Retype style's one.
-
-!!!
-
-===
-
 ### gravatar.default
 
 === gravatar.default : `string`
@@ -518,6 +502,22 @@ Either a full URL to the image can be configured or one of the options listed be
 | `blank` | Blank image |
 
 Please see the [Default Image](https://en.gravatar.com/site/implement/images#default-image) documentation on the Gravatar website.
+
+===
+
+### gravatar.enabled
+
+=== gravatar.enabled : `boolean`
+
+Whether Gravatar should be used to pull profile pictures. Default is `true`. 
+
+Set as `false` to always show the default picture or specified resource.
+
+!!!
+
+Disabling Gravatar will also reset the default avatar icon to Retype style's one.
+
+!!!
 
 ===
 
