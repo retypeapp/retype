@@ -455,7 +455,7 @@ route: /tutorial/publish-to-github-pages/
 # Publishing to GitHub Pages
 ```
 
-If a custom `route` is configured on a folder, or on a `readme.md` or `index.md` page within the folder, or on an [`index.yml`](#separate-yml-configuration) file within the folder, that custom route is assumed to be the base route for all pages within that folder.
+If a custom `route` is configured on a folder, or on a `readme.md` or `index.md` page within the folder, or on an [`index.yml`](#separate-yml-file) file within the folder, that custom route is assumed to be the base route for all pages within that folder.
 
 The following scenario demonstrates a basic scenario where we want to configure the pages within the `/guides/` folder to be served from the custom URL location of `/tutorials/`.
 

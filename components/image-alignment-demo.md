@@ -3,7 +3,7 @@ layout: central
 ---
 # Image alignment demo
 
-Please see [image alignment](image.md#image-alignment) docs for more details.
+Please see [image alignment](image.md#alignment-options) docs for more details.
 
 ### Center (default)
 

@@ -178,7 +178,7 @@ Released: 2021-03-12
 - [x] New [Panel](components/panel.md) component with expand/collapse
 - [x] New [`retype watch`](guides/#retype-watch) command
 - [x] New Live Reload when using [`retype watch`](guides/cli.md#retype-watch)
-- [x] New [`.yml`](configuration/page.md#separate-yml-configuration) option for Page or Folder configs
+- [x] New [`.yml`](configuration/page.md#separate-yml-file) option for Page or Folder configs
 - [x] New code block [title](components/code-block.md#title)
 - [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks
 

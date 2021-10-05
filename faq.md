@@ -44,4 +44,4 @@ icon: rocket
 
 The page metadata is completely optional and typically only required when you want to override the Retype defaults.
 
-You can also add page metadata into a separate `.yml` file, see [page config](configuration/page.md#separate-yml-configuration) options.
+You can also add page metadata into a separate `.yml` file, see [page config](configuration/page.md#separate-yml-file) options.
