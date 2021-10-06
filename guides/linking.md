@@ -162,11 +162,14 @@ For effect of the examples below, we assume Retype is being deployed to `http://
 
 ## Other Markdown components
 
-Other markdown components like ref, image, etc, follows the same rules
+The same rules portrayed above also applies to other components involving links, specific to Markdown specification, or Retype-flavored exclusive components:
 
-!!!danger TODO
-TODO TODO TODO
-!!!
+- [Button](../components/button.md)
+- [File download](../components/file-download.md)
+- [Image](../components/image.md)
+- [Reference link](../components/reference-link.md)
+
+---
 
 ## Raw HTML anchor links
 
