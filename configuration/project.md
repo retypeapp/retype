@@ -170,7 +170,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 
 === strategy : `string`
 
-Specifies the approach Retype will use for cache invalidation. 
+Specifies the approach Retype will use for cache invalidation.
 
 | Strategy     | Description |
 | ------------ | ----------- |
@@ -201,7 +201,7 @@ Below are demo URLs generated for corresponding `cache.busting.strategy` options
 An optional unique token used for website resource cache invalidation.
 
 - If specified, the provided value is used for all invalidatable resources as is.
-- If not specified, the default token having the following structure is used:  
+- If not specified, the default token having the following structure is used:
 `{Retype version}.{total milliseconds elapsed since 2000-01-01}`
 
 ===
@@ -509,7 +509,7 @@ Please see the [Default Image](https://en.gravatar.com/site/implement/images#def
 
 === gravatar.enabled : `boolean`
 
-Whether Retype should use Gravatar to pull profile images. Default is `true`. 
+Whether Retype should use Gravatar to pull profile images. Default is `true`.
 
 Setting to `false` will show the default image or specified resource.
 
@@ -885,6 +885,24 @@ Disk polling may be a costly operation, especially in projects with a large quan
 
 On the flip side, increasing the polling interval may cause an annoying experience during `retype watch` as file changes will require a longer time before reflected in the browser.
 !!!
+
+===
+
+### watch.validation
+
+=== validation : `string`
+
+Configure how thorough Retype is while looking for changed files.
+
+Until Retype version 1.10, the approach used was equivalent to `full`.
+
+Default value is `optimal`.
+
+| Validation | Description |
+| ---------- | ----------- |
+| `fast` | Compare file system metadata only (reported file size and last modification time). |
+| `full` | Perform full SHA2 comparison on every tracked file. |
+| `optimal` | Check file system metadata. Compare SHA2 sum if metadata reports no changes. |
 
 ===
 
