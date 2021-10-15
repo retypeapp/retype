@@ -8,11 +8,7 @@ Retype features integrations to third party services and tools to enhance the au
 
 ## Google Analytics
 
-Retype can be set up with Google Analytics just by adding your google analytics ID to the project settings.
-
-!!!
-Google analytics support and resources are only and only enabled if an ID value is assigned to its configuration setting (see below).
-!!!
+Retype can be set up with Google Analytics just by adding your google analytics ID to the project settings. Google analytics support and resources are only and only generated if an ID value is set in Retype project settings.
 
 ### Available configuration settings
 
@@ -22,17 +18,11 @@ Google analytics support and resources are only and only enabled if an ID value 
 
 ## Gravatar
 
-Retype will pull [page author's](../configuration/page.md#author) profile pictures from Gravatar where the specified e-mail address matches a gravatar profile.
+Retype pulls [page author's](../configuration/page.md#author) profile pictures from [Gravatar](https://gravatar.com) where the specified e-mail address matches an existing profile in the service.
 
-Gravatar integration is enabled by default and can be disabled with [the `integrations.gravatar.enabled: false` project config](../configuration/project.md#gravatarenabled). Once disabled, no query for gravatar is made while accessing the built website and the default avatar figure is reverted to a default "person shade" used by retype before the integration was implemented.
+Gravatar integration is enabled by default and can be disabled with [the `integrations.gravatar.enabled: false` project config](../configuration/project.md#gravatarenabled). Once disabled, the default avatar figure is reverted to a default "person shade" icon used by Retype before the integration was implemented.
 
-!!!
-Retype won't fetch gravatars in case a profile picture is chosen via [the page author's `avatar` config](../configuration/page.md#author), even if the link for the image is invalid.
-!!!
-
-!!!
-Retype can only fetch Gravatar for the profile picture if an e-mail address is assigned to [the page's `author` config](../configuration/page.md#author).
-!!!
+Retype will not fetch from Gravatar in case a profile picture is chosen via [the page author's `avatar` config](../configuration/page.md#author), even if the link for the image is not valid.
 
 ### Available configuration settings
 
@@ -43,38 +33,34 @@ Retype can only fetch Gravatar for the profile picture if an e-mail address is a
 
 ## KaTeX
 
-KaTeX integration allows for math formulas to be drawn seamlessly within Retype documents via dedicated markdown blocks and LaTeX-like syntax. See [Math Formulas documentation](../components/math-formulas.md) for details.
+The [KaTeX](https://katex.org) integration allows for math formulas to be drawn seamlessly in Retype documents. See [Math Formulas documentation](../components/math-formulas.md) for details.
 
-!!!
-The KaTeX integration has no project-level setting. Its resources are only and only included to Retype built pages if there is one or more math block markdown in the document.
-!!!
+There are no project-level settings for the KaTeX integration. Its resources (JavaScript, style sheets, etc) are only output if one or more documents in the project uses it; these resources will only be included to a page if KaTeX blocks are actually used in it.
 
 ---
 
 ## Mermaid
 
-Mermaid integration enables easy, markdown-friendly, flowcharts to be included in any Retype document. See [Mermaid component documentation](../components/mermaid.md) for details.
+[Mermaid](https://mermaid-js.github.io/mermaid) integration enables easy building of flowcharts with Retype. See [the Mermaid component documentation](../components/mermaid.md) for details.
 
-!!!
-The Mermaid integration has no project-level setting. Its resources are only and only included to Retype built pages if there is one or more flowchart block markdown in the document.
-!!!
+There are no project-level settings for the Mermaid integration. Its resources (JavaScript, style sheets, etc) are only output if one or more documents in the project uses it; these resources will only be included to a page if Mermaid blocks are actually used in it.
 
 ---
 
 ## Mojee
 
-The [Mojee.io](https://mojee.io) project is included in Retype to allow fast and seamless emoji shortcode expansion. It is used to replace text in titles, body, and icons with the respective emoji representation in Retype documents. See [the Emoji documentation](../components/emoji.md) for details.
+The [Mojee.io](https://mojee.io) project is used with Retype to enable emoji handling. Mojee employs efficient conversion of shortcode into their respective characters, and has been used with Retype since the early stages of the project. See [the Emoji documentation](../components/emoji.md) for details.
 
-!!!
 The Mojee integration has no project-level setting. It is always enabled with Retype.
-!!!
 
 ---
 
 ## Octicons
 
-Retype uses [the Octicons icon library](https://github.com/primer/octicons) enhance your authored documents. They can be used both as [icon shortcodes pages](../components/icon.md) and as left navigation bar's icons next to page titles via [the page's `icon` config](../configuration/page.md#icon).
+Retype uses [the Octicons icon library](https://github.com/primer/octicons) to enhance Retype experience with descriptive and rich icons. These icons can be used both as [`icon-` prefixed shortcodes in pages](../components/icon.md) and as left navigation bar's caption icons, specified with [the page's `icon` config](../configuration/page.md#icon).
+
+The Octicons integration has no project-level setting. It is always enabled with Retype.
 
 !!!
-The Octicons integration has no project-level setting. It is always enabled with Retype.
+Document titles can have octicons shortcodes like `:icon-home:`, and the icon will display in the page. However, icons are suppressed from the left and right navigadtion bars.
 !!!
