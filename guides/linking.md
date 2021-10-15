@@ -4,24 +4,20 @@ icon: link
 
 # Linking
 
-When Retype builds your pages it transforms input path into website links like this:
+When Retype builds your pages, it transforms input paths into website links like this:
 
 `articles/my_article.md` => `articles/my_article/index.html`
 
-Which is accessed by simply `articles/my_article/`.
+Which can be accessed simply by `articles/my_article/` as part of the website address.
 
-Because of this, Retype also transforms links to .md files within the project when they are composed using the link markdown `[text](link)`.
-
-!!! Handle the links yourself
-If control is needed over the address, using [raw HTML links](#raw-html-links) should be the way to go.
-!!!
+Because of this, Retype also transforms links to `.md` files within the project when they are composed using the link markdown `[text](link)`.
 
 ## Markdown linking
 
 The examples below illustrate how markdown links are transformed during Retype Build
 
 !!!
-For effect of the examples below, we assume the edited file is the source of this page itself, that is, `guides/linking.md` in the project's input directory.
+For the examples below, suppose the edited file is the source of this page itself, that is, `guides/linking.md` in the project's input directory.
 !!!
 
 === Examples
@@ -66,7 +62,7 @@ For effect of the examples below, we assume the edited file is the source of thi
 **Output:** [Alert variants (anchor)](../components/alert.md#variants) \
 **Link:** `../../components/alert/#variants`
 
-**Markdown:** `[No `.md` extension](formatting)` \
+**Markdown:** ``[No `.md` extension](formatting)`` \
 **Output:** [No `.md` extension](formatting) \
 **Link:** `../formatting/`
 
@@ -79,7 +75,7 @@ For effect of the examples below, we assume the edited file is the source of thi
 
 ### Invalid links
 
-If a link points within the retype website -and- no .md file matches it, retype won't transform it.
+If a link points within the Retype website -and- no .md file matches it, no transformation will be made.
 
 === Examples
 
@@ -106,16 +102,16 @@ If a link points within the retype website -and- no .md file matches it, retype 
 ---
 ## URL Tokens
 
-To help with links, two token characters can be used with links. They are particularly useful for websites deployed inside a domain's directory or virtual path, like `http://www.mysite.com/docs`.
+To help linking around Retype documents, two different token characters can be used to prefix addresses. They are particularly useful for websites deployed inside a domain's directory or virtual path, like `http://example.com/docs`.
 
 ### Circumflex URL Token
 
-The circumflex token (`^`), also called "root token", allows the reference to a path outside Retype's deploy file structure. Using the `http://www.mysite.com/docs` example, this would help define links outside the `/docs` prefix, as a means to ensure links could point to resources outside of retype's root yet in the same website.
+The circumflex token (`^`), often called "root token" or "caret token", allows the reference to a path outside Retype's deploy file structure. Using the `http://example.com/docs` site as example, the token helps making links outside the `/docs` path space, as a means to ensure links pointing to resources outside of Retype's root, yet in the same website. Avoiding then unintended transformations in the final URL.
 
-One side effect of using rooted links is, the address won't be checked or replaced by Retype at build time like tokenless links are, so linking to `.md` files won't be subject to the usual transformation from the examples above.
+One side effect of using rooted links is, the address will not be checked or replaced by Retype at build time like ordinary links are. This means, linking to `.md` files will not be subject to the usual transformation showcased in the examples above.
 
 !!!
-For effect of the examples below, we asume Retype is being deployed to `http://www.mysite.com/docs`.
+For the examples below, suppose Retype is being deployed to `http://example.com/docs`.
 !!!
 
 === Examples
@@ -127,21 +123,21 @@ For effect of the examples below, we asume Retype is being deployed to `http://w
 **Link:** `/pricing`
 
 **Markdown:** `[Pricing](^/docs/FAQ.md)` \
-**Link:** `/docs/faq.md`
-**Notes:** Even if `FAQ.md` exists, retype won't transform or check the link.
+**Link:** `/docs/faq.md` \
+**Notes:** Even if `FAQ.md` exists, Retype will not transform or check the link.
 
 ===
 
 ### Tilde URL Token
 
-The tilde token (`~`), or "base path token", prefixes retype's base directory to the specified link. Again, it is useful in scenarios where retype is hosted in a subdirectory of a website (like `http://www.myhsite.com/docs`), but it is also particularlyh useful when the same Retype installation may be deployed to different bases (staging/development releases to temporary hosting, for instances) or simply if the project may be deployed to different websites and root directories.
+The tilde token (`~`), or "base path token", prefixes the base directory to the specified link. Again, it is useful in scenarios where Retype is hosted in a subdirectory of a website (like `http://example.com/docs`), but it is also particularly useful when the same Retype installation may be deployed to different bases (staging/development releases to temporary hosting, for instance) or simply if the project may be deployed to different websites and root directories.
 
 In other words, it would allow a Retype project to be deployed to different hosts and different root directories, changing just [the `url` config](~/configuration/project/#url) in project settings.
 
-Like root tokens, base path tokens prevent the address from being replaced by Retype e.g. if a `.md` file in input is pointed by the link.
+Like **root tokens**, the **base path tokens** prevent the address from being replaced by Retype e.g. if a `.md` file in input is pointed by the link.
 
 !!!
-For effect of the examples below, we assume Retype is being deployed to `http://www.mysite.com/docs`.
+For the examples below, suppose Retype is being deployed to `http://example.com/docs`.
 !!!
 
 === Examples
@@ -153,7 +149,7 @@ For effect of the examples below, we assume Retype is being deployed to `http://
 **Link:** `/docs/static/sample.txt`
 
 **Markdown:** `[A broken link](~/FAQ.md)` \
-**Link:** `/docs/faq.md`
+**Link:** `/docs/faq.md` \
 **Notes:** Like with root tokens, base path tokens prevent Retype from resolving links by itself, so linking `.md` files likely would bring unexpected results.
 
 ===
@@ -162,7 +158,7 @@ For effect of the examples below, we assume Retype is being deployed to `http://
 
 ## Other Markdown components
 
-The same rules portrayed above also applies to other components involving links, specific to Markdown specification, or Retype-flavored exclusive components:
+The same rules portrayed above also apply to other markdown components involving links. Likewise, the following Retype-flavored, exclusive components, are also affected:
 
 - [Button](../components/button.md)
 - [File download](../components/file-download.md)
@@ -173,10 +169,10 @@ The same rules portrayed above also applies to other components involving links,
 
 ## Raw HTML anchor links
 
-If retype markdown is not letting your link the way you need it, linking via HTML Anchor tags should help. Retype won't touch raw HTML links unless they begin with any of the URL tokens above.
+If Retype markdown is not letting your link the way you need it, linking via HTML Anchor tags (`<a href="url">text</a>`) should help. Retype will not touch raw HTML links unless they begin with any of the URL tokens above.
 
 !!!
-For effect of the examples below, we assume the edited file is the source of this page itself, that is, `guides/linking.md` in the project's input directory.
+For the examples below, suppose the edited file is the source of this page itself, that is, `guides/linking.md` in the project's input directory.
 !!!
 
 === Examples
@@ -188,7 +184,7 @@ For effect of the examples below, we assume the edited file is the source of thi
 **HTML:** `<a href="../formatting/">Formatting guide</a>` \
 **Output:** <a href="../formatting/">formatting.md</a> \
 **Link:** `/`
-**Notes:** For a document in the same level directory we'd pass the link as one level above, for the `.md` file becomes a directory in the built website.
+**Notes:** For a document in the same level directory we would pass the link as one level above, for the `.md` file becomes a directory in the built website.
 
 **HTML:** `<a href="../../configuration/project/">Project configs</a>` \
 **Output:** <a href="../../configuration/project/">../configuration/project.md</a> \
@@ -201,7 +197,7 @@ For effect of the examples below, we assume the edited file is the source of thi
 The only transformation that actually takes place in raw HTML links is token substitution.
 
 !!!
-For effect of the examples below, we assume Retype is being deployed to `http://www.mysite.com/docs`.
+For the examples below, suppose Retype is being deployed to `http://example.com/docs`.
 !!!
 
 === Examples
@@ -230,7 +226,7 @@ For effect of the examples below, we assume Retype is being deployed to `http://
 
 ## Outside world
 
-Links to other websites are not mangled by retype, and URL tokens in the middle of URLs aren't replaced by Retype.
+Links to other websites are not manipulated by Retype, and URL tokens in the middle of URLs are not replaced by Retype.
 
 === Examples
 
