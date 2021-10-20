@@ -902,7 +902,7 @@ Default value is `optimal`.
 | ---------- | ----------- |
 | `fast` | Compare file system metadata only (reported file size and last modification time). |
 | `full` | Perform full SHA2 comparison on every tracked file. |
-| `optimal` | Check file system metadata. Compare SHA2 sum if metadata reports no changes. |
+| `optimal` | Compare file system metadata and, for every file with changes, perform SHA2 comparison. |
 
 ===
 
