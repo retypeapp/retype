@@ -17,16 +17,17 @@ links:
   - text: Home
     link: /README.md
 
-  - text: GitHub
-    link: https://github.com/retypeapp/retype
-    target: blank
-
   - text: Discussions
     link: https://github.com/retypeapp/retype/discussions
     target: blank
 
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
+    target: blank
+
+  - text: GitHub
+    link: https://github.com/retypeapp/retype
+    icon: mark-github
     target: blank
 
   - text: Twitter
