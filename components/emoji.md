@@ -1,7 +1,8 @@
 ---
 tags: [component, icon]
+icon: ":heart_eyes_cat:"
 ---
-# Emoji :heart_eyes_cat:
+# Emoji
 
 Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:
 
