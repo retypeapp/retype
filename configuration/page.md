@@ -42,7 +42,7 @@ order: 100
 ```
 
 !!!
-If you add a config to both locations, the page [metadata](../faq.md#what-is-page-metadata) take precedence.
+Specifying configs in the [page metadata](../faq.md#what-is-page-metadata) is mutually exclusive with reading separate `.yml` files. This means, if you add any config to the page metadata, Retype will not attempt to read separate `.yml` files for that page, if any exists.
 !!!
 
 See [folder configuration](folder.md) for details on how to configure a folder.
