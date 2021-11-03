@@ -16,13 +16,16 @@ edit:
 links:
   - text: Home
     link: /README.md
-
-  - text: Discussions
-    link: https://github.com/retypeapp/retype/discussions
-    target: blank
+    icon: home
 
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
+    icon: issue-opened
+    target: blank
+
+  - text: Discussions
+    link: https://github.com/retypeapp/retype/discussions
+    icon: comment-discussion
     target: blank
 
   - text: GitHub
