@@ -64,6 +64,30 @@ graph LR
     C -->|Two| E[Result two]
 ```
 
+### Syntax highlighting block
+
+In order to draw a mermaid code block with syntax highlighting instead of rendering the contents, use the `mermaid-js` block syntax specifier `` ```mermaid-js ``.
+
+~~~
+```mermaid-js
+%%{init: { 'theme': 'forest' } }%%
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+~~~
+
+```mermaid-js
+%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+
 ---
 
 ## Diagram types
