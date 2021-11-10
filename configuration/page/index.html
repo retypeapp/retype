@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.10.689827830013" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.689831078968" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.10.689827830013" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.689831078968" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.689827830013" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.689831078968" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -292,7 +292,8 @@ order: 100</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>If you add a config to both locations, the page <a href="../../faq/#what-is-page-metadata">metadata</a> take precedence.</p>
+<p>If you add configs to both locations, the page <a href="../../faq/#what-is-page-metadata">metadata</a> take precedence, even if they are different configs.</p>
+<p>If you add one or more configs to a <code v-pre>.md</code> page, Retype will not look for nor read the separate <code v-pre>.yml</code> file. Just use one or the other, but not both.</p>
         </div>
     </div>
 </div>
