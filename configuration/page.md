@@ -42,7 +42,9 @@ order: 100
 ```
 
 !!!
-If you add a config to both locations, the page [metadata](../faq.md#what-is-page-metadata) take precedence.
+If you add configs to both locations, the page [metadata](../faq.md#what-is-page-metadata) take precedence, even if they are different configs.
+
+If you add one or more configs to a `.md` page, Retype will not look for nor read the separate `.yml` file. Just use one or the other, but not both.
 !!!
 
 See [folder configuration](folder.md) for details on how to configure a folder.
