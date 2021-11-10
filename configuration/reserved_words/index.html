@@ -9,21 +9,21 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Getting Started | Retype - Generate publish and share documentation</title>
-    <meta name="title" content="Getting Started | Retype - Generate publish and share documentation">
-    <meta name="description" content="Getting started with Retype is super quick and you can be up and running within seconds." />
+    <title>Reserved words | Retype - Generate publish and share documentation</title>
+    <meta name="title" content="Reserved words | Retype - Generate publish and share documentation">
+    <meta name="description" content="There are several input folder names and files within a Retype project that incorporate special behaviour." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://retype.com/guides/getting-started/">
-    <meta property="og:title" content="Getting Started | Retype - Generate publish and share documentation">
-    <meta property="og:description" content="Getting started with Retype is super quick and you can be up and running within seconds.">
+    <meta property="og:url" content="https://retype.com/configuration/reserved_words/">
+    <meta property="og:title" content="Reserved words | Retype - Generate publish and share documentation">
+    <meta property="og:description" content="There are several input folder names and files within a Retype project that incorporate special behaviour.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://retype.com/guides/getting-started/">
-    <meta property="twitter:title" content="Getting Started | Retype - Generate publish and share documentation">
-    <meta property="twitter:description" content="Getting started with Retype is super quick and you can be up and running within seconds.">
+    <meta property="twitter:url" content="https://retype.com/configuration/reserved_words/">
+    <meta property="twitter:title" content="Reserved words | Retype - Generate publish and share documentation">
+    <meta property="twitter:description" content="There are several input folder names and files within a Retype project that incorporate special behaviour.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -238,14 +238,33 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="getting-started" class="break-words">
+<doc-anchor-target id="reserved-words" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-started">#</doc-anchor-trigger>
-        <span>Getting Started</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reserved-words">#</doc-anchor-trigger>
+        <span>Reserved words</span>
     </h1>
 </doc-anchor-target>
-<p>Getting started with Retype is super quick and you can be up and running within seconds.</p>
-<p>Check out the <a href="../../#quick-start">Quick start</a> for the condensed process or continue here with the detailed instructions.</p>
+<p>There are several <a href="../project/#input">input</a> folder names and files within a Retype project that incorporate special behaviour. All paths for folders or files within Retype are relative to your project <a href="../project/#input">input</a> directory.</p>
+<doc-anchor-target id="folders">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#folders">#</doc-anchor-trigger>
+        <span>Folders</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="blog">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog">#</doc-anchor-trigger>
+        <span>/blog</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code v-pre>/blog</code> directory is intended to host a Blog for your website.</p>
+<p>By default, <code v-pre>.md</code> pages created within the <code v-pre>/blog</code> folder are assigned the <code v-pre>layout: blog</code> layout, plus some additional features:</p>
+<ul>
+<li>A summary page of the blog posts is automatically created at <code v-pre>/blog</code>.</li>
+<li>An RSS feed of the recent blog posts is created.</li>
+<li>Blog pages get <code v-pre>Newer</code> and <code v-pre>Older</code> buttons at the bottom of each page.</li>
+<li>All blog pages are set with the <a href="../page/#layout"><code v-pre>layout: blog</code></a> layout, unless otherwise specified in the page metadata.</li>
+</ul>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -259,91 +278,76 @@
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Please see the <a href="../cli/">Retype CLI</a> for full details on each command.</p>
+<p>Be sure to review the <a href="../page/#author"><code v-pre>author</code></a> and <a href="../page/#date"><code v-pre>date</code></a> Page configs if you are writing blog posts.</p>
         </div>
     </div>
 </div>
-<hr />
-<doc-anchor-target id="prerequisites">
+<doc-anchor-target id="categories">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#categories">#</doc-anchor-trigger>
+        <span>/categories</span>
+    </h3>
+</doc-anchor-target>
+<p>The default index page of the <code v-pre>/categories</code> directory is reserved for a summary of any <a href="../page/#category">category</a> configs. Every category configured within an <code v-pre>.md</code> page of your Retype project will have a corresponding entry here.</p>
+<p>Similar to <doc-anchor-trigger to="#tags"><code v-pre>/tags</code></doc-anchor-trigger>, you can also add content to the <code v-pre>/categories</code> page by creating your own <code v-pre>/categories/index.md</code> page. Retype will create your page as normal and then add the list of Categories below your custom content.</p>
+<doc-anchor-target id="resources">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resources">#</doc-anchor-trigger>
+        <span>/resources</span>
+    </h3>
+</doc-anchor-target>
+<p>Any files placed within this directory will be copied to the <a href="../project/#output">output</a> directory. Please see the <a href="../project/#include"><code v-pre>include</code></a> and <a href="../project/#exclude"><code v-pre>exclude</code></a> configs for fine-grained control over including or excluding files or folders.</p>
+<doc-anchor-target id="tags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tags">#</doc-anchor-trigger>
+        <span>/tags</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code v-pre>/tags</code> directory is reserved for <a href="../page/#tags">tags</a>. Every tag name configured within an <code v-pre>.md</code> page will have a corresponding entry here.</p>
+<p>Similar to <doc-anchor-trigger to="#categories"><code v-pre>/categories</code></doc-anchor-trigger>, you can also add content to the <code v-pre>/tags</code> page by creating your own <code v-pre>/tags/index.md</code> page. Retype will create your page as normal and then add the list of Tags below your custom content.</p>
+<doc-anchor-target id="files">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
-        <span>Prerequisites</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#files">#</doc-anchor-trigger>
+        <span>Files</span>
     </h2>
 </doc-anchor-target>
-<p>Retype is installed using either <a href="https://www.npmjs.com/get-npm"><code v-pre>npm</code></a>, <a href="https://classic.yarnpkg.com/en/docs/install/"><code v-pre>yarn</code></a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core"><code v-pre>dotnet</code></a> CLI.</p>
-<p>You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It&#x27;s up to you. <span class="docs-emoji">&#x1F64C;</span></p>
-<table class="comfortable">
-<thead>
-<tr>
-<th>Package Manager</th>
-<th>Supported Platforms</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.npmjs.com/get-npm"><code v-pre>npm</code></a></td>
-<td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
-    <span>Mac</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>Win</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
-    <span>Linux</span>
-</span></td>
-</tr>
-<tr>
-<td><a href="https://classic.yarnpkg.com/en/docs/install/"><code v-pre>yarn</code></a></td>
-<td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
-    <span>Mac</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>Win</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
-    <span>Linux</span>
-</span></td>
-</tr>
-<tr>
-<td><a href="https://dotnet.microsoft.com/download/dotnet-core"><code v-pre>dotnet</code></a></td>
-<td><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
-    <span>Mac</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>Win</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
-    <span>Linux</span>
-</span></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<doc-anchor-target id="install">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#install">#</doc-anchor-trigger>
-        <span>Install</span>
-    </h2>
+<doc-anchor-target id="cname">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cname">#</doc-anchor-trigger>
+        <span>CNAME</span>
+    </h3>
 </doc-anchor-target>
-<p>It takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.</p>
-<doc-tabs>
-<doc-tab id="npm">
-<template #title>npm</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">npm install retypeapp --global
-retype watch</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="yarn">
-<template #title>yarn</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp
-retype watch</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="dotnet">
-<template #title>dotnet</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global
-retype watch</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<p>That&#x27;s it! <span class="docs-emoji">&#x1F389;</span> Your new Retype website should be up and running. <span class="docs-emoji">&#x1F389;</span></p>
+<p>A <code v-pre>CNAME</code> file will be automatically created if the <a href="../project/#url"><code v-pre>url</code></a> is configured with a domain or sub-domain.</p>
+<p>For instance, including <code v-pre>url: docs.example.com</code> within your <code v-pre>retype.yml</code> project config file also instructs Retype to create a <code v-pre>CNAME</code> file with the value <code v-pre>docs.example.com</code>. That <code v-pre>CNAME</code> file is used by <a href="../../guides/github-actions/">GitHub Pages</a> and possibly other website hosting services as the way to configure custom domain name hosting.</p>
+<p>If you manually create a <code v-pre>CNAME</code> file within the root of the <a href="../project/#input">input</a> folder of your project, Retype will not automatically create the <code v-pre>CNAME</code> file, even if the <a href="../project/#url"><code v-pre>url</code></a> or <a href="../project/#cname"><code v-pre>cname</code></a> is configured or conflicts.</p>
+<doc-anchor-target id="default-pages">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#default-pages">#</doc-anchor-trigger>
+        <span>Default pages</span>
+    </h3>
+</doc-anchor-target>
+<p>Folder default pages are custom <code v-pre>.md</code> files that will be treated as the index page of the folder.</p>
+<p>Retype will search using the following case insensitive priority:</p>
+<ol>
+<li><code v-pre>index.md</code></li>
+<li><code v-pre>readme.md</code></li>
+<li><code v-pre>default.md</code></li>
+</ol>
+<p>For instance, creating a the file <code v-pre>docs/index.md</code> will create a custom page accessible from the path <code v-pre>https://example.com/docs/</code>. The <code v-pre>index.md</code> page instructs Retype to create an <code v-pre>index.html</code> file within the <code v-pre>docs/</code> folder.</p>
+<doc-anchor-target id="project-config">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#project-config">#</doc-anchor-trigger>
+        <span>Project config</span>
+    </h3>
+</doc-anchor-target>
+<p>By default, if you do not pass an explicit project configuration file name in the <a href="https://retype.com/guides/cli/#retype-watch"><code v-pre>&lt;path&gt;</code></a> command line argument, Retype will search for your project config using the following case insensitive priority:</p>
+<ol>
+<li><code v-pre>retype.yml</code></li>
+<li><code v-pre>retype.yaml</code></li>
+<li><code v-pre>retype.json</code></li>
+</ol>
+<p>For instance, if you run the <a href="../../guides/cli/">CLI</a> command <code v-pre>retype watch docs</code>, Retype will first try to find the project configuration file  <code v-pre>docs/retype.yml</code>. If not found, then <code v-pre>docs/retype.yaml</code> will be tested and so on.</p>
+<p>If you run the command <code v-pre>retype watch docs/retype.jsom</code>, even if a <code v-pre>retype.yml</code> is present, Retype will only read the <code v-pre>retype.json</code> file as you are explicitly passing the project configuration file path.</p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -357,80 +361,13 @@ retype watch</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance. The <code v-pre>dotnet</code> package size is the smallest.</p>
+<p>Custom project config file names are also possible by explicitly passing a file name, such as <code v-pre>retype watch docs.yml</code>. Where <code v-pre>docs.yml</code> is used instead of <code v-pre>retype.yml</code>, even if <code v-pre>retype.yml</code> is present.</p>
         </div>
     </div>
 </div>
-<hr />
-<doc-anchor-target id="update">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#update">#</doc-anchor-trigger>
-        <span>Update</span>
-    </h2>
-</doc-anchor-target>
-<p>Update to the latest release of Retype using on of the following commands for the package manager that you initially installed Retype with. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> update command to update Retype locally.</p>
-<doc-tabs>
-<doc-tab id="npm">
-<template #title>npm</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">npm update retypeapp --global</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="yarn">
-<template #title>yarn</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">yarn global upgrade retypeapp</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="dotnet">
-<template #title>dotnet</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">dotnet tool update retypeapp --global</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<hr />
-<doc-anchor-target id="uninstall">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uninstall">#</doc-anchor-trigger>
-        <span>Uninstall</span>
-    </h2>
-</doc-anchor-target>
-<p>Done with Retype? It&#x27;s okay, we understand. <span class="docs-emoji">&#x1F622;</span></p>
-<p>Uninstalling Retype is just as simple as installing. Use the same package manager to uninstall as you did to install. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> uninstall command to remove.</p>
-<doc-tabs>
-<doc-tab id="npm">
-<template #title>npm</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">npm uninstall retypeapp --global</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="yarn">
-<template #title>yarn</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">yarn global remove retypeapp</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="dotnet">
-<template #title>dotnet</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">dotnet tool uninstall retypeapp --global</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<p>All Retype related files and folders within your project can be deleted, such as the <code v-pre>retype.yml</code> file and the generated <code v-pre>.retype</code> folder.</p>
+<p>Once a file is found, it is used. If the other files are found, they are ignored. Retype will not merge or override different configs or conflicting configs between two or more project files.</p>
 
 
-<div class="flex items-center mt-6 mb-6">
-    <span>
-        <a href="/tags/">
-            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
-        </a>
-        <span class="mr-2"><a href="/tags/guide/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>guide</span>
-</a></span>
-    </span>
-</div>
 
 
                 <!-- Required only on API pages -->
@@ -438,7 +375,7 @@ retype watch</code></pre>
             </div>
 
             <div class="flex flex-wrap items-center justify-between mt-14">
-    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/guides/getting-started.md" target="_blank" rel="noopener">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/reserved_words.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Edit this page</span>
     </a>
@@ -448,20 +385,20 @@ retype watch</code></pre>
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/configuration/folder/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Welcome</span>
+                <span class="block mt-1">Folder config</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/formatting/">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/faq/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">Formatting</span>
+                <span class="block mt-1">FAQ</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
@@ -512,7 +449,7 @@ retype watch</code></pre>
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Getting Started", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Reserved words", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
