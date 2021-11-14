@@ -480,7 +480,7 @@ integrations:
 
 ### gravatar
 
-Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used used by the [page.authors](page.md#author) configuration.
+Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used by the [page.authors](page.md#author) configuration.
 
 ### gravatar.default
 
