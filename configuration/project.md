@@ -708,7 +708,9 @@ Customization of the website search component.
 ### minChars
 
 === minChars : `number`
-Min number of characters required in a search query. Default is `3`.
+Min number of characters required in a search query. Default is `2`.
+
+The following sample demonstrates how to configure `search.minChars` with a new value:
 
 ```yml
 search:
