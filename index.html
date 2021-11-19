@@ -11,28 +11,29 @@
     <!-- Primary Meta Tags -->
     <title>Welcome to Retype | Retype - Generate publish and share documentation</title>
     <meta name="title" content="Welcome to Retype | Retype - Generate publish and share documentation">
-    <meta name="description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files." />
+    <meta name="description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/">
     <meta property="og:title" content="Welcome to Retype | Retype - Generate publish and share documentation">
-    <meta property="og:description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files.">
+    <meta property="og:description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.">
     <meta property="og:image" content="https://retype.com/static/retype-hero.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/">
     <meta property="twitter:title" content="Welcome to Retype | Retype - Generate publish and share documentation">
-    <meta property="twitter:description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files.">
+    <meta property="twitter:description" content="Retype is an ✨ ultra-high-performance ✨ generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.">
     <meta property="twitter:image" content="https://retype.com/static/retype-hero.svg">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.10.690193394398" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.690666483408" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.10.690193394398" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.690666483408" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.690666483408" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -52,7 +53,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.11</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -125,7 +126,7 @@
                     </div>
 
                     <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
-                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
                 </div>
 
                 <!-- Mobile search button mock -->
@@ -172,9 +173,10 @@
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
     </div>
 
+
     <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
         <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
     target="_blank"
     href="https://retype.com/"
     rel="noopener"
@@ -215,8 +217,9 @@
                 </nav>
             </div>
 
+
             <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
     target="_blank"
     href="https://retype.com/"
     rel="noopener"
@@ -338,44 +341,44 @@ Just point Retype at a C# project and reference documentation will be generated 
         <span>Features</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="tada-it-just-works">
+<doc-anchor-target id="it-just-works">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tada-it-just-works">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#it-just-works">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x1F389;</span> It just works</span>
     </h4>
 </doc-anchor-target>
 <p>Retype has been built to be easy to use and should <em>&quot;just work&quot;</em> out-of-the-box without any special configuration or troublesome setup.</p>
-<doc-anchor-target id="zap-lightning-fast">
+<doc-anchor-target id="lightning-fast">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#zap-lightning-fast">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lightning-fast">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x26A1;</span> Lightning fast</span>
     </h4>
 </doc-anchor-target>
 <p>Don&#x27;t blink. Retype was built for speed.</p>
-<doc-anchor-target id="white_check_mark-easy-install">
+<doc-anchor-target id="easy-install">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#white_check_mark-easy-install">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#easy-install">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x2705;</span> Easy install</span>
     </h4>
 </doc-anchor-target>
 <p><a href="guides/getting-started/">Installation</a> takes only a few seconds. Then you need at least one Markdown <code v-pre>.md</code> file which Retype will start building a new website from.</p>
-<doc-anchor-target id="muscle-powerful">
+<doc-anchor-target id="powerful">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#muscle-powerful">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#powerful">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x1F4AA;</span> Powerful</span>
     </h4>
 </doc-anchor-target>
 <p>Project level <a href="configuration/project/">configuration</a> using <code v-pre>retype.yml</code> unlocks many more Retype features and customization.</p>
-<doc-anchor-target id="pencil2-simple-formatting">
+<doc-anchor-target id="simple-formatting">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pencil2-simple-formatting">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#simple-formatting">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x270F;&#xFE0F;</span> Simple formatting</span>
     </h4>
 </doc-anchor-target>
 <p>Pages are <a href="guides/formatting/">formatted</a> using Markdown syntax and Retype <a href="components/">components</a>. Page level <a href="configuration/page/">configuration</a> is available, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
-<doc-anchor-target id="computer-host-anywhere">
+<doc-anchor-target id="host-anywhere">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#computer-host-anywhere">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#host-anywhere">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x1F4BB;</span> Host anywhere</span>
     </h4>
 </doc-anchor-target>

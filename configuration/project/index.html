@@ -29,11 +29,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.10.690193394398" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.690666483408" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.10.690193394398" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.690193394398" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.690666483408" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.690666483408" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.690666483408" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -53,7 +54,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.10</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.11</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -126,7 +127,7 @@
                     </div>
 
                     <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
-                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
                 </div>
 
                 <!-- Mobile search button mock -->
@@ -173,9 +174,10 @@
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
     </div>
 
+
     <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
         <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
     target="_blank"
     href="https://retype.com/"
     rel="noopener"
@@ -216,8 +218,9 @@
                 </nav>
             </div>
 
+
             <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
     target="_blank"
     href="https://retype.com/"
     rel="noopener"
@@ -493,7 +496,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <p>An optional unique token used for website resource cache invalidation.</p>
 <ul>
 <li>If specified, the provided value is used for all invalidatable resources as is.</li>
-<li>If not specified, the default token having the following structure is used:<br />
+<li>If not specified, the default token having the following structure is used:
 <code v-pre>{Retype version}.{total milliseconds elapsed since 2000-01-01}</code></li>
 </ul>
 </doc-panel>
@@ -1151,7 +1154,8 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </doc-anchor-target>
 <doc-panel id="minchars-number">
     <template #title>minChars : <code v-pre>number</code></template>
-<p>Min number of characters required in a search query. Default is <code v-pre>3</code>.</p>
+<p>Min number of characters required in a search query. Default is <code v-pre>2</code>.</p>
+<p>The following sample demonstrates how to configure <code v-pre>search.minChars</code> with a new value:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   minChars: 3</code></pre>
@@ -1386,6 +1390,40 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         </div>
     </div>
 </div>
+</doc-panel>
+<doc-anchor-target id="watchvalidation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#watchvalidation">#</doc-anchor-trigger>
+        <span>watch.validation</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="validation-string">
+    <template #title>validation : <code v-pre>string</code></template>
+<p>Configure how thorough Retype is while looking for changed files.</p>
+<p>Until Retype version 1.10, the approach used was equivalent to <code v-pre>full</code>.</p>
+<p>Default value is <code v-pre>optimal</code>.</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Validation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>fast</code></td>
+<td>Compare file system metadata only (reported file size and last modification time).</td>
+</tr>
+<tr>
+<td><code v-pre>full</code></td>
+<td>Perform full SHA2 comparison on every tracked file.</td>
+</tr>
+<tr>
+<td><code v-pre>optimal</code></td>
+<td>Compare file system metadata and, for every file with changes, perform SHA2 comparison.</td>
+</tr>
+</tbody>
+</table>
 </doc-panel>
 <hr />
 <doc-anchor-target id="snippets">
