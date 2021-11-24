@@ -7,26 +7,32 @@ The entire package release history of Retype is available on [NPM](https://www.n
 
 Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :speech_balloon:
 
-## `v2.0.0`
+## `v1.12.0` [!badge text="NEXT" variant="info"]
 
-Expected: 2022
-
-- [ ] Full support for C# API reference doc generation
-- [ ] Early support for TypeScript API reference doc generation
 - [ ] New `partials` support
 - [ ] New `variables` support
-- [x] Many more features planned
-
-## `v1.11.0` [!badge text="NEXT" variant="info"]
-
-Expected: Late Q4 2021
-
-- [ ] New Retype Pro with increased page limit and Retype branding removal option
+- [ ] New `@region` code block tags
+- [ ] New line highlighting in code blocks
+- [ ] New color palette option
+- [ ] New hide left and right sidebar
 - [ ] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.10.0` [!badge text="LATEST" variant="info"]
+## `v1.11.0` [!badge text="LATEST" variant="info"]
 
-Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0) [:icon-comment-discussion:](https://github.com/retypeapp/retype/discussions/161)
+Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
+
+
+- [x] New multi-language search and automatic detection of content languages, see [#197](https://github.com/retypeapp/retype/issues/197)
+- [x] New Retype Pro with increased page limit and Retype branding removal option
+- [x] New style for native scrollbar styles on Windows, see [#107](https://github.com/retypeapp/retype/issues/107)
+- [x] New `server.watch.validation` project configuration option
+- [x] Page config and SUMMARY.md can be used together
+- [x] Upgrade Octicons icons library from v15.2.0 to v16.1.1
+- [x] All heading elements within the page content added to the search index, see [#166](https://github.com/retypeapp/retype/issues/166).
+
+## `v1.10.0`
+
+Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 - [x] New [$\KaTeX$](components/math-formulas.md) math typesetting library support
 - [x] New Auto generate RSS feed for blog posts
@@ -38,7 +44,7 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 ## `v1.9.0`
 
-Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0) [:icon-comment-discussion:](https://github.com/retypeapp/retype/discussions/138)
+Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
 - [x] Incremental build during [`retype watch`](guides/cli/#retype-watch) with page dependency graph
 - [x] Ability to run `retype watch` with in-memory output. Turned on by default, see [`server.watch.mode`](configuration/project/#watch) to configure.
