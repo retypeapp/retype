@@ -25,7 +25,7 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 - [x] New multi-language search and automatic detection of content languages, see [#197](https://github.com/retypeapp/retype/issues/197)
 - [x] New Retype Pro with increased page limit and Retype branding removal option
 - [x] New style for native scrollbar styles on Windows, see [#107](https://github.com/retypeapp/retype/issues/107)
-- [x] New `server.watch.validation` project configuration option
+- [x] New [`server.watch.validation`](configuration/project.md#watchvalidation) project configuration option
 - [x] Page config and SUMMARY.md can be used together
 - [x] Upgrade Octicons icons library from v15.2.0 to v16.1.1
 - [x] All heading elements within the page content added to the search index, see [#166](https://github.com/retypeapp/retype/issues/166).
