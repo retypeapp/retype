@@ -17,10 +17,18 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 - [ ] New hide left and right sidebar
 - [ ] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.11.0` [!badge text="LATEST" variant="info"]
+## `v1.11.1` [!badge text="LATEST" variant="info"]
+
+Released: [2021-12-02](https://github.com/retypeapp/retype/releases/tag/v1.11.1)
+
+- [x] [FIX] Badges without links syntax `[!badge x]` are ignored.
+- [x] [FIX] Horizontal scroll issue with wide table. See [#192](https://github.com/retypeapp/retype/issues/192).
+- [x] [FIX] Relax client integrity verification rules. See [#225](https://github.com/retypeapp/retype/issues/225) and [#226](https://github.com/retypeapp/retype/issues/226).
+- [x] [FIX] Corrupted website config error appears on first load after rebuild. See [#212](https://github.com/retypeapp/retype/issues/212) and [#226](https://github.com/retypeapp/retype/issues/226).
+
+## `v1.11.0`
 
 Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
-
 
 - [x] New multi-language search and automatic detection of content languages, see [#197](https://github.com/retypeapp/retype/issues/197)
 - [x] New Retype Pro with increased page limit and Retype branding removal option
