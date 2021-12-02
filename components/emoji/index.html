@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.691787096270" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.691797774115" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.691787096270" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.691787096270" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691797774115" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691797774115" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -250,6 +250,7 @@
 <p>Retype uses <a href="https://mojee.io">Mojee.io</a> to find emoji <code v-pre>:shortcodes:</code> within your document and replace with actual emoji characters. <span class="docs-emoji">&#x1F44D;</span></p>
 <p>You can place emoji <code v-pre>:shortcodes:</code> anywhere within your document, such as <code v-pre>:smile:</code> <span class="docs-emoji">&#x1F604;</span> or <code v-pre>:unicorn_face:</code> <span class="docs-emoji">&#x1F984;</span>.</p>
 <p>Use Mojee to <a href="https://mojee.io/emojis/">search</a> for your favorite emojis and paste the <code v-pre>:shortcode:</code> into your <code v-pre>.md</code> page.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -376,6 +377,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 
 
 <div class="flex items-center mt-6 mb-6">

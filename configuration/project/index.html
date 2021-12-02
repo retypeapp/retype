@@ -29,12 +29,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.691787096270" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.691797774115" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.691787096270" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.691787096270" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.691787096270" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691797774115" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691797774115" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.691797774115" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -470,6 +470,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <doc-panel id="strategy-string">
     <template #title>strategy : <code v-pre>string</code></template>
 <p>Specifies the approach Retype will use for cache invalidation.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -492,6 +493,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </tr>
 </tbody>
 </table>
+</div>
 <p>Default is <code v-pre>query</code>.</p>
 <p>Below are demo URLs generated for corresponding <code v-pre>cache.busting.strategy</code> options:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -864,6 +866,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     <template #title>gravatar.default : <code v-pre>string</code></template>
 <p>The default profile picture to return from Gravatar queries whenever there is no picture assigned to the queried email address. Default value is <code v-pre>mp</code>.</p>
 <p>Either a full URL to the image can be configured or one of the options listed below:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -906,6 +909,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </tr>
 </tbody>
 </table>
+</div>
 <p>Please see the <a href="https://en.gravatar.com/site/implement/images#default-image">Default Image</a> documentation on the Gravatar website.</p>
 </doc-panel>
 <doc-anchor-target id="gravatarenabled">
@@ -1049,6 +1053,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <p>If no <code v-pre>target</code> is configured, the link will open in the current tab.</p>
 <p>The <code v-pre>target</code> can be set to any value, although <code v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code v-pre>blank</code> into <code v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
 <p>There are several other values that may be prefixed with an <code v-pre>_</code> character, including <code v-pre>self</code>, <code v-pre>parent</code>, and <code v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code v-pre>target</code> values.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -1087,6 +1092,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </tr>
 </tbody>
 </table>
+</div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="markdown">
@@ -1322,6 +1328,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>If <code v-pre>memory</code>, the entire website is built and then stored in memory during development with no files being written to disk.</p>
 <p>If <code v-pre>disk</code>, the entire website is built and written to disk, then the web server will host those files from their disk location.</p>
 <p>Default is <code v-pre>memory</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -1340,6 +1347,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tr>
 </tbody>
 </table>
+</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">server:
   watch:
@@ -1360,6 +1368,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>If <code v-pre>true</code>, Retype will poll for file changes within your projects <doc-anchor-trigger to="#input">input</doc-anchor-trigger> directory. By default, the polling interval is 1000 milliseconds (1 second)</p>
 <p>The poll interval is configurable by setting a <code v-pre>number</code> value. For instance, setting <code v-pre>polling: 500</code> would configure a 500ms interval.</p>
 <p>Default is <code v-pre>false</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -1382,6 +1391,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tr>
 </tbody>
 </table>
+</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">server:
   watch:
@@ -1418,6 +1428,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>Configure how thorough Retype is while looking for changed files.</p>
 <p>Until Retype version 1.10, the approach used was equivalent to <code v-pre>full</code>.</p>
 <p>Default value is <code v-pre>optimal</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -1440,6 +1451,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tr>
 </tbody>
 </table>
+</div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="snippets">
@@ -1519,6 +1531,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>Additional options</span>
     </h2>
 </doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -1549,6 +1562,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tr>
 </tbody>
 </table>
+</div>
 
 
 <div class="flex items-center mt-6 mb-6">

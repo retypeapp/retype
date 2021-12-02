@@ -27,12 +27,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.691787096270" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.691797774115" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.691787096270" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.691787096270" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.691787096270" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691797774115" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691797774115" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.691797774115" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -361,7 +361,9 @@ Need to draw attention to something? Use an alert.
         <span>Components</span>
     </h2>
 </doc-anchor-target>
-<p>In addition to the standard Markdown options, Retype includes many custom <a href="../../components/">components</a> so you can easily add extra [!badge<span class="docs-emoji">&#x1F48E;</span> flair <span class="docs-emoji">&#x1F48E;</span>] to your document.</p>
+<p>In addition to the standard Markdown options, Retype includes many custom <a href="../../components/">components</a> so you can easily add extra <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span><span class="docs-emoji">&#x1F48E;</span> flair <span class="docs-emoji">&#x1F48E;</span></span>
+</span> to your document.</p>
 <p>The most commonly used Retype components include <a href="../../components/alert/">Alert</a> and <a href="../../components/tab/">Tab</a>:</p>
 <doc-anchor-target id="alert">
     <h3>

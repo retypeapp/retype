@@ -27,12 +27,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.691787096270" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.691797774115" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.691787096270" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.691787096270" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.691787096270" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691797774115" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691797774115" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.691797774115" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -557,6 +557,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     <template #title>layout : <code v-pre>string</code></template>
 <p>The layout for the page. Default is <code v-pre>default</code>.</p>
 <p>Supported values: <code v-pre>default</code>, <code v-pre>central</code>, <code v-pre>page</code>, and <code v-pre>blog</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -583,6 +584,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">layout: page</code></pre>
 </doc-codeblock></div>
@@ -623,6 +625,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </div>
 </div>
 <p>In order of precedence, the <code v-pre>order</code> of a page in the navigation would be determined with the following priority:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -657,6 +660,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 </tr>
 </tbody>
 </table>
+</div>
 <p>By default, the home page of the website has an order of <code v-pre>10000</code>. To add a page in the navigation just above the home page, set a value of <code v-pre>order: 10001</code> or greater. To add a page in the navigation just below the home page, set a value of <code v-pre>order: 9999</code> or lower. To move the home page to the bottom of the navigation, set a negative value, such as <code v-pre>order: -10000</code>.</p>
 <doc-anchor-target id="order-by-number">
     <h3>
@@ -785,6 +789,7 @@ route: /tutorials
 ---
 # Tutorials</code></pre>
 </doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -806,6 +811,7 @@ route: /tutorials
 </tr>
 </tbody>
 </table>
+</div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="tags">
