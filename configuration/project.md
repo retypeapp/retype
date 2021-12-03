@@ -490,7 +490,7 @@ Specific setting to control Retype integration with the [Gravatar](https://grava
 
 === gravatar.default : `string`
 
-The default profile picture to return from Gravatar queries whenever there is no picture assigned to the queried email address. Default value is `mp`.
+The default profile image to return from Gravatar queries whenever no image is assigned to the queried email address. Default value is `mp`.
 
 Either a full URL to the image can be configured or one of the options listed below:
 
