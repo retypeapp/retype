@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.691804639876" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.691857813016" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691804639876" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691857813016" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691804639876" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691857813016" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -365,6 +365,43 @@ retype watch</code></pre>
 <p>If you already have the <code v-pre>dotnet</code> CLI installed on your machine, installing using <code v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance. The <code v-pre>dotnet</code> package size is the smallest.</p>
         </div>
     </div>
+</div>
+<doc-anchor-target id="platform-specific">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#platform-specific">#</doc-anchor-trigger>
+        <span>Platform specific</span>
+    </h3>
+</doc-anchor-target>
+<p>The default <code v-pre>retypapp</code> NPM and Yarn package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.</p>
+<p>The bundle provides convenience although at the cost of an increased download size.</p>
+<p>It is possible to install smaller platform specific packages without the bundling. Currently, four platforms are supported and can be installed separately.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Platform</th>
+<th>Install command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.npmjs.com/package/retypeapp-win-x86"><code v-pre>retypeapp-win-x86</code></a></td>
+<td><code v-pre>npm install retypeapp-win-x86</code></td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/retypeapp-win-x64"><code v-pre>retypeapp-win-x64</code></a></td>
+<td><code v-pre>npm install retypeapp-win-x64</code></td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/retypeapp-linux-x64"><code v-pre>retypeapp-linux-x64</code></a></td>
+<td><code v-pre>npm install retypeapp-linux-x64</code></td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/retypeapp-darwin-x64"><code v-pre>retypeapp-darwin-x64</code></a></td>
+<td><code v-pre>npm install retypeapp-darwin-x64</code></td>
+</tr>
+</tbody>
+</table>
 </div>
 <hr />
 <doc-anchor-target id="update">

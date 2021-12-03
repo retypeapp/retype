@@ -27,12 +27,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.691804639876" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.691857813016" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691804639876" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.691857813016" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691804639876" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.691804639876" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.691857813016" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.691857813016" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -338,24 +338,8 @@ author: Frank
 author: frank@example.com
 ---</code></pre>
 </doc-codeblock></div>
-<p>An author object can also be configured with specific values for the <code v-pre>name</code>, <code v-pre>email</code>, <code v-pre>link</code>, and <code v-pre>avatar</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">---
-author:
-  name: Frank Esposito
-  email: frank@example.com
-  link: https://twitter.com/frank # custom link take precedence
-  avatar: https://example.com/frank.jpg # custom avatar takes precedence
----</code></pre>
-</doc-codeblock></div>
-<p>Possible options for the <code v-pre>avatar</code> include:</p>
-<ol>
-<li>Path to local image</li>
-<li>URL to an external image</li>
-<li>Inline SVG</li>
-<li><a href="../../components/icon/">Icon</a> shortcode</li>
-<li><a href="../../components/emoji/">Emoji</a> shortcode</li>
-</ol>
+</doc-panel>
+<p>An author object can also be configured with specific values for the <doc-anchor-trigger to="#name"><code v-pre>name</code></doc-anchor-trigger>, <doc-anchor-trigger to="#email"><code v-pre>email</code></doc-anchor-trigger>, <doc-anchor-trigger to="#link"><code v-pre>link</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#avatar"><code v-pre>avatar</code></doc-anchor-trigger>.</p>
 <p>The <code v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">---
@@ -373,6 +357,74 @@ authors:
     avatar: https://example.com/frank.jpg
   - Annette Jones
   - steffen@example.com
+---</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="avatar">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#avatar">#</doc-anchor-trigger>
+        <span>avatar</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="avatar-string">
+    <template #title>avatar : <code v-pre>string</code></template>
+<p>Possible options for the <code v-pre>avatar</code> include:</p>
+<ol>
+<li>Path to local image</li>
+<li>URL to an external image</li>
+<li>Inline SVG</li>
+<li><a href="../../components/icon/">Icon</a> shortcode</li>
+<li><a href="../../components/emoji/">Emoji</a> shortcode</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+author:
+  name: Frank Esposito
+  avatar: https://example.com/frank.jpg # custom avatar takes precedence
+---</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="email">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#email">#</doc-anchor-trigger>
+        <span>email</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="email-string">
+    <template #title>email : <code v-pre>string</code></template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+author:
+  email: frank@example.com
+---</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="link">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#link">#</doc-anchor-trigger>
+        <span>link</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="link-string">
+    <template #title>link : <code v-pre>string</code></template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+author:
+  link: https://twitter.com/frank # custom link take precedence
+---</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="name">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#name">#</doc-anchor-trigger>
+        <span>name</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="name-string">
+    <template #title>name : <code v-pre>string</code></template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+author:
+  name: Frank Esposito
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
