@@ -25,6 +25,20 @@ The following options allow for customization of the embed component.
 
 ---
 
+## AllowFullScrenn
+
+Enables the 'show in fullscreen' button in the embedded resource, e.g. when a video.
+
+```md
+[!embed allowFullScreen="true"](https://player.vimeo.com/video/648233786?h=b9aa2ac454)
+```
+
+[!embed allowFullScreen="true"](https://player.vimeo.com/video/648233786?h=b9aa2ac454)
+
+The setting accepts either `true` or `false`, and defaults to `true`.
+
+---
+
 ## Aspect
 
 Specifies the video's pixel aspect ratio.
