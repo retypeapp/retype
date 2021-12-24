@@ -75,25 +75,9 @@ author: frank@example.com
 ---
 ```
 
-An author object can also be configured with specific values for the `name`, `email`, `link`, and `avatar`.
+===
 
-```yml
----
-author:
-  name: Frank Esposito
-  email: frank@example.com
-  link: https://twitter.com/frank # custom link take precedence
-  avatar: https://example.com/frank.jpg # custom avatar takes precedence
----
-```
-
-Possible options for the `avatar` include:
-
-1. Path to local image
-2. URL to an external image
-3. Inline SVG
-4. [Icon](../components/icon.md) shortcode
-4. [Emoji](../components/emoji.md) shortcode
+An author object can also be configured with specific values for the [`name`](#name), [`email`](#email), [`link`](#link), and [`avatar`](#avatar).
 
 The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.
 
@@ -115,6 +99,65 @@ authors:
     avatar: https://example.com/frank.jpg
   - Annette Jones
   - steffen@example.com
+---
+```
+
+### avatar
+
+=== avatar : `string`
+
+Possible options for the `avatar` include:
+
+1. Path to local image
+2. URL to an external image
+3. Inline SVG
+4. [Icon](../components/icon.md) shortcode
+4. [Emoji](../components/emoji.md) shortcode
+
+```yml
+---
+author:
+  name: Frank Esposito
+  avatar: https://example.com/frank.jpg # custom avatar takes precedence
+---
+```
+
+===
+
+### email
+
+=== email : `string`
+
+```yml
+---
+author:
+  email: frank@example.com
+---
+```
+
+===
+
+### link
+
+=== link : `string`
+
+```yml
+---
+author:
+  link: https://twitter.com/frank # custom link take precedence
+---
+```
+
+===
+
+### name
+
+=== name : `string`
+
+```yml
+---
+author:
+  name: Frank Esposito
 ---
 ```
 

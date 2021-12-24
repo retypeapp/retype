@@ -66,7 +66,7 @@ graph LR
 
 ### Syntax highlighting block
 
-In order to draw a mermaid code block with syntax highlighting instead of rendering the contents, use the `mermaid-js` block syntax specifier `` ```mermaid-js ``.
+In order to draw a mermaid code block with syntax highlighting instead of rendering the contents, please use the `mermaid-js` block syntax specifier.
 
 ~~~
 ```mermaid-js

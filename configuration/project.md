@@ -131,29 +131,33 @@ branding:
 
 Custom color configuration.
 
+!!!warning
+Hex color values must be wrapped in `"` double-quotes, otherwise the value is treated as a comment because of the unquoted `#` character.
+!!!
+
 #### label.text
 
 === label.text : `string`
-Set a custom label text color. Default is `#1f7aff`.
+Set a custom label text color". Default is `"#1f7aff"`.
 
 ```yml
 branding:
   colors:
     label:
-      text: #ffffff
+      text: "#ffffff"
 ```
 ===
 
 #### label.background
 
 === label.background : `string`
-Set a custom label background color. Default is `#e1edff`.
+Set a custom label background color. Default is `"#e1edff"`.
 
 ```yml
 branding:
   colors:
     label:
-      background: #ff0000
+      background: "#ff0000"
 ```
 ===
 
@@ -486,7 +490,7 @@ Specific setting to control Retype integration with the [Gravatar](https://grava
 
 === gravatar.default : `string`
 
-The default profile picture to return from Gravatar queries whenever there is no picture assigned to the queried email address. Default value is `mp`.
+The default profile image to return from Gravatar queries whenever no image is assigned to the queried email address. Default value is `mp`.
 
 Either a full URL to the image can be configured or one of the options listed below:
 
