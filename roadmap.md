@@ -17,7 +17,13 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 - [ ] New hide left and right sidebar
 - [ ] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
-## `v1.11.1` [!badge text="LATEST" variant="info"]
+## `v1.11.2` [!badge text="LATEST" variant="info"]
+
+Released: [2021-12-23](https://github.com/retypeapp/retype/releases/tag/v1.11.2)
+
+- [x] New [`allowFullScreen`](components/embed.md#allowfullscreen) attribute on the `[!embed]` component.
+
+## `v1.11.1`
 
 Released: [2021-12-02](https://github.com/retypeapp/retype/releases/tag/v1.11.1)
 
