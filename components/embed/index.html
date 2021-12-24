@@ -27,12 +27,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.693077813247" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.693656902585" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.693077813247" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.693077813247" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.693077813247" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.693656902585" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.693656902585" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.693656902585" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -52,7 +52,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.11.1</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.11.2</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -261,11 +261,42 @@
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
 <p>The following options allow for customization of the embed component.</p>
+<hr />
+<doc-anchor-target id="allowfullscreen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#allowfullscreen">#</doc-anchor-trigger>
+        <span>AllowFullScreen</span>
+    </h2>
+</doc-anchor-target>
+<p>Typically, this attribute is used by embeded videos, such as a YouTube or Vimeo, to enable the <strong>Full screen</strong> button.</p>
+<p>The default value of <code v-pre>allowFullScreen</code> is <code v-pre>true</code>. Setting to <code v-pre>false</code> will remove or disable the full screen button.</p>
+<p>You do not need to explicitly enable the full screen option for videos. By default, the button will be enabled when a Retype <code v-pre>[!embed]</code> component is used.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
+    </div>
+</figure>
+</p>
+<p>To explicitly remove or disable the full screen option, include <code v-pre>allowFullScreen=&quot;false&quot;</code> in your <code v-pre>[!embed]</code> component configuration.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!embed allowFullScreen=&quot;false&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
+</doc-codeblock></div>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+    </div>
+</figure>
+</p>
 <hr />
 <doc-anchor-target id="aspect">
     <h2>
@@ -280,7 +311,7 @@
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-3/4">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
@@ -364,7 +395,7 @@
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden" style="height: 120px; ">
-        <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+        <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
@@ -381,7 +412,7 @@
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
     </div>
     <figcaption class="caption">Test Video</figcaption>
 </figure>
@@ -400,7 +431,7 @@
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden" style="max-width: 300px;">
-        <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+        <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
