@@ -7,14 +7,13 @@ The entire package release history of Retype is available on [NPM](https://www.n
 
 Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :speech_balloon:
 
-## `v1.12.0` [!badge text="NEXT" variant="info"]
+## `v2.0.0` [!badge text="NEXT" variant="info"]
 
 - [ ] New `partials` support
 - [ ] New `variables` support
 - [ ] New `@region` code block tags
 - [ ] New line highlighting in code blocks
-- [ ] New color palette option
-- [ ] New hide left and right sidebar
+- [ ] Include [`description`](configuration/page.md#description) in search index
 - [ ] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.11.2` [!badge text="LATEST" variant="info"]
