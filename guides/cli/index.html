@@ -27,12 +27,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.696538476932" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697403500975" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.696538476932" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697403500975" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.696538476932" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.696538476932" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697403500975" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697403500975" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -449,6 +449,40 @@ Options:
   -v, --verbose     Verbose logging
   -?, -h, --help    Show help and usage information</code></pre>
 </doc-codeblock></div>
+<hr />
+<doc-anchor-target id="retype-wallet">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-wallet">#</doc-anchor-trigger>
+        <span><code v-pre>retype wallet</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>retype wallet</code> command is for managing Retype license keys.</p>
+<p>Retype license keys are stored within an encrypted wallet file called <code v-pre>license.dat</code>.</p>
+<p>To add a Retype license key to your wallet, run the following command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype wallet --add &lt;your-key-here&gt;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="options-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">wallet:
+  Manage secret license keys
+
+Usage:
+  retype wallet [options]
+
+Options:
+  --add &lt;key&gt;          Add a license key to the wallet
+  --remove &lt;key&gt;       Remove a license key from the wallet
+  --list               List the stored license keys
+  --clear              Clear the wallet
+  -?, -h, --help       Show help and usage information</code></pre>
+</doc-codeblock></div>
+<hr />
 <doc-anchor-target id="usage-of---override">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#usage-of---override">#</doc-anchor-trigger>
