@@ -161,11 +161,15 @@ Arguments:
 
 Options:
   --output <output>        Custom path to the output directory
-  --license <license>      Retype license key
+  --secret <secret>        Retype secret license key
   --override <override>    JSON configuration overriding Retype config values
   -v, --verbose            Verbose logging
   -?, -h, --help           Show help and usage information
 ```
+
+### `--override`
+
+See the [`--override`](#retype---override) docs below for additional details.
 
 ---
 
@@ -211,8 +215,32 @@ Retype license keys are stored within an encrypted wallet file called `license.d
 To add a Retype license key to your wallet, run the following command:
 
 ```
-retype wallet --add <your-key-here>
+retype wallet --add <your-license-key-here>
 ```
+
+Once a license key is added to your wallet, the license key does not need to be added again. The key is stored in the wallet and Retype will read the key from the wallet with future builds.
+
+A Retype license key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to `retype build`.
+
+```
+retype build --secret <your-license-key-here>
+```
+
+A Retype license key can also be configured as a secret Environment variable. The key is NOT store in a wallet.
+
+Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](../guides/github-actions.md).
+
+You can add a new repository secret to your GitHub repository following the `/settings/secrets/actions` path. The URL should be:
+
+```
+https://github.com/<your-organization>/<your-project>/settings/secrets/actions
+```
+
+![](/static/add-retype-secret.png)
+
+Once the `RETYPE_SECRET` secret is added, you should see the following and your Retype project will now build using your license key:
+
+![](/static/retype-repository-secret.png)
 
 ### Options
 
@@ -233,71 +261,61 @@ Options:
 
 ---
 
-## Usage of `--override`
+## `retype --override`
 
-The Retype CLI commands supporting the `--override` option allow to modify configuration loaded from a `retype.yml` file prior to execution.
+The Retype CLI [`build`](#retype-build) command supports the `--override` option to allow dynamically modifying `retype.yml` project configurations during build.
 
-The `--override` option is helpful in certain scenarios like generating websites having different `url` config from the same sources, without the need to maintain several `retype.yml` files.
+The `--override` option is helpful in certain scenarios such as generating websites requiring different `url` configs, without the need to maintain several `retype.yml` files.
 
-The CLI expects an **escaped** json object passed as the option value. Then Retype merges `retype.yml` configuration with the provided json object in the way that colliding configs from the latter win. The `--override` json object may contain duplicates that will be processed sequentially.
+The CLI expects an escaped json object to be passed as the option value.
 
-#### Override a single top-level config
+Retype merges the `retype.yml` configuration with the provided json object in a way that colliding configurations from the json override will overwrite the `retype.yml` values.
+
+!!!
+The `--override` json object may contain duplicate keys which will be processed sequentially. Last in wins.
+!!!
+
+### Basic config
+
+Using the following `retype.yml` project configuration file as an example:
 
 ~~~yml `retype.yml`
 url: https://retype.com
 ~~~
 
-The command below will build the webisite with `url: https://beta.retype.com`.
+The command below will build the website with the url `https://beta.retype.com`.
 
 ```
 retype build --override "{ \"url\": \"https://beta.retype.com\" }"
 ```
 
-Passing `null` will remove the corresponding config value, so the website will be built like if `url` was not configured at all:
+### Nested config
 
-```
-retype build --override "{ \"url\": null }"
-```
+The following sample demonstrates overriding a more complex configuration object.
 
-#### Override a single nested config
-
-When overriding a nested config, all parent keys must be included too.
-
-The sample below will build a website having `title: Retype` and `label: beta`.
+Using the following `retype.yml` project configuration file as an example, let's change the [`label`](../configuration/project.md#label) to `beta`, instead of `v1.10`.
 
 ~~~yml `retype.yml`
 branding:
   title: Retype
   label: v1.10
 ~~~
+
+The `retype build --override` would be:
 
 ```
 retype build --override "{ \"branding\": { \"label\": \"beta\"} }"
 ```
 
-#### Override a complex config object
-
-In order to override a complex object completely, it needs to be removed first.
-
-The sample below will build a website having `label: beta` and no title.
-
-~~~yml `retype.yml`
-branding:
-  title: Retype
-  label: v1.10
-~~~
+To completely remove all the configs in `branding`, pass `null`:
 
 ```
-retype build --override "{ \"branding\": null, \"branding\": { \"label\": \"beta\"} }"
+retype build --override "{ \"branding\": null }"
 ```
 
-!!!
-Please pay attention that duplicated keys are applied sequentially. Thus, it's important to place `null` before the overriding object.
-!!!
+### Add to list
 
-#### Add new item to an array
-
-The following command will add the `GitHub` link to the `links` configuration array.
+The following command will add a `GitHub` link to the list of [`links`](../configuration/project.md#links).
 
 ~~~yml `retype.yml`
 links:
@@ -306,7 +324,15 @@ links:
 ~~~
 
 ```
-retype build --override "{ \"links\": [ { \"link\": \"https://github.com/retypeapp/retype\", \"text\": \"GitHub\" } ] }"
+retype build --override "{ \"links\": [{ \"link\": \"https://github.com/retypeapp/retype\", \"text\": \"GitHub\" }] }"
 ```
 
-In order to replace an array items, the array needs to be removed first, and then overridden with an array of desired items.
+### Remove config
+
+Passing `null` will remove the corresponding configuration value.
+
+In the following sample, the website will be built as though `url` was not configured.
+
+```
+retype build --override "{ \"url\": null }"
+```
