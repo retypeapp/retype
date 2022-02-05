@@ -200,9 +200,42 @@ Options:
   -?, -h, --help    Show help and usage information
 ```
 
+---
+
+## `retype wallet`
+
+The `retype wallet` command is for managing Retype license keys.
+
+Retype license keys are stored within an encrypted wallet file called `license.dat`.
+
+To add a Retype license key to your wallet, run the following command:
+
+```
+retype wallet --add <your-key-here>
+```
+
+### Options
+
+```
+wallet:
+  Manage secret license keys
+
+Usage:
+  retype wallet [options]
+
+Options:
+  --add <key>          Add a license key to the wallet
+  --remove <key>       Remove a license key from the wallet
+  --list               List the stored license keys
+  --clear              Clear the wallet
+  -?, -h, --help       Show help and usage information
+```
+
+---
+
 ## Usage of `--override`
 
-The Retype CLI commands supporting the `--override` option allow to modify configuration loaded from a `retype.yml` file prior to execution. 
+The Retype CLI commands supporting the `--override` option allow to modify configuration loaded from a `retype.yml` file prior to execution.
 
 The `--override` option is helpful in certain scenarios like generating websites having different `url` config from the same sources, without the need to maintain several `retype.yml` files.
 
@@ -244,7 +277,7 @@ retype build --override "{ \"branding\": { \"label\": \"beta\"} }"
 
 #### Override a complex config object
 
-In order to override a complex object completely, it needs to be removed first. 
+In order to override a complex object completely, it needs to be removed first.
 
 The sample below will build a website having `label: beta` and no title.
 
