@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 # About
 
 [Retype](https://retype.com/) is professionally built and supported by the team at [Object.NET](https://object.net).
@@ -21,7 +20,7 @@ Retype is only made possible because of the hard work of other amazing open-sour
 | Library                                                  | License                                                                    | Role                                                                  |
 | -------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [Markdig](https://github.com/xoofx/markdig)              | [BSD-2-Clause](https://github.com/xoofx/markdig/blob/master/license.txt)   | Markdown parsing                                                      |
-| [Scriban](https://github.com/scriban/scriban)            | [BSD-2-Clause](https://github.com/scriban/scriban/blob/master/license.txt) | Templating                                                            |
+| [Scriban](https://github.com/scriban/scriban)            | [BSD-2-Clause](https://github.com/scriban/scriban/blob/master/license.txt) | Templating, partials, variables                                       |
 | [Mojee](https://mojee.io)                                | [Mojee](https://docs.mojee.io/license/)                                    | [Emoji](components/emoji.md) parsing and handling                     |
 | [Octicons](https://octicons-primer.vercel.app/octicons/) | [MIT](https://github.com/primer/octicons/blob/main/LICENSE)                | Default bundled [icons](components/icon.md)                           |
 | [Vue.js](https://vuejs.org/)                             | [MIT](https://github.com/vuejs/vue/blob/dev/LICENSE)                       | Client UI framework                                                   |
