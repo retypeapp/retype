@@ -5,6 +5,8 @@ icon: info
 
 There are several [input](project.md#input) folder names and files within a Retype project that incorporate special behaviour. All paths for folders or files within Retype are relative to your project [input](project.md#input) directory.
 
+---
+
 ## Folders
 
 ### /blog
@@ -37,6 +39,8 @@ Any files placed within this directory will be copied to the [output](project.md
 The `/tags` directory is reserved for [tags](page.md#tags). Every tag name configured within an `.md` page will have a corresponding entry here.
 
 Similar to [`/categories`](#categories), you can also add content to the `/tags` page by creating your own `/tags/index.md` page. Retype will create your page as normal and then add the list of Tags below your custom content.
+
+---
 
 ## Files
 
