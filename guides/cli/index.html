@@ -18,21 +18,23 @@
     <meta property="og:url" content="https://retype.com/guides/cli/">
     <meta property="og:title" content="Retype CLI - Generate, publish, and share documentation">
     <meta property="og:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch">
+    <meta property="og:image" content="https://retype.com/static/add-retype-secret.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/guides/cli/">
     <meta property="twitter:title" content="Retype CLI - Generate, publish, and share documentation">
     <meta property="twitter:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch">
+    <meta property="twitter:image" content="https://retype.com/static/add-retype-secret.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697439549434" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697471258554" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697439549434" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697471258554" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697439549434" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697439549434" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697471258554" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697471258554" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -409,11 +411,18 @@ Arguments:
 
 Options:
   --output &lt;output&gt;        Custom path to the output directory
-  --license &lt;license&gt;      Retype license key
+  --secret &lt;secret&gt;        Retype secret license key
   --override &lt;override&gt;    JSON configuration overriding Retype config values
   -v, --verbose            Verbose logging
   -?, -h, --help           Show help and usage information</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="--override">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#--override">#</doc-anchor-trigger>
+        <span><code v-pre>--override</code></span>
+    </h3>
+</doc-anchor-target>
+<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr />
 <doc-anchor-target id="retype-run">
     <h2>
@@ -460,8 +469,30 @@ Options:
 <p>Retype license keys are stored within an encrypted wallet file called <code v-pre>license.dat</code>.</p>
 <p>To add a Retype license key to your wallet, run the following command:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype wallet --add &lt;your-key-here&gt;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype wallet --add &lt;your-license-key-here&gt;</code></pre>
 </doc-codeblock></div>
+<p>Once a license key is added to your wallet, the license key does not need to be added again. The key is stored in the wallet and Retype will read the key from the wallet with future builds.</p>
+<p>A Retype license key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to <code v-pre>retype build</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --secret &lt;your-license-key-here&gt;</code></pre>
+</doc-codeblock></div>
+<p>A Retype license key can also be configured as a secret Environment variable. The key is NOT store in a wallet.</p>
+<p>Configuring the <code v-pre>RETYPE_SECRET</code> secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a <a href="../github-actions/">GitHub Action</a>.</p>
+<p>You can add a new repository secret to your GitHub repository following the <code v-pre>/settings/secrets/actions</code> path. The URL should be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;your-organization&gt;/&lt;your-project&gt;/settings/secrets/actions</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/add-retype-secret.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Once the <code v-pre>RETYPE_SECRET</code> secret is added, you should see the following and your Retype project will now build using your license key:</p>
+<p><figure class="content-center">
+    <img src="/static/retype-repository-secret.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="options-4">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
@@ -483,67 +514,16 @@ Options:
   -?, -h, --help       Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
-<doc-anchor-target id="usage-of---override">
+<doc-anchor-target id="retype---override">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#usage-of---override">#</doc-anchor-trigger>
-        <span>Usage of <code v-pre>--override</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype---override">#</doc-anchor-trigger>
+        <span><code v-pre>retype --override</code></span>
     </h2>
 </doc-anchor-target>
-<p>The Retype CLI commands supporting the <code v-pre>--override</code> option allow to modify configuration loaded from a <code v-pre>retype.yml</code> file prior to execution.</p>
-<p>The <code v-pre>--override</code> option is helpful in certain scenarios like generating websites having different <code v-pre>url</code> config from the same sources, without the need to maintain several <code v-pre>retype.yml</code> files.</p>
-<p>The CLI expects an <strong>escaped</strong> json object passed as the option value. Then Retype merges <code v-pre>retype.yml</code> configuration with the provided json object in the way that colliding configs from the latter win. The <code v-pre>--override</code> json object may contain duplicates that will be processed sequentially.</p>
-<doc-anchor-target id="override-a-single-top-level-config">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#override-a-single-top-level-config">#</doc-anchor-trigger>
-        <span>Override a single top-level config</span>
-    </h4>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title"><code v-pre>retype.yml</code></div>
-<pre class="language-yaml"><code v-pre class="language-yaml">url: https://retype.com</code></pre>
-</doc-codeblock></div>
-<p>The command below will build the webisite with <code v-pre>url: https://beta.retype.com</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: \&quot;https://beta.retype.com\&quot; }&quot;</code></pre>
-</doc-codeblock></div>
-<p>Passing <code v-pre>null</code> will remove the corresponding config value, so the website will be built like if <code v-pre>url</code> was not configured at all:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: null }&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="override-a-single-nested-config">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#override-a-single-nested-config">#</doc-anchor-trigger>
-        <span>Override a single nested config</span>
-    </h4>
-</doc-anchor-target>
-<p>When overriding a nested config, all parent keys must be included too.</p>
-<p>The sample below will build a website having <code v-pre>title: Retype</code> and <code v-pre>label: beta</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title"><code v-pre>retype.yml</code></div>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
-  title: Retype
-  label: v1.10</code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: { \&quot;label\&quot;: \&quot;beta\&quot;} }&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="override-a-complex-config-object">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#override-a-complex-config-object">#</doc-anchor-trigger>
-        <span>Override a complex config object</span>
-    </h4>
-</doc-anchor-target>
-<p>In order to override a complex object completely, it needs to be removed first.</p>
-<p>The sample below will build a website having <code v-pre>label: beta</code> and no title.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title"><code v-pre>retype.yml</code></div>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
-  title: Retype
-  label: v1.10</code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: null, \&quot;branding\&quot;: { \&quot;label\&quot;: \&quot;beta\&quot;} }&quot;</code></pre>
-</doc-codeblock></div>
+<p>The Retype CLI <doc-anchor-trigger to="#retype-build"><code v-pre>build</code></doc-anchor-trigger> command supports the <code v-pre>--override</code> option to allow dynamically modifying <code v-pre>retype.yml</code> project configurations during build.</p>
+<p>The <code v-pre>--override</code> option is helpful in certain scenarios such as generating websites requiring different <code v-pre>url</code> configs, without the need to maintain several <code v-pre>retype.yml</code> files.</p>
+<p>The CLI expects an escaped json object to be passed as the option value.</p>
+<p>Retype merges the <code v-pre>retype.yml</code> configuration with the provided json object in a way that colliding configurations from the json override will overwrite the <code v-pre>retype.yml</code> values.</p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -557,17 +537,54 @@ Options:
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Please pay attention that duplicated keys are applied sequentially. Thus, it&#x27;s important to place <code v-pre>null</code> before the overriding object.</p>
+<p>The <code v-pre>--override</code> json object may contain duplicate keys which will be processed sequentially. Last in wins.</p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="add-new-item-to-an-array">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#add-new-item-to-an-array">#</doc-anchor-trigger>
-        <span>Add new item to an array</span>
-    </h4>
+<doc-anchor-target id="basic-config">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-config">#</doc-anchor-trigger>
+        <span>Basic config</span>
+    </h3>
 </doc-anchor-target>
-<p>The following command will add the <code v-pre>GitHub</code> link to the <code v-pre>links</code> configuration array.</p>
+<p>Using the following <code v-pre>retype.yml</code> project configuration file as an example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: https://retype.com</code></pre>
+</doc-codeblock></div>
+<p>The command below will build the website with the url <code v-pre>https://beta.retype.com</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: \&quot;https://beta.retype.com\&quot; }&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="nested-config">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nested-config">#</doc-anchor-trigger>
+        <span>Nested config</span>
+    </h3>
+</doc-anchor-target>
+<p>The following sample demonstrates overriding a more complex configuration object.</p>
+<p>Using the following <code v-pre>retype.yml</code> project configuration file as an example, let&#x27;s change the <a href="../../configuration/project/#label"><code v-pre>label</code></a> to <code v-pre>beta</code>, instead of <code v-pre>v1.10</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+  title: Retype
+  label: v1.10</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>retype build --override</code> would be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: { \&quot;label\&quot;: \&quot;beta\&quot;} }&quot;</code></pre>
+</doc-codeblock></div>
+<p>To completely remove all the configs in <code v-pre>branding</code>, pass <code v-pre>null</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: null }&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="add-to-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#add-to-list">#</doc-anchor-trigger>
+        <span>Add to list</span>
+    </h3>
+</doc-anchor-target>
+<p>The following command will add a <code v-pre>GitHub</code> link to the list of <a href="../../configuration/project/#links"><code v-pre>links</code></a>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>retype.yml</code></div>
 <pre class="language-yaml"><code v-pre class="language-yaml">links:
@@ -575,9 +592,19 @@ Options:
     text: https://retype.com</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;links\&quot;: [ { \&quot;link\&quot;: \&quot;https://github.com/retypeapp/retype\&quot;, \&quot;text\&quot;: \&quot;GitHub\&quot; } ] }&quot;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;links\&quot;: [{ \&quot;link\&quot;: \&quot;https://github.com/retypeapp/retype\&quot;, \&quot;text\&quot;: \&quot;GitHub\&quot; }] }&quot;</code></pre>
 </doc-codeblock></div>
-<p>In order to replace an array items, the array needs to be removed first, and then overridden with an array of desired items.</p>
+<doc-anchor-target id="remove-config">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#remove-config">#</doc-anchor-trigger>
+        <span>Remove config</span>
+    </h3>
+</doc-anchor-target>
+<p>Passing <code v-pre>null</code> will remove the corresponding configuration value.</p>
+<p>In the following sample, the website will be built as though <code v-pre>url</code> was not configured.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: null }&quot;</code></pre>
+</doc-codeblock></div>
 
 
 
