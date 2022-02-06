@@ -9,12 +9,12 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 ## `v2.0.0` [!badge text="NEXT" variant="info"]
 
-- [ ] New `partials` support
-- [ ] New `variables` support
-- [ ] New `@region` code block tags
-- [ ] New line highlighting in code blocks
-- [ ] Include [`description`](configuration/page.md#description) in search index
-- [ ] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
+- [x] New `partials` support
+- [x] New `variables` support
+- [x] New content templating support
+- [x] New line highlighting in code blocks
+- [x] Include [`description`](configuration/page.md#description) in search index
+- [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
 
 ## `v1.11.2` [!badge text="LATEST" variant="info"]
 
