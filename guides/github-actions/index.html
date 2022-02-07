@@ -29,12 +29,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697471258554" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697510487688" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697471258554" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697510487688" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697471258554" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697471258554" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697510487688" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697510487688" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -286,7 +286,7 @@
 <p>If the <code v-pre>.github/workflows/</code> folder does not exist within the root of your project, you can manually create those folders and they will be committed along with the <code v-pre>retype.yml</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">.github/workflows/retype.yml</div>
-<pre class="language-none"><code v-pre class="language-none">name: Publish Retype powered website to GitHub Pages
+<pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
   push:
@@ -309,7 +309,52 @@ jobs:
           update-branch: true</code></pre>
 </doc-codeblock></div>
 <p>The above <code v-pre>retype.yml</code> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code v-pre>main</code> branch, and then deploy your new Retype powered website to a <code v-pre>retype</code> branch. If the <code v-pre>retype</code> branch is not available, the GitHub Action will automatically create the branch.</p>
+<p>If the default branch in your repo is <code v-pre>master</code>, revise <code v-pre>- main</code> to <code v-pre>- master</code>. If the docs project was within a <code v-pre>docs</code> branch, revise <code v-pre>- main</code> to <code v-pre>- docs</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">  push:
+    branches:
+      - master</code></pre>
+</doc-codeblock></div>
 <p>Commit your <code v-pre>retype.yml</code> file and push to your repo.</p>
+<doc-anchor-target id="retype_secret">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_secret">#</doc-anchor-trigger>
+        <span>RETYPE_SECRET</span>
+    </h3>
+</doc-anchor-target>
+<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="../cli/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ secrets.RETYPE_SECRET }}</code> configuration to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@v1
+  with:
+    license: ${{ secrets.RETYPE_SECRET }}</code></pre>
+</doc-codeblock></div>
+<p>A standard <code v-pre>.github/workflows/retype.yml</code> file with a Retype license key would look like the following:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">.github/workflows/retype.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: retypeapp/action-build@v1
+        with:
+          license: ${{ secrets.RETYPE_SECRET }}
+
+      - uses: retypeapp/action-github-pages@v1
+        with:
+          update-branch: true</code></pre>
+</doc-codeblock></div>
 <hr />
 <doc-anchor-target id="step-2-configure-github-pages">
     <h2>

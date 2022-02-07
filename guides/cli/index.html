@@ -29,12 +29,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697471258554" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697510487688" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697471258554" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697510487688" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697471258554" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697471258554" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697510487688" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697510487688" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -476,8 +476,15 @@ Options:
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype build --secret &lt;your-license-key-here&gt;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="retype_secret">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_secret">#</doc-anchor-trigger>
+        <span>RETYPE_SECRET</span>
+    </h3>
+</doc-anchor-target>
 <p>A Retype license key can also be configured as a secret Environment variable. The key is NOT store in a wallet.</p>
 <p>Configuring the <code v-pre>RETYPE_SECRET</code> secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a <a href="../github-actions/">GitHub Action</a>.</p>
+<p>The <a href="../github-actions/#retype_secret">RETYPE_SECRET</a> configuration must also be added to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
 <p>You can add a new repository secret to your GitHub repository following the <code v-pre>/settings/secrets/actions</code> path. The URL should be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;your-organization&gt;/&lt;your-project&gt;/settings/secrets/actions</code></pre>
