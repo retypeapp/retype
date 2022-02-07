@@ -38,7 +38,7 @@ Add the following `retype.yml` file to your GitHub project within the `.github/w
 
 If the `.github/workflows/` folder does not exist within the root of your project, you can manually create those folders and they will be committed along with the `retype.yml`.
 
-``` .github/workflows/retype.yml
+```yml .github/workflows/retype.yml
 name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
@@ -64,7 +64,53 @@ jobs:
 
 The above `retype.yml` workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch. If the `retype` branch is not available, the GitHub Action will automatically create the branch.
 
+If the default branch in your repo is `master`, revise `- main` to `- master`. If the docs project was within a `docs` branch, revise `- main` to `- docs`.
+
+```yml
+  push:
+    branches:
+      - master
+```
+
 Commit your `retype.yml` file and push to your repo.
+
+### RETYPE_SECRET
+
+If your project requires a Retype License Key, that key can be configured by adding a [`RETYPE_SECRET`](cli.md#retype_secret) secret to your repository and the corresponding `license: ${{ secrets.RETYPE_SECRET }}` configuration to your `.github/workflows/retype.yml` file.
+
+```yml
+- uses: retypeapp/action-build@v1
+  with:
+    license: ${{ secrets.RETYPE_SECRET }}
+```
+
+A standard `.github/workflows/retype.yml` file with a Retype license key would look like the following:
+
+```yml .github/workflows/retype.yml
+name: Publish Retype powered website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: retypeapp/action-build@v1
+        with:
+          license: ${{ secrets.RETYPE_SECRET }}
+
+      - uses: retypeapp/action-github-pages@v1
+        with:
+          update-branch: true
+```
 
 ---
 
