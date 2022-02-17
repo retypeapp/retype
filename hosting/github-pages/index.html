@@ -11,27 +11,30 @@
     <!-- Primary Meta Tags -->
     <title>GitHub Pages - Generate, publish, and share documentation</title>
     <meta name="title" content="GitHub Pages - Generate, publish, and share documentation">
-    <meta name="description" content="Hosting your Retype built website on GitHub Pages is free and easy to setup." />
+    <meta name="description" content="Hosting your Retype built website on GitHub Pages is free and simple to setup." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/hosting/github-pages/">
     <meta property="og:title" content="GitHub Pages - Generate, publish, and share documentation">
-    <meta property="og:description" content="Hosting your Retype built website on GitHub Pages is free and easy to setup.">
+    <meta property="og:description" content="Hosting your Retype built website on GitHub Pages is free and simple to setup.">
+    <meta property="og:image" content="https://retype.com/static/github-actions-configure-branch.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/hosting/github-pages/">
     <meta property="twitter:title" content="GitHub Pages - Generate, publish, and share documentation">
-    <meta property="twitter:description" content="Hosting your Retype built website on GitHub Pages is free and easy to setup.">
+    <meta property="twitter:description" content="Hosting your Retype built website on GitHub Pages is free and simple to setup.">
+    <meta property="twitter:image" content="https://retype.com/static/github-actions-configure-branch.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698381246053" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698446627619" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698381246053" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698446627619" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698381246053" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698446627619" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698446627619" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -247,10 +250,115 @@
         <span>GitHub Pages</span>
     </h1>
 </doc-anchor-target>
-<p>Hosting your Retype built website on GitHub Pages is free and easy to setup.</p>
-<p>We recommend adding the <a href="../../guides/github-actions/">Retype GitHub Action</a> to your project to handle the automatic building and deploying of your Retype powered website.</p>
+<p>Hosting your Retype built website on <a href="https://pages.github.com/">GitHub Pages</a> is free and simple to setup.</p>
+<doc-anchor-target id="step-1-add-retypeyml-workflow">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retypeyml-workflow">#</doc-anchor-trigger>
+        <span>Step 1: Add <code v-pre>retype.yml</code> workflow</span>
+    </h2>
+</doc-anchor-target>
+<p>We first recommend adding the Retype <a href="../../guides/github-actions/">Build Action</a> to your project to automate the building and deployment of your Retype powered website.</p>
+<hr />
+<doc-anchor-target id="step-2-configure-github-pages">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-configure-github-pages">#</doc-anchor-trigger>
+        <span>Step 2: Configure GitHub Pages</span>
+    </h2>
+</doc-anchor-target>
+<p>With a some simple configuration, GitHub can host your website for free.</p>
+<p>To get started, navigate to the <strong>Settings</strong>&gt; &gt; <strong>Pages</strong> page of your repo. The URL should be the following, although you will need to replace <code v-pre>&lt;organization&gt;</code> and <code v-pre>&lt;repo&gt;</code> with your values:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;organization&gt;/&lt;repo&gt;/settings/pages</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="pick-a-branch">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pick-a-branch">#</doc-anchor-trigger>
+        <span>Pick a branch</span>
+    </h3>
+</doc-anchor-target>
+<p>By default, the Retype Action will publish your website to a <code v-pre>retype</code> branch, although you can configure to host from any branch.</p>
+<p>If you have committed the <code v-pre>retype.yml</code> file as detailed in <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">Step 1</doc-anchor-trigger>, you should now have a <code v-pre>retype</code> branch available within the list. Select <code v-pre>retype</code> then click the <strong>Save</strong> button.</p>
+<p><figure class="content-center">
+    <img src="../../static/github-actions-configure-branch.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Your GitHub Pages configuration should now look similar to the following:</p>
+<p><figure class="content-center">
+    <img src="../../static/github-actions-enable-pages.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Enforce HTTPS</h5>
+<p>We recommend that you check the <strong>Enforce HTTPS</strong> checkbox.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="set-a-url">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#set-a-url">#</doc-anchor-trigger>
+        <span>Set a <code v-pre>url</code></span>
+    </h3>
+</doc-anchor-target>
+<p>With the above sample, GitHub will provide a unique <code v-pre>github.io</code> subdomain to host your website from.</p>
+<p>Your website will be available from a subfolder of that subdomain. In our scenario, our website will be available in the <code v-pre>/retype/</code> subfolder.</p>
+<p>For example, the URL will use the following pattern:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">https://&lt;organization&gt;.github.io/&lt;repo&gt;/</code></pre>
+</doc-codeblock></div>
+<p>You would then set the <a href="../../configuration/project/#url"><code v-pre>url</code></a> configuration with the following, where <code v-pre>&lt;organization&gt;</code> is replaced with your GitHub organization name and <code v-pre>&lt;repo&gt;</code> is replaced with your repository name.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: &lt;organization&gt;.github.io/&lt;repo&gt;/</code></pre>
+</doc-codeblock></div>
+<p>If your GitHub organization name was <code v-pre>CompanyX</code> and your repo name was <code v-pre>Docs</code>, your <code v-pre>url</code> configuration would be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: companyx.github.io/docs/</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="custom-domain">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-domain">#</doc-anchor-trigger>
+        <span>Custom domain</span>
+    </h3>
+</doc-anchor-target>
+<p>Instead of using the <code v-pre>github.io</code> domain, it is possible to configure GitHub Pages to use a custom domain or subdomain name.</p>
+<p>Just enter your domain or subdomain name in the <strong>Custom domain</strong> field and click <strong>Save</strong>.</p>
+<p><figure class="content-center">
+    <img src="../../static/github-actions-configure-custom-domain.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>If your website will be available at <code v-pre>https://example.com</code>, use <code v-pre>example.com</code> as the <strong>Custom domain</strong> value.</p>
+<p>If your website will be available at <code v-pre>https://docs.example.com</code>, use <code v-pre>docs.example.com</code>.</p>
+<p>You will then need to <a href="https://docs.github.com/articles/using-a-custom-domain-with-github-pages/">configure the DNS</a> for your domain name.</p>
+<p>The last step would be updating the <a href="../../configuration/project/#url"><code v-pre>url</code></a> project configuration with the same value. For example, if your website will be available at <code v-pre>https://example.com</code>, use the following <code v-pre>url</code> configuration:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
+</doc-codeblock></div>
 
 
+<div class="flex items-center mt-6 mb-6">
+    <span>
+        <a href="/tags/">
+            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+        </a>
+        <span class="mr-2"><a href="/tags/hosting/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>hosting</span>
+</a></span>
+    </span>
+</div>
 
 
                 <!-- Required only on API pages -->
@@ -266,6 +374,27 @@
     <!--<p class="my-2.5 text-gray-500 dark:text-dark-350 text-sm">Last updated on <strong>2021-03-14</strong> by <strong>Geoffrey McGill</strong></p>-->
 </div>
 
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/configuration/reserved_words/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Reserved words</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/faq/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">FAQ</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
 
 
         </main>
@@ -311,7 +440,7 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "GitHub Pages", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "GitHub Pages", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </body>
 </html>
