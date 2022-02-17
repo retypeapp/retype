@@ -112,7 +112,7 @@ Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 - [x] New [`visibility`](configuration/page.md#visibility) page config
 - [x] New process to handle the manual creation of a [`CNAME`](configuration/project/#cname) file and copy to output
 - [x] New automated process to check for new Octicons release and merge update
-- [x] Update to latest [Octicons](components/icon/#new-octicons) icon release
+- [x] Update to latest [Octicons](components/icon.md) icon release
 - [x] Improve the CLI experience, see [#103](https://github.com/retypeapp/retype/issues/103)
 - [x] Fix excessive bottom padding on blockquotes, see [#74](https://github.com/retypeapp/retype/issues/74)
 
@@ -195,11 +195,11 @@ Released: 2021-03-12
 - [x] New [Tab](components/tab.md) component
 - [x] New [Button](components/button.md) component
 - [x] New [Panel](components/panel.md) component with expand/collapse
-- [x] New [`retype watch`](guides/#retype-watch) command
+- [x] New [`retype watch`](guides/cli.md#retype-watch) command
 - [x] New Live Reload when using [`retype watch`](guides/cli.md#retype-watch)
 - [x] New [`.yml`](configuration/page.md#separate-yml-file) option for Page or Folder configs
 - [x] New code block [title](components/code-block.md#title)
-- [x] Enable [line numbering](components/code_blocks#line-numbers) in code blocks
+- [x] Enable [line numbering](components/code-block.md#line-numbers) in code blocks
 
 ## `v1.0.0`
 

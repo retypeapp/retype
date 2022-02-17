@@ -856,7 +856,7 @@ server:
     mode: disk
 ```
 
-The command [`retype build`](../guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](..guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
+The command [`retype build`](../guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](../guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
 
 ===
 
