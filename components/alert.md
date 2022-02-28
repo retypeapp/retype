@@ -61,7 +61,7 @@ Alerts come in nine different flavors which can be specified by passing a `varia
 | `info` | `light-blue` |
 | `light` | `light` |
 | `dark` | `dark` |
-| `cloak` | `light` or `dark` depending on time of day |
+| `ghost` | `light` or `dark` depending on time of day |
 | `contrast` | `dark` or `light` depending on time of day |
 
 ---
@@ -101,8 +101,8 @@ This is a `light` alert.
 This is a `dark` alert.
 !!!
 
-!!!cloak Cloak
-This is a `cloak` alert.
+!!!ghost Ghost
+This is a `ghost` alert.
 !!!
 
 !!!contrast Contrast
@@ -142,8 +142,8 @@ This is a `light` alert.
 This is a `dark` alert.
 !!!
 
-!!!cloak Cloak
-This is a `cloak` alert.
+!!!ghost Ghost
+This is a `ghost` alert.
 !!!
 
 !!!contrast Contrast

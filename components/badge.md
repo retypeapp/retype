@@ -8,12 +8,6 @@ Similar to a [Button](button.md), the Badge component uses the same syntax as a 
 ||| Demo
 [!badge Badge](badge.md)
 
-[!badge variant="light" text="Light"](badge.md)
-
-[!badge variant="dark" text="Dark"](badge.md)
-
-[!badge variant="cloak" text="Cloak"](badge.md)
-
 [Normal link](badge.md)
 ||| Source
 ```md
@@ -51,7 +45,7 @@ With the Badge component, the destination is optional and can be ommitted.
 | `info` | [!badge variant="info" text="Info"] |
 | `light` | [!badge variant="light" text="Light"] |
 | `dark` | [!badge variant="dark" text="Dark"] |
-| `cloak` | [!badge variant="cloak" text="Cloak"] |
+| `ghost` | [!badge variant="ghost" text="Ghost"] |
 | `contrast` | [!badge variant="contrast" text="Contrast"] |
 
 ---

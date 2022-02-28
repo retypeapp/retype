@@ -35,7 +35,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 | `info` | [!button variant="info" text="Info"] |
 | `light` | [!button variant="light" text="Light"] |
 | `dark` | [!button variant="dark" text="Dark"] |
-| `cloak` | [!button variant="cloak" text="Cloak"] |
+| `ghost` | [!button variant="ghost" text="Ghost"] |
 | `contrast` | [!button variant="contrast" text="Contrast"] |
 
 ---
