@@ -184,7 +184,7 @@ Released: 2021-03-25
 - [x] New [`Edit this page`](configuration/project.md#edit) link
 - [x] New `Previous | Next` footer navigation buttons for pages
 - [x] New [`order`](configuration/page.md#order) Page level config
-- [x] New ~~`hidden` [`visibility`](configuration/page.md#visibility) Page level config
+- [x] New `hidden` [`visibility`](configuration/page.md#visibility) Page level config
 - [x] New [`favicon`](configuration/project.md#favicon) Project config available in `retype.yml`
 - [x] New beta release of building C# project reference documentation
 
