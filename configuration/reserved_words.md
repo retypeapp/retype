@@ -74,7 +74,7 @@ By default, if you do not pass an explicit project configuration file name in th
 
 For instance, if you run the [CLI](../guides/cli.md) command `retype watch docs`, Retype will first try to find the project configuration file  `docs/retype.yml`. If not found, then `docs/retype.yaml` will be tested and so on.
 
-If you run the command `retype watch docs/retype.jsom`, even if a `retype.yml` is present, Retype will only read the `retype.json` file as you are explicitly passing the project configuration file path.
+If you run the command `retype watch docs/retype.json`, even if a `retype.yml` is present, Retype will only read the `retype.json` file as you are explicitly passing the project configuration file path.
 
 !!!
 Custom project config file names are also possible by explicitly passing a file name, such as `retype watch docs.yml`. Where `docs.yml` is used instead of `retype.yml`, even if `retype.yml` is present.
