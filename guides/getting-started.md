@@ -62,9 +62,9 @@ If you already have the `dotnet` CLI installed on your machine, installing using
 
 ### Platform specific
 
-The default `retypapp` NPM and Yarn package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation. 
+The default `retypapp` NPM and Yarn package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.
 
-The bundle provides convenience although at the cost of an increased download size. 
+The bundle provides convenience although at the cost of an increased download size.
 
 It is possible to install smaller platform specific packages without the bundling. Currently, four platforms are supported and can be installed separately.
 
