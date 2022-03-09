@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: retypeapp/action-build@v1
+      - uses: retypeapp/action-build@v2.0.0-preview
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
-      - uses: retypeapp/action-github-pages@v1
+      - uses: retypeapp/action-github-pages@v2.0.0-preview
         with:
           update-branch: true
