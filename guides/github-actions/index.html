@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700114806582" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700159454456" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700114806582" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700159454456" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700114806582" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700114806582" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700159454456" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700159454456" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -253,7 +253,7 @@
 </doc-anchor-target>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add a <code v-pre>retype.yml</code> file, see <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">step 1</doc-anchor-trigger></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure GitHub Pages, see <doc-anchor-trigger to="#step-2-configure-github-pages">step 2</doc-anchor-trigger></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure GitHub Pages, see <a href="../../hosting/github-pages/#step-2-configure-github-pages">step 2</a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the branch to <code v-pre>retype</code>, see <a href="../../hosting/github-pages/#pick-a-branch">branch config</a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the <a href="../../hosting/github-pages/#set-a-url"><code v-pre>url</code></a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-build">Build Action</a>.</li>
@@ -308,11 +308,11 @@ jobs:
         <span>RETYPE_SECRET</span>
     </h3>
 </doc-anchor-target>
-<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="../cli/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ ERROR }}</code> configuration to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
+<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="../cli/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ secrets.RETYPE_SECRET }}</code> configuration to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@v1
   with:
-    license: ${{ ERROR }}</code></pre>
+    license: ${{ secrets.RETYPE_SECRET }}</code></pre>
 </doc-codeblock></div>
 <p>A standard <code v-pre>.github/workflows/retype.yml</code> file with a Retype license key would look like the following:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -335,7 +335,7 @@ jobs:
 
       - uses: retypeapp/action-build@v1
         with:
-          license: ${{ ERROR }}
+          license: ${{ secrets.RETYPE_SECRET }}
 
       - uses: retypeapp/action-github-pages@v1
         with:
