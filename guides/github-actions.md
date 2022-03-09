@@ -22,7 +22,7 @@ Automatically deploying to GitHub Pages requires a basic `retype.yml` configurat
 ## Summary
 
 - [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
-- [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages)
+- [x] Configure GitHub Pages, see [step 2](../hosting/github-pages.md#step-2-configure-github-pages)
 - [x] Set the branch to `retype`, see [branch config](../hosting/github-pages.md#pick-a-branch)
 - [x] Set the [`url`](../hosting/github-pages.md#set-a-url)
 - [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
