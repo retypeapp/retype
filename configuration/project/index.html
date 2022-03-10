@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700159454456" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700265307279" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700159454456" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700265307279" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700159454456" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700159454456" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700265307279" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700265307279" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -1155,19 +1155,19 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </h2>
 </doc-anchor-target>
 <p>Customization of the website search component.</p>
-<doc-anchor-target id="minchars">
+<doc-anchor-target id="hotkeys">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#minchars">#</doc-anchor-trigger>
-        <span>minChars</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hotkeys">#</doc-anchor-trigger>
+        <span>hotkeys</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="minchars-number">
-    <template #title>minChars : <code v-pre>number</code></template>
-<p>Min number of characters required in a search query. Default is <code v-pre>2</code>.</p>
-<p>The following sample demonstrates how to configure <code v-pre>search.minChars</code> with a new value:</p>
+<doc-panel id="hotkeys-list">
+    <template #title>hotkeys : <code v-pre>list</code></template>
+<p>Keyboard key to set the cursor focus into the search field. Default is <code v-pre>[&quot;/&quot;]</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
-  minChars: 3</code></pre>
+  hotkeys:
+    - &quot;/&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="maxresults">
@@ -1184,34 +1184,76 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
   maxResults: 20</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="placeholder">
+<doc-anchor-target id="minchars">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder">#</doc-anchor-trigger>
-        <span>placeholder</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#minchars">#</doc-anchor-trigger>
+        <span>minChars</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="placeholder-string">
-    <template #title>placeholder : <code v-pre>string</code></template>
-<p>Placeholder text rendered on the search component. Default is <code v-pre>&quot;Search&quot;</code>.</p>
+<doc-panel id="minchars-number">
+    <template #title>minChars : <code v-pre>number</code></template>
+<p>Min number of characters required in a search query. Default is <code v-pre>2</code>.</p>
+<p>The following sample demonstrates how to configure <code v-pre>search.minChars</code> with a new value:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
-  placeholder: Search</code></pre>
+  minChars: 3</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="hotkeys">
+<doc-anchor-target id="mode">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#hotkeys">#</doc-anchor-trigger>
-        <span>hotkeys</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mode">#</doc-anchor-trigger>
+        <span>mode</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="hotkeys-list">
-    <template #title>hotkeys : <code v-pre>list</code></template>
-<p>Keyboard key to set the cursor focus into the search field. Default is <code v-pre>[&quot;/&quot;]</code>.</p>
+<doc-panel id="mode-string">
+    <template #title>mode : <code v-pre>string</code></template>
+<p>The search index creation mode. Default is <code v-pre>full</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>full</code></td>
+<td>A full-text search index of the project content is made. Includes all headings and all text content.</td>
+</tr>
+<tr>
+<td><code v-pre>partial</code></td>
+<td>All headings plus the first paragraph under each heading is used to create the search index. The Page <code v-pre>description</code> config is also included if not empty.</td>
+</tr>
+<tr>
+<td><code v-pre>basic</code></td>
+<td>All headings plus only the first paragraph of each page is used to create the search index. The Page <code v-pre>description</code> config is also included if not empty.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following sample demonstrates how to configure <code v-pre>search.mode</code> with a new value:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
-  hotkeys:
-    - &quot;/&quot;</code></pre>
+  mode: partial</code></pre>
 </doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If your project includes a lot of content and your users find the search is running too slow, try changing to <code v-pre>mode: partial</code> or even a <code v-pre>mode: basic</code> if the website is really huge.</p>
+        </div>
+    </div>
+</div>
 </doc-panel>
 <doc-anchor-target id="noresultsfoundmsg">
     <h3>
@@ -1225,6 +1267,20 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   noResultsFoundMsg: Sorry, no results found.</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="placeholder">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder">#</doc-anchor-trigger>
+        <span>placeholder</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="placeholder-string">
+    <template #title>placeholder : <code v-pre>string</code></template>
+<p>Placeholder text rendered on the search component. Default is <code v-pre>&quot;Search&quot;</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  placeholder: Search</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="server">
