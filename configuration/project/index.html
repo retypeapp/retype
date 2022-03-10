@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700265307279" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700266559536" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700265307279" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700266559536" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700265307279" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700265307279" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700266559536" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700266559536" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -926,6 +926,35 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
         </div>
     </div>
 </div>
+</doc-panel>
+<doc-anchor-target id="plausible">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#plausible">#</doc-anchor-trigger>
+        <span>plausible</span>
+    </h3>
+</doc-anchor-target>
+<p><a href="https://plausible.io/">Plausible.io</a> is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.</p>
+<doc-anchor-target id="plausibledomain">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#plausibledomain">#</doc-anchor-trigger>
+        <span>plausible.domain</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="plausible-domain-string">
+    <template #title>plausible.domain : <code v-pre>string</code></template>
+<p>When you setup your project within Plausible, you enter a <a href="https://plausible.io/docs/add-website"><code v-pre>Domain</code></a> value which is then used to set the <code v-pre>integrations.plausible.domain</code> config within your <code v-pre>retype.yml</code> project configuration file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  plausible:
+    domain: &lt;string&gt;</code></pre>
+</doc-codeblock></div>
+<p>Plausible can also send statistics to <a href="https://plausible.io/docs/plausible-script#can-i-send-stats-to-multiple-dashboards-at-the-same-time">multiple</a> dashboards by configuring a comma-separated list of domains. For example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  plausible:
+    domain: domain1.com,domain2.com,subdomain.yourdomain.com</code></pre>
+</doc-codeblock></div>
+<p>Check out the Plausible <a href="https://plausible.io/docs/">documentation</a> for more details.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="links">
