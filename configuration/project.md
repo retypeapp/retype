@@ -709,16 +709,15 @@ output: ./docs
 
 Customization of the website search component.
 
-### minChars
+### hotkeys
 
-=== minChars : `number`
-Min number of characters required in a search query. Default is `2`.
-
-The following sample demonstrates how to configure `search.minChars` with a new value:
+=== hotkeys : `list`
+Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
 
 ```yml
 search:
-  minChars: 3
+  hotkeys:
+    - "/"
 ```
 ===
 
@@ -733,27 +732,40 @@ search:
 ```
 ===
 
-### placeholder
+### minChars
 
-=== placeholder : `string`
-Placeholder text rendered on the search component. Default is `"Search"`.
+=== minChars : `number`
+Min number of characters required in a search query. Default is `2`.
+
+The following sample demonstrates how to configure `search.minChars` with a new value:
 
 ```yml
 search:
-  placeholder: Search
+  minChars: 3
 ```
 ===
 
-### hotkeys
+### mode
 
-=== hotkeys : `list`
-Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
+=== mode : `string`
+The search index creation mode. Default is `full`.
+
+Mode | Description
+--- | ---
+`full` | A full-text search index of the project content is made. Includes all headings and all text content.
+`partial` | All headings plus the first paragraph under each heading is used to create the search index. The Page `description` config is also included if not empty.
+`basic` | All headings plus only the first paragraph of each page is used to create the search index. The Page `description` config is also included if not empty.
+
+The following sample demonstrates how to configure `search.mode` with a new value:
 
 ```yml
 search:
-  hotkeys:
-    - "/"
+  mode: partial
 ```
+
+!!!
+If your project includes a lot of content and your users find the search is running too slow, try changing to `mode: partial` or even a `mode: basic` if the website is really huge.
+!!!
 ===
 
 ### noResultsFoundMsg
@@ -764,6 +776,17 @@ Message rendered when no results were found. Default is `"Sorry, no results foun
 ```yml
 search:
   noResultsFoundMsg: Sorry, no results found.
+```
+===
+
+### placeholder
+
+=== placeholder : `string`
+Placeholder text rendered on the search component. Default is `"Search"`.
+
+```yml
+search:
+  placeholder: Search
 ```
 ===
 
