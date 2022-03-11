@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700339567612" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700352465854" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700339567612" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700352465854" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700339567612" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700339567612" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700352465854" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700352465854" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -482,6 +482,10 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </table>
 </div>
 <p>Default is <code v-pre>query</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">cache:
+  strategy: query</code></pre>
+</doc-codeblock></div>
 <p>Below are demo URLs generated for corresponding <code v-pre>cache.busting.strategy</code> options:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>strategy: none</code></div>
@@ -634,6 +638,29 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <pre class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/your-organization/your-repo&quot;
   label: Edit on GitHub</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="editor">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#editor">#</doc-anchor-trigger>
+        <span>editor</span>
+    </h2>
+</doc-anchor-target>
+<p>Custom configuration to control the page live editor functionality that is only available when <code v-pre>retype watch</code> is running.</p>
+<doc-anchor-target id="enabled">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
+        <span>enabled</span>
+    </h3>
+</doc-anchor-target>
+<p>To enable or disable the live editor. Default is <code v-pre>true</code>.</p>
+<doc-panel id="enabled-boolean">
+    <template #title>enabled : <code v-pre>boolean</code></template>
+<p>Set to <code v-pre>false</code> to disable and hide the live editor.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">editor:
+  enabled: false # Default is true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -1157,6 +1184,10 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <li>in <code v-pre>hard</code> mode, regular line breaks are always emitted as <code v-pre>&lt;br /&gt;</code> HTML elements.</li>
 </ul>
 <p>Default is <code v-pre>soft</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">markdown:
+  lineBreaks: soft # or, hard</code></pre>
+</doc-codeblock></div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="meta">
@@ -1199,6 +1230,23 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Change output location to /docs folder</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">output: ./docs</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="poweredbyretype">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#poweredbyretype">#</doc-anchor-trigger>
+        <span>poweredByRetype</span>
+    </h2>
+</doc-anchor-target>
+<p>Controls whether to include or exclude the <code v-pre>Powered by Retype</code> branding.</p>
+<doc-panel id="badge-pro-poweredbyretype-boolean">
+    <template #title><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> poweredByRetype : <code v-pre>boolean</code></template>
+<p>With a Retype Pro license, the <code v-pre>Powered by Retype</code> branding can be removed by setting to <code v-pre>false</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">poweredByRetype: true # Set to `false` to remove.</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
@@ -1587,6 +1635,44 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <pre class="language-yaml"><code v-pre class="language-yaml">snippets:
   lineNumbers:
     - none</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="templating">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#templating">#</doc-anchor-trigger>
+        <span>templating</span>
+    </h2>
+</doc-anchor-target>
+<p>Configurations to control the Retype content templating engine for this project.</p>
+<doc-anchor-target id="enabled-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-1">#</doc-anchor-trigger>
+        <span>enabled</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="enabled-boolean">
+    <template #title>enabled : <code v-pre>boolean</code></template>
+<p>A project-wide option to enable or disable the Retype content templating engine. Default is <code v-pre>true</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">templating:
+  enabled: true # Set to false to diable</code></pre>
+</doc-codeblock></div>
+<p>The templating engine can also be disabled on a per-page basis by setting <code v-pre>templating: false</code> in the page metadata.</p>
+</doc-panel>
+<doc-anchor-target id="liquid">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#liquid">#</doc-anchor-trigger>
+        <span>liquid</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="liquid-boolean">
+    <template #title>liquid : <code v-pre>boolean</code></template>
+<p>Specifies if Liquid syntax <code v-pre>{% ... %}</code> is enabled. If <code v-pre>liquid: true</code> is set, Retype is incompatible with GitBook style of component configuration.</p>
+<p>Default is <code v-pre>false</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">templating:
+  liquid: false # Set to true to enable</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />
