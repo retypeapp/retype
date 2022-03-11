@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700338727028" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700339567612" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700338727028" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700339567612" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700338727028" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700338727028" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700339567612" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700339567612" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -243,7 +243,7 @@
 </ol>
 <p>The first, <strong>Build Action</strong> will automatically build your Retype powered website with each new change that is committed.</p>
 <p>The second, <strong>GitHub Pages Action</strong> will automatically publish your newly built website to a branch in Github so it is available to host from <a href="https://pages.github.com/">GitHub Pages</a>. By default, the <code v-pre>retype</code> branch is used, but of course that is also configurable.</p>
-<p>Automatically deploying to GitHub Pages requires a basic <code v-pre>retype.yml</code> configuration file to be added to your GitHub repo and some simple project configuration.</p>
+<p>Automatically deploying to GitHub Pages requires a basic <code v-pre>retype-action.yml</code> configuration file to be added to your GitHub repo and some simple project configuration.</p>
 <hr />
 <doc-anchor-target id="summary">
     <h2>
@@ -252,7 +252,7 @@
     </h2>
 </doc-anchor-target>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add a <code v-pre>retype.yml</code> file, see <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">step 1</doc-anchor-trigger></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add a <code v-pre>retype-action.yml</code> file, see <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">step 1</doc-anchor-trigger></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure GitHub Pages, see <a href="../../hosting/github-pages/#step-2-configure-github-pages">step 2</a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the branch to <code v-pre>retype</code>, see <a href="../../hosting/github-pages/#pick-a-branch">branch config</a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the <a href="../../hosting/github-pages/#set-a-url"><code v-pre>url</code></a></li>
@@ -261,16 +261,16 @@
 </ul>
 <p>All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the <a href="../../configuration/project/">Project Configuration</a> options for full details.</p>
 <hr />
-<doc-anchor-target id="step-1-add-retypeyml-workflow">
+<doc-anchor-target id="step-1-add-retype-actionyml-workflow">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retypeyml-workflow">#</doc-anchor-trigger>
-        <span>Step 1: Add <code v-pre>retype.yml</code> workflow</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retype-actionyml-workflow">#</doc-anchor-trigger>
+        <span>Step 1: Add <code v-pre>retype-action.yml</code> workflow</span>
     </h2>
 </doc-anchor-target>
-<p>Add the following <code v-pre>retype.yml</code> file to your GitHub project within the <code v-pre>.github/workflows/</code> folder.</p>
-<p>If the <code v-pre>.github/workflows/</code> folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the <code v-pre>retype.yml</code>.</p>
+<p>Add the following <code v-pre>retype-action.yml</code> file to your GitHub project within the <code v-pre>.github/workflows/</code> folder.</p>
+<p>If the <code v-pre>.github/workflows/</code> folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the <code v-pre>retype-action.yml</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">.github/workflows/retype.yml</div>
+<div class="codeblock-title">.github/workflows/retype-action.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
@@ -293,7 +293,7 @@ jobs:
         with:
           update-branch: true</code></pre>
 </doc-codeblock></div>
-<p>The above <code v-pre>retype.yml</code> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code v-pre>main</code> branch, and then deploy your new Retype powered website to a <code v-pre>retype</code> branch.</p>
+<p>The above <code v-pre>retype-action.yml</code> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code v-pre>main</code> branch, and then deploy your new Retype powered website to a <code v-pre>retype</code> branch.</p>
 <p>If the <code v-pre>retype</code> branch is not available, the GitHub Action will automatically create the branch.</p>
 <p>If the default branch in your repo is <code v-pre>master</code>, change <code v-pre>- main</code> to <code v-pre>- master</code>. If the docs project was within a <code v-pre>docs</code> branch, change <code v-pre>- main</code> to <code v-pre>- docs</code>. The following snippet demonstrates setting the branch to <code v-pre>master</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -301,22 +301,22 @@ jobs:
     branches:
       - master</code></pre>
 </doc-codeblock></div>
-<p>Commit your <code v-pre>retype.yml</code> file and push to your repo.</p>
+<p>Commit your <code v-pre>retype-action.yml</code> file and push to your repo.</p>
 <doc-anchor-target id="retype_secret">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype_secret">#</doc-anchor-trigger>
         <span>RETYPE_SECRET</span>
     </h3>
 </doc-anchor-target>
-<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="../cli/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ secrets.RETYPE_SECRET }}</code> configuration to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
+<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="../cli/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ secrets.RETYPE_SECRET }}</code> configuration to your <code v-pre>.github/workflows/retype-action.yml</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@v1
   with:
     license: ${{ secrets.RETYPE_SECRET }}</code></pre>
 </doc-codeblock></div>
-<p>A standard <code v-pre>.github/workflows/retype.yml</code> file with a Retype license key would look like the following:</p>
+<p>A standard <code v-pre>.github/workflows/retype-action.yml</code> file with a Retype license key would look like the following:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">.github/workflows/retype.yml</div>
+<div class="codeblock-title">.github/workflows/retype-action.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:

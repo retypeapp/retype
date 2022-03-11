@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700338727028" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700339567612" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700338727028" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700339567612" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700338727028" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700338727028" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700339567612" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700339567612" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -238,10 +238,10 @@
     </h1>
 </doc-anchor-target>
 <p>Hosting your Retype built website on <a href="https://pages.github.com/">GitHub Pages</a> is free and simple to setup.</p>
-<doc-anchor-target id="step-1-add-retypeyml-workflow">
+<doc-anchor-target id="step-1-add-retype-actionyml-workflow">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retypeyml-workflow">#</doc-anchor-trigger>
-        <span>Step 1: Add <code v-pre>retype.yml</code> workflow</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retype-actionyml-workflow">#</doc-anchor-trigger>
+        <span>Step 1: Add <code v-pre>retype-action.yml</code> workflow</span>
     </h2>
 </doc-anchor-target>
 <p>We first recommend adding the Retype <a href="../../guides/github-actions/">Build Action</a> to your project to automate the building and deployment of your Retype powered website.</p>
@@ -253,7 +253,7 @@
     </h2>
 </doc-anchor-target>
 <p>With a some simple configuration, GitHub can host your website for free.</p>
-<p>To get started, navigate to the <strong>Settings</strong>&gt; &gt; <strong>Pages</strong> page of your repo. The URL should be the following, although you will need to replace <code v-pre>&lt;organization&gt;</code> and <code v-pre>&lt;repo&gt;</code> with your values:</p>
+<p>To get started, navigate to the <strong>Settings</strong> &gt; <strong>Pages</strong> page of your repo. The URL should be the following, although you will need to replace <code v-pre>&lt;organization&gt;</code> and <code v-pre>&lt;repo&gt;</code> with your values:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;organization&gt;/&lt;repo&gt;/settings/pages</code></pre>
 </doc-codeblock></div>
@@ -264,7 +264,7 @@
     </h3>
 </doc-anchor-target>
 <p>By default, the Retype Action will publish your website to a <code v-pre>retype</code> branch, although you can configure to host from any branch.</p>
-<p>If you have committed the <code v-pre>retype.yml</code> file as detailed in <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">Step 1</doc-anchor-trigger>, you should now have a <code v-pre>retype</code> branch available within the list. Select <code v-pre>retype</code> then click the <strong>Save</strong> button.</p>
+<p>If you have committed the <code v-pre>retype-action.yml</code> file as detailed in <doc-anchor-trigger to="#step-1-add-retypeyml-workflow">Step 1</doc-anchor-trigger>, you should now have a <code v-pre>retype</code> branch available within the list. Select <code v-pre>retype</code> then click the <strong>Save</strong> button.</p>
 <p><figure class="content-center">
     <img src="../../static/github-actions-configure-branch.png" alt="" />
     <figcaption class="caption"></figcaption>
