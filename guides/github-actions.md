@@ -15,13 +15,13 @@ The first, **Build Action** will automatically build your Retype powered website
 
 The second, **GitHub Pages Action** will automatically publish your newly built website to a branch in Github so it is available to host from [GitHub Pages](https://pages.github.com/). By default, the `retype` branch is used, but of course that is also configurable.
 
-Automatically deploying to GitHub Pages requires a basic `retype.yml` configuration file to be added to your GitHub repo and some simple project configuration.
+Automatically deploying to GitHub Pages requires a basic `retype-action.yml` configuration file to be added to your GitHub repo and some simple project configuration.
 
 ---
 
 ## Summary
 
-- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
+- [x] Add a `retype-action.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
 - [x] Configure GitHub Pages, see [step 2](../hosting/github-pages.md#step-2-configure-github-pages)
 - [x] Set the branch to `retype`, see [branch config](../hosting/github-pages.md#pick-a-branch)
 - [x] Set the [`url`](../hosting/github-pages.md#set-a-url)
@@ -32,13 +32,13 @@ All of these options are configurable and your specific requirements may vary. T
 
 ---
 
-## Step 1: Add `retype.yml` workflow
+## Step 1: Add `retype-action.yml` workflow
 
-Add the following `retype.yml` file to your GitHub project within the `.github/workflows/` folder.
+Add the following `retype-action.yml` file to your GitHub project within the `.github/workflows/` folder.
 
-If the `.github/workflows/` folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the `retype.yml`.
+If the `.github/workflows/` folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the `retype-action.yml`.
 
-```yml .github/workflows/retype.yml
+```yml .github/workflows/retype-action.yml
 name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
@@ -62,7 +62,7 @@ jobs:
           update-branch: true
 ```
 
-The above `retype.yml` workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch.
+The above `retype-action.yml` workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch.
 
 If the `retype` branch is not available, the GitHub Action will automatically create the branch.
 
@@ -74,11 +74,11 @@ If the default branch in your repo is `master`, change `- main` to `- master`. I
       - master
 ```
 
-Commit your `retype.yml` file and push to your repo.
+Commit your `retype-action.yml` file and push to your repo.
 
 ### RETYPE_SECRET
 
-If your project requires a Retype License Key, that key can be configured by adding a [`RETYPE_SECRET`](cli.md#retype_secret) secret to your repository and the corresponding `license: {%{${{ secrets.RETYPE_SECRET }}`}%} configuration to your `.github/workflows/retype.yml` file.
+If your project requires a Retype License Key, that key can be configured by adding a [`RETYPE_SECRET`](cli.md#retype_secret) secret to your repository and the corresponding `license: {%{${{ secrets.RETYPE_SECRET }}`}%} configuration to your `.github/workflows/retype-action.yml` file.
 
 {%{
 ```yml
@@ -88,9 +88,9 @@ If your project requires a Retype License Key, that key can be configured by add
 ```
 }%}
 
-A standard `.github/workflows/retype.yml` file with a Retype license key would look like the following:
+A standard `.github/workflows/retype-action.yml` file with a Retype license key would look like the following:
 
-```yml .github/workflows/retype.yml
+```yml .github/workflows/retype-action.yml
 name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
