@@ -468,7 +468,7 @@ More `integrations` will be added over time. Do you have an integration suggesti
 
 ### googleAnalytics
 
-Add Google Analytics to your website.
+Add [Google Analytics](https://analytics.google.com/analytics/web/) to your website.
 
 === googleAnalytics.id : `string`
 Google Analytics ID value.
@@ -476,8 +476,35 @@ Google Analytics ID value.
 ```yml
 integrations:
   googleAnalytics:
-    id: UA-12345678-1
+    id: <id>
 ```
+
+Replace the `<id>` with your Google Analytics measurement id. For example:
+
+```yml
+integrations:
+  googleAnalytics:
+    id: A-BCDEFGHIJ1
+```
+
+===
+
+---
+
+### googleTagManager
+
+Add the [Google Tag Manager](https://tagmanager.google.com/) to your website.
+
+=== googleTagManager.id : `string`
+Google Tag manager ID value.
+
+```yml
+integrations:
+  googleTagManager:
+    id: <id>
+```
+
+Replace the `<id>` with your Google Tag Manager measurement id.
 ===
 
 ---
@@ -529,6 +556,8 @@ Disabling Gravatar will also reset the default avatar to the Retype default.
 
 [Plausible.io](https://plausible.io/) is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.
 
+---
+
 ### plausible.domain
 
 === plausible.domain : `string`
@@ -552,6 +581,7 @@ integrations:
 Check out the Plausible [documentation](https://plausible.io/docs/) for more details.
 
 ===
+
 ---
 
 ## links
