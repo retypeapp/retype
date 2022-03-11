@@ -26,7 +26,7 @@ https://github.com/<organization>/<repo>/settings/pages
 
 By default, the Retype Action will publish your website to a `retype` branch, although you can configure to host from any branch.
 
-If you have committed the `retype-action.yml` file as detailed in [Step 1](#step-1-add-retypeyml-workflow), you should now have a `retype` branch available within the list. Select `retype` then click the **Save** button.
+If you have committed the `retype-action.yml` file as detailed in [Step 1](#step-1-add-retype-actionyml-workflow), you should now have a `retype` branch available within the list. Select `retype` then click the **Save** button.
 
 ![](../static/github-actions-configure-branch.png)
 
