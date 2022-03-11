@@ -184,6 +184,11 @@ Specifies the approach Retype will use for cache invalidation.
 
 Default is `query`.
 
+```yml
+cache:
+  strategy: query
+```
+
 Below are demo URLs generated for corresponding `cache.busting.strategy` options:
 
 ~~~html `strategy: none`
@@ -309,6 +314,26 @@ edit:
   repo: "https://github.com/your-organization/your-repo"
   label: Edit on GitHub
 ```
+===
+
+---
+
+## editor
+
+Custom configuration to control the page live editor functionality that is only available when `retype watch` is running.
+
+### enabled
+
+To enable or disable the live editor. Default is `true`.
+
+=== enabled : `boolean`
+Set to `false` to disable and hide the live editor.
+
+```yml
+editor:
+  enabled: false # Default is true
+```
+
 ===
 
 ---
@@ -720,6 +745,11 @@ Switches between `soft` and `hard` line break modes. The option instructs Retype
 
 Default is `soft`.
 
+```yml
+markdown:
+  lineBreaks: soft # or, hard
+```
+
 ===
 
 ---
@@ -757,6 +787,20 @@ The path is relative to the `retype.yml` location.
 
 ```yml Change output location to /docs folder
 output: ./docs
+```
+===
+
+---
+
+## poweredByRetype
+
+Controls whether to include or exclude the `Powered by Retype` branding.
+
+=== [!badge PRO] poweredByRetype : `boolean`
+With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
+
+```yml
+poweredByRetype: true # Set to `false` to remove.
 ```
 ===
 
@@ -1026,6 +1070,42 @@ snippets:
   lineNumbers:
     - none
 ```
+===
+
+---
+
+## templating
+
+Configurations to control the Retype content templating engine for this project.
+
+### enabled
+
+=== enabled : `boolean`
+
+A project-wide option to enable or disable the Retype content templating engine. Default is `true`.
+
+```yml
+templating:
+  enabled: true # Set to false to diable
+```
+
+The templating engine can also be disabled on a per-page basis by setting `templating: false` in the page metadata.
+
+===
+
+### liquid
+
+=== liquid : `boolean`
+
+Specifies if Liquid syntax `{% ... %}` is enabled. If `liquid: true` is set, Retype is incompatible with GitBook style of component configuration.
+
+Default is `false`.
+
+```yml
+templating:
+  liquid: false # Set to true to enable
+```
+
 ===
 
 ---
