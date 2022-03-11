@@ -5,10 +5,6 @@ order: 1000
 
 The following is a basic `retype.yml` [project configuration](/configuration/project.md) file.
 
-!!!
-All configurations are optional. If a config is not set, Retype will use default values.
-!!!
-
 ```yml retype.yml
 input: .
 output: .retype
@@ -25,3 +21,7 @@ links:
 footer:
   copyright: "&copy; Copyright . All rights reserved."
 ```
+
+!!!
+All configurations are optional. If a config is not set, Retype will use default values.
+!!!
