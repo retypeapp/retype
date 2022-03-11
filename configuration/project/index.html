@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700266559536" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700272141234" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700266559536" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700272141234" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700266559536" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700266559536" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700272141234" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700272141234" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -825,15 +825,39 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
         <span>googleAnalytics</span>
     </h3>
 </doc-anchor-target>
-<p>Add Google Analytics to your website.</p>
+<p>Add <a href="https://analytics.google.com/analytics/web/">Google Analytics</a> to your website.</p>
 <doc-panel id="googleanalytics-id-string">
     <template #title>googleAnalytics.id : <code v-pre>string</code></template>
 <p>Google Analytics ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">integrations:
   googleAnalytics:
-    id: UA-12345678-1</code></pre>
+    id: &lt;id&gt;</code></pre>
 </doc-codeblock></div>
+<p>Replace the <code v-pre>&lt;id&gt;</code> with your Google Analytics measurement id. For example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  googleAnalytics:
+    id: A-BCDEFGHIJ1</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="googletagmanager">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#googletagmanager">#</doc-anchor-trigger>
+        <span>googleTagManager</span>
+    </h3>
+</doc-anchor-target>
+<p>Add the <a href="https://tagmanager.google.com/">Google Tag Manager</a> to your website.</p>
+<doc-panel id="googletagmanager-id-string">
+    <template #title>googleTagManager.id : <code v-pre>string</code></template>
+<p>Google Tag manager ID value.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  googleTagManager:
+    id: &lt;id&gt;</code></pre>
+</doc-codeblock></div>
+<p>Replace the <code v-pre>&lt;id&gt;</code> with your Google Tag Manager measurement id.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="gravatar">
@@ -934,6 +958,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </h3>
 </doc-anchor-target>
 <p><a href="https://plausible.io/">Plausible.io</a> is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.</p>
+<hr />
 <doc-anchor-target id="plausibledomain">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#plausibledomain">#</doc-anchor-trigger>
