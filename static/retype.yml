@@ -28,21 +28,21 @@ branding:
   logoAlign: right               # Align the logo to the right or the left.
   label: Docs # Optional label. To remove the label, remove this config.
   colors:
-    label:
-      text: "#ffffff" # Custom color for the label text.
+    label:                  # Label colors
+      text: "#ffffff"       # Custom color for the label text.
       background: "#ff0000" # Custom color for the label background.
 
 # -----------------------------------------------------------------------------
 
 links: # A list of custom links to add to the top bar of the generated website.
        # See also: footer.links
-  - text: Home       # The text to use for the link
+  - text: Home      # The text to use for the link
     link: https://example.com/ # Link to an internal file or external URL.
   - text: API
-    link: /api.md    # Link to an internal file or external URL.
-    icon: gear       # A custom icon name, :emoji:, <svg>, or path to a file.
-    iconAlign: right # Icon alignment, to the right or left.
-    target: blank    # Custom target. Use blank to open link in a new window.
+    link: /api.md   # Link to an internal file or external URL.
+    icon: gear      # A custom icon name, :emoji:, <svg>, or path to a file.
+    iconAlign: left # Icon alignment, to the left or right. Default is left.
+    target: blank   # Custom target. Use blank to open link in a new window.
 
 # -----------------------------------------------------------------------------
 
