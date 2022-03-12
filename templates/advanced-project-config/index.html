@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700354346154" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700358394784" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700354346154" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700358394784" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700354346154" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700354346154" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700358394784" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700358394784" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -252,24 +252,22 @@
         <span>Advanced project config</span>
     </h1>
 </doc-anchor-target>
-<p>The following <code v-pre>retype.yml</code> includes all possible <a href="/configuration/project/">project configuration</a> options.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>All configurations are optional. If a config is not set, Retype will use default values.</p>
-        </div>
+<p>The following <code v-pre>retype.yml</code> sample includes all possible <a href="/configuration/project/">project configuration</a> options.</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Download retype.yml</span>
     </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>retype.yml</span>
+        <span class="inline-block ml-2">7.12KB</span>
+    </div>
+    <a href="/static/retype.yml" class="absolute block inset-0" target="_blank" download="retype.yml"></a>
 </div>
+</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: ./ # The local path from this retype.yml file to your content files.
@@ -437,6 +435,23 @@ templating:
                 # If true, Retype is incompatible with
                 # GitBook style of component configuration.</code></pre>
 </doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>All configurations are optional. If a config is not set, Retype will use default values.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
