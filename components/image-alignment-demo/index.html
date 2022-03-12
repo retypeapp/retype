@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
+    <!-- Add content to _includes/head-top.html to include here -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLTYMRVPG4"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HLTYMRVPG4');</script>
 
@@ -34,13 +36,17 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700372303284" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700376660491" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700372303284" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700376660491" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700372303284" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700376660491" defer></script>
+
+    <!-- Add content to _includes/head.html to include here -->
 </head>
 <body>
+    <!-- Add content to _includes/body-top.html to include here -->
+
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
         <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
             <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
@@ -229,6 +235,7 @@
                             <div id="docs-sidebar-right-toggle"></div>
                            
                             <!-- Page content  -->
+<!-- start of _includes/top.md -->
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -246,6 +253,7 @@
         </div>
     </div>
 </div>
+<!-- end of _includes/top.md -->
 <doc-anchor-target id="image-alignment-demo" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#image-alignment-demo">#</doc-anchor-trigger>
@@ -328,6 +336,7 @@
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
 <p>Photo by <a href="https://unsplash.com/@carlosaranda">carlos aranda</a> on <a href="https://unsplash.com/">Unsplash</a>.</p>
+<!-- Add content to _includes/bottom.md to include here -->
 
                             
                             <!-- Required only on API pages -->
@@ -372,5 +381,7 @@
 
     <script>window.__DOCS__ = { "title": "Image alignment demo", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <!-- Add content to _includes/body.html to include here -->
 </body>
 </html>

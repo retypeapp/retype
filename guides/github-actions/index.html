@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
+    <!-- Add content to _includes/head-top.html to include here -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLTYMRVPG4"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HLTYMRVPG4');</script>
 
@@ -32,14 +34,18 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700372303284" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700376660491" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700372303284" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700376660491" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700372303284" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700372303284" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700376660491" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700376660491" defer></script>
+
+    <!-- Add content to _includes/head.html to include here -->
 </head>
 <body>
+    <!-- Add content to _includes/body-top.html to include here -->
+
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
         <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
     
@@ -229,6 +235,7 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
+<!-- start of _includes/top.md -->
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -246,6 +253,7 @@
         </div>
     </div>
 </div>
+<!-- end of _includes/top.md -->
 <doc-anchor-target id="github-actions" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#github-actions">#</doc-anchor-trigger>
@@ -366,6 +374,7 @@ jobs:
     </h2>
 </doc-anchor-target>
 <p>Once <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">Step 1</doc-anchor-trigger> is complete, configure your <a href="../../hosting/github-pages/#step-2-configure-github-pages">GitHub Pages</a> setup.</p>
+<!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -453,5 +462,7 @@ jobs:
 
     <script>window.__DOCS__ = { "title": "GitHub Actions", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <!-- Add content to _includes/body.html to include here -->
 </body>
 </html>
