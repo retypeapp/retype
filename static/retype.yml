@@ -159,6 +159,6 @@ snippets:      # Custom code snippets configuration.
 
 templating:
   enabled: true # Enable or disable the Retype content templating engine.
-  liquid: false # Is Liquid syntax {% ... %} is enabled?
+  liquid: false # Is Liquid syntax {% ... %} enabled?
                 # If true, Retype is incompatible with
                 # GitBook style of component configuration.
