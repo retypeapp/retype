@@ -5,7 +5,7 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v2.0
+  label: v2
 
 meta:
   title: " - Generate, publish, and share documentation"
