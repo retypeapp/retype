@@ -184,6 +184,11 @@ Specifies the approach Retype will use for cache invalidation.
 
 Default is `query`.
 
+```yml
+cache:
+  strategy: query
+```
+
 Below are demo URLs generated for corresponding `cache.busting.strategy` options:
 
 ~~~html `strategy: none`
@@ -309,6 +314,26 @@ edit:
   repo: "https://github.com/your-organization/your-repo"
   label: Edit on GitHub
 ```
+===
+
+---
+
+## editor
+
+Custom configuration to control the page live editor functionality that is only available when `retype watch` is running.
+
+### enabled
+
+To enable or disable the live editor. Default is `true`.
+
+=== enabled : `boolean`
+Set to `false` to disable and hide the live editor.
+
+```yml
+editor:
+  enabled: false # Default is true
+```
+
 ===
 
 ---
@@ -468,7 +493,7 @@ More `integrations` will be added over time. Do you have an integration suggesti
 
 ### googleAnalytics
 
-Add Google Analytics to your website.
+Add [Google Analytics](https://analytics.google.com/analytics/web/) to your website.
 
 === googleAnalytics.id : `string`
 Google Analytics ID value.
@@ -476,8 +501,35 @@ Google Analytics ID value.
 ```yml
 integrations:
   googleAnalytics:
-    id: UA-12345678-1
+    id: <id>
 ```
+
+Replace the `<id>` with your Google Analytics measurement id. For example:
+
+```yml
+integrations:
+  googleAnalytics:
+    id: A-BCDEFGHIJ1
+```
+
+===
+
+---
+
+### googleTagManager
+
+Add the [Google Tag Manager](https://tagmanager.google.com/) to your website.
+
+=== googleTagManager.id : `string`
+Google Tag manager ID value.
+
+```yml
+integrations:
+  googleTagManager:
+    id: <id>
+```
+
+Replace the `<id>` with your Google Tag Manager measurement id.
 ===
 
 ---
@@ -522,6 +574,36 @@ Setting to `false` will show the default image or specified resource.
 Disabling Gravatar will also reset the default avatar to the Retype default.
 
 !!!
+
+===
+
+### plausible
+
+[Plausible.io](https://plausible.io/) is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.
+
+---
+
+### plausible.domain
+
+=== plausible.domain : `string`
+
+When you setup your project within Plausible, you enter a [`Domain`](https://plausible.io/docs/add-website) value which is then used to set the `integrations.plausible.domain` config within your `retype.yml` project configuration file.
+
+```yml
+integrations:
+  plausible:
+    domain: <string>
+```
+
+Plausible can also send statistics to [multiple](https://plausible.io/docs/plausible-script#can-i-send-stats-to-multiple-dashboards-at-the-same-time) dashboards by configuring a comma-separated list of domains. For example:
+
+```yml
+integrations:
+  plausible:
+    domain: domain1.com,domain2.com,subdomain.yourdomain.com
+```
+
+Check out the Plausible [documentation](https://plausible.io/docs/) for more details.
 
 ===
 
@@ -663,6 +745,11 @@ Switches between `soft` and `hard` line break modes. The option instructs Retype
 
 Default is `soft`.
 
+```yml
+markdown:
+  lineBreaks: soft # or, hard
+```
+
 ===
 
 ---
@@ -705,20 +792,33 @@ output: ./docs
 
 ---
 
+## poweredByRetype
+
+Controls whether to include or exclude the `Powered by Retype` branding.
+
+=== [!badge PRO] poweredByRetype : `boolean`
+With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
+
+```yml
+poweredByRetype: true # Set to `false` to remove.
+```
+===
+
+---
+
 ## search
 
 Customization of the website search component.
 
-### minChars
+### hotkeys
 
-=== minChars : `number`
-Min number of characters required in a search query. Default is `2`.
-
-The following sample demonstrates how to configure `search.minChars` with a new value:
+=== hotkeys : `list`
+Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
 
 ```yml
 search:
-  minChars: 3
+  hotkeys:
+    - "/"
 ```
 ===
 
@@ -733,27 +833,40 @@ search:
 ```
 ===
 
-### placeholder
+### minChars
 
-=== placeholder : `string`
-Placeholder text rendered on the search component. Default is `"Search"`.
+=== minChars : `number`
+Min number of characters required in a search query. Default is `2`.
+
+The following sample demonstrates how to configure `search.minChars` with a new value:
 
 ```yml
 search:
-  placeholder: Search
+  minChars: 3
 ```
 ===
 
-### hotkeys
+### mode
 
-=== hotkeys : `list`
-Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
+=== mode : `string`
+The search index creation mode. Default is `full`.
+
+Mode | Description
+--- | ---
+`full` | A full-text search index of the project content is made. Includes all headings and all text content.
+`partial` | All headings plus the first paragraph under each heading is used to create the search index. The Page `description` config is also included if not empty.
+`basic` | All headings plus only the first paragraph of each page is used to create the search index. The Page `description` config is also included if not empty.
+
+The following sample demonstrates how to configure `search.mode` with a new value:
 
 ```yml
 search:
-  hotkeys:
-    - "/"
+  mode: partial
 ```
+
+!!!
+If your project includes a lot of content and your users find the search is running too slow, try changing to `mode: partial` or even a `mode: basic` if the website is really huge.
+!!!
 ===
 
 ### noResultsFoundMsg
@@ -764,6 +877,17 @@ Message rendered when no results were found. Default is `"Sorry, no results foun
 ```yml
 search:
   noResultsFoundMsg: Sorry, no results found.
+```
+===
+
+### placeholder
+
+=== placeholder : `string`
+Placeholder text rendered on the search component. Default is `"Search"`.
+
+```yml
+search:
+  placeholder: Search
 ```
 ===
 
@@ -946,6 +1070,42 @@ snippets:
   lineNumbers:
     - none
 ```
+===
+
+---
+
+## templating
+
+Configurations to control the Retype content templating engine for this project.
+
+### enabled
+
+=== enabled : `boolean`
+
+A project-wide option to enable or disable the Retype content templating engine. Default is `true`.
+
+```yml
+templating:
+  enabled: true # Set to false to diable
+```
+
+The templating engine can also be disabled on a per-page basis by setting `templating: false` in the page metadata.
+
+===
+
+### liquid
+
+=== liquid : `boolean`
+
+Specifies if Liquid syntax `{% ... %}` is enabled. If `liquid: true` is set, Retype is incompatible with GitBook style of component configuration.
+
+Default is `false`.
+
+```yml
+templating:
+  liquid: false # Set to true to enable
+```
+
 ===
 
 ---

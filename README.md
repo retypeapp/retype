@@ -51,57 +51,35 @@ All operating systems are supported, including Mac, Windows, and Linux.
 
 ---
 
-## Live reload
-
-If a change is detected, such as editing and saving an `.md` file, your Retype website will be updated almost instantly within the browser.
-
-The `retype watch` command runs the following three commands and listens for any new changes in your content.
-
-```
-retype init
-retype build
-retype run
-```
-
-After running `retype watch`, edit any `.md` file and see your change appear in the browser.
-
-<!--
-!!! COMING SOON
-
-Retype can also build amazing reference documentation based upon your projects source code. C# projects are currently in beta support, TypeScript is coming soon, and there are plans for many more languages in the future.
-
-Just point Retype at a C# project and reference documentation will be generated based on your library's source code, code comments, and metadata.
-
-!!!
--->
-
----
-
 ## Features
 
-#### :tada: It just works
+#### :icon-shield-check: It just works
 
 Retype has been built to be easy to use and should _"just work"_ out-of-the-box without any special configuration or troublesome setup.
 
-#### :zap: Lightning fast
+#### :icon-zap: Lightning fast
 
 Don't blink. Retype was built for speed.
 
-#### :white_check_mark: Easy install
+#### :icon-gear: Easy install
 
-[Installation](guides/getting-started.md) takes only a few seconds. Then you need at least one Markdown `.md` file which Retype will start building a new website from.
+[Installation](guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown `.md` file which Retype will start building a new website from.
 
-#### :muscle: Powerful
+#### :icon-plug: Powerful
 
 Project level [configuration](configuration/project.md) using `retype.yml` unlocks many more Retype features and customization.
 
-#### :pencil2: Simple formatting
+#### :icon-pencil: Simple formatting
 
-Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [components](components/readme.md). Page level [configuration](configuration/page.md) is available, such as customizing the navigation `label` or `description` used by search engines.
+Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [components](components/readme.md). Page level [configuration](configuration/page.md) is available, such as setting a custom navigation [`label`](configuration/page.md#label) or [`icon`](configuration/page.md#icon).
 
-#### :computer: Host anywhere
+#### :icon-sync: Live reload
 
-Retype generates a basic HTML website that you can host on any web hosting service, such as [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
+If a change is detected, such as editing and saving an `.md` file, your Retype website will be updated almost instantly within the browser.
+
+#### :icon-server: Host anywhere
+
+Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
 
 ---
 

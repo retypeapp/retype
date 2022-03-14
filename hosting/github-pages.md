@@ -6,7 +6,7 @@ tags: [ hosting ]
 
 Hosting your Retype built website on [GitHub Pages](https://pages.github.com/) is free and simple to setup.
 
-## Step 1: Add `retype.yml` workflow
+## Step 1: Add `retype-action.yml` workflow
 
 We first recommend adding the Retype [Build Action](../guides/github-actions.md) to your project to automate the building and deployment of your Retype powered website.
 
@@ -16,7 +16,7 @@ We first recommend adding the Retype [Build Action](../guides/github-actions.md)
 
 With a some simple configuration, GitHub can host your website for free.
 
-To get started, navigate to the **Settings**> > **Pages** page of your repo. The URL should be the following, although you will need to replace `<organization>` and `<repo>` with your values:
+To get started, navigate to the **Settings** > **Pages** page of your repo. The URL should be the following, although you will need to replace `<organization>` and `<repo>` with your values:
 
 ```
 https://github.com/<organization>/<repo>/settings/pages
@@ -26,7 +26,7 @@ https://github.com/<organization>/<repo>/settings/pages
 
 By default, the Retype Action will publish your website to a `retype` branch, although you can configure to host from any branch.
 
-If you have committed the `retype.yml` file as detailed in [Step 1](#step-1-add-retypeyml-workflow), you should now have a `retype` branch available within the list. Select `retype` then click the **Save** button.
+If you have committed the `retype-action.yml` file as detailed in [Step 1](#step-1-add-retype-actionyml-workflow), you should now have a `retype` branch available within the list. Select `retype` then click the **Save** button.
 
 ![](../static/github-actions-configure-branch.png)
 
