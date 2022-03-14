@@ -11,18 +11,17 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 Available: Q1 2022
 
-- [x] New `partials` support
-- [x] New `variables` support
-- [x] New content templating support
-- [x] New line highlighting in code blocks
 - [x] New redesign of Search results
-- [x] New `full`, `partial`, and `basic` search index modes
-- [x] New `ghost` variant on Button, Badge, and Alert
+- [x] New Page content live editor
+- [x] New `full`, `partial`, and `basic` search index [modes](configuration/project/#mode)
+- [x] New content templating
+- [x] New line highlighting in code blocks
+- [x] New `ghost` variant on [Button](components/button/#variants), [Badge](components/badge/#variants), and [Alert](components/alert/#variants)
 - [x] New custom site-wide includes for `<head>`, `<body>`, `top.md`, and `bottom.md`
 - [x] New support for custom Generic Attributes on Markdown components
-- [x] New support for images above top `H1` heading
-- [x] New Google Tag Manager integration
-- [x] New Plausible IO integration
+- [x] New support for images above top `h1` heading
+- [x] New [Google Tag Manager](configuration/project/#googletagmanager) integration
+- [x] New [Plausible](configuration/project/#plausible) IO integration
 - [x] New page limit handling in `retype watch` mode
 - [x] Include [`description`](configuration/page.md#description) in search index
 - [x] Any feature requests? Please [let us know](https://github.com/retypeapp/retype/discussions/)
