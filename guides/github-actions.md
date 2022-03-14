@@ -55,9 +55,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: retypeapp/action-build@v1
+      - uses: retypeapp/action-build@v2
 
-      - uses: retypeapp/action-github-pages@v1
+      - uses: retypeapp/action-github-pages@v2
         with:
           update-branch: true
 ```
@@ -82,7 +82,7 @@ If your project requires a Retype License Key, that key can be configured by add
 
 {%{
 ```yml
-- uses: retypeapp/action-build@v1
+- uses: retypeapp/action-build@v2
   with:
     license: ${{ secrets.RETYPE_SECRET }}
 ```
@@ -107,11 +107,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: retypeapp/action-build@v1
+      - uses: retypeapp/action-build@v2
         with:
           license: {%{${{ secrets.RETYPE_SECRET }}}%}
 
-      - uses: retypeapp/action-github-pages@v1
+      - uses: retypeapp/action-github-pages@v2
         with:
           update-branch: true
 ```
