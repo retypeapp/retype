@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700684276297" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.700886372920" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700684276297" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700886372920" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700684276297" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700684276297" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700886372920" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700886372920" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -261,7 +261,7 @@
 <p>The following is a basic <code v-pre>retype.yml</code> <a href="/configuration/project/">project configuration</a> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">input: .
+<pre class="language-yaml"><code v-pre class="language-yaml">input: ./
 output: .retype
 url: # Add your website address here
 branding:
