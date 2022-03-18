@@ -89,4 +89,4 @@ Technical support questions are best asked in the [Discussions](https://github.c
 
 If you find a defect or would like to submit a feature request, please create an [Issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
 
-Do you have a general inquiry? Please feel free to contact us at hello@object.net.
+Do you have a general inquiry? Please feel free to contact us at hello@retype.com.

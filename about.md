@@ -11,7 +11,7 @@ Did you find a bug? Please create an [Issue](https://github.com/retypeapp/retype
 
 Would you like to make a feature request. Please either start a [Discussion](https://github.com/retypeapp/retype/discussions) or create an [Issue](https://github.com/retypeapp/retype/issues).
 
-Do you have a general inquiry? Please feel free to contact us at [hello@object.net](mailto:hello@object.net).
+Do you have a general inquiry? Please feel free to contact us at [hello@retype.com](mailto:hello@retype.com).
 
 ## Credits :clap:
 
