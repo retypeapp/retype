@@ -68,7 +68,7 @@ retype init
 Calling the `retype init` command will create a simple `retype.yml` file with the following default values:
 
 ```yml Sample retype.yml
-input: ./
+input: .
 output: .retype
 url: # Add your website address here
 branding:

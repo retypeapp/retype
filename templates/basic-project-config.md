@@ -6,7 +6,7 @@ order: 1000
 The following is a basic `retype.yml` [project configuration](/configuration/project.md) file.
 
 ```yml retype.yml
-input: ./
+input: .
 output: .retype
 url: # Add your website address here
 branding:
