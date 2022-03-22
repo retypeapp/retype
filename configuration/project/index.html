@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.700952242793" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.701234001074" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.700952242793" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.701234001074" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.700952242793" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.700952242793" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.701234001074" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.701234001074" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -809,31 +809,33 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </div>
 </div>
 <p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
-<p>The following sample demonstrates how to include all <code v-pre>.py</code> files and the entire contents of any <code v-pre>www</code> folder within the project.</p>
+<p>The following sample demonstrates how to include all <code v-pre>.py</code> files, all <code v-pre>.js</code> file that start with the name <code v-pre>demo</code>, and the entire contents of any <code v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Include patterns</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">include:
-  - *.py
-  - **/www/**</code></pre>
+  - &quot;*.py&quot;
+  - &quot;demo*.js&quot;
+  - &quot;**/www/**&quot;</code></pre>
 </doc-codeblock></div>
-<p>You could explicitly include everything in your project with <code v-pre>include: [ * ]</code>, BUT be careful as all files within your <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
+<p>You could explicitly include everything in your project with <code v-pre>include: [ &quot;*&quot; ]</code>, but be careful as all files within your <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
 <p>Retype treats all <code v-pre>.md</code> and <code v-pre>.yml</code> files as parsable content files that will be converted into <code v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code v-pre>output</code> unchanged and become static files that can be linked to.</p>
 <p>By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the <code v-pre>output</code> unchanged. If you require any other file types, they would need to be explicitly added to the <code v-pre>include</code> config.</p>
-<p>Included file types:</p>
+<p>File types that are automatically included:</p>
 <ul>
+<li><code v-pre>*.ai</code></li>
+<li><code v-pre>*.bmp</code></li>
+<li><code v-pre>*.eps</code></li>
 <li><code v-pre>*.gif</code></li>
 <li><code v-pre>*.heif</code></li>
 <li><code v-pre>*.jpeg</code></li>
 <li><code v-pre>*.jpg</code></li>
+<li><code v-pre>*.pdf</code></li>
 <li><code v-pre>*.png</code></li>
 <li><code v-pre>*.svg</code></li>
-<li><code v-pre>*.webp</code></li>
-<li><code v-pre>*.ai</code></li>
-<li><code v-pre>*.bmp</code></li>
-<li><code v-pre>*.eps</code></li>
-<li><code v-pre>*.pdf</code></li>
 <li><code v-pre>*.tiff</code></li>
 <li><code v-pre>*.txt</code></li>
+<li><code v-pre>*.webp</code></li>
+<li><code v-pre>*.zip</code></li>
 </ul>
 <p>By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the <code v-pre>output</code> unchanged. If you require any other folders, please add to the <code v-pre>include</code> config.</p>
 <p>Included folders:</p>
