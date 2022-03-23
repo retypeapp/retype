@@ -427,7 +427,7 @@ That file or file type does not need to be explicitly configured to be included.
 
 Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
-The following sample demonstrates how to include all `.py` files, all `.js` file that start with the name `demo`, and the entire contents of any `www` folder within the project.
+The following sample demonstrates how to include all `.py` files, all `.js` files that start with the name `demo`, and the entire contents of any `www` folder within the project.
 
 ```yml Include patterns
 include:
@@ -449,6 +449,8 @@ File types that are automatically included:
 - `*.eps`
 - `*.gif`
 - `*.heif`
+- `*.htm`
+- `*.html`
 - `*.jpeg`
 - `*.jpg`
 - `*.pdf`
