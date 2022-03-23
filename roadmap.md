@@ -15,9 +15,9 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 Available: Early April 2022
 
-+++ New :icon-shield-check:
++++ Planned :icon-unverified:
 
-- [x] `generator.recase` project config to instruct Retype on when to recase file and folder names.
+- [ ] `generator.recase` project config to instruct Retype on when to recase file and folder names.
 
 +++
 
