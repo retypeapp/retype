@@ -79,24 +79,27 @@ If a code language is used, separate the `title` from the `lang` by one space. T
 
 Highlight a specific line or range of lines in a code block component using the line highlighting syntax.
 
-After the opening three-back-ticks of a code block component, add a space and then start your line highlighting configuration with a `#` character.
+After the opening `` ``` `` of a code block component, add a space and then start your line highlighting configuration with a `#` character. For instance, to highlight the first line, use `` ``` #1 ``.
+
+Here are a few other common scenarios with additional samples below:
 
 Scenario | Sample | Description
 --- | --- | ---
-Single line | `#15`    | Highlight line 15
-Line range  | `#15-20` | Highlight lines 15 to 20
-Single line and a range | `#1,15-20` | Highlight line 1 and 15 to 20
-Multiple line ranges | `#1-5,15-20` | Highlight lines 1 to 5 and 15 to 20
-Remove line numbering | `!#15-20` | Remove line numbering and still highlight lines 15 to 20
+Single line | `#2`    | Highlight line #2
+Line range  | `#2-5` | Highlight lines #2 to #5
+Single line and a range | `#2,4-8` | Highlight line #2 and lines #4 to #8
+Multiple line ranges | `#1-2,4-8` | Highlight lines #1 to #2 and lines #4 to #8.
+Remove line numbering | `!#4-8` | Remove line numbering and highlight lines #4 to #8
 
 ### Single line
 
-The following sample demonstrates how to highlight a single line number
+Highlight a single line number.
 
 +++ :icon-code: Source
 
 ~~~
 ```js #2
+
 ```
 ~~~
 
@@ -108,14 +111,15 @@ The following sample demonstrates how to highlight a single line number
 
 +++
 
-### Range of lines
+### Line range
 
-The following sample demonstrates how to highlight a range of lines.
+Highlight a range of lines by separating the start and end line number with a `-` dash.
 
 +++ :icon-code: Source
 
 ~~~md
 ```js #2-5
+
 ```
 ~~~
 
@@ -127,14 +131,15 @@ The following sample demonstrates how to highlight a range of lines.
 
 +++
 
-### Several ranges
+### Multiple ranges
 
-The following sample demonstrates how to configure multiple line ranges.
+Configure multiple line ranges by separating each block with a `,` comma.
 
 +++ :icon-code: Source
 
 ~~~md
 ```js #1-2,4-8
+
 ```
 ~~~
 
@@ -148,12 +153,13 @@ The following sample demonstrates how to configure multiple line ranges.
 
 ### With no line numbers
 
-The following sample demonstrates how to disable the default line numbering but still highlight a line or line range.
+Disable the default line numbering but still highlight a line or range of lines.
 
 +++ :icon-code: Source
 
 ~~~md
 ```js !#2,4-8
+
 ```
 ~~~
 
@@ -167,12 +173,13 @@ The following sample demonstrates how to disable the default line numbering but 
 
 ### Using attribute syntax
 
-Configuring using the `highlight` attribute syntax is also supported by Retype.
+Configuring line highlighting using the `highlight` attribute syntax is also supported by Retype.
 
 +++ :icon-code: Source
 
 ~~~md
 ```js:highlight="1-2,4-8"
+
 ```
 ~~~
 
