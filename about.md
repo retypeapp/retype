@@ -28,7 +28,7 @@ Retype is only made possible because of the hard work of other amazing open-sour
 | [Lunr](http://lunrjs.com/)                               | [MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE)             | Search index                                                          |
 | [Prism](https://prismjs.com/)                            | [MIT](https://github.com/PrismJS/prism/blob/master/LICENSE)                | [Code block](components/code-block.md#syntax-highlighting) formatting |
 | [Mermaid](https://mermaid-js.github.io/mermaid/)         | [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE)          | [Mermaid](components/mermaid.md) diagrams                             |
-| [KaTeX](https://github.com/KaTeX/KaTeX)                  | [MIT](https://github.com/KaTeX/KaTeX/blob/master/LICENSE)                  | [Math formula](components/math-formulas.md) rendering                  |
+| [KaTeX](https://github.com/KaTeX/KaTeX)                  | [MIT](https://github.com/KaTeX/KaTeX/blob/master/LICENSE)                  | [Math formula](components/math-formulas.md) rendering                 |
 | [Clipboard.js](https://clipboardjs.com)                  | [MIT](https://clipboardjs.com/)                                            | Code block copy to clipboard                                          |
 | [YamlDotNet](https://github.com/aaubry/YamlDotNet)       | [MIT](https://github.com/aaubry/YamlDotNet/blob/master/LICENSE.txt)        | YAML parsing                                                          |
 
