@@ -53,6 +53,14 @@ Options:
   -?, -h, --help         Show help and usage information
 ```
 
+!!!danger
+While it is technically possible to host your website publicly using `retype watch` and the web server built into Retype, **DON'T DO IT**.
+
+You should use a dedicated website hosting service, such as [GitHub Pages](/hosting/github-pages.md), or any other web hosting service.
+
+If you _really really really_ want to try public hosting using the built in web server, use [`retype run`](#retype-run).
+!!!
+
 ---
 
 ## `retype init`
