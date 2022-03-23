@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.0.701243972707" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.701309492629" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.701243972707" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.701309492629" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.701243972707" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.701243972707" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.701309492629" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.701309492629" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -809,7 +809,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </div>
 </div>
 <p>Include patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
-<p>The following sample demonstrates how to include all <code v-pre>.py</code> files, all <code v-pre>.js</code> file that start with the name <code v-pre>demo</code>, and the entire contents of any <code v-pre>www</code> folder within the project.</p>
+<p>The following sample demonstrates how to include all <code v-pre>.py</code> files, all <code v-pre>.js</code> files that start with the name <code v-pre>demo</code>, and the entire contents of any <code v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Include patterns</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">include:
@@ -827,6 +827,8 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <li><code v-pre>*.eps</code></li>
 <li><code v-pre>*.gif</code></li>
 <li><code v-pre>*.heif</code></li>
+<li><code v-pre>*.htm</code></li>
+<li><code v-pre>*.html</code></li>
 <li><code v-pre>*.jpeg</code></li>
 <li><code v-pre>*.jpg</code></li>
 <li><code v-pre>*.pdf</code></li>
