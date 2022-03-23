@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701383522108" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701388641764" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701383522108" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701388641764" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701383522108" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701383522108" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701388641764" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701388641764" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -243,21 +243,21 @@
 <p>Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
-        <span>Demo</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</span>
     </div>
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
-        <span>Source</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</span>
     </div>
     <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">A basic code block</code></pre>
-</doc-codeblock></div>
-    </div>
-    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```
 A basic code block
 ```</code></pre>
+</doc-codeblock></div>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">A basic code block</code></pre>
 </doc-codeblock></div>
     </div>
 </div>
@@ -272,21 +272,21 @@ A basic code block
 <p>In the following sample, we configure JavaScript syntax highlighting for the code block by adding the <code v-pre>js</code> language identifier.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
-        <span>Demo</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</span>
     </div>
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
-        <span>Source</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</span>
     </div>
     <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-    </div>
-    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
+</doc-codeblock></div>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
 </doc-codeblock></div>
     </div>
 </div>
@@ -299,42 +299,249 @@ const msg = &quot;hello, world&quot;;
 </doc-anchor-target>
 <p>Retype includes the functionality to set a title on your markdown code blocks.</p>
 <doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Code block title</div>
-<pre class="language-none"><code v-pre class="language-none">const msg = &quot;Set a code block title&quot;;</code></pre>
-</doc-codeblock></div>
-</doc-tab>
 <doc-tab id="source">
-<template #title>Source</template>
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">``` Code block title
 const msg = &quot;Set a code block title&quot;;
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Code block title</div>
+<pre class="language-none"><code v-pre class="language-none">const msg = &quot;Set a code block title&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 </doc-tabs>
 <p>The title can be used in conjunction with the code reference type.</p>
 <doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Code block title</div>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Set a code block title&quot;;</code></pre>
-</doc-codeblock></div>
-</doc-tab>
 <doc-tab id="source">
-<template #title>Source</template>
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js Code block title
 const msg = &quot;Set a code block title&quot;;
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Code block title</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Set a code block title&quot;;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 </doc-tabs>
 <p>The <code v-pre>title</code> should be separated from the opening fence by one space, for example the pattern <code v-pre> ``` Code block title</code> is recommended.</p>
 <p>If a code language is used, separate the <code v-pre>title</code> from the <code v-pre>lang</code> by one space. The pattern <code v-pre> ```js Code block title</code> will work as expected.</p>
+<hr />
+<doc-anchor-target id="line-highlighting">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#line-highlighting">#</doc-anchor-trigger>
+        <span>Line highlighting</span>
+    </h2>
+</doc-anchor-target>
+<p>Highlight a specific line or range of lines in a code block component using the line highlighting syntax.</p>
+<p>After the opening three-back-ticks of a code block component, add a space and then start your line highlighting configuration with a <code v-pre>#</code> character.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Sample</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single line</td>
+<td><code v-pre>#15</code></td>
+<td>Highlight line 15</td>
+</tr>
+<tr>
+<td>Line range</td>
+<td><code v-pre>#15-20</code></td>
+<td>Highlight lines 15 to 20</td>
+</tr>
+<tr>
+<td>Single line and a range</td>
+<td><code v-pre>#1,15-20</code></td>
+<td>Highlight line 1 and 15 to 20</td>
+</tr>
+<tr>
+<td>Multiple line ranges</td>
+<td><code v-pre>#1-5,15-20</code></td>
+<td>Highlight lines 1 to 5 and 15 to 20</td>
+</tr>
+<tr>
+<td>Remove line numbering</td>
+<td><code v-pre>!#15-20</code></td>
+<td>Remove line numbering and still highlight lines 15 to 20</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="single-line">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#single-line">#</doc-anchor-trigger>
+        <span>Single line</span>
+    </h3>
+</doc-anchor-target>
+<p>The following sample demonstrates how to highlight a single line number</p>
+<doc-tabs>
+<doc-tab id="source">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">```js #2
+```</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2"><code v-pre class="language-javascript">export function calculateOffset(): number {
+    const siteHeaderEl = document.getElementById(&quot;docs-site-header&quot;);
+    const toolbarEl = document.getElementById(&quot;docs-toolbar&quot;);
+
+    let offset = 20; // 20 is extra offset added before the focused element
+    offset += siteHeaderEl ? siteHeaderEl.offsetHeight : 0;
+    offset += toolbarEl ? toolbarEl.offsetHeight : 0;
+
+    return -offset;
+}
+</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="range-of-lines">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#range-of-lines">#</doc-anchor-trigger>
+        <span>Range of lines</span>
+    </h3>
+</doc-anchor-target>
+<p>The following sample demonstrates how to highlight a range of lines.</p>
+<doc-tabs>
+<doc-tab id="source">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">```js #2-5
+```</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2-5"><code v-pre class="language-javascript">export function calculateOffset(): number {
+    const siteHeaderEl = document.getElementById(&quot;docs-site-header&quot;);
+    const toolbarEl = document.getElementById(&quot;docs-toolbar&quot;);
+
+    let offset = 20; // 20 is extra offset added before the focused element
+    offset += siteHeaderEl ? siteHeaderEl.offsetHeight : 0;
+    offset += toolbarEl ? toolbarEl.offsetHeight : 0;
+
+    return -offset;
+}
+</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="several-ranges">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#several-ranges">#</doc-anchor-trigger>
+        <span>Several ranges</span>
+    </h3>
+</doc-anchor-target>
+<p>The following sample demonstrates how to configure multiple line ranges.</p>
+<doc-tabs>
+<doc-tab id="source">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">```js #1-2,4-8
+```</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="1-2,4-8"><code v-pre class="language-javascript">export function calculateOffset(): number {
+    const siteHeaderEl = document.getElementById(&quot;docs-site-header&quot;);
+    const toolbarEl = document.getElementById(&quot;docs-toolbar&quot;);
+
+    let offset = 20; // 20 is extra offset added before the focused element
+    offset += siteHeaderEl ? siteHeaderEl.offsetHeight : 0;
+    offset += toolbarEl ? toolbarEl.offsetHeight : 0;
+
+    return -offset;
+}
+</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="with-no-line-numbers">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#with-no-line-numbers">#</doc-anchor-trigger>
+        <span>With no line numbers</span>
+    </h3>
+</doc-anchor-target>
+<p>The following sample demonstrates how to disable the default line numbering but still highlight a line or line range.</p>
+<doc-tabs>
+<doc-tab id="source">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">```js !#2,4-8
+```</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript" data-line="2,4-8"><code v-pre class="language-javascript">export function calculateOffset(): number {
+    const siteHeaderEl = document.getElementById(&quot;docs-site-header&quot;);
+    const toolbarEl = document.getElementById(&quot;docs-toolbar&quot;);
+
+    let offset = 20; // 20 is extra offset added before the focused element
+    offset += siteHeaderEl ? siteHeaderEl.offsetHeight : 0;
+    offset += toolbarEl ? toolbarEl.offsetHeight : 0;
+
+    return -offset;
+}
+</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="using-attribute-syntax">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-attribute-syntax">#</doc-anchor-trigger>
+        <span>Using attribute syntax</span>
+    </h3>
+</doc-anchor-target>
+<p>Configuring using the <code v-pre>highlight</code> attribute syntax is also supported by Retype.</p>
+<doc-tabs>
+<doc-tab id="source">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">```js:highlight=&quot;1-2,4-8&quot;
+```</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript" data-line="1-2,4-8"><code v-pre class="language-javascript">export function calculateOffset(): number {
+    const siteHeaderEl = document.getElementById(&quot;docs-site-header&quot;);
+    const toolbarEl = document.getElementById(&quot;docs-toolbar&quot;);
+
+    let offset = 20; // 20 is extra offset added before the focused element
+    offset += siteHeaderEl ? siteHeaderEl.offsetHeight : 0;
+    offset += toolbarEl ? toolbarEl.offsetHeight : 0;
+
+    return -offset;
+}
+</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="line-numbers">
     <h2>
@@ -345,39 +552,39 @@ const msg = &quot;Set a code block title&quot;;
 <p>Adding or removing line numbering for your code blocks can be configured by adding the <code v-pre>#</code> specifier character to the first line after the reference language.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
-        <span>Demo</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</span>
     </div>
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
-        <span>Source</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</span>
     </div>
     <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-    </div>
-    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js #
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
 </doc-codeblock></div>
     </div>
+    <div class="docs-columns-code docs-columns-content">
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
+</doc-codeblock></div>
+    </div>
 </div>
 <p>You can also add a title after the <code v-pre>#</code>:</p>
 <doc-tabs>
-<doc-tab id="demo">
-<template #title>Demo</template>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Your title here</div>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-</doc-tab>
 <doc-tab id="source">
-<template #title>Source</template>
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js # Your title here
 const msg = &quot;hello, world&quot;;
 ```</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="demo">
+<template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</template>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Your title here</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;hello, world&quot;;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -421,21 +628,21 @@ const msg = &quot;hello, world&quot;;
 <p>If you configure a site wide <a href="http://localhost:5000/configuration/project/#snippets"><code v-pre>snippets</code></a> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
-        <span>Demo</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</span>
     </div>
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
-        <span>Source</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842l-5.576 3.584a.5.5 0 01-.77-.42z"/><path fill-rule="evenodd" d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"/></g></g></svg> Demo</span>
     </div>
     <div class="docs-columns-code docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
-</doc-codeblock></div>
-    </div>
-    <div class="docs-columns-code docs-columns-content">
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js !#
 const msg = &quot;Hello, world&quot;;
 ```</code></pre>
+</doc-codeblock></div>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const msg = &quot;Hello, world&quot;;</code></pre>
 </doc-codeblock></div>
     </div>
 </div>
