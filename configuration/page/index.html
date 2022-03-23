@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701389854905" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701390664893" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701389854905" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701390664893" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701389854905" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701389854905" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701390664893" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701390664893" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -920,6 +920,22 @@ tags:
 </doc-codeblock></div>
 </doc-panel>
 <hr />
+<doc-anchor-target id="templating">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#templating">#</doc-anchor-trigger>
+        <span>templating</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="templating-boolean">
+    <template #title>templating: <code v-pre>boolean</code></template>
+<p>Templating can be disabled on a per-page basis by setting <code v-pre>templating: false</code> in the page metadata.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">---
+templating: false
+---</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
 <doc-anchor-target id="title">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
@@ -928,7 +944,8 @@ tags:
 </doc-anchor-target>
 <doc-panel id="title-string">
     <template #title>title : <code v-pre>string</code></template>
-<p>The <code v-pre>title</code> config instructs Retype to add a primary <code v-pre># Page Title</code> to your page, but it is recommended to manually add a <code v-pre># Page Title</code> to each of your pages, instead of setting a <code v-pre>title</code>. As a general rule, the actual content of your page should not be configured in the page metadata.</p>
+<p>The <code v-pre>title</code> config instructs Retype to add a primary <code v-pre># Page Title</code> to your page, but it is recommended to manually add a <code v-pre># Page Title</code> to each of your pages, instead of setting a <code v-pre>title</code>.</p>
+<p>As a general rule, the actual content of your page should not be configured in the page metadata.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
