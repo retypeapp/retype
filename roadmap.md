@@ -46,7 +46,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 - [x] Page content live editor during [`retype watch`](/guides/cli.md#retype-watch).
 - [x] Project configuration for `full`, `partial`, and `basic` search index [modes](/configuration/project.md#mode).
 - [x] Content templating.
-- [x] Line highlighting in code blocks.
+- [x] Line [highlighting](/components/code-block.md#line-highlighting) in code blocks.
 - [x] `ghost` variant on [Button](/components/button.md#variants), [Badge](/components/badge.md#variants), and [Alert](/components/alert.md#variants).
 - [x] Custom site-wide includes for `<head>`, `<body>`, `top.md`, and `bottom.md`.
 - [x] Support for custom generic attributes on Markdown components.
