@@ -581,11 +581,29 @@ tags:
 
 ---
 
+## templating
+
+=== templating: `boolean`
+
+Templating can be disabled on a per-page basis by setting `templating: false` in the page metadata.
+
+```md
+---
+templating: false
+---
+```
+
+===
+
+---
+
 ## title
 
 === title : `string`
 
-The `title` config instructs Retype to add a primary `# Page Title` to your page, but it is recommended to manually add a `# Page Title` to each of your pages, instead of setting a `title`. As a general rule, the actual content of your page should not be configured in the page metadata.
+The `title` config instructs Retype to add a primary `# Page Title` to your page, but it is recommended to manually add a `# Page Title` to each of your pages, instead of setting a `title`.
+
+As a general rule, the actual content of your page should not be configured in the page metadata.
 
 !!!
 The `title` is primarily used to support backwards compatibiity with the `.md` content style from other older legacy static site generator applications.
