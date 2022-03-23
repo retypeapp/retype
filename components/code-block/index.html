@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701388641764" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701389854905" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701388641764" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701389854905" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701388641764" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701388641764" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701389854905" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701389854905" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -343,7 +343,8 @@ const msg = &quot;Set a code block title&quot;;
     </h2>
 </doc-anchor-target>
 <p>Highlight a specific line or range of lines in a code block component using the line highlighting syntax.</p>
-<p>After the opening three-back-ticks of a code block component, add a space and then start your line highlighting configuration with a <code v-pre>#</code> character.</p>
+<p>After the opening <code v-pre>```</code> of a code block component, add a space and then start your line highlighting configuration with a <code v-pre>#</code> character. For instance, to highlight the first line, use <code v-pre>``` #1</code>.</p>
+<p>Here are a few other common scenarios with additional samples below:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -356,28 +357,28 @@ const msg = &quot;Set a code block title&quot;;
 <tbody>
 <tr>
 <td>Single line</td>
-<td><code v-pre>#15</code></td>
-<td>Highlight line 15</td>
+<td><code v-pre>#2</code></td>
+<td>Highlight line #2</td>
 </tr>
 <tr>
 <td>Line range</td>
-<td><code v-pre>#15-20</code></td>
-<td>Highlight lines 15 to 20</td>
+<td><code v-pre>#2-5</code></td>
+<td>Highlight lines #2 to #5</td>
 </tr>
 <tr>
 <td>Single line and a range</td>
-<td><code v-pre>#1,15-20</code></td>
-<td>Highlight line 1 and 15 to 20</td>
+<td><code v-pre>#2,4-8</code></td>
+<td>Highlight line #2 and lines #4 to #8</td>
 </tr>
 <tr>
 <td>Multiple line ranges</td>
-<td><code v-pre>#1-5,15-20</code></td>
-<td>Highlight lines 1 to 5 and 15 to 20</td>
+<td><code v-pre>#1-2,4-8</code></td>
+<td>Highlight lines #1 to #2 and lines #4 to #8.</td>
 </tr>
 <tr>
 <td>Remove line numbering</td>
-<td><code v-pre>!#15-20</code></td>
-<td>Remove line numbering and still highlight lines 15 to 20</td>
+<td><code v-pre>!#4-8</code></td>
+<td>Remove line numbering and highlight lines #4 to #8</td>
 </tr>
 </tbody>
 </table>
@@ -388,12 +389,13 @@ const msg = &quot;Set a code block title&quot;;
         <span>Single line</span>
     </h3>
 </doc-anchor-target>
-<p>The following sample demonstrates how to highlight a single line number</p>
+<p>Highlight a single line number.</p>
 <doc-tabs>
 <doc-tab id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```js #2
+
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
@@ -414,18 +416,19 @@ const msg = &quot;Set a code block title&quot;;
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="range-of-lines">
+<doc-anchor-target id="line-range">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#range-of-lines">#</doc-anchor-trigger>
-        <span>Range of lines</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#line-range">#</doc-anchor-trigger>
+        <span>Line range</span>
     </h3>
 </doc-anchor-target>
-<p>The following sample demonstrates how to highlight a range of lines.</p>
+<p>Highlight a range of lines by separating the start and end line number with a <code v-pre>-</code> dash.</p>
 <doc-tabs>
 <doc-tab id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">```js #2-5
+
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
@@ -446,18 +449,19 @@ const msg = &quot;Set a code block title&quot;;
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="several-ranges">
+<doc-anchor-target id="multiple-ranges">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#several-ranges">#</doc-anchor-trigger>
-        <span>Several ranges</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#multiple-ranges">#</doc-anchor-trigger>
+        <span>Multiple ranges</span>
     </h3>
 </doc-anchor-target>
-<p>The following sample demonstrates how to configure multiple line ranges.</p>
+<p>Configure multiple line ranges by separating each block with a <code v-pre>,</code> comma.</p>
 <doc-tabs>
 <doc-tab id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">```js #1-2,4-8
+
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
@@ -484,12 +488,13 @@ const msg = &quot;Set a code block title&quot;;
         <span>With no line numbers</span>
     </h3>
 </doc-anchor-target>
-<p>The following sample demonstrates how to disable the default line numbering but still highlight a line or line range.</p>
+<p>Disable the default line numbering but still highlight a line or range of lines.</p>
 <doc-tabs>
 <doc-tab id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">```js !#2,4-8
+
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
@@ -516,12 +521,13 @@ const msg = &quot;Set a code block title&quot;;
         <span>Using attribute syntax</span>
     </h3>
 </doc-anchor-target>
-<p>Configuring using the <code v-pre>highlight</code> attribute syntax is also supported by Retype.</p>
+<p>Configuring line highlighting using the <code v-pre>highlight</code> attribute syntax is also supported by Retype.</p>
 <doc-tabs>
 <doc-tab id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">```js:highlight=&quot;1-2,4-8&quot;
+
 ```</code></pre>
 </doc-codeblock></div>
 </doc-tab>
