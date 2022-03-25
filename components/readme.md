@@ -23,3 +23,4 @@ Retype flavored Markdown supports custom components, including:
 - [Panel](panel.md)
 - [Reference link](reference-link.md)
 - [Tab](tab.md)
+- [Table](table.md)
