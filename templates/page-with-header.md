@@ -1,17 +1,14 @@
-![](/static/sample-large.jpg)
-
-# Page with header
-
-This is a page with a top feature image as the header.
+---
+data:
+  title: page-with-header.md
+  path: _includes/page-with-header.md
+---
+{{ include path }}
 
 ---
 
 ## :icon-code: Source
 
-```md page-with-header.md
-![](/static/sample-large.jpg)
+[!file Download]({{ path }})
 
-# Page with header
-
-This is a page with a top feature image as the header.
-```
+:::code source="{{ path }}" title="{{ title }}" :::
