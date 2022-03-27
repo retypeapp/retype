@@ -1,4 +1,4 @@
-![](/static/sample-large.jpg)
+![](/static/headers/templates_page-with-header.png)
 
 # Page with header
 
