@@ -4,6 +4,8 @@ order: 200
 icon: package
 tags: [config]
 ---
+![](/static/headers/configuration_project.png)
+
 # Project configuration
 
 Retype will read the `retype.yml` file for additional instructions on how to configure and build your project.

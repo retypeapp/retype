@@ -2,6 +2,8 @@
 icon: note
 tags: [guide]
 ---
+![](/static/headers/guides_formatting.png)
+
 # Formatting
 
 Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.

@@ -2,6 +2,8 @@
 icon: question
 label: FAQ
 ---
+![](/static/headers/faq.png)
+
 # Frequently Asked Questions :thinking_face:
 
 ## How do I install Retype?

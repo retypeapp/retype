@@ -2,6 +2,8 @@
 icon: git-compare
 tags: [guide]
 ---
+![](/static/headers/guides_github-actions.png)
+
 # GitHub Actions
 
 Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.

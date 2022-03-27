@@ -3,6 +3,8 @@ order: 100
 icon: rocket
 tags: [guide]
 ---
+![](/static/headers/guides_getting-started.png)
+
 # Getting Started
 
 Getting started with Retype is super quick and you can be up and running within seconds.
