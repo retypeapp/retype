@@ -9,15 +9,16 @@ icon: star-fill
 Feature | Retype | Retype Pro
 --- | --- | ---
 Pricing | Free | ~~$149~~ $99 <br /><small>Early adopter pricing</small>
+[One-on-One](#what-is-one-on-one-consulting) consulting :icon-device-camera-video: | :icon-x-circle: | 30 minutes
 Free upgrades | Unlimited | One year
-Renewal | Free | $99 for a year of upgrades
+Renewal | Free | $99 for one year of upgrades
 Authors or Developers | Unlimited | Unlimited
 Websites – max `100` pages each | Unlimited | Unlimited
 Websites – max `1000` pages each | 0 | 3
 Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :icon-x-circle: | :icon-check-circle:
 | | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="~~Buy~~ Coming soon" icon="star-fill"](pro.md) |
 
-## Question &amp; Answers
+## Questions & Answers
 
 ### If I do not renew, does my website stop working?
 
@@ -26,6 +27,26 @@ Your website will continue to work as it has always worked. Everything will cont
 The only thing that changes is that you would not be able to upgrade your Retype Pro built website to the next Retype release.
 
 Once your website is built it will continue to work, even if your Retype Pro license expires.
+
+If your Retype Pro license expires, you can purchase a new license at any point in the future.
+
+### What is One-on-One consulting?
+
+We want to get you running with Retype as quickly as possible and as an offer for all **Retype Pro** purchases, a 30 minute online video consultation with Retype founder Geoffrey McGill is included.
+
+Use the time for:
+
+- Troubleshooting
+- Get answers to your Retype questions
+- Advice to optimize your project
+- Provide product feedback
+- Make feature requests
+
+Video consulations can be done through your choice of video conferencing software, such as Zoom, Google Meet, Slack, FaceTime, TeamViewer, GoTo Meeting, or pretty much anything else if you have specific requirements.
+
+Ideally, your project would be available in a GitHub or GitLab repository for us to review as we'll likely be reviewing code and offering configuration suggestions.
+
+Consultations are provided on Tuesdays and Thursdays, although we do have some flexibility if you require another day. Obviously subject to availability, but we'll do our best to make it work for all those that would like to meet.
 
 ### Is Retype Pro a separate product?
 
@@ -39,7 +60,7 @@ We consider a website a unique URL.
 
 Sub-domains each count as one unique URL.
 
-Each key will unlock up to `3` unique URLs.
+Each Retype Pro license key will unlock up to `3` unique URLs.
 
 As an example, with a valid key, projects with the following URLs will be possible to build as **Retype Pro**:
 
@@ -66,7 +87,7 @@ Do you plan to be using Retype for 5 years? Pricing as an Early Adopter would be
 
 You have running 6 websites with Retype and have a 4-year time frame. Pricing today would be `($99 * 2 * 4) - 10% = $712.80 USD`.
 
-### What if I have more than three **Pro** projects?
+### What if I have more than three Pro projects?
 
 Purchase another Retype Pro pack of three. We'll add three more Pro projects to your license.
 
@@ -91,7 +112,7 @@ Let's run through two scenarios based on purchasing **Retype Pro** today using t
 - You purchase today
 - Current release is Retype `v2.1.0`
 - Key expires in one year from today
-- On the key expiry date, let's say Retype `v2.16.0` is the current release
+- On the key expiry date, let's say Retype `v2.9.0` is the current release
 
 #### Scenario 1: Renew
 
@@ -101,11 +122,11 @@ You like Retype. It is bringing you value and happiness. :smiling_face_with_3_he
 
 You decide NOT to renew your Retype key. No worries. Your project will continue to build forever, except you cannot upgrade to the next Retype release. You would stay on the current release.
 
-You would be able to upgrade Retype up until `v1.20.0`.
+You would be able to upgrade Retype up until `v2.9.0`.
 
-Once `v1.21.0` is released, your project would fail to build if you upgraded. You would have to downgrade back to the `v1.20.0` release.
+Once `v2.10.0` is released, your project would fail to build if you upgraded. You would have to downgrade back to the `v2.9.0` release.
 
-You would still be able to build up to 1000 pages too and remove the **Powered by Retype** branding. Again, you just would not be able to upgrade to any future releases.
+You would still be able to build up to 1000 pages and remove the **Powered by Retype** branding, but only if using the release at the time your key expired. Again, you just would not be able to upgrade to any future releases.
 
 If at some point you would like to upgrade to the latest release, just purchase a new **Retype Pro** key at that time.
 
@@ -113,7 +134,7 @@ If at some point you would like to upgrade to the latest release, just purchase 
 
 We have a **Retype Enterprise** license option available. Please send an email to hello@retype.com
 
-### I have more question, who can I contact?
+### I have another question, who can I contact?
 
 Send us a message using any of the following:
 
