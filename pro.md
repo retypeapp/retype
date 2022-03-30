@@ -1,6 +1,5 @@
 ---
-order: 2000
-icon: star-fill
+visibility: hidden
 ---
 # Retype Pro
 

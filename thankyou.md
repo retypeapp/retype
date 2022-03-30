@@ -34,7 +34,7 @@ We do our best to be online and monitoring the real-time chat support so we can 
 
 To start a chat, click on the :icon-comment: icon in the bottom-right of this page.
 
-## I need even more assistance
+## I need more assistance
 
 How about a free 30 minute one-on-one video consultation session?
 
@@ -50,4 +50,4 @@ Use the time for:
 
 Video consulations can be done through your choice of video conferencing software, such as Zoom, Google Meet, Slack, FaceTime, TeamViewer, GoTo Meeting, or pretty much anything else if you have specific requirements.
 
-Ideally, your project would be available in a GitHub or GitLab repository for us to review as we'll likely be reviewing code and offering configuration suggestions.
+Ideally, your project would be available in a GitHub or GitLab repository for us to review as we will likely be reviewing code and offering configuration suggestions.

@@ -18,6 +18,10 @@ links:
     link: /README.md
     icon: home
 
+  - text: Pro
+    link: /pro
+    icon: star
+
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
     icon: issue-opened
