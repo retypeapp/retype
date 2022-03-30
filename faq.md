@@ -17,6 +17,16 @@ There are two limitations:
 
 It is possible to remove both those limitations with [Retype Pro](/pro).
 
+## Can I get a trial license key?
+
+Absolutely. Please use the following button to create a free 30-day trial license key:
+
+[!button :icon-plus: Create trial key](https://docs.google.com/forms/d/e/1FAIpQLScKaBRcu6SE98tZyBixZfASLX_hb2b5kkR7aai3wqhclDK1ZA/viewform)
+
+!!!
+Trial keys can only be created once per domain or sub-domain.
+!!!
+
 ## How do I install Retype?
 
 Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](guides/getting-started.md) guide for detailed installation instructions.
@@ -39,8 +49,6 @@ dotnet tool install retypeapp --global
 retype watch
 ```
 +++
-
----
 
 ## What is page metadata?
 
