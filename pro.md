@@ -15,7 +15,7 @@ Authors or Developers | Unlimited | Unlimited
 Websites – max `100` pages each | Unlimited | Unlimited
 Websites – max `1000` pages each | 0 | 3
 Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :icon-x-circle: | :icon-check-circle:{ style="font-color: blue"}
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro ~~$149~~ $99" icon="star-fill"](https://buy.stripe.com/28o15Y5fp7CygaAfZ0)<br />[Need more?](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1) |
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro ~~$149~~ $99" icon="star-fill"](https://buy.stripe.com/28o15Y5fp7CygaAfZ0)<br />[Need more?](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1){class="text-sm"} |
 
 ## Questions & Answers
 
