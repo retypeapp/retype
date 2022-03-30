@@ -6,6 +6,17 @@ label: FAQ
 
 # Frequently Asked Questions
 
+## Is Retype free to use?
+
+Yes, but with limitations.
+
+There are two limitations:
+
+1. Maximum of 100 pages can be built
+2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding cannot be removed
+
+It is possible to remove both those limitations with [Retype Pro](/pro).
+
 ## How do I install Retype?
 
 Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](guides/getting-started.md) guide for detailed installation instructions.
