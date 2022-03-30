@@ -58,7 +58,7 @@ One key can include up to `3` separate URLs, or you can have three separate keys
 
 ### Can we purchase a multi-year key and is a discount available?
 
-Purchase for one year, or for as long as you want.
+Purchase for one year, or for as long as you want. Buy [here](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1).
 
 If you purchase 2 or more years, take an additional 10% off the total.
 
