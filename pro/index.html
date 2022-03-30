@@ -16,27 +16,27 @@
     <!-- Primary Meta Tags -->
     <title>Retype Pro - Generate, publish, and share documentation</title>
     <meta name="title" content="Retype Pro - Generate, publish, and share documentation">
-    <meta name="description" content="Feature" />
+    <meta name="description" content="Features" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/pro/">
     <meta property="og:title" content="Retype Pro - Generate, publish, and share documentation">
-    <meta property="og:description" content="Feature">
+    <meta property="og:description" content="Features">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/pro/">
     <meta property="twitter:title" content="Retype Pro - Generate, publish, and share documentation">
-    <meta property="twitter:description" content="Feature">
+    <meta property="twitter:description" content="Features">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701961651391" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701977690069" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701961651391" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701977690069" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701961651391" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701977690069" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -249,7 +249,7 @@
 <table class="comfortable">
 <thead>
 <tr>
-<th>Feature</th>
+<th>Features</th>
 <th>Retype</th>
 <th>Retype Pro</th>
 </tr>
@@ -287,8 +287,8 @@
 </tr>
 <tr>
 <td>Remove <a href="/configuration/project/#poweredbyretype"><code v-pre>Powered by Retype</code></a> branding</td>
-<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"/></g></g></svg></td>
-<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M17.28 9.28a.75.75 0 00-1.06-1.06l-5.97 5.97-2.47-2.47a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l6.5-6.5z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"/></g></g></svg></td>
+<td><span class="docs-emoji">&#x1F6AB;</span></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
 </tr>
 <tr>
 <td></td>
@@ -338,7 +338,7 @@
 <p>Each Retype Pro license key will unlock up to <code v-pre>3</code> unique URLs.</p>
 <p>As an example, with a valid key, projects with the following URLs will be possible to build as <strong>Retype Pro</strong>:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
+<table class="compact">
 <thead>
 <tr>
 <th>URL</th>
@@ -359,7 +359,7 @@
 <td><span class="docs-emoji">&#x2705;</span></td>
 </tr>
 <tr>
-<td><code v-pre>my-next-project.io</code><br /><small>*Another Retype Pro license would be required</small></td>
+<td><code v-pre>my-next-project.io</code><br />*Another Retype Pro 3-pack would be required</td>
 <td><span class="docs-emoji">&#x1F6AB;</span></td>
 </tr>
 </tbody>
@@ -367,6 +367,44 @@
 </div>
 <p>The URL is encoded right into the key. You can have any number of projects running on any number of developer machines using the same key, but the key will be limited to building only those <strong>Retype Pro</strong> projects with a <code v-pre>retype.yml</code> file where the <code v-pre>url</code> is set with one of your defined website URLs.</p>
 <p>One key can include up to <code v-pre>3</code> separate URLs, or you can have three separate keys each with one URL, or any combination thereof.</p>
+<p>Any <code v-pre>github.io</code> or <code v-pre>gitlab.io</code> projects count as one URL. You can therefore have an unlimited number of <code v-pre>github.io</code> or <code v-pre>gitlab.io</code> hosted projects running off one single key. In the following table, the first three projects would be unlocked with one key assigned to the <code v-pre>example.github.io</code> URL, and the other two URLs would complete the Retype Pro set of three.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>URL</th>
+<th>Included?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>example.github.io</code></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
+</tr>
+<tr>
+<td><code v-pre>example.github.io/docs</code></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
+</tr>
+<tr>
+<td><code v-pre>example.github.io/wiki</code></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
+</tr>
+<tr>
+<td><code v-pre>docs.example.com</code></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
+</tr>
+<tr>
+<td><code v-pre>wiki.example.com</code></td>
+<td><span class="docs-emoji">&#x2705;</span></td>
+</tr>
+<tr>
+<td><code v-pre>my-next-project.io</code><br />*Another Retype Pro 3-pack would be required</td>
+<td><span class="docs-emoji">&#x1F6AB;</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The additional <code v-pre>github.io</code> and <code v-pre>gitlab.io</code> functionality enables hosting more than three unique Retype Pro website projects with just one Retype Pro 3-pack.</p>
 <doc-anchor-target id="can-we-purchase-a-multi-year-key-and-is-a-discount-available">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#can-we-purchase-a-multi-year-key-and-is-a-discount-available">#</doc-anchor-trigger>
