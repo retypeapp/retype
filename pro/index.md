@@ -18,15 +18,19 @@ Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding
 
 ## Questions & Answers
 
+### Can I get a trial license key?
+
+{{ include "snippets/faq-trial-key-request" }}
+
 ### If I do not renew, does my website stop working?
 
-Your website will continue to work as it has always worked. Everything will continue to function as normal. Even adding more pages (up to 1000) would continue to work.
+If you do not renew your license, your website will continue to work as it has always worked. Everything will continue to function as normal. Even adding more pages to your project (up to 1000) would continue to work.
 
 The only thing that changes is that you would not be able to upgrade your Retype Pro built website to the next Retype release.
 
 Once your website is built it will continue to work, even if your Retype Pro license expires.
 
-If your Retype Pro license expires, you can purchase a new license at any point in the future.
+If your Retype Pro license expires, you can [purchase](/pro) a new license at any point in the future.
 
 ### Is Retype Pro a separate product?
 
