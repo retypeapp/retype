@@ -5,7 +5,7 @@ visibility: hidden
 
 ## Pro Features
 
-Feature | Retype | Retype Pro
+Features | Retype | Retype Pro
 --- | --- | ---
 Pricing | Free | ~~$149~~ $99 <br /><small>Early adopter pricing</small>
 Free upgrades | Unlimited | One year
@@ -13,7 +13,7 @@ Renewal | Free | $99 for one year of upgrades
 Authors or Developers | Unlimited | Unlimited
 Websites – max `100` pages each | Unlimited | Unlimited
 Websites – max `1000` pages each | 0 | 3
-Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :icon-x-circle: | :icon-check-circle:{ style="font-color: blue"}
+Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark:
 | | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro ~~$149~~ $99" icon="star-fill"](https://buy.stripe.com/28o15Y5fp7CygaAfZ0)<br />[Need more?](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1){class="text-sm"} |
 
 ## Questions & Answers
@@ -44,16 +44,29 @@ Each Retype Pro license key will unlock up to `3` unique URLs.
 
 As an example, with a valid key, projects with the following URLs will be possible to build as **Retype Pro**:
 
-URL | Included?
+URL | Included? { class="compact" }
 --- | ---
 `docs.example.com` | :white_check_mark:
 `staging.example.com` | :white_check_mark:
 `docs.projectx.com` | :white_check_mark:
-`my-next-project.io`<br /><small>*Another Retype Pro license would be required</small> | :no_entry_sign:
+`my-next-project.io`<br />*Another Retype Pro 3-pack would be required | :no_entry_sign:
 
 The URL is encoded right into the key. You can have any number of projects running on any number of developer machines using the same key, but the key will be limited to building only those **Retype Pro** projects with a `retype.yml` file where the `url` is set with one of your defined website URLs.
 
 One key can include up to `3` separate URLs, or you can have three separate keys each with one URL, or any combination thereof.
+
+Any `github.io` or `gitlab.io` projects count as one URL. You can therefore have an unlimited number of `github.io` or `gitlab.io` hosted projects running off one single key. In the following table, the first three projects would be unlocked with one key assigned to the `example.github.io` URL, and the other two URLs would complete the Retype Pro set of three.
+
+URL | Included? { class="compact" }
+--- | ---
+`example.github.io`      | :white_check_mark:
+`example.github.io/docs` | :white_check_mark:
+`example.github.io/wiki` | :white_check_mark:
+`docs.example.com`       | :white_check_mark:
+`wiki.example.com`       | :white_check_mark:
+`my-next-project.io`<br />*Another Retype Pro 3-pack would be required | :no_entry_sign:
+
+The additional `github.io` and `gitlab.io` functionality enables hosting more than three unique Retype Pro website projects with just one Retype Pro 3-pack.
 
 ### Can we purchase a multi-year key and is a discount available?
 
