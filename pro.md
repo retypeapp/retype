@@ -9,14 +9,13 @@ icon: star-fill
 Feature | Retype | Retype Pro
 --- | --- | ---
 Pricing | Free | ~~$149~~ $99 <br /><small>Early adopter pricing</small>
-[One-on-One](#what-is-one-on-one-consulting) consulting :icon-device-camera-video: | :icon-x-circle: | 30 minutes
 Free upgrades | Unlimited | One year
 Renewal | Free | $99 for one year of upgrades
 Authors or Developers | Unlimited | Unlimited
 Websites – max `100` pages each | Unlimited | Unlimited
 Websites – max `1000` pages each | 0 | 3
-Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :icon-x-circle: | :icon-check-circle:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="~~Buy~~ Coming soon" icon="star-fill"](pro.md) |
+Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :icon-x-circle: | :icon-check-circle:{ style="font-color: blue"}
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro ~~$149~~ $99" icon="star-fill"](https://buy.stripe.com/28o15Y5fp7CygaAfZ0)<br />[Need more?](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1) |
 
 ## Questions & Answers
 
@@ -29,24 +28,6 @@ The only thing that changes is that you would not be able to upgrade your Retype
 Once your website is built it will continue to work, even if your Retype Pro license expires.
 
 If your Retype Pro license expires, you can purchase a new license at any point in the future.
-
-### What is One-on-One consulting?
-
-We want to get you running with Retype as quickly as possible and as an offer for all **Retype Pro** purchases, a 30 minute online video consultation with Retype founder Geoffrey McGill is included.
-
-Use the time for:
-
-- Troubleshooting
-- Get answers to your Retype questions
-- Advice to optimize your project
-- Provide product feedback
-- Make feature requests
-
-Video consulations can be done through your choice of video conferencing software, such as Zoom, Google Meet, Slack, FaceTime, TeamViewer, GoTo Meeting, or pretty much anything else if you have specific requirements.
-
-Ideally, your project would be available in a GitHub or GitLab repository for us to review as we'll likely be reviewing code and offering configuration suggestions.
-
-Consultations are provided on Tuesdays and Thursdays, although we do have some flexibility if you require another day. Obviously subject to availability, but we'll do our best to make it work for all those that would like to meet.
 
 ### Is Retype Pro a separate product?
 
