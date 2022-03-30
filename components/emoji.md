@@ -1,6 +1,6 @@
 ---
 tags: [component, icon]
-icon: ":heart_eyes_cat:"
+icon: dot
 ---
 # Emoji
 

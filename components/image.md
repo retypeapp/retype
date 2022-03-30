@@ -1,5 +1,6 @@
 ---
 tags: [component]
+icon: dot
 ---
 # Image
 
