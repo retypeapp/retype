@@ -24,13 +24,13 @@ Automatically deploying to GitHub Pages requires a basic `retype-action.yml` con
 ## Summary
 
 - [x] Add a `retype-action.yml` file, see [step 1](#step-1-add-retype-actionyml-workflow)
-- [x] Configure GitHub Pages, see [step 2](../hosting/github-pages.md#step-2-configure-github-pages)
-- [x] Set the branch to `retype`, see [branch config](../hosting/github-pages.md#pick-a-branch)
-- [x] Set the [`url`](../hosting/github-pages.md#set-a-url)
+- [x] Configure GitHub Pages, see [step 2](/hosting/github-pages.md#step-2-configure-github-pages)
+- [x] Set the branch to `retype`, see [branch config](/hosting/github-pages.md#pick-a-branch)
+- [x] Set the [`url`](/hosting/github-pages.md#set-a-url)
 - [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
 - [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
 
-All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](../configuration/project.md) options for full details.
+All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](/configuration/project.md) options for full details.
 
 ---
 
@@ -122,4 +122,4 @@ jobs:
 
 ## Step 2: Configure GitHub Pages
 
-Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, configure your [GitHub Pages](../hosting/github-pages.md#step-2-configure-github-pages) setup.
+Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, configure your [GitHub Pages](/hosting/github-pages.md#step-2-configure-github-pages) setup.

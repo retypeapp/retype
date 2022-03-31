@@ -232,7 +232,7 @@ The `#` should be separated from the opening `` ``` `` by one space, for example
 
 If a title is added, the title must also be separated from the `#` by one space. For instance, the pattern `` ``` # Your title here`` would work as expected and the pattern `` ``` #Your title here`` would not.
 
-Line numbering can also be configured at the project level using the [`snippets`](../configuration/project.md#snippets) config on your projects `retype.yml` file. For instance, instructing Retype to add line numbering to all `js` and `json` code blocks across the website would require the following config:
+Line numbering can also be configured at the project level using the [`snippets`](/configuration/project.md#snippets) config on your projects `retype.yml` file. For instance, instructing Retype to add line numbering to all `js` and `json` code blocks across the website would require the following config:
 
 ```json Enable line numbering for js and json code blocks site wide
 {
@@ -258,7 +258,7 @@ const msg = "Hello, world";
 
 ## Disable line numbers
 
-If you configure a site wide [`snippets`](http://localhost:5000/configuration/project/#snippets) for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the [`!#`](#disable-line-numbers) specifier to the code block instance.
+If you configure a site wide [`snippets`](/configuration/project.md#snippets) for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the [`!#`](#disable-line-numbers) specifier to the code block instance.
 
 ||| :icon-code: Source
 ~~~

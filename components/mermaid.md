@@ -6,7 +6,7 @@ icon: dot
 
 [Mermaid](https://mermaid-js.github.io/mermaid) is a diagramming and charting tool that can be defined inside Markdown code blocks.
 
-![](../static/mermaid-header.png)
+![](/static/mermaid-header.png)
 
 ## Component syntax
 

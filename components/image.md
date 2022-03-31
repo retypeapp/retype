@@ -15,10 +15,10 @@ Checkout the [Markdown Guide](https://www.markdownguide.org/basic-syntax/#images
 To add an image to your document, a similar syntax to links is used but prefixed with an exclamation mark `!`.
 
 ```md
-![](../static/sample.jpg)
+![](/static/sample.jpg)
 ```
 
-![](../static/sample.jpg)
+![](/static/sample.jpg)
 
 ---
 
@@ -27,10 +27,10 @@ To add an image to your document, a similar syntax to links is used but prefixed
 An optional caption below the image can be set by adding your caption text between the `[]` brackets. The following sample demonstrates adding a caption:
 
 ```md
-![This is an optional caption](../static/sample.jpg)
+![This is an optional caption](/static/sample.jpg)
 ```
 
-![This is an optional caption](../static/sample.jpg)
+![This is an optional caption](/static/sample.jpg)
 
 ---
 
@@ -39,12 +39,12 @@ An optional caption below the image can be set by adding your caption text betwe
 An optional `title` attribute for the resulting HTML `<img>` element can be set by adding the title text after the link. The title can be used differently within different browsers, but is typically shown as a tooltip when mouse pointer is held over the image. The following sample demonstrates adding a title:
 
 ```md
-![This is an optional caption](../static/sample.jpg "This is an optional title")
+![This is an optional caption](/static/sample.jpg "This is an optional title")
 ```
 
 Hold your mouse pointer over the image to see the title.
 
-![This is an optional caption](../static/sample.jpg "This is an optional title")
+![This is an optional caption](/static/sample.jpg "This is an optional title")
 
 ---
 
@@ -53,10 +53,10 @@ Hold your mouse pointer over the image to see the title.
 By default, images are not links, but it's easy to make your image into a link by just wrapping the image in a link.
 
 ```md
-[![](../static/sample.jpg)](https://retype.com)
+[![](/static/sample.jpg)](https://retype.com)
 ```
 
-[![](../static/sample.jpg)](https://retype.com)
+[![](/static/sample.jpg)](https://retype.com)
 
 ---
 

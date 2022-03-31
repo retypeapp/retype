@@ -10,7 +10,7 @@ The Retype CLI is clean and simple. The majority of the time you will run just o
 
 !!!
 
-Be sure to review the [project](../configuration/project.md) options available within the `retype.yml` as it does unlock a lot more power, flexibility, and customization.
+Be sure to review the [project](/configuration/project.md) options available within the `retype.yml` as it does unlock a lot more power, flexibility, and customization.
 
 !!!
 
@@ -18,7 +18,7 @@ The `--help` option can be passed with any command to get additional details, fo
 
 The command `retype --version` will return the current version number of your Retype install. See all public Retype [releases](https://github.com/retypeapp/retype/releases).
 
-Let's go through each of the `retype` CLI commands and be sure to check out the [Getting Started](getting-started.md) guide for step by instructions on using each of these commands.
+Let's go through each of the `retype` CLI commands and be sure to check out the [Getting Started](/guides/getting-started.md) guide for step by instructions on using each of these commands.
 
 ---
 
@@ -91,7 +91,7 @@ footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
 
-All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the [project](../configuration/project.md) configuration docs for a full list of all options.
+All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the [project](/configuration/project.md) configuration docs for a full list of all options.
 
 To change the title of the project, revise the `branding.title` config. For instance, let's change to `Company X`:
 
@@ -102,7 +102,7 @@ branding:
 
 If there is already a `retype.yml` file within the project, runnin the `retype init` command will not create a new `retype.yml` file.
 
-The `retype.yml` file is not _actually_ required, but you will want to make custom [configurations](../configuration/project.md) to your project and this is how those instructions are passed to Retype.
+The `retype.yml` file is not _actually_ required, but you will want to make custom [configurations](/configuration/project.md) to your project and this is how those instructions are passed to Retype.
 
 ### Options
 
@@ -126,7 +126,7 @@ Options:
 
 ## `retype build`
 
-To generate your new website, run the command `retype build`. This command builds a new website based upon the `.md` files within the [`input`](../configuration/project.md) location.
+To generate your new website, run the command `retype build`. This command builds a new website based upon the `.md` files within the [`input`](/configuration/project.md) location.
 
 ```
 retype build
@@ -240,7 +240,7 @@ retype build --secret <your-license-key-here>
 
 A Retype license key can also be configured as a secret Environment variable. The key is NOT store in a wallet.
 
-Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](../guides/github-actions.md).
+Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
 
 The [RETYPE_SECRET](github-actions.md#retype_secret) configuration must also be added to your `.github/workflows/retype.yml` file.
 
@@ -307,7 +307,7 @@ retype build --override "{ \"url\": \"https://beta.retype.com\" }"
 
 The following sample demonstrates overriding a more complex configuration object.
 
-Using the following `retype.yml` project configuration file as an example, let's change the [`label`](../configuration/project.md#label) to `beta`, instead of `v1.10`.
+Using the following `retype.yml` project configuration file as an example, let's change the [`label`](/configuration/project.md#label) to `beta`, instead of `v1.10`.
 
 ~~~yml `retype.yml`
 branding:
@@ -329,7 +329,7 @@ retype build --override "{ \"branding\": null }"
 
 ### Add to list
 
-The following command will add a `GitHub` link to the list of [`links`](../configuration/project.md#links).
+The following command will add a `GitHub` link to the list of [`links`](/configuration/project.md#links).
 
 ~~~yml `retype.yml`
 links:

@@ -34,7 +34,7 @@ The `source` is the local path to a file.
 :::code source="<path-to-file>" :::
 ```
 
-Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](../guides/github-actions.md), the file must be within the same repo or accessible by the Action.
+Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](/guides/github-actions.md), the file must be within the same repo or accessible by the Action.
 
 In the following demo, we link to the `sample.js` file and include the entire contents of that file into the code block:
 

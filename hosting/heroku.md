@@ -1,6 +1,6 @@
 ---
 icon: <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 24"><path fill-rule="evenodd" d="m 19.44,0 c 1.1928,0 2.16,0.9672 2.16,2.16 v 0 19.68 c 0,1.1928 -0.9672,2.16 -2.16,2.16 v 0 H 2.16 C 0.9672,24 0,23.0328 0,21.84 v 0 V 2.16 C 0,0.9672 0.9672,0 2.16,0 v 0 z m 0,1.2 H 2.16 C 1.6308,1.2 1.2,1.6305 1.2,2.16 v 0 19.68 c 0,0.5292 0.4308,0.96 0.96,0.96 v 0 h 17.28 c 0.5295,0 0.96,-0.4308 0.96,-0.96 v 0 V 2.16 C 20.4,1.6305 19.9695,1.2 19.44,1.2 Z M 5.7,15.6 8.4000004,18 5.7,20.4 Z m 2.4000004,-12 v 6.8133 C 9.2982004,10.0233 10.9731,9.6 12.6,9.6 c 1.4835,0 2.3715,0.5832 2.8551,1.0725 0.989287,1.0005 1.043457,2.263571 1.044993,2.502279 L 16.500068,20.4 H 14.1 V 13.233 C 14.0883,12.6729 13.8186,12 12.6,12 10.269063,12 7.6671274,13.119853 7.4149964,13.230859 l -0.0197,0.0087 -1.6953004,0.768 V 3.599959 Z M 16.5,3.6 c -0.162,1.3632 -0.7146,2.67 -1.8,3.9 v 0 h -2.4 c 0.9432,-1.2375 1.5354,-2.5398 1.8,-3.9 v 0 z"/></svg>
-layout: page
+layout: hidden
 tags: [guide, heroku, publish]
 ---
 # Publish to Heroku
@@ -96,7 +96,7 @@ Any documentation project set up to be built with retype can be replaced in [ste
 
 If there's no **retype.yml** file in the repository, just run `retype watch` and adjust the settings to your liking in the just-created **retype.yml**, then commit it. Your project would then be ready to be pushed to Heroku.
 
-See [Quick Start](../README.md#quick-start) for details on `retype watch`, and see [Configuration > Project](../configuration/project.md) for possible **retype.yml** config values.
+See [Quick Start](/README.md#quick-start) for details on `retype watch`, and see [Configuration > Project](/configuration/project.md) for possible **retype.yml** config values.
 
 !!! Several **retype.yml** files in the repo
 If there are various **retype.yml** files across the repository, we can't guarantee which one the buildpack is going to pick, and it is a good idea to use the `RETYPE_CONFIG` config var to indicate where the intended configuration file is to be found within the repo.
@@ -116,8 +116,8 @@ If there are various **retype.yml** files across the repository, we can't guaran
 ## Further Reading
 
 - [x] Install Retype to build locally, see [Getting Started](getting-started).
-- [x] Details on `retype watch`, see [Quick Start](../README.md#quick-start).
-- [x] Accepted configuration settings in **retype.yml**, see [Configuration > Project](../configuration/project.md).
+- [x] Details on `retype watch`, see [Quick Start](/README.md#quick-start).
+- [x] Accepted configuration settings in **retype.yml**, see [Configuration > Project](/configuration/project.md).
 - [x] Troubleshoot Heroku push/build issues, see [Retype Buildpack's README Troubleshooting section](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting).
 - [x] More information on Retype Buildpack, see [README in Retype Buildpack's repo](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md).
 - [x] Create account in Heroku, see [Heroku website](https://heroku.com).

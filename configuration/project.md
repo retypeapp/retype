@@ -61,7 +61,7 @@ branding:
 
 The above `title` would create the following branding title in the upper-left corner of the generated website.
 
-![](../static/project-branding-title.png)
+![](/static/project-branding-title.png)
 ===
 
 ### label
@@ -76,7 +76,7 @@ branding:
 ```
 The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#title) or [`logo`](#logo).
 
-![](../static/project-branding-title.png)
+![](/static/project-branding-title.png)
 ===
 
 ### logo
@@ -567,7 +567,7 @@ Replace the `<id>` with your Google Tag Manager measurement id.
 
 ### gravatar
 
-Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used by the [page.authors](page.md#author) configuration.
+Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used by the [page.authors](/configuration/page.md#author) configuration.
 
 ### gravatar.default
 
@@ -580,12 +580,12 @@ Either a full URL to the image can be configured or one of the options listed be
 | Value | Sample |
 | --- | --- |
 | `404` | Broken image |
-| `mp` (default) | ![](../static/gravatar-sample-mp.png) |
-| `identicon` | ![](../static/gravatar-sample-identicon.png) |
-| `monsterid` | ![](../static/gravatar-sample-monsterid.png) |
-| `wavatar` | ![](../static/gravatar-sample-wavatar.png) |
-| `retro` | ![](../static/gravatar-sample-retro.png) |
-| `robohash` | ![](../static/gravatar-sample-robohash.png) |
+| `mp` (default) | ![](/static/gravatar-sample-mp.png) |
+| `identicon` | ![](/static/gravatar-sample-identicon.png) |
+| `monsterid` | ![](/static/gravatar-sample-monsterid.png) |
+| `wavatar` | ![](/static/gravatar-sample-wavatar.png) |
+| `retro` | ![](/static/gravatar-sample-retro.png) |
+| `robohash` | ![](/static/gravatar-sample-robohash.png) |
 | `blank` | Blank image |
 
 Please see the [Default Image](https://en.gravatar.com/site/implement/images#default-image) documentation on the Gravatar website.
@@ -946,7 +946,7 @@ server:
   host: 127.0.0.1:5005
 ```
 
-A custom `--host` value can also be passed as an argument to the [`retype watch`](../guides/cli.md#options) and [`retype run`](../guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
+A custom `--host` value can also be passed as an argument to the [`retype watch`](/guides/cli.md#options) and [`retype run`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
 
 ```
 retype watch --host 127.0.0.1              # serve from a custom host
@@ -976,7 +976,7 @@ The port number can also be included in the [`host`](#host) config.
 
 !!!
 
-A custom `--port` value can also be passed as an argument to the [`retype watch`](../guides/cli.md#options) and [`retype run`](../guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
+A custom `--port` value can also be passed as an argument to the [`retype watch`](/guides/cli.md#options) and [`retype run`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
 
 ```
 retype watch --port 5005  # serve from a custom port
@@ -986,7 +986,7 @@ retype watch --port 5005  # serve from a custom port
 
 ### watch
 
-Custom configuration for the [`retype watch`](../guides/cli.md#options) command.
+Custom configuration for the [`retype watch`](/guides/cli.md#options) command.
 
 ### watch.mode
 
@@ -1011,7 +1011,7 @@ server:
     mode: disk
 ```
 
-The command [`retype build`](../guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](../guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
+The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
 
 ===
 
@@ -1071,7 +1071,7 @@ Default value is `optimal`.
 
 ## snippets
 
-The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](../components/code-block.md#line-numbers).
+The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](/components/code-block.md#line-numbers).
 
 ### lineNumbers
 
@@ -1169,7 +1169,7 @@ If no protocol is supplied, such as `https` or `http`, Retype will assume `https
 url: http://example.com/docs/
 ```
 
-Another common scenario for setting a `url` is when using [GitHub Pages](../guides/github-actions.md) **without** a custom `CNAME`.
+Another common scenario for setting a `url` is when using [GitHub Pages](/guides/github-actions.md) **without** a custom `CNAME`.
 
 For instance, if your GitHub organization was `CompanyX` and your repo was named `docs`, the URL to your GitHub Pages hosted website would be `https://companyx.github.io/docs/`.
 

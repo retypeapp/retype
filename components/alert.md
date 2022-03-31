@@ -37,12 +37,12 @@ This is an alert.
 Some basic Markdown syntax and emoji `:shortcodes:` are supported in the titles.
 
 ```md
-!!! :zap: [Getting Started](../guides/getting-started.md) :zap:
+!!! :zap: [Getting Started](/guides/getting-started.md) :zap:
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!
 ```
 
-!!! :zap: [Getting Started](../guides/getting-started.md) :zap:
+!!! :zap: [Getting Started](/guides/getting-started.md) :zap:
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!
 
