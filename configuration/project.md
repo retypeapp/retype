@@ -414,6 +414,31 @@ footer:
 
 ---
 
+## generator
+
+### recase
+
+=== recase : `string`
+Instructs Retype on how to recase the project file and folder names created by the author. Default is `all`.
+
+By default, Retype will recase all the generated file and folder names to all lowercase.
+
+Option | Description
+---    | ---
+`all`  | Covert all file and folder names in the generated [`output`](#output) to all lowercase. This is the default.
+`none` | Do not change the case of any file or folder names.
+
+
+To have Retype NOT change the casing of any of your file or folder names, set `recase` to `none`.
+
+```yml
+generator:
+  recase: none
+```
+===
+
+---
+
 ## include
 
 === include : `list`

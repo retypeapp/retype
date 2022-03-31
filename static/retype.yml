@@ -91,6 +91,13 @@ favicon: static/favicon.png # Path to a custom favicon, or.
 
 # -----------------------------------------------------------------------------
 
+generator:
+  recase: all # Set to `none` to not recase any file or folder names.
+              # By default, all generated file and folder names are
+              # generated in all lowercase.
+
+# -----------------------------------------------------------------------------
+
 include:   # A list of files or folders to include in the build process.
            # See also: exclude
   - "*.py" # Wildcards are valid.
