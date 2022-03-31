@@ -1,6 +1,8 @@
 ---
 visibility: hidden
 ---
+![](/static/headers/pro.png)
+
 # Retype Pro
 
 ## Pro Features
