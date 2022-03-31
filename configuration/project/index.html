@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701997936020" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.702000300380" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701997936020" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.702000300380" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701997936020" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701997936020" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.702000300380" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.702000300380" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -765,6 +765,49 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
   links:
     - text: License
       link: license.md</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr />
+<doc-anchor-target id="generator">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#generator">#</doc-anchor-trigger>
+        <span>generator</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="recase">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recase">#</doc-anchor-trigger>
+        <span>recase</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="recase-string">
+    <template #title>recase : <code v-pre>string</code></template>
+<p>Instructs Retype on how to recase the project file and folder names created by the author. Default is <code v-pre>all</code>.</p>
+<p>By default, Retype will recase all the generated file and folder names to all lowercase.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>all</code></td>
+<td>Covert all file and folder names in the generated <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> to all lowercase. This is the default.</td>
+</tr>
+<tr>
+<td><code v-pre>none</code></td>
+<td>Do not change the case of any file or folder names.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>To have Retype NOT change the casing of any of your file or folder names, set <code v-pre>recase</code> to <code v-pre>none</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+  recase: none</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr />

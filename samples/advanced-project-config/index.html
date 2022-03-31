@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701997936020" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.702000300380" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701997936020" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.702000300380" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701997936020" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.701997936020" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.702000300380" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.1.702000300380" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -251,7 +251,7 @@
     </div>
     <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
         <span>retype.yml</span>
-        <span class="inline-block ml-2">7.17KB</span>
+        <span class="inline-block ml-2">7.44KB</span>
     </div>
     <a href="/static/retype.yml" class="absolute block inset-0" target="_blank" download="retype.yml"></a>
 </div>
@@ -348,6 +348,13 @@ exclude: # A list of files or folders to exclude from the build process.
 
 favicon: static/favicon.png # Path to a custom favicon, or.
                             # just put a favicon.ico in your project root.
+
+# -----------------------------------------------------------------------------
+
+generator:
+  recase: all # Set to `none` to not recase any file or folder names.
+              # By default, all generated file and folder names are
+              # generated in all lowercase.
 
 # -----------------------------------------------------------------------------
 
