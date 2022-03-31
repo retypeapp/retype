@@ -12,6 +12,7 @@ Retype flavored Markdown supports custom components, including:
 - [Code block](code-block.md)
 - [Code snippet](code-snippet.md)
 - [Column](column.md)
+- [Container](container.md)
 - [Embed](embed.md)
 - [Emoji](emoji.md)
 - [File download](file-download.md)
