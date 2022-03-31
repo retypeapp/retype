@@ -1,6 +1,8 @@
 ---
 icon: mark-github
-tags: [ hosting ]
+tags:
+  - guide
+  - hosting
 ---
 # GitHub Pages
 
