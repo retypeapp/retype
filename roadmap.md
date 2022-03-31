@@ -8,22 +8,43 @@ icon: versions
 The entire release archives of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) or [NuGet](https://nuget.org/packages/retypeapp).
 
 !!!
-Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :speech_balloon:
+Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :icon-comment:
 !!!
 
 ---
 
-## v2.2.0 [!badge text="NEXT" variant="info"]
+## v2.3.0 [!badge text="NEXT" variant="info"]
 
-Available: Early April 2022
+Available: April 2022
 
 +++ Planned :icon-unverified:
 
-- [ ] `generator.recase` project config to instruct Retype on when to recase file and folder names.
+- [x] :icon-bug: Exclude all contents of the `_includes` directory from being deployed.
+- [x] :icon-bug: Exclude files and pages within the `_includes` directory from the sitemap generation.
+- [x] :icon-bug: Sidebar menu item is not highlighted when no trailing `/` in the URL.
+- [ ] :icon-shield-check: Support for full relative URL pathing. See [#14](https://github.com/retypeapp/retype/discussions/14), [#133](https://github.com/retypeapp/retype/discussions/133), [#194](https://github.com/retypeapp/retype/discussions/194), [#222](https://github.com/retypeapp/retype/discussions/222), [#233](https://github.com/retypeapp/retype/discussions/233), and [#276](https://github.com/retypeapp/retype/issues/276)
 
 +++
 
-## v2.1.0 [!badge text="LATEST" variant="info"]
+## v2.2.0 [!badge text="LATEST" variant="info"]
+
+Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
+
++++ New :icon-shield-check:
+
+- [x] [`generator.recase`](https://retype.com/configuration/project/#generator) project config to recase file and folder names. See [#302](https://github.com/retypeapp/retype/issues/302).
+- [x] Official Retype docker images published to [DockerHub](https://hub.docker.com/repository/docker/retypeapp/retype). See [#122](https://github.com/retypeapp/retype/issues/122).
+- [x] New `@latest` tag to be used in your [`retype-action.yml`](http://localhost:5000/guides/github-actions/#step-1-add-retype-actionyml-workflow) configuration.
+- [x] GitHub Action annotation to announce availability of Retype v2, only if using Retype v1.
+
++++ Fixed :icon-bug:
+
+- [x] [author](/configuration/page.md#author), [date](/configuration/page.md#date), and [category](/configuration/page.md#category) metadata being rendered above page title
+- [x] `top.md` content should be excluded from summary card generation
+
++++
+
+## v2.1.0
 
 Released: [2022-03-22](https://github.com/retypeapp/retype/releases/tag/v2.1.0)
 
