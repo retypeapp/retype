@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -263,13 +263,13 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <code v-pre>retype.yml</code> as it does unlock a lot more power, flexibility, and customization.</p>
+<p>Be sure to review the <a href="/configuration/project/">project</a> options available within the <code v-pre>retype.yml</code> as it does unlock a lot more power, flexibility, and customization.</p>
         </div>
     </div>
 </div>
 <p>The <code v-pre>--help</code> option can be passed with any command to get additional details, for instance <code v-pre>retype watch --help</code> will return all options for the <code v-pre>retype watch</code> command.</p>
 <p>The command <code v-pre>retype --version</code> will return the current version number of your Retype install. See all public Retype <a href="https://github.com/retypeapp/retype/releases">releases</a>.</p>
-<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands and be sure to check out the <a href="../getting-started/">Getting Started</a> guide for step by instructions on using each of these commands.</p>
+<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands and be sure to check out the <a href="/guides/getting-started/">Getting Started</a> guide for step by instructions on using each of these commands.</p>
 <hr />
 <doc-anchor-target id="retype-watch">
     <h2>
@@ -353,14 +353,14 @@ links:
 footer:
   copyright: &quot;&amp;copy; Copyright . All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
-<p>All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the <a href="../../configuration/project/">project</a> configuration docs for a full list of all options.</p>
+<p>All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the <a href="/configuration/project/">project</a> configuration docs for a full list of all options.</p>
 <p>To change the title of the project, revise the <code v-pre>branding.title</code> config. For instance, let&#x27;s change to <code v-pre>Company X</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Company X</code></pre>
 </doc-codeblock></div>
 <p>If there is already a <code v-pre>retype.yml</code> file within the project, runnin the <code v-pre>retype init</code> command will not create a new <code v-pre>retype.yml</code> file.</p>
-<p>The <code v-pre>retype.yml</code> file is not <em>actually</em> required, but you will want to make custom <a href="../../configuration/project/">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
+<p>The <code v-pre>retype.yml</code> file is not <em>actually</em> required, but you will want to make custom <a href="/configuration/project/">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
 <doc-anchor-target id="options-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-1">#</doc-anchor-trigger>
@@ -389,7 +389,7 @@ Options:
         <span><code v-pre>retype build</code></span>
     </h2>
 </doc-anchor-target>
-<p>To generate your new website, run the command <code v-pre>retype build</code>. This command builds a new website based upon the <code v-pre>.md</code> files within the <a href="../../configuration/project/"><code v-pre>input</code></a> location.</p>
+<p>To generate your new website, run the command <code v-pre>retype build</code>. This command builds a new website based upon the <code v-pre>.md</code> files within the <a href="/configuration/project/"><code v-pre>input</code></a> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
 </doc-codeblock></div>
@@ -500,7 +500,7 @@ Options:
     </h3>
 </doc-anchor-target>
 <p>A Retype license key can also be configured as a secret Environment variable. The key is NOT store in a wallet.</p>
-<p>Configuring the <code v-pre>RETYPE_SECRET</code> secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a <a href="../github-actions/">GitHub Action</a>.</p>
+<p>Configuring the <code v-pre>RETYPE_SECRET</code> secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a <a href="/guides/github-actions/">GitHub Action</a>.</p>
 <p>The <a href="../github-actions/#retype_secret">RETYPE_SECRET</a> configuration must also be added to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
 <p>You can add a new repository secret to your GitHub repository following the <code v-pre>/settings/secrets/actions</code> path. The URL should be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -587,7 +587,7 @@ Options:
     </h3>
 </doc-anchor-target>
 <p>The following sample demonstrates overriding a more complex configuration object.</p>
-<p>Using the following <code v-pre>retype.yml</code> project configuration file as an example, let&#x27;s change the <a href="../../configuration/project/#label"><code v-pre>label</code></a> to <code v-pre>beta</code>, instead of <code v-pre>v1.10</code>.</p>
+<p>Using the following <code v-pre>retype.yml</code> project configuration file as an example, let&#x27;s change the <a href="/configuration/project/#label"><code v-pre>label</code></a> to <code v-pre>beta</code>, instead of <code v-pre>v1.10</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>retype.yml</code></div>
 <pre class="language-yaml"><code v-pre class="language-yaml">branding:
@@ -608,7 +608,7 @@ Options:
         <span>Add to list</span>
     </h3>
 </doc-anchor-target>
-<p>The following command will add a <code v-pre>GitHub</code> link to the list of <a href="../../configuration/project/#links"><code v-pre>links</code></a>.</p>
+<p>The following command will add a <code v-pre>GitHub</code> link to the list of <a href="/configuration/project/#links"><code v-pre>links</code></a>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>retype.yml</code></div>
 <pre class="language-yaml"><code v-pre class="language-yaml">links:

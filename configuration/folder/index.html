@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -249,7 +249,7 @@
         <span>Folder configuration</span>
     </h1>
 </doc-anchor-target>
-<p>Using the same <code v-pre>.yml</code> technique and options as <a href="../page/">Page configuration</a>, a folder can be configured using a separate <code v-pre>index.yml</code> file placed inside the folder.</p>
+<p>Using the same <code v-pre>.yml</code> technique and options as <a href="/configuration/page/">Page configuration</a>, a folder can be configured using a separate <code v-pre>index.yml</code> file placed inside the folder.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -263,7 +263,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Folders support the same properties a <a href="../page/">pages</a>, although properties such as <a href="../page/#description"><code v-pre>description</code></a> and <a href="../page/#layout"><code v-pre>layout</code></a> would not be applicable in the context of a folder configuration and will be ignored.</p>
+<p>Folders support the same properties a <a href="/configuration/page/">pages</a>, although properties such as <a href="/configuration/page/#description"><code v-pre>description</code></a> and <a href="/configuration/page/#layout"><code v-pre>layout</code></a> would not be applicable in the context of a folder configuration and will be ignored.</p>
         </div>
     </div>
 </div>
@@ -273,17 +273,17 @@
         <span>Samples</span>
     </h2>
 </doc-anchor-target>
-<p>Set a custom <a href="../page/#icon">icon</a> for the folder.</p>
+<p>Set a custom <a href="/configuration/page/#icon">icon</a> for the folder.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">icon: gear</code></pre>
 </doc-codeblock></div>
-<p>Expand the folder node in the tree navigation with the <a href="../page/#expanded">expanded</a> config.</p>
+<p>Expand the folder node in the tree navigation with the <a href="/configuration/page/#expanded">expanded</a> config.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
-<p>Move a folder up to the top of the navigation by setting the <a href="../page/#order">order</a>. The larger the number, the higher in the stack it will be placed.</p>
+<p>Move a folder up to the top of the navigation by setting the <a href="/configuration/page/#order">order</a>. The larger the number, the higher in the stack it will be placed.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">order: 1000</code></pre>
@@ -293,12 +293,12 @@
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">order: -1000</code></pre>
 </doc-codeblock></div>
-<p>Change the folder <a href="../page/#label">label</a> used for the navigation node label.</p>
+<p>Change the folder <a href="/configuration/page/#label">label</a> used for the navigation node label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">label: Custom label</code></pre>
 </doc-codeblock></div>
-<p>Hide a folder by setting the <a href="../page/#visibility">visibility</a> configuration.</p>
+<p>Hide a folder by setting the <a href="/configuration/page/#visibility">visibility</a> configuration.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">visibility: hidden</code></pre>

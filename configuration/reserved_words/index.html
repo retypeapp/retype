@@ -36,11 +36,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -248,7 +248,7 @@
         <span>Reserved words</span>
     </h1>
 </doc-anchor-target>
-<p>There are several <a href="../project/#input">input</a> folder names and files within a Retype project that incorporate special behaviour. All paths for folders or files within Retype are relative to your project <a href="../project/#input">input</a> directory.</p>
+<p>There are several <a href="/configuration/project/#input">input</a> folder names and files within a Retype project that incorporate special behaviour. All paths for folders or files within Retype are relative to your project <a href="/configuration/project/#input">input</a> directory.</p>
 <hr />
 <doc-anchor-target id="folders">
     <h2>
@@ -268,7 +268,7 @@
 <li>A summary page of the blog posts is automatically created at <code v-pre>/blog</code>.</li>
 <li>An RSS feed of the recent blog posts is created.</li>
 <li>Blog pages get <code v-pre>Newer</code> and <code v-pre>Older</code> buttons at the bottom of each page.</li>
-<li>All blog pages are set with the <a href="../page/#layout"><code v-pre>layout: blog</code></a> layout, unless otherwise specified in the page metadata.</li>
+<li>All blog pages are set with the <a href="/configuration/page/#layout"><code v-pre>layout: blog</code></a> layout, unless otherwise specified in the page metadata.</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -283,7 +283,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Be sure to review the <a href="../page/#author"><code v-pre>author</code></a> and <a href="../page/#date"><code v-pre>date</code></a> Page configs if you are writing blog posts.</p>
+<p>Be sure to review the <a href="/configuration/page/#author"><code v-pre>author</code></a> and <a href="/configuration/page/#date"><code v-pre>date</code></a> Page configs if you are writing blog posts.</p>
         </div>
     </div>
 </div>
@@ -293,7 +293,7 @@
         <span>/categories</span>
     </h3>
 </doc-anchor-target>
-<p>The default index page of the <code v-pre>/categories</code> directory is reserved for a summary of any <a href="../page/#category">category</a> configs. Every category configured within an <code v-pre>.md</code> page of your Retype project will have a corresponding entry here.</p>
+<p>The default index page of the <code v-pre>/categories</code> directory is reserved for a summary of any <a href="/configuration/page/#category">category</a> configs. Every category configured within an <code v-pre>.md</code> page of your Retype project will have a corresponding entry here.</p>
 <p>Similar to <doc-anchor-trigger to="#tags"><code v-pre>/tags</code></doc-anchor-trigger>, you can also add content to the <code v-pre>/categories</code> page by creating your own <code v-pre>/categories/index.md</code> page. Retype will create your page as normal and then add the list of Categories below your custom content.</p>
 <doc-anchor-target id="resources">
     <h3>
@@ -301,14 +301,14 @@
         <span>/resources</span>
     </h3>
 </doc-anchor-target>
-<p>Any files placed within this directory will be copied to the <a href="../project/#output">output</a> directory. Please see the <a href="../project/#include"><code v-pre>include</code></a> and <a href="../project/#exclude"><code v-pre>exclude</code></a> configs for fine-grained control over including or excluding files or folders.</p>
+<p>Any files placed within this directory will be copied to the <a href="/configuration/project/#output">output</a> directory. Please see the <a href="/configuration/project/#include"><code v-pre>include</code></a> and <a href="/configuration/project/#exclude"><code v-pre>exclude</code></a> configs for fine-grained control over including or excluding files or folders.</p>
 <doc-anchor-target id="tags">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#tags">#</doc-anchor-trigger>
         <span>/tags</span>
     </h3>
 </doc-anchor-target>
-<p>The <code v-pre>/tags</code> directory is reserved for <a href="../page/#tags">tags</a>. Every tag name configured within an <code v-pre>.md</code> page will have a corresponding entry here.</p>
+<p>The <code v-pre>/tags</code> directory is reserved for <a href="/configuration/page/#tags">tags</a>. Every tag name configured within an <code v-pre>.md</code> page will have a corresponding entry here.</p>
 <p>Similar to <doc-anchor-trigger to="#categories"><code v-pre>/categories</code></doc-anchor-trigger>, you can also add content to the <code v-pre>/tags</code> page by creating your own <code v-pre>/tags/index.md</code> page. Retype will create your page as normal and then add the list of Tags below your custom content.</p>
 <hr />
 <doc-anchor-target id="files">
@@ -323,9 +323,9 @@
         <span>CNAME</span>
     </h3>
 </doc-anchor-target>
-<p>A <code v-pre>CNAME</code> file will be automatically created if the <a href="../project/#url"><code v-pre>url</code></a> is configured with a domain or sub-domain.</p>
-<p>For instance, including <code v-pre>url: docs.example.com</code> within your <code v-pre>retype.yml</code> project config file also instructs Retype to create a <code v-pre>CNAME</code> file with the value <code v-pre>docs.example.com</code>. That <code v-pre>CNAME</code> file is used by <a href="../../guides/github-actions/">GitHub Pages</a> and possibly other website hosting services as the way to configure custom domain name hosting.</p>
-<p>If you manually create a <code v-pre>CNAME</code> file within the root of the <a href="../project/#input">input</a> folder of your project, Retype will not automatically create the <code v-pre>CNAME</code> file, even if the <a href="../project/#url"><code v-pre>url</code></a> or <a href="../project/#cname"><code v-pre>cname</code></a> is configured or conflicts.</p>
+<p>A <code v-pre>CNAME</code> file will be automatically created if the <a href="/configuration/project/#url"><code v-pre>url</code></a> is configured with a domain or sub-domain.</p>
+<p>For instance, including <code v-pre>url: docs.example.com</code> within your <code v-pre>retype.yml</code> project config file also instructs Retype to create a <code v-pre>CNAME</code> file with the value <code v-pre>docs.example.com</code>. That <code v-pre>CNAME</code> file is used by <a href="/guides/github-actions/">GitHub Pages</a> and possibly other website hosting services as the way to configure custom domain name hosting.</p>
+<p>If you manually create a <code v-pre>CNAME</code> file within the root of the <a href="/configuration/project/#input">input</a> folder of your project, Retype will not automatically create the <code v-pre>CNAME</code> file, even if the <a href="/configuration/project/#url"><code v-pre>url</code></a> or <a href="/configuration/project/#cname"><code v-pre>cname</code></a> is configured or conflicts.</p>
 <doc-anchor-target id="default-pages">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#default-pages">#</doc-anchor-trigger>
@@ -346,13 +346,13 @@
         <span>Project config</span>
     </h3>
 </doc-anchor-target>
-<p>By default, if you do not pass an explicit project configuration file name in the <a href="https://retype.com/guides/cli/#retype-watch"><code v-pre>&lt;path&gt;</code></a> command line argument, Retype will search for your project config using the following case insensitive priority:</p>
+<p>By default, if you do not pass an explicit project configuration file name in the <a href="/guides/cli/#retype-watch"><code v-pre>&lt;path&gt;</code></a> command line argument, Retype will search for your project config using the following case insensitive priority:</p>
 <ol>
 <li><code v-pre>retype.yml</code></li>
 <li><code v-pre>retype.yaml</code></li>
 <li><code v-pre>retype.json</code></li>
 </ol>
-<p>For instance, if you run the <a href="../../guides/cli/">CLI</a> command <code v-pre>retype watch docs</code>, Retype will first try to find the project configuration file  <code v-pre>docs/retype.yml</code>. If not found, then <code v-pre>docs/retype.yaml</code> will be tested and so on.</p>
+<p>For instance, if you run the <a href="/guides/cli/">CLI</a> command <code v-pre>retype watch docs</code>, Retype will first try to find the project configuration file  <code v-pre>docs/retype.yml</code>. If not found, then <code v-pre>docs/retype.yaml</code> will be tested and so on.</p>
 <p>If you run the command <code v-pre>retype watch docs/retype.json</code>, even if a <code v-pre>retype.yml</code> is present, Retype will only read the <code v-pre>retype.json</code> file as you are explicitly passing the project configuration file path.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>

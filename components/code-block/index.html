@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -598,7 +598,7 @@ const msg = &quot;hello, world&quot;;
 </doc-tabs>
 <p>The <code v-pre>#</code> should be separated from the opening <code v-pre>```</code> by one space, for example the pattern  <code v-pre> ``` #</code> is recommended.</p>
 <p>If a title is added, the title must also be separated from the <code v-pre>#</code> by one space. For instance, the pattern <code v-pre> ``` # Your title here</code> would work as expected and the pattern <code v-pre> ``` #Your title here</code> would not.</p>
-<p>Line numbering can also be configured at the project level using the <a href="../../configuration/project/#snippets"><code v-pre>snippets</code></a> config on your projects <code v-pre>retype.yml</code> file. For instance, instructing Retype to add line numbering to all <code v-pre>js</code> and <code v-pre>json</code> code blocks across the website would require the following config:</p>
+<p>Line numbering can also be configured at the project level using the <a href="/configuration/project/#snippets"><code v-pre>snippets</code></a> config on your projects <code v-pre>retype.yml</code> file. For instance, instructing Retype to add line numbering to all <code v-pre>js</code> and <code v-pre>json</code> code blocks across the website would require the following config:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for js and json code blocks site wide</div>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -633,7 +633,7 @@ const msg = &quot;hello, world&quot;;
         <span>Disable line numbers</span>
     </h2>
 </doc-anchor-target>
-<p>If you configure a site wide <a href="http://localhost:5000/configuration/project/#snippets"><code v-pre>snippets</code></a> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
+<p>If you configure a site wide <a href="/configuration/project/#snippets"><code v-pre>snippets</code></a> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
         <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"/></g></g></svg> Source</span>

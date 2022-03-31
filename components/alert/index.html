@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -299,7 +299,7 @@ This is an alert.
 </div>
 <p>Some basic Markdown syntax and emoji <code v-pre>:shortcodes:</code> are supported in the titles.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">!!! :zap: [Getting Started](../guides/getting-started.md) :zap:
+<pre class="language-markdown"><code v-pre class="language-markdown">!!! :zap: [Getting Started](/guides/getting-started.md) :zap:
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!</code></pre>
 </doc-codeblock></div>
@@ -316,7 +316,7 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5><span class="docs-emoji">&#x26A1;</span> <a href="../../guides/getting-started/">Getting Started</a> <span class="docs-emoji">&#x26A1;</span></h5>
+            <h5><span class="docs-emoji">&#x26A1;</span> <a href="/guides/getting-started/">Getting Started</a> <span class="docs-emoji">&#x26A1;</span></h5>
 <p>Get up to speed with Retype quickly by checking out the Getting Started guide.</p>
         </div>
     </div>

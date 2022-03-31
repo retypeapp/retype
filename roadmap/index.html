@@ -36,11 +36,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
     <link href="/resources/css/katex.css?v=2.2" rel="stylesheet" />
     <script id="katex-js" type="text/javascript" src="/resources/js/katex.js?v=2.2" defer></script>
 
@@ -334,7 +334,7 @@
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#googletagmanager">Google Tag Manager</a> integration.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#plausible">Plausible</a> IO integration.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Page limit handling has been improved during <code v-pre>retype watch</code> mode.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Include <a href="../configuration/page/#description"><code v-pre>description</code></a> in search index.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Include <a href="/configuration/page/#description"><code v-pre>description</code></a> in search index.</li>
 </ul>
 </doc-tab>
 <doc-tab id="fixed">
@@ -362,7 +362,7 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/embed/#allowfullscreen"><code v-pre>allowFullScreen</code></a> attribute on the <code v-pre>[!embed]</code> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/embed/#allowfullscreen"><code v-pre>allowFullScreen</code></a> attribute on the <code v-pre>[!embed]</code> component.</li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -398,7 +398,7 @@
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Multi-language search and automatic detection of content languages. See <a href="https://github.com/retypeapp/retype/issues/197">#197</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/pro/">Retype Pro</a> with increased page limit and Retype branding removal option.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Better style for native scrollbars on Windows. See <a href="https://github.com/retypeapp/retype/issues/107">#107</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#watchvalidation"><code v-pre>server.watch.validation</code></a> project configuration option.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#watchvalidation"><code v-pre>server.watch.validation</code></a> project configuration option.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> All heading elements within the page content are now added to the search index. See <a href="https://github.com/retypeapp/retype/issues/166">#166</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Page config and <code v-pre>SUMMARY.md</code> can be used together.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Upgrade Octicons icons library from v15.2.0 to v16.1.1.</li>
@@ -416,12 +416,12 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/math-formulas/"><span class="math">\KaTeX</span></a> math typesetting library support.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/math-formulas/"><span class="math">\KaTeX</span></a> math typesetting library support.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Auto generate RSS feed for blog posts.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#watchpolling"><code v-pre>server.watch.polling</code></a> project option.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Gravatar support for <a href="../configuration/page/#author"><code v-pre>author</code></a> avatars.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="https://retype.com/configuration/project/#gravatar">project</a> option to configure a <a href="https://retype.com/configuration/project/#gravatardefault">default</a> Gravatar image.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/reference-link/#target"><code v-pre>target</code></a> and <a href="../components/reference-link/#custom-icon"><code v-pre>icon</code></a> attributes on <a href="../components/reference-link/"><code v-pre>[!ref]</code></a> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#watchpolling"><code v-pre>server.watch.polling</code></a> project option.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Gravatar support for <a href="/configuration/page/#author"><code v-pre>author</code></a> avatars.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#gravatar">project</a> option to configure a <a href="/configuration/project/#gravatardefault">default</a> Gravatar image.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/reference-link/#target"><code v-pre>target</code></a> and <a href="/components/reference-link/#custom-icon"><code v-pre>icon</code></a> attributes on <a href="/components/reference-link/"><code v-pre>[!ref]</code></a> component.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Smarter link resolution logic.</li>
 </ul>
 </doc-tab>
@@ -437,8 +437,8 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Incremental build during <a href="../guides/cli/#retype-watch"><code v-pre>retype watch</code></a> with page dependency graph</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Ability to run <code v-pre>retype watch</code> with in-memory output. Turned on by default, see <a href="../configuration/project/#watch"><code v-pre>server.watch.mode</code></a> to configure.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Incremental build during <a href="/guides/cli/#retype-watch"><code v-pre>retype watch</code></a> with page dependency graph</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Ability to run <code v-pre>retype watch</code> with in-memory output. Turned on by default, see <a href="/configuration/project/#watch"><code v-pre>server.watch.mode</code></a> to configure.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Platform specific NPM packages:
 <ol>
 <li><a href="https://www.npmjs.com/package/retypeapp-win-x86"><code v-pre>retypeapp-win-x86</code></a></li>
@@ -450,7 +450,7 @@
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Lazy Prism and Mermaid plugin execution for hidden content</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Keep scroll position on full page reload during <a href="/guides/cli/#retype-watch"><code v-pre>retype watch</code></a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Build is so fast now that the client refresh interval can be tightened up to <code v-pre>100ms</code>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add <a href="../components/button/#target"><code v-pre>target</code></a> property for linkable components, such as <a href="../components/button/">Button</a> and <a href="../components/badge/">Badge</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add <a href="/components/button/#target"><code v-pre>target</code></a> property for linkable components, such as <a href="/components/button/">Button</a> and <a href="/components/badge/">Badge</a>.</li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -489,7 +489,7 @@
 ../components/default.md</code></pre>
 </doc-codeblock></div>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Allow inline Markdown components for <a href="../configuration/page/#author"><code v-pre>author</code></a>, <a href="../configuration/page/#title"><code v-pre>title</code></a>, and <a href="../configuration/page/#label"><code v-pre>label</code></a> page configs, see <a href="https://github.com/retypeapp/retype/issues/114">#114</a>. Block-level Markdown components will be ignored for those configs.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Allow inline Markdown components for <a href="/configuration/page/#author"><code v-pre>author</code></a>, <a href="/configuration/page/#title"><code v-pre>title</code></a>, and <a href="/configuration/page/#label"><code v-pre>label</code></a> page configs, see <a href="https://github.com/retypeapp/retype/issues/114">#114</a>. Block-level Markdown components will be ignored for those configs.</li>
 </ul>
 </doc-tab>
 <doc-tab id="fixed">
@@ -523,19 +523,19 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/"><code v-pre>retype.yml</code></a> project configuration file format.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#url"><code v-pre>url</code></a> project config for setting your website URL.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/"><code v-pre>retype.yml</code></a> project configuration file format.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#url"><code v-pre>url</code></a> project config for setting your website URL.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Auto-generate a <code v-pre>sitemap.xml</code> file to inform search engines which pages to crawl.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Auto-generate a <code v-pre>robots.txt</code> file.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Open Graph and Twitter meta tags generated for every page.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#host"><code v-pre>server.host</code></a> and <a href="../configuration/project/#port"><code v-pre>server.port</code></a> project configs.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#host"><code v-pre>server.host</code></a> and <a href="/configuration/project/#port"><code v-pre>server.port</code></a> project configs.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code v-pre>/blog</code> summary for any <code v-pre>.md</code> page added to a <code v-pre>/blog</code> folder.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#author"><code v-pre>author</code></a>, <a href="../configuration/page/#category"><code v-pre>category</code></a>, and <a href="../configuration/page/#date"><code v-pre>date</code></a> page configs.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#redirect"><code v-pre>redirect</code></a> page config.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#visibility"><code v-pre>visibility</code></a> page config.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Added logic to handle the manual creation of a <a href="../configuration/project/#cname"><code v-pre>CNAME</code></a> file and copy to output.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#author"><code v-pre>author</code></a>, <a href="/configuration/page/#category"><code v-pre>category</code></a>, and <a href="/configuration/page/#date"><code v-pre>date</code></a> page configs.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#redirect"><code v-pre>redirect</code></a> page config.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#visibility"><code v-pre>visibility</code></a> page config.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Added logic to handle the manual creation of a <a href="/configuration/project/#cname"><code v-pre>CNAME</code></a> file and copy to output.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Automated process to check for new Octicons release and merge update.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Update to latest <a href="../components/icon/">Octicons</a> icon release.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Update to latest <a href="/components/icon/">Octicons</a> icon release.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Cleaned up the CLI experience. See <a href="https://github.com/retypeapp/retype/issues/103">#103</a>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Removed excessive bottom padding on blockquotes, see <a href="https://github.com/retypeapp/retype/issues/74">#74</a>.</li>
 </ul>
@@ -552,13 +552,13 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/column/">Column</a> component.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Stacking <a href="../components/panel/#stacking">Panels</a> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/column/">Column</a> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Stacking <a href="/components/panel/#stacking">Panels</a> component.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Open Graph and Twitter card support.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/mermaid/">Mermaid</a> diagram and visualization support.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#target"><code v-pre>target</code></a> config for all <code v-pre>links</code> within <code v-pre>retype.yml</code>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Default page support for <a href="../guides/formatting/#home-page"><code v-pre>default.md</code></a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Hover style on <a href="../components/badge/">Badge</a> component when links.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/mermaid/">Mermaid</a> diagram and visualization support.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#target"><code v-pre>target</code></a> config for all <code v-pre>links</code> within <code v-pre>retype.yml</code>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Default page support for <a href="/guides/formatting/#home-page"><code v-pre>default.md</code></a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Hover style on <a href="/components/badge/">Badge</a> component when links.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Super improved handling of áccënt characters.</li>
 </ul>
 </doc-tab>
@@ -574,12 +574,12 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#tags"><code v-pre>tags</code></a> config for pages.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/icon/"><code v-pre>:icon-shortcode:</code></a> component.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#include"><code v-pre>include</code></a> project config.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#exclude"><code v-pre>exclude</code></a> project config.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#tags"><code v-pre>tags</code></a> config for pages.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/icon/"><code v-pre>:icon-shortcode:</code></a> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#include"><code v-pre>include</code></a> project config.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#exclude"><code v-pre>exclude</code></a> project config.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Improved <code v-pre>&lt;table&gt;</code> styling.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Performance boost for <a href="../components/">components</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Performance boost for <a href="/components/">components</a>.</li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -594,10 +594,10 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/badge/">Badge</a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Syntax <a href="../components/code-block/#syntax-highlighting">highlighting</a> support for all code block languages</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#route"><code v-pre>route</code></a> page config</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#port"><code v-pre>port</code></a> project config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/badge/">Badge</a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Syntax <a href="/components/code-block/#syntax-highlighting">highlighting</a> support for all code block languages</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#route"><code v-pre>route</code></a> page config</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#port"><code v-pre>port</code></a> project config</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Larger font-size for <code v-pre>h1</code>, <code v-pre>h2</code>, and <code v-pre>h3</code> headers.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Better handing of special characters within file names.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Cleaner handling of <code v-pre>.md</code> pages created by GitHub Wiki.</li>
@@ -616,12 +616,12 @@
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Even cleaner upgrade to Retype from GitBook experience</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Super fast <a href="../guides/cli/#retype-watch"><code v-pre>retype watch</code></a> incremental build process</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/image/#alignment-options">image alignment</a> and captions</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#exclude"><code v-pre>exclude</code></a> config for <code v-pre>retype.yml</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Super fast <a href="/guides/cli/#retype-watch"><code v-pre>retype watch</code></a> incremental build process</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/image/#alignment-options">image alignment</a> and captions</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#exclude"><code v-pre>exclude</code></a> config for <code v-pre>retype.yml</code></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code v-pre>blog</code> layout and <code v-pre>/blog</code> folder defaults</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/file-download/"><code v-pre>[!file]</code></a> component</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/reference-link/"><code v-pre>[!ref]</code></a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/file-download/"><code v-pre>[!file]</code></a> component</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/reference-link/"><code v-pre>[!ref]</code></a> component</li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -636,9 +636,9 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> GitHub <a href="../guides/github-actions/">Actions</a> for Retype.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#expanded"><code v-pre>expanded</code></a> config on <a href="../configuration/folder/">folder</a> configuration.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#icon"><code v-pre>icon</code></a> and <a href="../configuration/project/#iconalign"><code v-pre>iconAlign</code></a> configs on <a href="../configuration/project/#links"><code v-pre>links</code></a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> GitHub <a href="/guides/github-actions/">Actions</a> for Retype.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#expanded"><code v-pre>expanded</code></a> config on <a href="/configuration/folder/">folder</a> configuration.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#icon"><code v-pre>icon</code></a> and <a href="/configuration/project/#iconalign"><code v-pre>iconAlign</code></a> configs on <a href="/configuration/project/#links"><code v-pre>links</code></a>.</li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -653,13 +653,13 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#layout"><code v-pre>central</code></a> layout.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#layout"><code v-pre>page</code></a> layout.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#edit"><code v-pre>Edit this page</code></a> link.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#layout"><code v-pre>central</code></a> layout.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#layout"><code v-pre>page</code></a> layout.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#edit"><code v-pre>Edit this page</code></a> link.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code v-pre>Previous | Next</code> footer navigation buttons for pages.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#order"><code v-pre>order</code></a> Page level config.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code v-pre>hidden</code> <a href="../configuration/page/#visibility"><code v-pre>visibility</code></a> Page level config.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/project/#favicon"><code v-pre>favicon</code></a> Project config available in <code v-pre>retype.yml</code>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#order"><code v-pre>order</code></a> Page level config.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code v-pre>hidden</code> <a href="/configuration/page/#visibility"><code v-pre>visibility</code></a> Page level config.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/project/#favicon"><code v-pre>favicon</code></a> Project config available in <code v-pre>retype.yml</code>.</li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -674,14 +674,14 @@
 <doc-tab id="new">
 <template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/></g></g></svg></template>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/tab/">Tab</a> component.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/button/">Button</a> component.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/panel/">Panel</a> component with expand/collapse.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../guides/cli/#retype-watch"><code v-pre>retype watch</code></a> command.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Live Reload when using <a href="../guides/cli/#retype-watch"><code v-pre>retype watch</code></a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../configuration/page/#separate-yml-file"><code v-pre>.yml</code></a> option for Page or Folder configs.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Code block <a href="../components/code-block/#title">title</a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="../components/code-block/#line-numbers">line numbering</a> in code blocks.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/tab/">Tab</a> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/button/">Button</a> component.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/panel/">Panel</a> component with expand/collapse.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/guides/cli/#retype-watch"><code v-pre>retype watch</code></a> command.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Live Reload when using <a href="/guides/cli/#retype-watch"><code v-pre>retype watch</code></a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/configuration/page/#separate-yml-file"><code v-pre>.yml</code></a> option for Page or Folder configs.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Code block <a href="/components/code-block/#title">title</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <a href="/components/code-block/#line-numbers">line numbering</a> in code blocks.</li>
 </ul>
 </doc-tab>
 </doc-tabs>

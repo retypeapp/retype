@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -244,7 +244,7 @@
 </doc-anchor-target>
 <p>A static file download component can be configured by using the <code v-pre>!file</code> specifier in a link.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[!file](../static/sample.txt)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!file](/static/sample.txt)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -271,7 +271,7 @@
 <p>By default, the text of the file download component is not required. Retype will automatically use the file name as the text.</p>
 <p>The text can be explicitly set by passing as the first part of the component config. In the following sample, we explicitly set the text to <code v-pre>Sample</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[!file Sample](../static/sample.txt)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!file Sample](/static/sample.txt)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -304,9 +304,9 @@
 </ul>
 <p>The following samples demonstrate setting a custom <code v-pre>icon</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot;](../static/sample.txt)
-[!file icon=&quot;:rocket:&quot;](../static/sample.txt)
-[!file icon=&quot;../static/retype-icon.svg&quot;](../static/sample.txt)</code></pre>
+<pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot;](/static/sample.txt)
+[!file icon=&quot;:rocket:&quot;](/static/sample.txt)
+[!file icon=&quot;../static/retype-icon.svg&quot;](/static/sample.txt)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -351,7 +351,7 @@
 </p>
 <p>By default, the file name is used as the component text value and the text can be customized by explicitly passing a separate <code v-pre>text</code> value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot; text=&quot;To the moon&quot;](../static/sample.txt)</code></pre>
+<pre class="language-none"><code v-pre class="language-none">[!file icon=&quot;rocket&quot; text=&quot;To the moon&quot;](/static/sample.txt)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">

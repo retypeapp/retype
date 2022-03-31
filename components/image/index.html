@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -255,10 +255,10 @@
 </doc-anchor-target>
 <p>To add an image to your document, a similar syntax to links is used but prefixed with an exclamation mark <code v-pre>!</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">![](../static/sample.jpg)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
-    <img src="../../static/sample.jpg" alt="" />
+    <img src="/static/sample.jpg" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -271,10 +271,10 @@
 </doc-anchor-target>
 <p>An optional caption below the image can be set by adding your caption text between the <code v-pre>[]</code> brackets. The following sample demonstrates adding a caption:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](../static/sample.jpg)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
-    <img src="../../static/sample.jpg" alt="This is an optional caption" />
+    <img src="/static/sample.jpg" alt="This is an optional caption" />
     <figcaption class="caption">This is an optional caption</figcaption>
 </figure>
 </p>
@@ -287,11 +287,11 @@
 </doc-anchor-target>
 <p>An optional <code v-pre>title</code> attribute for the resulting HTML <code v-pre>&lt;img&gt;</code> element can be set by adding the title text after the link. The title can be used differently within different browsers, but is typically shown as a tooltip when mouse pointer is held over the image. The following sample demonstrates adding a title:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](../static/sample.jpg &quot;This is an optional title&quot;)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](/static/sample.jpg &quot;This is an optional title&quot;)</code></pre>
 </doc-codeblock></div>
 <p>Hold your mouse pointer over the image to see the title.</p>
 <p><figure class="content-center">
-    <img src="../../static/sample.jpg" alt="This is an optional caption" title="This is an optional title" />
+    <img src="/static/sample.jpg" alt="This is an optional caption" title="This is an optional title" />
     <figcaption class="caption">This is an optional caption</figcaption>
 </figure>
 </p>
@@ -304,11 +304,11 @@
 </doc-anchor-target>
 <p>By default, images are not links, but it&#x27;s easy to make your image into a link by just wrapping the image in a link.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[![](../static/sample.jpg)](https://retype.com)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">[![](/static/sample.jpg)](https://retype.com)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
     <a href="https://retype.com">
-        <img src="../../static/sample.jpg" alt="" />
+        <img src="/static/sample.jpg" alt="" />
     </a>
     <figcaption class="caption"></figcaption>
 </figure>

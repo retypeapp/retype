@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -244,7 +244,7 @@
 </doc-anchor-target>
 <p>A special type of reference link can be configured by using the <code v-pre>!ref</code> specifier in a link.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[!ref](../guides/getting-started.md)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!ref](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -270,7 +270,7 @@
 </doc-anchor-target>
 <p>The text of the link can be explicitly set by passing as the first part of the component config. In the following sample, we explicitly set the reference link text to <code v-pre>Getting Started</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown">[!ref Getting Started](../guides/getting-started.md)</code></pre>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!ref Getting Started](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -303,9 +303,9 @@
 </ul>
 <p>The following samples demonstrate setting a custom <code v-pre>icon</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot;](../guides/getting-started.md)
-[!ref icon=&quot;:rocket:&quot;](../guides/getting-started.md)
-[!ref icon=&quot;../static/retype-icon.svg&quot;](../guides/getting-started.md)</code></pre>
+<pre class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot;](/guides/getting-started.md)
+[!ref icon=&quot;:rocket:&quot;](/guides/getting-started.md)
+[!ref icon=&quot;../static/retype-icon.svg&quot;](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -347,7 +347,7 @@
 </p>
 <p>By default, the referred page title is used as the component text value and the text can be customized by explicitly passing a separate <code v-pre>text</code> value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot; text=&quot;To the moon&quot;](../guides/getting-started.md)</code></pre>
+<pre class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot; text=&quot;To the moon&quot;](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -431,7 +431,7 @@
 </tbody>
 </table>
 </div>
-<p>See also the <a href="../../configuration/project/#target"><code v-pre>links.target</code></a> configuration.</p>
+<p>See also the <a href="/configuration/project/#target"><code v-pre>links.target</code></a> configuration.</p>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">

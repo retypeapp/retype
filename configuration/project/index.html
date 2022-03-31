@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -312,7 +312,7 @@ footer:
 </doc-codeblock></div>
 <p>The above <code v-pre>title</code> would create the following branding title in the upper-left corner of the generated website.</p>
 <p><figure class="content-center">
-    <img src="../../static/project-branding-title.png" alt="" />
+    <img src="/static/project-branding-title.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -333,7 +333,7 @@ footer:
 </doc-codeblock></div>
 <p>The <code v-pre>label</code> is rendered as the following label in the upper-left corner of the generated website, to the right of the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger> or <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger>.</p>
 <p><figure class="content-center">
-    <img src="../../static/project-branding-title.png" alt="" />
+    <img src="/static/project-branding-title.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -952,7 +952,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
         <span>gravatar</span>
     </h3>
 </doc-anchor-target>
-<p>Specific setting to control Retype integration with the <a href="https://gravatar.com/">Gravatar</a> profile picture service and used by the <a href="../page/#author">page.authors</a> configuration.</p>
+<p>Specific setting to control Retype integration with the <a href="https://gravatar.com/">Gravatar</a> profile picture service and used by the <a href="/configuration/page/#author">page.authors</a> configuration.</p>
 <doc-anchor-target id="gravatardefault">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#gravatardefault">#</doc-anchor-trigger>
@@ -978,27 +978,27 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 </tr>
 <tr>
 <td><code v-pre>mp</code> (default)</td>
-<td><img src="../../static/gravatar-sample-mp.png" alt="" /></td>
+<td><img src="/static/gravatar-sample-mp.png" alt="" /></td>
 </tr>
 <tr>
 <td><code v-pre>identicon</code></td>
-<td><img src="../../static/gravatar-sample-identicon.png" alt="" /></td>
+<td><img src="/static/gravatar-sample-identicon.png" alt="" /></td>
 </tr>
 <tr>
 <td><code v-pre>monsterid</code></td>
-<td><img src="../../static/gravatar-sample-monsterid.png" alt="" /></td>
+<td><img src="/static/gravatar-sample-monsterid.png" alt="" /></td>
 </tr>
 <tr>
 <td><code v-pre>wavatar</code></td>
-<td><img src="../../static/gravatar-sample-wavatar.png" alt="" /></td>
+<td><img src="/static/gravatar-sample-wavatar.png" alt="" /></td>
 </tr>
 <tr>
 <td><code v-pre>retro</code></td>
-<td><img src="../../static/gravatar-sample-retro.png" alt="" /></td>
+<td><img src="/static/gravatar-sample-retro.png" alt="" /></td>
 </tr>
 <tr>
 <td><code v-pre>robohash</code></td>
-<td><img src="../../static/gravatar-sample-robohash.png" alt="" /></td>
+<td><img src="/static/gravatar-sample-robohash.png" alt="" /></td>
 </tr>
 <tr>
 <td><code v-pre>blank</code></td>
@@ -1470,7 +1470,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <pre class="language-yaml"><code v-pre class="language-yaml">server:
   host: 127.0.0.1:5005</code></pre>
 </doc-codeblock></div>
-<p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
+<p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="/guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="/guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype watch --host 127.0.0.1              # serve from a custom host
 retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</code></pre>
@@ -1508,7 +1508,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         </div>
     </div>
 </div>
-<p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
+<p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="/guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="/guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype watch --port 5005  # serve from a custom port</code></pre>
 </doc-codeblock></div>
@@ -1519,7 +1519,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>watch</span>
     </h3>
 </doc-anchor-target>
-<p>Custom configuration for the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> command.</p>
+<p>Custom configuration for the <a href="/guides/cli/#options"><code v-pre>retype watch</code></a> command.</p>
 <doc-anchor-target id="watchmode">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#watchmode">#</doc-anchor-trigger>
@@ -1557,7 +1557,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
   watch:
     mode: disk</code></pre>
 </doc-codeblock></div>
-<p>The command <a href="../../guides/cli/#retype-build"><code v-pre>retype build</code></a> will always build and write all files to disk. The <code v-pre>memory</code> configuration is not an option with <code v-pre>retype build</code>. The Retype <a href="../../guides/github-actions/">GitHub Action</a> uses <code v-pre>retype build</code>. The command <code v-pre>retype watch</code> is only to be used during local development.</p>
+<p>The command <a href="/guides/cli/#retype-build"><code v-pre>retype build</code></a> will always build and write all files to disk. The <code v-pre>memory</code> configuration is not an option with <code v-pre>retype build</code>. The Retype <a href="/guides/github-actions/">GitHub Action</a> uses <code v-pre>retype build</code>. The command <code v-pre>retype watch</code> is only to be used during local development.</p>
 </doc-panel>
 <doc-anchor-target id="watchpolling">
     <h3>
@@ -1664,7 +1664,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>snippets</span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>snippets</code> configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of <a href="../../components/code-block/#line-numbers">line numbering</a>.</p>
+<p>The <code v-pre>snippets</code> configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of <a href="/components/code-block/#line-numbers">line numbering</a>.</p>
 <doc-anchor-target id="linenumbers">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#linenumbers">#</doc-anchor-trigger>
@@ -1759,7 +1759,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">url: http://example.com/docs/</code></pre>
 </doc-codeblock></div>
-<p>Another common scenario for setting a <code v-pre>url</code> is when using <a href="../../guides/github-actions/">GitHub Pages</a> <strong>without</strong> a custom <code v-pre>CNAME</code>.</p>
+<p>Another common scenario for setting a <code v-pre>url</code> is when using <a href="/guides/github-actions/">GitHub Pages</a> <strong>without</strong> a custom <code v-pre>CNAME</code>.</p>
 <p>For instance, if your GitHub organization was <code v-pre>CompanyX</code> and your repo was named <code v-pre>docs</code>, the URL to your GitHub Pages hosted website would be <code v-pre>https://companyx.github.io/docs/</code>.</p>
 <p>Retype needs to know where your website will be hosted, so the <code v-pre>url</code> configuration for the above scenario would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>

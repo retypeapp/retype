@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702046737054" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702051683634" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702046737054" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702051683634" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702046737054" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702046737054" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702051683634" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.2.702051683634" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -251,7 +251,7 @@
         <span>Step 1: Add <code v-pre>retype-action.yml</code> workflow</span>
     </h2>
 </doc-anchor-target>
-<p>We first recommend adding the Retype <a href="../../guides/github-actions/">Build Action</a> to your project to automate the building and deployment of your Retype powered website.</p>
+<p>We first recommend adding the Retype <a href="/guides/github-actions/">Build Action</a> to your project to automate the building and deployment of your Retype powered website.</p>
 <hr />
 <doc-anchor-target id="step-2-configure-github-pages">
     <h2>
@@ -259,7 +259,7 @@
         <span>Step 2: Configure GitHub Pages</span>
     </h2>
 </doc-anchor-target>
-<p>With a some simple configuration, GitHub can host your website for free.</p>
+<p>With some simple configuration, GitHub can host your website for free.</p>
 <p>To get started, navigate to the <strong>Settings</strong> &gt; <strong>Pages</strong> page of your repo. The URL should be the following, although you will need to replace <code v-pre>&lt;organization&gt;</code> and <code v-pre>&lt;repo&gt;</code> with your values:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;organization&gt;/&lt;repo&gt;/settings/pages</code></pre>
@@ -273,13 +273,13 @@
 <p>By default, the Retype Action will publish your website to a <code v-pre>retype</code> branch, although you can configure to host from any branch.</p>
 <p>If you have committed the <code v-pre>retype-action.yml</code> file as detailed in <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">Step 1</doc-anchor-trigger>, you should now have a <code v-pre>retype</code> branch available within the list. Select <code v-pre>retype</code> then click the <strong>Save</strong> button.</p>
 <p><figure class="content-center">
-    <img src="../../static/github-actions-configure-branch.png" alt="" />
+    <img src="/static/github-actions-configure-branch.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Your GitHub Pages configuration should now look similar to the following:</p>
 <p><figure class="content-center">
-    <img src="../../static/github-actions-enable-pages.png" alt="" />
+    <img src="/static/github-actions-enable-pages.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -313,7 +313,7 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">https://&lt;organization&gt;.github.io/&lt;repo&gt;/</code></pre>
 </doc-codeblock></div>
-<p>You would then set the <a href="../../configuration/project/#url"><code v-pre>url</code></a> configuration with the following, where <code v-pre>&lt;organization&gt;</code> is replaced with your GitHub organization name and <code v-pre>&lt;repo&gt;</code> is replaced with your repository name.</p>
+<p>You would then set the <a href="/configuration/project/#url"><code v-pre>url</code></a> configuration with the following, where <code v-pre>&lt;organization&gt;</code> is replaced with your GitHub organization name and <code v-pre>&lt;repo&gt;</code> is replaced with your repository name.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">url: &lt;organization&gt;.github.io/&lt;repo&gt;/</code></pre>
 </doc-codeblock></div>
@@ -330,14 +330,14 @@
 <p>Instead of using the <code v-pre>github.io</code> domain, it is possible to configure GitHub Pages to use a custom domain or subdomain name.</p>
 <p>Just enter your domain or subdomain name in the <strong>Custom domain</strong> field and click <strong>Save</strong>.</p>
 <p><figure class="content-center">
-    <img src="../../static/github-actions-configure-custom-domain.png" alt="" />
+    <img src="/static/github-actions-configure-custom-domain.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>If your website will be available at <code v-pre>https://example.com</code>, use <code v-pre>example.com</code> as the <strong>Custom domain</strong> value.</p>
 <p>If your website will be available at <code v-pre>https://docs.example.com</code>, use <code v-pre>docs.example.com</code>.</p>
 <p>You will then need to <a href="https://docs.github.com/articles/using-a-custom-domain-with-github-pages/">configure the DNS</a> for your domain name.</p>
-<p>The last step would be updating the <a href="../../configuration/project/#url"><code v-pre>url</code></a> project configuration with the same value. For example, if your website will be available at <code v-pre>https://example.com</code>, use the following <code v-pre>url</code> configuration:</p>
+<p>The last step would be updating the <a href="/configuration/project/#url"><code v-pre>url</code></a> project configuration with the same value. For example, if your website will be available at <code v-pre>https://example.com</code>, use the following <code v-pre>url</code> configuration:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
 </doc-codeblock></div>
@@ -377,10 +377,10 @@
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/samples/basic-project-config/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/hosting/heroku/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Basic project config</span>
+                                                <span class="block mt-1">Publish to Heroku</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
