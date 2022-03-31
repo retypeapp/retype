@@ -9,7 +9,7 @@ tags: [guide]
 
 Getting started with Retype is super quick and you can be up and running within seconds.
 
-Check out the [Quick start](../README.md#quick-start) for the condensed process or continue here with the detailed instructions.
+Check out the [Quick start](/README.md#quick-start) for the condensed process or continue here with the detailed instructions.
 
 !!!
 

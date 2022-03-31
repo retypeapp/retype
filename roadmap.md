@@ -57,7 +57,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 - [x] [Google Tag Manager](/configuration/project.md#googletagmanager) integration.
 - [x] [Plausible](/configuration/project.md#plausible) IO integration.
 - [x] Page limit handling has been improved during `retype watch` mode.
-- [x] Include [`description`](configuration/page.md#description) in search index.
+- [x] Include [`description`](/configuration/page.md#description) in search index.
 
 +++ Fixed :icon-bug:
 
@@ -78,7 +78,7 @@ Released: [2021-12-23](https://github.com/retypeapp/retype/releases/tag/v1.11.2)
 
 +++ New :icon-shield-check:
 
-- [x] [`allowFullScreen`](components/embed.md#allowfullscreen) attribute on the `[!embed]` component.
+- [x] [`allowFullScreen`](/components/embed.md#allowfullscreen) attribute on the `[!embed]` component.
 
 +++
 
@@ -102,9 +102,9 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 +++ New :icon-shield-check:
 
 - [x] Multi-language search and automatic detection of content languages. See [#197](https://github.com/retypeapp/retype/issues/197).
-- [x] [Retype Pro](/pro) with increased page limit and Retype branding removal option.
+- [x] [Retype Pro](/pro/index.md) with increased page limit and Retype branding removal option.
 - [x] Better style for native scrollbars on Windows. See [#107](https://github.com/retypeapp/retype/issues/107).
-- [x] [`server.watch.validation`](configuration/project.md#watchvalidation) project configuration option.
+- [x] [`server.watch.validation`](/configuration/project.md#watchvalidation) project configuration option.
 - [x] All heading elements within the page content are now added to the search index. See [#166](https://github.com/retypeapp/retype/issues/166).
 - [x] Page config and `SUMMARY.md` can be used together.
 - [x] Upgrade Octicons icons library from v15.2.0 to v16.1.1.
@@ -117,12 +117,12 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 +++ New :icon-shield-check:
 
-- [x] [$\KaTeX$](components/math-formulas.md) math typesetting library support.
+- [x] [$\KaTeX$](/components/math-formulas.md) math typesetting library support.
 - [x] Auto generate RSS feed for blog posts.
-- [x] [`server.watch.polling`](configuration/project.md#watchpolling) project option.
-- [x] Gravatar support for [`author`](configuration/page.md#author) avatars.
-- [x] [project](https://retype.com/configuration/project/#gravatar) option to configure a [default](https://retype.com/configuration/project/#gravatardefault) Gravatar image.
-- [x] [`target`](components/reference-link.md#target) and [`icon`](components/reference-link.md#custom-icon) attributes on [`[!ref]`](components/reference-link.md) component.
+- [x] [`server.watch.polling`](/configuration/project.md#watchpolling) project option.
+- [x] Gravatar support for [`author`](/configuration/page.md#author) avatars.
+- [x] [project](/configuration/project.md#gravatar) option to configure a [default](/configuration/project.md#gravatardefault) Gravatar image.
+- [x] [`target`](/components/reference-link.md#target) and [`icon`](/components/reference-link.md#custom-icon) attributes on [`[!ref]`](/components/reference-link.md) component.
 - [x] Smarter link resolution logic.
 
 +++
@@ -133,8 +133,8 @@ Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
 +++ New :icon-shield-check:
 
-- [x] Incremental build during [`retype watch`](guides/cli/#retype-watch) with page dependency graph
-- [x] Ability to run `retype watch` with in-memory output. Turned on by default, see [`server.watch.mode`](configuration/project/#watch) to configure.
+- [x] Incremental build during [`retype watch`](/guides/cli.md#retype-watch) with page dependency graph
+- [x] Ability to run `retype watch` with in-memory output. Turned on by default, see [`server.watch.mode`](/configuration/project.md#watch) to configure.
 - [x] Platform specific NPM packages:
   1. [`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86)
   2. [`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64)
@@ -143,7 +143,7 @@ Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 - [x] Lazy Prism and Mermaid plugin execution for hidden content
 - [x] Keep scroll position on full page reload during [`retype watch`](/guides/cli.md#retype-watch).
 - [x] Build is so fast now that the client refresh interval can be tightened up to `100ms`.
-- [x] Add [`target`](components/button/#target) property for linkable components, such as [Button](components/button/) and [Badge](components/badge/).
+- [x] Add [`target`](/components/button.md#target) property for linkable components, such as [Button](/components/button.md) and [Badge](/components/badge.md).
 
 +++
 
@@ -169,7 +169,7 @@ Released: [2021-08-05](https://github.com/retypeapp/retype/releases/tag/v1.8.1)
 ../components/readme.md
 ../components/default.md
 ```
-- [x] Allow inline Markdown components for [`author`](configuration/page/#author), [`title`](configuration/page/#title), and [`label`](configuration/page/#label) page configs, see [#114](https://github.com/retypeapp/retype/issues/114). Block-level Markdown components will be ignored for those configs.
+- [x] Allow inline Markdown components for [`author`](/configuration/page.md#author), [`title`](/configuration/page.md#title), and [`label`](/configuration/page.md#label) page configs, see [#114](https://github.com/retypeapp/retype/issues/114). Block-level Markdown components will be ignored for those configs.
 
 +++ Fixed :icon-bug:
 !!!warning
@@ -185,19 +185,19 @@ Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 
 +++ New :icon-shield-check:
 
-- [x] [`retype.yml`](configuration/project.md) project configuration file format.
-- [x] [`url`](configuration/project.md#url) project config for setting your website URL.
+- [x] [`retype.yml`](/configuration/project.md) project configuration file format.
+- [x] [`url`](/configuration/project.md#url) project config for setting your website URL.
 - [x] Auto-generate a `sitemap.xml` file to inform search engines which pages to crawl.
 - [x] Auto-generate a `robots.txt` file.
 - [x] Open Graph and Twitter meta tags generated for every page.
-- [x] [`server.host`](configuration/project.md#host) and [`server.port`](configuration/project.md#port) project configs.
+- [x] [`server.host`](/configuration/project.md#host) and [`server.port`](/configuration/project.md#port) project configs.
 - [x] `/blog` summary for any `.md` page added to a `/blog` folder.
-- [x] [`author`](configuration/page.md#author), [`category`](configuration/page.md#category), and [`date`](configuration/page.md#date) page configs.
-- [x] [`redirect`](configuration/page.md#redirect) page config.
-- [x] [`visibility`](configuration/page.md#visibility) page config.
-- [x] Added logic to handle the manual creation of a [`CNAME`](configuration/project/#cname) file and copy to output.
+- [x] [`author`](/configuration/page.md#author), [`category`](/configuration/page.md#category), and [`date`](/configuration/page.md#date) page configs.
+- [x] [`redirect`](/configuration/page.md#redirect) page config.
+- [x] [`visibility`](/configuration/page.md#visibility) page config.
+- [x] Added logic to handle the manual creation of a [`CNAME`](/configuration/project.md#cname) file and copy to output.
 - [x] Automated process to check for new Octicons release and merge update.
-- [x] Update to latest [Octicons](components/icon.md) icon release.
+- [x] Update to latest [Octicons](/components/icon.md) icon release.
 - [x] Cleaned up the CLI experience. See [#103](https://github.com/retypeapp/retype/issues/103).
 - [x] Removed excessive bottom padding on blockquotes, see [#74](https://github.com/retypeapp/retype/issues/74).
 
@@ -209,13 +209,13 @@ Released: [2021-06-24](https://github.com/retypeapp/retype/releases/tag/v1.7.0)
 
 +++ New :icon-shield-check:
 
-- [x] [Column](components/column.md) component.
-- [x] Stacking [Panels](components/panel.md#stacking) component.
+- [x] [Column](/components/column.md) component.
+- [x] Stacking [Panels](/components/panel.md#stacking) component.
 - [x] Open Graph and Twitter card support.
-- [x] [Mermaid](components/mermaid.md) diagram and visualization support.
-- [x] [`target`](configuration/project.md#target) config for all `links` within `retype.yml`.
-- [x] Default page support for [`default.md`](guides/formatting/#home-page).
-- [x] Hover style on [Badge](components/badge.md) component when links.
+- [x] [Mermaid](/components/mermaid.md) diagram and visualization support.
+- [x] [`target`](/configuration/project.md#target) config for all `links` within `retype.yml`.
+- [x] Default page support for [`default.md`](/guides/formatting.md#home-page).
+- [x] Hover style on [Badge](/components/badge.md) component when links.
 - [x] Super improved handling of áccënt characters.
 
 +++
@@ -226,12 +226,12 @@ Released: [2021-06-09](https://github.com/retypeapp/retype/releases/tag/v1.6.0)
 
 +++ New :icon-shield-check:
 
-- [x] [`tags`](configuration/page/#tags) config for pages.
-- [x] [`:icon-shortcode:`](components/icon.md) component.
-- [x] [`include`](configuration/project/#include) project config.
-- [x] [`exclude`](configuration/project/#exclude) project config.
+- [x] [`tags`](/configuration/page.md#tags) config for pages.
+- [x] [`:icon-shortcode:`](/components/icon.md) component.
+- [x] [`include`](/configuration/project.md#include) project config.
+- [x] [`exclude`](/configuration/project.md#exclude) project config.
 - [x] Improved `<table>` styling.
-- [x] Performance boost for [components](components/readme.md).
+- [x] Performance boost for [components](/components/readme.md).
 
 +++
 
@@ -241,10 +241,10 @@ Released: 2021-05-12
 
 +++ New :icon-shield-check:
 
-- [x] [Badge](components/badge.md) component
-- [x] Syntax [highlighting](components/code-block/#syntax-highlighting) support for all code block languages
-- [x] [`route`](configuration/page.md#route) page config
-- [x] [`port`](configuration/project.md#port) project config
+- [x] [Badge](/components/badge.md) component
+- [x] Syntax [highlighting](/components/code-block.md#syntax-highlighting) support for all code block languages
+- [x] [`route`](/configuration/page.md#route) page config
+- [x] [`port`](/configuration/project.md#port) project config
 - [x] Larger font-size for `h1`, `h2`, and `h3` headers.
 - [x] Better handing of special characters within file names.
 - [x] Cleaner handling of `.md` pages created by GitHub Wiki.
@@ -258,12 +258,12 @@ Released: 2021-04-12
 +++ New :icon-shield-check:
 
 - [x] Even cleaner upgrade to Retype from GitBook experience
-- [x] Super fast [`retype watch`](guides/cli.md#retype-watch) incremental build process
-- [x] [image alignment](components/image.md#alignment-options) and captions
-- [x] [`exclude`](configuration/project.md#exclude) config for `retype.yml`
+- [x] Super fast [`retype watch`](/guides/cli.md#retype-watch) incremental build process
+- [x] [image alignment](/components/image.md#alignment-options) and captions
+- [x] [`exclude`](/configuration/project.md#exclude) config for `retype.yml`
 - [x] `blog` layout and `/blog` folder defaults
-- [x] [`[!file]`](components/file-download.md) component
-- [x] [`[!ref]`](components/reference-link.md) component
+- [x] [`[!file]`](/components/file-download.md) component
+- [x] [`[!ref]`](/components/reference-link.md) component
 
 +++
 
@@ -273,9 +273,9 @@ Released: 2021-03-30
 
 +++ New :icon-shield-check:
 
-- [x] GitHub [Actions](guides/github-actions.md) for Retype.
-- [x] [`expanded`](configuration/page.md#expanded) config on [folder](configuration/folder.md) configuration.
-- [x] [`icon`](configuration/project.md#icon) and [`iconAlign`](configuration/project.md#iconalign) configs on [`links`](configuration/project.md#links).
+- [x] GitHub [Actions](/guides/github-actions.md) for Retype.
+- [x] [`expanded`](/configuration/page.md#expanded) config on [folder](/configuration/folder.md) configuration.
+- [x] [`icon`](/configuration/project.md#icon) and [`iconAlign`](/configuration/project.md#iconalign) configs on [`links`](/configuration/project.md#links).
 
 +++
 
@@ -285,13 +285,13 @@ Released: 2021-03-25
 
 +++ New :icon-shield-check:
 
-- [x] [`central`](configuration/page.md#layout) layout.
-- [x] [`page`](configuration/page.md#layout) layout.
-- [x] [`Edit this page`](configuration/project.md#edit) link.
+- [x] [`central`](/configuration/page.md#layout) layout.
+- [x] [`page`](/configuration/page.md#layout) layout.
+- [x] [`Edit this page`](/configuration/project.md#edit) link.
 - [x] `Previous | Next` footer navigation buttons for pages.
-- [x] [`order`](configuration/page.md#order) Page level config.
-- [x] `hidden` [`visibility`](configuration/page.md#visibility) Page level config.
-- [x] [`favicon`](configuration/project.md#favicon) Project config available in `retype.yml`.
+- [x] [`order`](/configuration/page.md#order) Page level config.
+- [x] `hidden` [`visibility`](/configuration/page.md#visibility) Page level config.
+- [x] [`favicon`](/configuration/project.md#favicon) Project config available in `retype.yml`.
 
 +++
 
@@ -301,14 +301,14 @@ Released: 2021-03-12
 
 +++ New :icon-shield-check:
 
-- [x] [Tab](components/tab.md) component.
-- [x] [Button](components/button.md) component.
-- [x] [Panel](components/panel.md) component with expand/collapse.
-- [x] [`retype watch`](guides/cli.md#retype-watch) command.
-- [x] Live Reload when using [`retype watch`](guides/cli.md#retype-watch).
-- [x] [`.yml`](configuration/page.md#separate-yml-file) option for Page or Folder configs.
-- [x] Code block [title](components/code-block.md#title).
-- [x] [line numbering](components/code-block.md#line-numbers) in code blocks.
+- [x] [Tab](/components/tab.md) component.
+- [x] [Button](/components/button.md) component.
+- [x] [Panel](/components/panel.md) component with expand/collapse.
+- [x] [`retype watch`](/guides/cli.md#retype-watch) command.
+- [x] Live Reload when using [`retype watch`](/guides/cli.md#retype-watch).
+- [x] [`.yml`](/configuration/page.md#separate-yml-file) option for Page or Folder configs.
+- [x] Code block [title](/components/code-block.md#title).
+- [x] [line numbering](/components/code-block.md#line-numbers) in code blocks.
 
 +++
 

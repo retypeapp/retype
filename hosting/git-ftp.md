@@ -1,6 +1,6 @@
 ---
 icon: <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 22.261003 24.000019"><path d="m 15.960532,23.575548 v -6.13409 q -3.18436,2.17877 -4.42459,2.88269 -2.8826896,1.57542 -5.0614696,1.57542 -2.61453,0 -4.49164,-1.91062 -1.91061997,-1.97766 -1.91061997,-4.52515 0.1676,-2.68158 1.13966997,-5.43019 2.01118,-5.8324199 6.67042,-8.5475099 2.3128496,-1.37431007 5.3296196,-1.37431007 h 0.13408 l 0.90503,-0.0335 q 1.54191,0 1.40783,1.20671007 -2.68158,0.13408 -5.02795,1.24023 -2.3463796,1.10614 -4.0726396,2.96649 -1.72626,1.86034 -2.71509,4.34079 -0.98883,2.4804599 -0.98883,5.0614699 0,2.58102 1.34078,3.72068 1.34079,1.13967 3.45253,1.13967 1.81006,0 5.0279496,-1.57542 2.0447,-1.00559 3.05029,-2.27934 0.50279,-0.60335 0.50279,-1.27375 V 9.6649081 q -1.00559,0 -4.67599,0.7709599 -3.6703996,0.77095 -4.2402396,0.87151 -0.1676,-0.10056 -0.40224,-0.21788 -0.23463,-0.11732 -0.26815,-0.35196 -0.067,-0.50279 1.47486,-1.5418999 0.36872,-0.20112 4.4245996,-0.78771 4.05588,-0.5866 5.16203,-0.7542 1.10615,-0.16759 1.84358,-0.26815 0.33519,0.067 0.83799,-0.0168 0.50279,-0.0838 0.93855,-0.0503 1.07263,0.0335 1.00559,1.17319 l -2.78213,1.13966 q -0.63688,2.0446999 -0.63688,7.7095299 l 0.067,4.99443 v 1.24022 q -1.00559,0.5028 -1.94414,0.5028 -0.93855,0 -1.07263,-0.5028 z"/></svg>
-layout: page
+visibility: hidden
 tags: [guide, git-ftp, ftp, publish, deploy, secrets]
 ---
 # FTP sync using git history
@@ -108,19 +108,19 @@ For example, the final expected docs URL will become:
 https://www.mywebsite.com/docs/
 ```
 
-Along with that, Retype will require the [`url`](../configuration/project.md#url) config to be added to the `retype.yml` project configuration file. The following sample demonstrates how the `url` would be configured for this scenario.
+Along with that, Retype will require the [`url`](/configuration/project.md#url) config to be added to the `retype.yml` project configuration file. The following sample demonstrates how the `url` would be configured for this scenario.
 
 ```yml
 url: example.com
 ```
 
-See [url](../configuration/project.md#url) for additional details.
+See [url](/configuration/project.md#url) for additional details.
 
 ---
 
 ### Use the same workflow for GitHub Pages and FTP sync
 
-In the simplest case scenario, where the `url` setting is the same for both the GitHub Pages and FTP host, simply set up the branch (`retype` by default) used by the **git-ftp action** as the GitHub Pages' branch. See the [GitHub Actions Guide](../guides/github-actions) for more information.
+In the simplest case scenario, where the `url` setting is the same for both the GitHub Pages and FTP host, simply set up the branch (`retype` by default) used by the **git-ftp action** as the GitHub Pages' branch. See the [GitHub Actions Guide](/guides/github-actions) for more information.
 
 Going forward, it will probably be the case that different values for `url` will be necessary for each published website. In this case, the following workflow can be used:
 
@@ -200,4 +200,4 @@ Every time either the GitHub Pages or git-ftp Actions are run, they will switch 
 - [x] More details on the Retype [git-ftp Action](https://github.com/retypeapp/action-git-ftp).
 - [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
 
-All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](../configuration/project.md) options for full details.
+All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](/configuration/project.md) options for full details.

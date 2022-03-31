@@ -101,7 +101,7 @@ Config `target` value | Runtime `target` value
 `nEWs2` | `news2`
 `recent NEWS` | `recent-news`
 
-See also the [`links.target`](../configuration/project.md#target) configuration.
+See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ---
 

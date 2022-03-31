@@ -22,7 +22,7 @@ You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
 From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
 
-Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` [command](guides/cli.md#retype-watch):
+Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype watch` [command](/guides/cli.md#retype-watch):
 
 +++ NPM
 ```
@@ -63,15 +63,15 @@ Don't blink. Retype was built for speed.
 
 #### :icon-gear: Easy install
 
-[Installation](guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown `.md` file which Retype will start building a new website from.
+[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown `.md` file which Retype will start building a new website from.
 
 #### :icon-plug: Powerful
 
-Project level [configuration](configuration/project.md) using `retype.yml` unlocks many more Retype features and customization.
+Project level [configuration](/configuration/project.md) using `retype.yml` unlocks many more Retype features and customization.
 
 #### :icon-pencil: Simple formatting
 
-Pages are [formatted](guides/formatting.md) using Markdown syntax and Retype [components](components/readme.md). Page level [configuration](configuration/page.md) is available, such as setting a custom navigation [`label`](configuration/page.md#label) or [`icon`](configuration/page.md#icon).
+Pages are [formatted](/guides/formatting.md) using Markdown syntax and Retype [components](/components/readme.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
 
 #### :icon-sync: Live reload
 
