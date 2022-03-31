@@ -1,33 +1,33 @@
 ---
 icon: <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 24"><path fill-rule="evenodd" d="m 19.44,0 c 1.1928,0 2.16,0.9672 2.16,2.16 v 0 19.68 c 0,1.1928 -0.9672,2.16 -2.16,2.16 v 0 H 2.16 C 0.9672,24 0,23.0328 0,21.84 v 0 V 2.16 C 0,0.9672 0.9672,0 2.16,0 v 0 z m 0,1.2 H 2.16 C 1.6308,1.2 1.2,1.6305 1.2,2.16 v 0 19.68 c 0,0.5292 0.4308,0.96 0.96,0.96 v 0 h 17.28 c 0.5295,0 0.96,-0.4308 0.96,-0.96 v 0 V 2.16 C 20.4,1.6305 19.9695,1.2 19.44,1.2 Z M 5.7,15.6 8.4000004,18 5.7,20.4 Z m 2.4000004,-12 v 6.8133 C 9.2982004,10.0233 10.9731,9.6 12.6,9.6 c 1.4835,0 2.3715,0.5832 2.8551,1.0725 0.989287,1.0005 1.043457,2.263571 1.044993,2.502279 L 16.500068,20.4 H 14.1 V 13.233 C 14.0883,12.6729 13.8186,12 12.6,12 10.269063,12 7.6671274,13.119853 7.4149964,13.230859 l -0.0197,0.0087 -1.6953004,0.768 V 3.599959 Z M 16.5,3.6 c -0.162,1.3632 -0.7146,2.67 -1.8,3.9 v 0 h -2.4 c 0.9432,-1.2375 1.5354,-2.5398 1.8,-3.9 v 0 z"/></svg>
-layout: hidden
+# visibility: hidden
 tags: [guide, heroku, publish]
 ---
-# Publish to Heroku
+# Heroku
 
-Easily publish your documentation using Heroku by just uploading the raw project and letting Retype build for you!
+Easily publish your project using [Heroku](https://heroku.com/) and let Retype do the building for you!
 
-With the dedicated Retype Buildpack for Heroku, any retype project can be published to Heroku in just a few steps!
-
-This guide will use the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to go through four simple steps to publish this very website to a freshly created Heroku App.
+With the dedicated Retype [buildpack](https://github.com/retypeapp/heroku-buildpack/) for Heroku, any Retype project can be published to Heroku in only a few steps!
 
 ---
 
-## Step 1: Clone this website's repository
+## Step 1: Clone repository
 
-To clone this website on your end using the **git** commandline client, issue the following command:
+Clone a git repository using the `git` command line client.
 
-```bash Make a local clone of retype.com website
+For demonstrations purposes, let's use the Retype website [repo](https://github.com/retypeapp/retype), but of course you likely want to use your own project.
+
+```bash
 git clone https://github.com/retypeapp/retype
 ```
 
-It will then create a **retype** directory containing a copy of this website.
+Cloning will create a `retype` directory containing a copy of this website.
 
-### Switch to the repository folder
+### Switch folders
 
 This is important for Heroku to be able to set up the repository remotes in the next step.
 
-```bash Switch into the repository folder
+```bash
 cd retype
 ```
 
@@ -35,91 +35,82 @@ cd retype
 
 ## Step 2: Create the app
 
-Run the following in your command prompt:
+Run the following command to create a new Heroku app instance.
 
-```bash New app using the Heroku CLI.
+```bash
 heroku create my-app-name
 ```
 
-!!! Replace `my-app-name`
-Remember to replace `my-app-name` with the app name of your preference. The name of the app is prefixed to the public app address. With the code above it would be:
-**https://my-app-name.herokuapp.com/**.
+!!!
+Remember to replace `my-app-name` with the app name of your preference. The name of the app is prefixed to the public app address.
+
+With the sample above, that would be `https://my-app-name.herokuapp.com/`.
 !!!
 
-!!! Log in to Heroku
-If you are not logged already, you can log in to Heroku with the CLI by issuing the `heroku login` command.
-!!!
+### Login to Heroku
+
+If you are not already signed into Heroku, run the `heroku login` command.
+
+```bash
+heroku login
+```
 
 ---
 
-## Step 3: Enable Retype Buildpack
+## Step 3: Enable buildpack
 
-<!-- FIXME FIXME FIXME FIXME
-Assign the elements' address (something like retypeapp/heroku-buildpack, whatever is published to Heroku Elements)
-FIXME FIXME FIXME FIXME -->
-```bash Set Retype Buildpack using the Heroku CLI
+<!-- TODO
+Assign the element address.
+Should be retypeapp/heroku-buildpack, or whatever is published to Heroku Elements
+-->
+
+Enable the Retype Heroku buildpack using the Heroku CLI.
+
+```bash
 heroku buildpacks:set https://github.com/retypeapp/heroku-buildpack
 ```
 
-This will do the actual magic: With this, once the documentation project is pushed to Heroku, our dedicated buildpack will kick in and handle the documentation build!
+The Retype Heroku buildpack will do all the magic. Once the documentation project is pushed to Heroku, the Retype buildpack will start up and handle the documentation build.
 
 ---
 
-## Step 4: Publish the project
+## Step 4: Publish
 
-Now, simply push the repository to heroku using the **git** command:
+Push the repository to Heroku using the `git push` command.
 
-```bash Push the repository
+```bash
 git push heroku main
 ```
 
-The `git push` process should take a few seconds to complete. Once it is done, the last lines of output should show the full URL to your app. With the app name used in this guide, it would be **https://my-app-name.herokuapp.com/**.
+The `git push` process should only take a few seconds to finish. Once complete, the last lines of output should print out the URL to your app.
 
-!!! The project is built remotely
-You don't need to build your documentation project with Retype beforehand other than for testing it. You also don't need to commit any built files. The Heroku Buildpack will handle all that for you!
+With the app name used in this guide, that URL would be `https://my-app-name.herokuapp.com/`.
+
 !!!
-
-!!! Your project is safe
-The Retype Buildpack will use your project data to build the documentation, and will keep only the built output from Retype; this means that anything that is not deployed to Retype's output won't be accessible in the published website.
-!!!
-
----
-
-## Publishing your own project
-
-Any documentation project set up to be built with retype can be replaced in [step 1](#step-1-clone-this-websites-repository). The buildpack requires a **retype.yml** file in order to build the documentation. The file may be provided in different ways:
-
-- a **retype.yml** file at the root of the repository
-- a **retype.yml** file anywhere in the repository
-- the full path to a directory containing **retype.yml**, specified via the [Heroku config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`
-- the full path to the file. The specified file will then be used as **retype.yml** regardless of its name; also specified via Heroku config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`
-
-If there's no **retype.yml** file in the repository, just run `retype watch` and adjust the settings to your liking in the just-created **retype.yml**, then commit it. Your project would then be ready to be pushed to Heroku.
-
-See [Quick Start](/README.md#quick-start) for details on `retype watch`, and see [Configuration > Project](/configuration/project.md) for possible **retype.yml** config values.
-
-!!! Several **retype.yml** files in the repo
-If there are various **retype.yml** files across the repository, we can't guarantee which one the buildpack is going to pick, and it is a good idea to use the `RETYPE_CONFIG` config var to indicate where the intended configuration file is to be found within the repo.
+Building your documentation project locally is not required, other than for testing. You do not need to commit any built files. The Heroku buildpack will handle all that for you! The project is built remotely.
 !!!
 
 ---
 
-## Summary
+## Publishing your project
 
-- [x] Grab a local copy of Retype's Website, see [step 1](#step-1-clone-this-websites-repository).
-- [x] Create the Heroku App, see [step 2](#step-2-create-the-app).
-- [x] Instruct the app to use Retype's Buildpack, see [step 3](#step-3-enable-retype-buildpack).
-- [x] Publish (by pushing the repo to Heroku), see [step 4](#step-4-publish-the-project).
+Any Retype project can be deployed to Heroku. Just use your repo in [Step 1](#step-1-clone-repository).
+
+The buildpack only requires a `retype.yml` file to build the documentation and the file can be provided serveral different ways:
+
+1. A `retype.yml` file in the root of your project, or
+2. A `retype.yml` file anywhere in the repository, or
+3. The full path to a directory containing `retype.yml` or directly to the file itself. Configure using the Heroku [config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`, or
+
+Please review the [Project](/configuration/project.md) configuration docs for all possible `retype.yml` options.
 
 ---
 
 ## Further Reading
 
-- [x] Install Retype to build locally, see [Getting Started](getting-started).
-- [x] Details on `retype watch`, see [Quick Start](/README.md#quick-start).
-- [x] Accepted configuration settings in **retype.yml**, see [Configuration > Project](/configuration/project.md).
-- [x] Troubleshoot Heroku push/build issues, see [Retype Buildpack's README Troubleshooting section](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md#troubleshooting).
-- [x] More information on Retype Buildpack, see [README in Retype Buildpack's repo](https://github.com/retypeapp/heroku-buildpack/blob/main/README.md).
-- [x] Create account in Heroku, see [Heroku website](https://heroku.com).
-- [x] Download the Heroku CLI, see [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
-- [x] Heroku CLI documentation, see [Command Line Article in Heroku dev center](https://devcenter.heroku.com/categories/command-line)
+- [x] Install Retype to run locally, see [Getting Started](/guides/getting-started.md)
+- [x] Troubleshoot Heroku push/build issues, see [troubleshooting](https://github.com/retypeapp/heroku-buildpack/#troubleshooting)
+- [x] Check out the open-source Retype Heroku [buildpack](https://github.com/retypeapp/heroku-buildpack/)
+- [x] To create a Heroku account, see [heroku.com](https://heroku.com)
+- [x] Download the Heroku [CLI](https://devcenter.heroku.com/articles/heroku-cli)
+- [x] Heroku CLI [documentation](https://devcenter.heroku.com/categories/command-line)
