@@ -5,11 +5,9 @@ tags: [guide, heroku, publish]
 ---
 # Heroku
 
-Easily publish your project using [Heroku](https://heroku.com/) and let Retype do the building for you!
+Easily publish your project using [Heroku](https://heroku.com/) using the the dedicated [buildpack](https://github.com/retypeapp/heroku-buildpack/) and let Retype do the building for you!
 
-With the dedicated Retype [buildpack](https://github.com/retypeapp/heroku-buildpack/) for Heroku, any Retype project can be published to Heroku in only a few steps!
-
----
+![](heroku-logo.png)
 
 ## Step 1: Clone repository
 
