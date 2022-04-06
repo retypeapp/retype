@@ -6,7 +6,7 @@ icon: home
 
 [Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
 
-![](static/retype-hero.svg)
+![](static/retype-hero.png)
 
 No coding is required and just one Markdown file, such as a [`README.md`](https://www.makeareadme.com/), will get you started.
 
