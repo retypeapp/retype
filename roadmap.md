@@ -22,6 +22,9 @@ Available: April 2022
 - [x] :icon-bug: Exclude all contents of the `_includes` directory from being deployed.
 - [x] :icon-bug: Exclude files and pages within the `_includes` directory from the sitemap generation.
 - [x] :icon-bug: Sidebar menu item is not highlighted when no trailing `/` in the URL.
+- [ ] :icon-bug: `.yml` files excluded from deploy even if explicitly declared in [`include`](/configuration/project.md#include).
+- [ ] :icon-shield-check: New `RETYPE_HOST` environment variable.
+- [ ] :icon-shield-check: New `generator.defaultDocument` [project](/configuration/project.md) config.
 - [ ] :icon-shield-check: Support for full relative URL pathing. See [#14](https://github.com/retypeapp/retype/discussions/14), [#133](https://github.com/retypeapp/retype/discussions/133), [#194](https://github.com/retypeapp/retype/discussions/194), [#222](https://github.com/retypeapp/retype/discussions/222), [#233](https://github.com/retypeapp/retype/discussions/233), and [#276](https://github.com/retypeapp/retype/issues/276)
 
 +++
