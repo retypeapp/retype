@@ -41,6 +41,10 @@ footer:
   links:
     - text: About
       link: about.md
+      icon: question
+    - text: License
+      link: license.md
+      icon: shield-check
 
 integrations:
   crisp:
