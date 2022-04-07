@@ -93,12 +93,6 @@ Purchase another Retype Pro pack of three. We'll add three more Pro projects to 
 
 You can purchase as many Retype Pro licenses as you require.
 
-### Can I get a trial license for testing?
-
-Yes. Please email hello@retype.com with your request.
-
-In the email, please include the domain or sub-domain that you would like to use for the license key.
-
 ### We have 5 people on our team writing content and using Retype. Do we require 5 licenses?
 
 No. Retype is licensed per website, not per person. One **Retype Pro** instance will cover an unlimited number of content authors or developers using Retype.
