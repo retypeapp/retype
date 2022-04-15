@@ -15,7 +15,7 @@ There are two limitations:
 1. Maximum of 100 pages can be built
 2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding cannot be removed
 
-It is possible to remove both those limitations with [Retype Pro](/pro/index.md).
+It is possible to remove both those limitations with [Retype Pro](/pro.md).
 
 ## Can I get a trial license key?
 
