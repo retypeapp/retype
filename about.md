@@ -25,7 +25,7 @@ Retype is only made possible because of the hard work of other amazing open-sour
 | [Octicons](https://octicons-primer.vercel.app/octicons/) | [MIT](https://github.com/primer/octicons/blob/main/LICENSE)                | Default bundled [icons](/components/icon.md)                           |
 | [Vue.js](https://vuejs.org/)                             | [MIT](https://github.com/vuejs/vue/blob/dev/LICENSE)                       | Client UI framework                                                   |
 | [Turbo](https://turbo.hotwired.dev/)                     | [MIT](https://github.com/hotwired/turbo/blob/main/MIT-LICENSE)             | HTML over the wire                                                    |
-| [Lunr](http://lunrjs.com/)                               | [MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE)             | Search index                                                          |
+| [Lunr](https://lunrjs.com/)                               | [MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE)             | Search index                                                          |
 | [Prism](https://prismjs.com/)                            | [MIT](https://github.com/PrismJS/prism/blob/master/LICENSE)                | [Code block](/components/code-block.md#syntax-highlighting) formatting |
 | [Mermaid](https://mermaid-js.github.io/mermaid/)         | [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE)          | [Mermaid](/components/mermaid.md) diagrams                             |
 | [KaTeX](https://github.com/KaTeX/KaTeX)                  | [MIT](https://github.com/KaTeX/KaTeX/blob/master/LICENSE)                  | [Math formula](/components/math-formulas.md) rendering                 |
