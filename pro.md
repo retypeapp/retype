@@ -41,9 +41,9 @@ No. A **Retype Pro** license key will unlock functionality within the same `rety
 
 Adding the key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
-### What is considered a website?
+### What is considered a project?
 
-We consider a website a unique URL.
+One project is one website with a unique URL.
 
 Sub-domains each count as one unique URL.
 
@@ -77,11 +77,9 @@ The additional `github.io` and `gitlab.io` functionality enables hosting more th
 
 ### Can we purchase a multi-year key and is a discount available?
 
-Purchase for one year, or for as long as you want. Buy [here](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1).
+Purchase for one year, or for as long as you want. Buy [here](https://buy.stripe.com/8wM2a25fpf502jKbII).
 
-If you purchase 2 or more years, take an additional 10% off the total.
-
-For instance, purchasing 2 years would be `($149 + $99) - 10% = $232.20 USD`.
+A 10% discount is applied if two or more Retype Pro licenses are purchased.
 
 ### What if I have more than three Pro projects?
 
