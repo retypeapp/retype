@@ -10,14 +10,14 @@ order: 2000
 
 Features | Retype | Retype Pro
 --- | --- | ---
-Pricing | Free | ~~$149~~ $99 <br /><small>Early adopter pricing</small>
+Pricing | Free | $149
 Free upgrades | Unlimited | One year
-Renewal | Free | $99 for one year of upgrades
+Renewal | Free | $99/year ([optional](#if-i-do-not-renew-does-my-website-stop-working))
 Authors or Developers | Unlimited | Unlimited
-Websites – max `100` pages each | Unlimited | Unlimited
-Websites – max `1000` pages each | 0 | 3
+Max pages per project | 100 | 1000
+Max projects per license | -- | 3
 Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro ~~$149~~ $99" icon="star-fill"](https://buy.stripe.com/28o15Y5fp7CygaAfZ0)<br />[Need more?](https://buy.stripe.com/6oE6qiePZ1eae2sfZ1){class="text-sm"} |
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro $149" icon="star-fill"](https://buy.stripe.com/8wM2a25fpf502jKbII)<br />[Need more?](https://buy.stripe.com/28og0S37h5uqaQg9AE){class="text-sm"} |
 
 ## Questions & Answers
 
@@ -81,11 +81,7 @@ Purchase for one year, or for as long as you want. Buy [here](https://buy.stripe
 
 If you purchase 2 or more years, take an additional 10% off the total.
 
-For instance, purchasing 2 years would be `($149 + $99) - 10% = $232.20 USD`, although discounted pricing for Early Adopters would be `($99 + $99) - 10% = $178.20. USD`.
-
-Do you plan to be using Retype for 5 years? Pricing as an Early Adopter would be `($99 * 5) - 10% = $445.50 USD`.
-
-You have running 6 websites with Retype and have a 4-year time frame. Pricing today would be `($99 * 2 * 4) - 10% = $712.80 USD`.
+For instance, purchasing 2 years would be `($149 + $99) - 10% = $232.20 USD`.
 
 ### What if I have more than three Pro projects?
 
