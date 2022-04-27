@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: retypeapp/action-build@latest
+      - uses: retypeapp/action-build@next
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
