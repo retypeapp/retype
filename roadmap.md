@@ -13,28 +13,40 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 ---
 
-## v2.3.0 [!badge text="NEXT" variant="info"]
-
-Available: April 2022
+## v2.4.0 [!badge text="NEXT" variant="info"]
 
 +++ Planned :icon-unverified:
 
-- [x] :icon-bug: Exclude all contents of the `_includes` directory from being deployed.
-- [x] :icon-bug: Exclude files and pages within the `_includes` directory from the sitemap generation.
-- [x] :icon-bug: Sidebar menu item is not highlighted when no trailing `/` in the URL.
-- [x] :icon-bug: `.yml` files excluded from deploy even if explicitly declared in [`include`](/configuration/project.md#include).
-- [x] :icon-shield-check: New `RETYPE_DEFAULT_HOST` environment variable.
-- [x] :icon-shield-check: New `generator.trailingSlash` [project](/configuration/project.md) config to add a trailing `/` when constructing links.
-- [x] :icon-shield-check: New `generator.directoryIndex.name` [project](/configuration/project.md) config.
 - [x] :icon-shield-check: New `generator.directoryIndex.append` [project](/configuration/project.md) config.
-- [x] :icon-shield-check: New `generator.directoryIndex.altNames` [project](/configuration/project.md) config.
-- [x] :icon-shield-check: New `search.preload` [project](/configuration/project.md) config.
-- [x] :icon-shield-check: New `generator.paths` [project](/configuration/project.md) config with `source`, `relative`, `root` options.
-- [x] :icon-shield-check: Support for full relative URL pathing. See [#14](https://github.com/retypeapp/retype/discussions/14), [#133](https://github.com/retypeapp/retype/discussions/133), [#194](https://github.com/retypeapp/retype/discussions/194), [#222](https://github.com/retypeapp/retype/discussions/222), [#233](https://github.com/retypeapp/retype/discussions/233), and [#276](https://github.com/retypeapp/retype/issues/276)
+- [x] `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
 
 +++
 
-## v2.2.0 [!badge text="LATEST" variant="info"]
+## v2.3.0 [!badge text="LATEST" variant="info"]
+
+Released: [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
+
++++ New :icon-shield-check:
+
+- [x] Support for full relative URL pathing. See [#14](https://github.com/retypeapp/retype/discussions/14), [#133](https://github.com/retypeapp/retype/discussions/133), [#194](https://github.com/retypeapp/retype/discussions/194), [#222](https://github.com/retypeapp/retype/discussions/222), [#233](https://github.com/retypeapp/retype/discussions/233), and [#276](https://github.com/retypeapp/retype/issues/276).
+- [x] New `generator.paths` [project](/configuration/project.md) config with `source`, `relative`, `root` options.
+- [x] New `search.preload` project config to instruct Retype to preload the search index instead of on demand load.
+- [x] New `generator.directoryIndex.name` project config for setting the default document name.
+- [x] New `generator.directoryIndex.altNames` [project](/configuration/project.md) config.
+- [x] New `RETYPE_DEFAULT_HOST` environment variable. See [#239](https://github.com/retypeapp/retype/discussions/239).
+- [x] New self-referential canonical meta tag for all pages.
+- [x] Link to API pages using fully qualified class name path.
+
++++ Fixed :icon-bug:
+
+- [x] Exclude all contents of the `_includes` directory from being deployed.
+- [x] Exclude files and pages within the `_includes` directory from the sitemap generation.
+- [x] Sidebar menu item is not highlighted when no trailing `/` in the URL.
+- [x] `.yml` files excluded from deploy even if explicitly declared in [`include`](/configuration/project.md#include).
+
++++
+
+## v2.2.0
 
 Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
 
