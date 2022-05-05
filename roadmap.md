@@ -18,7 +18,7 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 +++ Planned :icon-unverified:
 
 - [x] :icon-shield-check: New `generator.directoryIndex.append` [project](/configuration/project.md) config.
-- [x] `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
+- [x] :icon-shield-check: New `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
 
 +++
 
@@ -41,8 +41,25 @@ Released: [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
 
 - [x] Exclude all contents of the `_includes` directory from being deployed.
 - [x] Exclude files and pages within the `_includes` directory from the sitemap generation.
-- [x] Sidebar menu item is not highlighted when no trailing `/` in the URL.
-- [x] `.yml` files excluded from deploy even if explicitly declared in [`include`](/configuration/project.md#include).
+- [x] Sidebar menu item is not highlighted when missing trailing `/` in the URL.
+- [x] Editor font request does not respect `base` path. See [#318](https://github.com/retypeapp/retype/discussions/318).
+- [x] Syntax errors in yaml files results in corrupt category URLs. See [#316](https://github.com/retypeapp/retype/discussions/316).
+- [x] `links` to the index document in the mobile sidebar footer not being resolved.
+- [x] `.yml` files excluded from deploy even if explicitly declared in `include`. See [#311](https://github.com/retypeapp/retype/discussions/311).
+- [x] `og:url` and `twitter:url` paths incorrect for API generated pages.
+- [x] Include full version in the generator meta tag version.
+- [x] Many `categories` extends beyond page width and does not wrap. See [#316](https://github.com/retypeapp/retype/discussions/316).
+
++++ Breaking :icon-shield-x:
+
+- [x] Switch `generator.paths` default value to `relative`.
+
+To revert to the previous functionality, set the `generator.paths` config to `root` in your project `retype.yml` file.
+
+```yml
+generator:
+  paths: root # Old default functionality
+```
 
 +++
 
