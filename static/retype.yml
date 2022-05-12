@@ -67,7 +67,7 @@ cname: example.com # The CNAME file value, or false to not create a CNAME file.
 
 edit:
   repo: ""   # The URL where the source files for this project are located.
-  base: ""   # Otional base path to a directory within the above repo.
+  base: ""   # Optional base path to a directory within the above repo.
   branch: "" # Point to a custom branch within the repo.
   label: "Edit this page" # A custom label for the generated link.
 
