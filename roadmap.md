@@ -19,6 +19,7 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 - [x] :icon-shield-check: New `generator.directoryIndex.append` [project](/configuration/project.md) config.
 - [x] :icon-shield-check: New `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
+- [x] :icon-bug: Fixing misc defects.
 
 +++
 
