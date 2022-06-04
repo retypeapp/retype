@@ -72,10 +72,10 @@ It is possible to install smaller platform specific packages without the bundlin
 
 Platform | Install command
 --- | ---
-[`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86) | `npm install retypeapp-win-x86`
-[`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64) | `npm install retypeapp-win-x64`
-[`retypeapp-linux-x64`](https://www.npmjs.com/package/retypeapp-linux-x64) | `npm install retypeapp-linux-x64`
-[`retypeapp-darwin-x64`](https://www.npmjs.com/package/retypeapp-darwin-x64) | `npm install retypeapp-darwin-x64`
+[`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86) | `npm install retypeapp-win-x86 --global`
+[`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64) | `npm install retypeapp-win-x64 --global`
+[`retypeapp-linux-x64`](https://www.npmjs.com/package/retypeapp-linux-x64) | `npm install retypeapp-linux-x64 --global`
+[`retypeapp-darwin-x64`](https://www.npmjs.com/package/retypeapp-darwin-x64) | `npm install retypeapp-darwin-x64 --global`
 
 ---
 
