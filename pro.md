@@ -16,6 +16,7 @@ Renewal | Free | $99/year ([optional](#if-i-do-not-renew-does-my-website-stop-wo
 Authors or Developers | Unlimited | Unlimited
 Max pages per project | 100 | 1000
 Max projects per license | -- | 3
+Commercial use | :white_check_mark: | :white_check_mark:
 Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark:
 | | [!button text="Install" variant="ghost"](/guides/getting-started.md) | [!button text="Buy Pro $149" icon="star-fill"](https://buy.stripe.com/8wM2a25fpf502jKbII)<br />[Need more?](https://buy.stripe.com/28og0S37h5uqaQg9AE){class="text-sm"} |
 
