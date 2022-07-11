@@ -355,7 +355,7 @@ layout: page
 
 === order : `string`
 
-A custom stack order within the navigation.
+A custom stack order for this page within the left side-bar tree navigation.
 
 Options can include:
 
