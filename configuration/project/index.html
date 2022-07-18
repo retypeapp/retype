@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711148698291">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711500935041">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -37,12 +37,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.711148698291" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.711500935041" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.711148698291" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.711500935041" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.711148698291" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.711148698291" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.711500935041" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.711500935041" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -1075,6 +1075,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </div>
 </div>
 </doc-panel>
+<hr />
 <doc-anchor-target id="plausible">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#plausible">#</doc-anchor-trigger>
@@ -1082,7 +1083,6 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     </h3>
 </doc-anchor-target>
 <p><a href="https://plausible.io/">Plausible.io</a> is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.</p>
-<hr />
 <doc-anchor-target id="plausibledomain">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#plausibledomain">#</doc-anchor-trigger>
@@ -1104,6 +1104,37 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
     domain: domain1.com,domain2.com,subdomain.yourdomain.com</code></pre>
 </doc-codeblock></div>
 <p>Check out the Plausible <a href="https://plausible.io/docs/">documentation</a> for more details.</p>
+</doc-panel>
+<doc-anchor-target id="plausiblehost">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#plausiblehost">#</doc-anchor-trigger>
+        <span>plausible.host</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="plausible-host-string">
+    <template #title>plausible.host : <code v-pre>string</code></template>
+<p>The Plausible service can be <a href="https://plausible.io/docs/self-hosting">self-hosted</a> and your Retype project can be configured to use your custom <code v-pre>host</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  plausible:
+    host: &lt;string&gt;</code></pre>
+</doc-codeblock></div>
+<p>A typical <code v-pre>host</code> project configuration would look like the following sample:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+  plausible:
+    host: plausible.example.com</code></pre>
+</doc-codeblock></div>
+<p>If no transfer protocol is supplied, Retype will default the <code v-pre>host</code> value to use <code v-pre>https</code>.</p>
+<p>All of the following sample <code v-pre>host</code> values are supported:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">host: example.com
+host: docs.example.com
+host: https://example.com
+host: http://example.com
+host: example.com/js/plausible.js
+host: docs.example.com/js/plausible.js</code></pre>
+</doc-codeblock></div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="links">
