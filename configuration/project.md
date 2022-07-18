@@ -608,11 +608,11 @@ Disabling Gravatar will also reset the default avatar to the Retype default.
 
 ===
 
+---
+
 ### plausible
 
 [Plausible.io](https://plausible.io/) is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.
-
----
 
 ### plausible.domain
 
@@ -635,6 +635,41 @@ integrations:
 ```
 
 Check out the Plausible [documentation](https://plausible.io/docs/) for more details.
+
+===
+
+### plausible.host
+
+=== plausible.host : `string`
+
+The Plausible service can be [self-hosted](https://plausible.io/docs/self-hosting) and your Retype project can be configured to use your custom `host`.
+
+```yml
+integrations:
+  plausible:
+    host: <string>
+```
+
+A typical `host` project configuration would look like the following sample:
+
+```yml
+integrations:
+  plausible:
+    host: plausible.example.com
+```
+
+If no transfer protocol is supplied, Retype will default the `host` value to use `https`.
+
+All of the following sample `host` values are supported:
+
+```yml
+host: example.com
+host: docs.example.com
+host: https://example.com
+host: http://example.com
+host: example.com/js/plausible.js
+host: docs.example.com/js/plausible.js
+```
 
 ===
 
