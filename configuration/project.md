@@ -735,7 +735,7 @@ icon: rocket
 ```
 
 ```yml Emoji shortcode
-icon: :rocket:
+icon: ":rocket:"
 ```
 
 ```yml SVG element
