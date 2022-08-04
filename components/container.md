@@ -100,7 +100,7 @@ The generated HTML would be:
 
 ## Custom global css
 
-It is also possible to include a global styles by adding to a new `/_includes/head.hml` file.
+It is also possible to include a global styles by adding to a new `/_includes/head.html` file.
 
 The contents of `_includes/head.html` are added to all pages of the generated website.
 
