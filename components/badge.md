@@ -18,7 +18,7 @@ Similar to a [Button](button.md), the Badge component uses the same syntax as a 
 ```
 |||
 
-With the Badge component, the destination is optional and can be ommitted.
+With the Badge component, the destination is optional and can be omitted.
 
 ||| Demo
 [!badge Badge]
