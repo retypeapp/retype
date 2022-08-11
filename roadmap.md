@@ -13,17 +13,38 @@ Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/
 
 ---
 
-## v2.4.0 [!badge text="NEXT" variant="info"]
+## v3.0.0 [!badge text="NEXT" variant="info"]
 
 +++ Planned :icon-unverified:
 
-- [x] :icon-shield-check: New `generator.directoryIndex.append` [project](/configuration/project.md) config.
-- [x] :icon-shield-check: New `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
+- [x] :icon-shield-check: New Project level multi-language support with the ability to configure a different interface language within your project `retype.yml` file.
 - [x] :icon-bug: Fixing misc defects and include several minor enhancements.
 
 +++
 
-## v2.3.0 [!badge text="LATEST" variant="info"]
+## v2.4.0 [!badge text="LATEST" variant="info"]
+
+Released: [2022-07-14](https://github.com/retypeapp/retype/releases/tag/v2.4.0)
+
++++ New :icon-shield-check:
+
+1. `generator.directoryIndex.append` [project](/configuration/project.md) config.
+1. `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
+1. [`host`](/configuration/project.md#plausiblehost) config on `integrations.plausible`. See [#272](https://github.com/retypeapp/retype/discussions/272).
+
++++ Fixed :icon-bug:
+
+1. Extra phantom `index.md` file if Retype output path ends with a slash char.
+1. Anchored links receive extraneous slash char when `generator.directoryIndex.append: true`.
+1. Links to home page ignore `generator.trailingShash` setting.
+1. Link at top-left logo has trailing slash when `generator.trailingSlash` is set to `false`.
+1. Pressing enter on search results creates invalid url. See [#333](https://github.com/retypeapp/retype/discussions/333).
+1. Parent folder prefixed with an `_` underscore do not build properly. See [#336](https://github.com/retypeapp/retype/discussions/336).
+1. Broken link to same page when `generator.trailingSlash` is `false`.
+
++++
+
+## v2.3.0
 
 Released: [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
 
