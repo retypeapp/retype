@@ -8,7 +8,7 @@ The following is a basic `retype.yml` [project configuration](/configuration/pro
 ```yml retype.yml
 input: .
 output: .retype
-url: # Add your website address here
+url: example.com # Add your website address here
 branding:
   title: Project Name
   label: Docs

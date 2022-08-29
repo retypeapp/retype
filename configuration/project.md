@@ -29,7 +29,7 @@ The following sample demonstrates a common set of project configuration options 
 ```yml Sample retype.yml
 input: .
 output: .retype
-url: # Add your website address here
+url: example.com # Add your website address here
 branding:
   title: Project Name
   label: Docs
