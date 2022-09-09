@@ -38,7 +38,7 @@ If your Retype Pro license expires, you can [purchase](/pro) a new license at an
 
 ### Is Retype Pro a separate product?
 
-No. A **Retype Pro** license key will unlock functionality within the same `retypeapp` that you have already installed. A separate installer or product installation is required.
+No. A **Retype Pro** license key will unlock functionality within the same `retypeapp` that you have already installed. A separate installer or product installation is not required.
 
 Adding the key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
@@ -46,7 +46,7 @@ Adding the key to your [wallet](/guides/cli.md#retype-wallet) will automatically
 
 One project is one website with a unique URL.
 
-Sub-domains each count as one unique URL.
+Unique sub-domains each count as one unique URL, except the `www` sub-domain. Both `example.com` and `www.example.com` are treated as one URL by Retype.
 
 Each Retype Pro license key will unlock up to `3` unique URLs.
 
