@@ -3,6 +3,7 @@ icon: mark-github
 tags:
   - guide
   - hosting
+order: 100
 ---
 ![](/static/headers/hosting_github-pages.png)
 
