@@ -40,6 +40,8 @@ const msg = "hello, world";
 
 ---
 
+Retype uses [PrismJS](https://prismjs.com/) for syntax highlighting. All PrismJS language modules are dynamically loaded as required and all Prism [supported languages](https://prismjs.com/#supported-languages) are supported by Retype.
+
 ## Title
 
 Retype includes the functionality to set a title on your markdown code blocks.
