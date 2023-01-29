@@ -109,7 +109,7 @@ See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ### Octicons
 
-[Octicons](https://octicons-primer.vercel.app/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+[Octicons](https://primer.github.io/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
 
 ```md
 [!button variant="info" icon="person" text="User"]
