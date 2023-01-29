@@ -267,7 +267,7 @@ Setting `expanded: true` within the metadata of an `.md` page or the paired `.ym
 
 Custom icon for the navigation node of the current page. Default is `null`.
 
-Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
+Options include using an [Octicon](https://primer.github.io/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 icon: rocket
