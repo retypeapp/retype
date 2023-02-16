@@ -78,7 +78,7 @@ The additional `github.io` and `gitlab.io` functionality enables hosting more th
 
 ### Can we purchase a multi-year key and is a discount available?
 
-Purchase for one year, or for as long as you want. Buy [here](https://buy.stripe.com/8wM2a25fpf502jKbII).
+Purchase for one year, or for as long as you want. Buy [here](https://buy.stripe.com/28og0S37h5uqaQg9AE).
 
 A 10% discount is applied if two or more Retype Pro licenses are purchased.
 
