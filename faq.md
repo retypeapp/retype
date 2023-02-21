@@ -2,8 +2,6 @@
 icon: question
 label: FAQ
 ---
-![](/static/headers/faq.png)
-
 # Frequently Asked Questions
 
 ## Is Retype free to use?

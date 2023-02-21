@@ -2,8 +2,6 @@
 icon: git-compare
 tags: [guide]
 ---
-![](/static/headers/guides_github-actions.png)
-
 # GitHub Actions
 
 Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.
@@ -20,7 +18,7 @@ The second, **GitHub Pages Action** will automatically publish your newly built 
 Automatically deploying to GitHub Pages requires a basic `retype-action.yml` configuration file to be added to your GitHub repo and some simple project configuration.
 
 !!!
-Write permission are required so that Retype and automatically created the `retype` branch and write any generated files into that branch.
+Content `write` permission are required so that Retype and can automatically create the `retype` branch and write the generated files into that branch.
 !!!
 ---
 

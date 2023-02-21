@@ -1,8 +1,6 @@
 ---
 icon: info
 ---
-![](/static/headers/configuration_reserved-words.png)
-
 # Reserved words
 
 There are several [input](/configuration/project.md#input) folder names and files within a Retype project that incorporate special behaviour. All paths for folders or files within Retype are relative to your project [input](/configuration/project.md#input) directory.
