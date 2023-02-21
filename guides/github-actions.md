@@ -19,6 +19,9 @@ The second, **GitHub Pages Action** will automatically publish your newly built 
 
 Automatically deploying to GitHub Pages requires a basic `retype-action.yml` configuration file to be added to your GitHub repo and some simple project configuration.
 
+!!!
+Write permission are required so that Retype and automatically created the `retype` branch and write any generated files into that branch.
+!!!
 ---
 
 ## Summary
@@ -53,6 +56,9 @@ jobs:
     name: Publish to retype branch
 
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v2
@@ -105,6 +111,9 @@ jobs:
     name: Publish to retype branch
 
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v2
