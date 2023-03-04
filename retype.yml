@@ -2,6 +2,9 @@ input: ./
 output: .retype
 url: retype.com
 
+data:
+  nowrap: "{style=\"white-space: nowrap;\"}"
+
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
