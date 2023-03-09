@@ -6,7 +6,7 @@ icon: versions
 The entire release archives of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) or [NuGet](https://nuget.org/packages/retypeapp).
 
 !!!
-Need a new feature in Retype? Start a [discussion](https://github.com/retypeapp/retype/discussions) and let's chat. :icon-comment:
+Need a new feature in Retype? Open a new [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
 !!!
 
 ---
