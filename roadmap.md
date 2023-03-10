@@ -15,7 +15,11 @@ Need a new feature in Retype? Open a new [issue](https://github.com/retypeapp/re
 
 +++ Planned :icon-unverified:
 
+- [x] :icon-shield-check: New password protected Pages and Folders for [Retype Pro](pro.md).
 - [x] :icon-shield-check: New Project level multi-language support with the ability to configure a different interface language within your project `retype.yml` file.
+- [x] :icon-shield-check: New named regions and referencing named regions within includes. For example, using {%{`{{ include "/terminology.md#definition1" }}`}%} to only include the content within the `definition1` named region.
+- [x] :icon-shield-check: New `meta.title` page config for specifying a custom page `<title>`.
+- [x] :icon-shield-check: Update to latest [Prism](/components/code-block.md), [Octicons](/components/icon.md), and [Mermaid](/components/mermaid.md) releases
 - [x] :icon-bug: Fixing misc defects and include several minor enhancements.
 
 +++
