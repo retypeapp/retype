@@ -1,5 +1,5 @@
 ---
-label: Welcome
+label: "What is Retype?"
 icon: home
 ---
 # Welcome to Retype
