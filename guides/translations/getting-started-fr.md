@@ -2,7 +2,6 @@
 order: 100
 icon: rocket
 tags: [guide]
-visibility: hidden
 ---
 # Pour commencer
 
