@@ -1,5 +1,5 @@
 ---
-icon: versions
+icon: project-roadmap
 ---
 # Roadmap
 
