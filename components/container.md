@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-23.png)
+
 # Container
 
 A Container component can be used to wrap any content in a `<div>` container.

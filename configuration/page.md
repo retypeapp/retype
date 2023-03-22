@@ -4,6 +4,8 @@ order: 100
 icon: file
 tags: [config]
 ---
+![](/static/headers/header-4.png)
+
 # Page configuration
 
 Individual `.md` pages can be configured using the [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.

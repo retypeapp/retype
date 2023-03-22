@@ -1,7 +1,9 @@
 ---
-tags: [component, icon]
 icon: dot
+tags: [component, icon]
 ---
+![](/static/headers/header-27.png)
+
 # Icon
 
 Similar to the [Emoji](emoji.md) `:shortcode:` syntax, you can add icons using `:icon-shortcode:`, where the `shortcode` is an [Octicon](https://primer.github.io/octicons/) icon name.

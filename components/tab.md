@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-31.png)
+
 # Tab
 
 With Retype, a Tab component is super simple to configure by surrounding a block of text with `+++` and including a title for the tab.

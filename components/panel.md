@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-29.png)
+
 # Panel
 
 A Panel is created by surrounding a block of content with `===` and including a `title` for the Panel.

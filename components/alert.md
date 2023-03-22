@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-2.png)
+
 # Alert
 
 Alert components help to highlight important messages for the reader.

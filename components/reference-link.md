@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-30.png)
+
 # Reference link
 
 A special type of reference link can be configured by using the `!ref` specifier in a link.

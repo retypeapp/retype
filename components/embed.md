@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-24.png)
+
 # Embed
 
 The `embed` component helps with content embedding.

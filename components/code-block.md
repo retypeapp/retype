@@ -1,7 +1,9 @@
 ---
-tags: [component]
 icon: dot
+tags: [component]
 ---
+![](/static/headers/header-20.png)
+
 # Code block
 
 Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.
