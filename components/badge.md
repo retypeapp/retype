@@ -1,5 +1,5 @@
 ---
-icon: dot
+icon: tag
 tags: [component]
 ---
 ![](/static/headers/header-18.png)

@@ -1,5 +1,5 @@
 ---
-icon: dot
+icon: smiley
 tags: [component, icon]
 ---
 ![](/static/headers/header-25.png)

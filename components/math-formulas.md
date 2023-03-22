@@ -1,5 +1,5 @@
 ---
-icon: dot
+icon: plus-circle
 tags: [component]
 ---
 

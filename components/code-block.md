@@ -1,5 +1,5 @@
 ---
-icon: dot
+icon: code-square
 tags: [component]
 ---
 ![](/static/headers/header-20.png)

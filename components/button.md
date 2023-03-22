@@ -1,5 +1,5 @@
 ---
-icon: dot
+icon: diamond
 tags: [component]
 ---
 ![](/static/headers/header-19.png)

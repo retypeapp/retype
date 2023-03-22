@@ -1,5 +1,5 @@
 ---
-icon: dot
+icon: alert
 tags: [component]
 ---
 ![](/static/headers/header-2.png)
