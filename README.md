@@ -2,7 +2,6 @@
 label: "What is Retype?"
 icon: home
 ---
-<!-- ![](static/retype-hero.png) -->
 ![](/static/headers/header-1.png)
 
 # Welcome to Retype

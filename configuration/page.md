@@ -23,7 +23,7 @@ This is a sample page demonstrating page metadata.
 
 ## Separate `.yml` file
 
-If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the options can be moved into a paired `.yml` file.
+If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the config can be moved into a paired `.yml` file.
 
 For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as its paired `.md` page.
 
