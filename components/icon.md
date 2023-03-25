@@ -15,5 +15,5 @@ Icons can be added anywhere within your document, including paragraph text, head
 Some icon shortcode names are made up of `two-or-more` words. For instance, the [`git-branch`](https://primer.github.io/octicons/git-branch-24) icon would be configured as `:icon-git-branch:`. :icon-git-branch:
 
 !!! More icons :icon-heart:
-In future releases of Retype, the plan is to support additional Icon packs and possibily even custom developer defined icon packs. [Let us know](https://github.com/retypeapp/retype/discussions) if you are interested!
+In future releases of Retype, the plan is to support additional Icon packs and possibily even custom developer defined icon packs. [Let us know](https://github.com/retypeapp/retype/issues/) if you are interested!
 !!!

@@ -520,7 +520,7 @@ input: ./src
 
 ## integrations
 
-More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/discussions).
+More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/issues).
 
 ### googleAnalytics
 

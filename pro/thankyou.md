@@ -25,7 +25,7 @@ There are fast or faster options available:
 ### :zap: Fast
 
 - [x] Send an email to hello@retype.com, or
-- [x] Start a [Discussion](https://github.com/retypeapp/retype/discussions/), or
+- [x] Start a new [Issue](https://github.com/retypeapp/retype/issue/), or
 - [x] Send a tweet to [@retypeapp](https://twitter.com/retypeapp)
 
 ### :zap::zap::zap: Faster
