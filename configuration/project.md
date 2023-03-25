@@ -1,5 +1,5 @@
 ---
-label: Project config
+label: Project
 order: 200
 icon: package
 tags: [config]

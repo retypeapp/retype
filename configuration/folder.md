@@ -1,5 +1,5 @@
 ---
-label: Folder config
+label: Folder
 icon: file-directory
 tags: [config]
 ---
