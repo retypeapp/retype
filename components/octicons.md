@@ -5,7 +5,7 @@ icon: mark-github
 
 [Octicons](https://primer.github.io/octicons/) can be used with the [Icon](icon.md) component and several other components, including the [Badge](badge.md) and [Button](button.md).
 
-The current [Octicons](https://primer.github.io/octicons/) release included within Retype is `v18.2.0`.
+The current [Octicons](https://primer.github.io/octicons/) release included within Retype is `v18.3.0`.
 
 ## Samples
 
@@ -260,6 +260,7 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-project: | project | `:icon-project:` |
 | :icon-project-roadmap: | project-roadmap | `:icon-project-roadmap:` |
 | :icon-project-symlink: | project-symlink | `:icon-project-symlink:` |
+| :icon-project-template: | project-template | `:icon-project-template:` |
 | :icon-pulse: | pulse | `:icon-pulse:` |
 | :icon-question: | question | `:icon-question:` |
 | :icon-quote: | quote | `:icon-quote:` |
