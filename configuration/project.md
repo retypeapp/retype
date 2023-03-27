@@ -1152,7 +1152,7 @@ A project-wide option to enable or disable the Retype content templating engine.
 
 ```yml
 templating:
-  enabled: true # Set to false to diable
+  enabled: true # Set to false to disable
 ```
 
 The templating engine can also be disabled on a per-page basis by setting `templating: false` in the page metadata.
