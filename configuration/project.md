@@ -265,7 +265,7 @@ edit:
   repo: "https://github.com/<your-organization>/<your-repo>/"
 ```
 
-You can also configurate the links to point directly to the `/edit/` view of the page:
+It is also possible to configure the links to point directly to the `/edit/` view of the page:
 
 ```yml
 edit:
