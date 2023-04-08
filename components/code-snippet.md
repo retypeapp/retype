@@ -1,7 +1,9 @@
 ---
+icon: file-code
 tags: [component]
-icon: dot
 ---
+![](/static/headers/header-21.png)
+
 # Code snippet
 
 A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page.

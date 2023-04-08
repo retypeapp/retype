@@ -1,6 +1,6 @@
 ---
+icon: plus-circle
 tags: [component]
-icon: dot
 ---
 
 # Math formulas

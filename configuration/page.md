@@ -1,9 +1,11 @@
 ---
-label: Page config
+label: Page
 order: 100
 icon: file
 tags: [config]
 ---
+![](/static/headers/header-4.png)
+
 # Page configuration
 
 Individual `.md` pages can be configured using the [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.
@@ -21,7 +23,7 @@ This is a sample page demonstrating page metadata.
 
 ## Separate `.yml` file
 
-If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the options can be moved into a paired `.yml` file.
+If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the config can be moved into a paired `.yml` file.
 
 For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as its paired `.md` page.
 
@@ -265,7 +267,7 @@ Setting `expanded: true` within the metadata of an `.md` page or the paired `.ym
 
 Custom icon for the navigation node of the current page. Default is `null`.
 
-Options include using an [Octicon](https://primer.github.io/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
+Options include using an [Octicon](/components/octicons.md) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 icon: rocket

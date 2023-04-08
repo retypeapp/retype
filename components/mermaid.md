@@ -1,6 +1,6 @@
 ---
+icon: ":mermaid:"
 tags: [component]
-icon: dot
 ---
 # Mermaid
 

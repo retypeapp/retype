@@ -2,11 +2,13 @@
 label: "What is Retype?"
 icon: home
 ---
+![](/static/headers/header-1.png)
+
 # Welcome to Retype
 
 [Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
 
-![](static/retype-hero.png)
+> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there” – jonnyfeelgood
 
 No coding is required and just one Markdown file, such as a [`README.md`](https://www.makeareadme.com/), will get you started.
 

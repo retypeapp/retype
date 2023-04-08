@@ -1,9 +1,16 @@
 ---
 icon: info
+tags: [config]
 ---
+![](/static/headers/header-11.png)
+
 # Reserved words
 
-There are several [input](/configuration/project.md#input) folder names and files within a Retype project that incorporate special behaviour. All paths for folders or files within Retype are relative to your project [input](/configuration/project.md#input) directory.
+There are several folder and file names within a Retype project that incorporate special behaviour and are considered reserved words.
+
+!!!
+All paths to folders or files within Retype are relative to your project [input](/configuration/project.md#input) directory.
+!!!
 
 ---
 
@@ -11,7 +18,7 @@ There are several [input](/configuration/project.md#input) folder names and file
 
 ### /blog
 
-The `/blog` directory is intended to host a Blog for your website.
+The `/blog` folder is intended to host a Blog for your website.
 
 By default, `.md` pages created within the `/blog` folder are assigned the `layout: blog` layout, plus some additional features:
 

@@ -1,9 +1,11 @@
 ---
-label: Project config
+label: Project
 order: 200
 icon: package
 tags: [config]
 ---
+![](/static/headers/header-8.png)
+
 # Project configuration
 
 Retype will read the `retype.yml` file for additional instructions on how to configure and build your project.
@@ -263,7 +265,7 @@ edit:
   repo: "https://github.com/<your-organization>/<your-repo>/"
 ```
 
-You can also configurate the links to point directly to the `/edit/` view of the page:
+It is also possible to configure the links to point directly to the `/edit/` view of the page:
 
 ```yml
 edit:
@@ -518,7 +520,7 @@ input: ./src
 
 ## integrations
 
-More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/discussions).
+More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/issues).
 
 ### googleAnalytics
 
@@ -1152,7 +1154,7 @@ A project-wide option to enable or disable the Retype content templating engine.
 
 ```yml
 templating:
-  enabled: true # Set to false to diable
+  enabled: true # Set to false to disable
 ```
 
 The templating engine can also be disabled on a per-page basis by setting `templating: false` in the page metadata.

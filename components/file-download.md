@@ -1,7 +1,9 @@
 ---
+icon: download
 tags: [component]
-icon: dot
 ---
+![](/static/headers/header-26.png)
+
 # File download
 
 A static file download component can be configured by using the `!file` specifier in a link.
@@ -33,7 +35,7 @@ Clicking anywhere within the file download component will trigger the web browse
 ## Custom icon
 
 The `icon` used for the file download component can be customized using a name/value pair syntax for the `text` and `icon` attributes. This allows for setting a custom `icon` and `text` value at the same time. The `icon` attribute can be initialize with one of the following:
-- [Octicon](https://primer.github.io/octicons/) name
+- [Octicon](/components/octicons.md) name
 - Emoji `:shortcode:` (please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes)
 - Image file URL
 

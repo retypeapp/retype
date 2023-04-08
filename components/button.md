@@ -1,7 +1,9 @@
 ---
+icon: diamond
 tags: [component]
-icon: dot
 ---
+![](/static/headers/header-19.png)
+
 # Button
 
 Similar to a [Badge](badge.md), the Button component uses the same syntax as a hyperlink, but is prefixed with a `!button` identifier.
@@ -109,7 +111,7 @@ See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ### Octicons
 
-[Octicons](https://primer.github.io/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+[Octicons](/components/octicons.md) can be used as an icon by settiing the `icon` property with the name of the Octicon.
 
 ```md
 [!button variant="info" icon="person" text="User"]

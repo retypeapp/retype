@@ -2,6 +2,9 @@
 icon: star
 order: 2000
 ---
+
+![](/static/headers/header-9.png)
+
 # Retype Pro
 
 ## Pro Features
@@ -126,5 +129,5 @@ We have a **Retype Enterprise** license option available. Please send an email t
 Send us a message using any of the following:
 
 - [x] Email hello@retype.com, or
-- [x] Start a new [Discussion](https://github.com/retypeapp/retype/discussions/), or
+- [x] Start a new [Issue](https://github.com/retypeapp/retype/issues/), or
 - [x] Start a chat, see bottom-right :icon-comment: on this page

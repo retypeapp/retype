@@ -5,6 +5,8 @@ tags:
   - hosting
 order: 100
 ---
+![](/static/headers/header-12.png)
+
 # GitHub Pages
 
 Hosting your Retype built website on [GitHub Pages](https://pages.github.com/) is free and simple to setup.

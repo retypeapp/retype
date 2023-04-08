@@ -1,7 +1,9 @@
 ---
+icon: smiley
 tags: [component, icon]
-icon: dot
 ---
+![](/static/headers/header-25.png)
+
 # Emoji
 
 Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:

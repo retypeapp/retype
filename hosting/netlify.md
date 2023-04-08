@@ -1,6 +1,11 @@
 ---
 icon: globe
+tags:
+  - guide
+  - hosting
 ---
+![](/static/headers/header-14.png)
+
 # Netlify
 
 [Netlify](https://netlify.com) is a popular web hosting platform that allows you to deploy your website easily. In this tutorial, we will go through the steps to sign up, configure, and deploy a Retype built website on Netlify, using GitHub as our version control system. We will assume that the source files for the website are available on the retype branch of the GitHub repository.

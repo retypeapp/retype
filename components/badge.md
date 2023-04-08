@@ -1,7 +1,9 @@
 ---
+icon: tag
 tags: [component]
-icon: dot
 ---
+![](/static/headers/header-18.png)
+
 # Badge
 
 Similar to a [Button](button.md), the Badge component uses the same syntax as a hyperlink, but is prefixed with a `!badge` identifier.
@@ -119,7 +121,7 @@ See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ### Octicons
 
-[Octicons](https://primer.github.io/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+[Octicons](/components/octicons.md) can be used as an icon by settiing the `icon` property with the name of the Octicon.
 
 ```md
 [!badge variant="info" icon="person" text="User" margin="0 8 0 0"]

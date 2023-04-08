@@ -1,5 +1,6 @@
 ---
 icon: tools
+tags: [component]
 ---
 
 # Components
