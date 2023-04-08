@@ -19,7 +19,7 @@ For example, use the code `:icon-rocket:` for a :icon-rocket: icon.
 
 When an icon is used in other components, the icon is referred to by only the `shortcode`.
 
-For example, the following demonstrates using the icon in a [Badge](badge.md#icon) and a [Button](button.md#icon).
+For example, the following demonstrates using the icon in a [Badge](badge.md#icon-and-emoji) and a [Button](button.md#icon-and-emoji).
 
 Component | Sample
 --- | ---
