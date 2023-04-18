@@ -23,7 +23,7 @@ links:
 
   - text: Pricing
     link: /pro
-    icon: static/retype-hero.png
+    icon: star
 
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
