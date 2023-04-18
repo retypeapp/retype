@@ -1,8 +1,6 @@
 ---
 layout: page
 ---
-![](/static/headers/header-17.png)
-
 # About
 
 [Retype](https://retype.com/) is professionally built and supported by a small dedicated team of software engineers.

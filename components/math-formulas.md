@@ -2,7 +2,6 @@
 icon: plus-circle
 tags: [component]
 ---
-
 # Math formulas
 
 Retype supports rendering math formulas written according to the [LaTeX](https://en.wikipedia.org/wiki/LaTeX) grammar. Internally, Retype is powered by [$\KaTeX$](https://katex.org/) and supports all syntax of the library.

@@ -2,8 +2,6 @@
 icon: columns
 tags: [component]
 ---
-![](/static/headers/header-22.png)
-
 # Column
 
 The column component is used to create multiple equal width columns with a title for each column.

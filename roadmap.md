@@ -1,8 +1,6 @@
 ---
 icon: project-roadmap
 ---
-![](/static/headers/header-16.png)
-
 # Roadmap
 
 The entire release archives of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) or [NuGet](https://nuget.org/packages/retypeapp).

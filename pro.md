@@ -2,9 +2,6 @@
 icon: star
 order: 2000
 ---
-
-![](/static/headers/header-9.png)
-
 # Retype Pro
 
 ## Pro Features

@@ -5,8 +5,6 @@ tags:
   - guide
   - hosting
 ---
-![](/static/headers/header-13.png)
-
 # Docker
 
 Using a docker container has numerous advantages, including:

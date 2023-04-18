@@ -3,8 +3,6 @@ label: Folder
 icon: file-directory
 tags: [config]
 ---
-![](/static/headers/header-10.png)
-
 # Folder configuration
 
 Using the same `.yml` technique and options as [Page configuration](/configuration/page.md), a folder can be configured using a separate `index.yml` file placed inside the folder.

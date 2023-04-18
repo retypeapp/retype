@@ -2,7 +2,6 @@
 icon: tools
 tags: [component]
 ---
-
 # Components
 
 Retype flavored Markdown supports custom components, including:

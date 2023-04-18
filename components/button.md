@@ -2,8 +2,6 @@
 icon: diamond
 tags: [component]
 ---
-![](/static/headers/header-19.png)
-
 # Button
 
 Similar to a [Badge](badge.md), the Button component uses the same syntax as a hyperlink, but is prefixed with a `!button` identifier.

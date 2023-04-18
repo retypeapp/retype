@@ -2,8 +2,6 @@
 icon: info
 tags: [config]
 ---
-![](/static/headers/header-11.png)
-
 # Reserved words
 
 There are several folder and file names within a Retype project that incorporate special behaviour and are considered reserved words.

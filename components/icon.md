@@ -2,8 +2,6 @@
 icon: smiley
 tags: [component, icon]
 ---
-![](/static/headers/header-27.png)
-
 # Icon
 
 Example [Emoji](emoji.md) `:code` test.

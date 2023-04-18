@@ -3,8 +3,6 @@ order: -100
 icon: terminal
 tags: [guide]
 ---
-![](/static/headers/header-7.png)
-
 # Retype CLI
 
 The Retype CLI is clean and simple. The majority of the time you will run just one command: `retype watch`

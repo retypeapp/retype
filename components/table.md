@@ -2,8 +2,6 @@
 icon: table
 tags: [component]
 ---
-![](/static/headers/header-32.png)
-
 # Table
 
 Tables are configured using a combination of `|` pipe characters to separate columns and at least three `---` dashes to separate the header row from the table body.
