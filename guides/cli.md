@@ -237,7 +237,7 @@ retype build --secret <your-license-key-here>
 
 ### RETYPE_SECRET
 
-A Retype license key can also be configured as a secret Environment variable. The key is NOT store in a wallet.
+A Retype license key can also be configured as a secret Environment variable and the key is NOT stored in a wallet.
 
 Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
 
