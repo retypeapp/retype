@@ -100,9 +100,9 @@ Highlight a single line number.
 
 +++ :icon-code: Source
 
-~~~
+~~~md
 ```js #2
-
+{{ include "snippets/simple-code-sample" }}
 ```
 ~~~
 
@@ -121,14 +121,14 @@ Highlight a range of lines by separating the start and end line number with a `-
 +++ :icon-code: Source
 
 ~~~md
-```js #2-5
-
+```js #5-7
+{{ include "snippets/simple-code-sample" }}
 ```
 ~~~
 
 +++ :icon-play: Demo
 
-```js #2-5
+```js #5-7
 {{ include "snippets/simple-code-sample" }}
 ```
 
@@ -141,14 +141,14 @@ Configure multiple line ranges by separating each block with a `,` comma.
 +++ :icon-code: Source
 
 ~~~md
-```js #1-2,4-8
-
+```js #2-3,5-7
+{{ include "snippets/simple-code-sample" }}
 ```
 ~~~
 
 +++ :icon-play: Demo
 
-```js #1-2,4-8
+```js #2-3,5-7
 {{ include "snippets/simple-code-sample" }}
 ```
 
@@ -161,14 +161,14 @@ Disable the default line numbering but still highlight a line or range of lines.
 +++ :icon-code: Source
 
 ~~~md
-```js !#2,4-8
-
+```js !#2-3,5-7
+{{ include "snippets/simple-code-sample" }}
 ```
 ~~~
 
 +++ :icon-play: Demo
 
-```js !#2,4-8
+```js !#2-3,5-7
 {{ include "snippets/simple-code-sample" }}
 ```
 
@@ -181,14 +181,14 @@ Configuring line highlighting using the `highlight` attribute syntax is also sup
 +++ :icon-code: Source
 
 ~~~md
-```js:highlight="1-2,4-8"
-
+```js:highlight="2-3,5-7"
+{{ include "snippets/simple-code-sample" }}
 ```
 ~~~
 
 +++ :icon-play: Demo
 
-```js:highlight="1-2,4-8"
+```js:highlight="2-3,5-7"
 {{ include "snippets/simple-code-sample" }}
 ```
 
