@@ -10,7 +10,7 @@ tags:
 
 ## Step 1: Add retype-action.yml workflow
 
-We first recommend adding the [Retype GitHub Build Action](https://github.com/retypeapp/action-github-pages) to your project to automate the building and deployment of your Retype powered website.
+We first recommend adding the [Retype GitHub Build Action](https://retype.com/guides/github-actions/#step-1-add-retype-actionyml-workflow) to your project to automate the building and deployment of your Retype powered website.
 
 ## Step 2: Sign up for Netlify
 
