@@ -4,6 +4,11 @@ icon: globe
 tags: [guide,hosting]
 ---
 
+
+
+Big thanks to TiagoVXII for doing this.
+---
+
 # CloudFlare Pages
 
 [Cloudflare](https://www.cloudflare.com/) is a popular website used to host your websites and protect them, It's used by millions of people also using Retype.
