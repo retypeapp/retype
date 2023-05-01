@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736245504220">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736278709514">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.736245504220" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736278709514" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736245504220" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736278709514" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736245504220" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736278709514" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -265,30 +265,34 @@
         <span>Step 1: Add retype-action.yml workflow</span>
     </h2>
 </doc-anchor-target>
-<p>We first recommend adding the Retype Build Action to your project to automate the building and deployment of your Retype powered website.</p>
+<p>We first recommend adding the <a href="https://retype.com/guides/github-actions/#step-1-add-retype-actionyml-workflow">Retype GitHub Build Action</a> to your project to automate the building and deployment of your Retype powered website.</p>
 <doc-anchor-target id="step-2-sign-up-for-netlify">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-sign-up-for-netlify">#</doc-anchor-trigger>
         <span>Step 2: Sign up for Netlify</span>
     </h2>
 </doc-anchor-target>
-<p>Go to the Netlify website at <a href="https://www.netlify.com/">https://www.netlify.com/</a>.
-Click on the &quot;Sign up&quot; button in the top-right corner of the page.
-You can sign up using your GitHub account or by providing your email and a password. Choose the method that you prefer.
-After signing up, you will be taken to the Netlify dashboard.</p>
+<ol>
+<li>Go to the Netlify website at <a href="https://www.netlify.com/">https://www.netlify.com/</a>.</li>
+<li>Click on the &quot;Sign up&quot; button in the top-right corner of the page.</li>
+<li>You can sign up using your GitHub account or by providing your email and a password. Choose the method that you prefer.</li>
+<li>After signing up, you will be taken to the Netlify dashboard.</li>
+</ol>
 <doc-anchor-target id="step-3-create-a-new-site">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-3-create-a-new-site">#</doc-anchor-trigger>
         <span>Step 3: Create a New Site</span>
     </h2>
 </doc-anchor-target>
-<p>Click on the &quot;New site from Git&quot; button in the Netlify dashboard.
-Choose GitHub as the Git provider.
-Connect your GitHub account by following the prompts.
-Select the repository that you want to deploy.
-Choose the branch that you want to deploy (in this case, it is the retype branch).
-Netlify will automatically detect the build command and publish directory for your website. If your website uses a different configuration, you can customize these settings in the &quot;Build &amp; Deploy&quot; section.
-Click on the &quot;Deploy site&quot; button.</p>
+<ol>
+<li>Click on the &quot;New site from Git&quot; button in the Netlify dashboard.</li>
+<li>Choose GitHub as the Git provider.</li>
+<li>Connect your GitHub account by following the prompts.</li>
+<li>Select the repository that you want to deploy.</li>
+<li>Choose the branch that you want to deploy (in this case, it is the retype branch).</li>
+<li>Netlify will automatically detect the build command and publish directory for your website. If your website uses a different configuration, you can customize 1. these settings in the &quot;Build &amp; Deploy&quot; section.</li>
+<li>Click on the &quot;Deploy site&quot; button.</li>
+</ol>
 <doc-anchor-target id="step-4-configure-netlify-dns-optional">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-configure-netlify-dns-optional">#</doc-anchor-trigger>
@@ -296,11 +300,13 @@ Click on the &quot;Deploy site&quot; button.</p>
     </h2>
 </doc-anchor-target>
 <p>If you want to use a custom domain for your website, you can configure Netlify DNS to point to your domain.</p>
-<p>In the Netlify dashboard, click on the &quot;Domain settings&quot; button.
-Under the &quot;Custom domains&quot; section, click on the &quot;Add custom domain&quot; button.
-Enter your domain name and click on the &quot;Verify&quot; button.
-Follow the prompts to configure your DNS settings.
-Once your DNS settings are configured, click on the &quot;Save&quot; button.</p>
+<ol>
+<li>In the Netlify dashboard, click on the &quot;Domain settings&quot; button.</li>
+<li>Under the &quot;Custom domains&quot; section, click on the &quot;Add custom domain&quot; button.</li>
+<li>Enter your domain name and click on the &quot;Verify&quot; button.</li>
+<li>Follow the prompts to configure your DNS settings.</li>
+<li>Once your DNS settings are configured, click on the &quot;Save&quot; button.</li>
+</ol>
 <doc-anchor-target id="step-5-deploy-updates">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-5-deploy-updates">#</doc-anchor-trigger>
@@ -308,9 +314,11 @@ Once your DNS settings are configured, click on the &quot;Save&quot; button.</p>
     </h2>
 </doc-anchor-target>
 <p>When you make changes to your website, you can deploy them to Netlify using the following steps:</p>
-<p>Push your changes to the retype branch of your GitHub repository.
-Netlify will automatically detect the changes and start the deployment process.
-Once the deployment is complete, your changes will be live on your website.</p>
+<ol>
+<li>Push your changes to the retype branch of your GitHub repository.</li>
+<li>Netlify will automatically detect the changes and start the deployment process.</li>
+<li>Once the deployment is complete, your changes will be live on your website.</li>
+</ol>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
@@ -340,11 +348,11 @@ Once the deployment is complete, your changes will be live on your website.</p>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../hosting/docker/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../hosting/cloudflare/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Docker</span>
+                                                <span class="block mt-1">Cloudflare Pages</span>
                                             </span>
                                         </a>
                                     </div>
