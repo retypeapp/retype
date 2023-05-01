@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735776817624">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736245504220">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.735776817624" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736245504220" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735776817624" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736245504220" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735776817624" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736245504220" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -259,59 +259,58 @@
     </h1>
 </doc-anchor-target>
 <p><a href="https://netlify.com">Netlify</a> is a popular web hosting platform that allows you to deploy your website easily. In this tutorial, we will go through the steps to sign up, configure, and deploy a Retype built website on Netlify, using GitHub as our version control system. We will assume that the source files for the website are available on the retype branch of the GitHub repository.</p>
-<doc-anchor-target id="step-1-sign-up-for-netlify">
+<doc-anchor-target id="step-1-add-retype-actionyml-workflow">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-sign-up-for-netlify">#</doc-anchor-trigger>
-        <span>Step 1: Sign up for Netlify</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retype-actionyml-workflow">#</doc-anchor-trigger>
+        <span>Step 1: Add retype-action.yml workflow</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li>Go to the Netlify website at <a href="https://www.netlify.com/">https://www.netlify.com/</a>.</li>
-<li>Click on the &quot;Sign up&quot; button in the top-right corner of the page.</li>
-<li>You can sign up using your GitHub account or by providing your email and a password. Choose the method that you prefer.</li>
-<li>After signing up, you will be taken to the Netlify dashboard.</li>
-</ol>
-<doc-anchor-target id="step-2-create-a-new-site">
+<p>We first recommend adding the Retype Build Action to your project to automate the building and deployment of your Retype powered website.</p>
+<doc-anchor-target id="step-2-sign-up-for-netlify">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-create-a-new-site">#</doc-anchor-trigger>
-        <span>Step 2: Create a New Site</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-sign-up-for-netlify">#</doc-anchor-trigger>
+        <span>Step 2: Sign up for Netlify</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li>Click on the &quot;New site from Git&quot; button in the Netlify dashboard.</li>
-<li>Choose GitHub as the Git provider.</li>
-<li>Connect your GitHub account by following the prompts.</li>
-<li>Select the repository that you want to deploy.</li>
-<li>Choose the branch that you want to deploy (in this case, it is the retype branch).</li>
-<li>Netlify will automatically detect the build command and publish directory for your website. If your website uses a different configuration, you can customize these settings in the &quot;Build &amp; Deploy&quot; section.</li>
-<li>Click on the &quot;Deploy site&quot; button.</li>
-</ol>
-<doc-anchor-target id="step-3-configure-netlify-dns-optional">
+<p>Go to the Netlify website at <a href="https://www.netlify.com/">https://www.netlify.com/</a>.
+Click on the &quot;Sign up&quot; button in the top-right corner of the page.
+You can sign up using your GitHub account or by providing your email and a password. Choose the method that you prefer.
+After signing up, you will be taken to the Netlify dashboard.</p>
+<doc-anchor-target id="step-3-create-a-new-site">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-3-configure-netlify-dns-optional">#</doc-anchor-trigger>
-        <span>Step 3: Configure Netlify DNS (optional)</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-3-create-a-new-site">#</doc-anchor-trigger>
+        <span>Step 3: Create a New Site</span>
+    </h2>
+</doc-anchor-target>
+<p>Click on the &quot;New site from Git&quot; button in the Netlify dashboard.
+Choose GitHub as the Git provider.
+Connect your GitHub account by following the prompts.
+Select the repository that you want to deploy.
+Choose the branch that you want to deploy (in this case, it is the retype branch).
+Netlify will automatically detect the build command and publish directory for your website. If your website uses a different configuration, you can customize these settings in the &quot;Build &amp; Deploy&quot; section.
+Click on the &quot;Deploy site&quot; button.</p>
+<doc-anchor-target id="step-4-configure-netlify-dns-optional">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-configure-netlify-dns-optional">#</doc-anchor-trigger>
+        <span>Step 4: Configure Netlify DNS (optional)</span>
     </h2>
 </doc-anchor-target>
 <p>If you want to use a custom domain for your website, you can configure Netlify DNS to point to your domain.</p>
-<ol>
-<li>In the Netlify dashboard, click on the &quot;Domain settings&quot; button.</li>
-<li>Under the &quot;Custom domains&quot; section, click on the &quot;Add custom domain&quot; button.</li>
-<li>Enter your domain name and click on the &quot;Verify&quot; button.</li>
-<li>Follow the prompts to configure your DNS settings.</li>
-<li>Once your DNS settings are configured, click on the &quot;Save&quot; button.</li>
-</ol>
-<doc-anchor-target id="step-4-deploy-updates">
+<p>In the Netlify dashboard, click on the &quot;Domain settings&quot; button.
+Under the &quot;Custom domains&quot; section, click on the &quot;Add custom domain&quot; button.
+Enter your domain name and click on the &quot;Verify&quot; button.
+Follow the prompts to configure your DNS settings.
+Once your DNS settings are configured, click on the &quot;Save&quot; button.</p>
+<doc-anchor-target id="step-5-deploy-updates">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-deploy-updates">#</doc-anchor-trigger>
-        <span>Step 4: Deploy Updates</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-5-deploy-updates">#</doc-anchor-trigger>
+        <span>Step 5: Deploy Updates</span>
     </h2>
 </doc-anchor-target>
 <p>When you make changes to your website, you can deploy them to Netlify using the following steps:</p>
-<ol>
-<li>Push your changes to the retype branch of your GitHub repository.</li>
-<li>Netlify will automatically detect the changes and start the deployment process.</li>
-<li>Once the deployment is complete, your changes will be live on your website.</li>
-</ol>
+<p>Push your changes to the retype branch of your GitHub repository.
+Netlify will automatically detect the changes and start the deployment process.
+Once the deployment is complete, your changes will be live on your website.</p>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
