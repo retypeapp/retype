@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736278709514">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736547604878">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.736278709514" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736547604878" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736278709514" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736547604878" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736278709514" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736547604878" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -258,18 +258,18 @@
         <span>Cloudflare Pages</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="big-thanks-to-tiagovxii-for-doing-this">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#big-thanks-to-tiagovxii-for-doing-this">#</doc-anchor-trigger>
-        <span>Big thanks to TiagoVXII for doing this.</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="cloudflare-pages" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cloudflare-pages">#</doc-anchor-trigger>
-        <span>CloudFlare Pages</span>
-    </h1>
-</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <svg width="2rem" height="2rem" xmlns="http://www.w3.org/2000/svg" fill="white"><g><rect width="2rem" height="1.7rem" fill="#c5c5c5"/><circle r="0.44rem" cy="0.83rem" cx="1rem"/><ellipse ry="0.96rem" rx="0.77rem" cy="2.15rem" cx="1rem"/></g></svg>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">TiagoVXII</div>
+        </div>
+    </div>
+</div>
+
 <p><a href="https://www.cloudflare.com/">Cloudflare</a> is a popular website used to host your websites and protect them, It&#x27;s used by millions of people also using Retype.</p>
 <doc-anchor-target id="step-1-add-retype-actionyml-workflow">
     <h2>
@@ -285,10 +285,9 @@
     </h2>
 </doc-anchor-target>
 <ol>
-<li>Go to the Cloudflare website at <a href="https://www.cloudflare.com/">https://www.cloudflare.com/</a></li>
-<li>Click on &quot;Sign up&quot; on the top right of the page.</li>
-<li>You can sign up using your apple account or normal gmail account.</li>
-<li>You will be taken to Cloudflare dashboard</li>
+<li>Go to the Cloudflare website at <a href="https://www.cloudflare.com/">cloudflare.com</a></li>
+<li>Click on <strong>Sign up</strong> on the top right of the page and follow the instructions</li>
+<li>After sign up, you will have access to your Cloudflare dashboard</li>
 </ol>
 <doc-anchor-target id="step-3-create-a-new-page">
     <h2>
@@ -297,14 +296,14 @@
     </h2>
 </doc-anchor-target>
 <ol>
-<li>Once in the dashboard, scroll down until you see &quot;Pages&quot;</li>
-<li>Click on &quot;Create a project&quot;</li>
-<li>&quot;Connect to Git&quot;</li>
-<li>Choose your repository</li>
-<li>Choose your project name that will be the website name</li>
-<li>Choose production branch as &quot;retype&quot;, refer to step 1.</li>
+<li>Once in the dashboard, scroll down until you see <strong>Pages</strong></li>
+<li>Click on <strong>Create a project</strong></li>
+<li>Click on <strong>Connect to Git</strong></li>
+<li>Follow the instruction and choose your repository</li>
+<li>Choose your project name and by default that will be the website name</li>
+<li>Choose production branch as <code v-pre>retype</code>, but please ensure you have completed <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">Step 1</doc-anchor-trigger> above first</li>
 <li>Save and deploy</li>
-<li>Your website will be up in CloudFlare Page!</li>
+<li>Give Cloudflare a few moments and your website will be online <span class="docs-emoji">&#x1F44D;</span></li>
 </ol>
 <!-- Add content to _includes/bottom.md to include here -->
 
@@ -412,7 +411,7 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Cloudflare Pages", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Cloudflare", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
     <!-- Add content to _includes/body.html to include here -->
