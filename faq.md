@@ -14,10 +14,6 @@ With [Retype Pro](/pro.md), you get the following additional features:
 2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
 3. Password protected `private` and `protected` pages
 
-## Can I get a trial license key?
-
-{{ include "snippets/faq-trial-key-request" }}
-
 ## How do I install Retype?
 
 Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](/guides/getting-started.md) guide for detailed installation instructions.
