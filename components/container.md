@@ -157,5 +157,5 @@ Since the `_includes/head.html` can contain any custom HTML, you could also move
 Being a separate `.css` file, web browsers will automatically cache the file, so re-downloading of the file with each page request is not required. This will improve the performance of your website.
 
 !!!danger
-Retype does not validate any of the custom HTML added to the `_includes/head.html`. It's up to you to ensure this HTML is correct and does not interfere or break anything in the website.
+Retype does not validate any of the custom HTML added to the `_includes/head.html`. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.
 !!!
