@@ -18,7 +18,7 @@ View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/
 
 ## Quick start
 
-The following sample demonstrates a very basic `.md` page sample with page title and one paragraph.
+The following sample demonstrates a very basic `sample.md` page sample with a page title and one paragraph.
 
 ```md
 # Page title here
@@ -66,9 +66,13 @@ At a very basic level, to create a new page for your Retype project, do the foll
 
 ### Home page
 
-Ideally, your project will include a default file (`readme.md`, `index.md`, or `default.md`) within the root of the project. If a default file is present within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.
+Your project should include a default file (`index.md`, `default.md`, or `readme.md`) within the root of the project. If there is a default file within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.
 
-Those default files can also be placed inside of any folder within the project. Given the following folder and file structure, where `Guides` is a folder...
+!!!
+Within the root of your project, the file `welcome.md` can also be used as a default page.
+!!!
+
+The default files can be used inside any folder of the project. Given the following folder and file structure, where `Guides` is a folder...
 
 ```
 |-- Guides
@@ -84,7 +88,7 @@ Those default files can also be placed inside of any folder within the project. 
 3. `/guides/getting-started/`
 
 !!!
-If your home page is empty or blank, double check that you have a default page in the root of your project folder. The default file can be named `readme.md`, `index.md`, or `default.md`.
+If your home page is the Retype generated **Welcome** page, add a default page to the root of your project. The home page file can be named `index.md`, `default.md`, `readme.md`, or `welcome.md`.
 !!!
 
 ---

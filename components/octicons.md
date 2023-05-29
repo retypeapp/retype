@@ -46,9 +46,9 @@ This is a sample page with a :icon-rocket: icon.
 | Icon | Shortcode | Sample | {class="compact"}
 | :---: | --- | --- |
 | :icon-accessibility: | accessibility | `:icon-accessibility:` |
-| [!badge v3.0] <!--:icon-accessibility-inset:--> | accessibility-inset | `:icon-accessibility-inset:` |
+| :icon-accessibility-inset: | accessibility-inset | `:icon-accessibility-inset:` |
 | :icon-alert: | alert | `:icon-alert:` |
-| [!badge v3.0] <!--:icon-alert-fill:--> | alert-fill | `:icon-alert-fill:` |
+| :icon-alert-fill: | alert-fill | `:icon-alert-fill:` |
 | :icon-apps: | apps | `:icon-apps:` |
 | :icon-archive: | archive | `:icon-archive:` |
 | :icon-arrow-both: | arrow-both | `:icon-arrow-both:` |
@@ -76,12 +76,12 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-broadcast: | broadcast | `:icon-broadcast:` |
 | :icon-browser: | browser | `:icon-browser:` |
 | :icon-bug: | bug | `:icon-bug:` |
-| [!badge v3.0] <!--:icon-cache:--> | cache | `:icon-cache:` |
+| :icon-cache: | cache | `:icon-cache:` |
 | :icon-calendar: | calendar | `:icon-calendar:` |
 | :icon-check: | check | `:icon-check:` |
 | :icon-check-circle: | check-circle | `:icon-check-circle:` |
 | :icon-check-circle-fill: | check-circle-fill | `:icon-check-circle-fill:` |
-| [!badge v3.0] <!--:icon-checkbox:--> | checkbox | `:icon-checkbox:` |
+| :icon-checkbox: | checkbox | `:icon-checkbox:` |
 | :icon-checklist: | checklist | `:icon-checklist:` |
 | :icon-chevron-down: | chevron-down | `:icon-chevron-down:` |
 | :icon-chevron-left: | chevron-left | `:icon-chevron-left:` |
@@ -90,7 +90,7 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-circle: | circle | `:icon-circle:` |
 | :icon-circle-slash: | circle-slash | `:icon-circle-slash:` |
 | :icon-clock: | clock | `:icon-clock:` |
-| [!badge v3.0] <!--:icon-clock-fill:--> | clock-fill | `:icon-clock-fill:` |
+| :icon-clock-fill: | clock-fill | `:icon-clock-fill:` |
 | :icon-cloud: | cloud | `:icon-cloud:` |
 | :icon-cloud-offline: | cloud-offline | `:icon-cloud-offline:` |
 | :icon-code: | code | `:icon-code:` |
@@ -101,14 +101,14 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-codescan-checkmark: | codescan-checkmark | `:icon-codescan-checkmark:` |
 | :icon-codespaces: | codespaces | `:icon-codespaces:` |
 | :icon-columns: | columns | `:icon-columns:` |
-| [!badge v3.0] <!--:icon-command-palette:--> | command-palette | `:icon-command-palette:` |
+| :icon-command-palette: | command-palette | `:icon-command-palette:` |
 | :icon-comment: | comment | `:icon-comment:` |
 | :icon-comment-discussion: | comment-discussion | `:icon-comment-discussion:` |
 | :icon-commit: | commit | `:icon-commit:` |
 | :icon-container: | container | `:icon-container:` |
-| [!badge v3.0] <!--:icon-copilot:--> | copilot | `:icon-copilot:` |
-| [!badge v3.0] <!--:icon-copilot-error:--> | copilot-error | `:icon-copilot-error:` |
-| [!badge v3.0] <!--:icon-copilot-warning:--> | copilot-warning | `:icon-copilot-warning:` |
+| :icon-copilot: | copilot | `:icon-copilot:` |
+| :icon-copilot-error: | copilot-error | `:icon-copilot-error:` |
+| :icon-copilot-warning: | copilot-warning | `:icon-copilot-warning:` |
 | :icon-copy: | copy | `:icon-copy:` |
 | :icon-cpu: | cpu | `:icon-cpu:` |
 | :icon-credit-card: | credit-card | `:icon-credit-card:` |
@@ -128,9 +128,9 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-diff-modified: | diff-modified | `:icon-diff-modified:` |
 | :icon-diff-removed: | diff-removed | `:icon-diff-removed:` |
 | :icon-diff-renamed: | diff-renamed | `:icon-diff-renamed:` |
-| [!badge v3.0] <!--:icon-discussion-closed:--> | discussion-closed | `:icon-discussion-closed:` |
-| [!badge v3.0] <!--:icon-discussion-duplicate:--> | discussion-duplicate | `:icon-discussion-duplicate:` |
-| [!badge v3.0] <!--:icon-discussion-outdated:--> | discussion-outdated | `:icon-discussion-outdated:` |
+| :icon-discussion-closed: | discussion-closed | `:icon-discussion-closed:` |
+| :icon-discussion-duplicate: | discussion-duplicate | `:icon-discussion-duplicate:` |
+| :icon-discussion-outdated: | discussion-outdated | `:icon-discussion-outdated:` |
 | :icon-dot: | dot | `:icon-dot:` |
 | :icon-dot-fill: | dot-fill | `:icon-dot-fill:` |
 | :icon-download: | download | `:icon-download:` |
@@ -164,7 +164,7 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-file-symlink-file: | file-symlink-file | `:icon-file-symlink-file:` |
 | :icon-file-zip: | file-zip | `:icon-file-zip:` |
 | :icon-filter: | filter | `:icon-filter:` |
-| [!badge v3.0] <!--:icon-fiscal-host:--> | fiscal-host | `:icon-fiscal-host:` |
+| :icon-fiscal-host: | fiscal-host | `:icon-fiscal-host:` |
 | :icon-flame: | flame | `:icon-flame:` |
 | :icon-fold: | fold | `:icon-fold:` |
 | :icon-fold-down: | fold-down | `:icon-fold-down:` |
@@ -175,12 +175,12 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-git-commit: | git-commit | `:icon-git-commit:` |
 | :icon-git-compare: | git-compare | `:icon-git-compare:` |
 | :icon-git-merge: | git-merge | `:icon-git-merge:` |
-| [!badge v3.0] <!--:icon-git-merge-queue:--> | git-merge-queue | `:icon-git-merge-queue:` |
+| :icon-git-merge-queue: | git-merge-queue | `:icon-git-merge-queue:` |
 | :icon-git-pull-request: | git-pull-request | `:icon-git-pull-request:` |
 | :icon-git-pull-request-closed: | git-pull-request-closed | `:icon-git-pull-request-closed:` |
 | :icon-git-pull-request-draft: | git-pull-request-draft | `:icon-git-pull-request-draft:` |
 | :icon-globe: | globe | `:icon-globe:` |
-| [!badge v3.0] <!--:icon-goal:--> | goal | `:icon-goal:` |
+| :icon-goal: | goal | `:icon-goal:` |
 | :icon-grabber: | grabber | `:icon-grabber:` |
 | :icon-graph: | graph | `:icon-graph:` |
 | :icon-hash: | hash | `:icon-hash:` |
@@ -202,8 +202,8 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-issue-draft: | issue-draft | `:icon-issue-draft:` |
 | :icon-issue-opened: | issue-opened | `:icon-issue-opened:` |
 | :icon-issue-reopened: | issue-reopened | `:icon-issue-reopened:` |
-| [!badge v3.0] <!--:icon-issue-tracked-by:--> | issue-tracked-by | `:icon-issue-tracked-by:` |
-| [!badge v3.0] <!--:icon-issue-tracks:--> | issue-tracks | `:icon-issue-tracks:` |
+| :icon-issue-tracked-by: | issue-tracked-by | `:icon-issue-tracked-by:` |
+| :icon-issue-tracks: | issue-tracks | `:icon-issue-tracks:` |
 | :icon-italic: | italic | `:icon-italic:` |
 | :icon-iterations: | iterations | `:icon-iterations:` |
 | :icon-kebab-horizontal: | kebab-horizontal | `:icon-kebab-horizontal:` |
@@ -230,10 +230,10 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-mirror: | mirror | `:icon-mirror:` |
 | :icon-moon: | moon | `:icon-moon:` |
 | :icon-mortar-board: | mortar-board | `:icon-mortar-board:` |
-| [!badge v3.0] <!--:icon-move-to-bottom:--> | move-to-bottom | `:icon-move-to-bottom:` |
-| [!badge v3.0] <!--:icon-move-to-end:--> | move-to-end | `:icon-move-to-end:` |
-| [!badge v3.0] <!--:icon-move-to-start:--> | move-to-start | `:icon-move-to-start:` |
-| [!badge v3.0] <!--:icon-move-to-top:--> | move-to-top | `:icon-move-to-top:` |
+| :icon-move-to-bottom: | move-to-bottom | `:icon-move-to-bottom:` |
+| :icon-move-to-end: | move-to-end | `:icon-move-to-end:` |
+| :icon-move-to-start: | move-to-start | `:icon-move-to-start:` |
+| :icon-move-to-top: | move-to-top | `:icon-move-to-top:` |
 | :icon-multi-select: | multi-select | `:icon-multi-select:` |
 | :icon-mute: | mute | `:icon-mute:` |
 | :icon-no-entry: | no-entry | `:icon-no-entry:` |
@@ -246,8 +246,8 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-package-dependents: | package-dependents | `:icon-package-dependents:` |
 | :icon-paintbrush: | paintbrush | `:icon-paintbrush:` |
 | :icon-paper-airplane: | paper-airplane | `:icon-paper-airplane:` |
-| [!badge v3.0] <!--:icon-paperclip:--> | paperclip | `:icon-paperclip:` |
-| [!badge v3.0] <!--:icon-passkey-fill:--> | passkey-fill | `:icon-passkey-fill:` |
+| :icon-paperclip: | paperclip | `:icon-paperclip:` |
+| :icon-passkey-fill: | passkey-fill | `:icon-passkey-fill:` |
 | :icon-paste: | paste | `:icon-paste:` |
 | :icon-pencil: | pencil | `:icon-pencil:` |
 | :icon-people: | people | `:icon-people:` |
@@ -260,14 +260,14 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-plus: | plus | `:icon-plus:` |
 | :icon-plus-circle: | plus-circle | `:icon-plus-circle:` |
 | :icon-project: | project | `:icon-project:` |
-| [!badge v3.0] <!--:icon-project-roadmap:--> | project-roadmap | `:icon-project-roadmap:` |
-| [!badge v3.0] <!--:icon-project-symlink:--> | project-symlink | `:icon-project-symlink:` |
-| [!badge v3.0] <!--:icon-project-template:--> | project-template | `:icon-project-template:` |
+| :icon-project-roadmap: | project-roadmap | `:icon-project-roadmap:` |
+| :icon-project-symlink: | project-symlink | `:icon-project-symlink:` |
+| :icon-project-template: | project-template | `:icon-project-template:` |
 | :icon-pulse: | pulse | `:icon-pulse:` |
 | :icon-question: | question | `:icon-question:` |
 | :icon-quote: | quote | `:icon-quote:` |
-| [!badge v3.0] <!--:icon-read:--> | read | `:icon-read:` |
-| [!badge v3.0] <!--:icon-rel-file-path:--> | rel-file-path | `:icon-rel-file-path:` |
+| :icon-read: | read | `:icon-read:` |
+| :icon-rel-file-path: | rel-file-path | `:icon-rel-file-path:` |
 | :icon-reply: | reply | `:icon-reply:` |
 | :icon-repo: | repo | `:icon-repo:` |
 | :icon-repo-clone: | repo-clone | `:icon-repo-clone:` |
@@ -291,7 +291,7 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-shield: | shield | `:icon-shield:` |
 | :icon-shield-check: | shield-check | `:icon-shield-check:` |
 | :icon-shield-lock: | shield-lock | `:icon-shield-lock:` |
-| [!badge v3.0] <!--:icon-shield-slash:--> | shield-slash | `:icon-shield-slash:` |
+| :icon-shield-slash: | shield-slash | `:icon-shield-slash:` |
 | :icon-shield-x: | shield-x | `:icon-shield-x:` |
 | :icon-sidebar-collapse: | sidebar-collapse | `:icon-sidebar-collapse:` |
 | :icon-sidebar-expand: | sidebar-expand | `:icon-sidebar-expand:` |
@@ -299,13 +299,13 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-sign-out: | sign-out | `:icon-sign-out:` |
 | :icon-single-select: | single-select | `:icon-single-select:` |
 | :icon-skip: | skip | `:icon-skip:` |
-| [!badge v3.0] <!--:icon-skip-fill:--> | skip-fill | `:icon-skip-fill:` |
+| :icon-skip-fill: | skip-fill | `:icon-skip-fill:` |
 | :icon-sliders: | sliders | `:icon-sliders:` |
 | :icon-smiley: | smiley | `:icon-smiley:` |
 | :icon-sort-asc: | sort-asc | `:icon-sort-asc:` |
 | :icon-sort-desc: | sort-desc | `:icon-sort-desc:` |
-| [!badge v3.0] <!--:icon-sparkle-fill:--> | sparkle-fill | `:icon-sparkle-fill:` |
-| [!badge v3.0] <!--:icon-sponsor-tiers:--> | sponsor-tiers | `:icon-sponsor-tiers:` |
+| :icon-sparkle-fill: | sparkle-fill | `:icon-sparkle-fill:` |
+| :icon-sponsor-tiers: | sponsor-tiers | `:icon-sponsor-tiers:` |
 | :icon-square: | square | `:icon-square:` |
 | :icon-square-fill: | square-fill | `:icon-square-fill:` |
 | :icon-squirrel: | squirrel | `:icon-squirrel:` |
@@ -337,10 +337,10 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-trophy: | trophy | `:icon-trophy:` |
 | :icon-typography: | typography | `:icon-typography:` |
 | :icon-unfold: | unfold | `:icon-unfold:` |
-| [!badge v3.0] <!--:icon-unlink:--> | unlink | `:icon-unlink:` |
+| :icon-unlink: | unlink | `:icon-unlink:` |
 | :icon-unlock: | unlock | `:icon-unlock:` |
 | :icon-unmute: | unmute | `:icon-unmute:` |
-| [!badge v3.0] <!--:icon-unread:--> | unread | `:icon-unread:` |
+| :icon-unread: | unread | `:icon-unread:` |
 | :icon-unverified: | unverified | `:icon-unverified:` |
 | :icon-upload: | upload | `:icon-upload:` |
 | :icon-verified: | verified | `:icon-verified:` |
@@ -352,5 +352,5 @@ This is a sample page with a :icon-rocket: icon.
 | :icon-x-circle: | x-circle | `:icon-x-circle:` |
 | :icon-x-circle-fill: | x-circle-fill | `:icon-x-circle-fill:` |
 | :icon-zap: | zap | `:icon-zap:` |
-| [!badge v3.0] <!--:icon-zoom-in:--> | zoom-in | `:icon-zoom-in:` |
-| [!badge v3.0] <!--:icon-zoom-out:--> | zoom-out | `:icon-zoom-out:` |
+| :icon-zoom-in: | zoom-in | `:icon-zoom-in:` |
+| :icon-zoom-out: | zoom-out | `:icon-zoom-out:` |

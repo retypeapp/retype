@@ -877,7 +877,9 @@ Customization of the website search component.
 ### hotkeys
 
 === hotkeys : `list`
-Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
+Keyboard key to set the cursor focus into the search field. Default is `k`.
+
+The following sample demonstrates how to change the search hotkey to use `/` instead of the default `k`:
 
 ```yml
 search:
