@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738723863677">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738728953437">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.0">
@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.0.738723863677" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738728953437" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738723863677" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738728953437" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738723863677" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738723863677" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738728953437" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738728953437" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -865,7 +865,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <p>Retype treats all <code v-pre>.md</code> and <code v-pre>.yml</code> files as parsable content files that will be converted into <code v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code v-pre>output</code> unchanged and become static files that can be linked to.</p>
 <p>By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the <code v-pre>output</code> unchanged. If you require any other file types, they would need to be explicitly added to the <code v-pre>include</code> config.</p>
 <p>File types that are automatically included:</p>
-<ul>
+<ol>
 <li><code v-pre>*.ai</code></li>
 <li><code v-pre>*.bmp</code></li>
 <li><code v-pre>*.eps</code></li>
@@ -882,15 +882,15 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <li><code v-pre>*.txt</code></li>
 <li><code v-pre>*.webp</code></li>
 <li><code v-pre>*.zip</code></li>
-</ul>
+</ol>
 <p>By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the <code v-pre>output</code> unchanged. If you require any other folders, please add to the <code v-pre>include</code> config.</p>
 <p>Included folders:</p>
-<ul>
+<ol>
 <li><code v-pre>**/static/**</code></li>
 <li><code v-pre>**/public/**</code></li>
 <li><code v-pre>**/assets/**</code></li>
 <li><code v-pre>**/resources/**</code></li>
-</ul>
+</ol>
 <p>If you would rather not include certain folders, files, or file types, please add the pattern to the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr />
@@ -1488,10 +1488,10 @@ host: docs.example.com/js/plausible.js</code></pre>
   placeholder: Search</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="server">
+<doc-anchor-target id="serve">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#server">#</doc-anchor-trigger>
-        <span>server</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#serve">#</doc-anchor-trigger>
+        <span>serve</span>
     </h2>
 </doc-anchor-target>
 <p>Custom configuration for the built in Retype development web server.</p>
@@ -1505,13 +1505,13 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>host : <code v-pre>string</code></template>
 <p>Serve the website from this host location. Default is <code v-pre>localhost</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">serve:
   host: 127.0.0.1</code></pre>
 </doc-codeblock></div>
 <p>By default, the Retype development web server will serve from <code v-pre>http://localhost:5000</code>, although the port could be dynamically assigned if port <code v-pre>5000</code> is already in use.</p>
 <p>A custom port value can also be assigned.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">serve:
   host: 127.0.0.1:5005</code></pre>
 </doc-codeblock></div>
 <p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype start</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype serve</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
@@ -1530,7 +1530,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype development web server to use when hosting locally. Default is <code v-pre>5000</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">serve:
   port: 5005</code></pre>
 </doc-codeblock></div>
 <p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
@@ -1597,7 +1597,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </table>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">serve:
   start:
     mode: disk</code></pre>
 </doc-codeblock></div>
@@ -1641,7 +1641,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </table>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">server:
+<pre class="language-yaml"><code v-pre class="language-yaml">serve:
   start:
     polling: true</code></pre>
 </doc-codeblock></div>
@@ -1674,7 +1674,6 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <doc-panel id="validation-string">
     <template #title>validation : <code v-pre>string</code></template>
 <p>Configure how thorough Retype is while looking for changed files.</p>
-<p>Until Retype version 1.10, the approach used was equivalent to <code v-pre>full</code>.</p>
 <p>Default value is <code v-pre>optimal</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
