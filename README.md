@@ -69,7 +69,7 @@ Don't blink. Retype was built for speed.
 
 #### :icon-plug: Powerful
 
-Project level [configuration](/configuration/project.md) using `retype.yml` unlocks many more Retype features and customization.
+Project level [configuration](/configuration/project.md) using `retype.yml` unlocks many more features and customization.
 
 #### :icon-pencil: Simple formatting
 
