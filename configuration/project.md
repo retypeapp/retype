@@ -469,31 +469,31 @@ By default, if Retype discovers any of the following file types, they will be au
 
 File types that are automatically included:
 
-- `*.ai`
-- `*.bmp`
-- `*.eps`
-- `*.gif`
-- `*.heif`
-- `*.htm`
-- `*.html`
-- `*.jpeg`
-- `*.jpg`
-- `*.pdf`
-- `*.png`
-- `*.svg`
-- `*.tiff`
-- `*.txt`
-- `*.webp`
-- `*.zip`
+1. `*.ai`
+1. `*.bmp`
+1. `*.eps`
+1. `*.gif`
+1. `*.heif`
+1. `*.htm`
+1. `*.html`
+1. `*.jpeg`
+1. `*.jpg`
+1. `*.pdf`
+1. `*.png`
+1. `*.svg`
+1. `*.tiff`
+1. `*.txt`
+1. `*.webp`
+1. `*.zip`
 
 By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the `output` unchanged. If you require any other folders, please add to the `include` config.
 
 Included folders:
 
-- `**/static/**`
-- `**/public/**`
-- `**/assets/**`
-- `**/resources/**`
+1. `**/static/**`
+1. `**/public/**`
+1. `**/assets/**`
+1. `**/resources/**`
 
 If you would rather not include certain folders, files, or file types, please add the pattern to the [`exclude`](#exclude) config.
 
@@ -957,7 +957,7 @@ search:
 ```
 ===
 
-## server
+## serve
 
 Custom configuration for the built in Retype development web server.
 
@@ -968,7 +968,7 @@ Custom configuration for the built in Retype development web server.
 Serve the website from this host location. Default is `localhost`.
 
 ```yml
-server:
+serve:
   host: 127.0.0.1
 ```
 
@@ -977,7 +977,7 @@ By default, the Retype development web server will serve from `http://localhost:
 A custom port value can also be assigned.
 
 ```yml
-server:
+serve:
   host: 127.0.0.1:5005
 ```
 
@@ -997,7 +997,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port
 A custom port for the internal Retype development web server to use when hosting locally. Default is `5000`.
 
 ```yml
-server:
+serve:
   port: 5005
 ```
 
@@ -1041,7 +1041,7 @@ Default is `memory`.
 | `disk`   | Output files are written to the [`output`](#output) directory, and updated with each incremental build accordingly. |
 
 ```yml
-server:
+serve:
   start:
     mode: disk
 ```
@@ -1071,7 +1071,7 @@ Default is `false`.
 | `number` | Poll the [input](#input) directory in milliseconds. |
 
 ```yml
-server:
+serve:
   start:
     polling: true
 ```
@@ -1090,15 +1090,13 @@ On the flip side, increasing the polling interval may cause an annoying experien
 
 Configure how thorough Retype is while looking for changed files.
 
-Until Retype version 1.10, the approach used was equivalent to `full`.
-
 Default value is `optimal`.
 
 | Validation | Description |
 | ---------- | ----------- |
-| `fast` | Compare file system metadata only (reported file size and last modification time). |
-| `full` | Perform full SHA2 comparison on every tracked file. |
-| `optimal` | Compare file system metadata and, for every file with changes, perform SHA2 comparison. |
+| `fast`     | Compare file system metadata only (reported file size and last modification time). |
+| `full`     | Perform full SHA2 comparison on every tracked file. |
+| `optimal`  | Compare file system metadata and, for every file with changes, perform SHA2 comparison. |
 
 ===
 

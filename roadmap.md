@@ -191,7 +191,7 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 - [x] Multi-language search and automatic detection of content languages. See [#197](https://github.com/retypeapp/retype/issues/197).
 - [x] [Retype Pro](/pro.md) with increased page limit and Retype branding removal option.
 - [x] Better style for native scrollbars on Windows. See [#107](https://github.com/retypeapp/retype/issues/107).
-- [x] [`server.start.validation`](/configuration/project.md#watchvalidation) project configuration option.
+- [x] [`serve.start.validation`](/configuration/project.md#watchvalidation) project configuration option.
 - [x] All heading elements within the page content are now added to the search index. See [#166](https://github.com/retypeapp/retype/issues/166).
 - [x] Page config and `SUMMARY.md` can be used together.
 - [x] Upgrade Octicons icons library from v15.2.0 to v16.1.1.
@@ -206,7 +206,7 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 - [x] [$\KaTeX$](/components/math-formulas.md) math typesetting library support.
 - [x] Auto generate RSS feed for blog posts.
-- [x] [`server.start.polling`](/configuration/project.md#watchpolling) project option.
+- [x] [`serve.start.polling`](/configuration/project.md#watchpolling) project option.
 - [x] Gravatar support for [`author`](/configuration/page.md#author) avatars.
 - [x] [project](/configuration/project.md#gravatar) option to configure a [default](/configuration/project.md#gravatardefault) Gravatar image.
 - [x] [`target`](/components/reference-link.md#target) and [`icon`](/components/reference-link.md#custom-icon) attributes on [`[!ref]`](/components/reference-link.md) component.
@@ -221,7 +221,7 @@ Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 +++ New :icon-shield-check:
 
 - [x] Incremental build during [`retype start`](/guides/cli.md#retype-start) with page dependency graph
-- [x] Ability to run `retype start` with in-memory output. Turned on by default, see [`server.start.mode`](/configuration/project.md#start) to configure.
+- [x] Ability to run `retype start` with in-memory output. Turned on by default, see [`serve.start.mode`](/configuration/project.md#start) to configure.
 - [x] Platform specific NPM packages:
   1. [`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86)
   2. [`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64)
@@ -277,7 +277,7 @@ Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 - [x] Auto-generate a `sitemap.xml` file to inform search engines which pages to crawl.
 - [x] Auto-generate a `robots.txt` file.
 - [x] Open Graph and Twitter meta tags generated for every page.
-- [x] [`server.host`](/configuration/project.md#host) and [`server.port`](/configuration/project.md#port) project configs.
+- [x] [`serve.host`](/configuration/project.md#host) and [`serve.port`](/configuration/project.md#port) project configs.
 - [x] `/blog` summary for any `.md` page added to a `/blog` folder.
 - [x] [`author`](/configuration/page.md#author), [`category`](/configuration/page.md#category), and [`date`](/configuration/page.md#date) page configs.
 - [x] [`redirect`](/configuration/page.md#redirect) page config.
