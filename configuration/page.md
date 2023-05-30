@@ -634,13 +634,27 @@ Some content here.
 
 ## visibility
 
-=== visibility : `public|hidden`
+=== visibility : `public|hidden|protected|private`
 
-Configure the visibility of the page to be `hidden` or `public`. Default is `public`.
+Configure the visibility of the page to be `public`, `hidden`, `protected`, or `private`. Default is `public`.
 
-If a page is configued to be `visibility: hidden`, the page is still created but will not be included in the page navigation or search results.
+| Mode | In&nbsp;search&nbsp;results? | Description |
+| --- | :---: | --- |
+`public` | :white_check_mark: | The page is public and visible in the main navigation.
+`hidden` | :no_entry_sign: | The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public.
+`protected` | :no_entry_sign: | The page is added to the navigation but requires a password to access.
+`private` | :no_entry_sign:| The page is hidden and is not added to the navigation.
 
-The following sample demonstrates hidding a page:
+===
+
+
+### hidden
+
+With hidden, the page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page.
+
+Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.
+
+The following sample demonstrates hiding a page:
 
 ```md
 ---
@@ -651,12 +665,50 @@ visibility: hidden
 This page will be hidden from the menu and search results.
 ```
 
-The page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page. Retype would ensure no _generated_ links or references to the hidden page are created. If on a public page, a link to a hidden page is made, the link will work and the hidden page will be visible.
-
 The History :icon-history: component will continue to function as normal. Any hidden page visited would still be logged in the history, although that history is only available to the visitor.
 
 Setting `visibility: hidden` on a page is a good way to create a _draft_ or _secret_ page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.
 
-Retype does not show you the link to this page, but it uses the same naming convention as all other pages is used. For instance, if your site is hosted at `https://example.com` and the page was called `my-secret-page.md`, the URL would be `https://example.com/my-secret-page/`.
+### protected
 
-===
+To create a protected page, add `visibility: protected` and then set the password for the project using the `--password` flag.
+
+```md
+---
+visibility: protected
+---
+# A protected page
+
+This page will be visibile in the main navigation, but will require a password to view the page.
+```
+
+Then call either of the following commands to set the password for the project:
+
+```
+retype start --password <your-password>
+retype build --password <your-password>
+```
+
+### private
+
+To create a private page, add `visibility: private` and then set the password for the project using the `--password` flag.
+
+```md
+---
+visibility: private
+---
+# A private page
+
+This page will not be visibile in the main navigation and will require a password to view the page.
+```
+
+Then call either of the following commands to set the password for the project:
+
+```
+retype start --password <your-password>
+retype build --password <your-password>
+```
+
+!!!
+For `hidden` and `private` pages, Retype does not give you a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at `https://example.com` and the page was called `my-hidden-page.md`, the URL would be `https://example.com/my-hidden-page/`.
+!!!
