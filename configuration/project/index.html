@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738701978499">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738722830312">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.0">
@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.0.738701978499" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738722830312" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738701978499" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738722830312" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738701978499" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738701978499" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738722830312" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738722830312" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -276,13 +276,13 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>After making a change to the <code v-pre>retype.yml</code>, if you are running <code v-pre>retype watch</code>, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.</p>
-<p>If you started the local web server using <code v-pre>retype run</code>, you&#x27;ll need to call <code v-pre>retype build</code> to regenerate a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see the update.</p>
+<p>After making a change to the <code v-pre>retype.yml</code>, if you are running <code v-pre>retype start</code>, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.</p>
+<p>If you started the local web server using <code v-pre>retype serve</code>, you&#x27;ll need to call <code v-pre>retype build</code> to regenerate a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see the update.</p>
         </div>
     </div>
 </div>
 <p>The <code v-pre>retype.yml</code> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <code v-pre>retype.yml</code> is a good first step.</p>
-<p>If you run the command <code v-pre>retype watch</code> and do not have a <code v-pre>retype.yml</code> project configuration file within the root of your project, Retype will auto-generate a simple <code v-pre>retype.yml</code> file for your project. You can then edit the file to customize your project.</p>
+<p>If you run the command <code v-pre>retype start</code> and do not have a <code v-pre>retype.yml</code> project configuration file within the root of your project, Retype will auto-generate a simple <code v-pre>retype.yml</code> file for your project. You can then edit the file to customize your project.</p>
 <p>You can also explicitly have Retype generate a <code v-pre>retype.yml</code> file by running the command <code v-pre>retype init</code>.</p>
 <p>The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -671,7 +671,7 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
         <span>editor</span>
     </h2>
 </doc-anchor-target>
-<p>Custom configuration to control the page live editor functionality that is only available when <code v-pre>retype watch</code> is running.</p>
+<p>Custom configuration to control the page live editor functionality that is only available when <code v-pre>retype start</code> is running.</p>
 <doc-anchor-target id="enabled">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
@@ -1514,10 +1514,10 @@ host: docs.example.com/js/plausible.js</code></pre>
 <pre class="language-yaml"><code v-pre class="language-yaml">server:
   host: 127.0.0.1:5005</code></pre>
 </doc-codeblock></div>
-<p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
+<p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype start</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype serve</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype watch --host 127.0.0.1              # serve from a custom host
-retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype start --host 127.0.0.1              # serve from a custom host
+retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="port">
@@ -1552,27 +1552,27 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         </div>
     </div>
 </div>
-<p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype run</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
+<p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="../../guides/cli/#options"><code v-pre>retype start</code></a> and <a href="../../guides/cli/#options-3"><code v-pre>retype serve</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <code v-pre>retype.yml</code> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype watch --port 5005  # serve from a custom port</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype start --port 5005  # serve from a custom port</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="watch">
+<doc-anchor-target id="start">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#watch">#</doc-anchor-trigger>
-        <span>watch</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#start">#</doc-anchor-trigger>
+        <span>start</span>
     </h3>
 </doc-anchor-target>
-<p>Custom configuration for the <a href="../../guides/cli/#options"><code v-pre>retype watch</code></a> command.</p>
-<doc-anchor-target id="watchmode">
+<p>Custom configuration for the <a href="../../guides/cli/#options"><code v-pre>retype start</code></a> command.</p>
+<doc-anchor-target id="startmode">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#watchmode">#</doc-anchor-trigger>
-        <span>watch.mode</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startmode">#</doc-anchor-trigger>
+        <span>start.mode</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="mode-string">
     <template #title>mode : <code v-pre>string</code></template>
-<p>During <code v-pre>retype watch</code>, the <code v-pre>mode</code> configuration instructs the web server on where to host files from.</p>
+<p>During <code v-pre>retype start</code>, the <code v-pre>mode</code> configuration instructs the web server on where to host files from.</p>
 <p>If <code v-pre>memory</code>, the entire website is built and then stored in memory during development with no files being written to disk.</p>
 <p>If <code v-pre>disk</code>, the entire website is built and written to disk, then the web server will host those files from their disk location.</p>
 <p>Default is <code v-pre>memory</code>.</p>
@@ -1598,20 +1598,20 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">server:
-  watch:
+  start:
     mode: disk</code></pre>
 </doc-codeblock></div>
-<p>The command <a href="../../guides/cli/#retype-build"><code v-pre>retype build</code></a> will always build and write all files to disk. The <code v-pre>memory</code> configuration is not an option with <code v-pre>retype build</code>. The Retype <a href="../../guides/github-actions/">GitHub Action</a> uses <code v-pre>retype build</code>. The command <code v-pre>retype watch</code> is only to be used during local development.</p>
+<p>The command <a href="../../guides/cli/#retype-build"><code v-pre>retype build</code></a> will always build and write all files to disk. The <code v-pre>memory</code> configuration is not an option with <code v-pre>retype build</code>. The Retype <a href="../../guides/github-actions/">GitHub Action</a> uses <code v-pre>retype build</code>. The command <code v-pre>retype start</code> is only to be used during local development.</p>
 </doc-panel>
-<doc-anchor-target id="watchpolling">
+<doc-anchor-target id="startpolling">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#watchpolling">#</doc-anchor-trigger>
-        <span>watch.polling</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startpolling">#</doc-anchor-trigger>
+        <span>start.polling</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="polling-boolean-or-number">
     <template #title>polling : <code v-pre>boolean</code> or <code v-pre>number</code></template>
-<p>Instructs <code v-pre>retype watch</code> on how it should listen for file changes.</p>
+<p>Instructs <code v-pre>retype start</code> on how it should listen for file changes.</p>
 <p>If <code v-pre>false</code>, the native filesystem event listeners are used to monitor for file changes.</p>
 <p>If <code v-pre>true</code>, Retype will poll for file changes within your projects <doc-anchor-trigger to="#input">input</doc-anchor-trigger> directory. By default, the polling interval is 1000 milliseconds (1 second)</p>
 <p>The poll interval is configurable by setting a <code v-pre>number</code> value. For instance, setting <code v-pre>polling: 500</code> would configure a 500ms interval.</p>
@@ -1642,7 +1642,7 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">server:
-  watch:
+  start:
     polling: true</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
@@ -1660,15 +1660,15 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <div class="pr-5 ml-3 w-full">
             <h5>Performance Warning</h5>
 <p>Disk polling may be a costly operation, especially in projects with a large quantity of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). If configuring the poll interval, please adjust the value down in steps, monitoring performance as the poll interval decreases.</p>
-<p>On the flip side, increasing the polling interval may cause an annoying experience during <code v-pre>retype watch</code> as file changes will require a longer time before reflected in the browser.</p>
+<p>On the flip side, increasing the polling interval may cause an annoying experience during <code v-pre>retype start</code> as file changes will require a longer time before reflected in the browser.</p>
         </div>
     </div>
 </div>
 </doc-panel>
-<doc-anchor-target id="watchvalidation">
+<doc-anchor-target id="startvalidation">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#watchvalidation">#</doc-anchor-trigger>
-        <span>watch.validation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startvalidation">#</doc-anchor-trigger>
+        <span>start.validation</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="validation-string">

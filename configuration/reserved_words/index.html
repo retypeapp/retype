@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738701978499">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738722830312">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.0">
@@ -34,11 +34,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.0.738701978499" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738722830312" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738701978499" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738722830312" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738701978499" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738722830312" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -373,14 +373,14 @@
         <span>Project config</span>
     </h3>
 </doc-anchor-target>
-<p>By default, if you do not pass an explicit project configuration file name in the <a href="../../guides/cli/#retype-watch"><code v-pre>&lt;path&gt;</code></a> command line argument, Retype will search for your project config using the following case insensitive priority:</p>
+<p>By default, if you do not pass an explicit project configuration file name in the <a href="../../guides/cli/#retype-start"><code v-pre>&lt;path&gt;</code></a> command line argument, Retype will search for your project config using the following case insensitive priority:</p>
 <ol>
 <li><code v-pre>retype.yml</code></li>
 <li><code v-pre>retype.yaml</code></li>
 <li><code v-pre>retype.json</code></li>
 </ol>
-<p>For instance, if you run the <a href="../../guides/cli/">CLI</a> command <code v-pre>retype watch docs</code>, Retype will first try to find the project configuration file  <code v-pre>docs/retype.yml</code>. If not found, then <code v-pre>docs/retype.yaml</code> will be tested and so on.</p>
-<p>If you run the command <code v-pre>retype watch docs/retype.json</code>, even if a <code v-pre>retype.yml</code> is present, Retype will only read the <code v-pre>retype.json</code> file as you are explicitly passing the project configuration file path.</p>
+<p>For instance, if you run the <a href="../../guides/cli/">CLI</a> command <code v-pre>retype start docs</code>, Retype will first try to find the project configuration file  <code v-pre>docs/retype.yml</code>. If not found, then <code v-pre>docs/retype.yaml</code> will be tested and so on.</p>
+<p>If you run the command <code v-pre>retype start docs/retype.json</code>, even if a <code v-pre>retype.yml</code> is present, Retype will only read the <code v-pre>retype.json</code> file as you are explicitly passing the project configuration file path.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -394,7 +394,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Custom project config file names are also possible by explicitly passing a file name, such as <code v-pre>retype watch docs.yml</code>. Where <code v-pre>docs.yml</code> is used instead of <code v-pre>retype.yml</code>, even if <code v-pre>retype.yml</code> is present.</p>
+<p>Custom project config file names are also possible by explicitly passing a file name, such as <code v-pre>retype start docs.yml</code>. Where <code v-pre>docs.yml</code> is used instead of <code v-pre>retype.yml</code>, even if <code v-pre>retype.yml</code> is present.</p>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738701978499">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738722830312">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Retype CLI - Generate, publish, and share documentation</title>
     <meta name="title" content="Retype CLI - Generate, publish, and share documentation">
-    <meta name="description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch" />
+    <meta name="description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/guides/cli/" />
@@ -24,24 +24,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/guides/cli/">
     <meta property="og:title" content="Retype CLI - Generate, publish, and share documentation">
-    <meta property="og:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch">
+    <meta property="og:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start">
     <meta property="og:image" content="https://retype.com/static/add-retype-secret.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/guides/cli/">
     <meta property="twitter:title" content="Retype CLI - Generate, publish, and share documentation">
-    <meta property="twitter:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch">
+    <meta property="twitter:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start">
     <meta property="twitter:image" content="https://retype.com/static/add-retype-secret.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.0.738701978499" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738722830312" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738701978499" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738722830312" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738701978499" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738701978499" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738722830312" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738722830312" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -261,7 +261,7 @@
         <span>Retype CLI</span>
     </h1>
 </doc-anchor-target>
-<p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code v-pre>retype watch</code></p>
+<p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code v-pre>retype start</code></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -275,27 +275,49 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <code v-pre>retype.yml</code> as it does unlock a lot more power, flexibility, and customization.</p>
+<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <code v-pre>retype.yml</code> as it does unlock more power, flexibility, and customization.</p>
         </div>
     </div>
 </div>
-<p>The <code v-pre>--help</code> option can be passed with any command to get additional details, for instance <code v-pre>retype watch --help</code> will return all options for the <code v-pre>retype watch</code> command.</p>
+<p>The <code v-pre>--help</code> option can be passed with any command to get additional details, for instance <code v-pre>retype start --help</code> will return all options for the <code v-pre>retype start</code> command.</p>
 <p>The command <code v-pre>retype --version</code> will return the current version number of your Retype install. See all public Retype <a href="https://github.com/retypeapp/retype/releases">releases</a>.</p>
 <p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands and be sure to check out the <a href="../getting-started/">Getting Started</a> guide for step by instructions on using each of these commands.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Retype CLI
+
+Usage:
+  retype [command] [options]
+
+Options:
+  --info          Display Retype information
+  --version       Show version information
+  -?, -h, --help  Show help and usage information
+
+Commands:
+  start &lt;path&gt;  Build and serve the project using a local development only web server
+  init  &lt;path&gt;  Initialize a new Retype project
+  build &lt;path&gt;  Generate a static website from the project
+  serve &lt;path&gt;  Serve the website in a local development only web server
+  clean &lt;path&gt;  Clean the output directory
+  wallet        Manage Retype secret license keys</code></pre>
+</doc-codeblock></div>
 <hr />
-<doc-anchor-target id="retype-watch">
+<doc-anchor-target id="retype-start">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-watch">#</doc-anchor-trigger>
-        <span><code v-pre>retype watch</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-start">#</doc-anchor-trigger>
+        <span><code v-pre>retype start</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype watch</code> command is the easiest way to get your project built and running in a browser within seconds, although <code v-pre>retype watch</code> is just shortcut for a sequence of other commands that could be executed individually.</p>
+<p>The <code v-pre>retype start</code> command is the easiest way to get your project built and running in a browser within seconds.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype init
-retype build
-retype run</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype start</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>retype watch</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
+<p>The <code v-pre>retype start</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
+<p>The <code v-pre>retype start</code> command automatically opens the default web browser on your machine and loads the website into the browser. You can surpress this automatic opening of the default web browser by passing the <code v-pre>--no-open</code> flag or its alias <code v-pre>-n</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype start -n</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="options">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
@@ -303,21 +325,23 @@ retype run</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">watch:
-  Serve a static website, watch for file changes
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Build and serve the project using a local development only web server
 
 Usage:
-  retype watch [options] [&lt;path&gt;]
+  retype start [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root or a Retype config [Optional]
+  &lt;path&gt;  Path to the project root or project config file [Optional]
 
 Options:
-  -a, --api              Watch for API changes
-  --license &lt;license&gt;    Retype license key
+  --secret &lt;secret&gt;      Retype license key
+  --password &lt;password&gt;  Private page password
   --host &lt;host&gt;          Custom Host name or IP address
   --port &lt;port&gt;          Custom TCP port
-  -v, --verbose          Verbose logging
+  -n, --no-open          Prevent default web browser from being opened
+  -v, --verbose          Enable verbose logging
+  -a, --api              Watch for API changes
   -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
@@ -332,9 +356,9 @@ Options:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>While it is technically possible to host your website publicly using <code v-pre>retype watch</code> and the web server built into Retype, <strong>DON&#x27;T DO IT</strong>.</p>
-<p>You should use a dedicated website hosting service, such as <a href="../../hosting/github-pages/">GitHub Pages</a>, or any other web hosting service.</p>
-<p>If you <em>really really really</em> want to try public hosting using the built in web server, use <doc-anchor-trigger to="#retype-run"><code v-pre>retype run</code></doc-anchor-trigger>.</p>
+<p>While it is technically possible to host your website publicly using <code v-pre>retype start</code> and the web server built into Retype, <strong>DON&#x27;T DO IT</strong>.</p>
+<p>You should use a dedicated website hosting service, such as <a href="../../hosting/github-pages/">GitHub Pages</a>, <a href="https://www.netlify.com/">Netlify</a>, or absolutely any other web hosting service.</p>
+<p>If you <em>really really really</em> want to try public hosting using the built in web server, use <doc-anchor-trigger to="#retype-serve"><code v-pre>retype serve</code></doc-anchor-trigger>.</p>
         </div>
     </div>
 </div>
@@ -363,7 +387,7 @@ links:
   - text: Getting Started
     link: https://retype.com/guides/getting-started/
 footer:
-  copyright: &quot;&amp;copy; Copyright . All rights reserved.&quot;</code></pre>
+  copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 <p>All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the <a href="../../configuration/project/">project</a> configuration docs for a full list of all options.</p>
 <p>To change the title of the project, revise the <code v-pre>branding.title</code> config. For instance, let&#x27;s change to <code v-pre>Company X</code>:</p>
@@ -371,7 +395,7 @@ footer:
 <pre class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Company X</code></pre>
 </doc-codeblock></div>
-<p>If there is already a <code v-pre>retype.yml</code> file within the project, runnin the <code v-pre>retype init</code> command will not create a new <code v-pre>retype.yml</code> file.</p>
+<p>If there is already a <code v-pre>retype.yml</code> file within the project, running the <code v-pre>retype init</code> command will not create a new <code v-pre>retype.yml</code> file.</p>
 <p>The <code v-pre>retype.yml</code> file is not <em>actually</em> required, but you will want to make custom <a href="../../configuration/project/">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
 <doc-anchor-target id="options-1">
     <h3>
@@ -380,19 +404,19 @@ footer:
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">init:
+<pre class="language-none"><code v-pre class="language-none">Description:
   Initialize a new Retype project
 
 Usage:
-  retype init [options] [&lt;path&gt;]
+  retype init [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root [Optional]
+  &lt;path&gt;  Path to the project root [Optional]
 
 Options:
-  --override &lt;override&gt;    JSON configuration overriding Retype config values
-  -v, --verbose            Verbose logging
-  -?, -h, --help           Show help and usage information</code></pre>
+  --override &lt;override&gt;  JSON configuration overriding Retype config values
+  -v, --verbose          Enable verbose logging
+  -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype-build">
@@ -406,7 +430,7 @@ Options:
 <pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
 </doc-codeblock></div>
 <p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.yml</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
-<p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
+<p>If the <code v-pre>.md</code> documentation files for your project were not located in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: docs
 output: website</code></pre>
@@ -421,7 +445,7 @@ output: website/docs</code></pre>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: src
 output: docs</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files and where to output the generated website.</p>
+<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files, and where to output the generated website.</p>
 <doc-anchor-target id="options-2">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-2">#</doc-anchor-trigger>
@@ -429,21 +453,24 @@ output: docs</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">build:
-  Generate a static website
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Generate a static website from the project
 
 Usage:
-  retype build [options] [&lt;path&gt;]
+  retype build [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root or a Retype config [Optional]
+  &lt;path&gt;  Path to the project root or project config file [Optional]
 
 Options:
-  --output &lt;output&gt;        Custom path to the output directory
-  --secret &lt;secret&gt;        Retype secret license key
-  --override &lt;override&gt;    JSON configuration overriding Retype config values
-  -v, --verbose            Verbose logging
-  -?, -h, --help           Show help and usage information</code></pre>
+  --output &lt;output&gt;      Custom path to the output directory
+  --secret &lt;secret&gt;      Retype license key
+  --password &lt;password&gt;  Private page password
+  --override &lt;override&gt;  JSON configuration overriding project config values
+  -w, --watch            Watch for file changes
+  -v, --verbose          Enable verbose logging
+  -a, --api              Watch for API changes
+  -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="--override">
     <h3>
@@ -453,18 +480,18 @@ Options:
 </doc-anchor-target>
 <p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr />
-<doc-anchor-target id="retype-run">
+<doc-anchor-target id="retype-serve">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-run">#</doc-anchor-trigger>
-        <span><code v-pre>retype run</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-serve">#</doc-anchor-trigger>
+        <span><code v-pre>retype serve</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype run</code> command starts up your new Retype website and opens in a web browser.</p>
+<p>The <code v-pre>retype serve</code> command starts a local development only web server and hosts your website.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype run</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype serve</code></pre>
 </doc-codeblock></div>
-<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>.</p>
-<p>You can also use any other local web server instead of <code v-pre>retype run</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
+<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as Node, PHP, or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>, <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>, <a href="https://www.netlify.com/">Netlify</a>, or <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>.</p>
+<p>You can also use any other local web server instead of <code v-pre>retype serve</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple web server options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
 <doc-anchor-target id="options-3">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-3">#</doc-anchor-trigger>
@@ -472,20 +499,52 @@ Options:
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">run:
-  Serve a static website
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Serve the website in a local development only web server
 
 Usage:
-  retype run [options] [&lt;path&gt;]
+  retype serve [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root or a Retype config [Optional]
+  &lt;path&gt;  Path to the project root or project config file [Optional]
 
 Options:
-  --host &lt;host&gt;     Custom Host name or IP address
-  --port &lt;port&gt;     Custom TCP port
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information</code></pre>
+  --host &lt;host&gt;   Custom Host name or IP address
+  --port &lt;port&gt;   Custom TCP port
+  -l, --live      Live reload open browsers when a change in the project output is detected
+  -v, --verbose   Enable verbose logging
+  -?, -h, --help  Show help and usage information</code></pre>
+</doc-codeblock></div>
+<hr />
+<doc-anchor-target id="retype-clean">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-clean">#</doc-anchor-trigger>
+        <span><code v-pre>retype clean</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>retype clean</code> command will delete the Retype managed files from the <code v-pre>output</code> folder.</p>
+<p>If your manually add files or another process adds files to the <code v-pre>output</code>, those files will not be removed by <code v-pre>retype clean</code>.</p>
+<p>Including the <code v-pre>--dry</code> flag triggers a dry run for the command and will list the files that <strong>would be</strong> deleted if the <code v-pre>--dry</code> flag was not included.</p>
+<doc-anchor-target id="options-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Clean the output directory
+
+Usage:
+  retype clean [&lt;path&gt;] [options]
+
+Arguments:
+  &lt;path&gt;  Path to the project root or project config file [Optional]
+
+Options:
+  --dry           List files and directories that would be deleted
+  -v, --verbose   Enable verbose logging
+  -?, -h, --help  Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype-wallet">
@@ -529,25 +588,25 @@ Options:
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="options-4">
+<doc-anchor-target id="options-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
         <span>Options</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">wallet:
-  Manage secret license keys
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Manage Retype secret license keys
 
 Usage:
   retype wallet [options]
 
 Options:
-  --add &lt;key&gt;          Add a license key to the wallet
-  --remove &lt;key&gt;       Remove a license key from the wallet
-  --list               List the stored license keys
-  --clear              Clear the wallet
-  -?, -h, --help       Show help and usage information</code></pre>
+  --add &lt;secret&gt;     Add a secret license key to the wallet
+  --remove &lt;secret&gt;  Remove a secret license key from the wallet
+  --list             List the stored secret license keys
+  --clear            Clear the wallet
+  -?, -h, --help     Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype---override">
