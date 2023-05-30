@@ -5,61 +5,86 @@ tags: [guide]
 ---
 # Retype CLI
 
-The Retype CLI is clean and simple. The majority of the time you will run just one command: `retype watch`
+The Retype CLI is clean and simple. The majority of the time you will run just one command: `retype start`
 
 !!!
-
-Be sure to review the [project](/configuration/project.md) options available within the `retype.yml` as it does unlock a lot more power, flexibility, and customization.
-
+Be sure to review the [project](/configuration/project.md) options available within the `retype.yml` as it does unlock more power, flexibility, and customization.
 !!!
 
-The `--help` option can be passed with any command to get additional details, for instance `retype watch --help` will return all options for the `retype watch` command.
+The `--help` option can be passed with any command to get additional details, for instance `retype start --help` will return all options for the `retype start` command.
 
 The command `retype --version` will return the current version number of your Retype install. See all public Retype [releases](https://github.com/retypeapp/retype/releases).
 
 Let's go through each of the `retype` CLI commands and be sure to check out the [Getting Started](/guides/getting-started.md) guide for step by instructions on using each of these commands.
 
+```
+Description:
+  Retype CLI
+
+Usage:
+  retype [command] [options]
+
+Options:
+  --info          Display Retype information
+  --version       Show version information
+  -?, -h, --help  Show help and usage information
+
+Commands:
+  start <path>  Build and serve the project using a local development only web server
+  init  <path>  Initialize a new Retype project
+  build <path>  Generate a static website from the project
+  serve <path>  Serve the website in a local development only web server
+  clean <path>  Clean the output directory
+  wallet        Manage Retype secret license keys
+```
+
 ---
 
-## `retype watch`
+## `retype start`
 
-The `retype watch` command is the easiest way to get your project built and running in a browser within seconds, although `retype watch` is just shortcut for a sequence of other commands that could be executed individually.
+The `retype start` command is the easiest way to get your project built and running in a browser within seconds.
 
 ```
-retype init
-retype build
-retype run
+retype start
 ```
 
-The `retype watch` command will also watch for file changes and will automatically update the website in your web browser with the updated page.
+The `retype start` command will also watch for file changes and will automatically update the website in your web browser with the updated page.
+
+The `retype start` command automatically opens the default web browser on your machine and loads the website into the browser. You can surpress this automatic opening of the default web browser by passing the `--no-open` flag or its alias `-n`.
+
+```
+retype start -n
+```
 
 ### Options
 
 ```
-watch:
-  Serve a static website, watch for file changes
+Description:
+  Build and serve the project using a local development only web server
 
 Usage:
-  retype watch [options] [<path>]
+  retype start [<path>] [options]
 
 Arguments:
-  <path>    Path to the project root or a Retype config [Optional]
+  <path>  Path to the project root or project config file [Optional]
 
 Options:
-  -a, --api              Watch for API changes
-  --license <license>    Retype license key
+  --secret <secret>      Retype license key
+  --password <password>  Private page password
   --host <host>          Custom Host name or IP address
   --port <port>          Custom TCP port
-  -v, --verbose          Verbose logging
+  -n, --no-open          Prevent default web browser from being opened
+  -v, --verbose          Enable verbose logging
+  -a, --api              Watch for API changes
   -?, -h, --help         Show help and usage information
 ```
 
 !!!danger
-While it is technically possible to host your website publicly using `retype watch` and the web server built into Retype, **DON'T DO IT**.
+While it is technically possible to host your website publicly using `retype start` and the web server built into Retype, **DON'T DO IT**.
 
-You should use a dedicated website hosting service, such as [GitHub Pages](/hosting/github-pages.md), or any other web hosting service.
+You should use a dedicated website hosting service, such as [GitHub Pages](/hosting/github-pages.md), [Netlify](https://www.netlify.com/), or absolutely any other web hosting service.
 
-If you _really really really_ want to try public hosting using the built in web server, use [`retype run`](#retype-run).
+If you _really really really_ want to try public hosting using the built in web server, use [`retype serve`](#retype-serve).
 !!!
 
 ---
@@ -76,6 +101,7 @@ retype init
 
 Calling the `retype init` command will create a simple `retype.yml` file with the following default values:
 
+{%{
 ```yml Sample retype.yml
 input: .
 output: .retype
@@ -89,7 +115,7 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
-
+}%}
 All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the [project](/configuration/project.md) configuration docs for a full list of all options.
 
 To change the title of the project, revise the `branding.title` config. For instance, let's change to `Company X`:
@@ -99,26 +125,26 @@ branding:
   title: Company X
 ```
 
-If there is already a `retype.yml` file within the project, runnin the `retype init` command will not create a new `retype.yml` file.
+If there is already a `retype.yml` file within the project, running the `retype init` command will not create a new `retype.yml` file.
 
 The `retype.yml` file is not _actually_ required, but you will want to make custom [configurations](/configuration/project.md) to your project and this is how those instructions are passed to Retype.
 
 ### Options
 
 ```
-init:
+Description:
   Initialize a new Retype project
 
 Usage:
-  retype init [options] [<path>]
+  retype init [<path>] [options]
 
 Arguments:
-  <path>    Path to the project root [Optional]
+  <path>  Path to the project root [Optional]
 
 Options:
-  --override <override>    JSON configuration overriding Retype config values
-  -v, --verbose            Verbose logging
-  -?, -h, --help           Show help and usage information
+  --override <override>  JSON configuration overriding Retype config values
+  -v, --verbose          Enable verbose logging
+  -?, -h, --help         Show help and usage information
 ```
 
 ---
@@ -133,7 +159,7 @@ retype build
 
 Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the `retype.yml`. By default, the `output` location is a new folder named `.retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.
 
-If the `.md` documentation files for your project were located not in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
+If the `.md` documentation files for your project were not located in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
 
 ```yml
 input: docs
@@ -154,26 +180,29 @@ input: src
 output: docs
 ```
 
-The `input` and `output` configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files and where to output the generated website.
+The `input` and `output` configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files, and where to output the generated website.
 
 ### Options
 
 ```
-build:
-  Generate a static website
+Description:
+  Generate a static website from the project
 
 Usage:
-  retype build [options] [<path>]
+  retype build [<path>] [options]
 
 Arguments:
-  <path>    Path to the project root or a Retype config [Optional]
+  <path>  Path to the project root or project config file [Optional]
 
 Options:
-  --output <output>        Custom path to the output directory
-  --secret <secret>        Retype secret license key
-  --override <override>    JSON configuration overriding Retype config values
-  -v, --verbose            Verbose logging
-  -?, -h, --help           Show help and usage information
+  --output <output>      Custom path to the output directory
+  --secret <secret>      Retype license key
+  --password <password>  Private page password
+  --override <override>  JSON configuration overriding project config values
+  -w, --watch            Watch for file changes
+  -v, --verbose          Enable verbose logging
+  -a, --api              Watch for API changes
+  -?, -h, --help         Show help and usage information
 ```
 
 ### `--override`
@@ -182,35 +211,64 @@ See the [`--override`](#retype---override) docs below for additional details.
 
 ---
 
-## `retype run`
+## `retype serve`
 
-The `retype run` command starts up your new Retype website and opens in a web browser.
+The `retype serve` command starts a local development only web server and hosts your website.
 
 ```
-retype run
+retype serve
 ```
 
-The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such a [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).
+The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as Node, PHP, or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such a [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site), [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/), [Netlify](https://www.netlify.com/), or [Cloudflare Pages](https://pages.cloudflare.com/).
 
-You can also use any other local web server instead of `retype run`. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be [live-server](https://www.npmjs.com/package/live-server) or [static-server](https://www.npmjs.com/package/static-server).
+You can also use any other local web server instead of `retype serve`. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple web server options could be [live-server](https://www.npmjs.com/package/live-server) or [static-server](https://www.npmjs.com/package/static-server).
 
 ### Options
 
 ```
-run:
-  Serve a static website
+Description:
+  Serve the website in a local development only web server
 
 Usage:
-  retype run [options] [<path>]
+  retype serve [<path>] [options]
 
 Arguments:
-  <path>    Path to the project root or a Retype config [Optional]
+  <path>  Path to the project root or project config file [Optional]
 
 Options:
-  --host <host>     Custom Host name or IP address
-  --port <port>     Custom TCP port
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information
+  --host <host>   Custom Host name or IP address
+  --port <port>   Custom TCP port
+  -l, --live      Live reload open browsers when a change in the project output is detected
+  -v, --verbose   Enable verbose logging
+  -?, -h, --help  Show help and usage information
+```
+
+---
+
+## `retype clean`
+
+The `retype clean` command will delete the Retype managed files from the `output` folder.
+
+If your manually add files or another process adds files to the `output`, those files will not be removed by `retype clean`.
+
+Including the `--dry` flag triggers a dry run for the command and will list the files that **would be** deleted if the `--dry` flag was not included.
+
+### Options
+
+```
+Description:
+  Clean the output directory
+
+Usage:
+  retype clean [<path>] [options]
+
+Arguments:
+  <path>  Path to the project root or project config file [Optional]
+
+Options:
+  --dry           List files and directories that would be deleted
+  -v, --verbose   Enable verbose logging
+  -?, -h, --help  Show help and usage information
 ```
 
 ---
@@ -258,18 +316,18 @@ Once the `RETYPE_SECRET` secret is added, you should see the following and your 
 ### Options
 
 ```
-wallet:
-  Manage secret license keys
+Description:
+  Manage Retype secret license keys
 
 Usage:
   retype wallet [options]
 
 Options:
-  --add <key>          Add a license key to the wallet
-  --remove <key>       Remove a license key from the wallet
-  --list               List the stored license keys
-  --clear              Clear the wallet
-  -?, -h, --help       Show help and usage information
+  --add <secret>     Add a secret license key to the wallet
+  --remove <secret>  Remove a secret license key from the wallet
+  --list             List the stored secret license keys
+  --clear            Clear the wallet
+  -?, -h, --help     Show help and usage information
 ```
 
 ---

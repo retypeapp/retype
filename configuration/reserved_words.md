@@ -71,18 +71,18 @@ For instance, creating a the file `docs/index.md` will create a custom page acce
 
 ### Project config
 
-By default, if you do not pass an explicit project configuration file name in the [`<path>`](/guides/cli.md#retype-watch) command line argument, Retype will search for your project config using the following case insensitive priority:
+By default, if you do not pass an explicit project configuration file name in the [`<path>`](/guides/cli.md#retype-start) command line argument, Retype will search for your project config using the following case insensitive priority:
 
 1. `retype.yml`
 2. `retype.yaml`
 3. `retype.json`
 
-For instance, if you run the [CLI](/guides/cli.md) command `retype watch docs`, Retype will first try to find the project configuration file  `docs/retype.yml`. If not found, then `docs/retype.yaml` will be tested and so on.
+For instance, if you run the [CLI](/guides/cli.md) command `retype start docs`, Retype will first try to find the project configuration file  `docs/retype.yml`. If not found, then `docs/retype.yaml` will be tested and so on.
 
-If you run the command `retype watch docs/retype.json`, even if a `retype.yml` is present, Retype will only read the `retype.json` file as you are explicitly passing the project configuration file path.
+If you run the command `retype start docs/retype.json`, even if a `retype.yml` is present, Retype will only read the `retype.json` file as you are explicitly passing the project configuration file path.
 
 !!!
-Custom project config file names are also possible by explicitly passing a file name, such as `retype watch docs.yml`. Where `docs.yml` is used instead of `retype.yml`, even if `retype.yml` is present.
+Custom project config file names are also possible by explicitly passing a file name, such as `retype start docs.yml`. Where `docs.yml` is used instead of `retype.yml`, even if `retype.yml` is present.
 !!!
 
 Once a file is found, it is used. If the other files are found, they are ignored. Retype will not merge or override different configs or conflicting configs between two or more project files.

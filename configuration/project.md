@@ -11,14 +11,14 @@ Retype will read the `retype.yml` file for additional instructions on how to con
 The `retype.yml` file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
 
 !!!
-After making a change to the `retype.yml`, if you are running `retype watch`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
+After making a change to the `retype.yml`, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
 
-If you started the local web server using `retype run`, you'll need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update.
+If you started the local web server using `retype serve`, you'll need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update.
 !!!
 
 The `retype.yml` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.yml` is a good first step.
 
-If you run the command `retype watch` and do not have a `retype.yml` project configuration file within the root of your project, Retype will auto-generate a simple `retype.yml` file for your project. You can then edit the file to customize your project.
+If you run the command `retype start` and do not have a `retype.yml` project configuration file within the root of your project, Retype will auto-generate a simple `retype.yml` file for your project. You can then edit the file to customize your project.
 
 You can also explicitly have Retype generate a `retype.yml` file by running the command `retype init`.
 
@@ -320,7 +320,7 @@ edit:
 
 ## editor
 
-Custom configuration to control the page live editor functionality that is only available when `retype watch` is running.
+Custom configuration to control the page live editor functionality that is only available when `retype start` is running.
 
 ### enabled
 
@@ -981,11 +981,11 @@ server:
   host: 127.0.0.1:5005
 ```
 
-A custom `--host` value can also be passed as an argument to the [`retype watch`](/guides/cli.md#options) and [`retype run`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
+A custom `--host` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
 
 ```
-retype watch --host 127.0.0.1              # serve from a custom host
-retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port
+retype start --host 127.0.0.1              # serve from a custom host
+retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port
 ```
 
 ===
@@ -1011,23 +1011,23 @@ The port number can also be included in the [`host`](#host) config.
 
 !!!
 
-A custom `--port` value can also be passed as an argument to the [`retype watch`](/guides/cli.md#options) and [`retype run`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
+A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
 
 ```
-retype watch --port 5005  # serve from a custom port
+retype start --port 5005  # serve from a custom port
 ```
 
 ===
 
-### watch
+### start
 
-Custom configuration for the [`retype watch`](/guides/cli.md#options) command.
+Custom configuration for the [`retype start`](/guides/cli.md#options) command.
 
-### watch.mode
+### start.mode
 
 === mode : `string`
 
-During `retype watch`, the `mode` configuration instructs the web server on where to host files from.
+During `retype start`, the `mode` configuration instructs the web server on where to host files from.
 
 If `memory`, the entire website is built and then stored in memory during development with no files being written to disk.
 
@@ -1042,19 +1042,19 @@ Default is `memory`.
 
 ```yml
 server:
-  watch:
+  start:
     mode: disk
 ```
 
-The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
+The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype start` is only to be used during local development.
 
 ===
 
-### watch.polling
+### start.polling
 
 === polling : `boolean` or `number`
 
-Instructs `retype watch` on how it should listen for file changes.
+Instructs `retype start` on how it should listen for file changes.
 
 If `false`, the native filesystem event listeners are used to monitor for file changes.
 
@@ -1072,19 +1072,19 @@ Default is `false`.
 
 ```yml
 server:
-  watch:
+  start:
     polling: true
 ```
 
 !!! Performance Warning
 Disk polling may be a costly operation, especially in projects with a large quantity of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). If configuring the poll interval, please adjust the value down in steps, monitoring performance as the poll interval decreases.
 
-On the flip side, increasing the polling interval may cause an annoying experience during `retype watch` as file changes will require a longer time before reflected in the browser.
+On the flip side, increasing the polling interval may cause an annoying experience during `retype start` as file changes will require a longer time before reflected in the browser.
 !!!
 
 ===
 
-### watch.validation
+### start.validation
 
 === validation : `string`
 

@@ -23,17 +23,17 @@ If you ain't got no time for that, just run the following two commands on a fold
 +++ npm
 ```
 npm install retypeapp --global
-retype watch
+retype start
 ```
 +++ yarn
 ```
 yarn global add retypeapp
-retype watch
+retype start
 ```
 +++ dotnet
 ```
 dotnet tool install retypeapp --global
-retype watch
+retype start
 ```
 +++
 

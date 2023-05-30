@@ -38,17 +38,17 @@ It takes just a few seconds to install Retype using any of the following command
 +++ npm
 ```
 npm install retypeapp --global
-retype watch
+retype start
 ```
 +++ yarn
 ```
 yarn global add retypeapp
-retype watch
+retype start
 ```
 +++ dotnet
 ```
 dotnet tool install retypeapp --global
-retype watch
+retype start
 ```
 +++
 

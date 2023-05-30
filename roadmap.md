@@ -132,7 +132,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 +++ New :icon-shield-check:
 
 - [x] Redesign of Search results.
-- [x] Page content live editor during [`retype watch`](/guides/cli.md#retype-watch).
+- [x] Page content live editor during [`retype start`](/guides/cli.md#retype-start).
 - [x] Project configuration for `full`, `partial`, and `basic` search index [modes](/configuration/project.md#mode).
 - [x] Content templating.
 - [x] [Disable](/configuration/page.md#templating) templating on a page.
@@ -143,7 +143,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 - [x] Support for adding images above the top `h1` page heading.
 - [x] [Google Tag Manager](/configuration/project.md#googletagmanager) integration.
 - [x] [Plausible](/configuration/project.md#plausible) IO integration.
-- [x] Page limit handling has been improved during `retype watch` mode.
+- [x] Page limit handling has been improved during `retype start` mode.
 - [x] Include [`description`](/configuration/page.md#description) in search index.
 
 +++ Fixed :icon-bug:
@@ -191,7 +191,7 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 - [x] Multi-language search and automatic detection of content languages. See [#197](https://github.com/retypeapp/retype/issues/197).
 - [x] [Retype Pro](/pro.md) with increased page limit and Retype branding removal option.
 - [x] Better style for native scrollbars on Windows. See [#107](https://github.com/retypeapp/retype/issues/107).
-- [x] [`server.watch.validation`](/configuration/project.md#watchvalidation) project configuration option.
+- [x] [`server.start.validation`](/configuration/project.md#watchvalidation) project configuration option.
 - [x] All heading elements within the page content are now added to the search index. See [#166](https://github.com/retypeapp/retype/issues/166).
 - [x] Page config and `SUMMARY.md` can be used together.
 - [x] Upgrade Octicons icons library from v15.2.0 to v16.1.1.
@@ -206,7 +206,7 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 - [x] [$\KaTeX$](/components/math-formulas.md) math typesetting library support.
 - [x] Auto generate RSS feed for blog posts.
-- [x] [`server.watch.polling`](/configuration/project.md#watchpolling) project option.
+- [x] [`server.start.polling`](/configuration/project.md#watchpolling) project option.
 - [x] Gravatar support for [`author`](/configuration/page.md#author) avatars.
 - [x] [project](/configuration/project.md#gravatar) option to configure a [default](/configuration/project.md#gravatardefault) Gravatar image.
 - [x] [`target`](/components/reference-link.md#target) and [`icon`](/components/reference-link.md#custom-icon) attributes on [`[!ref]`](/components/reference-link.md) component.
@@ -220,15 +220,15 @@ Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
 +++ New :icon-shield-check:
 
-- [x] Incremental build during [`retype watch`](/guides/cli.md#retype-watch) with page dependency graph
-- [x] Ability to run `retype watch` with in-memory output. Turned on by default, see [`server.watch.mode`](/configuration/project.md#watch) to configure.
+- [x] Incremental build during [`retype start`](/guides/cli.md#retype-start) with page dependency graph
+- [x] Ability to run `retype start` with in-memory output. Turned on by default, see [`server.start.mode`](/configuration/project.md#start) to configure.
 - [x] Platform specific NPM packages:
   1. [`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86)
   2. [`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64)
   3. [`retypeapp-linux-x64`](https://www.npmjs.com/package/retypeapp-linux-x64)
   4. [`retypeapp-darwin-x64`](https://www.npmjs.com/package/retypeapp-darwin-x64)
 - [x] Lazy Prism and Mermaid plugin execution for hidden content
-- [x] Keep scroll position on full page reload during [`retype watch`](/guides/cli.md#retype-watch).
+- [x] Keep scroll position on full page reload during [`retype start`](/guides/cli.md#retype-start).
 - [x] Build is so fast now that the client refresh interval can be tightened up to `100ms`.
 - [x] Add [`target`](/components/button.md#target) property for linkable components, such as [Button](/components/button.md) and [Badge](/components/badge.md).
 
@@ -345,7 +345,7 @@ Released: 2021-04-12
 +++ New :icon-shield-check:
 
 - [x] Even cleaner upgrade to Retype from GitBook experience
-- [x] Super fast [`retype watch`](/guides/cli.md#retype-watch) incremental build process
+- [x] Super fast [`retype start`](/guides/cli.md#retype-start) incremental build process
 - [x] [image alignment](/components/image.md#alignment-options) and captions
 - [x] [`exclude`](/configuration/project.md#exclude) config for `retype.yml`
 - [x] `blog` layout and `/blog` folder defaults
@@ -391,8 +391,8 @@ Released: 2021-03-12
 - [x] [Tab](/components/tab.md) component.
 - [x] [Button](/components/button.md) component.
 - [x] [Panel](/components/panel.md) component with expand/collapse.
-- [x] [`retype watch`](/guides/cli.md#retype-watch) command.
-- [x] Live Reload when using [`retype watch`](/guides/cli.md#retype-watch).
+- [x] [`retype start`](/guides/cli.md#retype-start) command.
+- [x] Live Reload when using [`retype start`](/guides/cli.md#retype-start).
 - [x] [`.yml`](/configuration/page.md#separate-yml-file) option for Page or Folder configs.
 - [x] Code block [title](/components/code-block.md#title).
 - [x] [line numbering](/components/code-block.md#line-numbers) in code blocks.
