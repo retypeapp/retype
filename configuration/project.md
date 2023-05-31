@@ -809,7 +809,7 @@ The following sample demonstrates switching the project to use French.
 
 ```yml
 ---
-local: fr
+locale: fr
 ---
 # Échantillon
 ```
