@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738816687960">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738817900706">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.0">
@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.0.738816687960" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738817900706" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738816687960" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738817900706" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738816687960" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738816687960" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738817900706" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738817900706" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -1264,6 +1264,183 @@ host: docs.example.com/js/plausible.js</code></pre>
 </table>
 </div>
 </doc-panel>
+<hr />
+<doc-anchor-target id="locale">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#locale">#</doc-anchor-trigger>
+        <span>locale</span>
+    </h2>
+</doc-anchor-target>
+<p>The value of the <code v-pre>locale</code> config defines the primary language that will be used on the generated website. Retype will generate the website using system messages and labels in this language.</p>
+<p>This flexibility makes your application more versatile and accessible to users from different languages. Currently, 24 languages are supported by Retype.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Please visit the <a href="https://retypeapp.github.io/retype-translations/">Retype Translation</a> project for more details on adding new languages and making changes to existing languages.</p>
+        </div>
+    </div>
+</div>
+<doc-panel id="locale-string">
+    <template #title>locale : <code v-pre>string</code></template>
+<p>You can switch the <code v-pre>locale</code> to any other supported language by providing the corresponding ISO language code as listed below.</p>
+<p>Default is <code v-pre>en</code>.</p>
+<p>The following sample demonstrates switching the project to use French.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">---
+local: fr
+---
+# Échantillon</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="supported-languages">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#supported-languages">#</doc-anchor-trigger>
+        <span>Supported Languages</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Language</th>
+<th>Native name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>ar</code></td>
+<td>Arabic</td>
+<td>العربية</td>
+</tr>
+<tr>
+<td><code v-pre>da</code></td>
+<td>Danish</td>
+<td>Dansk</td>
+</tr>
+<tr>
+<td><code v-pre>de</code></td>
+<td>German</td>
+<td>Deutsch</td>
+</tr>
+<tr>
+<td><code v-pre>en</code> (default)</td>
+<td>English</td>
+<td>English</td>
+</tr>
+<tr>
+<td><code v-pre>es</code></td>
+<td>Spanish</td>
+<td>Español</td>
+</tr>
+<tr>
+<td><code v-pre>fi</code></td>
+<td>Finnish</td>
+<td>Suomalainen</td>
+</tr>
+<tr>
+<td><code v-pre>fr</code></td>
+<td>French</td>
+<td>Français</td>
+</tr>
+<tr>
+<td><code v-pre>hi</code></td>
+<td>Hindi</td>
+<td>हिन्दी</td>
+</tr>
+<tr>
+<td><code v-pre>hu</code></td>
+<td>Hungarian</td>
+<td>Magyar</td>
+</tr>
+<tr>
+<td><code v-pre>it</code></td>
+<td>Italian</td>
+<td>Italiano</td>
+</tr>
+<tr>
+<td><code v-pre>ja</code></td>
+<td>Japanese</td>
+<td>日本語</td>
+</tr>
+<tr>
+<td><code v-pre>ko</code></td>
+<td>Korean</td>
+<td>한국어</td>
+</tr>
+<tr>
+<td><code v-pre>nl</code></td>
+<td>Dutch</td>
+<td>Nederlands</td>
+</tr>
+<tr>
+<td><code v-pre>no</code></td>
+<td>Norwegian</td>
+<td>Norsk</td>
+</tr>
+<tr>
+<td><code v-pre>pt</code></td>
+<td>Portuguese</td>
+<td>Português</td>
+</tr>
+<tr>
+<td><code v-pre>pt-BR</code></td>
+<td>Brazilian Portuguese</td>
+<td>Portuguese do Brasil</td>
+</tr>
+<tr>
+<td><code v-pre>ro</code></td>
+<td>Romanian</td>
+<td>Română</td>
+</tr>
+<tr>
+<td><code v-pre>ru</code></td>
+<td>Russian</td>
+<td>Русский</td>
+</tr>
+<tr>
+<td><code v-pre>sv</code></td>
+<td>Swedish</td>
+<td>Svenska</td>
+</tr>
+<tr>
+<td><code v-pre>ta</code></td>
+<td>Tamil</td>
+<td>தமிழ்</td>
+</tr>
+<tr>
+<td><code v-pre>th</code></td>
+<td>Thai</td>
+<td>ไทย</td>
+</tr>
+<tr>
+<td><code v-pre>tr</code></td>
+<td>Turkish</td>
+<td>Türkçe</td>
+</tr>
+<tr>
+<td><code v-pre>vi</code></td>
+<td>Vietnamese</td>
+<td>Tiếng Việt</td>
+</tr>
+<tr>
+<td><code v-pre>zh</code></td>
+<td>Chinese</td>
+<td>中文</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr />
 <doc-anchor-target id="markdown">
     <h2>
