@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738867894776">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738879290381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.1">
@@ -34,11 +34,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.1.738867894776" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.1.738879290381" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -301,7 +301,7 @@
     <span>Mac</span>
 </span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Win</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-white bg-gray-700 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>Linux</span>
 </span></td>
 </tr>
@@ -311,7 +311,7 @@
     <span>Mac</span>
 </span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Win</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-white bg-gray-700 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>Linux</span>
 </span></td>
 </tr>
@@ -321,7 +321,7 @@
     <span>Mac</span>
 </span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Win</span>
-</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+</span> <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-white bg-gray-700 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>Linux</span>
 </span></td>
 </tr>
@@ -377,43 +377,6 @@ retype start</code></pre>
         </div>
     </div>
 </div>
-<doc-anchor-target id="platform-specific">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#platform-specific">#</doc-anchor-trigger>
-        <span>Platform specific</span>
-    </h3>
-</doc-anchor-target>
-<p>The default <code v-pre>retypapp</code> NPM and Yarn package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.</p>
-<p>The bundle provides convenience although at the cost of an increased download size.</p>
-<p>It is possible to install smaller platform specific packages without the bundling. Currently, four platforms are supported and can be installed separately.</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Platform</th>
-<th>Install command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.npmjs.com/package/retypeapp-win-x86"><code v-pre>retypeapp-win-x86</code></a></td>
-<td><code v-pre>npm install retypeapp-win-x86 --global</code></td>
-</tr>
-<tr>
-<td><a href="https://www.npmjs.com/package/retypeapp-win-x64"><code v-pre>retypeapp-win-x64</code></a></td>
-<td><code v-pre>npm install retypeapp-win-x64 --global</code></td>
-</tr>
-<tr>
-<td><a href="https://www.npmjs.com/package/retypeapp-linux-x64"><code v-pre>retypeapp-linux-x64</code></a></td>
-<td><code v-pre>npm install retypeapp-linux-x64 --global</code></td>
-</tr>
-<tr>
-<td><a href="https://www.npmjs.com/package/retypeapp-darwin-x64"><code v-pre>retypeapp-darwin-x64</code></a></td>
-<td><code v-pre>npm install retypeapp-darwin-x64 --global</code></td>
-</tr>
-</tbody>
-</table>
-</div>
 <hr />
 <doc-anchor-target id="update">
     <h2>
@@ -421,7 +384,7 @@ retype start</code></pre>
         <span>Update</span>
     </h2>
 </doc-anchor-target>
-<p>Update to the latest release of Retype using on of the following commands for the package manager that you initially installed Retype with. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> update command to update Retype locally.</p>
+<p>Update to the latest release of Retype using one of the following commands for the package manager that you initially installed Retype with. For instance, if you used <code v-pre>npm</code> to install Retype, run the <code v-pre>npm</code> update command to update Retype locally.</p>
 <doc-tabs>
 <doc-tab id="npm">
 <template #title>npm</template>
@@ -471,7 +434,219 @@ retype start</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<p>All Retype related files and folders within your project can be deleted, such as the <code v-pre>retype.yml</code> file and the generated <code v-pre>.retype</code> folder.</p>
+<p>All Retype related files and folders within your project can be deleted, such as the <strong>retype.yml</strong> file and the generated <code v-pre>.retype</code> folder.</p>
+<hr />
+<doc-anchor-target id="platform-specific">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#platform-specific">#</doc-anchor-trigger>
+        <span>Platform specific</span>
+    </h2>
+</doc-anchor-target>
+<p>The default <code v-pre>retypapp</code> <strong>NPM</strong> package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.</p>
+<p>The bundle provides convenience although at the cost of an increased download size.</p>
+<p>The <strong>dotnet</strong> package installer will automatically download the platform specific package.</p>
+<p>For <strong>NPM</strong> and <strong>Yarn</strong>, it is possible to install smaller platform specific packages without the bundling. Currently, four separate platforms are supported and can be installed independently from the primary <code v-pre>retypeapp</code> package.</p>
+<doc-anchor-target id="macos">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#macos">#</doc-anchor-trigger>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> macOS</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="npm">
+<template #title>npm</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">npm install retypeapp-darwin-x64 --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="yarn">
+<template #title>yarn</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp-darwin-x64</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="dotnet">
+<template #title>dotnet</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>OS</th>
+<th>Version</th>
+<th>Architectures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://support.apple.com/macos">macOS</a></td>
+<td>10.15+</td>
+<td>x64, Arm64</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows">#</doc-anchor-trigger>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> Windows</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="npm">
+<template #title>npm</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">npm install retypeapp-win-x64 --global
+# or
+npm install retypeapp-win-x86 --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="yarn">
+<template #title>yarn</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp-win-x64
+# or
+yarn global add retypeapp-win-x86</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="dotnet">
+<template #title>dotnet</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>OS</th>
+<th>Version</th>
+<th>Architectures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.microsoft.com/windows/">Windows 10 Client</a></td>
+<td>Version 1607+</td>
+<td>x64, x86, Arm64</td>
+</tr>
+<tr>
+<td><a href="https://www.microsoft.com/windows/">Windows 11</a></td>
+<td>Version 22000+</td>
+<td>x64, x86, Arm64</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/windows-server/">Windows Server</a></td>
+<td>2012+</td>
+<td>x64, x86</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/windows-server/">Windows Server Core</a></td>
+<td>2012+</td>
+<td>x64, x86</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/windows-server/get-started/getting-started-with-nano-server">Nano Server</a></td>
+<td>Version 1809+</td>
+<td>x64</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="linux">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> Linux</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="npm">
+<template #title>npm</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">npm install retypeapp-linux-x64 --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="yarn">
+<template #title>yarn</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp-darwin-x64</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="dotnet">
+<template #title>dotnet</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>OS</th>
+<th>Version</th>
+<th>Architectures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://alpinelinux.org/">Alpine Linux</a></td>
+<td>3.15+</td>
+<td>x64, Arm64, Arm32</td>
+</tr>
+<tr>
+<td><a href="https://www.centos.org/">CentOS Linux</a></td>
+<td>7</td>
+<td>x64</td>
+</tr>
+<tr>
+<td><a href="https://www.centos.org/">CentOS Stream Linux</a></td>
+<td>8</td>
+<td>x64</td>
+</tr>
+<tr>
+<td><a href="https://www.debian.org/">Debian</a></td>
+<td>10+</td>
+<td>x64, Arm64, Arm32</td>
+</tr>
+<tr>
+<td><a href="https://getfedora.org/">Fedora</a></td>
+<td>36+</td>
+<td>x64</td>
+</tr>
+<tr>
+<td><a href="https://opensuse.org/">openSUSE</a></td>
+<td>15+</td>
+<td>x64</td>
+</tr>
+<tr>
+<td><a href="https://www.oracle.com/linux/">Oracle Linux</a></td>
+<td>7+</td>
+<td>x64</td>
+</tr>
+<tr>
+<td><a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat Enterprise Linux</a></td>
+<td>7+</td>
+<td>x64, Arm64</td>
+</tr>
+<tr>
+<td><a href="https://www.suse.com/products/server/">SUSE Enterprise Linux (SLES)</a></td>
+<td>12 SP2+</td>
+<td>x64</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/">Ubuntu</a></td>
+<td>18.04+</td>
+<td>x64, Arm64, Arm32</td>
+</tr>
+</tbody>
+</table>
+</div>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">

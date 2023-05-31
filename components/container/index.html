@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738867894776">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738879290381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.1">
@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.1.738867894776" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.1.738879290381" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738867894776" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738879290381" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -343,10 +343,10 @@ This Container has a custom `id` attribute.
         <span>Custom global css</span>
     </h2>
 </doc-anchor-target>
-<p>It is also possible to include a global styles by adding to a new <code v-pre>/_includes/head.html</code> file.</p>
-<p>The contents of <code v-pre>_includes/head.html</code> are added to all pages of the generated website.</p>
+<p>It is also possible to include a global styles by adding to a new <strong>/_includes/head.html</strong> file.</p>
+<p>The contents of <strong>_includes/head.html</strong> are added to all pages of the generated website.</p>
 <p>For example, the inline <code v-pre>&lt;style&gt;</code> block above could be moved out of the page and then included automatically into all pages.</p>
-<p>Create a new <code v-pre>head.html</code> file and place the file within a <code v-pre>/_includes/</code> folder in the root of your project.</p>
+<p>Create a new <strong>head.html</strong> file and place the file within a <strong>/_includes/</strong> folder in the root of your project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">_includes/head.html</div>
 <pre class="language-css"><code v-pre class="language-css">&lt;style&gt;
@@ -361,7 +361,7 @@ This Container has a custom `id` attribute.
     }
 &lt;/style&gt;</code></pre>
 </doc-codeblock></div>
-<p>Moving the <code v-pre>&lt;style&gt;</code> block into the <code v-pre>_includes/head.html</code> is all you need to do. Save the file and your new <code v-pre>.sample</code> css class is now available on all pages your website.</p>
+<p>Moving the <code v-pre>&lt;style&gt;</code> block into the <strong>_includes/head.html</strong> is all you need to do. Save the file and your new <code v-pre>.sample</code> css class is now available on all pages your website.</p>
 <div class="sample"><p>This Container uses the <code v-pre>sample</code> class.</p>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -375,7 +375,7 @@ This Container uses the `sample` class.
         <span>Global .css file</span>
     </h3>
 </doc-anchor-target>
-<p>Since the <code v-pre>_includes/head.html</code> can contain any custom HTML, you could also move your CSS into a separate <code v-pre>.css</code> file that is included on all pages of your generated website.</p>
+<p>Since the <strong>_includes/head.html</strong> can contain any custom HTML, you could also move your CSS into a separate <strong>.css</strong> file that is included on all pages of your generated website.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/_includes/head.html</div>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;link href=&quot;/static/custom.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
@@ -392,7 +392,7 @@ This Container uses the `sample` class.
     margin-bottom: 20px;
 }</code></pre>
 </doc-codeblock></div>
-<p>Being a separate <code v-pre>.css</code> file, web browsers will automatically cache the file, so re-downloading of the file with each page request is not required. This will improve the performance of your website.</p>
+<p>Being a separate <strong>.css</strong> file, web browsers will automatically cache the file, so re-downloading of the file with each page request is not required. This will improve the performance of your website.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -405,7 +405,7 @@ This Container uses the `sample` class.
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Retype does not validate any of the custom HTML added to the <code v-pre>_includes/head.html</code>. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.</p>
+<p>Retype does not validate any of the custom HTML added to the <strong>_includes/head.html</strong>. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.</p>
         </div>
     </div>
 </div>

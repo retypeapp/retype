@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738867894776">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738879290381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.1">
@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.1.738867894776" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.1.738879290381" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738867894776" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738879290381" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -259,7 +259,7 @@
         <span>Page configuration</span>
     </h1>
 </doc-anchor-target>
-<p>Individual <code v-pre>.md</code> pages can be configured using the <a href="../../faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
+<p>Individual <strong>.md</strong> pages can be configured using the <a href="../../faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre class="language-markdown"><code v-pre class="language-markdown">---
@@ -274,13 +274,13 @@ This is a sample page demonstrating page metadata.</code></pre>
 <doc-anchor-target id="separate-yml-file">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#separate-yml-file">#</doc-anchor-trigger>
-        <span>Separate <code v-pre>.yml</code> file</span>
+        <span>Separate .yml file</span>
     </h2>
 </doc-anchor-target>
-<p>If you would prefer to keep the page metadata separated and placed outside of the <code v-pre>.md</code> content page, the config can be moved into a paired <code v-pre>.yml</code> file.</p>
-<p>For instance, <code v-pre>sample.md</code> would need a matching <code v-pre>sample.yml</code> file. The separate <code v-pre>.yml</code> file must have the exact same filename as its paired <code v-pre>.md</code> page.</p>
-<p>Both <code v-pre>.yml</code> and <code v-pre>.yaml</code> extensions are supported.</p>
-<p>Adding your configs into the top metadata section of a <code v-pre>.md</code> page, or into a separate <code v-pre>.yml</code> file is just a matter of preference. Both techniques produce the same result.</p>
+<p>If you would prefer to keep the page metadata separated and placed outside of the <strong>.md</strong> content page, the config can be moved into a paired <strong>.yml</strong> file.</p>
+<p>For instance, <strong>sample.md</strong> would need a matching <strong>sample.yml</strong> file. The separate <strong>.yml</strong> file must have the exact same filename as its paired <strong>.md</strong> page.</p>
+<p>Both <strong>.yml</strong> and <strong>.yaml</strong> extensions are supported.</p>
+<p>Adding your configs into the top metadata section of a <strong>.md</strong> page, or into a separate <strong>.yml</strong> file is just a matter of preference. Both techniques produce the same result.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre class="language-markdown"><code v-pre class="language-markdown"># Sample
@@ -307,7 +307,7 @@ order: 100</code></pre>
         </div>
         <div class="pr-5 ml-3 w-full">
 <p>If you add configs to both locations, the page <a href="../../faq/#what-is-page-metadata">metadata</a> take precedence, even if they are different configs.</p>
-<p>If you add one or more configs to a <code v-pre>.md</code> page, Retype will not look for nor read the separate <code v-pre>.yml</code> file. Just use one or the other, but not both.</p>
+<p>If you add one or more configs to a <strong>.md</strong> page, Retype will not look for nor read the separate <strong>.yml</strong> file. Just use one or the other, but not both.</p>
         </div>
     </div>
 </div>
@@ -466,7 +466,7 @@ author:
 <doc-panel id="category-string-or-list">
     <template #title>category : <code v-pre>string</code> or <code v-pre>list</code></template>
 <p>A category for this page.</p>
-<p>A single <code v-pre>category</code> or a list of <code v-pre>categories</code> can be configured in each <code v-pre>.md</code> page you would like to categorize.</p>
+<p>A single <code v-pre>category</code> or a list of <code v-pre>categories</code> can be configured in each <strong>.md</strong> page you would like to categorize.</p>
 <p>The <code v-pre>category</code> is meant to be a broad grouping of content, where <doc-anchor-trigger to="#tags"><code v-pre>tags</code></doc-anchor-trigger> are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
 <p>All of the following are acceptable techniques for configuring a single <code v-pre>category</code> or multiple <code v-pre>categories</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -532,8 +532,8 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>expanded</code> option only applies to <a href="../folder/">folders</a> when configured within an <code v-pre>index.yml</code> folder configuration file.</p>
-<p>Setting <code v-pre>expanded: true</code> within the metadata of an <code v-pre>.md</code> page or the paired <code v-pre>.yml</code> file will be ignored.</p>
+<p>The <code v-pre>expanded</code> option only applies to <a href="../folder/">folders</a> when configured within an <strong>index.yml</strong> folder configuration file.</p>
+<p>Setting <code v-pre>expanded: true</code> within the metadata of an <strong>.md</strong> page or the paired <strong>.yml</strong> file will be ignored.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="icon">
@@ -631,7 +631,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 <tbody>
 <tr>
 <td><code v-pre>default</code></td>
-<td>The default layout for all <code v-pre>.md</code> pages. The page is added to the main navigation.</td>
+<td>The default layout for all <strong>.md</strong> pages. The page is added to the main navigation.</td>
 </tr>
 <tr>
 <td><code v-pre>page</code></td>
@@ -848,7 +848,7 @@ v1.0-alpha</code></pre>
     <template #title>redirect : <code v-pre>string</code></template>
 <p>Redirect requests for this page to another location.</p>
 <p>The <code v-pre>redirect</code> can be set to another page within this project, or an external link.</p>
-<p>For example, you have an existing <code v-pre>setup.md</code> page and you want to move the content to <code v-pre>getting-started.md</code>, but other websites might still be linking to your old <code v-pre>example.com/setup/</code> page and you want to ensure those links still work. You would then set the following <code v-pre>redirect</code> page config in <code v-pre>setup.md</code> to redirect to <code v-pre>getting-started.md</code>.</p>
+<p>For example, you have an existing <strong>setup.md</strong> page and you want to move the content to <strong>getting-started.md</strong>, but other websites might still be linking to your old <strong>example.com/setup/</strong> page and you want to ensure those links still work. You would then set the following <code v-pre>redirect</code> page config in <strong>setup.md</strong> to redirect to <code v-pre>getting-started.md</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">---
 redirect: getting-started.md
@@ -856,8 +856,8 @@ redirect: getting-started.md
 
 # Setup</code></pre>
 </doc-codeblock></div>
-<p>Retype will automaticially handle any incoming <code v-pre>example.com/setup</code> requests and redirect to the new <code v-pre>example.com/getting-started</code> location.</p>
-<p>Retype is also smart enough to scan your project for any <code v-pre>setup.md</code> links and replace those with a link directly to <code v-pre>getting-started.md</code>.</p>
+<p>Retype will automaticially handle any incoming <strong>example.com/setup</strong> requests and redirect to the new <strong>example.com/getting-started</strong> location.</p>
+<p>Retype is also smart enough to scan your project for any <strong>setup.md</strong> links and replace those with a link directly to <strong>getting-started.md</strong>.</p>
 </doc-panel>
 <hr />
 <doc-anchor-target id="route">
@@ -879,7 +879,7 @@ route: /custom/path
 Some content here.</code></pre>
 </doc-codeblock></div>
 <p>A custom <code v-pre>route</code> allows the folder and file structure to remain unchanged, but allowing the final URL&#x27;s to be customized.</p>
-<p>Configuring the <code v-pre>route</code> is an excellent solution when moving to Retype from another solution and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <code v-pre>.md</code> content files into a new structure. A custom <code v-pre>route</code> allows for a clean disconnect of the page path from the final published URL path.</p>
+<p>Configuring the <code v-pre>route</code> is an excellent solution when moving to Retype from another solution and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <strong>.md</strong> content files into a new structure. A custom <code v-pre>route</code> allows for a clean disconnect of the page path from the final published URL path.</p>
 <p>In the following sample, the generated URL by Retype would be <code v-pre>/guide/2021-06-25-publishing-to-github-pages/</code>, but we override with a custom route which will publish the page to <code v-pre>/tutorial/publish-to-github-pages/</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/guide/2021-06-25-publishing-to-github-pages.md</div>
@@ -888,9 +888,9 @@ route: /tutorial/publish-to-github-pages/
 ---
 # Publishing to GitHub Pages</code></pre>
 </doc-codeblock></div>
-<p>If a custom <code v-pre>route</code> is configured on a folder, or on a <code v-pre>readme.md</code> or <code v-pre>index.md</code> page within the folder, or on an <doc-anchor-trigger to="#separate-yml-file"><code v-pre>index.yml</code></doc-anchor-trigger> file within the folder, that custom route is assumed to be the base route for all pages within that folder.</p>
+<p>If a custom <code v-pre>route</code> is configured on a folder, or on a <strong>readme.md</strong> or <strong>index.md</strong> page within the folder, or on an <doc-anchor-trigger to="#separate-yml-file"><strong>index.yml</strong></doc-anchor-trigger> file within the folder, that custom route is assumed to be the base route for all pages within that folder.</p>
 <p>The following scenario demonstrates a basic scenario where we want to configure the pages within the <code v-pre>/guides/</code> folder to be served from the custom URL location of <code v-pre>/tutorials/</code>.</p>
-<p>To accomplish this goal, configure the <code v-pre>route</code> on the <code v-pre>readme.md</code>, then all other pages within the same folder will adjust as well. The <code v-pre>configuration.md</code> page will now be served from <code v-pre>/tutorials/configuration/</code>.</p>
+<p>To accomplish this goal, configure the <code v-pre>route</code> on the <strong>readme.md</strong>, then all other pages within the same folder will adjust as well. The <strong>configuration.md</strong> page will now be served from <code v-pre>/tutorials/configuration/</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Folder structure</div>
 <pre class="language-none"><code v-pre class="language-none">|-- /guides
@@ -937,7 +937,7 @@ route: /tutorials
 </doc-anchor-target>
 <doc-panel id="tags-list">
     <template #title>tags : <code v-pre>list</code></template>
-<p>A list of tags can be added to the metadata at the top of each <code v-pre>.md</code> page you would like to tag.</p>
+<p>A list of tags can be added to the metadata at the top of each <strong>.md</strong> page you would like to tag.</p>
 <p>The <code v-pre>tags</code> are meant to describe specific details of the content in that page. Tags are similar to <doc-anchor-trigger to="#category"><code v-pre>category</code></doc-anchor-trigger>, although <code v-pre>category</code> is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
 <p>If tags are configured in the page metadata, a list of tag links are added to the bottom of the page. See the bottom of this page for a working sample.</p>
 <p>Individual tag summary pages will be automatically generated by Retype at <a href="../../tags/guide/"><code v-pre>&lt;url&gt;/tags/&lt;tag&gt;</code></a>, plus an additional <a href="../../tags/"><code v-pre>&lt;url&gt;/tags</code></a> index page which lists all tags and their count used within the project.</p>
@@ -1030,7 +1030,7 @@ templating: false
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The <code v-pre>title</code> is primarily used to support backwards compatibiity with the <code v-pre>.md</code> content style from other older legacy static site generator applications.</p>
+<p>The <code v-pre>title</code> is primarily used to support backwards compatibiity with the <strong>.md</strong> content style from other older legacy static site generator applications.</p>
         </div>
     </div>
 </div>
@@ -1169,6 +1169,12 @@ retype build --password &lt;your-password&gt;</code></pre>
         </div>
     </div>
 </div>
+<doc-anchor-target id="retype_password">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_password">#</doc-anchor-trigger>
+        <span>RETYPE_PASSWORD</span>
+    </h3>
+</doc-anchor-target>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">

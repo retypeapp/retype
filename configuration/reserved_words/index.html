@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738867894776">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738879290381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.1">
@@ -34,11 +34,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.1.738867894776" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.1.738879290381" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738867894776" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -290,7 +290,7 @@
     </h3>
 </doc-anchor-target>
 <p>The <code v-pre>/blog</code> folder is intended to host a Blog for your website.</p>
-<p>By default, <code v-pre>.md</code> pages created within the <code v-pre>/blog</code> folder are assigned the <code v-pre>layout: blog</code> layout, plus some additional features:</p>
+<p>By default, <strong>.md</strong> pages created within the <code v-pre>/blog</code> folder are assigned the <code v-pre>layout: blog</code> layout, plus some additional features:</p>
 <ul>
 <li>A summary page of the blog posts is automatically created at <code v-pre>/blog</code>.</li>
 <li>An RSS feed of the recent blog posts is created.</li>
@@ -320,7 +320,7 @@
         <span>/categories</span>
     </h3>
 </doc-anchor-target>
-<p>The default index page of the <code v-pre>/categories</code> directory is reserved for a summary of any <a href="../page/#category">category</a> configs. Every category configured within an <code v-pre>.md</code> page of your Retype project will have a corresponding entry here.</p>
+<p>The default index page of the <code v-pre>/categories</code> directory is reserved for a summary of any <a href="../page/#category">category</a> configs. Every category configured within an <strong>.md</strong> page of your Retype project will have a corresponding entry here.</p>
 <p>Similar to <doc-anchor-trigger to="#tags"><code v-pre>/tags</code></doc-anchor-trigger>, you can also add content to the <code v-pre>/categories</code> page by creating your own <code v-pre>/categories/index.md</code> page. Retype will create your page as normal and then add the list of Categories below your custom content.</p>
 <doc-anchor-target id="resources">
     <h3>
@@ -335,7 +335,7 @@
         <span>/tags</span>
     </h3>
 </doc-anchor-target>
-<p>The <code v-pre>/tags</code> directory is reserved for <a href="../page/#tags">tags</a>. Every tag name configured within an <code v-pre>.md</code> page will have a corresponding entry here.</p>
+<p>The <code v-pre>/tags</code> directory is reserved for <a href="../page/#tags">tags</a>. Every tag name configured within an <strong>.md</strong> page will have a corresponding entry here.</p>
 <p>Similar to <doc-anchor-trigger to="#categories"><code v-pre>/categories</code></doc-anchor-trigger>, you can also add content to the <code v-pre>/tags</code> page by creating your own <code v-pre>/tags/index.md</code> page. Retype will create your page as normal and then add the list of Tags below your custom content.</p>
 <hr />
 <doc-anchor-target id="files">
@@ -350,23 +350,24 @@
         <span>CNAME</span>
     </h3>
 </doc-anchor-target>
-<p>A <code v-pre>CNAME</code> file will be automatically created if the <a href="../project/#url"><code v-pre>url</code></a> is configured with a domain or sub-domain.</p>
-<p>For instance, including <code v-pre>url: docs.example.com</code> within your <code v-pre>retype.yml</code> project config file also instructs Retype to create a <code v-pre>CNAME</code> file with the value <code v-pre>docs.example.com</code>. That <code v-pre>CNAME</code> file is used by <a href="../../guides/github-actions/">GitHub Pages</a> and possibly other website hosting services as the way to configure custom domain name hosting.</p>
-<p>If you manually create a <code v-pre>CNAME</code> file within the root of the <a href="../project/#input">input</a> folder of your project, Retype will not automatically create the <code v-pre>CNAME</code> file, even if the <a href="../project/#url"><code v-pre>url</code></a> or <a href="../project/#cname"><code v-pre>cname</code></a> is configured or conflicts.</p>
+<p>A <strong>CNAME</strong> file will be automatically created if the <a href="../project/#url"><code v-pre>url</code></a> is configured with a domain or sub-domain.</p>
+<p>For instance, including <code v-pre>url: docs.example.com</code> within your <strong>retype.yml</strong> project config file also instructs Retype to create a <strong>CNAME</strong> file with the value <code v-pre>docs.example.com</code>. That <strong>CNAME</strong> file is used by <a href="../../guides/github-actions/">GitHub Pages</a> and possibly other website hosting services as the way to configure custom domain name hosting.</p>
+<p>If you manually create a <strong>CNAME</strong> file within the root of the <a href="../project/#input">input</a> folder of your project, Retype will not automatically create the <strong>CNAME</strong> file, even if the <a href="../project/#url"><code v-pre>url</code></a> or <a href="../project/#cname"><code v-pre>cname</code></a> is configured or conflicts.</p>
 <doc-anchor-target id="default-pages">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#default-pages">#</doc-anchor-trigger>
         <span>Default pages</span>
     </h3>
 </doc-anchor-target>
-<p>Folder default pages are custom <code v-pre>.md</code> files that will be treated as the index page of the folder.</p>
+<p>Folder default pages are custom <strong>.md</strong> files that will be treated as the index page of the folder.</p>
 <p>Retype will search using the following case insensitive priority:</p>
 <ol>
 <li><code v-pre>index.md</code></li>
 <li><code v-pre>readme.md</code></li>
 <li><code v-pre>default.md</code></li>
+<li><code v-pre>welcome.md</code> *only in the project root</li>
 </ol>
-<p>For instance, creating a the file <code v-pre>docs/index.md</code> will create a custom page accessible from the path <code v-pre>https://example.com/docs/</code>. The <code v-pre>index.md</code> page instructs Retype to create an <code v-pre>index.html</code> file within the <code v-pre>docs/</code> folder.</p>
+<p>For instance, creating a the file <strong>docs/index.md</strong> will create a custom page accessible from the path <code v-pre>https://example.com/docs/</code>. The <strong>index.md</strong> page instructs Retype to create an <strong>index.html</strong> file within the <strong>docs/</strong> folder.</p>
 <doc-anchor-target id="project-config">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#project-config">#</doc-anchor-trigger>
@@ -379,8 +380,8 @@
 <li><code v-pre>retype.yaml</code></li>
 <li><code v-pre>retype.json</code></li>
 </ol>
-<p>For instance, if you run the <a href="../../guides/cli/">CLI</a> command <code v-pre>retype start docs</code>, Retype will first try to find the project configuration file  <code v-pre>docs/retype.yml</code>. If not found, then <code v-pre>docs/retype.yaml</code> will be tested and so on.</p>
-<p>If you run the command <code v-pre>retype start docs/retype.json</code>, even if a <code v-pre>retype.yml</code> is present, Retype will only read the <code v-pre>retype.json</code> file as you are explicitly passing the project configuration file path.</p>
+<p>For instance, if you run the <a href="../../guides/cli/">CLI</a> command <code v-pre>retype start docs</code>, Retype will first try to find the project configuration file  <strong>docs/retype.yml</strong>. If not found, then <strong>docs/retype.yaml</strong> will be tested and so on.</p>
+<p>If you run the command <code v-pre>retype start docs/retype.json</code>, even if a <strong>retype.yml</strong> is present, Retype will only read the <strong>retype.json</strong> file as you are explicitly passing the project configuration file path.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -394,11 +395,11 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Custom project config file names are also possible by explicitly passing a file name, such as <code v-pre>retype start docs.yml</code>. Where <code v-pre>docs.yml</code> is used instead of <code v-pre>retype.yml</code>, even if <code v-pre>retype.yml</code> is present.</p>
+<p>Custom project config file names are also possible by explicitly passing a file name, such as <code v-pre>retype start docs.yml</code>. Where <strong>docs.yml</strong> is used instead of <strong>retype.yml</strong>, even if <strong>retype.yml</strong> is present.</p>
         </div>
     </div>
 </div>
-<p>Once a file is found, it is used. If the other files are found, they are ignored. Retype will not merge or override different configs or conflicting configs between two or more project files.</p>
+<p>Once a project configuration file is found, it is used. If the other files are found, they are ignored. Retype will not merge or override different configs or conflicting configs between two or more project files.</p>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
