@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738733150319">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738816060050">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.0">
@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.0.738733150319" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738816060050" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738733150319" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738816060050" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738733150319" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738733150319" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738816060050" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.0.738816060050" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -1313,10 +1313,27 @@ host: docs.example.com/js/plausible.js</code></pre>
 <pre class="language-yaml"><code v-pre class="language-yaml">meta:
   title: &quot; | Example.com - Widgets for the internet&quot;</code></pre>
 </doc-codeblock></div>
-<p>If we had an <code v-pre>About us</code> page, the final <code v-pre>&lt;title&gt;</code> with the <code v-pre>title</code> value above would be:</p>
+<p>Using the sample above, if we had an <code v-pre>About us</code> page, the final <code v-pre>&lt;title&gt;</code> would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;title&gt;About us | Example.com - Widgets for the internet&lt;/title&gt;</code></pre>
 </doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>See also, the Page level <a href="../page/#title"><code v-pre>meta.title</code></a> configuration.</p>
+        </div>
+    </div>
+</div>
 </doc-panel>
 <hr />
 <doc-anchor-target id="output">
