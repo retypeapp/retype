@@ -756,7 +756,6 @@ links:
 ```
 ===
 
-
 ### target
 
 === target : `string`
@@ -787,6 +786,65 @@ There are several other values that may be prefixed with an `_` character, inclu
 | `recent NEWS`         | `recent-news`          |
 
 ===
+
+---
+
+## locale
+
+The value of the `locale` config defines the primary language that will be used on the generated website. Retype will generate the website using system messages and labels in this language.
+
+This flexibility makes your application more versatile and accessible to users from different languages. Currently, 24 languages are supported by Retype.
+
+!!!
+Please visit the [Retype Translation](https://retypeapp.github.io/retype-translations/) project for more details on adding new languages and making changes to existing languages.
+!!!
+
+=== locale : `string`
+
+You can switch the `locale` to any other supported language by providing the corresponding ISO language code as listed below.
+
+Default is `en`.
+
+The following sample demonstrates switching the project to use French.
+
+```yml
+---
+local: fr
+---
+# Échantillon
+```
+
+===
+
+
+### Supported Languages
+
+Code | Language | Native name {class="compact"}
+---  | --- | ---
+`ar` | Arabic | العربية
+`da` | Danish | Dansk
+`de` | German | Deutsch
+`en` (default) | English | English
+`es` | Spanish | Español
+`fi` | Finnish | Suomalainen
+`fr` | French | Français
+`hi` | Hindi | हिन्दी
+`hu` | Hungarian | Magyar
+`it` | Italian | Italiano
+`ja` | Japanese | 日本語
+`ko` | Korean | 한국어
+`nl` | Dutch | Nederlands
+`no` | Norwegian | Norsk
+`pt` | Portuguese | Português
+`pt-BR` | Brazilian Portuguese | Portuguese do Brasil
+`ro` | Romanian | Română
+`ru` | Russian | Русский
+`sv` | Swedish | Svenska
+`ta` | Tamil | தமிழ்
+`th` | Thai | ไทย
+`tr` | Turkish | Türkçe
+`vi` | Vietnamese | Tiếng Việt
+`zh` | Chinese | 中文
 
 ---
 
