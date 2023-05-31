@@ -14,7 +14,7 @@ label: Sample
 layout: page
 order: 100
 ---
-# Sample page
+# Sample
 
 This is a sample page demonstrating page metadata.
 ```
@@ -30,7 +30,7 @@ Both `.yml` and `.yaml` extensions are supported.
 Adding your configs into the top metadata section of a `.md` page, or into a separate `.yml` file is just a matter of preference. Both techniques produce the same result.
 
 ```md sample.md
-# Sample page
+# Sample
 
 This is a sample page demonstrating page metadata.
 ```
@@ -362,7 +362,7 @@ Default is `null`.
 meta:
   title: "A 100% custom title meta tag value"
 ---
-# Sample page
+# Sample
 ```
 
 With the above sample, the `<title>` will be:
