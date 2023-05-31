@@ -39,11 +39,9 @@ Content 2
 ===
 
 !!!
-
 Currently, Panel components cannot be nested within each other, only stacked. We're hoping to support nesting Panels in a future release. [Let us know](https://github.com/retypeapp/retype/issues) if you require the functionality.
 
 All other components can be nested within any Panel component.
-
 !!!
 
 ---

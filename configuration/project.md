@@ -443,11 +443,9 @@ generator:
 Retype can explicitly include files or folders that might have been excluded by default or excluded within the [`exclude`](#exclude) config.
 
 !!!
-
 If you create a link to local static file, such as `.zip` file, Retype will automatically copy that file to the generated website.
 
 That file or file type does not need to be explicitly configured to be included. Retype assumes that if you created a link to the file, you wanted that file published and it will be included in the [`output`](#output).
-
 !!!
 
 Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
@@ -599,9 +597,7 @@ Whether Retype should use Gravatar to pull profile images. Default is `true`.
 Setting to `false` will show the default image or specified resource.
 
 !!!
-
 Disabling Gravatar will also reset the default avatar to the Retype default.
-
 !!!
 
 ===
@@ -833,11 +829,15 @@ meta:
   title: " | Example.com - Widgets for the internet"
 ```
 
-If we had an `About us` page, the final `<title>` with the `title` value above would be:
+Using the sample above, if we had an `About us` page, the final `<title>` would be:
 
 ```html
 <title>About us | Example.com - Widgets for the internet</title>
 ```
+
+!!!
+See also, the Page level [`meta.title`](page.md/#title) configuration.
+!!!
 ===
 ---
 
@@ -1006,9 +1006,7 @@ If the default port is already being used by another service, Retype will auto-i
 If a custom `port` is explicitly configured in the `retype.yml` and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
 
 !!!
-
 The port number can also be included in the [`host`](#host) config.
-
 !!!
 
 A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.

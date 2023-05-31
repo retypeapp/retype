@@ -10,9 +10,7 @@ Getting started with Retype is super quick and you can be up and running within 
 Check out the [Quick start](/README.md#quick-start) for the condensed process or continue here with the detailed instructions.
 
 !!!
-
 Please see the [Retype CLI](cli.md) for full details on each command.
-
 !!!
 
 ---
@@ -55,9 +53,7 @@ retype start
 That's it! :tada: Your new Retype website should be up and running. :tada:
 
 !!!
-
 If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance. The `dotnet` package size is the smallest.
-
 !!!
 
 ### Platform specific
