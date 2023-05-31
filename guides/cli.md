@@ -8,7 +8,7 @@ tags: [guide]
 The Retype CLI is clean and simple. The majority of the time you will run just one command: `retype start`
 
 !!!
-Be sure to review the [project](/configuration/project.md) options available within the `retype.yml` as it does unlock more power, flexibility, and customization.
+Be sure to review the [project](/configuration/project.md) options available within the **retype.yml** as it does unlock more power, flexibility, and customization.
 !!!
 
 The `--help` option can be passed with any command to get additional details, for instance `retype start --help` will return all options for the `retype start` command.
@@ -91,15 +91,15 @@ If you _really really really_ want to try public hosting using the built in web 
 
 ## `retype init`
 
-You can manually create a `retype.yml` file, or you can have Retype stub out a basic file with a few initial values by running the command `retype init`.
+You can manually create a **retype.yml** file, or you can have Retype stub out a basic file with a few initial values by running the command `retype init`.
 
-From your command line, navigate to any folder location where you have one or more Markdown `.md` files, such as the root of a GitHub project, then run the following command:
+From your command line, navigate to any folder location where you have one or more Markdown **.md** files, such as the root of a GitHub project, then run the following command:
 
 ```
 retype init
 ```
 
-Calling the `retype init` command will create a simple `retype.yml` file with the following default values:
+Calling the `retype init` command will create a simple **retype.yml** file with the following default values:
 
 {%{
 ```yml Sample retype.yml
@@ -125,9 +125,9 @@ branding:
   title: Company X
 ```
 
-If there is already a `retype.yml` file within the project, running the `retype init` command will not create a new `retype.yml` file.
+If there is already a **retype.yml** file within the project, running the `retype init` command will not create a new **retype.yml** file.
 
-The `retype.yml` file is not _actually_ required, but you will want to make custom [configurations](/configuration/project.md) to your project and this is how those instructions are passed to Retype.
+The **retype.yml** file is not _actually_ required, but you will want to make custom [configurations](/configuration/project.md) to your project and this is how those instructions are passed to Retype.
 
 ### Options
 
@@ -151,15 +151,15 @@ Options:
 
 ## `retype build`
 
-To generate your new website, run the command `retype build`. This command builds a new website based upon the `.md` files within the [`input`](/configuration/project.md) location.
+To generate your new website, run the command `retype build`. This command builds a new website based upon the **.md** files within the [`input`](/configuration/project.md) location.
 
 ```
 retype build
 ```
 
-Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the `retype.yml`. By default, the `output` location is a new folder named `.retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.
+Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the **retype.yml**. By default, the `output` location is a new folder named `.retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.
 
-If the `.md` documentation files for your project were not located in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
+If the **.md** documentation files for your project were not located in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
 
 ```yml
 input: docs
@@ -173,7 +173,7 @@ input: docs
 output: website/docs
 ```
 
-If you are hosting your website using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site) AND you wanted to host your website from the `docs` folder, you could then move your `.md` files into a different subfolder and configure as follows:
+If you are hosting your website using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site) AND you wanted to host your website from the `docs` folder, you could then move your **.md** files into a different subfolder and configure as follows:
 
 ```yml
 input: src
@@ -251,7 +251,7 @@ The `retype clean` command will delete the Retype managed files from the `output
 
 If your manually add files or another process adds files to the `output`, those files will not be removed by `retype clean`.
 
-Including the `--dry` flag triggers a dry run for the command and will list the files that **would be** deleted if the `--dry` flag was not included.
+Including the `--dry` flag triggers a dry run for the command and will list the files that _**would be**_ deleted if the `--dry` flag was not included.
 
 ### Options
 
@@ -277,7 +277,7 @@ Options:
 
 The `retype wallet` command is for managing Retype license keys.
 
-Retype license keys are stored within an encrypted wallet file called `license.dat`.
+Retype license keys are stored within an encrypted wallet file called **license.dat**.
 
 To add a Retype license key to your wallet, run the following command:
 
@@ -299,7 +299,7 @@ A Retype license key can also be configured as a secret Environment variable and
 
 Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
 
-The [RETYPE_SECRET](github-actions.md#retype_secret) configuration must also be added to your `.github/workflows/retype.yml` file.
+The [RETYPE_SECRET](github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
 
 You can add a new repository secret to your GitHub repository following the `/settings/secrets/actions` path. The URL should be:
 
@@ -334,13 +334,13 @@ Options:
 
 ## `retype --override`
 
-The Retype CLI [`build`](#retype-build) command supports the `--override` option to allow dynamically modifying `retype.yml` project configurations during build.
+The Retype CLI [`build`](#retype-build) command supports the `--override` option to allow dynamically modifying **retype.yml** project configurations during build.
 
-The `--override` option is helpful in certain scenarios such as generating websites requiring different `url` configs, without the need to maintain several `retype.yml` files.
+The `--override` option is helpful in certain scenarios such as generating websites requiring different `url` configs, without the need to maintain several **retype.yml** files.
 
 The CLI expects an escaped json object to be passed as the option value.
 
-Retype merges the `retype.yml` configuration with the provided json object in a way that colliding configurations from the json override will overwrite the `retype.yml` values.
+Retype merges the **retype.yml** configuration with the provided json object in a way that colliding configurations from the json override will overwrite the **retype.yml** values.
 
 !!!
 The `--override` json object may contain duplicate keys which will be processed sequentially. Last in wins.
@@ -348,9 +348,9 @@ The `--override` json object may contain duplicate keys which will be processed 
 
 ### Basic config
 
-Using the following `retype.yml` project configuration file as an example:
+Using the following **retype.yml** project configuration file as an example:
 
-~~~yml `retype.yml`
+~~~yml **retype.yml**
 url: https://retype.com
 ~~~
 
@@ -364,9 +364,9 @@ retype build --override "{ \"url\": \"https://beta.retype.com\" }"
 
 The following sample demonstrates overriding a more complex configuration object.
 
-Using the following `retype.yml` project configuration file as an example, let's change the [`label`](/configuration/project.md#label) to `beta`, instead of `v1.10`.
+Using the following **retype.yml** project configuration file as an example, let's change the [`label`](/configuration/project.md#label) to `beta`, instead of `v1.10`.
 
-~~~yml `retype.yml`
+~~~yml **retype.yml**
 branding:
   title: Retype
   label: v1.10
@@ -388,7 +388,7 @@ retype build --override "{ \"branding\": null }"
 
 The following command will add a `GitHub` link to the list of [`links`](/configuration/project.md#links).
 
-~~~yml `retype.yml`
+~~~yml **retype.yml**
 links:
   - link: Retype
     text: https://retype.com

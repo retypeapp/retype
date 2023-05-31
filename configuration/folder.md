@@ -5,7 +5,7 @@ tags: [config]
 ---
 # Folder configuration
 
-Using the same `.yml` technique and options as [Page configuration](/configuration/page.md), a folder can be configured using a separate `index.yml` file placed inside the folder.
+Using the same **.yml** technique and options as [Page configuration](/configuration/page.md), a folder can be configured using a separate **index.yml** file placed inside the folder.
 
 !!!
 Folders support the same properties a [pages](/configuration/page.md), although properties such as [`description`](/configuration/page.md#description) and [`layout`](/configuration/page.md#layout) would not be applicable in the context of a folder configuration and will be ignored.

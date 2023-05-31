@@ -53,7 +53,7 @@ URL | Included? { class="compact" }
 `docs.projectx.com` | :white_check_mark:
 `my-next-project.io`<br />*Another Retype Pro 3-pack would be required | :no_entry_sign:
 
-The URL is encoded right into the key. You can have any number of projects running on any number of developer machines using the same key, but the key will be limited to building only those **Retype Pro** projects with a `retype.yml` file where the `url` is set with one of your defined website URLs.
+The URL is encoded right into the key. You can have any number of projects running on any number of developer machines using the same key, but the key will be limited to building only those **Retype Pro** projects with a **retype.yml** file where the `url` is set with one of your defined website URLs.
 
 One key can include up to `3` separate URLs, or you can have three separate keys each with one URL, or any combination thereof.
 

@@ -100,13 +100,13 @@ The generated HTML would be:
 
 ## Custom global css
 
-It is also possible to include a global styles by adding to a new `/_includes/head.html` file.
+It is also possible to include a global styles by adding to a new **/_includes/head.html** file.
 
-The contents of `_includes/head.html` are added to all pages of the generated website.
+The contents of **_includes/head.html** are added to all pages of the generated website.
 
 For example, the inline `<style>` block above could be moved out of the page and then included automatically into all pages.
 
-Create a new `head.html` file and place the file within a `/_includes/` folder in the root of your project.
+Create a new **head.html** file and place the file within a **/_includes/** folder in the root of your project.
 
 ```css _includes/head.html
 <style>
@@ -122,7 +122,7 @@ Create a new `head.html` file and place the file within a `/_includes/` folder i
 </style>
 ```
 
-Moving the `<style>` block into the `_includes/head.html` is all you need to do. Save the file and your new `.sample` css class is now available on all pages your website.
+Moving the `<style>` block into the **_includes/head.html** is all you need to do. Save the file and your new `.sample` css class is now available on all pages your website.
 
 :::sample
 This Container uses the `sample` class.
@@ -136,7 +136,7 @@ This Container uses the `sample` class.
 
 ### Global .css file
 
-Since the `_includes/head.html` can contain any custom HTML, you could also move your CSS into a separate `.css` file that is included on all pages of your generated website.
+Since the **_includes/head.html** can contain any custom HTML, you could also move your CSS into a separate **.css** file that is included on all pages of your generated website.
 
 ```html /_includes/head.html
 <link href="/static/custom.css" rel="stylesheet" />
@@ -154,8 +154,8 @@ Since the `_includes/head.html` can contain any custom HTML, you could also move
 }
 ```
 
-Being a separate `.css` file, web browsers will automatically cache the file, so re-downloading of the file with each page request is not required. This will improve the performance of your website.
+Being a separate **.css** file, web browsers will automatically cache the file, so re-downloading of the file with each page request is not required. This will improve the performance of your website.
 
 !!!danger
-Retype does not validate any of the custom HTML added to the `_includes/head.html`. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.
+Retype does not validate any of the custom HTML added to the **_includes/head.html**. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.
 !!!

@@ -3,7 +3,7 @@ order: 1000
 ---
 # Basic project config
 
-The following is a basic `retype.yml` [project configuration](/configuration/project.md) file.
+The following is a basic **retype.yml** [project configuration](/configuration/project.md) file.
 
 ```yml retype.yml
 input: .

@@ -17,15 +17,15 @@ The first, **Build Action** will automatically build your Retype powered website
 
 The second, **git-ftp Action** will automatically publish your newly built website to the specified FTP host using the provided credentials. In order to optimally sync only changes between builds, it needs to keep a branch (or a directory within a branch) where it would track differences between sync-up events. By default, the `retype` branch is used, but of course that is also configurable.
 
-Automatically deploying to FTP requires a basic `retype-action.yml` configuration file to be added to your GitHub repo and some simple project configuration.
+Automatically deploying to FTP requires a basic **retype-action.yml** configuration file to be added to your GitHub repo and some simple project configuration.
 
 ---
 
-## Step 1: Add `retype-action.yml` workflow
+## Step 1: Add **retype-action.yml** workflow
 
-Add the following `retype-action.yml` file to your GitHub project within the `.github/workflows/` folder.
+Add the following **retype-action.yml** file to your GitHub project within the `.github/workflows/` folder.
 
-If the `.github/workflows/` folder does not exist within the root of your project, you can manually create those folders and they will be committed along with the `retype-action.yml`.
+If the `.github/workflows/` folder does not exist within the root of your project, you can manually create those folders and they will be committed along with the **retype-action.yml**.
 
 {%{
 ```yaml .github/workflows/retype-action.yml
@@ -57,7 +57,7 @@ jobs:
 ```
 }%}
 
-The above `retype-action.yml` workflow configuration instructs GitHub Actions to automatically build and deploy your website every time commits are pushed to the `main` branch. A copy of the built files is committed into the `retype` branch to maintain change history.
+The above **retype-action.yml** workflow configuration instructs GitHub Actions to automatically build and deploy your website every time commits are pushed to the `main` branch. A copy of the built files is committed into the `retype` branch to maintain change history.
 
 ### The FTP host root
 
@@ -67,7 +67,7 @@ Usually hosting providers inform a value to fill in the `ftp-root` parameter. So
 
 ## Step 2: Configure Secrets
 
-See the {%{`${{ secrets.KEYWORD }}`}%} occurrences in the sample `retype-action.yml` above? These are **GitHub Encrypted Secrets**, that are used to keep sensitive information away from the public.
+See the {%{`${{ secrets.KEYWORD }}`}%} occurrences in the sample **retype-action.yml** above? These are **GitHub Encrypted Secrets**, that are used to keep sensitive information away from the public.
 
 To get started, navigate to the **Settings** > **Secrets** page of your GitHub repository. There, create **New repository secrets** for each parameter:
 
@@ -81,7 +81,7 @@ See more about using secrets in actions at [the Encrypted Secrets GitHub Docs ar
 
 ## Step 3: commit + push the file
 
-Now, simply commit and push the `.github/workflows/retype-action.yml` file to GitHub.
+Now, simply commit and push the **.github/workflows/retype-action.yml** file to GitHub.
 
 The action will then take place and will:
 
@@ -113,7 +113,7 @@ For example, the final expected docs URL will become:
 https://www.mywebsite.com/docs/
 ```
 
-Along with that, Retype will require the [`url`](../configuration/project.md#url) config to be added to the `retype.yml` project configuration file. The following sample demonstrates how the `url` would be configured for this scenario.
+Along with that, Retype will require the [`url`](../configuration/project.md#url) config to be added to the **retype.yml** project configuration file. The following sample demonstrates how the `url` would be configured for this scenario.
 
 ```yml
 url: example.com
@@ -182,7 +182,7 @@ There are three key changes in the workflow if compared to the initial guide's e
 The `url` setting is passed to retype during build process; so if the website is built with a given `url`, a rebuild must take place before it can contemplate a different `url` value. So we need to rebuild for both publishes.
 
 !!!info Dedicated retype.yml files
-It is also possible to specify different `retype.yml` files for even more flexibility by just using `config: <retype-file>` instead of `url: <value>`. The `<retype-file>` bit should be replaced with the path to the desired configuration file (default is `/retype.yml`).
+It is also possible to specify different **retype.yml** files for even more flexibility by just using `config: <retype-file>` instead of `url: <value>`. The `<retype-file>` bit should be replaced with the path to the desired configuration file (default is `/retype.yml`).
 !!!
 
 **2. specify a different `branch` where to push the website history**
@@ -199,7 +199,7 @@ Every time either the GitHub Pages or git-ftp Actions are run, they will switch 
 
 ## Summary
 
-- [x] Add a `retype-action.yml` file, see [step 1](#step-1-add-retype-actionyml-workflow).
+- [x] Add a **retype-action.yml** file, see [step 1](#step-1-add-retype-actionyml-workflow).
 - [x] Configure Secrets, see [step 2](#step-2-configure-secrets).
 - [x] Commit + push, see [step 3](#step-3-commit--push-the-file).
 - [x] Dive deeper with some advanced setup scenarios, see [Diving deeper](#diving-deeper).

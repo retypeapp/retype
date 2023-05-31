@@ -74,7 +74,7 @@ Released: [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
 - [x] Editor font request does not respect `base` path. See [#318](https://github.com/retypeapp/retype/discussions/318).
 - [x] Syntax errors in yaml files results in corrupt category URLs. See [#316](https://github.com/retypeapp/retype/discussions/316).
 - [x] `links` to the index document in the mobile sidebar footer not being resolved.
-- [x] `.yml` files excluded from deploy even if explicitly declared in `include`. See [#311](https://github.com/retypeapp/retype/discussions/311).
+- [x] **.yml** files excluded from deploy even if explicitly declared in `include`. See [#311](https://github.com/retypeapp/retype/discussions/311).
 - [x] `og:url` and `twitter:url` paths incorrect for API generated pages.
 - [x] Include full version in the generator meta tag version.
 - [x] Many `categories` extends beyond page width and does not wrap. See [#316](https://github.com/retypeapp/retype/discussions/316).
@@ -83,7 +83,7 @@ Released: [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
 
 - [x] Switch `generator.paths` default value to `relative`.
 
-To revert to the previous functionality, set the `generator.paths` config to `root` in your project `retype.yml` file.
+To revert to the previous functionality, set the `generator.paths` config to `root` in your project **retype.yml** file.
 
 ```yml
 generator:
@@ -100,7 +100,7 @@ Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
 
 - [x] [`generator.recase`](https://retype.com/configuration/project/#generator) project config to recase file and folder names. See [#302](https://github.com/retypeapp/retype/issues/302).
 - [x] Official Retype docker images published to [DockerHub](https://hub.docker.com/repository/docker/retypeapp/retype). See [#122](https://github.com/retypeapp/retype/issues/122).
-- [x] New `@latest` tag to be used in your [`retype-action.yml`](http://localhost:5000/guides/github-actions/#step-1-add-retype-actionyml-workflow) configuration.
+- [x] New `@latest` tag to be used in your [retype-action.yml](http://localhost:5000/guides/github-actions/#step-1-add-retype-actionyml-workflow) configuration.
 - [x] GitHub Action annotation to announce availability of Retype v2, only if using Retype v1.
 
 +++ Fixed :icon-bug:
@@ -116,7 +116,7 @@ Released: [2022-03-22](https://github.com/retypeapp/retype/releases/tag/v2.1.0)
 
 +++ New :icon-shield-check:
 
-- [x] Deploy `.html` and `.htm` files from [`input`](/configuration/project.md#input) to [`output`](/configuration/project.md#output) by default. See [#302](https://github.com/retypeapp/retype/issues/302).
+- [x] Deploy **.html** and `.htm` files from [`input`](/configuration/project.md#input) to [`output`](/configuration/project.md#output) by default. See [#302](https://github.com/retypeapp/retype/issues/302).
 - [x] Apply generic attribute syntax to Retype generated [`<table>`](/components/table.md#compact) element.
 
 +++ Fixed :icon-bug:
@@ -272,13 +272,13 @@ Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 
 +++ New :icon-shield-check:
 
-- [x] [`retype.yml`](/configuration/project.md) project configuration file format.
+- [x] [**retype.yml**](/configuration/project.md) project configuration file format.
 - [x] [`url`](/configuration/project.md#url) project config for setting your website URL.
 - [x] Auto-generate a `sitemap.xml` file to inform search engines which pages to crawl.
 - [x] Auto-generate a `robots.txt` file.
 - [x] Open Graph and Twitter meta tags generated for every page.
 - [x] [`serve.host`](/configuration/project.md#host) and [`serve.port`](/configuration/project.md#port) project configs.
-- [x] `/blog` summary for any `.md` page added to a `/blog` folder.
+- [x] `/blog` summary for any **.md** page added to a `/blog` folder.
 - [x] [`author`](/configuration/page.md#author), [`category`](/configuration/page.md#category), and [`date`](/configuration/page.md#date) page configs.
 - [x] [`redirect`](/configuration/page.md#redirect) page config.
 - [x] [`visibility`](/configuration/page.md#visibility) page config.
@@ -300,7 +300,7 @@ Released: [2021-06-24](https://github.com/retypeapp/retype/releases/tag/v1.7.0)
 - [x] Stacking [Panels](/components/panel.md#stacking) component.
 - [x] Open Graph and Twitter card support.
 - [x] [Mermaid](/components/mermaid.md) diagram and visualization support.
-- [x] [`target`](/configuration/project.md#target) config for all `links` within `retype.yml`.
+- [x] [`target`](/configuration/project.md#target) config for all `links` within **retype.yml**.
 - [x] Default page support for [`default.md`](/guides/formatting.md#home-page).
 - [x] Hover style on [Badge](/components/badge.md) component when links.
 - [x] Super improved handling of áccënt characters.
@@ -334,7 +334,7 @@ Released: 2021-05-12
 - [x] [`port`](/configuration/project.md#port) project config
 - [x] Larger font-size for `h1`, `h2`, and `h3` headers.
 - [x] Better handing of special characters within file names.
-- [x] Cleaner handling of `.md` pages created by GitHub Wiki.
+- [x] Cleaner handling of **.md** pages created by GitHub Wiki.
 
 +++
 
@@ -347,7 +347,7 @@ Released: 2021-04-12
 - [x] Even cleaner upgrade to Retype from GitBook experience
 - [x] Super fast [`retype start`](/guides/cli.md#retype-start) incremental build process
 - [x] [image alignment](/components/image.md#alignment-options) and captions
-- [x] [`exclude`](/configuration/project.md#exclude) config for `retype.yml`
+- [x] [`exclude`](/configuration/project.md#exclude) config for **retype.yml**
 - [x] `blog` layout and `/blog` folder defaults
 - [x] [`[!file]`](/components/file-download.md) component
 - [x] [`[!ref]`](/components/reference-link.md) component
@@ -378,7 +378,7 @@ Released: 2021-03-25
 - [x] `Previous | Next` footer navigation buttons for pages.
 - [x] [`order`](/configuration/page.md#order) Page level config.
 - [x] `hidden` [`visibility`](/configuration/page.md#visibility) Page level config.
-- [x] [`favicon`](/configuration/project.md#favicon) Project config available in `retype.yml`.
+- [x] [`favicon`](/configuration/project.md#favicon) Project config available in **retype.yml**.
 
 +++
 
@@ -393,7 +393,7 @@ Released: 2021-03-12
 - [x] [Panel](/components/panel.md) component with expand/collapse.
 - [x] [`retype start`](/guides/cli.md#retype-start) command.
 - [x] Live Reload when using [`retype start`](/guides/cli.md#retype-start).
-- [x] [`.yml`](/configuration/page.md#separate-yml-file) option for Page or Folder configs.
+- [x] [**.yml**](/configuration/page.md#separate-yml-file) option for Page or Folder configs.
 - [x] Code block [title](/components/code-block.md#title).
 - [x] [line numbering](/components/code-block.md#line-numbers) in code blocks.
 

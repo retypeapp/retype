@@ -4,9 +4,9 @@ tags: [guide]
 ---
 # Formatting
 
-Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
+Markdown **.md** pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
 
-No special software is required to create an `.md` file. Any basic text editor will do. Just save the file with a `.md` file extension.
+No special software is required to create an **.md** file. Any basic text editor will do. Just save the file with a **.md** file extension.
 
 Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a full demonstration of the formatting possibilities and best practices.
 

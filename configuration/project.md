@@ -6,21 +6,21 @@ tags: [config]
 ---
 # Project configuration
 
-Retype will read the `retype.yml` file for additional instructions on how to configure and build your project.
+Retype will read the **retype.yml** file for additional instructions on how to configure and build your project.
 
-The `retype.yml` file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
+The **retype.yml** file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
 
 !!!
-After making a change to the `retype.yml`, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
+After making a change to the **retype.yml**, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
 
 If you started the local web server using `retype serve`, you'll need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update.
 !!!
 
-The `retype.yml` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.yml` is a good first step.
+The **retype.yml** file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a **retype.yml** is a good first step.
 
-If you run the command `retype start` and do not have a `retype.yml` project configuration file within the root of your project, Retype will auto-generate a simple `retype.yml` file for your project. You can then edit the file to customize your project.
+If you run the command `retype start` and do not have a **retype.yml** project configuration file within the root of your project, Retype will auto-generate a simple **retype.yml** file for your project. You can then edit the file to customize your project.
 
-You can also explicitly have Retype generate a `retype.yml` file by running the command `retype init`.
+You can also explicitly have Retype generate a **retype.yml** file by running the command `retype init`.
 
 The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.
 
@@ -225,13 +225,13 @@ An optional unique token used for website resource cache invalidation.
 In general, you should not require setting the `cname`. Please set the [`url`](#url).
 !!!
 
-By default, if the [`url`](#url) is set, Retype will automatically generate a `CNAME` file. This can be disabled by setting `cname: false`.
+By default, if the [`url`](#url) is set, Retype will automatically generate a **CNAME** file. This can be disabled by setting `cname: false`.
 
 ```yml Disable CNAME file generation
 cname: false
 ```
 
-If you do want a `CNAME` file generated, but for some reason require a value different than what the `url` creates, you can explicitly set instruct Retype to generate the `CNAME` with a different value.
+If you do want a **CNAME** file generated, but for some reason require a value different than what the `url` creates, you can explicitly set instruct Retype to generate the **CNAME** with a different value.
 
 This would be a highly unusual scenario, but Retype does allow you to configure these values separately, just in case you need it. We **HIGHLY** recommend that you just stick with setting the [`url`](#url).
 
@@ -280,7 +280,7 @@ An optional base path to a directory within the repository.
 
 The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
 
-The following sample demonstrates how `edit.base` would be configured if the `.md` pages for this project are stored within the `/src/docs/` sub-directory within the repo.
+The following sample demonstrates how `edit.base` would be configured if the **.md** source files for this project are stored within the **/src/docs/** sub-directory within the repo.
 
 ```yml
 edit:
@@ -341,7 +341,7 @@ editor:
 ## exclude
 
 === exclude : `list`
-Retype can exclude files or folders from being built or copied to the [`output`](#output) by configuring an `exclude` list within your projects `retype.yml` file.
+Retype can exclude files or folders from being built or copied to the [`output`](#output) by configuring an `exclude` list within your projects **retype.yml** file.
 
 Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
@@ -450,7 +450,7 @@ That file or file type does not need to be explicitly configured to be included.
 
 Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
-The following sample demonstrates how to include all `.py` files, all `.js` files that start with the name `demo`, and the entire contents of any `www` folder within the project.
+The following sample demonstrates how to include all **.py** files, all **.js** files that start with the name `demo`, and the entire contents of any `www` folder within the project.
 
 ```yml Include patterns
 include:
@@ -461,7 +461,7 @@ include:
 
 You could explicitly include everything in your project with `include: [ "*" ]`, but be careful as all files within your [`input`](#input) will be publicly availble once your website is published. We would not recommend doing this, but it's your call. :fearful:
 
-Retype treats all `.md` and `.yml` files as parsable content files that will be converted into `.html` files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
+Retype treats all **.md** and **.yml** files as parsable content files that will be converted into **.html** files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
 
 By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the `output` unchanged. If you require any other file types, they would need to be explicitly added to the `include` config.
 
@@ -505,7 +505,7 @@ If you would rather not include certain folders, files, or file types, please ad
 
 Custom path to the input directory. Default is `.`.
 
-The path is relative to the `retype.yml` location.
+The path is relative to the **retype.yml** location.
 
 ```yml Change input location to /src folder
 input: ./src
@@ -612,7 +612,7 @@ Disabling Gravatar will also reset the default avatar to the Retype default.
 
 === plausible.domain : `string`
 
-When you setup your project within Plausible, you enter a [`Domain`](https://plausible.io/docs/add-website) value which is then used to set the `integrations.plausible.domain` config within your `retype.yml` project configuration file.
+When you setup your project within Plausible, you enter a [`Domain`](https://plausible.io/docs/add-website) value which is then used to set the `integrations.plausible.domain` config within your **retype.yml** project configuration file.
 
 ```yml
 integrations:
@@ -698,9 +698,9 @@ links:
 
 === link : `string`
 
-The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
+The URL to use for the link. The link can be a **.md** file name, or to any internal path, or to any external URL.
 
-If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
+If a **.md** file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
 
 ```yml
 links:
@@ -905,7 +905,7 @@ See also, the Page level [`meta.title`](page.md/#title) configuration.
 
 Custom path to the output directory. Default is `.retype`.
 
-The path is relative to the `retype.yml` location.
+The path is relative to the **retype.yml** location.
 
 ```yml Change output location to /docs folder
 output: ./docs
@@ -1039,7 +1039,7 @@ serve:
   host: 127.0.0.1:5005
 ```
 
-A custom `--host` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
+A custom `--host` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your **retype.yml** project configuration file.
 
 ```
 retype start --host 127.0.0.1              # serve from a custom host
@@ -1061,13 +1061,13 @@ serve:
 
 If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
 
-If a custom `port` is explicitly configured in the `retype.yml` and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
+If a custom `port` is explicitly configured in the **retype.yml** and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
 
 !!!
 The port number can also be included in the [`host`](#host) config.
 !!!
 
-A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
+A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your **retype.yml** project configuration file.
 
 ```
 retype start --port 5005  # serve from a custom port
@@ -1258,7 +1258,7 @@ If no protocol is supplied, such as `https` or `http`, Retype will assume `https
 url: http://example.com/docs/
 ```
 
-Another common scenario for setting a `url` is when using [GitHub Pages](/guides/github-actions.md) **without** a custom `CNAME`.
+Another common scenario for setting a `url` is when using [GitHub Pages](/guides/github-actions.md) **without** a custom **CNAME**.
 
 For instance, if your GitHub organization was `CompanyX` and your repo was named `docs`, the URL to your GitHub Pages hosted website would be `https://companyx.github.io/docs/`.
 

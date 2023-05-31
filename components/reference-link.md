@@ -12,7 +12,7 @@ A special type of reference link can be configured by using the `!ref` specifier
 
 [!ref](/guides/getting-started.md)
 
-By default, the text of the link is not required if the `.md` page you are linking to is within the project. Retype will automatically use the `label` of the `.md` page as the link text.
+By default, the text of the link is not required if the **.md** page you are linking to is within the project. Retype will automatically use the `label` of the **.md** page as the link text.
 
 ---
 

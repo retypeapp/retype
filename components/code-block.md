@@ -234,7 +234,7 @@ The `#` should be separated from the opening `` ``` `` by one space, for example
 
 If a title is added, the title must also be separated from the `#` by one space. For instance, the pattern `` ``` # Your title here`` would work as expected and the pattern `` ``` #Your title here`` would not.
 
-Line numbering can also be configured at the project level using the [`snippets`](/configuration/project.md#snippets) config on your projects `retype.yml` file. For instance, instructing Retype to add line numbering to all `js` and `json` code blocks across the website would require the following config:
+Line numbering can also be configured at the project level using the [`snippets`](/configuration/project.md#snippets) config on your projects **retype.yml** file. For instance, instructing Retype to add line numbering to all `js` and `json` code blocks across the website would require the following config:
 
 ```json Enable line numbering for js and json code blocks site wide
 {

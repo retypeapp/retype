@@ -96,13 +96,13 @@ Building your documentation project locally is not required, other than for test
 
 Any Retype project can be deployed to Heroku. Just use your repo in [Step 1](#step-1-clone-repository).
 
-The buildpack only requires a `retype.yml` file to build the documentation and the file can be provided serveral different ways:
+The buildpack only requires a **retype.yml** file to build the documentation and the file can be provided serveral different ways:
 
-1. A `retype.yml` file in the root of your project, or
-2. A `retype.yml` file anywhere in the repository, or
-3. The full path to a directory containing `retype.yml` or directly to the file itself. Configure using the Heroku [config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`, or
+1. A **retype.yml** file in the root of your project, or
+2. A **retype.yml** file anywhere in the repository, or
+3. The full path to a directory containing **retype.yml** or directly to the file itself. Configure using the Heroku [config var](https://devcenter.heroku.com/articles/config-vars) `RETYPE_CONFIG`, or
 
-Please review the [Project](/configuration/project.md) configuration docs for all possible `retype.yml` options.
+Please review the [Project](/configuration/project.md) configuration docs for all possible **retype.yml** options.
 
 ---
 
