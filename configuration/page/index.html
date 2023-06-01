@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738879290381">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738899386381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.1">
@@ -34,12 +34,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.1.738879290381" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.1.738899386381" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738899386381" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738879290381" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738899386381" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738899386381" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -1132,6 +1132,7 @@ This page will be visibile in the main navigation, but will require a password t
 <pre class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
+<p>The project password can also be set as an Environment variable by using <a href="../envvars/#retype_password"><code v-pre>RETYPE_PASSWORD</code></a>.</p>
 <doc-anchor-target id="private">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#private">#</doc-anchor-trigger>
@@ -1152,6 +1153,7 @@ This page will not be visibile in the main navigation and will require a passwor
 <pre class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
+<p>The project password can also be set as an Environment variable by using <a href="../envvars/#retype_password"><code v-pre>RETYPE_PASSWORD</code></a>.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -1169,12 +1171,6 @@ retype build --password &lt;your-password&gt;</code></pre>
         </div>
     </div>
 </div>
-<doc-anchor-target id="retype_password">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_password">#</doc-anchor-trigger>
-        <span>RETYPE_PASSWORD</span>
-    </h3>
-</doc-anchor-target>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">

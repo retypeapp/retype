@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738879290381">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.1.738899386381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.1">
@@ -25,23 +25,21 @@
     <meta property="og:url" content="https://retype.com/guides/cli/">
     <meta property="og:title" content="Retype CLI - Generate, publish, and share documentation">
     <meta property="og:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start">
-    <meta property="og:image" content="https://retype.com/static/add-retype-secret.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/guides/cli/">
     <meta property="twitter:title" content="Retype CLI - Generate, publish, and share documentation">
     <meta property="twitter:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start">
-    <meta property="twitter:image" content="https://retype.com/static/add-retype-secret.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.1.738879290381" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.1.738899386381" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.1.738899386381" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738879290381" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738879290381" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.1.738899386381" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.1.738899386381" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -418,6 +416,13 @@ Options:
   -v, --verbose          Enable verbose logging
   -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="--override">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#--override">#</doc-anchor-trigger>
+        <span><code v-pre>--override</code></span>
+    </h3>
+</doc-anchor-target>
+<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr />
 <doc-anchor-target id="retype-build">
     <h2>
@@ -472,9 +477,9 @@ Options:
   -a, --api              Watch for API changes
   -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="--override">
+<doc-anchor-target id="--override-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#--override">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#--override-1">#</doc-anchor-trigger>
         <span><code v-pre>--override</code></span>
     </h3>
 </doc-anchor-target>
@@ -515,6 +520,13 @@ Options:
   -v, --verbose   Enable verbose logging
   -?, -h, --help  Show help and usage information</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="--override-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#--override-2">#</doc-anchor-trigger>
+        <span><code v-pre>--override</code></span>
+    </h3>
+</doc-anchor-target>
+<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr />
 <doc-anchor-target id="retype-clean">
     <h2>
@@ -570,24 +582,7 @@ Options:
         <span>RETYPE_SECRET</span>
     </h3>
 </doc-anchor-target>
-<p>A Retype license key can also be configured as a secret Environment variable and the key is NOT stored in a wallet.</p>
-<p>Configuring the <code v-pre>RETYPE_SECRET</code> secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a <a href="../github-actions/">GitHub Action</a>.</p>
-<p>The <a href="../github-actions/#retype_secret">RETYPE_SECRET</a> configuration must also be added to your <strong>.github/workflows/retype.yml</strong> file.</p>
-<p>You can add a new repository secret to your GitHub repository following the <code v-pre>/settings/secrets/actions</code> path. The URL should be:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;your-organization&gt;/&lt;your-project&gt;/settings/secrets/actions</code></pre>
-</doc-codeblock></div>
-<p><figure class="content-center">
-    <img src="../../static/add-retype-secret.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Once the <code v-pre>RETYPE_SECRET</code> secret is added, you should see the following and your Retype project will now build using your license key:</p>
-<p><figure class="content-center">
-    <img src="../../static/retype-repository-secret.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+<p>See how to configure a <a href="../../configuration/envvars/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> Environment variable for an option to set your project license key during runtime.</p>
 <doc-anchor-target id="options-5">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
