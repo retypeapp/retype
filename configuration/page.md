@@ -722,6 +722,8 @@ retype start --password <your-password>
 retype build --password <your-password>
 ```
 
+The project password can also be set as an Environment variable by using [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password).
+
 ### private
 
 To create a private page, add `visibility: private` and then set the password for the project using the `--password` flag.
@@ -742,8 +744,8 @@ retype start --password <your-password>
 retype build --password <your-password>
 ```
 
+The project password can also be set as an Environment variable by using [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password).
+
 !!!
 For `hidden` and `private` pages, Retype does not give you a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at `https://example.com` and the page was called `my-hidden-page.md`, the URL would be `https://example.com/my-hidden-page/`.
 !!!
-
-### RETYPE_PASSWORD

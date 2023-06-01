@@ -147,6 +147,12 @@ Options:
   -?, -h, --help         Show help and usage information
 ```
 
+///region override
+### `--override`
+
+See the [`--override`](#retype---override) docs below for additional details.
+///endregion
+
 ---
 
 ## `retype build`
@@ -205,9 +211,7 @@ Options:
   -?, -h, --help         Show help and usage information
 ```
 
-### `--override`
-
-See the [`--override`](#retype---override) docs below for additional details.
+{{ include "cli.md#override" }}
 
 ---
 
@@ -242,6 +246,8 @@ Options:
   -v, --verbose   Enable verbose logging
   -?, -h, --help  Show help and usage information
 ```
+
+{{ include "cli.md#override" }}
 
 ---
 
@@ -295,23 +301,7 @@ retype build --secret <your-license-key-here>
 
 ### RETYPE_SECRET
 
-A Retype license key can also be configured as a secret Environment variable and the key is NOT stored in a wallet.
-
-Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
-
-The [RETYPE_SECRET](github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
-
-You can add a new repository secret to your GitHub repository following the `/settings/secrets/actions` path. The URL should be:
-
-```
-https://github.com/<your-organization>/<your-project>/settings/secrets/actions
-```
-
-![](/static/add-retype-secret.png)
-
-Once the `RETYPE_SECRET` secret is added, you should see the following and your Retype project will now build using your license key:
-
-![](/static/retype-repository-secret.png)
+See how to configure a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) Environment variable for an option to set your project license key during runtime.
 
 ### Options
 
