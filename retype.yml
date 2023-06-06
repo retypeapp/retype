@@ -13,9 +13,6 @@ meta:
 edit:
   repo: github.com/retypeapp/retype
 
-editor:
-  enabled: false
-
 links:
   - text: Home
     link: /README.md
