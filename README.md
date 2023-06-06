@@ -87,9 +87,7 @@ Retype generates a basic HTML website that you can host on any web hosting servi
 
 ## Support
 
-Technical support questions are best asked in the [Discussions](https://github.com/retypeapp/retype/discussions). The discussions are monitored 24 hours a day and we will do our best to assist.
-
-If you find a defect or would like to submit a feature request, please create an [Issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
+Do you have a technical support question, found a defect, or would like to make a feature request? Please create an [issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
 
 Do you have a general inquiry? Please feel free to contact us at hello@retype.com.
 
