@@ -13,7 +13,7 @@ The **retype.yml** file is typically placed in the root of your project, althoug
 !!!
 After making a change to the **retype.yml**, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
 
-If you started the local web server using `retype serve`, you'll need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update.
+If you started the local web server using `retype serve`, you willl need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update. Using the command `retype serve --live` will automatically update all web browsers.
 !!!
 
 The **retype.yml** file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a **retype.yml** is a good first step.
@@ -280,7 +280,7 @@ An optional base path to a directory within the repository.
 
 The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
 
-The following sample demonstrates how `edit.base` would be configured if the **.md** source files for this project are stored within the **/src/docs/** sub-directory within the repo.
+The following sample demonstrates how `edit.base` would be configured if the **.md** source files for this project are stored within the **/src/docs** sub-directory within the repo.
 
 ```yml
 edit:
@@ -1075,15 +1075,15 @@ retype start --port 5005  # serve from a custom port
 
 ===
 
-### start
+### watch
 
-Custom configuration for the [`retype start`](/guides/cli.md#options) command.
+Custom configuration for the [`retype serve`](/guides/cli.md#options-3) and [`retype start`](/guides/cli.md/#options) commands.
 
-### start.mode
+### watch.mode
 
 === mode : `string`
 
-During `retype start`, the `mode` configuration instructs the web server on where to host files from.
+During `retype start` and `retype serve`, the `mode` configuration instructs the web server on where to host files from.
 
 If `memory`, the entire website is built and then stored in memory during development with no files being written to disk.
 
@@ -1098,19 +1098,19 @@ Default is `memory`.
 
 ```yml
 serve:
-  start:
+  watch:
     mode: disk
 ```
 
-The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype start` is only to be used during local development.
+The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype start` is only to be used during local development and not on a live production web server.
 
 ===
 
-### start.polling
+### watch.polling
 
 === polling : `boolean` or `number`
 
-Instructs `retype start` on how it should listen for file changes.
+Instructs the local web server on how it should listen for file changes.
 
 If `false`, the native filesystem event listeners are used to monitor for file changes.
 
@@ -1128,7 +1128,7 @@ Default is `false`.
 
 ```yml
 serve:
-  start:
+  watch:
     polling: true
 ```
 
@@ -1140,7 +1140,7 @@ On the flip side, increasing the polling interval may cause an annoying experien
 
 ===
 
-### start.validation
+### watch.validation
 
 === validation : `string`
 
