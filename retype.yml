@@ -13,6 +13,9 @@ meta:
 edit:
   repo: github.com/retypeapp/retype
 
+include:
+  - "_headers"
+
 links:
   - text: Home
     link: /README.md
