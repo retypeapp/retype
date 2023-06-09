@@ -1114,7 +1114,7 @@ Instructs the local web server on how it should listen for file changes.
 
 If `false`, the native filesystem event listeners are used to monitor for file changes.
 
-If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second)
+If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second).
 
 The poll interval is configurable by setting a `number` value. For instance, setting `polling: 500` would configure a 500ms interval.
 
