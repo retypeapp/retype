@@ -5,7 +5,7 @@ layout: page
 
 [Retype](https://retype.com/) is professionally built and supported by a small dedicated team of software engineers.
 
-Technical support questions, bug reports, and feature requests discussions are best started as an [Issue](https://github.com/retypeapp/retype/issues).
+Technical support questions, bug reports, and feature requests are best started as an [Issue](https://github.com/retypeapp/retype/issues).
 
 ## Credits :clap:
 
