@@ -21,6 +21,6 @@ jobs:
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
-      - uses: retypeapp/action-github-pages@latest
+      - uses: retypeapp/action-github-pages@branch-fix
         with:
           update-branch: true
