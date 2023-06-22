@@ -808,10 +808,7 @@ Default is `en`.
 The following sample demonstrates switching the project to use French.
 
 ```yml
----
 locale: fr
----
-# Échantillon
 ```
 
 ===
