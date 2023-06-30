@@ -1,5 +1,5 @@
 ---
-icon: plus-circle
+icon: beaker
 tags: [component]
 ---
 # Math formulas
