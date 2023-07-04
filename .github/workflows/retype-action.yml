@@ -23,7 +23,7 @@ jobs:
         with:
           dotnet-version: 7.0.x
 
-      - uses: retypeapp/action-build@latest
+      - uses: retypeapp/action-build@issue-1648
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
