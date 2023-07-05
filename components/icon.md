@@ -4,8 +4,6 @@ tags: [component, icon]
 ---
 # Icon
 
-Example [Emoji](emoji.md) `:code` test.
-
 Similar to the [Emoji](emoji.md) `:shortcode:` syntax, you can add icons using `:icon-shortcode:`, where the `shortcode` is an [Octicon](/components/octicons.md) icon name.
 
 For example, to add the :icon-star: `star` icon, use the `:icon-star:` icon shortcode.
