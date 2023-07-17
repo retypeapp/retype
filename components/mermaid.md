@@ -34,7 +34,7 @@ graph LR
 
 ## Directives
 
-Mermaid [directives](https://mermaid-js.github.io/mermaid/#/directives) can be configured using the recommended `%%{init: { } }%%` syntax as the first line just inside the `` ```mermaid `` block.
+Mermaid [directives](https://mermaid-js.github.io/mermaid/#/directives) can be configured using the recommended `%%{init: { }}%%` syntax as the first line just inside the `` ```mermaid `` block.
 
 From the Mermaid docs:
 
@@ -46,7 +46,7 @@ The following sample demonstrates applying a `theme` to the diagram:
 
 ~~~
 ```mermaid
-%%{init: { 'theme': 'forest' } }%%
+%%{init: { 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
@@ -56,7 +56,7 @@ graph LR
 ~~~
 
 ```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+%%{init: { 'logLevel': 'debug', 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
@@ -70,7 +70,7 @@ In order to draw a mermaid code block with syntax highlighting instead of render
 
 ~~~
 ```mermaid-js
-%%{init: { 'theme': 'forest' } }%%
+%%{init: { 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
@@ -80,7 +80,7 @@ graph LR
 ~~~
 
 ```mermaid-js
-%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+%%{init: { 'logLevel': 'debug', 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
