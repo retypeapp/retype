@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.741924228375">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.742935902344">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -36,12 +36,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.3.741924228375" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.742935902344" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.741924228375" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.742935902344" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.741924228375" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.3.741924228375" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.742935902344" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.3.742935902344" defer></script>
     <script id="mermaid-js" type="text/javascript" src="../../resources/js/mermaid.js?v=3.0.3" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
@@ -297,7 +297,7 @@ graph LR
         <span>Directives</span>
     </h2>
 </doc-anchor-target>
-<p>Mermaid <a href="https://mermaid-js.github.io/mermaid/#/directives">directives</a> can be configured using the recommended <code v-pre>%%{init: { } }%%</code> syntax as the first line just inside the <code v-pre>```mermaid</code> block.</p>
+<p>Mermaid <a href="https://mermaid-js.github.io/mermaid/#/directives">directives</a> can be configured using the recommended <code v-pre>%%{init: { }}%%</code> syntax as the first line just inside the <code v-pre>```mermaid</code> block.</p>
 <p>From the Mermaid docs:</p>
 <blockquote>
 <p>Directives gives a diagram author the capability to alter the appearance of a diagram before rendering by changing the applied configuration.</p>
@@ -306,7 +306,7 @@ graph LR
 <p>The following sample demonstrates applying a <code v-pre>theme</code> to the diagram:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```mermaid
-%%{init: { 'theme': 'forest' } }%%
+%%{init: { 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] --&gt;|Link text| B(Round edge)
     B --&gt; C{Decision}
@@ -314,7 +314,7 @@ graph LR
     C --&gt;|Two| E[Result two]
 ```</code></pre>
 </doc-codeblock></div>
-<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">%%{init: { 'logLevel': 'debug', 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] --&gt;|Link text| B(Round edge)
     B --&gt; C{Decision}
@@ -329,7 +329,7 @@ graph LR
 <p>In order to draw a mermaid code block with syntax highlighting instead of rendering the contents, please use the <code v-pre>mermaid-js</code> block syntax specifier.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">```mermaid-js
-%%{init: { 'theme': 'forest' } }%%
+%%{init: { 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] --&gt;|Link text| B(Round edge)
     B --&gt; C{Decision}
@@ -338,7 +338,7 @@ graph LR
 ```</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-mermaid"><code v-pre class="language-mermaid">%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+<pre class="language-mermaid"><code v-pre class="language-mermaid">%%{init: { 'logLevel': 'debug', 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] --&gt;|Link text| B(Round edge)
     B --&gt; C{Decision}
