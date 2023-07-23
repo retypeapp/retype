@@ -16,7 +16,7 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 
 +++ New :icon-shield-check:
-- [x] [!badge PRO]New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see #465
+- [x] [!badge PRO](pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see #465
 - [x] New support for Armenian, Kannada, Sankrit, and Telugu [languages](/configuration/project.md#supported-languages)
 - [x] The _includes/*.html files include full Templating support, see #282
 - [x] New folder level [`visibility: private`](/configuration/page.md#private) and [`visibility: protected`](/configuration/page.md#protected) support
