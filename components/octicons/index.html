@@ -7,18 +7,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.742935902344">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743455338782">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.0.3">
+    <meta name="generator" content="Retype 3.1.0">
 
     <!-- Primary Meta Tags -->
     <title>Octicons - Generate, publish, and share documentation</title>
     <meta name="title" content="Octicons - Generate, publish, and share documentation">
-    <meta name="description" content="Octicons can be used with the Icon component and several other components, including the Badge and Button" />
+    <meta name="description" content="Octicons can be used with the Icon component and several other components, including the Badge and Button">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://retype.com/components/octicons/" />
+    <link rel="canonical" href="https://retype.com/components/octicons/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -32,13 +32,13 @@
     <meta property="twitter:title" content="Octicons - Generate, publish, and share documentation">
     <meta property="twitter:description" content="Octicons can be used with the Icon component and several other components, including the Badge and Button">
 
-    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.3.742935902344" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.1.0.743455338782" rel="stylesheet">
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.742935902344" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.742935902344" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743455338782" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743455338782" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -49,7 +49,7 @@
         <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
     
         <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
-            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
                 <!-- Mobile menu button skeleton -->
                 <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
                 <div v-cloak id="docs-sidebar-toggle"></div>
@@ -62,7 +62,7 @@
                                 <img class="max-h-10 dark:hidden md:inline-block" src="../../static/retype-logo.svg">
                                 <img class="max-h-10 hidden dark:inline-block" src="../../static/retype-logo-dark.svg">
                             </span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v3.0</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v3.1</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -122,24 +122,22 @@
                         <!-- Search input mock -->
                         <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
                             <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
                             </div>
-        
-                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
-                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
                         </div>
         
-                        <!-- Mobile search button mock -->
+                        <!-- Mobile search button -->
                         <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
                         </div>
         
-                        <!-- Dark mode switch placehokder -->
+                        <!-- Dark mode switch placeholder -->
                         <div class="w-10 h-10 lg:ml-2"></div>
         
-                        <!-- History button mock -->
+                        <!-- History button -->
                         <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
                         </div>
                     </div>
         
@@ -160,10 +158,10 @@
             
                 <!-- Render this div, if config.showSidebarFilter is `true` -->
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
                 </div>
             
-                <div class="pl-6 mb-4 mt-1">
+                <div class="pl-6 mt-1 mb-4">
                     <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
                     <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
                     <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -258,7 +256,7 @@
         <span>Octicons</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://primer.github.io/octicons/">Octicons</a> can be used with the <a href="../icon/">Icon</a> component and several other components, including the <a href="../badge/">Badge</a> and <a href="../button/">Button</a>.</p>
+<p><a href="https://primer.github.io/octicons/" class="outbound" target="_blank"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> can be used with the <a href="../icon/">Icon</a> component and several other components, including the <a href="../badge/">Badge</a> and <a href="../button/">Button</a>.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -272,7 +270,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The upcoming Retype <code v-pre>v3.0</code> release will ship with <a href="https://primer.github.io/octicons/">Octicons</a> <code v-pre>v18.3.0</code> and includes 36 new icons.</p>
+<p>The upcoming Retype <code v-pre>v3.0</code> release will ship with <a href="https://primer.github.io/octicons/" class="outbound" target="_blank"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> <code v-pre>v18.3.0</code> and includes 36 new icons.</p>
         </div>
     </div>
 </div>
@@ -656,17 +654,17 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <td><code v-pre>:icon-container:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.75 14a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 .75-.75Zm4.5 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 .75-.75Z"/><path d="M12 2c2.214 0 4.248.657 5.747 1.756.136.099.268.204.397.312.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086l.633 1.478.043.022A4.75 4.75 0 0 1 24 15.222v1.028c0 .529-.309.987-.565 1.293-.28.336-.636.653-.966.918a13.84 13.84 0 0 1-1.299.911l-.024.015-.006.004-.039.025c-.223.135-.45.264-.68.386-.46.245-1.122.571-1.941.895C16.845 21.344 14.561 22 12 22c-2.561 0-4.845-.656-6.479-1.303a19.046 19.046 0 0 1-1.942-.894 14.081 14.081 0 0 1-.535-.3l-.144-.087-.04-.025-.006-.004-.024-.015a13.16 13.16 0 0 1-1.299-.911 6.913 6.913 0 0 1-.967-.918C.31 17.237 0 16.779 0 16.25v-1.028a4.75 4.75 0 0 1 2.626-4.248l.043-.022.633-1.478a10.195 10.195 0 0 1-.052-1.086c0-1.331.282-2.498 1.132-3.368.397-.406.89-.717 1.474-.952.129-.108.261-.213.397-.312C7.752 2.657 9.786 2 12 2Zm-8 9.654v6.669a17.59 17.59 0 0 0 2.073.98C7.595 19.906 9.686 20.5 12 20.5c2.314 0 4.405-.594 5.927-1.197a17.59 17.59 0 0 0 2.073-.98v-6.669l-.038-.09c-.046.061-.095.12-.145.177-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.544-3.508-1.492a4.323 4.323 0 0 1-.355-.508h-.344a4.323 4.323 0 0 1-.355.508C10.704 12.456 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a3.026 3.026 0 0 1-.145-.177Zm6.309-1.092c.445-.547.708-1.334.851-2.301.057-.357.087-.718.09-1.079v-.031c-.001-.762-.166-1.26-.43-1.568l-.008-.01c-.341-.391-1.046-.689-2.533-.529-1.505.163-2.347.537-2.824 1.024-.462.473-.705 1.18-.705 2.32 0 .605.044 1.087.135 1.472.092.384.231.672.423.89.365.413 1.084.75 2.657.75.91 0 1.527-.223 1.964-.564.14-.11.268-.235.38-.374Zm2.504-2.497c.136 1.057.403 1.913.878 2.497.442.545 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.151.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.318-.862-2.824-1.025-1.487-.161-2.192.139-2.533.529-.268.308-.437.808-.438 1.578v.02c.002.299.023.598.063.894Z"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M23.922 16.992c-.861 1.495-5.859 5.023-11.922 5.023-6.063 0-11.061-3.528-11.922-5.023A.641.641 0 0 1 0 16.736v-2.869a.841.841 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.195 10.195 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952 1.399-1.136 3.392-2.093 6.122-2.093 2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.832.832 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256ZM12.172 11h-.344a4.323 4.323 0 0 1-.355.508C10.703 12.455 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a2.005 2.005 0 0 1-.085-.104L4 11.741v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.323 4.323 0 0 1-.355-.508h-.016.016Zm.641-2.935c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z"/><path d="M14.5 14.25a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Zm-5 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Z"/></g></g></svg></td>
 <td>copilot</td>
 <td><code v-pre>:icon-copilot:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><symbol id="copilot-error-icon-symbol" viewBox="0 0 16 16"><path d="M.865 2.759v.001l14.82 10.722a.755.755 0 0 0 .188.1.751.751 0 0 1-1.063 1.025l-1.415-1.024c-.274.147-.613.315-1.008.482C11.296 14.528 9.756 15 8 15c-1.756 0-3.296-.473-4.387-.934a11.947 11.947 0 0 1-1.654-.859l-.098-.065-.028-.018-.006-.004-.015-.01a10.19 10.19 0 0 1-.792-.597 5.145 5.145 0 0 1-.605-.58 2.185 2.185 0 0 1-.259-.366A1.193 1.193 0 0 1 0 11V9.736a2.75 2.75 0 0 1 1.52-2.46l.067-.033.167-.838c-.175-.442-.238-.936-.251-1.434L.31 4.107a.75.75 0 0 1 .555-1.348ZM7.86 1.77c.05.053.097.107.14.164.043-.057.09-.111.14-.164.681-.731 1.737-.9 2.943-.765 1.23.136 2.145.527 2.724 1.26.566.716.693 1.614.693 2.485 0 .572-.053 1.147-.254 1.655l.168.838.066.033A2.75 2.75 0 0 1 16 9.736V11c0 .24-.086.438-.156.567a1.59 1.59 0 0 1-.075.125L13 9.688V7.824l-.023-.115c-.49.21-1.075.291-1.727.291-.22 0-.43-.012-.633-.036L6.824 5.22c.082-.233.143-.503.182-.813.117-.936-.038-1.396-.242-1.614-.193-.207-.637-.414-1.681-.298-.707.079-1.144.243-1.424.434l-1.251-.905c.58-.579 1.422-.899 2.51-1.02 1.205-.133 2.26.035 2.943.766ZM4.75 8c-.652 0-1.237-.081-1.727-.291L3 7.825v4.26c.387.225.788.426 1.2.6.97.412 2.306.815 3.8.815 1.494 0 2.829-.403 3.801-.815.076-.033.15-.065.22-.097L5.594 7.934A5.158 5.158 0 0 1 4.75 8Zm4.486-5.207c-.204.218-.359.678-.242 1.614.091.726.303 1.23.618 1.553.299.304.784.54 1.638.54.922 0 1.28-.199 1.442-.38.179-.2.308-.578.308-1.37 0-.765-.123-1.242-.37-1.555-.233-.296-.693-.586-1.713-.7-1.044-.116-1.488.091-1.681.298Z"/></symbol><use xlink:href="#copilot-error-icon-symbol" /></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><symbol id="copilot-error-icon-symbol" viewBox="0 0 16 16"><path d="M16 11.24c0 .112-.072.274-.21.467L13 9.688V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-.198 0-.388-.009-.571-.029L6.833 5.226a4.01 4.01 0 0 0 .17-.782c.117-.935-.037-1.395-.241-1.614-.193-.206-.637-.413-1.682-.297-.683.076-1.115.231-1.395.415l-1.257-.91c.579-.564 1.413-.877 2.485-.996 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095Zm-5.083-8.707c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Zm2.511 11.074c-1.393.776-3.272 1.428-5.43 1.428-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.18-.455-.241-.963-.252-1.475L.31 4.107A.747.747 0 0 1 0 3.509V3.49a.748.748 0 0 1 .625-.73c.156-.026.306.047.435.139l14.667 10.578a.592.592 0 0 1 .227.264.752.752 0 0 1 .046.249v.022a.75.75 0 0 1-1.19.596Zm-1.367-.991L5.635 7.964a5.128 5.128 0 0 1-.889.073c-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433 1.539 0 3.089-.505 4.063-.934Z"/></symbol><use xlink:href="#copilot-error-icon-symbol" /></g></g></svg></td>
 <td>copilot-error</td>
 <td><code v-pre>:icon-copilot-error:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><symbol id="copilot-warning-icon-symbol" viewBox="0 0 16 16"><path d="M7.86 1.77c.05.053.097.107.14.164.043-.057.09-.111.14-.164.681-.731 1.737-.9 2.943-.765 1.23.136 2.145.527 2.724 1.26.566.716.693 1.614.693 2.485 0 .463-.035.929-.155 1.359a6.015 6.015 0 0 0-1.398-.616c.034-.195.053-.439.053-.743 0-.766-.123-1.242-.37-1.555-.233-.296-.693-.586-1.713-.7-1.044-.116-1.488.091-1.681.298-.204.218-.359.678-.242 1.614.06.479.172.86.332 1.158a6.014 6.014 0 0 0-2.92 2.144C5.926 7.904 5.372 8 4.75 8c-.652 0-1.237-.082-1.727-.291L3 7.824v4.261c.02.013.043.025.065.038a10.83 10.83 0 0 0 2.495 1.035c.21.629.522 1.21.916 1.726a11.883 11.883 0 0 1-2.863-.819 12.28 12.28 0 0 1-1.296-.641 8.849 8.849 0 0 1-.456-.281l-.028-.02-.006-.003-.015-.01a10.593 10.593 0 0 1-.792-.596 5.264 5.264 0 0 1-.605-.58 2.133 2.133 0 0 1-.259-.367A1.189 1.189 0 0 1 0 11V9.736a2.75 2.75 0 0 1 1.52-2.46l.067-.033.167-.838C1.553 5.897 1.5 5.322 1.5 4.75c0-.87.127-1.77.693-2.485.579-.733 1.494-1.124 2.724-1.26 1.206-.134 2.262.034 2.944.765ZM6.765 2.793c-.193-.207-.637-.414-1.681-.298-1.02.114-1.48.404-1.713.7-.247.313-.37.79-.37 1.555 0 .792.129 1.17.308 1.37.162.181.52.38 1.442.38.854 0 1.339-.236 1.638-.54.315-.323.527-.827.618-1.553.117-.936-.038-1.396-.242-1.614Z"/><path d="M8.498 14.81v.001a4.5 4.5 0 1 1 5.503-7.12 4.5 4.5 0 0 1-5.503 7.119ZM10.5 8.75V11a.75.75 0 0 0 1.5 0V8.75a.75.75 0 0 0-1.5 0Zm.75 5.75a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></symbol><use xlink:href="#copilot-warning-icon-symbol" /></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><symbol id="copilot-warning-icon-symbol" viewBox="0 0 16 16"><path d="M8.498 14.811a4.53 4.53 0 0 1-1.161-1.337 4.476 4.476 0 0 1-.587-2.224 4.496 4.496 0 0 1 4.5-4.5 4.5 4.5 0 0 1 4.5 4.5 4.5 4.5 0 0 1-7.252 3.561ZM10.5 8.75V11a.75.75 0 0 0 1.5 0V8.75a.75.75 0 1 0-1.5 0Zm.75 5.75a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="m14.354 6.114-.05-.029a5.949 5.949 0 0 0-1.351-.589c.03-.19.047-.422.047-.709 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.058.462.165.834.316 1.127A6.025 6.025 0 0 0 6.369 7.76c-.472.185-1.015.277-1.623.277-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.265.205 1.285.725 2.577 1.079a5.937 5.937 0 0 0 .939 1.736C2.733 14.407.111 12.027 0 11.286V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .452-.033.906-.146 1.327ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Z"/></symbol><use xlink:href="#copilot-warning-icon-symbol" /></g></g></svg></td>
 <td>copilot-warning</td>
 <td><code v-pre>:icon-copilot-warning:</code></td>
 </tr>
@@ -1902,7 +1900,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 
                                 
                                 <!-- Required only on API pages -->
-                                <doc-toolbar-member-filter-no-results />
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
                             <footer class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
@@ -1991,8 +1989,8 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Octicons", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Octicons", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>
