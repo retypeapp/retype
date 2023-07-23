@@ -11,9 +11,34 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 ---
 
-## v3.0.0 [!badge text="LATEST" variant="info"]
+## v3.1.0 [!badge text="LATEST" variant="info"]
 
-Released: [2022-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
+Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
+
++++ New :icon-shield-check:
+- [x] [!badge PRO]New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see #465
+- [x] New support for Armenian, Kannada, Sankrit, and Telugu [languages](/configuration/project.md#supported-languages)
+- [x] The _includes/*.html files include full Templating support, see #282
+- [x] New folder level [`visibility: private`](/configuration/page.md#private) and [`visibility: protected`](/configuration/page.md#protected) support
++++ Improved :icon-thumbsup:
+- [x] Improved support for Cloudflare Rocket Loader, see #117 380 and #580
+- [x] Hide Tabs until finished rendering to avoid flash of unstyled content, see #570
+- [x] Generated HTML syntax enhancements and clean up, see #583
+- [x] Update the RU translation file, see #586
+- [x] Upgrade to latest release of [Mermaid](/components/mermaid.md) see #585
+- [x] Add cache buster to _watch scripts during `retype start`
+- [x] Update client libraries including vue, monaco-editor, simplebar, katex, and lunr-languages
+- [x] Upgrade Octicons icons library from v19.1.0 to v19.3.0
+- [x] Upgrade Octicons icons library from v19.3.0 to v19.4.0
++++ Fixed :icon-bug:
+- [x] Not supported value WARNING on first build with new locale, see #573
+- [x] Finish translation file updated
+- [x] `html lang=\"en\"` attribute not updated if locale changes, see #574
++++
+
+## v3.0.0
+
+Released: [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 
 +++ New :icon-shield-check:
 - [x] [!badge PRO] New [`visibility: private`](configuration/page.md#private) and [`visibility: protected`](configuration/page.md#protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
@@ -124,7 +149,7 @@ generator:
 Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
 
 +++ New :icon-shield-check:
-- [x] [`generator.recase`](https://retype.com/configuration/project/#generator) project config to recase file and folder names. See [#302](https://github.com/retypeapp/retype/issues/302).
+- [x] [`generator.recase`](/configuration/project.md#generator) project config to recase file and folder names. See [#302](https://github.com/retypeapp/retype/issues/302).
 - [x] Official Retype docker images published to [DockerHub](https://hub.docker.com/repository/docker/retypeapp/retype). See [#122](https://github.com/retypeapp/retype/issues/122).
 - [x] New `@latest` tag to be used in your [retype-action.yml](http://localhost:5000/guides/github-actions/#step-1-add-retype-actionyml-workflow) configuration.
 - [x] GitHub Action annotation to announce availability of Retype v2, only if using Retype v1.
