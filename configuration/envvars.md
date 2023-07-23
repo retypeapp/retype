@@ -11,7 +11,7 @@ A Retype license key can be configured as a secret Environment variable and the 
 
 Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
 
-The [RETYPE_SECRET](github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
+The [RETYPE_SECRET](../guides/github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
 
 You can add a new repository secret to your GitHub repository following the `/settings/secrets/actions` path. The URL should be:
 
