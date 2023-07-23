@@ -2,10 +2,14 @@ input: ./
 output: .retype
 url: retype.com
 
+outbound:
+  exclude:
+    - retype.com
+
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v3.0
+  label: v3.1
 
 meta:
   title: " - Generate, publish, and share documentation"
