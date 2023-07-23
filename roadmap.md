@@ -227,7 +227,7 @@ Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
 +++ New :icon-shield-check:
 - [x] Incremental build during [`retype start`](/guides/cli.md#retype-start) with page dependency graph
-- [x] Ability to run `retype start` with in-memory output. Turned on by default, see [`serve.start.mode`](/configuration/project.md#start) to configure.
+- [x] Ability to run `retype start` with in-memory output. Turned on by default, see [`serve.start.mode`](/configuration/project.md) to configure.
 - [x] Platform specific NPM packages:
   1. [`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86)
   2. [`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64)
