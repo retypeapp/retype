@@ -900,6 +900,131 @@ See also, the Page level [`meta.title`](page.md/#title) configuration.
 ===
 ---
 
+## outbound
+
+The Retype [!badge PRO] `outbound` configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains.
+
+The `outbound` functionality is Retype [!badge PRO] functionality only and will be automatically enabled. For projects that are not Retype Pro, the `outbound` configuration and functionality is ignored.
+
+If `true`, Retype will find all external (outbound) links within the project and add a `:link-external:` :icon-link-external: icon and set the link's `target` to `_blank`.
+
+| Property  | Data Type | Description | Default Value |
+| :-------- | :-------- | :---------- | :------------ |
+| enabled   | boolean   | Controls whether the outbound links feature is enabled. If `true`, the Retype app will find all external (outbound) links within the project and add a `:link-external:` icon and set the link's `target` to `_blank`. | true |
+| target    | string    | Specifies the `target` attribute for the outbound links. The default value `"blank"` opens the linked document in a new window or tab. | "blank" |
+| custom    | string    | Provides a way to specify custom attributes to be added to the outbound links. The default value `'rel="noopener noreferrer"'` prevents the new page from being able to access the window that opened it, and ensures that the back/forward navigation events are not logged in the window. | 'rel="noopener noreferrer"' |
+| icon      | string    | Defines the icon to be used for outbound links. The default value `"link-external"` specifies an external link icon. | "link-external" |
+| iconAlign | string    | Determines the alignment of the icon for outbound links. It can be either `"right"` or `"left"`. | "right" |
+| exclude   | list      | A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you don't want certain links to open in new tabs. For example, `- example.com` will exclude all links pointing to `example.com`. | None |
+| include   | list      | A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value `*` includes all links. For example, `- example.com` will include only links pointing to `example.com`. | * |
+
+### enabled
+
+=== [!badge PRO] enabled : `boolean`
+
+Controls whether the outbound links feature is enabled.
+
+The default is `true` for **Retype Pro** projects.
+
+The following sample demonstrates disabling the `outbound` functionality:
+
+```yml
+outbound:
+  enabled: false
+```
+===
+
+### target
+
+=== [!badge PRO] target : `string`
+
+Specifies the `target` attribute for the outbound links. The default value of `"blank"` opens the link in a new window or tab.
+
+```yml
+outbound:
+  target: blank
+```
+===
+
+### custom
+
+=== [!badge PRO] custom : `string`
+
+Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.
+
+The following sample demonstrates how to add the attribute `rel="noopener noreferrer"` to all outbound links:
+
+```yml
+outbound:
+  custom: 'rel="noopener noreferrer"'
+```
+===
+
+### icon
+
+=== [!badge PRO] icon : `string`
+
+Defines the icon to be used for outbound links and accepts all the same options as the [`links.icon`](#icon) config. The default value is `link-external` :icon-link-external:.
+
+```yml
+outbound:
+  icon: link-external
+```
+===
+
+### iconAlign
+
+=== [!badge PRO] iconAlign : `string`
+
+Determines the alignment of the icon for outbound links and accepts the same options as the [`links.iconAlign`](#iconalign) config. Acceptable values are `right` or `left`. The default value is `right`.
+
+```yml
+outbound:
+  iconAlign: right
+```
+===
+
+### exclude
+
+=== [!badge PRO] exclude : `list`
+
+A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.
+
+This configuration accepts similar path patterns as the [`exclude`](#exclude) config.
+
+The following sample demonstrates excluding all links pointing to `example.com`.
+
+```yml
+outbound:
+  exclude:
+    - example.com
+```
+
+Please also see [`outbound.include`](#include-1).
+
+===
+
+### include
+
+=== [!badge PRO] include : `list`
+
+A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of `*` includes all links.
+
+This configuration accepts similar path patterns as the [`include`](#include) config.
+
+The following sample demonstrates including only links that point to `example.com`.
+
+```yml
+outbound:
+  include:
+    - example.com
+```
+
+If any item is added to the `include` list, by default, all other paths will be excluded. Please also see [`outbound.exclude`](#exclude-1).
+===
+
+---
+
 ## output
 
 === output : `string`
