@@ -986,7 +986,7 @@ This config is Retype [!badge PRO](/pro/pro.md) only.
 
 The `outbound` configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, [example.com](https://example.com/).
 
-The `outbound` functionality is Retype PRO functionality only and will be automatically enabled. For projects that are not Retype Pro, the `outbound` configuration and functionality is ignored.
+The `outbound` functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the `outbound` configuration and functionality is ignored.
 
 If `outbound` is enabled, Retype will find all external (outbound) links within the project, add a trailing :icon-link-external: icon, and set the link to open in a new tab when clicked.
 
