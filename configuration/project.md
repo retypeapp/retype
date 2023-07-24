@@ -908,7 +908,7 @@ The `outbound` configuration gives you the flexibility to customize the behavior
 
 The `outbound` functionality is Retype PRO functionality only and will be automatically enabled. For projects that are not Retype Pro, the `outbound` configuration and functionality is ignored.
 
-If `true`, Retype will find all external (outbound) links within the project and add a `:link-external:` :icon-link-external: icon and set the link's `target` to `_blank`.
+If `outbound` is enabled, Retype will find all external (outbound) links within the project, add a trailing :icon-link-external: icon, and set the link to open in a new tab when clicked.
 
 ### enabled
 
