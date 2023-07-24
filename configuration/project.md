@@ -1152,6 +1152,17 @@ search:
 ```
 ===
 
+### preload
+
+=== preload : `boolean`
+Specifies if the search index should be preloaded. Default is `false`.
+
+```yml
+search:
+  preload: true # Default is false
+```
+===
+
 ## serve
 
 Custom configuration for the built in Retype development web server.
