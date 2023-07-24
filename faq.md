@@ -12,7 +12,8 @@ With [Retype Pro](/pro.md), you get the following additional features:
 
 1. Up to 1000 pages can be built
 2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
-3. Password protected `private` and `protected` pages
+3. [!badge text="NEW" variant="info"] Password protected [`private`](/configuration/page.md#private) and [`protected`](/configuration/page.md#protected) pages
+4. [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration
 
 ## How do I install Retype?
 
