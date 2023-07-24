@@ -5,6 +5,7 @@ url: retype.com
 outbound:
   exclude:
     - retype.com
+    - buy.stripe.com
 
 branding:
   logo: /static/retype-logo.svg
@@ -22,8 +23,8 @@ links:
     link: /README.md
     icon: home
 
-  - text: Pricing
-    link: /pro
+  - text: Retype Pro
+    link: /pro/index.md
     icon: star
 
   - text: Issues
