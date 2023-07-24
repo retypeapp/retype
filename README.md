@@ -6,7 +6,7 @@ icon: home
 
 # Welcome to Retype
 
-[Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
+[Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: static website generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
 
 > “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there” – jonnyfeelgood
 
