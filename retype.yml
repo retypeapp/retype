@@ -24,7 +24,7 @@ links:
     icon: home
 
   - text: Retype Pro
-    link: /pro/index.md
+    link: /pro/pro.md
     icon: star
 
   - text: Issues
