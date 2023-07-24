@@ -1036,6 +1036,8 @@ output: ./docs
 
 Controls whether to include or exclude the `Powered by Retype` branding.
 
+![](/static/powered-by-retype.png)
+
 === [!badge PRO] poweredByRetype : `boolean`
 With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
 
