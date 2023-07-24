@@ -2,6 +2,8 @@ input: ./
 output: .retype
 url: retype.com
 
+poweredByRetype: true
+
 outbound:
   exclude:
     - retype.com
