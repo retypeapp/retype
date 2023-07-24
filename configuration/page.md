@@ -19,6 +19,10 @@ order: 100
 This is a sample page demonstrating page metadata.
 ```
 
+## Default pages
+
+{{ include "snippets/default-pages.md" }}
+
 ## Separate .yml file
 
 If you would prefer to keep the page metadata separated and placed outside of the **.md** content page, the config can be moved into a paired **.yml** file.

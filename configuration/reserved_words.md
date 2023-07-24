@@ -59,16 +59,7 @@ If you manually create a **CNAME** file within the root of the [input](/configur
 
 ### Default pages
 
-Folder default pages are custom **.md** files that will be treated as the index page of the folder.
-
-Retype will search using the following case insensitive priority:
-
-1. `index.md`
-2. `readme.md`
-3. `default.md`
-4. `welcome.md` *only in the project root
-
-For instance, creating a the file **docs/index.md** will create a custom page accessible from the path `https://example.com/docs/`. The **index.md** page instructs Retype to create an **index.html** file within the **docs/** folder.
+{{ include "snippets/default-pages.md" }}
 
 ### Project config
 
