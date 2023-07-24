@@ -435,6 +435,21 @@ generator:
 ```
 ===
 
+### trailingSlash
+
+=== trailingSlash : `boolean`
+By setting `trailingSlash: false` in the project config, authors can instruct Retype to remove (or not add) the trailing `/` character when constructing links from paths to Markdown files.
+
+For example, if you have a simple link in your project to `[Example](/guide/example.md)`, Retype will create the link as `/guide/example/`. By setting `trailingSlash: false` in your project, Retype would then create the link as `/guide/example`.
+
+It is best practice to include the trailing slash and by default, Retype will automatically add the trailing slash to links that are missing.
+
+```
+generator:
+  trailingSlash: false # default is true
+```
+===
+
 ---
 
 ## include
