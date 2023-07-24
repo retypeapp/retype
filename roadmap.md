@@ -16,10 +16,10 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 
 +++ New :icon-shield-check:
-- [x] [!badge PRO](pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see [#465](https://github.com/retypeapp/retype/discussions/465)
+- [x] [!badge PRO](/pro/pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see [#465](https://github.com/retypeapp/retype/discussions/465)
+- [x] [!badge PRO](/pro/pro.md) New folder level [`visibility: private`](/configuration/page.md#private) and [`visibility: protected`](/configuration/page.md#protected) support
 - [x] New support for Armenian, Kannada, Sankrit, and Telugu [languages](/configuration/project.md#supported-languages)
 - [x] The _includes/*.html files include full Templating support, see [#282](https://github.com/retypeapp/retype/discussions/282)
-- [x] New folder level [`visibility: private`](/configuration/page.md#private) and [`visibility: protected`](/configuration/page.md#protected) support
 +++ Improved :icon-thumbsup:
 - [x] Improved support for Cloudflare Rocket Loader, see [#117](https://github.com/retypeapp/retype/discussions/171), [#380](https://github.com/retypeapp/retype/discussions/380), and [#580](https://github.com/retypeapp/retype/discussions/580)
 - [x] Hide Tabs until finished rendering to avoid flash of unstyled content, see [#570](https://github.com/retypeapp/retype/discussions/570)
