@@ -902,7 +902,7 @@ See also, the Page level [`meta.title`](page.md/#title) configuration.
 
 ## outbound
 
-This config is Retype [!badge PRO](/pro.md) only.
+This config is Retype [!badge PRO](/pro/pro.md) only.
 
 The `outbound` configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, [example.com](https://example.com/).
 
@@ -1033,6 +1033,8 @@ output: ./docs
 ---
 
 ## poweredByRetype
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
 
 Controls whether to include or exclude the `Powered by Retype` branding.
 

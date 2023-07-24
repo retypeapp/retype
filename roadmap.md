@@ -41,7 +41,7 @@ Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 Released: [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 
 +++ New :icon-shield-check:
-- [x] [!badge PRO] New [`visibility: private`](configuration/page.md#private) and [`visibility: protected`](configuration/page.md#protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
+- [x] [!badge PRO](/pro/pro.md) New [`visibility: private`](configuration/page.md#private) and [`visibility: protected`](configuration/page.md#protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
 - [x] New multi-language [`locale`](configuration/project.md#locale) interface support for 22 languages, see [#18](https://github.com/retypeapp/retype/discussions/18) and [#24](https://github.com/retypeapp/retype/discussions/24)
 - [x] New [`meta.title`](configuration/page.md#title) page level config, see [#346](https://github.com/retypeapp/retype/discussions/346) and [#350](https://github.com/retypeapp/retype/discussions/350)
 - [x] New [CLI commands](guides/cli.md) and flags, see [#94](https://github.com/retypeapp/retype/discussions/94) and [#323](https://github.com/retypeapp/retype/discussions/323)
