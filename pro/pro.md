@@ -30,7 +30,7 @@ The only thing that changes is that you would not be able to upgrade your Retype
 
 Once your website is built it will continue to work, even if your Retype Pro license expires.
 
-If your Retype Pro license expires, you can [purchase](/pro) a new license at any point in the future.
+If your Retype Pro license expires, you can [purchase](pro.md) a new license at any point in the future.
 
 ### Is Retype Pro a separate product?
 

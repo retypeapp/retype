@@ -224,7 +224,7 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 
 +++ New :icon-shield-check:
 - [x] Multi-language search and automatic detection of content languages. See [#197](https://github.com/retypeapp/retype/issues/197).
-- [x] [Retype Pro](/pro.md) with increased page limit and Retype branding removal option.
+- [x] [Retype Pro](/pro/pro.md) with increased page limit and Retype branding removal option.
 - [x] Better style for native scrollbars on Windows. See [#107](https://github.com/retypeapp/retype/issues/107).
 - [x] [`serve.start.validation`](/configuration/project.md#watchvalidation) project configuration option.
 - [x] All heading elements within the page content are now added to the search index. See [#166](https://github.com/retypeapp/retype/issues/166).
