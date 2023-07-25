@@ -159,3 +159,29 @@ Being a separate **.css** file, web browsers will automatically cache the file, 
 !!!danger
 Retype does not validate any of the custom HTML added to the **_includes/head.html**. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.
 !!!
+
+## Samples
+
+### Center on Page
+
+Text, a [Button](button.md), or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the `content-center` css class.
+
+The following samples demonstrate center alignment of a Button and Text:
+
+:::content-center
+[!button My Button]
+:::
+
+:::content-center
+This text should be centered :+1:
+:::
+
+```
+:::content-center
+[!button My Button]
+:::
+
+:::content-center
+This text should be centered :+1:
+:::
+```
