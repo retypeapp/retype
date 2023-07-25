@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743603879711">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743608526825">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -34,12 +34,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.1.0.743603879711" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.1.0.743608526825" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743603879711" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743608526825" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743603879711" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.743603879711" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743608526825" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.743608526825" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -407,6 +407,35 @@ This Container uses the `sample` class.
         </div>
     </div>
 </div>
+<doc-anchor-target id="samples">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#samples">#</doc-anchor-trigger>
+        <span>Samples</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="center-on-page">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#center-on-page">#</doc-anchor-trigger>
+        <span>Center on Page</span>
+    </h3>
+</doc-anchor-target>
+<p>Text, a <a href="../button/">Button</a>, or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the <code v-pre>content-center</code> css class.</p>
+<p>The following samples demonstrate center alignment of a Button and Text:</p>
+<div class="content-center"><p><button class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
+    <span>My Button</span>
+</button></p>
+</div>
+<div class="content-center"><p>This text should be centered <span class="docs-emoji">&#x1F44D;</span></p>
+</div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">:::content-center
+[!button My Button]
+:::
+
+:::content-center
+This text should be centered :+1:
+:::</code></pre>
+</doc-codeblock></div>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
