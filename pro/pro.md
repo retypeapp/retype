@@ -9,16 +9,16 @@ order: 2000
 Features | Retype | Retype Pro
 --- | --- | ---
 Pricing | Free | $149
-Free upgrades | Unlimited | One year
 Renewal | Free | $99/year ([optional](#if-i-do-not-renew-does-my-website-stop-working))
-Authors or Developers | Unlimited | Unlimited
 Max pages per project | 100 | 1000
 Max projects per license | -- | 3
+Authors, Users, or Developers | Unlimited | Unlimited
+Free upgrades | :white_check_mark: | :white_check_mark: (1 year)
 Commercial use | :white_check_mark: | :white_check_mark:
 Remove [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :no_entry_sign: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :no_entry_sign: | :white_check_mark:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy Pro $149" icon="star-fill"](https://buy.stripe.com/8wM2a25fpf502jKbII)<br />[Need more?](https://buy.stripe.com/28og0S37h5uqaQg9AE){class="text-sm"} |
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy Pro $149" icon="star-fill"](https://buy.stripe.com/8wM2a25fpf502jKbII)
 
 ## Questions & Answers
 
