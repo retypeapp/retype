@@ -421,9 +421,9 @@ Configuration options to instruct Retype on how and when to deal with the defaul
 ### directoryIndex.altNames
 
 === directoryIndex.altNames : `list`
-A list of alternative default HTML document file names.
+A list of file names to treat as default HTML files.
 
-By default, Retype uses the following list of `altNames`:
+By default, Retype will treat all of the following files as default pages if they are within a folder.
 
 ```yml
 generator:
@@ -434,6 +434,16 @@ generator:
       - default.html
       - default.htm
 ```
+
+If you have a **default.htm** file within a folder and do not want it to be treated as a default page, then set `altNames` to the following:
+
+```yml
+generator:
+  directoryIndex:
+    altNames:
+      - index.html
+```
+
 ===
 
 ### directoryIndex.append
