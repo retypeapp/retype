@@ -13,11 +13,15 @@ Folders support the same properties a [pages](/configuration/page.md), although 
 
 ## Samples
 
+### icon
+
 Set a custom [icon](/configuration/page.md#icon) for the folder.
 
 ```yml index.yml
 icon: gear
 ```
+
+### expanded
 
 Expand the folder node in the tree navigation with the [expanded](/configuration/page.md#expanded) config.
 
@@ -25,7 +29,9 @@ Expand the folder node in the tree navigation with the [expanded](/configuration
 expanded: true
 ```
 
-Move a folder up to the top of the navigation by setting the [order](/configuration/page.md#order). The larger the number, the higher in the stack it will be placed.
+### order
+
+Move a folder up to the top of the navigation by setting the [order](/configuration/page.md#order). The higher the number, the higher in the stack the folder will be placed.
 
 ```yml index.yml
 order: 1000
@@ -37,11 +43,15 @@ Move a folder to the bottom of the navigation. The lower the number, the lower i
 order: -1000
 ```
 
-Change the folder [label](/configuration/page.md#label) used for the navigation node label.
+### label
+
+Change the folder [label](/configuration/page.md#label) used for the left navigation tree node label.
 
 ```yml index.yml
 label: Custom label
 ```
+
+### visibility
 
 Hide a folder by setting the [visibility](/configuration/page.md#visibility) configuration.
 
