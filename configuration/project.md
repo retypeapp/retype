@@ -1417,6 +1417,29 @@ snippets:
 
 ---
 
+## start
+
+The `start` config contains project options that apply during the [`retype start`](../guides/cli.md#retype-start) CLI command.
+
+### open
+
+=== open : `boolean`
+
+Set to `false` to instruct Retype to not open the default web browser when the command `retype start` is run. By default, Retype will open a web browser when `retype start` is run.
+
+The default is `true`.
+
+The following sample demonstrates how to prevent the default web browser from opening during `retype start`:
+
+```yml
+start:
+  open: false
+```
+
+Using the [CLI](../guides/cli.md#retype-start) command `retype start -n` or `retype start --no-open` will also prevent the default web browser from being opened.
+
+===
+
 ## templating
 
 Configurations to control the Retype content templating engine for this project.
