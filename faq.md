@@ -6,7 +6,7 @@ label: FAQ
 
 ## Is Retype free to use?
 
-Yes, Retype is free to use with both open-source and commercial projects.
+Yes, Retype is free to use with both open-source and commercial projects up to 100 pages per project.
 
 With [Retype Pro](/pro/pro.md), you get the following additional features:
 
