@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743624515079">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743659595964">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -36,12 +36,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.1.0.743624515079" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.1.0.743659595964" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743624515079" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743659595964" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743624515079" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.743624515079" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743659595964" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.743659595964" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -2236,6 +2236,30 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 </doc-panel>
 <hr>
+<doc-anchor-target id="start">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#start">#</doc-anchor-trigger>
+        <span>start</span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>start</code> config contains project options that apply during the <a href="../../guides/cli/#retype-start"><code v-pre>retype start</code></a> CLI command.</p>
+<doc-anchor-target id="open">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#open">#</doc-anchor-trigger>
+        <span>open</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="open-boolean">
+    <template #title>open : <code v-pre>boolean</code></template>
+<p>Set to <code v-pre>false</code> to instruct Retype to not open the default web browser when the command <code v-pre>retype start</code> is run. By default, Retype will open a web browser when <code v-pre>retype start</code> is run.</p>
+<p>The default is <code v-pre>true</code>.</p>
+<p>The following sample demonstrates how to prevent the default web browser from opening during <code v-pre>retype start</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">start:
+  open: false</code></pre>
+</doc-codeblock></div>
+<p>Using the <a href="../../guides/cli/#retype-start">CLI</a> command <code v-pre>retype start -n</code> or <code v-pre>retype start --no-open</code> will also prevent the default web browser from being opened.</p>
+</doc-panel>
 <doc-anchor-target id="templating">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#templating">#</doc-anchor-trigger>
