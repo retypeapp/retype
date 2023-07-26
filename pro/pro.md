@@ -22,7 +22,7 @@ Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding |
 [!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :no_entry_sign: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :no_entry_sign: | :white_check_mark:
 Supports our friendly and hard working team :icon-people: | :white_check_mark: | :white_check_mark:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy Pro" icon="heart" size="l" corners="pill"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ)
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy&nbsp;Pro" icon="heart" size="l" corners="pill"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ)
 
 ## :icon-question: Questions & Answers
 
