@@ -1040,6 +1040,14 @@ Defines the icon to be used for outbound links and accepts all the same options 
 outbound:
   icon: link-external
 ```
+
+If you would prefer to keep the `outbound` functionality enabled, but not include the :icon-link-external: icon, please set `icon: ""`. The following sample demonstrates:
+
+```yml
+outbound:
+  icon: ""
+```
+
 ===
 
 ### iconAlign
