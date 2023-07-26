@@ -16,24 +16,24 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 
 +++ New :icon-shield-check:
-- [x] [!badge PRO](/pro/pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see [#465](https://github.com/retypeapp/retype/discussions/465)
+- [x] [!badge PRO](/pro/pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see [#465](https://github.com/retypeapp/retype/issues/465)
 - [x] [!badge PRO](/pro/pro.md) New folder level [`visibility: private`](/configuration/page.md#private) and [`visibility: protected`](/configuration/page.md#protected) support
 - [x] New support for Armenian, Kannada, Sankrit, and Telugu [languages](/configuration/project.md#supported-languages)
 - [x] The _includes/*.html files include full Templating support, see [#282](https://github.com/retypeapp/retype/discussions/282)
 +++ Improved :icon-thumbsup:
-- [x] Improved support for Cloudflare Rocket Loader, see [#117](https://github.com/retypeapp/retype/discussions/171), [#380](https://github.com/retypeapp/retype/discussions/380), and [#580](https://github.com/retypeapp/retype/discussions/580)
-- [x] Hide Tabs until finished rendering to avoid flash of unstyled content, see [#570](https://github.com/retypeapp/retype/discussions/570)
-- [x] Generated HTML syntax enhancements and clean up, see [#583](https://github.com/retypeapp/retype/discussions/583)
-- [x] Update the RU translation file, see [#586](https://github.com/retypeapp/retype/discussions/586)
-- [x] Upgrade to latest release of [Mermaid](/components/mermaid.md) see [#585](https://github.com/retypeapp/retype/discussions/585)
-- [x] Add cache buster to _watch scripts during `retype start`
-- [x] Update client libraries including vue, monaco-editor, simplebar, katex, and lunr-languages
+- [x] Improved support for Cloudflare Rocket Loader, see [#117](https://github.com/retypeapp/retype/discussions/171), [#380](https://github.com/retypeapp/retype/discussions/380), and [#580](https://github.com/retypeapp/retype/issues/580)
+- [x] Hide Tabs until finished rendering to avoid flash of unstyled content, see [#570](https://github.com/retypeapp/retype/issues/570)
+- [x] Generated HTML syntax enhancements and clean up, see [#583](https://github.com/retypeapp/retype/issues/583)
+- [x] Update the RU translation file, see [#586](https://github.com/retypeapp/retype/issues/586)
+- [x] Upgrade to latest release of [Mermaid](/components/mermaid.md) see [#585](https://github.com/retypeapp/retype/issues/585)
+- [x] Add cache buster to `_watch` scripts during `retype start`
+- [x] Update client libraries including vue, monaco-editor, simplebar, katex, and lunr-languages ([credits](/about.md))
 - [x] Upgrade Octicons icons library from v19.1.0 to v19.3.0
 - [x] Upgrade Octicons icons library from v19.3.0 to v19.4.0
 +++ Fixed :icon-bug:
-- [x] Not supported value WARNING on first build with new locale, see [#573](https://github.com/retypeapp/retype/discussions/573)
+- [x] Not supported value WARNING on first build with new locale, see [#573](https://github.com/retypeapp/retype/issues/573)
 - [x] Finish translation file updated
-- [x] `html lang=\"en\"` attribute not updated if locale changes, see [#574](https://github.com/retypeapp/retype/discussions/574)
+- [x] `html lang=\"en\"` attribute not updated if locale changes, see [#574](https://github.com/retypeapp/retype/issues/574)
 +++
 
 ## v3.0.0
@@ -42,31 +42,31 @@ Released: [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 
 +++ New :icon-shield-check:
 - [x] [!badge PRO](/pro/pro.md) New [`visibility: private`](configuration/page.md#private) and [`visibility: protected`](configuration/page.md#protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
-- [x] New multi-language [`locale`](configuration/project.md#locale) interface support for 22 languages, see [#18](https://github.com/retypeapp/retype/discussions/18) and [#24](https://github.com/retypeapp/retype/discussions/24)
-- [x] New [`meta.title`](configuration/page.md#title) page level config, see [#346](https://github.com/retypeapp/retype/discussions/346) and [#350](https://github.com/retypeapp/retype/discussions/350)
-- [x] New [CLI commands](guides/cli.md) and flags, see [#94](https://github.com/retypeapp/retype/discussions/94) and [#323](https://github.com/retypeapp/retype/discussions/323)
+- [x] New multi-language [`locale`](configuration/project.md#locale) interface support for 22 languages, see [#18](https://github.com/retypeapp/retype/discussions/18) and [#24](https://github.com/retypeapp/retype/issues/24)
+- [x] New [`meta.title`](configuration/page.md#title) page level config, see [#346](https://github.com/retypeapp/retype/discussions/346) and [#350](https://github.com/retypeapp/retype/issues/350)
+- [x] New [CLI commands](guides/cli.md) and flags, see [#94](https://github.com/retypeapp/retype/issues/94) and [#323](https://github.com/retypeapp/retype/discussions/323)
 - [x] New [`-n`](guides/cli.md#retype-start) flag to prevent default web browser from being opened, see [#323](https://github.com/retypeapp/retype/discussions/323)
 - [x] New [`retype clean`](guides/cli.md#retype-clean) CLI command
 - [x] New named regions with content, see [#368](https://github.com/retypeapp/retype/discussions/368)
-- [x] New {%{`{{ nonce }}`}%} token for cache busting URLs in templates, see [#324](https://github.com/retypeapp/retype/discussions/324)
+- [x] New {%{`{{ nonce }}`}%} token for cache busting URLs in templates, see [#324](https://github.com/retypeapp/retype/issues/324)
 - [x] New Inter and system based font-family, see [#179](https://github.com/retypeapp/retype/discussions/179)
 - [x] New default Welcome page
 - [x] New sticky TOC button
 - [x] New context menu shortcuts for Retype components in Edit mode
 - [x] New custom same name default page for a directory, see [#511](https://github.com/retypeapp/retype/discussions/511)
 +++ Improved :icon-thumbsup:
-- [x] Add `welcome.md` to the list of default page file names for the root `input` folder, see [#461](https://github.com/retypeapp/retype/discussions/461)
+- [x] Add `welcome.md` to the list of default page file names for the root `input` folder, see [#461](https://github.com/retypeapp/retype/issues/461)
 - [x] Change default search hotkey to `k` instead of `/`
-- [x] Panel title missing from search index, see [#363](https://github.com/retypeapp/retype/discussions/363)
+- [x] Panel title missing from search index, see [#363](https://github.com/retypeapp/retype/issues/363)
 - [x] Nice looking prompt for password protected pages
 - [x] Upgrade client and server dependencies
 - [x] Upgrade to latest release of [Turbo](https://turbo.hotwired.dev/)
-- [x] Updated all Prism languages and created new dependency tree process, see [#446](https://github.com/retypeapp/retype/discussions/446)
+- [x] Updated all Prism languages and created new dependency tree process, see [#446](https://github.com/retypeapp/retype/issues/446)
 - [x] Argh... Poppins font doesn't support non-latin character glyphs (cyrillic), see [#179](https://github.com/retypeapp/retype/discussions/179)
 - [x] Use Inter font
 - [x] Revise Plausible default script `plausible.js` to `script.js`
 - [x] Remove Page `Edit` button on generated Welcome page
-- [x] Links with icon that are images get empty alt attribute, see [#523](https://github.com/retypeapp/retype/discussions/523)
+- [x] Links with icon that are images get empty alt attribute, see [#523](https://github.com/retypeapp/retype/issues/523)
 - [x] Rename `server` project config to [`serve`](configuration/project.md#serve)
 - [x] Upgrade Octicons icons library from v17.2.0 to v17.3.0
 - [x] Upgrade Octicons icons library from v17.9.0 to v17.10.0
@@ -78,12 +78,12 @@ Released: [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 - [x] Upgrade Octicons icons library from v18.3.0 to v19.0.0
 - [x] Upgrade Octicons icons library from v19.0.0 to v19.1.0
 +++ Fixed :icon-bug:
-- [x] JavaScript error if one stacked Panel is missing content, see [#388](https://github.com/retypeapp/retype/discussions/388)
-- [x] `--override` command fails when used with a templating data object, see [#509](https://github.com/retypeapp/retype/discussions/509)
+- [x] JavaScript error if one stacked Panel is missing content, see [#388](https://github.com/retypeapp/retype/issues/388)
+- [x] `--override` command fails when used with a templating data object, see [#509](https://github.com/retypeapp/retype/issues/509)
 - [x] Editor icons are not rendered after `monaco` has been upgraded
 - [x] Propagate `visibility` to all nested pages in `watch` mode
 - [x] Messed up meta tag content value generation with escaped sequence, see [#513](https://github.com/retypeapp/retype/discussions/513)
-- [x] `mark-github` icon issue in ref and file components, see [#517](https://github.com/retypeapp/retype/discussions/517)
+- [x] `mark-github` icon issue in ref and file components, see [#517](https://github.com/retypeapp/retype/issues/517)
 - [x] Exception thrown if `:icon-:` is added to a page
 - [x] Case-insensitive `in-memory` file system
 - [x] Prism theme issues after update to latest
@@ -103,7 +103,7 @@ Released: [2022-07-14](https://github.com/retypeapp/retype/releases/tag/v2.4.0)
 - [x] Links to home page ignore `generator.trailingShash` setting.
 - [x] Link at top-left logo has trailing slash when `generator.trailingSlash` is set to `false`.
 - [x] Pressing enter on search results creates invalid url. See [#333](https://github.com/retypeapp/retype/discussions/333).
-- [x] Parent folder prefixed with an `_` underscore do not build properly. See [#336](https://github.com/retypeapp/retype/discussions/336).
+- [x] Parent folder prefixed with an `_` underscore do not build properly. See [#336](https://github.com/retypeapp/retype/issues/336).
 - [x] Broken link to same page when `generator.trailingSlash` is `false`.
 +++
 
