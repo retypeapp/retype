@@ -27,7 +27,7 @@ links:
 
   - text: Retype Pro
     link: /pro/pro.md
-    icon: star
+    icon: heart
 
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
