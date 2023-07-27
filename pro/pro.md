@@ -44,16 +44,17 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 ## Please summarize how the licensing works?
 
 - [x] Retype Pro and Retype Enterprise require a license key
-- [x] With a license key, extra functionality is enabled
+- [x] With a license key, extra Pro only functionality is enabled
 - [x] All keys include free version upgrades
 - [x] After purchasing, your license key will be emailed to you
+- [x] See table below for details:
 
 {.compact}
 License | Key required | Free upgrades | Valid for | Max Pages
 -- | -- | -- | -- | --
 Retype | No | Yes | Any domain name or subdomain name | 100
-Retype Pro | Yes | 3 years | One domain name OR one subdomain name | 1000
-Retype Enterprise | Yes | 1 Year | One domain name AND all subdomains names | 1000
+Retype Pro | Yes | 3 years | One domain name OR one subdomain | 1000
+Retype Enterprise | Yes | 1 Year | One domain name AND all subdomains | 1000
 
 !!!
 As your license key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your license key is not [renewed](#what-happens-when-the-key-expires).
@@ -87,7 +88,7 @@ The `url` can be a domain name or subdomain name.
 
 With Retype Pro, a license key is registered to one domain name or subdomain name, for example, `example.com` or `docs.example.com`.
 
-With Retype Enterprise, a license key is registered to one domain and AND all subdomain names, for example, `example.com` and `*.example.com`.
+With Retype Enterprise, a license key is registered to one domain and AND all subdomains of the domain, for example, `example.com` and `*.example.com`.
 
 Each subdomain name counts as one unique URL, except the `www` subdomain. Both `example.com` and `www.example.com` are treated as one URL by Retype.
 
