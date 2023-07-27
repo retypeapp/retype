@@ -13,9 +13,9 @@ Build more pages and unlock powerful Retype Pro only features.
 &nbsp; | Retype | Retype Pro
 --- | --- | ---
 [!badge text="NEW" variant="info"] Pricing | Free | $50
-Max pages per project [:icon-question:](#what-is-considered-a-project) | 100 | 1000
+Max pages per project [:icon-question:](#what-is-a-project) | 100 | 1000
 Projects per License [:icon-question:](#what-if-i-have-more-than-one-pro-project) | -- | 1
-Authors, Users, or Developers [:icon-question:](#we-have-5-people-on-our-team-writing-content-and-using-retype-do-we-require-5-licenses) | Unlimited | Unlimited
+Authors, Users, or Developers [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | Unlimited | Unlimited
 [!badge text="NEW" variant="info"] Free upgrades | :white_check_mark: | :white_check_mark: (3 years)
 Commercial and open source use | :white_check_mark: | :white_check_mark:
 Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark:
@@ -48,17 +48,23 @@ No. A Retype Pro license key will unlock functionality within the same `retypeap
 
 Adding the license key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
-## What is considered a project?
+## What is a project?
 
-One project is one website with a unique URL.
+Each **retype.yml** file used by Retype to generate a website is considered a project.
 
-Each subdomain counts as one unique URL, except the `www` sub-domain. Both `example.com` and `www.example.com` are treated as one URL by Retype.
+Each Retype Pro project requires the [`url`](/configuration/project.md#url) config be set in your project **retype.yml** file.
 
-Each Retype Pro license key will unlock one project.
+With your purchase of a Retype Pro license, a license key is generated and will be registered to your `url`. The `url` can be a domain name or subdomain name. For example, a license key can be registered to `example.com` or `docs.example.com`.
 
-The URL is included inside the license key. You can have any number of instances of the project running on any number of developer machines or servers using the same key, but the key will be limited to building only those Retype Pro projects with a **retype.yml** file where the [`url`](/configuration/project.md#url) is set with the same URL defined in your license key.
+One Retype Pro license key will unlock one project.
 
-The license URL must match the [`url`](/configuration/project.md#url) config value in your project **retype.yml** file.
+!!!
+A [Retype Enterprise](#we-have-requirements-not-covered-by-retype-pro-are-there-other-options) license can unlock both domain names and subdomain names within the same key.
+!!!
+
+Each subdomain name counts as one unique URL, except the `www` subdomain. Both `example.com` and `www.example.com` are treated as one URL by Retype.
+
+The `url` is included inside the license key. You can have any number of instances of the project running on any number of developer machines or servers using the same key, but the key will be limited to building only those Retype Pro projects with a **retype.yml** file where the [`url`](/configuration/project.md#url) is set with the same URL defined in your license key.
 
 ## What if I have more than one Pro project?
 
@@ -70,21 +76,23 @@ Each license is created and managed separately.
 
 ## What if I need to change the location and URL of my project?
 
-No problem. Within the first 90 days, you can change to a different extension or subdomain. Just send a quick email to hello@retype.com with the request. We currently building a system for you to self manage your license keys and will let you know once available.
+No problem. Within the first 90 days, one change to a different extension or subdomain can be made. Just send a quick email to hello@retype.com with the request. 
 
 For example, changing from `example.org` to `example.com` or `example.org` to `docs.example.com` are permitted. Changing from `example.com` to `sample.com` would not be permitted.
 
-This flexibiity gives you lots of time to create your project then decide what domain or subdomain you want to go live with.
+This flexibiity gives you lots of time to create your project then decide what domain name or subdomain name you want to go live with.
 
-After 90 days, we cannot change the URL and purchasing a new key would be required.
+After 90 days, we cannot change the URL associated to your license key and purchasing a new key would be required.
+
+We are currently building a dashboard system to allow self management of license keys and will let you know once available.
 
 !!!
 The Retype license keys are non-revokable, meaning once they are created, there is no way for us or anyone to cancel or revoke the key.
 !!!
 
-## We have 5 people on our team writing content and using Retype. Do we require 5 licenses?
+## We have 5 people on our team, do we require 5 licenses?
 
-No. Retype is licensed per [project](#what-is-considered-a-project) (website), not per person or per server. One Retype Pro instance will cover an unlimited number of content authors or developers using Retype.
+No. Retype is licensed per [project](#what-is-a-project) (website), not per person or per server. One Retype Pro instance will cover an unlimited number of content authors or developers using Retype.
 
 ## What happens when the key expires?
 
@@ -123,8 +131,8 @@ Yes. The license key expiry will be 3 years (36 months) from the date the licens
 
 You could use one key now and save the other for a future project or to renew the original project.
 
-## We have a project with more than 1000 pages, how can we license?
+## We have requirements not covered by Retype Pro, are there other options?
 
-**Retype Enterprise** license options are available. Please send an email to hello@retype.com with the request.
+Yes, **Retype Enterprise** license options are available. Please send an email to hello@retype.com with the request.
 
 {{ include "snippets/contact-us" }}

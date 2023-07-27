@@ -1494,7 +1494,7 @@ The base URL of your website.
 url: example.com
 ```
 
-The `url` can also be a sub-domain.
+The `url` can also be a subdomain.
 
 ```yml
 url: docs.example.com

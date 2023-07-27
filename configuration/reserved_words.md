@@ -51,7 +51,7 @@ Similar to [`/categories`](#categories), you can also add content to the `/tags`
 
 ### CNAME
 
-A **CNAME** file will be automatically created if the [`url`](/configuration/project.md#url) is configured with a domain or sub-domain.
+A **CNAME** file will be automatically created if the [`url`](/configuration/project.md#url) is configured with a domain name or subdomain.
 
 For instance, including `url: docs.example.com` within your **retype.yml** project config file also instructs Retype to create a **CNAME** file with the value `docs.example.com`. That **CNAME** file is used by [GitHub Pages](/guides/github-actions.md) and possibly other website hosting services as the way to configure custom domain name hosting.
 
