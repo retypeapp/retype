@@ -81,7 +81,7 @@ If a change is detected, such as editing and saving an **.md** file, your Retype
 
 #### :icon-server: Host anywhere
 
-Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.
+Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organizations network.
 
 ---
 
