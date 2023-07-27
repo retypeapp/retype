@@ -26,6 +26,19 @@ Supports our friendly and hard working team :icon-people: | :white_check_mark: |
 
 ## :icon-question: Questions & Answers
 
+1. [How long is the license key valid?](#how-long-is-the-license-key-valid)
+1. [If I do not renew, does my website stop working?](#if-i-do-not-renew-does-my-website-stop-working)
+1. [Is Retype Pro a separate product?](#is-retype-pro-a-separate-product)
+1. [What is a project?](#what-is-a-project)
+1. [What if I have more than one Pro project?](#what-if-i-have-more-than-one-pro-project)
+1. [What if I need to change the location and URL of my project?](#what-if-i-need-to-change-the-location-and-url-of-my-project)
+1. [We have 5 people on our team, do we require 5 licenses?](#we-have-5-people-on-our-team-do-we-require-5-licenses)
+1. [What happens when the key expires?](#what-happens-when-the-key-expires)
+1. [Can I purchase two licenses and stack them for a six year term?](#can-i-purchase-two-licenses-and-stack-them-for-a-six-year-term)
+1. [Can I purchase two licenses and save one for future use?](#can-i-purchase-two-licenses-and-save-one-for-future-use)
+1. [We have requirements not covered by Retype Pro, are there other options?](#we-have-requirements-not-covered-by-retype-pro-are-there-other-options)
+1. [Contact us](#contact-us)
+
 ## How long is the license key valid?
 
 Free upgrades are included for three years (36 months).
@@ -44,7 +57,7 @@ If your Retype Pro license expires, you can [purchase](/pro/pro.md) a new licens
 
 ## Is Retype Pro a separate product?
 
-No. A Retype Pro license key will unlock functionality within the same `retypeapp` that you have already installed. A separate installer or product installation is not required.
+No. A Retype Pro license key will unlock functionality within the same `retypeapp` that you have already [installed](/guides/getting-started.md). A separate installer or product installation is not required.
 
 Adding the license key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
