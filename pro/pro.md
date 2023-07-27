@@ -14,7 +14,7 @@ Build more pages and unlock powerful Retype Pro only features.
 --- | :---: | :---: | :---:
 | | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ) | [!button text="Buy" size="l"](https://buy.stripe.com/14k7um9vFe0W1fG8wF)
 Pricing | Free | $50 | $500
-License duration [:icon-question:](#how-long-is-the-license-key-valid) | :icon-infinity: | 3 Years | 1 Year
+License duration [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-infinity: | 3 Years | 1 Year
 Projects [:icon-question:](#what-if-i-have-more-than-one-pro-project) | :icon-infinity: | 1 | :icon-infinity: [:icon-info:](#what-is-a-project)
 Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | 1000
 Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity:
@@ -29,7 +29,6 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 ## :icon-question: Questions & Answers
 
 1. [Please summarize how the licensing works?](#please-summarize-how-the-licensing-works)
-1. [How long is the license key valid?](#how-long-is-the-license-key-valid)
 1. [If I do not renew, does my website stop working?](#if-i-do-not-renew-does-my-website-stop-working)
 1. [Is Retype Pro a separate product?](#is-retype-pro-a-separate-product)
 1. [What is a project?](#what-is-a-project)
@@ -44,26 +43,21 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 
 ## Please summarize how the licensing works?
 
-- Retype Pro and Retype Enterprise require a license key
-- With a license key, extra functionality is enabled
-- A Retype Pro license key is registered to one domain name OR subdomain name
-- A Retype Enterprise license key is registerd one domain AND all subdomain names
-- All keys include free version upgrades
-- For Retype Pro, 3 years of upgrades are included
-- For Retype Enterprise, 1 year of upgrades are included
-- After purchasing, your license key will be emailed to you
+- [x] Retype Pro and Retype Enterprise require a license key
+- [x] With a license key, extra functionality is enabled
+- [x] All keys include free version upgrades
+- [x] After purchasing, your license key will be emailed to you
 
-## How long is the license key valid?
+{.compact}
+License | Key&nbsp;required | Free&nbsp;upgrades | Valid for | Max&nbsp;Pages
+-- | -- | -- | -- | --
+Retype | No | Yes | Any domain name or subdomain name | 100
+Retype Pro | Yes | 3 years | One domain name OR one subdomain name | 1000
+Retype Enterprise | Yes | 1 Year | One domain name AND all subdomains names | 1000
 
-License | License Key required? | Free upgrades
--- | -- | --
-Retype | No | --
-Retype Pro | Yes | 3 years
-Retype Enterprise | Yes | 1 Year
-
-For **Retype Pro** and **Retype Enterprise**, free upgrades are included for the license key duration.
-
-As your license key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even after the license key [expires](#what-happens-when-the-key-expires).
+!!!
+As your license key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your license key is not [renewed](#what-happens-when-the-key-expires).
+!!!
 
 ## If I do not renew, does my website stop working?
 
