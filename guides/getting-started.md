@@ -128,7 +128,7 @@ dotnet tool install retypeapp --global
 ```
 +++
 
-OS                                    | Version                 | Architectures     | { class="compact" }
+OS                                    | Version                 | Architectures     | {.compact}
 --------------------------------------|-------------------------|-------------------|
 [macOS][macOS]                        | 10.15+                  | x64, Arm64        |
 
@@ -154,7 +154,7 @@ dotnet tool install retypeapp --global
 ```
 +++
 
-OS                                    | Version                 | Architectures     | { class="compact" }
+OS                                    | Version                 | Architectures     | {.compact}
 --------------------------------------|-------------------------|-------------------|
 [Windows 10 Client][Windows-client]   | Version 1607+           | x64, x86, Arm64   |
 [Windows 11][Windows-client]          | Version 22000+          | x64, x86, Arm64   |
@@ -185,7 +185,7 @@ dotnet tool install retypeapp --global
 ```
 +++
 
-OS                                    | Version               | Architectures     | { class="compact" }
+OS                                    | Version               | Architectures     | {.compact}
 --------------------------------------|-----------------------|-------------------|
 [Alpine Linux][Alpine]                | 3.15+                 | x64, Arm64, Arm32 |
 [CentOS Linux][CentOS]                | 7                     | x64               |

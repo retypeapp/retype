@@ -906,7 +906,7 @@ locale: fr
 
 ### Supported Languages
 
-Code | Language | Native name {class="compact"}
+Code | Language | Native name {.compact}
 ---  | --- | ---
 `ar` | Arabic | العربية
 `da` | Danish | Dansk
