@@ -49,7 +49,7 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 - [x] After purchasing, your license key will be emailed to you
 
 {.compact}
-License | Key&nbsp;required | Free&nbsp;upgrades | Valid for | Max&nbsp;Pages
+License | Key required | Free upgrades | Valid for | Max Pages
 -- | -- | -- | -- | --
 Retype | No | Yes | Any domain name or subdomain name | 100
 Retype Pro | Yes | 3 years | One domain name OR one subdomain name | 1000
