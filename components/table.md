@@ -70,7 +70,23 @@ Item 1 | Blue
 Item 2 | Green
 ```
 
-Name   | Value { class="compact" }
+Name   | Value {.compact}
+---    | ---
+Item 1 | Blue
+Item 2 | Green
+
+The `compact` class can also be applied to the table using the following technique:
+
+```md
+{.compact}
+Name   | Value
+---    | ---
+Item 1 | Blue
+Item 2 | Green
+```
+
+{.compact}
+Name   | Value
 ---    | ---
 Item 1 | Blue
 Item 2 | Green
