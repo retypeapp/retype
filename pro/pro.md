@@ -22,7 +22,7 @@ Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding |
 [!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :no_entry_sign: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :no_entry_sign: | :white_check_mark:
 Supports our friendly and hard working team :icon-people: | :white_check_mark: | :white_check_mark:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy&nbsp;Pro" icon="heart" size="l" corners="pill"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ)
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy&nbsp;Pro" size="l" corners="pill"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ)
 
 ## :icon-question: Questions & Answers
 
@@ -89,7 +89,7 @@ Each license is created and managed separately.
 
 ## What if I need to change the location and URL of my project?
 
-No problem. Within the first 90 days, one change to a different extension or subdomain can be made. Just send a quick email to hello@retype.com with the request. 
+No problem. Within the first 90 days, one change to a different extension or subdomain can be made. Just send a quick email to hello@retype.com with the request.
 
 For example, changing from `example.org` to `example.com` or `example.org` to `docs.example.com` are permitted. Changing from `example.com` to `sample.com` would not be permitted.
 
