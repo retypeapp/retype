@@ -9,6 +9,9 @@ outbound:
     - retype.com
     - buy.stripe.com
 
+generator:
+  paths: root
+
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
