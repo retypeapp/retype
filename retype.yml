@@ -4,14 +4,6 @@ url: retype.com
 
 poweredByRetype: true
 
-outbound:
-  exclude:
-    - retype.com
-    - buy.stripe.com
-
-generator:
-  paths: root
-
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
@@ -19,6 +11,14 @@ branding:
 
 meta:
   title: " - Generate, publish, and share documentation"
+
+outbound:
+  exclude:
+    - retype.com
+    - buy.stripe.com
+
+generator:
+  paths: root
 
 edit:
   repo: github.com/retypeapp/retype
@@ -48,6 +48,7 @@ footer:
     - text: About
       link: about.md
       icon: question
+
     - text: License
       link: license.md
       icon: shield-check

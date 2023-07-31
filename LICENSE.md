@@ -6,7 +6,7 @@ layout: page
 
 #### Version 3.1.0
 
-THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN OBJECT.NET, INC. ("We," "Us")
+THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN RETYPE, INC. ("We," "Us")
 AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",
 "Your") IN RELATION TO THE RETYPE SOFTWARE LIBRARY(IES) (THE "Software"), IN BOTH SOURCE AND OBJECT
 CODE FORM, AND/OR ALL RELATED MATERIALS.
@@ -112,7 +112,7 @@ connection with the Software.
 You may not redistribute the Software or Modifications other than by including the Software or a
 portion thereof within Your Application. You may not redistribute the Software or Modifications as
 part of any Application that can be described as a development toolkit or library, an application
-builder, a website builder or any Application that is intended for use by software, application, or
+builder, a website builder, or any Application that is intended for use by software, application, or
 website developers or designers. You may not redistribute any part of the Software documentation.
 You may not change or remove the copyright notice from any of the files included in the Software or
 Modifications.
