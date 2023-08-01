@@ -10,7 +10,7 @@ Take your projects to the next level with Retype Pro and Enterprise licensing.
 Build more pages and unlock powerful Retype Pro only features.
 :::
 
-&nbsp; | Retype | Pro | Enterprise
+&nbsp; | Free | Pro | Enterprise
 --- | :---: | :---: | :---:
 | | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ) | [!button text="Buy" size="l"](https://buy.stripe.com/14k7um9vFe0W1fG8wF)
 Pricing | Free | $50 | $500
@@ -24,6 +24,7 @@ Free upgrades | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :no_entry_sign: | :white_check_mark: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :no_entry_sign: | :white_check_mark: | :white_check_mark:
+Future Pro only features | :no_entry_sign: | :white_check_mark: | :white_check_mark:
 Supports our friendly and hard working team :icon-smiley: | :white_check_mark: | :white_check_mark: | :white_check_mark:
 
 ## :icon-question: Questions & Answers
@@ -46,7 +47,7 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 - [x] Retype is free to use for both commercial and open-source projects
 - [x] Retype Pro and Enterprise include extra  functionality
 - [x] Retype Pro and Retype Enterprise require a license key
-- [x] All keys include free version upgrades
+- [x] All license keys include free version upgrades
 - [x] After purchasing, your license key will be emailed to you
 - [x] See table below for details:
 
