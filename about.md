@@ -30,4 +30,6 @@ Retype is only made possible because of the hard work of other amazing open-sour
 
 Please see the Retype [LICENSE](LICENSE.md).
 
+## Contact us
+
 {{ include "snippets/contact-us" }}

@@ -43,8 +43,9 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 
 ## Please summarize how the licensing works?
 
+- [x] Retype is free to use for both commercial and open-source projects
+- [x] Retype Pro and Enterprise include extra  functionality
 - [x] Retype Pro and Retype Enterprise require a license key
-- [x] With a license key, extra Pro only functionality is enabled
 - [x] All keys include free version upgrades
 - [x] After purchasing, your license key will be emailed to you
 - [x] See table below for details:
@@ -76,9 +77,9 @@ No. A Retype Pro license key will unlock functionality within the same `retypeap
 
 Adding the license key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
-## What is a project?
+## What is a Project?
 
-Each **retype.yml** file used by Retype to generate a website is considered a project.
+Each **retype.yml** file used by Retype to generate a website is considered a Project.
 
 Each project requires the [`url`](/configuration/project.md#url) config be set in your project **retype.yml** file.
 
@@ -166,5 +167,7 @@ You could use one key now and save the other for a future project or to renew th
 ## We have other license requirements, are there other options?
 
 Yes, the Retype licensing is very flexible and custom licensing is possible. Please send an email to hello@retype.com with your requirements.
+
+## Contact us
 
 {{ include "snippets/contact-us" }}
