@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744315952091">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744317289557">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -36,15 +36,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.1.0.744315952091" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.1.0.744317289557" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.1.0.744315952091" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.1.0.744317289557" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.1.0.744315952091" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.1.0.744315952091" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.1.0.744317289557" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.1.0.744317289557" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.1.0.744315952091" rel="stylesheet">
+    <link href="/static/styles.css?v=3.1.0.744317289557" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -835,6 +835,15 @@ Helps to ensure a loaded page refers to the most recent JavaScript and CSS resou
 <pre class="language-yaml"><code v-pre class="language-yaml">generator:
   directoryIndex:
     append: true # default is false</code></pre>
+</doc-codeblock></div>
+<p>Using <code v-pre>append: true</code> in combination with the <doc-anchor-trigger to="#preload"><code v-pre>search.preload</code></doc-anchor-trigger> config allows for offline file system browsing of your generated website without having to install Retype and start a web server using <a href="/guides/cli/#retype-start"><code v-pre>retype start</code></a>. The following sample demonstrates how to configure:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="directoryindexname">
@@ -1988,6 +1997,15 @@ host: docs.example.com/js/plausible.js</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">search:
   preload: true # Default is false</code></pre>
+</doc-codeblock></div>
+<p>Using <code v-pre>preload: true</code> in combination with the <doc-anchor-trigger to="#directoryindexappend"><code v-pre>generator.directoryIndex.append</code></doc-anchor-trigger> config allows for offline file system browsing of your generated website without having to install Retype and start a web server using <a href="/guides/cli/#retype-start"><code v-pre>retype start</code></a>. The following sample demonstrates how to configure:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="serve">
