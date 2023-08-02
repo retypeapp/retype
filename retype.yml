@@ -10,7 +10,7 @@ branding:
   label: v3.1
 
 meta:
-  title: " - Generate, publish, and share documentation"
+  title: " - Documentation Generator"
 
 outbound:
   exclude:

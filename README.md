@@ -8,7 +8,8 @@ icon: home
 
 [Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: static website generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
 
-> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there” – jonnyfeelgood
+{.callout}
+> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there” *- jonnyfeelgood*
 
 No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
