@@ -13,6 +13,9 @@ icon: home
 
 No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
+{.callout}
+> “I don't want to write code to write docs, I just want to write docs.” *- rab-dev*
+
 The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
 
 A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
