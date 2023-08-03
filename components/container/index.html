@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744326249051">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744355891991">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.1.0.744326249051" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.1.0.744355891991" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.1.0.744326249051" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.1.0.744355891991" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.1.0.744326249051" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.1.0.744326249051" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.1.0.744355891991" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.1.0.744355891991" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.1.0.744326249051" rel="stylesheet">
+    <link href="/static/styles.css?v=3.1.0.744355891991" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -269,17 +269,17 @@
 This text is inside a Container component.
 :::</code></pre>
 </doc-codeblock></div>
-<p>The difference is in the generated HTML. The above line of text is now created within a new <code v-pre>&lt;div&gt;</code> element:</p>
+<p>The difference is in the generated <abbr title="Hyper Text Markup Language">HTML</abbr>. The above line of text is now created within a new <code v-pre>&lt;div&gt;</code> element:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;div&gt;
     &lt;p&gt;This text is inside a Container component.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="custom-css-class">
+<doc-anchor-target id="custom--class">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-css-class">#</doc-anchor-trigger>
-        <span>Custom CSS class</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom--class">#</doc-anchor-trigger>
+        <span>Custom <abbr title="Cascading Style Sheet">CSS</abbr> class</span>
     </h2>
 </doc-anchor-target>
 <p>The power of the Container component is how custom styling can be applied to the <code v-pre>&lt;div&gt;</code> container.</p>
@@ -296,7 +296,7 @@ This text is inside a Container component.
 </style>
 <div class="sample"><p>This text is wrapped in a Container component and has a custom css <code v-pre>class</code> applied.</p>
 </div>
-<p>The above Container is configured by assigning the <code v-pre>:::sample</code> class to the opening of Container, and then defining an inline CSS class.</p>
+<p>The above Container is configured by assigning the <code v-pre>:::sample</code> class to the opening of Container, and then defining an inline <abbr title="Cascading Style Sheet">CSS</abbr> class.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">&lt;style&gt;
     .sample {
@@ -329,7 +329,7 @@ This text is wrapped in a Container component and has a custom css `class` appli
 This Container has a custom `id` attribute.
 :::</code></pre>
 </doc-codeblock></div>
-<p>The generated HTML would be:</p>
+<p>The generated <abbr title="Hyper Text Markup Language">HTML</abbr> would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;div id=&quot;container1&quot; class=&quot;sample&quot;&gt;
     &lt;p&gt;This Container has a custom &lt;code&gt;id&lt;/code&gt; attribute.&lt;/p&gt;
@@ -374,7 +374,7 @@ This Container uses the `sample` class.
         <span>Global .css file</span>
     </h3>
 </doc-anchor-target>
-<p>Since the <strong>_includes/head.html</strong> can contain any custom HTML, you could also move your CSS into a separate <strong>.css</strong> file that is included on all pages of your generated website.</p>
+<p>Since the <strong>_includes/head.html</strong> can contain any custom <abbr title="Hyper Text Markup Language">HTML</abbr>, you could also move your <abbr title="Cascading Style Sheet">CSS</abbr> into a separate **.css** file that is included on all pages of your generated website.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/_includes/head.html</div>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;link href=&quot;/static/custom.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
@@ -404,7 +404,7 @@ This Container uses the `sample` class.
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Retype does not validate any of the custom HTML added to the <strong>_includes/head.html</strong>. It is up to you to ensure this HTML is correct and does not interfere or break anything within the website.</p>
+<p>Retype does not validate any of the custom <abbr title="Hyper Text Markup Language">HTML</abbr> added to the <strong>_includes/head.html</strong>. It is up to you to ensure this <abbr title="Hyper Text Markup Language">HTML</abbr> is correct and does not interfere or break anything within the website.</p>
         </div>
     </div>
 </div>
