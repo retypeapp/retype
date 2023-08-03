@@ -2,7 +2,7 @@
 icon: code-square
 tags: [component]
 ---
-# Code block
+# Code Block
 
 Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.
 
@@ -48,12 +48,12 @@ Retype includes the functionality to set a title on your markdown code blocks.
 
 +++ :icon-code: Source
 ~~~
-``` Code block title
+``` Code Block title
 const msg = "Set a code block title";
 ```
 ~~~
 +++ :icon-play: Demo
-``` Code block title
+``` Code Block title
 const msg = "Set a code block title";
 ```
 +++
@@ -62,19 +62,19 @@ The title can be used in conjunction with the code reference type.
 
 +++ :icon-code: Source
 ~~~
-```js Code block title
+```js Code Block title
 const msg = "Set a code block title";
 ```
 ~~~
 +++ :icon-play: Demo
-```js Code block title
+```js Code Block title
 const msg = "Set a code block title";
 ```
 +++
 
-The `title` should be separated from the opening fence by one space, for example the pattern `` ``` Code block title`` is recommended.
+The `title` should be separated from the opening fence by one space, for example the pattern `` ``` Code Block title`` is recommended.
 
-If a code language is used, separate the `title` from the `lang` by one space. The pattern `` ```js Code block title`` will work as expected.
+If a code language is used, separate the `title` from the `lang` by one space. The pattern `` ```js Code Block title`` will work as expected.
 
 ---
 
