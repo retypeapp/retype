@@ -5,6 +5,10 @@ visibility: hidden
 
 Thank you so much for purchasing **Retype Pro**. We really appreciate your support.
 
+!!!danger
+Please check your Spam folder for emails.
+!!!
+
 ## Next steps
 
 1. Did you receive your email receipt? If no, please [let us know](mailto:hello@retype.com).
