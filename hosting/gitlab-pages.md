@@ -70,7 +70,7 @@ Commit the **.gitlab-ci.yml** file and push to the repo.
 
 If the project requires a Retype License Key,
 that key can be configured as an ENV:var by adding a `RETYPE_SECRET` secret to the repository.
-doing so by adding a variable to `https://gitlab.com/[user]/[project]/-/settings/ci_cd`
+Doing so by adding a variable to `https://gitlab.com/[user]/[project]/-/settings/ci_cd`
 Variable type must be **standard**, its also adviced to mask and protect the variable.
 
 ---
