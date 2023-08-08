@@ -1,6 +1,5 @@
 ---
-icon: container
-order: 90
+icon: /static/logos/docker.svg
 tags:
   - guide
   - hosting
