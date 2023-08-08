@@ -47,7 +47,9 @@ before_script:
 ```
 
 `pages` will be triggerd by the deploy stage.
+
 `--secret $RETYPE_SECRET ` is optional more on that here [RETYPE_SECRET].
+
 the `only: main` argument make sure the rebuild is only triggered if commit new code is commited to the main branch.
 
 ```yml
