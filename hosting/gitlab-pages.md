@@ -48,7 +48,7 @@ before_script:
 
 `pages` will be triggerd by the deploy stage.
 
-`--secret $RETYPE_SECRET ` is optional more on that here [RETYPE_SECRET].
+`--secret $RETYPE_SECRET ` is optional.
 
 the `only: main` argument make sure the rebuild is only triggered if commit new code is commited to the main branch.
 
@@ -66,7 +66,7 @@ pages:
 
 Commit the **.gitlab-ci.yml** file and push to the repo.
 
-### RETYPE_SECRET
+## RETYPE_SECRET
 
 If the project requires a Retype License Key,
 that key can be configured as an ENV:var by adding a `RETYPE_SECRET` secret to the repository.
