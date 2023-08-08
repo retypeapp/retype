@@ -10,7 +10,7 @@ Take your projects to the next level with Retype Pro and Enterprise licensing.
 Build more pages and unlock powerful Retype Pro only features.
 :::
 
-&nbsp; | Retype | Pro | Enterprise
+&nbsp; | Free | Pro | Enterprise
 --- | :---: | :---: | :---:
 | | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ) | [!button text="Buy" size="l"](https://buy.stripe.com/14k7um9vFe0W1fG8wF)
 Pricing | Free | $50 | $500
@@ -24,6 +24,7 @@ Free upgrades | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :no_entry_sign: | :white_check_mark: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :no_entry_sign: | :white_check_mark: | :white_check_mark:
 [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :no_entry_sign: | :white_check_mark: | :white_check_mark:
+Future Pro only features | :no_entry_sign: | :white_check_mark: | :white_check_mark:
 Supports our friendly and hard working team :icon-smiley: | :white_check_mark: | :white_check_mark: | :white_check_mark:
 
 ## :icon-question: Questions & Answers
@@ -43,9 +44,10 @@ Supports our friendly and hard working team :icon-smiley: | :white_check_mark: |
 
 ## Please summarize how the licensing works?
 
+- [x] Retype is free to use for both commercial and open-source projects
+- [x] Retype Pro and Enterprise include extra  functionality
 - [x] Retype Pro and Retype Enterprise require a license key
-- [x] With a license key, extra Pro only functionality is enabled
-- [x] All keys include free version upgrades
+- [x] All license keys include free version upgrades
 - [x] After purchasing, your license key will be emailed to you
 - [x] See table below for details:
 
@@ -76,9 +78,9 @@ No. A Retype Pro license key will unlock functionality within the same `retypeap
 
 Adding the license key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
-## What is a project?
+## What is a Project?
 
-Each **retype.yml** file used by Retype to generate a website is considered a project.
+Each **retype.yml** file used by Retype to generate a website is considered a Project.
 
 Each project requires the [`url`](/configuration/project.md#url) config be set in your project **retype.yml** file.
 
@@ -166,5 +168,7 @@ You could use one key now and save the other for a future project or to renew th
 ## We have other license requirements, are there other options?
 
 Yes, the Retype licensing is very flexible and custom licensing is possible. Please send an email to hello@retype.com with your requirements.
+
+## Contact us
 
 {{ include "snippets/contact-us" }}

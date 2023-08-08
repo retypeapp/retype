@@ -2,7 +2,7 @@
 icon: link
 tags: [component]
 ---
-# Reference link
+# Reference Link
 
 A special type of reference link can be configured by using the `!ref` specifier in a link.
 
@@ -28,7 +28,7 @@ The text of the link can be explicitly set by passing as the first part of the c
 
 Clicking anywhere within the reference link component will navigate to that new page.
 
-From a functionality perspective, there is no difference betwen a `!ref` component and a regular hyperlink. The difference between the two is just how they are presented, with a Reference link component being more prominent than a regular hyperlink.
+From a functionality perspective, there is no difference betwen a `!ref` component and a regular hyperlink. The difference between the two is just how they are presented, with a Reference Link component being more prominent than a regular hyperlink.
 
 ---
 

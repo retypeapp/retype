@@ -2,7 +2,7 @@
 icon: download
 tags: [component]
 ---
-# File download
+# File Download
 
 A static file download component can be configured by using the `!file` specifier in a link.
 

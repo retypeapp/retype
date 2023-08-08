@@ -4,6 +4,14 @@ url: retype.com
 
 poweredByRetype: true
 
+branding:
+  logo: /static/retype-logo.svg
+  logoDark: /static/retype-logo-dark.svg
+  label: v3.1
+
+meta:
+  title: " - Write on! with Retype"
+
 outbound:
   exclude:
     - retype.com
@@ -11,14 +19,6 @@ outbound:
 
 generator:
   paths: root
-
-branding:
-  logo: /static/retype-logo.svg
-  logoDark: /static/retype-logo-dark.svg
-  label: v3.1
-
-meta:
-  title: " - Generate, publish, and share documentation"
 
 edit:
   repo: github.com/retypeapp/retype
@@ -48,6 +48,7 @@ footer:
     - text: About
       link: about.md
       icon: question
+
     - text: License
       link: license.md
       icon: shield-check

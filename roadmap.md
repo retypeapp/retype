@@ -407,7 +407,7 @@ Released: 2021-03-12
 - [x] [`retype start`](/guides/cli.md#retype-start) command.
 - [x] Live Reload when using [`retype start`](/guides/cli.md#retype-start).
 - [x] [**.yml**](/configuration/page.md#separate-yml-file) option for Page or Folder configs.
-- [x] Code block [title](/components/code-block.md#title).
+- [x] Code Block [title](/components/code-block.md#title).
 - [x] [line numbering](/components/code-block.md#line-numbers) in code blocks.
 +++
 

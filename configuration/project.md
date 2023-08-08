@@ -458,6 +458,18 @@ generator:
   directoryIndex:
     append: true # default is false
 ```
+
+Using `append: true` in combination with the [`search.preload`](#preload) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+
+```yml
+search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true
+```
+
 ===
 
 ### directoryIndex.name
@@ -1243,6 +1255,17 @@ Specifies if the search index should be preloaded. Default is `false`.
 ```yml
 search:
   preload: true # Default is false
+```
+
+Using `preload: true` in combination with the [`generator.directoryIndex.append`](#directoryindexappend) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+
+```yml
+search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true
 ```
 ===
 
