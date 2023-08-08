@@ -21,7 +21,6 @@ image: node:latest
 
 before_script:
   - npm install retypeapp --global
-  - retype build --secret $RETYPE_SECRET
 
 stages:
   - deploy
@@ -29,7 +28,7 @@ stages:
 pages:
   stage: deploy
   script:
-  - retype build --output public
+  - retype build --secret $RETYPE_SECRET --output public
   artifacts:
     paths:
     - public/
@@ -38,14 +37,13 @@ pages:
 
 ```
 Gitlab will use the latest available **node** image from the Gitlab Registry and Download, install the latest version of `retype` via ***npm***.
-`- retype build --secret $RETYPE_SECRET ` is optional.
+`--secret $RETYPE_SECRET ` is optional more on that [RETYPE_SECRET]
 
 ```yml
 image: node:latest
 
 before_script:
   - npm install retypeapp --global
-  - retype build --secret $RETYPE_SECRET 
 ```
 
 `pages` will be triggerd by the deploy stage.
@@ -68,7 +66,7 @@ Commit your **.gitlab-ci.yml** file and push to your repo.
 ### RETYPE_SECRET
 
 If your project requires a Retype License Key,
-that key can be configured by adding a `RETYPE_SECRET` secret to your repository.
+that key can be configured as an ENV:var by adding a `RETYPE_SECRET` secret to your repository.
 doing so by adding a variable to `https://gitlab.com/[user]/[project]/-/settings/ci_cd`
 Variable type must be **standard**, its also adviced to mask and protect the variable.
 
