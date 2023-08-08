@@ -1,5 +1,5 @@
 ---
-icon: globe
+icon: /static/logos/netlify.svg
 tags:
   - guide
   - hosting
