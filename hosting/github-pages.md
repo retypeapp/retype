@@ -3,7 +3,6 @@ icon: mark-github
 tags:
   - guide
   - hosting
-order: 100
 ---
 # GitHub Pages
 
