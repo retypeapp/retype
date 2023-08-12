@@ -20,7 +20,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 
 ---
 
-## Variants
+## Variant
 
 ```md
 [!button variant="primary" text="Primary"]

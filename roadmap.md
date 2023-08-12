@@ -180,7 +180,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 - [x] Content templating.
 - [x] [Disable](/configuration/page.md#templating) templating on a page.
 - [x] Line [highlighting](/components/code-block.md#line-highlighting) in code blocks.
-- [x] `ghost` variant on [Button](/components/button.md#variants), [Badge](/components/badge.md#variants), and [Alert](/components/alert.md#variants).
+- [x] `ghost` variant on [Button](/components/button.md#variant), [Badge](/components/badge.md#variant), and [Alert](/components/alert.md#variant).
 - [x] Custom site-wide includes for `<head>`, `<body>`, `top.md`, and `bottom.md`.
 - [x] Support for custom generic attributes on Markdown components.
 - [x] Support for adding images above the top `h1` page heading.

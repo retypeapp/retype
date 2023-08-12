@@ -48,7 +48,7 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
 
 ---
 
-## Variants
+## Variant
 
 Alerts come in nine different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
 

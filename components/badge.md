@@ -30,7 +30,7 @@ With the Badge component, the destination is optional and can be omitted.
 
 ---
 
-## Variants
+## Variant
 
 ```md
 [!badge variant="primary" text="Primary"]
