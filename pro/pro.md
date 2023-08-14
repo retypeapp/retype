@@ -12,8 +12,8 @@ Build more pages and unlock powerful Retype Pro only features.
 
 &nbsp; | Free | Pro | Enterprise
 --- | :---: | :---: | :---:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/dR6dSKfU38GC4rSbIQ) | [!button text="Buy" size="l"](https://buy.stripe.com/14k7um9vFe0W1fG8wF)
-Pricing | Free | $50 | $500
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/5kAbKC23daOK3nObIS) | [!button text="Buy" size="l"](https://buy.stripe.com/14k7um9vFe0W1fG8wF)
+Pricing | Free | $99 | $500
 License duration [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-infinity: | 3 Years | 1 Year
 Projects [:icon-question:](#what-if-i-have-more-than-one-pro-project) | :icon-infinity: | 1 | :icon-infinity: [:icon-info:](#what-is-a-project)
 Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | 1000
