@@ -300,7 +300,7 @@ Point to a custom branch within the repo. Default is `main`.
 ```yml
 edit:
   repo: "https://github.com/your-organization/your-repo"
-  branch: website
+  branch: master
 ```
 ===
 
