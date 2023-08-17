@@ -108,13 +108,13 @@ Retype Enterprise licenses can be purchased to unlock an entire domain name and 
 
 ## What if I need to change the location and URL of my project?
 
-No problem. Within the first 90 days, one change to a different extension or subdomain can be made to a Retype Pro license. Just send a quick email to hello@retype.com with the request.
+No problem. Within the first 30 days, one change to a different extension or subdomain can be made to a Retype Pro license. Just send a quick email to hello@retype.com with the request.
 
 For example, changing from `example.org` to `example.com` or `example.org` to `docs.example.com` are permitted. Changing from `example.com` to `sample.com` would not be permitted.
 
 This flexibiity gives you lots of time to create your project then decide what domain name or subdomain name you want to go live with.
 
-After 90 days, we cannot change the URL associated to your license key and purchasing a new key would be required.
+After 30 days, we cannot change the URL associated to your license key and purchasing a new key would be required.
 
 We are currently building a dashboard system to allow self management of license keys and will let you know once available.
 
