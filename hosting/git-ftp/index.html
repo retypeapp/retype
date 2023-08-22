@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.745617211164">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.746019071950">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.1.0.745617211164" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.1.0.746019071950" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.1.0.745617211164" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.1.0.746019071950" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.1.0.745617211164" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.1.0.745617211164" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.1.0.746019071950" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.1.0.746019071950" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.1.0.745617211164" rel="stylesheet">
+    <link href="/static/styles.css?v=3.1.0.746019071950" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -261,8 +261,8 @@
 <p>Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website to any FTP host.</p>
 <p>Two Retype GitHub actions will be involved in the process of sync+deploy:</p>
 <ol>
-<li>Retype <a href="https://github.com/retypeapp/action-build" class="outbound" target="_blank"><span>Build Action</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
-<li>Retype <a href="https://github.com/retypeapp/action-git-ftp" class="outbound" target="_blank"><span>git-ftp Action</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+<li>Retype <a href="https://github.com/retypeapp/action-build">Build Action</a></li>
+<li>Retype <a href="https://github.com/retypeapp/action-git-ftp">git-ftp Action</a></li>
 </ol>
 <p>The first, <strong>Build Action</strong> will automatically build your Retype powered website with each new change that is committed.</p>
 <p>The second, <strong>git-ftp Action</strong> will automatically publish your newly built website to the specified FTP host using the provided credentials. In order to optimally sync only changes between builds, it needs to keep a branch (or a directory within a branch) where it would track differences between sync-up events. By default, the <code v-pre>retype</code> branch is used, but of course that is also configurable.</p>
@@ -329,7 +329,7 @@ jobs:
 <li><code v-pre>FTP_USERNAME</code> will contain the login username to the FTP server</li>
 <li><code v-pre>FTP_PASSWORD</code> being probably the most important information to be kept safe in an encrypted secret holds the actual FTP password</li>
 </ul>
-<p>See more about using secrets in actions at <a href="https://docs.github.com/en/actions/reference/encrypted-secrets" class="outbound" target="_blank"><span>the Encrypted Secrets GitHub Docs article</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>See more about using secrets in actions at <a href="https://docs.github.com/en/actions/reference/encrypted-secrets">the Encrypted Secrets GitHub Docs article</a>.</p>
 <hr>
 <doc-anchor-target id="step-3-commit--push-the-file">
     <h2>
@@ -352,7 +352,7 @@ jobs:
         <span>Diving deeper</span>
     </h2>
 </doc-anchor-target>
-<p>Here are some insight on more comprehensive usage of the git-ftp Action. The full documentation on all accepted settings and even more examples is available at <a href="https://github.com/retypeapp/action-git-ftp" class="outbound" target="_blank"><span>the git-ftp action&#x27;s repository</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>Here are some insight on more comprehensive usage of the git-ftp Action. The full documentation on all accepted settings and even more examples is available at <a href="https://github.com/retypeapp/action-git-ftp">the git-ftp action&#x27;s repository</a>.</p>
 <doc-anchor-target id="placing-retype-website-in-a-subdirectory">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#placing-retype-website-in-a-subdirectory">#</doc-anchor-trigger>
@@ -479,7 +479,7 @@ jobs:
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Same branch in different dirs</h5>
-<p>Alternatively to different branch names, it is possible to use <strong>different directories in a same branch</strong>. It is important though, not to nest those directories. See examples about this in the <a href="https://github.com/retypeapp/action-git-ftp" class="outbound" target="_blank"><span>git-ftp Action&#x27;s README</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>Alternatively to different branch names, it is possible to use <strong>different directories in a same branch</strong>. It is important though, not to nest those directories. See examples about this in the <a href="https://github.com/retypeapp/action-git-ftp">git-ftp Action&#x27;s README</a>.</p>
         </div>
     </div>
 </div>
@@ -496,9 +496,9 @@ jobs:
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure Secrets, see <doc-anchor-trigger to="#step-2-configure-secrets">step 2</doc-anchor-trigger>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Commit + push, see <doc-anchor-trigger to="#step-3-commit--push-the-file">step 3</doc-anchor-trigger>.</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Dive deeper with some advanced setup scenarios, see <doc-anchor-trigger to="#diving-deeper">Diving deeper</doc-anchor-trigger>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-build" class="outbound" target="_blank"><span>Build Action</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-git-ftp" class="outbound" target="_blank"><span>git-ftp Action</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-github-pages" class="outbound" target="_blank"><span>GitHub Pages Action</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-build">Build Action</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-git-ftp">git-ftp Action</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-github-pages">GitHub Pages Action</a>.</li>
 </ul>
 <p>All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the <a href="/configuration/project/">Project Configuration</a> options for full details.</p>
 <!-- Add content to _includes/bottom.md to include here -->
