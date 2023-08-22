@@ -4,9 +4,9 @@ label: FAQ
 ---
 # Frequently Asked Questions
 
-## Is Retype free to use?
+## Is Oristella free to use?
 
-Yes, Retype is free to use with both open-source and commercial projects up to 100 pages per project.
+Yes, Oristella is free to use open-source Telegram Group Management Bot.
 
 With [Retype Pro](/pro/pro.md), you get the following additional features:
 
