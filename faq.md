@@ -8,7 +8,7 @@ label: FAQ
 
 Yes, Oristella is free to use open-source Telegram Group Management Bot.
 
-With [Retype Pro](/pro/pro.md), you get the following additional features:
+In [Oristella](https://t.me/dOristellaBot), you will see the following additional features:
 
 1. Up to 1000 pages can be built
 2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
