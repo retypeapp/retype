@@ -16,7 +16,7 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 Released: [2023-08-23](https://github.com/retypeapp/retype/releases/tag/v3.2.0)
 
 +++ New :icon-shield-check:
-- [x] New Description list support
+- [x] New [Description List](/components/list.md#description-list) support
 +++ Improved :icon-thumbsup:
 - [x] Upgrade Octicons icons library from v19.4.0 to v19.5.0
 - [x] Upgrade Octicons icons library from v19.5.0 to v19.6.0

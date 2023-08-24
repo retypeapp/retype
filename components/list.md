@@ -4,7 +4,7 @@ tags: [component]
 ---
 # List
 
-Retype includes broad support for creating lists of items, including [unordered](#unordered-lists) and [ordered](#ordered-lists) lists.
+Retype includes broad support for creating lists of items, including [unordered](#unordered-lists), [ordered](#ordered-lists), and [description](#description-list) lists.
 
 ---
 
@@ -119,3 +119,68 @@ III. Item 3
 !!!
 Uppercase Roman numeral ordered lists are not broadly supported across all web browsers, so the above sample might render as a lowercase Roman numeral list for you. Hopefully, support within the web browsers will improve over time.
 !!!
+
+---
+
+## Description List
+
+A Description List is a way to display terms along with their corresponding definitions or descriptions.
+
+The Description List is commonly used to create a glossary or dictionary where you have a word and its meaning listed together.
+
+### Basic list
+
+```md
+Term 1
+:   Definition 1
+
+Term 2
+:   Definition 2
+
+Term 3
+:   Definition 3
+```
+
+Term 1
+:   Definition 1
+
+Term 2
+:   Definition 2
+
+Term 3
+:   Definition 3
+
+### Include Markdown
+
+```md
+Term 1
+:   Definition 1
+    With a paragraph
+    > This is a block quote
+
+    - Nested item 1
+    - Nested item 2
+
+Term 2
+:   Definition 2
+    This is a paragraph continuing the definition.
+
+    > This is a blockquote inside the definition.
+
+Term 3
+:   Definition 3
+```
+
+Term 1
+:   Definition 1
+    With a paragraph
+    > This is a block quote
+
+    - Nested item 1
+    - Nested item 2
+
+Term 2
+:   Definition 2
+    This is a paragraph continuing the definition.
+
+    > This is a blockquote inside the definition.
