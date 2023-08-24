@@ -64,13 +64,15 @@ A table compact style is possible by applying the `compact` class.
 The compact style reduces the cell padding and text size across the entire table.
 
 ```md
-Name   | Value {.compact}
+{.compact}
+Name   | Value
 ---    | ---
 Item 1 | Blue
 Item 2 | Green
 ```
 
-Name   | Value {.compact}
+{.compact}
+Name   | Value
 ---    | ---
 Item 1 | Blue
 Item 2 | Green
@@ -78,15 +80,13 @@ Item 2 | Green
 The `compact` class can also be applied to the table using the following technique:
 
 ```md
-{.compact}
-Name   | Value
+Name   | Value {.compact}
 ---    | ---
 Item 1 | Blue
 Item 2 | Green
 ```
 
-{.compact}
-Name   | Value
+Name   | Value {.compact}
 ---    | ---
 Item 1 | Blue
 Item 2 | Green

@@ -43,7 +43,8 @@ This is a sample page with a :icon-rocket: icon.
 
 ## Icon list
 
-| Icon | Shortcode | Sample | {.compact}
+{.compact}
+| Icon | Shortcode | Sample |
 | :---: | --- | --- |
 | :icon-accessibility: | accessibility | `:icon-accessibility:` |
 | :icon-accessibility-inset: | accessibility-inset | `:icon-accessibility-inset:` |

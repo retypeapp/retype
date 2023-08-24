@@ -918,7 +918,8 @@ locale: fr
 
 ### Supported Languages
 
-Code | Language | Native name {.compact}
+{.compact}
+Code | Language | Native name
 ---  | --- | ---
 `ar` | Arabic | العربية
 `da` | Danish | Dansk
