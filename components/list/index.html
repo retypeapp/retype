@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746152970974">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746162693922">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.2.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>List - Write on! with Retype</title>
     <meta name="title" content="List - Write on! with Retype">
-    <meta name="description" content="Retype includes broad support for creating lists of items, including unordered and ordered lists.">
+    <meta name="description" content="Retype includes broad support for creating lists of items, including unordered, ordered, and description">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/components/list/">
@@ -24,24 +24,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/components/list/">
     <meta property="og:title" content="List - Write on! with Retype">
-    <meta property="og:description" content="Retype includes broad support for creating lists of items, including unordered and ordered lists.">
+    <meta property="og:description" content="Retype includes broad support for creating lists of items, including unordered, ordered, and description">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/components/list/">
     <meta property="twitter:title" content="List - Write on! with Retype">
-    <meta property="twitter:description" content="Retype includes broad support for creating lists of items, including unordered and ordered lists.">
+    <meta property="twitter:description" content="Retype includes broad support for creating lists of items, including unordered, ordered, and description">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.2.0.746152970974" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.2.0.746162693922" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.2.0.746152970974" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.2.0.746162693922" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.2.0.746152970974" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.2.0.746162693922" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.2.0.746162693922" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.2.0.746152970974" rel="stylesheet">
+    <link href="/static/styles.css?v=3.2.0.746162693922" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -257,7 +258,7 @@
         <span>List</span>
     </h1>
 </doc-anchor-target>
-<p>Retype includes broad support for creating lists of items, including <doc-anchor-trigger to="#unordered-lists">unordered</doc-anchor-trigger> and <doc-anchor-trigger to="#ordered-lists">ordered</doc-anchor-trigger> lists.</p>
+<p>Retype includes broad support for creating lists of items, including <doc-anchor-trigger to="#unordered-lists">unordered</doc-anchor-trigger>, <doc-anchor-trigger to="#ordered-lists">ordered</doc-anchor-trigger>, and <doc-anchor-trigger to="#description-list">description</doc-anchor-trigger> lists.</p>
 <hr>
 <doc-anchor-target id="unordered-lists">
     <h2>
@@ -439,6 +440,85 @@ III. Item 3</code></pre>
         </div>
     </div>
 </div>
+<hr>
+<doc-anchor-target id="description-list">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#description-list">#</doc-anchor-trigger>
+        <span>Description List</span>
+    </h2>
+</doc-anchor-target>
+<p>A Description List is a way to display terms along with their corresponding definitions or descriptions.</p>
+<p>The Description List is commonly used to create a glossary or dictionary where you have a word and its meaning listed together.</p>
+<doc-anchor-target id="basic-list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-list">#</doc-anchor-trigger>
+        <span>Basic list</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">Term 1
+:   Definition 1
+
+Term 2
+:   Definition 2
+
+Term 3
+:   Definition 3</code></pre>
+</doc-codeblock></div>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition 1</dd>
+<dt>Term 2</dt>
+<dd>Definition 2</dd>
+<dt>Term 3</dt>
+<dd>Definition 3</dd>
+</dl>
+<doc-anchor-target id="include-markdown">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#include-markdown">#</doc-anchor-trigger>
+        <span>Include Markdown</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">Term 1
+:   Definition 1
+    With a paragraph
+    &gt; This is a block quote
+
+    - Nested item 1
+    - Nested item 2
+
+Term 2
+:   Definition 2
+    This is a paragraph continuing the definition.
+
+    &gt; This is a blockquote inside the definition.
+
+Term 3
+:   Definition 3</code></pre>
+</doc-codeblock></div>
+<dl>
+<dt>Term 1</dt>
+<dd>
+<p>Definition 1
+With a paragraph</p>
+<blockquote>
+<p>This is a block quote</p>
+</blockquote>
+<ul>
+<li>Nested item 1</li>
+<li>Nested item 2</li>
+</ul>
+</dd>
+<dt>Term 2</dt>
+<dd>
+<p>Definition 2
+This is a paragraph continuing the definition.</p>
+<blockquote>
+<p>This is a blockquote inside the definition.</p>
+</blockquote>
+</dd>
+</dl>
 <!-- Add content to _includes/bottom.md to include here -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
@@ -542,7 +622,7 @@ III. Item 3</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "List", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "List", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     <script data-cfasync="false">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
     <!-- Add content to _includes/body.html to include here -->
