@@ -129,4 +129,4 @@ jobs:
 
 ## Step 2: Configure GitHub Pages
 
-Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, configure your [GitHub Pages](/hosting/github-pages.md#step-2-configure-github-pages) setup.
+Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, configure your [GitHub Pages](/hosting/github-pages.md) web site hosting.
