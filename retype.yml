@@ -7,7 +7,7 @@ poweredByRetype: true
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v3.1
+  label: v3.2
 
 meta:
   title: " - Write on! with Retype"

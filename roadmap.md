@@ -11,7 +11,25 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 ---
 
-## v3.1.0 [!badge text="LATEST" variant="info"]
+## v3.2.0 [!badge text="LATEST" variant="info"]
+
+Released: [2023-08-23](https://github.com/retypeapp/retype/releases/tag/v3.2.0)
+
++++ New :icon-shield-check:
+- [x] New Description list support
++++ Improved :icon-thumbsup:
+- [x] Upgrade Octicons icons library from v19.4.0 to v19.5.0
+- [x] Upgrade Octicons icons library from v19.5.0 to v19.6.0
++++ Fixed :icon-bug:
+- [x] Custom attributes on an image cause Retype to skip handling of component as a figure image
+- [x] Custom css class not being applied correctly to table element
+- [x] Escaping single braces inside inline code within headings
+- [x] Adjust vertical alignment of Badge and Button components when in headings
+- [x] Anchor is removed from `redirect` if set to internal page with anchor
+- [x] Render icon on outbound link only if link contains plain or basic Markdown text, see [#589](https://github.com/retypeapp/retype/issues/589)
++++
+
+## v3.1.0
 
 Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 
