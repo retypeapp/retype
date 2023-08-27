@@ -1,5 +1,5 @@
 ---
-label: "What is Retype?"
+label: "Welcome"
 icon: home
 ---
 ![](/static/retype-hero.png)
