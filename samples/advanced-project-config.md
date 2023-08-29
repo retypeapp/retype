@@ -1,4 +1,5 @@
 ---
+icon: file
 order: 900
 ---
 # Advanced project config

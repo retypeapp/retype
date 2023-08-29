@@ -1,4 +1,5 @@
 ---
+icon: file
 data:
   title: page-with-header.md
   path: _includes/page-with-header.md

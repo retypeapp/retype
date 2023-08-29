@@ -1,4 +1,5 @@
 ---
+icon: file
 order: 1000
 ---
 # Basic project config
