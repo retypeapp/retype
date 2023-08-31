@@ -2,7 +2,18 @@ input: ./
 output: .retype
 url: retype.com
 
+# -------------------
+# Retype Pro features
+# -------------------
+
 poweredByRetype: true
+
+outbound:
+  enabled: true
+  exclude:
+    - retype.com
+
+# -------------------
 
 branding:
   logo: /static/retype-logo.svg
@@ -10,11 +21,7 @@ branding:
   label: v3.2
 
 meta:
-  title: " - Write on! with Retype"
-
-outbound:
-  exclude:
-    - retype.com
+  title: " - Write On! with Retype"
 
 generator:
   paths: root
