@@ -13,7 +13,7 @@ The **retype.yml** file is typically placed in the root of your project, althoug
 !!!
 After making a change to the **retype.yml**, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
 
-If you started the local web server using `retype serve`, you willl need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update. Using the command `retype serve --live` will automatically update all web browsers.
+If you started the local web server using `retype serve`, you will need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update. Using the command `retype serve --live` will automatically update all web browsers.
 !!!
 
 The **retype.yml** file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a **retype.yml** is a good first step.
