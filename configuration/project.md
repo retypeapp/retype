@@ -163,6 +163,75 @@ branding:
 
 ---
 
+## breadcrumb
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+### enabled
+
+To enable or disable the live editor. Default is `true` for Retype Pro projects. 
+
+=== [!badge PRO] enabled : `boolean`
+For Retype Pro projects, breadcrumb navigation will be enabled by default. For non-Pro projects, the breadcrumb navigation is not added to the page.
+
+Set to `false` to disable the breadcrumb navigation project wide.
+
+```yml
+breadcrumb:
+  enabled: false # Default is true for Retype Pro projects
+```
+===
+
+### home
+
+Customization of the "Home" node.
+
+=== [!badge PRO] home : `string` or `boolean`
+
+```yml
+breadcrumb:
+  home: Home # Use a custom label for Home
+```
+
+```yml
+breadcrumb:
+  home: ":icon-home:" # Use an icon for Home
+```
+
+```yml
+breadcrumb:
+  home: ":rocket:" # Use an emoji for Home
+```
+
+The entire first item of the breadcrumb navigation, the "Home" node, can be removed by setting `home: false`. 
+
+```yml
+breadcrumb:
+  home: false # Do not include the Home node
+```
+===
+
+### separator
+
+Customization of the node separators.
+
+=== [!badge PRO] separator : `string`
+
+A custom node separator.
+
+```yml
+breadcrumb:
+  separator: "|" # Use a | as the separator
+```
+
+```yml
+breadcrumb:
+  separator: ":icon-dot:"
+```
+===
+
+---
+
 ## cache
 
 Cache configuration options.
