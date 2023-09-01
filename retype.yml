@@ -1,19 +1,23 @@
-input: ./
-output: .retype
-url: retype.com
-
 # -------------------
-# Retype Pro features
+# Retype Pro
 # -------------------
 
 poweredByRetype: true
 
 outbound:
-  enabled: true
   exclude:
     - retype.com
 
+breadcrumb:
+  home: ":icon-home:"
+
 # -------------------
+# Retype
+# -------------------
+
+input: ./
+output: .retype
+url: retype.com
 
 branding:
   logo: /static/retype-logo.svg
@@ -30,10 +34,6 @@ edit:
   repo: github.com/retypeapp/retype
 
 links:
-  - text: Home
-    link: /README.md
-    icon: home
-
   - text: Retype Pro
     link: /pro/pro.md
     icon: heart
