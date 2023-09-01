@@ -105,7 +105,7 @@ Calling the `retype init` command will create a simple **retype.yml** file with 
 ```yml Sample retype.yml
 input: .
 output: .retype
-url: example.com # Add your website address here
+url: example.com # Add your website here
 branding:
   title: Project Name
   label: Docs
