@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.746862620115">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.746905457025">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.3.0">
@@ -36,15 +36,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.3.0.746862620115" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.3.0.746905457025" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.746862620115" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.746905457025" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.746862620115" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.3.0.746862620115" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.746905457025" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.3.0.746905457025" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.3.0.746862620115" rel="stylesheet">
+    <link href="/static/styles.css?v=3.3.0.746905457025" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -295,7 +295,7 @@
 <div class="codeblock-title">Sample retype.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: .
 output: .retype
-url: example.com # Add your website address here
+url: example.com # Add your website here
 branding:
   title: Project Name
   label: Docs
@@ -305,6 +305,20 @@ links:
 footer:
   copyright: &quot;&amp;copy; Copyright . All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Full retype.yml sample</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/samples/advanced-project-config/</span>
+    </div>
+    <a href="/samples/advanced-project-config/" class="absolute block inset-0"></a>
+</div>
+</p>
 <hr>
 <doc-anchor-target id="branding">
     <h2>
@@ -478,22 +492,24 @@ footer:
 <p>This config is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
+<p>The breadcrumb navigation provides a hierarchical representation of the user&#x27;s location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.</p>
 <doc-anchor-target id="enabled">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<p>To enable or disable the live editor. Default is <code v-pre>true</code> for Retype Pro projects.</p>
+<p>To enable or disable the breadcrumb navigation within Retype Pro projects. Default is <code v-pre>true</code>.</p>
 <doc-panel id="badge-pro-enabled-boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> enabled : <code v-pre>boolean</code></template>
-<p>For Retype Pro projects, breadcrumb navigation will be enabled by default. For non-Pro projects, the breadcrumb navigation is not added to the page.</p>
-<p>Set to <code v-pre>false</code> to disable the breadcrumb navigation project wide.</p>
+<p>For Retype Pro projects, breadcrumb navigation will be enabled by default.</p>
+<p>For Retype projects (non-Pro), the breadcrumb navigation will not be added to any pages.</p>
+<p>To disable the breadcrumb navigation across an entire project, set the <code v-pre>enabled</code> parameter to <code v-pre>false</code> as shown in the following sample:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
-  enabled: false # Default is true for Retype Pro projects</code></pre>
+  enabled: false # Disabled project wide</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="home">
@@ -502,24 +518,28 @@ footer:
         <span>home</span>
     </h3>
 </doc-anchor-target>
-<p>Customization of the &quot;Home&quot; node.</p>
+<p>The <code v-pre>home</code> config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a <code v-pre>string</code> or a <code v-pre>boolean</code> value.</p>
+<p>By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.</p>
 <doc-panel id="badge-pro-home-string-or-boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> home : <code v-pre>string</code> or <code v-pre>boolean</code></template>
+<p>Set with a custom label:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
-  home: Home # Use a custom label for Home</code></pre>
+  home: Home # custom label</code></pre>
 </doc-codeblock></div>
+<p>Use an Octicon <a href="/components/icon/">icon</a> instead of text for the Home node:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
-  home: &quot;:icon-home:&quot; # Use an icon for Home</code></pre>
+  home: &quot;:icon-home:&quot; # icon</code></pre>
 </doc-codeblock></div>
+<p>Use an <a href="/components/emoji/">emoji</a>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
-  home: &quot;:rocket:&quot; # Use an emoji for Home</code></pre>
+  home: &quot;:rocket:&quot; # emoji</code></pre>
 </doc-codeblock></div>
-<p>The entire first item of the breadcrumb navigation, the &quot;Home&quot; node, can be removed by setting <code v-pre>home: false</code>.</p>
+<p>The entire first item of the breadcrumb navigation, the &quot;Home&quot; node, can be removed by setting <code v-pre>home: false</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   home: false # Do not include the Home node</code></pre>
@@ -531,16 +551,17 @@ footer:
         <span>separator</span>
     </h3>
 </doc-anchor-target>
-<p>Customization of the node separators.</p>
+<p>The <code v-pre>separator</code> config allows for the customization of the node separator used between each page label in the breadcrumb navigation.</p>
 <doc-panel id="badge-pro-separator-string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> separator : <code v-pre>string</code></template>
-<p>A custom node separator.</p>
+<p>Using a pipe <code v-pre>|</code> character as the separator:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
-  separator: &quot;|&quot; # Use a | as the separator</code></pre>
+  separator: &quot;|&quot;</code></pre>
 </doc-codeblock></div>
+<p>Using an <a href="/components/icon/">icon</a> as the separator:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   separator: &quot;:icon-dot:&quot;</code></pre>
