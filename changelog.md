@@ -16,7 +16,7 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 Released: [2023-08-31](https://github.com/retypeapp/retype/releases/tag/v3.3.0)
 
 +++ New :icon-shield-check:
-- [x] New [breadcrumb](/configuration/project.md#breadcrumb) navigation component plus [Project](/configuration/project.md#breadcrumb) and [Page](/configuration/page.md#breadcrumb) configs, see [#593](https://github.com/retypeapp/retype/discussions/593)
+- [x] [!badge PRO](/pro/pro.md) New [breadcrumb](/configuration/project.md#breadcrumb) navigation with [Project](/configuration/project.md#breadcrumb) and [Page](/configuration/page.md#breadcrumb) configs, see [#593](https://github.com/retypeapp/retype/discussions/593)
 - [x] New [`list-icon`](/components/list.md#icon-list) css class to simplify creating Retype icon lists, see [#370](https://github.com/retypeapp/retype/discussions/370) and [#603](https://github.com/retypeapp/retype/discussions/603)
 +++ Improved :icon-thumbsup:
 - [x] Update all client libraries
