@@ -167,6 +167,25 @@ author:
 
 ---
 
+## breadcrumb
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+=== [!badge PRO] breadcrumb : `boolean`
+
+The `breadcrumb` config controls whether to include the [breadcrumb](project.md#breadcrumb) navigation on this page. Default is `true`.
+
+Set to `false` to disable the breadcrumb navigation on this page.
+
+```yml
+breadcrumb: false
+```
+
+It is also possible to disable the breadcrumb navigation on all pages within a [folder](folder.md) by setting `breadcrumb: false` in the folderh`index.yml` configuration file or the folder default page, such as `default.md`, `readme.md`, or `index.md`.
+===
+
+---
+
 ## category
 
 !!!
