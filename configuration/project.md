@@ -27,7 +27,7 @@ The following sample demonstrates a common set of project configuration options 
 ```yml Sample retype.yml
 input: .
 output: .retype
-url: example.com # Add your website address here
+url: example.com # Add your website here
 branding:
   title: Project Name
   label: Docs
@@ -37,6 +37,8 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
+
+[!ref Full retype.yml sample](/samples/advanced-project-config.md)
 
 ---
 
@@ -167,43 +169,55 @@ branding:
 
 This config is Retype [!badge PRO](/pro/pro.md) only.
 
+The breadcrumb navigation provides a hierarchical representation of the user's location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.
+
 ### enabled
 
-To enable or disable the live editor. Default is `true` for Retype Pro projects. 
+To enable or disable the breadcrumb navigation within Retype Pro projects. Default is `true`.
 
 === [!badge PRO] enabled : `boolean`
-For Retype Pro projects, breadcrumb navigation will be enabled by default. For non-Pro projects, the breadcrumb navigation is not added to the page.
+For Retype Pro projects, breadcrumb navigation will be enabled by default.
 
-Set to `false` to disable the breadcrumb navigation project wide.
+For Retype projects (non-Pro), the breadcrumb navigation will not be added to any pages.
+
+To disable the breadcrumb navigation across an entire project, set the `enabled` parameter to `false` as shown in the following sample:
 
 ```yml
 breadcrumb:
-  enabled: false # Default is true for Retype Pro projects
+  enabled: false # Disabled project wide
 ```
 ===
 
 ### home
 
-Customization of the "Home" node.
+The `home` config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a `string` or a `boolean` value.
+
+By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.
 
 === [!badge PRO] home : `string` or `boolean`
 
-```yml
-breadcrumb:
-  home: Home # Use a custom label for Home
-```
+Set with a custom label:
 
 ```yml
 breadcrumb:
-  home: ":icon-home:" # Use an icon for Home
+  home: Home # custom label
 ```
+
+Use an Octicon [icon](/components/icon.md) instead of text for the Home node:
 
 ```yml
 breadcrumb:
-  home: ":rocket:" # Use an emoji for Home
+  home: ":icon-home:" # icon
 ```
 
-The entire first item of the breadcrumb navigation, the "Home" node, can be removed by setting `home: false`. 
+Use an [emoji](/components/emoji.md):
+
+```yml
+breadcrumb:
+  home: ":rocket:" # emoji
+```
+
+The entire first item of the breadcrumb navigation, the "Home" node, can be removed by setting `home: false`:
 
 ```yml
 breadcrumb:
@@ -213,16 +227,18 @@ breadcrumb:
 
 ### separator
 
-Customization of the node separators.
+The `separator` config allows for the customization of the node separator used between each page label in the breadcrumb navigation.
 
 === [!badge PRO] separator : `string`
 
-A custom node separator.
+Using a pipe `|` character as the separator:
 
 ```yml
 breadcrumb:
-  separator: "|" # Use a | as the separator
+  separator: "|"
 ```
+
+Using an [icon](/components/icon.md) as the separator:
 
 ```yml
 breadcrumb:
