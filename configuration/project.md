@@ -252,9 +252,10 @@ breadcrumb:
 
 Cache configuration options.
 
-### busting
+### strategy
 
-Cache busting configuration for the website resources.
+Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files. 
+
 Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.
 
 === strategy : `string`
@@ -290,14 +291,21 @@ Below are demo URLs generated for corresponding `cache.busting.strategy` options
 
 ===
 
+### token
+
 === token : `string`
 
 An optional unique token used for website resource cache invalidation.
 
-- If specified, the provided value is used for all invalidatable resources as is.
-- If not specified, the default token having the following structure is used:
+If specified, the provided value is used for all invalidatable resources as is.
+
+If not specified, the default token having the following structure is used:
 `{Retype version}.{total milliseconds elapsed since 2000-01-01}`
 
+```yml
+cache:
+  token: v5
+```
 ===
 
 ---
