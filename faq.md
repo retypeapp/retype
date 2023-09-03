@@ -14,6 +14,7 @@ With [Retype Pro](/pro/pro.md), you get the following additional features:
 2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
 3. [!badge text="NEW" variant="info"] Password protected [`private`](/configuration/page.md#private) and [`protected`](/configuration/page.md#protected) pages
 4. [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration
+5. [!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation
 
 ## How do I install Retype?
 
