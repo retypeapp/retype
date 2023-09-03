@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747062761610">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747068995272">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.3.0">
@@ -36,15 +36,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.3.0.747062761610" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.3.0.747068995272" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.747062761610" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.747068995272" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.747062761610" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.3.0.747062761610" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.747068995272" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.3.0.747068995272" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.3.0.747062761610" rel="stylesheet">
+    <link href="/static/styles.css?v=3.3.0.747068995272" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -575,14 +575,14 @@ footer:
     </h2>
 </doc-anchor-target>
 <p>Cache configuration options.</p>
-<doc-anchor-target id="busting">
+<doc-anchor-target id="strategy">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#busting">#</doc-anchor-trigger>
-        <span>busting</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#strategy">#</doc-anchor-trigger>
+        <span>strategy</span>
     </h3>
 </doc-anchor-target>
-<p>Cache busting configuration for the website resources.
-Helps to ensure a loaded page refers to the most recent JavaScript and <abbr title="Cascading Style Sheet">CSS</abbr> resources.</p>
+<p>Cache busting configuration for the website resources, such as the JavaScript (.js) and <abbr title="Cascading Style Sheet">CSS</abbr> (.css) files.</p>
+<p>Helps to ensure a loaded page refers to the most recent JavaScript and <abbr title="Cascading Style Sheet">CSS</abbr> resources.</p>
 <doc-panel id="strategy-string">
     <template #title>strategy : <code v-pre>string</code></template>
 <p>Specifies the approach Retype will use for cache invalidation.</p>
@@ -629,14 +629,22 @@ Helps to ensure a loaded page refers to the most recent JavaScript and <abbr tit
 <pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js?v=1.10&quot; /&gt;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+<doc-anchor-target id="token">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#token">#</doc-anchor-trigger>
+        <span>token</span>
+    </h3>
+</doc-anchor-target>
 <doc-panel id="token-string">
     <template #title>token : <code v-pre>string</code></template>
 <p>An optional unique token used for website resource cache invalidation.</p>
-<ul>
-<li>If specified, the provided value is used for all invalidatable resources as is.</li>
-<li>If not specified, the default token having the following structure is used:
-<code v-pre>{Retype version}.{total milliseconds elapsed since 2000-01-01}</code></li>
-</ul>
+<p>If specified, the provided value is used for all invalidatable resources as is.</p>
+<p>If not specified, the default token having the following structure is used:
+<code v-pre>{Retype version}.{total milliseconds elapsed since 2000-01-01}</code></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">cache:
+  token: v5</code></pre>
+</doc-codeblock></div>
 </doc-panel>
 <hr>
 <doc-anchor-target id="cname">
@@ -2499,6 +2507,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </table>
 </div>
 <!-- Add content to _includes/bottom.md to include here -->
+<!-- Project wide abbreviations, _includes/bottom.md -->
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
