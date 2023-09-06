@@ -310,7 +310,7 @@ Released: [2021-08-05](https://github.com/retypeapp/retype/releases/tag/v1.8.1)
 ```
 ../components.md
 ../components/index.md
-../components/readme.md
+../components/components.md
 ../components/default.md
 ```
 - [x] Allow inline Markdown components for [`author`](/configuration/page.md#author), [`title`](/configuration/page.md#title), and [`label`](/configuration/page.md#label) page configs, see [#114](https://github.com/retypeapp/retype/issues/114). Block-level Markdown components will be ignored for those configs.
@@ -370,7 +370,7 @@ Released: [2021-06-09](https://github.com/retypeapp/retype/releases/tag/v1.6.0)
 - [x] [`include`](/configuration/project.md#include) project config.
 - [x] [`exclude`](/configuration/project.md#exclude) project config.
 - [x] Improved `<table>` styling.
-- [x] Performance boost for [components](/components/readme.md).
+- [x] Performance boost for [components](/components/components.md).
 +++
 
 ## v1.5.0
