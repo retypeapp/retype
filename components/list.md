@@ -42,8 +42,6 @@ Unordered list variations include:
 
 ### Icon list
 
-[!badge text="NEW" variant="info"] in Retype v3.3.
-
 By applying the following `{.list-icon}` generic attribute, you can convert a bullet list into an icon list.
 
 ```md
