@@ -21,8 +21,9 @@ output: .retype
 url: retype.com
 
 branding:
-  logo: /static/retype-logo.svg
-  logoDark: /static/retype-logo-dark.svg
+  title: Hexoforge
+  #logo: /static/retype-logo.svg
+  #logoDark: /static/retype-logo-dark.svg
   label: Docs
 
 meta:
