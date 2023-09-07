@@ -11,14 +11,6 @@ outbound:
 breadcrumb:
   home: ":icon-home:"
 
-hub:
-  link: https://example.com/ # default is empty
-  # icon: ":icon-rocket:"
-  # width: 12
-  alt: Go to example.com # default is empty
-  # icon: # any text, image path, or inline <svg>
-  target: _blank # default is empty
-
 toc:
   label: On this page
   depth: 2-4
