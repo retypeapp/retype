@@ -2,7 +2,7 @@
 # Retype Pro
 # -------------------
 
-poweredByRetype: true
+poweredByRetype: false
 
 outbound:
   exclude:
