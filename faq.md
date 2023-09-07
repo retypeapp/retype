@@ -16,7 +16,7 @@ With [Retype Pro](/pro/pro.md), you get the following additional features:
 4. [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration
 5. [!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation
 5. [!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link
-5. [!badge text="NEW" variant="info"] [Table of Contennts](/configuration/project.md#toc) configuration
+5. [!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration
 
 ## How do I install Retype?
 
