@@ -3,6 +3,8 @@ label: Project
 order: 200
 icon: package
 tags: [config]
+toc:
+  depth: 2-4
 ---
 # Project configuration
 
@@ -173,9 +175,9 @@ The breadcrumb navigation provides a hierarchical representation of the user's l
 
 ### enabled
 
+=== [!badge PRO] enabled : `boolean`
 To enable or disable the breadcrumb navigation within Retype Pro projects. Default is `true`.
 
-=== [!badge PRO] enabled : `boolean`
 For Retype Pro projects, breadcrumb navigation will be enabled by default.
 
 For Retype projects (non-Pro), the breadcrumb navigation will not be added to any pages.
@@ -190,11 +192,10 @@ breadcrumb:
 
 ### home
 
+=== [!badge PRO] home : `string` or `boolean`
 The `home` config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a `string` or a `boolean` value.
 
 By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.
-
-=== [!badge PRO] home : `string` or `boolean`
 
 Set with a custom label:
 
@@ -227,9 +228,8 @@ breadcrumb:
 
 ### separator
 
-The `separator` config allows for the customization of the node separator used between each page label in the breadcrumb navigation.
-
 === [!badge PRO] separator : `string`
+The `separator` config allows for the customization of the node separator used between each page label in the breadcrumb navigation.
 
 Using a pipe `|` character as the separator:
 
@@ -254,11 +254,10 @@ Cache configuration options.
 
 ### strategy
 
-Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files. 
+=== strategy : `string`
+Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files.
 
 Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.
-
-=== strategy : `string`
 
 Specifies the approach Retype will use for cache invalidation.
 
@@ -346,9 +345,9 @@ Check out the bottom of this page for a working sample of `Edit this page`.
 
 ### repo
 
+=== repo : `string`
 The repository URL where the source files for this project are located.
 
-=== repo : `string`
 Setting a `repo` value will enable the `Edit this page` links on all content pages.
 
 ```yml
@@ -367,9 +366,8 @@ edit:
 
 ### base
 
-An optional base path to a directory within the repository.
-
 === base : `string`
+An optional base path to a directory within the repository.
 
 The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
 
@@ -417,16 +415,15 @@ Custom configuration to control the page live editor functionality that is only 
 
 ### enabled
 
+=== enabled : `boolean`
 To enable or disable the live editor. Default is `true`.
 
-=== enabled : `boolean`
 Set to `false` to disable and hide the live editor.
 
 ```yml
 editor:
   enabled: false # Default is true
 ```
-
 ===
 
 ---
@@ -628,6 +625,75 @@ It is best practice to include the trailing slash and by default, Retype will au
 generator:
   trailingSlash: false # default is true
 ```
+===
+
+---
+
+## hub
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The Hub creates a handy shortcut link in the top-left of the page, just to the left of your project logo or title.
+
+![Hub link sample](/static/hub-screencapture.png)
+
+The hub link lets visitors easily jump back to your main site or central doc hub, such as linking from your documentation deployed at `docs.example.com` to `example.com`.
+
+The hub link is useful when deploying multiple documentation projects and you would like a bridge to your primary documentation hub.
+
+The hub is optional. If you would like a hub link, just set a URL in the `link` config.
+
+### link
+
+=== [!badge PRO] link : `string`
+Set to a local path or external URL. By setting the `link` value, the Hub will be enabled. To disable, remove the `link` config.
+
+```yml
+hub:
+  link: https://example.com/ # default is empty
+```
+===
+
+### alt
+
+=== [!badge PRO] alt : `string`
+Custom text value used to set the `title` attribute of the hub link.
+
+```yml
+hub:
+  link: https://example.com/
+  alt: Go to example.com
+```
+===
+
+### target
+
+=== [!badge PRO] target : `string`
+Sets the `target` attribute of the hub link and specifies which window or tab to open the link into.
+
+```yml
+hub:
+  link: https://example.com/
+  target: blank
+```
+
+If no `target` is configured, the link will open in the current tab.
+
+The `target` can be set to any value, although `blank` is common and will open the link in a new tab. Retype will automatically transform the value `blank` into `_blank` which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.
+
+There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
+
+{.compact}
+| Config `target` value | Runtime `target` value |
+| --------------------- | ---------------------- |
+| `blank`               | `_blank`               |
+| `parent`              | `_parent`              |
+| `top`                 | `_top`                 |
+| `self`                | `_self`                |
+| `news1`               | `news1`                |
+| `nEWs2`               | `news2`                |
+| `recent NEWS`         | `recent-news`          |
+
 ===
 
 ---
@@ -970,6 +1036,7 @@ The `target` can be set to any value, although `blank` is common and will open t
 
 There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
 
+{.compact}
 | Config `target` value | Runtime `target` value |
 | --------------------- | ---------------------- |
 | `blank`               | `_blank`               |
@@ -1242,7 +1309,7 @@ This config is Retype [!badge PRO](/pro/pro.md) only.
 
 Controls whether to include or exclude the `Powered by Retype` branding.
 
-![](/static/powered-by-retype.png)
+![Sample Powered by Retype branding](/static/powered-by-retype.png)
 
 === [!badge PRO] poweredByRetype : `boolean`
 With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
@@ -1597,6 +1664,37 @@ templating:
   liquid: false # Set to true to enable
 ```
 
+===
+
+---
+
+## toc
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `toc` config contains project options that apply to the right sidebar Table of Contents.
+
+### depth
+
+=== [!badge PRO] depth : `string`, `number`
+The default is `2-3`.
+
+```yml
+toc:
+  depth: 2-3
+```
+===
+
+### label
+
+=== [!badge PRO] label : `string`
+
+A custom label for the top of the Table of Contents column.
+
+```yml
+toc:
+  label: On this page
+```
 ===
 
 ---

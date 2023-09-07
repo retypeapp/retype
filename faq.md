@@ -15,6 +15,8 @@ With [Retype Pro](/pro/pro.md), you get the following additional features:
 3. [!badge text="NEW" variant="info"] Password protected [`private`](/configuration/page.md#private) and [`protected`](/configuration/page.md#protected) pages
 4. [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration
 5. [!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation
+5. [!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link
+5. [!badge text="NEW" variant="info"] [Table of Contennts](/configuration/project.md#toc) configuration
 
 ## How do I install Retype?
 
