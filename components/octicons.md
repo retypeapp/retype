@@ -5,10 +5,6 @@ icon: mark-github
 
 [Octicons](https://primer.github.io/octicons/) can be used with the [Icon](icon.md) component and several other components, including the [Badge](badge.md) and [Button](button.md).
 
-!!!
-The upcoming Retype `v3.0` release will ship with [Octicons](https://primer.github.io/octicons/) `v18.3.0` and includes 36 new icons.
-!!!
-
 ## Samples
 
 ### Component
