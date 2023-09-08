@@ -15,6 +15,13 @@ toc:
   label: On this page
   depth: 2-4
 
+# New Hub link feature, but not used on retype.com
+# hub:
+  # link: https://example.com/
+  # alt: Go to example.com
+  # target: _blank
+
+
 # -------------------
 # Retype
 # -------------------
