@@ -69,6 +69,7 @@ Arguments:
   <path>  Path to the project root or project config file [Optional]
 
 Options:
+  --pro                  Enable Retype Pro preview
   --secret <secret>      Retype license key
   --password <password>  Private page password
   --host <host>          Custom Host name or IP address
@@ -82,7 +83,7 @@ Options:
 !!!danger
 While it is technically possible to host your website publicly using `retype start` and the web server built into Retype, **DON'T DO IT**.
 
-You should use a dedicated website hosting service, such as [GitHub Pages](/hosting/github-pages.md), [Netlify](https://www.netlify.com/), or absolutely any other web hosting service.
+You should use a dedicated website hosting service, such as [GitHub Pages](/hosting/github-pages.md), [Netlify](https://www.netlify.com/), [Cloudflare](/hosting/cloudflare.md), or absolutely any other web hosting service.
 
 If you _really really really_ want to try public hosting using the built in web server, use [`retype serve`](#retype-serve).
 !!!

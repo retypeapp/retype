@@ -167,7 +167,6 @@ branding:
 ```
 ===
 
-
 ---
 
 ## breadcrumb
@@ -1632,6 +1631,23 @@ start:
 ```
 
 Using the [CLI](../guides/cli.md#retype-start) command `retype start -n` or `retype start --no-open` will also prevent the default web browser from being opened.
+
+===
+
+### pro
+
+=== pro : `boolean`
+
+The default is `false`.
+
+The following sample demonstrates how to start your project in _Pro mode_ and trial the [Retype Pro](/pro/pro.md) features:
+
+```yml
+start:
+  pro: true
+```
+
+Using the [CLI](../guides/cli.md#retype-start) command `retype start --pro` will also start the project in Pro mode. 
 
 ===
 

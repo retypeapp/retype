@@ -31,6 +31,7 @@ Future Retype Pro only features | :icon-x-circle: | :white_check_mark: | :white_
 
 ## :icon-question: Questions & Answers
 
+1. [Can I test Retype Pro features?](#can-i-test-retype-pro-features)
 1. [Please summarize how the licensing works?](#please-summarize-how-the-licensing-works)
 1. [If I do not renew, does my website stop working?](#if-i-do-not-renew-does-my-website-stop-working)
 1. [Is Retype Pro a separate product?](#is-retype-pro-a-separate-product)
@@ -43,6 +44,19 @@ Future Retype Pro only features | :icon-x-circle: | :white_check_mark: | :white_
 1. [Can I purchase two licenses and save one for future use?](#can-i-purchase-two-licenses-and-save-one-for-future-use)
 1. [We have other license requirements, are there other options?](#we-have-other-license-requirements-are-there-other-options)
 1. [Contact us](#contact-us)
+
+## Can I test Retype Pro features?
+
+Yes. Use the command `retype start --pro` to start your project instead of `retype start`.
+
+Or, add the following `pro: true` config to your project `retype.yml` file:
+
+```yml
+start:
+  pro: true
+```
+
+The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will still be enabled and the 100 page limit will remain in place, but all other Retype Pro features will be available.
 
 ## Please summarize how the licensing works?
 
