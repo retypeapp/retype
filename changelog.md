@@ -1,5 +1,5 @@
 ---
-icon: project-roadmap
+icon: log
 ---
 # Changelog
 
@@ -11,7 +11,20 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 ---
 
-## v3.4.0 [!badge text="LATEST" variant="info"]
+## v3.5.0 [!badge text="LATEST" variant="info"]
+
+Released: [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
+
++++ New :icon-shield-check:
+- [x] New [`--pro`](/guides/cli.md#retype-start) flag during `retype start` to enable trial mode of Retype Pro features, see [#612](https://github.com/retypeapp/retype/discussions/612)
+- [x] New [`start.pro: true`](/configuration/project.md#pro) project config to enable trial mode of Retype Pro features, see [#612](https://github.com/retypeapp/retype/discussions/612)
++++ Improved :icon-thumbsup:
+- [x] Path independent doc_theme local storage variable, see [#624](https://github.com/retypeapp/retype/discussions/624)
++++
+
+---
+
+## v3.4.0
 
 Released: [2023-09-08](https://github.com/retypeapp/retype/releases/tag/v3.4.0)
 
