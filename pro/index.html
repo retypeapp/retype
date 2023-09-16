@@ -7,10 +7,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.747673208293">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748196104497">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.4.1">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Retype Pro - Write On! with Retype</title>
@@ -34,14 +34,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.4.1.747673208293" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.748196104497" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.4.1.747673208293" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.4.1.747673208293" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.748196104497" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.748196104497" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.5.0.748196104497" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.4.1.747673208293" rel="stylesheet">
+    <link href="/static/styles.css?v=3.5.0.748196104497" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -63,7 +64,7 @@
                                 <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                                 <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                             </span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v3.4</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v3.5</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -392,6 +393,7 @@
     </h2>
 </doc-anchor-target>
 <ol>
+<li><doc-anchor-trigger to="#can-i-test-retype-pro-features">Can I test Retype Pro features?</doc-anchor-trigger></li>
 <li><doc-anchor-trigger to="#please-summarize-how-the-licensing-works">Please summarize how the licensing works?</doc-anchor-trigger></li>
 <li><doc-anchor-trigger to="#if-i-do-not-renew-does-my-website-stop-working">If I do not renew, does my website stop working?</doc-anchor-trigger></li>
 <li><doc-anchor-trigger to="#is-retype-pro-a-separate-product">Is Retype Pro a separate product?</doc-anchor-trigger></li>
@@ -405,6 +407,19 @@
 <li><doc-anchor-trigger to="#we-have-other-license-requirements-are-there-other-options">We have other license requirements, are there other options?</doc-anchor-trigger></li>
 <li><doc-anchor-trigger to="#contact-us">Contact us</doc-anchor-trigger></li>
 </ol>
+<doc-anchor-target id="can-i-test-retype-pro-features">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#can-i-test-retype-pro-features">#</doc-anchor-trigger>
+        <span>Can I test Retype Pro features?</span>
+    </h2>
+</doc-anchor-target>
+<p>Yes. Use the command <code v-pre>retype start --pro</code> to start your project instead of <code v-pre>retype start</code>.</p>
+<p>Or, add the following <code v-pre>pro: true</code> config to your project <code v-pre>retype.yml</code> file:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">start:
+  pro: true</code></pre>
+</doc-codeblock></div>
+<p>The <a href="/configuration/project/#poweredbyretype"><code v-pre>poweredByRetype</code></a> branding will still be enabled and the 100 page limit will remain in place, but all other Retype Pro features will be available.</p>
 <doc-anchor-target id="please-summarize-how-the-licensing-works">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#please-summarize-how-the-licensing-works">#</doc-anchor-trigger>
@@ -711,7 +726,7 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Retype Pro", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Retype Pro", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
     <script data-cfasync="false">window.$crisp=[];window.CRISP_WEBSITE_ID="9ec0e13c-1299-4c3f-a5e9-ff39363c6960";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
     <!-- Add content to _includes/body.html to include here -->
