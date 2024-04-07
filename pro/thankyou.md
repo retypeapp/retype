@@ -13,7 +13,7 @@ Please check your Spam folder for emails.
 
 1. Did you receive your email receipt? If no, please [let us know](mailto:hello@retype.com).
 2. Create your license key...\
-[!button text="Create key" icon="plus"](https://docs.google.com/forms/d/e/1FAIpQLSc2koH94ZnXSJ5ZnhY0FSYc8dDHlIoVFbkgcBD6hJDe1ltOUg/viewform)
+[!button text="Create key" icon="plus"](https://docs.google.com/forms/d/e/1FAIpQLSfFWUKHtuyz43MCzBzfFftq3OYt282wbiOfWAmuNz8x2ktxnw/viewform)
 3. Need any additional help with Retype? If yes, see the [next section](#i-need-assistance).
 
 !!!
