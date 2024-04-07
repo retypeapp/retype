@@ -51,4 +51,4 @@ You should be able to now open a web browser and browse to your IP address on po
 
 ## Step 3: Publish the Image
 
-After building your docker container, you can publish the container to any free-to-use repository such as [Docker Hub](https://dockerhub.com/). See the Docker Hub [docs](https://docs.docker.com/docker-hub/) for more details.
+After building your docker container, you can publish the container to any free-to-use repository such as [Docker Hub](https://hub.docker.com/). See the Docker Hub [docs](https://docs.docker.com/docker-hub/) for more details.

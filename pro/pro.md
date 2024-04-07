@@ -21,13 +21,13 @@ Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) 
 Commercial use | :white_check_mark: | :white_check_mark: | :white_check_mark:
 Open Source use | :white_check_mark: | :white_check_mark: | :white_check_mark:
 Free upgrades | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-x-circle: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x-circle: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-x-circle: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x-circle: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x-circle: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-x-circle: | :white_check_mark: | :white_check_mark:
-Future Retype Pro only features | :icon-x-circle: | :white_check_mark: | :white_check_mark:
+Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+Future Retype Pro only features | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
 
 ## :icon-question: Questions & Answers
 
