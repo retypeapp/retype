@@ -12,10 +12,9 @@ Build more pages and unlock powerful Retype Pro only features.
 
 &nbsp; | Free | Pro | Pro+ | Enterprise | Enterprise+
 --- | :---: | :---: | :---: | :---: | :---:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/00g8yqdLVcWS1fG4gx) | [!button text="Buy" size="l"](https://buy.stripe.com/14k9CudLV1ea7E48wL) | [!button text="Buy" size="l"](https://buy.stripe.com/14k01UcHR5uq2jK28o) | [!button text="Buy" size="l"](https://buy.stripe.com/7sI4iacHRbSO8I86oC)
-Pricing | Free | $99 | $199 | $499 | $999
-License duration [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-infinity: | 3 Years | 3 Years | 3 Years | 3 Years
-Projects [:icon-question:](#what-if-i-have-more-than-one-pro-project) | :icon-infinity: | 1 | 1 | :icon-infinity: [:icon-info:](#what-is-a-project) | :icon-infinity: [:icon-info:](#what-is-a-project)
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/7sIcOG0Z97CybUk3cu) | [!button text="Buy" size="l"](https://buy.stripe.com/00g5me9vFaOK0bCaEX) | [!button text="Buy" size="l"](https://buy.stripe.com/fZecOGcHRbSO6A05kF) | [!button text="Buy" size="l"](https://buy.stripe.com/fZeaGyazJcWSbUk9AW)
+Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $49<br>^per year^ | $99<br>^per year^ | $249<br>^per year^ | $499<br>^per year^
+Projects [:icon-question:](#what-is-a-project) | :icon-infinity: | 1 | 1 | :icon-infinity: | :icon-infinity:
 Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | :icon-infinity: | 1000 | :icon-infinity:
 Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity:
 Commercial use | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
@@ -71,10 +70,10 @@ The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will
 License | Key required | Free upgrades | Valid for | Max Pages (per project)
 -- | -- | -- | -- | --
 Free | No | Yes | Any domain name or subdomain name | 100
-Pro | Yes | 3 years | One domain name OR one subdomain | 1000
-Pro+ | Yes | 3 years | One domain name OR one subdomain | Unlimited Pages
-Enterprise | Yes | 3 Years | One domain name AND all subdomains | 1000
-Enterprise+ | Yes | 3 Years | One domain name AND all subdomains | Unlimited Pages
+Pro | Yes | 1 Year | One domain name OR one subdomain | 1000
+Pro+ | Yes | 1 Year | One domain name OR one subdomain | Unlimited Pages
+Enterprise | Yes | 1 Years | One domain name AND all subdomains | 1000
+Enterprise+ | Yes | 1 Years | One domain name AND all subdomains | Unlimited Pages
 
 !!!
 As your license key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your license key is not [renewed](#what-happens-when-the-key-expires).
