@@ -17,16 +17,16 @@ Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $4
 Projects [:icon-question:](#what-is-a-project) | :icon-infinity: | 1 | 1 | :icon-infinity: | :icon-infinity:
 Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | :icon-infinity: | 1000 | :icon-infinity:
 Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity:
-Commercial use | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Open Source use | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Free upgrades | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Future Retype Pro only features | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Commercial use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+Open Source use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+Free upgrades | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+Future Retype Pro only features | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 
 ## :icon-question: Questions & Answers
 
