@@ -5,29 +5,29 @@ order: 2000
 # Retype Pro
 
 :::content-center
-Take your projects to the next level with Retype Pro and Enterprise licensing.
+Take your projects to the next level with **Retype Pro** and **Enterprise** licensing.
 
 Build more pages and unlock powerful Retype Pro only features.
 :::
 
-&nbsp; | Free | Pro | Enterprise
---- | :---: | :---: | :---:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/5kAbKC23daOK3nObIS) | [!button text="Buy" size="l"](https://buy.stripe.com/7sI15Y7nx2iebUk5kv)
-Pricing | Free | $99 | $499
-License duration [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-infinity: | 3 Years | 1 Year
-Projects [:icon-question:](#what-if-i-have-more-than-one-pro-project) | :icon-infinity: | 1 | :icon-infinity: [:icon-info:](#what-is-a-project)
-Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | 1000
-Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity:
-Commercial use | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Open Source use | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Free upgrades | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
-[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
-Future Retype Pro only features | :icon-circle-slash: | :white_check_mark: | :white_check_mark:
+&nbsp; | Free | Pro | Pro+ | Enterprise | Enterprise+
+--- | :---: | :---: | :---: | :---: | :---:
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/00g8yqdLVcWS1fG4gx) | [!button text="Buy" size="l"](https://buy.stripe.com/14k9CudLV1ea7E48wL) | [!button text="Buy" size="l"](https://buy.stripe.com/14k01UcHR5uq2jK28o) | [!button text="Buy" size="l"](https://buy.stripe.com/7sI4iacHRbSO8I86oC)
+Pricing | Free | $99 | $199 | $499 | $999
+License duration [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-infinity: | 3 Years | 3 Years | 3 Years | 3 Years
+Projects [:icon-question:](#what-if-i-have-more-than-one-pro-project) | :icon-infinity: | 1 | 1 | :icon-infinity: [:icon-info:](#what-is-a-project) | :icon-infinity: [:icon-info:](#what-is-a-project)
+Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | :icon-infinity: | 1000 | :icon-infinity:
+Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity:
+Commercial use | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Open Source use | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Free upgrades | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Future Retype Pro only features | :icon-circle-slash: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
 
 ## :icon-question: Questions & Answers
 
@@ -68,11 +68,13 @@ The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will
 - [x] See table below for details:
 
 {.compact}
-License | Key required | Free upgrades | Valid for | Max Pages
+License | Key required | Free upgrades | Valid for | Max Pages (per project)
 -- | -- | -- | -- | --
-Retype | No | Yes | Any domain name or subdomain name | 100
-Retype Pro | Yes | 3 years | One domain name OR one subdomain | 1000
-Retype Enterprise | Yes | 1 Year | One domain name AND all subdomains | 1000
+Free | No | Yes | Any domain name or subdomain name | 100
+Pro | Yes | 3 years | One domain name OR one subdomain | 1000
+Pro+ | Yes | 3 years | One domain name OR one subdomain | Unlimited Pages
+Enterprise | Yes | 3 Years | One domain name AND all subdomains | 1000
+Enterprise+ | Yes | 3 Years | One domain name AND all subdomains | Unlimited Pages
 
 !!!
 As your license key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your license key is not [renewed](#what-happens-when-the-key-expires).
