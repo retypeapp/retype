@@ -7,25 +7,26 @@ order: 2000
 :::content-center
 Take your projects to the next level with **Retype Pro** and **Enterprise** licensing.
 
-Build more pages and unlock powerful Retype Pro only features.
+Build more pages and unlock powerful **Retype Pro** only features.
 :::
 
 &nbsp; | Free | Pro | Pro+ | Enterprise | Enterprise+
 --- | :---: | :---: | :---: | :---: | :---:
-| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button text="Buy" size="l"](https://buy.stripe.com/7sIcOG0Z97CybUk3cu) | [!button text="Buy" size="l"](https://buy.stripe.com/00g5me9vFaOK0bCaEX) | [!button text="Buy" size="l"](https://buy.stripe.com/fZecOGcHRbSO6A05kF) | [!button text="Buy" size="l"](https://buy.stripe.com/fZeaGyazJcWSbUk9AW)
-Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $49<br>^per year^ | $99<br>^per year^ | $249<br>^per year^ | $499<br>^per year^
-Projects [:icon-question:](#what-is-a-project) | :icon-infinity: | 1 | 1 | :icon-infinity: | :icon-infinity:
-Max Pages per Project [:icon-question:](#what-is-a-project) | 100 | 1000 | :icon-infinity: | 1000 | :icon-infinity:
+| | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button Buy](https://buy.stripe.com/00g8yqdLVcWS1fG4gx) | [!button Buy](https://buy.stripe.com/14k9CudLV1ea7E48wL) | [!button Buy](https://buy.stripe.com/14k01UcHR5uq2jK28o) | [!button Buy](https://buy.stripe.com/7sI4iacHRbSO8I86oC)
+Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $99 | $199 | $499 | $999
+Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle: | 3 years | 3 years | 3 years | 3 years
+Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | 0 | 1 | 1 | :icon-infinity:^[*](#what-is-a-project)^ | :icon-infinity:^[*](#what-is-a-project)^
+Max pages per project [:icon-question:](#what-is-a-project) | 100 | 1000 | :icon-infinity: | 1000 | :icon-infinity:
 Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity: | :icon-infinity:
 Commercial use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
-Open Source use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+Open source use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 Free upgrades | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
-Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 [!badge text="NEW" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
-[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 [!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 [!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
-[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
+[!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 Future Retype Pro only features | :icon-x-circle-fill: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: | :icon-check-circle:
 
 ## :icon-question: Questions & Answers
@@ -55,25 +56,25 @@ start:
   pro: true
 ```
 
-The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will still be enabled and the 100 page limit will remain in place, but all other Retype Pro features will be available.
+The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will still be enabled and the 100 page limit will remain in place, but all other Retype Pro features will be available for testing.
 
 ## Please summarize how the licensing works?
 
 - [x] Retype is free to use for both commercial and open-source projects
-- [x] Retype Pro and Enterprise include extra  functionality
+- [x] Retype Pro and Enterprise include extra functionality
 - [x] Retype Pro and Retype Enterprise require a license key
 - [x] All license keys include free version upgrades
 - [x] After purchasing, your license key will be emailed to you
 - [x] See table below for details:
 
 {.compact}
-License | Key required | Free upgrades | Valid for | Max Pages (per project)
--- | -- | -- | -- | --
-Free | No | Yes | Any domain name or subdomain name | 100
-Pro | Yes | 1 Year | One domain name OR one subdomain | 1000
-Pro+ | Yes | 1 Year | One domain name OR one subdomain | Unlimited Pages
-Enterprise | Yes | 1 Years | One domain name AND all subdomains | 1000
-Enterprise+ | Yes | 1 Years | One domain name AND all subdomains | Unlimited Pages
+License | Key required | Price | Free upgrades | Renewal | Pro projects<br>^* per domain name^ | Max Pages<br>^* per project^
+-- | -- | -- | -- | -- | -- | --
+Free | No | Free | Free | $0 | 0 | 100
+Pro | Yes | $99 | 3 years | $49 | 1 | 1000
+Pro+ | Yes | $199 | 3 years | $99 | 1 | Unlimited
+Enterprise | Yes | $499 | 3 years | $249 | Unlimited ^[*](#what-is-a-project)^ | 1000
+Enterprise+ | Yes | $999 | 3 years | $499 | Unlimited ^[*](#what-is-a-project)^ | Unlimited
 
 !!!
 As your license key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your license key is not [renewed](#what-happens-when-the-key-expires).
@@ -81,7 +82,7 @@ As your license key end date approaches, we will send you a reminder email to re
 
 ## If I do not renew, does my website stop working?
 
-If you do not renew your Pro or Enterprise license, your project will continue to work as it has always worked. Everything will continue to function as normal. Even adding more pages to your project would continue to work.
+If you do not renew your Pro or Enterprise license, your project will continue to work as it has always worked. Everything will continue to function as normal and without interruption. Even adding more pages to your project would continue to work.
 
 The only thing that changes is that you would not be able to upgrade your project to the next Retype release.
 
@@ -105,9 +106,14 @@ With your purchase of a Pro or Enterprise license, a license key is generated an
 
 The `url` can be a domain name or subdomain name.
 
-With Retype Pro, a license key is registered to one domain name or subdomain name, for example, `example.com` or `docs.example.com`.
+With Retype Pro, a license key is registered to one domain name or subdomain name, for instance, `example.com` or `docs.example.com`.
 
-With Retype Enterprise, a license key is registered to one domain and AND all subdomains of the domain, for example, `example.com` and `*.example.com`.
+With Retype Enterprise, a license key is registered to one domain name and AND all subdomains of the domain, for instance, `example.com` and `*.example.com`.
+
+| License | Websites | Example |
+| --- | --- | --- |
+| Pro or Pro+ | One domain name **OR** one subdomain name | `example.com` **OR** `docs.example.com`
+| Enterprise or Enterprise+ | One domain name **AND** all subdomain names | `example.com` **AND** `*.example.com`
 
 Each subdomain name counts as one unique URL, except the `www` subdomain. Both `example.com` and `www.example.com` are treated as one URL by Retype.
 
@@ -127,7 +133,7 @@ Retype Enterprise licenses can be purchased to unlock an entire domain name and 
 
 No problem. Within the first 30 days, one change to a different extension or subdomain can be made to a Retype Pro license. Just send a quick email to hello@retype.com with the request.
 
-For example, changing from `example.org` to `example.com` or `example.org` to `docs.example.com` are permitted. Changing from `example.com` to `sample.com` would not be permitted.
+For instance, changing from `example.org` to `example.com` or `example.org` to `docs.example.com` are permitted. Changing from `example.com` to `sample.com` would not be permitted.
 
 This flexibiity gives you lots of time to create your project then decide what domain name or subdomain name you want to go live with.
 
@@ -170,11 +176,9 @@ Installing Retype `v5.1` would be possible, but your project would fail to build
 
 You would still be able to build up to 1000 pages and remove the **Powered by Retype** branding, but only if using the release at the time your key expired. Again, you just would not be able to upgrade to any future releases.
 
-If at some point you would like to upgrade to the latest release, just [purchase](/pro/pro.md) a new Retype Pro key at that time.
+If at some point in the future you would like to upgrade to the latest release, just [purchase](/pro/pro.md) a new Retype Pro key at that time.
 
-## Can I purchase two licenses and stack them to extend the term?
-
-Absolutely. Just let us know in the license key creation form and we will adjust the license end date accordingly.
+The renewal fee is 50% of the original purchase price. For pricing, see table [above](#please-summarize-how-the-licensing-works).
 
 ## Can I purchase two licenses and save one for future use?
 

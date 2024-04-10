@@ -28,7 +28,7 @@ A new Retype powered website can be up and running within seconds once Retype is
 
 You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
-From your command line, navigate to a folder location where you have one or more Markdown **.md** files, such as a GitHub project.
+From your command line, navigate to a folder location where you have one or more Markdown (.md) files, such as a GitHub project.
 
 Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype start` [command](/guides/cli.md#retype-start):
 
@@ -54,7 +54,7 @@ That's it! Your new Retype website should be up and running.
 !!!
 You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
 
-All operating systems are supported, including Mac, Windows, and Linux.
+All operating systems are supported: including Mac, Windows, and Linux.
 !!!
 
 ---
@@ -87,7 +87,7 @@ If a change is detected, such as editing and saving an **.md** file, your Retype
 
 #### :icon-server: Host anywhere
 
-Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organizations network.
+Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
 
 ---
 
