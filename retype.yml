@@ -37,7 +37,7 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v3.5
+  label: v3.6
 
 meta:
   title: " - Write On! with Retype"
