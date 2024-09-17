@@ -11,7 +11,13 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 ---
 
-## v3.5.0 [!badge text="LATEST" variant="info"]
+## v3.6.0 [!badge text="LATEST" variant="info"]
+
+Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
+
+---
+
+## v3.5.0
 
 Released: [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
 
