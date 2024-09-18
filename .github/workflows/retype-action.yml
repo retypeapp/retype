@@ -16,14 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 7.0.x
-
-      - uses: retypeapp/action-build@multi
+      - uses: retypeapp/action-build@latest
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
