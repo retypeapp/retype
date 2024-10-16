@@ -61,6 +61,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0.x
+
       - uses: retypeapp/action-build@latest
 
       - uses: retypeapp/action-github-pages@latest
@@ -115,6 +119,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0.x
 
       - uses: retypeapp/action-build@latest
         with:
