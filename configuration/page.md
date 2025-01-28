@@ -694,23 +694,23 @@ Some content here.
 
 Configure the visibility of the page to be `public`, `hidden`, `protected`, or `private`. Default is `public`.
 
-| Mode | In&nbsp;search&nbsp;results? | Description |
-| --- | :---: | --- |
-`public` | :white_check_mark: | The page is public and visible in the main navigation.
-`hidden` | :no_entry_sign: | The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public.
-`protected` | :no_entry_sign: | The page is added to the navigation but requires a password to access.
-`private` | :no_entry_sign:| The page is hidden and is not added to the navigation.
+| Mode | Navigation? | Search? | Password? | Description |
+| --- | :---: | :---: | :---: | --- |
+`public` | :white_check_mark: | :white_check_mark: | :no_entry_sign: | The page is public and visible in the main navigation.
+[`hidden`](#hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public ([sample](/samples/hidden.md)).
+[`protected`](#protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the navigation but requires a password to access ([sample](/samples/protected.md) password: `test`).
+[`private`](#private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden and is not added to the navigation ([sample](/samples/private.md) password: `test`).
 
 ===
 
 
 ### hidden
 
-With hidden, the page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page.
+With `hidden`, the page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page.
 
 Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.
 
-The following sample demonstrates hiding a page:
+The following [sample](/samples/hidden.md) demonstrates hiding a page:
 
 ```md
 ---
@@ -728,6 +728,8 @@ Setting `visibility: hidden` on a page is a good way to create a _draft_ or _sec
 ### protected
 
 To create a protected page, add `visibility: protected` and then set the password for the project using the `--password` flag.
+
+The following [sample](/samples/protected.md) demonstrates creating a protected page:
 
 ```md
 ---
@@ -756,6 +758,8 @@ visibility: protected
 ### private
 
 To create a private page, add `visibility: private` and then set the password for the project using the `--password` flag.
+
+The following [sample](/samples/private.md) demonstrates creating a private page:
 
 ```md
 ---
