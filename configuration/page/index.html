@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.791385171803">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.791386042658">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.6.0.791385171803" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.6.0.791386042658" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.791385171803" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.791386042658" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.791385171803" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.6.0.791385171803" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.791386042658" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.6.0.791386042658" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.6.0.791385171803" rel="stylesheet">
+    <link href="/static/styles.css?v=3.6.0.791386042658" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -1110,9 +1110,9 @@ Some content here.</code></pre>
 <thead>
 <tr>
 <th>Mode</th>
-<th style="text-align: center;">Navigation?</th>
-<th style="text-align: center;">Search?</th>
-<th style="text-align: center;">Password?</th>
+<th style="text-align: center;">Navigation</th>
+<th style="text-align: center;">Search</th>
+<th style="text-align: center;">Password</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1122,28 +1122,28 @@ Some content here.</code></pre>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
-<td>The page is public and visible in the main navigation.</td>
+<td>The page is public and visible in the main navigation. A password is not required to view this page.</td>
 </tr>
 <tr>
 <td><doc-anchor-trigger to="#hidden"><code v-pre>hidden</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
-<td>The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public (<a href="/samples/hidden/">sample</a>).</td>
+<td>The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public (<a href="/samples/hidden/">sample</a>).</td>
 </tr>
 <tr>
 <td><doc-anchor-trigger to="#protected"><code v-pre>protected</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
-<td>The page is added to the navigation but requires a password to access (<a href="/samples/protected/">sample</a> password: <code v-pre>test</code>).</td>
+<td>The page is added to the public navigation but requires a password to access the content of the page (<a href="/samples/protected/">sample</a> password: <code v-pre>test</code>).</td>
 </tr>
 <tr>
 <td><doc-anchor-trigger to="#private"><code v-pre>private</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
-<td>The page is hidden and is not added to the navigation (<a href="/samples/private/">sample</a> password: <code v-pre>test</code>).</td>
+<td>The page is hidden, not added to the navigation, and a password is required for access (<a href="/samples/private/">sample</a> password: <code v-pre>test</code>).</td>
 </tr>
 </tbody>
 </table>
