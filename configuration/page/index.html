@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.782414849154">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.791385171803">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.6.0.782414849154" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.6.0.791385171803" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.782414849154" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.791385171803" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.782414849154" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.6.0.782414849154" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.791385171803" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.6.0.791385171803" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.6.0.782414849154" rel="stylesheet">
+    <link href="/static/styles.css?v=3.6.0.791385171803" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -1110,7 +1110,9 @@ Some content here.</code></pre>
 <thead>
 <tr>
 <th>Mode</th>
-<th style="text-align: center;">In search results?</th>
+<th style="text-align: center;">Navigation?</th>
+<th style="text-align: center;">Search?</th>
+<th style="text-align: center;">Password?</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1118,22 +1120,30 @@ Some content here.</code></pre>
 <tr>
 <td><code v-pre>public</code></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
+<td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
+<td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td>The page is public and visible in the main navigation.</td>
 </tr>
 <tr>
-<td><code v-pre>hidden</code></td>
+<td><doc-anchor-trigger to="#hidden"><code v-pre>hidden</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
-<td>The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public.</td>
+<td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
+<td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
+<td>The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public (<a href="/samples/hidden/">sample</a>).</td>
 </tr>
 <tr>
-<td><code v-pre>protected</code></td>
+<td><doc-anchor-trigger to="#protected"><code v-pre>protected</code></doc-anchor-trigger></td>
+<td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
-<td>The page is added to the navigation but requires a password to access.</td>
+<td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
+<td>The page is added to the navigation but requires a password to access (<a href="/samples/protected/">sample</a> password: <code v-pre>test</code>).</td>
 </tr>
 <tr>
-<td><code v-pre>private</code></td>
+<td><doc-anchor-trigger to="#private"><code v-pre>private</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
-<td>The page is hidden and is not added to the navigation.</td>
+<td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
+<td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
+<td>The page is hidden and is not added to the navigation (<a href="/samples/private/">sample</a> password: <code v-pre>test</code>).</td>
 </tr>
 </tbody>
 </table>
@@ -1145,9 +1155,9 @@ Some content here.</code></pre>
         <span>hidden</span>
     </h3>
 </doc-anchor-target>
-<p>With hidden, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
+<p>With <code v-pre>hidden</code>, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
 <p>Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.</p>
-<p>The following sample demonstrates hiding a page:</p>
+<p>The following <a href="/samples/hidden/">sample</a> demonstrates hiding a page:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">---
 visibility: hidden
@@ -1165,6 +1175,7 @@ This page will be hidden from the menu and search results.</code></pre>
     </h3>
 </doc-anchor-target>
 <p>To create a protected page, add <code v-pre>visibility: protected</code> and then set the password for the project using the <code v-pre>--password</code> flag.</p>
+<p>The following <a href="/samples/protected/">sample</a> demonstrates creating a protected page:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">---
 visibility: protected
@@ -1190,6 +1201,7 @@ retype build --password &lt;your-password&gt;</code></pre>
     </h3>
 </doc-anchor-target>
 <p>To create a private page, add <code v-pre>visibility: private</code> and then set the password for the project using the <code v-pre>--password</code> flag.</p>
+<p>The following <a href="/samples/private/">sample</a> demonstrates creating a private page:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">---
 visibility: private
@@ -1300,7 +1312,7 @@ retype build --password &lt;your-password&gt;</code></pre>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024 – <a href="https://retype.com/">Retype</a> – All rights reserved</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025 – <a href="https://retype.com/">Retype</a> – All rights reserved</p></div>
                             </footer>
                         </div>
                     </div>
