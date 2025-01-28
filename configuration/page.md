@@ -694,12 +694,12 @@ Some content here.
 
 Configure the visibility of the page to be `public`, `hidden`, `protected`, or `private`. Default is `public`.
 
-| Mode | Navigation? | Search? | Password? | Description |
+| Mode | Navigation | Search | Password | Description |
 | --- | :---: | :---: | :---: | --- |
-`public` | :white_check_mark: | :white_check_mark: | :no_entry_sign: | The page is public and visible in the main navigation.
-[`hidden`](#hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page is created but will not be included in the navigation or search results. Useful for sharing a draft page before making public ([sample](/samples/hidden.md)).
-[`protected`](#protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the navigation but requires a password to access ([sample](/samples/protected.md) password: `test`).
-[`private`](#private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden and is not added to the navigation ([sample](/samples/private.md) password: `test`).
+`public` | :white_check_mark: | :white_check_mark: | :no_entry_sign: | The page is public and visible in the main navigation. A password is not required to view this page.
+[`hidden`](#hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public ([sample](/samples/hidden.md)).
+[`protected`](#protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the public navigation but requires a password to access the content of the page ([sample](/samples/protected.md) password: `test`).
+[`private`](#private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden, not added to the navigation, and a password is required for access ([sample](/samples/private.md) password: `test`).
 
 ===
 
