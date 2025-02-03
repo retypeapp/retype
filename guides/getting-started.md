@@ -34,9 +34,19 @@ You only need one of those three package managers as a prerequisite, although al
 It takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.
 
 +++ npm
-```
+```bash
 npm install retypeapp --global
-retype start
+```
+After installation, update your `package.json` to include the following start and build scripts:
+```json
+"scripts": {
+  "start": "retype watch",
+  "build": "retype build"
+}
+```
+Once the scripts are added, you can start the Retype server by running:
+```bash
+npm start
 ```
 +++ yarn
 ```
