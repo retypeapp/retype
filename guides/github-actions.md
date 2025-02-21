@@ -61,7 +61,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-dotnet@v1
+      - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 7.0.x
 
@@ -120,7 +120,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-dotnet@v1
+      - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 7.0.x
 
