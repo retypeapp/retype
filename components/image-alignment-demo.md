@@ -1,5 +1,6 @@
 ---
 layout: central
+visibility: hidden
 ---
 # Image alignment demo
 
