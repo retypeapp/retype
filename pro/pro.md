@@ -142,7 +142,7 @@ After 30 days, we cannot change the URL associated to your license key and purch
 We are currently building a dashboard system to allow self management of license keys and will let you know once available.
 
 !!!
-The Retype license keys are non-revokable, meaning once they are created, there is no way for us or anyone to cancel or revoke the key.
+The Retype license keys are non-revocable, meaning once they are created, there is no way for us or anyone to cancel or revoke the key.
 !!!
 
 ## We have 5 people on our team, do we require 5 licenses?
