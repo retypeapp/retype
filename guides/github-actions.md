@@ -88,17 +88,17 @@ Commit your **retype-action.yml** file and push to your repo.
 
 ### RETYPE_SECRET
 
-If your project requires a Retype License Key, that key can be configured by adding a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) secret to your repository and the corresponding `license: {%{${{ secrets.RETYPE_SECRET }}`}%} configuration to your **.github/workflows/retype-action.yml** file.
+If your project requires a Retype license key, that key can be configured by adding a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
 
 {%{
 ```yml
 - uses: retypeapp/action-build@latest
-  with:
-    license: ${{ secrets.RETYPE_SECRET }}
+  env:
+    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
 ```
 }%}
 
-A standard **.github/workflows/retype-action.yml** file with a Retype license key would look like the following:
+The following demonstrates a basic template to use for a workflow configuration file, if including the license key:
 
 ```yml .github/workflows/retype-action.yml
 name: Publish Retype powered website to GitHub Pages
@@ -125,16 +125,44 @@ jobs:
           dotnet-version: 7.0.x
 
       - uses: retypeapp/action-build@latest
-        with:
-          license: {%{${{ secrets.RETYPE_SECRET }}}%}
+        env:
+          RETYPE_SECRET: {%{${{ secrets.RETYPE_SECRET }}}%}
+          RETYPE_PASSWORD: {%{${{ secrets.RETYPE_PASSWORD }}}%}
 
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
 ```
 
+### RETYPE_PASSWORD
+
+If your project uses either [`protected`](/configuration/page.md#protected) or [`private`](/configuration/page.md#private) pages, adding a password for your visitors to use is required.
+
+{{ include "snippets/password-notice.md" }}
+
+A password can be configured by adding a [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password) secret to your repository settings and the following `env` configuration to your project **.github/workflows/retype-action.yml** file.
+
+{%{
+```yml
+- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
+```
+}%}
+
+If both the `RETYPE_SECRET` and `RETYPE_PASSWORD` are needed, the configuration should be the following:
+
+{%{
+```yml
+- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+    RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
+```
+}%}
+
 ---
 
 ## Step 2: Configure GitHub Pages
 
-Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, configure your [GitHub Pages](/hosting/github-pages.md) web site hosting.
+Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, now configure your [GitHub Pages](/hosting/github-pages.md) web site hosting.

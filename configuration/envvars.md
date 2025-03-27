@@ -13,11 +13,17 @@ Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring
 
 The [RETYPE_SECRET](../guides/github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
 
-You can add a new repository secret to your GitHub repository following the `/settings/secrets/actions` path. The URL should be:
+You can add a new repository secret to your GitHub repository using the following `/settings/secrets/actions` pattern. Replace the following `<your-organization>` and `<your-project>` with your repository values:
 
 ```
 https://github.com/<your-organization>/<your-project>/settings/secrets/actions
 ```
+
+You should now see the **Respository secrets** section with a green button to add a **New repository secret**, similar to the following:
+
+![](/static/retype-repository-secrets-list.png)
+
+Click the **New repository secret** button to add a new secret, which should look similar to the following:
 
 ![](/static/add-retype-secret.png)
 
@@ -31,8 +37,14 @@ See [configuring](../guides/github-actions.md/#retype_secret) a GitHub Workflow 
 
 ## RETYPE_PASSWORD
 
-Set and environment variable for the [`protected`](page.md/#protected) and [`private`](page.md/#private) pages.
+Set an environment variable for the [`protected`](page.md/#protected) and [`private`](page.md/#private) pages. The `RETYPE_PASSWORD` value is set using exactly the same process as the [`RETYPE_SECRET`](#retype_secret) above. 
+
+If you add both the `RETYPE_PASSWORD` and `RETYPE_SECRET`, your list of **Repository secrets** should look like the following:
+
+![](/static/retype-repository-secrets-list-2.png)
 
 ## RETYPE_DEFAULT_HOST
 
 Default [`host`](project.md/#host) to be used by the Retype server instead of `localhost`.
+
+The `RETYPE_DEFAULT_HOST` secret is set exactly the same as above.

@@ -729,7 +729,9 @@ Setting `visibility: hidden` on a page is a good way to create a _draft_ or _sec
 
 To create a protected page, add `visibility: protected` and then set the password for the project using the `--password` flag.
 
-The following [sample](/samples/protected.md) demonstrates creating a protected page:
+{{ include "snippets/password-notice.md" }}
+
+The following [sample](/samples/protected.md) (password: test) demonstrates creating a protected page:
 
 ```md
 ---
@@ -759,7 +761,9 @@ visibility: protected
 
 To create a private page, add `visibility: private` and then set the password for the project using the `--password` flag.
 
-The following [sample](/samples/private.md) demonstrates creating a private page:
+{{ include "snippets/password-notice.md" }}
+
+The following [sample](/samples/private.md) (password: test) demonstrates creating a private page:
 
 ```md
 ---
@@ -780,7 +784,7 @@ retype build --password <your-password>
 The project password can also be set as an Environment variable by using [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password).
 
 !!!
-For `hidden` and `private` pages, Retype does not give you a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at `https://example.com` and the page was called `my-hidden-page.md`, the URL would be `https://example.com/my-hidden-page/`.
+For `hidden` and `private` pages, Retype does not provide a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at `https://example.com` and the page was called `my-hidden-page.md`, the URL would be `https://example.com/my-hidden-page/`.
 !!!
 
 An entire folder can be set to `private` by adding an `index.yml` file with the following configuration to the root of the folder. See the [folder](folder.md) docs for additional examples.
