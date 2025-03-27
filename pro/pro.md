@@ -40,7 +40,6 @@ Future Retype Pro only features | :icon-x-circle-fill: | :icon-check-circle: | :
 1. [What if I need to change the location and URL of my project?](#what-if-i-need-to-change-the-location-and-url-of-my-project)
 1. [We have 5 people on our team, do we require 5 licenses?](#we-have-5-people-on-our-team-do-we-require-5-licenses)
 1. [What happens when the key expires?](#what-happens-when-the-key-expires)
-1. [Can I purchase two licenses and stack them to extend the term?](#can-i-purchase-two-licenses-and-stack-them-to-extend-the-term)
 1. [Can I purchase two licenses and save one for future use?](#can-i-purchase-two-licenses-and-save-one-for-future-use)
 1. [We have other license requirements, are there other options?](#we-have-other-license-requirements-are-there-other-options)
 1. [Contact us](#contact-us)
