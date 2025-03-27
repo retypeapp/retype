@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796417088790">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796433543755">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.6.0.796417088790" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.6.0.796433543755" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.796417088790" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.796433543755" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.796417088790" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.6.0.796417088790" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.796433543755" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.6.0.796433543755" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.6.0.796417088790" rel="stylesheet">
+    <link href="/static/styles.css?v=3.6.0.796433543755" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -360,13 +360,13 @@ jobs:
         <span>RETYPE_SECRET</span>
     </h3>
 </doc-anchor-target>
-<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="/configuration/envvars/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ secrets.RETYPE_SECRET }}</code> configuration to your <strong>.github/workflows/retype-action.yml</strong> file.</p>
+<p>If your project requires a Retype license key, that key can be configured by adding a <a href="/configuration/envvars/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository settings and the corresponding <code v-pre>env</code> configuration to your project <strong>.github/workflows/retype-action.yml</strong> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
-  with:
-    license: ${{ secrets.RETYPE_SECRET }}</code></pre>
+  env:
+    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}</code></pre>
 </doc-codeblock></div>
-<p>A standard <strong>.github/workflows/retype-action.yml</strong> file with a Retype license key would look like the following:</p>
+<p>The following demonstrates a basic template to use for a workflow configuration file, if including the license key:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">.github/workflows/retype-action.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
@@ -393,12 +393,50 @@ jobs:
           dotnet-version: 7.0.x
 
       - uses: retypeapp/action-build@latest
-        with:
-          license: ${{ secrets.RETYPE_SECRET }}
+        env:
+          RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+          RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
 
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="retype_password">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_password">#</doc-anchor-trigger>
+        <span>RETYPE_PASSWORD</span>
+    </h3>
+</doc-anchor-target>
+<p>If your project uses either <a href="/configuration/page/#protected"><code v-pre>protected</code></a> or <a href="/configuration/page/#private"><code v-pre>private</code></a> pages, adding a password for your visitors to use is required.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Only one password can be configured per project. The password protection functionality within Retype is not designed to be a comprehensive security layer with features such as multiple accounts or roles. Only the most basic password protection for pages is enabled.</p>
+        </div>
+    </div>
+</div>
+<p>A password can be configured by adding a <a href="/configuration/envvars/#retype_password"><code v-pre>RETYPE_PASSWORD</code></a> secret to your repository settings and the following <code v-pre>env</code> configuration to your project <strong>.github/workflows/retype-action.yml</strong> file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}</code></pre>
+</doc-codeblock></div>
+<p>If both the <code v-pre>RETYPE_SECRET</code> and <code v-pre>RETYPE_PASSWORD</code> are needed, the configuration should be the following:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+    RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}</code></pre>
 </doc-codeblock></div>
 <hr>
 <doc-anchor-target id="step-2-configure-github-pages">
@@ -407,7 +445,7 @@ jobs:
         <span>Step 2: Configure GitHub Pages</span>
     </h2>
 </doc-anchor-target>
-<p>Once <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">Step 1</doc-anchor-trigger> is complete, configure your <a href="/hosting/github-pages/">GitHub Pages</a> web site hosting.</p>
+<p>Once <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">Step 1</doc-anchor-trigger> is complete, now configure your <a href="/hosting/github-pages/">GitHub Pages</a> web site hosting.</p>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
