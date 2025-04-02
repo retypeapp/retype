@@ -11,9 +11,29 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 ---
 
+## v3.7.0 [!badge text="NEXT" variant="info"]
+
+In progress...
+
+---
+
 ## v3.6.0 [!badge text="LATEST" variant="info"]
 
 Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
+
++++ New :icon-shield-check:
+- [x] [!badge PRO](/pro/pro.md) New `--strict` parameter for `retype build`, see [#618](https://github.com/retypeapp/retype/discussions/618)
++++ Improved :icon-thumbsup:
+- [x] Upgrade Octicons icons library from v19.7.0 to v19.8.0
+- [x] Allow words to break for the ToC and Headings, see [#633](https://github.com/retypeapp/retype/discussions/633)
+- [x] Match folder node if `searchLabel` includes the filter query, see [#646](https://github.com/retypeapp/retype/discussions/646)
+- [x] New link directly into Tab, see [#651](https://github.com/retypeapp/retype/discussions/651)
+- [x] Resolve links to Panel titles, see [#389](https://github.com/retypeapp/retype/discussions/389), [#401](https://github.com/retypeapp/retype/discussions/401), and [#659](https://github.com/retypeapp/retype/discussions/659)
++++ Fixed :icon-bug:
+- [x] Folder name starting with `1. ` creates raw HTML label in nav tree, see [#650](https://github.com/retypeapp/retype/discussions/650)
+- [x] Sidebar filter does not work for CamelCase titles, see [#696](https://github.com/retypeapp/retype/discussions/696)
+- [x] CI build process failing, see [#708](https://github.com/retypeapp/retype/discussions/708)
++++
 
 ---
 
