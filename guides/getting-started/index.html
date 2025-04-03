@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796939595706">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797031081828">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,14 +32,14 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.6.0.796939595706" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.6.0.797031081828" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.796939595706" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.6.0.797031081828" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.796939595706" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.6.0.797031081828" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.6.0.796939595706" rel="stylesheet">
+    <link href="/static/styles.css?v=3.6.0.797031081828" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -440,6 +440,38 @@ retype start</code></pre>
 </doc-tabs>
 <p>All Retype related files and folders within your project can be deleted, such as the <strong>retype.yml</strong> file and the generated <code v-pre>.retype</code> folder.</p>
 <hr>
+<doc-anchor-target id="version-and-tag-specific">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#version-and-tag-specific">#</doc-anchor-trigger>
+        <span>Version and Tag specific</span>
+    </h2>
+</doc-anchor-target>
+<p>When managing project dependencies, it is sometimes necessary to install a specific version or a tagged release of a software package to ensure compatibility or access to certain features.</p>
+<p><a href="https://www.npmjs.com/package/retypeapp?activeTab=versions" class="outbound" target="_blank"><span>NPM</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, Yarn, and <a href="https://www.nuget.org/packages/retypeapp/" class="outbound" target="_blank"><span>dotnet</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> offer their own syntax and methods for specifying which version or tag of a software package to install, enabling precise control over the dependencies of your projects.</p>
+<p>When using NPM or Yarn, specifying the <code v-pre>@latest</code> tag will always install the latest public release. The <code v-pre>@latest</code> is optional. If no <code v-pre>@version</code> or <code v-pre>@tag</code> is provided, Retype will install the <code v-pre>@latest</code> release by default.</p>
+<p>Using the <code v-pre>@next</code> tag will install an upcoming <code v-pre>-preview</code> release, if available.</p>
+<p>In the following samples, replace <code v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the <code v-pre>v3.5.0</code> release of Retype using NPM, run the command <code v-pre>npm install retypeapp@3.5.0 --global</code>.</p>
+<doc-tabs>
+<doc-tab v-cloak id="npm">
+<template #title>npm</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">npm install retypeapp@[version-or-tag] --global</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="yarn">
+<template #title>yarn</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp@[version-or-tag]</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="dotnet">
+<template #title>dotnet</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global --version [version]</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<hr>
 <doc-anchor-target id="platform-specific">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#platform-specific">#</doc-anchor-trigger>
@@ -449,7 +481,7 @@ retype start</code></pre>
 <p>The default <code v-pre>retypapp</code> <strong>NPM</strong> package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.</p>
 <p>The bundle provides convenience although at the cost of an increased download size.</p>
 <p>The <strong>dotnet</strong> package installer will automatically download the platform specific package.</p>
-<p>For <strong>NPM</strong> and <strong>Yarn</strong>, it is possible to install smaller platform specific packages without the bundling. Currently, four separate platforms are supported and can be installed independently from the primary <code v-pre>retypeapp</code> package.</p>
+<p>For <strong>NPM</strong> and <strong>Yarn</strong>, it is possible to install smaller platform specific packages without the bundling. Currently, three separate platforms are supported and can be installed independently from the primary <code v-pre>retypeapp</code> package.</p>
 <doc-anchor-target id="macos">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#macos">#</doc-anchor-trigger>
