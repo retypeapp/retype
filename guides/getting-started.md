@@ -102,6 +102,34 @@ All Retype related files and folders within your project can be deleted, such as
 
 ---
 
+## Version and Tag specific
+
+When managing project dependencies, it is sometimes necessary to install a specific version or a tagged release of a software package to ensure compatibility or access to certain features.
+
+[NPM](https://www.npmjs.com/package/retypeapp?activeTab=versions), Yarn, and [dotnet](https://www.nuget.org/packages/retypeapp/) offer their own syntax and methods for specifying which version or tag of a software package to install, enabling precise control over the dependencies of your projects.
+
+When using NPM or Yarn, specifying the `@latest` tag will always install the latest public release. The `@latest` is optional. If no `@version` or `@tag` is provided, Retype will install the `@latest` release by default.
+
+Using the `@next` tag will install an upcoming `-preview` release, if available.
+
+In the following samples, replace `[version-or-tag]` with the actual version number or tag. For instance, to specifically install the `v3.5.0` release of Retype using NPM, run the command `npm install retypeapp@3.5.0 --global`.
+
++++ npm
+```
+npm install retypeapp@[version-or-tag] --global
+```
++++ yarn
+```
+yarn global add retypeapp@[version-or-tag]
+```
++++ dotnet
+```
+dotnet tool install retypeapp --global --version [version]
+```
++++
+
+---
+
 ## Platform specific
 
 The default `retypapp` **NPM** package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.
@@ -110,7 +138,7 @@ The bundle provides convenience although at the cost of an increased download si
 
 The **dotnet** package installer will automatically download the platform specific package.
 
-For **NPM** and **Yarn**, it is possible to install smaller platform specific packages without the bundling. Currently, four separate platforms are supported and can be installed independently from the primary `retypeapp` package.
+For **NPM** and **Yarn**, it is possible to install smaller platform specific packages without the bundling. Currently, three separate platforms are supported and can be installed independently from the primary `retypeapp` package.
 
 ### :icon-package: macOS
 
