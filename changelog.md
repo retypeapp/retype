@@ -15,8 +15,6 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 In progress...
 
----
-
 ## v3.6.0 [!badge text="LATEST" variant="info"]
 
 Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
@@ -35,8 +33,6 @@ Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
 - [x] CI build process failing, see [#708](https://github.com/retypeapp/retype/discussions/708)
 +++
 
----
-
 ## v3.5.0
 
 Released: [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
@@ -47,8 +43,6 @@ Released: [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
 +++ Improved :icon-thumbsup:
 - [x] Path independent doc_theme local storage variable, see [#624](https://github.com/retypeapp/retype/discussions/624)
 +++
-
----
 
 ## v3.4.0
 
@@ -64,9 +58,7 @@ Released: [2023-09-08](https://github.com/retypeapp/retype/releases/tag/v3.4.0)
 - [x] Tree nav `expanded` state not saving
 +++
 
----
-
-## v3.3.0
+s## v3.3.0
 
 Released: [2023-08-31](https://github.com/retypeapp/retype/releases/tag/v3.3.0)
 
