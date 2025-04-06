@@ -39,12 +39,13 @@ This is a sample page with a :icon-rocket: icon.
 
 ## Icon list
 
-Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supported, including 16 [!badge variant="info" text="NEW"] icons.
+Currently, there are 331 [Octicons](https://primer.github.io/octicons/) supported, including 5 [!badge variant="info" text="NEW"] icons.
 
 | Icon | Shortcode | Sample |
 | :---: | --- | --- |
 | :icon-accessibility: | accessibility | `:icon-accessibility:` |
 | :icon-accessibility-inset: | accessibility-inset | `:icon-accessibility-inset:` |
+| :icon-ai-model: [!badge variant="info" text="NEW"] | ai-model | `:icon-ai-model:` |
 | :icon-alert: | alert | `:icon-alert:` |
 | :icon-alert-fill: | alert-fill | `:icon-alert-fill:` |
 | :icon-apps: | apps | `:icon-apps:` |
@@ -68,6 +69,7 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-book: | book | `:icon-book:` |
 | :icon-bookmark: | bookmark | `:icon-bookmark:` |
 | :icon-bookmark-fill: | bookmark-fill | `:icon-bookmark-fill:` |
+| :icon-bookmark-filled: [!badge variant="info" text="NEW"] | bookmark-filled | `:icon-bookmark-filled:` |
 | :icon-bookmark-slash: | bookmark-slash | `:icon-bookmark-slash:` |
 | :icon-bookmark-slash-fill: | bookmark-slash-fill | `:icon-bookmark-slash-fill:` |
 | :icon-briefcase: | briefcase | `:icon-briefcase:` |
@@ -102,7 +104,7 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-command-palette: | command-palette | `:icon-command-palette:` |
 | :icon-comment: | comment | `:icon-comment:` |
 | :icon-comment-discussion: | comment-discussion | `:icon-comment-discussion:` |
-| :icon-commit: | commit | `:icon-commit:` |
+| [!badge variant="danger" text="REMOVED"] | commit | Use `:icon-git-commit:` |
 | :icon-container: | container | `:icon-container:` |
 | :icon-copilot: | copilot | `:icon-copilot:` |
 | :icon-copilot-error: | copilot-error | `:icon-copilot-error:` |
@@ -119,7 +121,7 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-device-camera-video: | device-camera-video | `:icon-device-camera-video:` |
 | :icon-device-desktop: | device-desktop | `:icon-device-desktop:` |
 | :icon-device-mobile: | device-mobile | `:icon-device-mobile:` |
-| :icon-devices: [!badge variant="info" text="NEW"] | devices | `:icon-devices:` |
+| :icon-devices: | devices | `:icon-devices:` |
 | :icon-diamond: | diamond | `:icon-diamond:` |
 | :icon-diff: | diff | `:icon-diff:` |
 | :icon-diff-added: | diff-added | `:icon-diff-added:` |
@@ -140,16 +142,16 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-feed-discussion: | feed-discussion | `:icon-feed-discussion:` |
 | :icon-feed-forked: | feed-forked | `:icon-feed-forked:` |
 | :icon-feed-heart: | feed-heart | `:icon-feed-heart:` |
-| :icon-feed-issue-closed: [!badge variant="info" text="NEW"] | feed-issue-closed | `:icon-feed-issue-closed:` |
-| :icon-feed-issue-draft: [!badge variant="info" text="NEW"] | feed-issue-draft | `:icon-feed-issue-draft:` |
-| :icon-feed-issue-open: [!badge variant="info" text="NEW"] | feed-issue-open | `:icon-feed-issue-open:` |
+| :icon-feed-issue-closed: | feed-issue-closed | `:icon-feed-issue-closed:` |
+| :icon-feed-issue-draft: | feed-issue-draft | `:icon-feed-issue-draft:` |
+| :icon-feed-issue-open: | feed-issue-open | `:icon-feed-issue-open:` |
 | :icon-feed-merged: | feed-merged | `:icon-feed-merged:` |
 | :icon-feed-person: | feed-person | `:icon-feed-person:` |
-| :icon-feed-plus: [!badge variant="info" text="NEW"] | feed-plus | `:icon-feed-plus:` |
-| :icon-feed-public: [!badge variant="info" text="NEW"] | feed-public | `:icon-feed-public:` |
-| :icon-feed-pull-request-closed: [!badge variant="info" text="NEW"] | feed-pull-request-closed | `:icon-feed-pull-request-closed:` |
-| :icon-feed-pull-request-draft: [!badge variant="info" text="NEW"] | feed-pull-request-draft | `:icon-feed-pull-request-draft:` |
-| :icon-feed-pull-request-open: [!badge variant="info" text="NEW"] | feed-pull-request-open | `:icon-feed-pull-request-open:` |
+| :icon-feed-plus: | feed-plus | `:icon-feed-plus:` |
+| :icon-feed-public: | feed-public | `:icon-feed-public:` |
+| :icon-feed-pull-request-closed: | feed-pull-request-closed | `:icon-feed-pull-request-closed:` |
+| :icon-feed-pull-request-draft: | feed-pull-request-draft | `:icon-feed-pull-request-draft:` |
+| :icon-feed-pull-request-open: | feed-pull-request-open | `:icon-feed-pull-request-open:` |
 | :icon-feed-repo: | feed-repo | `:icon-feed-repo:` |
 | :icon-feed-rocket: | feed-rocket | `:icon-feed-rocket:` |
 | :icon-feed-star: | feed-star | `:icon-feed-star:` |
@@ -164,7 +166,7 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-file-directory: | file-directory | `:icon-file-directory:` |
 | :icon-file-directory-fill: | file-directory-fill | `:icon-file-directory-fill:` |
 | :icon-file-directory-open-fill: | file-directory-open-fill | `:icon-file-directory-open-fill:` |
-| :icon-file-directory-symlink: [!badge variant="info" text="NEW"] | file-directory-symlink | `:icon-file-directory-symlink:` |
+| :icon-file-directory-symlink: | file-directory-symlink | `:icon-file-directory-symlink:` |
 | :icon-file-media: | file-media | `:icon-file-media:` |
 | :icon-file-moved: | file-moved | `:icon-file-moved:` |
 | :icon-file-removed: | file-removed | `:icon-file-removed:` |
@@ -263,8 +265,8 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-person-add: | person-add | `:icon-person-add:` |
 | :icon-person-fill: | person-fill | `:icon-person-fill:` |
 | :icon-pin: | pin | `:icon-pin:` |
-| :icon-pin-slash: [!badge variant="info" text="NEW"] | pin-slash | `:icon-pin-slash:` |
-| :icon-pivot-column: [!badge variant="info" text="NEW"] | pivot-column | `:icon-pivot-column:` |
+| :icon-pin-slash: | pin-slash | `:icon-pin-slash:` |
+| :icon-pivot-column: | pivot-column | `:icon-pivot-column:` |
 | :icon-play: | play | `:icon-play:` |
 | :icon-plug: | plug | `:icon-plug:` |
 | :icon-plus: | plus | `:icon-plus:` |
@@ -277,11 +279,12 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-question: | question | `:icon-question:` |
 | :icon-quote: | quote | `:icon-quote:` |
 | :icon-read: | read | `:icon-read:` |
-| :icon-redo: [!badge variant="info" text="NEW"] | redo | `:icon-redo:` |
+| :icon-redo: | redo | `:icon-redo:` |
 | :icon-rel-file-path: | rel-file-path | `:icon-rel-file-path:` |
 | :icon-reply: | reply | `:icon-reply:` |
 | :icon-repo: | repo | `:icon-repo:` |
 | :icon-repo-clone: | repo-clone | `:icon-repo-clone:` |
+| :icon-repo-delete: [!badge variant="info" text="NEW"] | repo-delete | `:icon-repo-delete:` |
 | :icon-repo-deleted: | repo-deleted | `:icon-repo-deleted:` |
 | :icon-repo-forked: | repo-forked | `:icon-repo-forked:` |
 | :icon-repo-locked: | repo-locked | `:icon-repo-locked:` |
@@ -316,8 +319,10 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-sort-asc: | sort-asc | `:icon-sort-asc:` |
 | :icon-sort-desc: | sort-desc | `:icon-sort-desc:` |
 | :icon-sparkle-fill: | sparkle-fill | `:icon-sparkle-fill:` |
+| :icon-sparkles-fill: [!badge variant="info" text="NEW"] | sparkles-fill | `:icon-sparkled-fill:` |
 | :icon-sponsor-tiers: | sponsor-tiers | `:icon-sponsor-tiers:` |
 | :icon-square: | square | `:icon-square:` |
+| :icon-square-circle: [!badge variant="info" text="NEW"]    | square-circle | `:icon-square-circle:` |
 | :icon-square-fill: | square-fill | `:icon-square-fill:` |
 | :icon-squirrel: | squirrel | `:icon-squirrel:` |
 | :icon-stack: | stack | `:icon-stack:` |
@@ -340,8 +345,8 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-thumbsdown: | thumbsdown | `:icon-thumbsdown:` |
 | :icon-thumbsup: | thumbsup | `:icon-thumbsup:` |
 | :icon-tools: | tools | `:icon-tools:` |
-| :icon-tracked-by-closed-completed: [!badge variant="info" text="NEW"] | tracked-by-closed-completed | `:icon-tracked-by-closed-completed:` |
-| :icon-tracked-by-closed-not-planned: [!badge variant="info" text="NEW"] | tracked-by-closed-not-planned | `:icon-tracked-by-closed-not-planned:` |
+| :icon-tracked-by-closed-completed: | tracked-by-closed-completed | `:icon-tracked-by-closed-completed:` |
+| :icon-tracked-by-closed-not-planned: | tracked-by-closed-not-planned | `:icon-tracked-by-closed-not-planned:` |
 | :icon-trash: | trash | `:icon-trash:` |
 | :icon-triangle-down: | triangle-down | `:icon-triangle-down:` |
 | :icon-triangle-left: | triangle-left | `:icon-triangle-left:` |
@@ -349,7 +354,7 @@ Currently, there are 325 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-triangle-up: | triangle-up | `:icon-triangle-up:` |
 | :icon-trophy: | trophy | `:icon-trophy:` |
 | :icon-typography: | typography | `:icon-typography:` |
-| :icon-undo: [!badge variant="info" text="NEW"] | undo | `:icon-undo:` |
+| :icon-undo: | undo | `:icon-undo:` |
 | :icon-unfold: | unfold | `:icon-unfold:` |
 | :icon-unlink: | unlink | `:icon-unlink:` |
 | :icon-unlock: | unlock | `:icon-unlock:` |
