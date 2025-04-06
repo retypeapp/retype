@@ -70,7 +70,8 @@ data:
     CSS: Cascading Style Sheet
 
 footer:
-  copyright: © Copyright {{ year }} – [Retype](https://retype.com/) – All rights reserved
+  copyright: "© Copyright {{ year }} - [Retype](https://retype.com/) | All rights reserved | Made in Canada :flag-ca:"
+
   links:
     - text: About
       link: about.md
