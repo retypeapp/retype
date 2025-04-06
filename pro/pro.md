@@ -187,7 +187,7 @@ You could use one key now and save the other for a future project or to renew th
 
 ## We have other license requirements, are there other options?
 
-Yes, the Retype licensing is very flexible and custom licensing is possible. Please send an email to hello@retype.com with your requirements.
+Yes, custom licensing options are available. Please send an email to hello@retype.com with your requirements.
 
 ## Contact us
 
