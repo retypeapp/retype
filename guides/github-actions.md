@@ -1,6 +1,5 @@
 ---
 icon: git-compare
-tags: [guide]
 ---
 # GitHub Actions
 
@@ -61,9 +60,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-dotnet@v1
+      - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 7.0.x
+          dotnet-version: 9.0.x
 
       - uses: retypeapp/action-build@latest
 
@@ -120,9 +119,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-dotnet@v1
+      - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 7.0.x
+          dotnet-version: 9.0.x
 
       - uses: retypeapp/action-build@latest
         env:
