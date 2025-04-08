@@ -206,6 +206,7 @@ Options:
   --secret <secret>      Retype license key
   --password <password>  Private page password
   --override <override>  JSON configuration overriding project config values
+  --strict               [PRO] Return a non-zero exit code if the build had errors or warnings
   -w, --watch            Watch for file changes
   -v, --verbose          Enable verbose logging
   -a, --api              Watch for API changes
