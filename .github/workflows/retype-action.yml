@@ -10,21 +10,16 @@ jobs:
     name: Publish to retype branch
 
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
     steps:
       - uses: actions/checkout@v4
 
-      # - uses: actions/setup-dotnet@v4
-      #   with:
-      #     dotnet-version: 9.0.x
-
-      - uses: retypeapp/action-build@multi2
+      - uses: retypeapp/action-build@latest
         env:
           RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
-          RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
+          RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }} # The password is: test
 
       - uses: retypeapp/action-github-pages@latest
         with:
