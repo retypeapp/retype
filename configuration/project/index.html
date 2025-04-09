@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.797475571778">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.797536097231">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.7.0">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.7.0.797475571778" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.7.0.797536097231" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.7.0.797475571778" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.7.0.797536097231" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.7.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.7.0.797475571778" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.7.0.797475571778" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.7.0.797536097231" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.7.0.797536097231" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.7.0.797475571778" rel="stylesheet">
+    <link href="/static/styles.css?v=3.7.0.797536097231" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -2440,6 +2440,22 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tbody>
 </table>
 </div>
+</doc-panel>
+<hr>
+<doc-anchor-target id="showsidebarfilter">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#showsidebarfilter">#</doc-anchor-trigger>
+        <span>showSidebarFilter</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="showsidebarfilter-boolean">
+    <template #title>showSidebarFilter : <code v-pre>boolean</code></template>
+<p>The <code v-pre>showSidebarFilter</code> project setting controls the visibility of the filter component in the left sidebar above the navigation tree. Default is <code v-pre>true</code>.</p>
+<p>By default, this setting is <code v-pre>true</code>, meaning the filter component is displayed. If set to <code v-pre>false</code>, the filter component will be hidden, allowing for a more streamlined sidebar layout. This option can be useful for simplifying the user interface in projects where filtering topics is not necessary.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Hide Filter component</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">showSidebarFilter: false</code></pre>
+</doc-codeblock></div>
 </doc-panel>
 <hr>
 <doc-anchor-target id="snippets">
