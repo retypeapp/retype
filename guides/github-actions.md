@@ -78,7 +78,7 @@ If the default branch in your repo is `master`, change `- main` to `- master`. I
       - master
 ```
 
-Commit your **retype-action.yml** file and push to your repo.
+Commit your **.github/workflows/retype-action.yml** file and push to your repo.
 
 ### RETYPE_SECRET
 
@@ -113,10 +113,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9.0.x
 
       - uses: retypeapp/action-build@latest
         env:
