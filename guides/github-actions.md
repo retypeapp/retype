@@ -1,5 +1,7 @@
 ---
 icon: git-compare
+tags:
+  - guide
 ---
 # GitHub Actions
 
@@ -50,19 +52,12 @@ on:
 
 jobs:
   publish:
-    name: Publish to retype branch
-
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9.0.x
 
       - uses: retypeapp/action-build@latest
 
