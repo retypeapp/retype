@@ -10,12 +10,26 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 !!!
 
 ---
-
-## v3.7.0 [!badge text="NEXT" variant="info"]
+## v3.8.0 [!badge text="NEXT" variant="info"]
 
 In progress...
 
-## v3.6.0 [!badge text="LATEST" variant="info"]
+## v3.7.0 [!badge text="LATEST" variant="info"]
+
+Released: [2024-04-07](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
+
++++ New :icon-shield-check:
+- [x] New `-v` flag as an alias on `retype --version` in CLI
+- [x] New `showSidebarFilter` project setting to hide navigation Filter component, see [#538](https://github.com/retypeapp/retype/discussions/538)
++++ Improved :icon-thumbsup:
+- [x] Restore support for official Retype Docker containers
+- [x] Upgrade [Octicons](/components/octicons/) to latest v19.15.1 release
+- [x] Add support for .NET 9.0 and upgrade internal frameworks
++++ Fixed :icon-bug:
+- [x] Fixed Retype version number where build hash was being appended
++++
+
+## v3.6.0
 
 Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
 
