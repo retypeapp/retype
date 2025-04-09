@@ -1,33 +1,35 @@
 ---
-label: Project config
+label: Project
 order: 200
 icon: package
 tags: [config]
+toc:
+  depth: 2-5
 ---
 # Project configuration
 
-Retype will read the `retype.yml` file for additional instructions on how to configure and build your project.
+Retype will read the **retype.yml** file for additional instructions on how to configure and build your project.
 
-The `retype.yml` file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
+The **retype.yml** file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
 
 !!!
-After making a change to the `retype.yml`, if you are running `retype watch`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
+After making a change to the **retype.yml**, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
 
-If you started the local web server using `retype run`, you'll need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update.
+If you started the local web server using `retype serve`, you will need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update. Using the command `retype serve --live` will automatically update all web browsers.
 !!!
 
-The `retype.yml` file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a `retype.yml` is a good first step.
+The **retype.yml** file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a **retype.yml** is a good first step.
 
-If you run the command `retype watch` and do not have a `retype.yml` project configuration file within the root of your project, Retype will auto-generate a simple `retype.yml` file for your project. You can then edit the file to customize your project.
+If you run the command `retype start` and do not have a **retype.yml** project configuration file within the root of your project, Retype will auto-generate a simple **retype.yml** file for your project. You can then edit the file to customize your project.
 
-You can also explicitly have Retype generate a `retype.yml` file by running the command `retype init`.
+You can also explicitly have Retype generate a **retype.yml** file by running the command `retype init`.
 
 The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.
 
 ```yml Sample retype.yml
 input: .
 output: .retype
-url: # Add your website address here
+url: example.com # Add your website here
 branding:
   title: Project Name
   label: Docs
@@ -37,6 +39,8 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
+
+[!ref Full retype.yml sample](/samples/advanced-project-config.md)
 
 ---
 
@@ -59,7 +63,7 @@ branding:
 
 The above `title` would create the following branding title in the upper-left corner of the generated website.
 
-![](../static/project-branding-title.png)
+![](/static/project-branding-title.png)
 ===
 
 ### label
@@ -74,7 +78,7 @@ branding:
 ```
 The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#title) or [`logo`](#logo).
 
-![](../static/project-branding-title.png)
+![](/static/project-branding-title.png)
 ===
 
 ### logo
@@ -131,29 +135,116 @@ branding:
 
 Custom color configuration.
 
-#### label.text
+!!!warning
+Hex color values must be wrapped in `"` double-quotes, otherwise the value is treated as a comment because of the unquoted `#` character.
+!!!
 
-=== label.text : `string`
-Set a custom label text color. Default is `#1f7aff`.
+#### label
+
+##### text
+
+=== text : `string`
+Set a custom label text color". Default is `"#1f7aff"`.
 
 ```yml
 branding:
   colors:
     label:
-      text: #ffffff
+      text: "#ffffff"
 ```
 ===
 
-#### label.background
+##### background
 
-=== label.background : `string`
-Set a custom label background color. Default is `#e1edff`.
+=== background : `string`
+Set a custom label background color. Default is `"#e1edff"`.
 
 ```yml
 branding:
   colors:
     label:
-      background: #ff0000
+      background: "#ff0000"
+```
+===
+
+---
+
+## breadcrumb
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The breadcrumb navigation provides a hierarchical representation of the user's location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.
+
+### enabled
+
+=== [!badge PRO] enabled : `boolean`
+To enable or disable the breadcrumb navigation within Retype Pro projects. Default is `true`.
+
+For Retype Pro projects, breadcrumb navigation will be enabled by default.
+
+For Retype projects (non-Pro), the breadcrumb navigation will not be added to any pages.
+
+To disable the breadcrumb navigation across an entire project, set the `enabled` parameter to `false` as shown in the following sample:
+
+```yml
+breadcrumb:
+  enabled: false # Disabled project wide
+```
+===
+
+### home
+
+=== [!badge PRO] home : `string` or `boolean`
+The `home` config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a `string` or a `boolean` value.
+
+By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.
+
+Set with a custom label:
+
+```yml
+breadcrumb:
+  home: Home # custom label
+```
+
+Use an Octicon [icon](/components/icon.md) instead of text for the Home node:
+
+```yml
+breadcrumb:
+  home: ":icon-home:" # icon
+```
+
+Use an [emoji](/components/emoji.md):
+
+```yml
+breadcrumb:
+  home: ":rocket:" # emoji
+```
+
+The entire first item of the breadcrumb navigation, the "Home" node, can be removed by setting `home: false`:
+
+```yml
+breadcrumb:
+  home: false # Do not include the Home node
+```
+===
+
+### separator
+
+=== [!badge PRO] separator : `string`
+The `separator` config allows for the customization of the node separator used between each page label in the breadcrumb navigation.
+
+Using a pipe `|` character as the separator:
+
+```yml
+breadcrumb:
+  separator: "|"
+```
+
+Using an [icon](/components/icon.md) as the separator:
+
+```yml
+breadcrumb:
+  separator: ":icon-dot:"
 ```
 ===
 
@@ -163,14 +254,14 @@ branding:
 
 Cache configuration options.
 
-### busting
-
-Cache busting configuration for the website resources.
-Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.
+### strategy
 
 === strategy : `string`
+Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files.
 
-Specifies the approach Retype will use for cache invalidation. 
+Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.
+
+Specifies the approach Retype will use for cache invalidation.
 
 | Strategy     | Description |
 | ------------ | ----------- |
@@ -179,6 +270,11 @@ Specifies the approach Retype will use for cache invalidation.
 | `query`      | Cache invalidation is achieved by adding a query parameter with a version token value. |
 
 Default is `query`.
+
+```yml
+cache:
+  strategy: query
+```
 
 Below are demo URLs generated for corresponding `cache.busting.strategy` options:
 
@@ -196,14 +292,21 @@ Below are demo URLs generated for corresponding `cache.busting.strategy` options
 
 ===
 
+### token
+
 === token : `string`
 
 An optional unique token used for website resource cache invalidation.
 
-- If specified, the provided value is used for all invalidatable resources as is.
-- If not specified, the default token having the following structure is used:  
+If specified, the provided value is used for all invalidatable resources as is.
+
+If not specified, the default token having the following structure is used:
 `{Retype version}.{total milliseconds elapsed since 2000-01-01}`
 
+```yml
+cache:
+  token: v5
+```
 ===
 
 ---
@@ -216,13 +319,13 @@ An optional unique token used for website resource cache invalidation.
 In general, you should not require setting the `cname`. Please set the [`url`](#url).
 !!!
 
-By default, if the [`url`](#url) is set, Retype will automatically generate a `CNAME` file. This can be disabled by setting `cname: false`.
+By default, if the [`url`](#url) is set, Retype will automatically generate a **CNAME** file. This can be disabled by setting `cname: false`.
 
 ```yml Disable CNAME file generation
 cname: false
 ```
 
-If you do want a `CNAME` file generated, but for some reason require a value different than what the `url` creates, you can explicitly set instruct Retype to generate the `CNAME` with a different value.
+If you do want a **CNAME** file generated, but for some reason require a value different than what the `url` creates, you can explicitly set instruct Retype to generate the **CNAME** with a different value.
 
 This would be a highly unusual scenario, but Retype does allow you to configure these values separately, just in case you need it. We **HIGHLY** recommend that you just stick with setting the [`url`](#url).
 
@@ -244,9 +347,9 @@ Check out the bottom of this page for a working sample of `Edit this page`.
 
 ### repo
 
+=== repo : `string`
 The repository URL where the source files for this project are located.
 
-=== repo : `string`
 Setting a `repo` value will enable the `Edit this page` links on all content pages.
 
 ```yml
@@ -254,7 +357,7 @@ edit:
   repo: "https://github.com/<your-organization>/<your-repo>/"
 ```
 
-You can also configurate the links to point directly to the `/edit/` view of the page:
+It is also possible to configure the links to point directly to the `/edit/` view of the page:
 
 ```yml
 edit:
@@ -265,13 +368,12 @@ edit:
 
 ### base
 
-An optional base path to a directory within the repository.
-
 === base : `string`
+An optional base path to a directory within the repository.
 
 The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
 
-The following sample demonstrates how `edit.base` would be configured if the `.md` pages for this project are stored within the `/src/docs/` sub-directory within the repo.
+The following sample demonstrates how `edit.base` would be configured if the **.md** source files for this project are stored within the **/src/docs** sub-directory within the repo.
 
 ```yml
 edit:
@@ -291,7 +393,7 @@ Point to a custom branch within the repo. Default is `main`.
 ```yml
 edit:
   repo: "https://github.com/your-organization/your-repo"
-  branch: website
+  branch: master
 ```
 ===
 
@@ -309,10 +411,29 @@ edit:
 
 ---
 
+## editor
+
+Custom configuration to control the page live editor functionality that is only available when `retype start` is running.
+
+### enabled
+
+=== enabled : `boolean`
+To enable or disable the live editor. Default is `true`.
+
+Set to `false` to disable and hide the live editor.
+
+```yml
+editor:
+  enabled: false # Default is true
+```
+===
+
+---
+
 ## exclude
 
 === exclude : `list`
-Retype can exclude files or folders from being built or copied to the [`output`](#output) by configuring an `exclude` list within your projects `retype.yml` file.
+Retype can exclude files or folders from being built or copied to the [`output`](#output) by configuring an `exclude` list within your projects **retype.yml** file.
 
 Exclude patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
@@ -383,59 +504,257 @@ footer:
 
 ---
 
+## generator
+
+### directoryIndex
+
+Configuration options to instruct Retype on how and when to deal with the default directory index files, such as `index.html`.
+
+#### altNames
+
+=== altNames : `list`
+A list of file names to treat as default HTML files.
+
+By default, Retype will treat all of the following files as default pages if they are within a folder.
+
+```yml
+generator:
+  directoryIndex:
+    altNames:
+      - index.html
+      - index.htm
+      - default.html
+      - default.htm
+```
+
+If you have a **default.htm** file within a folder and do not want it to be treated as a default page, then set `altNames` to the following:
+
+```yml
+generator:
+  directoryIndex:
+    altNames:
+      - index.html
+```
+
+===
+
+#### append
+
+=== append : `boolean`
+Specifies if the default document file name should be appended to resolved URLs. By default, Retype does not append the default file name.
+
+If `false`, the generated link will be `/guide/`. If `true`, the generated link will be `/guides/index.html`.
+
+```yml
+generator:
+  directoryIndex:
+    append: true # default is false
+```
+
+Using `append: true` in combination with the [`search.preload`](#preload) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+
+```yml
+search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true
+```
+
+===
+
+#### name
+
+=== name : `string`
+The default HTML document file name generated by Retype.
+
+```yml
+generator:
+  directoryIndex:
+    name: default.htm # Default is index.html
+```
+===
+
+### paths
+
+=== paths : `string`
+Configures url kind preference for resolved urls. Supported values: `source`, `relative`, and `root`.
+
+Option | Description
+---    | ---
+`relative` | Link paths are constructed using relative paths. Example: `../../guide/introduction/`. This is the default.
+`root`     | Link paths are constructed using paths resolving to the website root. Example: `/guide/introduction/`
+`source`   | Link paths are constructed using paths resolving to the source file root.
+
+```yml
+generator:
+  paths: relative
+```
+===
+
+### recase
+
+=== recase : `string`
+Instructs Retype on how to recase the project file and folder names created by the author. Default is `all`.
+
+By default, Retype will recase all the generated file and folder names to all lowercase.
+
+Option | Description
+---    | ---
+`all`  | Covert all file and folder names in the generated [`output`](#output) to all lowercase. This is the default.
+`none` | Do not change the case of any file or folder names.
+
+
+To have Retype NOT change the casing of any of your file or folder names, set `recase` to `none`.
+
+```yml
+generator:
+  recase: none
+```
+===
+
+### trailingSlash
+
+=== trailingSlash : `boolean`
+By setting `trailingSlash: false` in the project config, authors can instruct Retype to remove (or not add) the trailing `/` character when constructing links from paths to Markdown files.
+
+For example, if you have a simple link in your project to `[Example](/guide/example.md)`, Retype will create the link as `/guide/example/`. By setting `trailingSlash: false` in your project, Retype would then create the link as `/guide/example`.
+
+It is best practice to include the trailing slash and by default, Retype will automatically add the trailing slash to links that are missing.
+
+```
+generator:
+  trailingSlash: false # default is true
+```
+===
+
+---
+
+## hub
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The Hub creates a handy shortcut link in the top-left of the page, just to the left of your project logo or title.
+
+![Hub link sample](/static/hub-screencapture.png)
+
+The hub link lets visitors easily jump back to your main site or central doc hub, such as linking from your documentation deployed at `docs.example.com` to `example.com`.
+
+The hub link is useful when deploying multiple documentation projects and you would like a bridge to your primary documentation hub.
+
+The hub is optional. If you would like a hub link, just set a URL in the `link` config.
+
+### link
+
+=== [!badge PRO] link : `string`
+Set to a local path or external URL. By setting the `link` value, the Hub will be enabled. To disable, remove the `link` config.
+
+```yml
+hub:
+  link: https://example.com/ # default is empty
+```
+===
+
+### alt
+
+=== [!badge PRO] alt : `string`
+Custom text value used to set the `title` attribute of the hub link.
+
+```yml
+hub:
+  link: https://example.com/
+  alt: Go to example.com
+```
+===
+
+### target
+
+=== [!badge PRO] target : `string`
+Sets the `target` attribute of the hub link and specifies which window or tab to open the link into.
+
+```yml
+hub:
+  link: https://example.com/
+  target: blank
+```
+
+If no `target` is configured, the link will open in the current tab.
+
+The `target` can be set to any value, although `blank` is common and will open the link in a new tab. Retype will automatically transform the value `blank` into `_blank` which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.
+
+There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
+
+{.compact}
+| Config `target` value | Runtime `target` value |
+| --------------------- | ---------------------- |
+| `blank`               | `_blank`               |
+| `parent`              | `_parent`              |
+| `top`                 | `_top`                 |
+| `self`                | `_self`                |
+| `news1`               | `news1`                |
+| `nEWs2`               | `news2`                |
+| `recent NEWS`         | `recent-news`          |
+
+===
+
+---
+
 ## include
 
 === include : `list`
 Retype can explicitly include files or folders that might have been excluded by default or excluded within the [`exclude`](#exclude) config.
 
 !!!
-
 If you create a link to local static file, such as `.zip` file, Retype will automatically copy that file to the generated website.
 
 That file or file type does not need to be explicitly configured to be included. Retype assumes that if you created a link to the file, you wanted that file published and it will be included in the [`output`](#output).
-
 !!!
 
 Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
-The following sample demonstrates how to include all `.py` files and the entire contents of any `www` folder within the project.
+The following sample demonstrates how to include all **.py** files, all **.js** files that start with the name `demo`, and the entire contents of any `www` folder within the project.
 
 ```yml Include patterns
 include:
-  - *.py
-  - **/www/**
+  - "*.py"
+  - "demo*.js"
+  - "**/www/**"
 ```
 
-You could explicitly include everything in your project with `include: [ * ]`, BUT be careful as all files within your [`input`](#input) will be publicly availble once your website is published. We would not recommend doing this, but it's your call. :fearful:
+You could explicitly include everything in your project with `include: [ "*" ]`, but be careful as all files within your [`input`](#input) will be publicly availble once your website is published. We would not recommend doing this, but it's your call. :fearful:
 
-Retype treats all `.md` and `.yml` files as parsable content files that will be converted into `.html` files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
+Retype treats all **.md** and **.yml** files as parsable content files that will be converted into **.html** files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
 
 By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the `output` unchanged. If you require any other file types, they would need to be explicitly added to the `include` config.
 
-Included file types:
+File types that are automatically included:
 
-- `*.gif`
-- `*.heif`
-- `*.jpeg`
-- `*.jpg`
-- `*.png`
-- `*.svg`
-- `*.webp`
-- `*.ai`
-- `*.bmp`
-- `*.eps`
-- `*.pdf`
-- `*.tiff`
-- `*.txt`
+1. `*.ai`
+1. `*.bmp`
+1. `*.eps`
+1. `*.gif`
+1. `*.heif`
+1. `*.htm`
+1. `*.html`
+1. `*.jpeg`
+1. `*.jpg`
+1. `*.pdf`
+1. `*.png`
+1. `*.svg`
+1. `*.tiff`
+1. `*.txt`
+1. `*.webp`
+1. `*.zip`
 
 By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the `output` unchanged. If you require any other folders, please add to the `include` config.
 
 Included folders:
 
-- `**/static/**`
-- `**/public/**`
-- `**/assets/**`
-- `**/resources/**`
+1. `**/static/**`
+1. `**/public/**`
+1. `**/assets/**`
+1. `**/resources/**`
 
 If you would rather not include certain folders, files, or file types, please add the pattern to the [`exclude`](#exclude) config.
 
@@ -449,7 +768,7 @@ If you would rather not include certain folders, files, or file types, please ad
 
 Custom path to the input directory. Default is `.`.
 
-The path is relative to the `retype.yml` location.
+The path is relative to the **retype.yml** location.
 
 ```yml Change input location to /src folder
 input: ./src
@@ -460,11 +779,11 @@ input: ./src
 
 ## integrations
 
-More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/discussions).
+More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/issues).
 
 ### googleAnalytics
 
-Add Google Analytics to your website.
+Add [Google Analytics](https://analytics.google.com/analytics/web/) to your website.
 
 === googleAnalytics.id : `string`
 Google Analytics ID value.
@@ -472,52 +791,142 @@ Google Analytics ID value.
 ```yml
 integrations:
   googleAnalytics:
-    id: UA-12345678-1
+    id: <id>
 ```
+
+Replace the `<id>` with your Google Analytics measurement id. For example:
+
+```yml
+integrations:
+  googleAnalytics:
+    id: A-BCDEFGHIJ1
+```
+
+===
+
+---
+
+### googleTagManager
+
+Add the [Google Tag Manager](https://tagmanager.google.com/) to your website.
+
+=== googleTagManager.id : `string`
+Google Tag manager ID value.
+
+```yml
+integrations:
+  googleTagManager:
+    id: <id>
+```
+
+Replace the `<id>` with your Google Tag Manager measurement id.
 ===
 
 ---
 
 ### gravatar
 
-Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used used by the [page.authors](page.md#author) configuration.
+Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used by the [page.authors](/configuration/page.md#author) configuration.
 
-### gravatar.default
+#### default
 
-=== gravatar.default : `string`
+=== default : `string`
 
-The default profile picture to return from Gravatar queries whenever there is no picture assigned to the queried email address. Default value is `mp`.
+The default profile image to return from Gravatar queries whenever no image is assigned to the queried email address. Default value is `mp`.
 
 Either a full URL to the image can be configured or one of the options listed below:
 
 | Value | Sample |
 | --- | --- |
 | `404` | Broken image |
-| `mp` (default) | ![](../static/gravatar-sample-mp.png) |
-| `identicon` | ![](../static/gravatar-sample-identicon.png) |
-| `monsterid` | ![](../static/gravatar-sample-monsterid.png) |
-| `wavatar` | ![](../static/gravatar-sample-wavatar.png) |
-| `retro` | ![](../static/gravatar-sample-retro.png) |
-| `robohash` | ![](../static/gravatar-sample-robohash.png) |
+| `mp` (default) | ![](/static/gravatar-sample-mp.png) |
+| `identicon` | ![](/static/gravatar-sample-identicon.png) |
+| `monsterid` | ![](/static/gravatar-sample-monsterid.png) |
+| `wavatar` | ![](/static/gravatar-sample-wavatar.png) |
+| `retro` | ![](/static/gravatar-sample-retro.png) |
+| `robohash` | ![](/static/gravatar-sample-robohash.png) |
 | `blank` | Blank image |
 
 Please see the [Default Image](https://en.gravatar.com/site/implement/images#default-image) documentation on the Gravatar website.
 
 ===
 
-### gravatar.enabled
+#### enabled
 
-=== gravatar.enabled : `boolean`
+=== enabled : `boolean`
 
-Whether Retype should use Gravatar to pull profile images. Default is `true`. 
+Whether Retype should use Gravatar to pull profile images. Default is `true`.
 
 Setting to `false` will show the default image or specified resource.
 
 !!!
-
 Disabling Gravatar will also reset the default avatar to the Retype default.
-
 !!!
+
+===
+
+---
+
+### plausible
+
+[Plausible.io](https://plausible.io/) is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.
+
+#### domain
+
+=== domain : `string`
+
+When you setup your project within Plausible, you enter a [`Domain`](https://plausible.io/docs/add-website) value which is then used to set the `integrations.plausible.domain` config within your **retype.yml** project configuration file.
+
+```yml
+integrations:
+  plausible:
+    domain: <string>
+```
+
+Plausible can also send statistics to [multiple](https://plausible.io/docs/plausible-script#can-i-send-stats-to-multiple-dashboards-at-the-same-time) dashboards by configuring a comma-separated list of domains. For example:
+
+```yml
+integrations:
+  plausible:
+    domain: domain1.com,domain2.com,subdomain.yourdomain.com
+```
+
+Check out the Plausible [documentation](https://plausible.io/docs/) for more details.
+
+===
+
+#### host
+
+=== host : `string`
+
+The Plausible service can be [self-hosted](https://plausible.io/docs/self-hosting) and your Retype project can be configured to use your custom `host`.
+
+```yml
+integrations:
+  plausible:
+    host: <string>
+```
+
+A typical `host` project configuration would look like the following sample:
+
+```yml
+integrations:
+  plausible:
+    host: plausible.example.com
+```
+
+If no transfer protocol is supplied, Retype will default the `host` value to use `https`.
+
+All of the following sample `host` values are supported:
+
+```yml
+host: example.com
+host: docs.example.com
+host: https://example.com
+host: http://example.com
+host: example.com/js/plausible.js
+host: docs.example.com/js/plausible.js
+```
 
 ===
 
@@ -552,9 +961,9 @@ links:
 
 === link : `string`
 
-The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
+The URL to use for the link. The link can be a **.md** file name, or to any internal path, or to any external URL.
 
-If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
+If a **.md** file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
 
 ```yml
 links:
@@ -576,14 +985,14 @@ links:
     icon: bug
 ```
 
-Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
+Options include using an [Octicon](https://primer.style/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 icon: rocket
 ```
 
 ```yml Emoji shortcode
-icon: :rocket:
+icon: ":rocket:"
 ```
 
 ```yml SVG element
@@ -610,7 +1019,6 @@ links:
 ```
 ===
 
-
 ### target
 
 === target : `string`
@@ -630,6 +1038,7 @@ The `target` can be set to any value, although `blank` is common and will open t
 
 There are several other values that may be prefixed with an `_` character, including `self`, `parent`, and `top`. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the `target` values.
 
+{.compact}
 | Config `target` value | Runtime `target` value |
 | --------------------- | ---------------------- |
 | `blank`               | `_blank`               |
@@ -641,6 +1050,67 @@ There are several other values that may be prefixed with an `_` character, inclu
 | `recent NEWS`         | `recent-news`          |
 
 ===
+
+---
+
+## locale
+
+The value of the `locale` config defines the primary language that will be used on the generated website. Retype will generate the website using system messages and labels in this language.
+
+This flexibility makes your application more versatile and accessible to users from different languages. Currently, 24 languages are supported by Retype.
+
+!!!
+Please visit the [Retype Translation](https://retypeapp.github.io/retype-translations/) project for more details on adding new languages and making changes to existing languages.
+!!!
+
+=== locale : `string`
+
+You can switch the `locale` to any other supported language by providing the corresponding ISO language code as listed below.
+
+Default is `en`.
+
+The following sample demonstrates switching the project to use French.
+
+```yml
+locale: fr
+```
+
+===
+
+
+### Supported Languages
+
+{.compact}
+Code | Language | Native name
+---  | --- | ---
+`ar` | Arabic | العربية
+`da` | Danish | Dansk
+`de` | German | Deutsch
+`en` [!badge variant="info" size="xs" text="default"] | English | English
+`es` | Spanish | Español
+`fi` | Finnish | Suomalainen
+`fr` | French | Français
+`hi` | Hindi | हिन्दी
+`hu` | Hungarian | Magyar
+`hy` | Armenian (Hayeren) | Հայերեն
+`it` | Italian | Italiano
+`ja` | Japanese | 日本語
+`kn` | Kannada | ಕನ್ನಡ
+`ko` | Korean | 한국어
+`nl` | Dutch | Nederlands
+`no` | Norwegian | Norsk
+`pt` | Portuguese | Português
+`pt-BR` | Brazilian Portuguese | Portuguese do Brasil
+`ro` | Romanian | Română
+`ru` | Russian | Русский
+`sa` | Sankrit (Saṁskṛtam) | संस्कृतम्
+`sv` | Swedish | Svenska
+`ta` | Tamil | தமிழ்
+`te` | Telugu | తెలుగు
+`th` | Thai | ไทย
+`tr` | Turkish | Türkçe
+`vi` | Vietnamese | Tiếng Việt
+`zh` | Chinese | 中文
 
 ---
 
@@ -658,6 +1128,11 @@ Switches between `soft` and `hard` line break modes. The option instructs Retype
 - in `hard` mode, regular line breaks are always emitted as `<br />` HTML elements.
 
 Default is `soft`.
+
+```yml
+markdown:
+  lineBreaks: soft # or, hard
+```
 
 ===
 
@@ -678,12 +1153,141 @@ meta:
   title: " | Example.com - Widgets for the internet"
 ```
 
-If we had an `About us` page, the final `<title>` with the `title` value above would be:
+Using the sample above, if we had an `About us` page, the final `<title>` would be:
 
 ```html
 <title>About us | Example.com - Widgets for the internet</title>
 ```
+
+!!!
+See also, the Page level [`meta.title`](page.md/#title) configuration.
+!!!
 ===
+---
+
+## outbound
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `outbound` configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, [example.com](https://example.com/).
+
+The `outbound` functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the `outbound` configuration and functionality is ignored.
+
+If `outbound` is enabled, Retype will find all external (outbound) links within the project, add a trailing :icon-link-external: icon, and set the link to open in a new tab when clicked.
+
+### enabled
+
+=== [!badge PRO] enabled : `boolean`
+
+Controls whether the outbound links feature is enabled.
+
+The default is `true` for **Retype Pro** projects.
+
+The following sample demonstrates disabling the `outbound` functionality:
+
+```yml
+outbound:
+  enabled: false
+```
+===
+
+### custom
+
+=== [!badge PRO] custom : `string`
+
+Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.
+
+The following sample demonstrates how to add the attribute `rel="noopener noreferrer"` to all outbound links:
+
+```yml
+outbound:
+  custom: 'rel="noopener noreferrer"'
+```
+===
+
+### icon
+
+=== [!badge PRO] icon : `string`
+
+Defines the icon to be used for outbound links and accepts all the same options as the [`links.icon`](#icon) config. The default value is `link-external` :icon-link-external:.
+
+```yml
+outbound:
+  icon: link-external
+```
+
+If you would prefer to keep the `outbound` functionality enabled, but not include the :icon-link-external: icon, please set `icon: ""`. The following sample demonstrates:
+
+```yml
+outbound:
+  icon: ""
+```
+
+===
+
+### iconAlign
+
+=== [!badge PRO] iconAlign : `string`
+
+Determines the alignment of the icon for outbound links and accepts the same options as the [`links.iconAlign`](#iconalign) config. Acceptable values are `right` or `left`. The default value is `right`.
+
+```yml
+outbound:
+  iconAlign: right
+```
+===
+
+### target
+
+=== [!badge PRO] target : `string`
+
+Specifies the `target` attribute for the outbound links. The default value of `"blank"` opens the link in a new window or tab.
+
+```yml
+outbound:
+  target: blank
+```
+===
+
+### exclude
+
+=== [!badge PRO] exclude : `list`
+
+A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.
+
+This configuration accepts similar path patterns as the [`exclude`](#exclude) config.
+
+The following sample demonstrates excluding all links pointing to `example.com`.
+
+```yml
+outbound:
+  exclude:
+    - example.com
+```
+
+Please also see [`outbound.include`](#include-1).
+
+===
+
+### include
+
+=== [!badge PRO] include : `list`
+
+A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of `*` includes all links.
+
+This configuration accepts similar path patterns as the [`include`](#include) config.
+
+The following sample demonstrates including only links that point to `example.com`.
+
+```yml
+outbound:
+  include:
+    - example.com
+```
+
+If any item is added to the `include` list, by default, all other paths will be excluded. Please also see [`outbound.exclude`](#exclude-1).
+===
+
 ---
 
 ## output
@@ -692,10 +1296,28 @@ If we had an `About us` page, the final `<title>` with the `title` value above w
 
 Custom path to the output directory. Default is `.retype`.
 
-The path is relative to the `retype.yml` location.
+The path is relative to the **retype.yml** location.
 
 ```yml Change output location to /docs folder
 output: ./docs
+```
+===
+
+---
+
+## poweredByRetype
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+Controls whether to include or exclude the `Powered by Retype` branding.
+
+![Sample Powered by Retype branding](/static/powered-by-retype.png)
+
+=== [!badge PRO] poweredByRetype : `boolean`
+With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
+
+```yml
+poweredByRetype: true # Set to `false` to remove.
 ```
 ===
 
@@ -705,14 +1327,17 @@ output: ./docs
 
 Customization of the website search component.
 
-### minChars
+### hotkeys
 
-=== minChars : `number`
-Min number of characters required in a search query. Default is `3`.
+=== hotkeys : `list`
+Keyboard key to set the cursor focus into the search field. Default is `k`.
+
+The following sample demonstrates how to change the search hotkey to use `/` instead of the default `k`:
 
 ```yml
 search:
-  minChars: 3
+  hotkeys:
+    - "/"
 ```
 ===
 
@@ -727,27 +1352,40 @@ search:
 ```
 ===
 
-### placeholder
+### minChars
 
-=== placeholder : `string`
-Placeholder text rendered on the search component. Default is `"Search"`.
+=== minChars : `number`
+Min number of characters required in a search query. Default is `2`.
+
+The following sample demonstrates how to configure `search.minChars` with a new value:
 
 ```yml
 search:
-  placeholder: Search
+  minChars: 3
 ```
 ===
 
-### hotkeys
+### mode
 
-=== hotkeys : `list`
-Keyboard key to set the cursor focus into the search field. Default is `["/"]`.
+=== mode : `string`
+The search index creation mode. Default is `full`.
+
+Mode | Description
+--- | ---
+`full` | A full-text search index of the project content is made. Includes all headings and all text content.
+`partial` | All headings plus the first paragraph under each heading is used to create the search index. The Page `description` config is also included if not empty.
+`basic` | All headings plus only the first paragraph of each page is used to create the search index. The Page `description` config is also included if not empty.
+
+The following sample demonstrates how to configure `search.mode` with a new value:
 
 ```yml
 search:
-  hotkeys:
-    - "/"
+  mode: partial
 ```
+
+!!!
+If your project includes a lot of content and your users find the search is running too slow, try changing to `mode: partial` or even a `mode: basic` if the website is really huge.
+!!!
 ===
 
 ### noResultsFoundMsg
@@ -761,7 +1399,40 @@ search:
 ```
 ===
 
-## server
+### placeholder
+
+=== placeholder : `string`
+Placeholder text rendered on the search component. Default is `"Search"`.
+
+```yml
+search:
+  placeholder: Search
+```
+===
+
+### preload
+
+=== preload : `boolean`
+Specifies if the search index should be preloaded. Default is `false`.
+
+```yml
+search:
+  preload: true # Default is false
+```
+
+Using `preload: true` in combination with the [`generator.directoryIndex.append`](#directoryindexappend) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+
+```yml
+search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true
+```
+===
+
+## serve
 
 Custom configuration for the built in Retype development web server.
 
@@ -772,7 +1443,7 @@ Custom configuration for the built in Retype development web server.
 Serve the website from this host location. Default is `localhost`.
 
 ```yml
-server:
+serve:
   host: 127.0.0.1
 ```
 
@@ -781,15 +1452,15 @@ By default, the Retype development web server will serve from `http://localhost:
 A custom port value can also be assigned.
 
 ```yml
-server:
+serve:
   host: 127.0.0.1:5005
 ```
 
-A custom `--host` value can also be passed as an argument to the [`retype watch`](../guides/cli.md#options) and [`retype run`](../guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your `retype.yml` project configuration file.
+A custom `--host` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your **retype.yml** project configuration file.
 
 ```
-retype watch --host 127.0.0.1              # serve from a custom host
-retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port
+retype start --host 127.0.0.1              # serve from a custom host
+retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port
 ```
 
 ===
@@ -801,37 +1472,35 @@ retype watch --host 127.0.0.1 --port 5005  # serve from a custom host and port
 A custom port for the internal Retype development web server to use when hosting locally. Default is `5000`.
 
 ```yml
-server:
+serve:
   port: 5005
 ```
 
 If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
 
-If a custom `port` is explicitly configured in the `retype.yml` and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
+If a custom `port` is explicitly configured in the **retype.yml** and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
 
 !!!
-
 The port number can also be included in the [`host`](#host) config.
-
 !!!
 
-A custom `--port` value can also be passed as an argument to the [`retype watch`](../guides/cli.md#options) and [`retype run`](../guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your `retype.yml` project configuration file.
+A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your **retype.yml** project configuration file.
 
 ```
-retype watch --port 5005  # serve from a custom port
+retype start --port 5005  # serve from a custom port
 ```
 
 ===
 
 ### watch
 
-Custom configuration for the [`retype watch`](../guides/cli.md#options) command.
+Custom configuration for the [`retype serve`](/guides/cli.md#options-3) and [`retype start`](/guides/cli.md/#options) commands.
 
-### watch.mode
+#### mode
 
 === mode : `string`
 
-During `retype watch`, the `mode` configuration instructs the web server on where to host files from.
+During `retype start` and `retype serve`, the `mode` configuration instructs the web server on where to host files from.
 
 If `memory`, the entire website is built and then stored in memory during development with no files being written to disk.
 
@@ -845,24 +1514,24 @@ Default is `memory`.
 | `disk`   | Output files are written to the [`output`](#output) directory, and updated with each incremental build accordingly. |
 
 ```yml
-server:
+serve:
   watch:
     mode: disk
 ```
 
-The command [`retype build`](../guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](..guides/github-actions.md) uses `retype build`. The command `retype watch` is only to be used during local development.
+The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype start` is only to be used during local development and not on a live production web server.
 
 ===
 
-### watch.polling
+#### polling
 
 === polling : `boolean` or `number`
 
-Instructs `retype watch` on how it should listen for file changes.
+Instructs the local web server on how it should listen for file changes.
 
 If `false`, the native filesystem event listeners are used to monitor for file changes.
 
-If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second)
+If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second).
 
 The poll interval is configurable by setting a `number` value. For instance, setting `polling: 500` would configure a 500ms interval.
 
@@ -875,7 +1544,7 @@ Default is `false`.
 | `number` | Poll the [input](#input) directory in milliseconds. |
 
 ```yml
-server:
+serve:
   watch:
     polling: true
 ```
@@ -883,8 +1552,24 @@ server:
 !!! Performance Warning
 Disk polling may be a costly operation, especially in projects with a large quantity of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). If configuring the poll interval, please adjust the value down in steps, monitoring performance as the poll interval decreases.
 
-On the flip side, increasing the polling interval may cause an annoying experience during `retype watch` as file changes will require a longer time before reflected in the browser.
+On the flip side, increasing the polling interval may cause an annoying experience during `retype start` as file changes will require a longer time before reflected in the browser.
 !!!
+
+===
+
+#### validation
+
+=== validation : `string`
+
+Configure how thorough Retype is while looking for changed files.
+
+Default value is `optimal`.
+
+| Validation | Description |
+| ---------- | ----------- |
+| `fast`     | Compare file system metadata only (reported file size and last modification time). |
+| `full`     | Perform full SHA2 comparison on every tracked file. |
+| `optimal`  | Compare file system metadata and, for every file with changes, perform SHA2 comparison. |
 
 ===
 
@@ -892,7 +1577,7 @@ On the flip side, increasing the polling interval may cause an annoying experien
 
 ## snippets
 
-The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](../components/code-block.md#line-numbers).
+The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](/components/code-block.md#line-numbers).
 
 ### lineNumbers
 
@@ -926,6 +1611,132 @@ snippets:
 
 ---
 
+## start
+
+The `start` config contains project options that apply during the [`retype start`](../guides/cli.md#retype-start) CLI command.
+
+### open
+
+=== open : `boolean`
+
+Set to `false` to instruct Retype to not open the default web browser when the command `retype start` is run. By default, Retype will open a web browser when `retype start` is run.
+
+The default is `true`.
+
+The following sample demonstrates how to prevent the default web browser from opening during `retype start`:
+
+```yml
+start:
+  open: false
+```
+
+Using the [CLI](../guides/cli.md#retype-start) command `retype start -n` or `retype start --no-open` will also prevent the default web browser from being opened.
+
+===
+
+### pro
+
+=== pro : `boolean`
+
+The default is `false`.
+
+The following sample demonstrates how to start your project in _Pro mode_ and trial the [Retype Pro](/pro/pro.md) features:
+
+```yml
+start:
+  pro: true
+```
+
+Using the [CLI](../guides/cli.md#retype-start) command `retype start --pro` will also start the project in Pro mode. 
+
+===
+
+## templating
+
+Configurations to control the Retype content templating engine for this project.
+
+### enabled
+
+=== enabled : `boolean`
+
+A project-wide option to enable or disable the Retype content templating engine. Default is `true`.
+
+```yml
+templating:
+  enabled: true # Set to false to disable
+```
+
+The templating engine can also be disabled on a per-page basis by setting `templating: false` in the page metadata.
+
+===
+
+### liquid
+
+=== liquid : `boolean`
+
+Specifies if Liquid syntax `{% ... %}` is enabled. If `liquid: true` is set, Retype is incompatible with GitBook style of component configuration.
+
+Default is `false`.
+
+```yml
+templating:
+  liquid: false # Set to true to enable
+```
+
+===
+
+---
+
+## toc
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `toc` config contains project options that apply to the right sidebar Table of Contents.
+
+### depth
+
+=== [!badge PRO] depth : `string`, `number`
+The heading depth to include in the right Table of Contents.
+
+The default is `2-3`.
+
+```yml
+toc:
+  depth: 2-3
+```
+
+The `toc` can be configured at the Project or Page levels.
+
+Configuring the `toc` at the Page level overrides the Project level settings.
+
+Acceptable values for `depth` include:
+
+Value | Description
+--- | ---
+2 | Include `H2` headings only
+2-3 | `default` Include `H2` to `H3` headings
+1-4 | Include `H1` to `H3` headings
+2,3 | Include `H2` and `H3` headings
+2,4 | Include `H2` and `H4` headings
+1,3-4 | Include `H1` and `H3` to `H4` headings, skip `H2`
+1,2,3,4 | Include `H1`, `H2`, `H3`, and `H4` headings
+
+===
+
+### label
+
+=== [!badge PRO] label : `string`
+
+A custom label for the top of the Table of Contents column.
+
+```yml
+toc:
+  label: On this page
+```
+===
+
+---
+
 ## url
 
 === url : `string`
@@ -936,7 +1747,7 @@ The base URL of your website.
 url: example.com
 ```
 
-The `url` can also be a sub-domain.
+The `url` can also be a subdomain.
 
 ```yml
 url: docs.example.com
@@ -954,7 +1765,7 @@ If no protocol is supplied, such as `https` or `http`, Retype will assume `https
 url: http://example.com/docs/
 ```
 
-Another common scenario for setting a `url` is when using [GitHub Pages](../guides/github-actions.md) **without** a custom `CNAME`.
+Another common scenario for setting a `url` is when using [GitHub Pages](/guides/github-actions.md) **without** a custom **CNAME**.
 
 For instance, if your GitHub organization was `CompanyX` and your repo was named `docs`, the URL to your GitHub Pages hosted website would be `https://companyx.github.io/docs/`.
 

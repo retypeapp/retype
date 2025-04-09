@@ -1,0 +1,26 @@
+name: Publish Retype powered website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: retypeapp/action-build@latest
+        env:
+          RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+          RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }} # The password is: test
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true

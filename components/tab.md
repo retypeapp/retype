@@ -1,4 +1,5 @@
 ---
+icon: browser
 tags: [component]
 ---
 # Tab

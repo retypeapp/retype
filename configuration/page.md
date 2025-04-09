@@ -1,12 +1,12 @@
 ---
-label: Page config
+label: Page
 order: 100
 icon: file
 tags: [config]
 ---
 # Page configuration
 
-Individual `.md` pages can be configured using the [metadata](../faq.md#what-is-page-metadata) section added to the top of the page.
+Individual **.md** pages can be configured using the [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.
 
 ```md sample.md
 ---
@@ -14,23 +14,27 @@ label: Sample
 layout: page
 order: 100
 ---
-# Sample page
+# Sample
 
 This is a sample page demonstrating page metadata.
 ```
 
-## Separate `.yml` file
+## Default pages
 
-If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the options can be moved into a paired `.yml` file.
+{{ include "snippets/default-pages.md" }}
 
-For instance, `sample.md` would need a matching `sample.yml` file. The separate `.yml` file must have the exact same filename as its paired `.md` page.
+## Separate .yml file
 
-Both `.yml` and `.yaml` extensions are supported.
+If you would prefer to keep the page metadata separated and placed outside of the **.md** content page, the config can be moved into a paired **.yml** file.
 
-Adding your configs into the top metadata section of a `.md` page, or into a separate `.yml` file is just a matter of preference. Both techniques produce the same result.
+For instance, **sample.md** would need a matching **sample.yml** file. The separate **.yml** file must have the exact same filename as its paired **.md** page.
+
+Both **.yml** and **.yaml** extensions are supported.
+
+Adding your configs into the top metadata section of a **.md** page, or into a separate **.yml** file is just a matter of preference. Both techniques produce the same result.
 
 ```md sample.md
-# Sample page
+# Sample
 
 This is a sample page demonstrating page metadata.
 ```
@@ -42,7 +46,9 @@ order: 100
 ```
 
 !!!
-If you add a config to both locations, the page [metadata](../faq.md#what-is-page-metadata) take precedence.
+If you add configs to both locations, the page [metadata](/faq.md#what-is-page-metadata) takes precedence, even if they are different configs.
+
+If you add one or more configs to a **.md** page, Retype will not look for nor read the separate **.yml** file. Just use one or the other, but not both.
 !!!
 
 See [folder configuration](folder.md) for details on how to configure a folder.
@@ -52,9 +58,7 @@ See [folder configuration](folder.md) for details on how to configure a folder.
 ## author
 
 !!!
-
 The configuration name `authors` is also supported. The name `authors` is an alias of `author` and both can be used interchangeably.
-
 !!!
 
 === author : `string`, `list`, or `object`
@@ -73,25 +77,9 @@ author: frank@example.com
 ---
 ```
 
-An author object can also be configured with specific values for the `name`, `email`, `link`, and `avatar`.
+===
 
-```yml
----
-author:
-  name: Frank Esposito
-  email: frank@example.com
-  link: https://twitter.com/frank # custom link take precedence
-  avatar: https://example.com/frank.jpg # custom avatar takes precedence
----
-```
-
-Possible options for the `avatar` include:
-
-1. Path to local image
-2. URL to an external image
-3. Inline SVG
-4. [Icon](../components/icon.md) shortcode
-4. [Emoji](../components/emoji.md) shortcode
+An author object can also be configured with specific values for the [`name`](#name), [`email`](#email), [`link`](#link), and [`avatar`](#avatar).
 
 The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.
 
@@ -116,6 +104,84 @@ authors:
 ---
 ```
 
+### avatar
+
+=== avatar : `string`
+
+Possible options for the `avatar` include:
+
+1. Path to local image
+2. URL to an external image
+3. Inline SVG
+4. [Icon](/components/icon.md) shortcode
+4. [Emoji](/components/emoji.md) shortcode
+
+```yml
+---
+author:
+  name: Frank Esposito
+  avatar: https://example.com/frank.jpg # custom avatar takes precedence
+---
+```
+
+===
+
+### email
+
+=== email : `string`
+
+```yml
+---
+author:
+  email: frank@example.com
+---
+```
+
+===
+
+### link
+
+=== link : `string`
+
+```yml
+---
+author:
+  link: https://twitter.com/frank # custom link take precedence
+---
+```
+
+===
+
+### name
+
+=== name : `string`
+
+```yml
+---
+author:
+  name: Frank Esposito
+---
+```
+
+===
+
+---
+
+## breadcrumb
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+=== [!badge PRO] breadcrumb : `boolean`
+
+The `breadcrumb` config controls whether to include the [breadcrumb](project.md#breadcrumb) navigation on this page. Default is `true`.
+
+Set to `false` to disable the breadcrumb navigation on this page.
+
+```yml
+breadcrumb: false
+```
+
+It is also possible to disable the breadcrumb navigation on all pages within a [folder](folder.md) by setting `breadcrumb: false` in the folderh`index.yml` configuration file or the folder default page, such as `default.md`, `readme.md`, or `index.md`.
 ===
 
 ---
@@ -123,16 +189,14 @@ authors:
 ## category
 
 !!!
-
 The configuration name `categories` is also supported. The name `categories` is an alias of `category` and both can be used interchangeably.
-
 !!!
 
 === category : `string` or `list`
 
 A category for this page.
 
-A single `category` or a list of `categories` can be configured in each `.md` page you would like to categorize.
+A single `category` or a list of `categories` can be configured in each **.md** page you would like to categorize.
 
 The `category` is meant to be a broad grouping of content, where [`tags`](#tags) are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.
 
@@ -207,9 +271,9 @@ Set to `true` to expand the folder node in the navigation.
 expanded: true
 ```
 
-The `expanded` option only applies to [folders](folder.md) when configured within an `index.yml` folder configuration file.
+The `expanded` option only applies to [folders](folder.md) when configured within an **index.yml** folder configuration file.
 
-Setting `expanded: true` within the metadata of an `.md` page or the paired `.yml` file will be ignored.
+Setting `expanded: true` within the metadata of an **.md** page or the paired **.yml** file will be ignored.
 ===
 
 ---
@@ -220,7 +284,7 @@ Setting `expanded: true` within the metadata of an `.md` page or the paired `.ym
 
 Custom icon for the navigation node of the current page. Default is `null`.
 
-Options include using an [Octicon](https://octicons-primer.vercel.app/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
+Options include using an [Octicon](/components/octicons.md) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 icon: rocket
@@ -292,7 +356,7 @@ Supported values: `default`, `central`, `page`, and `blog`.
 
 Layout | Description
 --- | ---
-`default` | The default layout for all `.md` pages. The page is added to the main navigation.
+`default` | The default layout for all **.md** pages. The page is added to the main navigation.
 `page` | Similar to `default` layout, but is not added to the main navigation.
 `central` | A page with no left or right sidebar columns.
 `blog` | A blog page layout. Blog pages are not added to the main navigation and include blog specific `< Newer` and `Older >` navigation buttons at the bottom of each blog page.
@@ -304,11 +368,52 @@ layout: page
 
 ---
 
+## meta
+
+### title
+
+=== title : `string`
+
+A custom value for the `<title>` meta tag.
+
+If set, the value will completely override any `<title>` meta tag value generated by Retype.
+
+Default is `null`.
+
+```md
+---
+meta:
+  title: "A 100% custom title meta tag value"
+---
+# Sample
+```
+
+With the above sample, the `<title>` will be:
+
+```html
+<title>A 100% custom title meta tag value</title>
+```
+
+Without the `meta.title` set, by default, the `<title>` would be:
+
+```html
+<title>Sample</title>
+```
+
+!!!
+This `meta.title` config is not to be confused with the Page [`title`](#title-1) config, which we recommend not using.
+
+This `meta.title` config is also not to be confused with the Project level [`meta.title`](project.md#title-1) config.
+!!!
+===
+
+---
+
 ## order
 
 === order : `string`
 
-A custom stack order within the navigation.
+A custom stack order for this page within the left side-bar tree navigation.
 
 Options can include:
 
@@ -321,9 +426,7 @@ If the `order` is set with a number, a larger positive number will give more _we
 Similarily, a page configured with `order: -100` will be lower in the navigation than a page configured with `order: -10` or any page where no `order` is set.
 
 !!!
-
-The position of folders within the navigation can be [ordered](folder.md) too using the same `order` technique with the only difference that folders are always pinned to the top of their `order` group.
-
+The position of folders within the navigation can be [ordered](folder.md) as well using the same `order` technique, the only difference that folders are always pinned to the top of their `order` group.
 !!!
 
 In order of precedence, the `order` of a page in the navigation would be determined with the following priority:
@@ -332,10 +435,10 @@ Value type | Description
 --- | ---
 `number` (positive) | A larger positive number gets more _weight_ or _priority_ and is pushed higher in the navigation. Largest number at the top. Example: `order: 100` will be ordered above `order: 10`.
 `alpha` (high) | Setting `order` with an alpha-numeric value is possible and those pages will be ordered against the `label` value of all other pages that do not have an `order` configured.  Example: `order: alpha` will be ordered above `order: beta` or a page configured with `label: bravo`.
-no `order` set | If no `order` is configured, all pages will be ordered alphabetically based on its `label`, `title`, the first `h1` title, or the file name values. The `label` config has the highest priorty.
+no `order` set | If no `order` is configured, all pages will be ordered alphabetically based on its `label`, `title`, the first `h1` title, or the file name values. The `label` config has the highest priority.
 `alpha` (low) | Example: `order: zulu` will be ordered below `order: zebra` or a page configured with `label: yakee`.
 `vSemver` (newer) | Page `order` configured with a [semver](https://semver.org/) value are ordered with the newest version above an older version. These pages are also moved towards the bottom of the navigation. Example: `order: v1.1` will be ordered above `order: v1.0`.
-`number` (negative) | A negative number gets less _weight_ or _priority_ and is pushed to the bottom of the navigation. Setting the `order` with a negative number is a simple way to push a page to the bottom ofthe navigation. Example: `order: -100` will be ordered below `order: -10`.
+`number` (negative) | A negative number gets less _weight_ or _priority_ and is pushed to the bottom of the navigation. Setting the `order` with a negative number is a simple way to push a page to the bottom of the navigation. Example: `order: -100` will be ordered below `order: -10`.
 
 By default, the home page of the website has an order of `10000`. To add a page in the navigation just above the home page, set a value of `order: 10001` or greater. To add a page in the navigation just below the home page, set a value of `order: 9999` or lower. To move the home page to the bottom of the navigation, set a negative value, such as `order: -10000`.
 
@@ -409,7 +512,7 @@ Redirect requests for this page to another location.
 
 The `redirect` can be set to another page within this project, or an external link.
 
-For example, you have an existing `setup.md` page and you want to move the content to `getting-started.md`, but other websites might still be linking to your old `example.com/setup/` page and you want to ensure those links still work. You would then set the following `redirect` page config in `setup.md` to redirect to `getting-started.md`.
+For example, you have an existing **setup.md** page and you want to move the content to **getting-started.md**, but other websites might still be linking to your old **example.com/setup/** page and you want to ensure those links still work. You would then set the following `redirect` page config in **setup.md** to redirect to `getting-started.md`.
 
 ```yml
 ---
@@ -419,9 +522,9 @@ redirect: getting-started.md
 # Setup
 ```
 
-Retype will automaticially handle any incoming `example.com/setup` requests and redirect to the new `example.com/getting-started` location.
+Retype will automatically handle any incoming **example.com/setup** requests and redirect to the new **example.com/getting-started** location.
 
-Retype is also smart enough to scan your project for any `setup.md` links and replace those with a link directly to `getting-started.md`.
+Retype is also smart enough to scan your project for any **setup.md** links and replace those with a link directly to **getting-started.md**.
 
 ===
 
@@ -444,7 +547,7 @@ Some content here.
 
 A custom `route` allows the folder and file structure to remain unchanged, but allowing the final URL's to be customized.
 
-Configuring the `route` is an excellent solution when moving to Retype from another solution and you would like to maintain existing public URL's, but would prefer to re-organize your `.md` content files into a new structure. A custom `route` allows for a clean disconnect of the page path from the final published URL path.
+Configuring the `route` is an excellent solution when moving to Retype from another solution and you would like to maintain existing public URL's, but would prefer to re-organize your **.md** content files into a new structure. A custom `route` allows for a clean disconnect of the page path from the final published URL path.
 
 In the following sample, the generated URL by Retype would be `/guide/2021-06-25-publishing-to-github-pages/`, but we override with a custom route which will publish the page to `/tutorial/publish-to-github-pages/`.
 
@@ -455,11 +558,11 @@ route: /tutorial/publish-to-github-pages/
 # Publishing to GitHub Pages
 ```
 
-If a custom `route` is configured on a folder, or on a `readme.md` or `index.md` page within the folder, or on an [`index.yml`](#separate-yml-file) file within the folder, that custom route is assumed to be the base route for all pages within that folder.
+If a custom `route` is configured on a folder, or on a **readme.md** or **index.md** page within the folder, or on an [**index.yml**](#separate-yml-file) file within the folder, that custom route is assumed to be the base route for all pages within that folder.
 
 The following scenario demonstrates a basic scenario where we want to configure the pages within the `/guides/` folder to be served from the custom URL location of `/tutorials/`.
 
-To accomplish this goal, configure the `route` on the `readme.md`, then all other pages within the same folder will adjust as well. The `configuration.md` page will now be served from `/tutorials/configuration/`.
+To accomplish this goal, configure the `route` on the **readme.md**, then all other pages within the same folder will adjust as well. The **configuration.md** page will now be served from `/tutorials/configuration/`.
 
 ``` Folder structure
 |-- /guides
@@ -486,19 +589,17 @@ File path | Old URL | New URL
 
 === tags : `list`
 
-A list of tags can be added to the metadata at the top of each `.md` page you would like to tag.
+A list of tags can be added to the metadata at the top of each **.md** page you would like to tag.
 
 The `tags` are meant to describe specific details of the content in that page. Tags are similar to [`category`](#category), although `category` is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.
 
 
 If tags are configured in the page metadata, a list of tag links are added to the bottom of the page. See the bottom of this page for a working sample.
 
-Individual tag summary pages will be automatically generated by Retype at [`<url>/tags/<tag>`](https://retype.com/tags/guide/), plus an additional [`<url>/tags`](https://retype.com/tags/) index page which lists all tags and their count used within the project.
+Individual tag summary pages will be automatically generated by Retype at [`<url>/tags/<tag>`](/tags/guide/), plus an additional [`<url>/tags`](/tags/) index page which lists all tags and their count used within the project.
 
 !!!
-
 Check out the pages of this website configured with the [!badge variant="info" text="guide"](/tags/guide/) tag.
-
 !!!
 
 ``` Sample tags configuration
@@ -536,14 +637,32 @@ tags:
 
 ---
 
+## templating
+
+=== templating: `boolean`
+
+Templating can be disabled on a per-page basis by setting `templating: false` in the page metadata.
+
+```md
+---
+templating: false
+---
+```
+
+===
+
+---
+
 ## title
 
 === title : `string`
 
-The `title` config instructs Retype to add a primary `# Page Title` to your page, but it is recommended to manually add a `# Page Title` to each of your pages, instead of setting a `title`. As a general rule, the actual content of your page should not be configured in the page metadata.
+The `title` config instructs Retype to add a primary `# Page Title` to your page, but it is recommended to manually add a `# Page Title` to each of your pages, instead of setting a `title`.
+
+As a general rule, the actual content of your page should not be configured in the page metadata.
 
 !!!
-The `title` is primarily used to support backwards compatibiity with the `.md` content style from other older legacy static site generator applications.
+The `title` is primarily used to support backwards compatibiity with the **.md** content style from other older legacy static site generator applications.
 !!!
 
 The following sample demonstrates setting the `title` config instead of explicitly using a `# Page Title` to your page.
@@ -571,13 +690,27 @@ Some content here.
 
 ## visibility
 
-=== visibility : `public|hidden`
+=== visibility : `public|hidden|protected|private`
 
-Configure the visibility of the page to be `hidden` or `public`. Default is `public`.
+Configure the visibility of the page to be `public`, `hidden`, `protected`, or `private`. Default is `public`.
 
-If a page is configued to be `visibility: hidden`, the page is still created but will not be included in the page navigation or search results.
+| Mode | Navigation | Search | Password | Description |
+| --- | :---: | :---: | :---: | --- |
+`public` | :white_check_mark: | :white_check_mark: | :no_entry_sign: | The page is public and visible in the main navigation. A password is not required to view this page.
+[`hidden`](#hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public ([sample](/samples/hidden.md)).
+[`protected`](#protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the public navigation but requires a password to access the content of the page ([sample](/samples/protected.md) password: `test`).
+[`private`](#private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden, not added to the navigation, and a password is required for access ([sample](/samples/private.md) password: `test`).
 
-The following sample demonstrates hidding a page:
+===
+
+
+### hidden
+
+With `hidden`, the page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page.
+
+Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.
+
+The following [sample](/samples/hidden.md) demonstrates hiding a page:
 
 ```md
 ---
@@ -588,12 +721,74 @@ visibility: hidden
 This page will be hidden from the menu and search results.
 ```
 
-The page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page. Retype would ensure no _generated_ links or references to the hidden page are created. If on a public page, a link to a hidden page is made, the link will work and the hidden page will be visible.
-
 The History :icon-history: component will continue to function as normal. Any hidden page visited would still be logged in the history, although that history is only available to the visitor.
 
 Setting `visibility: hidden` on a page is a good way to create a _draft_ or _secret_ page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.
 
-Retype does not show you the link to this page, but it uses the same naming convention as all other pages is used. For instance, if your site is hosted at `https://example.com` and the page was called `my-secret-page.md`, the URL would be `https://example.com/my-secret-page/`.
+### protected
 
-===
+To create a protected page, add `visibility: protected` and then set the password for the project using the `--password` flag.
+
+{{ include "snippets/password-notice.md" }}
+
+The following [sample](/samples/protected.md) (password: test) demonstrates creating a protected page:
+
+```md
+---
+visibility: protected
+---
+# A protected page
+
+This page will be visible in the main navigation, but will require a password to view the page.
+```
+
+Then call either of the following commands to set the password for the project:
+
+```
+retype start --password <your-password>
+retype build --password <your-password>
+```
+
+The project password can also be set as an Environment variable by using [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password).
+
+An entire folder can be set to `protected` by adding an `index.yml` file with the following configuration to the root of the folder. See the [folder](folder.md) docs for additional examples.
+
+```yml
+visibility: protected
+```
+
+### private
+
+To create a private page, add `visibility: private` and then set the password for the project using the `--password` flag.
+
+{{ include "snippets/password-notice.md" }}
+
+The following [sample](/samples/private.md) (password: test) demonstrates creating a private page:
+
+```md
+---
+visibility: private
+---
+# A private page
+
+This page will not be visible in the main navigation and will require a password to view the page.
+```
+
+Then call either of the following commands to set the password for the project:
+
+```
+retype start --password <your-password>
+retype build --password <your-password>
+```
+
+The project password can also be set as an Environment variable by using [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password).
+
+!!!
+For `hidden` and `private` pages, Retype does not provide a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at `https://example.com` and the page was called `my-hidden-page.md`, the URL would be `https://example.com/my-hidden-page/`.
+!!!
+
+An entire folder can be set to `private` by adding an `index.yml` file with the following configuration to the root of the folder. See the [folder](folder.md) docs for additional examples.
+
+```yml
+visibility: private
+```

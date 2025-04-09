@@ -1,4 +1,5 @@
 ---
+icon: diamond
 tags: [component]
 ---
 # Button
@@ -19,7 +20,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 
 ---
 
-## Variants
+## Variant
 
 ```md
 [!button variant="primary" text="Primary"]
@@ -35,6 +36,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 | `info` | [!button variant="info" text="Info"] |
 | `light` | [!button variant="light" text="Light"] |
 | `dark` | [!button variant="dark" text="Dark"] |
+| `ghost` | [!button variant="ghost" text="Ghost"] |
 | `contrast` | [!button variant="contrast" text="Contrast"] |
 
 ---
@@ -99,7 +101,7 @@ Config `target` value | Runtime `target` value
 `nEWs2` | `news2`
 `recent NEWS` | `recent-news`
 
-See also the [`links.target`](../configuration/project.md#target) configuration.
+See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ---
 
@@ -107,7 +109,7 @@ See also the [`links.target`](../configuration/project.md#target) configuration.
 
 ### Octicons
 
-[Octicons](https://octicons-primer.vercel.app/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+[Octicons](/components/octicons.md) can be used as an icon by settiing the `icon` property with the name of the Octicon.
 
 ```md
 [!button variant="info" icon="person" text="User"]

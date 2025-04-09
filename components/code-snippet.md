@@ -1,7 +1,8 @@
 ---
+icon: file-code
 tags: [component]
 ---
-# Code snippet
+# Code Snippet
 
 A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page.
 
@@ -33,7 +34,7 @@ The `source` is the local path to a file.
 :::code source="<path-to-file>" :::
 ```
 
-Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](../guides/github-actions.md), the file must be within the same repo or accessible by the Action.
+Typically, the `source` file must be located within the same repository. At least the file needs to be accessible whenever the project is built by Retype. If building locally, the `source` can be located anywhere accessible in the local file system, although if you are using the Retype [GitHub Action](/guides/github-actions.md), the file must be within the same repo or accessible by the Action.
 
 In the following demo, we link to the `sample.js` file and include the entire contents of that file into the code block:
 
@@ -85,7 +86,7 @@ An optional `title` can be specified.
 :::code language="<lang-ref>" title="<title>" :::
 ```
 
-Let's add a `title` to our `../static/sample.js` code snippet. Within the `.md` file, the configuration would look like...
+Let's add a `title` to our `../static/sample.js` code snippet. Within the **.md** file, the configuration would look like...
 
 +++ Demo
 :::code source="../static/sample.js" range="1-2" title="../static/sample.js" :::
@@ -107,7 +108,7 @@ The `language` property can be set with any reference language value supported b
 :::code source="<path-to-file>" language="<language>" :::
 ```
 
-By default, Retype will try to intelligently determine the `language` based on the file extension of the `source` and the automatically set the `language` property. For instance, if the `source` file is a JavaScript `.js` file, Retype will set the `language` of the code snippet to `js`.
+By default, Retype will try to intelligently determine the `language` based on the file extension of the `source` and the automatically set the `language` property. For instance, if the `source` file is a JavaScript **.js** file, Retype will set the `language` of the code snippet to `js`.
 
 If the `language` property is explicitly set, Retype will use that value. If the `language` cannot be determined by Retype, no language reference is set and the code block is rendered without syntax highlighting.
 

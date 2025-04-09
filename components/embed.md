@@ -1,4 +1,5 @@
 ---
+icon: code
 tags: [component]
 ---
 # Embed
@@ -22,6 +23,30 @@ The above Retype component would render as follows:
 [!embed](https://www.youtube.com/embed/C0DPdy98e4c)
 
 The following options allow for customization of the embed component.
+
+---
+
+## AllowFullScreen
+
+Typically, this attribute is used by embeded videos, such as a YouTube or Vimeo, to enable the **Full screen** button.
+
+The default value of `allowFullScreen` is `true`. Setting to `false` will remove or disable the full screen button.
+
+You do not need to explicitly enable the full screen option for videos. By default, the button will be enabled when a Retype `[!embed]` component is used.
+
+```md
+[!embed](https://www.youtube.com/embed/C0DPdy98e4c)
+```
+
+[!embed](https://www.youtube.com/embed/C0DPdy98e4c)
+
+To explicitly remove or disable the full screen option, include `allowFullScreen="false"` in your `[!embed]` component configuration.
+
+```md
+[!embed allowFullScreen="false"](https://www.youtube.com/embed/C0DPdy98e4c)
+```
+
+[!embed allowFullScreen="false"](https://www.youtube.com/embed/C0DPdy98e4c)
 
 ---
 

@@ -1,4 +1,5 @@
 ---
+icon: tag
 tags: [component]
 ---
 # Badge
@@ -17,7 +18,7 @@ Similar to a [Button](button.md), the Badge component uses the same syntax as a 
 ```
 |||
 
-With the Badge component, the destination is optional and can be ommitted.
+With the Badge component, the destination is optional and can be omitted.
 
 ||| Demo
 [!badge Badge]
@@ -29,7 +30,7 @@ With the Badge component, the destination is optional and can be ommitted.
 
 ---
 
-## Variants
+## Variant
 
 ```md
 [!badge variant="primary" text="Primary"]
@@ -45,6 +46,7 @@ With the Badge component, the destination is optional and can be ommitted.
 | `info` | [!badge variant="info" text="Info"] |
 | `light` | [!badge variant="light" text="Light"] |
 | `dark` | [!badge variant="dark" text="Dark"] |
+| `ghost` | [!badge variant="ghost" text="Ghost"] |
 | `contrast` | [!badge variant="contrast" text="Contrast"] |
 
 ---
@@ -109,7 +111,7 @@ Config `target` value | Runtime `target` value
 `nEWs2` | `news2`
 `recent NEWS` | `recent-news`
 
-See also the [`links.target`](../configuration/project.md#target) configuration.
+See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ---
 
@@ -117,7 +119,7 @@ See also the [`links.target`](../configuration/project.md#target) configuration.
 
 ### Octicons
 
-[Octicons](https://octicons-primer.vercel.app/octicons/) can be used as an icon by settiing the `icon` property with the name of the Octicon.
+[Octicons](/components/octicons.md) can be used as an icon by settiing the `icon` property with the name of the Octicon.
 
 ```md
 [!badge variant="info" icon="person" text="User" margin="0 8 0 0"]

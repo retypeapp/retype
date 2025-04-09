@@ -4,9 +4,9 @@ tags: [guide]
 ---
 # Formatting
 
-Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
+Markdown **.md** pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
 
-No special software is required to create an `.md` file. Any basic text editor will do. Just save the file with a `.md` file extension.
+No special software is required to create a **.md** file. Any basic text editor will do. Just save the file with a **.md** file extension.
 
 Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a full demonstration of the formatting possibilities and best practices.
 
@@ -18,7 +18,7 @@ View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/
 
 ## Quick start
 
-The following sample demonstrates a very basic `.md` page sample with page title and one paragraph.
+The following sample demonstrates a very basic `sample.md` page sample with a page title and one paragraph.
 
 ```md
 # Page title here
@@ -66,13 +66,15 @@ At a very basic level, to create a new page for your Retype project, do the foll
 
 ### Home page
 
-Ideally, your project will include a default file (`readme.md`, `index.md`, or `default.md`) within the root of the project. If a default file is present within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.
+Your project should include a default file (`index.md`, `default.md`, `readme.md`, or `welcome.md`) within the root of the project. If there is a default file within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.
 
-Those default files can also be placed inside of any folder within the project. Given the following folder and file structure, where `Guides` is a folder...
+Outside of the root of your project, adding a file with the exact same name as folder, will also act as a default page for that folder. For instance, adding `/guides/guides.md` is equivalent to `/guides/index.md`.
+
+The default files can be used inside any folder of the project. Given the following folder and file structure, where `Guides` is a folder...
 
 ```
 |-- Guides
-    |-- readme.md
+    |-- index.md
     |-- getting-started.md
 |-- readme.md
 ```
@@ -84,16 +86,16 @@ Those default files can also be placed inside of any folder within the project. 
 3. `/guides/getting-started/`
 
 !!!
-If your home page is empty or blank, double check that you have a default page in the root of your project folder. The default file can be named `readme.md`, `index.md`, or `default.md`.
+If your home page is the Retype generated **Welcome** page, add a default page to the root of your project. The home page file can be named `index.md`, `default.md`, `readme.md`, or `welcome.md`.
 !!!
 
 ---
 
 ## Components
 
-In addition to the standard Markdown options, Retype includes many custom [components](../components/readme.md) so you can easily add extra [!badge :gem: flair :gem:] to your document.
+In addition to the standard Markdown options, Retype includes many custom [components](/components/components.md) so you can easily add extra [!badge :gem: flair :gem:] to your document.
 
-The most commonly used Retype components include [Alert](../components/alert.md) and [Tab](../components/tab.md):
+The most commonly used Retype components include [Alert](/components/alert.md) and [Tab](/components/tab.md):
 
 ### Alert
 
@@ -101,7 +103,7 @@ The most commonly used Retype components include [Alert](../components/alert.md)
 This is an Alert
 !!!
 
-~~~ Sample [Alert](../components/alert.md) component
+~~~ Sample [Alert](/components/alert.md) component
 !!!
 This is an Alert
 !!!
@@ -115,7 +117,7 @@ This is Tab 1
 This is another Tab
 +++
 
-~~~ Sample [Tab](../components/tab.md) component
+~~~ Sample [Tab](/components/tab.md) component
 +++ Tab 1
 This is Tab 1
 +++ Tab 2
@@ -123,4 +125,4 @@ This is another Tab
 +++
 ~~~
 
-[!ref See all components](../components/readme.md)
+[!ref See all components](/components/components.md)

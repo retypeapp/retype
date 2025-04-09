@@ -1,4 +1,5 @@
 ---
+icon: alert
 tags: [component]
 ---
 # Alert
@@ -36,18 +37,18 @@ This is an alert.
 Some basic Markdown syntax and emoji `:shortcodes:` are supported in the titles.
 
 ```md
-!!! :zap: [Getting Started](../guides/getting-started.md) :zap:
+!!! :zap: [Getting Started](/guides/getting-started.md) :zap:
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!
 ```
 
-!!! :zap: [Getting Started](../guides/getting-started.md) :zap:
+!!! :zap: [Getting Started](/guides/getting-started.md) :zap:
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!
 
 ---
 
-## Variants
+## Variant
 
 Alerts come in nine different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
 
@@ -61,7 +62,8 @@ Alerts come in nine different flavors which can be specified by passing a `varia
 | `info` | `light-blue` |
 | `light` | `light` |
 | `dark` | `dark` |
-| `contrast` | `light` or `dark` depending on time of day |
+| `ghost` | `light` or `dark` depending on time of day |
+| `contrast` | `dark` or `light` depending on time of day |
 
 ---
 
@@ -100,6 +102,10 @@ This is a `light` alert.
 This is a `dark` alert.
 !!!
 
+!!!ghost Ghost
+This is a `ghost` alert.
+!!!
+
 !!!contrast Contrast
 This is a `contrast` alert.
 !!!
@@ -135,6 +141,10 @@ This is a `light` alert.
 
 !!!dark Dark
 This is a `dark` alert.
+!!!
+
+!!!ghost Ghost
+This is a `ghost` alert.
 !!!
 
 !!!contrast Contrast

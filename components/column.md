@@ -1,4 +1,5 @@
 ---
+icon: columns
 tags: [component]
 ---
 # Column
@@ -7,7 +8,7 @@ The column component is used to create multiple equal width columns with a title
 
 The column component is configured by wrapping any block of content in an opening and closing `|||` and setting a title for each column.
 
-A column can contain any other content, such as text, paragraphs, links, tables, images, and other Retype [components](readme.md).
+A column can contain any other content, such as text, paragraphs, links, tables, images, and other Retype [components](components.md).
 
 ```md
 ||| Column 1

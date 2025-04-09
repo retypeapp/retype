@@ -1,6 +1,7 @@
 ---
 icon: git-compare
-tags: [guide]
+tags:
+  - guide
 ---
 # GitHub Actions
 
@@ -13,32 +14,87 @@ Currently, there are two Retype related GitHub Actions:
 
 The first, **Build Action** will automatically build your Retype powered website with each new change that is committed.
 
-The second, **GitHub Pages Action** will automatically publish your newly built website to a branch in Github so it's available to host from GitHub Pages. By default, the `retype` branch is used, but of course that is also configurable.
+The second, **GitHub Pages Action** will automatically publish your newly built website to a branch in Github so it is available to host from [GitHub Pages](https://pages.github.com/). By default, the `retype` branch is used, but of course that is also configurable, it can also be used to deploy to [Netlify](https://www.netlify.com/) and a lot of other pages!
 
-Automatically deploying to GitHub Pages requires a basic `retype.yml` configuration file to be added to your GitHub repo and some simple project configuration.
+Automatically deploying to GitHub Pages requires a basic **retype-action.yml** configuration file to be added to your GitHub repo and some simple project configuration.
 
+!!!
+Content `write` permission are required so that Retype and can automatically create the `retype` branch and write the generated files into that branch.
+!!!
 ---
 
 ## Summary
 
-- [x] Add a `retype.yml` file, see [step 1](#step-1-add-retypeyml-workflow)
-- [x] Configure GitHub Pages, see [step 2](#step-2-configure-github-pages)
-- [x] Set the branch to `retype`, see [branch config](#pick-a-branch)
-- [x] Set the [`url`](../configuration/project.md#url)
+- [x] Add a **retype-action.yml** file, see [step 1](#step-1-add-retype-actionyml-workflow)
+- [x] Configure GitHub Pages, see [step 2](/hosting/github-pages.md#step-2-configure-github-pages)
+- [x] Set the branch to `retype`, see [branch config](/hosting/github-pages.md#pick-a-branch)
+- [x] Set the [`url`](/hosting/github-pages.md#set-a-url)
 - [x] More details on the Retype [Build Action](https://github.com/retypeapp/action-build).
 - [x] More details on the Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages).
 
-All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](../configuration/project.md) options for full details.
+All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the [Project Configuration](/configuration/project.md) options for full details.
 
 ---
 
-## Step 1: Add `retype.yml` workflow
+## Step 1: Add **retype-action.yml** workflow
 
-Add the following `retype.yml` file to your GitHub project within the `.github/workflows/` folder.
+Add the following **retype-action.yml** file to your GitHub project within the `.github/workflows/` folder.
 
-If the `.github/workflows/` folder does not exist within the root of your project, you can manually create those folders and they will be committed along with the `retype.yml`.
+If the `.github/workflows/` folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the **retype-action.yml**.
 
-``` .github/workflows/retype.yml
+```yml .github/workflows/retype-action.yml
+name: Publish Retype powered website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: retypeapp/action-build@latest
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true
+```
+
+The above **retype-action.yml** workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch.
+
+If the `retype` branch is not available, the GitHub Action will automatically create the branch.
+
+If the default branch in your repo is `master`, change `- main` to `- master`. If the docs project was within a `docs` branch, change `- main` to `- docs`. The following snippet demonstrates setting the branch to `master`.
+
+```yml
+  push:
+    branches:
+      - master
+```
+
+Commit your **.github/workflows/retype-action.yml** file and push to your repo.
+
+### RETYPE_SECRET
+
+If your project requires a Retype license key, that key can be configured by adding a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
+
+{%{
+```yml
+- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+```
+}%}
+
+The following demonstrates a basic template to use for a workflow configuration file, if including the license key:
+
+```yml .github/workflows/retype-action.yml
 name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
@@ -52,88 +108,51 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: retypeapp/action-build@v1
+      - uses: retypeapp/action-build@latest
+        env:
+          RETYPE_SECRET: {%{${{ secrets.RETYPE_SECRET }}}%}
+          RETYPE_PASSWORD: {%{${{ secrets.RETYPE_PASSWORD }}}%}
 
-      - uses: retypeapp/action-github-pages@v1
+      - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
 ```
 
-The above `retype.yml` workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch. If the `retype` branch is not available, the GitHub Action will automatically create the branch.
+### RETYPE_PASSWORD
 
-Commit your `retype.yml` file and push to your repo.
+If your project uses either [`protected`](/configuration/page.md#protected) or [`private`](/configuration/page.md#private) pages, adding a password for your visitors to use is required.
+
+{{ include "snippets/password-notice.md" }}
+
+A password can be configured by adding a [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password) secret to your repository settings and the following `env` configuration to your project **.github/workflows/retype-action.yml** file.
+
+{%{
+```yml
+- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
+```
+}%}
+
+If both the `RETYPE_SECRET` and `RETYPE_PASSWORD` are needed, the configuration should be the following:
+
+{%{
+```yml
+- uses: retypeapp/action-build@latest
+  env:
+    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+    RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
+```
+}%}
 
 ---
 
 ## Step 2: Configure GitHub Pages
 
-With a few basic configs, GitHub can host your website for free.
-
-To get started, navigate to the <kbd>Settings</kbd> > <kbd>Pages</kbd> page of your repo. The URL should be the following, although you'll need to replace `<organization>` and `<repo>` with your values:
-
-```
-https://github.com/<organization>/<repo>/settings/pages
-```
-
-### Pick a branch
-
-By default, the Retype Action will publish your website to the `retype` branch, although you can configure it to host in any branch.
-
-If you have committed the `retype.yml` file as detailed in **Step 1**, you should now have a `retype` branch available from the list. Select `retype` then click the **Save** button.
-
-![](../static/github-actions-configure-branch.png)
-
-Your GitHub Pages config should now look similar to the following:
-
-![](../static/github-actions-enable-pages.png)
-
-!!! Enforce HTTPS
-We recommend that you check the **Enforce HTTPS** checkbox.
-!!!
-
-### Set a `url`
-
-With the above sample, GitHub will provide a unique `github.io` subdomain. Your website will be available from a subfolder of that subdomain. In our scenario, our website will be available in the `/retype/` subfolder.
-
-For example, the URL will use the following pattern:
-
-```
-https://<organization>.github.io/<repo>/
-```
-
-You would then set the `url` configuration with the following, where `<organization>` is replaced with your GitHub organization name and `<repo>` is replaced with your repository name.
-
-```yml
-url: <organization>.github.io/<repo>/
-```
-
-If your GitHub organization name was `CompanyX` and your repo name was `Docs`, your `url` config would be:
-
-```yml
-url: companyx.github.io/docs/
-```
-
-See [url](../configuration/project.md#url) documentation.
-
-### Custom domain
-
-Instead of using the `github.io` domain, it is possible to configure GitHub Pages to use your custom domain or subdomain name.
-
-Just enter your domain or subdomain name in the **Custom domain** field and click **Save**.
-
-![](../static/github-actions-configure-custom-domain.png)
-
-If your website will be available at `https://example.com`, enter `example.com` as the **Custom domain** value.
-
-If your website will be available at `https://docs.example.com`, enter `docs.example.com`.
-
-You will then need to [configure the DNS](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/) for your domain name.
-
-The last step would be updating the [`url`](../configuration/project.md#url) project configuration with the same value. For example, if your website will be available at `https://example.com`, use the following `url` configuration:
-
-```yml
-url: example.com
-```
+Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, now configure your [GitHub Pages](/hosting/github-pages.md) web site hosting.

@@ -1,12 +1,12 @@
 ---
-tags: [component]
 icon: ":mermaid:"
+tags: [component]
 ---
 # Mermaid
 
 [Mermaid](https://mermaid-js.github.io/mermaid) is a diagramming and charting tool that can be defined inside Markdown code blocks.
 
-![](../static/mermaid-header.png)
+![](/static/mermaid-header.png)
 
 ## Component syntax
 
@@ -34,7 +34,7 @@ graph LR
 
 ## Directives
 
-Mermaid [directives](https://mermaid-js.github.io/mermaid/#/directives) can be configured using the recommended `%%{init: { } }%%` syntax as the first line just inside the `` ```mermaid `` block.
+Mermaid [directives](https://mermaid-js.github.io/mermaid/#/directives) can be configured using the recommended `%%{init: { }}%%` syntax as the first line just inside the `` ```mermaid `` block.
 
 From the Mermaid docs:
 
@@ -46,7 +46,7 @@ The following sample demonstrates applying a `theme` to the diagram:
 
 ~~~
 ```mermaid
-%%{init: { 'theme': 'forest' } }%%
+%%{init: { 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
@@ -56,7 +56,31 @@ graph LR
 ~~~
 
 ```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+%%{init: { 'logLevel': 'debug', 'theme': 'forest' }}%%
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+
+### Syntax highlighting block
+
+In order to draw a mermaid code block with syntax highlighting instead of rendering the contents, please use the `mermaid-js` block syntax specifier.
+
+~~~
+```mermaid-js
+%%{init: { 'theme': 'forest' }}%%
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+~~~
+
+```mermaid-js
+%%{init: { 'logLevel': 'debug', 'theme': 'forest' }}%%
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}

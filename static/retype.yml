@@ -1,0 +1,212 @@
+# -----------------------------------------------------------------------------
+# Retype Pro
+# -----------------------------------------------------------------------------
+
+poweredByRetype: true         # Set to false to remove "Powered by Retype"
+                              # A Retype Pro license is required
+                              # See: https://retype.com/pro
+
+# -----------------------------------------------------------------------------
+
+breadcrumb:
+  enabled: true               # Enabled by default on Pro projects
+  home: Home                  # Custom label for the first item
+  home: ":icon-home:"         # or, use an icon
+  separator: "|"              # Custom item separator
+
+# -----------------------------------------------------------------------------
+
+outbound:
+  enabled: true               # Enabled by default on Pro projects
+  custom: 'rel="noopener noreferrer"' # custom attribute added to links
+  icon: link-external         # A custom icon name, :emoji:, <svg>, or
+                              # a path to a file
+  iconAlign: left             # Icon alignment, to the left or right
+  target: blank               # Custom target
+                              # Use "blank" to open link in a new window
+  exclude:                    # Links or patterns to exclude
+    - example.com             # Exclude all links containing example.com
+    - example.com/docs/*      # Wildcards are valid
+  include:                    # Links or patterns to include
+    - example.com             # Only include links containing example.com
+    - example.com/docs/*      # Wildcards are valid
+
+
+# -----------------------------------------------------------------------------
+# Retype
+# -----------------------------------------------------------------------------
+
+input: .                      # Local path from this retype.yml file to the
+                              # root of your project content files
+                              # See also: output
+
+# -----------------------------------------------------------------------------
+
+output: .retype               # Custom path to the output directory
+                              # See also: input
+
+# -----------------------------------------------------------------------------
+
+url: example.com              # The base URL of your website
+url: docs.example.com         # Can also be a sub-domain
+url: example.com/docs         # Can also include a sub-folder path
+url: https://example.com/docs # Can also include a protocol
+
+# -----------------------------------------------------------------------------
+
+branding:
+  title: Example              # Your custom website title; keep it short
+  logo: /logo.png             # Path to a logo file
+  logoDark: /logo-dark.png    # Path to a logo file to use in dark mode
+  logoAlign: right            # Align the logo to the right or the left
+  label: Docs                 # Optional label
+                              # To remove the label, remove this config
+  colors:
+    label:                    # Label colors
+      text: "#ffffff"         # Custom color for the label text
+      background: "#ff0000"   # Custom color for the label background
+
+# -----------------------------------------------------------------------------
+
+links:                        # Custom links to add to the top bar
+                              # See also: footer.links
+  - text: Home                # The text to use for the link
+    link: https://example.com # Link to an internal file or external URL
+  - text: API
+    link: /getting-started.md # Link to an internal file
+    icon: gear                # A custom icon name, :emoji:, <svg>, or
+                              # a path to a file
+    iconAlign: left           # Icon alignment, to the left or right
+    target: blank             # Custom target
+                              # Use "blank" to open link in a new window
+
+# -----------------------------------------------------------------------------
+
+footer:
+  copyright: "© All rights reserved." # A custom copyright statement
+  links:                      # A list of links to include in the footer
+                              # See also: links
+    - text: License           # The text to use for the link
+      link: license.md        # Point to an internal file or external URL
+
+# -----------------------------------------------------------------------------
+
+cache:
+  busting: query              # Cache busting strategy
+                              # Options: none | path | query (default)
+
+# -----------------------------------------------------------------------------
+
+cname: example.com            # The CNAME file value
+                              # or, false to not create a CNAME file
+
+# -----------------------------------------------------------------------------
+
+edit:
+  repo: ""                    # The URL to source files for this project
+  base: ""                    # Optional base path to a directory within repo
+  branch: ""                  # Point to a custom branch within the repo
+  label: "Edit this page"     # A custom label for the generated link
+
+# -----------------------------------------------------------------------------
+
+editor:                       # Configure the page live editor functionality
+                              # that is only available during `retype start`
+  enabled: true               # false to disable and hide the live editor
+
+# -----------------------------------------------------------------------------
+
+exclude:                      # Files or folders to exclude from the build
+                              # See also: include
+  - "*_temp/"                 # Wildcards are valid
+  - "/src/temp.md"            # Exclude a specific file
+
+# -----------------------------------------------------------------------------
+
+favicon: static/favicon.png   # Path to a custom favicon, or
+                              # just put a favicon.ico in your project root
+
+# -----------------------------------------------------------------------------
+
+generator:
+  recase: all                 # `none` to not recase any file or folder names
+                              # By default, all generated file and folder names
+                              # are generated in all lowercase
+
+# -----------------------------------------------------------------------------
+
+include:                      # Files or folders to include in the build
+                              # See also: exclude
+  - "*.py"                    # Wildcards are valid
+
+# -----------------------------------------------------------------------------
+
+integrations:
+  googleAnalytics:
+    id: ""                    # Your Google Analytics measurement id
+  googleTagManager:
+    id: ""                    # Your Google Tag Manager measurement id
+  gravatar:
+    enabled: true             # false to disable using Gravatar images
+    default: mp               # What Gravatar profile image to use
+  plausible:                  # Plausible.io integration
+    domain: domain1.com,domain2.com # Your plausible domain(s)
+    host: plausible.example.com     # Custom Plausible host name
+
+# -----------------------------------------------------------------------------
+
+markdown:                     # Markdown configuration options
+  lineBreaks: soft            # Switch between `soft` and `hard` line breaks
+
+# -----------------------------------------------------------------------------
+
+meta:
+  title: " | Widgets"         # Appended to the <title> element on all pages
+
+# -----------------------------------------------------------------------------
+
+search:                       # Custom configuration of the website search
+  hotkeys:
+    - "/"                     # Keyboard key to set focus in the search field
+                              # Default is "k"
+  maxResults: 20              # Max number of search results to render
+  minChars: 2                 # Min characters required to trigger a search
+  mode: full                  # The search index creation mode
+                              # Options include: full | partial | basic
+  noResultsFoundMsg: "No results" # Message when no results are found
+  placeholder: Search         # Placeholder text used in the input field
+
+# -----------------------------------------------------------------------------
+
+serve:
+  host: 127.0.0.1             # Serve the website from this host location
+  host: 127.0.0.1:5005        # Custom port also supported
+  port: 5005                  # Custom port configured separately from host
+  watch:
+    mode: memory              # Where to host files from during retype watch
+                              # Options include: memory (default) | disk
+    polling: true             # How Retype will listen for file changes
+                              # Options: false (default) | true | number
+    validation: optimal       # How thorough Retype is looking for file changes
+                              # Options: fast | full | optimal (default)
+
+# -----------------------------------------------------------------------------
+
+start:
+  open: false                 # Do not automatically open web browser on start
+
+# -----------------------------------------------------------------------------
+
+snippets:                     # Custom code snippets configuration
+                              # See: https://retype.com/components/code-snippet
+  lineNumbers:                # Language shortcodes to enable line numbering on
+    - js
+    - none                    # `none` to disable line-numbering on snippets
+
+# -----------------------------------------------------------------------------
+
+templating:
+  enabled: true               # Enable or disable the Retype content templating
+  liquid: false               # Is Liquid syntax {% ... %} enabled?
+                              # If true, Retype is incompatible with the
+                              # GitBook style of component configuration
