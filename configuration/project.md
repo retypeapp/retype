@@ -1575,6 +1575,22 @@ Default value is `optimal`.
 
 ---
 
+## showSidebarFilter
+
+=== showSidebarFilter : `boolean`
+
+The `showSidebarFilter` project setting controls the visibility of the filter component in the left sidebar above the navigation tree. Default is `true`.
+
+By default, this setting is `true`, meaning the filter component is displayed. If set to `false`, the filter component will be hidden, allowing for a more streamlined sidebar layout. This option can be useful for simplifying the user interface in projects where filtering topics is not necessary.
+
+```yml Hide Filter component
+showSidebarFilter: false
+```
+
+===
+
+---
+
 ## snippets
 
 The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](/components/code-block.md#line-numbers).
