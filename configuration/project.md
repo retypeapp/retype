@@ -26,6 +26,7 @@ You can also explicitly have Retype generate a **retype.yml** file by running th
 
 The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.
 
+{%{
 ```yml Sample retype.yml
 input: .
 output: .retype
@@ -39,6 +40,7 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
+}%}
 
 [!ref Full retype.yml sample](/samples/advanced-project-config.md)
 
