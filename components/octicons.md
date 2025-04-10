@@ -68,7 +68,6 @@ Currently, there are 331 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-bold: | bold | `:icon-bold:` |
 | :icon-book: | book | `:icon-book:` |
 | :icon-bookmark: | bookmark | `:icon-bookmark:` |
-| :icon-bookmark-fill: | bookmark-fill | `:icon-bookmark-fill:` |
 | :icon-bookmark-filled: [!badge variant="info" text="NEW"] | bookmark-filled | `:icon-bookmark-filled:` |
 | :icon-bookmark-slash: | bookmark-slash | `:icon-bookmark-slash:` |
 | :icon-bookmark-slash-fill: | bookmark-slash-fill | `:icon-bookmark-slash-fill:` |
@@ -285,7 +284,6 @@ Currently, there are 331 [Octicons](https://primer.github.io/octicons/) supporte
 | :icon-repo: | repo | `:icon-repo:` |
 | :icon-repo-clone: | repo-clone | `:icon-repo-clone:` |
 | :icon-repo-delete: [!badge variant="info" text="NEW"] | repo-delete | `:icon-repo-delete:` |
-| :icon-repo-deleted: | repo-deleted | `:icon-repo-deleted:` |
 | :icon-repo-forked: | repo-forked | `:icon-repo-forked:` |
 | :icon-repo-locked: | repo-locked | `:icon-repo-locked:` |
 | :icon-repo-pull: | repo-pull | `:icon-repo-pull:` |

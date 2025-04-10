@@ -1,5 +1,5 @@
 ---
-icon: diamond
+icon: play
 tags: [component]
 ---
 # Button

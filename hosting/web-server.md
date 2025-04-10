@@ -1,5 +1,6 @@
 ---
 layout: page
+icon: server
 ---
 # Web server
 
