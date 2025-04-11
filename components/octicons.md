@@ -1,4 +1,5 @@
 ---
+{{ include "snippets/octicons-data" }}
 icon: mark-github
 ---
 # Octicons
@@ -39,23 +40,20 @@ This is a sample page with a :icon-rocket: icon.
 
 ## New icons
 
-New icons in Retype v{{ version }}:
+There are {{ octicons_new.size }} [!badge variant="info" text="NEW"] icons in Retype v{{ version }}:
 
-| Icon | Shortcode | Sample |
-| :---: | --- | --- |
-| :icon-ai-model: | ai-model | `:icon-ai-model:` |
-| :icon-repo-delete: | repo-delete | `:icon-repo-delete:` |
-| :icon-sparkles-fill: | sparkles-fill | `:icon-sparkled-fill:` |
-| :icon-square-circle: | square-circle | `:icon-square-circle:` |
+{{
+    with { icon_list: octicons_new }
+        include "snippets/octicons-table"
+    end
+}}
 
 ## All icons
 
-{{ include "snippets/octicons-data" }}
+As of v{{ version }}, there are {{ octicons.size }} [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
 
-As of v{{ version }}, there are {{ icons.size }} [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
-
-| Icon | Shortcode | Sample |
-| :---: | --- | --- |
-{{~ for $i in icons ~}}
-| :icon-{{ $i }}: | {{ $i }} | `:icon-{{ $i }}:` |
-{{~ end ~}}
+{{
+    with { icon_list: octicons }
+        include "snippets/octicons-table"
+    end
+}}
