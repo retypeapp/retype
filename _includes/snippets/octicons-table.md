@@ -1,5 +1,5 @@
 | Icon | Shortcode | Sample |
 | :---: | --- | --- |
-{{~ for $i in icon_list ~}}
+{{~ for $i in $.list ~}}
 | :icon-{{ $i }}: | {{ $i }} | `:icon-{{ $i }}:` |
 {{~ end ~}}
