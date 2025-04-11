@@ -1,5 +1,13 @@
 {{~
-  icons = [ 
+  octicons_new = [ 
+    "ai-model",
+    "bookmark-filled",
+    "repo-delete",
+    "sparkles-fill",
+    "square-circle",
+  ]
+  
+  octicons = [ 
     "accessibility",
     "accessibility-inset",
     "ai-model",
