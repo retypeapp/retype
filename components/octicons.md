@@ -1,5 +1,5 @@
 ---
-{{ include "snippets/octicons-data" }}
+{{ include "data/octicons" }}
 icon: mark-github
 ---
 # Octicons
@@ -42,10 +42,10 @@ This is a sample page with a :icon-rocket: icon.
 
 There are {{ octicons_new.size }} [!badge variant="info" text="NEW"] icons in Retype v{{ version }}:
 
-{{ include "snippets/octicons-table" list:octicons_new }}
+{{ include "components/octicons" list:octicons_new }}
 
 ## All icons
 
 As of v{{ version }}, there are {{ octicons.size }} [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
 
-{{ include "snippets/octicons-table" list:octicons }}
+{{ include "components/octicons" list:octicons }}
