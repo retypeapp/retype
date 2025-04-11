@@ -65,6 +65,7 @@ links:
     target: blank
 
 data:
+  version: "3.7.0"
   abbreviations:
     HTML: Hyper Text Markup Language
     CSS: Cascading Style Sheet
