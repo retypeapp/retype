@@ -1101,8 +1101,8 @@ Code | Language | Native name
 `ja` | Japanese | 日本語
 `kn` | Kannada | ಕನ್ನಡ
 `ko` | Korean | 한국어
-`nl` | Dutch | Nederlands
 `nb` | Norwegian (Bokmål) | Norsk (Bokmål)
+`nl` | Dutch | Nederlands
 `pt` | Portuguese (Brazil) | Português (Brasil)
 `pt-PT` | Portuguese (Portugal) | Português (Portugal)
 `ro` | Romanian | Română
