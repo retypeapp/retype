@@ -1102,9 +1102,9 @@ Code | Language | Native name
 `kn` | Kannada | ಕನ್ನಡ
 `ko` | Korean | 한국어
 `nl` | Dutch | Nederlands
-`no` | Norwegian | Norsk
-`pt` | Portuguese | Português
-`pt-BR` | Brazilian Portuguese | Portuguese do Brasil
+`nb` | Norwegian (Bokmål) | Norsk (Bokmål)
+`pt` | Portuguese (Brazil) | Português (Brasil)
+`pt-PT` | Portuguese (Portugal) | Português (Portugal)
 `ro` | Romanian | Română
 `ru` | Russian | Русский
 `sa` | Sankrit (Saṁskṛtam) | संस्कृतम्
