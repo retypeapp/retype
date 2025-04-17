@@ -1090,10 +1090,12 @@ Code | Language | Native name
 `ar` | Arabic | العربية
 `da` | Danish | Dansk
 `de` | German | Deutsch
+`el` [!badge variant="info" size="xs" text="as of v3.8"]| Greek | Ελληνικά (Elliniká)
 `en` [!badge variant="info" size="xs" text="default"] | English | English
 `es` | Spanish | Español
 `fi` | Finnish | Suomalainen
 `fr` | French | Français
+`he` [!badge variant="info" size="xs" text="as of v3.8"] | Hebrew ((Ivrit)) | עברית
 `hi` | Hindi | हिन्दी
 `hu` | Hungarian | Magyar
 `hy` | Armenian (Hayeren) | Հայերեն
