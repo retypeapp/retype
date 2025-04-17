@@ -43,7 +43,7 @@ The power of the Container component is how custom styling can be applied to the
         border-radius: 10px;
         background-color: #E1EDFF;
         border: 1px solid #1956AF;
-        padding-top: 20px;
+        padding: 20px 20px 0 20px;
         margin-bottom: 20px;
     }
 </style>
@@ -61,7 +61,7 @@ The above Container is configured by assigning the `:::sample` class to the open
         border-radius: 10px;
         background-color: #E1EDFF;
         border: 1px solid #1956AF;
-        padding-top: 20px;
+        padding: 20px 20px 0 20px;
         margin-bottom: 20px;
     }
 </style>
@@ -116,7 +116,7 @@ Create a new **head.html** file and place the file within a **/_includes/** fold
         border-radius: 10px;
         background-color: #E1EDFF;
         border: 1px solid #1956AF;
-        padding-top: 20px;
+        padding: 20px 20px 0 20px;
         margin-bottom: 20px;
     }
 </style>
@@ -149,7 +149,7 @@ Since the **_includes/head.html** can contain any custom HTML, you could also mo
     border-radius: 10px;
     background-color: #E1EDFF;
     border: 1px solid #1956AF;
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;
     margin-bottom: 20px;
 }
 ```
