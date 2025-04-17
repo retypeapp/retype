@@ -241,7 +241,7 @@ Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
 +++ New :icon-shield-check:
 - [x] [`generator.recase`](/configuration/project.md#generator) project config to recase file and folder names. See [#302](https://github.com/retypeapp/retype/issues/302).
 - [x] Official Retype docker images published to [DockerHub](https://hub.docker.com/repository/docker/retypeapp/retype). See [#122](https://github.com/retypeapp/retype/issues/122).
-- [x] New `@latest` tag to be used in your [retype-action.yml](http://localhost:5000/guides/github-actions/#step-1-add-retype-actionyml-workflow) configuration.
+- [x] New `@latest` tag to be used in your [retype-action.yml](/guides/github-actions/#step-1-add-retype-actionyml-workflow) configuration.
 - [x] GitHub Action annotation to announce availability of Retype v2, only if using Retype v1.
 +++ Fixed :icon-bug:
 - [x] [author](/configuration/page.md#author), [date](/configuration/page.md#date), and [category](/configuration/page.md#category) metadata being rendered above page title
