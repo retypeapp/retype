@@ -9,16 +9,14 @@ icon: home
 [Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: static website generator that builds a website based on simple Markdown text files. Focus on your writing while Retype builds the rest.
 
 {.callout}
-> “Retype is the perfect fit for my user persona -\
-> tech savvy non-devs who want to write using the best web standards out there” *- jonnyfeelgood*
+> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there”
 
 No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
 The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
 
 {.callout}
-> “I don't want to write code to write docs,\
-> I just want to write docs.” *- rab-dev*
+> “I don't want to write code to write docs, I just want to write docs.”
 
 A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
 
