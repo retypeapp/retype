@@ -1451,7 +1451,7 @@ serve:
   host: 127.0.0.1
 ```
 
-By default, the Retype development web server will serve from `http://localhost:5000`, although the port could be dynamically assigned if port `5000` is already in use.
+By default, the Retype development web server will serve from `http://localhost:5001`, although the port could be dynamically assigned if port `5001` is already in use.
 
 A custom port value can also be assigned.
 
@@ -1473,7 +1473,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port
 
 === port : `number`
 
-A custom port for the internal Retype development web server to use when hosting locally. Default is `5000`.
+A custom port for the internal Retype development web server to use when hosting locally. Default is `5001`.
 
 ```yml
 serve:
