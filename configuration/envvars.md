@@ -7,9 +7,9 @@ tags: [config]
 
 ## RETYPE_SECRET
 
-A Retype license key can be configured as a secret Environment variable and the key is NOT stored in the [wallet](/guides/cli.md#retype-wallet).
+A Retype key can be configured as a secret Environment variable and the key is NOT stored in the [wallet](/guides/cli.md#retype-wallet).
 
-Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
+Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
 
 The [RETYPE_SECRET](../guides/github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
 
@@ -27,12 +27,12 @@ Click the **New repository secret** button to add a new secret, which should loo
 
 ![](/static/add-retype-secret.png)
 
-Once the `RETYPE_SECRET` secret is added, you should see the following and your Retype project will now build using your license key:
+Once the `RETYPE_SECRET` secret is added, you should see the following and your Retype project will now build using your key:
 
 ![](/static/retype-repository-secret.png)
 
 !!!
-See [configuring](../guides/github-actions.md/#retype_secret) a GitHub Workflow to use your Retype license key.
+See [configuring](../guides/github-actions.md/#retype_secret) a GitHub Workflow to use your Retype key.
 !!!
 
 ## RETYPE_PASSWORD

@@ -12,7 +12,7 @@ Add a simple CI/CD pipeline to the project to automate the building and deployme
 ## Summary
 
 - [x] Add a **.gitlab-ci.yml** file to your repository
-- [x] [!badge Optional] Add a License key to the ENV variables
+- [x] [!badge Optional] Add a key to the ENV variables
 - [x] Commit a change to the repo to publish the website
 
 ## .gitlab-ci.yml
@@ -70,7 +70,7 @@ Commit the **.gitlab-ci.yml** file and push to the repo.
 
 ## RETYPE_SECRET
 
-If using Retype [Pro](/pro/pro.md), the project requires a Retype License Key. The license key can be configured by adding the [`RETYPE_SECRET`](/configuration/envvars.md#retype_secret) Environment variable to the repository using the following URL location:
+If using Retype [Pro](/pro/pro.md), the project requires a Retype key. The key can be configured by adding the [`RETYPE_SECRET`](/configuration/envvars.md#retype_secret) Environment variable to the repository using the following URL location:
 
 ```
 # Replace [username] and [project] with your values

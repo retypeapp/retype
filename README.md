@@ -6,14 +6,16 @@ icon: home
 
 # Welcome to Retype
 
-[Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: static website generator that builds a website based on simple Markdown text files. Focus on your writing while Retype builds the rest.
+[Retype](https://retype.com/) is a static website generator that builds a website based on simple Markdown text files. Focus on your writing while Retype builds the rest.
 
 {.callout}
-> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there”
+> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there.”
 
 No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
-The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
+!!!
+The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) files used to generate this very page.
+!!!
 
 {.callout}
 > “I don't want to write code to write docs, I just want to write docs.”
@@ -91,8 +93,8 @@ Retype generates a basic HTML website that you can host on any web hosting servi
 
 ## Support
 
-Do you have a technical support question, found a defect, or would like to make a feature request? Please create an [issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
+Do you have a technical support question, find a defect, or would like to make a feature request? Please create an [issue](https://github.com/retypeapp/retype/issues) to get the conversation started.
 
 Do you have a general inquiry? Please feel free to contact us at hello@retype.com.
 
-We :heart: feedback.
+We :heart: your feedback.

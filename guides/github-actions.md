@@ -82,7 +82,7 @@ Commit your **.github/workflows/retype-action.yml** file and push to your repo.
 
 ### RETYPE_SECRET
 
-If your project requires a Retype license key, that key can be configured by adding a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
+If your project requires a Retype key, that key can be configured by adding a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
 
 {%{
 ```yml
@@ -92,7 +92,7 @@ If your project requires a Retype license key, that key can be configured by add
 ```
 }%}
 
-The following demonstrates a basic template to use for a workflow configuration file, if including the license key:
+The following demonstrates a basic template to use for a workflow configuration file, if including the key:
 
 ```yml .github/workflows/retype-action.yml
 name: Publish Retype powered website to GitHub Pages

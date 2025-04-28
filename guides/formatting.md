@@ -1,6 +1,7 @@
 ---
 icon: note
 tags: [guide]
+label: Markdown (RFM)
 ---
 # Formatting
 

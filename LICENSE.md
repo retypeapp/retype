@@ -62,9 +62,9 @@ for Your internal evaluation, review, and production purposes. The Free License 
 restricted functionality. You are explicitly not permitted to distribute the Software to any user
 outside the Organization on whose behalf you have undertaken this license. We reserve the right to
 terminate Your License at any time in Our absolute and sole discretion. Without the purchase and
-inclusion of a License Key, the Software may contain restricted functionality, which from
+inclusion of a key, the Software may contain restricted functionality, which from
 time-to-time may differ in its limitations. If you wish to remove these restrictions, you are
-required to purchase a Retype License Key; otherwise you must leave this limitation intact and not
+required to purchase a Retype key; otherwise you must leave this limitation intact and not
 attempt to modify or circumvent it in any way.
 
 In addition to the other terms contained herein, in the event You have downloaded or received beta

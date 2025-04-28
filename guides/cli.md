@@ -35,7 +35,7 @@ Commands:
   build <path>  Generate a static website from the project
   serve <path>  Serve the website in a local development only web server
   clean <path>  Clean the output directory
-  wallet        Manage Retype secret license keys
+  wallet        Manage Retype secret keys
 ```
 
 ---
@@ -70,7 +70,7 @@ Arguments:
 
 Options:
   --pro                  Enable Retype Pro preview
-  --secret <secret>      Retype license key
+  --secret <secret>      Retype key
   --password <password>  Private page password
   --host <host>          Custom Host name or IP address
   --port <port>          Custom TCP port
@@ -203,7 +203,7 @@ Arguments:
 
 Options:
   --output <output>      Custom path to the output directory
-  --secret <secret>      Retype license key
+  --secret <secret>      Retype key
   --password <password>  Private page password
   --override <override>  JSON configuration overriding project config values
   --strict               [PRO] Return a non-zero exit code if the build had errors or warnings
@@ -283,19 +283,19 @@ Options:
 
 ## `retype wallet`
 
-The `retype wallet` command is for managing Retype license keys.
+The `retype wallet` command is for managing Retype keys.
 
-Retype license keys are stored within an encrypted wallet file called **license.dat**.
+Retype keys are stored within an encrypted wallet file called **license.dat**.
 
-To add a Retype license key to your wallet, run the following command:
+To add a Retype key to your wallet, run the following command:
 
 ```
 retype wallet --add <your-license-key-here>
 ```
 
-Once a license key is added to your wallet, the license key does not need to be added again. The key is stored in the wallet and Retype will read the key from the wallet with future builds.
+Once a key is added to your wallet, the key does not need to be added again. The key is stored in the wallet and Retype will read the key from the wallet with future builds.
 
-A Retype license key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to `retype build`.
+A Retype key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to `retype build`.
 
 ```
 retype build --secret <your-license-key-here>
@@ -303,21 +303,21 @@ retype build --secret <your-license-key-here>
 
 ### RETYPE_SECRET
 
-See how to configure a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) Environment variable for an option to set your project license key during runtime.
+See how to configure a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) Environment variable for an option to set your project key during runtime.
 
 ### Options
 
 ```
 Description:
-  Manage Retype secret license keys
+  Manage Retype secret keys
 
 Usage:
   retype wallet [options]
 
 Options:
-  --add <secret>     Add a secret license key to the wallet
-  --remove <secret>  Remove a secret license key from the wallet
-  --list             List the stored secret license keys
+  --add <secret>     Add a secret key to the wallet
+  --remove <secret>  Remove a secret key from the wallet
+  --list             List the stored secret keys
   --clear            Clear the wallet
   -?, -h, --help     Show help and usage information
 ```
