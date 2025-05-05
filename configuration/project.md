@@ -30,13 +30,21 @@ The following sample demonstrates a common set of project configuration options 
 ```yml Sample retype.yml
 input: .
 output: .retype
-url: example.com # Add your website here
+
+url: docs.example.com # Use your website address here
+
+start:
+  # Uncomment the next line to try Retype Pro features
+  # pro: true
+
 branding:
   title: Project Name
   label: Docs
+
 links:
   - text: Getting Started
     link: https://retype.com/guides/getting-started/
+
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
