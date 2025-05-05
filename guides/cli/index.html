@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799746428894">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799747493788">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.0.799746428894" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.8.0.799747493788" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.0.799746428894" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.0.799747493788" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.0.799746428894" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.0.799746428894" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.0.799747493788" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.0.799747493788" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.0.799746428894" rel="stylesheet">
+    <link href="/static/styles.css?v=3.8.0.799747493788" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -292,16 +292,16 @@ Usage:
 
 Options:
   --info          Display Retype information
-  --version       Show version information
+  -v, --version   Show version information
   -?, -h, --help  Show help and usage information
 
 Commands:
   start &lt;path&gt;  Build and serve the project using a local development only web server
-  init  &lt;path&gt;  Initialize a new Retype project
+  init &lt;path&gt;   Initialize a new Retype project
   build &lt;path&gt;  Generate a static website from the project
   serve &lt;path&gt;  Serve the website in a local development only web server
   clean &lt;path&gt;  Clean the output directory
-  wallet        Manage Retype secret keys</code></pre>
+  wallet        Manage Your Retype Keys</code></pre>
 </doc-codeblock></div>
 <hr>
 <doc-anchor-target id="retype-start">
@@ -337,7 +337,7 @@ Arguments:
 
 Options:
   --pro                  Enable Retype Pro preview
-  --secret &lt;secret&gt;      Retype key
+  --key &lt;key&gt;            Your Retype Key
   --password &lt;password&gt;  Private page password
   --host &lt;host&gt;          Custom Host name or IP address
   --port &lt;port&gt;          Custom TCP port
@@ -376,7 +376,7 @@ Options:
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype init</code></pre>
 </doc-codeblock></div>
-<p>Calling the <code v-pre>retype init</code> command will create a simple <strong>retype.yml</strong> file with the following default values:</p>
+<p>Calling the <code v-pre>retype init</code> command will create a basic <strong>retype.yml</strong> file with the following default values:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample retype.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: .
@@ -473,7 +473,7 @@ Arguments:
 
 Options:
   --output &lt;output&gt;      Custom path to the output directory
-  --secret &lt;secret&gt;      Retype key
+  --key &lt;key&gt;            Your Retype Key
   --password &lt;password&gt;  Private page password
   --override &lt;override&gt;  JSON configuration overriding project config values
   --strict               [PRO] Return a non-zero exit code if the build had errors or warnings
@@ -579,15 +579,15 @@ Options:
 <p>Once a key is added to your wallet, the key does not need to be added again. The key is stored in the wallet and Retype will read the key from the wallet with future builds.</p>
 <p>A Retype key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to <code v-pre>retype build</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build --secret &lt;your-license-key-here&gt;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype build --key &lt;your-license-key-here&gt;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="retype_secret">
+<doc-anchor-target id="retype_key">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_secret">#</doc-anchor-trigger>
-        <span>RETYPE_SECRET</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_key">#</doc-anchor-trigger>
+        <span>RETYPE_KEY</span>
     </h3>
 </doc-anchor-target>
-<p>See how to configure a <a href="/configuration/envvars/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> Environment variable for an option to set your project key during runtime.</p>
+<p>See how to configure a <a href="/configuration/envvars/#retype_key"><code v-pre>RETYPE_KEY</code></a> Environment variable for an option to set your project key during runtime.</p>
 <doc-anchor-target id="options-5">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
@@ -596,17 +596,17 @@ Options:
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Description:
-  Manage Retype secret keys
+  Manage Your Retype Keys
 
 Usage:
   retype wallet [options]
 
 Options:
-  --add &lt;secret&gt;     Add a secret key to the wallet
-  --remove &lt;secret&gt;  Remove a secret key from the wallet
-  --list             List the stored secret keys
-  --clear            Clear the wallet
-  -?, -h, --help     Show help and usage information</code></pre>
+  --add &lt;key&gt;     Add a key to the wallet
+  --remove &lt;key&gt;  Remove a key from the wallet
+  --list          List the stored keys
+  --clear         Clear the wallet
+  -?, -h, --help  Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr>
 <doc-anchor-target id="retype---override">
