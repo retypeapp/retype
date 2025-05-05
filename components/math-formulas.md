@@ -1,5 +1,5 @@
 ---
-icon: beaker
+icon: diff-added
 tags: [component]
 ---
 # Math Formulas
