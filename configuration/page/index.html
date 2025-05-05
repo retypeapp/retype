@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799791466880">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799794305512">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.0.799791466880" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.8.0.799794305512" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.0.799791466880" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.0.799794305512" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.0.799791466880" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.0.799791466880" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.0.799794305512" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.0.799794305512" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.0.799791466880" rel="stylesheet">
+    <link href="/static/styles.css?v=3.8.0.799794305512" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -287,6 +287,7 @@ This is a sample page demonstrating page metadata.</code></pre>
 <li><code v-pre>readme.md</code></li>
 <li><code v-pre>default.md</code></li>
 <li><code v-pre>welcome.md</code> *only in the project root</li>
+<li><code v-pre>home.md</code> *only in the project root</li>
 </ol>
 <p>Within a sub-folder, if you add a Markdown <strong>.md</strong> file with the exact same name as the folder name, Retype will also treat that <code v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -924,7 +925,7 @@ route: /custom/path
 Some content here.</code></pre>
 </doc-codeblock></div>
 <p>A custom <code v-pre>route</code> allows the folder and file structure to remain unchanged, but allowing the final URL&#x27;s to be customized.</p>
-<p>Configuring the <code v-pre>route</code> is an excellent solution when moving to Retype from another solution and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <strong>.md</strong> content files into a new structure. A custom <code v-pre>route</code> allows for a clean disconnect of the page path from the final published URL path.</p>
+<p>Configuring the <code v-pre>route</code> is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <strong>.md</strong> files into a new structure. A custom <code v-pre>route</code> allows for a clean disconnect of the page path from the final published URL path.</p>
 <p>In the following sample, the generated URL by Retype would be <code v-pre>/guide/2021-06-25-publishing-to-github-pages/</code>, but we override with a custom route which will publish the page to <code v-pre>/tutorial/publish-to-github-pages/</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/guide/2021-06-25-publishing-to-github-pages.md</div>

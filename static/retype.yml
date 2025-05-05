@@ -215,10 +215,10 @@ templating:
 
 # -----------------------------------------------------------------------------
 
-toc:                         # Table of Contents configuration (Pro only)
-  depth: 2-3                 # Heading depth to include in right sidebar
-  label: "On this page"      # Custom label for the Table of Contents
+toc:                          # Table of Contents configuration (Pro only)
+  depth: 2-3                  # Heading depth to include in right sidebar
+  label: "On this page"       # Custom label for the Table of Contents
 
 # -----------------------------------------------------------------------------
 
-showSidebarFilter: true      # Control visibility of filter component in sidebar
+showSidebarFilter: true       # Control visibility of filter component in sidebar
