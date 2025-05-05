@@ -94,7 +94,7 @@ graph LR
 
 ### Flowchart
 
-More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/flowchart).
+More details in the Mermaid [docs](https://mermaid-js.github.io/mermaid/#/flowchart).
 
 ~~~
 ```mermaid
@@ -116,7 +116,7 @@ graph TD;
 
 ### Sequence diagram
 
-More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/sequenceDiagram).
+More details in the Mermaid [docs](https://mermaid-js.github.io/mermaid/#/sequenceDiagram).
 
 ~~~
 ```mermaid
@@ -150,7 +150,7 @@ sequenceDiagram
 
 ### Gantt diagram
 
-More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/gantt).
+More details in the Mermaid [docs](https://mermaid-js.github.io/mermaid/#/gantt).
 
 ~~~
 ```mermaid
@@ -182,7 +182,7 @@ Future task2              :         des4, after des3, 5d
 
 ### Class diagram
 
-More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/classDiagram).
+More details in the Mermaid [docs](https://mermaid-js.github.io/mermaid/#/classDiagram).
 
 ~~~
 ```mermaid
@@ -222,7 +222,7 @@ Class08 <--> C2: Cool label
 
 ### Entity Relationship
 
-More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram).
+More details in the Mermaid [docs](https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram).
 
 ~~~
 ```mermaid
@@ -242,7 +242,7 @@ erDiagram
 
 ### User Journey
 
-More details in Mermaid [docs](https://mermaid-js.github.io/mermaid/#/user-journey).
+More details in the Mermaid [docs](https://mermaid-js.github.io/mermaid/#/user-journey).
 
 ~~~
 ```mermaid
@@ -268,6 +268,32 @@ journey
     section Go home
       Go downstairs: 5: Me
       Sit down: 5: Me
+```
+
+### Sankey diagram
+
+More details in the Mermaid [docs](https://mermaid.js.org/syntax/sankey.html).
+
+~~~
+```mermaid
+sankey-beta
+Saved1,Saved2,35
+Saved1,Missed,792
+Applied1,Applied2,121
+Applied1,"Applied & Rejected",405
+Saved2,Pricing,59
+Saved2,BI & Data,40
+```
+~~~
+
+```mermaid
+sankey-beta
+Saved1,Saved2,35
+Saved1,Missed,792
+Applied1,Applied2,121
+Applied1,"Applied & Rejected",405
+Saved2,Pricing,59
+Saved2,BI & Data,40
 ```
 
 [!ref :mermaid: Mermaid website](https://mermaid-js.github.io/mermaid/)
