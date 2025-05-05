@@ -22,14 +22,6 @@ We apologize in advance, but we do not yet have a system in place to auto-genera
 
 ## I need assistance
 
-Okay, no problem. We are here to help.
-
-There are fast or faster options available:
-
-### :zap: Fast
+Okay, no problem. We are here to help. 
 
 {{ include "snippets/contact-us" }}
-
-### :zap::zap::zap: Faster
-
-We do our best to be online and monitoring the real-time chat support so we can answer your questions immediately. To start a chat, click on the :icon-comment: icon in the bottom-right of this page.
