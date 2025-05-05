@@ -13,7 +13,7 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 ---
 ## v3.9.0 [!badge text="NEXT" variant="info"]
 
-In progress, expected Q2 2025.
+In progress, expected late Q2 2025.
 
 ## v3.8.0 [!badge text="LATEST" variant="info"]
 
@@ -21,11 +21,11 @@ Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 
 +++ New :icon-shield-check:
 
-1. [!badge PRO](/pro/pro.md) New stack navigation mode, see [#621](https://github.com/retypeapp/retype/issues/621)
+1. [!badge PRO](/pro/pro.md) New stack navigation mode, see [#621](https://github.com/retypeapp/retype/issues/621#issuecomment-2848996632)
 1. New Greek and Hebrew language support, see [#730](https://github.com/retypeapp/retype/discussions/730)
 1. New YouTube link parsing and embed template generation, see [#51](https://github.com/retypeapp/retype/issues/51)
 1. New support for including a file outside the project root when using `{{ include }}`, see [#734](https://github.com/retypeapp/retype/issues/734)
-1. New WikiLink and image WikiLink syntax support
+1. New WikiLink and image WikiLink syntax support, including building [Obsidian](https://obsidian.md/) vaults
 
 +++ Improved :icon-thumbsup:
 
