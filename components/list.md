@@ -167,7 +167,7 @@ Uppercase Roman numeral ordered lists are not broadly supported across all web b
 
 ## Description List
 
-A Description List is a way to display terms along with their corresponding definitions or descriptions.
+A **Description** List (`<dl>`) is a way to display **Terms** (`<dt>`) along with their corresponding **Details** (`<dd>`).
 
 The Description List is commonly used to create a glossary or dictionary where you have a word and its meaning listed together.
 
@@ -175,55 +175,55 @@ The Description List is commonly used to create a glossary or dictionary where y
 
 ```md
 Term 1
-:   Definition 1
+: Detail 1
 
 Term 2
-:   Definition 2
+: Detail 2
 
 Term 3
-:   Definition 3
+: Detail 3
 ```
 
 Term 1
-:   Definition 1
+: Detail 1
 
 Term 2
-:   Definition 2
+: Detail 2
 
 Term 3
-:   Definition 3
+: Detail 3
 
-### Include Markdown
+### Include nested components
 
 ```md
 Term 1
-:   Definition 1
-    With a paragraph
-    > This is a block quote
+: Detail 1
+  With a paragraph
+  > This is a block quote
 
-    - Nested item 1
-    - Nested item 2
+  - Nested item 1
+  - Nested item 2
 
 Term 2
-:   Definition 2
-    This is a paragraph continuing the definition.
+: Detail 2
+  This is a paragraph continuing the details.
 
-    > This is a blockquote inside the definition.
+  > This is a blockquote inside the details.
 
 Term 3
-:   Definition 3
+: Detail 3
 ```
 
 Term 1
-:   Definition 1
-    With a paragraph
-    > This is a block quote
+: Detail 1
+  With a paragraph
+  > This is a block quote
 
-    - Nested item 1
-    - Nested item 2
+  - Nested item 1
+  - Nested item 2
 
 Term 2
-:   Definition 2
-    This is a paragraph continuing the definition.
+: Detail 2
+  This is a paragraph continuing the details.
 
-    > This is a blockquote inside the definition.
+  > This is a blockquote inside the details.
