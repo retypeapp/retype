@@ -301,7 +301,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 1. Content templating.
 1. [Disable](/configuration/page.md#templating) templating on a page.
 1. Line [highlighting](/components/code-block.md#line-highlighting) in code blocks.
-1. `ghost` variant on [Button](/components/button.md#variant), [Badge](/components/badge.md#variant), and [Alert](/components/alert.md#variant).
+1. `ghost` variant on [Button](/components/button.md#variant), [Badge](/components/badge.md#variant), and [Callout](/components/callout.md#variant).
 1. Custom site-wide includes for `<head>`, `<body>`, `top.md`, and `bottom.md`.
 1. Support for custom generic attributes on Markdown components.
 1. Support for adding images above the top `h1` page heading.
@@ -316,7 +316,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 1. Super mega long word in page title causes rendering issue. See [#253](https://github.com/retypeapp/retype/issues/253).
 1. Prevent float elements from interacting with Previous|Next buttons. See [#232](https://github.com/retypeapp/retype/issues/232).
 1. Unreliable sidebar and Prev/Next button label word wrapping. See [#253](https://github.com/retypeapp/retype/issues/253).
-1. Full width [Alert](/components/alert.md) component content. See [#242](https://github.com/retypeapp/retype/issues/242).
+1. Full width [Callout](/components/callout.md) component content. See [#242](https://github.com/retypeapp/retype/issues/242).
 1. Strange link resolution `WARNING` on emphasized markdown links. See [#291](https://github.com/retypeapp/retype/issues/291).
 +++
 

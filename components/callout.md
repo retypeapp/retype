@@ -1,37 +1,37 @@
 ---
-icon: alert
+icon: info
 tags: [component]
 ---
-# Alert
+# Callout
 
-Alert components help to highlight important messages for the reader.
+Callout components help to highlight important messages for the reader.
 
-To create an alert, just surround a block of text or any markdown content with `!!!`.
+To create an Callout, just surround a block of text or any markdown content with `!!!`.
 
 ```md
 !!!
-This is an alert.
+This is an Callout.
 !!!
 ```
 
 !!!
-This is an alert.
+This is an Callout.
 !!!
 
 ---
 
 ## Title
 
-Alerts can also have titles. Add a space, then add your title, such as `!!! My title`.
+Callouts can also have titles. Add a space, then add your title, such as `!!! My title`.
 
 ```md
 !!! My title
-This is an alert.
+This is an Callout.
 !!!
 ```
 
 !!! My title
-This is an alert.
+This is an Callout.
 !!!
 
 Some basic Markdown syntax and emoji `:shortcodes:` are supported in the titles.
@@ -50,7 +50,7 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
 
 ## Variant
 
-Alerts come in nine different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
+Callouts come in nine different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
 
 | Variant | Color |
 | --- | --- |
@@ -71,82 +71,82 @@ Alerts come in nine different flavors which can be specified by passing a `varia
 
 ```
 !!!primary Primary
-This is a `primary` alert.
+This is a `primary` Callout.
 !!!
 
 !!!secondary Secondary
-This is a `secondary` alert.
+This is a `secondary` Callout.
 !!!
 
 !!!success Success
-This is a `success` alert.
+This is a `success` Callout.
 !!!
 
 !!!danger Danger
-This is a `danger` alert.
+This is a `danger` Callout.
 !!!
 
 !!!warning Warning
-This is a `warning` alert.
+This is a `warning` Callout.
 !!!
 
 !!!info Info
-This is a `info` alert.
+This is a `info` Callout.
 !!!
 
 !!!light Light
-This is a `light` alert.
+This is a `light` Callout.
 !!!
 
 !!!dark Dark
-This is a `dark` alert.
+This is a `dark` Callout.
 !!!
 
 !!!ghost Ghost
-This is a `ghost` alert.
+This is a `ghost` Callout.
 !!!
 
 !!!contrast Contrast
-This is a `contrast` alert.
+This is a `contrast` Callout.
 !!!
 ```
 
 !!!primary Primary
-This is a `primary` alert.
+This is a `primary` Callout.
 !!!
 
 !!!secondary Secondary
-This is a `secondary` alert.
+This is a `secondary` Callout.
 !!!
 
 !!!success Success
-This is a `success` alert.
+This is a `success` Callout.
 !!!
 
 !!!danger Danger
-This is a `danger` alert.
+This is a `danger` Callout.
 !!!
 
 !!!warning Warning
-This is a `warning` alert.
+This is a `warning` Callout.
 !!!
 
 !!!info Info
-This is a `info` alert.
+This is a `info` Callout.
 !!!
 
 !!!light Light
-This is a `light` alert.
+This is a `light` Callout.
 !!!
 
 !!!dark Dark
-This is a `dark` alert.
+This is a `dark` Callout.
 !!!
 
 !!!ghost Ghost
-This is a `ghost` alert.
+This is a `ghost` Callout.
 !!!
 
 !!!contrast Contrast
-This is a `contrast` alert.
+This is a `contrast` Callout.
 !!!

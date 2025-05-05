@@ -96,17 +96,17 @@ If your home page is the Retype generated **Welcome** page, add a default page t
 
 In addition to the standard Markdown options, Retype includes many custom [components](/components/components.md) so you can easily add extra [!badge :gem: flair :gem:] to your document.
 
-The most commonly used Retype components include [Alert](/components/alert.md), [Tab](/components/tab.md), and [Emojis](/components/emoji.md):
+The most commonly used Retype components include [Alert](/components/callout.md), [Tab](/components/tab.md), and [Emojis](/components/emoji.md):
 
-### Alert
+### Callout
 
 !!!
-This is an Alert
+This is an Callout
 !!!
 
-~~~ Sample [Alert](/components/alert.md) component
+~~~ Sample [Callout](/components/callout.md) component
 !!!
-This is an Alert
+This is an Callout
 !!!
 ~~~
 

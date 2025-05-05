@@ -8,7 +8,7 @@ Similar to the [Emoji](emoji.md) `:shortcode:` syntax, you can add icons using `
 
 For example, to add the :icon-star: `star` icon, use the `:icon-star:` icon shortcode.
 
-Icons can be added anywhere within your document, including paragraph text, headings, table content, [Panel](panel.md) component titles, [Alerts](alert.md), [code block](code-block.md) titles, etc. :icon-thumbsup:
+Icons can be added anywhere within your document, including paragraph text, headings, table content, [Panel](panel.md) component titles, [Callouts](callout.md), [code block](code-block.md) titles, etc. :icon-thumbsup:
 
 Some icon shortcode names are made up of `two-or-more` words. For instance, the :icon-git-branch: `git-branch` icon would be configured as `:icon-git-branch:`.
 
