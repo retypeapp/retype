@@ -1,5 +1,5 @@
 ---
-icon: tag
+icon: id-badge
 tags: [component]
 ---
 # Badge
