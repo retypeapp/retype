@@ -1,5 +1,5 @@
 ---
-icon: file-code
+icon: code
 tags: [component]
 ---
 # Code Snippet
