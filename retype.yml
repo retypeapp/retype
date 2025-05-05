@@ -16,6 +16,9 @@ toc:
   label: On this page
   depth: 2-4
 
+nav:
+  mode: stack
+
 # New Hub link feature, but not used on retype.com
 # hub:
   # link: https://example.com/
