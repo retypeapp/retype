@@ -67,8 +67,8 @@ The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will
 - [x] See table below for details:
 
 {.compact}
-License | Key required | Price | Free upgrades | Renewal | Pro projects<br>^* per domain name^ | Max Pages<br>^* per project^
--- | -- | -- | -- | -- | -- | --
+License | Key required | Price | Free upgrades | Renewal | Pro&nbsp;projects<br>^* per domain^ | Max&nbsp;Pages<br>^* per project^
+-- | :--: | -- | -- | -- | :--: | :--:
 Free | No | Free | Free | $0 | 0 | 100
 Pro | Yes | $149 | 3 years | $99 | 1 | Unlimited
 Enterprise | Yes | $749 | 3 years | $549 | Unlimited ^[*](#what-is-a-project)^ | Unlimited
@@ -89,7 +89,7 @@ You can [purchase](/pro/pro.md) a new license at any point in the future.
 
 ## Is Retype Pro a separate product?
 
-No. A Retype Pro key will unlock functionality within the same `retypeapp` that you have already [installed](/guides/getting-started.md). A separate installer or product installation is not required.
+No. A Retype Key will unlock functionality within the same `retypeapp` that you have already [installed](/guides/getting-started.md). A separate installer or product installation is not required.
 
 Adding the key to your [wallet](/guides/cli.md#retype-wallet) will automatically unlock all Pro features.
 
