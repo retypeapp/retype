@@ -11,7 +11,7 @@ You can place emoji `:shortcodes:` anywhere within your document, such as `:smil
 Use Mojee to [search](https://mojee.io/emojis/) for your favorite emojis and paste the `:shortcode:` into your **.md** page.
 
 :grinning: | :smiley: | :smile: | :grin: | :satisfied: | :sweat_smile: | :joy: | :wink: | :blush: | :innocent:
- :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+ -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 :heart_eyes: | :kissing_heart: | :relaxed: | :kissing_closed_eyes: | :yum: | :stuck_out_tongue: | :stuck_out_tongue_winking_eye: | :stuck_out_tongue_closed_eyes: | :neutral_face: | :expressionless:
 :no_mouth: | :smirk: | :unamused: | :grimacing: | :relieved: | :pensive: | :sleepy: | :sleeping: | :mask: | :sunglasses:
 :confused: | :flushed: | :disappointed_relieved: | :cry: | :sob: | :scream: | :confounded: | :persevere: | :disappointed: | :sweat:
