@@ -1,5 +1,5 @@
 ---
-icon: smiley
+icon: ":grinning:"
 tags: [component, icon]
 ---
 # Emoji
