@@ -547,7 +547,7 @@ Some content here.
 
 A custom `route` allows the folder and file structure to remain unchanged, but allowing the final URL's to be customized.
 
-Configuring the `route` is an excellent solution when moving to Retype from another solution and you would like to maintain existing public URL's, but would prefer to re-organize your **.md** content files into a new structure. A custom `route` allows for a clean disconnect of the page path from the final published URL path.
+Configuring the `route` is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL's, but would prefer to re-organize your **.md** files into a new structure. A custom `route` allows for a clean disconnect of the page path from the final published URL path.
 
 In the following sample, the generated URL by Retype would be `/guide/2021-06-25-publishing-to-github-pages/`, but we override with a custom route which will publish the page to `/tutorial/publish-to-github-pages/`.
 
