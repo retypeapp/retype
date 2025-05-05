@@ -92,8 +92,9 @@ footer:
 # -----------------------------------------------------------------------------
 
 cache:
-  busting: query              # Cache busting strategy
+  strategy: query             # Cache busting strategy
                               # Options: none | path | query (default)
+  token: v5                   # Optional unique token for cache invalidation
 
 # -----------------------------------------------------------------------------
 
@@ -194,6 +195,7 @@ serve:
 
 start:
   open: false                 # Do not automatically open web browser on start
+  pro: false                  # Start project in Pro mode and trial features
 
 # -----------------------------------------------------------------------------
 
@@ -210,3 +212,13 @@ templating:
   liquid: false               # Is Liquid syntax {% ... %} enabled?
                               # If true, Retype is incompatible with the
                               # GitBook style of component configuration
+
+# -----------------------------------------------------------------------------
+
+toc:                         # Table of Contents configuration (Pro only)
+  depth: 2-3                 # Heading depth to include in right sidebar
+  label: "On this page"      # Custom label for the Table of Contents
+
+# -----------------------------------------------------------------------------
+
+showSidebarFilter: true      # Control visibility of filter component in sidebar
