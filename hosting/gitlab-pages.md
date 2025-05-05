@@ -31,7 +31,7 @@ stages:
 pages:
   stage: deploy
   script:
-  - retype build --secret $RETYPE_SECRET --output public
+  - retype build --key $RETYPE_KEY --output public
   artifacts:
     paths:
     - public/
@@ -50,7 +50,7 @@ before_script:
 
 GitLab Pages will publish your website every time the deploy stage is triggered by a new commit to the repository.
 
-The `--secret $RETYPE_SECRET` is optional.
+The `--key $RETYPE_KEY` is optional.
 
 The `only: main` argument is to ensure the rebuild is only triggered if commit new code is commited to the main branch.
 
@@ -58,7 +58,7 @@ The `only: main` argument is to ensure the rebuild is only triggered if commit n
 pages:
   stage: deploy
   script:
-  - retype build --secret $RETYPE_SECRET --output public
+  - retype build --key $RETYPE_KEY --output public
   artifacts:
     paths:
     - public/
@@ -68,9 +68,9 @@ pages:
 
 Commit the **.gitlab-ci.yml** file and push to the repo.
 
-## RETYPE_SECRET
+## RETYPE_KEY
 
-If using Retype [Pro](/pro/pro.md), the project requires a Retype key. The key can be configured by adding the [`RETYPE_SECRET`](/configuration/envvars.md#retype_secret) Environment variable to the repository using the following URL location:
+If using Retype [Pro](/pro/pro.md), the project requires a Retype key. The key can be configured by adding the [`RETYPE_KEY`](/configuration/envvars.md#retype_key) Environment variable to the repository using the following URL location:
 
 ```
 # Replace [username] and [project] with your values

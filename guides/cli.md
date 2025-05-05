@@ -26,16 +26,16 @@ Usage:
 
 Options:
   --info          Display Retype information
-  --version       Show version information
+  -v, --version   Show version information
   -?, -h, --help  Show help and usage information
 
 Commands:
   start <path>  Build and serve the project using a local development only web server
-  init  <path>  Initialize a new Retype project
+  init <path>   Initialize a new Retype project
   build <path>  Generate a static website from the project
   serve <path>  Serve the website in a local development only web server
   clean <path>  Clean the output directory
-  wallet        Manage Retype secret keys
+  wallet        Manage Your Retype Keys
 ```
 
 ---
@@ -70,7 +70,7 @@ Arguments:
 
 Options:
   --pro                  Enable Retype Pro preview
-  --secret <secret>      Retype key
+  --key <key>            Your Retype Key
   --password <password>  Private page password
   --host <host>          Custom Host name or IP address
   --port <port>          Custom TCP port
@@ -100,7 +100,7 @@ From your command line, navigate to any folder location where you have one or mo
 retype init
 ```
 
-Calling the `retype init` command will create a simple **retype.yml** file with the following default values:
+Calling the `retype init` command will create a basic **retype.yml** file with the following default values:
 
 {%{
 ```yml Sample retype.yml
@@ -203,7 +203,7 @@ Arguments:
 
 Options:
   --output <output>      Custom path to the output directory
-  --secret <secret>      Retype key
+  --key <key>            Your Retype Key
   --password <password>  Private page password
   --override <override>  JSON configuration overriding project config values
   --strict               [PRO] Return a non-zero exit code if the build had errors or warnings
@@ -298,28 +298,28 @@ Once a key is added to your wallet, the key does not need to be added again. The
 A Retype key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to `retype build`.
 
 ```
-retype build --secret <your-license-key-here>
+retype build --key <your-license-key-here>
 ```
 
-### RETYPE_SECRET
+### RETYPE_KEY
 
-See how to configure a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) Environment variable for an option to set your project key during runtime.
+See how to configure a [`RETYPE_KEY`](../configuration/envvars.md/#retype_key) Environment variable for an option to set your project key during runtime.
 
 ### Options
 
 ```
 Description:
-  Manage Retype secret keys
+  Manage Your Retype Keys
 
 Usage:
   retype wallet [options]
 
 Options:
-  --add <secret>     Add a secret key to the wallet
-  --remove <secret>  Remove a secret key from the wallet
-  --list             List the stored secret keys
-  --clear            Clear the wallet
-  -?, -h, --help     Show help and usage information
+  --add <key>     Add a key to the wallet
+  --remove <key>  Remove a key from the wallet
+  --list          List the stored keys
+  --clear         Clear the wallet
+  -?, -h, --help  Show help and usage information
 ```
 
 ---

@@ -80,15 +80,15 @@ If the default branch in your repo is `master`, change `- main` to `- master`. I
 
 Commit your **.github/workflows/retype-action.yml** file and push to your repo.
 
-### RETYPE_SECRET
+### RETYPE_KEY
 
-If your project requires a Retype key, that key can be configured by adding a [`RETYPE_SECRET`](../configuration/envvars.md/#retype_secret) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
+If your project requires a Retype key, that key can be configured by adding a [`RETYPE_KEY`](../configuration/envvars.md/#retype_key) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
 
 {%{
 ```yml
 - uses: retypeapp/action-build@latest
   env:
-    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+    RETYPE_KEY: ${{ secrets.RETYPE_KEY }}
 ```
 }%}
 
@@ -116,7 +116,7 @@ jobs:
 
       - uses: retypeapp/action-build@latest
         env:
-          RETYPE_SECRET: {%{${{ secrets.RETYPE_SECRET }}}%}
+          RETYPE_KEY: {%{${{ secrets.RETYPE_KEY }}}%}
           RETYPE_PASSWORD: {%{${{ secrets.RETYPE_PASSWORD }}}%}
 
       - uses: retypeapp/action-github-pages@latest
@@ -140,13 +140,13 @@ A password can be configured by adding a [`RETYPE_PASSWORD`](../configuration/en
 ```
 }%}
 
-If both the `RETYPE_SECRET` and `RETYPE_PASSWORD` are needed, the configuration should be the following:
+If both the `RETYPE_KEY` and `RETYPE_PASSWORD` are needed, the configuration should be the following:
 
 {%{
 ```yml
 - uses: retypeapp/action-build@latest
   env:
-    RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
+    RETYPE_KEY: ${{ secrets.RETYPE_KEY }}
     RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}
 ```
 }%}

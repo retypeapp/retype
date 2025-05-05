@@ -5,13 +5,13 @@ tags: [config]
 ---
 # Environment variables
 
-## RETYPE_SECRET
+## RETYPE_KEY
 
 A Retype key can be configured as a secret Environment variable and the key is NOT stored in the [wallet](/guides/cli.md#retype-wallet).
 
-Configuring the `RETYPE_SECRET` secret is the prefered technique for configuring a key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
+Configuring the `RETYPE_KEY` secret is the prefered technique for configuring a key with a GitHub Pages project that is built and deployed using a [GitHub Action](/guides/github-actions.md).
 
-The [RETYPE_SECRET](../guides/github-actions.md#retype_secret) configuration must also be added to your **.github/workflows/retype.yml** file.
+The [RETYPE_KEY](../guides/github-actions.md#retype_key) configuration must also be added to your **.github/workflows/retype-action.yml** file.
 
 You can add a new repository secret to your GitHub repository using the following `/settings/secrets/actions` pattern. Replace the following `<your-organization>` and `<your-project>` with your repository values:
 
@@ -27,19 +27,19 @@ Click the **New repository secret** button to add a new secret, which should loo
 
 ![](/static/add-retype-secret.png)
 
-Once the `RETYPE_SECRET` secret is added, you should see the following and your Retype project will now build using your key:
+Once the `RETYPE_KEY` secret is added, you should see the following and your Retype project will now build using your key:
 
 ![](/static/retype-repository-secret.png)
 
 !!!
-See [configuring](../guides/github-actions.md/#retype_secret) a GitHub Workflow to use your Retype key.
+See [configuring](../guides/github-actions.md/#retype_key) a GitHub Workflow to use your Retype key.
 !!!
 
 ## RETYPE_PASSWORD
 
-Set an environment variable for the [`protected`](page.md/#protected) and [`private`](page.md/#private) pages. The `RETYPE_PASSWORD` value is set using exactly the same process as the [`RETYPE_SECRET`](#retype_secret) above. 
+Set an environment variable for the [`protected`](page.md/#protected) and [`private`](page.md/#private) pages. The `RETYPE_PASSWORD` value is set using exactly the same process as the [`RETYPE_KEY`](#retype_key) above. 
 
-If you add both the `RETYPE_PASSWORD` and `RETYPE_SECRET`, your list of **Repository secrets** should look like the following:
+If you add both the `RETYPE_PASSWORD` and `RETYPE_KEY`, your list of **Repository secrets** should look like the following:
 
 ![](/static/retype-repository-secrets-list-2.png)
 
