@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799784075993">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799790120678">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.0.799784075993" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.8.0.799790120678" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.0.799784075993" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.0.799790120678" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.0.799784075993" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.0.799784075993" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.0.799790120678" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.0.799790120678" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.0.799784075993" rel="stylesheet">
+    <link href="/static/styles.css?v=3.8.0.799790120678" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -522,7 +522,7 @@ III. Item 3</code></pre>
         <span>Description List</span>
     </h2>
 </doc-anchor-target>
-<p>A Description List is a way to display terms along with their corresponding definitions or descriptions.</p>
+<p>A <strong>Description</strong> List (<code v-pre>&lt;dl&gt;</code>) is a way to display <strong>Terms</strong> (<code v-pre>&lt;dt&gt;</code>) along with their corresponding <strong>Details</strong> (<code v-pre>&lt;dd&gt;</code>).</p>
 <p>The Description List is commonly used to create a glossary or dictionary where you have a word and its meaning listed together.</p>
 <doc-anchor-target id="basic-list">
     <h3>
@@ -532,50 +532,50 @@ III. Item 3</code></pre>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">Term 1
-:   Definition 1
+: Detail 1
 
 Term 2
-:   Definition 2
+: Detail 2
 
 Term 3
-:   Definition 3</code></pre>
+: Detail 3</code></pre>
 </doc-codeblock></div>
 <dl>
 <dt>Term 1</dt>
-<dd>Definition 1</dd>
+<dd>Detail 1</dd>
 <dt>Term 2</dt>
-<dd>Definition 2</dd>
+<dd>Detail 2</dd>
 <dt>Term 3</dt>
-<dd>Definition 3</dd>
+<dd>Detail 3</dd>
 </dl>
-<doc-anchor-target id="include-markdown">
+<doc-anchor-target id="include-nested-components">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#include-markdown">#</doc-anchor-trigger>
-        <span>Include Markdown</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#include-nested-components">#</doc-anchor-trigger>
+        <span>Include nested components</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markdown"><code v-pre class="language-markdown">Term 1
-:   Definition 1
-    With a paragraph
-    &gt; This is a block quote
+: Detail 1
+  With a paragraph
+  &gt; This is a block quote
 
-    - Nested item 1
-    - Nested item 2
+  - Nested item 1
+  - Nested item 2
 
 Term 2
-:   Definition 2
-    This is a paragraph continuing the definition.
+: Detail 2
+  This is a paragraph continuing the details.
 
-    &gt; This is a blockquote inside the definition.
+  &gt; This is a blockquote inside the details.
 
 Term 3
-:   Definition 3</code></pre>
+: Detail 3</code></pre>
 </doc-codeblock></div>
 <dl>
 <dt>Term 1</dt>
 <dd>
-<p>Definition 1
+<p>Detail 1
 With a paragraph</p>
 <blockquote>
 <p>This is a block quote</p>
@@ -587,10 +587,10 @@ With a paragraph</p>
 </dd>
 <dt>Term 2</dt>
 <dd>
-<p>Definition 2
-This is a paragraph continuing the definition.</p>
+<p>Detail 2
+This is a paragraph continuing the details.</p>
 <blockquote>
-<p>This is a blockquote inside the definition.</p>
+<p>This is a blockquote inside the details.</p>
 </blockquote>
 </dd>
 </dl>
