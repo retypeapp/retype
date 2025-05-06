@@ -38,6 +38,7 @@ Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 1. Add `permalink` as an alias of `route` page configuration
 1. Support Description Lists with Single-Space After Colon, see [#740](https://github.com/retypeapp/retype/issues/740)
 1. Upgrade Mermaid to the latest v11.6.0 release, see [#627](https://github.com/retypeapp/retype/issues/627), [#656](https://github.com/retypeapp/retype/issues/656), and [#716](https://github.com/retypeapp/retype/issues/716)
+1. Improve automatic handling of GitBook image exports, see release `v3.8.1`
 
 +++ Fixed :icon-bug:
 
