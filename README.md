@@ -1,12 +1,12 @@
 ---
-label: "Welcome"
+label: "Home"
 icon: home
 ---
 ![](/static/retype-hero.png)
 
 # Welcome to Retype
 
-[Retype](https://retype.com/) is a static website generator that builds a website based on simple Markdown text files. Focus on your writing while Retype builds the rest.
+[Retype](https://retype.com/) is a static website generator that builds a website based on simple Markdown (.md) text files. Focus on your writing while Retype builds the rest.
 
 {.callout}
 > “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there.”
