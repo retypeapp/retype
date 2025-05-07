@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799888274661">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799905233329">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.1.799888274661" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.8.1.799905233329" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.799888274661" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.799905233329" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.799888274661" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.1.799888274661" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.799905233329" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.1.799905233329" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.1.799888274661" rel="stylesheet">
+    <link href="/static/styles.css?v=3.8.1.799905233329" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -280,39 +280,48 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="samples">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#samples">#</doc-anchor-trigger>
-        <span>Samples</span>
-    </h2>
-</doc-anchor-target>
+<hr>
 <doc-anchor-target id="icon">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
         <span>icon</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Set a custom <a href="/configuration/page/#icon">icon</a> for the folder.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">icon: gear</code></pre>
 </doc-codeblock></div>
+<hr>
 <doc-anchor-target id="expanded">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#expanded">#</doc-anchor-trigger>
         <span>expanded</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Expand the folder node in the tree navigation with the <a href="/configuration/page/#expanded">expanded</a> config.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
+<hr>
+<doc-anchor-target id="label">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
+        <span>label</span>
+    </h2>
+</doc-anchor-target>
+<p>Change the folder <a href="/configuration/page/#label">label</a> used for the left navigation tree node label.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">index.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">label: Custom label</code></pre>
+</doc-codeblock></div>
+<hr>
 <doc-anchor-target id="order">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order">#</doc-anchor-trigger>
         <span>order</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Move a folder up to the top of the navigation by setting the <a href="/configuration/page/#order">order</a>. The higher the number, the higher in the stack the folder will be placed.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -324,22 +333,25 @@
 <div class="codeblock-title">index.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">order: -1000</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="label">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
-        <span>label</span>
-    </h3>
+<hr>
+<doc-anchor-target id="permalink">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#permalink">#</doc-anchor-trigger>
+        <span>permalink</span>
+    </h2>
 </doc-anchor-target>
-<p>Change the folder <a href="/configuration/page/#label">label</a> used for the left navigation tree node label.</p>
+<p>Configures a new permanent base path for all pages within this directory.</p>
+<p>See <strong>Page</strong> <a href="/configuration/page/#permalink"><code v-pre>permalink</code></a> for full details.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">label: Custom label</code></pre>
+<pre class="language-yaml"><code v-pre class="language-yaml">permalink: /tutorials</code></pre>
 </doc-codeblock></div>
+<hr>
 <doc-anchor-target id="visibility">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#visibility">#</doc-anchor-trigger>
         <span>visibility</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Hide a folder by setting the <a href="/configuration/page/#visibility">visibility</a> configuration.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
