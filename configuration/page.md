@@ -409,6 +409,39 @@ This `meta.title` config is also not to be confused with the Project level [`met
 
 ---
 
+## nav
+
+Navigation configuration options to control the behavior of the left sidebar navigation.
+
+### mode
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+=== mode : `string`
+Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
+
+Option | Description
+---    | ---
+`default` | Create the navigation as a Tree structure where top-level folders are expandable and collapsible.
+`stack`   | Create the navigation where the top-level folders are automatically expanded, creating a "stacked" view of the navigation path.
+
+The `nav.mode` setting can be configured on any page within a top-level folder to convert only that specific folder into a "stack" navigation structure. The remaining top-level folders will maintain their default tree navigation behavior.
+
+The following sample demonstrates how to configure the "stacked" navigation structure for a specific top-level folder:
+
+```yml
+nav:
+  mode: stack # Pro key required
+```
+
+When configured on a page within a top-level folder, this setting will only affect that specific folder's navigation structure.
+
+To convert the entire navigation component to a `stack` type layout, please see the Project [`nav`](project.md#nav) setting.
+
+===
+
+---
+
 ## order
 
 === order : `string`

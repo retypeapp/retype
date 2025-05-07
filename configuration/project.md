@@ -1177,6 +1177,36 @@ Using the sample above, if we had an `About us` page, the final `<title>` would 
 See also, the Page level [`meta.title`](page.md/#title) configuration.
 !!!
 ===
+
+---
+
+## nav
+
+Navigation configuration options to control the behavior of the left sidebar navigation.
+
+### mode
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+=== mode : `string`
+Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
+
+Option | Description
+---    | ---
+`default` | Create the navigation as a Tree structure where top-level folders are expandable and collapsible.
+`stack`   | Create the navigation where the top-level folders are automatically expanded, creating a "stacked" view of the navigation path.
+
+The following sample demonstrates how to configure the "stacked" navigation structure:
+
+```yml
+nav:
+  mode: stack # Pro key required
+```
+
+To convert only one top-level directory to a `stack` type layout, please see the Page [`nav`](page.md#nav) setting.
+
+===
+
 ---
 
 ## outbound
