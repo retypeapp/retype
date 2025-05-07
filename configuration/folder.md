@@ -11,9 +11,9 @@ Using the same **.yml** technique and options as [Page configuration](/configura
 Folders support the same properties as [pages](/configuration/page.md), although a few properties that are not applicable in the context of a folder configuration would be ignored, such as [`description`](/configuration/page.md#description).
 !!!
 
-## Samples
+---
 
-### icon
+## icon
 
 Set a custom [icon](/configuration/page.md#icon) for the folder.
 
@@ -21,7 +21,9 @@ Set a custom [icon](/configuration/page.md#icon) for the folder.
 icon: gear
 ```
 
-### expanded
+---
+
+## expanded
 
 Expand the folder node in the tree navigation with the [expanded](/configuration/page.md#expanded) config.
 
@@ -29,7 +31,19 @@ Expand the folder node in the tree navigation with the [expanded](/configuration
 expanded: true
 ```
 
-### order
+---
+
+## label
+
+Change the folder [label](/configuration/page.md#label) used for the left navigation tree node label.
+
+```yml index.yml
+label: Custom label
+```
+
+---
+
+## order
 
 Move a folder up to the top of the navigation by setting the [order](/configuration/page.md#order). The higher the number, the higher in the stack the folder will be placed.
 
@@ -43,15 +57,21 @@ Move a folder to the bottom of the navigation. The lower the number, the lower i
 order: -1000
 ```
 
-### label
+---
 
-Change the folder [label](/configuration/page.md#label) used for the left navigation tree node label.
+## permalink
+
+Configures a new permanent base path for all pages within this directory. 
+
+See **Page** [`permalink`](page.md/#permalink) for full details.
 
 ```yml index.yml
-label: Custom label
+permalink: /tutorials
 ```
 
-### visibility
+---
+
+## visibility
 
 Hide a folder by setting the [visibility](/configuration/page.md#visibility) configuration.
 
