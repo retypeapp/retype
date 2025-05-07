@@ -21,9 +21,9 @@ Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 
 +++ New :icon-shield-check:
 
-1. [!badge PRO](/pro/pro.md) New stack navigation mode, see [#621](https://github.com/retypeapp/retype/issues/621#issuecomment-2848996632)
+1. [!badge PRO](/pro/pro.md) New stack navigation mode for [Project](/configuration/project.md#nav) and [Page](/configuration/page.md#nav) settings, see [#621](https://github.com/retypeapp/retype/issues/621#issuecomment-2848996632)
 1. New Greek and Hebrew language support, see [#730](https://github.com/retypeapp/retype/discussions/730)
-1. New YouTube link parsing and embed template generation, see [#51](https://github.com/retypeapp/retype/issues/51)
+1. New [YouTube](/components/youtube.md) link parsing and embed template generation, see [#51](https://github.com/retypeapp/retype/issues/51)
 1. New support for including a file outside the project root when using `{{ include }}`, see [#734](https://github.com/retypeapp/retype/issues/734)
 1. New WikiLink and image WikiLink syntax support, including building [Obsidian](https://obsidian.md/) vaults
 
@@ -35,9 +35,9 @@ Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 1. Improve project locale-specific template rendering
 1. Minor UI refinements
 1. Add `home.md` to list of default pages in a directory
-1. Add `permalink` as an alias of `route` page configuration
+1. Add [`permalink`](/configuration/page.md#permalink) as an alias of `route` page configuration
 1. Support Description Lists with Single-Space After Colon, see [#740](https://github.com/retypeapp/retype/issues/740)
-1. Upgrade Mermaid to the latest v11.6.0 release, see [#627](https://github.com/retypeapp/retype/issues/627), [#656](https://github.com/retypeapp/retype/issues/656), and [#716](https://github.com/retypeapp/retype/issues/716)
+1. Upgrade [Mermaid](/components/mermaid.md) to the latest v11.6.0 release, see [#627](https://github.com/retypeapp/retype/issues/627), [#656](https://github.com/retypeapp/retype/issues/656), and [#716](https://github.com/retypeapp/retype/issues/716)
 1. Improve automatic handling of GitBook image exports, see release `v3.8.1`
 
 +++ Fixed :icon-bug:
