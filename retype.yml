@@ -1,7 +1,3 @@
-# -------------------
-# Retype Pro
-# -------------------
-
 poweredByRetype: true
 
 outbound:
@@ -17,7 +13,7 @@ toc:
   depth: 2-4
 
 nav:
-  mode: stack
+  mode: stack # Pro key required
 
 # New Hub link feature, but not used on retype.com
 # hub:
@@ -28,7 +24,6 @@ nav:
 # Start in "Pro Mode" trial
 start:
   pro: true
-
 
 # -------------------
 # Retype
