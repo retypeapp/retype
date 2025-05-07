@@ -26,3 +26,4 @@ Retype Flavored Markdown (RFM) supports custom components, including:
 - [:icon-link: Reference Link](reference-link.md)
 - [:icon-browser: Tab](tab.md)
 - [:icon-table: Table](table.md)
+- [:icon-video: YouTube](youtube.md)
