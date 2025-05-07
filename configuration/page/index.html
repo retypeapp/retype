@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799907990668">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799911396212">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.1.799907990668" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.8.1.799911396212" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.799907990668" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.799911396212" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.799907990668" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.1.799907990668" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.799911396212" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.1.799911396212" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.1.799907990668" rel="stylesheet">
+    <link href="/static/styles.css?v=3.8.1.799911396212" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -749,6 +749,55 @@ meta:
         </div>
     </div>
 </div>
+</doc-panel>
+<hr>
+<doc-anchor-target id="nav">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nav">#</doc-anchor-trigger>
+        <span>nav</span>
+    </h2>
+</doc-anchor-target>
+<p>Navigation configuration options to control the behavior of the left sidebar navigation.</p>
+<doc-anchor-target id="mode">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mode">#</doc-anchor-trigger>
+        <span>mode</span>
+    </h3>
+</doc-anchor-target>
+<p>This config is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<doc-panel id="mode-string">
+    <template #title>mode : <code v-pre>string</code></template>
+<p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code v-pre>mode</code> is <code v-pre>default</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>default</code></td>
+<td>Create the navigation as a Tree structure where top-level folders are expandable and collapsible.</td>
+</tr>
+<tr>
+<td><code v-pre>stack</code></td>
+<td>Create the navigation where the top-level folders are automatically expanded, creating a &quot;stacked&quot; view of the navigation path.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The <code v-pre>nav.mode</code> setting can be configured on any page within a top-level folder to convert only that specific folder into a &quot;stack&quot; navigation structure. The remaining top-level folders will maintain their default tree navigation behavior.</p>
+<p>The following sample demonstrates how to configure the &quot;stacked&quot; navigation structure for a specific top-level folder:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">nav:
+  mode: stack # Pro key required</code></pre>
+</doc-codeblock></div>
+<p>When configured on a page within a top-level folder, this setting will only affect that specific folder&#x27;s navigation structure.</p>
+<p>To convert the entire navigation component to a <code v-pre>stack</code> type layout, please see the Project <a href="/configuration/project/#nav"><code v-pre>nav</code></a> setting.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="order">

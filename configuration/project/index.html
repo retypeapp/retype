@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799907990668">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799911396212">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.1.799907990668" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.8.1.799911396212" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.799907990668" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.799911396212" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.799907990668" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.1.799907990668" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.799911396212" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.8.1.799911396212" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.1.799907990668" rel="stylesheet">
+    <link href="/static/styles.css?v=3.8.1.799911396212" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -1910,6 +1910,53 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 </doc-panel>
 <hr>
+<doc-anchor-target id="nav">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nav">#</doc-anchor-trigger>
+        <span>nav</span>
+    </h2>
+</doc-anchor-target>
+<p>Navigation configuration options to control the behavior of the left sidebar navigation.</p>
+<doc-anchor-target id="mode">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mode">#</doc-anchor-trigger>
+        <span>mode</span>
+    </h3>
+</doc-anchor-target>
+<p>This config is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<doc-panel id="mode-string">
+    <template #title>mode : <code v-pre>string</code></template>
+<p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code v-pre>mode</code> is <code v-pre>default</code>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>default</code></td>
+<td>Create the navigation as a Tree structure where top-level folders are expandable and collapsible.</td>
+</tr>
+<tr>
+<td><code v-pre>stack</code></td>
+<td>Create the navigation where the top-level folders are automatically expanded, creating a &quot;stacked&quot; view of the navigation path.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following sample demonstrates how to configure the &quot;stacked&quot; navigation structure:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">nav:
+  mode: stack # Pro key required</code></pre>
+</doc-codeblock></div>
+<p>To convert only one top-level directory to a <code v-pre>stack</code> type layout, please see the Page <a href="/configuration/page/#nav"><code v-pre>nav</code></a> setting.</p>
+</doc-panel>
+<hr>
 <doc-anchor-target id="outbound">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#outbound">#</doc-anchor-trigger>
@@ -2144,9 +2191,9 @@ host: docs.example.com/js/plausible.js</code></pre>
   minChars: 3</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="mode">
+<doc-anchor-target id="mode-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mode">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mode-1">#</doc-anchor-trigger>
         <span>mode</span>
     </h3>
 </doc-anchor-target>
@@ -2327,9 +2374,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     </h3>
 </doc-anchor-target>
 <p>Custom configuration for the <a href="/guides/cli/#options-3"><code v-pre>retype serve</code></a> and <a href="/guides/cli/#options"><code v-pre>retype start</code></a> commands.</p>
-<doc-anchor-target id="mode-1">
+<doc-anchor-target id="mode-2">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mode-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mode-2">#</doc-anchor-trigger>
         <span>mode</span>
     </h4>
 </doc-anchor-target>
