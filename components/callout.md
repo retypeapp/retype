@@ -60,6 +60,7 @@ Callouts come in nine different flavors which can be specified by passing a `var
 | `danger` | `red` |
 | `warning` | `yellow` |
 | `info` | `light-blue` |
+| `question` | `purple` |
 | `light` | `light` |
 | `dark` | `dark` |
 | `ghost` | `light` or `dark` depending on time of day |
@@ -92,6 +93,10 @@ This is a `warning` Callout.
 
 !!!info Info
 This is a `info` Callout.
+!!!
+
+!!!question Question
+This is a `question` Callout.
 !!!
 
 !!!light Light
@@ -133,6 +138,10 @@ This is a `warning` Callout.
 
 !!!info Info
 This is a `info` Callout.
+!!!
+
+!!!question
+This is a `question` Callout.
 !!!
 
 !!!light Light
