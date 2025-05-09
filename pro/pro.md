@@ -15,7 +15,7 @@ Build more pages and unlock powerful **Retype Pro** only features.
 |        | [!button text="Install" variant="ghost"](/guides/getting-started.md#install) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/00g7umbDN3mie2sfZm) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $749 |
 | Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle: | 3 years | 3 years |
-| Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | 0 | 1 | Unlimited&nbsp;^[*](#what-is-a-project)^ |
+| Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | Unlimited | 1 | Unlimited&nbsp;^[*](#what-is-a-project)^ |
 | Max pages per project [:icon-question:](#what-is-a-project) | 100 | Unlimited | Unlimited |
 | Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: |
 | Commercial use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: |
