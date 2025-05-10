@@ -10,7 +10,7 @@ Yes, Retype is free to use with both open-source and commercial projects up to 1
 
 With [Retype Pro](/pro/pro.md), you get the following additional features:
 
-1. Up to 1000 pages can be built
+1. No page limit
 2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
 3. [!badge text="NEW" variant="info"] Password protected [`private`](/configuration/page.md#private) and [`protected`](/configuration/page.md#protected) pages
 4. [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration
