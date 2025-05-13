@@ -8,7 +8,7 @@ tags:
 
 Hosting your Retype built website on [GitHub Pages](https://pages.github.com/) is free and simple to setup.
 
-## Step 1: Add **retype-action.yml** workflow
+## Step 1: Add `retype-action.yml` workflow
 
 We first recommend adding the Retype [Build Action](/guides/github-actions.md) to your project to automate the building and deployment of your Retype powered website.
 
