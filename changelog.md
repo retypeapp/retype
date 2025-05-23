@@ -11,13 +11,47 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 !!!
 
 ---
-## v3.9.0 [!badge text="NEXT" variant="info"]
+## v3.10.0 [!badge text="NEXT" variant="info"]
 
 In progress, expected late Q2 2025.
 
-## v3.8.0 [!badge text="LATEST" variant="info"]
+## v3.9.0-preview [!badge text="LATEST" variant="info"]
 
-Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
+Released: [2025-05-22](https://github.com/retypeapp/retype/releases/tag/v3.9.0-preview)
+
++++ New :icon-shield-check:
+
+1. [!badge PRO](/pro/pro.md) New `nav.icons.enabled` Project setting to hide icons in navigation, see [#381](https://github.com/retypeapp/retype/discussions/381) and [#621](https://github.com/retypeapp/retype/discussions/621)
+1. [!badge PRO](/pro/pro.md) New `scheme.mode` project setting to default initial page rendering to be explicit `day`,`night`, or `system` modes, see [#421](https://github.com/retypeapp/retype/discussions/421)
+1. New automatic conversion of `details > summary` elements into Retype Panel component
+1. New print friendly stylesheet to enable better printing of pages, see [#85](https://github.com/retypeapp/retype/discussions/85) and [#628](https://github.com/retypeapp/retype/discussions/628)
+1. New [Obsidian](https://obsidian.md/) style of setting width and height of image, see [#694](https://github.com/retypeapp/retype/discussions/692)
+1. New `question` [callout](components/callout.md#samples) component variant, see [#223](https://github.com/retypeapp/retype/discussions/223)
+1. New support for [Notion](https://www.notion.com/) style callout syntax
+1. New support for [Hextra](https://imfing.github.io/hextra/) style callout syntax
+1. New support for generic `Alert` callout syntax style
+1. New support for [Just the Docs](https://just-the-docs.com/) style of callouts
+1. New support for [Sphinx](https://www.sphinx-doc.org/) style callout syntax
+
++++ Improved :icon-thumbsup:
+
+1. Rename the Alert component to [Callout](/components/callout.md)
+1. Support titles on Obsidian style callout syntax plus all Obsidian callout types
+1. Upgrade Octicons icons library from v19.15.1 to v19.15.2
+1. Add background color on nav nodes and refinements to site label
+
++++ Fixed :icon-bug:
+
+1. `layout: page` failing to be recognized on Pages within sub-folders, see [#732](https://github.com/retypeapp/retype/discussions/732)
+1. Complex anchor id scenarios not being normalized as expected
+1. WikiLink anchor only links to same page anchor not rendering a link
+1. Callout parser confuses title for variant when space follows opening `!!!`
+
++++
+
+## v3.8.0
+
+Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.8.0)
 
 +++ New :icon-shield-check:
 
