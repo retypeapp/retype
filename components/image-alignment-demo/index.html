@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800076607080">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0-preview.801293484618">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.8.1">
+    <meta name="generator" content="Retype 3.9.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Image alignment demo - Write On! with Retype</title>
@@ -32,16 +32,16 @@
     <meta property="twitter:description" content="Please see image alignment docs for more details.">
     <meta property="twitter:image" content="https://retype.com/static/sample.jpg">
 
-    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.8.1.800076607080" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0-preview.801293484618" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.8.1.800076607080" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.8.1.800076607080" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0-preview.801293484618" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0-preview.801293484618" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.8.1.800076607080" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0-preview.801293484618" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -61,7 +61,7 @@
                                 <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                                 <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                             </span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v3.8</span>
+                        </a><span class="hidden mt-1 px-2 py-1 ml-4 text-xs font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-md md:inline-block">v3.9</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -262,8 +262,8 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-center">
-    <img src="/static/sample.jpg" alt="center alignment">
-    <figcaption class="caption"><code v-pre>center</code> alignment</figcaption>
+    <img src="/static/sample.jpg" alt="center alignment" />
+    <figcaption class="caption">center alignment</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
@@ -274,8 +274,8 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-left">
-    <img src="/static/sample.jpg" alt="left align">
-    <figcaption class="caption caption-float"><code v-pre>left</code> align</figcaption>
+    <img src="/static/sample.jpg" alt="left align" />
+    <figcaption class="caption caption-float">left align</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
@@ -286,8 +286,8 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-leftplus">
-    <img src="/static/sample.jpg" alt="leftplus align">
-    <figcaption class="caption caption-float"><code v-pre>leftplus</code> align</figcaption>
+    <img src="/static/sample.jpg" alt="leftplus align" />
+    <figcaption class="caption caption-float">leftplus align</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
@@ -299,8 +299,8 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-right">
-    <img src="/static/sample.jpg" alt="right align">
-    <figcaption class="caption caption-float"><code v-pre>right</code> align</figcaption>
+    <img src="/static/sample.jpg" alt="right align" />
+    <figcaption class="caption caption-float">right align</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
@@ -311,8 +311,8 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-rightplus">
-    <img src="/static/sample.jpg" alt="rightplus align">
-    <figcaption class="caption caption-float"><code v-pre>rightplus</code> align</figcaption>
+    <img src="/static/sample.jpg" alt="rightplus align" />
+    <figcaption class="caption caption-float">rightplus align</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
@@ -324,8 +324,8 @@
     </h3>
 </doc-anchor-target>
 <p><figure class="content-centerplus">
-    <img src="/static/sample-large.jpg" alt="centerplus align" class="w-full">
-    <figcaption class="caption"><code v-pre>centerplus</code> align</figcaption>
+    <img src="/static/sample-large.jpg" alt="centerplus align" class="w-full" />
+    <figcaption class="caption">centerplus align</figcaption>
 </figure>
 </p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
