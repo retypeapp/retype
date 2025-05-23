@@ -8,12 +8,17 @@ outbound:
 breadcrumb:
   home: ":icon-home:"
 
+scheme:
+  mode: system  # Pro key required
+
 toc:
   label: On this page
   depth: 2-4
 
 nav:
-  mode: stack # Pro key required
+  mode: stack   # Pro key required
+  icons:
+    mode: pages # Pro key required
 
 # New Hub link feature, but not used on retype.com
 # hub:
@@ -36,7 +41,7 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v3.8
+  label: v3.9
 
 meta:
   title: " - Write On! with Retype"
