@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0-preview.801777884760">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801778983728">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.9.0-preview">
+    <meta name="generator" content="Retype 3.9.0">
 
     <!-- Primary Meta Tags -->
     <title>Project configuration - Write On! with Retype</title>
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0-preview.801777884760" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0.801778983728" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0-preview.801777884760" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0-preview.801777884760" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0-preview.801777884760" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801778983728" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801778983728" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801778983728" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0-preview.801777884760" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0.801778983728" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -338,7 +338,7 @@ footer:
         <span>title</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="title-string">
+<doc-panel id="title--string">
     <template #title>title : <code v-pre>string</code></template>
 <p>The main text title added to the upper-left corner of the generated website.</p>
 <p>The <code v-pre>title</code> can be used in conjunction with <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger> and <doc-anchor-trigger to="#logodark"><code v-pre>logoDark</code></doc-anchor-trigger>. If a <code v-pre>title</code> and <code v-pre>logo</code> are configured, both will be added to the website. If only a <code v-pre>title</code> is configured, only the text title is used. If only a <code v-pre>logo</code> and/or <code v-pre>logoDark</code> are configured, only the logos are used.</p>
@@ -360,7 +360,7 @@ footer:
         <span>label</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="label-string">
+<doc-panel id="label--string">
     <template #title>label : <code v-pre>string</code></template>
 <p>Optional logo label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -381,7 +381,7 @@ footer:
         <span>logo</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="logo-string">
+<doc-panel id="logo--string">
     <template #title>logo : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
@@ -401,7 +401,7 @@ footer:
         <span>logoDark</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="logodark-string">
+<doc-panel id="logodark--string">
     <template #title>logoDark : <code v-pre>string</code></template>
 <p>One of the following:</p>
 <ol>
@@ -422,7 +422,7 @@ footer:
         <span>logoAlign</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="logoalign-string">
+<doc-panel id="logoalign--string">
     <template #title>logoAlign : <code v-pre>string</code></template>
 <p>Set a logo image alignment relative to the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger>. Supported values include <code v-pre>left</code> and <code v-pre>right</code>.</p>
 <p>Default is <code v-pre>left</code>.</p>
@@ -467,7 +467,7 @@ footer:
         <span>text</span>
     </h5>
 </doc-anchor-target>
-<doc-panel id="text-string">
+<doc-panel id="text--string">
     <template #title>text : <code v-pre>string</code></template>
 <p>Set a custom label text color&quot;. Default is <code v-pre>&quot;#1f7aff&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -483,7 +483,7 @@ footer:
         <span>background</span>
     </h5>
 </doc-anchor-target>
-<doc-panel id="background-string">
+<doc-panel id="background--string">
     <template #title>background : <code v-pre>string</code></template>
 <p>Set a custom label background color. Default is <code v-pre>&quot;#e1edff&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -510,7 +510,7 @@ footer:
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-enabled-boolean">
+<doc-panel id="badge-pro-enabled--boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> enabled : <code v-pre>boolean</code></template>
@@ -529,7 +529,7 @@ footer:
         <span>home</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-home-string-or-boolean">
+<doc-panel id="badge-pro-home--string-or-boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> home : <code v-pre>string</code> or <code v-pre>boolean</code></template>
@@ -562,7 +562,7 @@ footer:
         <span>separator</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-separator-string">
+<doc-panel id="badge-pro-separator--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> separator : <code v-pre>string</code></template>
@@ -592,7 +592,7 @@ footer:
         <span>strategy</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="strategy-string">
+<doc-panel id="strategy--string">
     <template #title>strategy : <code v-pre>string</code></template>
 <p>Cache busting configuration for the website resources, such as the JavaScript (.js) and <abbr title="Cascading Style Sheet">CSS</abbr> (.css) files.</p>
 <p>Helps to ensure a loaded page refers to the most recent JavaScript and <abbr title="Cascading Style Sheet">CSS</abbr> resources.</p>
@@ -646,7 +646,7 @@ footer:
         <span>token</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="token-string">
+<doc-panel id="token--string">
     <template #title>token : <code v-pre>string</code></template>
 <p>An optional unique token used for website resource cache invalidation.</p>
 <p>If specified, the provided value is used for all invalidatable resources as is.</p>
@@ -664,7 +664,7 @@ footer:
         <span>cname</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="cname-boolean-or-string">
+<doc-panel id="cname--boolean-or-string">
     <template #title>cname : <code v-pre>boolean</code> or <code v-pre>string</code></template>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
@@ -726,7 +726,7 @@ footer:
         <span>repo</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="repo-string">
+<doc-panel id="repo--string">
     <template #title>repo : <code v-pre>string</code></template>
 <p>The repository URL where the source files for this project are located.</p>
 <p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
@@ -746,7 +746,7 @@ footer:
         <span>base</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="base-string">
+<doc-panel id="base--string">
     <template #title>base : <code v-pre>string</code></template>
 <p>An optional base path to a directory within the repository.</p>
 <p>The <code v-pre>base</code> can be configured with an optional path to a directory within the <doc-anchor-trigger to="#repo"><code v-pre>repo</code></doc-anchor-trigger>.</p>
@@ -764,7 +764,7 @@ footer:
         <span>branch</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="branch-string">
+<doc-panel id="branch--string">
     <template #title>branch : <code v-pre>string</code></template>
 <p>Point to a custom branch within the repo. Default is <code v-pre>main</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -779,7 +779,7 @@ footer:
         <span>label</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="label-string">
+<doc-panel id="label--string">
     <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the link. Default is <code v-pre>&quot;Edit this page&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -802,7 +802,7 @@ footer:
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="enabled-boolean">
+<doc-panel id="enabled--boolean">
     <template #title>enabled : <code v-pre>boolean</code></template>
 <p>To enable or disable the live editor. Default is <code v-pre>true</code>.</p>
 <p>Set to <code v-pre>false</code> to disable and hide the live editor.</p>
@@ -818,7 +818,7 @@ footer:
         <span>exclude</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="exclude-list">
+<doc-panel id="exclude--list">
     <template #title>exclude : <code v-pre>list</code></template>
 <p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> by configuring an <code v-pre>exclude</code> list within your projects <strong>retype.yml</strong> file.</p>
 <p>Exclude patterns are similar to allowable patterns within a <code v-pre>.gitignore</code> file. The wildcards <code v-pre>?</code>, <code v-pre>*</code>, <code v-pre>**</code>, and <code v-pre>!</code> are supported.</p>
@@ -858,7 +858,7 @@ footer:
         <span>favicon</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="favicon-string">
+<doc-panel id="favicon--string">
     <template #title>favicon : <code v-pre>string</code></template>
 <p>A custom path to a <code v-pre>.ico</code> or <code v-pre>.png</code> file to be used as the <code v-pre>favicon</code>. Default is <code v-pre>null</code>.</p>
 <p>The path is relative to the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>.</p>
@@ -881,7 +881,7 @@ footer:
         <span>copyright</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="copyright-string">
+<doc-panel id="copyright--string">
     <template #title>copyright : <code v-pre>string</code></template>
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -895,7 +895,7 @@ footer:
         <span>links (footer)</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="links-object">
+<doc-panel id="links--object">
     <template #title>links : <code v-pre>object</code></template>
 <p>The <code v-pre>footer.links</code> have the same configuration options as <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -925,7 +925,7 @@ footer:
         <span>altNames</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="altnames-list">
+<doc-panel id="altnames--list">
     <template #title>altNames : <code v-pre>list</code></template>
 <p>A list of file names to treat as default <abbr title="Hyper Text Markup Language">HTML</abbr> files.</p>
 <p>By default, Retype will treat all of the following files as default pages if they are within a folder.</p>
@@ -952,7 +952,7 @@ footer:
         <span>append</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="append-boolean">
+<doc-panel id="append--boolean">
     <template #title>append : <code v-pre>boolean</code></template>
 <p>Specifies if the default document file name should be appended to resolved URLs. By default, Retype does not append the default file name.</p>
 <p>If <code v-pre>false</code>, the generated link will be <code v-pre>/guide/</code>. If <code v-pre>true</code>, the generated link will be <code v-pre>/guides/index.html</code>.</p>
@@ -977,7 +977,7 @@ generator:
         <span>name</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="name-string">
+<doc-panel id="name--string">
     <template #title>name : <code v-pre>string</code></template>
 <p>The default <abbr title="Hyper Text Markup Language">HTML</abbr> document file name generated by Retype.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -992,7 +992,7 @@ generator:
         <span>paths</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="paths-string">
+<doc-panel id="paths--string">
     <template #title>paths : <code v-pre>string</code></template>
 <p>Configures url kind preference for resolved urls. Supported values: <code v-pre>source</code>, <code v-pre>relative</code>, and <code v-pre>root</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -1030,7 +1030,7 @@ generator:
         <span>recase</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="recase-string">
+<doc-panel id="recase--string">
     <template #title>recase : <code v-pre>string</code></template>
 <p>Instructs Retype on how to recase the project file and folder names created by the author. Default is <code v-pre>all</code>.</p>
 <p>By default, Retype will recase all the generated file and folder names to all lowercase.</p>
@@ -1066,7 +1066,7 @@ generator:
         <span>trailingSlash</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="trailingslash-boolean">
+<doc-panel id="trailingslash--boolean">
     <template #title>trailingSlash : <code v-pre>boolean</code></template>
 <p>By setting <code v-pre>trailingSlash: false</code> in the project config, authors can instruct Retype to remove (or not add) the trailing <code v-pre>/</code> character when constructing links from paths to Markdown files.</p>
 <p>For example, if you have a simple link in your project to <code v-pre>[Example](/guide/example.md)</code>, Retype will create the link as <code v-pre>/guide/example/</code>. By setting <code v-pre>trailingSlash: false</code> in your project, Retype would then create the link as <code v-pre>/guide/example</code>.</p>
@@ -1101,7 +1101,7 @@ generator:
         <span>link</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-link-string">
+<doc-panel id="badge-pro-link--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> link : <code v-pre>string</code></template>
@@ -1117,7 +1117,7 @@ generator:
         <span>alt</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-alt-string">
+<doc-panel id="badge-pro-alt--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> alt : <code v-pre>string</code></template>
@@ -1134,7 +1134,7 @@ generator:
         <span>target</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-target-string">
+<doc-panel id="badge-pro-target--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> target : <code v-pre>string</code></template>
@@ -1195,7 +1195,7 @@ generator:
         <span>include</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="include-list">
+<doc-panel id="include--list">
     <template #title>include : <code v-pre>list</code></template>
 <p>Retype can explicitly include files or folders that might have been excluded by default or excluded within the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 <div class="flex mb-6">
@@ -1264,7 +1264,7 @@ generator:
         <span>input</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="input-string">
+<doc-panel id="input--string">
     <template #title>input : <code v-pre>string</code></template>
 <p>Custom path to the input directory. Default is <code v-pre>.</code>.</p>
 <p>The path is relative to the <strong>retype.yml</strong> location.</p>
@@ -1288,7 +1288,7 @@ generator:
     </h3>
 </doc-anchor-target>
 <p>Add <a href="https://analytics.google.com/analytics/web/" class="outbound" target="_blank"><span>Google Analytics</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> to your website.</p>
-<doc-panel id="googleanalytics-id-string">
+<doc-panel id="googleanalyticsid--string">
     <template #title>googleAnalytics.id : <code v-pre>string</code></template>
 <p>Google Analytics ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1311,7 +1311,7 @@ generator:
     </h3>
 </doc-anchor-target>
 <p>Add the <a href="https://tagmanager.google.com/" class="outbound" target="_blank"><span>Google Tag Manager</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> to your website.</p>
-<doc-panel id="googletagmanager-id-string">
+<doc-panel id="googletagmanagerid--string">
     <template #title>googleTagManager.id : <code v-pre>string</code></template>
 <p>Google Tag manager ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1335,7 +1335,7 @@ generator:
         <span>default</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="default-string">
+<doc-panel id="default--string">
     <template #title>default : <code v-pre>string</code></template>
 <p>The default profile image to return from Gravatar queries whenever no image is assigned to the queried email address. Default value is <code v-pre>mp</code>.</p>
 <p>Either a full URL to the image can be configured or one of the options listed below:</p>
@@ -1391,7 +1391,7 @@ generator:
         <span>enabled</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="enabled-boolean">
+<doc-panel id="enabled--boolean">
     <template #title>enabled : <code v-pre>boolean</code></template>
 <p>Whether Retype should use Gravatar to pull profile images. Default is <code v-pre>true</code>.</p>
 <p>Setting to <code v-pre>false</code> will show the default image or specified resource.</p>
@@ -1427,7 +1427,7 @@ generator:
         <span>domain</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="domain-string">
+<doc-panel id="domain--string">
     <template #title>domain : <code v-pre>string</code></template>
 <p>When you setup your project within Plausible, you enter a <a href="https://plausible.io/docs/add-website" class="outbound" target="_blank"><span><code v-pre>Domain</code></span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value which is then used to set the <code v-pre>integrations.plausible.domain</code> config within your <strong>retype.yml</strong> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1449,7 +1449,7 @@ generator:
         <span>host</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="host-string">
+<doc-panel id="host--string">
     <template #title>host : <code v-pre>string</code></template>
 <p>The Plausible service can be <a href="https://plausible.io/docs/self-hosting" class="outbound" target="_blank"><span>self-hosted</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> and your Retype project can be configured to use your custom <code v-pre>host</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1494,7 +1494,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>text</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="text-string">
+<doc-panel id="text--string">
     <template #title>text : <code v-pre>string</code></template>
 <p>The link text label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1509,7 +1509,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>link</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="link-string">
+<doc-panel id="link--string">
     <template #title>link : <code v-pre>string</code></template>
 <p>The URL to use for the link. The link can be a <strong>.md</strong> file name, or to any internal path, or to any external URL.</p>
 <p>If a <strong>.md</strong> file set, such as <code v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code v-pre>sample.md</code> value will be replaced with the path to the actual generated <abbr title="Hyper Text Markup Language">HTML</abbr> file.</p>
@@ -1525,7 +1525,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>icon</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="icon-string">
+<doc-panel id="icon--string">
     <template #title>icon : <code v-pre>string</code></template>
 <p>An icon to use with the link. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1558,7 +1558,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>iconAlign</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="iconalign-string">
+<doc-panel id="iconalign--string">
     <template #title>iconAlign : <code v-pre>string</code></template>
 <p>The position for the icon relative to the link <code v-pre>text</code>. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1575,7 +1575,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>target</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="target-string">
+<doc-panel id="target--string">
     <template #title>target : <code v-pre>string</code></template>
 <p>Sets the <code v-pre>target</code> attribute of the hyperlink and specifies which window or tab to open the link into.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1654,7 +1654,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         </div>
     </div>
 </div>
-<doc-panel id="locale-string">
+<doc-panel id="locale--string">
     <template #title>locale : <code v-pre>string</code></template>
 <p>You can switch the <code v-pre>locale</code> to any other supported language by providing the corresponding ISO language code as listed below.</p>
 <p>Default is <code v-pre>en</code>.</p>
@@ -1852,7 +1852,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>lineBreaks</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="linebreaks-string">
+<doc-panel id="linebreaks--string">
     <template #title>lineBreaks : <code v-pre>string</code></template>
 <p>Switches between <code v-pre>soft</code> and <code v-pre>hard</code> line break modes. The option instructs Retype in what way a regular line ending should be handled.</p>
 <ul>
@@ -1879,7 +1879,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>title</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="title-string">
+<doc-panel id="title--string">
     <template #title>title : <code v-pre>string</code></template>
 <p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1926,7 +1926,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="mode-string">
+<doc-panel id="mode--string">
     <template #title>mode : <code v-pre>string</code></template>
 <p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code v-pre>mode</code> is <code v-pre>default</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -1972,7 +1972,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <span>PRO</span>
 </a> only.</p>
 <p>The <code v-pre>mode</code> configuration enables customization for how the icons are displayed in the main navigation. The <code v-pre>mode</code> allows you to hide all icons (and their reserved space) in the navigation, as well as other icon show/hide scenarios.</p>
-<doc-panel id="mode-string">
+<doc-panel id="mode--string">
     <template #title>mode : <code v-pre>string</code></template>
 <p>Controls how icons are displayed in the left sidebar navigation. The default value is <code v-pre>all</code>, which shows all icons or reserves space for all icons within the navigation.</p>
 <p>The following sample demonstrates how the icon mode can be configured in your <code v-pre>retype.yml</code> file:</p>
@@ -2040,7 +2040,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-enabled-boolean">
+<doc-panel id="badge-pro-enabled--boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> enabled : <code v-pre>boolean</code></template>
@@ -2058,7 +2058,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>custom</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-custom-string">
+<doc-panel id="badge-pro-custom--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> custom : <code v-pre>string</code></template>
@@ -2075,7 +2075,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>icon</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-icon-string">
+<doc-panel id="badge-pro-icon--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> icon : <code v-pre>string</code></template>
@@ -2096,7 +2096,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>iconAlign</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-iconalign-string">
+<doc-panel id="badge-pro-iconalign--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> iconAlign : <code v-pre>string</code></template>
@@ -2112,7 +2112,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>target</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-target-string">
+<doc-panel id="badge-pro-target--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> target : <code v-pre>string</code></template>
@@ -2128,7 +2128,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>exclude</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-exclude-list">
+<doc-panel id="badge-pro-exclude--list">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> exclude : <code v-pre>list</code></template>
@@ -2148,7 +2148,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>include</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-include-list">
+<doc-panel id="badge-pro-include--list">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> include : <code v-pre>list</code></template>
@@ -2169,7 +2169,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>output</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="output-string">
+<doc-panel id="output--string">
     <template #title>output : <code v-pre>string</code></template>
 <p>Custom path to the output directory. Default is <code v-pre>.retype</code>.</p>
 <p>The path is relative to the <strong>retype.yml</strong> location.</p>
@@ -2194,7 +2194,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <figcaption class="caption">Sample Powered by Retype branding</figcaption>
 </figure>
 </p>
-<doc-panel id="badge-pro-poweredbyretype-boolean">
+<doc-panel id="badge-pro-poweredbyretype--boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> poweredByRetype : <code v-pre>boolean</code></template>
@@ -2223,7 +2223,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="mode-string">
+<doc-panel id="mode--string">
     <template #title>mode : <code v-pre>string</code></template>
 <p>Controls the default color scheme for the website. The default value is <code v-pre>system</code>, which will automatically switch between <code v-pre>dark</code> and <code v-pre>light</code> modes based on the visitor&#x27;s system preference.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -2302,7 +2302,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>hotkeys</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="hotkeys-list">
+<doc-panel id="hotkeys--list">
     <template #title>hotkeys : <code v-pre>list</code></template>
 <p>Keyboard key to set the cursor focus into the search field. Default is <code v-pre>k</code>.</p>
 <p>The following sample demonstrates how to change the search hotkey to use <code v-pre>/</code> instead of the default <code v-pre>k</code>:</p>
@@ -2318,7 +2318,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>maxResults</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="maxresults-number">
+<doc-panel id="maxresults--number">
     <template #title>maxResults : <code v-pre>number</code></template>
 <p>Max number of search results to render. Default is <code v-pre>20</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2332,7 +2332,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>minChars</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="minchars-number">
+<doc-panel id="minchars--number">
     <template #title>minChars : <code v-pre>number</code></template>
 <p>Min number of characters required in a search query. Default is <code v-pre>2</code>.</p>
 <p>The following sample demonstrates how to configure <code v-pre>search.minChars</code> with a new value:</p>
@@ -2347,7 +2347,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>mode</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="mode-string">
+<doc-panel id="mode--string">
     <template #title>mode : <code v-pre>string</code></template>
 <p>The search index creation mode. Default is <code v-pre>full</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -2403,7 +2403,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>noResultsFoundMsg</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="noresultsfoundmsg-string">
+<doc-panel id="noresultsfoundmsg--string">
     <template #title>noResultsFoundMsg : <code v-pre>string</code></template>
 <p>Message rendered when no results were found. Default is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2417,7 +2417,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>placeholder</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="placeholder-string">
+<doc-panel id="placeholder--string">
     <template #title>placeholder : <code v-pre>string</code></template>
 <p>Placeholder text rendered on the search component. Default is <code v-pre>&quot;Search&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2431,7 +2431,7 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>preload</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="preload-boolean">
+<doc-panel id="preload--boolean">
     <template #title>preload : <code v-pre>boolean</code></template>
 <p>Specifies if the search index should be preloaded. Default is <code v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2461,7 +2461,7 @@ generator:
         <span>host</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="host-string">
+<doc-panel id="host--string">
     <template #title>host : <code v-pre>string</code></template>
 <p>Serve the website from this host location. Default is <code v-pre>localhost</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2486,7 +2486,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>port</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="port-number">
+<doc-panel id="port--number">
     <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype development web server to use when hosting locally. Default is <code v-pre>5001</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2530,7 +2530,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>mode</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="mode-string">
+<doc-panel id="mode--string">
     <template #title>mode : <code v-pre>string</code></template>
 <p>During <code v-pre>retype start</code> and <code v-pre>retype serve</code>, the <code v-pre>mode</code> configuration instructs the web server on where to host files from.</p>
 <p>If <code v-pre>memory</code>, the entire website is built and then stored in memory during development with no files being written to disk.</p>
@@ -2569,7 +2569,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>polling</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="polling-boolean-or-number">
+<doc-panel id="polling--boolean-or-number">
     <template #title>polling : <code v-pre>boolean</code> or <code v-pre>number</code></template>
 <p>Instructs the local web server on how it should listen for file changes.</p>
 <p>If <code v-pre>false</code>, the native filesystem event listeners are used to monitor for file changes.</p>
@@ -2631,7 +2631,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>validation</span>
     </h4>
 </doc-anchor-target>
-<doc-panel id="validation-string">
+<doc-panel id="validation--string">
     <template #title>validation : <code v-pre>string</code></template>
 <p>Configure how thorough Retype is while looking for changed files.</p>
 <p>Default value is <code v-pre>optimal</code>.</p>
@@ -2667,7 +2667,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>showSidebarFilter</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="showsidebarfilter-boolean">
+<doc-panel id="showsidebarfilter--boolean">
     <template #title>showSidebarFilter : <code v-pre>boolean</code></template>
 <p>The <code v-pre>showSidebarFilter</code> project setting controls the visibility of the filter component in the left sidebar above the navigation tree. Default is <code v-pre>true</code>.</p>
 <p>By default, this setting is <code v-pre>true</code>, meaning the filter component is displayed. If set to <code v-pre>false</code>, the filter component will be hidden, allowing for a more streamlined sidebar layout. This option can be useful for simplifying the user interface in projects where filtering topics is not necessary.</p>
@@ -2690,7 +2690,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>lineNumbers</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="linenumbers-list">
+<doc-panel id="linenumbers--list">
     <template #title>lineNumbers : <code v-pre>list</code></template>
 <p>A list of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2729,7 +2729,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>open</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="open-boolean">
+<doc-panel id="open--boolean">
     <template #title>open : <code v-pre>boolean</code></template>
 <p>Set to <code v-pre>false</code> to instruct Retype to not open the default web browser when the command <code v-pre>retype start</code> is run. By default, Retype will open a web browser when <code v-pre>retype start</code> is run.</p>
 <p>The default is <code v-pre>true</code>.</p>
@@ -2746,7 +2746,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>pro</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="pro-boolean">
+<doc-panel id="pro--boolean">
     <template #title>pro : <code v-pre>boolean</code></template>
 <p>The default is <code v-pre>false</code>.</p>
 <p>The following sample demonstrates how to start your project in <em>Pro mode</em> and trial the <a href="/pro/">Retype Pro</a> features:</p>
@@ -2769,7 +2769,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="enabled-boolean">
+<doc-panel id="enabled--boolean">
     <template #title>enabled : <code v-pre>boolean</code></template>
 <p>A project-wide option to enable or disable the Retype content templating engine. Default is <code v-pre>true</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2784,7 +2784,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>liquid</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="liquid-boolean">
+<doc-panel id="liquid--boolean">
     <template #title>liquid : <code v-pre>boolean</code></template>
 <p>Specifies if Liquid syntax <code v-pre>{% ... %}</code> is enabled. If <code v-pre>liquid: true</code> is set, Retype is incompatible with GitBook style of component configuration.</p>
 <p>Default is <code v-pre>false</code>.</p>
@@ -2810,7 +2810,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>depth</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-depth-string-number">
+<doc-panel id="badge-pro-depth--string-number">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> depth : <code v-pre>string</code>, <code v-pre>number</code></template>
@@ -2870,7 +2870,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>label</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-label-string">
+<doc-panel id="badge-pro-label--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> label : <code v-pre>string</code></template>
@@ -2887,7 +2887,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>url</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="url-string">
+<doc-panel id="url--string">
     <template #title>url : <code v-pre>string</code></template>
 <p>The base URL of your website.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
