@@ -181,7 +181,7 @@ branding:
 
 ## breadcrumb
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The breadcrumb navigation provides a hierarchical representation of the user's location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.
 
@@ -550,7 +550,7 @@ generator:
 
 ===
 
-#### append
+#### append{#generator-directoryindex-append}
 
 === append : `boolean`
 Specifies if the default document file name should be appended to resolved URLs. By default, Retype does not append the default file name.
@@ -645,7 +645,7 @@ generator:
 
 ## hub
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The Hub creates a handy shortcut link in the top-left of the page, just to the left of your project logo or title.
 
@@ -840,7 +840,7 @@ Replace the `<id>` with your Google Tag Manager measurement id.
 
 Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used by the [page.authors](/configuration/page.md#author) configuration.
 
-#### default
+#### default{#integrations-gravatar-default}
 
 === default : `string`
 
@@ -883,7 +883,7 @@ Disabling Gravatar will also reset the default avatar to the Retype default.
 
 [Plausible.io](https://plausible.io/) is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.
 
-#### domain
+#### domain{#integration-plausible-domain}
 
 === domain : `string`
 
@@ -907,7 +907,7 @@ Check out the Plausible [documentation](https://plausible.io/docs/) for more det
 
 ===
 
-#### host
+#### host{#integration-plausible-host}
 
 === host : `string`
 
@@ -1184,9 +1184,9 @@ See also, the Page level [`meta.title`](page.md/#title) configuration.
 
 Navigation configuration options to control the behavior of the left sidebar navigation.
 
-### mode
+### mode{#nav-mode}
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 === mode : `string`
 Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
@@ -1207,11 +1207,50 @@ To convert only one top-level directory to a `stack` type layout, please see the
 
 ===
 
+### icons
+
+#### mode{#nav-icons-mode}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `mode` configuration enables customization for how the icons are displayed in the main navigation. The `mode` allows you to hide all icons (and their reserved space) in the navigation, as well as other icon show/hide scenarios.
+
+=== mode : `string`
+Controls how icons are displayed in the left sidebar navigation. The default value is `all`, which shows all icons or reserves space for all icons within the navigation.
+
+The following sample demonstrates how the icon mode can be configured in your `retype.yml` file:
+
+```yml
+nav:
+  icons:
+    mode: all|none|folders|pages|top # Default is all
+```
+
+| Mode    | Description                                                            |
+|---------|------------------------------------------------------------------------|
+| `all`     | Show icons for all navigation items (default)                          |
+| `folders` | Show icons only for folder/category items                              |
+| `pages`   | Show icons only for page items                                         |
+| `top`     | Show icons only for top-level pages and folders, hide for nested items |
+| `none`    | Hide all navigation icons                                              |
+
+To hide icons for all pages and folders, add the following setting to your project `retype.yml` configuration file:
+
+```yml
+nav:
+  icons:
+    mode: none
+```
+
+The `nav.icons.mode` setting can be used in conjunction with [`nav.mode: stack`](#mode) to handle many different icon and navigation rendering combinations.
+
+===
+
 ---
 
 ## outbound
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `outbound` configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, [example.com](https://example.com/).
 
@@ -1351,7 +1390,7 @@ output: ./docs
 
 ## poweredByRetype
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 Controls whether to include or exclude the `Powered by Retype` branding.
 
@@ -1363,6 +1402,61 @@ With a Retype Pro license, the `Powered by Retype` branding can be removed by se
 ```yml
 poweredByRetype: true # Set to `false` to remove.
 ```
+===
+
+---
+
+## scheme
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `scheme` configuration allows you to control the default color mode (**light** or **dark**) for your Retype generated website. By default, Retype will automatically match the visitor's system preference, but you can explicitly set the site to always render in either `dark` or `light` mode.
+
+### mode{#scheme-mode}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+=== mode : `string`
+Controls the default color scheme for the website. The default value is `system`, which will automatically switch between `dark` and `light` modes based on the visitor's system preference.
+
+| Mode     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| `system` | (default) Automatically use the visitor's system color scheme preference.   |
+| `dark`   | Always render the website in dark mode.                                     |
+| `light`  | Always render the website in light mode.                                    |
+
+To configure Retype to always render in dark mode, add the following to your `retype.yml`:
+
+```yml
+scheme:
+  mode: dark
+```
+
+To always render in light mode:
+
+```yml
+scheme:
+  mode: light
+```
+
+To use the system preference (default):
+
+```yml
+scheme:
+  mode: system
+```
+
+!!!
+If a visitor has explicitly selected `dark` or `light` mode using the color scheme toggle in the upper-right menu, their choice will take precedence over the `scheme.mode` project setting.
+!!!
+
+You can test the `scheme.mode` feature locally without a Retype Pro key by adding the following to your `retype.yml` to your project configuration file:
+
+```yml
+start:
+  pro: true
+```
+
 ===
 
 ---
@@ -1464,7 +1558,7 @@ search:
   preload: true # Default is false
 ```
 
-Using `preload: true` in combination with the [`generator.directoryIndex.append`](#directoryindexappend) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+Using `preload: true` in combination with the [`generator.directoryIndex.append`](#generator-directoryindex-append) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
 
 ```yml
 search:
@@ -1540,7 +1634,7 @@ retype start --port 5005  # serve from a custom port
 
 Custom configuration for the [`retype serve`](/guides/cli.md#options-3) and [`retype start`](/guides/cli.md/#options) commands.
 
-#### mode
+#### mode{#serve-watch-mode}
 
 === mode : `string`
 
@@ -1567,7 +1661,7 @@ The command [`retype build`](/guides/cli.md#retype-build) will always build and 
 
 ===
 
-#### polling
+#### polling{#serve-watch-polling}
 
 === polling : `boolean` or `number`
 
@@ -1601,7 +1695,7 @@ On the flip side, increasing the polling interval may cause an annoying experien
 
 ===
 
-#### validation
+#### validation{#serve-watch-validation}
 
 === validation : `string`
 
@@ -1749,7 +1843,7 @@ templating:
 
 ## toc
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `toc` config contains project options that apply to the right sidebar Table of Contents.
 
