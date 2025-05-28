@@ -15,14 +15,14 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 
 In progress, expected late Q2 2025.
 
-## v3.9.0-preview [!badge text="LATEST" variant="info"]
+## v3.9.0 [!badge text="LATEST" variant="info"]
 
-Released: [2025-05-22](https://github.com/retypeapp/retype/releases/tag/v3.9.0-preview)
+Released: [2025-05-28](https://github.com/retypeapp/retype/releases/tag/v3.9.0)
 
 +++ New :icon-shield-check:
 
-1. [!badge PRO](/pro/pro.md) New `nav.icons.enabled` Project setting to hide icons in navigation, see [#381](https://github.com/retypeapp/retype/discussions/381) and [#621](https://github.com/retypeapp/retype/discussions/621)
-1. [!badge PRO](/pro/pro.md) New `scheme.mode` project setting to default initial page rendering to be explicit `day`,`night`, or `system` modes, see [#421](https://github.com/retypeapp/retype/discussions/421)
+1. [!badge PRO](/pro/pro.md) New [`nav.icons.enabled`](/configuration/project.md#icons) Project setting to hide icons in navigation, see [#381](https://github.com/retypeapp/retype/discussions/381) and [#621](https://github.com/retypeapp/retype/discussions/621)
+1. [!badge PRO](/pro/pro.md) New [`scheme.mode`](/configuration/project.md#scheme-mode) project setting to default initial page rendering to be explicit `day`,`night`, or `system` modes, see [#421](https://github.com/retypeapp/retype/discussions/421)
 1. New automatic conversion of `details > summary` elements into Retype Panel component
 1. New print friendly stylesheet to enable better printing of pages, see [#85](https://github.com/retypeapp/retype/discussions/85) and [#628](https://github.com/retypeapp/retype/discussions/628)
 1. New [Obsidian](https://obsidian.md/) style of setting width and height of image, see [#694](https://github.com/retypeapp/retype/discussions/692)
@@ -252,7 +252,7 @@ Released: [2022-07-14](https://github.com/retypeapp/retype/releases/tag/v2.4.0)
 +++ New :icon-shield-check:
 1. New `generator.directoryIndex.append` [project](/configuration/project.md) config.
 1. New `generator.trailingSlash` project config to instruct whether to add a trailing `/` when constructing links.
-1. New [`host`](/configuration/project.md#plausiblehost) config on `integrations.plausible`. See [#272](https://github.com/retypeapp/retype/discussions/272).
+1. New [`host`](/configuration/project.md#integration-plausible-host) config on `integrations.plausible`. See [#272](https://github.com/retypeapp/retype/discussions/272).
 +++ Fixed :icon-bug:
 1. Extra phantom `index.md` file if Retype output path ends with a slash char.
 1. Anchored links receive extraneous slash char when `generator.directoryIndex.append: true`.
@@ -382,7 +382,7 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 1. Multi-language search and automatic detection of content languages. See [#197](https://github.com/retypeapp/retype/issues/197).
 1. [Retype Pro](/pro/pro.md) with increased page limit and Retype branding removal option.
 1. Better style for native scrollbars on Windows. See [#107](https://github.com/retypeapp/retype/issues/107).
-1. [`serve.start.validation`](/configuration/project.md#watchvalidation) project configuration option.
+1. [`serve.start.validation`](/configuration/project.md#serve-watch-validation) project configuration option.
 1. All heading elements within the page content are now added to the search index. See [#166](https://github.com/retypeapp/retype/issues/166).
 1. Page config and `SUMMARY.md` can be used together.
 1. Upgrade Octicons icons library from v15.2.0 to v16.1.1.
@@ -395,9 +395,9 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 +++ New :icon-shield-check:
 1. [$\KaTeX$](/components/math-formulas.md) math typesetting library support.
 1. Auto generate RSS feed for blog posts.
-1. [`serve.start.polling`](/configuration/project.md#watchpolling) project option.
+1. [`serve.start.polling`](/configuration/project.md#serve-watch-polling) project option.
 1. Gravatar support for [`author`](/configuration/page.md#author) avatars.
-1. [project](/configuration/project.md#gravatar) option to configure a [default](/configuration/project.md#gravatardefault) Gravatar image.
+1. [project](/configuration/project.md#gravatar) option to configure a [default](/configuration/project.md#integrations-gravatar-default) Gravatar image.
 1. [`target`](/components/reference-link.md#target) and [`icon`](/components/reference-link.md#custom-icon) attributes on [`[!ref]`](/components/reference-link.md) component.
 1. Smarter link resolution logic.
 +++
