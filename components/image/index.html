@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801805823220">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801861313227">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.9.0">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0.801805823220" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0.801861313227" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801805823220" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801861313227" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801805823220" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801805823220" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801861313227" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801861313227" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0.801805823220" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0.801861313227" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -346,6 +346,176 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<hr>
+<doc-anchor-target id="dimensions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dimensions">#</doc-anchor-trigger>
+        <span>Dimensions</span>
+    </h2>
+</doc-anchor-target>
+<p>You can control the size of your images by specifying custom dimensions using the pipe <code v-pre>|</code> separator followed by width and/or height values.</p>
+<doc-anchor-target id="setting-width-and-height">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-width-and-height">#</doc-anchor-trigger>
+        <span>Setting width and height</span>
+    </h3>
+</doc-anchor-target>
+<p>To set both width and height, use the format <code v-pre>widthxheight</code> after the pipe separator:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![Sample Image|300x200](/static/sample.jpg)</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="Sample Image" width="300" height="200" />
+    <figcaption class="caption">Sample Image</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="setting-width-only">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-width-only">#</doc-anchor-trigger>
+        <span>Setting width only</span>
+    </h3>
+</doc-anchor-target>
+<p>To set only the width, specify a single number after the pipe separator. The image will automatically scale its height to maintain the original aspect ratio:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![Sample Image|300](/static/sample.jpg)</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="Sample Image" width="300" />
+    <figcaption class="caption">Sample Image</figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The dimensions are specified in pixels. For best results, use values that maintain the image&#x27;s original aspect ratio to prevent distortion.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="generic-attributes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#generic-attributes">#</doc-anchor-trigger>
+        <span>Generic Attributes</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype allows you to add custom <abbr title="Hyper Text Markup Language">HTML</abbr> attributes to your images using a simple curly brace syntax <code v-pre>{}</code>. This powerful feature lets you customize the appearance and behavior of your images beyond basic Markdown capabilities.</p>
+<doc-anchor-target id="custom-id">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-id">#</doc-anchor-trigger>
+        <span>Custom <code v-pre>id</code></span>
+    </h3>
+</doc-anchor-target>
+<p>Add a unique identifier to your image for styling or JavaScript targeting. The <code v-pre>id</code> attribute is prefixed with a <code v-pre>#</code> symbol.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){#custom-id}
+
+// Creates the following HTML
+&lt;img src=&quot;/static/sample.jpg&quot; id=&quot;custom-id&quot;&gt;</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="" id="custom-id" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="custom-css-class">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-css-class">#</doc-anchor-trigger>
+        <span>Custom <abbr title="Cascading Style Sheet">CSS</abbr> class</span>
+    </h3>
+</doc-anchor-target>
+<p>Apply <abbr title="Cascading Style Sheet">CSS</abbr> classes to your image for styling. Class names are prefixed with a <code v-pre>.</code> dot. You can add multiple classes by separating them with spaces.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){.rounded-lg}
+
+// Creates the following HTML
+&lt;img src=&quot;/static/sample.jpg&quot; class=&quot;rounded-lg&quot;&gt;</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="" class="rounded-lg" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="custom-width-or-height">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-width-or-height">#</doc-anchor-trigger>
+        <span>Custom width or height</span>
+    </h3>
+</doc-anchor-target>
+<p>Set specific dimensions for your image using the <code v-pre>width</code> and <code v-pre>height</code> attributes. Values can be specified in pixels (px) or other <abbr title="Cascading Style Sheet">CSS</abbr> units.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){width=&quot;300&quot; height=&quot;200&quot;}
+
+// Creates the following HTML
+&lt;img src=&quot;/static/sample.jpg&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="" width="300" height="200" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="custom-css-class-and-width">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-css-class-and-width">#</doc-anchor-trigger>
+        <span>Custom <abbr title="Cascading Style Sheet">CSS</abbr> class and width</span>
+    </h3>
+</doc-anchor-target>
+<p>Combine <abbr title="Cascading Style Sheet">CSS</abbr> classes with specific dimensions to create perfectly styled images.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){.rounded-lg width=&quot;300&quot;}
+
+// Creates the following HTML
+&lt;img src=&quot;/static/sample.jpg&quot; class=&quot;rounded-lg&quot; width=&quot;300&quot;&gt;</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="" class="rounded-lg" width="300" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="custom-data-attributes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-data-attributes">#</doc-anchor-trigger>
+        <span>Custom data attributes</span>
+    </h3>
+</doc-anchor-target>
+<p>Add custom data attributes to your images for JavaScript functionality or additional metadata. Data attributes are created using the <code v-pre>data-*</code> naming convention.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){data-location=&quot;Korea&quot;}
+
+// Creates the following HTML
+&lt;img src=&quot;/static/sample.jpg&quot; data-location=&quot;Korea&quot; /&gt;</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="" data-location="Korea" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You can combine multiple attributes in a single set of curly braces. For example: <code v-pre>![](/static/sample.jpg){.rounded-lg width=&quot;300&quot; data-location=&quot;Korea&quot;}</code>.</p>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="alignment-options">
     <h2>
