@@ -25,11 +25,11 @@ You should now see the **Respository secrets** section with a green button to ad
 
 Click the **New repository secret** button to add a new secret, which should look similar to the following:
 
-![](/static/add-retype-secret.png)
+![](/static/add-retype-key.png)
 
 Once the `RETYPE_KEY` secret is added, you should see the following and your Retype project will now build using your key:
 
-![](/static/retype-repository-secret.png)
+![](/static/retype-repository-key.png)
 
 !!!
 See [configuring](../guides/github-actions.md/#retype_key) a GitHub Workflow to use your Retype key.
@@ -41,10 +41,12 @@ Set an environment variable for the [`protected`](page.md/#protected) and [`priv
 
 If you add both the `RETYPE_PASSWORD` and `RETYPE_KEY`, your list of **Repository secrets** should look like the following:
 
-![](/static/retype-repository-secrets-list-2.png)
+![](/static/retype-repository-secrets-list2.png)
 
 ## RETYPE_DEFAULT_HOST
 
 Default [`host`](project.md/#host) to be used by the Retype server instead of `localhost`.
 
-The `RETYPE_DEFAULT_HOST` secret is set exactly the same as above.
+The `RETYPE_DEFAULT_HOST` secret is set exactly the same as the other secrets.
+
+![](/static/add-retype-default-host.png)
