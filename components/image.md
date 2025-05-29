@@ -72,6 +72,111 @@ The following demonstrates adding an outbound link to another page:
 
 ---
 
+## Dimensions
+
+You can control the size of your images by specifying custom dimensions using the pipe `|` separator followed by width and/or height values.
+
+### Setting width and height
+
+To set both width and height, use the format `widthxheight` after the pipe separator:
+
+```md
+![Sample Image|300x200](/static/sample.jpg)
+```
+
+![Sample Image|300x200](/static/sample.jpg)
+
+### Setting width only
+
+To set only the width, specify a single number after the pipe separator. The image will automatically scale its height to maintain the original aspect ratio:
+
+```md
+![Sample Image|300](/static/sample.jpg)
+```
+
+![Sample Image|300](/static/sample.jpg)
+
+!!!
+The dimensions are specified in pixels. For best results, use values that maintain the image's original aspect ratio to prevent distortion.
+!!!
+
+---
+
+## Generic Attributes
+
+Retype allows you to add custom HTML attributes to your images using a simple curly brace syntax `{}`. This powerful feature lets you customize the appearance and behavior of your images beyond basic Markdown capabilities.
+
+### Custom `id`
+
+Add a unique identifier to your image for styling or JavaScript targeting. The `id` attribute is prefixed with a `#` symbol.
+
+```md
+![](/static/sample.jpg){#custom-id}
+
+// Creates the following HTML
+<img src="/static/sample.jpg" id="custom-id">
+```
+
+![](/static/sample.jpg){#custom-id}
+
+### Custom CSS class
+
+Apply CSS classes to your image for styling. Class names are prefixed with a `.` dot. You can add multiple classes by separating them with spaces.
+
+```md
+![](/static/sample.jpg){.rounded-lg}
+
+// Creates the following HTML
+<img src="/static/sample.jpg" class="rounded-lg">
+```
+
+![](/static/sample.jpg){.rounded-lg}
+
+### Custom width or height
+
+Set specific dimensions for your image using the `width` and `height` attributes. Values can be specified in pixels (px) or other CSS units.
+
+```md
+![](/static/sample.jpg){width="300" height="200"}
+
+// Creates the following HTML
+<img src="/static/sample.jpg" width="300" height="200">
+```
+
+![](/static/sample.jpg){width="300" height="200"}
+
+### Custom CSS class and width
+
+Combine CSS classes with specific dimensions to create perfectly styled images.
+
+```md
+![](/static/sample.jpg){.rounded-lg width="300"}
+
+// Creates the following HTML
+<img src="/static/sample.jpg" class="rounded-lg" width="300">
+```
+
+![](/static/sample.jpg){.rounded-lg width="300"}
+
+### Custom data attributes
+
+Add custom data attributes to your images for JavaScript functionality or additional metadata. Data attributes are created using the `data-*` naming convention.
+
+```md
+![](/static/sample.jpg){data-location="Korea"}
+
+// Creates the following HTML
+<img src="/static/sample.jpg" data-location="Korea" />
+```
+
+![](/static/sample.jpg){data-location="Korea"}
+
+!!!
+You can combine multiple attributes in a single set of curly braces. For example: `![](/static/sample.jpg){.rounded-lg width="300" data-location="Korea"}`.
+!!!
+
+---
+
 ## Alignment options
 
 If an image is configured on a separate line, Retype includes extra functionality for the custom alignment of images on the page. For instance, you can specify the left or right alignment of an image and have the text flow around the image. Check out the [Image alignment :icon-image:](image-alignment-demo.md) demo.
