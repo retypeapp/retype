@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801861313227">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801864973686">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.9.0">
@@ -34,14 +34,14 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0.801861313227" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0.801864973686" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801861313227" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801864973686" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801861313227" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801864973686" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0.801861313227" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0.801864973686" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -284,13 +284,13 @@
 </p>
 <p>Click the <strong>New repository secret</strong> button to add a new secret, which should look similar to the following:</p>
 <p><figure class="content-center">
-    <img src="/static/add-retype-secret.png" alt="" />
+    <img src="/static/add-retype-key.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Once the <code v-pre>RETYPE_KEY</code> secret is added, you should see the following and your Retype project will now build using your key:</p>
 <p><figure class="content-center">
-    <img src="/static/retype-repository-secret.png" alt="" />
+    <img src="/static/retype-repository-key.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -320,7 +320,7 @@
 <p>Set an environment variable for the <a href="/configuration/page/#protected"><code v-pre>protected</code></a> and <a href="/configuration/page/#private"><code v-pre>private</code></a> pages. The <code v-pre>RETYPE_PASSWORD</code> value is set using exactly the same process as the <doc-anchor-trigger to="#retype_key"><code v-pre>RETYPE_KEY</code></doc-anchor-trigger> above.</p>
 <p>If you add both the <code v-pre>RETYPE_PASSWORD</code> and <code v-pre>RETYPE_KEY</code>, your list of <strong>Repository secrets</strong> should look like the following:</p>
 <p><figure class="content-center">
-    <img src="/static/retype-repository-secrets-list-2.png" alt="" />
+    <img src="/static/retype-repository-secrets-list2.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -331,7 +331,12 @@
     </h2>
 </doc-anchor-target>
 <p>Default <a href="/configuration/project/#host"><code v-pre>host</code></a> to be used by the Retype server instead of <code v-pre>localhost</code>.</p>
-<p>The <code v-pre>RETYPE_DEFAULT_HOST</code> secret is set exactly the same as above.</p>
+<p>The <code v-pre>RETYPE_DEFAULT_HOST</code> secret is set exactly the same as the other secrets.</p>
+<p><figure class="content-center">
+    <img src="/static/add-retype-default-host.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
