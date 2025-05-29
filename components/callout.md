@@ -159,3 +159,53 @@ This is a `ghost` Callout.
 !!!contrast Contrast
 This is a `contrast` Callout.
 !!!
+
+## GitHub Alerts
+
+In addition to the Retype Callout component syntax options above, Retype also supports fully the GitHub [Alert](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) extension which is an adaptation of the Markdown blockquote syntax.
+
+```md
+> [!NOTE]
+> Useful information that users should know.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+
+Here are the rendered GitHub Alerts:
+
+> [!NOTE]
+> Useful information that users should know.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+### Custom title
+
+Retype also supports setting a custom title value on the GitHub Alerts using the following syntax:
+
+```md
+> [!NOTE] Custom Title
+> Useful information that users should know.
+```
+
+> [!NOTE] Custom Title
+> Useful information that users should know.
