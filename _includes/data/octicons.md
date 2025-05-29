@@ -1,10 +1,6 @@
 {{~
-  octicons_new = [ 
-    "ai-model",
-    "bookmark-filled",
-    "repo-delete",
-    "sparkles-fill",
-    "square-circle",
+  octicons_new = [
+    "pause"
   ]
   
   octicons = [ 
@@ -225,6 +221,7 @@
     "paperclip",
     "passkey-fill",
     "paste",
+    "pause",
     "pencil",
     "people",
     "person",
