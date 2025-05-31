@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801984794814">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801985489710">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.9.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0.801984794814" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0.801985489710" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801984794814" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801985489710" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801984794814" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801984794814" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801985489710" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801985489710" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0.801984794814" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0.801985489710" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -594,6 +594,96 @@ This is a paragraph continuing the details.</p>
 </blockquote>
 </dd>
 </dl>
+<hr>
+<doc-anchor-target id="tight-and-loose-lists">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tight-and-loose-lists">#</doc-anchor-trigger>
+        <span>Tight and Loose Lists</span>
+    </h2>
+</doc-anchor-target>
+<p>Markdown supports two types of list formatting: tight and loose lists. The difference between them is determined by whether list items are separated by blank lines.</p>
+<doc-anchor-target id="tight-lists">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tight-lists">#</doc-anchor-trigger>
+        <span>Tight Lists</span>
+    </h3>
+</doc-anchor-target>
+<p>Tight lists have no blank lines between list items. They are more compact and are useful for simple, concise lists.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample tight list</div>
+<pre class="language-none"><code v-pre class="language-none">- First item
+- Second item
+    - Nested item 1
+    - Nested item 2
+- Third item</code></pre>
+</doc-codeblock></div>
+<p>Here&#x27;s what the above tight list will be created as in the generated website:</p>
+<ul>
+<li>First item</li>
+<li>Second item
+<ul>
+<li>Nested item 1</li>
+<li>Nested item 2</li>
+</ul>
+</li>
+<li>Third item</li>
+</ul>
+<doc-anchor-target id="loose-lists">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#loose-lists">#</doc-anchor-trigger>
+        <span>Loose Lists</span>
+    </h3>
+</doc-anchor-target>
+<p>Loose lists have blank lines between list items. They are useful when list items contain multiple paragraphs or complex content.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Sample loose list</div>
+<pre class="language-none"><code v-pre class="language-none">- First item with multiple paragraphs.
+
+  This is a second paragraph in the first item.
+
+- Second item with nested content.
+
+    - Nested item 1
+    - Nested item 2
+
+- Third item with a blockquote.
+
+  &gt; This is a blockquote inside a list item.</code></pre>
+</doc-codeblock></div>
+<p>Here&#x27;s what the above loose list will be created as in the generated website:</p>
+<ul>
+<li><p>First item with multiple paragraphs.</p>
+<p>This is a second paragraph in the first item.</p>
+</li>
+<li><p>Second item with nested content.</p>
+<ul>
+<li>Nested item 1</li>
+<li>Nested item 2</li>
+</ul>
+</li>
+<li><p>Third item with a blockquote.</p>
+<blockquote>
+<p>This is a blockquote inside a list item.</p>
+</blockquote>
+</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>When mixing tight and loose lists, be aware that the rendering may appear inconsistent. For best results, maintain consistent formatting within nested lists by using either all tight or all loose.</p>
+        </div>
+    </div>
+</div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
