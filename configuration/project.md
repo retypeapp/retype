@@ -20,7 +20,7 @@ If you started the local web server using `retype serve`, you will need to call 
 
 The **retype.yml** file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a **retype.yml** is a good first step.
 
-If you run the command `retype start` and do not have a **retype.yml** project configuration file within the root of your project, Retype will auto-generate a simple **retype.yml** file for your project. You can then edit the file to customize your project.
+If you run the command `retype start` and do not have a **retype.yml** project configuration file within the root of your project, Retype will auto-generate a basic **retype.yml** file for your project. You can then edit the file to customize your project.
 
 You can also explicitly have Retype generate a **retype.yml** file by running the command `retype init`.
 
@@ -187,7 +187,7 @@ The breadcrumb navigation provides a hierarchical representation of the user's l
 
 ### enabled
 
-=== [!badge PRO] enabled : `boolean`
+=== enabled : `boolean`
 To enable or disable the breadcrumb navigation within Retype Pro projects. Default is `true`.
 
 For Retype Pro projects, breadcrumb navigation will be enabled by default.
@@ -204,7 +204,7 @@ breadcrumb:
 
 ### home
 
-=== [!badge PRO] home : `string` or `boolean`
+=== home : `string` or `boolean`
 The `home` config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a `string` or a `boolean` value.
 
 By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.
@@ -240,7 +240,7 @@ breadcrumb:
 
 ### separator
 
-=== [!badge PRO] separator : `string`
+=== separator : `string`
 The `separator` config allows for the customization of the node separator used between each page label in the breadcrumb navigation.
 
 Using a pipe `|` character as the separator:
@@ -659,7 +659,7 @@ The hub is optional. If you would like a hub link, just set a URL in the `link` 
 
 ### link
 
-=== [!badge PRO] link : `string`
+=== link : `string`
 Set to a local path or external URL. By setting the `link` value, the Hub will be enabled. To disable, remove the `link` config.
 
 ```yml
@@ -670,7 +670,7 @@ hub:
 
 ### alt
 
-=== [!badge PRO] alt : `string`
+=== alt : `string`
 Custom text value used to set the `title` attribute of the hub link.
 
 ```yml
@@ -682,7 +682,7 @@ hub:
 
 ### target
 
-=== [!badge PRO] target : `string`
+=== target : `string`
 Sets the `target` attribute of the hub link and specifies which window or tab to open the link into.
 
 ```yml
@@ -1260,7 +1260,7 @@ If `outbound` is enabled, Retype will find all external (outbound) links within 
 
 ### enabled
 
-=== [!badge PRO] enabled : `boolean`
+=== enabled : `boolean`
 
 Controls whether the outbound links feature is enabled.
 
@@ -1276,7 +1276,7 @@ outbound:
 
 ### custom
 
-=== [!badge PRO] custom : `string`
+=== custom : `string`
 
 Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.
 
@@ -1290,7 +1290,7 @@ outbound:
 
 ### icon
 
-=== [!badge PRO] icon : `string`
+=== icon : `string`
 
 Defines the icon to be used for outbound links and accepts all the same options as the [`links.icon`](#icon) config. The default value is `link-external` :icon-link-external:.
 
@@ -1310,7 +1310,7 @@ outbound:
 
 ### iconAlign
 
-=== [!badge PRO] iconAlign : `string`
+=== iconAlign : `string`
 
 Determines the alignment of the icon for outbound links and accepts the same options as the [`links.iconAlign`](#iconalign) config. Acceptable values are `right` or `left`. The default value is `right`.
 
@@ -1322,7 +1322,7 @@ outbound:
 
 ### target
 
-=== [!badge PRO] target : `string`
+=== target : `string`
 
 Specifies the `target` attribute for the outbound links. The default value of `"blank"` opens the link in a new window or tab.
 
@@ -1334,7 +1334,7 @@ outbound:
 
 ### exclude
 
-=== [!badge PRO] exclude : `list`
+=== exclude : `list`
 
 A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.
 
@@ -1354,7 +1354,7 @@ Please also see [`outbound.include`](#include-1).
 
 ### include
 
-=== [!badge PRO] include : `list`
+=== include : `list`
 
 A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of `*` includes all links.
 
@@ -1396,7 +1396,7 @@ Controls whether to include or exclude the `Powered by Retype` branding.
 
 ![Sample Powered by Retype branding](/static/powered-by-retype.png)
 
-=== [!badge PRO] poweredByRetype : `boolean`
+=== poweredByRetype : `boolean`
 With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
 
 ```yml
@@ -1849,7 +1849,7 @@ The `toc` config contains project options that apply to the right sidebar Table 
 
 ### depth
 
-=== [!badge PRO] depth : `string`, `number`
+=== depth : `string`, `number`
 The heading depth to include in the right Table of Contents.
 
 The default is `2-3`.
@@ -1879,7 +1879,7 @@ Value | Description
 
 ### label
 
-=== [!badge PRO] label : `string`
+=== label : `string`
 
 A custom label for the top of the Table of Contents column.
 
