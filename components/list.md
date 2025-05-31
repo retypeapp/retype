@@ -227,3 +227,68 @@ Term 2
   This is a paragraph continuing the details.
 
   > This is a blockquote inside the details.
+
+
+---
+
+## Tight and Loose Lists
+
+Markdown supports two types of list formatting: tight and loose lists. The difference between them is determined by whether list items are separated by blank lines.
+
+### Tight Lists
+
+Tight lists have no blank lines between list items. They are more compact and are useful for simple, concise lists.
+
+``` Sample tight list
+- First item
+- Second item
+    - Nested item 1
+    - Nested item 2
+- Third item
+```
+
+Here's what the above tight list will be created as in the generated website:
+
+- First item
+- Second item
+    - Nested item 1
+    - Nested item 2
+- Third item
+
+### Loose Lists
+
+Loose lists have blank lines between list items. They are useful when list items contain multiple paragraphs or complex content.
+
+``` Sample loose list
+- First item with multiple paragraphs.
+
+  This is a second paragraph in the first item.
+
+- Second item with nested content.
+
+    - Nested item 1
+    - Nested item 2
+
+- Third item with a blockquote.
+
+  > This is a blockquote inside a list item.
+```
+
+Here's what the above loose list will be created as in the generated website:
+
+- First item with multiple paragraphs.
+
+  This is a second paragraph in the first item.
+
+- Second item with nested content.
+
+    - Nested item 1
+    - Nested item 2
+
+- Third item with a blockquote.
+
+  > This is a blockquote inside a list item.
+
+!!!
+When mixing tight and loose lists, be aware that the rendering may appear inconsistent. For best results, maintain consistent formatting within nested lists by using either all tight or all loose.
+!!!
