@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801864973686">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801984794814">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.9.0">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0.801864973686" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0.801984794814" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801864973686" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801984794814" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801864973686" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801864973686" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801984794814" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801984794814" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0.801864973686" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0.801984794814" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -285,7 +285,7 @@
     </div>
 </div>
 <p>The <strong>retype.yml</strong> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <strong>retype.yml</strong> is a good first step.</p>
-<p>If you run the command <code v-pre>retype start</code> and do not have a <strong>retype.yml</strong> project configuration file within the root of your project, Retype will auto-generate a simple <strong>retype.yml</strong> file for your project. You can then edit the file to customize your project.</p>
+<p>If you run the command <code v-pre>retype start</code> and do not have a <strong>retype.yml</strong> project configuration file within the root of your project, Retype will auto-generate a basic <strong>retype.yml</strong> file for your project. You can then edit the file to customize your project.</p>
 <p>You can also explicitly have Retype generate a <strong>retype.yml</strong> file by running the command <code v-pre>retype init</code>.</p>
 <p>The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -510,10 +510,8 @@ footer:
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-enabled--boolean">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> enabled : <code v-pre>boolean</code></template>
+<doc-panel id="enabled--boolean">
+    <template #title>enabled : <code v-pre>boolean</code></template>
 <p>To enable or disable the breadcrumb navigation within Retype Pro projects. Default is <code v-pre>true</code>.</p>
 <p>For Retype Pro projects, breadcrumb navigation will be enabled by default.</p>
 <p>For Retype projects (non-Pro), the breadcrumb navigation will not be added to any pages.</p>
@@ -529,10 +527,8 @@ footer:
         <span>home</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-home--string-or-boolean">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> home : <code v-pre>string</code> or <code v-pre>boolean</code></template>
+<doc-panel id="home--string-or-boolean">
+    <template #title>home : <code v-pre>string</code> or <code v-pre>boolean</code></template>
 <p>The <code v-pre>home</code> config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a <code v-pre>string</code> or a <code v-pre>boolean</code> value.</p>
 <p>By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.</p>
 <p>Set with a custom label:</p>
@@ -562,10 +558,8 @@ footer:
         <span>separator</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-separator--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> separator : <code v-pre>string</code></template>
+<doc-panel id="separator--string">
+    <template #title>separator : <code v-pre>string</code></template>
 <p>The <code v-pre>separator</code> config allows for the customization of the node separator used between each page label in the breadcrumb navigation.</p>
 <p>Using a pipe <code v-pre>|</code> character as the separator:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1101,10 +1095,8 @@ generator:
         <span>link</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-link--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> link : <code v-pre>string</code></template>
+<doc-panel id="link--string">
+    <template #title>link : <code v-pre>string</code></template>
 <p>Set to a local path or external URL. By setting the <code v-pre>link</code> value, the Hub will be enabled. To disable, remove the <code v-pre>link</code> config.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">hub:
@@ -1117,10 +1109,8 @@ generator:
         <span>alt</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-alt--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> alt : <code v-pre>string</code></template>
+<doc-panel id="alt--string">
+    <template #title>alt : <code v-pre>string</code></template>
 <p>Custom text value used to set the <code v-pre>title</code> attribute of the hub link.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">hub:
@@ -1134,10 +1124,8 @@ generator:
         <span>target</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-target--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> target : <code v-pre>string</code></template>
+<doc-panel id="target--string">
+    <template #title>target : <code v-pre>string</code></template>
 <p>Sets the <code v-pre>target</code> attribute of the hub link and specifies which window or tab to open the link into.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">hub:
@@ -2040,10 +2028,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-enabled--boolean">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> enabled : <code v-pre>boolean</code></template>
+<doc-panel id="enabled--boolean">
+    <template #title>enabled : <code v-pre>boolean</code></template>
 <p>Controls whether the outbound links feature is enabled.</p>
 <p>The default is <code v-pre>true</code> for <strong>Retype Pro</strong> projects.</p>
 <p>The following sample demonstrates disabling the <code v-pre>outbound</code> functionality:</p>
@@ -2058,10 +2044,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>custom</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-custom--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> custom : <code v-pre>string</code></template>
+<doc-panel id="custom--string">
+    <template #title>custom : <code v-pre>string</code></template>
 <p>Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.</p>
 <p>The following sample demonstrates how to add the attribute <code v-pre>rel=&quot;noopener noreferrer&quot;</code> to all outbound links:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2075,10 +2059,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>icon</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-icon--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> icon : <code v-pre>string</code></template>
+<doc-panel id="icon--string">
+    <template #title>icon : <code v-pre>string</code></template>
 <p>Defines the icon to be used for outbound links and accepts all the same options as the <doc-anchor-trigger to="#icon"><code v-pre>links.icon</code></doc-anchor-trigger> config. The default value is <code v-pre>link-external</code> <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">outbound:
@@ -2096,10 +2078,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>iconAlign</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-iconalign--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> iconAlign : <code v-pre>string</code></template>
+<doc-panel id="iconalign--string">
+    <template #title>iconAlign : <code v-pre>string</code></template>
 <p>Determines the alignment of the icon for outbound links and accepts the same options as the <doc-anchor-trigger to="#iconalign"><code v-pre>links.iconAlign</code></doc-anchor-trigger> config. Acceptable values are <code v-pre>right</code> or <code v-pre>left</code>. The default value is <code v-pre>right</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">outbound:
@@ -2112,10 +2092,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>target</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-target--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> target : <code v-pre>string</code></template>
+<doc-panel id="target--string">
+    <template #title>target : <code v-pre>string</code></template>
 <p>Specifies the <code v-pre>target</code> attribute for the outbound links. The default value of <code v-pre>&quot;blank&quot;</code> opens the link in a new window or tab.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">outbound:
@@ -2128,10 +2106,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>exclude</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-exclude--list">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> exclude : <code v-pre>list</code></template>
+<doc-panel id="exclude--list">
+    <template #title>exclude : <code v-pre>list</code></template>
 <p>A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.</p>
 <p>This configuration accepts similar path patterns as the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 <p>The following sample demonstrates excluding all links pointing to <code v-pre>example.com</code>.</p>
@@ -2148,10 +2124,8 @@ host: docs.example.com/js/plausible.js</code></pre>
         <span>include</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-include--list">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> include : <code v-pre>list</code></template>
+<doc-panel id="include--list">
+    <template #title>include : <code v-pre>list</code></template>
 <p>A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of <code v-pre>*</code> includes all links.</p>
 <p>This configuration accepts similar path patterns as the <doc-anchor-trigger to="#include"><code v-pre>include</code></doc-anchor-trigger> config.</p>
 <p>The following sample demonstrates including only links that point to <code v-pre>example.com</code>.</p>
@@ -2194,10 +2168,8 @@ host: docs.example.com/js/plausible.js</code></pre>
     <figcaption class="caption">Sample Powered by Retype branding</figcaption>
 </figure>
 </p>
-<doc-panel id="badge-pro-poweredbyretype--boolean">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> poweredByRetype : <code v-pre>boolean</code></template>
+<doc-panel id="poweredbyretype--boolean">
+    <template #title>poweredByRetype : <code v-pre>boolean</code></template>
 <p>With a Retype Pro license, the <code v-pre>Powered by Retype</code> branding can be removed by setting to <code v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">poweredByRetype: true # Set to `false` to remove.</code></pre>
@@ -2810,10 +2782,8 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>depth</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-depth--string-number">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> depth : <code v-pre>string</code>, <code v-pre>number</code></template>
+<doc-panel id="depth--string-number">
+    <template #title>depth : <code v-pre>string</code>, <code v-pre>number</code></template>
 <p>The heading depth to include in the right Table of Contents.</p>
 <p>The default is <code v-pre>2-3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2870,10 +2840,8 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         <span>label</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-label--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> label : <code v-pre>string</code></template>
+<doc-panel id="label--string">
+    <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the top of the Table of Contents column.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-yaml"><code v-pre class="language-yaml">toc:
