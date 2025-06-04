@@ -417,7 +417,7 @@ Navigation configuration options to control the behavior of the left sidebar nav
 
 This config is Retype [!badge PRO](/pro/pro.md) only.
 
-=== mode : `string`
+=== [!badge PRO] mode : `string`
 Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
 
 Option | Description
@@ -437,6 +437,39 @@ nav:
 When configured on a page within a top-level folder, this setting will only affect that specific folder's navigation structure.
 
 To convert the entire navigation component to a `stack` type layout, please see the Project [`nav`](project.md#nav) setting.
+
+===
+
+---
+
+## nextprev
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
+
+### mode{#nextprev-mode}
+
+=== mode : `string`
+
+Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.
+
+Option | Description
+--- | ---
+`show` | Show Next and Previous buttons and include page in sequence (Default)
+`hide` | Hide buttons but keep page in sequential order
+`exclude` | Hide buttons and exclude page from sequential order
+
+The default value is `show`.
+
+```yml
+---
+nextprev:
+  mode: hide # Pro key required
+---
+```
+
+See also [Project](project.md#nextprev-mode) and [Folder](folder.md#nextprev) configuration of `nextprev.mode`.
 
 ===
 
