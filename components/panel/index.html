@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.801985489710">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.802363589675">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.9.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0.801985489710" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.9.0.802363589675" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.801985489710" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.802363589675" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.801985489710" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.801985489710" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.802363589675" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.802363589675" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0.801985489710" rel="stylesheet">
+    <link href="/static/styles.css?v=3.9.0.802363589675" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -439,6 +439,39 @@ Add any content or components inside a Panel.
    <doc-panel id="collapsed-panel" collapsed>
        <template #title>Collapsed Panel</template>
 <p><span class="docs-emoji">&#x1F973;</span> You found me!</p>
+   </doc-panel>
+</doc-panels>
+<hr>
+<doc-anchor-target id="accordion">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#accordion">#</doc-anchor-trigger>
+        <span>Accordion</span>
+    </h2>
+</doc-anchor-target>
+<p>Panels can be used to create an accordion-style layout, perfect for FAQs or collapsible content sections. Here&#x27;s an example with three collapsed panels:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">==- What is Retype?
+Retype is a modern documentation generator that helps you create beautiful documentation websites from your Markdown files. It's designed to be fast, flexible, and easy to use.
+
+==- How do I get started?
+Getting started with Retype is simple! Just install the Retype CLI and run `retype init` in your project directory. Then add your Markdown files and run `retype start` to preview your documentation locally.
+
+==- Where can I deploy my Retype site?
+Retype sites can be deployed to any static hosting service like GitHub [Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), Vercel, or your own web server.
+===</code></pre>
+</doc-codeblock></div>
+<doc-panels>
+   <doc-panel id="what-is-retype" collapsed>
+       <template #title>What is Retype?</template>
+<p>Retype is a modern documentation generator that helps you create beautiful documentation websites from your Markdown files. It&#x27;s designed to be fast, flexible, and easy to use.</p>
+   </doc-panel>
+   <doc-panel id="how-do-i-get-started" collapsed>
+       <template #title>How do I get started?</template>
+<p>Getting started with Retype is simple! Just install the Retype CLI and run <code v-pre>retype init</code> in your project directory. Then add your Markdown files and run <code v-pre>retype start</code> to preview your documentation locally.</p>
+   </doc-panel>
+   <doc-panel id="where-can-i-deploy-my-retype-site" collapsed>
+       <template #title>Where can I deploy my Retype site?</template>
+<p>Retype sites can be deployed to any static hosting service like GitHub <a href="/hosting/github-pages/">Pages</a>, <a href="/hosting/netlify/">Netlify</a>, Vercel, or your own web server.</p>
    </doc-panel>
 </doc-panels>
 <!-- Add content to _includes/bottom.md to include here -->
