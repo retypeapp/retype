@@ -163,3 +163,32 @@ Panels are expanded by default, but can be configured as collapsed too!
 :partying_face: You found me!
 
 ===
+
+---
+
+## Accordion
+
+Panels can be used to create an accordion-style layout, perfect for FAQs or collapsible content sections. Here's an example with three collapsed panels:
+
+```
+==- What is Retype?
+Retype is a modern documentation generator that helps you create beautiful documentation websites from your Markdown files. It's designed to be fast, flexible, and easy to use.
+
+==- How do I get started?
+Getting started with Retype is simple! Just install the Retype CLI and run `retype init` in your project directory. Then add your Markdown files and run `retype start` to preview your documentation locally.
+
+==- Where can I deploy my Retype site?
+Retype sites can be deployed to any static hosting service like GitHub [Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), Vercel, or your own web server.
+===
+```
+
+==- What is Retype?
+Retype is a modern documentation generator that helps you create beautiful documentation websites from your Markdown files. It's designed to be fast, flexible, and easy to use.
+
+==- How do I get started?
+Getting started with Retype is simple! Just install the Retype CLI and run `retype init` in your project directory. Then add your Markdown files and run `retype start` to preview your documentation locally.
+
+==- Where can I deploy my Retype site?
+Retype sites can be deployed to any static hosting service like GitHub [Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), Vercel, or your own web server.
+===
+

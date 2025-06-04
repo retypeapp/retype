@@ -273,3 +273,26 @@ const msg = "Hello, world";
 const msg = "Hello, world";
 ```
 |||
+
+---
+
+## Code group
+
+Code blocks can be grouped using a [[Tab]] component that lets you combine multiple code blocks into a tabbed interface. Each code block becomes a separate tab that users can switch between.
+
+To create a code group in Retype, simply wrap each code block with `+++` followed by the tab label. The tab label will be displayed as the tab button text.
+
+Here's an example showing the same "Hello, world" program in different languages:
+
++++ :icon-code: JavaScript
+```js
+console.log("Hello, world!");
+```
++++ :icon-code: TypeScript
+```ts
+console.log("Hello, world!");
+```
++++ :icon-code: Python
+```py
+print('Hello, world!')
++++
