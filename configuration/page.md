@@ -394,6 +394,33 @@ This `meta.title` config is also not to be confused with the Project level [`met
 !!!
 ===
 
+### description
+
+=== description : `string`
+
+A custom value for the `<meta name="description">` meta tag.
+
+If set, the value will be used as the `content` attribute of the `<meta name="description">` tag in the `<head>` of the page. This value will also be used for the `og:description` and `twitter:description` meta tags.
+
+```md
+---
+meta:
+  title: "Profile Page"
+  description: "This is a custom description"
+---
+# Profile
+```
+
+With the above sample, the following meta tags will be generated:
+
+```html
+<meta name="description" content="This is a custom description">
+<meta property="og:description" content="This is a custom description">
+<meta name="twitter:description" content="This is a custom description">
+```
+
+===
+
 ---
 
 ## nav
