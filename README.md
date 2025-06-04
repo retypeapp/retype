@@ -24,7 +24,7 @@ A new Retype powered website can be up and running within seconds once Retype is
 
 ---
 
-## Quick start :zap::zap::zap:
+## Quick start
 
 You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
