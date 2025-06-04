@@ -246,19 +246,6 @@ The `date` is used by Retype to order blog pages. Newer blog pages are ordered f
 
 ---
 
-## description
-
-=== description : `string`
-
-A custom description of the current page.
-
-```yml
-description: This is a custom description for this page
-```
-===
-
----
-
 ## expanded
 
 === expanded : `boolean`
