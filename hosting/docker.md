@@ -19,7 +19,7 @@ First step is to create a Dockerfile in your project.
 The following sample `Dockerfile` will build the Retype project and create a `httpd` image based container as the output.
 
 ```dockerfile # Dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS builder
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS builder
 WORKDIR /build
 COPY . /build
 RUN dotnet tool install retypeapp --tool-path /bin
