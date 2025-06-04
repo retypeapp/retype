@@ -1188,7 +1188,7 @@ Navigation configuration options to control the behavior of the left sidebar nav
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-=== [!badge PRO] mode : `string`
+=== mode : `string`
 Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
 
 Option | Description
@@ -1278,6 +1278,471 @@ The `nextprev.mode` setting can be configured at three levels with the following
 1. [Page](page.md#nextprev-mode) level in individual `.md` files
 2. [Folder](folder.md#nextprev) level in the folder `readme.md` or `index.yml` files
 3. [Project](project.md#nextprev-mode) level in your Project `retype.yml` file
+
+===
+
+---
+
+## outbound
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `outbound` configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, [example.com](https://example.com/).
+
+The `outbound` functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the `outbound` configuration and functionality is ignored.
+
+If `outbound` is enabled, Retype will find all external (outbound) links within the project, add a trailing :icon-link-external: icon, and set the link to open in a new tab when clicked.
+
+### enabled
+
+=== enabled : `boolean`
+
+Controls whether the outbound links feature is enabled.
+
+The default is `true` for **Retype Pro** projects.
+
+The following sample demonstrates disabling the `outbound` functionality:
+
+```yml
+outbound:
+  enabled: false
+```
+===
+
+### custom
+
+=== custom : `string`
+
+Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.
+
+The following sample demonstrates how to add the attribute `rel="noopener noreferrer"` to all outbound links:
+
+```yml
+outbound:
+  custom: 'rel="noopener noreferrer"'
+```
+===
+
+### icon
+
+=== icon : `string`
+
+Defines the icon to be used for outbound links and accepts all the same options as the [`links.icon`](#icon) config. The default value is `link-external` :icon-link-external:.
+
+```yml
+outbound:
+  icon: link-external
+```
+
+If you would prefer to keep the `outbound` functionality enabled, but not include the :icon-link-external: icon, please set `icon: ""`. The following sample demonstrates:
+
+```yml
+outbound:
+  icon: ""
+```
+
+===
+
+### iconAlign
+
+=== iconAlign : `string`
+
+Determines the alignment of the icon for outbound links and accepts the same options as the [`links.iconAlign`](#iconalign) config. Acceptable values are `right` or `left`. The default value is `right`.
+
+```yml
+outbound:
+  iconAlign: right
+```
+===
+
+### target
+
+=== target : `string`
+
+Specifies the `target` attribute for the outbound links. The default value of `"blank"` opens the link in a new window or tab.
+
+```yml
+outbound:
+  target: blank
+```
+===
+
+### exclude
+
+=== exclude : `list`
+
+A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.
+
+This configuration accepts similar path patterns as the [`exclude`](#exclude) config.
+
+The following sample demonstrates excluding all links pointing to `example.com`.
+
+```yml
+outbound:
+  exclude:
+    - example.com
+```
+
+Please also see [`outbound.include`](#include-1).
+
+===
+
+### include
+
+=== include : `list`
+
+A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of `*` includes all links.
+
+This configuration accepts similar path patterns as the [`include`](#include) config.
+
+The following sample demonstrates including only links that point to `example.com`.
+
+```yml
+outbound:
+  include:
+    - example.com
+```
+
+If any item is added to the `include` list, by default, all other paths will be excluded. Please also see [`outbound.exclude`](#exclude-1).
+===
+
+---
+
+## output
+
+=== output : `string`
+
+Custom path to the output directory. Default is `.retype`.
+
+The path is relative to the **retype.yml** location.
+
+```yml Change output location to /docs folder
+output: ./docs
+```
+===
+
+---
+
+## poweredByRetype
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+Controls whether to include or exclude the `Powered by Retype` branding.
+
+![Sample Powered by Retype branding](/static/powered-by-retype.png)
+
+=== poweredByRetype : `boolean`
+With a Retype Pro license, the `Powered by Retype` branding can be removed by setting to `false`.
+
+```yml
+poweredByRetype: true # Set to `false` to remove.
+```
+===
+
+---
+
+## scheme
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `scheme` configuration allows you to control the default color mode (**light** or **dark**) for your Retype generated website. By default, Retype will automatically match the visitor's system preference, but you can explicitly set the site to always render in either `dark` or `light` mode.
+
+### mode{#scheme-mode}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+=== mode : `string`
+Controls the default color scheme for the website. The default value is `system`, which will automatically switch between `dark` and `light` modes based on the visitor's system preference.
+
+| Mode     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| `system` | (default) Automatically use the visitor's system color scheme preference.   |
+| `dark`   | Always render the website in dark mode.                                     |
+| `light`  | Always render the website in light mode.                                    |
+
+To configure Retype to always render in dark mode, add the following to your `retype.yml`:
+
+```yml
+scheme:
+  mode: dark
+```
+
+To always render in light mode:
+
+```yml
+scheme:
+  mode: light
+```
+
+To use the system preference (default):
+
+```yml
+scheme:
+  mode: system
+```
+
+!!!
+If a visitor has explicitly selected `dark` or `light` mode using the color scheme toggle in the upper-right menu, their choice will take precedence over the `scheme.mode` project setting.
+!!!
+
+You can test the `scheme.mode` feature locally without a Retype Pro key by adding the following to your `retype.yml` to your project configuration file:
+
+```yml
+start:
+  pro: true
+```
+
+===
+
+---
+
+## search
+
+Customization of the website search component.
+
+### hotkeys
+
+=== hotkeys : `list`
+Keyboard key to set the cursor focus into the search field. Default is `k`.
+
+The following sample demonstrates how to change the search hotkey to use `/` instead of the default `k`:
+
+```yml
+search:
+  hotkeys:
+    - "/"
+```
+===
+
+### maxResults
+
+=== maxResults : `number`
+Max number of search results to render. Default is `20`.
+
+```yml
+search:
+  maxResults: 20
+```
+===
+
+### minChars
+
+=== minChars : `number`
+Min number of characters required in a search query. Default is `2`.
+
+The following sample demonstrates how to configure `search.minChars` with a new value:
+
+```yml
+search:
+  minChars: 3
+```
+===
+
+### mode
+
+=== mode : `string`
+The search index creation mode. Default is `full`.
+
+Mode | Description
+--- | ---
+`full` | A full-text search index of the project content is made. Includes all headings and all text content.
+`partial` | All headings plus the first paragraph under each heading is used to create the search index. The Page `description` config is also included if not empty.
+`basic` | All headings plus only the first paragraph of each page is used to create the search index. The Page `description` config is also included if not empty.
+
+The following sample demonstrates how to configure `search.mode` with a new value:
+
+```yml
+search:
+  mode: partial
+```
+
+!!!
+If your project includes a lot of content and your users find the search is running too slow, try changing to `mode: partial` or even a `mode: basic` if the website is really huge.
+!!!
+===
+
+### noResultsFoundMsg
+
+=== noResultsFoundMsg : `string`
+Message rendered when no results were found. Default is `"Sorry, no results found."`.
+
+```yml
+search:
+  noResultsFoundMsg: Sorry, no results found.
+```
+===
+
+### placeholder
+
+=== placeholder : `string`
+Placeholder text rendered on the search component. Default is `"Search"`.
+
+```yml
+search:
+  placeholder: Search
+```
+===
+
+### preload
+
+=== preload : `boolean`
+Specifies if the search index should be preloaded. Default is `false`.
+
+```yml
+search:
+  preload: true # Default is false
+```
+
+Using `preload: true` in combination with the [`generator.directoryIndex.append`](#generator-directoryindex-append) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+
+```yml
+search:
+  preload: true
+
+generator:
+  directoryIndex:
+    append: true
+```
+===
+
+## serve
+
+Custom configuration for the built in Retype development web server.
+
+### host
+
+=== host : `string`
+
+Serve the website from this host location. Default is `localhost`.
+
+```yml
+serve:
+  host: 127.0.0.1
+```
+
+By default, the Retype development web server will serve from `http://localhost:5001`, although the port could be dynamically assigned if port `5001` is already in use.
+
+A custom port value can also be assigned.
+
+```yml
+serve:
+  host: 127.0.0.1:5005
+```
+
+A custom `--host` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--host` value will override the `host` set within your **retype.yml** project configuration file.
+
+```
+retype start --host 127.0.0.1              # serve from a custom host
+retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port
+```
+
+===
+
+### port
+
+=== port : `number`
+
+A custom port for the internal Retype development web server to use when hosting locally. Default is `5001`.
+
+```yml
+serve:
+  port: 5005
+```
+
+If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.
+
+If a custom `port` is explicitly configured in the **retype.yml** and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
+
+!!!
+The port number can also be included in the [`host`](#host) config.
+!!!
+
+A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your **retype.yml** project configuration file.
+
+```
+retype start --port 5005  # serve from a custom port
+```
+
+===
+
+### watch
+
+Custom configuration for the [`retype serve`](/guides/cli.md#options-3) and [`retype start`](/guides/cli.md/#options) commands.
+
+#### mode{#serve-watch-mode}
+
+=== mode : `string`
+
+During `retype start` and `retype serve`, the `mode` configuration instructs the web server on where to host files from.
+
+If `memory`, the entire website is built and then stored in memory during development with no files being written to disk.
+
+If `disk`, the entire website is built and written to disk, then the web server will host those files from their disk location.
+
+Default is `memory`.
+
+| Mode     | Description |
+| -------- | ----------- |
+| `memory` | No output files are written to a disk. Retype serves a website from the in-memory storage. |
+| `disk`   | Output files are written to the [`output`](#output) directory, and updated with each incremental build accordingly. |
+
+```yml
+serve:
+  watch:
+    mode: disk
+```
+
+The command [`retype build`](/guides/cli.md#retype-build) will always build and write all files to disk. The `memory` configuration is not an option with `retype build`. The Retype [GitHub Action](/guides/github-actions.md) uses `retype build`. The command `retype start` is only to be used during local development and not on a live production web server.
+
+===
+
+#### polling{#serve-watch-polling}
+
+=== polling : `boolean` or `number`
+
+Instructs the local web server on how it should listen for file changes.
+
+If `false`, the native filesystem event listeners are used to monitor for file changes.
+
+If `true`, Retype will poll for file changes within your projects [input](#input) directory. By default, the polling interval is 1000 milliseconds (1 second).
+
+The poll interval is configurable by setting a `number` value. For instance, setting `polling: 500` would configure a 500ms interval.
+
+Default is `false`.
+
+| Polling  | Description |
+| -------- | ----------- |
+| `false`  | Use native filesystem event listeners to receive file change notifications the project [input](#input) directory. |
+| `true`   | Poll the [input](#input) directory for changes every 1000 milliseconds (1 second). |
+| `number` | Poll the [input](#input) directory in milliseconds. |
+
+```yml
+serve:
+  watch:
+    polling: true
+```
+
+!!! Performance Warning
+Disk polling may be a costly operation, especially in projects with a large quantity of files, and/or running over remote mounted directories (ftp mapping, NFS, SMB...). If configuring the poll interval, please adjust the value down in steps, monitoring performance as the poll interval decreases.
+
+On the flip side, increasing the polling interval may cause an annoying experience during `retype start` as file changes will require a longer time before reflected in the browser.
+!!!
+
+===
+
+#### validation{#serve-watch-validation}
+
+=== validation : `string`
+
+Configure how thorough Retype is while looking for changed files.
+
+Default value is `optimal`.
+
+| Validation | Description |
+| ---------- | ----------- |
+| `fast`     | Compare file system metadata only (reported file size and last modification time). |
+| `full`     | Perform full SHA2 comparison on every tracked file. |
+| `optimal`  | Compare file system metadata and, for every file with changes, perform SHA2 comparison. |
 
 ===
 
