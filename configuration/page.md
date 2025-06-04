@@ -760,6 +760,56 @@ Some content here.
 
 ---
 
+## toc
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `toc` config contains page options that apply to the right sidebar Table of Contents.
+
+### depth
+
+=== depth : `string`, `number`
+The heading depth to include in the right Table of Contents.
+
+The default is `2-3`.
+
+```yml
+toc:
+  depth: 2-3
+```
+
+The `toc` can be configured at the Page or Project levels.
+
+Configuring the `toc` at the Page level overrides the Project level settings.
+
+Acceptable values for `depth` include:
+
+Value | Description
+--- | ---
+2 | Include `H2` headings only
+2-3 | `default` Include `H2` to `H3` headings
+1-4 | Include `H1` to `H3` headings
+2,3 | Include `H2` and `H3` headings
+2,4 | Include `H2` and `H4` headings
+1,3-4 | Include `H1` and `H3` to `H4` headings, skip `H2`
+1,2,3,4 | Include `H1`, `H2`, `H3`, and `H4` headings
+
+===
+
+### label
+
+=== label : `string`
+
+A custom label for the top of the Table of Contents column.
+
+```yml
+toc:
+  label: On this page
+```
+===
+
+---
+
 ## visibility
 
 === visibility : `public|hidden|protected|private`
