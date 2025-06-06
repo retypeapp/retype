@@ -19,6 +19,8 @@ In progress, expected late Q2 2025.
 
 Released: [2025-05-28](https://github.com/retypeapp/retype/releases/tag/v3.9.0)
 
+There were 19 changes in Retype `3.9.0`.
+
 +++ New :icon-shield-check:
 
 1. [!badge PRO](/pro/pro.md) New [`nav.icons.enabled`](/configuration/project.md#icons) Project setting to hide icons in navigation, see [#381](https://github.com/retypeapp/retype/discussions/381) and [#621](https://github.com/retypeapp/retype/discussions/621)
@@ -53,6 +55,8 @@ Released: [2025-05-28](https://github.com/retypeapp/retype/releases/tag/v3.9.0)
 
 Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.8.0)
 
+There were 16 changes in Retype `3.8.0`.
+
 +++ New :icon-shield-check:
 
 1. [!badge PRO](/pro/pro.md) New stack navigation mode for [Project](/configuration/project.md#nav) and [Page](/configuration/page.md#nav) settings, see [#621](https://github.com/retypeapp/retype/issues/621#issuecomment-2848996632)
@@ -84,6 +88,8 @@ Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.8.0)
 
 Released: [2025-04-07](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 
+There were 6 changes in Retype `3.7.0`.
+
 +++ New :icon-shield-check:
 1. New `-v` flag as an alias on `retype --version` in CLI
 1. New [`showSidebarFilter`](/configuration/project.md#showsidebarfilter) project setting to hide navigation Filter component, see [#538](https://github.com/retypeapp/retype/discussions/538)
@@ -98,6 +104,8 @@ Released: [2025-04-07](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 ## v3.6.0
 
 Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
+
+There were 9 changes in Retype `3.6.0`.
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New `--strict` parameter for `retype build`, see [#618](https://github.com/retypeapp/retype/discussions/618)
