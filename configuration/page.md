@@ -246,19 +246,6 @@ The `date` is used by Retype to order blog pages. Newer blog pages are ordered f
 
 ---
 
-## description
-
-=== description : `string`
-
-A custom description of the current page.
-
-```yml
-description: This is a custom description for this page
-```
-===
-
----
-
 ## expanded
 
 === expanded : `boolean`
@@ -407,6 +394,33 @@ This `meta.title` config is also not to be confused with the Project level [`met
 !!!
 ===
 
+### description
+
+=== description : `string`
+
+A custom value for the `<meta name="description">` meta tag.
+
+If set, the value will be used as the `content` attribute of the `<meta name="description">` tag in the `<head>` of the page. This value will also be used for the `og:description` and `twitter:description` meta tags.
+
+```md
+---
+meta:
+  title: "Profile Page"
+  description: "This is a custom description"
+---
+# Profile
+```
+
+With the above sample, the following meta tags will be generated:
+
+```html
+<meta name="description" content="This is a custom description">
+<meta property="og:description" content="This is a custom description">
+<meta name="twitter:description" content="This is a custom description">
+```
+
+===
+
 ---
 
 ## nav
@@ -417,7 +431,7 @@ Navigation configuration options to control the behavior of the left sidebar nav
 
 This config is Retype [!badge PRO](/pro/pro.md) only.
 
-=== mode : `string`
+=== [!badge PRO] mode : `string`
 Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
 
 Option | Description
@@ -437,6 +451,39 @@ nav:
 When configured on a page within a top-level folder, this setting will only affect that specific folder's navigation structure.
 
 To convert the entire navigation component to a `stack` type layout, please see the Project [`nav`](project.md#nav) setting.
+
+===
+
+---
+
+## nextprev
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
+
+### mode{#nextprev-mode}
+
+=== mode : `string`
+
+Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.
+
+Option | Description
+--- | ---
+`show` | Show Next and Previous buttons and include page in sequence (Default)
+`hide` | Hide buttons but keep page in sequential order
+`exclude` | Hide buttons and exclude page from sequential order
+
+The default value is `show`.
+
+```yml
+---
+nextprev:
+  mode: hide # Pro key required
+---
+```
+
+See also [Project](project.md#nextprev-mode) and [Folder](folder.md#nextprev) configuration of `nextprev.mode`.
 
 ===
 
@@ -723,6 +770,56 @@ For example, the sample above should ideally be written as the following instead
 Some content here.
 ```
 
+===
+
+---
+
+## toc
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `toc` config contains page options that apply to the right sidebar Table of Contents.
+
+### depth
+
+=== depth : `string`, `number`
+The heading depth to include in the right Table of Contents.
+
+The default is `2-3`.
+
+```yml
+toc:
+  depth: 2-3
+```
+
+The `toc` can be configured at the Page or Project levels.
+
+Configuring the `toc` at the Page level overrides the Project level settings.
+
+Acceptable values for `depth` include:
+
+Value | Description
+--- | ---
+2 | Include `H2` headings only
+2-3 | `default` Include `H2` to `H3` headings
+1-4 | Include `H1` to `H3` headings
+2,3 | Include `H2` and `H3` headings
+2,4 | Include `H2` and `H4` headings
+1,3-4 | Include `H1` and `H3` to `H4` headings, skip `H2`
+1,2,3,4 | Include `H1`, `H2`, `H3`, and `H4` headings
+
+===
+
+### label
+
+=== label : `string`
+
+A custom label for the top of the Table of Contents column.
+
+```yml
+toc:
+  label: On this page
+```
 ===
 
 ---

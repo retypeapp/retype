@@ -11,9 +11,35 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 !!!
 
 ---
-## v3.10.0 [!badge text="NEXT" variant="info"]
+## v3.10.0-preview [!badge text="NEXT" variant="info"]
 
-In progress, expected late Q2 2025.
+The `v3.10.0` final release is scheduled for 2025-06-09.
+
+There were 13 changes in Retype `3.10.0-preview`.
+
++++ New :icon-shield-check:
+
+1. [!badge PRO](/pro/pro.md) New `nextprev` [project](/configuration/project.md#nextprev) and [page](/configuration/page.md#nextprev) setting to configure Next and Previous page navigation, see [#34](https://github.com/retypeapp/retype/discussions/34)
+1. New Inline and block level hidden [[comments]] using wrapping `%%`
+1. New [[Callout]] `tip` variant
+1. New Page [`meta.description`](/configuration/page.md#description) configuration, see [#638](https://github.com/retypeapp/retype/discussions/638)
+1. New support for adding [generic attribute](/components/list.md#generic-attributes) syntax on list items, see [#603](https://github.com/retypeapp/retype/discussions/603)
+1. New custom anchors using Obsidian [`^block`](https://help.obsidian.md/links#Link+to+a+block+in+a+note) syntax
+
++++ Improved :icon-thumbsup:
+
+1. Handle case-sensitive #anchor links and resolve if case-insensitive version found
+1. Add `translate=\"no\"` attribute to code block `<pre>` element
+1. Add unique `id` values to important template elements, see [#538](https://github.com/retypeapp/retype/discussions/538), [#639](https://github.com/retypeapp/retype/discussions/639) and [#640](https://github.com/retypeapp/retype/discussions/640)
+1. Improve automatic smooth scroll to #anchor on document load
+
++++ Fixed :icon-bug:
+
+1. Fixed exception being thrown if `order` set with a huge number, see [#751](https://github.com/retypeapp/retype/discussions/751)
+1. Fixed pipe separated dimensions issue where dimensions were added to image label if label is empty
+1. Fixed code block height not rendering correctly if no content in code block
+
++++
 
 ## v3.9.0 [!badge text="LATEST" variant="info"]
 

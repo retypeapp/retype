@@ -59,6 +59,36 @@ order: -1000
 
 ---
 
+## nextprev
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
+
+### mode
+
+=== mode : `string`
+
+Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.
+
+Option | Description
+--- | ---
+`show` | Show Next and Previous buttons and include page in sequence (Default)
+`hide` | Hide buttons but keep page in sequential order
+`exclude` | Hide buttons and exclude page from sequential order
+
+The default value is `show`.
+
+```yml
+nextprev:
+  mode: hide # Pro key required
+```
+
+See also [Project](project.md#nextprev-mode) and [Page](page.md#nextprev-mode) configuration of `nextprev.mode`.
+===
+
+---
+
 ## permalink
 
 Configures a new permanent base path for all pages within this directory. 

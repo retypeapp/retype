@@ -57,6 +57,7 @@ Callouts come in nine different flavors which can be specified by passing a `var
 | `primary` (default) | `blue` |
 | `secondary` | `gray` |
 | `success` | `green` |
+| `tip` | `green` |
 | `danger` | `red` |
 | `warning` | `yellow` |
 | `info` | `light-blue` |
@@ -81,6 +82,10 @@ This is a `secondary` Callout.
 
 !!!success Success
 This is a `success` Callout.
+!!!
+
+!!!tip Tip
+This is a `tip` Callout.
 !!!
 
 !!!danger Danger
@@ -126,6 +131,10 @@ This is a `secondary` Callout.
 
 !!!success Success
 This is a `success` Callout.
+!!!
+
+!!!tip Tip
+This is a `tip` Callout.
 !!!
 
 !!!danger Danger
