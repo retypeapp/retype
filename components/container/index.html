@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802563430661">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802565171404">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.0-preview">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.10.0-preview.802563430661" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.10.0-preview.802565171404" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802563430661" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802565171404" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.10.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802563430661" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802563430661" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802565171404" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802565171404" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.10.0-preview.802563430661" rel="stylesheet">
+    <link href="/static/styles.css?v=3.10.0-preview.802565171404" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -424,20 +424,20 @@ This Container uses the `sample` class.
         <span>Center on Page</span>
     </h3>
 </doc-anchor-target>
-<p>Text, a <a href="/components/button/">Button</a>, or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the <code v-pre>content-center</code> css class.</p>
+<p>Text, a <a href="/components/button/">Button</a>, or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the <code v-pre>content-center</code> or <code v-pre>text-center</code> css class.</p>
 <p>The following samples demonstrate center alignment of a Button and Text:</p>
 <div class="content-center"><p><button class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
     <span>My Button</span>
 </button></p>
 </div>
-<div class="content-center"><p>This text should be centered <span class="docs-emoji">&#x1F44D;</span></p>
+<div class="text-center"><p>This text should be centered <span class="docs-emoji">&#x1F44D;</span></p>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">:::content-center
 [!button My Button]
 :::
 
-:::content-center
+:::text-center
 This text should be centered :+1:
 :::</code></pre>
 </doc-codeblock></div>
