@@ -164,7 +164,7 @@ Retype does not validate any of the custom HTML added to the **_includes/head.ht
 
 ### Center on Page
 
-Text, a [Button](button.md), or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the `content-center` css class.
+Text, a [Button](button.md), or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the `content-center` or `text-center` css class.
 
 The following samples demonstrate center alignment of a Button and Text:
 
@@ -172,7 +172,7 @@ The following samples demonstrate center alignment of a Button and Text:
 [!button My Button]
 :::
 
-:::content-center
+:::text-center
 This text should be centered :+1:
 :::
 
@@ -181,7 +181,7 @@ This text should be centered :+1:
 [!button My Button]
 :::
 
-:::content-center
+:::text-center
 This text should be centered :+1:
 :::
 ```

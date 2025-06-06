@@ -4,7 +4,7 @@ order: 2000
 ---
 # Retype Pro
 
-:::content-center
+:::text-center
 Take your projects to the next level with **Retype Pro** and **Enterprise** licensing.
 
 Build more pages and unlock powerful **Retype Pro** only features.
@@ -22,11 +22,15 @@ Build more pages and unlock powerful **Retype Pro** only features.
 | Open source use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: |
 | Free upgrades | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: |
 | Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x: | :icon-check-circle: | :icon-check-circle: |
+| [!badge text="PRO" variant="info"] [Stacked](/configuration/project.md#nav) nav mode | :icon-x: | :icon-check-circle: | :icon-check-circle: |
+| [!badge text="PRO" variant="info"] Color [scheme](/configuration/project.md#scheme) mode (dark vs light) | :icon-x: | :icon-check-circle: | :icon-check-circle: |
 | [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle: | :icon-check-circle: |
 | [!badge text="PRO" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x: | :icon-check-circle: | :icon-check-circle: |
+| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x: | :icon-check-circle: | :icon-check-circle: |
 | [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-check-circle: | :icon-check-circle: |
 | [!badge text="PRO" variant="info"] [Table of Contents](/configuration/project.md#toc) | :icon-x: | :icon-check-circle: | :icon-check-circle: |
+| [!badge text="PRO" variant="info"] Nav [icon](/configuration/project.md#icons) customization | :icon-x: | :icon-check-circle: | :icon-check-circle: |
+| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation customization | :icon-x: | :icon-check-circle: | :icon-check-circle: |
 | Future Retype Pro only features | :icon-x: | :icon-check-circle: | :icon-check-circle: |
 
 ## :icon-question: Questions & Answers
