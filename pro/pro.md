@@ -5,9 +5,9 @@ order: 2000
 # Retype Pro
 
 :::text-center
-Take your projects to the next level with **Retype Pro** and **Enterprise** licensing.
+Take your projects to the next level with **Retype Pro** and **Enterprise**.
 
-Build more pages and unlock powerful **Retype Pro** only features.
+Build more pages and unlock powerful **Pro** only features.
 :::
 
 | &nbsp; | Free  | Pro   | Enterprise |
