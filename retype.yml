@@ -41,7 +41,7 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v3.9
+  label: v3.10
 
 meta:
   title: " - Write On! with Retype"
@@ -68,7 +68,7 @@ links:
     target: blank
 
 data:
-  version: "3.9.0"
+  version: "3.10.0"
   abbreviations:
     HTML: Hyper Text Markup Language
     CSS: Cascading Style Sheet
