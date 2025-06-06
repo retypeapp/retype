@@ -267,6 +267,7 @@ Loose lists have blank lines between list items. They are useful when list items
 - Second item with nested content.
 
     - Nested item 1
+    
     - Nested item 2
 
 - Third item with a blockquote.
@@ -283,6 +284,7 @@ Here's what the above loose list will be created as in the generated website:
 - Second item with nested content.
 
     - Nested item 1
+
     - Nested item 2
 
 - Third item with a blockquote.
