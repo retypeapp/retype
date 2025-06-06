@@ -80,7 +80,7 @@ Without the `{.list-icon}` css class applied, the above sample would render as:
     - :icon-alert: This is sub-item 2.3
     - :icon-circle-slash: This is sub-item 2.4
 
-!!!
+!!!tip
 Additional techniques for creating icon and emoji lists are outlined in issues [#603](https://github.com/retypeapp/retype/issues/603) and [#370](https://github.com/retypeapp/retype/issues/370).
 !!!
 ---
@@ -291,6 +291,100 @@ Here's what the above loose list will be created as in the generated website:
 
   > This is a blockquote inside a list item.
 
+!!!tip
+When mixing tight and loose lists, be aware that the rendering may appear inconsistent. For best results, maintain consistent formatting within nested lists by using either all tight or all loose formatting.
 !!!
-When mixing tight and loose lists, be aware that the rendering may appear inconsistent. For best results, maintain consistent formatting within nested lists by using either all tight or all loose.
-!!!
+
+---
+
+## Generic Attributes
+
+Generic attributes can be applied to list items to customize their appearance, add an `id` or any other custom attributes. 
+
+To add a custom CSS class, add the generic attribute syntax `{.class-name}` to the end of a list item.
+
+### Custom Marker Colors
+
+You can customize the color of list item markers using CSS and generic attributes:
+
+```md
+<style>
+li.item-green::marker {
+    color: green;
+}
+
+li.item-yellow::marker {
+    color: yellow;
+}
+
+li.item-red::marker {
+    color: red;
+}
+</style>
+
+- Item 1 (green) {.item-green}
+- Item 2 (yellow) {.item-yellow}
+- Item 3 (red) {.item-red}
+```
+
+<style>
+li.item-green::marker {
+    color: green;
+}
+
+li.item-yellow::marker {
+    color: yellow;
+}
+
+li.item-red::marker {
+    color: red;
+}
+</style>
+
+- Item 1 (green) {.item-green}
+- Item 2 (yellow) {.item-yellow}
+- Item 3 (red) {.item-red}
+
+### Custom Text Colors
+
+You can also apply a custom color to a list item:
+
+```md
+<style>
+.item-orange {
+    color: orange;
+}
+</style>
+
+- Item 1
+- Item 2 (orange) {.item-orange}
+- Item 3
+```
+
+<style>
+.item-orange {
+    color: orange;
+}
+</style>
+
+- Item 1
+- Item 2 (orange) {.item-orange}
+- Item 3
+
+### Custom `id`
+
+A custom `id` can be added to the list item by appending the `{#id-name}` generic attribute syntax:
+
+```md
+- Regular item
+- Item with custom ID {#custom-id}
+- Another regular item
+```
+
+The above will create one list item with the custom `id` attribute:
+
+```html
+<li>Regular item</li>
+<li id="custom-id">Item with custom ID </li>
+<li>Another regular item</li>
+```
