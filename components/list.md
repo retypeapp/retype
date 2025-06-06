@@ -231,9 +231,9 @@ Term 2
 
 ---
 
-## Tight and Loose Lists
+## Tight vs Loose Lists
 
-Markdown supports two types of list formatting: tight and loose lists. The difference between them is determined by whether list items are separated by blank lines.
+Markdown supports two types of list formatting: **tight** and **loose** lists. The difference between them is determined by whether list items are separated by blank lines or not.
 
 ### Tight Lists
 
