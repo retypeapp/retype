@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.802465316428">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802563051780">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.9.0">
+    <meta name="generator" content="Retype 3.10.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Project configuration - Write On! with Retype</title>
@@ -34,37 +34,37 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.9.0.802465316428" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.10.0-preview.802563051780" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.9.0.802465316428" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.9.0.802465316428" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.9.0.802465316428" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802563051780" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.10.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802563051780" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802563051780" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.9.0.802465316428" rel="stylesheet">
+    <link href="/static/styles.css?v=3.10.0-preview.802563051780" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
 
-    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
         <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
     
-        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
             <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
                 <!-- Mobile menu button skeleton -->
-                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
-                <div v-cloak id="docs-sidebar-toggle"></div>
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
         
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="/" class="flex items-center leading-snug text-2xl">
                             <span class="grow-0 shrink-0 overflow-hidden">
                                 <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                                 <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                             </span>
-                        </a><span class="hidden mt-1 px-2 py-1 ml-4 text-xs font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-md md:inline-block">v3.9</span>
+                        </a><span id="retype-branding-label" class="hidden mt-1 px-2 py-1 ml-4 text-xs font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-md md:inline-block">v3.10</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -72,7 +72,7 @@
         
                 <div class="flex justify-between md:grow">
                     <!-- Top Nav -->
-                    <nav class="hidden md:flex">
+                    <nav id="retype-header-nav" class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/pro/">
@@ -134,7 +134,7 @@
                     </div>
         
                     <div v-cloak class="flex justify-end grow">
-                        <div id="docs-mobile-search-button"></div>
+                        <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
         
                         <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
@@ -144,7 +144,7 @@
             </div>
         </header>
     
-        <div class="container relative flex bg-white">
+        <div id="retype-container" class="container relative flex bg-white">
             <!-- Sidebar Skeleton -->
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
@@ -223,12 +223,12 @@
             <div class="grow min-w-0 dark:bg-dark-850">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
                 <div class="flex">
-                    <div class="min-w-0 p-4 grow md:px-16">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
                         <main class="relative pb-12 lg:pt-2">
-                            <div class="docs-markdown" id="docs-content">
+                            <div class="retype-markdown" id="retype-content">
                                 <!-- Rendered if sidebar right is enabled -->
-                                <div id="docs-sidebar-right-toggle"></div>
-                                <nav class="breadcrumb" aria-label="Breadcrumb">
+                                <div id="retype-sidebar-right-toggle"></div>
+                                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
                                     <ol role="list">
                                         <li class="pr-4">
                                             <a href="/" class="pr-4">
@@ -290,7 +290,7 @@
 <p>The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample retype.yml</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">input: .
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: .
 output: .retype
 
 url: docs.example.com # Use your website address here
@@ -344,7 +344,7 @@ footer:
 <p>The <code v-pre>title</code> can be used in conjunction with <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger> and <doc-anchor-trigger to="#logodark"><code v-pre>logoDark</code></doc-anchor-trigger>. If a <code v-pre>title</code> and <code v-pre>logo</code> are configured, both will be added to the website. If only a <code v-pre>title</code> is configured, only the text title is used. If only a <code v-pre>logo</code> and/or <code v-pre>logoDark</code> are configured, only the logos are used.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set the website title</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Example.com</code></pre>
 </doc-codeblock></div>
 <p>The above <code v-pre>title</code> would create the following branding title in the upper-left corner of the generated website.</p>
@@ -365,7 +365,7 @@ footer:
 <p>Optional logo label text. Default is <code v-pre>Docs</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   label: Docs</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>label</code> is rendered as the following label in the upper-left corner of the generated website, to the right of the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger> or <doc-anchor-trigger to="#logo"><code v-pre>logo</code></doc-anchor-trigger>.</p>
@@ -391,7 +391,7 @@ footer:
 <p>Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   logo: static/logo.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -411,7 +411,7 @@ footer:
 <p>Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Set a custom label</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   logo: static/logo.png
   logoDark: static/logo-dark.png</code></pre>
 </doc-codeblock></div>
@@ -427,7 +427,7 @@ footer:
 <p>Set a logo image alignment relative to the <doc-anchor-trigger to="#title"><code v-pre>title</code></doc-anchor-trigger>. Supported values include <code v-pre>left</code> and <code v-pre>right</code>.</p>
 <p>Default is <code v-pre>left</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   logo: static/logo.png
   logoAlign: right</code></pre>
 </doc-codeblock></div>
@@ -471,7 +471,7 @@ footer:
     <template #title>text : <code v-pre>string</code></template>
 <p>Set a custom label text color&quot;. Default is <code v-pre>&quot;#1f7aff&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   colors:
     label:
       text: &quot;#ffffff&quot;</code></pre>
@@ -487,7 +487,7 @@ footer:
     <template #title>background : <code v-pre>string</code></template>
 <p>Set a custom label background color. Default is <code v-pre>&quot;#e1edff&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">branding:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   colors:
     label:
       background: &quot;#ff0000&quot;</code></pre>
@@ -517,7 +517,7 @@ footer:
 <p>For Retype projects (non-Pro), the breadcrumb navigation will not be added to any pages.</p>
 <p>To disable the breadcrumb navigation across an entire project, set the <code v-pre>enabled</code> parameter to <code v-pre>false</code> as shown in the following sample:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   enabled: false # Disabled project wide</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -533,22 +533,22 @@ footer:
 <p>By default, the label used for the first item of the breadcrumb navigation will be the label of the project home page. This label can be customized or even removed.</p>
 <p>Set with a custom label:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   home: Home # custom label</code></pre>
 </doc-codeblock></div>
 <p>Use an Octicon <a href="/components/icon/">icon</a> instead of text for the Home node:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   home: &quot;:icon-home:&quot; # icon</code></pre>
 </doc-codeblock></div>
 <p>Use an <a href="/components/emoji/">emoji</a>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   home: &quot;:rocket:&quot; # emoji</code></pre>
 </doc-codeblock></div>
 <p>The entire first item of the breadcrumb navigation, the &quot;Home&quot; node, can be removed by setting <code v-pre>home: false</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   home: false # Do not include the Home node</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -563,12 +563,12 @@ footer:
 <p>The <code v-pre>separator</code> config allows for the customization of the node separator used between each page label in the breadcrumb navigation.</p>
 <p>Using a pipe <code v-pre>|</code> character as the separator:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   separator: &quot;|&quot;</code></pre>
 </doc-codeblock></div>
 <p>Using an <a href="/components/icon/">icon</a> as the separator:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb:
   separator: &quot;:icon-dot:&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -617,21 +617,21 @@ footer:
 </div>
 <p>Default is <code v-pre>query</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">cache:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">cache:
   strategy: query</code></pre>
 </doc-codeblock></div>
 <p>Below are demo URLs generated for corresponding <code v-pre>cache.busting.strategy</code> options:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>strategy: none</code></div>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js&quot; /&gt;</code></pre>
+<pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js&quot; /&gt;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>strategy: path</code></div>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.v1.10.js&quot; /&gt;</code></pre>
+<pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.v1.10.js&quot; /&gt;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><code v-pre>strategy: query</code></div>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js?v=1.10&quot; /&gt;</code></pre>
+<pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js?v=1.10&quot; /&gt;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="token">
@@ -647,7 +647,7 @@ footer:
 <p>If not specified, the default token having the following structure is used:
 <code v-pre>{Retype version}.{total milliseconds elapsed since 2000-01-01}</code></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">cache:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">cache:
   token: v5</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -680,13 +680,13 @@ footer:
 <p>By default, if the <doc-anchor-trigger to="#url"><code v-pre>url</code></doc-anchor-trigger> is set, Retype will automatically generate a <strong>CNAME</strong> file. This can be disabled by setting <code v-pre>cname: false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Disable CNAME file generation</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">cname: false</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">cname: false</code></pre>
 </doc-codeblock></div>
 <p>If you do want a <strong>CNAME</strong> file generated, but for some reason require a value different than what the <code v-pre>url</code> creates, you can explicitly set instruct Retype to generate the <strong>CNAME</strong> with a different value.</p>
 <p>This would be a highly unusual scenario, but Retype does allow you to configure these values separately, just in case you need it. We <strong>HIGHLY</strong> recommend that you just stick with setting the <doc-anchor-trigger to="#url"><code v-pre>url</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Custom CNAME file value</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">cname: docs.example.com</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">cname: docs.example.com</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
@@ -725,12 +725,12 @@ footer:
 <p>The repository URL where the source files for this project are located.</p>
 <p>Setting a <code v-pre>repo</code> value will enable the <code v-pre>Edit this page</code> links on all content pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/&lt;your-organization&gt;/&lt;your-repo&gt;/&quot;</code></pre>
 </doc-codeblock></div>
 <p>It is also possible to configure the links to point directly to the <code v-pre>/edit/</code> view of the page:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/&lt;your-organization&gt;/&lt;your-repo&gt;/edit/&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -746,7 +746,7 @@ footer:
 <p>The <code v-pre>base</code> can be configured with an optional path to a directory within the <doc-anchor-trigger to="#repo"><code v-pre>repo</code></doc-anchor-trigger>.</p>
 <p>The following sample demonstrates how <code v-pre>edit.base</code> would be configured if the <strong>.md</strong> source files for this project are stored within the <strong>/src/docs</strong> sub-directory within the repo.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/your-organization/your-repo&quot;
   base: /src/docs</code></pre>
 </doc-codeblock></div>
@@ -762,7 +762,7 @@ footer:
     <template #title>branch : <code v-pre>string</code></template>
 <p>Point to a custom branch within the repo. Default is <code v-pre>main</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/your-organization/your-repo&quot;
   branch: master</code></pre>
 </doc-codeblock></div>
@@ -777,7 +777,7 @@ footer:
     <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the link. Default is <code v-pre>&quot;Edit this page&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">edit:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/your-organization/your-repo&quot;
   label: Edit on GitHub</code></pre>
 </doc-codeblock></div>
@@ -801,7 +801,7 @@ footer:
 <p>To enable or disable the live editor. Default is <code v-pre>true</code>.</p>
 <p>Set to <code v-pre>false</code> to disable and hide the live editor.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">editor:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">editor:
   enabled: false # Default is true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -819,7 +819,7 @@ footer:
 <p>The following sample demonstrates how to exclude an entire <code v-pre>draft/</code> folder, any folder that ends with <code v-pre>*_temp/</code>, and one specific <code v-pre>/src/temp.md</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exclude patterns</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">exclude:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">exclude:
   - &quot;draft/&quot;
   - &quot;*_temp/&quot;
   - &quot;/src/temp.md&quot;</code></pre>
@@ -858,7 +858,7 @@ footer:
 <p>The path is relative to the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Favicon is stored in the /static folder</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">favicon: static/favicon.png</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">favicon: static/favicon.png</code></pre>
 </doc-codeblock></div>
 <p>By default, Retype will look for a <code v-pre>favicon.ico</code> or <code v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input"><code v-pre>input</code></doc-anchor-trigger>. The <code v-pre>favicon</code> config would typically only be used if you want to store the <code v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output"><code v-pre>output</code></doc-anchor-trigger> root.</p>
 </doc-panel>
@@ -879,7 +879,7 @@ footer:
     <template #title>copyright : <code v-pre>string</code></template>
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code v-pre>{{ year }}</code> variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">footer:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">footer:
   copyright: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.com/) All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -893,7 +893,7 @@ footer:
     <template #title>links : <code v-pre>object</code></template>
 <p>The <code v-pre>footer.links</code> have the same configuration options as <doc-anchor-trigger to="#links"><code v-pre>links</code></doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">footer:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">footer:
   links:
     - text: License
       link: license.md</code></pre>
@@ -924,7 +924,7 @@ footer:
 <p>A list of file names to treat as default <abbr title="Hyper Text Markup Language">HTML</abbr> files.</p>
 <p>By default, Retype will treat all of the following files as default pages if they are within a folder.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   directoryIndex:
     altNames:
       - index.html
@@ -934,7 +934,7 @@ footer:
 </doc-codeblock></div>
 <p>If you have a <strong>default.htm</strong> file within a folder and do not want it to be treated as a default page, then set <code v-pre>altNames</code> to the following:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   directoryIndex:
     altNames:
       - index.html</code></pre>
@@ -951,13 +951,13 @@ footer:
 <p>Specifies if the default document file name should be appended to resolved URLs. By default, Retype does not append the default file name.</p>
 <p>If <code v-pre>false</code>, the generated link will be <code v-pre>/guide/</code>. If <code v-pre>true</code>, the generated link will be <code v-pre>/guides/index.html</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   directoryIndex:
     append: true # default is false</code></pre>
 </doc-codeblock></div>
 <p>Using <code v-pre>append: true</code> in combination with the <doc-anchor-trigger to="#preload"><code v-pre>search.preload</code></doc-anchor-trigger> config allows for offline file system browsing of your generated website without having to install Retype and start a web server using <a href="/guides/cli/#retype-start"><code v-pre>retype start</code></a>. The following sample demonstrates how to configure:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   preload: true
 
 generator:
@@ -975,7 +975,7 @@ generator:
     <template #title>name : <code v-pre>string</code></template>
 <p>The default <abbr title="Hyper Text Markup Language">HTML</abbr> document file name generated by Retype.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   directoryIndex:
     name: default.htm # Default is index.html</code></pre>
 </doc-codeblock></div>
@@ -1014,7 +1014,7 @@ generator:
 </table>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   paths: relative</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -1050,7 +1050,7 @@ generator:
 </div>
 <p>To have Retype NOT change the casing of any of your file or folder names, set <code v-pre>recase</code> to <code v-pre>none</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">generator:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   recase: none</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -1066,7 +1066,7 @@ generator:
 <p>For example, if you have a simple link in your project to <code v-pre>[Example](/guide/example.md)</code>, Retype will create the link as <code v-pre>/guide/example/</code>. By setting <code v-pre>trailingSlash: false</code> in your project, Retype would then create the link as <code v-pre>/guide/example</code>.</p>
 <p>It is best practice to include the trailing slash and by default, Retype will automatically add the trailing slash to links that are missing.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">generator:
+<pre translate="no" class="language-none"><code v-pre class="language-none">generator:
   trailingSlash: false # default is true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -1099,7 +1099,7 @@ generator:
     <template #title>link : <code v-pre>string</code></template>
 <p>Set to a local path or external URL. By setting the <code v-pre>link</code> value, the Hub will be enabled. To disable, remove the <code v-pre>link</code> config.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">hub:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">hub:
   link: https://example.com/ # default is empty</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -1113,7 +1113,7 @@ generator:
     <template #title>alt : <code v-pre>string</code></template>
 <p>Custom text value used to set the <code v-pre>title</code> attribute of the hub link.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">hub:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">hub:
   link: https://example.com/
   alt: Go to example.com</code></pre>
 </doc-codeblock></div>
@@ -1128,7 +1128,7 @@ generator:
     <template #title>target : <code v-pre>string</code></template>
 <p>Sets the <code v-pre>target</code> attribute of the hub link and specifies which window or tab to open the link into.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">hub:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">hub:
   link: https://example.com/
   target: blank</code></pre>
 </doc-codeblock></div>
@@ -1208,7 +1208,7 @@ generator:
 <p>The following sample demonstrates how to include all <strong>.py</strong> files, all <strong>.js</strong> files that start with the name <code v-pre>demo</code>, and the entire contents of any <code v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Include patterns</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">include:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">include:
   - &quot;*.py&quot;
   - &quot;demo*.js&quot;
   - &quot;**/www/**&quot;</code></pre>
@@ -1258,7 +1258,7 @@ generator:
 <p>The path is relative to the <strong>retype.yml</strong> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Change input location to /src folder</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">input: ./src</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: ./src</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
@@ -1280,13 +1280,13 @@ generator:
     <template #title>googleAnalytics.id : <code v-pre>string</code></template>
 <p>Google Analytics ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   googleAnalytics:
     id: &lt;id&gt;</code></pre>
 </doc-codeblock></div>
 <p>Replace the <code v-pre>&lt;id&gt;</code> with your Google Analytics measurement id. For example:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   googleAnalytics:
     id: A-BCDEFGHIJ1</code></pre>
 </doc-codeblock></div>
@@ -1303,7 +1303,7 @@ generator:
     <template #title>googleTagManager.id : <code v-pre>string</code></template>
 <p>Google Tag manager ID value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   googleTagManager:
     id: &lt;id&gt;</code></pre>
 </doc-codeblock></div>
@@ -1419,13 +1419,13 @@ generator:
     <template #title>domain : <code v-pre>string</code></template>
 <p>When you setup your project within Plausible, you enter a <a href="https://plausible.io/docs/add-website" class="outbound" target="_blank"><span><code v-pre>Domain</code></span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value which is then used to set the <code v-pre>integrations.plausible.domain</code> config within your <strong>retype.yml</strong> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   plausible:
     domain: &lt;string&gt;</code></pre>
 </doc-codeblock></div>
 <p>Plausible can also send statistics to <a href="https://plausible.io/docs/plausible-script#can-i-send-stats-to-multiple-dashboards-at-the-same-time" class="outbound" target="_blank"><span>multiple</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> dashboards by configuring a comma-separated list of domains. For example:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   plausible:
     domain: domain1.com,domain2.com,subdomain.yourdomain.com</code></pre>
 </doc-codeblock></div>
@@ -1441,20 +1441,20 @@ generator:
     <template #title>host : <code v-pre>string</code></template>
 <p>The Plausible service can be <a href="https://plausible.io/docs/self-hosting" class="outbound" target="_blank"><span>self-hosted</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> and your Retype project can be configured to use your custom <code v-pre>host</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   plausible:
     host: &lt;string&gt;</code></pre>
 </doc-codeblock></div>
 <p>A typical <code v-pre>host</code> project configuration would look like the following sample:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">integrations:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">integrations:
   plausible:
     host: plausible.example.com</code></pre>
 </doc-codeblock></div>
 <p>If no transfer protocol is supplied, Retype will default the <code v-pre>host</code> value to use <code v-pre>https</code>.</p>
 <p>All of the following sample <code v-pre>host</code> values are supported:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">host: example.com
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">host: example.com
 host: docs.example.com
 host: https://example.com
 host: http://example.com
@@ -1472,7 +1472,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Custom links added to the top-bar navigation of all pages.</p>
 <p>The following sample demonstrates a basic <code v-pre>links</code> scenario which would add one link to the top bar of all pages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">links:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Getting Started
     link: https://retype.com/getting_started/</code></pre>
 </doc-codeblock></div>
@@ -1486,7 +1486,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>text : <code v-pre>string</code></template>
 <p>The link text label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">links:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Demos
     link: https://demo.example.com/</code></pre>
 </doc-codeblock></div>
@@ -1502,7 +1502,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>The URL to use for the link. The link can be a <strong>.md</strong> file name, or to any internal path, or to any external URL.</p>
 <p>If a <strong>.md</strong> file set, such as <code v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code v-pre>sample.md</code> value will be replaced with the path to the actual generated <abbr title="Hyper Text Markup Language">HTML</abbr> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">links:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: About us
     link: /about/</code></pre>
 </doc-codeblock></div>
@@ -1517,7 +1517,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>icon : <code v-pre>string</code></template>
 <p>An icon to use with the link. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">links:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Issues
     link: https://github.com/retypeapp/retype/issues/
     icon: bug</code></pre>
@@ -1525,19 +1525,19 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Options include using an <a href="https://primer.style/octicons/" class="outbound" target="_blank"><span>Octicon</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> name, <a href="https://mojee.io/emojis/" class="outbound" target="_blank"><span>Emoji</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> shortcode, <code v-pre>&lt;svg&gt;</code> element, or a path to an image file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Octicon</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">icon: rocket</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: rocket</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Emoji shortcode</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">icon: &quot;:rocket:&quot;</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: &quot;:rocket:&quot;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">SVG element</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">icon: &lt;svg&gt;...&lt;/svg&gt;</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: &lt;svg&gt;...&lt;/svg&gt;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Path</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">icon: ../static/rocket.png</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: ../static/rocket.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="iconalign">
@@ -1550,7 +1550,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>iconAlign : <code v-pre>string</code></template>
 <p>The position for the icon relative to the link <code v-pre>text</code>. Either <code v-pre>left</code> or <code v-pre>right</code>. Default is <code v-pre>left</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">links:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Demos
     link: https://demo.example.com/
     icon: link-external
@@ -1567,7 +1567,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>target : <code v-pre>string</code></template>
 <p>Sets the <code v-pre>target</code> attribute of the hyperlink and specifies which window or tab to open the link into.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">links:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Demos
     link: https://demo.example.com/
     target: blank</code></pre>
@@ -1648,7 +1648,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Default is <code v-pre>en</code>.</p>
 <p>The following sample demonstrates switching the project to use French.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">locale: fr</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: fr</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="supported-languages">
@@ -1849,7 +1849,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </ul>
 <p>Default is <code v-pre>soft</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">markdown:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">markdown:
   lineBreaks: soft # or, hard</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -1872,12 +1872,12 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Common site-wide suffix appended to the html <code v-pre>&lt;title&gt;</code> element of all pages. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Append this string to all page meta tag titles</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">meta:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">meta:
   title: &quot; | Example.com - Widgets for the internet&quot;</code></pre>
 </doc-codeblock></div>
 <p>Using the sample above, if we had an <code v-pre>About us</code> page, the final <code v-pre>&lt;title&gt;</code> would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;title&gt;About us | Example.com - Widgets for the internet&lt;/title&gt;</code></pre>
+<pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;title&gt;About us | Example.com - Widgets for the internet&lt;/title&gt;</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
@@ -1939,7 +1939,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 <p>The following sample demonstrates how to configure the &quot;stacked&quot; navigation structure:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">nav:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
   mode: stack # Pro key required</code></pre>
 </doc-codeblock></div>
 <p>To convert only one top-level directory to a <code v-pre>stack</code> type layout, please see the Page <a href="/configuration/page/#nav"><code v-pre>nav</code></a> setting.</p>
@@ -1965,7 +1965,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Controls how icons are displayed in the left sidebar navigation. The default value is <code v-pre>all</code>, which shows all icons or reserves space for all icons within the navigation.</p>
 <p>The following sample demonstrates how the icon mode can be configured in your <code v-pre>retype.yml</code> file:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">nav:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
   icons:
     mode: all|none|folders|pages|top # Default is all</code></pre>
 </doc-codeblock></div>
@@ -2003,11 +2003,67 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 <p>To hide icons for all pages and folders, add the following setting to your project <code v-pre>retype.yml</code> configuration file:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">nav:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
   icons:
     mode: none</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>nav.icons.mode</code> setting can be used in conjunction with <doc-anchor-trigger to="#mode"><code v-pre>nav.mode: stack</code></doc-anchor-trigger> to handle many different icon and navigation rendering combinations.</p>
+</doc-panel>
+<hr>
+<doc-anchor-target id="nextprev">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nextprev">#</doc-anchor-trigger>
+        <span>nextprev</span>
+    </h2>
+</doc-anchor-target>
+<p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<p>The <code v-pre>nextprev</code> configuration controls the display of &quot;Next&quot; and &quot;Previous&quot; navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.</p>
+<doc-anchor-target id="nextprev-mode">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nextprev-mode">#</doc-anchor-trigger>
+        <span>mode</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="mode--string">
+    <template #title>mode : <code v-pre>string</code></template>
+<p>Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>show</code></td>
+<td>Show Next and Previous buttons and include page in sequence (Default)</td>
+</tr>
+<tr>
+<td><code v-pre>hide</code></td>
+<td>Hide buttons but keep page in sequential order</td>
+</tr>
+<tr>
+<td><code v-pre>exclude</code></td>
+<td>Hide buttons and exclude page from sequential order</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The default value is <code v-pre>show</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nextprev:
+  mode: hide</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>nextprev.mode</code> setting can be configured at three levels with the following precedence:</p>
+<ol>
+<li><a href="/configuration/page/#nextprev-mode">Page</a> level in individual <code v-pre>.md</code> files</li>
+<li><a href="/configuration/folder/#nextprev">Folder</a> level in the folder <code v-pre>readme.md</code> or <code v-pre>index.yml</code> files</li>
+<li><a href="/configuration/project/#nextprev-mode">Project</a> level in your Project <code v-pre>retype.yml</code> file</li>
+</ol>
 </doc-panel>
 <hr>
 <doc-anchor-target id="outbound">
@@ -2034,7 +2090,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>The default is <code v-pre>true</code> for <strong>Retype Pro</strong> projects.</p>
 <p>The following sample demonstrates disabling the <code v-pre>outbound</code> functionality:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   enabled: false</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2049,7 +2105,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.</p>
 <p>The following sample demonstrates how to add the attribute <code v-pre>rel=&quot;noopener noreferrer&quot;</code> to all outbound links:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   custom: 'rel=&quot;noopener noreferrer&quot;'</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2063,12 +2119,12 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>icon : <code v-pre>string</code></template>
 <p>Defines the icon to be used for outbound links and accepts all the same options as the <doc-anchor-trigger to="#icon"><code v-pre>links.icon</code></doc-anchor-trigger> config. The default value is <code v-pre>link-external</code> <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   icon: link-external</code></pre>
 </doc-codeblock></div>
 <p>If you would prefer to keep the <code v-pre>outbound</code> functionality enabled, but not include the <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg> icon, please set <code v-pre>icon: &quot;&quot;</code>. The following sample demonstrates:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   icon: &quot;&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2082,7 +2138,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>iconAlign : <code v-pre>string</code></template>
 <p>Determines the alignment of the icon for outbound links and accepts the same options as the <doc-anchor-trigger to="#iconalign"><code v-pre>links.iconAlign</code></doc-anchor-trigger> config. Acceptable values are <code v-pre>right</code> or <code v-pre>left</code>. The default value is <code v-pre>right</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   iconAlign: right</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2096,7 +2152,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>target : <code v-pre>string</code></template>
 <p>Specifies the <code v-pre>target</code> attribute for the outbound links. The default value of <code v-pre>&quot;blank&quot;</code> opens the link in a new window or tab.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   target: blank</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2112,7 +2168,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>This configuration accepts similar path patterns as the <doc-anchor-trigger to="#exclude"><code v-pre>exclude</code></doc-anchor-trigger> config.</p>
 <p>The following sample demonstrates excluding all links pointing to <code v-pre>example.com</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   exclude:
     - example.com</code></pre>
 </doc-codeblock></div>
@@ -2130,7 +2186,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>This configuration accepts similar path patterns as the <doc-anchor-trigger to="#include"><code v-pre>include</code></doc-anchor-trigger> config.</p>
 <p>The following sample demonstrates including only links that point to <code v-pre>example.com</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">outbound:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">outbound:
   include:
     - example.com</code></pre>
 </doc-codeblock></div>
@@ -2149,7 +2205,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>The path is relative to the <strong>retype.yml</strong> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Change output location to /docs folder</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">output: ./docs</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">output: ./docs</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
@@ -2172,7 +2228,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>poweredByRetype : <code v-pre>boolean</code></template>
 <p>With a Retype Pro license, the <code v-pre>Powered by Retype</code> branding can be removed by setting to <code v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">poweredByRetype: true # Set to `false` to remove.</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">poweredByRetype: true # Set to `false` to remove.</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
@@ -2224,17 +2280,17 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 <p>To configure Retype to always render in dark mode, add the following to your <code v-pre>retype.yml</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">scheme:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">scheme:
   mode: dark</code></pre>
 </doc-codeblock></div>
 <p>To always render in light mode:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">scheme:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">scheme:
   mode: light</code></pre>
 </doc-codeblock></div>
 <p>To use the system preference (default):</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">scheme:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">scheme:
   mode: system</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
@@ -2256,7 +2312,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 <p>You can test the <code v-pre>scheme.mode</code> feature locally without a Retype Pro key by adding the following to your <code v-pre>retype.yml</code> to your project configuration file:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">start:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">start:
   pro: true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2279,7 +2335,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Keyboard key to set the cursor focus into the search field. Default is <code v-pre>k</code>.</p>
 <p>The following sample demonstrates how to change the search hotkey to use <code v-pre>/</code> instead of the default <code v-pre>k</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   hotkeys:
     - &quot;/&quot;</code></pre>
 </doc-codeblock></div>
@@ -2294,7 +2350,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>maxResults : <code v-pre>number</code></template>
 <p>Max number of search results to render. Default is <code v-pre>20</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   maxResults: 20</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2309,7 +2365,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>Min number of characters required in a search query. Default is <code v-pre>2</code>.</p>
 <p>The following sample demonstrates how to configure <code v-pre>search.minChars</code> with a new value:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   minChars: 3</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2348,7 +2404,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 <p>The following sample demonstrates how to configure <code v-pre>search.mode</code> with a new value:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   mode: partial</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
@@ -2379,7 +2435,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>noResultsFoundMsg : <code v-pre>string</code></template>
 <p>Message rendered when no results were found. Default is <code v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   noResultsFoundMsg: Sorry, no results found.</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2393,7 +2449,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>placeholder : <code v-pre>string</code></template>
 <p>Placeholder text rendered on the search component. Default is <code v-pre>&quot;Search&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   placeholder: Search</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2407,12 +2463,12 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>preload : <code v-pre>boolean</code></template>
 <p>Specifies if the search index should be preloaded. Default is <code v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   preload: true # Default is false</code></pre>
 </doc-codeblock></div>
 <p>Using <code v-pre>preload: true</code> in combination with the <doc-anchor-trigger to="#generator-directoryindex-append"><code v-pre>generator.directoryIndex.append</code></doc-anchor-trigger> config allows for offline file system browsing of your generated website without having to install Retype and start a web server using <a href="/guides/cli/#retype-start"><code v-pre>retype start</code></a>. The following sample demonstrates how to configure:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">search:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   preload: true
 
 generator:
@@ -2437,18 +2493,18 @@ generator:
     <template #title>host : <code v-pre>string</code></template>
 <p>Serve the website from this host location. Default is <code v-pre>localhost</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">serve:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   host: 127.0.0.1</code></pre>
 </doc-codeblock></div>
 <p>By default, the Retype development web server will serve from <code v-pre>http://localhost:5001</code>, although the port could be dynamically assigned if port <code v-pre>5001</code> is already in use.</p>
 <p>A custom port value can also be assigned.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">serve:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   host: 127.0.0.1:5005</code></pre>
 </doc-codeblock></div>
 <p>A custom <code v-pre>--host</code> value can also be passed as an argument to the <a href="/guides/cli/#options"><code v-pre>retype start</code></a> and <a href="/guides/cli/#options-3"><code v-pre>retype serve</code></a> commands. If included, the <code v-pre>--host</code> value will override the <code v-pre>host</code> set within your <strong>retype.yml</strong> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype start --host 127.0.0.1              # serve from a custom host
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype start --host 127.0.0.1              # serve from a custom host
 retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2462,7 +2518,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>port : <code v-pre>number</code></template>
 <p>A custom port for the internal Retype development web server to use when hosting locally. Default is <code v-pre>5001</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">serve:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   port: 5005</code></pre>
 </doc-codeblock></div>
 <p>If the default port is already being used by another service, Retype will auto-increment the port number until it finds an open port to host from.</p>
@@ -2486,7 +2542,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </div>
 <p>A custom <code v-pre>--port</code> value can also be passed as an argument to the <a href="/guides/cli/#options"><code v-pre>retype start</code></a> and <a href="/guides/cli/#options-3"><code v-pre>retype serve</code></a> commands. If included, the <code v-pre>--port</code> value will override the <code v-pre>port</code> set within your <strong>retype.yml</strong> project configuration file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype start --port 5005  # serve from a custom port</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype start --port 5005  # serve from a custom port</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-anchor-target id="watch">
@@ -2529,7 +2585,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </table>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">serve:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   watch:
     mode: disk</code></pre>
 </doc-codeblock></div>
@@ -2573,7 +2629,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </table>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">serve:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   watch:
     polling: true</code></pre>
 </doc-codeblock></div>
@@ -2645,7 +2701,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>By default, this setting is <code v-pre>true</code>, meaning the filter component is displayed. If set to <code v-pre>false</code>, the filter component will be hidden, allowing for a more streamlined sidebar layout. This option can be useful for simplifying the user interface in projects where filtering topics is not necessary.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Hide Filter component</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">showSidebarFilter: false</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">showSidebarFilter: false</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
@@ -2667,7 +2723,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>A list of code block reference language strings to enable line numbering on. Default is <code v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for <code v-pre>js</code> and <code v-pre>json</code> code blocks site wide</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">snippets:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">snippets:
   lineNumbers:
     - js
     - json</code></pre>
@@ -2675,14 +2731,14 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>Configuring the <code v-pre>&quot;*&quot;</code> wildcard will enable line numbering for <strong>all</strong> code block types, including code blocks with no explicit reference language.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for all code blocks site wide</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">snippets:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">snippets:
   lineNumbers:
     - *</code></pre>
 </doc-codeblock></div>
 <p>Enabling line numbering site wide on code blocks with no explicit reference language is configured with the none <code v-pre>&quot;none&quot;</code> specifier.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for all unspecified code blocks site wide</div>
-<pre class="language-yaml"><code v-pre class="language-yaml">snippets:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">snippets:
   lineNumbers:
     - none</code></pre>
 </doc-codeblock></div>
@@ -2707,7 +2763,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>The default is <code v-pre>true</code>.</p>
 <p>The following sample demonstrates how to prevent the default web browser from opening during <code v-pre>retype start</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">start:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">start:
   open: false</code></pre>
 </doc-codeblock></div>
 <p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code v-pre>retype start -n</code> or <code v-pre>retype start --no-open</code> will also prevent the default web browser from being opened.</p>
@@ -2723,7 +2779,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>The default is <code v-pre>false</code>.</p>
 <p>The following sample demonstrates how to start your project in <em>Pro mode</em> and trial the <a href="/pro/">Retype Pro</a> features:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">start:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">start:
   pro: true</code></pre>
 </doc-codeblock></div>
 <p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code v-pre>retype start --pro</code> will also start the project in Pro mode.</p>
@@ -2745,7 +2801,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>enabled : <code v-pre>boolean</code></template>
 <p>A project-wide option to enable or disable the Retype content templating engine. Default is <code v-pre>true</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">templating:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
   enabled: true # Set to false to disable</code></pre>
 </doc-codeblock></div>
 <p>The templating engine can also be disabled on a per-page basis by setting <code v-pre>templating: false</code> in the page metadata.</p>
@@ -2761,7 +2817,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>Specifies if Liquid syntax <code v-pre>{% ... %}</code> is enabled. If <code v-pre>liquid: true</code> is set, Retype is incompatible with GitBook style of component configuration.</p>
 <p>Default is <code v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">templating:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
   liquid: false # Set to true to enable</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2787,7 +2843,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>The heading depth to include in the right Table of Contents.</p>
 <p>The default is <code v-pre>2-3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">toc:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">toc:
   depth: 2-3</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>toc</code> can be configured at the Project or Page levels.</p>
@@ -2844,7 +2900,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>label : <code v-pre>string</code></template>
 <p>A custom label for the top of the Table of Contents column.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">toc:
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">toc:
   label: On this page</code></pre>
 </doc-codeblock></div>
 </doc-panel>
@@ -2859,25 +2915,25 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>url : <code v-pre>string</code></template>
 <p>The base URL of your website.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
 </doc-codeblock></div>
 <p>The <code v-pre>url</code> can also be a subdomain.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">url: docs.example.com</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: docs.example.com</code></pre>
 </doc-codeblock></div>
 <p>If you deploy your Retype generated website into the subfolder of another website, add the subfolder in the <code v-pre>url</code>. For example, if the website will be available at <code v-pre>https://example.com/docs</code>, add that <code v-pre>docs</code> folder name to the <code v-pre>url</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">url: example.com/docs</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: example.com/docs</code></pre>
 </doc-codeblock></div>
 <p>If no protocol is supplied, such as <code v-pre>https</code> or <code v-pre>http</code>, Retype will assume <code v-pre>https</code>. A protocol can be explicitly defined by passing in the <code v-pre>url</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">url: http://example.com/docs/</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: http://example.com/docs/</code></pre>
 </doc-codeblock></div>
 <p>Another common scenario for setting a <code v-pre>url</code> is when using <a href="/guides/github-actions/">GitHub Pages</a> <strong>without</strong> a custom <strong>CNAME</strong>.</p>
 <p>For instance, if your GitHub organization was <code v-pre>CompanyX</code> and your repo was named <code v-pre>docs</code>, the URL to your GitHub Pages hosted website would be <code v-pre>https://companyx.github.io/docs/</code>.</p>
 <p>Retype needs to know where your website will be hosted, so the <code v-pre>url</code> configuration for the above scenario would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">url: companyx.github.io/docs</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: companyx.github.io/docs</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
@@ -2922,7 +2978,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
-                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
                                         <a href="/tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
@@ -2936,15 +2992,15 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
-                            <footer class="clear-both">
+                            <footer id="retype-content-footer" class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
-                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/project.md" target="_blank" rel="noopener">
+                                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/project.md" target="_blank" rel="noopener">
                                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>Edit this page</span>
                                     </a>
                                 </div>
                             
-                                <nav class="print:hidden flex mt-14">
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
                                         <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/cli/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
@@ -2968,9 +3024,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                             </footer>
                         </main>
                 
-                        <div class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
+                        <div id="retype-page-footer" class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
                             <footer class="flex flex-wrap items-center justify-between print:justify-center">
-                                <div class="print:hidden">
+                                <div id="retype-footer-links" class="print:hidden">
                                     <ul class="flex flex-wrap items-center text-sm">
                                         <li>
                                             <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/about/">
@@ -2994,7 +3050,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span></p></div>
+                                <div id="retype-copyright" class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span></p></div>
                             </footer>
                         </div>
                     </div>
@@ -3021,7 +3077,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     </div>
 
 
-    <div id="docs-overlay-target"></div>
+    <div id="retype-overlay-target"></div>
 
     <script data-cfasync="false">window.__DOCS__ = { "title": "Project", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 2345, tocLabel: "On this page" }</script>
 
