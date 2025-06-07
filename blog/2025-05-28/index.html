@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802620786285">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802624801760">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.0-preview">
@@ -37,15 +37,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.10.0-preview.802620786285" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.10.0-preview.802624801760" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802620786285" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802624801760" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.10.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802620786285" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802620786285" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802624801760" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802624801760" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.10.0-preview.802620786285" rel="stylesheet">
+    <link href="/static/styles.css?v=3.10.0-preview.802624801760" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -463,6 +463,25 @@ How do I configure my documentation site?
     </h2>
 </doc-anchor-target>
 <p>Set your project&#x27;s default color scheme with the new <code v-pre>scheme</code> configuration. See <a href="/configuration/project/#scheme">docs</a>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>This feature is a <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>Pro</span>
+</span> only feature and a Retype <a href="/pro/">key</a> is required to enable.</p>
+        </div>
+    </div>
+</div>
 <p>The <code v-pre>scheme</code> configuration allows you to control the default color mode (<strong>light</strong> or <strong>dark</strong>) for your Retype generated website. By default, Retype will automatically match the visitor&#x27;s system preference, but now you can explicitly set the site to start in either <code v-pre>dark</code> or <code v-pre>light</code> mode.</p>
 <p>Add the following to your <code v-pre>retype.yml</code> file:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -527,7 +546,7 @@ How do I configure my documentation site?
                         
                             <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                 <div class="w-1/2">
-                                    <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/blog/2025-06-09/">
+                                    <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/blog/2025-06-09/">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>
                                             <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Newer</span>
@@ -537,6 +556,13 @@ How do I configure my documentation site?
                                 </div>
                         
                                 <div class="w-1/2">
+                                    <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/blog/2025-05-04/">
+                                        <span>
+                                            <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Older</span>
+                                            <span class="block mt-1">What's New in Retype v​3.​8</span>
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                    </a>
                                 </div>
                             </nav>
                         </footer>
