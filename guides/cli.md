@@ -81,11 +81,11 @@ Options:
 ```
 
 !!!danger
-While it is technically possible to host your website publicly using `retype start` and the web server built into Retype, **DON'T DO IT**.
+While it is technically possible to host your website publicly using `retype start` on your own web server hardware, **DON'T DO IT**.
 
-You should use a dedicated website hosting service, such as [GitHub Pages](/hosting/github-pages.md), [Netlify](https://www.netlify.com/), [Cloudflare](/hosting/cloudflare.md), or absolutely any other web hosting service.
+You should use a dedicated website hosting service, web server, or VPS service. Hosting options include, [[GitHub Pages]], [[Netlify]], [[Cloudflare]], or absolutely any other web hosting or VPS service.
 
-If you _really really really_ want to try public hosting using the built in web server, use [`retype serve`](#retype-serve).
+If you _really really really_ want to try public self-hosting using the built in web server, use [`retype serve`](#retype-serve).
 !!!
 
 ---
