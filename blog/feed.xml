@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog</title>
+    <link>https://retype.com/blog/</link>
+    <description>Blog</description>
+    <copyright>© Copyright 2025 - Retype | All rights reserved | Made in Canada 🇨🇦</copyright>
+    <lastBuildDate>Mon, 09 Jun 2025 00:00:00 GMT</lastBuildDate>
+    <generator>https://retype.com</generator>
+    <atom:link rel="self" type="application/rss+xml" href="https://retype.com/blog/feed.xml" />
+    <image>
+      <title>Blog</title>
+      <link>https://retype.com/blog/</link>
+      <url>https://retype.com/favicon.ico</url>
+    </image>
+    <item>
+      <title>What's New in Retype v3.10</title>
+      <guid isPermaLink="true">https://retype.com/blog/2025-06-09/</guid>
+      <description>We're excited to share the latest release of Retype, packed with features that make documentation more flexible and powerful.</description>
+      <author>geoff@retype.com (@geoffreymcgill)</author>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
