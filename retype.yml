@@ -57,9 +57,9 @@ links:
     link: /pro/pro.md
     icon: verified
 
-  - text: Blog
+  - text: Blog & News
     link: /blog/
-    icon: pencil
+    icon: rss
 
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
