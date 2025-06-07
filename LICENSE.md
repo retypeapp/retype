@@ -64,7 +64,7 @@ outside the Organization on whose behalf you have undertaken this license. We re
 terminate Your License at any time in Our absolute and sole discretion. Without the purchase and
 inclusion of a key, the Software may contain restricted functionality, which from
 time-to-time may differ in its limitations. If you wish to remove these restrictions, you are
-required to purchase a Retype key; otherwise you must leave this limitation intact and not
+required to purchase a Retype Key; otherwise you must leave this limitation intact and not
 attempt to modify or circumvent it in any way.
 
 In addition to the other terms contained herein, in the event You have downloaded or received beta
@@ -85,11 +85,7 @@ IS ENTIRELY AT YOUR OWN RISK. WE ARE LICENSING THE SOFTWARE ON AN "AS IS" BASIS 
 AND WE DISCLAIM ANY WARRANTY OR LIABILITY TO YOU OF ANY KIND.
 
 You may modify the "Sample Code" solely for the purposes of designing, developing and testing Your
-own Applications. However, You are permitted to use, copy and redistribute Your modified Sample
-Code only if all of the following conditions are met: (a) You include Our copyright notice (if any)
-with Your Application, including every location in which any other copyright notice appears in such
-Application; and (b) You do not otherwise use Our name, logos or other of Our trademarks to market
-Your Application, unless otherwise agree by Us in writing.
+own Applications.
 
 ## 3. OWNERSHIP
 
@@ -98,10 +94,6 @@ property rights inherent in or relating to the Software, which include, but are 
 copyright, patent rights, all rights in relation to registered and unregistered trademarks
 (including service marks), confidential information (including trade secrets and know-how) and all
 rights other than those expressly granted by this Agreement.
-
-We may provide You with source code so that You can create Modifications and Applications. While You
-retain all rights to any original work authored by You as part of the Modifications, We continue to
-own all copyright and other intellectual property rights in the Software.
 
 You must not remove, obscure or interfere with any copyright, acknowledgment, attribution,
 trademark, warning or disclaimer statement affixed to, incorporated in or otherwise applied in
@@ -113,21 +105,11 @@ You may not redistribute the Software or Modifications other than by including t
 portion thereof within Your Application. You may not redistribute the Software or Modifications as
 part of any Application that can be described as a development toolkit or library, an application
 builder, a website builder, or any Application that is intended for use by software, application, or
-website developers or designers. You may not redistribute any part of the Software documentation.
-You may not change or remove the copyright notice from any of the files included in the Software or
-Modifications.
+website developers or designers. You may not change or remove the copyright notice from any of the 
+files included in the Software or Modifications.
 
-UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE FOR AN APPLICATION THAT IS INTENDED FOR SOFTWARE OR
-APPLICATION DEVELOPMENT PURPOSES.
-
-UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE (INCLUDING WITHOUT LIMITATION THE SOURCE CODE
-THEREOF) AS THE BASIS FOR OR IN CONNECTION WITH A PRODUCT THAT CONTAINS THE SAME, OR SUBSTANTIALLY
-THE SAME, FUNCTIONALITY AS THE SOFTWARE.
-
-You are required to ensure that the Software is not reused by or with any applications other than
-those with which You distribute it as permitted herein. For example, if You install the Software on
-a customer's server, that customer is not permitted to use the Software independently of Your
-Application, and must be informed as such.
+UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE AS THE BASIS FOR OR IN CONNECTION WITH A PRODUCT 
+THAT CONTAINS THE SAME, OR SUBSTANTIALLY THE SAME, FUNCTIONALITY AS THE SOFTWARE.
 
 ## 5. TERMINATION
 
