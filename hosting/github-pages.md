@@ -3,6 +3,7 @@ icon: mark-github
 tags:
   - guide
   - hosting
+  - github
 ---
 # GitHub Pages
 
@@ -64,7 +65,7 @@ If your GitHub organization name was `CompanyX` and your repo name was `Docs`, y
 url: companyx.github.io/docs/
 ```
 
-### Custom domain
+## Custom domain
 
 Instead of using the `github.io` domain, it is possible to configure GitHub Pages to use a custom domain name or subdomain name.
 
