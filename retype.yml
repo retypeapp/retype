@@ -53,9 +53,9 @@ edit:
   repo: github.com/retypeapp/retype
 
 links:
-  - text: Retype Pro
+  - text: Pro Pricing
     link: /pro/pro.md
-    icon: heart
+    icon: verified
 
   - text: Blog
     link: /blog/

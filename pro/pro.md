@@ -1,5 +1,5 @@
 ---
-icon: heart
+icon: verified
 order: 2000
 ---
 # Retype Pro
@@ -54,7 +54,7 @@ Yes. Use the command `retype start --pro` to start your project instead of `rety
 
 Or, add the following `pro: true` config to your project `retype.yml` file:
 
-```yml
+```yaml
 start:
   pro: true
 ```
