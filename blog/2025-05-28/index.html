@@ -11,26 +11,29 @@
     <meta name="generator" content="Retype 3.10.0-preview">
 
     <!-- Primary Meta Tags -->
-    <title>Image alignment demo - Write On! with Retype</title>
-    <meta name="title" content="Image alignment demo - Write On! with Retype">
-    <meta name="description" content="Please see image alignment docs for more details.">
+    <title>What&#39;s New in Retype v3.9 - Write On! with Retype</title>
+    <meta name="title" content="What's New in Retype v3.9 - Write On! with Retype">
+    <meta name="description" content="Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print...">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://retype.com/components/image-alignment-demo/">
+    <link rel="canonical" href="https://retype.com/blog/2025-05-28/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://retype.com/components/image-alignment-demo/">
-    <meta property="og:title" content="Image alignment demo - Write On! with Retype">
-    <meta property="og:description" content="Please see image alignment docs for more details.">
-    <meta property="og:image" content="https://retype.com/static/sample.jpg">
+    <meta property="og:url" content="https://retype.com/blog/2025-05-28/">
+    <meta property="og:title" content="What's New in Retype v3.9 - Write On! with Retype">
+    <meta property="og:description" content="Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print...">
+    <meta property="og:image" content="https://retype.com/static/blog/2025-05-28.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://retype.com/components/image-alignment-demo/">
-    <meta property="twitter:title" content="Image alignment demo - Write On! with Retype">
-    <meta property="twitter:description" content="Please see image alignment docs for more details.">
-    <meta property="twitter:image" content="https://retype.com/static/sample.jpg">
+    <meta property="twitter:url" content="https://retype.com/blog/2025-05-28/">
+    <meta property="twitter:title" content="What's New in Retype v3.9 - Write On! with Retype">
+    <meta property="twitter:description" content="Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print...">
+    <meta property="twitter:image" content="https://retype.com/static/blog/2025-05-28.png">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Blog >> Feed" href="https://retype.com/blog/feed.xml">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -39,6 +42,7 @@
     <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802620786285" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.10.0-preview" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802620786285" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802620786285" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
     <link href="/static/styles.css?v=3.10.0-preview.802620786285" rel="stylesheet">
@@ -259,8 +263,16 @@
                                         </svg>
                                     </li>
                                     <li class="pr-4">
-                                        <a href="/components/" class="pr-4">
-                                            Components
+                                        <a href="/blog/" class="pr-4">
+                                            Blog
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                        </svg>
+                                    </li>
+                                    <li class="pr-4">
+                                        <a href="/blog/2025-05-28/" class="pr-4">
+                                            What's New in Retype v​3.​9
                                         </a>
                                     </li>
                                 </ol>
@@ -268,88 +280,236 @@
                 
                             <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<doc-anchor-target id="image-alignment-demo" class="break-words">
+<doc-anchor-target id="whats-new-in-retype-v39" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#image-alignment-demo">#</doc-anchor-trigger>
-        <span>Image alignment demo</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#whats-new-in-retype-v39">#</doc-anchor-trigger>
+        <span>What&#x27;s New in Retype v3.9</span>
     </h1>
 </doc-anchor-target>
-<p>Please see <a href="/components/image/#alignment-options">image alignment</a> docs for more details.</p>
-<doc-anchor-target id="center-default">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#center-default">#</doc-anchor-trigger>
-        <span>Center (default)</span>
-    </h3>
-</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <a href="https://github.com/retypeapp"><img class="object-cover" src="https://www.gravatar.com/avatar/b310802dddbcef37ee2e14abbdc25cfa?d=mp"></a>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350"><a href="https://github.com/retypeapp">@geoffreymcgill</a></div>
+        </div>
+    </div>
+    <div class="mx-2">&#9679;</div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-05-28</span></div>
+</div>
+
 <p><figure class="content-center">
-    <img src="/static/sample.jpg" alt="center alignment" />
-    <figcaption class="caption">center alignment</figcaption>
+    <img src="/static/blog/2025-05-28.png" alt="" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<doc-anchor-target id="left">
+<p>Retype v3.9 brings improvements to <a href="/components/callout/">callout</a> components, broader syntax features to support other systems, enhanced image handling, and better print functionality. This release focuses on making Retype more compatible with other documentation platforms while adding powerful new features.</p>
+<doc-anchor-target id="new-question-callout">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-question-callout">#</doc-anchor-trigger>
+        <span>New <code v-pre>question</code> Callout</span>
+    </h2>
+</doc-anchor-target>
+<p>Meet the new <code v-pre>question</code> <a href="/components/callout/">callout</a> variant, perfect for FAQ sections, troubleshooting guides, or any content that poses questions to readers. See <a href="/components/callout/">docs</a>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!!question Common Question
+How do I configure my documentation site?
+!!!</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-purple-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-purple-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11ZM22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11Z"></path>
+                    <path d="M8.89368 5.54722C9.70794 5.06874 10.665 4.8935 11.5958 5.05308C12.5267 5.21276 13.3713 5.6968 13.9796 6.41929C14.5877 7.14169 14.9212 8.0561 14.92 9.00035L14.9074 9.28062C14.7798 10.6552 13.7345 11.5758 12.9747 12.0824C12.5393 12.3727 12.1107 12.5857 11.795 12.7259C11.6358 12.7967 11.5011 12.8503 11.4044 12.8871C11.3561 12.9055 11.3167 12.9199 11.2882 12.93C11.2741 12.9351 11.2628 12.9397 11.254 12.9427C11.2498 12.9442 11.2462 12.9457 11.2433 12.9466C11.242 12.9471 11.2404 12.9473 11.2394 12.9476L11.2374 12.9486H11.2365L11.1378 12.9759C10.6432 13.087 10.1346 12.8071 9.97083 12.3158C9.79672 11.7926 10.0791 11.2264 10.6017 11.0511V11.0521L10.6036 11.0511C10.6063 11.0502 10.6113 11.0487 10.6183 11.0462C10.6336 11.0408 10.6591 11.0316 10.6925 11.0189C10.7599 10.9932 10.8606 10.953 10.9825 10.8988C11.2293 10.7891 11.551 10.6279 11.8654 10.4183C12.5548 9.95872 12.9198 9.46936 12.92 9.00035V8.9984L12.9122 8.82261C12.8768 8.41362 12.7165 8.02363 12.4503 7.70738C12.1461 7.34604 11.7235 7.10364 11.2579 7.02379C10.7925 6.944 10.3135 7.03158 9.90638 7.27086C9.49929 7.51011 9.1901 7.88601 9.03333 8.3314L8.99427 8.42613C8.7787 8.88497 8.24645 9.11555 7.75794 8.94371C7.23704 8.76045 6.96349 8.18924 7.14661 7.66832L7.20911 7.5023C7.53839 6.68391 8.1303 5.99587 8.89368 5.54722Z"></path>
+                    <path d="M11.0098 15L11.1123 15.0049C11.6165 15.0561 12.0098 15.4822 12.0098 16C12.0098 16.5178 11.6165 16.9439 11.1123 16.9951L11.0098 17H11C10.4477 17 10 16.5523 10 16C10 15.4477 10.4477 15 11 15H11.0098Z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Common Question</h5>
+<p>How do I configure my documentation site?</p>
+        </div>
+    </div>
+</div>
+<p>The <code v-pre>question</code> callout features a distinctive question mark icon and styling that makes it stand out from other callout types.</p>
+<doc-anchor-target id="pipe-separator-image-dimensions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pipe-separator-image-dimensions">#</doc-anchor-trigger>
+        <span>Pipe separator image dimensions</span>
+    </h2>
+</doc-anchor-target>
+<p>Set image dimensions using intuitive pipe separated syntax. See <a href="/components/image/#dimensions">docs</a>.</p>
+<p>You can add a custom <code v-pre>width</code> or <code v-pre>width</code> x <code v-pre>height</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![Sample Image|300](/static/sample.jpg)
+![Sample Image|300x200](/static/sample.jpg)</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/sample.jpg" alt="Sample Image" width="300" />
+    <figcaption class="caption">Sample Image</figcaption>
+</figure>
+</p>
+<p>This syntax is cleaner than adding generic attributes and works seamlessly with Retype&#x27;s image processing.</p>
+<p>Generic attributes on images are still supported and provide an alternative syntax for adding a custom <code v-pre>id</code>, <abbr title="Cascading Style Sheet">CSS</abbr> class, dimensions, or any custom attributes:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![My image](image.jpg){.custom-css-class}
+![My image](image.jpg){#custom-id}
+![My image](image.jpg){#custom-id width=&quot;300&quot;}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="printer-friendly">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#printer-friendly">#</doc-anchor-trigger>
+        <span>Printer friendly</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype now includes a comprehensive print stylesheet that help makes your documentation look great printed to PDF or paper.</p>
+<dl>
+<dt>Clean Layout</dt>
+<dd>Removes navigation, sidebars, and interactive elements</dd>
+<dt>Optimised Typography</dt>
+<dd>Adjusts fonts and spacing for print readability</dd>
+<dt>Smart Page Breaks</dt>
+<dd>Prevents awkward breaks in code blocks and tables</dd>
+<dt>URL Display</dt>
+<dd>Shows full URLs for external links in print</dd>
+<dt>High Contrast</dt>
+<dd>Ensures text is readable in black and white</dd>
+</dl>
+<p>Simply use the browser&#x27;s print function <kbd>Ctrl + p</kbd> or <kbd>⌘ + p</kbd> to get professional printed results.</p>
+<doc-anchor-target id="navigation-icon-control">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#navigation-icon-control">#</doc-anchor-trigger>
+        <span>Navigation icon control</span>
+    </h2>
+</doc-anchor-target>
+<p>Adjust your left sidebar navigation visual appearance with the new <code v-pre>nav.icons</code> setting. See <a href="/configuration/project/#icons">docs</a>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>This feature is a <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>Pro</span>
+</span> only feature and a Retype <a href="/pro/">key</a> is required to enable.</p>
+        </div>
+    </div>
+</div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  icons:
+    mode: folders  # Options: all, folders, pages, top, none</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="/static/blog/2025-05-28-nav-icon-mode.png" alt="Show or Hide navigation icons" />
+    <figcaption class="caption">Show or Hide navigation icons</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="modes">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#left">#</doc-anchor-trigger>
-        <span>Left</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#modes">#</doc-anchor-trigger>
+        <span>Modes</span>
     </h3>
 </doc-anchor-target>
-<p><figure class="content-left">
-    <img src="/static/sample.jpg" alt="left align" />
-    <figcaption class="caption caption-float">left align</figcaption>
-</figure>
-</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<doc-anchor-target id="leftplus">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#leftplus">#</doc-anchor-trigger>
-        <span>Leftplus</span>
-    </h3>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>all</code></td>
+<td>Show icons for all navigation items (default)</td>
+</tr>
+<tr>
+<td><code v-pre>folders</code></td>
+<td>Show icons only for folder/category items</td>
+</tr>
+<tr>
+<td><code v-pre>pages</code></td>
+<td>Show icons only for page items</td>
+</tr>
+<tr>
+<td><code v-pre>top</code></td>
+<td>Show icons only for top-level pages and folders, hide for nested items</td>
+</tr>
+<tr>
+<td><code v-pre>none</code></td>
+<td>Hide all navigation icons for a clean, minimal look</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This is particularly useful for documentation sites that prefer a cleaner, text-focused navigation.</p>
+<doc-anchor-target id="dark-or-light-scheme">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-or-light-scheme">#</doc-anchor-trigger>
+        <span>Dark or Light scheme</span>
+    </h2>
 </doc-anchor-target>
-<p><figure class="content-leftplus">
-    <img src="/static/sample.jpg" alt="leftplus align" />
-    <figcaption class="caption caption-float">leftplus align</figcaption>
-</figure>
-</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<doc-anchor-target id="right">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#right">#</doc-anchor-trigger>
-        <span>Right</span>
-    </h3>
+<p>Set your project&#x27;s default color scheme with the new <code v-pre>scheme</code> configuration. See <a href="/configuration/project/#scheme">docs</a>.</p>
+<p>The <code v-pre>scheme</code> configuration allows you to control the default color mode (<strong>light</strong> or <strong>dark</strong>) for your Retype generated website. By default, Retype will automatically match the visitor&#x27;s system preference, but now you can explicitly set the site to start in either <code v-pre>dark</code> or <code v-pre>light</code> mode.</p>
+<p>Add the following to your <code v-pre>retype.yml</code> file:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">scheme:
+  mode: dark  # Options: system, dark, light</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>system</code></td>
+<td>(default) Automatically start using the visitor&#x27;s system color scheme preference.</td>
+</tr>
+<tr>
+<td><code v-pre>dark</code></td>
+<td>Start in dark mode.</td>
+</tr>
+<tr>
+<td><code v-pre>light</code></td>
+<td>Start in light mode.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The new <code v-pre>scheme</code> setting gives you control over the initial appearance while still allowing users to switch themes to match their preference.</p>
+<doc-anchor-target id="migration-made-easy">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#migration-made-easy">#</doc-anchor-trigger>
+        <span>Migration made easy</span>
+    </h2>
 </doc-anchor-target>
-<p><figure class="content-right">
-    <img src="/static/sample.jpg" alt="right align" />
-    <figcaption class="caption caption-float">right align</figcaption>
-</figure>
-</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<doc-anchor-target id="rightplus">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rightplus">#</doc-anchor-trigger>
-        <span>Rightplus</span>
-    </h3>
+<p>With universal <a href="/components/callout/">callout</a> syntax support, migrating from other documentation platforms is now seamless. Whether you&#x27;re upgrading from Notion, GitHub, Obsidian, or any other platform, your existing callouts will work immediately in Retype.</p>
+<p>The enhanced image syntax and print support make Retype suitable for both digital and print documentation workflows, while the navigation customization options let you create the exact look you want.</p>
+<doc-anchor-target id="thank-you">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#thank-you">#</doc-anchor-trigger>
+        <span>Thank you!</span>
+    </h2>
 </doc-anchor-target>
-<p><figure class="content-rightplus">
-    <img src="/static/sample.jpg" alt="rightplus align" />
-    <figcaption class="caption caption-float">rightplus align</figcaption>
-</figure>
-</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<doc-anchor-target id="centerplus">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#centerplus">#</doc-anchor-trigger>
-        <span>Centerplus</span>
-    </h3>
-</doc-anchor-target>
-<p><figure class="content-centerplus">
-    <img src="/static/sample-large.jpg" alt="centerplus align" class="w-full" />
-    <figcaption class="caption">centerplus align</figcaption>
-</figure>
-</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-<p>Photo by <a href="https://unsplash.com/@carlosaranda" class="outbound" target="_blank"><span>carlos aranda</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> on <a href="https://unsplash.com/" class="outbound" target="_blank"><span>Unsplash</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>This release represents a major step forward in making Retype the most compatible and feature-rich documentation platform available. We&#x27;re continuing to expand platform compatibility and add new features based on your feedback.</p>
+<p>Try out <code v-pre>v3.9</code> and experiment with the new features, then let us know what you think on <a href="https://x.com/retypeapp" class="outbound" target="_blank"><span>X</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or by opening a GitHub <a href="https://github.com/retypeapp/retype/issues">Issue</a>. Your input helps shape the future of Retype.</p>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
@@ -357,6 +517,29 @@
                             <!-- Required only on API pages -->
                             <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                         </div>
+                        <footer id="retype-content-footer" class="clear-both">
+                            <div class="flex flex-wrap items-center justify-between mt-14">
+                                <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/retypeapp/retype/blob/main/blog/2025-05-28.md" target="_blank" rel="noopener">
+                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                    <span>Edit this page</span>
+                                </a>
+                            </div>
+                        
+                            <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                                <div class="w-1/2">
+                                    <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/blog/2025-06-09/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        <span>
+                                            <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Newer</span>
+                                            <span class="block mt-1">What's New in Retype v​3.​10</span>
+                                        </span>
+                                    </a>
+                                </div>
+                        
+                                <div class="w-1/2">
+                                </div>
+                            </nav>
+                        </footer>
                     </main>
                 </div>
 
@@ -411,7 +594,7 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Image alignment demo", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "What's New in Retype v3.9", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>

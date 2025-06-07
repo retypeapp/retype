@@ -20,5 +20,12 @@
       <author>geoff@retype.com (@geoffreymcgill)</author>
       <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
     </item>
+    <item>
+      <title>What's New in Retype v3.9</title>
+      <guid isPermaLink="true">https://retype.com/blog/2025-05-28/</guid>
+      <description>Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print...</description>
+      <author>geoff@retype.com (@geoffreymcgill)</author>
+      <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
+    </item>
   </channel>
 </rss>
