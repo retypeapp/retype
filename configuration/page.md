@@ -427,7 +427,7 @@ With the above sample, the following meta tags will be generated:
 
 Navigation configuration options to control the behavior of the left sidebar navigation.
 
-### mode
+### mode{#nav-mode}
 
 This config is Retype [!badge PRO](/pro/pro.md) only.
 
