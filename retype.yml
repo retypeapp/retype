@@ -57,6 +57,10 @@ links:
     link: /pro/pro.md
     icon: heart
 
+  - text: Blog
+    link: /blog/
+    icon: pencil
+
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
     icon: comment-discussion
