@@ -94,7 +94,11 @@ If your project requires a Retype key, that key can be configured by adding a [`
 ```
 }%}
 
-The following demonstrates a basic template to use for a workflow configuration file, if including the key:
+!!!tip New Free GitHub Community Key
+Did you know there is a free Retype Pro Community Key for GitHub Pages hosting? Check it out on the [[Community]] page. 
+!!!
+
+The following sample demonstrates a basic template to use for a workflow configuration file, if including the `RETYPE_KEY`:
 
 ```yml .github/workflows/retype-action.yml
 name: Publish Retype powered website to GitHub Pages
