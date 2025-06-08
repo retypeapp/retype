@@ -19,6 +19,7 @@
       <description>We're excited to share the latest release of Retype, packed with features that make documentation more flexible and powerful.</description>
       <author>geoff@retype.com (@geoffreymcgill)</author>
       <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
     </item>
     <item>
       <title>New GitHub Pages Community Key</title>
@@ -26,6 +27,7 @@
       <description>All projects should have access to professional-grade documentation, no matter their budget. Starting today, the </description>
       <author>geoff@retype.com (@geoffreymcgill)</author>
       <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/news/">news</category>
     </item>
     <item>
       <title>What's New in Retype v3.9</title>
@@ -33,6 +35,7 @@
       <description>Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print...</description>
       <author>geoff@retype.com (@geoffreymcgill)</author>
       <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
     </item>
     <item>
       <title>What's New in Retype v3.8</title>
@@ -40,6 +43,7 @@
       <description>Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features.</description>
       <author>geoff@retype.com (@geoffreymcgill)</author>
       <pubDate>Sun, 04 May 2025 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
     </item>
   </channel>
 </rss>
