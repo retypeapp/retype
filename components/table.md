@@ -90,3 +90,37 @@ Name   | Value {.compact}
 ---    | ---
 Item 1 | Blue
 Item 2 | Green
+
+## Nowrap
+
+The `whitespace-nowrap` class prevents text within table cells from wrapping to the next line, keeping all content on a single line. This is useful for maintaining the layout of content that should stay on one line, such as code snippets or long strings.
+
+```md
+{.whitespace-nowrap}
+Name | Long Message | Description
+--- | --- | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item | Another description
+```
+
+{.whitespace-nowrap}
+Name | Long Message | Description
+--- | --- | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item | Another description
+
+You can also apply multiple custom CSS classes to combine formatting options:
+
+```md
+{.whitespace-nowrap .compact}
+Name | Long Message | Description
+--- | --- | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item | Another description
+```
+
+{.whitespace-nowrap .compact}
+Name | Long Message | Description
+--- | --- | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item | Another description
