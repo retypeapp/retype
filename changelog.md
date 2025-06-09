@@ -11,11 +11,17 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 !!!
 
 ---
-## v3.10.0-preview [!badge text="NEXT" variant="info"]
 
-The `v3.10.0` final release is scheduled for 2025-06-09.
+## v3.11.0 [!badge text="NEXT" variant="info"]
 
-There were 13 changes in Retype `3.10.0-preview`.
+Scheduled for Q3-2025.
+
+---
+## v3.10.0 [!badge text="LATEST" variant="info"]
+
+Released: [2025-06-08](https://github.com/retypeapp/retype/releases/tag/v3.10.0)
+
+There were 13 changes in Retype `3.10.0`.
 
 +++ New :icon-shield-check:
 
@@ -41,7 +47,7 @@ There were 13 changes in Retype `3.10.0-preview`.
 
 +++
 
-## v3.9.0 [!badge text="LATEST" variant="info"]
+## v3.9.0
 
 Released: [2025-05-28](https://github.com/retypeapp/retype/releases/tag/v3.9.0)
 
