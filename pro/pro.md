@@ -4,6 +4,8 @@ order: 2000
 ---
 # Retype Pro
 
+![](/static/retype-hero-pro.png){.rounded-lg}
+
 :::text-center
 Take your projects to the next level with **Retype Pro** and **Enterprise**.
 
