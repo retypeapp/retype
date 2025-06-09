@@ -22,7 +22,7 @@ With [Retype Pro](/pro/pro.md), you get the following additional features:
 
 Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](/guides/getting-started.md) guide for detailed installation instructions.
 
-If you ain't got no time for that, just run the following two commands on a folder that contains at least one **.md** file, depending on your preferred [package manager](/guides/getting-started.md#prerequisites).
+If you ain't got no time for that, just run the following two commands on a folder that contains at least one **.md** file, depending on your preferred [package manager](/guides/installation.md#step-1-prerequisites).
 
 +++ npm
 ```
