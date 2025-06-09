@@ -30,33 +30,7 @@ This is a paragraph.
 We can build on the above sample by adding more content and formatting, such as **bold** text, images, and lists.
 
 ```md
-# Page title here
-
-This is a paragraph.
-
-Both [internal](README.md) and [external](https://example.com) links work.
-
-![Your logo](logo.png)
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
----
-
-## Lists
-
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-> "Cool! This is a quotation."
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!
+{{ include "snippets/markdown-sample" }}
 ```
 
 At a very basic level, to create a new page for your Retype project, do the following:
