@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802745865451">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0-preview.802747680110">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.0-preview">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.10.0-preview.802745865451" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.10.0-preview.802747680110" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802745865451" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.0-preview.802747680110" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.10.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802745865451" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802745865451" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.0-preview.802747680110" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.0-preview.802747680110" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.10.0-preview.802745865451" rel="stylesheet">
+    <link href="/static/styles.css?v=3.10.0-preview.802747680110" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -432,6 +432,74 @@ Item 2 | Green</code></pre>
 <tr>
 <td>Item 2</td>
 <td>Green</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="nowrap">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nowrap">#</doc-anchor-trigger>
+        <span>Nowrap</span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>whitespace-nowrap</code> class prevents text within table cells from wrapping to the next line, keeping all content on a single line. This is useful for maintaining the layout of content that should stay on one line, such as code snippets or long strings.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.whitespace-nowrap}
+Name | Long Message | Description
+--- | --- | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item | Another description</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable whitespace-nowrap">
+<thead>
+<tr>
+<th>Name</th>
+<th>Long Message</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item 1</td>
+<td>This is an extra long message that should not wrap in the table</td>
+<td>This is a description</td>
+</tr>
+<tr>
+<td>Item 2</td>
+<td>Another long content item</td>
+<td>Another description</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You can also apply multiple custom <abbr title="Cascading Style Sheet">CSS</abbr> classes to combine formatting options:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.whitespace-nowrap .compact}
+Name | Long Message | Description
+--- | --- | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item | Another description</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="whitespace-nowrap compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Long Message</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item 1</td>
+<td>This is an extra long message that should not wrap in the table</td>
+<td>This is a description</td>
+</tr>
+<tr>
+<td>Item 2</td>
+<td>Another long content item</td>
+<td>Another description</td>
 </tr>
 </tbody>
 </table>
