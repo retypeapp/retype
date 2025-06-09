@@ -26,3 +26,21 @@ retype wallet --add dEVPBhEAT01MR0NBQ0xBT0VHR0NDR0dGT09PRUFDTEZARE9PT09FRERET15a
 ```
 
 Please review all options for [[key setup]].
+
+## :icon-heart: Sponsors
+
+Can your organization purchase a Retype [Enterprise](/pro/pro.md) key for any of the following hosting services? If yes, the Retype community would love you and we can list your organization in the Community page as the sponsor.
+
+Feel free to [contact us](mailto:hello@retype.com) if you have any questions or other community sponsorship proposals.
+
+{.whitespace-nowrap}
+Service | Domain | Sponsor
+--- | --- | ---
+[[GitHub Pages]] | `*.github.io` | [Retype](https://retype.com)
+[AWS CloudFront](https://aws.amazon.com/cloudfront/) | `*.cloudfront.net` | 
+[CloudFlare Pages](/hosting/cloudflare.md) | `*.pages.dev` | 
+[GitLab Pages](/hosting/gitlab-pages.md) | `*.gitlab.io` | 
+[Google Firebase](https://firebase.google.com/) | `*.web.app` and<br> `*.firebaseapp.com` | 
+[[Netlify]] | `*.netlify.app` | 
+[Render](https://render.com/) | `*.onrender.com` | 
+[Vercel](https://vercel.com/) | `*.vercel.app` | 
