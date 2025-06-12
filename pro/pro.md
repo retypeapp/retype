@@ -16,24 +16,24 @@ Build more pages and unlock powerful **Pro** only features.
 | ---    | :---: | :---: | :---:      |
 |        | [!button text="Install" variant="ghost"](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/00g7umbDN3mie2sfZm) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $749 |
-| Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle: | 3 years | 3 years |
+| Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years | 3 years |
 | Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | Unlimited | 1 | Unlimited&nbsp;^[*](#what-is-a-project)^ |
 | Max pages per project [:icon-question:](#what-is-a-project) | 100 | Unlimited | Unlimited |
 | Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: |
-| Commercial use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: |
-| Open source use | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: |
-| Free upgrades | :icon-check-circle: | :icon-check-circle: | :icon-check-circle: |
-| Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Stacked](/configuration/project.md#nav) nav mode | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] Color [scheme](/configuration/project.md#scheme) mode (dark vs light) | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Table of Contents](/configuration/project.md#toc) | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] Nav [icon](/configuration/project.md#icons) customization | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation customization | :icon-x: | :icon-check-circle: | :icon-check-circle: |
-| Future Retype Pro only features | :icon-x: | :icon-check-circle: | :icon-check-circle: |
+| Commercial use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| Open source use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| Free upgrades | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Stacked](/configuration/project.md#nav) nav mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] Color [scheme](/configuration/project.md#scheme) mode (dark vs light) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Table of Contents](/configuration/project.md#toc) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] Nav [icon](/configuration/project.md#icons) customization | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation customization | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| Future Retype Pro only features | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 
 ## :icon-question: Questions & Answers
 
