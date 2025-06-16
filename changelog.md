@@ -26,7 +26,7 @@ There were 4 changes in Retype `3.10.1`.
 
 +++ Improved :icon-thumbsup:
 
-1. Added rounded css classes from `xl` to `4xl` and `full`
+1. Added rounded css classes including `rounded-xl`, `rounded-2xl`, `rounded-3xl`, `rounded-4xl` and `rounded-full`
 
 +++ Fixed :icon-bug:
 
