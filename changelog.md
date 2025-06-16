@@ -17,7 +17,28 @@ Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retyp
 Scheduled for Q3-2025.
 
 ---
-## v3.10.0 [!badge text="LATEST" variant="info"]
+
+## v3.10.1 [!badge text="LATEST" variant="info"]
+
+Released: [2025-06-16](https://github.com/retypeapp/retype/releases/tag/v3.10.1)
+
+There were 4 changes in Retype `3.10.1`.
+
++++ Improved :icon-thumbsup:
+
+1. Added rounded css classes from `xl` to `4xl` and `full`
+
++++ Fixed :icon-bug:
+
+1. Fixed build error with `> [!hint]` callout
+1. Fixed lists with lowercase letters and roman numerals not rendered correctly, see [#760](https://github.com/retypeapp/retype/discussions/760)
+1. Fixed main layout background color that does not match sidebar background color, see [#759](https://github.com/retypeapp/retype/discussions/759)
+
++++
+
+---
+
+## v3.10.0
 
 Released: [2025-06-08](https://github.com/retypeapp/retype/releases/tag/v3.10.0)
 
