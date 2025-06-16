@@ -30,8 +30,8 @@ There were 4 changes in Retype `3.10.1`.
 
 +++ Fixed :icon-bug:
 
-1. Fixed build error with `> [!hint]` callout
-1. Fixed lists with lowercase letters and roman numerals not rendered correctly, see [#760](https://github.com/retypeapp/retype/discussions/760)
+1. Fixed build error with `> [!hint]` [callout](/components/callout.md#github-alerts)
+1. Fixed lists with [lowercase](/components/list.md#lowercase-letters) letters and [roman numerals](/components/list.md#lowercase-roman-numerals) not rendered correctly, see [#760](https://github.com/retypeapp/retype/discussions/760)
 1. Fixed main layout background color that does not match sidebar background color, see [#759](https://github.com/retypeapp/retype/discussions/759)
 
 +++
