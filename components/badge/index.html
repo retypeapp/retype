@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.803413043841">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.803778623580">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.1">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.10.1.803413043841" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.10.1.803778623580" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.1.803413043841" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.10.1.803778623580" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.10.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.1.803413043841" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.1.803413043841" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.10.1.803778623580" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.10.1.803778623580" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.10.1.803413043841" rel="stylesheet">
+    <link href="/static/styles.css?v=3.10.1.803778623580" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -338,7 +338,8 @@
 <thead>
 <tr>
 <th>Variant</th>
-<th>Example</th>
+<th>Text only</th>
+<th>Link</th>
 </tr>
 </thead>
 <tbody>
@@ -347,60 +348,90 @@
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Primary</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Primary</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>secondary</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-6 px-2 text-xs rounded-md">
     <span>Secondary</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 border border-gray-200 hover:border-gray-400 dark:hover:bg-gray-400 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Secondary</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>success</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
     <span>Success</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 border border-green-100 hover:border-green-300 dark:hover:bg-green-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Success</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>danger</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
     <span>Danger</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 border border-red-100 hover:border-red-200 dark:hover:bg-red-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Danger</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>warning</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
     <span>Warning</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 border border-yellow-100 hover:border-yellow-300 dark:hover:bg-yellow-300 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Warning</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>info</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>Info</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Info</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>light</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Light</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent hover:bg-gray-200 dark:hover:bg-dark-300 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Light</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>dark</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white bg-gray-700 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>Dark</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white bg-gray-700 dark:bg-dark-450 hover:bg-gray-600 dark:hover:bg-dark-400 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Dark</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>ghost</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 bg-white border border-gray-300 dark:text-dark-350 dark:border-dark-450 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>Ghost</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 bg-white border border-gray-300 dark:text-dark-350 dark:border-dark-450 dark:bg-dark-450 hover:bg-gray-200 dark:hover:bg-dark-400 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Ghost</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code v-pre>contrast</code></td>
 <td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
     <span>Contrast</span>
 </span></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white hover:bg-gray-600 dark:hover:bg-dark-300 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Contrast</span>
+</doc-anchor-trigger></td>
 </tr>
 </tbody>
 </table>
