@@ -1,13 +1,22 @@
 ---
 icon: log
-templating: false
 ---
 # Changelog
 
-The entire release archive of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) or [NuGet](https://nuget.org/packages/retypeapp).
+The latest release of Retype is `v{{ version }}`.
+
+You can check which version you have installed by running the command [`retype --version`](/guides/cli.md).
+
+The entire release archive of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) and [NuGet](https://nuget.org/packages/retypeapp).
+
+Retype does not have a fixed release cycle:
+
+- Patch releases are released as needed.
+- Minor version releases always contain new features, with a typical time frame of 2 to 4 months in between.
+- Major version releases will be announced well ahead of time and will go through multiple pre-release phases.
 
 !!!
-Need a new feature in Retype? Open an [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
+Do have a suggestion for a new feature in Retype? Please open an [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
 !!!
 
 ---
@@ -115,7 +124,7 @@ There were 16 changes in Retype `3.8.0`.
 1. [!badge PRO](/pro/pro.md) New stack navigation mode for [Project](/configuration/project.md#nav) and [Page](/configuration/page.md#nav) settings, see [#621](https://github.com/retypeapp/retype/issues/621#issuecomment-2848996632)
 1. New Greek and Hebrew language support, see [#730](https://github.com/retypeapp/retype/discussions/730)
 1. New [YouTube](/components/youtube.md) link parsing and embed template generation, see [#51](https://github.com/retypeapp/retype/issues/51)
-1. New support for including a file outside the project root when using `{{ include }}`, see [#734](https://github.com/retypeapp/retype/issues/734)
+1. New support for including a file outside the project root when using {%{`{{ include }}`}%}, see [#734](https://github.com/retypeapp/retype/issues/734)
 1. New WikiLink and image WikiLink syntax support, including building [Obsidian](https://obsidian.md/) vaults
 
 +++ Improved :icon-thumbsup:
