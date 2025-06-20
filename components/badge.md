@@ -36,18 +36,18 @@ With the Badge component, the destination is optional and can be omitted.
 [!badge variant="primary" text="Primary"]
 ```
 
-| Variant | Example |
-| --- | --- |
-| `primary` (default) | [!badge variant="primary" text="Primary"] |
-| `secondary` | [!badge variant="secondary" text="Secondary"] |
-| `success` | [!badge variant="success" text="Success"] |
-| `danger` | [!badge variant="danger" text="Danger"] |
-| `warning` | [!badge variant="warning" text="Warning"] |
-| `info` | [!badge variant="info" text="Info"] |
-| `light` | [!badge variant="light" text="Light"] |
-| `dark` | [!badge variant="dark" text="Dark"] |
-| `ghost` | [!badge variant="ghost" text="Ghost"] |
-| `contrast` | [!badge variant="contrast" text="Contrast"] |
+| Variant | Text only | Link | 
+| --- | --- | --- |
+| `primary` (default) | [!badge variant="primary" text="Primary"] | [!badge variant="primary" text="Primary"](#variant) |
+| `secondary` | [!badge variant="secondary" text="Secondary"] | [!badge variant="secondary" text="Secondary"](#variant) |
+| `success` | [!badge variant="success" text="Success"] | [!badge variant="success" text="Success"](#variant) |
+| `danger` | [!badge variant="danger" text="Danger"] | [!badge variant="danger" text="Danger"](#variant) |
+| `warning` | [!badge variant="warning" text="Warning"] | [!badge variant="warning" text="Warning"](#variant) |
+| `info` | [!badge variant="info" text="Info"] | [!badge variant="info" text="Info"](#variant) |
+| `light` | [!badge variant="light" text="Light"] | [!badge variant="light" text="Light"](#variant) |
+| `dark` | [!badge variant="dark" text="Dark"] | [!badge variant="dark" text="Dark"](#variant) |
+| `ghost` | [!badge variant="ghost" text="Ghost"] | [!badge variant="ghost" text="Ghost"](#variant) |
+| `contrast` | [!badge variant="contrast" text="Contrast"] | [!badge variant="contrast" text="Contrast"](#variant) |
 
 ---
 
