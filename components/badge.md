@@ -33,10 +33,14 @@ With the Badge component, the destination is optional and can be omitted.
 ## Variant
 
 ```md
+// Text only
 [!badge variant="primary" text="Primary"]
+
+// With link
+[!badge variant="primary" text="Primary"](https://retype.com/)
 ```
 
-| Variant | Text only | Link | 
+| Variant | Text only | With link | 
 | --- | --- | --- |
 | `primary` (default) | [!badge variant="primary" text="Primary"] | [!badge variant="primary" text="Primary"](#variant) |
 | `secondary` | [!badge variant="secondary" text="Secondary"] | [!badge variant="secondary" text="Secondary"](#variant) |
