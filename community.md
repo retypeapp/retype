@@ -34,7 +34,7 @@ Can your organization purchase a Retype [Enterprise](/pro/pro.md) key for any of
 Feel free to [contact us](mailto:hello@retype.com) if you have any questions or other community sponsorship proposals.
 
 {.whitespace-nowrap}
-Service | Domain | Sponsor
+Service | Domain | :icon-heart: Sponsor
 --- | --- | ---
 [[GitHub Pages]] | `*.github.io` | [Retype](https://retype.com)
 [AWS CloudFront](https://aws.amazon.com/cloudfront/) | `*.cloudfront.net` | 
