@@ -2,11 +2,13 @@
 label: "Home"
 icon: home
 ---
-# Welcome to Retype
+# Write On! with Retype
 
 ![](/static/retype-hero.png)
 
-[Retype](https://retype.com/) is a static website generator that builds a website based on simple Markdown (.md) text files. Focus on your writing while Retype builds the rest.
+Welcome to [Retype](https://retype.com/)!
+
+Retype is a static website generator that builds a website based on simple Markdown (.md) text files. Focus on your writing while Retype builds the rest.
 
 {.callout}
 > “I don't want to write code to write docs, I just want to write docs.”
