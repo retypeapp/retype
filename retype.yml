@@ -39,9 +39,16 @@ output: .retype
 url: retype.com
 
 branding:
+  # baseColor: "#3D855E" # New theme setting
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
   label: v3.10
+
+theme:
+  base:
+    base-link-weight: 500
+    nav-item-text-active-weight: 700
+    image-rounded: 0.75rem
 
 meta:
   title: " - Write On! with Retype"

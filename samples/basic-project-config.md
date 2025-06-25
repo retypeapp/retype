@@ -29,5 +29,5 @@ footer:
 ```
 }%}
 !!!
-All configurations are optional. If a config is not set, Retype will use default values.
+All settings are optional. If a setting is not set, Retype will use default values.
 !!!
