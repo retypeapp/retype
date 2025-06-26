@@ -14,13 +14,13 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@next
 
       - uses: retypeapp/action-build@next
         env:
           RETYPE_KEY: ${{ secrets.RETYPE_KEY }}
           RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }} # The password is: test
 
-      - uses: retypeapp/action-github-pages@latest
+      - uses: retypeapp/action-github-pages@next
         with:
           update-branch: true

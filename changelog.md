@@ -21,6 +21,23 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 
 ---
 
+## v3.11.1-preview
+
+[!badge text="NEXT" variant="info"]
+
+Released: [2025-06-26](https://github.com/retypeapp/retype/releases/tag/v3.11.1-preview)
+
+Getting info about the 'v3.11.1' milestone: 2 open milestones, failed.
+::error::No milestone matching version: 3.11.1-preview
+- Looked for: v3.11.1)
+- List of available milestones:
+v3.11.0
+v3.12.0
+---
+
+Aborting execution.
+
+---
 ## v3.11.0 [!badge text="NEXT" variant="info"]
 
 Scheduled for Q3-2025.
