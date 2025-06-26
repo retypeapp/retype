@@ -41,20 +41,14 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v3.11
-  # baseColor: "#3D855E" # New theme setting
+  label: v3.11 next
+  #baseColor: "#3D855E" # Try NEW base color theme setting
 
 theme:
   base:
     base-link-weight: 500
     nav-item-text-active-weight: 700
     image-rounded: 0.75rem
-
-    # Fix issue with branding label rendering in v3.11.0-preview
-    # The following 3 lines can be removed as of v3.11.1-preview
-    branding-label-text: "var(--primary-500)"
-    branding-label-bg: "var(--primary-50)"
-    branding-label-border: "var(--primary-300)"
 
 meta:
   title: " - Write On! with Retype"
@@ -101,7 +95,3 @@ footer:
     - text: License
       link: license.md
       icon: shield-check
-
-integrations:
-  crisp:
-    id: 9ec0e13c-1299-4c3f-a5e9-ff39363c6960
