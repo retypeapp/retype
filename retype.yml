@@ -85,7 +85,9 @@ data:
     CSS: Cascading Style Sheet
 
 footer:
-  copyright: "© Copyright {{ year }} - [Retype](https://retype.com/) | All rights reserved | Made in Canada :flag-ca:"
+  # Let's demonstrate the power of Retype templating
+  # by using an include for the footer
+  copyright: "{{ include \"snippets/footer\" }}"
 
   links:
     - text: About

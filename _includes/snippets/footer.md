@@ -1,0 +1,1 @@
+© Copyright {{ date.now.year }} - [Retype](https://retype.com/) | All rights reserved | Made in Canada :flag-ca: | v{{ version }}
