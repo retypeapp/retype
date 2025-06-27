@@ -20,6 +20,12 @@ nav:
   icons:
     mode: pages # Pro key required
 
+theme:
+  base:
+    base-link-weight: 500
+    nav-item-text-active-weight: 700
+    image-rounded: 0.75rem
+
 # New Hub link feature, but not used on retype.com
 # hub:
   # link: https://example.com/
@@ -43,12 +49,6 @@ branding:
   logoDark: /static/retype-logo-dark.svg
   label: v3.11 next
   #baseColor: "#3D855E" # Try NEW base color theme setting
-
-theme:
-  base:
-    base-link-weight: 500
-    nav-item-text-active-weight: 700
-    image-rounded: 0.75rem
 
 meta:
   title: " - Write On! with Retype"
@@ -79,7 +79,7 @@ links:
     target: blank
 
 data:
-  version: "3.11.2-preview"
+  version: "3.11.3-preview"
   abbreviations:
     HTML: Hyper Text Markup Language
     CSS: Cascading Style Sheet
