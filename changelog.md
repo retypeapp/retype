@@ -20,6 +20,17 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 !!!
 
 ---
+## v3.11.0-preview4
+
+[!badge text="NEXT" variant="info"]
+
+Released: [2025-06-28](https://github.com/retypeapp/retype/releases/tag/v3.11.0-preview4)
+
+## Changes in v3.11.0-preview4
+
+This is a prerelease.
+
+---
 ## v3.11.0 [!badge text="NEXT" variant="info"]
 
 Scheduled for Q3-2025.
