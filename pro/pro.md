@@ -14,7 +14,7 @@ Build more pages and unlock powerful **Pro** only features.
 
 | &nbsp; | Free  | Pro   | Enterprise |
 | ---    | :---: | :---: | :---:      |
-|        | [!button text="Install" variant="ghost"](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/00g7umbDN3mie2sfZm) |
+|        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/00g7umbDN3mie2sfZm) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $749 |
 | Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years | 3 years |
 | Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | Unlimited | 1 | Unlimited&nbsp;^[*](#what-is-a-project)^ |
