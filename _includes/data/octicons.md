@@ -1,6 +1,6 @@
 {{~
   octicons_new = [
-    "pause"
+    "sparkle"
   ]
   
   octicons = [ 
@@ -281,6 +281,7 @@
     "smiley",
     "sort-asc",
     "sort-desc",
+    "sparkle",
     "sparkle-fill",
     "sparkles-fill",
     "sponsor-tiers",
