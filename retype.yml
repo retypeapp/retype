@@ -78,7 +78,7 @@ links:
     icon: comment-discussion
     target: blank
 
-  - text: Social # Icon from https://iconmonstr.com
+  - text: Social
     link: https://twitter.com/retypeapp/
     icon: mention
     target: blank
