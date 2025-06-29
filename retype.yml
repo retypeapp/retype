@@ -22,9 +22,14 @@ nav:
 
 theme:
   base:
+    base-color: "#8839ef"
+    base-bg: "#eff1f5"
     base-link-weight: 500
     nav-item-text-active-weight: 700
     image-rounded: 0.75rem
+  dark:
+    base-color: "#ca9ee6"
+    base-bg: "#303446"
 
 # New Hub link feature, but not used on retype.com
 # hub:
