@@ -23,11 +23,19 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 ## Variant
 
 ```md
-[!button variant="primary" text="Primary"]
+// Text only (default Primary variant)
+[!button My Button]
+
+// Text with variant
+[!button variant="base" text="My Button"]
+
+// With link and variant
+[!button variant="primary" text="My Button"](https://retype.com/)
 ```
 
 | Variant | Example |
 | --- | --- |
+| `base` | [!button variant="base" text="Base"] |
 | `primary` (default) | [!button variant="primary" text="Primary"] |
 | `secondary` | [!button variant="secondary" text="Secondary"] |
 | `success` | [!button variant="success" text="Success"] |
@@ -44,9 +52,9 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 ## Corners
 
 ```md
-[!button text="Default"]
-[!button corners="square" text="Square"]
-[!button corners="pill" text="Button Pill"]
+[!button text="Default"](button.md)
+[!button corners="square" text="Square"](button.md)
+[!button corners="pill" text="Button Pill"](button.md)
 ```
 
 | Size | Example |
@@ -60,7 +68,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 ## Size
 
 ```md
-[!button size="m" text="Medium"]
+[!button size="m" text="Medium"](button.md)
 ```
 
 | Size | Example |
@@ -112,8 +120,8 @@ See also the [`links.target`](/configuration/project.md#target) configuration.
 [Octicons](/components/octicons.md) can be used as an icon by settiing the `icon` property with the name of the Octicon.
 
 ```md
-[!button variant="info" icon="person" text="User"]
-[!button variant="primary" icon="paper-airplane" iconAlign="right" text="Send"]
+[!button variant="info" icon="person" text="User"](button.md)
+[!button variant="primary" icon="paper-airplane" iconAlign="right" text="Send"](button.md)
 ```
 
 [!button variant="info" icon="person" text="User" margin="0 8 0 0"]
@@ -124,8 +132,8 @@ See also the [`links.target`](/configuration/project.md#target) configuration.
 Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes.
 
 ```md
-[!button variant="light" icon=":heart:" text="Like"]
-[!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
+[!button variant="light" icon=":heart:" text="Like"](button.md)
+[!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"](button.md)
 ```
 
 [!button variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
@@ -136,7 +144,7 @@ Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.
 Any image file can be used as the `icon`.
 
 ```md
-[!button icon="../static/retype-icon.svg"]
+[!button icon="../static/retype-icon.svg"](button.md)
 ```
 
 [!button icon="../static/retype-icon.svg"]
@@ -149,4 +157,4 @@ The `icon` can also be set with an inline `<svg>` element.
 [!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](button.md)
 ```
 
-[!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"](button.md)
+[!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"]

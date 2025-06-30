@@ -18,7 +18,7 @@ Similar to a [Button](button.md), the Badge component uses the same syntax as a 
 ```
 |||
 
-With the Badge component, the destination is optional and can be omitted.
+With the Badge component, the link is optional and can be omitted.
 
 ||| Demo
 [!badge Badge]
@@ -33,15 +33,19 @@ With the Badge component, the destination is optional and can be omitted.
 ## Variant
 
 ```md
-// Text only
-[!badge variant="primary" text="Primary"]
+// Text only (default Primary variant)
+[!badge My Badge]
 
-// With link
-[!badge variant="primary" text="Primary"](https://retype.com/)
+// Text with variant
+[!badge variant="base" text="My Badge"]
+
+// With link and variant
+[!badge variant="primary" text="My Badge"](https://retype.com/)
 ```
 
 | Variant | Text only | With link | 
 | --- | --- | --- |
+| `base` | [!badge variant="base" text="Base"] | [!badge variant="base" text="Base"](#variant) |
 | `primary` (default) | [!badge variant="primary" text="Primary"] | [!badge variant="primary" text="Primary"](#variant) |
 | `secondary` | [!badge variant="secondary" text="Secondary"] | [!badge variant="secondary" text="Secondary"](#variant) |
 | `success` | [!badge variant="success" text="Success"] | [!badge variant="success" text="Success"](#variant) |

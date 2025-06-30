@@ -54,6 +54,7 @@ Callouts come in nine different flavors which can be specified by passing a `var
 
 | Variant | Color |
 | --- | --- |
+| `base` | Uses `base-color` |
 | `primary` (default) | `blue` |
 | `secondary` | `gray` |
 | `success` | `green` |
@@ -72,6 +73,10 @@ Callouts come in nine different flavors which can be specified by passing a `var
 ## Samples
 
 ```
+!!!base Base
+This is a `base` Callout.
+!!!
+
 !!!primary Primary
 This is a `primary` Callout.
 !!!
@@ -120,6 +125,10 @@ This is a `ghost` Callout.
 This is a `contrast` Callout.
 !!!
 ```
+
+!!!base Base
+This is a `base` Callout.
+!!!
 
 !!!primary Primary
 This is a `primary` Callout.
