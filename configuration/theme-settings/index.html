@@ -11,24 +11,24 @@
     <meta name="generator" content="Retype 3.11.0-preview6">
 
     <!-- Primary Meta Tags -->
-    <title>Reference Link - Write On! with Retype</title>
-    <meta name="title" content="Reference Link - Write On! with Retype">
-    <meta name="description" content="A special type of reference link can be configured by using the !ref specifier in a link.">
+    <title>Theme settings - Write On! with Retype</title>
+    <meta name="title" content="Theme settings - Write On! with Retype">
+    <meta name="description" content="This reference documents all available customizable theme settings that can be added to your retype.yml">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://retype.com/components/reference-link/">
+    <link rel="canonical" href="https://retype.com/configuration/theme-settings/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://retype.com/components/reference-link/">
-    <meta property="og:title" content="Reference Link - Write On! with Retype">
-    <meta property="og:description" content="A special type of reference link can be configured by using the !ref specifier in a link.">
+    <meta property="og:url" content="https://retype.com/configuration/theme-settings/">
+    <meta property="og:title" content="Theme settings - Write On! with Retype">
+    <meta property="og:description" content="This reference documents all available customizable theme settings that can be added to your retype.yml">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://retype.com/components/reference-link/">
-    <meta property="twitter:title" content="Reference Link - Write On! with Retype">
-    <meta property="twitter:description" content="A special type of reference link can be configured by using the !ref specifier in a link.">
+    <meta property="twitter:url" content="https://retype.com/configuration/theme-settings/">
+    <meta property="twitter:title" content="Theme settings - Write On! with Retype">
+    <meta property="twitter:description" content="This reference documents all available customizable theme settings that can be added to your retype.yml">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -260,16 +260,16 @@
                                             </svg>
                                         </li>
                                         <li class="pr-4">
-                                            <a href="/components/" class="pr-4">
-                                                Components
-                                            </a>
+                                            <span class="pr-4">
+                                                Configuration
+                                            </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
                                                 <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
                                             </svg>
                                         </li>
                                         <li class="pr-4">
-                                            <a href="/components/reference-link/" class="pr-4">
-                                                Reference Link
+                                            <a href="/configuration/theme-settings/" class="pr-4">
+                                                Theme settings
                                             </a>
                                         </li>
                                     </ol>
@@ -277,202 +277,874 @@
                 
                                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<doc-anchor-target id="reference-link" class="break-words">
+<doc-anchor-target id="theme-settings" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reference-link">#</doc-anchor-trigger>
-        <span>Reference Link</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#theme-settings">#</doc-anchor-trigger>
+        <span>Theme settings</span>
     </h1>
 </doc-anchor-target>
-<p>A special type of reference link can be configured by using the <code v-pre>!ref</code> specifier in a link.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref](/guides/getting-started.md)</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Getting Started</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/guides/getting-started/</span>
-    </div>
-    <a href="/guides/getting-started/" class="absolute block inset-0"></a>
-</div>
-</p>
-<p>By default, the text of the link is not required if the <strong>.md</strong> page you are linking to is within the project. Retype will automatically use the <code v-pre>label</code> of the <strong>.md</strong> page as the link text.</p>
+<p>This reference documents all available customizable <a href="/configuration/project/#theme"><code v-pre>theme</code></a> settings that can be added to your <code v-pre>retype.yml</code> file.</p>
 <hr>
-<doc-anchor-target id="custom-text">
+<doc-anchor-target id="base">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-text">#</doc-anchor-trigger>
-        <span>Custom text</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
+        <span>Base</span>
     </h2>
 </doc-anchor-target>
-<p>The text of the link can be explicitly set by passing as the first part of the component config. In the following sample, we explicitly set the reference link text to <code v-pre>Getting Started</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref Getting Started](/guides/getting-started.md)</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Getting Started</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/guides/getting-started/</span>
-    </div>
-    <a href="/guides/getting-started/" class="absolute block inset-0"></a>
-</div>
-</p>
-<p>Clicking anywhere within the reference link component will navigate to that new page.</p>
-<p>From a functionality perspective, there is no difference betwen a <code v-pre>!ref</code> component and a regular hyperlink. The difference between the two is just how they are presented, with a Reference Link component being more prominent than a regular hyperlink.</p>
-<hr>
-<doc-anchor-target id="custom-icon">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-icon">#</doc-anchor-trigger>
-        <span>Custom icon</span>
-    </h2>
-</doc-anchor-target>
-<p>The <code v-pre>icon</code> used for the reference link component can be customized using a name/value pair syntax for the <code v-pre>text</code> and <code v-pre>icon</code> attributes. This allows for setting a custom <code v-pre>icon</code> and <code v-pre>text</code> value at the same time. The <code v-pre>icon</code> attribute can be initialize with one of the following:</p>
-<ul>
-<li><a href="/components/octicons/">Octicon</a> name</li>
-<li>Emoji <code v-pre>:shortcode:</code> (please see <a href="https://mojee.io/emojis" class="outbound" target="_blank"><span>Mojee</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> for a full list of supported Emoji shortcodes)</li>
-<li>Image file URL</li>
-</ul>
-<p>The following samples demonstrate setting a custom <code v-pre>icon</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot;](/guides/getting-started.md)
-[!ref icon=&quot;:rocket:&quot;](/guides/getting-started.md)
-[!ref icon=&quot;../static/retype-icon.svg&quot;](/guides/getting-started.md)</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Getting Started</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/guides/getting-started/</span>
-    </div>
-    <a href="/guides/getting-started/" class="absolute block inset-0"></a>
-</div>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <span class="docs-emoji">&#x1F680;</span>
-        </span>
-        <span class="inline-block font-medium ml-2">Getting Started</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/guides/getting-started/</span>
-    </div>
-    <a href="/guides/getting-started/" class="absolute block inset-0"></a>
-</div>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <img width="20" src="/static/retype-icon.svg">
-        </span>
-        <span class="inline-block font-medium ml-2">Getting Started</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/guides/getting-started/</span>
-    </div>
-    <a href="/guides/getting-started/" class="absolute block inset-0"></a>
-</div>
-</p>
-<p>By default, the referred page title is used as the component text value and the text can be customized by explicitly passing a separate <code v-pre>text</code> value.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot; text=&quot;To the moon&quot;](/guides/getting-started.md)</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">To the moon</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/guides/getting-started/</span>
-    </div>
-    <a href="/guides/getting-started/" class="absolute block inset-0"></a>
-</div>
-</p>
-<hr>
-<doc-anchor-target id="target">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#target">#</doc-anchor-trigger>
-        <span>Target</span>
-    </h2>
-</doc-anchor-target>
-<p>Sets the <code v-pre>target</code> attribute of the reference link and specifies which window or tab to open the link into.</p>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Retype</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>https://retype.com/</span>
-    </div>
-    <a href="https://retype.com/" target="_blank" class="absolute block inset-0"></a>
-</div>
-</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref target=&quot;blank&quot; text=&quot;Retype&quot;](https://retype.com/)</code></pre>
-</doc-codeblock></div>
-<p>If no <code v-pre>target</code> is configured, the link will open in the current tab.</p>
-<p>The <code v-pre>target</code> can be set to any value, although <code v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code v-pre>blank</code> into <code v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
-<p>There are several other values that may be prefixed with an <code v-pre>_</code> character, including <code v-pre>self</code>, <code v-pre>parent</code>, and <code v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code v-pre>target</code> values.</p>
+<p>Core settings that define the fundamental appearance of your site.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>Config <code v-pre>target</code> value</th>
-<th>Runtime <code v-pre>target</code> value</th>
+<th>Setting</th>
+<th>Description</th>
+<th><code v-pre>base</code> default</th>
+<th><code v-pre>dark</code> default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>blank</code></td>
-<td><code v-pre>_blank</code></td>
+<td><code v-pre>base-color</code></td>
+<td>Primary brand colour</td>
+<td><code v-pre>#5495f1</code></td>
+<td><code v-pre>#5495f1</code></td>
 </tr>
 <tr>
-<td><code v-pre>parent</code></td>
-<td><code v-pre>_parent</code></td>
+<td><code v-pre>base-bg</code></td>
+<td>Main background colour</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--dark-900)</code></td>
 </tr>
 <tr>
-<td><code v-pre>top</code></td>
-<td><code v-pre>_top</code></td>
+<td><code v-pre>base-text</code></td>
+<td>Primary text colour</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>self</code></td>
-<td><code v-pre>_self</code></td>
+<td><code v-pre>base-text-muted</code></td>
+<td>Muted text colour</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--gray-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>news1</code></td>
-<td><code v-pre>news1</code></td>
+<td><code v-pre>base-text-strong</code></td>
+<td>Strong/bold text colour</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nEWs2</code></td>
-<td><code v-pre>news2</code></td>
+<td><code v-pre>base-border</code></td>
+<td>Default border colour</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--dark-650)</code></td>
 </tr>
 <tr>
-<td><code v-pre>recent NEWS</code></td>
-<td><code v-pre>recent-news</code></td>
+<td><code v-pre>base-border-hover</code></td>
+<td>Border colour on hover</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--gray-550)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-border-strong</code></td>
+<td>Strong border colour</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--gray-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-link</code></td>
+<td>Link colour</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-link-hover</code></td>
+<td>Link hover colour</td>
+<td><code v-pre>var(--base-800)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-link-weight</code></td>
+<td>Link font weight</td>
+<td><code v-pre>400</code></td>
+<td><code v-pre>400</code></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>See also the <a href="/configuration/project/#target"><code v-pre>links.target</code></a> configuration.</p>
+<hr>
+<doc-anchor-target id="layout">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#layout">#</doc-anchor-trigger>
+        <span>Layout</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings controlling the layout and structure of your site.</p>
+<doc-anchor-target id="header">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#header">#</doc-anchor-trigger>
+        <span>Header</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>header-bg</code></td>
+<td>Header background colour</td>
+</tr>
+<tr>
+<td><code v-pre>header-border</code></td>
+<td>Header border colour</td>
+</tr>
+<tr>
+<td><code v-pre>header-text</code></td>
+<td>Header text colour</td>
+</tr>
+<tr>
+<td><code v-pre>header-text-weight</code></td>
+<td>Header text font weight</td>
+</tr>
+<tr>
+<td><code v-pre>header-text-hover</code></td>
+<td>Header text hover colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="sidebars">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sidebars">#</doc-anchor-trigger>
+        <span>Sidebars</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>sidebar-left-bg</code></td>
+<td>Left sidebar background</td>
+</tr>
+<tr>
+<td><code v-pre>sidebar-left-border</code></td>
+<td>Left sidebar border</td>
+</tr>
+<tr>
+<td><code v-pre>sidebar-right-bg</code></td>
+<td>Right sidebar background</td>
+</tr>
+<tr>
+<td><code v-pre>sidebar-right-border</code></td>
+<td>Right sidebar border</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="body">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#body">#</doc-anchor-trigger>
+        <span>Body</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>body-bg</code></td>
+<td>Main content background</td>
+</tr>
+<tr>
+<td><code v-pre>body-text</code></td>
+<td>Main content text colour</td>
+</tr>
+<tr>
+<td><code v-pre>body-link</code></td>
+<td>Body link colour</td>
+</tr>
+<tr>
+<td><code v-pre>body-link-hover</code></td>
+<td>Body link hover colour</td>
+</tr>
+<tr>
+<td><code v-pre>body-link-weight</code></td>
+<td>Body link font weight</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="footer">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#footer">#</doc-anchor-trigger>
+        <span>Footer</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>footer-text</code></td>
+<td>Footer text colour</td>
+</tr>
+<tr>
+<td><code v-pre>footer-link</code></td>
+<td>Footer link colour</td>
+</tr>
+<tr>
+<td><code v-pre>footer-link-hover</code></td>
+<td>Footer link hover colour</td>
+</tr>
+<tr>
+<td><code v-pre>footer-link-weight</code></td>
+<td>Footer link font weight</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="navigation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#navigation">#</doc-anchor-trigger>
+        <span>Navigation</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings for customizing navigation appearance and behaviour.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>nav-bg</code></td>
+<td>Navigation background</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-bg-hover</code></td>
+<td>Navigation item hover background</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-bg-active</code></td>
+<td>Active navigation item background</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-bg-active-hover</code></td>
+<td>Active navigation item hover background</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text</code></td>
+<td>Navigation item text colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-hover</code></td>
+<td>Navigation item hover text colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-active</code></td>
+<td>Active navigation item text colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-active-hover</code></td>
+<td>Active navigation item hover text colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-active-weight</code></td>
+<td>Active navigation item font weight</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-button</code></td>
+<td>Navigation button colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-button-active-hover</code></td>
+<td>Navigation button active hover colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-border-active</code></td>
+<td>Active navigation item border colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-stack</code></td>
+<td>Stack navigation text colour</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-stack-case</code></td>
+<td>Stack navigation text transform</td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-stack-weight</code></td>
+<td>Stack navigation text font weight</td>
+</tr>
+<tr>
+<td><code v-pre>nav-badge-margin-left</code></td>
+<td>Navigation badge left margin</td>
+</tr>
+<tr>
+<td><code v-pre>nav-badge-margin-left-alt</code></td>
+<td>Alternative navigation badge left margin</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="typography">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#typography">#</doc-anchor-trigger>
+        <span>Typography</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings controlling text appearance throughout your site.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>heading-text</code></td>
+<td>Heading text colour</td>
+</tr>
+<tr>
+<td><code v-pre>toc-heading</code></td>
+<td>Table of contents heading colour</td>
+</tr>
+<tr>
+<td><code v-pre>toc-text</code></td>
+<td>Table of contents text colour</td>
+</tr>
+<tr>
+<td><code v-pre>toc-text-hover</code></td>
+<td>Table of contents hover text colour</td>
+</tr>
+<tr>
+<td><code v-pre>toc-text-active</code></td>
+<td>Table of contents active text colour</td>
+</tr>
+<tr>
+<td><code v-pre>toc-border-active</code></td>
+<td>Table of contents active border colour</td>
+</tr>
+<tr>
+<td><code v-pre>toc-heading-case</code></td>
+<td>Table of contents heading text transform</td>
+</tr>
+<tr>
+<td><code v-pre>toc-heading-weight</code></td>
+<td>Table of contents heading font weight</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="search">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
+        <span>Search</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings for customizing search functionality appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>search-text</code></td>
+<td>Search input text colour</td>
+</tr>
+<tr>
+<td><code v-pre>search-placeholder</code></td>
+<td>Search placeholder text colour</td>
+</tr>
+<tr>
+<td><code v-pre>search-bg</code></td>
+<td>Search input background</td>
+</tr>
+<tr>
+<td><code v-pre>search-border</code></td>
+<td>Search input border colour</td>
+</tr>
+<tr>
+<td><code v-pre>search-border-hover</code></td>
+<td>Search input hover border colour</td>
+</tr>
+<tr>
+<td><code v-pre>search-border-focus</code></td>
+<td>Search input focus border colour</td>
+</tr>
+<tr>
+<td><code v-pre>search-hint-text</code></td>
+<td>Search hint text colour</td>
+</tr>
+<tr>
+<td><code v-pre>search-hint-bg</code></td>
+<td>Search hint background</td>
+</tr>
+<tr>
+<td><code v-pre>search-hint-border</code></td>
+<td>Search hint border colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="filter">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#filter">#</doc-anchor-trigger>
+        <span>Filter</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings for customizing filter functionality.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>filter-text</code></td>
+<td>Filter input text colour</td>
+</tr>
+<tr>
+<td><code v-pre>filter-placeholder</code></td>
+<td>Filter placeholder text colour</td>
+</tr>
+<tr>
+<td><code v-pre>filter-bg</code></td>
+<td>Filter input background</td>
+</tr>
+<tr>
+<td><code v-pre>filter-border</code></td>
+<td>Filter input border colour</td>
+</tr>
+<tr>
+<td><code v-pre>filter-border-hover</code></td>
+<td>Filter input hover border colour</td>
+</tr>
+<tr>
+<td><code v-pre>filter-border-focus</code></td>
+<td>Filter input focus border colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#component">#</doc-anchor-trigger>
+        <span>Component</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#badge">#</doc-anchor-trigger>
+        <span>Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-base</code></td>
+<td>Base badge background</td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-hover</code></td>
+<td>Base badge hover background</td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-text</code></td>
+<td>Base badge text colour</td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-text-hover</code></td>
+<td>Base badge hover text colour</td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-border</code></td>
+<td>Base badge border colour</td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-border-hover</code></td>
+<td>Base badge hover border colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Similar patterns exist for: <code v-pre>primary</code>, <code v-pre>secondary</code>, <code v-pre>success</code>, <code v-pre>danger</code>, <code v-pre>warning</code>, <code v-pre>info</code>, <code v-pre>light</code>, <code v-pre>dark</code>, <code v-pre>ghost</code>, <code v-pre>contrast</code></p>
+<doc-anchor-target id="button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#button">#</doc-anchor-trigger>
+        <span>Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-base</code></td>
+<td>Base button background</td>
+</tr>
+<tr>
+<td><code v-pre>button-base-hover</code></td>
+<td>Base button hover background</td>
+</tr>
+<tr>
+<td><code v-pre>button-base-text</code></td>
+<td>Base button text colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Similar patterns exist for: <code v-pre>primary</code>, <code v-pre>secondary</code>, <code v-pre>success</code>, <code v-pre>danger</code>, <code v-pre>warning</code>, <code v-pre>info</code>, <code v-pre>light</code>, <code v-pre>dark</code>, <code v-pre>ghost</code>, <code v-pre>contrast</code></p>
+<doc-anchor-target id="callout">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#callout">#</doc-anchor-trigger>
+        <span>Callout</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>callout-base-bg</code></td>
+<td>Base callout background</td>
+</tr>
+<tr>
+<td><code v-pre>callout-base-border</code></td>
+<td>Base callout border</td>
+</tr>
+<tr>
+<td><code v-pre>callout-base</code></td>
+<td>Base callout accent colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Similar patterns exist for: <code v-pre>primary</code>, <code v-pre>secondary</code>, <code v-pre>success</code>, <code v-pre>tip</code>, <code v-pre>danger</code>, <code v-pre>warning</code>, <code v-pre>info</code>, <code v-pre>question</code>, <code v-pre>light</code>, <code v-pre>dark</code>, <code v-pre>ghost</code>, <code v-pre>contrast</code></p>
+<doc-anchor-target id="image">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image">#</doc-anchor-trigger>
+        <span>Image</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>image-rounded</code></td>
+<td>Image border radius</td>
+</tr>
+<tr>
+<td><code v-pre>image-border</code></td>
+<td>Image border colour</td>
+</tr>
+<tr>
+<td><code v-pre>image-border-width</code></td>
+<td>Image border width</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#list">#</doc-anchor-trigger>
+        <span>List</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>list-checked</code></td>
+<td>Checked list item colour</td>
+</tr>
+<tr>
+<td><code v-pre>list-unchecked</code></td>
+<td>Unchecked list item colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="tab">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tab">#</doc-anchor-trigger>
+        <span>Tab</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>tab-text</code></td>
+<td>Tab text colour</td>
+</tr>
+<tr>
+<td><code v-pre>tab-text-hover</code></td>
+<td>Tab hover text colour</td>
+</tr>
+<tr>
+<td><code v-pre>tab-text-active</code></td>
+<td>Active tab text colour</td>
+</tr>
+<tr>
+<td><code v-pre>tab-border</code></td>
+<td>Tab border colour</td>
+</tr>
+<tr>
+<td><code v-pre>tab-border-hover</code></td>
+<td>Tab hover border colour</td>
+</tr>
+<tr>
+<td><code v-pre>tab-border-active</code></td>
+<td>Active tab border colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="branding">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
+        <span>Branding</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings for customizing branding elements.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>branding-label-text</code></td>
+<td>Branding label text colour</td>
+</tr>
+<tr>
+<td><code v-pre>branding-label-bg</code></td>
+<td>Branding label background</td>
+</tr>
+<tr>
+<td><code v-pre>branding-label-border</code></td>
+<td>Branding label border colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="scheme">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#scheme">#</doc-anchor-trigger>
+        <span>Scheme</span>
+    </h2>
+</doc-anchor-target>
+<p>Settings for the theme switcher component.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>scheme-menu-item-bg</code></td>
+<td>Theme switcher item background</td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-bg-hover</code></td>
+<td>Theme switcher item hover background</td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-bg-active</code></td>
+<td>Theme switcher active item background</td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-text</code></td>
+<td>Theme switcher item text colour</td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-text-active</code></td>
+<td>Theme switcher active item text colour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="color-palette">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#color-palette">#</doc-anchor-trigger>
+        <span>Color Palette</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype includes several predefined colour palettes that you can reference:</p>
+<doc-anchor-target id="base-color-shades">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-color-shades">#</doc-anchor-trigger>
+        <span>Base Color Shades</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>base-50</code> through <code v-pre>base-900</code> (auto-generated from <code v-pre>base-color</code>)</li>
+</ul>
+<doc-anchor-target id="gray-palette">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gray-palette">#</doc-anchor-trigger>
+        <span>Gray Palette</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>gray-50</code> through <code v-pre>gray-900</code></li>
+</ul>
+<doc-anchor-target id="dark-palette">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-palette">#</doc-anchor-trigger>
+        <span>Dark Palette</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>dark-50</code> through <code v-pre>dark-900</code></li>
+</ul>
+<doc-anchor-target id="semantic-colors">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#semantic-colors">#</doc-anchor-trigger>
+        <span>Semantic Colors</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>primary</code>, <code v-pre>primary-50</code> through <code v-pre>primary-900</code></li>
+<li><code v-pre>success</code>, <code v-pre>success-50</code> through <code v-pre>success-900</code></li>
+<li><code v-pre>danger</code>, <code v-pre>danger-50</code> through <code v-pre>danger-900</code></li>
+<li><code v-pre>warning</code>, <code v-pre>warning-50</code> through <code v-pre>warning-900</code></li>
+<li><code v-pre>royal</code>, <code v-pre>royal-50</code> through <code v-pre>royal-900</code></li>
+</ul>
+<hr>
+<doc-anchor-target id="usage-examples">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#usage-examples">#</doc-anchor-trigger>
+        <span>Usage Examples</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="basic">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic">#</doc-anchor-trigger>
+        <span>Basic</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
+  base:
+    base-color: &quot;#8839ef&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="advanced">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#advanced">#</doc-anchor-trigger>
+        <span>Advanced</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
+  base:
+    # Navigation
+    nav-item-text-active-weight: 700
+    nav-item-bg-hover: &quot;#f1f5f9&quot;
+    
+    # Components
+    badge-primary: &quot;#10b981&quot;
+    button-primary-hover: &quot;#059669&quot;
+    
+    # Layout
+    image-rounded: 1rem</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="dark-mode-overrides">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-mode-overrides">#</doc-anchor-trigger>
+        <span>Dark Mode Overrides</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
+  dark:
+    base-bg: &quot;#0f172a&quot;
+    sidebar-left-bg: &quot;#1e293b&quot;
+    nav-item-bg-hover: &quot;#334155&quot;</code></pre>
+</doc-codeblock></div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
@@ -481,8 +1153,11 @@
                                         <a href="/tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-body-link hover:text-body-link-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="/tags/component/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>component</span>
+                                        <span class="mr-2"><a href="/tags/reference/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>reference</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="/tags/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>pro</span>
                                 </a></span>
                                     </span>
                                 </div>
@@ -492,7 +1167,7 @@
                             </div>
                             <footer id="retype-content-footer" class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
-                                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link-weight hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/components/reference-link.md" target="_blank" rel="noopener">
+                                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link-weight hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/theme-settings.md" target="_blank" rel="noopener">
                                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>Edit this page</span>
                                     </a>
@@ -500,20 +1175,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/components/panel/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/configuration/reserved_words/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Panel</span>
+                                                <span class="block mt-1">Reserved words</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/components/tab/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/configuration/envvars/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Tab</span>
+                                                <span class="block mt-1">Environment variables</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -577,7 +1252,7 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Reference Link", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Theme settings", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>
