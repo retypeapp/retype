@@ -5,8 +5,22 @@ icon: package
 tags: [config]
 toc:
   depth: 2-5
+nav:
+  badge: UPDATE|info
 ---
 # Project configuration
+
+## Updates
+
+The following recent updates have been made to this page:
+
+[!badge NEW|info] [`branding.baseColor`](#basecolor)
+: Set the primary brand color for your site [!badge PRO](/pro/pro.md)
+
+[!badge NEW|info] [`theme`](#theme)
+: Customize your site's visual appearance for both light and dark modes [!badge PRO](/pro/pro.md)
+
+---
 
 Retype will read the **retype.yml** file for additional instructions on how to configure and build your project.
 
@@ -58,22 +72,23 @@ footer:
 
 Branding configuration for your Retype generated website.
 
-### title
+### baseColor
 
-=== title : `string`
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-The main text title added to the upper-left corner of the generated website.
+=== [!badge PRO] baseColor : `string`
 
-The `title` can be used in conjunction with [`logo`](#logo) and [`logoDark`](#logodark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
+Set the base brand color for your project. 
 
-```yml Set the website title
+This is a convenient way to set the main theme color without using the full [`theme`](#theme) configuration.
+
+```yml
 branding:
-  title: Example.com
+  baseColor: "#8839ef"
 ```
 
-The above `title` would create the following branding title in the upper-left corner of the generated website.
+The `baseColor` setting is equivalent to setting `base-color` in the [`theme`](#theme) configuration. For more advanced color customization, use the full theme system.
 
-![](/static/project-branding-title.png)
 ===
 
 ### label
@@ -141,40 +156,22 @@ branding:
 ```
 ===
 
-### colors
+### title
 
-Custom color configuration.
+=== title : `string`
 
-!!!warning
-Hex color values must be wrapped in `"` double-quotes, otherwise the value is treated as a comment because of the unquoted `#` character.
-!!!
+The main text title added to the upper-left corner of the generated website.
 
-#### label
+The `title` can be used in conjunction with [`logo`](#logo) and [`logoDark`](#logodark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
 
-##### text
-
-=== text : `string`
-Set a custom label text color". Default is `"#1f7aff"`.
-
-```yml
+```yml Set the website title
 branding:
-  colors:
-    label:
-      text: "#ffffff"
+  title: Example.com
 ```
-===
 
-##### background
+The above `title` would create the following branding title in the upper-left corner of the generated website.
 
-=== background : `string`
-Set a custom label background color. Default is `"#e1edff"`.
-
-```yml
-branding:
-  colors:
-    label:
-      background: "#ff0000"
-```
+![](/static/project-branding-title.png)
 ===
 
 ---
@@ -1870,6 +1867,67 @@ Default is `false`.
 ```yml
 templating:
   liquid: false # Set to true to enable
+```
+
+===
+
+---
+
+## theme
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `theme` configuration allows you to customize the visual appearance of your Retype website by overriding colors and other design elements to match your brand or personal preferences.
+
+[!ref icon="palette" text="Complete Theme Guide"](/guides/themes.md)
+
+### base{#theme-base}
+
+=== base : `object`
+
+The `base` theme configures the light mode appearance and serves as the foundation for your site's design. All `theme` variables can be customized within this section.
+
+```yml Basic theme customization
+theme:
+  base:
+    base-color: "#2563eb"
+    base-link-weight: 500
+    nav-item-text-active-weight: 700
+```
+
+```yml Advanced theme customization
+theme:
+  base:
+    # Primary brand color
+    base-color: "#8839ef"
+    base-bg: "#eff1f5" # Base background color
+
+    # Variants
+    primary: "#1e66f5" # Blue
+    success: "#40a02b" # Green
+    danger: "#d20f39"  # Red
+    warning: "#df8e1d" # Yellow
+
+    # Typography
+    base-link-weight: 500
+
+    # Navigation
+    nav-item-text-active-weight: 700
+```
+
+===
+
+### dark{#theme-dark}
+
+=== dark : `object`
+
+The `dark` theme specifically targets dark mode appearance. When the website is switched to dark mode, these settings override the [[#theme-base]] settings.
+
+```yml Dark mode customization
+theme:
+  dark:
+    base-color: "#ca9ee6"
+    base-bg: "#303446"
 ```
 
 ===

@@ -6,7 +6,7 @@ tags:
   - github
 label: Community #[NEW]
 nav:
-  badge: NEW
+  badge: NEW|info
 ---
 # Community
 

@@ -3,8 +3,19 @@ label: Page
 order: 100
 icon: file
 tags: [config]
+nav:
+  badge: UPDATE|info
 ---
 # Page configuration
+
+## Updates
+
+The following recent updates have been made to this page:
+
+[!badge NEW|info] [`nav.badge`](#nav-badge)
+: Add a [[badge]] to navigation items in the left sidebar. Added in `v3.11.0`.
+
+---
 
 Individual **.md** pages can be configured using the [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.
 
@@ -169,7 +180,7 @@ author:
 
 ## breadcrumb
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 === [!badge PRO] breadcrumb : `boolean`
 
@@ -427,9 +438,64 @@ With the above sample, the following meta tags will be generated:
 
 Navigation configuration options to control the behavior of the left sidebar navigation.
 
+### badge{#nav-badge}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+=== [!badge PRO] badge : `string` or `object`
+
+Add a [[badge]] to the navigation item for this page in the left sidebar. The badge can be a simple text string or a detailed configuration object with styling options.
+
+```md Simple text badge
+---
+nav:
+  badge: NEW
+---
+# Sample Page
+```
+
+```md Text with variant
+---
+nav:
+  # Shortcut pipe syntax for setting variant
+  badge: NEW|info
+---
+# Sample Page
+```
+
+```md Detailed badge configuration
+---
+nav:
+  badge:
+    text: BETA
+    variant: warning
+    icon: alert
+    iconAlign: right
+    corners: pill
+    size: s
+---
+# Sample Page
+```
+
+The badge supports all the same properties as the [Badge](/components/badge.md) component, including:
+
+Property | Type | Description
+--- | --- | ---
+`text` | `string` | The text content of the badge
+`variant` | `string` | Add Badge variants supported, including: `base`, `primary` (default), `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `ghost`, `contrast`
+`size` | `string` | Badge size: `xs`, `s`, `m`, `l`, `xl`, `2xl`, `3xl` (default: `s`)
+`corners` | `string` | Badge corner style: `round`, `square`, `pill`
+`icon` | `string` | Icon name from [[Octicons]] or custom icon
+`iconAlign` | `string` | Icon position: `left` or `right`
+`link` | `string` | Page or URL to navigate to when badge is clicked
+`target` | `string` | Link target: `blank`, `self`, `parent`, `top`
+
+===
+
+
 ### mode{#nav-mode}
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 === [!badge PRO] mode : `string`
 Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
@@ -458,7 +524,7 @@ To convert the entire navigation component to a `stack` type layout, please see 
 
 ## nextprev
 
-This config is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
 
