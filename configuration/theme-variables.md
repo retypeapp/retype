@@ -20,7 +20,7 @@ theme:
     base-bg: "#303446"
 ```
 
-## Base
+## Base{#base-variables}
 
 Core variables that define the fundamental appearance of your site.
 
@@ -47,16 +47,182 @@ Core variables that define the fundamental appearance of your site.
 
 ## Variants
 
-Semantic color variants used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant automatically generates a full color palette from 50 (lightest) to 900 (darkest) using CSS color-mix functions.
+Semantic color variants are used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant is available as a full color palette from `50` (lightest) to `900` (darkest).
 
-| Variable | Description | Default `base`  | Default `dark`  |
+| Variable | Description | Default `base`  |
 | --- | --- | --- | --- |
-| `base` | Foundation brand color for main actions and highlights | `#5495f1` | `#5495f1` |
-| `primary` | Primary color variant for components | `#5495f1` | `#5495f1` |
-| `success` | Success state color for positive actions and confirmations | `#36ad99` | `#36ad99` |
-| `danger` | Danger/error state color for warnings and destructive actions | `#e53e3e` | `#e53e3e` |
-| `warning` | Warning state color for caution and important notices | `#edab26` | `#edab26` |
-| `royal` | Royal purple color for special emphasis and premium features | `#a667e3` | `#a667e3` |
+| `base` | Foundation brand color for main actions and highlights | `#5495f1` |
+| `primary` | Primary color variant used for actions, highlights, and key elements across components | `#5495f1` |
+| `success` | Success state color for positive actions and confirmations | `#36ad99` |
+| `danger` | Danger/error state color for warnings and destructive actions | `#e53e3e` |
+| `warning` | Warning state color for caution and important notices | `#edab26` |
+| `royal` | Royal purple color for special emphasis and premium features | `#a667e3` |
+
+## Color Palettes
+
+System elements and `base` variants for Components are derived from the `base-color` using the `base` color palette.
+
+### Base
+
+Color variations based on your `base-color` setting:
+
+| Variable | Description |
+| --- | --- |
+| `base-50` | Lightest base color shade (10% mix with white) |
+| `base-100` | Very light base color shade (15% mix with white) |
+| `base-200` | Light base color shade (30% mix with white) |
+| `base-300` | Medium-light base color shade (50% mix with white) |
+| `base-400` | Medium base color shade (70% mix with white) |
+| `base-500` | Base color (same as `base-color`) |
+| `base-600` | Medium-dark base color shade (90% mix with black) |
+| `base-700` | Dark base color shade (80% mix with black) |
+| `base-800` | Very dark base color shade (60% mix with black) |
+| `base-900` | Darkest base color shade (40% mix with black) |
+
+## Semantic Color Palettes
+
+Each semantic color includes shades from `50` (lightest) to `900` (darkest):
+
+The semantic color shades follow a consistent pattern where:
+
+- Lower numbers (50-400) are lighter shades created by mixing with white
+- Higher numbers (600-900) are darker shades created by mixing with black
+- The mid color `500` of each sequence represents the pure color for that sequence
+
+### Primary
+
+Semantic palette `primary` with shades `50` through `900`:
+
+| Shade | Description |
+|-------|-------------|
+| `primary-50` | Lightest primary shade (10% mix with white) |
+| `primary-100` | Very light primary shade (15% mix with white) |
+| `primary-200` | Light primary shade (30% mix with white) |
+| `primary-300` | Medium-light primary shade (50% mix with white) |
+| `primary-400` | Medium primary shade (70% mix with white) |
+| `primary-500` | Base primary color (`#5495f1`) |
+| `primary-600` | Medium-dark primary shade (90% mix with black) |
+| `primary-700` | Dark primary shade (80% mix with black) |
+| `primary-800` | Very dark primary shade (60% mix with black) |
+| `primary-900` | Darkest primary shade (40% mix with black) |
+
+### Success
+
+Semantic palette `success` with shades `50` through `900`:
+
+| Shade | Description |
+|-------|-------------|
+| `success-50` | Lightest success shade (10% mix with white) |
+| `success-100` | Very light success shade (15% mix with white) |
+| `success-200` | Light success shade (30% mix with white) |
+| `success-300` | Medium-light success shade (50% mix with white) |
+| `success-400` | Medium success shade (70% mix with white) |
+| `success-500` | Base success color (`#36ad99`) |
+| `success-600` | Medium-dark success shade (90% mix with black) |
+| `success-700` | Dark success shade (80% mix with black) |
+| `success-800` | Very dark success shade (60% mix with black) |
+| `success-900` | Darkest success shade (40% mix with black) |
+
+### Danger
+
+Semantic palette `danger` with shades `50` through `900`:
+
+| Shade | Description |
+|-------|-------------|
+| `danger-50` | Lightest danger shade (10% mix with white) |
+| `danger-100` | Very light danger shade (15% mix with white) |
+| `danger-200` | Light danger shade (30% mix with white) |
+| `danger-300` | Medium-light danger shade (50% mix with white) |
+| `danger-400` | Medium danger shade (70% mix with white) |
+| `danger-500` | Base danger color (`#e53e3e`) |
+| `danger-600` | Medium-dark danger shade (90% mix with black) |
+| `danger-700` | Dark danger shade (80% mix with black) |
+| `danger-800` | Very dark danger shade (60% mix with black) |
+| `danger-900` | Darkest danger shade (40% mix with black) |
+
+### Warning
+
+Semantic palette `warning` with shades `50` through `900`:
+
+| Shade | Description |
+|-------|-------------|
+| `warning-50` | Lightest warning shade (10% mix with white) |
+| `warning-100` | Very light warning shade (15% mix with white) |
+| `warning-200` | Light warning shade (30% mix with white) |
+| `warning-300` | Medium-light warning shade (50% mix with white) |
+| `warning-400` | Medium warning shade (70% mix with white) |
+| `warning-500` | Base warning color (`#edab26`) |
+| `warning-600` | Medium-dark warning shade (90% mix with black) |
+| `warning-700` | Dark warning shade (80% mix with black) |
+| `warning-800` | Very dark warning shade (60% mix with black) |
+| `warning-900` | Darkest warning shade (40% mix with black) |
+
+### Royal
+
+Semantic palette `royal` with shades `50` through `900`
+
+| Shade | Description |
+|-------|-------------|
+| `royal-50` | Lightest royal shade (10% mix with white) |
+| `royal-100` | Very light royal shade (15% mix with white) |
+| `royal-200` | Light royal shade (30% mix with white) |
+| `royal-300` | Medium-light royal shade (50% mix with white) |
+| `royal-400` | Medium royal shade (70% mix with white) |
+| `royal-500` | Base royal color (`#a667e3`) |
+| `royal-600` | Medium-dark royal shade (90% mix with black) |
+| `royal-700` | Dark royal shade (80% mix with black) |
+| `royal-800` | Very dark royal shade (60% mix with black) |
+| `royal-900` | Darkest royal shade (40% mix with black) |
+
+### Gray
+
+Predefined gray color variations:
+
+| Variable    | Description           | Default `base` |
+|-------------|----------------------|----------------|
+| `gray-50`   | Lightest gray        | `#f8f9fc`      |
+| `gray-100`  | Very light gray      | `#f4f6fc`      |
+| `gray-150`  | Light gray variant   | `#edf0f6`      |
+| `gray-200`  | Light gray           | `#e4e8f1`      |
+| `gray-250`  | Medium-light gray variant | `#d2d9e3` |
+| `gray-300`  | Medium-light gray    | `#bdc8da`      |
+| `gray-350`  | Medium gray variant  | `#a4b1c6`      |
+| `gray-400`  | Medium gray          | `#8693a9`      |
+| `gray-450`  | Medium-dark gray variant | `#65718c`  |
+| `gray-500`  | Medium-dark gray     | `#525e78`      |
+| `gray-550`  | Dark gray variant    | `#46536d`      |
+| `gray-600`  | Dark gray            | `#3f4a64`      |
+| `gray-650`  | Very dark gray variant | `#313c56`    |
+| `gray-700`  | Very dark gray       | `#2c3047`      |
+| `gray-750`  | Darkest gray variant | `#1f2236`      |
+| `gray-800`  | Near black gray      | `#181d2d`      |
+| `gray-850`  | Almost black gray    | `#101523`      |
+| `gray-900`  | Darkest gray         | `#090d1c`      |
+
+### Dark
+
+Specialized dark mode color variations:
+
+| Variable | Description | Default `base` |
+| --- | --- | --- |
+| `dark-50` | Lightest dark mode color | `#fafafa` |
+| `dark-100` | Very light dark mode color | `#f7f7f7` |
+| `dark-150` | Light dark mode variant | `#f2f2f2` |
+| `dark-200` | Light dark mode color | `#eeeeee` |
+| `dark-250` | Medium-light dark mode variant | `#e0e0e0` |
+| `dark-300` | Medium-light dark mode color | `#c4c4c4` |
+| `dark-350` | Medium dark mode variant | `#9e9e9e` |
+| `dark-400` | Medium dark mode color | `#616161` |
+| `dark-450` | Medium-dark dark mode variant | `#424242` |
+| `dark-500` | Medium-dark dark mode color | `#353535` |
+| `dark-550` | Dark mode variant | `#323232` |
+| `dark-600` | Dark mode color | `#2d2d2d` |
+| `dark-650` | Very dark mode variant | `#2c2c2c` |
+| `dark-700` | Very dark mode color | `#272727` |
+| `dark-750` | Darkest mode variant | `#252525` |
+| `dark-800` | Near black dark mode | `#222222` |
+| `dark-850` | Almost black dark mode | `#1e1e1e` |
+| `dark-900` | Darkest dark mode color | `#121212` |
 
 ## Helper
 
@@ -493,169 +659,3 @@ Variables for customizing tab appearance.
 | `tab-border` | Tab border color | `var(--transparent)` | `var(--transparent)` |
 | `tab-border-hover` | Tab hover border color | `var(--gray-300)` | `var(--dark-450)` |
 | `tab-border-active` | Active tab border color | `var(--base-500)` | `var(--base-500)` |
-
-## Base Color Palette
-
-System elements within a Retype generated website are derived from the `base-color` using the `base` color palette.
-
-### Base
-
-Color variations based on your `base-color` setting:
-
-| Variable | Description |
-| --- | --- |
-| `base-50` | Lightest base color shade (10% mix with white) |
-| `base-100` | Very light base color shade (15% mix with white) |
-| `base-200` | Light base color shade (30% mix with white) |
-| `base-300` | Medium-light base color shade (50% mix with white) |
-| `base-400` | Medium base color shade (70% mix with white) |
-| `base-500` | Base color (same as `base-color`) |
-| `base-600` | Medium-dark base color shade (90% mix with black) |
-| `base-700` | Dark base color shade (80% mix with black) |
-| `base-800` | Very dark base color shade (60% mix with black) |
-| `base-900` | Darkest base color shade (40% mix with black) |
-
-## Semantic Color Palettes
-
-Each semantic color includes shades from `50` (lightest) to `900` (darkest):
-
-The semantic color shades follow a consistent pattern where:
-
-- Lower numbers (50-400) are lighter shades created by mixing with white
-- Higher numbers (600-900) are darker shades created by mixing with black
-- The mid color `500` of each sequence represents the pure color for that sequence
-
-### Primary
-
-Semantic palette `primary` with shades `50` through `900`:
-
-| Shade | Description |
-|-------|-------------|
-| `primary-50` | Lightest primary shade (10% mix with white) |
-| `primary-100` | Very light primary shade (15% mix with white) |
-| `primary-200` | Light primary shade (30% mix with white) |
-| `primary-300` | Medium-light primary shade (50% mix with white) |
-| `primary-400` | Medium primary shade (70% mix with white) |
-| `primary-500` | Base primary color (`#5495f1`) |
-| `primary-600` | Medium-dark primary shade (90% mix with black) |
-| `primary-700` | Dark primary shade (80% mix with black) |
-| `primary-800` | Very dark primary shade (60% mix with black) |
-| `primary-900` | Darkest primary shade (40% mix with black) |
-
-### Success
-
-Semantic palette `success` with shades `50` through `900`:
-
-| Shade | Description |
-|-------|-------------|
-| `success-50` | Lightest success shade (10% mix with white) |
-| `success-100` | Very light success shade (15% mix with white) |
-| `success-200` | Light success shade (30% mix with white) |
-| `success-300` | Medium-light success shade (50% mix with white) |
-| `success-400` | Medium success shade (70% mix with white) |
-| `success-500` | Base success color (`#36ad99`) |
-| `success-600` | Medium-dark success shade (90% mix with black) |
-| `success-700` | Dark success shade (80% mix with black) |
-| `success-800` | Very dark success shade (60% mix with black) |
-| `success-900` | Darkest success shade (40% mix with black) |
-
-### Danger
-
-Semantic palette `danger` with shades `50` through `900`:
-
-| Shade | Description |
-|-------|-------------|
-| `danger-50` | Lightest danger shade (10% mix with white) |
-| `danger-100` | Very light danger shade (15% mix with white) |
-| `danger-200` | Light danger shade (30% mix with white) |
-| `danger-300` | Medium-light danger shade (50% mix with white) |
-| `danger-400` | Medium danger shade (70% mix with white) |
-| `danger-500` | Base danger color (`#e53e3e`) |
-| `danger-600` | Medium-dark danger shade (90% mix with black) |
-| `danger-700` | Dark danger shade (80% mix with black) |
-| `danger-800` | Very dark danger shade (60% mix with black) |
-| `danger-900` | Darkest danger shade (40% mix with black) |
-
-### Warning
-
-Semantic palette `warning` with shades `50` through `900`:
-
-| Shade | Description |
-|-------|-------------|
-| `warning-50` | Lightest warning shade (10% mix with white) |
-| `warning-100` | Very light warning shade (15% mix with white) |
-| `warning-200` | Light warning shade (30% mix with white) |
-| `warning-300` | Medium-light warning shade (50% mix with white) |
-| `warning-400` | Medium warning shade (70% mix with white) |
-| `warning-500` | Base warning color (`#edab26`) |
-| `warning-600` | Medium-dark warning shade (90% mix with black) |
-| `warning-700` | Dark warning shade (80% mix with black) |
-| `warning-800` | Very dark warning shade (60% mix with black) |
-| `warning-900` | Darkest warning shade (40% mix with black) |
-
-### Royal
-
-Semantic palette `royal` with shades `50` through `900`
-
-| Shade | Description |
-|-------|-------------|
-| `royal-50` | Lightest royal shade (10% mix with white) |
-| `royal-100` | Very light royal shade (15% mix with white) |
-| `royal-200` | Light royal shade (30% mix with white) |
-| `royal-300` | Medium-light royal shade (50% mix with white) |
-| `royal-400` | Medium royal shade (70% mix with white) |
-| `royal-500` | Base royal color (`#a667e3`) |
-| `royal-600` | Medium-dark royal shade (90% mix with black) |
-| `royal-700` | Dark royal shade (80% mix with black) |
-| `royal-800` | Very dark royal shade (60% mix with black) |
-| `royal-900` | Darkest royal shade (40% mix with black) |
-
-### Gray
-
-Predefined gray color variations:
-
-| Variable | Value | Description |
-| --- | --- | --- |
-| `gray-50` | `#f8f9fc` | Lightest gray |
-| `gray-100` | `#f4f6fc` | Very light gray |
-| `gray-150` | `#edf0f6` | Light gray variant |
-| `gray-200` | `#e4e8f1` | Light gray |
-| `gray-250` | `#d2d9e3` | Medium-light gray variant |
-| `gray-300` | `#bdc8da` | Medium-light gray |
-| `gray-350` | `#a4b1c6` | Medium gray variant |
-| `gray-400` | `#8693a9` | Medium gray |
-| `gray-450` | `#65718c` | Medium-dark gray variant |
-| `gray-500` | `#525e78` | Medium-dark gray |
-| `gray-550` | `#46536d` | Dark gray variant |
-| `gray-600` | `#3f4a64` | Dark gray |
-| `gray-650` | `#313c56` | Very dark gray variant |
-| `gray-700` | `#2c3047` | Very dark gray |
-| `gray-750` | `#1f2236` | Darkest gray variant |
-| `gray-800` | `#181d2d` | Near black gray |
-| `gray-850` | `#101523` | Almost black gray |
-| `gray-900` | `#090d1c` | Darkest gray |
-
-### Dark
-
-Specialized dark mode color variations:
-
-| Variable | Value | Description |
-| --- | --- | --- |
-| `dark-50` | `#fafafa` | Lightest dark mode color |
-| `dark-100` | `#f7f7f7` | Very light dark mode color |
-| `dark-150` | `#f2f2f2` | Light dark mode variant |
-| `dark-200` | `#eeeeee` | Light dark mode color |
-| `dark-250` | `#e0e0e0` | Medium-light dark mode variant |
-| `dark-300` | `#c4c4c4` | Medium-light dark mode color |
-| `dark-350` | `#9e9e9e` | Medium dark mode variant |
-| `dark-400` | `#616161` | Medium dark mode color |
-| `dark-450` | `#424242` | Medium-dark dark mode variant |
-| `dark-500` | `#353535` | Medium-dark dark mode color |
-| `dark-550` | `#323232` | Dark mode variant |
-| `dark-600` | `#2d2d2d` | Dark mode color |
-| `dark-650` | `#2c2c2c` | Very dark mode variant |
-| `dark-700` | `#272727` | Very dark mode color |
-| `dark-750` | `#252525` | Darkest mode variant |
-| `dark-800` | `#222222` | Near black dark mode |
-| `dark-850` | `#1e1e1e` | Almost black dark mode |
-| `dark-900` | `#121212` | Darkest dark mode color |

@@ -6,7 +6,7 @@ tags: [guide, pro]
 ---
 # Themes
 
-Retype's [`theme`](/configuration/project.md#theme) system allows you to customize the visual appearance of your website by overriding [[theme variables]]. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or personal preferences.
+Retype's [`theme`](/configuration/project.md#theme) system allows you to customize the visual appearance of your website by overriding [[theme variables]]. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or project preferences.
 
 !!!base Pro Feature
 The theme functionality requires a [Retype Pro](/pro/pro.md) key or adding the following [`pro`](/configuration/project.md#pro) trial mode setting into your project `retype.yml` configuration file:
@@ -19,7 +19,7 @@ start
 
 ## Quick Start
 
-The simplest way to customize your site's appearance is by adding a `theme` configuration to your `retype.yml` file and setting a custom [`base-color`](/configuration/theme-variables.md#base) value.
+The quickest way to customize your site's appearance is by adding a `theme` configuration to your `retype.yml` file and setting a custom [`base-color`](/configuration/theme-variables.md#base-variables) theme variable.
 
 ```yml
 theme:
@@ -46,7 +46,7 @@ theme:
 
 ### `dark` theme
 
-The [`dark`](/configuration/project.md#theme-dark) theme specifically targets dark mode appearance. When the website is switched to dark mode, these overrides are applied:
+The [`dark`](/configuration/project.md#theme-dark) theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the [[#theme-base]] variables. The following demonstrates how to configure the `dark` theme variables:
 
 ```yaml
 theme:
@@ -69,7 +69,7 @@ theme:
 
 ### Typography Adjustments
 
-To better match your site's style and user-experience requirements:
+To better match your project style and user-experience requirements:
 
 ```yml
 theme:
@@ -121,7 +121,7 @@ Begin by tweaking a few brand colors before diving into full theme customization
 ```yml
 theme:
   base:
-    base-color: "#your-brand-color"
+    base-color: "#8839ef" #your-brand-color
 ```
 
 ### 2. Prioritize readability and contrast
@@ -131,8 +131,8 @@ Contrast between text and background is important for readability and accessibil
 ```yml
 theme:
   base:
-    base-text: "#374151"     # A strong neutral text color
-    base-bg: "#ffffff"       # Clean white background
+    base-text: "#4c4f69"     # A strong neutral text color
+    base-bg: "#ffffff"       # Clean light background
 ```
 
 !!!tip
@@ -141,12 +141,12 @@ Use online contrast checkers to validate your color palette against WCAG standar
 
 ### 3. Check light and dark modes
 
-If you are defining both the `base` and `dark` themes, test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode.
+If you are customizing both the `base` and `dark` themes, be sure to test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode, and require further refinement. 
 
 ```yml
 theme:
   base:
-    base-color: "#ff6b35"
+    base-color: "#8839ef"
   dark:
     base-color: "#ca9ee6"
 ```

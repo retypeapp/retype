@@ -1875,7 +1875,7 @@ templating:
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-The `theme` configuration allows you to customize the visual appearance of your Retype website by overriding colors and other design elements to match your brand or personal preferences.
+The `theme` configuration allows you to customize the visual appearance of your Retype website by overriding colors and other design elements to match your brand or project preferences.
 
 [!ref icon="palette" text="Complete Theme Guide"](/guides/themes.md)
 
@@ -1888,7 +1888,7 @@ The `base` theme configures the light mode appearance and serves as the foundati
 ```yml Basic theme customization
 theme:
   base:
-    base-color: "#2563eb"
+    base-color: "#8839ef"
     base-link-weight: 500
     nav-item-text-active-weight: 700
 ```
@@ -1919,7 +1919,7 @@ theme:
 
 === dark : `object`
 
-The `dark` theme specifically targets dark mode appearance. When the website is switched to dark mode, these settings override the [[#theme-base]] settings.
+The `dark` theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the [[#theme-base]] variables. The following demonstrates how to configure the `dark` theme variables:
 
 ```yml Dark mode customization
 theme:
