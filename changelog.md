@@ -20,6 +20,41 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 !!!
 
 ---
+## v3.11.0
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2025-07-02](https://github.com/retypeapp/retype/releases/tag/v3.11.0)
+
+# Version 3.11.0
+
+There were 15 changes in Retype 3.11.0.
+
+## New
+
+1. New theme color customization for  and  themes, see #42 and #697
+1. New 3-way Light, Dark, and System color scheme selector, see #421 and #624
+1. New Page level  setting for adding a badge component to left navigation nodes, see #763
+1. New pipe notation syntax support for adding variant to Badge, Button, and NavigationBadge components
+1. New support for icon-only links in header and footer
+1. New  variant for Button, Badge, and Callout
+
+## Improved
+
+1. Upgrade to latest release of VueJS
+1. Update to latest v3.3.x release of TailwindCSS
+1. Add  and  hint into Search field, see #762
+1. Improve templating support within  project setting
+1. Hide the placeholder text in the Search and Filter input fields when focused, see #762
+1. Upgrade Octicons icons library from v19.15.2 to v19.15.3
+1. Improve icon margins on icon-only Badge and Button components
+1. Improve print mode rendering
+
+## Fixed
+
+1. Fixed search input  attribute value not being rendered, see #764
+
+---
 ## v3.11.0 [!badge text="NEXT" variant="info"]
 
 Scheduled for Q3-2025.
