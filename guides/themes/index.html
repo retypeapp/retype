@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804752771351">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804798342871">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.804752771351" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0.804798342871" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804798342871" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804752771351" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804798342871" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804798342871" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.804752771351" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0.804798342871" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -283,7 +283,7 @@
         <span>Themes</span>
     </h1>
 </doc-anchor-target>
-<p>Retype&#x27;s <a href="/configuration/project/#theme"><code v-pre>theme</code></a> system allows you to customize the visual appearance of your website by overriding <a href="/configuration/theme-variables/">theme variables</a>. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or personal preferences.</p>
+<p>Retype&#x27;s <a href="/configuration/project/#theme"><code v-pre>theme</code></a> system allows you to customize the visual appearance of your website by overriding <a href="/configuration/theme-variables/">theme variables</a>. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or project preferences.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-base"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -312,7 +312,7 @@
         <span>Quick Start</span>
     </h2>
 </doc-anchor-target>
-<p>The simplest way to customize your site&#x27;s appearance is by adding a <code v-pre>theme</code> configuration to your <code v-pre>retype.yml</code> file and setting a custom <a href="/configuration/theme-variables/#base"><code v-pre>base-color</code></a> value.</p>
+<p>The quickest way to customize your site&#x27;s appearance is by adding a <code v-pre>theme</code> configuration to your <code v-pre>retype.yml</code> file and setting a custom <a href="/configuration/theme-variables/#base-variables"><code v-pre>base-color</code></a> theme variable.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
@@ -346,7 +346,7 @@
         <span><code v-pre>dark</code> theme</span>
     </h3>
 </doc-anchor-target>
-<p>The <a href="/configuration/project/#theme-dark"><code v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, these overrides are applied:</p>
+<p>The <a href="/configuration/project/#theme-dark"><code v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#theme-base">theme base</doc-anchor-trigger> variables. The following demonstrates how to configure the <code v-pre>dark</code> theme variables:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   dark:
@@ -377,7 +377,7 @@
         <span>Typography Adjustments</span>
     </h3>
 </doc-anchor-target>
-<p>To better match your site&#x27;s style and user-experience requirements:</p>
+<p>To better match your project style and user-experience requirements:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
@@ -437,7 +437,7 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
-    base-color: &quot;#your-brand-color&quot;</code></pre>
+    base-color: &quot;#8839ef&quot; #your-brand-color</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="2-prioritize-readability-and-contrast">
     <h3>
@@ -449,8 +449,8 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
-    base-text: &quot;#374151&quot;     # A strong neutral text color
-    base-bg: &quot;#ffffff&quot;       # Clean white background</code></pre>
+    base-text: &quot;#4c4f69&quot;     # A strong neutral text color
+    base-bg: &quot;#ffffff&quot;       # Clean light background</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
@@ -473,11 +473,11 @@
         <span>3. Check light and dark modes</span>
     </h3>
 </doc-anchor-target>
-<p>If you are defining both the <code v-pre>base</code> and <code v-pre>dark</code> themes, test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode.</p>
+<p>If you are customizing both the <code v-pre>base</code> and <code v-pre>dark</code> themes, be sure to test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode, and require further refinement.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
-    base-color: &quot;#ff6b35&quot;
+    base-color: &quot;#8839ef&quot;
   dark:
     base-color: &quot;#ca9ee6&quot;</code></pre>
 </doc-codeblock></div>

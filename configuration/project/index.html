@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804752771351">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804798342871">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,15 +34,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.804752771351" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0.804798342871" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804798342871" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804752771351" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804798342871" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804798342871" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.804752771351" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0.804798342871" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -2834,7 +2834,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<p>The <code v-pre>theme</code> configuration allows you to customize the visual appearance of your Retype website by overriding colors and other design elements to match your brand or personal preferences.</p>
+<p>The <code v-pre>theme</code> configuration allows you to customize the visual appearance of your Retype website by overriding colors and other design elements to match your brand or project preferences.</p>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
     <div class="flex items-center text-base-500">
@@ -2862,7 +2862,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <div class="codeblock-title">Basic theme customization</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
-    base-color: &quot;#2563eb&quot;
+    base-color: &quot;#8839ef&quot;
     base-link-weight: 500
     nav-item-text-active-weight: 700</code></pre>
 </doc-codeblock></div>
@@ -2895,7 +2895,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-anchor-target>
 <doc-panel id="dark--object">
     <template #title>dark : <code v-pre>object</code></template>
-<p>The <code v-pre>dark</code> theme specifically targets dark mode appearance. When the website is switched to dark mode, these settings override the <doc-anchor-trigger to="#theme-base">theme base</doc-anchor-trigger> settings.</p>
+<p>The <code v-pre>dark</code> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#theme-base">theme base</doc-anchor-trigger> variables. The following demonstrates how to configure the <code v-pre>dark</code> theme variables:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Dark mode customization</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:

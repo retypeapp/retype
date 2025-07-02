@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804752771351">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804798342871">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.804752771351" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0.804798342871" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804798342871" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804752771351" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804798342871" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804798342871" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.804752771351" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0.804798342871" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -294,9 +294,9 @@
     base-color: &quot;#ca9ee6&quot;
     base-bg: &quot;#303446&quot;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="base">
+<doc-anchor-target id="base-variables">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-variables">#</doc-anchor-trigger>
         <span>Base</span>
     </h2>
 </doc-anchor-target>
@@ -429,7 +429,7 @@
         <span>Variants</span>
     </h2>
 </doc-anchor-target>
-<p>Semantic color variants used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant automatically generates a full color palette from 50 (lightest) to 900 (darkest) using <abbr title="Cascading Style Sheet">CSS</abbr> color-mix functions.</p>
+<p>Semantic color variants are used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant is available as a full color palette from <code v-pre>50</code> (lightest) to <code v-pre>900</code> (darkest).</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -437,7 +437,6 @@
 <th>Variable</th>
 <th>Description</th>
 <th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
@@ -445,37 +444,625 @@
 <td><code v-pre>base</code></td>
 <td>Foundation brand color for main actions and highlights</td>
 <td><code v-pre>#5495f1</code></td>
-<td><code v-pre>#5495f1</code></td>
 </tr>
 <tr>
 <td><code v-pre>primary</code></td>
-<td>Primary color variant for components</td>
-<td><code v-pre>#5495f1</code></td>
+<td>Primary color variant used for actions, highlights, and key elements across components</td>
 <td><code v-pre>#5495f1</code></td>
 </tr>
 <tr>
 <td><code v-pre>success</code></td>
 <td>Success state color for positive actions and confirmations</td>
 <td><code v-pre>#36ad99</code></td>
-<td><code v-pre>#36ad99</code></td>
 </tr>
 <tr>
 <td><code v-pre>danger</code></td>
 <td>Danger/error state color for warnings and destructive actions</td>
-<td><code v-pre>#e53e3e</code></td>
 <td><code v-pre>#e53e3e</code></td>
 </tr>
 <tr>
 <td><code v-pre>warning</code></td>
 <td>Warning state color for caution and important notices</td>
 <td><code v-pre>#edab26</code></td>
-<td><code v-pre>#edab26</code></td>
 </tr>
 <tr>
 <td><code v-pre>royal</code></td>
 <td>Royal purple color for special emphasis and premium features</td>
 <td><code v-pre>#a667e3</code></td>
-<td><code v-pre>#a667e3</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="color-palettes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#color-palettes">#</doc-anchor-trigger>
+        <span>Color Palettes</span>
+    </h2>
+</doc-anchor-target>
+<p>System elements and <code v-pre>base</code> variants for Components are derived from the <code v-pre>base-color</code> using the <code v-pre>base</code> color palette.</p>
+<doc-anchor-target id="base">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
+        <span>Base</span>
+    </h3>
+</doc-anchor-target>
+<p>Color variations based on your <code v-pre>base-color</code> setting:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>base-50</code></td>
+<td>Lightest base color shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-100</code></td>
+<td>Very light base color shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-200</code></td>
+<td>Light base color shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-300</code></td>
+<td>Medium-light base color shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-400</code></td>
+<td>Medium base color shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-500</code></td>
+<td>Base color (same as <code v-pre>base-color</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>base-600</code></td>
+<td>Medium-dark base color shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>base-700</code></td>
+<td>Dark base color shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>base-800</code></td>
+<td>Very dark base color shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>base-900</code></td>
+<td>Darkest base color shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="semantic-color-palettes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#semantic-color-palettes">#</doc-anchor-trigger>
+        <span>Semantic Color Palettes</span>
+    </h2>
+</doc-anchor-target>
+<p>Each semantic color includes shades from <code v-pre>50</code> (lightest) to <code v-pre>900</code> (darkest):</p>
+<p>The semantic color shades follow a consistent pattern where:</p>
+<ul>
+<li>Lower numbers (50-400) are lighter shades created by mixing with white</li>
+<li>Higher numbers (600-900) are darker shades created by mixing with black</li>
+<li>The mid color <code v-pre>500</code> of each sequence represents the pure color for that sequence</li>
+</ul>
+<doc-anchor-target id="primary">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#primary">#</doc-anchor-trigger>
+        <span>Primary</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>primary</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>primary-50</code></td>
+<td>Lightest primary shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-100</code></td>
+<td>Very light primary shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-200</code></td>
+<td>Light primary shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-300</code></td>
+<td>Medium-light primary shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-400</code></td>
+<td>Medium primary shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-500</code></td>
+<td>Base primary color (<code v-pre>#5495f1</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-600</code></td>
+<td>Medium-dark primary shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-700</code></td>
+<td>Dark primary shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-800</code></td>
+<td>Very dark primary shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-900</code></td>
+<td>Darkest primary shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="success">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#success">#</doc-anchor-trigger>
+        <span>Success</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>success</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>success-50</code></td>
+<td>Lightest success shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-100</code></td>
+<td>Very light success shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-200</code></td>
+<td>Light success shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-300</code></td>
+<td>Medium-light success shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-400</code></td>
+<td>Medium success shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-500</code></td>
+<td>Base success color (<code v-pre>#36ad99</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>success-600</code></td>
+<td>Medium-dark success shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>success-700</code></td>
+<td>Dark success shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>success-800</code></td>
+<td>Very dark success shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>success-900</code></td>
+<td>Darkest success shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="danger">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#danger">#</doc-anchor-trigger>
+        <span>Danger</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>danger</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>danger-50</code></td>
+<td>Lightest danger shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-100</code></td>
+<td>Very light danger shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-200</code></td>
+<td>Light danger shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-300</code></td>
+<td>Medium-light danger shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-400</code></td>
+<td>Medium danger shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-500</code></td>
+<td>Base danger color (<code v-pre>#e53e3e</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-600</code></td>
+<td>Medium-dark danger shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-700</code></td>
+<td>Dark danger shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-800</code></td>
+<td>Very dark danger shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-900</code></td>
+<td>Darkest danger shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="warning">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#warning">#</doc-anchor-trigger>
+        <span>Warning</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>warning</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>warning-50</code></td>
+<td>Lightest warning shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-100</code></td>
+<td>Very light warning shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-200</code></td>
+<td>Light warning shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-300</code></td>
+<td>Medium-light warning shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-400</code></td>
+<td>Medium warning shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-500</code></td>
+<td>Base warning color (<code v-pre>#edab26</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-600</code></td>
+<td>Medium-dark warning shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-700</code></td>
+<td>Dark warning shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-800</code></td>
+<td>Very dark warning shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-900</code></td>
+<td>Darkest warning shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="royal">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#royal">#</doc-anchor-trigger>
+        <span>Royal</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>royal</code> with shades <code v-pre>50</code> through <code v-pre>900</code></p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>royal-50</code></td>
+<td>Lightest royal shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-100</code></td>
+<td>Very light royal shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-200</code></td>
+<td>Light royal shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-300</code></td>
+<td>Medium-light royal shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-400</code></td>
+<td>Medium royal shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-500</code></td>
+<td>Base royal color (<code v-pre>#a667e3</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-600</code></td>
+<td>Medium-dark royal shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-700</code></td>
+<td>Dark royal shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-800</code></td>
+<td>Very dark royal shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-900</code></td>
+<td>Darkest royal shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="gray">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gray">#</doc-anchor-trigger>
+        <span>Gray</span>
+    </h3>
+</doc-anchor-target>
+<p>Predefined gray color variations:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>gray-50</code></td>
+<td>Lightest gray</td>
+<td><code v-pre>#f8f9fc</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-100</code></td>
+<td>Very light gray</td>
+<td><code v-pre>#f4f6fc</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-150</code></td>
+<td>Light gray variant</td>
+<td><code v-pre>#edf0f6</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-200</code></td>
+<td>Light gray</td>
+<td><code v-pre>#e4e8f1</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-250</code></td>
+<td>Medium-light gray variant</td>
+<td><code v-pre>#d2d9e3</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-300</code></td>
+<td>Medium-light gray</td>
+<td><code v-pre>#bdc8da</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-350</code></td>
+<td>Medium gray variant</td>
+<td><code v-pre>#a4b1c6</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-400</code></td>
+<td>Medium gray</td>
+<td><code v-pre>#8693a9</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-450</code></td>
+<td>Medium-dark gray variant</td>
+<td><code v-pre>#65718c</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-500</code></td>
+<td>Medium-dark gray</td>
+<td><code v-pre>#525e78</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-550</code></td>
+<td>Dark gray variant</td>
+<td><code v-pre>#46536d</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-600</code></td>
+<td>Dark gray</td>
+<td><code v-pre>#3f4a64</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-650</code></td>
+<td>Very dark gray variant</td>
+<td><code v-pre>#313c56</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-700</code></td>
+<td>Very dark gray</td>
+<td><code v-pre>#2c3047</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-750</code></td>
+<td>Darkest gray variant</td>
+<td><code v-pre>#1f2236</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-800</code></td>
+<td>Near black gray</td>
+<td><code v-pre>#181d2d</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-850</code></td>
+<td>Almost black gray</td>
+<td><code v-pre>#101523</code></td>
+</tr>
+<tr>
+<td><code v-pre>gray-900</code></td>
+<td>Darkest gray</td>
+<td><code v-pre>#090d1c</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="dark">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark">#</doc-anchor-trigger>
+        <span>Dark</span>
+    </h3>
+</doc-anchor-target>
+<p>Specialized dark mode color variations:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>dark-50</code></td>
+<td>Lightest dark mode color</td>
+<td><code v-pre>#fafafa</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-100</code></td>
+<td>Very light dark mode color</td>
+<td><code v-pre>#f7f7f7</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-150</code></td>
+<td>Light dark mode variant</td>
+<td><code v-pre>#f2f2f2</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-200</code></td>
+<td>Light dark mode color</td>
+<td><code v-pre>#eeeeee</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-250</code></td>
+<td>Medium-light dark mode variant</td>
+<td><code v-pre>#e0e0e0</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-300</code></td>
+<td>Medium-light dark mode color</td>
+<td><code v-pre>#c4c4c4</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-350</code></td>
+<td>Medium dark mode variant</td>
+<td><code v-pre>#9e9e9e</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-400</code></td>
+<td>Medium dark mode color</td>
+<td><code v-pre>#616161</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-450</code></td>
+<td>Medium-dark dark mode variant</td>
+<td><code v-pre>#424242</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-500</code></td>
+<td>Medium-dark dark mode color</td>
+<td><code v-pre>#353535</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-550</code></td>
+<td>Dark mode variant</td>
+<td><code v-pre>#323232</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-600</code></td>
+<td>Dark mode color</td>
+<td><code v-pre>#2d2d2d</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-650</code></td>
+<td>Very dark mode variant</td>
+<td><code v-pre>#2c2c2c</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-700</code></td>
+<td>Very dark mode color</td>
+<td><code v-pre>#272727</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-750</code></td>
+<td>Darkest mode variant</td>
+<td><code v-pre>#252525</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-800</code></td>
+<td>Near black dark mode</td>
+<td><code v-pre>#222222</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-850</code></td>
+<td>Almost black dark mode</td>
+<td><code v-pre>#1e1e1e</code></td>
+</tr>
+<tr>
+<td><code v-pre>dark-900</code></td>
+<td>Darkest dark mode color</td>
+<td><code v-pre>#121212</code></td>
 </tr>
 </tbody>
 </table>
@@ -2486,600 +3073,6 @@
 <td>Active tab border color</td>
 <td><code v-pre>var(--base-500)</code></td>
 <td><code v-pre>var(--base-500)</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="base-color-palette">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base-color-palette">#</doc-anchor-trigger>
-        <span>Base Color Palette</span>
-    </h2>
-</doc-anchor-target>
-<p>System elements within a Retype generated website are derived from the <code v-pre>base-color</code> using the <code v-pre>base</code> color palette.</p>
-<doc-anchor-target id="base-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base-1">#</doc-anchor-trigger>
-        <span>Base</span>
-    </h3>
-</doc-anchor-target>
-<p>Color variations based on your <code v-pre>base-color</code> setting:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>base-50</code></td>
-<td>Lightest base color shade (10% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>base-100</code></td>
-<td>Very light base color shade (15% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>base-200</code></td>
-<td>Light base color shade (30% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>base-300</code></td>
-<td>Medium-light base color shade (50% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>base-400</code></td>
-<td>Medium base color shade (70% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>base-500</code></td>
-<td>Base color (same as <code v-pre>base-color</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>base-600</code></td>
-<td>Medium-dark base color shade (90% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>base-700</code></td>
-<td>Dark base color shade (80% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>base-800</code></td>
-<td>Very dark base color shade (60% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>base-900</code></td>
-<td>Darkest base color shade (40% mix with black)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="semantic-color-palettes">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#semantic-color-palettes">#</doc-anchor-trigger>
-        <span>Semantic Color Palettes</span>
-    </h2>
-</doc-anchor-target>
-<p>Each semantic color includes shades from <code v-pre>50</code> (lightest) to <code v-pre>900</code> (darkest):</p>
-<p>The semantic color shades follow a consistent pattern where:</p>
-<ul>
-<li>Lower numbers (50-400) are lighter shades created by mixing with white</li>
-<li>Higher numbers (600-900) are darker shades created by mixing with black</li>
-<li>The mid color <code v-pre>500</code> of each sequence represents the pure color for that sequence</li>
-</ul>
-<doc-anchor-target id="primary">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#primary">#</doc-anchor-trigger>
-        <span>Primary</span>
-    </h3>
-</doc-anchor-target>
-<p>Semantic palette <code v-pre>primary</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Shade</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>primary-50</code></td>
-<td>Lightest primary shade (10% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-100</code></td>
-<td>Very light primary shade (15% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-200</code></td>
-<td>Light primary shade (30% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-300</code></td>
-<td>Medium-light primary shade (50% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-400</code></td>
-<td>Medium primary shade (70% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-500</code></td>
-<td>Base primary color (<code v-pre>#5495f1</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-600</code></td>
-<td>Medium-dark primary shade (90% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-700</code></td>
-<td>Dark primary shade (80% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-800</code></td>
-<td>Very dark primary shade (60% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>primary-900</code></td>
-<td>Darkest primary shade (40% mix with black)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="success">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#success">#</doc-anchor-trigger>
-        <span>Success</span>
-    </h3>
-</doc-anchor-target>
-<p>Semantic palette <code v-pre>success</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Shade</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>success-50</code></td>
-<td>Lightest success shade (10% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>success-100</code></td>
-<td>Very light success shade (15% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>success-200</code></td>
-<td>Light success shade (30% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>success-300</code></td>
-<td>Medium-light success shade (50% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>success-400</code></td>
-<td>Medium success shade (70% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>success-500</code></td>
-<td>Base success color (<code v-pre>#36ad99</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>success-600</code></td>
-<td>Medium-dark success shade (90% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>success-700</code></td>
-<td>Dark success shade (80% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>success-800</code></td>
-<td>Very dark success shade (60% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>success-900</code></td>
-<td>Darkest success shade (40% mix with black)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="danger">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#danger">#</doc-anchor-trigger>
-        <span>Danger</span>
-    </h3>
-</doc-anchor-target>
-<p>Semantic palette <code v-pre>danger</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Shade</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>danger-50</code></td>
-<td>Lightest danger shade (10% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-100</code></td>
-<td>Very light danger shade (15% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-200</code></td>
-<td>Light danger shade (30% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-300</code></td>
-<td>Medium-light danger shade (50% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-400</code></td>
-<td>Medium danger shade (70% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-500</code></td>
-<td>Base danger color (<code v-pre>#e53e3e</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-600</code></td>
-<td>Medium-dark danger shade (90% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-700</code></td>
-<td>Dark danger shade (80% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-800</code></td>
-<td>Very dark danger shade (60% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>danger-900</code></td>
-<td>Darkest danger shade (40% mix with black)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="warning">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#warning">#</doc-anchor-trigger>
-        <span>Warning</span>
-    </h3>
-</doc-anchor-target>
-<p>Semantic palette <code v-pre>warning</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Shade</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>warning-50</code></td>
-<td>Lightest warning shade (10% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-100</code></td>
-<td>Very light warning shade (15% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-200</code></td>
-<td>Light warning shade (30% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-300</code></td>
-<td>Medium-light warning shade (50% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-400</code></td>
-<td>Medium warning shade (70% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-500</code></td>
-<td>Base warning color (<code v-pre>#edab26</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-600</code></td>
-<td>Medium-dark warning shade (90% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-700</code></td>
-<td>Dark warning shade (80% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-800</code></td>
-<td>Very dark warning shade (60% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>warning-900</code></td>
-<td>Darkest warning shade (40% mix with black)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="royal">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#royal">#</doc-anchor-trigger>
-        <span>Royal</span>
-    </h3>
-</doc-anchor-target>
-<p>Semantic palette <code v-pre>royal</code> with shades <code v-pre>50</code> through <code v-pre>900</code></p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Shade</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>royal-50</code></td>
-<td>Lightest royal shade (10% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-100</code></td>
-<td>Very light royal shade (15% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-200</code></td>
-<td>Light royal shade (30% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-300</code></td>
-<td>Medium-light royal shade (50% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-400</code></td>
-<td>Medium royal shade (70% mix with white)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-500</code></td>
-<td>Base royal color (<code v-pre>#a667e3</code>)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-600</code></td>
-<td>Medium-dark royal shade (90% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-700</code></td>
-<td>Dark royal shade (80% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-800</code></td>
-<td>Very dark royal shade (60% mix with black)</td>
-</tr>
-<tr>
-<td><code v-pre>royal-900</code></td>
-<td>Darkest royal shade (40% mix with black)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="gray">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gray">#</doc-anchor-trigger>
-        <span>Gray</span>
-    </h3>
-</doc-anchor-target>
-<p>Predefined gray color variations:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Variable</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>gray-50</code></td>
-<td><code v-pre>#f8f9fc</code></td>
-<td>Lightest gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-100</code></td>
-<td><code v-pre>#f4f6fc</code></td>
-<td>Very light gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-150</code></td>
-<td><code v-pre>#edf0f6</code></td>
-<td>Light gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-200</code></td>
-<td><code v-pre>#e4e8f1</code></td>
-<td>Light gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-250</code></td>
-<td><code v-pre>#d2d9e3</code></td>
-<td>Medium-light gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-300</code></td>
-<td><code v-pre>#bdc8da</code></td>
-<td>Medium-light gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-350</code></td>
-<td><code v-pre>#a4b1c6</code></td>
-<td>Medium gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-400</code></td>
-<td><code v-pre>#8693a9</code></td>
-<td>Medium gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-450</code></td>
-<td><code v-pre>#65718c</code></td>
-<td>Medium-dark gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-500</code></td>
-<td><code v-pre>#525e78</code></td>
-<td>Medium-dark gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-550</code></td>
-<td><code v-pre>#46536d</code></td>
-<td>Dark gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-600</code></td>
-<td><code v-pre>#3f4a64</code></td>
-<td>Dark gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-650</code></td>
-<td><code v-pre>#313c56</code></td>
-<td>Very dark gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-700</code></td>
-<td><code v-pre>#2c3047</code></td>
-<td>Very dark gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-750</code></td>
-<td><code v-pre>#1f2236</code></td>
-<td>Darkest gray variant</td>
-</tr>
-<tr>
-<td><code v-pre>gray-800</code></td>
-<td><code v-pre>#181d2d</code></td>
-<td>Near black gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-850</code></td>
-<td><code v-pre>#101523</code></td>
-<td>Almost black gray</td>
-</tr>
-<tr>
-<td><code v-pre>gray-900</code></td>
-<td><code v-pre>#090d1c</code></td>
-<td>Darkest gray</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="dark">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dark">#</doc-anchor-trigger>
-        <span>Dark</span>
-    </h3>
-</doc-anchor-target>
-<p>Specialized dark mode color variations:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Variable</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>dark-50</code></td>
-<td><code v-pre>#fafafa</code></td>
-<td>Lightest dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-100</code></td>
-<td><code v-pre>#f7f7f7</code></td>
-<td>Very light dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-150</code></td>
-<td><code v-pre>#f2f2f2</code></td>
-<td>Light dark mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-200</code></td>
-<td><code v-pre>#eeeeee</code></td>
-<td>Light dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-250</code></td>
-<td><code v-pre>#e0e0e0</code></td>
-<td>Medium-light dark mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-300</code></td>
-<td><code v-pre>#c4c4c4</code></td>
-<td>Medium-light dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-350</code></td>
-<td><code v-pre>#9e9e9e</code></td>
-<td>Medium dark mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-400</code></td>
-<td><code v-pre>#616161</code></td>
-<td>Medium dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-450</code></td>
-<td><code v-pre>#424242</code></td>
-<td>Medium-dark dark mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-500</code></td>
-<td><code v-pre>#353535</code></td>
-<td>Medium-dark dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-550</code></td>
-<td><code v-pre>#323232</code></td>
-<td>Dark mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-600</code></td>
-<td><code v-pre>#2d2d2d</code></td>
-<td>Dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-650</code></td>
-<td><code v-pre>#2c2c2c</code></td>
-<td>Very dark mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-700</code></td>
-<td><code v-pre>#272727</code></td>
-<td>Very dark mode color</td>
-</tr>
-<tr>
-<td><code v-pre>dark-750</code></td>
-<td><code v-pre>#252525</code></td>
-<td>Darkest mode variant</td>
-</tr>
-<tr>
-<td><code v-pre>dark-800</code></td>
-<td><code v-pre>#222222</code></td>
-<td>Near black dark mode</td>
-</tr>
-<tr>
-<td><code v-pre>dark-850</code></td>
-<td><code v-pre>#1e1e1e</code></td>
-<td>Almost black dark mode</td>
-</tr>
-<tr>
-<td><code v-pre>dark-900</code></td>
-<td><code v-pre>#121212</code></td>
-<td>Darkest dark mode color</td>
 </tr>
 </tbody>
 </table>
