@@ -5,7 +5,7 @@ icon: log
 
 The latest release of Retype is `v{{ version }}`.
 
-You can check which version you have installed by running the command [`retype --version`](/guides/cli.md).
+You can find which version you have installed by running the command [`retype --version`](/guides/cli.md).
 
 The entire release archive of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) and [NuGet](https://nuget.org/packages/retypeapp).
 
@@ -19,17 +19,21 @@ Retype does not have a fixed release cycle:
 Do have a suggestion for a new feature in Retype? Please open an [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
 !!!
 
+Please also check out the [[Feature Log]] for a summary of all new features in each release.
+
 ---
-## v3.12.0 [!badge NEXT|info]
+## v3.12.0 [!badge @next|info]
 
 Scheduled for late Q3-2025.
 
 ---
-## v3.11.0 [!badge LATEST|info]
+## v3.11.0 [!badge @latest|info]
 
-Released: [2025-07-02](https://github.com/retypeapp/retype/releases/tag/v3.11.0)
+**Released:** [2025-07-02](https://github.com/retypeapp/retype/releases/tag/v3.11.0)
 
-There were 15 changes in Retype 3.11.0.
+There were **15 changes** in Retype `v3.11.0`. 
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v311) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -58,14 +62,15 @@ There were 15 changes in Retype 3.11.0.
 
 +++
 
-
 ---
 
 ## v3.10.0
 
-Released: [2025-06-08](https://github.com/retypeapp/retype/releases/tag/v3.10.0)
+**Released:** [2025-06-08](https://github.com/retypeapp/retype/releases/tag/v3.10.0)
 
-There were 13 changes in Retype `3.10.0`.
+There were **13 changes** in `v3.10.0`.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v310) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -97,9 +102,11 @@ There were 13 changes in Retype `3.10.0`.
 
 ## v3.9.0
 
-Released: [2025-05-28](https://github.com/retypeapp/retype/releases/tag/v3.9.0)
+**Released:** [2025-05-28](https://github.com/retypeapp/retype/releases/tag/v3.9.0)
 
-There were 19 changes in Retype `3.9.0`.
+There were **19 changes** in Retype `v3.9.0`.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v39) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -133,9 +140,11 @@ There were 19 changes in Retype `3.9.0`.
 
 ## v3.8.0
 
-Released: [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.8.0)
+**Released:** [2025-05-05](https://github.com/retypeapp/retype/releases/tag/v3.8.0)
 
-There were 16 changes in Retype `3.8.0`.
+There were **16 changes** in Retype `v3.8.0`.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v38) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -166,9 +175,9 @@ There were 16 changes in Retype `3.8.0`.
 
 ## v3.7.0
 
-Released: [2025-04-07](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
+**Released:** [2025-04-07](https://github.com/retypeapp/retype/releases/tag/v3.7.0)
 
-There were 6 changes in Retype `3.7.0`.
+There were **6 changes** in Retype `v3.7.0`.
 
 +++ New :icon-shield-check:
 1. New `-v` flag as an alias on `retype --version` in CLI
@@ -183,9 +192,9 @@ There were 6 changes in Retype `3.7.0`.
 
 ## v3.6.0
 
-Released: [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
+**Released:** [2024-09-17](https://github.com/retypeapp/retype/releases/tag/v3.6.0)
 
-There were 9 changes in Retype `3.6.0`.
+There were 9 changes in Retype `v3.6.0`.
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New `--strict` parameter for `retype build`, see [#618](https://github.com/retypeapp/retype/discussions/618)
@@ -203,7 +212,7 @@ There were 9 changes in Retype `3.6.0`.
 
 ## v3.5.0
 
-Released: [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
+**Released:** [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
 
 +++ New :icon-shield-check:
 1. New [`--pro`](/guides/cli.md#retype-start) flag during `retype start` to enable trial mode of Retype Pro features, see [#612](https://github.com/retypeapp/retype/discussions/612)
@@ -214,7 +223,7 @@ Released: [2023-09-16](https://github.com/retypeapp/retype/releases/tag/v3.5.0)
 
 ## v3.4.0
 
-Released: [2023-09-08](https://github.com/retypeapp/retype/releases/tag/v3.4.0)
+**Released:** [2023-09-08](https://github.com/retypeapp/retype/releases/tag/v3.4.0)
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New `hub` [Project](/configuration/project.md#hub) config with `<` header link, see [#592](https://github.com/retypeapp/retype/discussions/592)
@@ -228,7 +237,7 @@ Released: [2023-09-08](https://github.com/retypeapp/retype/releases/tag/v3.4.0)
 
 s## v3.3.0
 
-Released: [2023-08-31](https://github.com/retypeapp/retype/releases/tag/v3.3.0)
+**Released:** [2023-08-31](https://github.com/retypeapp/retype/releases/tag/v3.3.0)
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New [breadcrumb](/configuration/project.md#breadcrumb) navigation with [Project](/configuration/project.md#breadcrumb) and [Page](/configuration/page.md#breadcrumb) configs, see [#593](https://github.com/retypeapp/retype/discussions/593)
@@ -239,7 +248,7 @@ Released: [2023-08-31](https://github.com/retypeapp/retype/releases/tag/v3.3.0)
 
 ## v3.2.0
 
-Released: [2023-08-23](https://github.com/retypeapp/retype/releases/tag/v3.2.0)
+**Released:** [2023-08-23](https://github.com/retypeapp/retype/releases/tag/v3.2.0)
 
 +++ New :icon-shield-check:
 1. New [Description List](/components/list.md#description-list) support
@@ -257,7 +266,7 @@ Released: [2023-08-23](https://github.com/retypeapp/retype/releases/tag/v3.2.0)
 
 ## v3.1.0
 
-Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
+**Released:** [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see [#465](https://github.com/retypeapp/retype/issues/465)
@@ -282,7 +291,7 @@ Released: [2023-07-23](https://github.com/retypeapp/retype/releases/tag/v3.1.0)
 
 ## v3.0.0
 
-Released: [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
+**Released:** [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New [`visibility: private`](configuration/page.md#private) and [`visibility: protected`](configuration/page.md#protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
@@ -335,7 +344,7 @@ Released: [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 
 ## v2.4.0
 
-Released: [2022-07-14](https://github.com/retypeapp/retype/releases/tag/v2.4.0)
+**Released:** [2022-07-14](https://github.com/retypeapp/retype/releases/tag/v2.4.0)
 
 +++ New :icon-shield-check:
 1. New `generator.directoryIndex.append` [project](/configuration/project.md) config.
@@ -353,7 +362,7 @@ Released: [2022-07-14](https://github.com/retypeapp/retype/releases/tag/v2.4.0)
 
 ## v2.3.0
 
-Released: [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
+**Released:** [2022-05-03](https://github.com/retypeapp/retype/releases/tag/v2.3.0)
 
 +++ New :icon-shield-check:
 1. Support for full relative URL pathing. See [#14](https://github.com/retypeapp/retype/discussions/14), [#133](https://github.com/retypeapp/retype/discussions/133), [#194](https://github.com/retypeapp/retype/discussions/194), [#222](https://github.com/retypeapp/retype/discussions/222), [#233](https://github.com/retypeapp/retype/discussions/233), and [#276](https://github.com/retypeapp/retype/issues/276).
@@ -390,7 +399,7 @@ generator:
 
 ## v2.2.0
 
-Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
+**Released:** [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
 
 +++ New :icon-shield-check:
 1. [`generator.recase`](/configuration/project.md#generator) project config to recase file and folder names. See [#302](https://github.com/retypeapp/retype/issues/302).
@@ -404,7 +413,7 @@ Released: [2022-03-30](https://github.com/retypeapp/retype/releases/tag/v2.2.0)
 
 ## v2.1.0
 
-Released: [2022-03-22](https://github.com/retypeapp/retype/releases/tag/v2.1.0)
+**Released:** [2022-03-22](https://github.com/retypeapp/retype/releases/tag/v2.1.0)
 
 +++ New :icon-shield-check:
 1. Deploy **.html** and `.htm` files from [`input`](/configuration/project.md#input) to [`output`](/configuration/project.md#output) by default. See [#302](https://github.com/retypeapp/retype/issues/302).
@@ -415,7 +424,7 @@ Released: [2022-03-22](https://github.com/retypeapp/retype/releases/tag/v2.1.0)
 
 ## v2.0.0
 
-Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
+**Released:** [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 
 +++ New :icon-shield-check:
 1. Redesign of Search results.
@@ -445,7 +454,7 @@ Released: [2022-03-14](https://github.com/retypeapp/retype/releases/tag/v2.0.0)
 
 ## v1.11.2
 
-Released: [2021-12-23](https://github.com/retypeapp/retype/releases/tag/v1.11.2)
+**Released:** [2021-12-23](https://github.com/retypeapp/retype/releases/tag/v1.11.2)
 
 +++ New :icon-shield-check:
 1. [`allowFullScreen`](/components/embed.md#allowfullscreen) attribute on the `[!embed]` component.
@@ -453,7 +462,7 @@ Released: [2021-12-23](https://github.com/retypeapp/retype/releases/tag/v1.11.2)
 
 ## v1.11.1
 
-Released: [2021-12-02](https://github.com/retypeapp/retype/releases/tag/v1.11.1)
+**Released:** [2021-12-02](https://github.com/retypeapp/retype/releases/tag/v1.11.1)
 
 +++ Fixed :icon-bug:
 1. Badges configured without a link `[!badge x]` are being ignored.
@@ -464,7 +473,7 @@ Released: [2021-12-02](https://github.com/retypeapp/retype/releases/tag/v1.11.1)
 
 ## v1.11.0
 
-Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
+**Released:** [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 
 +++ New :icon-shield-check:
 1. Multi-language search and automatic detection of content languages. See [#197](https://github.com/retypeapp/retype/issues/197).
@@ -478,7 +487,7 @@ Released: [2021-11-19](https://github.com/retypeapp/retype/releases/tag/v1.11.0)
 
 ## v1.10.0
 
-Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
+**Released:** [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 +++ New :icon-shield-check:
 1. [$\KaTeX$](/components/math-formulas.md) math typesetting library support.
@@ -492,7 +501,7 @@ Released: [2021-09-30](https://github.com/retypeapp/retype/releases/tag/v1.10.0)
 
 ## v1.9.0
 
-Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
+**Released:** [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
 +++ New :icon-shield-check:
 1. Incremental build during [`retype start`](/guides/cli.md#retype-start) with page dependency graph
@@ -510,7 +519,7 @@ Released: [2021-08-30](https://github.com/retypeapp/retype/releases/tag/v1.9.0)
 
 ## v1.8.2
 
-Released: [2021-08-06](https://github.com/retypeapp/retype/releases/tag/v1.8.2)
+**Released:** [2021-08-06](https://github.com/retypeapp/retype/releases/tag/v1.8.2)
 
 +++ Fixed :icon-bug:
 1. Update expired NPM Access Token to fix broken NPM package publishing from [`v1.8.1`](#v181).
@@ -518,7 +527,7 @@ Released: [2021-08-06](https://github.com/retypeapp/retype/releases/tag/v1.8.2)
 
 ## v1.8.1
 
-Released: [2021-08-05](https://github.com/retypeapp/retype/releases/tag/v1.8.1)
+**Released:** [2021-08-05](https://github.com/retypeapp/retype/releases/tag/v1.8.1)
 
 +++ New :icon-shield-check:
 1. Add broader checks for unresolved links, see [#112](https://github.com/retypeapp/retype/issues/112). For instance, if a link to `../components` is created, Retype will now try to resolve the path to any of the following:
@@ -540,7 +549,7 @@ This release failed to run properly if the NPM package was installed. 🧐 We di
 
 ## v1.8.0
 
-Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
+**Released:** [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 
 +++ New :icon-shield-check:
 1. [**retype.yml**](/configuration/project.md) project configuration file format.
@@ -562,7 +571,7 @@ Released: [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 
 ## v1.7.0
 
-Released: [2021-06-24](https://github.com/retypeapp/retype/releases/tag/v1.7.0)
+**Released:** [2021-06-24](https://github.com/retypeapp/retype/releases/tag/v1.7.0)
 
 +++ New :icon-shield-check:
 1. [Column](/components/column.md) component.
@@ -577,7 +586,7 @@ Released: [2021-06-24](https://github.com/retypeapp/retype/releases/tag/v1.7.0)
 
 ## v1.6.0
 
-Released: [2021-06-09](https://github.com/retypeapp/retype/releases/tag/v1.6.0)
+**Released:** [2021-06-09](https://github.com/retypeapp/retype/releases/tag/v1.6.0)
 
 +++ New :icon-shield-check:
 1. [`tags`](/configuration/page.md#tags) config for pages.
