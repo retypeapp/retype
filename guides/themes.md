@@ -6,7 +6,7 @@ tags: [guide, pro]
 ---
 # Themes
 
-Retype's [`theme`](/configuration/project.md#theme) system allows you to customize the visual appearance of your website by overriding theme variables. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or personal preferences.
+Retype's [`theme`](/configuration/project.md#theme) system allows you to customize the visual appearance of your website by overriding [[theme variables]]. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or personal preferences.
 
 !!!base Pro Feature
 The theme functionality requires a [Retype Pro](/pro/pro.md) key or adding the following [`pro`](/configuration/project.md#pro) trial mode setting into your project `retype.yml` configuration file:
@@ -19,7 +19,7 @@ start
 
 ## Quick Start
 
-The simplest way to customize your site's appearance is by adding a `theme` configuration to your `retype.yml` file and setting a custom `base-color` value.
+The simplest way to customize your site's appearance is by adding a `theme` configuration to your `retype.yml` file and setting a custom [`base-color`](/configuration/theme-variables.md#base) value.
 
 ```yml
 theme:
@@ -46,7 +46,7 @@ theme:
 
 ### `dark` theme
 
-The `dark` theme specifically targets dark mode appearance. When the website is switched to dark mode, these overrides are applied:
+The [`dark`](/configuration/project.md#theme-dark) theme specifically targets dark mode appearance. When the website is switched to dark mode, these overrides are applied:
 
 ```yaml
 theme:
@@ -124,7 +124,7 @@ theme:
     base-color: "#your-brand-color"
 ```
 
-### 2. Prioritise readability and contrast
+### 2. Prioritize readability and contrast
 
 Contrast between text and background is important for readability and accessibility. Avoid color combinations that are too similar and do not provide enough contrast.
 
@@ -153,7 +153,7 @@ theme:
 
 ### 4. Use Semantic variables where possible
 
-Instead of hardcoding colors everywhere, use the built-in semantic variables. It keeps your theme consistent and easier to maintain.
+Instead of hardcoding colors everywhere, use the built-in semantic [[theme variables]]. It keeps your theme consistent and easier to maintain.
 
 ```yml
 theme:
@@ -169,11 +169,11 @@ Following these practices helps ensure your site looks good, stays accessible, a
 
 - [x] Ensure you have a valid Retype Pro license or add [`start.pro: true`](/configuration/project.md#pro)
 - [x] Check that the syntax is correct in your `retype.yml` file
-- [x] Verify theme setting names match exactly
+- [x] Verify [theme variable](/configuration/theme-variables.md) names match exactly
 
 ### Dark Mode Issues
 
-- [x] Remember that dark theme variables only apply in dark mode
+- [x] Remember that `dark` theme variables only apply in dark mode
 - [x] Test with the theme switcher on your website
 - [x] Some variables may need both `base` and `dark` configured to provide proper contrast
 

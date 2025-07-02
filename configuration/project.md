@@ -13,10 +13,10 @@ toc:
 The following recent updates have been made to this page:
 
 [!badge NEW|info] [`branding.baseColor`](#basecolor)
-: Set the primary brand color for your site [!badge PRO](/pro/pro.md)
+: Set the primary brand color for your site [!badge PRO](/pro/pro.md). Added in `v3.11.0`.
 
 [!badge NEW|info] [`theme`](#theme)
-: Customize your site's visual appearance for both light and dark modes [!badge PRO](/pro/pro.md)
+: Customize your site's visual appearance for both light and dark modes [!badge PRO](/pro/pro.md). Added in `v3.11.0`.
 
 ---
 

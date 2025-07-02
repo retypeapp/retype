@@ -8,6 +8,18 @@ nav:
 
 This reference documents all available customizable [`theme`](/configuration/project.md#theme) variables that can be added to your `retype.yml` file. Each variable can be overridden in both `base` (light mode) and `dark` (dark mode) configurations.
 
+The following demonstrates a basic configuration where the `base-color` and background color are configured with custom values:
+
+```yml
+theme:
+  base:
+    base-color: "#8839ef"
+    base-bg: "#eff1f5"
+  dark:
+    base-color: "#ca9ee6"
+    base-bg: "#303446"
+```
+
 ## Base
 
 Core variables that define the fundamental appearance of your site.
