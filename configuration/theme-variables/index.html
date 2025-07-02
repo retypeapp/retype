@@ -1,0 +1,3187 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <!-- Add content to _includes/head-top.html to include here -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0-preview6.804732090136">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.11.0-preview6">
+
+    <!-- Primary Meta Tags -->
+    <title>Theme variables - Write On! with Retype</title>
+    <meta name="title" content="Theme variables - Write On! with Retype">
+    <meta name="description" content="This reference documents all available customizable theme variables that can be added to your retype.yml">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://retype.com/configuration/theme-variables/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/configuration/theme-variables/">
+    <meta property="og:title" content="Theme variables - Write On! with Retype">
+    <meta property="og:description" content="This reference documents all available customizable theme variables that can be added to your retype.yml">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://retype.com/configuration/theme-variables/">
+    <meta property="twitter:title" content="Theme variables - Write On! with Retype">
+    <meta property="twitter:description" content="This reference documents all available customizable theme variables that can be added to your retype.yml">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link href="/resources/css/retype.css?v=3.11.0-preview6.804732090136" rel="stylesheet">
+
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0-preview6.804732090136" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0-preview6" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0-preview6.804732090136" data-turbo-eval="false" defer></script>
+
+    <!-- Add content to _includes/head.html to include here -->
+    <link href="/static/styles.css?v=3.11.0-preview6.804732090136" rel="stylesheet">
+</head>
+<body>
+    <!-- Add content to _includes/body-top.html to include here -->
+
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+        <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+    
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="retype-branding-logo" href="/" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
+                                <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
+                            </span>
+                        </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v3.11 next</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav id="retype-header-nav" class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="/pro/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Pro Pricing</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="/blog/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M3.5 3.25a.75.75 0 0 1 .75-.75C14.053 2.5 22 10.447 22 20.25a.75.75 0 0 1-1.5 0C20.5 11.275 13.225 4 4.25 4a.75.75 0 0 1-.75-.75Zm.75 6.25C10.187 9.5 15 14.313 15 20.25a.75.75 0 0 1-1.5 0A9.25 9.25 0 0 0 4.25 11a.75.75 0 0 1 0-1.5ZM3.5 19a2 2 0 1 1 3.999-.001A2 2 0 0 1 3.5 19Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Blog &amp; News</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Social</span>
+                                </a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="retype-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+        <div id="retype-container" class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="/pro/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Pro Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="/blog/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M3.5 3.25a.75.75 0 0 1 .75-.75C14.053 2.5 22 10.447 22 20.25a.75.75 0 0 1-1.5 0C20.5 11.275 13.225 4 4.25 4a.75.75 0 0 1-.75-.75Zm.75 6.25C10.187 9.5 15 14.313 15 20.25a.75.75 0 0 1-1.5 0A9.25 9.25 0 0 0 4.25 11a.75.75 0 0 1 0-1.5ZM3.5 19a2 2 0 1 1 3.999-.001A2 2 0 0 1 3.5 19Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Blog &amp; News</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Support</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Social</span>
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 bg-body-bg">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="retype-markdown" id="retype-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="retype-sidebar-right-toggle"></div>
+                                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                                    <ol role="list">
+                                        <li class="pr-4">
+                                            <a href="/" class="pr-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
+                                                </svg>
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <span class="pr-4">
+                                                Configuration
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="/configuration/theme-variables/" class="pr-4">
+                                                Theme variables
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                
+                                <!-- Page content  -->
+<!-- Add content to _includes/top.md to include here -->
+<doc-anchor-target id="theme-variables" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#theme-variables">#</doc-anchor-trigger>
+        <span>Theme variables</span>
+    </h1>
+</doc-anchor-target>
+<p>This reference documents all available customizable <a href="/configuration/project/#theme"><code v-pre>theme</code></a> variables that can be added to your <code v-pre>retype.yml</code> file. Each variable can be overridden in both <code v-pre>base</code> (light mode) and <code v-pre>dark</code> (dark mode) configurations.</p>
+<doc-anchor-target id="base">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
+        <span>Base</span>
+    </h2>
+</doc-anchor-target>
+<p>Core variables that define the fundamental appearance of your site.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>base-color</code></td>
+<td>Brand color</td>
+<td><code v-pre>#5495f1</code></td>
+<td><code v-pre>#5495f1</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-white</code></td>
+<td>Pure white color</td>
+<td><code v-pre>#ffffff</code></td>
+<td><code v-pre>#ffffff</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-black</code></td>
+<td>Pure black color</td>
+<td><code v-pre>#000000</code></td>
+<td><code v-pre>#000000</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-bg</code></td>
+<td>Main background color</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--dark-900)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-text</code></td>
+<td>Primary text color</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-text-muted</code></td>
+<td>Muted text color</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--gray-400)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-text-strong</code></td>
+<td>Strong/bold text color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-border</code></td>
+<td>Default border color</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--dark-650)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-border-hover</code></td>
+<td>Border color on hover</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--gray-550)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-border-strong</code></td>
+<td>Strong border color</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--gray-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-link</code></td>
+<td>Link color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-link-hover</code></td>
+<td>Link hover color</td>
+<td><code v-pre>var(--base-800)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-link-weight</code></td>
+<td>Link font weight</td>
+<td><code v-pre>400</code></td>
+<td><code v-pre>400</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-item-text</code></td>
+<td>Base item text color</td>
+<td><code v-pre>var(--base-text-strong)</code></td>
+<td><code v-pre>var(--base-text-strong)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-item-text-active</code></td>
+<td>Active base item text color</td>
+<td><code v-pre>var(--base-link)</code></td>
+<td><code v-pre>var(--base-link)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-item-bg</code></td>
+<td>Base item background</td>
+<td><code v-pre>var(--transparent)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-item-bg-hover</code></td>
+<td>Base item hover background</td>
+<td><code v-pre>var(--base-50)</code></td>
+<td><code v-pre>var(--dark-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>base-item-bg-active</code></td>
+<td>Active base item background</td>
+<td><code v-pre>var(--base-100)</code></td>
+<td><code v-pre>var(--dark-550)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="variants">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#variants">#</doc-anchor-trigger>
+        <span>Variants</span>
+    </h2>
+</doc-anchor-target>
+<p>Semantic color variants used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant automatically generates a full color palette from 50 (lightest) to 900 (darkest) using <abbr title="Cascading Style Sheet">CSS</abbr> color-mix functions.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>base</code></td>
+<td>Foundation brand color for main actions and highlights</td>
+<td><code v-pre>#5495f1</code></td>
+<td><code v-pre>#5495f1</code></td>
+</tr>
+<tr>
+<td><code v-pre>primary</code></td>
+<td>Primary color variant for components</td>
+<td><code v-pre>#5495f1</code></td>
+<td><code v-pre>#5495f1</code></td>
+</tr>
+<tr>
+<td><code v-pre>success</code></td>
+<td>Success state color for positive actions and confirmations</td>
+<td><code v-pre>#36ad99</code></td>
+<td><code v-pre>#36ad99</code></td>
+</tr>
+<tr>
+<td><code v-pre>danger</code></td>
+<td>Danger/error state color for warnings and destructive actions</td>
+<td><code v-pre>#e53e3e</code></td>
+<td><code v-pre>#e53e3e</code></td>
+</tr>
+<tr>
+<td><code v-pre>warning</code></td>
+<td>Warning state color for caution and important notices</td>
+<td><code v-pre>#edab26</code></td>
+<td><code v-pre>#edab26</code></td>
+</tr>
+<tr>
+<td><code v-pre>royal</code></td>
+<td>Royal purple color for special emphasis and premium features</td>
+<td><code v-pre>#a667e3</code></td>
+<td><code v-pre>#a667e3</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="helper">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#helper">#</doc-anchor-trigger>
+        <span>Helper</span>
+    </h2>
+</doc-anchor-target>
+<p>Utility variables used throughout the theme system.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>transparent</code></td>
+<td>Transparent color value</td>
+<td><code v-pre>transparent</code></td>
+<td><code v-pre>transparent</code></td>
+</tr>
+<tr>
+<td><code v-pre>skeleton-bg</code></td>
+<td>Skeleton loading background</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--dark-600)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="branding">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
+        <span>Branding</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing branding elements.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>branding-label-text</code></td>
+<td>Branding label text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>branding-label-bg</code></td>
+<td>Branding label background</td>
+<td><code v-pre>var(--base-50)</code></td>
+<td><code v-pre>transparent</code></td>
+</tr>
+<tr>
+<td><code v-pre>branding-label-border</code></td>
+<td>Branding label border color</td>
+<td><code v-pre>var(--base-300)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="header">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#header">#</doc-anchor-trigger>
+        <span>Header</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables controlling the header appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>header-bg</code></td>
+<td>Header background color</td>
+<td><code v-pre>var(--base-bg)</code></td>
+<td><code v-pre>var(--base-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>header-border</code></td>
+<td>Header border color</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td><code v-pre>header-text</code></td>
+<td>Header text color</td>
+<td><code v-pre>var(--base-link)</code></td>
+<td><code v-pre>var(--base-link)</code></td>
+</tr>
+<tr>
+<td><code v-pre>header-text-weight</code></td>
+<td>Header text font weight</td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+</tr>
+<tr>
+<td><code v-pre>header-text-hover</code></td>
+<td>Header text hover color</td>
+<td><code v-pre>var(--base-link-hover)</code></td>
+<td><code v-pre>var(--base-link-hover)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="search">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
+        <span>Search</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing search functionality appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>search-text</code></td>
+<td>Search input text color</td>
+<td><code v-pre>var(--base-text)</code></td>
+<td><code v-pre>var(--base-text)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-placeholder</code></td>
+<td>Search placeholder text color</td>
+<td><code v-pre>var(--base-text-muted)</code></td>
+<td><code v-pre>var(--base-text-muted)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-bg</code></td>
+<td>Search input background</td>
+<td><code v-pre>var(--header-bg)</code></td>
+<td><code v-pre>var(--header-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-border</code></td>
+<td>Search input border color</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border-hover)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-border-hover</code></td>
+<td>Search input hover border color</td>
+<td><code v-pre>var(--base-border-hover)</code></td>
+<td><code v-pre>var(--base-border-strong)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-border-focus</code></td>
+<td>Search input focus border color</td>
+<td><code v-pre>var(--base-border-hover)</code></td>
+<td><code v-pre>var(--base-border-strong)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-hint-text</code></td>
+<td>Search hint text color</td>
+<td><code v-pre>var(--search-placeholder)</code></td>
+<td><code v-pre>var(--search-placeholder)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-hint-bg</code></td>
+<td>Search hint background</td>
+<td><code v-pre>var(--header-bg)</code></td>
+<td><code v-pre>var(--header-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>search-hint-border</code></td>
+<td>Search hint border color</td>
+<td><code v-pre>var(--search-border)</code></td>
+<td><code v-pre>var(--search-border)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="filter">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#filter">#</doc-anchor-trigger>
+        <span>Filter</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing filter functionality.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>filter-text</code></td>
+<td>Filter input text color</td>
+<td><code v-pre>var(--base-text)</code></td>
+<td><code v-pre>var(--base-text)</code></td>
+</tr>
+<tr>
+<td><code v-pre>filter-placeholder</code></td>
+<td>Filter placeholder text color</td>
+<td><code v-pre>var(--base-text-muted)</code></td>
+<td><code v-pre>var(--base-text-muted)</code></td>
+</tr>
+<tr>
+<td><code v-pre>filter-bg</code></td>
+<td>Filter input background</td>
+<td><code v-pre>var(--sidebar-left-bg)</code></td>
+<td><code v-pre>var(--sidebar-left-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>filter-border</code></td>
+<td>Filter input border color</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border-hover)</code></td>
+</tr>
+<tr>
+<td><code v-pre>filter-border-hover</code></td>
+<td>Filter input hover border color</td>
+<td><code v-pre>var(--base-border-hover)</code></td>
+<td><code v-pre>var(--base-border-strong)</code></td>
+</tr>
+<tr>
+<td><code v-pre>filter-border-focus</code></td>
+<td>Filter input focus border color</td>
+<td><code v-pre>var(--base-border-hover)</code></td>
+<td><code v-pre>var(--base-border-strong)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="body">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#body">#</doc-anchor-trigger>
+        <span>Body</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables controlling the main content area.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>body-bg</code></td>
+<td>Main content background</td>
+<td><code v-pre>var(--base-bg)</code></td>
+<td><code v-pre>var(--base-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>body-text</code></td>
+<td>Main content text color</td>
+<td><code v-pre>var(--base-text)</code></td>
+<td><code v-pre>var(--base-text)</code></td>
+</tr>
+<tr>
+<td><code v-pre>body-link</code></td>
+<td>Body link color</td>
+<td><code v-pre>var(--base-link)</code></td>
+<td><code v-pre>var(--base-link)</code></td>
+</tr>
+<tr>
+<td><code v-pre>body-link-hover</code></td>
+<td>Body link hover color</td>
+<td><code v-pre>var(--base-link-hover)</code></td>
+<td><code v-pre>var(--base-link-hover)</code></td>
+</tr>
+<tr>
+<td><code v-pre>body-link-weight</code></td>
+<td>Body link font weight</td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="heading">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#heading">#</doc-anchor-trigger>
+        <span>Heading</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for heading text styling.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>heading-text</code></td>
+<td>Heading text color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="scheme">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#scheme">#</doc-anchor-trigger>
+        <span>Scheme</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for the Light/Dark switcher component.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>scheme-menu-item-bg</code></td>
+<td>Switcher item background</td>
+<td><code v-pre>var(--base-item-bg)</code></td>
+<td><code v-pre>var(--base-item-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-bg-hover</code></td>
+<td>Switcher item hover background</td>
+<td><code v-pre>var(--base-item-bg-hover)</code></td>
+<td><code v-pre>var(--base-item-bg-hover)</code></td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-bg-active</code></td>
+<td>Switcher active item background</td>
+<td><code v-pre>var(--base-item-bg-active)</code></td>
+<td><code v-pre>var(--base-item-bg-active)</code></td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-text</code></td>
+<td>Switcher item text color</td>
+<td><code v-pre>var(--base-text)</code></td>
+<td><code v-pre>var(--base-text)</code></td>
+</tr>
+<tr>
+<td><code v-pre>scheme-menu-item-text-active</code></td>
+<td>Switcher active item text color</td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="sidebar">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sidebar">#</doc-anchor-trigger>
+        <span>Sidebar</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables controlling the left and right sidebars.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>sidebar-left-bg</code></td>
+<td>Left sidebar background</td>
+<td><code v-pre>var(--base-bg)</code></td>
+<td><code v-pre>var(--base-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>sidebar-left-border</code></td>
+<td>Left sidebar border</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td><code v-pre>sidebar-right-bg</code></td>
+<td>Right sidebar background</td>
+<td><code v-pre>var(--base-bg)</code></td>
+<td><code v-pre>var(--base-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>sidebar-right-border</code></td>
+<td>Right sidebar border</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="navigation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#navigation">#</doc-anchor-trigger>
+        <span>Navigation</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing navigation appearance and behavior.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>nav-bg</code></td>
+<td>Navigation background</td>
+<td><code v-pre>var(--sidebar-left-bg)</code></td>
+<td><code v-pre>var(--sidebar-left-bg)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-bg-hover</code></td>
+<td>Navigation item hover background</td>
+<td><code v-pre>var(--base-item-bg-hover)</code></td>
+<td><code v-pre>var(--base-item-bg-hover)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-bg-active</code></td>
+<td>Active navigation item background</td>
+<td><code v-pre>var(--base-item-bg-active)</code></td>
+<td><code v-pre>var(--base-item-bg-active)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-bg-active-hover</code></td>
+<td>Active navigation item hover background</td>
+<td><code v-pre>var(--base-item-bg-active)</code></td>
+<td><code v-pre>var(--base-item-bg-active)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text</code></td>
+<td>Navigation item text color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--dark-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-hover</code></td>
+<td>Navigation item hover text color</td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-active</code></td>
+<td>Active navigation item text color</td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-active-hover</code></td>
+<td>Active navigation item hover text color</td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code v-pre>var(--base-item-text-active)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-active-weight</code></td>
+<td>Active navigation item font weight</td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-button</code></td>
+<td>Navigation button color</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-button-active-hover</code></td>
+<td>Navigation button active hover color</td>
+<td><code v-pre>var(--base-200)</code></td>
+<td><code v-pre>var(--base-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-border-active</code></td>
+<td>Active navigation item border color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-stack</code></td>
+<td>Stack navigation text color</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--base-text-strong)</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-stack-case</code></td>
+<td>Stack navigation text transform</td>
+<td><code v-pre>uppercase</code></td>
+<td><code v-pre>uppercase</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-item-text-stack-weight</code></td>
+<td>Stack navigation text font weight</td>
+<td><code v-pre>600</code></td>
+<td><code v-pre>600</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-badge-margin-left</code></td>
+<td>Navigation badge left margin</td>
+<td><code v-pre>auto</code></td>
+<td><code v-pre>auto</code></td>
+</tr>
+<tr>
+<td><code v-pre>nav-badge-margin-left-alt</code></td>
+<td>Alternative navigation badge left margin</td>
+<td><code v-pre>0.75rem</code></td>
+<td><code v-pre>0.75rem</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="table-of-contents">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#table-of-contents">#</doc-anchor-trigger>
+        <span>Table of Contents</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables controlling the Table of Contents appearance in the right sidebar.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>toc-heading</code></td>
+<td>Table of contents heading color</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+<tr>
+<td><code v-pre>toc-text</code></td>
+<td>Table of contents text color</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>toc-text-hover</code></td>
+<td>Table of contents hover text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>toc-text-active</code></td>
+<td>Table of contents active text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>toc-border-active</code></td>
+<td>Table of contents active border color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>toc-heading-case</code></td>
+<td>Table of contents heading text transform</td>
+<td><code v-pre>uppercase</code></td>
+<td><code v-pre>uppercase</code></td>
+</tr>
+<tr>
+<td><code v-pre>toc-heading-weight</code></td>
+<td>Table of contents heading font weight</td>
+<td><code v-pre>600</code></td>
+<td><code v-pre>600</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="footer">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#footer">#</doc-anchor-trigger>
+        <span>Footer</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables controlling the footer appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>footer-text</code></td>
+<td>Footer text color</td>
+<td><code v-pre>var(--gray-500)</code></td>
+<td><code v-pre>var(--dark-350)</code></td>
+</tr>
+<tr>
+<td><code v-pre>footer-link</code></td>
+<td>Footer link color</td>
+<td><code v-pre>var(--base-link)</code></td>
+<td><code v-pre>var(--base-link)</code></td>
+</tr>
+<tr>
+<td><code v-pre>footer-link-hover</code></td>
+<td>Footer link hover color</td>
+<td><code v-pre>var(--base-link-hover)</code></td>
+<td><code v-pre>var(--base-link-hover)</code></td>
+</tr>
+<tr>
+<td><code v-pre>footer-link-weight</code></td>
+<td>Footer link font weight</td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code v-pre>var(--base-link-weight)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="badge-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#badge-component">#</doc-anchor-trigger>
+        <span>Badge Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing badge components across all variants.</p>
+<doc-anchor-target id="base-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-badge">#</doc-anchor-trigger>
+        <span>Base Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-base</code></td>
+<td>Base badge background</td>
+<td><code v-pre>var(--base-100)</code></td>
+<td><code v-pre>var(--base-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-hover</code></td>
+<td>Base badge hover background</td>
+<td><code v-pre>var(--base-100)</code></td>
+<td><code v-pre>var(--base-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-text</code></td>
+<td>Base badge text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-text-hover</code></td>
+<td>Base badge hover text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-border</code></td>
+<td>Base badge border color</td>
+<td><code v-pre>var(--base-200)</code></td>
+<td><code v-pre>var(--base-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-base-border-hover</code></td>
+<td>Base badge hover border color</td>
+<td><code v-pre>var(--base-400)</code></td>
+<td><code v-pre>var(--base-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="primary-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#primary-badge">#</doc-anchor-trigger>
+        <span>Primary Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-primary</code></td>
+<td>Primary badge background</td>
+<td><code v-pre>var(--primary-100)</code></td>
+<td><code v-pre>var(--primary-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-primary-hover</code></td>
+<td>Primary badge hover background</td>
+<td><code v-pre>var(--primary-100)</code></td>
+<td><code v-pre>var(--primary-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-primary-text</code></td>
+<td>Primary badge text color</td>
+<td><code v-pre>var(--primary-500)</code></td>
+<td><code v-pre>var(--primary-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-primary-text-hover</code></td>
+<td>Primary badge hover text color</td>
+<td><code v-pre>var(--primary-500)</code></td>
+<td><code v-pre>var(--primary-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-primary-border</code></td>
+<td>Primary badge border color</td>
+<td><code v-pre>var(--primary-200)</code></td>
+<td><code v-pre>var(--primary-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-primary-border-hover</code></td>
+<td>Primary badge hover border color</td>
+<td><code v-pre>var(--primary-400)</code></td>
+<td><code v-pre>var(--primary-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="secondary-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#secondary-badge">#</doc-anchor-trigger>
+        <span>Secondary Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-secondary</code></td>
+<td>Secondary badge background</td>
+<td><code v-pre>var(--gray-100)</code></td>
+<td><code v-pre>var(--gray-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-secondary-hover</code></td>
+<td>Secondary badge hover background</td>
+<td><code v-pre>var(--gray-100)</code></td>
+<td><code v-pre>var(--gray-250)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-secondary-text</code></td>
+<td>Secondary badge text color</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--gray-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-secondary-text-hover</code></td>
+<td>Secondary badge hover text color</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--gray-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-secondary-border</code></td>
+<td>Secondary badge border color</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--gray-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-secondary-border-hover</code></td>
+<td>Secondary badge hover border color</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--gray-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="success-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#success-badge">#</doc-anchor-trigger>
+        <span>Success Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-success</code></td>
+<td>Success badge background</td>
+<td><code v-pre>var(--success-100)</code></td>
+<td><code v-pre>var(--success-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-success-hover</code></td>
+<td>Success badge hover background</td>
+<td><code v-pre>var(--success-100)</code></td>
+<td><code v-pre>var(--success-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-success-text</code></td>
+<td>Success badge text color</td>
+<td><code v-pre>var(--success-700)</code></td>
+<td><code v-pre>var(--success-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-success-text-hover</code></td>
+<td>Success badge hover text color</td>
+<td><code v-pre>var(--success-700)</code></td>
+<td><code v-pre>var(--success-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-success-border</code></td>
+<td>Success badge border color</td>
+<td><code v-pre>var(--success-200)</code></td>
+<td><code v-pre>var(--success-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-success-border-hover</code></td>
+<td>Success badge hover border color</td>
+<td><code v-pre>var(--success-400)</code></td>
+<td><code v-pre>var(--success-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="danger-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#danger-badge">#</doc-anchor-trigger>
+        <span>Danger Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-danger</code></td>
+<td>Danger badge background</td>
+<td><code v-pre>var(--danger-100)</code></td>
+<td><code v-pre>var(--danger-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-danger-hover</code></td>
+<td>Danger badge hover background</td>
+<td><code v-pre>var(--danger-100)</code></td>
+<td><code v-pre>var(--danger-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-danger-text</code></td>
+<td>Danger badge text color</td>
+<td><code v-pre>var(--danger-600)</code></td>
+<td><code v-pre>var(--danger-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-danger-text-hover</code></td>
+<td>Danger badge hover text color</td>
+<td><code v-pre>var(--danger-600)</code></td>
+<td><code v-pre>var(--danger-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-danger-border</code></td>
+<td>Danger badge border color</td>
+<td><code v-pre>var(--danger-200)</code></td>
+<td><code v-pre>var(--danger-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-danger-border-hover</code></td>
+<td>Danger badge hover border color</td>
+<td><code v-pre>var(--danger-400)</code></td>
+<td><code v-pre>var(--danger-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="warning-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#warning-badge">#</doc-anchor-trigger>
+        <span>Warning Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-warning</code></td>
+<td>Warning badge background</td>
+<td><code v-pre>var(--warning-100)</code></td>
+<td><code v-pre>var(--warning-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-warning-hover</code></td>
+<td>Warning badge hover background</td>
+<td><code v-pre>var(--warning-100)</code></td>
+<td><code v-pre>var(--warning-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-warning-text</code></td>
+<td>Warning badge text color</td>
+<td><code v-pre>var(--warning-700)</code></td>
+<td><code v-pre>var(--warning-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-warning-text-hover</code></td>
+<td>Warning badge hover text color</td>
+<td><code v-pre>var(--warning-700)</code></td>
+<td><code v-pre>var(--warning-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-warning-border</code></td>
+<td>Warning badge border color</td>
+<td><code v-pre>var(--warning-200)</code></td>
+<td><code v-pre>var(--warning-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-warning-border-hover</code></td>
+<td>Warning badge hover border color</td>
+<td><code v-pre>var(--warning-400)</code></td>
+<td><code v-pre>var(--warning-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="info-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#info-badge">#</doc-anchor-trigger>
+        <span>Info Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-info</code></td>
+<td>Info badge background</td>
+<td><code v-pre>var(--transparent)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-info-hover</code></td>
+<td>Info badge hover background</td>
+<td><code v-pre>var(--transparent)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-info-text</code></td>
+<td>Info badge text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-info-text-hover</code></td>
+<td>Info badge hover text color</td>
+<td><code v-pre>var(--base-300)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-info-border</code></td>
+<td>Info badge border color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-info-border-hover</code></td>
+<td>Info badge hover border color</td>
+<td><code v-pre>var(--base-300)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="light-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#light-badge">#</doc-anchor-trigger>
+        <span>Light Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-light</code></td>
+<td>Light badge background</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-light-hover</code></td>
+<td>Light badge hover background</td>
+<td><code v-pre>var(--gray-100)</code></td>
+<td><code v-pre>var(--dark-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-light-text</code></td>
+<td>Light badge text color</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--dark-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-light-text-hover</code></td>
+<td>Light badge hover text color</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--dark-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-light-border</code></td>
+<td>Light badge border color</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-light-border-hover</code></td>
+<td>Light badge hover border color</td>
+<td><code v-pre>var(--gray-400)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="dark-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-badge">#</doc-anchor-trigger>
+        <span>Dark Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-dark</code></td>
+<td>Dark badge background</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-dark-hover</code></td>
+<td>Dark badge hover background</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-dark-text</code></td>
+<td>Dark badge text color</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-dark-text-hover</code></td>
+<td>Dark badge hover text color</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-dark-border</code></td>
+<td>Dark badge border color</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-dark-border-hover</code></td>
+<td>Dark badge hover border color</td>
+<td><code v-pre>var(--gray-500)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="ghost-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ghost-badge">#</doc-anchor-trigger>
+        <span>Ghost Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-ghost</code></td>
+<td>Ghost badge background</td>
+<td><code v-pre>var(--body-bg)</code></td>
+<td><code v-pre>var(--dark-550)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-ghost-hover</code></td>
+<td>Ghost badge hover background</td>
+<td><code v-pre>var(--gray-50)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-ghost-text</code></td>
+<td>Ghost badge text color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-ghost-text-hover</code></td>
+<td>Ghost badge hover text color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-ghost-border</code></td>
+<td>Ghost badge border color</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-ghost-border-hover</code></td>
+<td>Ghost badge hover border color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="contrast-badge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contrast-badge">#</doc-anchor-trigger>
+        <span>Contrast Badge</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>badge-contrast</code></td>
+<td>Contrast badge background</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-contrast-hover</code></td>
+<td>Contrast badge hover background</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--dark-200)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-contrast-text</code></td>
+<td>Contrast badge text color</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--dark-850)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-contrast-text-hover</code></td>
+<td>Contrast badge hover text color</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--dark-850)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-contrast-border</code></td>
+<td>Contrast badge border color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>badge-contrast-border-hover</code></td>
+<td>Contrast badge hover border color</td>
+<td><code v-pre>var(--gray-800)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="button-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#button-component">#</doc-anchor-trigger>
+        <span>Button Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing button components across all variants.</p>
+<doc-anchor-target id="base-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-button">#</doc-anchor-trigger>
+        <span>Base Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-base</code></td>
+<td>Base button background</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-base-hover</code></td>
+<td>Base button hover background</td>
+<td><code v-pre>var(--base-700)</code></td>
+<td><code v-pre>var(--base-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-base-text</code></td>
+<td>Base button text color</td>
+<td><code v-pre>var(--base-50)</code></td>
+<td><code v-pre>var(--base-50)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="primary-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#primary-button">#</doc-anchor-trigger>
+        <span>Primary Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-primary</code></td>
+<td>Primary button background</td>
+<td><code v-pre>var(--primary-500)</code></td>
+<td><code v-pre>var(--primary-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-primary-hover</code></td>
+<td>Primary button hover background</td>
+<td><code v-pre>var(--primary-700)</code></td>
+<td><code v-pre>var(--primary-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-primary-text</code></td>
+<td>Primary button text color</td>
+<td><code v-pre>var(--primary-50)</code></td>
+<td><code v-pre>var(--primary-50)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="secondary-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#secondary-button">#</doc-anchor-trigger>
+        <span>Secondary Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-secondary</code></td>
+<td>Secondary button background</td>
+<td><code v-pre>var(--gray-500)</code></td>
+<td><code v-pre>var(--gray-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-secondary-hover</code></td>
+<td>Secondary button hover background</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-secondary-text</code></td>
+<td>Secondary button text color</td>
+<td><code v-pre>var(--gray-50)</code></td>
+<td><code v-pre>var(--gray-50)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="success-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#success-button">#</doc-anchor-trigger>
+        <span>Success Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-success</code></td>
+<td>Success button background</td>
+<td><code v-pre>var(--success-500)</code></td>
+<td><code v-pre>var(--success-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-success-hover</code></td>
+<td>Success button hover background</td>
+<td><code v-pre>var(--success-700)</code></td>
+<td><code v-pre>var(--success-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-success-text</code></td>
+<td>Success button text color</td>
+<td><code v-pre>var(--success-50)</code></td>
+<td><code v-pre>var(--success-50)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="danger-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#danger-button">#</doc-anchor-trigger>
+        <span>Danger Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-danger</code></td>
+<td>Danger button background</td>
+<td><code v-pre>var(--danger-500)</code></td>
+<td><code v-pre>var(--danger-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-danger-hover</code></td>
+<td>Danger button hover background</td>
+<td><code v-pre>var(--danger-700)</code></td>
+<td><code v-pre>var(--danger-700)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-danger-text</code></td>
+<td>Danger button text color</td>
+<td><code v-pre>var(--danger-50)</code></td>
+<td><code v-pre>var(--danger-50)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="warning-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#warning-button">#</doc-anchor-trigger>
+        <span>Warning Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-warning</code></td>
+<td>Warning button background</td>
+<td><code v-pre>var(--warning-500)</code></td>
+<td><code v-pre>var(--warning-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-warning-hover</code></td>
+<td>Warning button hover background</td>
+<td><code v-pre>var(--warning-600)</code></td>
+<td><code v-pre>var(--warning-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-warning-text</code></td>
+<td>Warning button text color</td>
+<td><code v-pre>var(--warning-900)</code></td>
+<td><code v-pre>var(--warning-900)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="info-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#info-button">#</doc-anchor-trigger>
+        <span>Info Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-info</code></td>
+<td>Info button background</td>
+<td><code v-pre>var(--transparent)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-info-hover</code></td>
+<td>Info button hover background</td>
+<td><code v-pre>var(--transparent)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-info-text</code></td>
+<td>Info button text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-info-text-hover</code></td>
+<td>Info button hover text color</td>
+<td><code v-pre>var(--base-300)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-info-border</code></td>
+<td>Info button border color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-info-border-hover</code></td>
+<td>Info button hover border color</td>
+<td><code v-pre>var(--base-300)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="light-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#light-button">#</doc-anchor-trigger>
+        <span>Light Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-light</code></td>
+<td>Light button background</td>
+<td><code v-pre>var(--gray-200)</code></td>
+<td><code v-pre>var(--dark-250)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-light-hover</code></td>
+<td>Light button hover background</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-350)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-light-text</code></td>
+<td>Light button text color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-black)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="dark-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-button">#</doc-anchor-trigger>
+        <span>Dark Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-dark</code></td>
+<td>Dark button background</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-550)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-dark-hover</code></td>
+<td>Dark button hover background</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-dark-text</code></td>
+<td>Dark button text color</td>
+<td><code v-pre>var(--gray-50)</code></td>
+<td><code v-pre>var(--dark-350)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="ghost-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ghost-button">#</doc-anchor-trigger>
+        <span>Ghost Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-ghost</code></td>
+<td>Ghost button background</td>
+<td><code v-pre>var(--gray-100)</code></td>
+<td><code v-pre>var(--dark-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-ghost-hover</code></td>
+<td>Ghost button hover background</td>
+<td><code v-pre>var(--gray-150)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-ghost-text</code></td>
+<td>Ghost button text color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="contrast-button">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contrast-button">#</doc-anchor-trigger>
+        <span>Contrast Button</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>button-contrast</code></td>
+<td>Contrast button background</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-contrast-hover</code></td>
+<td>Contrast button hover background</td>
+<td><code v-pre>var(--gray-700)</code></td>
+<td><code v-pre>var(--dark-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>button-contrast-text</code></td>
+<td>Contrast button text color</td>
+<td><code v-pre>var(--gray-50)</code></td>
+<td><code v-pre>var(--base-black)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="callout-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#callout-component">#</doc-anchor-trigger>
+        <span>Callout Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing callout components.</p>
+<doc-anchor-target id="base-callout">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-callout">#</doc-anchor-trigger>
+        <span>Base Callout</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>callout-base-bg</code></td>
+<td>Base callout background</td>
+<td><code v-pre>var(--base-white)</code></td>
+<td><code v-pre>var(--dark-800)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-base-border</code></td>
+<td>Base callout border</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-base</code></td>
+<td>Base callout accent color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="callout-accent-colors">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#callout-accent-colors">#</doc-anchor-trigger>
+        <span>Callout Accent Colors</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>callout-primary</code></td>
+<td>Primary callout accent color</td>
+<td><code v-pre>var(--primary-500)</code></td>
+<td><code v-pre>var(--primary-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-secondary</code></td>
+<td>Secondary callout accent color</td>
+<td><code v-pre>var(--gray-500)</code></td>
+<td><code v-pre>var(--gray-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-success</code></td>
+<td>Success callout accent color</td>
+<td><code v-pre>var(--success-500)</code></td>
+<td><code v-pre>var(--success-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-tip</code></td>
+<td>Tip callout accent color</td>
+<td><code v-pre>var(--success-400)</code></td>
+<td><code v-pre>var(--success-400)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-danger</code></td>
+<td>Danger callout accent color</td>
+<td><code v-pre>var(--danger-500)</code></td>
+<td><code v-pre>var(--danger-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-warning</code></td>
+<td>Warning callout accent color</td>
+<td><code v-pre>var(--warning-500)</code></td>
+<td><code v-pre>var(--warning-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-info</code></td>
+<td>Info callout accent color</td>
+<td><code v-pre>var(--base-300)</code></td>
+<td><code v-pre>var(--base-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-question</code></td>
+<td>Question callout accent color</td>
+<td><code v-pre>var(--royal-500)</code></td>
+<td><code v-pre>var(--royal-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-light</code></td>
+<td>Light callout accent color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--gray-300)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-dark</code></td>
+<td>Dark callout accent color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--gray-900)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-ghost</code></td>
+<td>Ghost callout accent color</td>
+<td><code v-pre>var(--gray-100)</code></td>
+<td><code v-pre>var(--gray-100)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-contrast</code></td>
+<td>Contrast callout accent color</td>
+<td><code v-pre>var(--gray-600)</code></td>
+<td><code v-pre>var(--gray-600)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-contrast-bg</code></td>
+<td>Contrast callout background</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-contrast-text</code></td>
+<td>Contrast callout text color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-800)</code></td>
+</tr>
+<tr>
+<td><code v-pre>callout-contrast-border</code></td>
+<td>Contrast callout border color</td>
+<td><code v-pre>var(--gray-900)</code></td>
+<td><code v-pre>var(--dark-700)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="image-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image-component">#</doc-anchor-trigger>
+        <span>Image Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing image appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>image-rounded</code></td>
+<td>Image border radius</td>
+<td><code v-pre>0px</code></td>
+<td><code v-pre>0px</code></td>
+</tr>
+<tr>
+<td><code v-pre>image-border</code></td>
+<td>Image border color</td>
+<td><code v-pre>var(--base-border)</code></td>
+<td><code v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td><code v-pre>image-border-width</code></td>
+<td>Image border width</td>
+<td><code v-pre>0</code></td>
+<td><code v-pre>0</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="list-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#list-component">#</doc-anchor-trigger>
+        <span>List Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing list appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>list-checked</code></td>
+<td>Checked list item color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>list-unchecked</code></td>
+<td>Unchecked list item color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-400)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="tab-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tab-component">#</doc-anchor-trigger>
+        <span>Tab Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing tab appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code v-pre>base</code></th>
+<th>Default <code v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>tab-text</code></td>
+<td>Tab text color</td>
+<td><code v-pre>var(--gray-500)</code></td>
+<td><code v-pre>var(--dark-350)</code></td>
+</tr>
+<tr>
+<td><code v-pre>tab-text-hover</code></td>
+<td>Tab hover text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>tab-text-active</code></td>
+<td>Active tab text color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+<tr>
+<td><code v-pre>tab-border</code></td>
+<td>Tab border color</td>
+<td><code v-pre>var(--transparent)</code></td>
+<td><code v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code v-pre>tab-border-hover</code></td>
+<td>Tab hover border color</td>
+<td><code v-pre>var(--gray-300)</code></td>
+<td><code v-pre>var(--dark-450)</code></td>
+</tr>
+<tr>
+<td><code v-pre>tab-border-active</code></td>
+<td>Active tab border color</td>
+<td><code v-pre>var(--base-500)</code></td>
+<td><code v-pre>var(--base-500)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="base-color-palette">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-color-palette">#</doc-anchor-trigger>
+        <span>Base Color Palette</span>
+    </h2>
+</doc-anchor-target>
+<p>System elements within a Retype generated website are derived from the <code v-pre>base-color</code> using the <code v-pre>base</code> color palette.</p>
+<doc-anchor-target id="base-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-1">#</doc-anchor-trigger>
+        <span>Base</span>
+    </h3>
+</doc-anchor-target>
+<p>Color variations based on your <code v-pre>base-color</code> setting:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>base-50</code></td>
+<td>Lightest base color shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-100</code></td>
+<td>Very light base color shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-200</code></td>
+<td>Light base color shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-300</code></td>
+<td>Medium-light base color shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-400</code></td>
+<td>Medium base color shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>base-500</code></td>
+<td>Base color (same as <code v-pre>base-color</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>base-600</code></td>
+<td>Medium-dark base color shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>base-700</code></td>
+<td>Dark base color shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>base-800</code></td>
+<td>Very dark base color shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>base-900</code></td>
+<td>Darkest base color shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="semantic-color-palettes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#semantic-color-palettes">#</doc-anchor-trigger>
+        <span>Semantic Color Palettes</span>
+    </h2>
+</doc-anchor-target>
+<p>Each semantic color includes shades from <code v-pre>50</code> (lightest) to <code v-pre>900</code> (darkest):</p>
+<p>The semantic color shades follow a consistent pattern where:</p>
+<ul>
+<li>Lower numbers (50-400) are lighter shades created by mixing with white</li>
+<li>Higher numbers (600-900) are darker shades created by mixing with black</li>
+<li>The mid color <code v-pre>500</code> of each sequence represents the pure color for that sequence</li>
+</ul>
+<doc-anchor-target id="primary">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#primary">#</doc-anchor-trigger>
+        <span>Primary</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>primary</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>primary-50</code></td>
+<td>Lightest primary shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-100</code></td>
+<td>Very light primary shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-200</code></td>
+<td>Light primary shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-300</code></td>
+<td>Medium-light primary shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-400</code></td>
+<td>Medium primary shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-500</code></td>
+<td>Base primary color (<code v-pre>#5495f1</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-600</code></td>
+<td>Medium-dark primary shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-700</code></td>
+<td>Dark primary shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-800</code></td>
+<td>Very dark primary shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>primary-900</code></td>
+<td>Darkest primary shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="success">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#success">#</doc-anchor-trigger>
+        <span>Success</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>success</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>success-50</code></td>
+<td>Lightest success shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-100</code></td>
+<td>Very light success shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-200</code></td>
+<td>Light success shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-300</code></td>
+<td>Medium-light success shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-400</code></td>
+<td>Medium success shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>success-500</code></td>
+<td>Base success color (<code v-pre>#36ad99</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>success-600</code></td>
+<td>Medium-dark success shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>success-700</code></td>
+<td>Dark success shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>success-800</code></td>
+<td>Very dark success shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>success-900</code></td>
+<td>Darkest success shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="danger">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#danger">#</doc-anchor-trigger>
+        <span>Danger</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>danger</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>danger-50</code></td>
+<td>Lightest danger shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-100</code></td>
+<td>Very light danger shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-200</code></td>
+<td>Light danger shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-300</code></td>
+<td>Medium-light danger shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-400</code></td>
+<td>Medium danger shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-500</code></td>
+<td>Base danger color (<code v-pre>#e53e3e</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-600</code></td>
+<td>Medium-dark danger shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-700</code></td>
+<td>Dark danger shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-800</code></td>
+<td>Very dark danger shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>danger-900</code></td>
+<td>Darkest danger shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="warning">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#warning">#</doc-anchor-trigger>
+        <span>Warning</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>warning</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>warning-50</code></td>
+<td>Lightest warning shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-100</code></td>
+<td>Very light warning shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-200</code></td>
+<td>Light warning shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-300</code></td>
+<td>Medium-light warning shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-400</code></td>
+<td>Medium warning shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-500</code></td>
+<td>Base warning color (<code v-pre>#edab26</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-600</code></td>
+<td>Medium-dark warning shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-700</code></td>
+<td>Dark warning shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-800</code></td>
+<td>Very dark warning shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>warning-900</code></td>
+<td>Darkest warning shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="royal">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#royal">#</doc-anchor-trigger>
+        <span>Royal</span>
+    </h3>
+</doc-anchor-target>
+<p>Semantic palette <code v-pre>royal</code> with shades <code v-pre>50</code> through <code v-pre>900</code></p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Shade</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>royal-50</code></td>
+<td>Lightest royal shade (10% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-100</code></td>
+<td>Very light royal shade (15% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-200</code></td>
+<td>Light royal shade (30% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-300</code></td>
+<td>Medium-light royal shade (50% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-400</code></td>
+<td>Medium royal shade (70% mix with white)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-500</code></td>
+<td>Base royal color (<code v-pre>#a667e3</code>)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-600</code></td>
+<td>Medium-dark royal shade (90% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-700</code></td>
+<td>Dark royal shade (80% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-800</code></td>
+<td>Very dark royal shade (60% mix with black)</td>
+</tr>
+<tr>
+<td><code v-pre>royal-900</code></td>
+<td>Darkest royal shade (40% mix with black)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="gray">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gray">#</doc-anchor-trigger>
+        <span>Gray</span>
+    </h3>
+</doc-anchor-target>
+<p>Predefined gray color variations:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>gray-50</code></td>
+<td><code v-pre>#f8f9fc</code></td>
+<td>Lightest gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-100</code></td>
+<td><code v-pre>#f4f6fc</code></td>
+<td>Very light gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-150</code></td>
+<td><code v-pre>#edf0f6</code></td>
+<td>Light gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-200</code></td>
+<td><code v-pre>#e4e8f1</code></td>
+<td>Light gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-250</code></td>
+<td><code v-pre>#d2d9e3</code></td>
+<td>Medium-light gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-300</code></td>
+<td><code v-pre>#bdc8da</code></td>
+<td>Medium-light gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-350</code></td>
+<td><code v-pre>#a4b1c6</code></td>
+<td>Medium gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-400</code></td>
+<td><code v-pre>#8693a9</code></td>
+<td>Medium gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-450</code></td>
+<td><code v-pre>#65718c</code></td>
+<td>Medium-dark gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-500</code></td>
+<td><code v-pre>#525e78</code></td>
+<td>Medium-dark gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-550</code></td>
+<td><code v-pre>#46536d</code></td>
+<td>Dark gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-600</code></td>
+<td><code v-pre>#3f4a64</code></td>
+<td>Dark gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-650</code></td>
+<td><code v-pre>#313c56</code></td>
+<td>Very dark gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-700</code></td>
+<td><code v-pre>#2c3047</code></td>
+<td>Very dark gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-750</code></td>
+<td><code v-pre>#1f2236</code></td>
+<td>Darkest gray variant</td>
+</tr>
+<tr>
+<td><code v-pre>gray-800</code></td>
+<td><code v-pre>#181d2d</code></td>
+<td>Near black gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-850</code></td>
+<td><code v-pre>#101523</code></td>
+<td>Almost black gray</td>
+</tr>
+<tr>
+<td><code v-pre>gray-900</code></td>
+<td><code v-pre>#090d1c</code></td>
+<td>Darkest gray</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="dark">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dark">#</doc-anchor-trigger>
+        <span>Dark</span>
+    </h3>
+</doc-anchor-target>
+<p>Specialized dark mode color variations:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>dark-50</code></td>
+<td><code v-pre>#fafafa</code></td>
+<td>Lightest dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-100</code></td>
+<td><code v-pre>#f7f7f7</code></td>
+<td>Very light dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-150</code></td>
+<td><code v-pre>#f2f2f2</code></td>
+<td>Light dark mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-200</code></td>
+<td><code v-pre>#eeeeee</code></td>
+<td>Light dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-250</code></td>
+<td><code v-pre>#e0e0e0</code></td>
+<td>Medium-light dark mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-300</code></td>
+<td><code v-pre>#c4c4c4</code></td>
+<td>Medium-light dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-350</code></td>
+<td><code v-pre>#9e9e9e</code></td>
+<td>Medium dark mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-400</code></td>
+<td><code v-pre>#616161</code></td>
+<td>Medium dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-450</code></td>
+<td><code v-pre>#424242</code></td>
+<td>Medium-dark dark mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-500</code></td>
+<td><code v-pre>#353535</code></td>
+<td>Medium-dark dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-550</code></td>
+<td><code v-pre>#323232</code></td>
+<td>Dark mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-600</code></td>
+<td><code v-pre>#2d2d2d</code></td>
+<td>Dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-650</code></td>
+<td><code v-pre>#2c2c2c</code></td>
+<td>Very dark mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-700</code></td>
+<td><code v-pre>#272727</code></td>
+<td>Very dark mode color</td>
+</tr>
+<tr>
+<td><code v-pre>dark-750</code></td>
+<td><code v-pre>#252525</code></td>
+<td>Darkest mode variant</td>
+</tr>
+<tr>
+<td><code v-pre>dark-800</code></td>
+<td><code v-pre>#222222</code></td>
+<td>Near black dark mode</td>
+</tr>
+<tr>
+<td><code v-pre>dark-850</code></td>
+<td><code v-pre>#1e1e1e</code></td>
+<td>Almost black dark mode</td>
+</tr>
+<tr>
+<td><code v-pre>dark-900</code></td>
+<td><code v-pre>#121212</code></td>
+<td>Darkest dark mode color</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Add content to _includes/bottom.md to include here -->
+<!-- Project wide abbreviations, _includes/bottom.md -->
+
+                                <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="/tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-body-link hover:text-body-link-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="/tags/theme/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>theme</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="/tags/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>pro</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer id="retype-content-footer" class="clear-both">
+                                <div class="flex flex-wrap items-center justify-between mt-14">
+                                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link-weight hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/theme-variables.md" target="_blank" rel="noopener">
+                                        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        <span>Edit this page</span>
+                                    </a>
+                                </div>
+                            
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/configuration/reserved_words/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                                <span class="block mt-1">Reserved words</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/configuration/envvars/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
+                                                <span class="block mt-1">Environment variables</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                                <div id="retype-footer-links" class="print:hidden">
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                        <li>
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="/about/">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                    <g fill="currentColor">
+                                                        <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
+                                                    </g>
+                                                </svg>
+                                                <span>About</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="/license/">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                    <g fill="currentColor">
+                                                        <path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"/><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"/>
+                                                    </g>
+                                                </svg>
+                                                <span>License</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0-preview6</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Theme variables", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+
+    <!-- Add content to _includes/body.html to include here -->
+</body>
+</html>
