@@ -40,7 +40,7 @@ This is a sample page with a :icon-rocket: icon.
 
 ## New icons
 
-There are {{ octicons_new.size }} [!badge variant="info" text="NEW"] icons in Retype v{{ version }}:
+The following [!badge NEW|info] icons are included in Retype **v{{ version }}**:
 
 {{ include "components/octicons" list:octicons_new }}
 

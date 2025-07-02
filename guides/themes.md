@@ -17,9 +17,6 @@ start
 ```
 !!!
 
-
----
-
 ## Quick Start
 
 The simplest way to customize your site's appearance is by adding a `theme` configuration to your `retype.yml` file and setting a custom `base-color` value.
@@ -29,8 +26,6 @@ theme:
   base:
     base-color: "#8839ef"
 ```
-
----
 
 ## Configuration Structure
 
@@ -60,36 +55,33 @@ theme:
     base-bg: "#303446"
 ```
 
----
-
 ## Examples
 
 ### Brand Color Customization
 
-To match your brand colours:
+To match your brand colors:
 
 ```yml
 theme:
   base:
-    base-color: "#ff6b35"  # Orange brand colour
-    primary: "#ff6b35"     # Ensure consistency
+    base-color: "#ff6b35"  # Orange brand color
 ```
 
 ### Typography Adjustments
 
-To make your site more readable:
+To better match your site's style and user-experience requirements:
 
 ```yml
 theme:
   base:
-    base-link-weight: 500           # Slightly bolder links
+    base-link-weight: 500            # Slightly bolder links
     nav-item-text-active-weight: 700 # Bold active navigation
-    heading-text: "#1a202c"         # Darker headings
+    heading-text: "#1a202c"          # Darker headings
 ```
 
 ### Dark Mode Optimization
 
-To create a custom dark theme:
+To adjust the dark mode:
 
 ```yml
 theme:
@@ -103,29 +95,28 @@ theme:
 
 ### Component Styling
 
-To customize specific components:
+To customize component colors and other elements:
 
 ```yml
 theme:
   base:
     # Rounded images
-    image-rounded: 1rem
+    image-rounded: 0.75rem
     
-    # Custom badge colours
-    badge-primary: "#10b981"
-    badge-primary-text: "#ffffff"
-    
-    # Button styling
-    button-primary: "#3b82f6"
-    button-primary-hover: "#2563eb"
+    # Custom variant colors
+    primary: "#8caaee" # Blue
+    success: "#a6d189" # Green
+    danger: "#e78284"  # Red
+    warning: "#e5c890" # Yellow    
 ```
-
----
 
 ## Best Practices
 
-### 1. Start Small
-Begin with basic colour changes before moving to complex customizations:
+When customizing your Retype [theme](/configuration/project.md#theme), it’s best to start with small changes and gradually build up. Here are some guidelines to help you maintain a clean, accessible, and consistent design.
+
+### 1. Start with the `base-color`
+
+Begin by tweaking a few brand colors before diving into full theme customization. This keeps things manageable and easier to approve before moving on to further theme refinements. 
 
 ```yml
 theme:
@@ -133,54 +124,61 @@ theme:
     base-color: "#your-brand-color"
 ```
 
-### 2. Maintain Contrast
-Ensure sufficient contrast between text and background colours for accessibility:
+### 2. Prioritise readability and contrast
+
+Contrast between text and background is important for readability and accessibility. Avoid color combinations that are too similar and do not provide enough contrast.
 
 ```yml
 theme:
   base:
-    base-text: "#374151"      # Dark enough for readability
-    base-bg: "#ffffff"        # Light background
+    base-text: "#374151"     # A strong neutral text color
+    base-bg: "#ffffff"       # Clean white background
 ```
 
-### 3. Test Both Themes
-Always test your customizations in both light and dark modes:
+!!!tip
+Use online contrast checkers to validate your color palette against WCAG standards.
+!!!
+
+### 3. Check light and dark modes
+
+If you are defining both the `base` and `dark` themes, test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode.
 
 ```yml
 theme:
   base:
-    base-color: "#2563eb"
+    base-color: "#ff6b35"
   dark:
-    base-color: "#60a5fa"     # Lighter shade for dark mode
+    base-color: "#ca9ee6"
 ```
 
-### 4. Use Semantic Variables
-Prefer semantic variables over direct colour values when possible:
+### 4. Use Semantic variables where possible
+
+Instead of hardcoding colors everywhere, use the built-in semantic variables. It keeps your theme consistent and easier to maintain.
 
 ```yml
 theme:
   base:
-    nav-item-text-active: "var(--base-500)"  # Uses base colour
+    nav-item-text-active: "var(--base-500)"  # Uses a consistent brand tone
 ```
 
----
+Following these practices helps ensure your site looks good, stays accessible, and is easy to maintain as it grows.
 
 ## Troubleshooting
 
 ### Theme Not Applied
 
-- Ensure you have a valid Retype Pro license or [`start.pro: true`](/configuration/project.md#pro)
-- Check that your YAML syntax is correct
-- Verify variable names match exactly (case-sensitive)
+- [x] Ensure you have a valid Retype Pro license or add [`start.pro: true`](/configuration/project.md#pro)
+- [x] Check that the syntax is correct in your `retype.yml` file
+- [x] Verify theme setting names match exactly
 
 ### Dark Mode Issues
 
-- Remember that dark theme variables only apply in dark mode
-- Test with the theme switcher in your site
-- Some variables may need both base and dark definitions
+- [x] Remember that dark theme variables only apply in dark mode
+- [x] Test with the theme switcher on your website
+- [x] Some variables may need both `base` and `dark` configured to provide proper contrast
 
 ### Variable Names
 
-- All variable names use kebab-case (hyphens, not underscores)
-- Variables are case-sensitive
-- Don't include the `--` prefix in your configuration
+- [x] All variable names use `kebab-case` (hyphens, not underscores)
+- [x] Variables are case-sensitive
+- [x] Don't include the `--` prefix in your configuration

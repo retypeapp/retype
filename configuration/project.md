@@ -5,8 +5,6 @@ icon: package
 tags: [config]
 toc:
   depth: 2-5
-nav:
-  badge: UPDATE|info
 ---
 # Project configuration
 

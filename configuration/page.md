@@ -3,8 +3,6 @@ label: Page
 order: 100
 icon: file
 tags: [config]
-nav:
-  badge: UPDATE|info
 ---
 # Page configuration
 
