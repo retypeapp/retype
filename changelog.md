@@ -20,64 +20,44 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 !!!
 
 ---
-## v3.11.0
+## v3.12.0 [!badge NEXT|info]
 
-[!badge text="LATEST" variant="info"]
+Scheduled for late Q3-2025.
+
+---
+## v3.11.0 [!badge LATEST|info]
 
 Released: [2025-07-02](https://github.com/retypeapp/retype/releases/tag/v3.11.0)
 
-# Version 3.11.0
-
 There were 15 changes in Retype 3.11.0.
 
-## New
++++ New :icon-shield-check:
 
-1. New theme color customization for  and  themes, see #42 and #697
-1. New 3-way Light, Dark, and System color scheme selector, see #421 and #624
-1. New Page level  setting for adding a badge component to left navigation nodes, see #763
-1. New pipe notation syntax support for adding variant to Badge, Button, and NavigationBadge components
-1. New support for icon-only links in header and footer
-1. New  variant for Button, Badge, and Callout
+1. [!badge PRO](/pro/pro.md) New [theme](/configuration/project.md#theme) color customization for `base` and `dark` themes, see [#42](https://github.com/retypeapp/retype/discussions/42) and [#697](https://github.com/retypeapp/retype/discussions/697)
+1. [!badge PRO](/pro/pro.md) New [`branding.baseColor`](/configuration/project.md#basecolor) setting for quick configuration of the project `base-color` [theme variable](/configuration/theme-variables.md) to left navigation nodes, see [#763](https://github.com/retypeapp/retype/discussions/763)
+1. [!badge PRO](/pro/pro.md) New Page level [`nav.badge`](/configuration/page.md#nav-badge) setting for adding a badge component to left navigation nodes, see [#763](https://github.com/retypeapp/retype/discussions/763)
+1. New 3-way `Light`, `Dark`, and `System` color [scheme](/configuration/project.md#scheme) selector, see [#421](https://github.com/retypeapp/retype/discussions/421) and [#624](https://github.com/retypeapp/retype/discussions/624)
+1. New pipe notation syntax support for adding variant to [[Button]], [[Badge]], and [Navigation Badge](/configuration/page.md#nav-badge) components
+1. New support for icon-only [links](/configuration/project.md#links) in header and footer
+1. New `base` variant for [[Button]], [[Badge]], and [[Callout]]
 
-## Improved
++++ Improved :icon-thumbsup:
 
 1. Upgrade to latest release of VueJS
 1. Update to latest v3.3.x release of TailwindCSS
-1. Add  and  hint into Search field, see #762
-1. Improve templating support within  project setting
-1. Hide the placeholder text in the Search and Filter input fields when focused, see #762
+1. Add keyboard hint into Search field, see [#762](https://github.com/retypeapp/retype/discussions/762)
+1. Improve templating support within [`footer.copyright`](/configuration/project.md#copyright) project setting
+1. Hide the placeholder text in the Search and Filter input fields when focused, see [#762](https://github.com/retypeapp/retype/discussions/762)
 1. Upgrade Octicons icons library from v19.15.2 to v19.15.3
 1. Improve icon margins on icon-only Badge and Button components
 1. Improve print mode rendering
 
-## Fixed
-
-1. Fixed search input  attribute value not being rendered, see #764
-
----
-## v3.11.0 [!badge text="NEXT" variant="info"]
-
-Scheduled for Q3-2025.
-
----
-
-## v3.10.1 [!badge text="LATEST" variant="info"]
-
-Released: [2025-06-16](https://github.com/retypeapp/retype/releases/tag/v3.10.1)
-
-There were 4 changes in Retype `3.10.1`.
-
-+++ Improved :icon-thumbsup:
-
-1. Added rounded css classes including `rounded-xl`, `rounded-2xl`, `rounded-3xl`, `rounded-4xl` and `rounded-full`
-
 +++ Fixed :icon-bug:
 
-1. Fixed build error with `> [!hint]` [callout](/components/callout.md#github-alerts)
-1. Fixed lists with [lowercase](/components/list.md#lowercase-letters) letters and [roman numerals](/components/list.md#lowercase-roman-numerals) not rendered correctly, see [#760](https://github.com/retypeapp/retype/discussions/760)
-1. Fixed main layout background color that does not match sidebar background color, see [#759](https://github.com/retypeapp/retype/discussions/759)
+1. Fixed search input  attribute value not being rendered, see [#764](https://github.com/retypeapp/retype/discussions/764)
 
 +++
+
 
 ---
 
@@ -102,12 +82,16 @@ There were 13 changes in Retype `3.10.0`.
 1. Add `translate=\"no\"` attribute to code block `<pre>` element
 1. Add unique `id` values to important template elements, see [#538](https://github.com/retypeapp/retype/discussions/538), [#639](https://github.com/retypeapp/retype/discussions/639) and [#640](https://github.com/retypeapp/retype/discussions/640)
 1. Improve automatic smooth scroll to #anchor on document load
+1. Added rounded css classes including `rounded-xl`, `rounded-2xl`, `rounded-3xl`, `rounded-4xl` and `rounded-full`, see `v3.10.1`
 
 +++ Fixed :icon-bug:
 
 1. Fixed exception being thrown if `order` set with a huge number, see [#751](https://github.com/retypeapp/retype/discussions/751)
 1. Fixed pipe separated dimensions issue where dimensions were added to image label if label is empty
 1. Fixed code block height not rendering correctly if no content in code block
+1. Fixed build error with `> [!hint]` [callout](/components/callout.md#github-alerts), see `v3.10.1`
+1. Fixed lists with [lowercase](/components/list.md#lowercase-letters) letters and [roman numerals](/components/list.md#lowercase-roman-numerals) not rendered correctly, see [#760](https://github.com/retypeapp/retype/discussions/760), see `v3.10.1`
+1. Fixed main layout background color that does not match sidebar background color, see [#759](https://github.com/retypeapp/retype/discussions/759), see `v3.10.1`
 
 +++
 
