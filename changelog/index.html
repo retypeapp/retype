@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804747807174">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804752771351">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,17 +32,17 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.804747807174" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0.804752771351" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804747807174" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804747807174" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804747807174" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804752771351" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804752771351" defer></script>
     <link href="/resources/css/katex.css?v=3.11.0" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="/resources/js/katex.js?v=3.11.0" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.804747807174" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0.804752771351" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -64,7 +64,7 @@
                                 <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                                 <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                             </span>
-                        </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v3.11 next</span>
+                        </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v3.11</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -304,96 +304,62 @@
     </div>
 </div>
 <hr>
-<doc-anchor-target id="v3110">
+<doc-anchor-target id="v3120">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v3110">#</doc-anchor-trigger>
-        <span>v3.11.0</span>
-    </h2>
-</doc-anchor-target>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
-    <span>LATEST</span>
-</span></p>
-<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v3.11.0">2025-07-02</a></p>
-<doc-anchor-target id="version-3110">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#version-3110">#</doc-anchor-trigger>
-        <span>Version 3.11.0</span>
-    </h1>
-</doc-anchor-target>
-<p>There were 15 changes in Retype 3.11.0.</p>
-<doc-anchor-target id="new">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new">#</doc-anchor-trigger>
-        <span>New</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>New theme color customization for  and  themes, see #42 and #697</li>
-<li>New 3-way Light, Dark, and System color scheme selector, see #421 and #624</li>
-<li>New Page level  setting for adding a badge component to left navigation nodes, see #763</li>
-<li>New pipe notation syntax support for adding variant to Badge, Button, and NavigationBadge components</li>
-<li>New support for icon-only links in header and footer</li>
-<li>New  variant for Button, Badge, and Callout</li>
-</ol>
-<doc-anchor-target id="improved">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#improved">#</doc-anchor-trigger>
-        <span>Improved</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Upgrade to latest release of VueJS</li>
-<li>Update to latest v3.3.x release of TailwindCSS</li>
-<li>Add  and  hint into Search field, see #762</li>
-<li>Improve templating support within  project setting</li>
-<li>Hide the placeholder text in the Search and Filter input fields when focused, see #762</li>
-<li>Upgrade Octicons icons library from v19.15.2 to v19.15.3</li>
-<li>Improve icon margins on icon-only Badge and Button components</li>
-<li>Improve print mode rendering</li>
-</ol>
-<doc-anchor-target id="fixed">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fixed">#</doc-anchor-trigger>
-        <span>Fixed</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Fixed search input  attribute value not being rendered, see #764</li>
-</ol>
-<hr>
-<doc-anchor-target id="v3110-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v3110-1">#</doc-anchor-trigger>
-        <span>v3.11.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3120">#</doc-anchor-trigger>
+        <span>v3.12.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
             <span>NEXT</span>
         </span></span>
     </h2>
 </doc-anchor-target>
-<p>Scheduled for Q3-2025.</p>
+<p>Scheduled for late Q3-2025.</p>
 <hr>
-<doc-anchor-target id="v3101">
+<doc-anchor-target id="v3110">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v3101">#</doc-anchor-trigger>
-        <span>v3.10.1 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3110">#</doc-anchor-trigger>
+        <span>v3.11.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
             <span>LATEST</span>
         </span></span>
     </h2>
 </doc-anchor-target>
-<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v3.10.1">2025-06-16</a></p>
-<p>There were 4 changes in Retype <code v-pre>3.10.1</code>.</p>
+<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v3.11.0">2025-07-02</a></p>
+<p>There were 15 changes in Retype 3.11.0.</p>
 <doc-tabs>
+<doc-tab v-cloak id="new">
+<template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"/><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"/></g></g></svg></template>
+<ol>
+<li><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> New <a href="/configuration/project/#theme">theme</a> color customization for <code v-pre>base</code> and <code v-pre>dark</code> themes, see <a href="https://github.com/retypeapp/retype/discussions/42">#42</a> and <a href="https://github.com/retypeapp/retype/discussions/697">#697</a></li>
+<li><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> New <a href="/configuration/project/#basecolor"><code v-pre>branding.baseColor</code></a> setting for quick configuration of the project <code v-pre>base-color</code> <a href="/configuration/theme-variables/">theme variable</a> to left navigation nodes, see <a href="https://github.com/retypeapp/retype/discussions/763">#763</a></li>
+<li><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> New Page level <a href="/configuration/page/#nav-badge"><code v-pre>nav.badge</code></a> setting for adding a badge component to left navigation nodes, see <a href="https://github.com/retypeapp/retype/discussions/763">#763</a></li>
+<li>New 3-way <code v-pre>Light</code>, <code v-pre>Dark</code>, and <code v-pre>System</code> color <a href="/configuration/project/#scheme">scheme</a> selector, see <a href="https://github.com/retypeapp/retype/discussions/421">#421</a> and <a href="https://github.com/retypeapp/retype/discussions/624">#624</a></li>
+<li>New pipe notation syntax support for adding variant to <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/configuration/page/#nav-badge">Navigation Badge</a> components</li>
+<li>New support for icon-only <a href="/configuration/project/#links">links</a> in header and footer</li>
+<li>New <code v-pre>base</code> variant for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/components/callout/">Callout</a></li>
+</ol>
+</doc-tab>
 <doc-tab v-cloak id="improved">
 <template #title>Improved <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13.349 2.378a.748.748 0 0 1 .808-.361l.127.027a3.875 3.875 0 0 1 2.879 4.97L16.527 9h1.137c2.645 0 4.513 2.591 3.676 5.1l-1.559 4.678A3.25 3.25 0 0 1 16.698 21h-5.289a4.503 4.503 0 0 1-2.828-.999A1.75 1.75 0 0 1 7 21H4.75A1.75 1.75 0 0 1 3 19.25v-8.5C3 9.784 3.784 9 4.75 9h4.67a.251.251 0 0 0 .217-.126l3.712-6.496ZM8.75 18.16l.683.598a3.003 3.003 0 0 0 1.976.742h5.289a1.75 1.75 0 0 0 1.66-1.197l1.559-4.677a2.375 2.375 0 0 0-2.253-3.126H15.5a.75.75 0 0 1-.714-.979l.948-2.964a2.375 2.375 0 0 0-1.373-2.927l-3.422 5.988a1.749 1.749 0 0 1-1.519.882h-.67v7.66Zm-1.5-7.66h-2.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25H7a.25.25 0 0 0 .25-.25V10.5Z"/></g></g></svg></template>
 <ol>
-<li>Added rounded css classes including <code v-pre>rounded-xl</code>, <code v-pre>rounded-2xl</code>, <code v-pre>rounded-3xl</code>, <code v-pre>rounded-4xl</code> and <code v-pre>rounded-full</code></li>
+<li>Upgrade to latest release of VueJS</li>
+<li>Update to latest v3.3.x release of TailwindCSS</li>
+<li>Add keyboard hint into Search field, see <a href="https://github.com/retypeapp/retype/discussions/762">#762</a></li>
+<li>Improve templating support within <a href="/configuration/project/#copyright"><code v-pre>footer.copyright</code></a> project setting</li>
+<li>Hide the placeholder text in the Search and Filter input fields when focused, see <a href="https://github.com/retypeapp/retype/discussions/762">#762</a></li>
+<li>Upgrade Octicons icons library from v19.15.2 to v19.15.3</li>
+<li>Improve icon margins on icon-only Badge and Button components</li>
+<li>Improve print mode rendering</li>
 </ol>
 </doc-tab>
 <doc-tab v-cloak id="fixed">
 <template #title>Fixed <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.72.22a.75.75 0 0 1 1.06 0l1.204 1.203A4.98 4.98 0 0 1 12 1c.717 0 1.4.151 2.016.423L15.22.22a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-.971.972A4.991 4.991 0 0 1 17 6v1.104a2.755 2.755 0 0 1 1.917 1.974l1.998-.999a.75.75 0 0 1 .67 1.342L19 10.714V13.5l3.25.003a.75.75 0 0 1 0 1.5L19 15.001V16c0 .568-.068 1.134-.204 1.686l.04.018 2.75 1.375a.75.75 0 1 1-.671 1.342l-2.638-1.319A6.998 6.998 0 0 1 12 23a6.998 6.998 0 0 1-6.197-3.742l-2.758 1.181a.752.752 0 0 1-1.064-.776.752.752 0 0 1 .474-.602l2.795-1.199A6.976 6.976 0 0 1 5 16v-.996H1.75a.75.75 0 0 1 0-1.5H5v-2.79L2.415 9.42a.75.75 0 0 1 .67-1.342l1.998.999A2.756 2.756 0 0 1 7 7.104V6a4.99 4.99 0 0 1 1.69-3.748l-.97-.972a.75.75 0 0 1 0-1.06ZM6.5 9.75V16a5.5 5.5 0 1 0 11 0V9.75c0-.69-.56-1.25-1.25-1.25h-8.5c-.69 0-1.25.56-1.25 1.25ZM8.5 7h7V6a3.5 3.5 0 1 0-7 0Z"/></g></g></svg></template>
 <ol>
-<li>Fixed build error with <code v-pre>&gt; [!hint]</code> <a href="/components/callout/#github-alerts">callout</a></li>
-<li>Fixed lists with <a href="/components/list/#lowercase-letters">lowercase</a> letters and <a href="/components/list/#lowercase-roman-numerals">roman numerals</a> not rendered correctly, see <a href="https://github.com/retypeapp/retype/discussions/760">#760</a></li>
-<li>Fixed main layout background color that does not match sidebar background color, see <a href="https://github.com/retypeapp/retype/discussions/759">#759</a></li>
+<li>Fixed search input  attribute value not being rendered, see <a href="https://github.com/retypeapp/retype/discussions/764">#764</a></li>
 </ol>
 </doc-tab>
 </doc-tabs>
@@ -427,6 +393,7 @@
 <li>Add <code v-pre>translate=\&quot;no\&quot;</code> attribute to code block <code v-pre>&lt;pre&gt;</code> element</li>
 <li>Add unique <code v-pre>id</code> values to important template elements, see <a href="https://github.com/retypeapp/retype/discussions/538">#538</a>, <a href="https://github.com/retypeapp/retype/discussions/639">#639</a> and <a href="https://github.com/retypeapp/retype/discussions/640">#640</a></li>
 <li>Improve automatic smooth scroll to #anchor on document load</li>
+<li>Added rounded css classes including <code v-pre>rounded-xl</code>, <code v-pre>rounded-2xl</code>, <code v-pre>rounded-3xl</code>, <code v-pre>rounded-4xl</code> and <code v-pre>rounded-full</code>, see <code v-pre>v3.10.1</code></li>
 </ol>
 </doc-tab>
 <doc-tab v-cloak id="fixed">
@@ -435,6 +402,9 @@
 <li>Fixed exception being thrown if <code v-pre>order</code> set with a huge number, see <a href="https://github.com/retypeapp/retype/discussions/751">#751</a></li>
 <li>Fixed pipe separated dimensions issue where dimensions were added to image label if label is empty</li>
 <li>Fixed code block height not rendering correctly if no content in code block</li>
+<li>Fixed build error with <code v-pre>&gt; [!hint]</code> <a href="/components/callout/#github-alerts">callout</a>, see <code v-pre>v3.10.1</code></li>
+<li>Fixed lists with <a href="/components/list/#lowercase-letters">lowercase</a> letters and <a href="/components/list/#lowercase-roman-numerals">roman numerals</a> not rendered correctly, see <a href="https://github.com/retypeapp/retype/discussions/760">#760</a>, see <code v-pre>v3.10.1</code></li>
+<li>Fixed main layout background color that does not match sidebar background color, see <a href="https://github.com/retypeapp/retype/discussions/759">#759</a>, see <code v-pre>v3.10.1</code></li>
 </ol>
 </doc-tab>
 </doc-tabs>
