@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0-preview6.804732090136">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0-preview6.804732980063">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0-preview6">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Themes - Write On! with Retype</title>
     <meta name="title" content="Themes - Write On! with Retype">
-    <meta name="description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables.">
+    <meta name="description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/guides/themes/">
@@ -22,25 +22,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/guides/themes/">
     <meta property="og:title" content="Themes - Write On! with Retype">
-    <meta property="og:description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables.">
+    <meta property="og:description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/guides/themes/">
     <meta property="twitter:title" content="Themes - Write On! with Retype">
-    <meta property="twitter:description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables.">
+    <meta property="twitter:description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0-preview6.804732090136" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0-preview6.804732980063" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0-preview6.804732090136" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0-preview6.804732980063" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0-preview6" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0-preview6.804732090136" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0-preview6.804732090136" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0-preview6.804732980063" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0-preview6.804732980063" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0-preview6.804732090136" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0-preview6.804732980063" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -283,7 +283,7 @@
         <span>Themes</span>
     </h1>
 </doc-anchor-target>
-<p>Retype&#x27;s <a href="/configuration/project/#theme"><code v-pre>theme</code></a> system allows you to customize the visual appearance of your website by overriding theme variables. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or personal preferences.</p>
+<p>Retype&#x27;s <a href="/configuration/project/#theme"><code v-pre>theme</code></a> system allows you to customize the visual appearance of your website by overriding <a href="/configuration/theme-variables/">theme variables</a>. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or personal preferences.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-base"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -312,7 +312,7 @@
         <span>Quick Start</span>
     </h2>
 </doc-anchor-target>
-<p>The simplest way to customize your site&#x27;s appearance is by adding a <code v-pre>theme</code> configuration to your <code v-pre>retype.yml</code> file and setting a custom <code v-pre>base-color</code> value.</p>
+<p>The simplest way to customize your site&#x27;s appearance is by adding a <code v-pre>theme</code> configuration to your <code v-pre>retype.yml</code> file and setting a custom <a href="/configuration/theme-variables/#base"><code v-pre>base-color</code></a> value.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
@@ -346,7 +346,7 @@
         <span><code v-pre>dark</code> theme</span>
     </h3>
 </doc-anchor-target>
-<p>The <code v-pre>dark</code> theme specifically targets dark mode appearance. When the website is switched to dark mode, these overrides are applied:</p>
+<p>The <a href="/configuration/project/#theme-dark"><code v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, these overrides are applied:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   dark:
@@ -439,10 +439,10 @@
   base:
     base-color: &quot;#your-brand-color&quot;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="2-prioritise-readability-and-contrast">
+<doc-anchor-target id="2-prioritize-readability-and-contrast">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-prioritise-readability-and-contrast">#</doc-anchor-trigger>
-        <span>2. Prioritise readability and contrast</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-prioritize-readability-and-contrast">#</doc-anchor-trigger>
+        <span>2. Prioritize readability and contrast</span>
     </h3>
 </doc-anchor-target>
 <p>Contrast between text and background is important for readability and accessibility. Avoid color combinations that are too similar and do not provide enough contrast.</p>
@@ -487,7 +487,7 @@
         <span>4. Use Semantic variables where possible</span>
     </h3>
 </doc-anchor-target>
-<p>Instead of hardcoding colors everywhere, use the built-in semantic variables. It keeps your theme consistent and easier to maintain.</p>
+<p>Instead of hardcoding colors everywhere, use the built-in semantic <a href="/configuration/theme-variables/">theme variables</a>. It keeps your theme consistent and easier to maintain.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
@@ -509,7 +509,7 @@
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Ensure you have a valid Retype Pro license or add <a href="/configuration/project/#pro"><code v-pre>start.pro: true</code></a></li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Check that the syntax is correct in your <code v-pre>retype.yml</code> file</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Verify theme setting names match exactly</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Verify <a href="/configuration/theme-variables/">theme variable</a> names match exactly</li>
 </ul>
 <doc-anchor-target id="dark-mode-issues">
     <h3>
@@ -518,7 +518,7 @@
     </h3>
 </doc-anchor-target>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Remember that dark theme variables only apply in dark mode</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Remember that <code v-pre>dark</code> theme variables only apply in dark mode</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Test with the theme switcher on your website</li>
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Some variables may need both <code v-pre>base</code> and <code v-pre>dark</code> configured to provide proper contrast</li>
 </ul>
