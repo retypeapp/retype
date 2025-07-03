@@ -58,7 +58,7 @@ Retype now includes a comprehensive print stylesheet that help makes your docume
 Clean Layout
 : Removes navigation, sidebars, and interactive elements
 
-Optimised Typography
+Optimized Typography
 : Adjusts fonts and spacing for print readability
 
 Smart Page Breaks
@@ -77,7 +77,7 @@ Simply use the browser's print function <kbd>Ctrl + p</kbd> or <kbd>⌘ + p</kbd
 Adjust your left sidebar navigation visual appearance with the new `nav.icons` setting. See [docs](/configuration/project.md#icons).
 
 !!!
-This feature is a [!badge text="Pro" variant="info"] only feature and a Retype [key](/pro/pro.md) is required to enable.
+This feature is a [!badge Pro|info] only feature and a Retype [key](/pro/pro.md) is required to enable.
 !!!
 
 ```yaml
@@ -105,7 +105,7 @@ This is particularly useful for documentation sites that prefer a cleaner, text-
 Set your project's default color scheme with the new `scheme` configuration. See [docs](/configuration/project.md#scheme).
 
 !!!
-This feature is a [!badge text="Pro" variant="info"] only feature and a Retype [key](/pro/pro.md) is required to enable.
+This feature is a [!badge Pro|info] only feature and a Retype [key](/pro/pro.md) is required to enable.
 !!!
 
 The `scheme` configuration allows you to control the default color mode (**light** or **dark**) for your Retype generated website. By default, Retype will automatically match the visitor's system preference, but now you can explicitly set the site to start in either `dark` or `light` mode.

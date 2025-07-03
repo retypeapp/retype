@@ -18,10 +18,10 @@ See the full [[CHANGELOG#v3100|changelog]] for the `v3.10` release.
 
 ![Previous and Next page sequencing navigation](images/2025-06-09-nextprev.png)
 
-Take control of your documentation's navigation flow with the new `nextprev` configuration. This feature lets you customise the visibility and sequencing of the Next/Previous navigation at the bottom of each page and can be configured at the `project`, `page`, and `folder` levels.
+Take control of your documentation's navigation flow with the new `nextprev` configuration. This feature lets you customize the visibility and sequencing of the Next/Previous navigation at the bottom of each page and can be configured at the `project`, `page`, and `folder` levels.
 
 !!!
-This feature is a [!badge text="Pro" variant="info"] only feature and a Retype [key](/pro/pro.md) is required to enable.
+This feature is a [!badge Pro|info] only feature and a Retype [key](/pro/pro.md) is required to enable.
 !!!
 
 ### Modes
@@ -110,7 +110,7 @@ Here's a helpful suggestion that will save you time.
 Here's a helpful suggestion that will save you time.
 !!!
 
-The tip callout uses a friendly green colour scheme and stands out nicely from other callout types like warnings or notes. It's perfect for sharing best practices or helpful hints.
+The tip callout uses a friendly green color scheme and stands out nicely from other callout types like warnings or notes. It's perfect for sharing best practices or helpful hints.
 
 ## Generic Attributes for List Items
 

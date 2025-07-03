@@ -17,7 +17,7 @@ Retype v3.8 introduces powerful new linking capabilities, enhanced search functi
 New navigation mode that transforms your top-level folders into visually distinct stacked blocks. This feature is perfect for complex documentation sites that need better organization and visual hierarchy.
 
 !!!
-This feature is a [!badge text="Pro" variant="info"] only feature and a Retype [key](/pro/pro.md) is required to enable.
+This feature is a [!badge Pro|info] only feature and a Retype [key](/pro/pro.md) is required to enable.
 !!!
 
 ### Project configuration
