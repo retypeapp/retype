@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804834991771">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804882061289">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.804834991771" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0.804882061289" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804834991771" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804882061289" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804834991771" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804834991771" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804882061289" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804882061289" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.804834991771" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0.804882061289" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -636,6 +636,45 @@
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path fill-rule="evenodd" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z"></path></g></svg></span>
     <span>Visit website</span>
 </button></p>
+<hr>
+<doc-anchor-target id="theme-variables">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#theme-variables">#</doc-anchor-trigger>
+        <span>Theme variables</span>
+    </h2>
+</doc-anchor-target>
+<p>Retype gives you full control over the look and feel of your button components through customizable <a href="/configuration/theme-variables/">theme variables</a>.</p>
+<p>You can override any of theme variable in your <code v-pre>retype.yml</code> configuration file using the <code v-pre>theme.base</code> and <code v-pre>theme.dark</code> settings.</p>
+<p>For example, to change the <code v-pre>primary</code> button color and text color for all instances of the <code v-pre>primary</code> button within your project, add the following to your project&#x27;s <code v-pre>retype.yml</code> file:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
+  base:
+    # Revise the primary variant base color
+    # across all components within the project
+    # primary: &quot;#209fb5&quot; 
+
+    # Or, adjust button only theme variables
+    button-primary: &quot;#209fb5&quot;
+    button-primary-text: &quot;#eff1f5&quot;</code></pre>
+</doc-codeblock></div>
+<p>To learn more about theme variables and how they work across Retype, check out the <a href="/guides/themes/">Themes Guide</a>, the <a href="/configuration/theme-variables/">Theme Variables</a> documentation, and <a href="/configuration/project/#theme"><code v-pre>theme</code></a> Project settings.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>All button theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the <a href="/configuration/theme-variables/#button-component">Button Component</a> theme variables for the latest options.</p>
+        </div>
+    </div>
+</div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
