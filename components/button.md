@@ -158,3 +158,31 @@ The `icon` can also be set with an inline `<svg>` element.
 ```
 
 [!button icon="<svg width=&quot;24&quot; height=&quot;24&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 1.5a6 6 0 100-12 6 6 0 000 12z&quot;></path></svg>" text="Visit website"]
+
+---
+
+## Theme variables
+
+Retype gives you full control over the look and feel of your button components through customizable [[theme variables]].
+
+You can override any of theme variable in your `retype.yml` configuration file using the `theme.base` and `theme.dark` settings. 
+
+For example, to change the `primary` button color and text color for all instances of the `primary` button within your project, add the following to your project's `retype.yml` file:
+
+```yaml
+theme:
+  base:
+    # Revise the primary variant base color
+    # across all components within the project
+    # primary: "#209fb5" 
+
+    # Or, adjust button only theme variables
+    button-primary: "#209fb5"
+    button-primary-text: "#eff1f5"
+```
+
+To learn more about theme variables and how they work across Retype, check out the [Themes Guide](/guides/themes.md), the [[Theme Variables]] documentation, and [`theme`](/configuration/project.md#theme) Project settings.
+
+!!!
+All button theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Button Component](/configuration/theme-variables.md#button-component) theme variables for the latest options.
+!!!

@@ -1877,7 +1877,9 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `theme` configuration allows you to customize the visual appearance of your Retype website by overriding colors and other design elements to match your brand or project preferences.
 
-[!ref icon="palette" text="Complete Theme Guide"](/guides/themes.md)
+[!ref text="Theme Guide"](/guides/themes.md)
+
+[!ref text="Theme Variables"](/configuration/theme-variables.md)
 
 ### base{#theme-base}
 

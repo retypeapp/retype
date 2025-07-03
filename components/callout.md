@@ -227,3 +227,30 @@ Retype also supports setting a custom title value on the GitHub Alerts using the
 
 > [!NOTE] Custom Title
 > Useful information that users should know.
+
+---
+
+## Theme variables
+
+Retype gives you full control over the look and feel of your callout components through customizable [[theme variables]].
+
+You can override any of theme variable in your `retype.yml` configuration file using the `theme.base` and `theme.dark` settings. 
+
+For example, to change the `primary` callout color for all instances of the `primary` callout within your project, add the following to your project's `retype.yml` file:
+
+```yaml
+theme:
+  base:
+    # Revise the primary variant base color
+    # across all components within the project
+    # primary: "#209fb5" 
+
+    # Or, adjust callout only theme variables
+    callout-primary: "#209fb5"
+```
+
+To learn more about theme variables and how they work across Retype, check out the [Themes Guide](/guides/themes.md), the [[Theme Variables]] documentation, and [`theme`](/configuration/project.md#theme) Project settings.
+
+!!!
+All callout theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Callout Component](/configuration/theme-variables.md#callout-component) theme variables for the latest options.
+!!!
