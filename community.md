@@ -16,7 +16,7 @@ nav:
 
 With the community key, you can now setup your project to be hosted using **GitHub Pages** and unlock **Retype Pro** features.
 
-Please see the [announcement](/blog/2025-06-06.md), [[GitHub Pages]] setup, and Retype [[Key setup]] instructions.
+Please see the [announcement](/blog/2025-06-06-new-gitHub-pages-community-key.md), [[GitHub Pages]] setup, and Retype [[Key setup]] instructions.
 
 ```
 dEVPBhEAT01MR0NBQ0xBT0VHR0NDR0dGT09PRUFDTEZARE9PT09FRERET15aEx0AHAEWWh0bT0Q-pId4N7uwS11nfzalpH2MG9Wql5Jtoc9vFnQMJJeh0WfKhv7CHrYPeg

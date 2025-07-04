@@ -14,7 +14,7 @@ Hosting your Retype built website on [GitHub Pages](https://pages.github.com/) i
 We first recommend adding the Retype [Build Action](/guides/github-actions.md) to your project to automate the building and deployment of your Retype powered website.
 
 !!!tip Community Key
-Read about the free [Community](/blog/2025-06-06.md) key if hosting on [[GitHub Pages]] and unlock [Pro](/pro/pro.md) features for your project.
+Read about the free [Community](/blog/2025-06-06-new-gitHub-pages-community-key.md) key if hosting on [[GitHub Pages]] and unlock [Pro](/pro/pro.md) features for your project.
 !!!
 
 ---

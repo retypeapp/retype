@@ -33,7 +33,7 @@ The theme configuration supports two main sections:
 
 ### `base` theme
 
-The [`base`](/configuration/project.md#theme-base) theme controls the light mode appearance and serves as the foundation for your project's visual style:
+The [`base`](/configuration/project.md#theme) theme controls the light mode appearance and serves as the foundation for your project's visual style:
 
 ```yaml
 theme:
@@ -46,7 +46,7 @@ theme:
 
 ### `dark` theme
 
-The [`dark`](/configuration/project.md#theme-dark) theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the [[#theme-base]] variables. The following demonstrates how to configure the `dark` theme variables:
+The [`dark`](/configuration/project.md#theme-dark) theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the [[#base-theme]] variables. The following demonstrates how to configure the `dark` theme variables:
 
 ```yaml
 theme:
