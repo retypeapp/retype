@@ -4,7 +4,6 @@ icon: home
 ---
 # Write On! with Retype
 
-
 ![](/static/retype-hero.png)
 
 [Retype](https://retype.com/) is a static website generator that builds a website based on simple Markdown (.md) text files. Focus on your writing while Retype builds the rest.

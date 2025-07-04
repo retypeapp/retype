@@ -59,10 +59,10 @@ Footer template support
 ## v3.10
 
 [!badge PRO] Next/Previous navigation control
-: Configure visibility and sequencing of `Next/Previous` navigation buttons. Configure at project, page, and folder levels with `show`, `hide`, and `exclude` modes, see [blog post](/blog/2025-06-09.md), [Project](/configuration/project.md#nextprev) settings, [Page](/configuration/page.md#nextprev) settings, and [Folder](/configuration/folder.md#nextprev) settings.
+: Configure visibility and sequencing of `Next/Previous` navigation buttons. Configure at project, page, and folder levels with `show`, `hide`, and `exclude` modes, see [blog post](/blog/2025-06-09-whats-new-in-retype-v310.md), [Project](/configuration/project.md#nextprev) settings, [Page](/configuration/page.md#nextprev) settings, and [Folder](/configuration/folder.md#nextprev) settings.
 
 GitHub Pages community key
-: Retype Pro Community Key unlocks all Pro features for GitHub Pages projects. No cost, no strings attached for `*.github.io` domains, with up to 1000 pages with all [[Pro]] features included, see [blog post](/blog/2025-06-06.md) and [GitHub Pages](/hosting/github-pages.md) setup.
+: Retype Pro Community Key unlocks all Pro features for GitHub Pages projects. No cost, no strings attached for `*.github.io` domains, with up to 1000 pages with all [[Pro]] features included, see [blog post](/blog/2025-06-06-new-gitHub-pages-community-key.md) and [GitHub Pages](/hosting/github-pages.md) setup.
 
 Hidden comments component
 : Add hidden comments to markdown that won't appear in the final website. Supports both inline `%%comment%%` and block comment syntax, see [docs](/components/comments.md).
@@ -112,7 +112,7 @@ Details/summary conversion
 ## v3.8
 
 [!badge PRO] Stack navigation mode
-: Transform top-level folders into visually distinct stacked blocks. Better organization and visual hierarchy for complex documentation sites, Configure at project or page level, see [blog post](/blog/2025-05-04.md), [Project](/configuration/project.md#nav-mode) settings, and [Page](/configuration/page.md#nav-mode) settings.
+: Transform top-level folders into visually distinct stacked blocks. Better organization and visual hierarchy for complex documentation sites, Configure at project or page level, see [blog post](/blog/2025-05-04-whats-new-in-retype-v38.md), [Project](/configuration/project.md#nav-mode) settings, and [Page](/configuration/page.md#nav-mode) settings.
 
 WikiLinks Support
 : Comprehensive wiki-style linking with double square brackets: `[[Page Name]]`. Intelligent link resolution that handles filename variations and support for custom labels using the syntax `[[page|Custom Label]]` for text links and `![[image.jpg|Alt text]]` for image wikilinks.

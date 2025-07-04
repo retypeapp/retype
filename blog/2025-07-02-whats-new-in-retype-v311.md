@@ -124,7 +124,7 @@ The enhanced color scheme switcher now offers three options: **Light**, **Dark**
 The System option respects the user's operating system preference and automatically switches between light and dark modes based on their system settings. This creates a more intuitive experience that follows modern web standards.
 
 !!!tip
-In Retype `v3.8.0`, the [`scheme.mode`](/blog/2025-05-28.md#dark-or-light-scheme) project setting was added to pre-configure which color scheme should be loaded by default.
+In Retype `v3.8.0`, the [`scheme.mode`](/blog/2025-05-28-whats-new-in-retype-v39.md#dark-or-light-scheme) project setting was added to pre-configure which color scheme should be loaded by default.
 
 ```yaml
 scheme:
