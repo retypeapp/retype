@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804964984498">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.804965529506">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,15 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.804964984498" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.11.0.804965529506" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804964984498" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.804965529506" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804964984498" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804964984498" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.804965529506" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.804965529506" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.804964984498" rel="stylesheet">
+    <link href="/static/styles.css?v=3.11.0.804965529506" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -331,7 +331,7 @@
         <span><code v-pre>base</code> theme</span>
     </h3>
 </doc-anchor-target>
-<p>The <a href="/configuration/project/#theme-base"><code v-pre>base</code></a> theme controls the light mode appearance and serves as the foundation for your project&#x27;s visual style:</p>
+<p>The <a href="/configuration/project/#theme"><code v-pre>base</code></a> theme controls the light mode appearance and serves as the foundation for your project&#x27;s visual style:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
@@ -346,7 +346,7 @@
         <span><code v-pre>dark</code> theme</span>
     </h3>
 </doc-anchor-target>
-<p>The <a href="/configuration/project/#theme-dark"><code v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#theme-base">theme base</doc-anchor-trigger> variables. The following demonstrates how to configure the <code v-pre>dark</code> theme variables:</p>
+<p>The <a href="/configuration/project/#theme-dark"><code v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#base-theme">base theme</doc-anchor-trigger> variables. The following demonstrates how to configure the <code v-pre>dark</code> theme variables:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   dark:
