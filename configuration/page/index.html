@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805051904040">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805052950394">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.11.0">
+    <meta name="generator" content="Retype 3.12.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Page configuration - Write On! with Retype</title>
@@ -32,15 +32,16 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.805051904040" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview.805052950394" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -116,31 +117,6 @@
                         </ul>
                     </nav>
         
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
                     <div v-cloak class="flex justify-end grow">
                         <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
@@ -158,7 +134,7 @@
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
             
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
                 </div>
             
                 <div class="pl-6 mt-1 mb-4">
@@ -293,8 +269,8 @@
 <dl>
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
     <span>NEW</span>
-</span> <doc-anchor-trigger to="#nav-badge"><code v-pre>nav.badge</code></doc-anchor-trigger></dt>
-<dd>Add a <a href="/components/badge/">badge</a> to navigation items in the left sidebar. Added in <code v-pre>v3.11.0</code>.</dd>
+</span> <doc-anchor-trigger to="#nav-badge"><code translate="no" v-pre>nav.badge</code></doc-anchor-trigger></dt>
+<dd>Add a <a href="/components/badge/">badge</a> to navigation items in the left sidebar. Added in <code translate="no" v-pre>v3.11.0</code>.</dd>
 </dl>
 <hr>
 <p>Individual <strong>.md</strong> pages can be configured using the <a href="/faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
@@ -318,13 +294,13 @@ This is a sample page demonstrating page metadata.</code></pre>
 <p>Folder default pages are <strong>.md</strong> files that will be treated as the index (default) page of the folder.</p>
 <p>Retype will search using the following case insensitive priority:</p>
 <ol>
-<li><code v-pre>index.md</code></li>
-<li><code v-pre>readme.md</code></li>
-<li><code v-pre>default.md</code></li>
-<li><code v-pre>welcome.md</code> *only in the project root</li>
-<li><code v-pre>home.md</code> *only in the project root</li>
+<li><code translate="no" v-pre>index.md</code></li>
+<li><code translate="no" v-pre>readme.md</code></li>
+<li><code translate="no" v-pre>default.md</code></li>
+<li><code translate="no" v-pre>welcome.md</code> *only in the project root</li>
+<li><code translate="no" v-pre>home.md</code> *only in the project root</li>
 </ol>
-<p>Within a sub-folder, if you add a Markdown <strong>.md</strong> file with the exact same name as the folder name, Retype will also treat that <code v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
+<p>Within a sub-folder, if you add a Markdown <strong>.md</strong> file with the exact same name as the folder name, Retype will also treat that <code translate="no" v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">sample
   |-- sample.md
@@ -392,12 +368,12 @@ order: 100</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The configuration name <code v-pre>authors</code> is also supported. The name <code v-pre>authors</code> is an alias of <code v-pre>author</code> and both can be used interchangeably.</p>
+<p>The configuration name <code translate="no" v-pre>authors</code> is also supported. The name <code translate="no" v-pre>authors</code> is an alias of <code translate="no" v-pre>author</code> and both can be used interchangeably.</p>
         </div>
     </div>
 </div>
 <doc-panel id="author--string-list-or-object">
-    <template #title>author : <code v-pre>string</code>, <code v-pre>list</code>, or <code v-pre>object</code></template>
+    <template #title>author : <code translate="no" v-pre>string</code>, <code translate="no" v-pre>list</code>, or <code translate="no" v-pre>object</code></template>
 <p>The author or multiple authors of this page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
@@ -410,8 +386,8 @@ author: frank@example.com
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<p>An author object can also be configured with specific values for the <doc-anchor-trigger to="#name"><code v-pre>name</code></doc-anchor-trigger>, <doc-anchor-trigger to="#email"><code v-pre>email</code></doc-anchor-trigger>, <doc-anchor-trigger to="#link"><code v-pre>link</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#avatar"><code v-pre>avatar</code></doc-anchor-trigger>.</p>
-<p>The <code v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.</p>
+<p>An author object can also be configured with specific values for the <doc-anchor-trigger to="#name"><code translate="no" v-pre>name</code></doc-anchor-trigger>, <doc-anchor-trigger to="#email"><code translate="no" v-pre>email</code></doc-anchor-trigger>, <doc-anchor-trigger to="#link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#avatar"><code translate="no" v-pre>avatar</code></doc-anchor-trigger>.</p>
+<p>The <code translate="no" v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 authors: [Frank, Annette Jones, steffen@example.com]
@@ -437,8 +413,8 @@ authors:
     </h3>
 </doc-anchor-target>
 <doc-panel id="avatar--string">
-    <template #title>avatar : <code v-pre>string</code></template>
-<p>Possible options for the <code v-pre>avatar</code> include:</p>
+    <template #title>avatar : <code translate="no" v-pre>string</code></template>
+<p>Possible options for the <code translate="no" v-pre>avatar</code> include:</p>
 <ol>
 <li>Path to local image</li>
 <li>URL to an external image</li>
@@ -461,7 +437,7 @@ author:
     </h3>
 </doc-anchor-target>
 <doc-panel id="email--string">
-    <template #title>email : <code v-pre>string</code></template>
+    <template #title>email : <code translate="no" v-pre>string</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 author:
@@ -476,7 +452,7 @@ author:
     </h3>
 </doc-anchor-target>
 <doc-panel id="link--string">
-    <template #title>link : <code v-pre>string</code></template>
+    <template #title>link : <code translate="no" v-pre>string</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 author:
@@ -491,7 +467,7 @@ author:
     </h3>
 </doc-anchor-target>
 <doc-panel id="name--string">
-    <template #title>name : <code v-pre>string</code></template>
+    <template #title>name : <code translate="no" v-pre>string</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 author:
@@ -512,13 +488,13 @@ author:
 <doc-panel id="badge-pro-breadcrumb--boolean">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
-</span> breadcrumb : <code v-pre>boolean</code></template>
-<p>The <code v-pre>breadcrumb</code> config controls whether to include the <a href="/configuration/project/#breadcrumb">breadcrumb</a> navigation on this page. Default is <code v-pre>true</code>.</p>
-<p>Set to <code v-pre>false</code> to disable the breadcrumb navigation on this page.</p>
+</span> breadcrumb : <code translate="no" v-pre>boolean</code></template>
+<p>The <code translate="no" v-pre>breadcrumb</code> config controls whether to include the <a href="/configuration/project/#breadcrumb">breadcrumb</a> navigation on this page. Default is <code translate="no" v-pre>true</code>.</p>
+<p>Set to <code translate="no" v-pre>false</code> to disable the breadcrumb navigation on this page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">breadcrumb: false</code></pre>
 </doc-codeblock></div>
-<p>It is also possible to disable the breadcrumb navigation on all pages within a <a href="/configuration/folder/">folder</a> by setting <code v-pre>breadcrumb: false</code> in the folderh<code v-pre>index.yml</code> configuration file or the folder default page, such as <code v-pre>default.md</code>, <code v-pre>readme.md</code>, or <code v-pre>index.md</code>.</p>
+<p>It is also possible to disable the breadcrumb navigation on all pages within a <a href="/configuration/folder/">folder</a> by setting <code translate="no" v-pre>breadcrumb: false</code> in the folderh<code translate="no" v-pre>index.yml</code> configuration file or the folder default page, such as <code translate="no" v-pre>default.md</code>, <code translate="no" v-pre>readme.md</code>, or <code translate="no" v-pre>index.md</code>.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="category">
@@ -540,16 +516,16 @@ author:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The configuration name <code v-pre>categories</code> is also supported. The name <code v-pre>categories</code> is an alias of <code v-pre>category</code> and both can be used interchangeably.</p>
+<p>The configuration name <code translate="no" v-pre>categories</code> is also supported. The name <code translate="no" v-pre>categories</code> is an alias of <code translate="no" v-pre>category</code> and both can be used interchangeably.</p>
         </div>
     </div>
 </div>
 <doc-panel id="category--string-or-list">
-    <template #title>category : <code v-pre>string</code> or <code v-pre>list</code></template>
+    <template #title>category : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>list</code></template>
 <p>A category for this page.</p>
-<p>A single <code v-pre>category</code> or a list of <code v-pre>categories</code> can be configured in each <strong>.md</strong> page you would like to categorize.</p>
-<p>The <code v-pre>category</code> is meant to be a broad grouping of content, where <doc-anchor-trigger to="#tags"><code v-pre>tags</code></doc-anchor-trigger> are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
-<p>All of the following are acceptable techniques for configuring a single <code v-pre>category</code> or multiple <code v-pre>categories</code>.</p>
+<p>A single <code translate="no" v-pre>category</code> or a list of <code translate="no" v-pre>categories</code> can be configured in each <strong>.md</strong> page you would like to categorize.</p>
+<p>The <code translate="no" v-pre>category</code> is meant to be a broad grouping of content, where <doc-anchor-trigger to="#tags"><code translate="no" v-pre>tags</code></doc-anchor-trigger> are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
+<p>All of the following are acceptable techniques for configuring a single <code translate="no" v-pre>category</code> or multiple <code translate="no" v-pre>categories</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 category: news
@@ -564,8 +540,8 @@ categories:
   - general
 ---</code></pre>
 </doc-codeblock></div>
-<p>If a <code v-pre>category</code> is configured in the page metadata, the category is added to the top of the page under the main title.</p>
-<p>Individual category summary pages will be automatically generated by Retype at <code v-pre>&lt;url&gt;/categories/&lt;category&gt;</code>, plus an additional <code v-pre>&lt;url&gt;/categories</code> index page which lists all categories in the project.</p>
+<p>If a <code translate="no" v-pre>category</code> is configured in the page metadata, the category is added to the top of the page under the main title.</p>
+<p>Individual category summary pages will be automatically generated by Retype at <code translate="no" v-pre>&lt;url&gt;/categories/&lt;category&gt;</code>, plus an additional <code translate="no" v-pre>&lt;url&gt;/categories</code> index page which lists all categories in the project.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="date">
@@ -575,15 +551,15 @@ categories:
     </h2>
 </doc-anchor-target>
 <doc-panel id="date--string">
-    <template #title>date : <code v-pre>string</code></template>
+    <template #title>date : <code translate="no" v-pre>string</code></template>
 <p>A custom publish date for this page.</p>
-<p>If a <code v-pre>date</code> is configured, Retype will add the <strong>Published</strong> date to the top of the page, just under the main title.</p>
-<p>The date must be provided in the <code v-pre>yyyy-mm-dd</code> ISO format or <code v-pre>yyyy-mm-ddThh:mm</code> if you want to include a date and a time.</p>
+<p>If a <code translate="no" v-pre>date</code> is configured, Retype will add the <strong>Published</strong> date to the top of the page, just under the main title.</p>
+<p>The date must be provided in the <code translate="no" v-pre>yyyy-mm-dd</code> ISO format or <code translate="no" v-pre>yyyy-mm-ddThh:mm</code> if you want to include a date and a time.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">date: 2020-11-25 # November 25, 2020
 date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>date</code> is used by Retype to order blog pages. Newer blog pages are ordered first.</p>
+<p>The <code translate="no" v-pre>date</code> is used by Retype to order blog pages. Newer blog pages are ordered first.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="expanded">
@@ -593,14 +569,14 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="expanded--boolean">
-    <template #title>expanded : <code v-pre>boolean</code></template>
-<p>Determines whether this <a href="/configuration/folder/">folder</a> should be expanded in the tree navigation on initial page load. Default is <code v-pre>false</code>.</p>
-<p>Set to <code v-pre>true</code> to expand the folder node in the navigation.</p>
+    <template #title>expanded : <code translate="no" v-pre>boolean</code></template>
+<p>Determines whether this <a href="/configuration/folder/">folder</a> should be expanded in the tree navigation on initial page load. Default is <code translate="no" v-pre>false</code>.</p>
+<p>Set to <code translate="no" v-pre>true</code> to expand the folder node in the navigation.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>expanded</code> option only applies to <a href="/configuration/folder/">folders</a> when configured within an <strong>index.yml</strong> folder configuration file.</p>
-<p>Setting <code v-pre>expanded: true</code> within the metadata of an <strong>.md</strong> page or the paired <strong>.yml</strong> file will be ignored.</p>
+<p>The <code translate="no" v-pre>expanded</code> option only applies to <a href="/configuration/folder/">folders</a> when configured within an <strong>index.yml</strong> folder configuration file.</p>
+<p>Setting <code translate="no" v-pre>expanded: true</code> within the metadata of an <strong>.md</strong> page or the paired <strong>.yml</strong> file will be ignored.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="icon">
@@ -610,9 +586,9 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="icon--string">
-    <template #title>icon : <code v-pre>string</code></template>
-<p>Custom icon for the navigation node of the current page. Default is <code v-pre>null</code>.</p>
-<p>Options include using an <a href="/components/octicons/">Octicon</a> name, <a href="https://mojee.io/emojis/" class="outbound" target="_blank"><span>Emoji</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> shortcode, <code v-pre>&lt;svg&gt;</code> element, or a path to an image file.</p>
+    <template #title>icon : <code translate="no" v-pre>string</code></template>
+<p>Custom icon for the navigation node of the current page. Default is <code translate="no" v-pre>null</code>.</p>
+<p>Options include using an <a href="/components/octicons/">Octicon</a> name, <a href="https://mojee.io/emojis/" class="outbound" target="_blank"><span>Emoji</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> shortcode, <code translate="no" v-pre>&lt;svg&gt;</code> element, or a path to an image file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Octicon</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: rocket</code></pre>
@@ -638,9 +614,9 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="image--string">
-    <template #title>image : <code v-pre>string</code></template>
+    <template #title>image : <code translate="no" v-pre>string</code></template>
 <p>By default, Retype will try to find the first image on the page and use that image as the feature image to highlight when creating a summary of the page.</p>
-<p>You can customize the feature image by setting the <code v-pre>image</code> config to any local path or external image hosted elsewhere.</p>
+<p>You can customize the feature image by setting the <code translate="no" v-pre>image</code> config to any local path or external image hosted elsewhere.</p>
 <doc-anchor-target id="local-path">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#local-path">#</doc-anchor-trigger>
@@ -670,8 +646,8 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="label--string">
-    <template #title>label : <code v-pre>string</code></template>
-<p>Custom label for the navigation node for the current page. Default is <code v-pre>null</code>.</p>
+    <template #title>label : <code translate="no" v-pre>string</code></template>
+<p>Custom label for the navigation node for the current page. Default is <code translate="no" v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">label: Custom label</code></pre>
 </doc-codeblock></div>
@@ -684,9 +660,9 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="layout--string">
-    <template #title>layout : <code v-pre>string</code></template>
-<p>The layout for the page. Default is <code v-pre>default</code>.</p>
-<p>Supported values: <code v-pre>default</code>, <code v-pre>central</code>, <code v-pre>page</code>, and <code v-pre>blog</code>.</p>
+    <template #title>layout : <code translate="no" v-pre>string</code></template>
+<p>The layout for the page. Default is <code translate="no" v-pre>default</code>.</p>
+<p>Supported values: <code translate="no" v-pre>default</code>, <code translate="no" v-pre>central</code>, <code translate="no" v-pre>page</code>, and <code translate="no" v-pre>blog</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -697,20 +673,20 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>default</code></td>
+<td><code translate="no" v-pre>default</code></td>
 <td>The default layout for all <strong>.md</strong> pages. The page is added to the main navigation.</td>
 </tr>
 <tr>
-<td><code v-pre>page</code></td>
-<td>Similar to <code v-pre>default</code> layout, but is not added to the main navigation.</td>
+<td><code translate="no" v-pre>page</code></td>
+<td>Similar to <code translate="no" v-pre>default</code> layout, but is not added to the main navigation.</td>
 </tr>
 <tr>
-<td><code v-pre>central</code></td>
+<td><code translate="no" v-pre>central</code></td>
 <td>A page with no left or right sidebar columns.</td>
 </tr>
 <tr>
-<td><code v-pre>blog</code></td>
-<td>A blog page layout. Blog pages are not added to the main navigation and include blog specific <code v-pre>&lt; Newer</code> and <code v-pre>Older &gt;</code> navigation buttons at the bottom of each blog page.</td>
+<td><code translate="no" v-pre>blog</code></td>
+<td>A blog page layout. Blog pages are not added to the main navigation and include blog specific <code translate="no" v-pre>&lt; Newer</code> and <code translate="no" v-pre>Older &gt;</code> navigation buttons at the bottom of each blog page.</td>
 </tr>
 </tbody>
 </table>
@@ -733,10 +709,10 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
     </h3>
 </doc-anchor-target>
 <doc-panel id="title--string">
-    <template #title>title : <code v-pre>string</code></template>
-<p>A custom value for the <code v-pre>&lt;title&gt;</code> meta tag.</p>
-<p>If set, the value will completely override any <code v-pre>&lt;title&gt;</code> meta tag value generated by Retype.</p>
-<p>Default is <code v-pre>null</code>.</p>
+    <template #title>title : <code translate="no" v-pre>string</code></template>
+<p>A custom value for the <code translate="no" v-pre>&lt;title&gt;</code> meta tag.</p>
+<p>If set, the value will completely override any <code translate="no" v-pre>&lt;title&gt;</code> meta tag value generated by Retype.</p>
+<p>Default is <code translate="no" v-pre>null</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 meta:
@@ -744,11 +720,11 @@ meta:
 ---
 # Sample</code></pre>
 </doc-codeblock></div>
-<p>With the above sample, the <code v-pre>&lt;title&gt;</code> will be:</p>
+<p>With the above sample, the <code translate="no" v-pre>&lt;title&gt;</code> will be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;title&gt;A 100% custom title meta tag value&lt;/title&gt;</code></pre>
 </doc-codeblock></div>
-<p>Without the <code v-pre>meta.title</code> set, by default, the <code v-pre>&lt;title&gt;</code> would be:</p>
+<p>Without the <code translate="no" v-pre>meta.title</code> set, by default, the <code translate="no" v-pre>&lt;title&gt;</code> would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;title&gt;Sample&lt;/title&gt;</code></pre>
 </doc-codeblock></div>
@@ -765,8 +741,8 @@ meta:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>This <code v-pre>meta.title</code> config is not to be confused with the Page <doc-anchor-trigger to="#title-1"><code v-pre>title</code></doc-anchor-trigger> config, which we recommend not using.</p>
-<p>This <code v-pre>meta.title</code> config is also not to be confused with the Project level <a href="/configuration/project/#title-1"><code v-pre>meta.title</code></a> config.</p>
+<p>This <code translate="no" v-pre>meta.title</code> config is not to be confused with the Page <doc-anchor-trigger to="#title-1"><code translate="no" v-pre>title</code></doc-anchor-trigger> config, which we recommend not using.</p>
+<p>This <code translate="no" v-pre>meta.title</code> config is also not to be confused with the Project level <a href="/configuration/project/#title-1"><code translate="no" v-pre>meta.title</code></a> config.</p>
         </div>
     </div>
 </div>
@@ -778,9 +754,9 @@ meta:
     </h3>
 </doc-anchor-target>
 <doc-panel id="description--string">
-    <template #title>description : <code v-pre>string</code></template>
-<p>A custom value for the <code v-pre>&lt;meta name=&quot;description&quot;&gt;</code> meta tag.</p>
-<p>If set, the value will be used as the <code v-pre>content</code> attribute of the <code v-pre>&lt;meta name=&quot;description&quot;&gt;</code> tag in the <code v-pre>&lt;head&gt;</code> of the page. This value will also be used for the <code v-pre>og:description</code> and <code v-pre>twitter:description</code> meta tags.</p>
+    <template #title>description : <code translate="no" v-pre>string</code></template>
+<p>A custom value for the <code translate="no" v-pre>&lt;meta name=&quot;description&quot;&gt;</code> meta tag.</p>
+<p>If set, the value will be used as the <code translate="no" v-pre>content</code> attribute of the <code translate="no" v-pre>&lt;meta name=&quot;description&quot;&gt;</code> tag in the <code translate="no" v-pre>&lt;head&gt;</code> of the page. This value will also be used for the <code translate="no" v-pre>og:description</code> and <code translate="no" v-pre>twitter:description</code> meta tags.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 meta:
@@ -816,7 +792,7 @@ meta:
 <doc-panel id="badge-pro-badge--string-or-object">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
-</span> badge : <code v-pre>string</code> or <code v-pre>object</code></template>
+</span> badge : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>object</code></template>
 <p>Add a <a href="/components/badge/">badge</a> to the navigation item for this page in the left sidebar. The badge can be a simple text string or a detailed configuration object with styling options.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Simple text badge</div>
@@ -861,44 +837,44 @@ nav:
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>text</code></td>
-<td><code v-pre>string</code></td>
+<td><code translate="no" v-pre>text</code></td>
+<td><code translate="no" v-pre>string</code></td>
 <td>The text content of the badge</td>
 </tr>
 <tr>
-<td><code v-pre>variant</code></td>
-<td><code v-pre>string</code></td>
-<td>Add Badge variants supported, including: <code v-pre>base</code>, <code v-pre>primary</code> (default), <code v-pre>secondary</code>, <code v-pre>success</code>, <code v-pre>danger</code>, <code v-pre>warning</code>, <code v-pre>info</code>, <code v-pre>light</code>, <code v-pre>dark</code>, <code v-pre>ghost</code>, <code v-pre>contrast</code></td>
+<td><code translate="no" v-pre>variant</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Add Badge variants supported, including: <code translate="no" v-pre>base</code>, <code translate="no" v-pre>primary</code> (default), <code translate="no" v-pre>secondary</code>, <code translate="no" v-pre>success</code>, <code translate="no" v-pre>danger</code>, <code translate="no" v-pre>warning</code>, <code translate="no" v-pre>info</code>, <code translate="no" v-pre>light</code>, <code translate="no" v-pre>dark</code>, <code translate="no" v-pre>ghost</code>, <code translate="no" v-pre>contrast</code></td>
 </tr>
 <tr>
-<td><code v-pre>size</code></td>
-<td><code v-pre>string</code></td>
-<td>Badge size: <code v-pre>xs</code>, <code v-pre>s</code>, <code v-pre>m</code>, <code v-pre>l</code>, <code v-pre>xl</code>, <code v-pre>2xl</code>, <code v-pre>3xl</code> (default: <code v-pre>s</code>)</td>
+<td><code translate="no" v-pre>size</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Badge size: <code translate="no" v-pre>xs</code>, <code translate="no" v-pre>s</code>, <code translate="no" v-pre>m</code>, <code translate="no" v-pre>l</code>, <code translate="no" v-pre>xl</code>, <code translate="no" v-pre>2xl</code>, <code translate="no" v-pre>3xl</code> (default: <code translate="no" v-pre>s</code>)</td>
 </tr>
 <tr>
-<td><code v-pre>corners</code></td>
-<td><code v-pre>string</code></td>
-<td>Badge corner style: <code v-pre>round</code>, <code v-pre>square</code>, <code v-pre>pill</code></td>
+<td><code translate="no" v-pre>corners</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Badge corner style: <code translate="no" v-pre>round</code>, <code translate="no" v-pre>square</code>, <code translate="no" v-pre>pill</code></td>
 </tr>
 <tr>
-<td><code v-pre>icon</code></td>
-<td><code v-pre>string</code></td>
+<td><code translate="no" v-pre>icon</code></td>
+<td><code translate="no" v-pre>string</code></td>
 <td>Icon name from <a href="/components/octicons/">Octicons</a> or custom icon</td>
 </tr>
 <tr>
-<td><code v-pre>iconAlign</code></td>
-<td><code v-pre>string</code></td>
-<td>Icon position: <code v-pre>left</code> or <code v-pre>right</code></td>
+<td><code translate="no" v-pre>iconAlign</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Icon position: <code translate="no" v-pre>left</code> or <code translate="no" v-pre>right</code></td>
 </tr>
 <tr>
-<td><code v-pre>link</code></td>
-<td><code v-pre>string</code></td>
+<td><code translate="no" v-pre>link</code></td>
+<td><code translate="no" v-pre>string</code></td>
 <td>Page or URL to navigate to when badge is clicked</td>
 </tr>
 <tr>
-<td><code v-pre>target</code></td>
-<td><code v-pre>string</code></td>
-<td>Link target: <code v-pre>blank</code>, <code v-pre>self</code>, <code v-pre>parent</code>, <code v-pre>top</code></td>
+<td><code translate="no" v-pre>target</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Link target: <code translate="no" v-pre>blank</code>, <code translate="no" v-pre>self</code>, <code translate="no" v-pre>parent</code>, <code translate="no" v-pre>top</code></td>
 </tr>
 </tbody>
 </table>
@@ -916,8 +892,8 @@ nav:
 <doc-panel id="badge-pro-mode--string">
     <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
-</span> mode : <code v-pre>string</code></template>
-<p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code v-pre>mode</code> is <code v-pre>default</code>.</p>
+</span> mode : <code translate="no" v-pre>string</code></template>
+<p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code translate="no" v-pre>mode</code> is <code translate="no" v-pre>default</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -928,24 +904,24 @@ nav:
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>default</code></td>
+<td><code translate="no" v-pre>default</code></td>
 <td>Create the navigation as a Tree structure where top-level folders are expandable and collapsible.</td>
 </tr>
 <tr>
-<td><code v-pre>stack</code></td>
+<td><code translate="no" v-pre>stack</code></td>
 <td>Create the navigation where the top-level folders are automatically expanded, creating a &quot;stacked&quot; view of the navigation path.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The <code v-pre>nav.mode</code> setting can be configured on any page within a top-level folder to convert only that specific folder into a &quot;stack&quot; navigation structure. The remaining top-level folders will maintain their default tree navigation behavior.</p>
+<p>The <code translate="no" v-pre>nav.mode</code> setting can be configured on any page within a top-level folder to convert only that specific folder into a &quot;stack&quot; navigation structure. The remaining top-level folders will maintain their default tree navigation behavior.</p>
 <p>The following sample demonstrates how to configure the &quot;stacked&quot; navigation structure for a specific top-level folder:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
   mode: stack # Pro key required</code></pre>
 </doc-codeblock></div>
 <p>When configured on a page within a top-level folder, this setting will only affect that specific folder&#x27;s navigation structure.</p>
-<p>To convert the entire navigation component to a <code v-pre>stack</code> type layout, please see the Project <a href="/configuration/project/#nav"><code v-pre>nav</code></a> setting.</p>
+<p>To convert the entire navigation component to a <code translate="no" v-pre>stack</code> type layout, please see the Project <a href="/configuration/project/#nav"><code translate="no" v-pre>nav</code></a> setting.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="nextprev">
@@ -957,7 +933,7 @@ nav:
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<p>The <code v-pre>nextprev</code> configuration controls the display of &quot;Next&quot; and &quot;Previous&quot; navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.</p>
+<p>The <code translate="no" v-pre>nextprev</code> configuration controls the display of &quot;Next&quot; and &quot;Previous&quot; navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.</p>
 <doc-anchor-target id="nextprev-mode">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#nextprev-mode">#</doc-anchor-trigger>
@@ -965,7 +941,7 @@ nav:
     </h3>
 </doc-anchor-target>
 <doc-panel id="mode--string">
-    <template #title>mode : <code v-pre>string</code></template>
+    <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -977,28 +953,28 @@ nav:
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>show</code></td>
+<td><code translate="no" v-pre>show</code></td>
 <td>Show Next and Previous buttons and include page in sequence (Default)</td>
 </tr>
 <tr>
-<td><code v-pre>hide</code></td>
+<td><code translate="no" v-pre>hide</code></td>
 <td>Hide buttons but keep page in sequential order</td>
 </tr>
 <tr>
-<td><code v-pre>exclude</code></td>
+<td><code translate="no" v-pre>exclude</code></td>
 <td>Hide buttons and exclude page from sequential order</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The default value is <code v-pre>show</code>.</p>
+<p>The default value is <code translate="no" v-pre>show</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 nextprev:
   mode: hide # Pro key required
 ---</code></pre>
 </doc-codeblock></div>
-<p>See also <a href="/configuration/project/#nextprev-mode">Project</a> and <a href="/configuration/folder/#nextprev">Folder</a> configuration of <code v-pre>nextprev.mode</code>.</p>
+<p>See also <a href="/configuration/project/#nextprev-mode">Project</a> and <a href="/configuration/folder/#nextprev">Folder</a> configuration of <code translate="no" v-pre>nextprev.mode</code>.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="order">
@@ -1008,16 +984,16 @@ nextprev:
     </h2>
 </doc-anchor-target>
 <doc-panel id="order--string">
-    <template #title>order : <code v-pre>string</code></template>
+    <template #title>order : <code translate="no" v-pre>string</code></template>
 <p>A custom stack order for this page within the left side-bar tree navigation.</p>
 <p>Options can include:</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A number such as <code v-pre>100</code> or <code v-pre>-100</code></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any string value that will be slotted into the <code v-pre>A -&gt; Z</code> alpha ordering of all navigation nodes</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A <a href="https://semver.org/" class="outbound" target="_blank"><span>SemVer</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value such as <code v-pre>v2.0</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A number such as <code translate="no" v-pre>100</code> or <code translate="no" v-pre>-100</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Any string value that will be slotted into the <code translate="no" v-pre>A -&gt; Z</code> alpha ordering of all navigation nodes</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> A <a href="https://semver.org/" class="outbound" target="_blank"><span>SemVer</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value such as <code translate="no" v-pre>v2.0</code></li>
 </ul>
-<p>If the <code v-pre>order</code> is set with a number, a larger positive number will give more <em>weight</em> or <em>priority</em> to that page and Retype will <em>bubble up</em> that page in the navigation. For instance, a page configured with <code v-pre>order: 100</code> will be higher in the navigation than a page configured with <code v-pre>order: 10</code>.</p>
-<p>Similarily, a page configured with <code v-pre>order: -100</code> will be lower in the navigation than a page configured with <code v-pre>order: -10</code> or any page where no <code v-pre>order</code> is set.</p>
+<p>If the <code translate="no" v-pre>order</code> is set with a number, a larger positive number will give more <em>weight</em> or <em>priority</em> to that page and Retype will <em>bubble up</em> that page in the navigation. For instance, a page configured with <code translate="no" v-pre>order: 100</code> will be higher in the navigation than a page configured with <code translate="no" v-pre>order: 10</code>.</p>
+<p>Similarily, a page configured with <code translate="no" v-pre>order: -100</code> will be lower in the navigation than a page configured with <code translate="no" v-pre>order: -10</code> or any page where no <code translate="no" v-pre>order</code> is set.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1031,11 +1007,11 @@ nextprev:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The position of folders within the navigation can be <a href="/configuration/folder/">ordered</a> as well using the same <code v-pre>order</code> technique, the only difference that folders are always pinned to the top of their <code v-pre>order</code> group.</p>
+<p>The position of folders within the navigation can be <a href="/configuration/folder/">ordered</a> as well using the same <code translate="no" v-pre>order</code> technique, the only difference that folders are always pinned to the top of their <code translate="no" v-pre>order</code> group.</p>
         </div>
     </div>
 </div>
-<p>In order of precedence, the <code v-pre>order</code> of a page in the navigation would be determined with the following priority:</p>
+<p>In order of precedence, the <code translate="no" v-pre>order</code> of a page in the navigation would be determined with the following priority:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1046,33 +1022,33 @@ nextprev:
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>number</code> (positive)</td>
-<td>A larger positive number gets more <em>weight</em> or <em>priority</em> and is pushed higher in the navigation. Largest number at the top. Example: <code v-pre>order: 100</code> will be ordered above <code v-pre>order: 10</code>.</td>
+<td><code translate="no" v-pre>number</code> (positive)</td>
+<td>A larger positive number gets more <em>weight</em> or <em>priority</em> and is pushed higher in the navigation. Largest number at the top. Example: <code translate="no" v-pre>order: 100</code> will be ordered above <code translate="no" v-pre>order: 10</code>.</td>
 </tr>
 <tr>
-<td><code v-pre>alpha</code> (high)</td>
-<td>Setting <code v-pre>order</code> with an alpha-numeric value is possible and those pages will be ordered against the <code v-pre>label</code> value of all other pages that do not have an <code v-pre>order</code> configured.  Example: <code v-pre>order: alpha</code> will be ordered above <code v-pre>order: beta</code> or a page configured with <code v-pre>label: bravo</code>.</td>
+<td><code translate="no" v-pre>alpha</code> (high)</td>
+<td>Setting <code translate="no" v-pre>order</code> with an alpha-numeric value is possible and those pages will be ordered against the <code translate="no" v-pre>label</code> value of all other pages that do not have an <code translate="no" v-pre>order</code> configured.  Example: <code translate="no" v-pre>order: alpha</code> will be ordered above <code translate="no" v-pre>order: beta</code> or a page configured with <code translate="no" v-pre>label: bravo</code>.</td>
 </tr>
 <tr>
-<td>no <code v-pre>order</code> set</td>
-<td>If no <code v-pre>order</code> is configured, all pages will be ordered alphabetically based on its <code v-pre>label</code>, <code v-pre>title</code>, the first <code v-pre>h1</code> title, or the file name values. The <code v-pre>label</code> config has the highest priority.</td>
+<td>no <code translate="no" v-pre>order</code> set</td>
+<td>If no <code translate="no" v-pre>order</code> is configured, all pages will be ordered alphabetically based on its <code translate="no" v-pre>label</code>, <code translate="no" v-pre>title</code>, the first <code translate="no" v-pre>h1</code> title, or the file name values. The <code translate="no" v-pre>label</code> config has the highest priority.</td>
 </tr>
 <tr>
-<td><code v-pre>alpha</code> (low)</td>
-<td>Example: <code v-pre>order: zulu</code> will be ordered below <code v-pre>order: zebra</code> or a page configured with <code v-pre>label: yakee</code>.</td>
+<td><code translate="no" v-pre>alpha</code> (low)</td>
+<td>Example: <code translate="no" v-pre>order: zulu</code> will be ordered below <code translate="no" v-pre>order: zebra</code> or a page configured with <code translate="no" v-pre>label: yakee</code>.</td>
 </tr>
 <tr>
-<td><code v-pre>vSemver</code> (newer)</td>
-<td>Page <code v-pre>order</code> configured with a <a href="https://semver.org/" class="outbound" target="_blank"><span>semver</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value are ordered with the newest version above an older version. These pages are also moved towards the bottom of the navigation. Example: <code v-pre>order: v1.1</code> will be ordered above <code v-pre>order: v1.0</code>.</td>
+<td><code translate="no" v-pre>vSemver</code> (newer)</td>
+<td>Page <code translate="no" v-pre>order</code> configured with a <a href="https://semver.org/" class="outbound" target="_blank"><span>semver</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value are ordered with the newest version above an older version. These pages are also moved towards the bottom of the navigation. Example: <code translate="no" v-pre>order: v1.1</code> will be ordered above <code translate="no" v-pre>order: v1.0</code>.</td>
 </tr>
 <tr>
-<td><code v-pre>number</code> (negative)</td>
-<td>A negative number gets less <em>weight</em> or <em>priority</em> and is pushed to the bottom of the navigation. Setting the <code v-pre>order</code> with a negative number is a simple way to push a page to the bottom of the navigation. Example: <code v-pre>order: -100</code> will be ordered below <code v-pre>order: -10</code>.</td>
+<td><code translate="no" v-pre>number</code> (negative)</td>
+<td>A negative number gets less <em>weight</em> or <em>priority</em> and is pushed to the bottom of the navigation. Setting the <code translate="no" v-pre>order</code> with a negative number is a simple way to push a page to the bottom of the navigation. Example: <code translate="no" v-pre>order: -100</code> will be ordered below <code translate="no" v-pre>order: -10</code>.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>By default, the home page of the website has an order of <code v-pre>10000</code>. To add a page in the navigation just above the home page, set a value of <code v-pre>order: 10001</code> or greater. To add a page in the navigation just below the home page, set a value of <code v-pre>order: 9999</code> or lower. To move the home page to the bottom of the navigation, set a negative value, such as <code v-pre>order: -10000</code>.</p>
+<p>By default, the home page of the website has an order of <code translate="no" v-pre>10000</code>. To add a page in the navigation just above the home page, set a value of <code translate="no" v-pre>order: 10001</code> or greater. To add a page in the navigation just below the home page, set a value of <code translate="no" v-pre>order: 9999</code> or lower. To move the home page to the bottom of the navigation, set a negative value, such as <code translate="no" v-pre>order: -10000</code>.</p>
 <doc-anchor-target id="order-by-number">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-number">#</doc-anchor-trigger>
@@ -1080,9 +1056,9 @@ nextprev:
     </h3>
 </doc-anchor-target>
 <p>Larger number = order higher in the stack.</p>
-<p>No order number or <code v-pre>0</code> = order by alpha</p>
+<p>No order number or <code translate="no" v-pre>0</code> = order by alpha</p>
 <p>Smaller number = order lower in the stack.</p>
-<p>If multiple pages have the same <code v-pre>order</code> number, secondary ordering in that cluster is by alpha.</p>
+<p>If multiple pages have the same <code translate="no" v-pre>order</code> number, secondary ordering in that cluster is by alpha.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">+
 0
@@ -1095,8 +1071,8 @@ nextprev:
     </h3>
 </doc-anchor-target>
 <p>Order values by alpha.</p>
-<p><code v-pre>a</code> = higher
-<code v-pre>z</code> = lower</p>
+<p><code translate="no" v-pre>a</code> = higher
+<code translate="no" v-pre>z</code> = lower</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">Alpha
 Bravo
@@ -1106,7 +1082,7 @@ Zulu</code></pre>
 <doc-anchor-target id="order-by-vsemver">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#order-by-vsemver">#</doc-anchor-trigger>
-        <span>Order by <code v-pre>v{semver}</code></span>
+        <span>Order by <code translate="no" v-pre>v{semver}</code></span>
     </h3>
 </doc-anchor-target>
 <p>Order by <a href="https://semver.org/" class="outbound" target="_blank"><span>semver</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> with latest release at the top</p>
@@ -1119,7 +1095,7 @@ v3.0
 v2.0
 v1.0</code></pre>
 </doc-codeblock></div>
-<p>Items prefixed with <code v-pre>v</code> would be grouped below the alpha ordered items.</p>
+<p>Items prefixed with <code translate="no" v-pre>v</code> would be grouped below the alpha ordered items.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">alpha
 bravo
@@ -1141,7 +1117,7 @@ v1.0-alpha</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="permalink--string">
-    <template #title>permalink : <code v-pre>string</code></template>
+    <template #title>permalink : <code translate="no" v-pre>string</code></template>
 <p>A custom URL path for this page or folder which overrides the default path generated by Retype.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
@@ -1152,9 +1128,9 @@ permalink: /custom/path
 
 Some content here.</code></pre>
 </doc-codeblock></div>
-<p>A <code v-pre>permalink</code> allows the folder and file structure to remain unchanged, but allowing the final URL&#x27;s to be customized.</p>
-<p>Configuring the <code v-pre>permalink</code> is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <strong>.md</strong> files into a new structure. A <code v-pre>permalink</code> allows for a clean disconnect of the page path from the final published URL path.</p>
-<p>In the following sample, the generated URL by Retype would be <code v-pre>/guide/2021-06-25-publishing-to-github-pages/</code>, but we override with a custom permalink which will publish the page to <code v-pre>/tutorial/publish-to-github-pages/</code>.</p>
+<p>A <code translate="no" v-pre>permalink</code> allows the folder and file structure to remain unchanged, but allowing the final URL&#x27;s to be customized.</p>
+<p>Configuring the <code translate="no" v-pre>permalink</code> is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <strong>.md</strong> files into a new structure. A <code translate="no" v-pre>permalink</code> allows for a clean disconnect of the page path from the final published URL path.</p>
+<p>In the following sample, the generated URL by Retype would be <code translate="no" v-pre>/guide/2021-06-25-publishing-to-github-pages/</code>, but we override with a custom permalink which will publish the page to <code translate="no" v-pre>/tutorial/publish-to-github-pages/</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/guide/2021-06-25-publishing-to-github-pages.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
@@ -1162,9 +1138,9 @@ permalink: /tutorial/publish-to-github-pages/
 ---
 # Publishing to GitHub Pages</code></pre>
 </doc-codeblock></div>
-<p>If a <code v-pre>permalink</code> is configured on a folder, or on a <strong>readme.md</strong> or <strong>index.md</strong> page within the folder, or on an <doc-anchor-trigger to="#separate-yml-file"><strong>index.yml</strong></doc-anchor-trigger> file within the folder, that <code v-pre>permalink</code> is assumed to be the base permalink for all pages within that folder.</p>
-<p>The following scenario demonstrates a basic scenario where we configure all pages within the <code v-pre>/guides/</code> folder to be served from the custom URL location of <code v-pre>/tutorials/</code>.</p>
-<p>To accomplish this goal, configure the <code v-pre>permalink</code> on the <strong>readme.md</strong>, then all other pages within the same folder will adjust as well. The <strong>configuration.md</strong> page will now be served from <code v-pre>/tutorials/configuration/</code>.</p>
+<p>If a <code translate="no" v-pre>permalink</code> is configured on a folder, or on a <strong>readme.md</strong> or <strong>index.md</strong> page within the folder, or on an <doc-anchor-trigger to="#separate-yml-file"><strong>index.yml</strong></doc-anchor-trigger> file within the folder, that <code translate="no" v-pre>permalink</code> is assumed to be the base permalink for all pages within that folder.</p>
+<p>The following scenario demonstrates a basic scenario where we configure all pages within the <code translate="no" v-pre>/guides/</code> folder to be served from the custom URL location of <code translate="no" v-pre>/tutorials/</code>.</p>
+<p>To accomplish this goal, configure the <code translate="no" v-pre>permalink</code> on the <strong>readme.md</strong>, then all other pages within the same folder will adjust as well. The <strong>configuration.md</strong> page will now be served from <code translate="no" v-pre>/tutorials/configuration/</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Folder structure</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">|-- /guides
@@ -1189,14 +1165,14 @@ permalink: /tutorials
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>/guides/readme.md</code></td>
-<td><code v-pre>/guides</code></td>
-<td><code v-pre>/tutorials</code></td>
+<td><code translate="no" v-pre>/guides/readme.md</code></td>
+<td><code translate="no" v-pre>/guides</code></td>
+<td><code translate="no" v-pre>/tutorials</code></td>
 </tr>
 <tr>
-<td><code v-pre>/guides/configuration.md</code></td>
-<td><code v-pre>/guides/configuration</code></td>
-<td><code v-pre>/tutorials/configuration</code></td>
+<td><code translate="no" v-pre>/guides/configuration.md</code></td>
+<td><code translate="no" v-pre>/guides/configuration</code></td>
+<td><code translate="no" v-pre>/tutorials/configuration</code></td>
 </tr>
 </tbody>
 </table>
@@ -1210,10 +1186,10 @@ permalink: /tutorials
     </h2>
 </doc-anchor-target>
 <doc-panel id="redirect--string">
-    <template #title>redirect : <code v-pre>string</code></template>
+    <template #title>redirect : <code translate="no" v-pre>string</code></template>
 <p>Redirect requests for this page to another location.</p>
-<p>The <code v-pre>redirect</code> can be set to another page within this project, or an external link.</p>
-<p>For example, you have an existing <strong>setup.md</strong> page and you want to move the content to <strong>getting-started.md</strong>, but other websites might still be linking to your old <strong>example.com/setup/</strong> page and you want to ensure those links still work. You would then set the following <code v-pre>redirect</code> page config in <strong>setup.md</strong> to redirect to <code v-pre>getting-started.md</code>.</p>
+<p>The <code translate="no" v-pre>redirect</code> can be set to another page within this project, or an external link.</p>
+<p>For example, you have an existing <strong>setup.md</strong> page and you want to move the content to <strong>getting-started.md</strong>, but other websites might still be linking to your old <strong>example.com/setup/</strong> page and you want to ensure those links still work. You would then set the following <code translate="no" v-pre>redirect</code> page config in <strong>setup.md</strong> to redirect to <code translate="no" v-pre>getting-started.md</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 redirect: getting-started.md
@@ -1240,11 +1216,11 @@ redirect: getting-started.md
     </h2>
 </doc-anchor-target>
 <doc-panel id="tags--list">
-    <template #title>tags : <code v-pre>list</code></template>
+    <template #title>tags : <code translate="no" v-pre>list</code></template>
 <p>A list of tags can be added to the metadata at the top of each <strong>.md</strong> page you would like to tag.</p>
-<p>The <code v-pre>tags</code> are meant to describe specific details of the content in that page. Tags are similar to <doc-anchor-trigger to="#category"><code v-pre>category</code></doc-anchor-trigger>, although <code v-pre>category</code> is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
+<p>The <code translate="no" v-pre>tags</code> are meant to describe specific details of the content in that page. Tags are similar to <doc-anchor-trigger to="#category"><code translate="no" v-pre>category</code></doc-anchor-trigger>, although <code translate="no" v-pre>category</code> is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
 <p>If tags are configured in the page metadata, a list of tag links are added to the bottom of the page. See the bottom of this page for a working sample.</p>
-<p>Individual tag summary pages will be automatically generated by Retype at <a href="/tags/guide/"><code v-pre>&lt;url&gt;/tags/&lt;tag&gt;</code></a>, plus an additional <a href="/tags/"><code v-pre>&lt;url&gt;/tags</code></a> index page which lists all tags and their count used within the project.</p>
+<p>Individual tag summary pages will be automatically generated by Retype at <a href="/tags/guide/"><code translate="no" v-pre>&lt;url&gt;/tags/&lt;tag&gt;</code></a>, plus an additional <a href="/tags/"><code translate="no" v-pre>&lt;url&gt;/tags</code></a> index page which lists all tags and their count used within the project.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1273,7 +1249,7 @@ tags: [guide]
 
 Some content here.</code></pre>
 </doc-codeblock></div>
-<p>Multiple tags can be added to the list by separating each with a comma <code v-pre>,</code>.</p>
+<p>Multiple tags can be added to the list by separating each with a comma <code translate="no" v-pre>,</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample list of tags</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">---
@@ -1283,7 +1259,7 @@ tags: [guide, config options, installation]
 
 Some content here.</code></pre>
 </doc-codeblock></div>
-<p>A list style syntax is also supported for <code v-pre>tags</code>:</p>
+<p>A list style syntax is also supported for <code translate="no" v-pre>tags</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample tags list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">---
@@ -1302,8 +1278,8 @@ tags:
     </h2>
 </doc-anchor-target>
 <doc-panel id="templating-boolean">
-    <template #title>templating: <code v-pre>boolean</code></template>
-<p>Templating can be disabled on a per-page basis by setting <code v-pre>templating: false</code> in the page metadata.</p>
+    <template #title>templating: <code translate="no" v-pre>boolean</code></template>
+<p>Templating can be disabled on a per-page basis by setting <code translate="no" v-pre>templating: false</code> in the page metadata.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 templating: false
@@ -1318,8 +1294,8 @@ templating: false
     </h2>
 </doc-anchor-target>
 <doc-panel id="title--string">
-    <template #title>title : <code v-pre>string</code></template>
-<p>The <code v-pre>title</code> config instructs Retype to add a primary <code v-pre># Page Title</code> to your page, but it is recommended to manually add a <code v-pre># Page Title</code> to each of your pages, instead of setting a <code v-pre>title</code>.</p>
+    <template #title>title : <code translate="no" v-pre>string</code></template>
+<p>The <code translate="no" v-pre>title</code> config instructs Retype to add a primary <code translate="no" v-pre># Page Title</code> to your page, but it is recommended to manually add a <code translate="no" v-pre># Page Title</code> to each of your pages, instead of setting a <code translate="no" v-pre>title</code>.</p>
 <p>As a general rule, the actual content of your page should not be configured in the page metadata.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -1334,19 +1310,19 @@ templating: false
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The <code v-pre>title</code> is primarily used to support backwards compatibiity with the <strong>.md</strong> content style from other older legacy static site generator applications.</p>
+<p>The <code translate="no" v-pre>title</code> is primarily used to support backwards compatibiity with the <strong>.md</strong> content style from other older legacy static site generator applications.</p>
         </div>
     </div>
 </div>
-<p>The following sample demonstrates setting the <code v-pre>title</code> config instead of explicitly using a <code v-pre># Page Title</code> to your page.</p>
+<p>The following sample demonstrates setting the <code translate="no" v-pre>title</code> config instead of explicitly using a <code translate="no" v-pre># Page Title</code> to your page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">---
 title: Getting Started
 ---
 Some content here.</code></pre>
 </doc-codeblock></div>
-<p>Try to avoid using the <code v-pre>title</code> config. Please add a real page <code v-pre># Page Title</code> to your document. The <code v-pre># Page Title</code> will be rendered in <abbr title="Hyper Text Markup Language">HTML</abbr> as <code v-pre>&lt;h1&gt;Page Title&lt;/h1&gt;</code>.</p>
-<p>For example, the sample above should ideally be written as the following instead of using a <code v-pre>title</code> config.</p>
+<p>Try to avoid using the <code translate="no" v-pre>title</code> config. Please add a real page <code translate="no" v-pre># Page Title</code> to your document. The <code translate="no" v-pre># Page Title</code> will be rendered in <abbr title="Hyper Text Markup Language">HTML</abbr> as <code translate="no" v-pre>&lt;h1&gt;Page Title&lt;/h1&gt;</code>.</p>
+<p>For example, the sample above should ideally be written as the following instead of using a <code translate="no" v-pre>title</code> config.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none"># Getting Started
 
@@ -1363,7 +1339,7 @@ Some content here.</code></pre>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<p>The <code v-pre>toc</code> config contains page options that apply to the right sidebar Table of Contents.</p>
+<p>The <code translate="no" v-pre>toc</code> config contains page options that apply to the right sidebar Table of Contents.</p>
 <doc-anchor-target id="depth">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#depth">#</doc-anchor-trigger>
@@ -1371,16 +1347,16 @@ Some content here.</code></pre>
     </h3>
 </doc-anchor-target>
 <doc-panel id="depth--string-number">
-    <template #title>depth : <code v-pre>string</code>, <code v-pre>number</code></template>
+    <template #title>depth : <code translate="no" v-pre>string</code>, <code translate="no" v-pre>number</code></template>
 <p>The heading depth to include in the right Table of Contents.</p>
-<p>The default is <code v-pre>2-3</code>.</p>
+<p>The default is <code translate="no" v-pre>2-3</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">toc:
   depth: 2-3</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>toc</code> can be configured at the Page or Project levels.</p>
-<p>Configuring the <code v-pre>toc</code> at the Page level overrides the Project level settings.</p>
-<p>Acceptable values for <code v-pre>depth</code> include:</p>
+<p>The <code translate="no" v-pre>toc</code> can be configured at the Page or Project levels.</p>
+<p>Configuring the <code translate="no" v-pre>toc</code> at the Page level overrides the Project level settings.</p>
+<p>Acceptable values for <code translate="no" v-pre>depth</code> include:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1392,31 +1368,31 @@ Some content here.</code></pre>
 <tbody>
 <tr>
 <td>2</td>
-<td>Include <code v-pre>H2</code> headings only</td>
+<td>Include <code translate="no" v-pre>H2</code> headings only</td>
 </tr>
 <tr>
 <td>2-3</td>
-<td><code v-pre>default</code> Include <code v-pre>H2</code> to <code v-pre>H3</code> headings</td>
+<td><code translate="no" v-pre>default</code> Include <code translate="no" v-pre>H2</code> to <code translate="no" v-pre>H3</code> headings</td>
 </tr>
 <tr>
 <td>1-4</td>
-<td>Include <code v-pre>H1</code> to <code v-pre>H3</code> headings</td>
+<td>Include <code translate="no" v-pre>H1</code> to <code translate="no" v-pre>H3</code> headings</td>
 </tr>
 <tr>
 <td>2,3</td>
-<td>Include <code v-pre>H2</code> and <code v-pre>H3</code> headings</td>
+<td>Include <code translate="no" v-pre>H2</code> and <code translate="no" v-pre>H3</code> headings</td>
 </tr>
 <tr>
 <td>2,4</td>
-<td>Include <code v-pre>H2</code> and <code v-pre>H4</code> headings</td>
+<td>Include <code translate="no" v-pre>H2</code> and <code translate="no" v-pre>H4</code> headings</td>
 </tr>
 <tr>
 <td>1,3-4</td>
-<td>Include <code v-pre>H1</code> and <code v-pre>H3</code> to <code v-pre>H4</code> headings, skip <code v-pre>H2</code></td>
+<td>Include <code translate="no" v-pre>H1</code> and <code translate="no" v-pre>H3</code> to <code translate="no" v-pre>H4</code> headings, skip <code translate="no" v-pre>H2</code></td>
 </tr>
 <tr>
 <td>1,2,3,4</td>
-<td>Include <code v-pre>H1</code>, <code v-pre>H2</code>, <code v-pre>H3</code>, and <code v-pre>H4</code> headings</td>
+<td>Include <code translate="no" v-pre>H1</code>, <code translate="no" v-pre>H2</code>, <code translate="no" v-pre>H3</code>, and <code translate="no" v-pre>H4</code> headings</td>
 </tr>
 </tbody>
 </table>
@@ -1429,7 +1405,7 @@ Some content here.</code></pre>
     </h3>
 </doc-anchor-target>
 <doc-panel id="label--string">
-    <template #title>label : <code v-pre>string</code></template>
+    <template #title>label : <code translate="no" v-pre>string</code></template>
 <p>A custom label for the top of the Table of Contents column.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">toc:
@@ -1444,8 +1420,8 @@ Some content here.</code></pre>
     </h2>
 </doc-anchor-target>
 <doc-panel id="visibility--publichiddenprotectedprivate">
-    <template #title>visibility : <code v-pre>public|hidden|protected|private</code></template>
-<p>Configure the visibility of the page to be <code v-pre>public</code>, <code v-pre>hidden</code>, <code v-pre>protected</code>, or <code v-pre>private</code>. Default is <code v-pre>public</code>.</p>
+    <template #title>visibility : <code translate="no" v-pre>public|hidden|protected|private</code></template>
+<p>Configure the visibility of the page to be <code translate="no" v-pre>public</code>, <code translate="no" v-pre>hidden</code>, <code translate="no" v-pre>protected</code>, or <code translate="no" v-pre>private</code>. Default is <code translate="no" v-pre>public</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1459,32 +1435,32 @@ Some content here.</code></pre>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>public</code></td>
+<td><code translate="no" v-pre>public</code></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td>The page is public and visible in the main navigation. A password is not required to view this page.</td>
 </tr>
 <tr>
-<td><doc-anchor-trigger to="#hidden"><code v-pre>hidden</code></doc-anchor-trigger></td>
+<td><doc-anchor-trigger to="#hidden"><code translate="no" v-pre>hidden</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td>The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public (<a href="/samples/hidden/">sample</a>).</td>
 </tr>
 <tr>
-<td><doc-anchor-trigger to="#protected"><code v-pre>protected</code></doc-anchor-trigger></td>
+<td><doc-anchor-trigger to="#protected"><code translate="no" v-pre>protected</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
-<td>The page is added to the public navigation but requires a password to access the content of the page (<a href="/samples/protected/">sample</a> password: <code v-pre>test</code>).</td>
+<td>The page is added to the public navigation but requires a password to access the content of the page (<a href="/samples/protected/">sample</a> password: <code translate="no" v-pre>test</code>).</td>
 </tr>
 <tr>
-<td><doc-anchor-trigger to="#private"><code v-pre>private</code></doc-anchor-trigger></td>
+<td><doc-anchor-trigger to="#private"><code translate="no" v-pre>private</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
-<td>The page is hidden, not added to the navigation, and a password is required for access (<a href="/samples/private/">sample</a> password: <code v-pre>test</code>).</td>
+<td>The page is hidden, not added to the navigation, and a password is required for access (<a href="/samples/private/">sample</a> password: <code translate="no" v-pre>test</code>).</td>
 </tr>
 </tbody>
 </table>
@@ -1496,7 +1472,7 @@ Some content here.</code></pre>
         <span>hidden</span>
     </h3>
 </doc-anchor-target>
-<p>With <code v-pre>hidden</code>, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
+<p>With <code translate="no" v-pre>hidden</code>, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
 <p>Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.</p>
 <p>The following <a href="/samples/hidden/">sample</a> demonstrates hiding a page:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1508,14 +1484,14 @@ visibility: hidden
 This page will be hidden from the menu and search results.</code></pre>
 </doc-codeblock></div>
 <p>The History <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.998 2.5A9.503 9.503 0 0 0 3.378 8H5.75a.75.75 0 0 1 0 1.5H2a1 1 0 0 1-1-1V4.75a.75.75 0 0 1 1.5 0v1.697A10.997 10.997 0 0 1 11.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 0 1 1.5-.037 9.5 9.5 0 0 0 9.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5Z"/><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/></g></g></svg> component will continue to function as normal. Any hidden page visited would still be logged in the history, although that history is only available to the visitor.</p>
-<p>Setting <code v-pre>visibility: hidden</code> on a page is a good way to create a <em>draft</em> or <em>secret</em> page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.</p>
+<p>Setting <code translate="no" v-pre>visibility: hidden</code> on a page is a good way to create a <em>draft</em> or <em>secret</em> page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.</p>
 <doc-anchor-target id="protected">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#protected">#</doc-anchor-trigger>
         <span>protected</span>
     </h3>
 </doc-anchor-target>
-<p>To create a protected page, add <code v-pre>visibility: protected</code> and then set the password for the project using the <code v-pre>--password</code> flag.</p>
+<p>To create a protected page, add <code translate="no" v-pre>visibility: protected</code> and then set the password for the project using the <code translate="no" v-pre>--password</code> flag.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1547,8 +1523,8 @@ This page will be visible in the main navigation, but will require a password to
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
-<p>The project password can also be set as an Environment variable by using <a href="/configuration/envvars/#retype_password"><code v-pre>RETYPE_PASSWORD</code></a>.</p>
-<p>An entire folder can be set to <code v-pre>protected</code> by adding an <code v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
+<p>The project password can also be set as an Environment variable by using <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a>.</p>
+<p>An entire folder can be set to <code translate="no" v-pre>protected</code> by adding an <code translate="no" v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: protected</code></pre>
 </doc-codeblock></div>
@@ -1558,7 +1534,7 @@ retype build --password &lt;your-password&gt;</code></pre>
         <span>private</span>
     </h3>
 </doc-anchor-target>
-<p>To create a private page, add <code v-pre>visibility: private</code> and then set the password for the project using the <code v-pre>--password</code> flag.</p>
+<p>To create a private page, add <code translate="no" v-pre>visibility: private</code> and then set the password for the project using the <code translate="no" v-pre>--password</code> flag.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1590,7 +1566,7 @@ This page will not be visible in the main navigation and will require a password
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
-<p>The project password can also be set as an Environment variable by using <a href="/configuration/envvars/#retype_password"><code v-pre>RETYPE_PASSWORD</code></a>.</p>
+<p>The project password can also be set as an Environment variable by using <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a>.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1604,11 +1580,11 @@ retype build --password &lt;your-password&gt;</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>For <code v-pre>hidden</code> and <code v-pre>private</code> pages, Retype does not provide a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at <code v-pre>https://example.com</code> and the page was called <code v-pre>my-hidden-page.md</code>, the URL would be <code v-pre>https://example.com/my-hidden-page/</code>.</p>
+<p>For <code translate="no" v-pre>hidden</code> and <code translate="no" v-pre>private</code> pages, Retype does not provide a link to the page, but it still uses the same naming convention as all other pages. For instance, if your site is hosted at <code translate="no" v-pre>https://example.com</code> and the page was called <code translate="no" v-pre>my-hidden-page.md</code>, the URL would be <code translate="no" v-pre>https://example.com/my-hidden-page/</code>.</p>
         </div>
     </div>
 </div>
-<p>An entire folder can be set to <code v-pre>private</code> by adding an <code v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
+<p>An entire folder can be set to <code translate="no" v-pre>private</code> by adding an <code translate="no" v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: private</code></pre>
 </doc-codeblock></div>
@@ -1687,7 +1663,7 @@ retype build --password &lt;your-password&gt;</code></pre>
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.12.0-preview</p></div>
                             </footer>
                         </div>
                     </div>

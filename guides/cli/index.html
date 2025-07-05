@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805051904040">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805052950394">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.11.0">
+    <meta name="generator" content="Retype 3.12.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Retype CLI - Write On! with Retype</title>
@@ -32,15 +32,16 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.805051904040" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview.805052950394" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -116,31 +117,6 @@
                         </ul>
                     </nav>
         
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
                     <div v-cloak class="flex justify-end grow">
                         <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
@@ -158,7 +134,7 @@
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
             
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
                 </div>
             
                 <div class="pl-6 mt-1 mb-4">
@@ -283,7 +259,7 @@
         <span>Retype CLI</span>
     </h1>
 </doc-anchor-target>
-<p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code v-pre>retype start</code></p>
+<p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code translate="no" v-pre>retype start</code></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -301,9 +277,9 @@
         </div>
     </div>
 </div>
-<p>The <code v-pre>--help</code> option can be passed with any command to get additional details, for instance <code v-pre>retype start --help</code> will return all options for the <code v-pre>retype start</code> command.</p>
-<p>The command <code v-pre>retype --version</code> will return the current version number of your Retype install. See all public Retype <a href="https://github.com/retypeapp/retype/releases">releases</a>.</p>
-<p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands and be sure to check out the <a href="/guides/getting-started/">Getting Started</a> guide for step-by-step instructions on using each of these commands.</p>
+<p>The <code translate="no" v-pre>--help</code> option can be passed with any command to get additional details, for instance <code translate="no" v-pre>retype start --help</code> will return all options for the <code translate="no" v-pre>retype start</code> command.</p>
+<p>The command <code translate="no" v-pre>retype --version</code> will return the current version number of your Retype install. See all public Retype <a href="https://github.com/retypeapp/retype/releases">releases</a>.</p>
+<p>Let&#x27;s go through each of the <code translate="no" v-pre>retype</code> CLI commands and be sure to check out the <a href="/guides/getting-started/">Getting Started</a> guide for step-by-step instructions on using each of these commands.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">Description:
   Retype CLI
@@ -328,15 +304,15 @@ Commands:
 <doc-anchor-target id="retype-start">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-start">#</doc-anchor-trigger>
-        <span><code v-pre>retype start</code></span>
+        <span><code translate="no" v-pre>retype start</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype start</code> command is the easiest way to get your project built and running in a browser within seconds.</p>
+<p>The <code translate="no" v-pre>retype start</code> command is the easiest way to get your project built and running in a browser within seconds.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>retype start</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
-<p>The <code v-pre>retype start</code> command automatically opens the default web browser on your machine and loads the website into the browser. You can suppress this automatic opening of the default web browser by passing the <code v-pre>--no-open</code> flag or its alias <code v-pre>-n</code>.</p>
+<p>The <code translate="no" v-pre>retype start</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
+<p>The <code translate="no" v-pre>retype start</code> command automatically opens the default web browser on your machine and loads the website into the browser. You can suppress this automatic opening of the default web browser by passing the <code translate="no" v-pre>--no-open</code> flag or its alias <code translate="no" v-pre>-n</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start -n</code></pre>
 </doc-codeblock></div>
@@ -379,9 +355,9 @@ Options:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>While it is technically possible to host your website publicly using <code v-pre>retype start</code> on your own web server hardware, <strong>DON&#x27;T DO IT</strong>.</p>
+<p>While it is technically possible to host your website publicly using <code translate="no" v-pre>retype start</code> on your own web server hardware, <strong>DON&#x27;T DO IT</strong>.</p>
 <p>You should use a dedicated website hosting service, web server, or VPS service. Hosting options include, <a href="/hosting/github-pages/">GitHub Pages</a>, <a href="/hosting/netlify/">Netlify</a>, <a href="/hosting/cloudflare/">Cloudflare</a>, or absolutely any other web hosting or VPS service.</p>
-<p>If you <em>really really really</em> want to try public self-hosting using the built in web server, use <doc-anchor-trigger to="#retype-serve"><code v-pre>retype serve</code></doc-anchor-trigger>.</p>
+<p>If you <em>really really really</em> want to try public self-hosting using the built in web server, use <doc-anchor-trigger to="#retype-serve"><code translate="no" v-pre>retype serve</code></doc-anchor-trigger>.</p>
         </div>
     </div>
 </div>
@@ -389,15 +365,15 @@ Options:
 <doc-anchor-target id="retype-init">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-init">#</doc-anchor-trigger>
-        <span><code v-pre>retype init</code></span>
+        <span><code translate="no" v-pre>retype init</code></span>
     </h2>
 </doc-anchor-target>
-<p>You can manually create a <strong>retype.yml</strong> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
+<p>You can manually create a <strong>retype.yml</strong> file, or you can have Retype stub out a basic file with a few initial values by running the command <code translate="no" v-pre>retype init</code>.</p>
 <p>From your command line, navigate to any folder location where you have one or more Markdown <strong>.md</strong> files, such as the root of a GitHub project, then run the following command:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype init</code></pre>
 </doc-codeblock></div>
-<p>Calling the <code v-pre>retype init</code> command will create a basic <strong>retype.yml</strong> file with the following default values:</p>
+<p>Calling the <code translate="no" v-pre>retype init</code> command will create a basic <strong>retype.yml</strong> file with the following default values:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: .
@@ -413,12 +389,12 @@ footer:
   copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 <p>All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the <a href="/configuration/project/">project</a> configuration docs for a full list of all options.</p>
-<p>To change the title of the project, revise the <code v-pre>branding.title</code> config. For instance, let&#x27;s change to <code v-pre>Company X</code>:</p>
+<p>To change the title of the project, revise the <code translate="no" v-pre>branding.title</code> config. For instance, let&#x27;s change to <code translate="no" v-pre>Company X</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Company X</code></pre>
 </doc-codeblock></div>
-<p>If there is already a <strong>retype.yml</strong> file within the project, running the <code v-pre>retype init</code> command will not create a new <strong>retype.yml</strong> file.</p>
+<p>If there is already a <strong>retype.yml</strong> file within the project, running the <code translate="no" v-pre>retype init</code> command will not create a new <strong>retype.yml</strong> file.</p>
 <p>The <strong>retype.yml</strong> file is not <em>actually</em> required, but you will want to make custom <a href="/configuration/project/">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
 <doc-anchor-target id="options-1">
     <h3>
@@ -444,38 +420,38 @@ Options:
 <doc-anchor-target id="--override">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#--override">#</doc-anchor-trigger>
-        <span><code v-pre>--override</code></span>
+        <span><code translate="no" v-pre>--override</code></span>
     </h3>
 </doc-anchor-target>
-<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
+<p>See the <doc-anchor-trigger to="#retype---override"><code translate="no" v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr>
 <doc-anchor-target id="retype-build">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-build">#</doc-anchor-trigger>
-        <span><code v-pre>retype build</code></span>
+        <span><code translate="no" v-pre>retype build</code></span>
     </h2>
 </doc-anchor-target>
-<p>To generate your new website, run the command <code v-pre>retype build</code>. This command builds a new website based upon the <strong>.md</strong> files within the <a href="/configuration/project/"><code v-pre>input</code></a> location.</p>
+<p>To generate your new website, run the command <code translate="no" v-pre>retype build</code>. This command builds a new website based upon the <strong>.md</strong> files within the <a href="/configuration/project/"><code translate="no" v-pre>input</code></a> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build</code></pre>
 </doc-codeblock></div>
-<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <strong>retype.yml</strong>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
-<p>If the <strong>.md</strong> documentation files for your project were not located in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
+<p>Within just a few seconds, Retype will create a new website and save to the <code translate="no" v-pre>output</code> location as defined in the <strong>retype.yml</strong>. By default, the <code translate="no" v-pre>output</code> location is a new folder named <code translate="no" v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
+<p>If the <strong>.md</strong> documentation files for your project were not located in the root (<code translate="no" v-pre>.</code>) but within a <code translate="no" v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code translate="no" v-pre>website</code> folder, you would use the following config:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: docs
 output: website</code></pre>
 </doc-codeblock></div>
-<p>Let&#x27;s say you wanted your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
+<p>Let&#x27;s say you wanted your new Retype website to run from within a <code translate="no" v-pre>docs</code> folder which was then also inside of a root <code translate="no" v-pre>website</code> folder, then you would configure:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: docs
 output: website/docs</code></pre>
 </doc-codeblock></div>
-<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code v-pre>docs</code> folder, you could then move your <strong>.md</strong> files into a different subfolder and configure as follows:</p>
+<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code translate="no" v-pre>docs</code> folder, you could then move your <strong>.md</strong> files into a different subfolder and configure as follows:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: src
 output: docs</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files, and where to output the generated website.</p>
+<p>The <code translate="no" v-pre>input</code> and <code translate="no" v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files, and where to output the generated website.</p>
 <doc-anchor-target id="options-2">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-2">#</doc-anchor-trigger>
@@ -506,23 +482,23 @@ Options:
 <doc-anchor-target id="--override-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#--override-1">#</doc-anchor-trigger>
-        <span><code v-pre>--override</code></span>
+        <span><code translate="no" v-pre>--override</code></span>
     </h3>
 </doc-anchor-target>
-<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
+<p>See the <doc-anchor-trigger to="#retype---override"><code translate="no" v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr>
 <doc-anchor-target id="retype-serve">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-serve">#</doc-anchor-trigger>
-        <span><code v-pre>retype serve</code></span>
+        <span><code translate="no" v-pre>retype serve</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype serve</code> command starts a local development only web server and hosts your website.</p>
+<p>The <code translate="no" v-pre>retype serve</code> command starts a local development only web server and hosts your website.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype serve</code></pre>
 </doc-codeblock></div>
 <p>The website generated by Retype is a static <abbr title="Hyper Text Markup Language">HTML</abbr> and JavaScript site. No special server-side hosting, such as Node, PHP, or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such as <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>, <a href="https://docs.gitlab.com/ee/user/project/pages/" class="outbound" target="_blank"><span>GitLab Pages</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, <a href="https://www.netlify.com/" class="outbound" target="_blank"><span>Netlify</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, or <a href="https://pages.cloudflare.com/" class="outbound" target="_blank"><span>Cloudflare Pages</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
-<p>You can also use any other local web server instead of <code v-pre>retype serve</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple web server options could be <a href="https://www.npmjs.com/package/live-server" class="outbound" target="_blank"><span>live-server</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or <a href="https://www.npmjs.com/package/static-server" class="outbound" target="_blank"><span>static-server</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>You can also use any other local web server instead of <code translate="no" v-pre>retype serve</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple web server options could be <a href="https://www.npmjs.com/package/live-server" class="outbound" target="_blank"><span>live-server</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or <a href="https://www.npmjs.com/package/static-server" class="outbound" target="_blank"><span>static-server</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <doc-anchor-target id="options-3">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-3">#</doc-anchor-trigger>
@@ -549,20 +525,20 @@ Options:
 <doc-anchor-target id="--override-2">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#--override-2">#</doc-anchor-trigger>
-        <span><code v-pre>--override</code></span>
+        <span><code translate="no" v-pre>--override</code></span>
     </h3>
 </doc-anchor-target>
-<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
+<p>See the <doc-anchor-trigger to="#retype---override"><code translate="no" v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr>
 <doc-anchor-target id="retype-clean">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-clean">#</doc-anchor-trigger>
-        <span><code v-pre>retype clean</code></span>
+        <span><code translate="no" v-pre>retype clean</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype clean</code> command will delete the Retype managed files from the <code v-pre>output</code> folder.</p>
-<p>If you manually add files or another process adds files to the <code v-pre>output</code>, those files will not be removed by <code v-pre>retype clean</code>.</p>
-<p>Including the <code v-pre>--dry</code> flag triggers a dry run for the command and will list the files that <em><strong>would be</strong></em> deleted if the <code v-pre>--dry</code> flag was not included.</p>
+<p>The <code translate="no" v-pre>retype clean</code> command will delete the Retype managed files from the <code translate="no" v-pre>output</code> folder.</p>
+<p>If you manually add files or another process adds files to the <code translate="no" v-pre>output</code>, those files will not be removed by <code translate="no" v-pre>retype clean</code>.</p>
+<p>Including the <code translate="no" v-pre>--dry</code> flag triggers a dry run for the command and will list the files that <em><strong>would be</strong></em> deleted if the <code translate="no" v-pre>--dry</code> flag was not included.</p>
 <doc-anchor-target id="options-4">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
@@ -588,17 +564,17 @@ Options:
 <doc-anchor-target id="retype-wallet">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-wallet">#</doc-anchor-trigger>
-        <span><code v-pre>retype wallet</code></span>
+        <span><code translate="no" v-pre>retype wallet</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype wallet</code> command is for managing Retype keys.</p>
+<p>The <code translate="no" v-pre>retype wallet</code> command is for managing Retype keys.</p>
 <p>Retype keys are stored within an encrypted wallet file called <strong>license.dat</strong>.</p>
 <p>To add a Retype key to your wallet, run the following command:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype wallet --add &lt;your-license-key-here&gt;</code></pre>
 </doc-codeblock></div>
 <p>Once a key is added to your wallet, the key does not need to be added again. The key is stored in the wallet and Retype will read the key from the wallet with future builds.</p>
-<p>A Retype key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to <code v-pre>retype build</code>.</p>
+<p>A Retype key can also be passed during a build. The key is NOT stored in wallet. The key would need to be passed with each call to <code translate="no" v-pre>retype build</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build --key &lt;your-license-key-here&gt;</code></pre>
 </doc-codeblock></div>
@@ -608,7 +584,7 @@ Options:
         <span>RETYPE_KEY</span>
     </h3>
 </doc-anchor-target>
-<p>See how to configure a <a href="/configuration/envvars/#retype_key"><code v-pre>RETYPE_KEY</code></a> Environment variable for an option to set your project key during runtime.</p>
+<p>See how to configure a <a href="/configuration/envvars/#retype_key"><code translate="no" v-pre>RETYPE_KEY</code></a> Environment variable for an option to set your project key during runtime.</p>
 <doc-anchor-target id="options-5">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
@@ -633,11 +609,11 @@ Options:
 <doc-anchor-target id="retype---override">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype---override">#</doc-anchor-trigger>
-        <span><code v-pre>retype --override</code></span>
+        <span><code translate="no" v-pre>retype --override</code></span>
     </h2>
 </doc-anchor-target>
-<p>The Retype CLI <doc-anchor-trigger to="#retype-build"><code v-pre>build</code></doc-anchor-trigger> command supports the <code v-pre>--override</code> option to allow dynamically modifying <strong>retype.yml</strong> project configurations during build.</p>
-<p>The <code v-pre>--override</code> option is helpful in certain scenarios such as generating websites requiring different <code v-pre>url</code> configs, without the need to maintain several <strong>retype.yml</strong> files.</p>
+<p>The Retype CLI <doc-anchor-trigger to="#retype-build"><code translate="no" v-pre>build</code></doc-anchor-trigger> command supports the <code translate="no" v-pre>--override</code> option to allow dynamically modifying <strong>retype.yml</strong> project configurations during build.</p>
+<p>The <code translate="no" v-pre>--override</code> option is helpful in certain scenarios such as generating websites requiring different <code translate="no" v-pre>url</code> configs, without the need to maintain several <strong>retype.yml</strong> files.</p>
 <p>The CLI expects an escaped json object to be passed as the option value.</p>
 <p>Retype merges the <strong>retype.yml</strong> configuration with the provided json object in a way that colliding configurations from the json override will overwrite the <strong>retype.yml</strong> values.</p>
 <div class="flex mb-6">
@@ -653,7 +629,7 @@ Options:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The <code v-pre>--override</code> json object may contain duplicate keys which will be processed sequentially. Last in wins.</p>
+<p>The <code translate="no" v-pre>--override</code> json object may contain duplicate keys which will be processed sequentially. Last in wins.</p>
         </div>
     </div>
 </div>
@@ -668,7 +644,7 @@ Options:
 <div class="codeblock-title"><strong>retype.yml</strong></div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: https://retype.com</code></pre>
 </doc-codeblock></div>
-<p>The command below will build the website with the url <code v-pre>https://beta.retype.com</code>.</p>
+<p>The command below will build the website with the url <code translate="no" v-pre>https://beta.retype.com</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: \&quot;https://beta.retype.com\&quot; }&quot;</code></pre>
 </doc-codeblock></div>
@@ -679,18 +655,18 @@ Options:
     </h3>
 </doc-anchor-target>
 <p>The following sample demonstrates overriding a more complex configuration object.</p>
-<p>Using the following <strong>retype.yml</strong> project configuration file as an example, let&#x27;s change the <a href="/configuration/project/#label"><code v-pre>label</code></a> to <code v-pre>beta</code>, instead of <code v-pre>v1.10</code>.</p>
+<p>Using the following <strong>retype.yml</strong> project configuration file as an example, let&#x27;s change the <a href="/configuration/project/#label"><code translate="no" v-pre>label</code></a> to <code translate="no" v-pre>beta</code>, instead of <code translate="no" v-pre>v1.10</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><strong>retype.yml</strong></div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Retype
   label: v1.10</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>retype build --override</code> would be:</p>
+<p>The <code translate="no" v-pre>retype build --override</code> would be:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: { \&quot;label\&quot;: \&quot;beta\&quot;} }&quot;</code></pre>
 </doc-codeblock></div>
-<p>To completely remove all the configs in <code v-pre>branding</code>, pass <code v-pre>null</code>:</p>
+<p>To completely remove all the configs in <code translate="no" v-pre>branding</code>, pass <code translate="no" v-pre>null</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;branding\&quot;: null }&quot;</code></pre>
 </doc-codeblock></div>
@@ -700,7 +676,7 @@ Options:
         <span>Add to list</span>
     </h3>
 </doc-anchor-target>
-<p>The following command will add a <code v-pre>GitHub</code> link to the list of <a href="/configuration/project/#links"><code v-pre>links</code></a>.</p>
+<p>The following command will add a <code translate="no" v-pre>GitHub</code> link to the list of <a href="/configuration/project/#links"><code translate="no" v-pre>links</code></a>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title"><strong>retype.yml</strong></div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
@@ -716,8 +692,8 @@ Options:
         <span>Remove config</span>
     </h3>
 </doc-anchor-target>
-<p>Passing <code v-pre>null</code> will remove the corresponding configuration value.</p>
-<p>In the following sample, the website will be built as though <code v-pre>url</code> was not configured.</p>
+<p>Passing <code translate="no" v-pre>null</code> will remove the corresponding configuration value.</p>
+<p>In the following sample, the website will be built as though <code translate="no" v-pre>url</code> was not configured.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build --override &quot;{ \&quot;url\&quot;: null }&quot;</code></pre>
 </doc-codeblock></div>
@@ -796,7 +772,7 @@ Options:
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.12.0-preview</p></div>
                             </footer>
                         </div>
                     </div>

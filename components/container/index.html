@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805051904040">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805052950394">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.11.0">
+    <meta name="generator" content="Retype 3.12.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Container - Write On! with Retype</title>
@@ -32,15 +32,16 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.805051904040" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview.805052950394" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -116,31 +117,6 @@
                         </ul>
                     </nav>
         
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
                     <div v-cloak class="flex justify-end grow">
                         <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
@@ -158,7 +134,7 @@
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
             
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
                 </div>
             
                 <div class="pl-6 mt-1 mb-4">
@@ -283,8 +259,8 @@
         <span>Container</span>
     </h1>
 </doc-anchor-target>
-<p>A Container component can be used to wrap any content in a <code v-pre>&lt;div&gt;</code> container.</p>
-<p>A Container component is created by adding <code v-pre>:::</code> above and below any content.</p>
+<p>A Container component can be used to wrap any content in a <code translate="no" v-pre>&lt;div&gt;</code> container.</p>
+<p>A Container component is created by adding <code translate="no" v-pre>:::</code> above and below any content.</p>
 <p>In of itself, there should be no visible difference between content inside a Container vs not inside a Container. Visually, the final rendered content should look the same. For example:</p>
 <div><p>This text is inside a Container component.</p>
 </div>
@@ -294,7 +270,7 @@
 This text is inside a Container component.
 :::</code></pre>
 </doc-codeblock></div>
-<p>The difference is in the generated <abbr title="Hyper Text Markup Language">HTML</abbr>. The above line of text is now created within a new <code v-pre>&lt;div&gt;</code> element:</p>
+<p>The difference is in the generated <abbr title="Hyper Text Markup Language">HTML</abbr>. The above line of text is now created within a new <code translate="no" v-pre>&lt;div&gt;</code> element:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;div&gt;
     &lt;p&gt;This text is inside a Container component.&lt;/p&gt;
@@ -307,7 +283,7 @@ This text is inside a Container component.
         <span>Custom <abbr title="Cascading Style Sheet">CSS</abbr> class</span>
     </h2>
 </doc-anchor-target>
-<p>The power of the Container component is how custom styling can be applied to the <code v-pre>&lt;div&gt;</code> container.</p>
+<p>The power of the Container component is how custom styling can be applied to the <code translate="no" v-pre>&lt;div&gt;</code> container.</p>
 <style>
     .sample {
         text-align: center;
@@ -319,9 +295,9 @@ This text is inside a Container component.
         margin-bottom: 20px;
     }
 </style>
-<div class="sample"><p>This text is wrapped in a Container component and has a custom css <code v-pre>class</code> applied.</p>
+<div class="sample"><p>This text is wrapped in a Container component and has a custom css <code translate="no" v-pre>class</code> applied.</p>
 </div>
-<p>The above Container is configured by assigning the <code v-pre>:::sample</code> class to the opening of Container, and then defining an inline <abbr title="Cascading Style Sheet">CSS</abbr> class.</p>
+<p>The above Container is configured by assigning the <code translate="no" v-pre>:::sample</code> class to the opening of Container, and then defining an inline <abbr title="Cascading Style Sheet">CSS</abbr> class.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&lt;style&gt;
     .sample {
@@ -346,7 +322,7 @@ This text is wrapped in a Container component and has a custom css `class` appli
     </h2>
 </doc-anchor-target>
 <p>The Container component also supports applying generic attributes.</p>
-<div id="container1" class="sample"><p>This Container has a custom <code v-pre>id</code> attribute.</p>
+<div id="container1" class="sample"><p>This Container has a custom <code translate="no" v-pre>id</code> attribute.</p>
 </div>
 <p>The following sample is used to configure the above Container:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -369,7 +345,7 @@ This Container has a custom `id` attribute.
 </doc-anchor-target>
 <p>It is also possible to include a global styles by adding to a new <strong>/_includes/head.html</strong> file.</p>
 <p>The contents of <strong>_includes/head.html</strong> are added to all pages of the generated website.</p>
-<p>For example, the inline <code v-pre>&lt;style&gt;</code> block above could be moved out of the page and then included automatically into all pages.</p>
+<p>For example, the inline <code translate="no" v-pre>&lt;style&gt;</code> block above could be moved out of the page and then included automatically into all pages.</p>
 <p>Create a new <strong>head.html</strong> file and place the file within a <strong>/_includes/</strong> folder in the root of your project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">_includes/head.html</div>
@@ -385,8 +361,8 @@ This Container has a custom `id` attribute.
     }
 &lt;/style&gt;</code></pre>
 </doc-codeblock></div>
-<p>Moving the <code v-pre>&lt;style&gt;</code> block into the <strong>_includes/head.html</strong> is all you need to do. Save the file and your new <code v-pre>.sample</code> css class is now available on all pages your website.</p>
-<div class="sample"><p>This Container uses the <code v-pre>sample</code> class.</p>
+<p>Moving the <code translate="no" v-pre>&lt;style&gt;</code> block into the <strong>_includes/head.html</strong> is all you need to do. Save the file and your new <code translate="no" v-pre>.sample</code> css class is now available on all pages your website.</p>
+<div class="sample"><p>This Container uses the <code translate="no" v-pre>sample</code> class.</p>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">:::sample
@@ -445,7 +421,7 @@ This Container uses the `sample` class.
         <span>Center on Page</span>
     </h3>
 </doc-anchor-target>
-<p>Text, a <a href="/components/button/">Button</a>, or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the <code v-pre>content-center</code> or <code v-pre>text-center</code> css class.</p>
+<p>Text, a <a href="/components/button/">Button</a>, or any similar Retype component, can be center aligned on the page by nesting the component inside a Container and applying the <code translate="no" v-pre>content-center</code> or <code translate="no" v-pre>text-center</code> css class.</p>
 <p>The following samples demonstrate center alignment of a Button and Text:</p>
 <div class="content-center"><p><button class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
     <span>My Button</span>
@@ -537,7 +513,7 @@ This text should be centered :+1:
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.12.0-preview</p></div>
                             </footer>
                         </div>
                     </div>

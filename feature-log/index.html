@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805051904040">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805052950394">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.11.0">
+    <meta name="generator" content="Retype 3.12.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Feature Log - Write On! with Retype</title>
@@ -32,14 +32,15 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -115,31 +116,6 @@
                         </ul>
                     </nav>
         
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
                     <div v-cloak class="flex justify-end grow">
                         <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
@@ -157,7 +133,7 @@
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
             
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
                 </div>
             
                 <div class="pl-6 mt-1 mb-4">
@@ -308,26 +284,26 @@
 <dd>Comprehensive <a href="/configuration/theme-variables/">theme variables</a> customization for both <a href="/configuration/project/#theme-base">light</a> and <a href="/configuration/project/#theme-dark">dark</a> modes, see <a href="/configuration/project/#theme">docs</a>, <a href="/guides/themes/">Themes</a> guide, and <a href="/configuration/theme-variables/">Theme Variables</a>.</dd>
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
-</span> <a href="/configuration/project/#basecolor"><code v-pre>branding.baseColor</code></a></dt>
+</span> <a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a></dt>
 <dd>Quick method to set the base brand color without full <a href="/configuration/project/#theme">theme</a> configuration, see <a href="/configuration/project/#basecolor">docs</a>.</dd>
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
-</span> <a href="/configuration/page/#nav-badge"><code v-pre>nav.badge</code></a></dt>
+</span> <a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a></dt>
 <dd>Add a badge to navigation items in the left sidebar, see <a href="/configuration/page/#nav-badge">docs</a>.</dd>
 <dt>Three-way switcher</dt>
-<dd>Enhanced color scheme switcher with <code v-pre>Light</code>, <code v-pre>Dark</code>, and <code v-pre>System</code> options. Allows users to return to system preference after manual selection.</dd>
+<dd>Enhanced color scheme switcher with <code translate="no" v-pre>Light</code>, <code translate="no" v-pre>Dark</code>, and <code translate="no" v-pre>System</code> options. Allows users to return to system preference after manual selection.</dd>
 <dt>Pipe notation syntax</dt>
-<dd>Shorthand syntax for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/configuration/page/#nav-badge">Navigation Badge</a> components using <code v-pre>text|variant</code> format. Example: <code v-pre>[!badge NEW|info]</code> instead of <code v-pre>[!badge text=&quot;NEW&quot; variant&quot;info&quot;]</code>.</dd>
+<dd>Shorthand syntax for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/configuration/page/#nav-badge">Navigation Badge</a> components using <code translate="no" v-pre>text|variant</code> format. Example: <code translate="no" v-pre>[!badge NEW|info]</code> instead of <code translate="no" v-pre>[!badge text=&quot;NEW&quot; variant&quot;info&quot;]</code>.</dd>
 <dt>Icon-only links</dt>
-<dd>Support for icon-only <a href="/configuration/project/#links"><code v-pre>links</code></a> in header and <a href="/configuration/project/#footer">footer</a> configurations without requiring <a href="/configuration/project/#text"><code v-pre>text</code></a>. Enables cleaner, minimal navigation designs.</dd>
+<dd>Support for icon-only <a href="/configuration/project/#links"><code translate="no" v-pre>links</code></a> in header and <a href="/configuration/project/#footer">footer</a> configurations without requiring <a href="/configuration/project/#text"><code translate="no" v-pre>text</code></a>. Enables cleaner, minimal navigation designs.</dd>
 <dt>Base variant</dt>
-<dd>New <code v-pre>base</code> variant for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/components/callout/">Callout</a> components. Provides consistent styling with the site&#x27;s base color theme.</dd>
+<dd>New <code translate="no" v-pre>base</code> variant for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/components/callout/">Callout</a> components. Provides consistent styling with the site&#x27;s base color theme.</dd>
 <dt>Better print mode rendering</dt>
 <dd>Improved print style with better outbound link handling and visual consistency</dd>
 <dt>Search and filter UX</dt>
 <dd>Added keyboard shortcuts hints, improved placeholder handling, and better focus states</dd>
 <dt>Footer template support</dt>
-<dd>Full templating support in <a href="/configuration/project/#copyright"><code v-pre>footer.copyright</code></a> including use of data variables, includes, and functions</dd>
+<dd>Full templating support in <a href="/configuration/project/#copyright"><code translate="no" v-pre>footer.copyright</code></a> including use of data variables, includes, and functions</dd>
 </dl>
 <hr>
 <doc-anchor-target id="v310">
@@ -340,19 +316,19 @@
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> Next/Previous navigation control</dt>
-<dd>Configure visibility and sequencing of <code v-pre>Next/Previous</code> navigation buttons. Configure at project, page, and folder levels with <code v-pre>show</code>, <code v-pre>hide</code>, and <code v-pre>exclude</code> modes, see <a href="/blog/2025-06-09-whats-new-in-retype-v310/">blog post</a>, <a href="/configuration/project/#nextprev">Project</a> settings, <a href="/configuration/page/#nextprev">Page</a> settings, and <a href="/configuration/folder/#nextprev">Folder</a> settings.</dd>
+<dd>Configure visibility and sequencing of <code translate="no" v-pre>Next/Previous</code> navigation buttons. Configure at project, page, and folder levels with <code translate="no" v-pre>show</code>, <code translate="no" v-pre>hide</code>, and <code translate="no" v-pre>exclude</code> modes, see <a href="/blog/2025-06-09-whats-new-in-retype-v310/">blog post</a>, <a href="/configuration/project/#nextprev">Project</a> settings, <a href="/configuration/page/#nextprev">Page</a> settings, and <a href="/configuration/folder/#nextprev">Folder</a> settings.</dd>
 <dt>GitHub Pages community key</dt>
-<dd>Retype Pro Community Key unlocks all Pro features for GitHub Pages projects. No cost, no strings attached for <code v-pre>*.github.io</code> domains, with up to 1000 pages with all <a href="/pro/">Pro</a> features included, see <a href="/blog/2025-06-06-new-github-pages-community-key/">blog post</a> and <a href="/hosting/github-pages/">GitHub Pages</a> setup.</dd>
+<dd>Retype Pro Community Key unlocks all Pro features for GitHub Pages projects. No cost, no strings attached for <code translate="no" v-pre>*.github.io</code> domains, with up to 1000 pages with all <a href="/pro/">Pro</a> features included, see <a href="/blog/2025-06-06-new-github-pages-community-key/">blog post</a> and <a href="/hosting/github-pages/">GitHub Pages</a> setup.</dd>
 <dt>Hidden comments component</dt>
-<dd>Add hidden comments to markdown that won&#x27;t appear in the final website. Supports both inline <code v-pre>%%comment%%</code> and block comment syntax, see <a href="/components/comments/">docs</a>.</dd>
-<dt>New <a href="/components/callout/"><code v-pre>tip</code></a> Callout variant</dt>
-<dd>New <code v-pre>tip</code> callout variant with lightbulb icon and friendly green color scheme. Perfect for sharing best practices and helpful hints, see <a href="/components/callout/">docs</a>.</dd>
+<dd>Add hidden comments to markdown that won&#x27;t appear in the final website. Supports both inline <code translate="no" v-pre>%%comment%%</code> and block comment syntax, see <a href="/components/comments/">docs</a>.</dd>
+<dt>New <a href="/components/callout/"><code translate="no" v-pre>tip</code></a> Callout variant</dt>
+<dd>New <code translate="no" v-pre>tip</code> callout variant with lightbulb icon and friendly green color scheme. Perfect for sharing best practices and helpful hints, see <a href="/components/callout/">docs</a>.</dd>
 <dt>Generic attributes for list items</dt>
-<dd>Apply CSS classes, IDs, and custom attributes directly to individual list items. Uses generic attribute syntax: <code v-pre>- List Item {.class-name #id data-value=&quot;test&quot;}</code>, see <a href="/components/list/#generic-attributes">docs</a>.</dd>
+<dd>Apply CSS classes, IDs, and custom attributes directly to individual list items. Uses generic attribute syntax: <code translate="no" v-pre>- List Item {.class-name #id data-value=&quot;test&quot;}</code>, see <a href="/components/list/#generic-attributes">docs</a>.</dd>
 <dt>New CSS Classes</dt>
-<dd>Added rounded CSS classes including <code v-pre>rounded-xl</code>, <code v-pre>rounded-2xl</code>, <code v-pre>rounded-3xl</code>, <code v-pre>rounded-4xl</code> and <code v-pre>rounded-full</code></dd>
+<dd>Added rounded CSS classes including <code translate="no" v-pre>rounded-xl</code>, <code translate="no" v-pre>rounded-2xl</code>, <code translate="no" v-pre>rounded-3xl</code>, <code translate="no" v-pre>rounded-4xl</code> and <code translate="no" v-pre>rounded-full</code></dd>
 <dt>Custom Anchors</dt>
-<dd>Support for custom <a href="https://obsidian.md/" class="outbound" target="_blank"><span>Obsidian</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> style anchor points using <code v-pre>^anchor</code> syntax for block references. Enables wiki-style block linking and referencing.</dd>
+<dd>Support for custom <a href="https://obsidian.md/" class="outbound" target="_blank"><span>Obsidian</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> style anchor points using <code translate="no" v-pre>^anchor</code> syntax for block references. Enables wiki-style block linking and referencing.</dd>
 </dl>
 <hr>
 <doc-anchor-target id="v39">
@@ -365,23 +341,23 @@
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> Navigation icon settings</dt>
-<dd>Control which navigation items show icons with <a href="/configuration/project/#icons"><code v-pre>nav.icons.mode</code></a> setting. Options include: <code v-pre>all</code>, <code v-pre>folders</code>, <code v-pre>pages</code>, <code v-pre>top</code>, <code v-pre>none</code>.</dd>
+<dd>Control which navigation items show icons with <a href="/configuration/project/#icons"><code translate="no" v-pre>nav.icons.mode</code></a> setting. Options include: <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, <code translate="no" v-pre>none</code>.</dd>
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </span> Default color scheme</dt>
-<dd>Set project&#x27;s default color scheme with <a href="/configuration/project/#scheme"><code v-pre>scheme.mode</code></a> configuration. Options include: <code v-pre>system</code>, <code v-pre>dark</code>, <code v-pre>light</code>.</dd>
+<dd>Set project&#x27;s default color scheme with <a href="/configuration/project/#scheme"><code translate="no" v-pre>scheme.mode</code></a> configuration. Options include: <code translate="no" v-pre>system</code>, <code translate="no" v-pre>dark</code>, <code translate="no" v-pre>light</code>.</dd>
 <dt>Print-Friendly Stylesheets</dt>
 <dd>Comprehensive print stylesheet for professional PDF and paper output. Removes navigation, optimizes typography, prevents awkward page breaks. Shows full URLs for external links in print.</dd>
 <dt>Question <a href="/components/callout/">Callout</a></dt>
-<dd>New <a href="/components/callout/"><code v-pre>question</code></a> callout variant with question mark icon. Perfect for FAQ sections and troubleshooting guides.</dd>
+<dd>New <a href="/components/callout/"><code translate="no" v-pre>question</code></a> callout variant with question mark icon. Perfect for FAQ sections and troubleshooting guides.</dd>
 <dt>Pipe separator image dimensions</dt>
-<dd>Set image dimensions using intuitive pipe syntax: <code v-pre>![Image|300]</code> or <code v-pre>![Image|300x200]</code>. Cleaner alternative to generic attributes for image sizing, see <a href="/components/image/#dimensions">docs</a>.</dd>
+<dd>Set image dimensions using intuitive pipe syntax: <code translate="no" v-pre>![Image|300]</code> or <code translate="no" v-pre>![Image|300x200]</code>. Cleaner alternative to generic attributes for image sizing, see <a href="/components/image/#dimensions">docs</a>.</dd>
 <dt>Universal Callout syntax</dt>
 <dd>Enhanced compatibility and seamless migration with other documentation platforms, including <a href="https://www.notion.com/" class="outbound" target="_blank"><span>Notion</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, <a href="https://github.com/">GitHub</a>, <a href="https://obsidian.md/" class="outbound" target="_blank"><span>Obsidian</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, <a href="https://just-the-docs.com/" class="outbound" target="_blank"><span>Just the Docs</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> and other platforms.</dd>
 <dt>List-Icon styling</dt>
 <dd>Improved styling for creating icon lists with proper spacing and alignment which simplifies creation of icon-based list layouts.</dd>
 <dt>Details/summary conversion</dt>
-<dd>Automatic conversion of HTML <code v-pre>details</code> elements into Retype Panel components to ensure seamless integration with other platforms, such as GitHub.</dd>
+<dd>Automatic conversion of HTML <code translate="no" v-pre>details</code> elements into Retype Panel components to ensure seamless integration with other platforms, such as GitHub.</dd>
 </dl>
 <hr>
 <doc-anchor-target id="v38">
@@ -396,25 +372,25 @@
 </span> Stack navigation mode</dt>
 <dd>Transform top-level folders into visually distinct stacked blocks. Better organization and visual hierarchy for complex documentation sites, Configure at project or page level, see <a href="/blog/2025-05-04-whats-new-in-retype-v38/">blog post</a>, <a href="/configuration/project/#nav-mode">Project</a> settings, and <a href="/configuration/page/#nav-mode">Page</a> settings.</dd>
 <dt>WikiLinks Support</dt>
-<dd>Comprehensive wiki-style linking with double square brackets: <code v-pre>[[Page Name]]</code>. Intelligent link resolution that handles filename variations and support for custom labels using the syntax <code v-pre>[[page|Custom Label]]</code> for text links and <code v-pre>![[image.jpg|Alt text]]</code> for image wikilinks.</dd>
+<dd>Comprehensive wiki-style linking with double square brackets: <code translate="no" v-pre>[[Page Name]]</code>. Intelligent link resolution that handles filename variations and support for custom labels using the syntax <code translate="no" v-pre>[[page|Custom Label]]</code> for text links and <code translate="no" v-pre>![[image.jpg|Alt text]]</code> for image wikilinks.</dd>
 <dt>YouTube auto-embedding</dt>
 <dd>Automatic conversion of YouTube URLs into embedded video players. Supports all common YouTube URL formats including timestamps. Fully responsive with proper styling and controls, see <a href="/components/youtube/">docs</a>.</dd>
 <dt>Automatic <a href="/configuration/project/#search">search</a> language detection</dt>
-<dd>Automatically detects languages in content and optimizes search. Supports 25+ languages including English, Spanish, French, German, Japanese, Chinese, Arabic. Manual configuration still available with <code v-pre>&quot;*&quot;</code> token for auto-detection, see <a href="/configuration/project/#search">docs</a>.</dd>
+<dd>Automatically detects languages in content and optimizes search. Supports 25+ languages including English, Spanish, French, German, Japanese, Chinese, Arabic. Manual configuration still available with <code translate="no" v-pre>&quot;*&quot;</code> token for auto-detection, see <a href="/configuration/project/#search">docs</a>.</dd>
 <dt>Greek and Hebrew Language Support</dt>
 <dd>Full support including proper text rendering, direction, and search functionality</dd>
 <dt>Enhanced Include Functionality</dt>
-<dd>Support for accessing files outside project directory. Useful for including external readme files: <code v-pre>{{ include &quot;../readme.md&quot; }}</code>.</dd>
-<dt><code v-pre>home.md</code> Support</dt>
-<dd>Added <code v-pre>home.md</code> as another option for project home page. Joins existing options of <code v-pre>readme.md</code>, <code v-pre>index.md</code>, <code v-pre>default.md</code>, <code v-pre>welcome.md</code>.</dd>
-<dt><a href="/configuration/page/#permalink"><code v-pre>permalink</code></a> Alias</dt>
-<dd>Added <code v-pre>permalink</code> as an alias for <code v-pre>route</code> in page configuration. Provides familiar naming for users migrating from other platforms, see <a href="/configuration/page/#permalink">docs</a>.</dd>
+<dd>Support for accessing files outside project directory. Useful for including external readme files: <code translate="no" v-pre>{{ include &quot;../readme.md&quot; }}</code>.</dd>
+<dt><code translate="no" v-pre>home.md</code> Support</dt>
+<dd>Added <code translate="no" v-pre>home.md</code> as another option for project home page. Joins existing options of <code translate="no" v-pre>readme.md</code>, <code translate="no" v-pre>index.md</code>, <code translate="no" v-pre>default.md</code>, <code translate="no" v-pre>welcome.md</code>.</dd>
+<dt><a href="/configuration/page/#permalink"><code translate="no" v-pre>permalink</code></a> Alias</dt>
+<dd>Added <code translate="no" v-pre>permalink</code> as an alias for <code translate="no" v-pre>route</code> in page configuration. Provides familiar naming for users migrating from other platforms, see <a href="/configuration/page/#permalink">docs</a>.</dd>
 <dt>Mermaid Upgrade</dt>
 <dd>Upgraded to Mermaid v11.6.0 with packet-beta diagram support for enhanced diagram rendering capabilities.</dd>
 <dt>GitBook Image Handling</dt>
 <dd>Improved handling of GitBook image exports with relative paths for better compatibility with GitBook markdown exports.</dd>
 <dt>Default Server Port</dt>
-<dd>Changed default development server port from <code v-pre>5000</code> to <code v-pre>5001</code> to avoid conflicts with macOS services using port <code v-pre>5000</code>.</dd>
+<dd>Changed default development server port from <code translate="no" v-pre>5000</code> to <code translate="no" v-pre>5001</code> to avoid conflicts with macOS services using port <code translate="no" v-pre>5000</code>.</dd>
 <dt>UI Refinements</dt>
 <dd>Multiple UI improvements including search input styling, theme switcher icons, and navigation spacing for enhanced visual consistency and user experience.</dd>
 </dl>
@@ -481,7 +457,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.12.0-preview</p></div>
                             </footer>
                         </div>
                     </div>

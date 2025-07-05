@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805051904040">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805052950394">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.11.0">
+    <meta name="generator" content="Retype 3.12.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Code Block - Write On! with Retype</title>
@@ -32,15 +32,16 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.805051904040" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview.805052950394" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -116,31 +117,6 @@
                         </ul>
                     </nav>
         
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
                     <div v-cloak class="flex justify-end grow">
                         <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
@@ -158,7 +134,7 @@
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
             
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
                 </div>
             
                 <div class="pl-6 mt-1 mb-4">
@@ -312,7 +288,7 @@ A basic code block
     </h2>
 </doc-anchor-target>
 <p>Optional syntax highlighting of the code within the code block can be configured by adding a language identifier immediately after the opening triple backticks.</p>
-<p>In the following sample, we configure JavaScript syntax highlighting for the code block by adding the <code v-pre>js</code> language identifier.</p>
+<p>In the following sample, we configure JavaScript syntax highlighting for the code block by adding the <code translate="no" v-pre>js</code> language identifier.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
         <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</span>
@@ -377,8 +353,8 @@ const msg = &quot;Set a code block title&quot;;
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<p>The <code v-pre>title</code> should be separated from the opening fence by one space, for example the pattern <code v-pre> ``` Code Block title</code> is recommended.</p>
-<p>If a code language is used, separate the <code v-pre>title</code> from the <code v-pre>lang</code> by one space. The pattern <code v-pre> ```js Code Block title</code> will work as expected.</p>
+<p>The <code translate="no" v-pre>title</code> should be separated from the opening fence by one space, for example the pattern <code translate="no" v-pre> ``` Code Block title</code> is recommended.</p>
+<p>If a code language is used, separate the <code translate="no" v-pre>title</code> from the <code translate="no" v-pre>lang</code> by one space. The pattern <code translate="no" v-pre> ```js Code Block title</code> will work as expected.</p>
 <hr>
 <doc-anchor-target id="line-highlighting">
     <h2>
@@ -387,7 +363,7 @@ const msg = &quot;Set a code block title&quot;;
     </h2>
 </doc-anchor-target>
 <p>Highlight a specific line or range of lines in a code block component using the line highlighting syntax.</p>
-<p>After the opening <code v-pre>```</code> of a code block component, add a space and then start your line highlighting configuration with a <code v-pre>#</code> character. For instance, to highlight the first line, use <code v-pre>``` #1</code>.</p>
+<p>After the opening <code translate="no" v-pre>```</code> of a code block component, add a space and then start your line highlighting configuration with a <code translate="no" v-pre>#</code> character. For instance, to highlight the first line, use <code translate="no" v-pre>``` #1</code>.</p>
 <p>Here are a few other common scenarios with additional samples below:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -401,27 +377,27 @@ const msg = &quot;Set a code block title&quot;;
 <tbody>
 <tr>
 <td>Single line</td>
-<td><code v-pre>#2</code></td>
+<td><code translate="no" v-pre>#2</code></td>
 <td>Highlight line #2</td>
 </tr>
 <tr>
 <td>Line range</td>
-<td><code v-pre>#2-5</code></td>
+<td><code translate="no" v-pre>#2-5</code></td>
 <td>Highlight lines #2 to #5</td>
 </tr>
 <tr>
 <td>Single line and a range</td>
-<td><code v-pre>#2,4-8</code></td>
+<td><code translate="no" v-pre>#2,4-8</code></td>
 <td>Highlight line #2 and lines #4 to #8</td>
 </tr>
 <tr>
 <td>Multiple line ranges</td>
-<td><code v-pre>#1-2,4-8</code></td>
+<td><code translate="no" v-pre>#1-2,4-8</code></td>
 <td>Highlight lines #1 to #2 and lines #4 to #8.</td>
 </tr>
 <tr>
 <td>Remove line numbering</td>
-<td><code v-pre>!#4-8</code></td>
+<td><code translate="no" v-pre>!#4-8</code></td>
 <td>Remove line numbering and highlight lines #4 to #8</td>
 </tr>
 </tbody>
@@ -474,7 +450,7 @@ export function calculateOffset(): number {
         <span>Line range</span>
     </h3>
 </doc-anchor-target>
-<p>Highlight a range of lines by separating the start and end line number with a <code v-pre>-</code> dash.</p>
+<p>Highlight a range of lines by separating the start and end line number with a <code translate="no" v-pre>-</code> dash.</p>
 <doc-tabs>
 <doc-tab v-cloak id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</template>
@@ -515,7 +491,7 @@ export function calculateOffset(): number {
         <span>Multiple ranges</span>
     </h3>
 </doc-anchor-target>
-<p>Configure multiple line ranges by separating each block with a <code v-pre>,</code> comma.</p>
+<p>Configure multiple line ranges by separating each block with a <code translate="no" v-pre>,</code> comma.</p>
 <doc-tabs>
 <doc-tab v-cloak id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</template>
@@ -597,7 +573,7 @@ export function calculateOffset(): number {
         <span>Using attribute syntax</span>
     </h3>
 </doc-anchor-target>
-<p>Configuring line highlighting using the <code v-pre>highlight</code> attribute syntax is also supported by Retype.</p>
+<p>Configuring line highlighting using the <code translate="no" v-pre>highlight</code> attribute syntax is also supported by Retype.</p>
 <doc-tabs>
 <doc-tab v-cloak id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</template>
@@ -639,7 +615,7 @@ export function calculateOffset(): number {
         <span>Line numbers</span>
     </h2>
 </doc-anchor-target>
-<p>Adding or removing line numbering for your code blocks can be configured by adding the <code v-pre>#</code> specifier character to the first line after the reference language.</p>
+<p>Adding or removing line numbering for your code blocks can be configured by adding the <code translate="no" v-pre>#</code> specifier character to the first line after the reference language.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
         <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</span>
@@ -660,7 +636,7 @@ const msg = &quot;hello, world&quot;;
 </doc-codeblock></div>
     </div>
 </div>
-<p>You can also add a title after the <code v-pre>#</code>:</p>
+<p>You can also add a title after the <code translate="no" v-pre>#</code>:</p>
 <doc-tabs>
 <doc-tab v-cloak id="source">
 <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</template>
@@ -678,9 +654,9 @@ const msg = &quot;hello, world&quot;;
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<p>The <code v-pre>#</code> should be separated from the opening <code v-pre>```</code> by one space, for example the pattern  <code v-pre> ``` #</code> is recommended.</p>
-<p>If a title is added, the title must also be separated from the <code v-pre>#</code> by one space. For instance, the pattern <code v-pre> ``` # Your title here</code> would work as expected and the pattern <code v-pre> ``` #Your title here</code> would not.</p>
-<p>Line numbering can also be configured at the project level using the <a href="/configuration/project/#snippets"><code v-pre>snippets</code></a> config on your projects <strong>retype.yml</strong> file. For instance, instructing Retype to add line numbering to all <code v-pre>js</code> and <code v-pre>json</code> code blocks across the website would require the following config:</p>
+<p>The <code translate="no" v-pre>#</code> should be separated from the opening <code translate="no" v-pre>```</code> by one space, for example the pattern  <code translate="no" v-pre> ``` #</code> is recommended.</p>
+<p>If a title is added, the title must also be separated from the <code translate="no" v-pre>#</code> by one space. For instance, the pattern <code translate="no" v-pre> ``` # Your title here</code> would work as expected and the pattern <code translate="no" v-pre> ``` #Your title here</code> would not.</p>
+<p>Line numbering can also be configured at the project level using the <a href="/configuration/project/#snippets"><code translate="no" v-pre>snippets</code></a> config on your projects <strong>retype.yml</strong> file. For instance, instructing Retype to add line numbering to all <code translate="no" v-pre>js</code> and <code translate="no" v-pre>json</code> code blocks across the website would require the following config:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Enable line numbering for js and json code blocks site wide</div>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
@@ -689,13 +665,13 @@ const msg = &quot;hello, world&quot;;
   }
 }</code></pre>
 </doc-codeblock></div>
-<p>With the above <code v-pre>snippets</code> config, then you would not have to add the <code v-pre>#</code> specifier to each code block. All <code v-pre>js</code> and <code v-pre>json</code> code blocks would automatically get line numbers.</p>
+<p>With the above <code translate="no" v-pre>snippets</code> config, then you would not have to add the <code translate="no" v-pre>#</code> specifier to each code block. All <code translate="no" v-pre>js</code> and <code translate="no" v-pre>json</code> code blocks would automatically get line numbers.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
-        <span>Without <code v-pre>snippets</code> config</span>
+        <span>Without <code translate="no" v-pre>snippets</code> config</span>
     </div>
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
-        <span>With <code v-pre>snippets</code> config</span>
+        <span>With <code translate="no" v-pre>snippets</code> config</span>
     </div>
     <div class="docs-columns-code docs-columns-content border-r border-base-border">
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
@@ -715,7 +691,7 @@ const msg = &quot;hello, world&quot;;
         <span>Disable line numbers</span>
     </h2>
 </doc-anchor-target>
-<p>If you configure a site wide <a href="/configuration/project/#snippets"><code v-pre>snippets</code></a> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
+<p>If you configure a site wide <a href="/configuration/project/#snippets"><code translate="no" v-pre>snippets</code></a> for a language and would like to explicitly remove the line numbering for a code block instance of that language, please add the <doc-anchor-trigger to="#disable-line-numbers"><code translate="no" v-pre>!#</code></doc-anchor-trigger> specifier to the code block instance.</p>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title border-r">
         <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></g></g></svg> Source</span>
@@ -744,7 +720,7 @@ const msg = &quot;Hello, world&quot;;
     </h2>
 </doc-anchor-target>
 <p>Code blocks can be grouped using a <a href="/components/tab/">Tab</a> component that lets you combine multiple code blocks into a tabbed interface. Each code block becomes a separate tab that users can switch between.</p>
-<p>To create a code group in Retype, simply wrap each code block with <code v-pre>+++</code> followed by the tab label. The tab label will be displayed as the tab button text.</p>
+<p>To create a code group in Retype, simply wrap each code block with <code translate="no" v-pre>+++</code> followed by the tab label. The tab label will be displayed as the tab button text.</p>
 <p>Here&#x27;s an example showing the same &quot;Hello, world&quot; program in different languages:</p>
 <doc-tabs>
 <doc-tab v-cloak id="javascript">
@@ -841,7 +817,7 @@ const msg = &quot;Hello, world&quot;;
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.12.0-preview</p></div>
                             </footer>
                         </div>
                     </div>

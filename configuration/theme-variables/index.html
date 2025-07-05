@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805051904040">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805052950394">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.11.0">
+    <meta name="generator" content="Retype 3.12.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Theme variables - Write On! with Retype</title>
@@ -32,15 +32,16 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="/resources/css/retype.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.11.0.805051904040" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.11.0.805051904040" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805052950394" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview.805052950394" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.11.0.805051904040" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview.805052950394" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -116,31 +117,6 @@
                         </ul>
                     </nav>
         
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
                     <div v-cloak class="flex justify-end grow">
                         <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
@@ -158,7 +134,7 @@
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
             
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
                 </div>
             
                 <div class="pl-6 mt-1 mb-4">
@@ -283,8 +259,8 @@
         <span>Theme variables</span>
     </h1>
 </doc-anchor-target>
-<p>This reference documents all available customizable <a href="/configuration/project/#theme"><code v-pre>theme</code></a> variables that can be added to your <code v-pre>retype.yml</code> file. Each variable can be overridden in both <code v-pre>base</code> (light mode) and <code v-pre>dark</code> (dark mode) configurations.</p>
-<p>The following demonstrates a basic configuration where the <code v-pre>base-color</code> and background color are configured with custom values:</p>
+<p>This reference documents all available customizable <a href="/configuration/project/#theme"><code translate="no" v-pre>theme</code></a> variables that can be added to your <code translate="no" v-pre>retype.yml</code> file. Each variable can be overridden in both <code translate="no" v-pre>base</code> (light mode) and <code translate="no" v-pre>dark</code> (dark mode) configurations.</p>
+<p>The following demonstrates a basic configuration where the <code translate="no" v-pre>base-color</code> and background color are configured with custom values:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
@@ -307,118 +283,118 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>base-color</code></td>
+<td><code translate="no" v-pre>base-color</code></td>
 <td>Brand color</td>
-<td><code v-pre>#5495f1</code></td>
-<td><code v-pre>#5495f1</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>base-white</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
 <td>Pure white color</td>
-<td><code v-pre>#ffffff</code></td>
-<td><code v-pre>#ffffff</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#ffffff<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#ffffff;"></span></code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#ffffff<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#ffffff;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>base-black</code></td>
+<td><code translate="no" v-pre>base-black</code></td>
 <td>Pure black color</td>
-<td><code v-pre>#000000</code></td>
-<td><code v-pre>#000000</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#000000<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#000000;"></span></code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#000000<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#000000;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>base-bg</code></td>
+<td><code translate="no" v-pre>base-bg</code></td>
 <td>Main background color</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--dark-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--dark-900)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-text</code></td>
+<td><code translate="no" v-pre>base-text</code></td>
 <td>Primary text color</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-text-muted</code></td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
 <td>Muted text color</td>
-<td><code v-pre>var(--gray-400)</code></td>
-<td><code v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-text-strong</code></td>
+<td><code translate="no" v-pre>base-text-strong</code></td>
 <td>Strong/bold text color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-border</code></td>
+<td><code translate="no" v-pre>base-border</code></td>
 <td>Default border color</td>
-<td><code v-pre>var(--gray-200)</code></td>
-<td><code v-pre>var(--dark-650)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--dark-650)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-border-hover</code></td>
+<td><code translate="no" v-pre>base-border-hover</code></td>
 <td>Border color on hover</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--gray-550)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-550)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-border-strong</code></td>
+<td><code translate="no" v-pre>base-border-strong</code></td>
 <td>Strong border color</td>
-<td><code v-pre>var(--gray-400)</code></td>
-<td><code v-pre>var(--gray-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-link</code></td>
+<td><code translate="no" v-pre>base-link</code></td>
 <td>Link color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-link-hover</code></td>
+<td><code translate="no" v-pre>base-link-hover</code></td>
 <td>Link hover color</td>
-<td><code v-pre>var(--base-800)</code></td>
-<td><code v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-800)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-link-weight</code></td>
+<td><code translate="no" v-pre>base-link-weight</code></td>
 <td>Link font weight</td>
-<td><code v-pre>400</code></td>
-<td><code v-pre>400</code></td>
+<td><code translate="no" v-pre>400</code></td>
+<td><code translate="no" v-pre>400</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-item-text</code></td>
+<td><code translate="no" v-pre>base-item-text</code></td>
 <td>Base item text color</td>
-<td><code v-pre>var(--base-text-strong)</code></td>
-<td><code v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-item-text-active</code></td>
+<td><code translate="no" v-pre>base-item-text-active</code></td>
 <td>Active base item text color</td>
-<td><code v-pre>var(--base-link)</code></td>
-<td><code v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-item-bg</code></td>
+<td><code translate="no" v-pre>base-item-bg</code></td>
 <td>Base item background</td>
-<td><code v-pre>var(--transparent)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-item-bg-hover</code></td>
+<td><code translate="no" v-pre>base-item-bg-hover</code></td>
 <td>Base item hover background</td>
-<td><code v-pre>var(--base-50)</code></td>
-<td><code v-pre>var(--dark-600)</code></td>
+<td><code translate="no" v-pre>var(--base-50)</code></td>
+<td><code translate="no" v-pre>var(--dark-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>base-item-bg-active</code></td>
+<td><code translate="no" v-pre>base-item-bg-active</code></td>
 <td>Active base item background</td>
-<td><code v-pre>var(--base-100)</code></td>
-<td><code v-pre>var(--dark-550)</code></td>
+<td><code translate="no" v-pre>var(--base-100)</code></td>
+<td><code translate="no" v-pre>var(--dark-550)</code></td>
 </tr>
 </tbody>
 </table>
@@ -429,46 +405,46 @@
         <span>Variants</span>
     </h2>
 </doc-anchor-target>
-<p>Semantic color variants are used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant is available as a full color palette from <code v-pre>50</code> (lightest) to <code v-pre>900</code> (darkest).</p>
+<p>Semantic color variants are used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant is available as a full color palette from <code translate="no" v-pre>50</code> (lightest) to <code translate="no" v-pre>900</code> (darkest).</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>base</code></td>
+<td><code translate="no" v-pre>base</code></td>
 <td>Foundation brand color for main actions and highlights</td>
-<td><code v-pre>#5495f1</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>primary</code></td>
+<td><code translate="no" v-pre>primary</code></td>
 <td>Primary color variant used for actions, highlights, and key elements across components</td>
-<td><code v-pre>#5495f1</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>success</code></td>
+<td><code translate="no" v-pre>success</code></td>
 <td>Success state color for positive actions and confirmations</td>
-<td><code v-pre>#36ad99</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#36ad99<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#36ad99;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>danger</code></td>
+<td><code translate="no" v-pre>danger</code></td>
 <td>Danger/error state color for warnings and destructive actions</td>
-<td><code v-pre>#e53e3e</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#e53e3e<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#e53e3e;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>warning</code></td>
+<td><code translate="no" v-pre>warning</code></td>
 <td>Warning state color for caution and important notices</td>
-<td><code v-pre>#edab26</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#edab26<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#edab26;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>royal</code></td>
+<td><code translate="no" v-pre>royal</code></td>
 <td>Royal purple color for special emphasis and premium features</td>
-<td><code v-pre>#a667e3</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#a667e3<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#a667e3;"></span></code></td>
 </tr>
 </tbody>
 </table>
@@ -479,14 +455,14 @@
         <span>Color Palettes</span>
     </h2>
 </doc-anchor-target>
-<p>System elements and <code v-pre>base</code> variants for Components are derived from the <code v-pre>base-color</code> using the <code v-pre>base</code> color palette.</p>
+<p>System elements and <code translate="no" v-pre>base</code> variants for Components are derived from the <code translate="no" v-pre>base-color</code> using the <code translate="no" v-pre>base</code> color palette.</p>
 <doc-anchor-target id="base">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
         <span>Base</span>
     </h3>
 </doc-anchor-target>
-<p>Color variations based on your <code v-pre>base-color</code> setting:</p>
+<p>Color variations based on your <code translate="no" v-pre>base-color</code> setting:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -497,43 +473,43 @@
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>base-50</code></td>
+<td><code translate="no" v-pre>base-50</code></td>
 <td>Lightest base color shade (10% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>base-100</code></td>
+<td><code translate="no" v-pre>base-100</code></td>
 <td>Very light base color shade (15% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>base-200</code></td>
+<td><code translate="no" v-pre>base-200</code></td>
 <td>Light base color shade (30% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>base-300</code></td>
+<td><code translate="no" v-pre>base-300</code></td>
 <td>Medium-light base color shade (50% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>base-400</code></td>
+<td><code translate="no" v-pre>base-400</code></td>
 <td>Medium base color shade (70% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>base-500</code></td>
-<td>Base color (same as <code v-pre>base-color</code>)</td>
+<td><code translate="no" v-pre>base-500</code></td>
+<td>Base color (same as <code translate="no" v-pre>base-color</code>)</td>
 </tr>
 <tr>
-<td><code v-pre>base-600</code></td>
+<td><code translate="no" v-pre>base-600</code></td>
 <td>Medium-dark base color shade (90% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>base-700</code></td>
+<td><code translate="no" v-pre>base-700</code></td>
 <td>Dark base color shade (80% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>base-800</code></td>
+<td><code translate="no" v-pre>base-800</code></td>
 <td>Very dark base color shade (60% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>base-900</code></td>
+<td><code translate="no" v-pre>base-900</code></td>
 <td>Darkest base color shade (40% mix with black)</td>
 </tr>
 </tbody>
@@ -545,12 +521,12 @@
         <span>Semantic Color Palettes</span>
     </h2>
 </doc-anchor-target>
-<p>Each semantic color includes shades from <code v-pre>50</code> (lightest) to <code v-pre>900</code> (darkest):</p>
+<p>Each semantic color includes shades from <code translate="no" v-pre>50</code> (lightest) to <code translate="no" v-pre>900</code> (darkest):</p>
 <p>The semantic color shades follow a consistent pattern where:</p>
 <ul>
 <li>Lower numbers (50-400) are lighter shades created by mixing with white</li>
 <li>Higher numbers (600-900) are darker shades created by mixing with black</li>
-<li>The mid color <code v-pre>500</code> of each sequence represents the pure color for that sequence</li>
+<li>The mid color <code translate="no" v-pre>500</code> of each sequence represents the pure color for that sequence</li>
 </ul>
 <doc-anchor-target id="primary">
     <h3>
@@ -558,7 +534,7 @@
         <span>Primary</span>
     </h3>
 </doc-anchor-target>
-<p>Semantic palette <code v-pre>primary</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<p>Semantic palette <code translate="no" v-pre>primary</code> with shades <code translate="no" v-pre>50</code> through <code translate="no" v-pre>900</code>:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -569,43 +545,43 @@
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>primary-50</code></td>
+<td><code translate="no" v-pre>primary-50</code></td>
 <td>Lightest primary shade (10% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-100</code></td>
+<td><code translate="no" v-pre>primary-100</code></td>
 <td>Very light primary shade (15% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-200</code></td>
+<td><code translate="no" v-pre>primary-200</code></td>
 <td>Light primary shade (30% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-300</code></td>
+<td><code translate="no" v-pre>primary-300</code></td>
 <td>Medium-light primary shade (50% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-400</code></td>
+<td><code translate="no" v-pre>primary-400</code></td>
 <td>Medium primary shade (70% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-500</code></td>
-<td>Base primary color (<code v-pre>#5495f1</code>)</td>
+<td><code translate="no" v-pre>primary-500</code></td>
+<td>Base primary color (<code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code>)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-600</code></td>
+<td><code translate="no" v-pre>primary-600</code></td>
 <td>Medium-dark primary shade (90% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-700</code></td>
+<td><code translate="no" v-pre>primary-700</code></td>
 <td>Dark primary shade (80% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-800</code></td>
+<td><code translate="no" v-pre>primary-800</code></td>
 <td>Very dark primary shade (60% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>primary-900</code></td>
+<td><code translate="no" v-pre>primary-900</code></td>
 <td>Darkest primary shade (40% mix with black)</td>
 </tr>
 </tbody>
@@ -617,7 +593,7 @@
         <span>Success</span>
     </h3>
 </doc-anchor-target>
-<p>Semantic palette <code v-pre>success</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<p>Semantic palette <code translate="no" v-pre>success</code> with shades <code translate="no" v-pre>50</code> through <code translate="no" v-pre>900</code>:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -628,43 +604,43 @@
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>success-50</code></td>
+<td><code translate="no" v-pre>success-50</code></td>
 <td>Lightest success shade (10% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>success-100</code></td>
+<td><code translate="no" v-pre>success-100</code></td>
 <td>Very light success shade (15% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>success-200</code></td>
+<td><code translate="no" v-pre>success-200</code></td>
 <td>Light success shade (30% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>success-300</code></td>
+<td><code translate="no" v-pre>success-300</code></td>
 <td>Medium-light success shade (50% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>success-400</code></td>
+<td><code translate="no" v-pre>success-400</code></td>
 <td>Medium success shade (70% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>success-500</code></td>
-<td>Base success color (<code v-pre>#36ad99</code>)</td>
+<td><code translate="no" v-pre>success-500</code></td>
+<td>Base success color (<code translate="no" class="whitespace-nowrap" v-pre>#36ad99<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#36ad99;"></span></code>)</td>
 </tr>
 <tr>
-<td><code v-pre>success-600</code></td>
+<td><code translate="no" v-pre>success-600</code></td>
 <td>Medium-dark success shade (90% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>success-700</code></td>
+<td><code translate="no" v-pre>success-700</code></td>
 <td>Dark success shade (80% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>success-800</code></td>
+<td><code translate="no" v-pre>success-800</code></td>
 <td>Very dark success shade (60% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>success-900</code></td>
+<td><code translate="no" v-pre>success-900</code></td>
 <td>Darkest success shade (40% mix with black)</td>
 </tr>
 </tbody>
@@ -676,7 +652,7 @@
         <span>Danger</span>
     </h3>
 </doc-anchor-target>
-<p>Semantic palette <code v-pre>danger</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<p>Semantic palette <code translate="no" v-pre>danger</code> with shades <code translate="no" v-pre>50</code> through <code translate="no" v-pre>900</code>:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -687,43 +663,43 @@
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>danger-50</code></td>
+<td><code translate="no" v-pre>danger-50</code></td>
 <td>Lightest danger shade (10% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-100</code></td>
+<td><code translate="no" v-pre>danger-100</code></td>
 <td>Very light danger shade (15% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-200</code></td>
+<td><code translate="no" v-pre>danger-200</code></td>
 <td>Light danger shade (30% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-300</code></td>
+<td><code translate="no" v-pre>danger-300</code></td>
 <td>Medium-light danger shade (50% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-400</code></td>
+<td><code translate="no" v-pre>danger-400</code></td>
 <td>Medium danger shade (70% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-500</code></td>
-<td>Base danger color (<code v-pre>#e53e3e</code>)</td>
+<td><code translate="no" v-pre>danger-500</code></td>
+<td>Base danger color (<code translate="no" class="whitespace-nowrap" v-pre>#e53e3e<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#e53e3e;"></span></code>)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-600</code></td>
+<td><code translate="no" v-pre>danger-600</code></td>
 <td>Medium-dark danger shade (90% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-700</code></td>
+<td><code translate="no" v-pre>danger-700</code></td>
 <td>Dark danger shade (80% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-800</code></td>
+<td><code translate="no" v-pre>danger-800</code></td>
 <td>Very dark danger shade (60% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>danger-900</code></td>
+<td><code translate="no" v-pre>danger-900</code></td>
 <td>Darkest danger shade (40% mix with black)</td>
 </tr>
 </tbody>
@@ -735,7 +711,7 @@
         <span>Warning</span>
     </h3>
 </doc-anchor-target>
-<p>Semantic palette <code v-pre>warning</code> with shades <code v-pre>50</code> through <code v-pre>900</code>:</p>
+<p>Semantic palette <code translate="no" v-pre>warning</code> with shades <code translate="no" v-pre>50</code> through <code translate="no" v-pre>900</code>:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -746,43 +722,43 @@
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>warning-50</code></td>
+<td><code translate="no" v-pre>warning-50</code></td>
 <td>Lightest warning shade (10% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-100</code></td>
+<td><code translate="no" v-pre>warning-100</code></td>
 <td>Very light warning shade (15% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-200</code></td>
+<td><code translate="no" v-pre>warning-200</code></td>
 <td>Light warning shade (30% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-300</code></td>
+<td><code translate="no" v-pre>warning-300</code></td>
 <td>Medium-light warning shade (50% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-400</code></td>
+<td><code translate="no" v-pre>warning-400</code></td>
 <td>Medium warning shade (70% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-500</code></td>
-<td>Base warning color (<code v-pre>#edab26</code>)</td>
+<td><code translate="no" v-pre>warning-500</code></td>
+<td>Base warning color (<code translate="no" class="whitespace-nowrap" v-pre>#edab26<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#edab26;"></span></code>)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-600</code></td>
+<td><code translate="no" v-pre>warning-600</code></td>
 <td>Medium-dark warning shade (90% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-700</code></td>
+<td><code translate="no" v-pre>warning-700</code></td>
 <td>Dark warning shade (80% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-800</code></td>
+<td><code translate="no" v-pre>warning-800</code></td>
 <td>Very dark warning shade (60% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>warning-900</code></td>
+<td><code translate="no" v-pre>warning-900</code></td>
 <td>Darkest warning shade (40% mix with black)</td>
 </tr>
 </tbody>
@@ -794,7 +770,7 @@
         <span>Royal</span>
     </h3>
 </doc-anchor-target>
-<p>Semantic palette <code v-pre>royal</code> with shades <code v-pre>50</code> through <code v-pre>900</code></p>
+<p>Semantic palette <code translate="no" v-pre>royal</code> with shades <code translate="no" v-pre>50</code> through <code translate="no" v-pre>900</code></p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -805,43 +781,43 @@
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>royal-50</code></td>
+<td><code translate="no" v-pre>royal-50</code></td>
 <td>Lightest royal shade (10% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-100</code></td>
+<td><code translate="no" v-pre>royal-100</code></td>
 <td>Very light royal shade (15% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-200</code></td>
+<td><code translate="no" v-pre>royal-200</code></td>
 <td>Light royal shade (30% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-300</code></td>
+<td><code translate="no" v-pre>royal-300</code></td>
 <td>Medium-light royal shade (50% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-400</code></td>
+<td><code translate="no" v-pre>royal-400</code></td>
 <td>Medium royal shade (70% mix with white)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-500</code></td>
-<td>Base royal color (<code v-pre>#a667e3</code>)</td>
+<td><code translate="no" v-pre>royal-500</code></td>
+<td>Base royal color (<code translate="no" class="whitespace-nowrap" v-pre>#a667e3<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#a667e3;"></span></code>)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-600</code></td>
+<td><code translate="no" v-pre>royal-600</code></td>
 <td>Medium-dark royal shade (90% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-700</code></td>
+<td><code translate="no" v-pre>royal-700</code></td>
 <td>Dark royal shade (80% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-800</code></td>
+<td><code translate="no" v-pre>royal-800</code></td>
 <td>Very dark royal shade (60% mix with black)</td>
 </tr>
 <tr>
-<td><code v-pre>royal-900</code></td>
+<td><code translate="no" v-pre>royal-900</code></td>
 <td>Darkest royal shade (40% mix with black)</td>
 </tr>
 </tbody>
@@ -860,99 +836,99 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>gray-50</code></td>
+<td><code translate="no" v-pre>gray-50</code></td>
 <td>Lightest gray</td>
-<td><code v-pre>#f8f9fc</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#f8f9fc<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#f8f9fc;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>gray-100</code></td>
 <td>Very light gray</td>
-<td><code v-pre>#f4f6fc</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#f4f6fc<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#f4f6fc;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-150</code></td>
+<td><code translate="no" v-pre>gray-150</code></td>
 <td>Light gray variant</td>
-<td><code v-pre>#edf0f6</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#edf0f6<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#edf0f6;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-200</code></td>
+<td><code translate="no" v-pre>gray-200</code></td>
 <td>Light gray</td>
-<td><code v-pre>#e4e8f1</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#e4e8f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#e4e8f1;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-250</code></td>
+<td><code translate="no" v-pre>gray-250</code></td>
 <td>Medium-light gray variant</td>
-<td><code v-pre>#d2d9e3</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#d2d9e3<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#d2d9e3;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-300</code></td>
+<td><code translate="no" v-pre>gray-300</code></td>
 <td>Medium-light gray</td>
-<td><code v-pre>#bdc8da</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#bdc8da<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#bdc8da;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-350</code></td>
+<td><code translate="no" v-pre>gray-350</code></td>
 <td>Medium gray variant</td>
-<td><code v-pre>#a4b1c6</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#a4b1c6<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#a4b1c6;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-400</code></td>
+<td><code translate="no" v-pre>gray-400</code></td>
 <td>Medium gray</td>
-<td><code v-pre>#8693a9</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#8693a9<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#8693a9;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-450</code></td>
+<td><code translate="no" v-pre>gray-450</code></td>
 <td>Medium-dark gray variant</td>
-<td><code v-pre>#65718c</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#65718c<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#65718c;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-500</code></td>
+<td><code translate="no" v-pre>gray-500</code></td>
 <td>Medium-dark gray</td>
-<td><code v-pre>#525e78</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#525e78<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#525e78;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-550</code></td>
+<td><code translate="no" v-pre>gray-550</code></td>
 <td>Dark gray variant</td>
-<td><code v-pre>#46536d</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#46536d<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#46536d;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>gray-600</code></td>
 <td>Dark gray</td>
-<td><code v-pre>#3f4a64</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#3f4a64<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#3f4a64;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-650</code></td>
+<td><code translate="no" v-pre>gray-650</code></td>
 <td>Very dark gray variant</td>
-<td><code v-pre>#313c56</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#313c56<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#313c56;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-700</code></td>
+<td><code translate="no" v-pre>gray-700</code></td>
 <td>Very dark gray</td>
-<td><code v-pre>#2c3047</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#2c3047<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#2c3047;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-750</code></td>
+<td><code translate="no" v-pre>gray-750</code></td>
 <td>Darkest gray variant</td>
-<td><code v-pre>#1f2236</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#1f2236<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#1f2236;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-800</code></td>
+<td><code translate="no" v-pre>gray-800</code></td>
 <td>Near black gray</td>
-<td><code v-pre>#181d2d</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#181d2d<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#181d2d;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-850</code></td>
+<td><code translate="no" v-pre>gray-850</code></td>
 <td>Almost black gray</td>
-<td><code v-pre>#101523</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#101523<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#101523;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>gray-900</code></td>
+<td><code translate="no" v-pre>gray-900</code></td>
 <td>Darkest gray</td>
-<td><code v-pre>#090d1c</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#090d1c<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#090d1c;"></span></code></td>
 </tr>
 </tbody>
 </table>
@@ -970,99 +946,99 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>dark-50</code></td>
+<td><code translate="no" v-pre>dark-50</code></td>
 <td>Lightest dark mode color</td>
-<td><code v-pre>#fafafa</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#fafafa<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#fafafa;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-100</code></td>
+<td><code translate="no" v-pre>dark-100</code></td>
 <td>Very light dark mode color</td>
-<td><code v-pre>#f7f7f7</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#f7f7f7<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#f7f7f7;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-150</code></td>
+<td><code translate="no" v-pre>dark-150</code></td>
 <td>Light dark mode variant</td>
-<td><code v-pre>#f2f2f2</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#f2f2f2<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#f2f2f2;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-200</code></td>
+<td><code translate="no" v-pre>dark-200</code></td>
 <td>Light dark mode color</td>
-<td><code v-pre>#eeeeee</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#eeeeee<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#eeeeee;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-250</code></td>
+<td><code translate="no" v-pre>dark-250</code></td>
 <td>Medium-light dark mode variant</td>
-<td><code v-pre>#e0e0e0</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#e0e0e0<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#e0e0e0;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-300</code></td>
+<td><code translate="no" v-pre>dark-300</code></td>
 <td>Medium-light dark mode color</td>
-<td><code v-pre>#c4c4c4</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#c4c4c4<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#c4c4c4;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-350</code></td>
+<td><code translate="no" v-pre>dark-350</code></td>
 <td>Medium dark mode variant</td>
-<td><code v-pre>#9e9e9e</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#9e9e9e<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#9e9e9e;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-400</code></td>
+<td><code translate="no" v-pre>dark-400</code></td>
 <td>Medium dark mode color</td>
-<td><code v-pre>#616161</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#616161<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#616161;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-450</code></td>
+<td><code translate="no" v-pre>dark-450</code></td>
 <td>Medium-dark dark mode variant</td>
-<td><code v-pre>#424242</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#424242<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#424242;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-500</code></td>
+<td><code translate="no" v-pre>dark-500</code></td>
 <td>Medium-dark dark mode color</td>
-<td><code v-pre>#353535</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#353535<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#353535;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-550</code></td>
+<td><code translate="no" v-pre>dark-550</code></td>
 <td>Dark mode variant</td>
-<td><code v-pre>#323232</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#323232<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#323232;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-600</code></td>
+<td><code translate="no" v-pre>dark-600</code></td>
 <td>Dark mode color</td>
-<td><code v-pre>#2d2d2d</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#2d2d2d<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#2d2d2d;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-650</code></td>
+<td><code translate="no" v-pre>dark-650</code></td>
 <td>Very dark mode variant</td>
-<td><code v-pre>#2c2c2c</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#2c2c2c<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#2c2c2c;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-700</code></td>
+<td><code translate="no" v-pre>dark-700</code></td>
 <td>Very dark mode color</td>
-<td><code v-pre>#272727</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#272727<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#272727;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-750</code></td>
+<td><code translate="no" v-pre>dark-750</code></td>
 <td>Darkest mode variant</td>
-<td><code v-pre>#252525</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#252525<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#252525;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-800</code></td>
+<td><code translate="no" v-pre>dark-800</code></td>
 <td>Near black dark mode</td>
-<td><code v-pre>#222222</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#222222<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#222222;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-850</code></td>
+<td><code translate="no" v-pre>dark-850</code></td>
 <td>Almost black dark mode</td>
-<td><code v-pre>#1e1e1e</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#1e1e1e<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#1e1e1e;"></span></code></td>
 </tr>
 <tr>
-<td><code v-pre>dark-900</code></td>
+<td><code translate="no" v-pre>dark-900</code></td>
 <td>Darkest dark mode color</td>
-<td><code v-pre>#121212</code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#121212<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#121212;"></span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1080,22 +1056,22 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>transparent</code></td>
+<td><code translate="no" v-pre>transparent</code></td>
 <td>Transparent color value</td>
-<td><code v-pre>transparent</code></td>
-<td><code v-pre>transparent</code></td>
+<td><code translate="no" v-pre>transparent</code></td>
+<td><code translate="no" v-pre>transparent</code></td>
 </tr>
 <tr>
-<td><code v-pre>skeleton-bg</code></td>
+<td><code translate="no" v-pre>skeleton-bg</code></td>
 <td>Skeleton loading background</td>
-<td><code v-pre>var(--gray-200)</code></td>
-<td><code v-pre>var(--dark-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--dark-600)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1113,28 +1089,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>branding-label-text</code></td>
+<td><code translate="no" v-pre>branding-label-text</code></td>
 <td>Branding label text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>branding-label-bg</code></td>
+<td><code translate="no" v-pre>branding-label-bg</code></td>
 <td>Branding label background</td>
-<td><code v-pre>var(--base-50)</code></td>
-<td><code v-pre>transparent</code></td>
+<td><code translate="no" v-pre>var(--base-50)</code></td>
+<td><code translate="no" v-pre>transparent</code></td>
 </tr>
 <tr>
-<td><code v-pre>branding-label-border</code></td>
+<td><code translate="no" v-pre>branding-label-border</code></td>
 <td>Branding label border color</td>
-<td><code v-pre>var(--base-300)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1152,40 +1128,40 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>header-bg</code></td>
+<td><code translate="no" v-pre>header-bg</code></td>
 <td>Header background color</td>
-<td><code v-pre>var(--base-bg)</code></td>
-<td><code v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>header-border</code></td>
+<td><code translate="no" v-pre>header-border</code></td>
 <td>Header border color</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
 </tr>
 <tr>
-<td><code v-pre>header-text</code></td>
+<td><code translate="no" v-pre>header-text</code></td>
 <td>Header text color</td>
-<td><code v-pre>var(--base-link)</code></td>
-<td><code v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
 </tr>
 <tr>
-<td><code v-pre>header-text-weight</code></td>
+<td><code translate="no" v-pre>header-text-weight</code></td>
 <td>Header text font weight</td>
-<td><code v-pre>var(--base-link-weight)</code></td>
-<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
 </tr>
 <tr>
-<td><code v-pre>header-text-hover</code></td>
+<td><code translate="no" v-pre>header-text-hover</code></td>
 <td>Header text hover color</td>
-<td><code v-pre>var(--base-link-hover)</code></td>
-<td><code v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1203,64 +1179,64 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>search-text</code></td>
+<td><code translate="no" v-pre>search-text</code></td>
 <td>Search input text color</td>
-<td><code v-pre>var(--base-text)</code></td>
-<td><code v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-placeholder</code></td>
+<td><code translate="no" v-pre>search-placeholder</code></td>
 <td>Search placeholder text color</td>
-<td><code v-pre>var(--base-text-muted)</code></td>
-<td><code v-pre>var(--base-text-muted)</code></td>
+<td><code translate="no" v-pre>var(--base-text-muted)</code></td>
+<td><code translate="no" v-pre>var(--base-text-muted)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-bg</code></td>
+<td><code translate="no" v-pre>search-bg</code></td>
 <td>Search input background</td>
-<td><code v-pre>var(--header-bg)</code></td>
-<td><code v-pre>var(--header-bg)</code></td>
+<td><code translate="no" v-pre>var(--header-bg)</code></td>
+<td><code translate="no" v-pre>var(--header-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-border</code></td>
+<td><code translate="no" v-pre>search-border</code></td>
 <td>Search input border color</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-border-hover</code></td>
+<td><code translate="no" v-pre>search-border-hover</code></td>
 <td>Search input hover border color</td>
-<td><code v-pre>var(--base-border-hover)</code></td>
-<td><code v-pre>var(--base-border-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border-strong)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-border-focus</code></td>
+<td><code translate="no" v-pre>search-border-focus</code></td>
 <td>Search input focus border color</td>
-<td><code v-pre>var(--base-border-hover)</code></td>
-<td><code v-pre>var(--base-border-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border-strong)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-hint-text</code></td>
+<td><code translate="no" v-pre>search-hint-text</code></td>
 <td>Search hint text color</td>
-<td><code v-pre>var(--search-placeholder)</code></td>
-<td><code v-pre>var(--search-placeholder)</code></td>
+<td><code translate="no" v-pre>var(--search-placeholder)</code></td>
+<td><code translate="no" v-pre>var(--search-placeholder)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-hint-bg</code></td>
+<td><code translate="no" v-pre>search-hint-bg</code></td>
 <td>Search hint background</td>
-<td><code v-pre>var(--header-bg)</code></td>
-<td><code v-pre>var(--header-bg)</code></td>
+<td><code translate="no" v-pre>var(--header-bg)</code></td>
+<td><code translate="no" v-pre>var(--header-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>search-hint-border</code></td>
+<td><code translate="no" v-pre>search-hint-border</code></td>
 <td>Search hint border color</td>
-<td><code v-pre>var(--search-border)</code></td>
-<td><code v-pre>var(--search-border)</code></td>
+<td><code translate="no" v-pre>var(--search-border)</code></td>
+<td><code translate="no" v-pre>var(--search-border)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1278,46 +1254,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>filter-text</code></td>
+<td><code translate="no" v-pre>filter-text</code></td>
 <td>Filter input text color</td>
-<td><code v-pre>var(--base-text)</code></td>
-<td><code v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
 </tr>
 <tr>
-<td><code v-pre>filter-placeholder</code></td>
+<td><code translate="no" v-pre>filter-placeholder</code></td>
 <td>Filter placeholder text color</td>
-<td><code v-pre>var(--base-text-muted)</code></td>
-<td><code v-pre>var(--base-text-muted)</code></td>
+<td><code translate="no" v-pre>var(--base-text-muted)</code></td>
+<td><code translate="no" v-pre>var(--base-text-muted)</code></td>
 </tr>
 <tr>
-<td><code v-pre>filter-bg</code></td>
+<td><code translate="no" v-pre>filter-bg</code></td>
 <td>Filter input background</td>
-<td><code v-pre>var(--sidebar-left-bg)</code></td>
-<td><code v-pre>var(--sidebar-left-bg)</code></td>
+<td><code translate="no" v-pre>var(--sidebar-left-bg)</code></td>
+<td><code translate="no" v-pre>var(--sidebar-left-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>filter-border</code></td>
+<td><code translate="no" v-pre>filter-border</code></td>
 <td>Filter input border color</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
 </tr>
 <tr>
-<td><code v-pre>filter-border-hover</code></td>
+<td><code translate="no" v-pre>filter-border-hover</code></td>
 <td>Filter input hover border color</td>
-<td><code v-pre>var(--base-border-hover)</code></td>
-<td><code v-pre>var(--base-border-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border-strong)</code></td>
 </tr>
 <tr>
-<td><code v-pre>filter-border-focus</code></td>
+<td><code translate="no" v-pre>filter-border-focus</code></td>
 <td>Filter input focus border color</td>
-<td><code v-pre>var(--base-border-hover)</code></td>
-<td><code v-pre>var(--base-border-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border-strong)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1335,40 +1311,40 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>body-bg</code></td>
+<td><code translate="no" v-pre>body-bg</code></td>
 <td>Main content background</td>
-<td><code v-pre>var(--base-bg)</code></td>
-<td><code v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>body-text</code></td>
+<td><code translate="no" v-pre>body-text</code></td>
 <td>Main content text color</td>
-<td><code v-pre>var(--base-text)</code></td>
-<td><code v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
 </tr>
 <tr>
-<td><code v-pre>body-link</code></td>
+<td><code translate="no" v-pre>body-link</code></td>
 <td>Body link color</td>
-<td><code v-pre>var(--base-link)</code></td>
-<td><code v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
 </tr>
 <tr>
-<td><code v-pre>body-link-hover</code></td>
+<td><code translate="no" v-pre>body-link-hover</code></td>
 <td>Body link hover color</td>
-<td><code v-pre>var(--base-link-hover)</code></td>
-<td><code v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
 </tr>
 <tr>
-<td><code v-pre>body-link-weight</code></td>
+<td><code translate="no" v-pre>body-link-weight</code></td>
 <td>Body link font weight</td>
-<td><code v-pre>var(--base-link-weight)</code></td>
-<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1386,16 +1362,16 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>heading-text</code></td>
+<td><code translate="no" v-pre>heading-text</code></td>
 <td>Heading text color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1413,40 +1389,40 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>scheme-menu-item-bg</code></td>
+<td><code translate="no" v-pre>scheme-menu-item-bg</code></td>
 <td>Switcher item background</td>
-<td><code v-pre>var(--base-item-bg)</code></td>
-<td><code v-pre>var(--base-item-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>scheme-menu-item-bg-hover</code></td>
+<td><code translate="no" v-pre>scheme-menu-item-bg-hover</code></td>
 <td>Switcher item hover background</td>
-<td><code v-pre>var(--base-item-bg-hover)</code></td>
-<td><code v-pre>var(--base-item-bg-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-hover)</code></td>
 </tr>
 <tr>
-<td><code v-pre>scheme-menu-item-bg-active</code></td>
+<td><code translate="no" v-pre>scheme-menu-item-bg-active</code></td>
 <td>Switcher active item background</td>
-<td><code v-pre>var(--base-item-bg-active)</code></td>
-<td><code v-pre>var(--base-item-bg-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-active)</code></td>
 </tr>
 <tr>
-<td><code v-pre>scheme-menu-item-text</code></td>
+<td><code translate="no" v-pre>scheme-menu-item-text</code></td>
 <td>Switcher item text color</td>
-<td><code v-pre>var(--base-text)</code></td>
-<td><code v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
+<td><code translate="no" v-pre>var(--base-text)</code></td>
 </tr>
 <tr>
-<td><code v-pre>scheme-menu-item-text-active</code></td>
+<td><code translate="no" v-pre>scheme-menu-item-text-active</code></td>
 <td>Switcher active item text color</td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1464,34 +1440,34 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>sidebar-left-bg</code></td>
+<td><code translate="no" v-pre>sidebar-left-bg</code></td>
 <td>Left sidebar background</td>
-<td><code v-pre>var(--base-bg)</code></td>
-<td><code v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>sidebar-left-border</code></td>
+<td><code translate="no" v-pre>sidebar-left-border</code></td>
 <td>Left sidebar border</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
 </tr>
 <tr>
-<td><code v-pre>sidebar-right-bg</code></td>
+<td><code translate="no" v-pre>sidebar-right-bg</code></td>
 <td>Right sidebar background</td>
-<td><code v-pre>var(--base-bg)</code></td>
-<td><code v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
+<td><code translate="no" v-pre>var(--base-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>sidebar-right-border</code></td>
+<td><code translate="no" v-pre>sidebar-right-border</code></td>
 <td>Right sidebar border</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1509,112 +1485,112 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>nav-bg</code></td>
+<td><code translate="no" v-pre>nav-bg</code></td>
 <td>Navigation background</td>
-<td><code v-pre>var(--sidebar-left-bg)</code></td>
-<td><code v-pre>var(--sidebar-left-bg)</code></td>
+<td><code translate="no" v-pre>var(--sidebar-left-bg)</code></td>
+<td><code translate="no" v-pre>var(--sidebar-left-bg)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-bg-hover</code></td>
+<td><code translate="no" v-pre>nav-item-bg-hover</code></td>
 <td>Navigation item hover background</td>
-<td><code v-pre>var(--base-item-bg-hover)</code></td>
-<td><code v-pre>var(--base-item-bg-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-hover)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-bg-active</code></td>
+<td><code translate="no" v-pre>nav-item-bg-active</code></td>
 <td>Active navigation item background</td>
-<td><code v-pre>var(--base-item-bg-active)</code></td>
-<td><code v-pre>var(--base-item-bg-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-active)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-bg-active-hover</code></td>
+<td><code translate="no" v-pre>nav-item-bg-active-hover</code></td>
 <td>Active navigation item hover background</td>
-<td><code v-pre>var(--base-item-bg-active)</code></td>
-<td><code v-pre>var(--base-item-bg-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-bg-active)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text</code></td>
+<td><code translate="no" v-pre>nav-item-text</code></td>
 <td>Navigation item text color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--dark-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--dark-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-hover</code></td>
+<td><code translate="no" v-pre>nav-item-text-hover</code></td>
 <td>Navigation item hover text color</td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-active</code></td>
+<td><code translate="no" v-pre>nav-item-text-active</code></td>
 <td>Active navigation item text color</td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-active-hover</code></td>
+<td><code translate="no" v-pre>nav-item-text-active-hover</code></td>
 <td>Active navigation item hover text color</td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
-<td><code v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
+<td><code translate="no" v-pre>var(--base-item-text-active)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-active-weight</code></td>
+<td><code translate="no" v-pre>nav-item-text-active-weight</code></td>
 <td>Active navigation item font weight</td>
-<td><code v-pre>var(--base-link-weight)</code></td>
-<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-button</code></td>
+<td><code translate="no" v-pre>nav-item-button</code></td>
 <td>Navigation button color</td>
-<td><code v-pre>var(--gray-400)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-button-active-hover</code></td>
+<td><code translate="no" v-pre>nav-item-button-active-hover</code></td>
 <td>Navigation button active hover color</td>
-<td><code v-pre>var(--base-200)</code></td>
-<td><code v-pre>var(--base-200)</code></td>
+<td><code translate="no" v-pre>var(--base-200)</code></td>
+<td><code translate="no" v-pre>var(--base-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-border-active</code></td>
+<td><code translate="no" v-pre>nav-item-border-active</code></td>
 <td>Active navigation item border color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-stack</code></td>
+<td><code translate="no" v-pre>nav-item-text-stack</code></td>
 <td>Stack navigation text color</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-stack-case</code></td>
+<td><code translate="no" v-pre>nav-item-text-stack-case</code></td>
 <td>Stack navigation text transform</td>
-<td><code v-pre>uppercase</code></td>
-<td><code v-pre>uppercase</code></td>
+<td><code translate="no" v-pre>uppercase</code></td>
+<td><code translate="no" v-pre>uppercase</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-item-text-stack-weight</code></td>
+<td><code translate="no" v-pre>nav-item-text-stack-weight</code></td>
 <td>Stack navigation text font weight</td>
-<td><code v-pre>600</code></td>
-<td><code v-pre>600</code></td>
+<td><code translate="no" v-pre>600</code></td>
+<td><code translate="no" v-pre>600</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-badge-margin-left</code></td>
+<td><code translate="no" v-pre>nav-badge-margin-left</code></td>
 <td>Navigation badge left margin</td>
-<td><code v-pre>auto</code></td>
-<td><code v-pre>auto</code></td>
+<td><code translate="no" v-pre>auto</code></td>
+<td><code translate="no" v-pre>auto</code></td>
 </tr>
 <tr>
-<td><code v-pre>nav-badge-margin-left-alt</code></td>
+<td><code translate="no" v-pre>nav-badge-margin-left-alt</code></td>
 <td>Alternative navigation badge left margin</td>
-<td><code v-pre>0.75rem</code></td>
-<td><code v-pre>0.75rem</code></td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+<td><code translate="no" v-pre>0.75rem</code></td>
 </tr>
 </tbody>
 </table>
@@ -1632,52 +1608,52 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>toc-heading</code></td>
+<td><code translate="no" v-pre>toc-heading</code></td>
 <td>Table of contents heading color</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>toc-text</code></td>
+<td><code translate="no" v-pre>toc-text</code></td>
 <td>Table of contents text color</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>toc-text-hover</code></td>
+<td><code translate="no" v-pre>toc-text-hover</code></td>
 <td>Table of contents hover text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>toc-text-active</code></td>
+<td><code translate="no" v-pre>toc-text-active</code></td>
 <td>Table of contents active text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>toc-border-active</code></td>
+<td><code translate="no" v-pre>toc-border-active</code></td>
 <td>Table of contents active border color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>toc-heading-case</code></td>
+<td><code translate="no" v-pre>toc-heading-case</code></td>
 <td>Table of contents heading text transform</td>
-<td><code v-pre>uppercase</code></td>
-<td><code v-pre>uppercase</code></td>
+<td><code translate="no" v-pre>uppercase</code></td>
+<td><code translate="no" v-pre>uppercase</code></td>
 </tr>
 <tr>
-<td><code v-pre>toc-heading-weight</code></td>
+<td><code translate="no" v-pre>toc-heading-weight</code></td>
 <td>Table of contents heading font weight</td>
-<td><code v-pre>600</code></td>
-<td><code v-pre>600</code></td>
+<td><code translate="no" v-pre>600</code></td>
+<td><code translate="no" v-pre>600</code></td>
 </tr>
 </tbody>
 </table>
@@ -1695,34 +1671,34 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>footer-text</code></td>
+<td><code translate="no" v-pre>footer-text</code></td>
 <td>Footer text color</td>
-<td><code v-pre>var(--gray-500)</code></td>
-<td><code v-pre>var(--dark-350)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--dark-350)</code></td>
 </tr>
 <tr>
-<td><code v-pre>footer-link</code></td>
+<td><code translate="no" v-pre>footer-link</code></td>
 <td>Footer link color</td>
-<td><code v-pre>var(--base-link)</code></td>
-<td><code v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
 </tr>
 <tr>
-<td><code v-pre>footer-link-hover</code></td>
+<td><code translate="no" v-pre>footer-link-hover</code></td>
 <td>Footer link hover color</td>
-<td><code v-pre>var(--base-link-hover)</code></td>
-<td><code v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
 </tr>
 <tr>
-<td><code v-pre>footer-link-weight</code></td>
+<td><code translate="no" v-pre>footer-link-weight</code></td>
 <td>Footer link font weight</td>
-<td><code v-pre>var(--base-link-weight)</code></td>
-<td><code v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--base-link-weight)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1746,46 +1722,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-base</code></td>
+<td><code translate="no" v-pre>badge-base</code></td>
 <td>Base badge background</td>
-<td><code v-pre>var(--base-100)</code></td>
-<td><code v-pre>var(--base-100)</code></td>
+<td><code translate="no" v-pre>var(--base-100)</code></td>
+<td><code translate="no" v-pre>var(--base-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-base-hover</code></td>
+<td><code translate="no" v-pre>badge-base-hover</code></td>
 <td>Base badge hover background</td>
-<td><code v-pre>var(--base-100)</code></td>
-<td><code v-pre>var(--base-200)</code></td>
+<td><code translate="no" v-pre>var(--base-100)</code></td>
+<td><code translate="no" v-pre>var(--base-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-base-text</code></td>
+<td><code translate="no" v-pre>badge-base-text</code></td>
 <td>Base badge text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-base-text-hover</code></td>
+<td><code translate="no" v-pre>badge-base-text-hover</code></td>
 <td>Base badge hover text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-base-border</code></td>
+<td><code translate="no" v-pre>badge-base-border</code></td>
 <td>Base badge border color</td>
-<td><code v-pre>var(--base-200)</code></td>
-<td><code v-pre>var(--base-200)</code></td>
+<td><code translate="no" v-pre>var(--base-200)</code></td>
+<td><code translate="no" v-pre>var(--base-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-base-border-hover</code></td>
+<td><code translate="no" v-pre>badge-base-border-hover</code></td>
 <td>Base badge hover border color</td>
-<td><code v-pre>var(--base-400)</code></td>
-<td><code v-pre>var(--base-400)</code></td>
+<td><code translate="no" v-pre>var(--base-400)</code></td>
+<td><code translate="no" v-pre>var(--base-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1802,46 +1778,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-primary</code></td>
+<td><code translate="no" v-pre>badge-primary</code></td>
 <td>Primary badge background</td>
-<td><code v-pre>var(--primary-100)</code></td>
-<td><code v-pre>var(--primary-100)</code></td>
+<td><code translate="no" v-pre>var(--primary-100)</code></td>
+<td><code translate="no" v-pre>var(--primary-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-primary-hover</code></td>
+<td><code translate="no" v-pre>badge-primary-hover</code></td>
 <td>Primary badge hover background</td>
-<td><code v-pre>var(--primary-100)</code></td>
-<td><code v-pre>var(--primary-200)</code></td>
+<td><code translate="no" v-pre>var(--primary-100)</code></td>
+<td><code translate="no" v-pre>var(--primary-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-primary-text</code></td>
+<td><code translate="no" v-pre>badge-primary-text</code></td>
 <td>Primary badge text color</td>
-<td><code v-pre>var(--primary-500)</code></td>
-<td><code v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-primary-text-hover</code></td>
+<td><code translate="no" v-pre>badge-primary-text-hover</code></td>
 <td>Primary badge hover text color</td>
-<td><code v-pre>var(--primary-500)</code></td>
-<td><code v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-primary-border</code></td>
+<td><code translate="no" v-pre>badge-primary-border</code></td>
 <td>Primary badge border color</td>
-<td><code v-pre>var(--primary-200)</code></td>
-<td><code v-pre>var(--primary-200)</code></td>
+<td><code translate="no" v-pre>var(--primary-200)</code></td>
+<td><code translate="no" v-pre>var(--primary-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-primary-border-hover</code></td>
+<td><code translate="no" v-pre>badge-primary-border-hover</code></td>
 <td>Primary badge hover border color</td>
-<td><code v-pre>var(--primary-400)</code></td>
-<td><code v-pre>var(--primary-400)</code></td>
+<td><code translate="no" v-pre>var(--primary-400)</code></td>
+<td><code translate="no" v-pre>var(--primary-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1858,46 +1834,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-secondary</code></td>
+<td><code translate="no" v-pre>badge-secondary</code></td>
 <td>Secondary badge background</td>
-<td><code v-pre>var(--gray-100)</code></td>
-<td><code v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-secondary-hover</code></td>
+<td><code translate="no" v-pre>badge-secondary-hover</code></td>
 <td>Secondary badge hover background</td>
-<td><code v-pre>var(--gray-100)</code></td>
-<td><code v-pre>var(--gray-250)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--gray-250)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-secondary-text</code></td>
+<td><code translate="no" v-pre>badge-secondary-text</code></td>
 <td>Secondary badge text color</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-secondary-text-hover</code></td>
+<td><code translate="no" v-pre>badge-secondary-text-hover</code></td>
 <td>Secondary badge hover text color</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-secondary-border</code></td>
+<td><code translate="no" v-pre>badge-secondary-border</code></td>
 <td>Secondary badge border color</td>
-<td><code v-pre>var(--gray-200)</code></td>
-<td><code v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-secondary-border-hover</code></td>
+<td><code translate="no" v-pre>badge-secondary-border-hover</code></td>
 <td>Secondary badge hover border color</td>
-<td><code v-pre>var(--gray-400)</code></td>
-<td><code v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1914,46 +1890,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-success</code></td>
+<td><code translate="no" v-pre>badge-success</code></td>
 <td>Success badge background</td>
-<td><code v-pre>var(--success-100)</code></td>
-<td><code v-pre>var(--success-100)</code></td>
+<td><code translate="no" v-pre>var(--success-100)</code></td>
+<td><code translate="no" v-pre>var(--success-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-success-hover</code></td>
+<td><code translate="no" v-pre>badge-success-hover</code></td>
 <td>Success badge hover background</td>
-<td><code v-pre>var(--success-100)</code></td>
-<td><code v-pre>var(--success-200)</code></td>
+<td><code translate="no" v-pre>var(--success-100)</code></td>
+<td><code translate="no" v-pre>var(--success-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-success-text</code></td>
+<td><code translate="no" v-pre>badge-success-text</code></td>
 <td>Success badge text color</td>
-<td><code v-pre>var(--success-700)</code></td>
-<td><code v-pre>var(--success-700)</code></td>
+<td><code translate="no" v-pre>var(--success-700)</code></td>
+<td><code translate="no" v-pre>var(--success-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-success-text-hover</code></td>
+<td><code translate="no" v-pre>badge-success-text-hover</code></td>
 <td>Success badge hover text color</td>
-<td><code v-pre>var(--success-700)</code></td>
-<td><code v-pre>var(--success-700)</code></td>
+<td><code translate="no" v-pre>var(--success-700)</code></td>
+<td><code translate="no" v-pre>var(--success-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-success-border</code></td>
+<td><code translate="no" v-pre>badge-success-border</code></td>
 <td>Success badge border color</td>
-<td><code v-pre>var(--success-200)</code></td>
-<td><code v-pre>var(--success-200)</code></td>
+<td><code translate="no" v-pre>var(--success-200)</code></td>
+<td><code translate="no" v-pre>var(--success-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-success-border-hover</code></td>
+<td><code translate="no" v-pre>badge-success-border-hover</code></td>
 <td>Success badge hover border color</td>
-<td><code v-pre>var(--success-400)</code></td>
-<td><code v-pre>var(--success-400)</code></td>
+<td><code translate="no" v-pre>var(--success-400)</code></td>
+<td><code translate="no" v-pre>var(--success-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1970,46 +1946,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-danger</code></td>
+<td><code translate="no" v-pre>badge-danger</code></td>
 <td>Danger badge background</td>
-<td><code v-pre>var(--danger-100)</code></td>
-<td><code v-pre>var(--danger-100)</code></td>
+<td><code translate="no" v-pre>var(--danger-100)</code></td>
+<td><code translate="no" v-pre>var(--danger-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-danger-hover</code></td>
+<td><code translate="no" v-pre>badge-danger-hover</code></td>
 <td>Danger badge hover background</td>
-<td><code v-pre>var(--danger-100)</code></td>
-<td><code v-pre>var(--danger-200)</code></td>
+<td><code translate="no" v-pre>var(--danger-100)</code></td>
+<td><code translate="no" v-pre>var(--danger-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-danger-text</code></td>
+<td><code translate="no" v-pre>badge-danger-text</code></td>
 <td>Danger badge text color</td>
-<td><code v-pre>var(--danger-600)</code></td>
-<td><code v-pre>var(--danger-600)</code></td>
+<td><code translate="no" v-pre>var(--danger-600)</code></td>
+<td><code translate="no" v-pre>var(--danger-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-danger-text-hover</code></td>
+<td><code translate="no" v-pre>badge-danger-text-hover</code></td>
 <td>Danger badge hover text color</td>
-<td><code v-pre>var(--danger-600)</code></td>
-<td><code v-pre>var(--danger-600)</code></td>
+<td><code translate="no" v-pre>var(--danger-600)</code></td>
+<td><code translate="no" v-pre>var(--danger-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-danger-border</code></td>
+<td><code translate="no" v-pre>badge-danger-border</code></td>
 <td>Danger badge border color</td>
-<td><code v-pre>var(--danger-200)</code></td>
-<td><code v-pre>var(--danger-200)</code></td>
+<td><code translate="no" v-pre>var(--danger-200)</code></td>
+<td><code translate="no" v-pre>var(--danger-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-danger-border-hover</code></td>
+<td><code translate="no" v-pre>badge-danger-border-hover</code></td>
 <td>Danger badge hover border color</td>
-<td><code v-pre>var(--danger-400)</code></td>
-<td><code v-pre>var(--danger-400)</code></td>
+<td><code translate="no" v-pre>var(--danger-400)</code></td>
+<td><code translate="no" v-pre>var(--danger-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2026,46 +2002,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-warning</code></td>
+<td><code translate="no" v-pre>badge-warning</code></td>
 <td>Warning badge background</td>
-<td><code v-pre>var(--warning-100)</code></td>
-<td><code v-pre>var(--warning-100)</code></td>
+<td><code translate="no" v-pre>var(--warning-100)</code></td>
+<td><code translate="no" v-pre>var(--warning-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-warning-hover</code></td>
+<td><code translate="no" v-pre>badge-warning-hover</code></td>
 <td>Warning badge hover background</td>
-<td><code v-pre>var(--warning-100)</code></td>
-<td><code v-pre>var(--warning-200)</code></td>
+<td><code translate="no" v-pre>var(--warning-100)</code></td>
+<td><code translate="no" v-pre>var(--warning-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-warning-text</code></td>
+<td><code translate="no" v-pre>badge-warning-text</code></td>
 <td>Warning badge text color</td>
-<td><code v-pre>var(--warning-700)</code></td>
-<td><code v-pre>var(--warning-700)</code></td>
+<td><code translate="no" v-pre>var(--warning-700)</code></td>
+<td><code translate="no" v-pre>var(--warning-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-warning-text-hover</code></td>
+<td><code translate="no" v-pre>badge-warning-text-hover</code></td>
 <td>Warning badge hover text color</td>
-<td><code v-pre>var(--warning-700)</code></td>
-<td><code v-pre>var(--warning-700)</code></td>
+<td><code translate="no" v-pre>var(--warning-700)</code></td>
+<td><code translate="no" v-pre>var(--warning-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-warning-border</code></td>
+<td><code translate="no" v-pre>badge-warning-border</code></td>
 <td>Warning badge border color</td>
-<td><code v-pre>var(--warning-200)</code></td>
-<td><code v-pre>var(--warning-200)</code></td>
+<td><code translate="no" v-pre>var(--warning-200)</code></td>
+<td><code translate="no" v-pre>var(--warning-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-warning-border-hover</code></td>
+<td><code translate="no" v-pre>badge-warning-border-hover</code></td>
 <td>Warning badge hover border color</td>
-<td><code v-pre>var(--warning-400)</code></td>
-<td><code v-pre>var(--warning-400)</code></td>
+<td><code translate="no" v-pre>var(--warning-400)</code></td>
+<td><code translate="no" v-pre>var(--warning-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2082,46 +2058,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-info</code></td>
+<td><code translate="no" v-pre>badge-info</code></td>
 <td>Info badge background</td>
-<td><code v-pre>var(--transparent)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-info-hover</code></td>
+<td><code translate="no" v-pre>badge-info-hover</code></td>
 <td>Info badge hover background</td>
-<td><code v-pre>var(--transparent)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-info-text</code></td>
+<td><code translate="no" v-pre>badge-info-text</code></td>
 <td>Info badge text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-info-text-hover</code></td>
+<td><code translate="no" v-pre>badge-info-text-hover</code></td>
 <td>Info badge hover text color</td>
-<td><code v-pre>var(--base-300)</code></td>
-<td><code v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-info-border</code></td>
+<td><code translate="no" v-pre>badge-info-border</code></td>
 <td>Info badge border color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-info-border-hover</code></td>
+<td><code translate="no" v-pre>badge-info-border-hover</code></td>
 <td>Info badge hover border color</td>
-<td><code v-pre>var(--base-300)</code></td>
-<td><code v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2138,46 +2114,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-light</code></td>
+<td><code translate="no" v-pre>badge-light</code></td>
 <td>Light badge background</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-light-hover</code></td>
+<td><code translate="no" v-pre>badge-light-hover</code></td>
 <td>Light badge hover background</td>
-<td><code v-pre>var(--gray-100)</code></td>
-<td><code v-pre>var(--dark-200)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--dark-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-light-text</code></td>
+<td><code translate="no" v-pre>badge-light-text</code></td>
 <td>Light badge text color</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--dark-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--dark-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-light-text-hover</code></td>
+<td><code translate="no" v-pre>badge-light-text-hover</code></td>
 <td>Light badge hover text color</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--dark-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--dark-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-light-border</code></td>
+<td><code translate="no" v-pre>badge-light-border</code></td>
 <td>Light badge border color</td>
-<td><code v-pre>var(--gray-200)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-light-border-hover</code></td>
+<td><code translate="no" v-pre>badge-light-border-hover</code></td>
 <td>Light badge hover border color</td>
-<td><code v-pre>var(--gray-400)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2194,46 +2170,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-dark</code></td>
+<td><code translate="no" v-pre>badge-dark</code></td>
 <td>Dark badge background</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-dark-hover</code></td>
+<td><code translate="no" v-pre>badge-dark-hover</code></td>
 <td>Dark badge hover background</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-dark-text</code></td>
+<td><code translate="no" v-pre>badge-dark-text</code></td>
 <td>Dark badge text color</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-dark-text-hover</code></td>
+<td><code translate="no" v-pre>badge-dark-text-hover</code></td>
 <td>Dark badge hover text color</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-dark-border</code></td>
+<td><code translate="no" v-pre>badge-dark-border</code></td>
 <td>Dark badge border color</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-dark-border-hover</code></td>
+<td><code translate="no" v-pre>badge-dark-border-hover</code></td>
 <td>Dark badge hover border color</td>
-<td><code v-pre>var(--gray-500)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2250,46 +2226,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-ghost</code></td>
+<td><code translate="no" v-pre>badge-ghost</code></td>
 <td>Ghost badge background</td>
-<td><code v-pre>var(--body-bg)</code></td>
-<td><code v-pre>var(--dark-550)</code></td>
+<td><code translate="no" v-pre>var(--body-bg)</code></td>
+<td><code translate="no" v-pre>var(--dark-550)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-ghost-hover</code></td>
+<td><code translate="no" v-pre>badge-ghost-hover</code></td>
 <td>Ghost badge hover background</td>
-<td><code v-pre>var(--gray-50)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-50)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-ghost-text</code></td>
+<td><code translate="no" v-pre>badge-ghost-text</code></td>
 <td>Ghost badge text color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-ghost-text-hover</code></td>
+<td><code translate="no" v-pre>badge-ghost-text-hover</code></td>
 <td>Ghost badge hover text color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-ghost-border</code></td>
+<td><code translate="no" v-pre>badge-ghost-border</code></td>
 <td>Ghost badge border color</td>
-<td><code v-pre>var(--gray-200)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-ghost-border-hover</code></td>
+<td><code translate="no" v-pre>badge-ghost-border-hover</code></td>
 <td>Ghost badge hover border color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2306,46 +2282,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>badge-contrast</code></td>
+<td><code translate="no" v-pre>badge-contrast</code></td>
 <td>Contrast badge background</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-contrast-hover</code></td>
+<td><code translate="no" v-pre>badge-contrast-hover</code></td>
 <td>Contrast badge hover background</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--dark-200)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--dark-200)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-contrast-text</code></td>
+<td><code translate="no" v-pre>badge-contrast-text</code></td>
 <td>Contrast badge text color</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--dark-850)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--dark-850)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-contrast-text-hover</code></td>
+<td><code translate="no" v-pre>badge-contrast-text-hover</code></td>
 <td>Contrast badge hover text color</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--dark-850)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--dark-850)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-contrast-border</code></td>
+<td><code translate="no" v-pre>badge-contrast-border</code></td>
 <td>Contrast badge border color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>badge-contrast-border-hover</code></td>
+<td><code translate="no" v-pre>badge-contrast-border-hover</code></td>
 <td>Contrast badge hover border color</td>
-<td><code v-pre>var(--gray-800)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-800)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2369,28 +2345,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-base</code></td>
+<td><code translate="no" v-pre>button-base</code></td>
 <td>Base button background</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-base-hover</code></td>
+<td><code translate="no" v-pre>button-base-hover</code></td>
 <td>Base button hover background</td>
-<td><code v-pre>var(--base-700)</code></td>
-<td><code v-pre>var(--base-700)</code></td>
+<td><code translate="no" v-pre>var(--base-700)</code></td>
+<td><code translate="no" v-pre>var(--base-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-base-text</code></td>
+<td><code translate="no" v-pre>button-base-text</code></td>
 <td>Base button text color</td>
-<td><code v-pre>var(--base-50)</code></td>
-<td><code v-pre>var(--base-50)</code></td>
+<td><code translate="no" v-pre>var(--base-50)</code></td>
+<td><code translate="no" v-pre>var(--base-50)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2407,28 +2383,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-primary</code></td>
+<td><code translate="no" v-pre>button-primary</code></td>
 <td>Primary button background</td>
-<td><code v-pre>var(--primary-500)</code></td>
-<td><code v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-primary-hover</code></td>
+<td><code translate="no" v-pre>button-primary-hover</code></td>
 <td>Primary button hover background</td>
-<td><code v-pre>var(--primary-700)</code></td>
-<td><code v-pre>var(--primary-700)</code></td>
+<td><code translate="no" v-pre>var(--primary-700)</code></td>
+<td><code translate="no" v-pre>var(--primary-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-primary-text</code></td>
+<td><code translate="no" v-pre>button-primary-text</code></td>
 <td>Primary button text color</td>
-<td><code v-pre>var(--primary-50)</code></td>
-<td><code v-pre>var(--primary-50)</code></td>
+<td><code translate="no" v-pre>var(--primary-50)</code></td>
+<td><code translate="no" v-pre>var(--primary-50)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2445,28 +2421,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-secondary</code></td>
+<td><code translate="no" v-pre>button-secondary</code></td>
 <td>Secondary button background</td>
-<td><code v-pre>var(--gray-500)</code></td>
-<td><code v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-secondary-hover</code></td>
+<td><code translate="no" v-pre>button-secondary-hover</code></td>
 <td>Secondary button hover background</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-secondary-text</code></td>
+<td><code translate="no" v-pre>button-secondary-text</code></td>
 <td>Secondary button text color</td>
-<td><code v-pre>var(--gray-50)</code></td>
-<td><code v-pre>var(--gray-50)</code></td>
+<td><code translate="no" v-pre>var(--gray-50)</code></td>
+<td><code translate="no" v-pre>var(--gray-50)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2483,28 +2459,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-success</code></td>
+<td><code translate="no" v-pre>button-success</code></td>
 <td>Success button background</td>
-<td><code v-pre>var(--success-500)</code></td>
-<td><code v-pre>var(--success-500)</code></td>
+<td><code translate="no" v-pre>var(--success-500)</code></td>
+<td><code translate="no" v-pre>var(--success-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-success-hover</code></td>
+<td><code translate="no" v-pre>button-success-hover</code></td>
 <td>Success button hover background</td>
-<td><code v-pre>var(--success-700)</code></td>
-<td><code v-pre>var(--success-700)</code></td>
+<td><code translate="no" v-pre>var(--success-700)</code></td>
+<td><code translate="no" v-pre>var(--success-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-success-text</code></td>
+<td><code translate="no" v-pre>button-success-text</code></td>
 <td>Success button text color</td>
-<td><code v-pre>var(--success-50)</code></td>
-<td><code v-pre>var(--success-50)</code></td>
+<td><code translate="no" v-pre>var(--success-50)</code></td>
+<td><code translate="no" v-pre>var(--success-50)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2521,28 +2497,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-danger</code></td>
+<td><code translate="no" v-pre>button-danger</code></td>
 <td>Danger button background</td>
-<td><code v-pre>var(--danger-500)</code></td>
-<td><code v-pre>var(--danger-500)</code></td>
+<td><code translate="no" v-pre>var(--danger-500)</code></td>
+<td><code translate="no" v-pre>var(--danger-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-danger-hover</code></td>
+<td><code translate="no" v-pre>button-danger-hover</code></td>
 <td>Danger button hover background</td>
-<td><code v-pre>var(--danger-700)</code></td>
-<td><code v-pre>var(--danger-700)</code></td>
+<td><code translate="no" v-pre>var(--danger-700)</code></td>
+<td><code translate="no" v-pre>var(--danger-700)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-danger-text</code></td>
+<td><code translate="no" v-pre>button-danger-text</code></td>
 <td>Danger button text color</td>
-<td><code v-pre>var(--danger-50)</code></td>
-<td><code v-pre>var(--danger-50)</code></td>
+<td><code translate="no" v-pre>var(--danger-50)</code></td>
+<td><code translate="no" v-pre>var(--danger-50)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2559,28 +2535,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-warning</code></td>
+<td><code translate="no" v-pre>button-warning</code></td>
 <td>Warning button background</td>
-<td><code v-pre>var(--warning-500)</code></td>
-<td><code v-pre>var(--warning-500)</code></td>
+<td><code translate="no" v-pre>var(--warning-500)</code></td>
+<td><code translate="no" v-pre>var(--warning-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-warning-hover</code></td>
+<td><code translate="no" v-pre>button-warning-hover</code></td>
 <td>Warning button hover background</td>
-<td><code v-pre>var(--warning-600)</code></td>
-<td><code v-pre>var(--warning-600)</code></td>
+<td><code translate="no" v-pre>var(--warning-600)</code></td>
+<td><code translate="no" v-pre>var(--warning-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-warning-text</code></td>
+<td><code translate="no" v-pre>button-warning-text</code></td>
 <td>Warning button text color</td>
-<td><code v-pre>var(--warning-900)</code></td>
-<td><code v-pre>var(--warning-900)</code></td>
+<td><code translate="no" v-pre>var(--warning-900)</code></td>
+<td><code translate="no" v-pre>var(--warning-900)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2597,46 +2573,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-info</code></td>
+<td><code translate="no" v-pre>button-info</code></td>
 <td>Info button background</td>
-<td><code v-pre>var(--transparent)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-info-hover</code></td>
+<td><code translate="no" v-pre>button-info-hover</code></td>
 <td>Info button hover background</td>
-<td><code v-pre>var(--transparent)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-info-text</code></td>
+<td><code translate="no" v-pre>button-info-text</code></td>
 <td>Info button text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-info-text-hover</code></td>
+<td><code translate="no" v-pre>button-info-text-hover</code></td>
 <td>Info button hover text color</td>
-<td><code v-pre>var(--base-300)</code></td>
-<td><code v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-info-border</code></td>
+<td><code translate="no" v-pre>button-info-border</code></td>
 <td>Info button border color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-info-border-hover</code></td>
+<td><code translate="no" v-pre>button-info-border-hover</code></td>
 <td>Info button hover border color</td>
-<td><code v-pre>var(--base-300)</code></td>
-<td><code v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2653,28 +2629,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-light</code></td>
+<td><code translate="no" v-pre>button-light</code></td>
 <td>Light button background</td>
-<td><code v-pre>var(--gray-200)</code></td>
-<td><code v-pre>var(--dark-250)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--dark-250)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-light-hover</code></td>
+<td><code translate="no" v-pre>button-light-hover</code></td>
 <td>Light button hover background</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-350)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-350)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-light-text</code></td>
+<td><code translate="no" v-pre>button-light-text</code></td>
 <td>Light button text color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-black)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-black)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2691,28 +2667,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-dark</code></td>
+<td><code translate="no" v-pre>button-dark</code></td>
 <td>Dark button background</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-550)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-550)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-dark-hover</code></td>
+<td><code translate="no" v-pre>button-dark-hover</code></td>
 <td>Dark button hover background</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-dark-text</code></td>
+<td><code translate="no" v-pre>button-dark-text</code></td>
 <td>Dark button text color</td>
-<td><code v-pre>var(--gray-50)</code></td>
-<td><code v-pre>var(--dark-350)</code></td>
+<td><code translate="no" v-pre>var(--gray-50)</code></td>
+<td><code translate="no" v-pre>var(--dark-350)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2729,28 +2705,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-ghost</code></td>
+<td><code translate="no" v-pre>button-ghost</code></td>
 <td>Ghost button background</td>
-<td><code v-pre>var(--gray-100)</code></td>
-<td><code v-pre>var(--dark-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--dark-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-ghost-hover</code></td>
+<td><code translate="no" v-pre>button-ghost-hover</code></td>
 <td>Ghost button hover background</td>
-<td><code v-pre>var(--gray-150)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-150)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-ghost-text</code></td>
+<td><code translate="no" v-pre>button-ghost-text</code></td>
 <td>Ghost button text color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2767,28 +2743,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>button-contrast</code></td>
+<td><code translate="no" v-pre>button-contrast</code></td>
 <td>Contrast button background</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-contrast-hover</code></td>
+<td><code translate="no" v-pre>button-contrast-hover</code></td>
 <td>Contrast button hover background</td>
-<td><code v-pre>var(--gray-700)</code></td>
-<td><code v-pre>var(--dark-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-700)</code></td>
+<td><code translate="no" v-pre>var(--dark-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>button-contrast-text</code></td>
+<td><code translate="no" v-pre>button-contrast-text</code></td>
 <td>Contrast button text color</td>
-<td><code v-pre>var(--gray-50)</code></td>
-<td><code v-pre>var(--base-black)</code></td>
+<td><code translate="no" v-pre>var(--gray-50)</code></td>
+<td><code translate="no" v-pre>var(--base-black)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2812,28 +2788,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>callout-base-bg</code></td>
+<td><code translate="no" v-pre>callout-base-bg</code></td>
 <td>Base callout background</td>
-<td><code v-pre>var(--base-white)</code></td>
-<td><code v-pre>var(--dark-800)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--dark-800)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-base-border</code></td>
+<td><code translate="no" v-pre>callout-base-border</code></td>
 <td>Base callout border</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-base</code></td>
+<td><code translate="no" v-pre>callout-base</code></td>
 <td>Base callout accent color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2850,100 +2826,100 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>callout-primary</code></td>
+<td><code translate="no" v-pre>callout-primary</code></td>
 <td>Primary callout accent color</td>
-<td><code v-pre>var(--primary-500)</code></td>
-<td><code v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
+<td><code translate="no" v-pre>var(--primary-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-secondary</code></td>
+<td><code translate="no" v-pre>callout-secondary</code></td>
 <td>Secondary callout accent color</td>
-<td><code v-pre>var(--gray-500)</code></td>
-<td><code v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-success</code></td>
+<td><code translate="no" v-pre>callout-success</code></td>
 <td>Success callout accent color</td>
-<td><code v-pre>var(--success-500)</code></td>
-<td><code v-pre>var(--success-500)</code></td>
+<td><code translate="no" v-pre>var(--success-500)</code></td>
+<td><code translate="no" v-pre>var(--success-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-tip</code></td>
+<td><code translate="no" v-pre>callout-tip</code></td>
 <td>Tip callout accent color</td>
-<td><code v-pre>var(--success-400)</code></td>
-<td><code v-pre>var(--success-400)</code></td>
+<td><code translate="no" v-pre>var(--success-400)</code></td>
+<td><code translate="no" v-pre>var(--success-400)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-danger</code></td>
+<td><code translate="no" v-pre>callout-danger</code></td>
 <td>Danger callout accent color</td>
-<td><code v-pre>var(--danger-500)</code></td>
-<td><code v-pre>var(--danger-500)</code></td>
+<td><code translate="no" v-pre>var(--danger-500)</code></td>
+<td><code translate="no" v-pre>var(--danger-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-warning</code></td>
+<td><code translate="no" v-pre>callout-warning</code></td>
 <td>Warning callout accent color</td>
-<td><code v-pre>var(--warning-500)</code></td>
-<td><code v-pre>var(--warning-500)</code></td>
+<td><code translate="no" v-pre>var(--warning-500)</code></td>
+<td><code translate="no" v-pre>var(--warning-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-info</code></td>
+<td><code translate="no" v-pre>callout-info</code></td>
 <td>Info callout accent color</td>
-<td><code v-pre>var(--base-300)</code></td>
-<td><code v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
+<td><code translate="no" v-pre>var(--base-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-question</code></td>
+<td><code translate="no" v-pre>callout-question</code></td>
 <td>Question callout accent color</td>
-<td><code v-pre>var(--royal-500)</code></td>
-<td><code v-pre>var(--royal-500)</code></td>
+<td><code translate="no" v-pre>var(--royal-500)</code></td>
+<td><code translate="no" v-pre>var(--royal-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-light</code></td>
+<td><code translate="no" v-pre>callout-light</code></td>
 <td>Light callout accent color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-dark</code></td>
+<td><code translate="no" v-pre>callout-dark</code></td>
 <td>Dark callout accent color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-ghost</code></td>
+<td><code translate="no" v-pre>callout-ghost</code></td>
 <td>Ghost callout accent color</td>
-<td><code v-pre>var(--gray-100)</code></td>
-<td><code v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
+<td><code translate="no" v-pre>var(--gray-100)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-contrast</code></td>
+<td><code translate="no" v-pre>callout-contrast</code></td>
 <td>Contrast callout accent color</td>
-<td><code v-pre>var(--gray-600)</code></td>
-<td><code v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
+<td><code translate="no" v-pre>var(--gray-600)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-contrast-bg</code></td>
+<td><code translate="no" v-pre>callout-contrast-bg</code></td>
 <td>Contrast callout background</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-contrast-text</code></td>
+<td><code translate="no" v-pre>callout-contrast-text</code></td>
 <td>Contrast callout text color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-800)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-800)</code></td>
 </tr>
 <tr>
-<td><code v-pre>callout-contrast-border</code></td>
+<td><code translate="no" v-pre>callout-contrast-border</code></td>
 <td>Contrast callout border color</td>
-<td><code v-pre>var(--gray-900)</code></td>
-<td><code v-pre>var(--dark-700)</code></td>
+<td><code translate="no" v-pre>var(--gray-900)</code></td>
+<td><code translate="no" v-pre>var(--dark-700)</code></td>
 </tr>
 </tbody>
 </table>
@@ -2961,28 +2937,28 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>image-rounded</code></td>
+<td><code translate="no" v-pre>image-rounded</code></td>
 <td>Image border radius</td>
-<td><code v-pre>0px</code></td>
-<td><code v-pre>0px</code></td>
+<td><code translate="no" v-pre>0px</code></td>
+<td><code translate="no" v-pre>0px</code></td>
 </tr>
 <tr>
-<td><code v-pre>image-border</code></td>
+<td><code translate="no" v-pre>image-border</code></td>
 <td>Image border color</td>
-<td><code v-pre>var(--base-border)</code></td>
-<td><code v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
 </tr>
 <tr>
-<td><code v-pre>image-border-width</code></td>
+<td><code translate="no" v-pre>image-border-width</code></td>
 <td>Image border width</td>
-<td><code v-pre>0</code></td>
-<td><code v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
 </tr>
 </tbody>
 </table>
@@ -3000,22 +2976,22 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>list-checked</code></td>
+<td><code translate="no" v-pre>list-checked</code></td>
 <td>Checked list item color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>list-unchecked</code></td>
+<td><code translate="no" v-pre>list-unchecked</code></td>
 <td>Unchecked list item color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-400)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -3033,46 +3009,46 @@
 <tr>
 <th>Variable</th>
 <th>Description</th>
-<th>Default <code v-pre>base</code></th>
-<th>Default <code v-pre>dark</code></th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>tab-text</code></td>
+<td><code translate="no" v-pre>tab-text</code></td>
 <td>Tab text color</td>
-<td><code v-pre>var(--gray-500)</code></td>
-<td><code v-pre>var(--dark-350)</code></td>
+<td><code translate="no" v-pre>var(--gray-500)</code></td>
+<td><code translate="no" v-pre>var(--dark-350)</code></td>
 </tr>
 <tr>
-<td><code v-pre>tab-text-hover</code></td>
+<td><code translate="no" v-pre>tab-text-hover</code></td>
 <td>Tab hover text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>tab-text-active</code></td>
+<td><code translate="no" v-pre>tab-text-active</code></td>
 <td>Active tab text color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 <tr>
-<td><code v-pre>tab-border</code></td>
+<td><code translate="no" v-pre>tab-border</code></td>
 <td>Tab border color</td>
-<td><code v-pre>var(--transparent)</code></td>
-<td><code v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
 </tr>
 <tr>
-<td><code v-pre>tab-border-hover</code></td>
+<td><code translate="no" v-pre>tab-border-hover</code></td>
 <td>Tab hover border color</td>
-<td><code v-pre>var(--gray-300)</code></td>
-<td><code v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-300)</code></td>
+<td><code translate="no" v-pre>var(--dark-450)</code></td>
 </tr>
 <tr>
-<td><code v-pre>tab-border-active</code></td>
+<td><code translate="no" v-pre>tab-border-active</code></td>
 <td>Active tab border color</td>
-<td><code v-pre>var(--base-500)</code></td>
-<td><code v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
+<td><code translate="no" v-pre>var(--base-500)</code></td>
 </tr>
 </tbody>
 </table>
@@ -3155,7 +3131,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.11.0</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 - <a href="https://retype.com/">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span> | v3.12.0-preview</p></div>
                             </footer>
                         </div>
                     </div>
