@@ -24,7 +24,7 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 ---
 ## v3.12.0 [!badge @next|info]
 
-Scheduled for late Q3-2025.
+Scheduled for early Q3-2025.
 
 ---
 ## v3.11.0 [!badge @latest|info]
