@@ -78,7 +78,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 Set the base brand color for your project. 
 
-This is a convenient way to set the main theme color without using the full [`theme`](#theme) configuration.
+This is a convenient way to set the main theme color without using the full [`theme`](#theme) configuration. The default `baseColor` is `#5495f1`. To change the `baseColor`, use the following setting:
 
 ```yml
 branding:
