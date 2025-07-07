@@ -1,5 +1,6 @@
 ---
-icon: ":+1:"
+{{ include "data/emojis" }}
+icon: ":grinning:"
 tags: [component, icon]
 ---
 # Emoji
@@ -8,16 +9,16 @@ Retype uses [Mojee](https://mojeeio.github.io/Mojee/) to find emoji `:shortcodes
 
 You can place emoji `:shortcodes:` anywhere within your document, such as `:smile:` :smile: or `:unicorn_face:` :unicorn_face:.
 
-Use Mojee to [search](https://mojeeio.github.io/Mojee//emojis/) for your favorite emojis and paste the `:shortcode:` into your **.md** page.
+Below you’ll find all available emojis, their shortcodes, aliases, descriptions, and related tags.
 
-:grinning: | :smiley: | :smile: | :grin: | :satisfied: | :sweat_smile: | :joy: | :wink: | :blush: | :innocent:
- -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-:heart_eyes: | :kissing_heart: | :relaxed: | :kissing_closed_eyes: | :yum: | :stuck_out_tongue: | :stuck_out_tongue_winking_eye: | :stuck_out_tongue_closed_eyes: | :neutral_face: | :expressionless:
-:no_mouth: | :smirk: | :unamused: | :grimacing: | :relieved: | :pensive: | :sleepy: | :sleeping: | :mask: | :sunglasses:
-:confused: | :flushed: | :disappointed_relieved: | :cry: | :sob: | :scream: | :confounded: | :persevere: | :disappointed: | :sweat:
-:weary: | :tired_face: | :triumph: | :rage: | :angry: | :smiling_imp: | :skull: | :heart_eyes_cat: | :see_no_evil: | :speak_no_evil:
-:kiss: | :cupid: | :sparkling_heart: | :heartpulse: | :heartbeat: | :revolving_hearts: | :two_hearts: | :broken_heart: | :heart: | :yellow_heart:
-:green_heart: | :blue_heart: | :purple_heart: | :100: | :collision: | :wave: | :raised_hand: | :ok_hand: | :v: | :point_left:
-:point_right: | :point_down: | :thumbsup: | :punch: | :clap: | :raised_hands: | :pray: | :muscle: | :eyes: | :information_desk_person:
-:cherry_blossom: | :rose: | :new_moon_with_face: | :sunny: | :star: | :zap: | :fire: | :sparkles: | :tada: | :hearts:
-:crown: | :notes: | :camera: | :arrow_right: | :arrow_left: | :arrow_forward: | :recycle: | :white_check_mark: | :heavy_check_mark: | :red_circle:
+Emoji count: **{{ emojis.size + emojis2.size }}**
+
+{.compact}
+| Emoji | Shortcode | Description | Tags |
+| :---: | --- | --- | --- |
+{{~ for $i in emojis ~}}
+| :{{ $i.shortcode }}: | `:{{ $i.shortcode }}:` {{ if $i.aliases && $i.aliases.size > 0 }}{{ for $alias in $i.aliases }}<br>`:{{ $alias }}:`{{ if for.last == false }}, {{ end }}{{ end }}{{ end }} | {{ $i.description }} | {{ $i.tags | array.join ", " }}
+{{~ end ~}}
+{{~ for $i in emojis2 ~}}
+| :{{ $i.shortcode }}: | `:{{ $i.shortcode }}:` {{ if $i.aliases && $i.aliases.size > 0 }}{{ for $alias in $i.aliases }}<br>`:{{ $alias }}:`{{ if for.last == false }}, {{ end }}{{ end }}{{ end }} | {{ $i.description }} | {{ $i.tags | array.join ", " }}
+{{~ end ~}}
