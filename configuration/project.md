@@ -992,7 +992,7 @@ links:
     icon: bug
 ```
 
-Options include using an [Octicon](https://primer.style/octicons/) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
+Options include using an [Octicon](https://primer.style/octicons/) name, [Emoji](https://mojeeio.github.io/Mojee//emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 icon: rocket

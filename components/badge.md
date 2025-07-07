@@ -148,7 +148,7 @@ See also the [`links.target`](/configuration/project.md#target) configuration.
 
 ### Emoji
 
-Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes.
+Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojeeio.github.io/Mojee//emojis) for a full list of supported Emoji shortcodes.
 
 ```md
 [!badge variant="light" icon=":heart:" text="Like"]

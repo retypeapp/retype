@@ -4,11 +4,11 @@ tags: [component, icon]
 ---
 # Emoji
 
-Retype uses [Mojee.io](https://mojee.io) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:
+Retype uses [Mojee](https://mojeeio.github.io/Mojee/) to find emoji `:shortcodes:` within your document and replace with actual emoji characters. :+1:
 
 You can place emoji `:shortcodes:` anywhere within your document, such as `:smile:` :smile: or `:unicorn_face:` :unicorn_face:.
 
-Use Mojee to [search](https://mojee.io/emojis/) for your favorite emojis and paste the `:shortcode:` into your **.md** page.
+Use Mojee to [search](https://mojeeio.github.io/Mojee//emojis/) for your favorite emojis and paste the `:shortcode:` into your **.md** page.
 
 :grinning: | :smiley: | :smile: | :grin: | :satisfied: | :sweat_smile: | :joy: | :wink: | :blush: | :innocent:
  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |

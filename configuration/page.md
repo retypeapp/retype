@@ -280,7 +280,7 @@ Setting `expanded: true` within the metadata of an **.md** page or the paired **
 
 Custom icon for the navigation node of the current page. Default is `null`.
 
-Options include using an [Octicon](/components/octicons.md) name, [Emoji](https://mojee.io/emojis/) shortcode, `<svg>` element, or a path to an image file.
+Options include using an [Octicon](/components/octicons.md) name, [Emoji](https://mojeeio.github.io/Mojee//emojis/) shortcode, `<svg>` element, or a path to an image file.
 
 ```yml Octicon
 icon: rocket

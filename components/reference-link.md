@@ -36,7 +36,7 @@ From a functionality perspective, there is no difference betwen a `!ref` compone
 
 The `icon` used for the reference link component can be customized using a name/value pair syntax for the `text` and `icon` attributes. This allows for setting a custom `icon` and `text` value at the same time. The `icon` attribute can be initialize with one of the following:
 - [Octicon](/components/octicons.md) name
-- Emoji `:shortcode:` (please see [Mojee](https://mojee.io/emojis) for a full list of supported Emoji shortcodes)
+- Emoji `:shortcode:` (please see [Mojee](https://mojeeio.github.io/Mojee//emojis) for a full list of supported Emoji shortcodes)
 - Image file URL
 
 The following samples demonstrate setting a custom `icon`:
