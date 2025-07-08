@@ -8497,10 +8497,7 @@ emojis = [
       "seven",
       "thirty"
     ]
-  }
-]
-emojis2 = [
-  {
+  }, {
     "id": "1F557",
     "shortcode": "clock8",
     "description": "CLOCK FACE EIGHT OCLOCK",
@@ -15747,24 +15744,6 @@ emojis2 = [
     "category": 8,
     "tags": [
       "gbeng"
-    ]
-  },
-  {
-    "id": "1F3F4-E0067-E0062-E0073-E0063-E0074-E007F",
-    "shortcode": "flag-scotland",
-    "description": "Scotland Flag",
-    "category": 8,
-    "tags": [
-      "gbsct"
-    ]
-  },
-  {
-    "id": "1F3F4-E0067-E0062-E0077-E006C-E0073-E007F",
-    "shortcode": "flag-wales",
-    "description": "Wales Flag",
-    "category": 8,
-    "tags": [
-      "gbwls"
     ]
   }
 ]
