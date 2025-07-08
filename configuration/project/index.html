@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview.805240685085">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview2.805311222215">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.12.0-preview">
+    <meta name="generator" content="Retype 3.12.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Project configuration - Write On! with Retype</title>
@@ -35,15 +35,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0-preview.805240685085" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0-preview2.805311222215" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview.805240685085" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview.805240685085" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview.805240685085" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview2.805311222215" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview2.805311222215" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview2.805311222215" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0-preview.805240685085" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview2.805311222215" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -2799,6 +2799,76 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
   liquid: false # Set to true to enable</code></pre>
 </doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="looplimit">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#looplimit">#</doc-anchor-trigger>
+        <span>loopLimit</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="looplimit--number">
+    <template #title>loopLimit : <code translate="no" v-pre>number</code></template>
+<p>Sets the maximum number of iterations allowed for loop statements in templates. This is a safety mechanism to prevent infinite loops and excessive resource consumption during template rendering.</p>
+<p>Default is <code translate="no" v-pre>1000</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  loopLimit: 1000 # Maximum loop iterations allowed</code></pre>
+</doc-codeblock></div>
+<p>When a template contains loops that exceed the configured <code translate="no" v-pre>loopLimit</code>, Retype will throw a build error and halt the build process.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  loopLimit: 500 # Reduce limit for stricter control</code></pre>
+</doc-codeblock></div>
+<p>Setting <code translate="no" v-pre>loopLimit: 0</code> disables loop limit enforcement entirely, allowing unlimited loop iterations. Use with caution as this can lead to performance issues or build timeouts with poorly designed templates.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  loopLimit: 0 # Disable loop limit (not recommended)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="common-use-cases">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#common-use-cases">#</doc-anchor-trigger>
+        <span>Common use cases</span>
+    </h4>
+</doc-anchor-target>
+<p><strong>Large datasets</strong>: If your templates process large collections of data (such as comprehensive lists, extensive navigation menus, or bulk content generation), you may need to increase the loop limit:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  loopLimit: 5000 # For processing large datasets</code></pre>
+</doc-codeblock></div>
+<p><strong>Strict resource control</strong>: For projects where template performance is critical, you can reduce the limit to catch potentially problematic templates early:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  loopLimit: 100 # Strict limit for performance-critical projects</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="error-handling">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#error-handling">#</doc-anchor-trigger>
+        <span>Error handling</span>
+    </h4>
+</doc-anchor-target>
+<p>When the loop limit is exceeded, Retype will display an error message similar to:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">ERROR: [template.md:1] Evaluation error. Exceeding number of iteration limit `1000` for loop statement.</code></pre>
+</doc-codeblock></div>
+<p>This error indicates that a template contains loops that process more items than the configured limit allows. To resolve this, either:</p>
+<ol>
+<li>Increase the <code translate="no" v-pre>loopLimit</code> value if the large loop is intentional</li>
+<li>Optimise the template to reduce the number of loop iterations</li>
+<li>Split large datasets into smaller, more manageable chunks</li>
+</ol>
+<doc-anchor-target id="performance">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#performance">#</doc-anchor-trigger>
+        <span>Performance</span>
+    </h4>
+</doc-anchor-target>
+<p>Loop limits help maintain build performance by preventing runaway templates. Consider the following when setting loop limits:</p>
+<ul>
+<li><strong>Build time</strong>: Higher limits allow more complex templates but may increase build times</li>
+<li><strong>Memory usage</strong>: Large loops can consume significant memory during template processing</li>
+<li><strong>Template complexity</strong>: Nested loops count towards the total iteration limit</li>
+</ul>
+<p>For most projects, the default limit of 1000 iterations provides a good balance between flexibility and performance protection.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="theme">

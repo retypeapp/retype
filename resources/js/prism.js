@@ -1,4 +1,4 @@
-/*! Retype v3.12.0-preview | retype.com | Copyright 2025. Retype, Inc. All rights reserved. */
+/*! Retype v3.12.0-preview2 | retype.com | Copyright 2025. Retype, Inc. All rights reserved. */
 
 window.Prism=window.Prism||{manual:true};
 /*! For license information please see prism.js.LICENSE.txt */
