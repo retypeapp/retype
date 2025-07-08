@@ -1869,6 +1869,75 @@ templating:
 
 ===
 
+### loopLimit
+
+=== loopLimit : `number`
+
+Sets the maximum number of iterations allowed for loop statements in templates. This is a safety mechanism to prevent infinite loops and excessive resource consumption during template rendering.
+
+Default is `1000`.
+
+```yml
+templating:
+  loopLimit: 1000 # Maximum loop iterations allowed
+```
+
+When a template contains loops that exceed the configured `loopLimit`, Retype will throw a build error and halt the build process.
+
+```yml
+templating:
+  loopLimit: 500 # Reduce limit for stricter control
+```
+
+Setting `loopLimit: 0` disables loop limit enforcement entirely, allowing unlimited loop iterations. Use with caution as this can lead to performance issues or build timeouts with poorly designed templates.
+
+```yml
+templating:
+  loopLimit: 0 # Disable loop limit (not recommended)
+```
+
+#### Common use cases
+
+**Large datasets**: If your templates process large collections of data (such as comprehensive lists, extensive navigation menus, or bulk content generation), you may need to increase the loop limit:
+
+```yml
+templating:
+  loopLimit: 5000 # For processing large datasets
+```
+
+**Strict resource control**: For projects where template performance is critical, you can reduce the limit to catch potentially problematic templates early:
+
+```yml
+templating:
+  loopLimit: 100 # Strict limit for performance-critical projects
+```
+
+#### Error handling
+
+When the loop limit is exceeded, Retype will display an error message similar to:
+
+```
+ERROR: [template.md:1] Evaluation error. Exceeding number of iteration limit `1000` for loop statement.
+```
+
+This error indicates that a template contains loops that process more items than the configured limit allows. To resolve this, either:
+
+1. Increase the `loopLimit` value if the large loop is intentional
+2. Optimise the template to reduce the number of loop iterations
+3. Split large datasets into smaller, more manageable chunks
+
+#### Performance
+
+Loop limits help maintain build performance by preventing runaway templates. Consider the following when setting loop limits:
+
+- **Build time**: Higher limits allow more complex templates but may increase build times
+- **Memory usage**: Large loops can consume significant memory during template processing
+- **Template complexity**: Nested loops count towards the total iteration limit
+
+For most projects, the default limit of 1000 iterations provides a good balance between flexibility and performance protection.
+
+===
+
 ---
 
 ## theme
