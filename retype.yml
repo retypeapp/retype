@@ -102,6 +102,9 @@ data:
     HTML: Hyper Text Markup Language
     CSS: Cascading Style Sheet
 
+templating:
+  loopLimit: 2000
+
 footer:
   # Let's demonstrate the power of Retype templating
   # by using an include for the footer
