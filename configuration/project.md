@@ -8,18 +8,6 @@ toc:
 ---
 # Project configuration
 
-## Updates
-
-The following recent updates have been made to this page:
-
-[!badge NEW|info] [`branding.baseColor`](#basecolor)
-: Set the primary brand color for your site [!badge PRO](/pro/pro.md). Added in `v3.11.0`.
-
-[!badge NEW|info] [`theme`](#theme)
-: Customize your site's visual appearance for both light and dark modes [!badge PRO](/pro/pro.md). Added in `v3.11.0`.
-
----
-
 Retype will read the **retype.yml** file for additional instructions on how to configure and build your project.
 
 The **retype.yml** file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.

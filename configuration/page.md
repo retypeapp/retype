@@ -6,15 +6,6 @@ tags: [config]
 ---
 # Page configuration
 
-## Updates
-
-The following recent updates have been made to this page:
-
-[!badge NEW|info] [`nav.badge`](#nav-badge)
-: Add a [[badge]] to navigation items in the left sidebar. Added in `v3.11.0`.
-
----
-
 Individual **.md** pages can be configured using the [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.
 
 ```md sample.md

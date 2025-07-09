@@ -4,15 +4,6 @@ tags: [component]
 ---
 # Badge
 
-## Updates
-
-The following recent updates have been made to this page:
-
-[!badge NEW|info] `base`
-: New `base` variant
-
----
-
 Similar to a [Button](button.md), the Badge component uses the same syntax as a hyperlink, but is prefixed with a `!badge` identifier.
 
 ||| Demo
