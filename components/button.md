@@ -184,5 +184,5 @@ theme:
 To learn more about theme variables and how they work across Retype, check out the [Themes Guide](/guides/themes.md), the [[Theme Variables]] documentation, and [`theme`](/configuration/project.md#theme) Project settings.
 
 !!!
-All button theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Button Component](/configuration/theme-variables.md#button-component) theme variables for the latest options.
+All button theme variables can be customized in this way. Please refer to the [Button Component](/configuration/theme-variables.md#button-component) theme variables for the latest options.
 !!!
