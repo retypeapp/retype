@@ -8,9 +8,6 @@ outbound:
 breadcrumb:
   home: ":icon-home:"
 
-scheme:
-  mode: system  # Pro key required
-
 toc:
   label: On this page
   depth: 2-4
