@@ -1,6 +1,7 @@
 ---
 icon: tools
-tags: [component]
+backlinks:
+  enabled: false
 ---
 # Components
 

@@ -1,6 +1,8 @@
 ---
 icon: verified
 order: 2000
+backlinks:
+  enabled: false
 ---
 # Retype Pro
 

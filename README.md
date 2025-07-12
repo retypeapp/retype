@@ -1,6 +1,8 @@
 ---
 label: "Home"
 icon: home
+backlinks:
+  enabled: false
 ---
 # Write On! with Retype
 
