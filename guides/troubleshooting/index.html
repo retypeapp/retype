@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview2.805826363173">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview2.805911336491">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0-preview2">
@@ -35,14 +35,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0-preview2.805826363173" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0-preview2.805911336491" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview2.805826363173" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview2.805911336491" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview2" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview2.805826363173" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview2.805911336491" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0-preview2.805826363173" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview2.805911336491" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -285,15 +285,17 @@
 </doc-anchor-target>
 <p>If you encounter the <strong>Website Configuration Error</strong> message, please ensure your <a href="/pro/">Retype Pro</a> is valid for the same <a href="/configuration/project/#url"><code translate="no" v-pre>url</code></a> in your project <code translate="no" v-pre>retype.yml</code> configuration file.</p>
 <p><figure class="content-center">
-    <img src="/static/website-configuration-error.png" alt="Error message common with mismatched project url value to Pro key" class="rounded-image-rounded border-image-border border-image-border-width dark:hidden inline-block" />
-    <img src="/static/website-configuration-error-dark.png" alt="Error message common with mismatched project url value to Pro key" class="rounded-image-rounded border-image-border border-image-border-width hidden dark:inline-block" />
-    <figcaption class="caption">Error message common with mismatched project url value to Pro key</figcaption>
+    <img src="/static/website-configuration-error.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width dark:hidden inline-block" />
+    <img src="/static/website-configuration-error-dark.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width hidden dark:inline-block" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Common scenarios that would trigger this error:</p>
 <ol>
-<li>You are hosting a website built with a Retype Pro key but do not have the project <a href="/configuration/project/#url"><code translate="no" v-pre>url</code></a> set, or</li>
+<li>You are hosting a website built with a Retype Pro key but do not have the project <a href="/configuration/project/#url"><code translate="no" v-pre>url</code></a> set</li>
 <li>You are hosting a website built with a Retype Pro key but the project <a href="/configuration/project/#url"><code translate="no" v-pre>url</code></a> is set to a url that is not supported by the Pro key</li>
+<li>The <code translate="no" v-pre>config.js</code> file has been modified</li>
+<li>The <code translate="no" v-pre>retype.css</code> file has been modified</li>
 </ol>
 <p>If you see this error and are confident your Pro key and <code translate="no" v-pre>url</code> are correctly configured, please send an email to <a href="mailto:hello@retype.com">hello@retype.com</a> and we will investigate immediately.</p>
 <doc-anchor-target id="secret-is-not-valid">
