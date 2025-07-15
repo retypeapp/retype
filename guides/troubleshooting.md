@@ -16,12 +16,14 @@ Please ensure your Retype Pro key is licensed for your project [`url`](/configur
 
 If you encounter the **Website Configuration Error** message, please ensure your [Retype Pro](/pro/pro.md) is valid for the same [`url`](/configuration/project.md#url) in your project `retype.yml` configuration file. 
 
-![Error message common with mismatched project `url` value to Pro key](/static/website-configuration-error.png)
+![](/static/website-configuration-error.png)
 
 Common scenarios that would trigger this error:
 
-1. You are hosting a website built with a Retype Pro key but do not have the project [`url`](/configuration/project.md#url) set, or 
+1. You are hosting a website built with a Retype Pro key but do not have the project [`url`](/configuration/project.md#url) set 
 1. You are hosting a website built with a Retype Pro key but the project [`url`](/configuration/project.md#url) is set to a url that is not supported by the Pro key
+1. The `config.js` file has been modified
+1. The `retype.css` file has been modified
 
 If you see this error and are confident your Pro key and `url` are correctly configured, please send an email to hello@retype.com and we will investigate immediately.
 

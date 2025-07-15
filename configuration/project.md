@@ -318,13 +318,7 @@ By default, if the [`url`](#url) is set, Retype will automatically generate a **
 cname: false
 ```
 
-If you do want a **CNAME** file generated, but for some reason require a value different than what the `url` creates, you can explicitly set instruct Retype to generate the **CNAME** with a different value.
-
-This would be a highly unusual scenario, but Retype does allow you to configure these values separately, just in case you need it. We **HIGHLY** recommend that you just stick with setting the [`url`](#url).
-
-```yml Custom CNAME file value
-cname: docs.example.com
-```
+If you do manually create a **CNAME** file, please ensure the value in the **CNAME** file matches the value set in the [`url`](#url).
 
 ===
 
