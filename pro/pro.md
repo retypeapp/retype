@@ -16,8 +16,8 @@ Build more pages and unlock powerful **Pro** only features.
 
 | &nbsp; | Free  | Pro   | Enterprise |
 | ---    | :---: | :---: | :---:      |
-|        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/00g7umbDN3mie2sfZm) |
-| Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $749 |
+|        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/28EbJ1agXcyHgk67Kr9IQ0r) |
+| Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $499 |
 | Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years | 3 years |
 | Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | Unlimited | 1 | Unlimited&nbsp;^[*](#what-is-a-project)^ |
 | Max pages per project [:icon-question:](#what-is-a-project) | 100 | Unlimited | Unlimited |
@@ -79,7 +79,7 @@ License | Key required | Price | Free upgrades | Renewal | Pro&nbsp;projects<br>
 -- | :--: | -- | -- | -- | :--: | :--:
 Free | No | Free | Free | $0 | 0 | 100
 Pro | Yes | $149 | 3 years | $99 | 1 | Unlimited
-Enterprise | Yes | $749 | 3 years | $549 | Unlimited ^[*](#what-is-a-project)^ | Unlimited
+Enterprise | Yes | $499 | 3 years | $349 | Unlimited ^[*](#what-is-a-project)^ | Unlimited
 
 !!!
 As your key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your key is not [renewed](#what-happens-when-the-key-expires).
