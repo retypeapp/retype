@@ -14,7 +14,7 @@ Please ensure your Retype Pro key is licensed for your project [`url`](/configur
 
 ## Website Configuration Error
 
-If you encounter the **Website Configuration Error** message, please ensure your [Retype Pro](/pro/pro.md) is valid for the same [`url`](/configuration/project.md#url) in your project `retype.yml` configuration file. 
+If you encounter the **Website Configuration Error** message, please ensure your [Retype Pro](/pro/pro.md) key is valid for the same [`url`](/configuration/project.md#url) that is set in your project `retype.yml` configuration file. 
 
 ![](/static/website-configuration-error.png)
 
