@@ -235,7 +235,7 @@ There were 9 changes in Retype `v3.6.0`.
 1. Tree nav `expanded` state not saving
 +++
 
-s## v3.3.0
+## v3.3.0
 
 **Released:** [2023-08-31](https://github.com/retypeapp/retype/releases/tag/v3.3.0)
 
