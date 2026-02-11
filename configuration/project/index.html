@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824152362824">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824153843202">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -35,15 +35,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824152362824" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824153843202" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824152362824" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824153843202" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824152362824" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824152362824" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824153843202" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824153843202" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824152362824" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824153843202" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -276,8 +276,8 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>After making a change to the <strong>retype.yml</strong>, if you are running <code translate="no" v-pre>retype start</code>, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.</p>
-<p>If you started the local web server using <code translate="no" v-pre>retype serve</code>, you will need to call <code translate="no" v-pre>retype build</code> to regenerate a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see the update. Using the command <code translate="no" v-pre>retype serve --live</code> will automatically update all web browsers.</p>
+<p>When running <a href="/guides/cli/#retype-start"><code translate="no" v-pre>retype start</code></a>, any changes to your <strong>retype.yml</strong> file will automatically trigger Retype to regenerate the website and refresh your web browser.</p>
+<p>If you started the local web server using <a href="/guides/cli/#retype-serve"><code translate="no" v-pre>retype serve</code></a>, you will need to call <a href="/guides/cli/#retype-build"><code translate="no" v-pre>retype build</code></a> for a <span class="docs-emoji">&#x2728;</span> sparkly <span class="docs-emoji">&#x2728;</span> fresh new build of the project, then manually refresh your web browser to see the update. Using the command <code translate="no" v-pre>retype serve --live</code> will automatically update all web browsers.</p>
         </div>
     </div>
 </div>
@@ -2159,6 +2159,24 @@ host: docs.example.com/js/plausible.js</code></pre>
 <div class="codeblock-title">Change output location to /docs folder</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">output: ./docs</code></pre>
 </doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The <code translate="no" v-pre>output</code> directory is only used when using the <a href="/guides/cli/#retype-build"><code translate="no" v-pre>retype build</code></a> command.</p>
+<p>If using <a href="/guides/cli/#retype-start"><code translate="no" v-pre>retype start</code></a>, files are stored in memory and not written to disk.</p>
+        </div>
+    </div>
+</div>
 </doc-panel>
 <hr>
 <doc-anchor-target id="poweredbyretype">
