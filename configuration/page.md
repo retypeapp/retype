@@ -778,6 +778,46 @@ tags:
 
 ---
 
+## target
+
+=== target : `string`
+
+Controls how navigation links to this page behave when clicked in the sidebar navigation tree.
+
+```yml
+---
+target: blank
+---
+# External Documentation
+
+This page will open in a new tab when clicked in the navigation.
+```
+
+Supported values:
+
+Value | Transformed To | Description
+--- | --- | ---
+`blank` | `_blank` | Opens the link in a new tab
+`self` | `_self` | Opens the link in the current tab (default)
+`parent` | `_parent` | Opens the link in the parent frame
+`top` | `_top` | Opens the link in the top-most frame
+
+Retype automatically transforms common values like `blank` to `_blank`.
+
+This setting is useful when a page redirects to an external location, allowing new tabs to open without losing the current documentation context.
+
+```yml
+---
+title: API Reference
+redirect: https://api.example.com/docs
+target: blank
+---
+```
+
+===
+
+---
+
 ## templating
 
 === templating: `boolean`
