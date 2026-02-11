@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview3.824003816514">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0-preview3.824098832381">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0-preview3">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0-preview3.824003816514" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0-preview3.824098832381" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview3.824003816514" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0-preview3.824098832381" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0-preview3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview3.824003816514" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview3.824003816514" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0-preview3.824098832381" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0-preview3.824098832381" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0-preview3.824003816514" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0-preview3.824098832381" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -1253,6 +1253,68 @@ tags:
   - guide
   - config options
   - installation
+---</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<hr>
+<doc-anchor-target id="target">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#target">#</doc-anchor-trigger>
+        <span>target</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="target--string">
+    <template #title>target : <code translate="no" v-pre>string</code></template>
+<p>Controls how navigation links to this page behave when clicked in the sidebar navigation tree.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+target: blank
+---
+# External Documentation
+
+This page will open in a new tab when clicked in the navigation.</code></pre>
+</doc-codeblock></div>
+<p>Supported values:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Value</th>
+<th>Transformed To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>blank</code></td>
+<td><code translate="no" v-pre>_blank</code></td>
+<td>Opens the link in a new tab</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>self</code></td>
+<td><code translate="no" v-pre>_self</code></td>
+<td>Opens the link in the current tab (default)</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>parent</code></td>
+<td><code translate="no" v-pre>_parent</code></td>
+<td>Opens the link in the parent frame</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>top</code></td>
+<td><code translate="no" v-pre>_top</code></td>
+<td>Opens the link in the top-most frame</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Retype automatically transforms common values like <code translate="no" v-pre>blank</code> to <code translate="no" v-pre>_blank</code>.</p>
+<p>This setting is useful when a page redirects to an external location, allowing new tabs to open without losing the current documentation context.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+title: API Reference
+redirect: https://api.example.com/docs
+target: blank
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
