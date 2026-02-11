@@ -13,9 +13,10 @@ Retype will read the **retype.yml** file for additional instructions on how to c
 The **retype.yml** file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the [`input`](#input) and [`output`](#output) paths are correct if moved to a different location.
 
 !!!
-After making a change to the **retype.yml**, if you are running `retype start`, Retype will automatically rebuild the project for you and your web browser will refresh with the changes.
+When running [`retype start`](/guides/cli.md#retype-start), any changes to your **retype.yml** file will automatically trigger Retype to regenerate the website and refresh your web browser.
 
-If you started the local web server using `retype serve`, you will need to call `retype build` to regenerate a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update. Using the command `retype serve --live` will automatically update all web browsers.
+If you started the local web server using [`retype serve`](/guides/cli.md#retype-serve), you will need to call [`retype build`](/guides/cli.md#retype-build) for a :sparkles: sparkly :sparkles: fresh new build of the project, then manually refresh your web browser to see the update. Using the command `retype serve --live` will automatically update all web browsers.
+
 !!!
 
 The **retype.yml** file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a **retype.yml** is a good first step.
@@ -1396,6 +1397,12 @@ The path is relative to the **retype.yml** location.
 ```yml Change output location to /docs folder
 output: ./docs
 ```
+
+!!!
+The `output` directory is only used when using the [`retype build`](/guides/cli.md#retype-build) command.
+
+If using [`retype start`](/guides/cli.md#retype-start), files are stored in memory and not written to disk.
+!!!
 ===
 
 ---
