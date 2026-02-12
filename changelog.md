@@ -3,8 +3,6 @@ icon: log
 ---
 # Changelog
 
-[!backlinks "Related pages"]
-
 The latest release of Retype is `v{{ version }}`.
 
 You can find which version you have installed by running the command [`retype --version`](/guides/cli.md).
