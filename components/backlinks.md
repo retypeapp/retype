@@ -8,13 +8,13 @@ nav:
 
 This component is Retype [!badge PRO](/pro/pro.md) only.
 
-The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the `[!backlinks]` component syntax.
+The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the `[!backlinks]` markdown component syntax.
 
 ```md
 [!backlinks]
 ```
 
-Manual placement gives you control over where backlinks appear and disables the automatic placement at the end of the page.
+Manual placement gives you control over where backlinks appear and disables the automatic placement at the bottom of the page.
 
 ---
 
@@ -53,15 +53,13 @@ More information and external links...
 The backlinks section would appear above the **Additional Resources** section, rather than at the bottom of the page.
 |||
 
-When you manually place the `[!backlinks]` component, automatic placement at the end of the page is disabled.
-
 ---
 
 ## Configuration
 
-The backlinks feature can be configured at both Project and Page levels to control visibility, title, and the maximum number of results displayed.
+The backlinks component can be configured at both Project and Page levels to control visibility, title, and the maximum number of results displayed.
 
-See [Project configuration](/configuration/project.md#backlinks) and [Page configuration](/configuration/page.md#backlinks) for all available settings.
+See [Project](/configuration/project.md#backlinks) configuration and [Page](/configuration/page.md#backlinks) configuration for all available settings.
 
 ### Project level
 
@@ -76,7 +74,7 @@ backlinks:
 
 ### Page level
 
-Override project settings for individual pages using frontmatter:
+Override project settings for individual pages using the page metadata:
 
 ```yml
 ---
@@ -85,17 +83,20 @@ backlinks:
   title: "See also"
   maxResults: 5
 ---
+# Sample page
+
+This is a sample page.
 ```
 
 ---
 
 ## Behavior
 
-The backlinks component only renders when:
+The backlinks component will only render when:
 
 1. The backlinks feature is enabled (project or page level)
 2. Other pages in your project link to the current page
 3. A valid Retype [Pro](/pro/pro.md) license is active
 
-If no pages link to the current page, the backlinks component will not render, even when the `[!backlinks]` component is manually placed.
+If there are no pages linking to the current page, the backlinks component will not render, even when the `[!backlinks]` component is manually placed.
 
