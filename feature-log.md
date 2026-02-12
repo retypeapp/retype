@@ -22,6 +22,34 @@ Please also check out the [[Changelog]] for a full summary of changes in each re
 
 ---
 
+## v3.12
+
+[!badge PRO] Backlinks component
+: Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping users discover related content. Configure at [project](/configuration/project.md#backlinks) and [page](/configuration/page.md#backlinks) levels with `enabled`, `title`, and `maxResults` settings.
+
+Color preview chips
+: Automatic color preview chips for hexadecimal color codes in your documentation. When you write a hex color like `#FF5733`, Retype automatically displays a small color swatch next to it for instant visual reference.
+
+Dark mode image switching
+: Automatic detection and switching between light and dark mode images. Name your images with a `-dark` suffix (e.g., `diagram.png` and `diagram-dark.png`) and Retype automatically displays the appropriate version based on the active color scheme.
+
+Dark mode favicon support
+: Automatic discovery and switching of favicon variants for light and dark modes. Retype detects dark mode favicon files and automatically switches between them based on the user's color scheme preference.
+
+Triple-star description syntax
+: New `***` syntax block for defining page descriptions directly in markdown if placed immediately after the opening H1 heading. Provides a cleaner alternative to YAML frontmatter for setting page meta descriptions.
+
+[`templating.loopLimit`](/configuration/project.md#templating-looplimit)
+: New project configuration setting to control the maximum number of loop iterations in templates. Helps prevent infinite loops and improves template safety.
+
+[`target`](/configuration/page.md#target)
+: New page-level setting to control where links on a page open. Set to `blank`, `parent`, `top`, or `self` to control link behavior for the entire page.
+
+Heading theme variables
+: Expanded theme variable support for all heading levels (H1 through H6). Customize typography, colors, and spacing for each heading level independently through theme configuration.
+
+---
+
 ## v3.11
 
 [!badge PRO] Custom themes

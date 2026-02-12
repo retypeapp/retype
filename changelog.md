@@ -22,102 +22,49 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 Please also check out the [[Feature Log]] for a summary of all new features in each release.
 
 ---
-## v3.12.0
 
-[!badge text="LATEST" variant="info"]
+## v3.13.0 [!badge @next|info]
 
-Released: [2026-02-11](https://github.com/retypeapp/retype/releases/tag/v3.12.0)
+Scheduled for early Q2-2026.
 
-# Version 3.12.0
+---
 
-There were 23 changes in Retype 3.12.0.
+## v3.12.0 [!badge @latest|info]
 
-## New
+**Released:** [2026-02-10](https://github.com/retypeapp/retype/releases/tag/v3.12.0)
 
+There were **15 changes** in Retype `v3.12.0`. 
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v312) for highlights.
+
++++ New :icon-shield-check:
+
+1. [!badge PRO](/pro/pro.md) New Backlinks Component, plus [Project](/configuration/project.md#backlinks), and [Page](/configuration/page.md#backlinks) settings
 1. New color preview chip for hexadecimal color codes
 1. New detection of dark mode image file names and automatic switching between light and dark images
 1. New `favicon` dark variant automatic discovery and automatic light/dark switching
 1. New triple-star `***` description syntax for page descriptions
 1. New `templating.loopLimit` Project configuration setting
-1. New Backlinks Component, plus Project, and Page settings
-1. New `target` setting on Page, see #795
+1. New [`target`](/configuration/page.md#target) setting on Page, see [#795](https://github.com/retypeapp/retype/issues/795)
 
-## Improved
++++ Improved :icon-thumbsup:
 
-1. Added `translate=\"no\"` attribute to inline `<code>` elements
-1. Remove extra bottom margin when a Callout includes a List, see #769
+1. Added `translate="no"` attribute to inline `<code>` elements
+1. Remove extra bottom margin when a Callout includes a List, see [#769](https://github.com/retypeapp/retype/issues/769)
 1. Add broader theme variables support for Headings H1 > H6
 1. Improve CNAME validation to help prevent deployment misconfigurations
-1. Upgrade Octicons icons library from v19.15.3 to v19.15.5
-1. Upgrade Octicons icons library from v19.15.5 to v19.16.0
-1. Upgrade Octicons icons library from v19.16.0 to v19.17.0
-1. Upgrade Octicons icons library from v19.17.0 to v19.18.0
-1. Upgrade Octicons icons library from v19.18.0 to v19.19.0
-1. Upgrade Octicons icons library from v19.19.0 to v19.20.0
-1. Upgrade Octicons icons library from v19.20.0 to v19.21.0
-1. Upgrade Octicons icons library from v19.21.0 to v19.21.1
-1. Upgrade Octicons icons library from v19.21.1 to v19.21.2
-1. Print stylesheet refinements, see #782
+1. Print stylesheet refinements, see [#782](https://github.com/retypeapp/retype/issues/782)
+1. Upgrade [Octicons](/components/octicons.md#new-icons) icons library from v19.15.3 to v19.21.2
 
-## Fixed
++++ Fixed :icon-bug:
 
 1. Fixed skeleton rendering issues with Search and Filter input fields
 1. Fixed favicon auto-discovery path resolution and ensure configured favicons always render
 
++++
 
 ---
-
-## v3.12.0
-
-[!badge text="LATEST" variant="info"]
-
-Released: [2026-02-11](https://github.com/retypeapp/retype/releases/tag/v3.12.0)
-
-# Version 3.12.0
-
-There were 23 changes in Retype 3.12.0.
-
-## New
-
-1. New color preview chip for hexadecimal color codes
-1. New detection of dark mode image file names and automatic switching between light and dark images
-1. New `favicon` dark variant automatic discovery and automatic light/dark switching
-1. New triple-star `***` description syntax for page descriptions
-1. New `templating.loopLimit` Project configuration setting
-1. New Backlinks Component, plus Project, and Page settings
-1. New `target` setting on Page, see #795
-
-## Improved
-
-1. Added `translate=\"no\"` attribute to inline `<code>` elements
-1. Remove extra bottom margin when a Callout includes a List, see #769
-1. Add broader theme variables support for Headings H1 > H6
-1. Improve CNAME validation to help prevent deployment misconfigurations
-1. Upgrade Octicons icons library from v19.15.3 to v19.15.5
-1. Upgrade Octicons icons library from v19.15.5 to v19.16.0
-1. Upgrade Octicons icons library from v19.16.0 to v19.17.0
-1. Upgrade Octicons icons library from v19.17.0 to v19.18.0
-1. Upgrade Octicons icons library from v19.18.0 to v19.19.0
-1. Upgrade Octicons icons library from v19.19.0 to v19.20.0
-1. Upgrade Octicons icons library from v19.20.0 to v19.21.0
-1. Upgrade Octicons icons library from v19.21.0 to v19.21.1
-1. Upgrade Octicons icons library from v19.21.1 to v19.21.2
-1. Print stylesheet refinements, see #782
-
-## Fixed
-
-1. Fixed skeleton rendering issues with Search and Filter input fields
-1. Fixed favicon auto-discovery path resolution and ensure configured favicons always render
-
-
----
-
-## v3.12.0 [!badge @next|info]
-
-Scheduled for early Q3-2025.
-
----
-## v3.11.0 [!badge @latest|info]
+## v3.11.0
 
 **Released:** [2025-07-02](https://github.com/retypeapp/retype/releases/tag/v3.11.0)
 
