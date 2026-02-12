@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824177959057">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824179420311">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,14 +33,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824177959057" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824179420311" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824179420311" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824179420311" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824177959057" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824179420311" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -270,6 +270,33 @@
     </div>
 </div>
 <p>Please also check out the <a href="/changelog/">Changelog</a> for a full summary of changes in each release.</p>
+<hr>
+<doc-anchor-target id="v312">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v312">#</doc-anchor-trigger>
+        <span>v3.12</span>
+    </h2>
+</doc-anchor-target>
+<dl>
+<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> Backlinks component</dt>
+<dd>Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping users discover related content. Configure at <a href="/configuration/project/#backlinks">project</a> and <a href="/configuration/page/#backlinks">page</a> levels with <code translate="no" v-pre>enabled</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>maxResults</code> settings.</dd>
+<dt>Color preview chips</dt>
+<dd>Automatic color preview chips for hexadecimal color codes in your documentation. When you write a hex color like <code translate="no" class="whitespace-nowrap" v-pre>#FF5733<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#ff5733;"></span></code>, Retype automatically displays a small color swatch next to it for instant visual reference.</dd>
+<dt>Dark mode image switching</dt>
+<dd>Automatic detection and switching between light and dark mode images. Name your images with a <code translate="no" v-pre>-dark</code> suffix (e.g., <code translate="no" v-pre>diagram.png</code> and <code translate="no" v-pre>diagram-dark.png</code>) and Retype automatically displays the appropriate version based on the active color scheme.</dd>
+<dt>Dark mode favicon support</dt>
+<dd>Automatic discovery and switching of favicon variants for light and dark modes. Retype detects dark mode favicon files and automatically switches between them based on the user&#x27;s color scheme preference.</dd>
+<dt>Triple-star description syntax</dt>
+<dd>New <code translate="no" v-pre>***</code> syntax block for defining page descriptions directly in markdown if placed immediately after the opening H1 heading. Provides a cleaner alternative to YAML frontmatter for setting page meta descriptions.</dd>
+<dt><a href="/configuration/project/#templating-looplimit"><code translate="no" v-pre>templating.loopLimit</code></a></dt>
+<dd>New project configuration setting to control the maximum number of loop iterations in templates. Helps prevent infinite loops and improves template safety.</dd>
+<dt><a href="/configuration/page/#target"><code translate="no" v-pre>target</code></a></dt>
+<dd>New page-level setting to control where links on a page open. Set to <code translate="no" v-pre>blank</code>, <code translate="no" v-pre>parent</code>, <code translate="no" v-pre>top</code>, or <code translate="no" v-pre>self</code> to control link behavior for the entire page.</dd>
+<dt>Heading theme variables</dt>
+<dd>Expanded theme variable support for all heading levels (H1 through H6). Customize typography, colors, and spacing for each heading level independently through theme configuration.</dd>
+</dl>
 <hr>
 <doc-anchor-target id="v311">
     <h2>

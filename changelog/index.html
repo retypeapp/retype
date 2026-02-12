@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824177959057">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824179420311">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,17 +33,17 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824177959057" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824179420311" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824179420311" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824177959057" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824179420311" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824179420311" defer></script>
     <link href="/resources/css/katex.css?v=3.12.0" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="/resources/js/katex.js?v=3.12.0" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824177959057" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824179420311" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -281,152 +281,66 @@
 </div>
 <p>Please also check out the <a href="/feature-log/">Feature Log</a> for a summary of all new features in each release.</p>
 <hr>
-<doc-anchor-target id="v3120">
+<doc-anchor-target id="v3130">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v3120">#</doc-anchor-trigger>
-        <span>v3.12.0</span>
-    </h2>
-</doc-anchor-target>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
-    <span>LATEST</span>
-</span></p>
-<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v3.12.0">2026-02-11</a></p>
-<doc-anchor-target id="version-3120">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#version-3120">#</doc-anchor-trigger>
-        <span>Version 3.12.0</span>
-    </h1>
-</doc-anchor-target>
-<p>There were 23 changes in Retype 3.12.0.</p>
-<doc-anchor-target id="new">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new">#</doc-anchor-trigger>
-        <span>New</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>New color preview chip for hexadecimal color codes</li>
-<li>New detection of dark mode image file names and automatic switching between light and dark images</li>
-<li>New <code translate="no" v-pre>favicon</code> dark variant automatic discovery and automatic light/dark switching</li>
-<li>New triple-star <code translate="no" v-pre>***</code> description syntax for page descriptions</li>
-<li>New <code translate="no" v-pre>templating.loopLimit</code> Project configuration setting</li>
-<li>New Backlinks Component, plus Project, and Page settings</li>
-<li>New <code translate="no" v-pre>target</code> setting on Page, see #795</li>
-</ol>
-<doc-anchor-target id="improved">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#improved">#</doc-anchor-trigger>
-        <span>Improved</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Added <code translate="no" v-pre>translate=\&quot;no\&quot;</code> attribute to inline <code translate="no" v-pre>&lt;code&gt;</code> elements</li>
-<li>Remove extra bottom margin when a Callout includes a List, see #769</li>
-<li>Add broader theme variables support for Headings H1 &gt; H6</li>
-<li>Improve CNAME validation to help prevent deployment misconfigurations</li>
-<li>Upgrade Octicons icons library from v19.15.3 to v19.15.5</li>
-<li>Upgrade Octicons icons library from v19.15.5 to v19.16.0</li>
-<li>Upgrade Octicons icons library from v19.16.0 to v19.17.0</li>
-<li>Upgrade Octicons icons library from v19.17.0 to v19.18.0</li>
-<li>Upgrade Octicons icons library from v19.18.0 to v19.19.0</li>
-<li>Upgrade Octicons icons library from v19.19.0 to v19.20.0</li>
-<li>Upgrade Octicons icons library from v19.20.0 to v19.21.0</li>
-<li>Upgrade Octicons icons library from v19.21.0 to v19.21.1</li>
-<li>Upgrade Octicons icons library from v19.21.1 to v19.21.2</li>
-<li>Print stylesheet refinements, see #782</li>
-</ol>
-<doc-anchor-target id="fixed">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fixed">#</doc-anchor-trigger>
-        <span>Fixed</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Fixed skeleton rendering issues with Search and Filter input fields</li>
-<li>Fixed favicon auto-discovery path resolution and ensure configured favicons always render</li>
-</ol>
-<hr>
-<doc-anchor-target id="v3120-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v3120-1">#</doc-anchor-trigger>
-        <span>v3.12.0</span>
-    </h2>
-</doc-anchor-target>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
-    <span>LATEST</span>
-</span></p>
-<p>Released: <a href="https://github.com/retypeapp/retype/releases/tag/v3.12.0">2026-02-11</a></p>
-<doc-anchor-target id="version-3120-1">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#version-3120-1">#</doc-anchor-trigger>
-        <span>Version 3.12.0</span>
-    </h1>
-</doc-anchor-target>
-<p>There were 23 changes in Retype 3.12.0.</p>
-<doc-anchor-target id="new-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-1">#</doc-anchor-trigger>
-        <span>New</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>New color preview chip for hexadecimal color codes</li>
-<li>New detection of dark mode image file names and automatic switching between light and dark images</li>
-<li>New <code translate="no" v-pre>favicon</code> dark variant automatic discovery and automatic light/dark switching</li>
-<li>New triple-star <code translate="no" v-pre>***</code> description syntax for page descriptions</li>
-<li>New <code translate="no" v-pre>templating.loopLimit</code> Project configuration setting</li>
-<li>New Backlinks Component, plus Project, and Page settings</li>
-<li>New <code translate="no" v-pre>target</code> setting on Page, see #795</li>
-</ol>
-<doc-anchor-target id="improved-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#improved-1">#</doc-anchor-trigger>
-        <span>Improved</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Added <code translate="no" v-pre>translate=\&quot;no\&quot;</code> attribute to inline <code translate="no" v-pre>&lt;code&gt;</code> elements</li>
-<li>Remove extra bottom margin when a Callout includes a List, see #769</li>
-<li>Add broader theme variables support for Headings H1 &gt; H6</li>
-<li>Improve CNAME validation to help prevent deployment misconfigurations</li>
-<li>Upgrade Octicons icons library from v19.15.3 to v19.15.5</li>
-<li>Upgrade Octicons icons library from v19.15.5 to v19.16.0</li>
-<li>Upgrade Octicons icons library from v19.16.0 to v19.17.0</li>
-<li>Upgrade Octicons icons library from v19.17.0 to v19.18.0</li>
-<li>Upgrade Octicons icons library from v19.18.0 to v19.19.0</li>
-<li>Upgrade Octicons icons library from v19.19.0 to v19.20.0</li>
-<li>Upgrade Octicons icons library from v19.20.0 to v19.21.0</li>
-<li>Upgrade Octicons icons library from v19.21.0 to v19.21.1</li>
-<li>Upgrade Octicons icons library from v19.21.1 to v19.21.2</li>
-<li>Print stylesheet refinements, see #782</li>
-</ol>
-<doc-anchor-target id="fixed-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fixed-1">#</doc-anchor-trigger>
-        <span>Fixed</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Fixed skeleton rendering issues with Search and Filter input fields</li>
-<li>Fixed favicon auto-discovery path resolution and ensure configured favicons always render</li>
-</ol>
-<hr>
-<doc-anchor-target id="v3120-2">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v3120-2">#</doc-anchor-trigger>
-        <span>v3.12.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3130">#</doc-anchor-trigger>
+        <span>v3.13.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
             <span>@next</span>
         </span></span>
     </h2>
 </doc-anchor-target>
-<p>Scheduled for early Q3-2025.</p>
+<p>Scheduled for early Q2-2026.</p>
+<hr>
+<doc-anchor-target id="v3120">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3120">#</doc-anchor-trigger>
+        <span>v3.12.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+            <span>@latest</span>
+        </span></span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Released:</strong> <a href="https://github.com/retypeapp/retype/releases/tag/v3.12.0">2026-02-10</a></p>
+<p>There were <strong>15 changes</strong> in Retype <code translate="no" v-pre>v3.12.0</code>.</p>
+<p>See the <a href="/feature-log/#v312"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/></g></g></svg> Feature Log</a> for highlights.</p>
+<doc-tabs>
+<doc-tab v-cloak id="new">
+<template #title>New <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"/><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"/></g></g></svg></template>
+<ol>
+<li><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> New Backlinks Component, plus <a href="/configuration/project/#backlinks">Project</a>, and <a href="/configuration/page/#backlinks">Page</a> settings</li>
+<li>New color preview chip for hexadecimal color codes</li>
+<li>New detection of dark mode image file names and automatic switching between light and dark images</li>
+<li>New <code translate="no" v-pre>favicon</code> dark variant automatic discovery and automatic light/dark switching</li>
+<li>New triple-star <code translate="no" v-pre>***</code> description syntax for page descriptions</li>
+<li>New <code translate="no" v-pre>templating.loopLimit</code> Project configuration setting</li>
+<li>New <a href="/configuration/page/#target"><code translate="no" v-pre>target</code></a> setting on Page, see <a href="https://github.com/retypeapp/retype/issues/795">#795</a></li>
+</ol>
+</doc-tab>
+<doc-tab v-cloak id="improved">
+<template #title>Improved <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13.349 2.378a.748.748 0 0 1 .808-.361l.127.027a3.875 3.875 0 0 1 2.879 4.97L16.527 9h1.137c2.645 0 4.513 2.591 3.676 5.1l-1.559 4.678A3.25 3.25 0 0 1 16.698 21h-5.289a4.503 4.503 0 0 1-2.828-.999A1.75 1.75 0 0 1 7 21H4.75A1.75 1.75 0 0 1 3 19.25v-8.5C3 9.784 3.784 9 4.75 9h4.67a.251.251 0 0 0 .217-.126l3.712-6.496ZM8.75 18.16l.683.598a3.003 3.003 0 0 0 1.976.742h5.289a1.75 1.75 0 0 0 1.66-1.197l1.559-4.677a2.375 2.375 0 0 0-2.253-3.126H15.5a.75.75 0 0 1-.714-.979l.948-2.964a2.375 2.375 0 0 0-1.373-2.927l-3.422 5.988a1.749 1.749 0 0 1-1.519.882h-.67v7.66Zm-1.5-7.66h-2.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25H7a.25.25 0 0 0 .25-.25V10.5Z"/></g></g></svg></template>
+<ol>
+<li>Added <code translate="no" v-pre>translate=&quot;no&quot;</code> attribute to inline <code translate="no" v-pre>&lt;code&gt;</code> elements</li>
+<li>Remove extra bottom margin when a Callout includes a List, see <a href="https://github.com/retypeapp/retype/issues/769">#769</a></li>
+<li>Add broader theme variables support for Headings H1 &gt; H6</li>
+<li>Improve CNAME validation to help prevent deployment misconfigurations</li>
+<li>Print stylesheet refinements, see <a href="https://github.com/retypeapp/retype/issues/782">#782</a></li>
+<li>Upgrade <a href="/components/octicons/#new-icons">Octicons</a> icons library from v19.15.3 to v19.21.2</li>
+</ol>
+</doc-tab>
+<doc-tab v-cloak id="fixed">
+<template #title>Fixed <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.72.22a.75.75 0 0 1 1.06 0l1.204 1.203A4.98 4.98 0 0 1 12 1c.717 0 1.4.151 2.016.423L15.22.22a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-.971.972A4.991 4.991 0 0 1 17 6v1.104a2.755 2.755 0 0 1 1.917 1.974l1.998-.999a.75.75 0 0 1 .67 1.342L19 10.714V13.5l3.25.003a.75.75 0 0 1 0 1.5L19 15.001V16c0 .568-.068 1.134-.204 1.686l.04.018 2.75 1.375a.75.75 0 1 1-.671 1.342l-2.638-1.319A6.998 6.998 0 0 1 12 23a6.998 6.998 0 0 1-6.197-3.742l-2.758 1.181a.752.752 0 0 1-1.064-.776.752.752 0 0 1 .474-.602l2.795-1.199A6.976 6.976 0 0 1 5 16v-.996H1.75a.75.75 0 0 1 0-1.5H5v-2.79L2.415 9.42a.75.75 0 0 1 .67-1.342l1.998.999A2.756 2.756 0 0 1 7 7.104V6a4.99 4.99 0 0 1 1.69-3.748l-.97-.972a.75.75 0 0 1 0-1.06ZM6.5 9.75V16a5.5 5.5 0 1 0 11 0V9.75c0-.69-.56-1.25-1.25-1.25h-8.5c-.69 0-1.25.56-1.25 1.25ZM8.5 7h7V6a3.5 3.5 0 1 0-7 0Z"/></g></g></svg></template>
+<ol>
+<li>Fixed skeleton rendering issues with Search and Filter input fields</li>
+<li>Fixed favicon auto-discovery path resolution and ensure configured favicons always render</li>
+</ol>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="v3110">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#v3110">#</doc-anchor-trigger>
-        <span>v3.11.0 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
-            <span>@latest</span>
-        </span></span>
+        <span>v3.11.0</span>
     </h2>
 </doc-anchor-target>
 <p><strong>Released:</strong> <a href="https://github.com/retypeapp/retype/releases/tag/v3.11.0">2025-07-02</a></p>
