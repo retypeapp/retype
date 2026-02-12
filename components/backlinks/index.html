@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824181458810">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824205429375">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824181458810" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824205429375" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824181458810" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824205429375" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824181458810" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824181458810" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824205429375" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824205429375" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824181458810" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824205429375" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -262,11 +262,11 @@
 <p>This component is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<p>The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the <code translate="no" v-pre>[!backlinks]</code> component syntax.</p>
+<p>The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the <code translate="no" v-pre>[!backlinks]</code> markdown component syntax.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!backlinks]</code></pre>
 </doc-codeblock></div>
-<p>Manual placement gives you control over where backlinks appear and disables the automatic placement at the end of the page.</p>
+<p>Manual placement gives you control over where backlinks appear and disables the automatic placement at the bottom of the page.</p>
 <hr>
 <doc-anchor-target id="custom-title">
     <h2>
@@ -314,7 +314,6 @@ More information and external links...</code></pre>
 <p>The backlinks section would appear above the <strong>Additional Resources</strong> section, rather than at the bottom of the page.</p>
     </div>
 </div>
-<p>When you manually place the <code translate="no" v-pre>[!backlinks]</code> component, automatic placement at the end of the page is disabled.</p>
 <hr>
 <doc-anchor-target id="configuration">
     <h2>
@@ -322,8 +321,8 @@ More information and external links...</code></pre>
         <span>Configuration</span>
     </h2>
 </doc-anchor-target>
-<p>The backlinks feature can be configured at both Project and Page levels to control visibility, title, and the maximum number of results displayed.</p>
-<p>See <a href="/configuration/project/#backlinks">Project configuration</a> and <a href="/configuration/page/#backlinks">Page configuration</a> for all available settings.</p>
+<p>The backlinks component can be configured at both Project and Page levels to control visibility, title, and the maximum number of results displayed.</p>
+<p>See <a href="/configuration/project/#backlinks">Project</a> configuration and <a href="/configuration/page/#backlinks">Page</a> configuration for all available settings.</p>
 <doc-anchor-target id="project-level">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#project-level">#</doc-anchor-trigger>
@@ -343,14 +342,17 @@ More information and external links...</code></pre>
         <span>Page level</span>
     </h3>
 </doc-anchor-target>
-<p>Override project settings for individual pages using frontmatter:</p>
+<p>Override project settings for individual pages using the page metadata:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 backlinks:
   enabled: true
   title: &quot;See also&quot;
   maxResults: 5
----</code></pre>
+---
+# Sample page
+
+This is a sample page.</code></pre>
 </doc-codeblock></div>
 <hr>
 <doc-anchor-target id="behavior">
@@ -359,13 +361,13 @@ backlinks:
         <span>Behavior</span>
     </h2>
 </doc-anchor-target>
-<p>The backlinks component only renders when:</p>
+<p>The backlinks component will only render when:</p>
 <ol>
 <li>The backlinks feature is enabled (project or page level)</li>
 <li>Other pages in your project link to the current page</li>
 <li>A valid Retype <a href="/pro/">Pro</a> license is active</li>
 </ol>
-<p>If no pages link to the current page, the backlinks component will not render, even when the <code translate="no" v-pre>[!backlinks]</code> component is manually placed.</p>
+<p>If there are no pages linking to the current page, the backlinks component will not render, even when the <code translate="no" v-pre>[!backlinks]</code> component is manually placed.</p>
 <div id="backlinks">
     <h2>See also</h2>
     <div class="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
