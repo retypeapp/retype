@@ -55,6 +55,66 @@ footer:
 
 ---
 
+## backlinks
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `backlinks` configuration controls the automatic display of inbound links from other pages in your project. Backlinks help users discover related content by showing which pages reference the current page.
+
+When enabled, backlinks are automatically included at the end of pages that have inbound links from other pages. The feature leverages Retype's dependency tracking system to build a web of interconnected content.
+
+### enabled
+
+=== [!badge PRO] enabled : `boolean`
+
+Enable or disable backlinks for the entire project. Default is `true`.
+
+```yml
+backlinks:
+  enabled: true
+```
+
+When set to `false`, backlinks will not be displayed on any page unless explicitly enabled at the [page](page.md#backlinks) level.
+
+===
+
+### title
+
+=== [!badge PRO] title : `string`
+
+Customize the heading text displayed above the backlinks section. Default is `"See also"`.
+
+```yml
+backlinks:
+  title: "Referenced by"
+```
+
+The title appears as a heading above the list of pages that link to the current page.
+
+===
+
+### [!badge PRO] maxResults
+
+=== maxResults : `number`
+
+Set the maximum number of backlinks to display on each page. Default is `12`.
+
+```yml
+backlinks:
+  maxResults: 10
+```
+
+If a page has more inbound links than the `maxResults` value, only the first results will be shown. This helps keep the backlinks section manageable on highly referenced pages.
+
+===
+
+The `backlinks` configuration can be set at two levels with the following precedence:
+
+1. [Page](page.md#backlinks) level in individual `.md` files
+2. [Project](project.md#backlinks) level in your Project `retype.yml` file
+
+---
+
 ## branding
 
 Branding configuration for your Retype generated website.
