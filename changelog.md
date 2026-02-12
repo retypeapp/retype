@@ -3,6 +3,8 @@ icon: log
 ---
 # Changelog
 
+[!backlinks "Related pages"]
+
 The latest release of Retype is `v{{ version }}`.
 
 You can find which version you have installed by running the command [`retype --version`](/guides/cli.md).
@@ -39,7 +41,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v312) for highlights.
 
 +++ New :icon-shield-check:
 
-1. [!badge PRO](/pro/pro.md) New Backlinks Component, plus [Project](/configuration/project.md#backlinks), and [Page](/configuration/page.md#backlinks) settings
+1. [!badge PRO](/pro/pro.md) New [[Backlinks]] Component, plus [Project](/configuration/project.md#backlinks), and [Page](/configuration/page.md#backlinks) settings
 1. New color preview chip for hexadecimal color codes
 1. New detection of dark mode image file names and automatic switching between light and dark images
 1. New `favicon` dark variant automatic discovery and automatic light/dark switching
