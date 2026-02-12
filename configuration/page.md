@@ -167,6 +167,67 @@ author:
 
 ---
 
+## backlinks
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `backlinks` configuration controls the display of inbound links from other pages in your project on this specific page. Backlinks help users discover related content by showing which pages reference the current page.
+
+### enabled
+
+=== [!badge PRO] enabled : `boolean`
+
+Enable or disable backlinks for this page. Default is `true`.
+
+```yml
+---
+backlinks:
+  enabled: false
+---
+```
+
+Set to `false` to disable backlinks on this page, even if enabled at the [project](project.md#backlinks) level.
+
+===
+
+### title
+
+=== [!badge PRO] title : `string`
+
+Customize the heading text displayed above the backlinks section on this page. Default is `"See also"`.
+
+```yml
+---
+backlinks:
+  title: "Related pages"
+---
+```
+
+This overrides the project-level title setting for this specific page.
+
+===
+
+### maxResults
+
+=== [!badge PRO] maxResults : `number`
+
+Set the maximum number of backlinks to display on this page. Default is `12`.
+
+```yml
+---
+backlinks:
+  maxResults: 3
+---
+```
+
+This overrides the project-level [maxResults](project.md#maxresults) setting for this specific page.
+
+===
+
+See also [Project](project.md#backlinks) configuration of [`backlinks`](project.md#backlinks).
+
+---
+
 ## breadcrumb
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
