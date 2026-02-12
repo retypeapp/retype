@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824153843202">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824177959057">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824153843202" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824177959057" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824153843202" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824153843202" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824153843202" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824177959057" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824153843202" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824177959057" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -462,6 +462,75 @@ author:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
+<doc-anchor-target id="backlinks">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#backlinks">#</doc-anchor-trigger>
+        <span>backlinks</span>
+    </h2>
+</doc-anchor-target>
+<p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<p>The <code translate="no" v-pre>backlinks</code> configuration controls the display of inbound links from other pages in your project on this specific page. Backlinks help users discover related content by showing which pages reference the current page.</p>
+<doc-anchor-target id="enabled">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
+        <span>enabled</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="badge-pro-enabled--boolean">
+    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> enabled : <code translate="no" v-pre>boolean</code></template>
+<p>Enable or disable backlinks for this page. Default is <code translate="no" v-pre>true</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+backlinks:
+  enabled: false
+---</code></pre>
+</doc-codeblock></div>
+<p>Set to <code translate="no" v-pre>false</code> to disable backlinks on this page, even if enabled at the <a href="/configuration/project/#backlinks">project</a> level.</p>
+</doc-panel>
+<doc-anchor-target id="title">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
+        <span>title</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="badge-pro-title--string">
+    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> title : <code translate="no" v-pre>string</code></template>
+<p>Customize the heading text displayed above the backlinks section on this page. Default is <code translate="no" v-pre>&quot;See also&quot;</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+backlinks:
+  title: &quot;Related pages&quot;
+---</code></pre>
+</doc-codeblock></div>
+<p>This overrides the project-level title setting for this specific page.</p>
+</doc-panel>
+<doc-anchor-target id="maxresults">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#maxresults">#</doc-anchor-trigger>
+        <span>maxResults</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="badge-pro-maxresults--number">
+    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> maxResults : <code translate="no" v-pre>number</code></template>
+<p>Set the maximum number of backlinks to display on this page. Default is <code translate="no" v-pre>12</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+backlinks:
+  maxResults: 3
+---</code></pre>
+</doc-codeblock></div>
+<p>This overrides the project-level <a href="/configuration/project/#maxresults">maxResults</a> setting for this specific page.</p>
+</doc-panel>
+<p>See also <a href="/configuration/project/#backlinks">Project</a> configuration of <a href="/configuration/project/#backlinks"><code translate="no" v-pre>backlinks</code></a>.</p>
+<hr>
 <doc-anchor-target id="breadcrumb">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#breadcrumb">#</doc-anchor-trigger>
@@ -688,9 +757,9 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
         <span>meta</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="title">
+<doc-anchor-target id="title-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
         <span>title</span>
     </h3>
 </doc-anchor-target>
@@ -1335,9 +1404,9 @@ templating: false
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="title-1">
+<doc-anchor-target id="title-2">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title-2">#</doc-anchor-trigger>
         <span>title</span>
     </h2>
 </doc-anchor-target>

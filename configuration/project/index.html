@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824153843202">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824177959057">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -35,15 +35,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824153843202" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824177959057" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824153843202" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824153843202" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824153843202" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824177959057" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824177959057" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824153843202" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824177959057" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -322,6 +322,74 @@ footer:
 </div>
 </p>
 <hr>
+<doc-anchor-target id="backlinks">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#backlinks">#</doc-anchor-trigger>
+        <span>backlinks</span>
+    </h2>
+</doc-anchor-target>
+<p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<p>The <code translate="no" v-pre>backlinks</code> configuration controls the automatic display of inbound links from other pages in your project. Backlinks help users discover related content by showing which pages reference the current page.</p>
+<p>When enabled, backlinks are automatically included at the end of pages that have inbound links from other pages. The feature leverages Retype&#x27;s dependency tracking system to build a web of interconnected content.</p>
+<doc-anchor-target id="enabled">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
+        <span>enabled</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="badge-pro-enabled--boolean">
+    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> enabled : <code translate="no" v-pre>boolean</code></template>
+<p>Enable or disable backlinks for the entire project. Default is <code translate="no" v-pre>true</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">backlinks:
+  enabled: true</code></pre>
+</doc-codeblock></div>
+<p>When set to <code translate="no" v-pre>false</code>, backlinks will not be displayed on any page unless explicitly enabled at the <a href="/configuration/page/#backlinks">page</a> level.</p>
+</doc-panel>
+<doc-anchor-target id="title">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
+        <span>title</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="badge-pro-title--string">
+    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> title : <code translate="no" v-pre>string</code></template>
+<p>Customize the heading text displayed above the backlinks section. Default is <code translate="no" v-pre>&quot;See also&quot;</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">backlinks:
+  title: &quot;Referenced by&quot;</code></pre>
+</doc-codeblock></div>
+<p>The title appears as a heading above the list of pages that link to the current page.</p>
+</doc-panel>
+<doc-anchor-target id="pro-maxresults">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-maxresults">#</doc-anchor-trigger>
+        <span><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+            <span>PRO</span>
+        </span> maxResults</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="maxresults--number">
+    <template #title>maxResults : <code translate="no" v-pre>number</code></template>
+<p>Set the maximum number of backlinks to display on each page. Default is <code translate="no" v-pre>12</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">backlinks:
+  maxResults: 10</code></pre>
+</doc-codeblock></div>
+<p>If a page has more inbound links than the <code translate="no" v-pre>maxResults</code> value, only the first results will be shown. This helps keep the backlinks section manageable on highly referenced pages.</p>
+</doc-panel>
+<p>The <code translate="no" v-pre>backlinks</code> configuration can be set at two levels with the following precedence:</p>
+<ol>
+<li><a href="/configuration/page/#backlinks">Page</a> level in individual <code translate="no" v-pre>.md</code> files</li>
+<li><a href="/configuration/project/#backlinks">Project</a> level in your Project <code translate="no" v-pre>retype.yml</code> file</li>
+</ol>
+<hr>
 <doc-anchor-target id="branding">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
@@ -428,9 +496,9 @@ footer:
   logoAlign: right</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="title">
+<doc-anchor-target id="title-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
         <span>title</span>
     </h3>
 </doc-anchor-target>
@@ -461,9 +529,9 @@ footer:
     <span>PRO</span>
 </a> only.</p>
 <p>The breadcrumb navigation provides a hierarchical representation of the user&#x27;s location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.</p>
-<doc-anchor-target id="enabled">
+<doc-anchor-target id="enabled-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-1">#</doc-anchor-trigger>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
@@ -742,9 +810,9 @@ footer:
     </h2>
 </doc-anchor-target>
 <p>Custom configuration to control the page live editor functionality that is only available when <code translate="no" v-pre>retype start</code> is running.</p>
-<doc-anchor-target id="enabled-1">
+<doc-anchor-target id="enabled-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-2">#</doc-anchor-trigger>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
@@ -1325,9 +1393,9 @@ generator:
 </div>
 <p>Please see the <a href="https://en.gravatar.com/site/implement/images#default-image" class="outbound" target="_blank"><span>Default Image</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> documentation on the Gravatar website.</p>
 </doc-panel>
-<doc-anchor-target id="enabled-2">
+<doc-anchor-target id="enabled-3">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-3">#</doc-anchor-trigger>
         <span>enabled</span>
     </h4>
 </doc-anchor-target>
@@ -1813,9 +1881,9 @@ host: docs.example.com/js/plausible.js</code></pre>
     </h2>
 </doc-anchor-target>
 <p>Project wide meta tag configuration options.</p>
-<doc-anchor-target id="title-1">
+<doc-anchor-target id="title-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#title-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title-2">#</doc-anchor-trigger>
         <span>title</span>
     </h3>
 </doc-anchor-target>
@@ -2030,9 +2098,9 @@ host: docs.example.com/js/plausible.js</code></pre>
 <p>The <code translate="no" v-pre>outbound</code> configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, <a href="https://example.com/" class="outbound" target="_blank"><span>example.com</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <p>The <code translate="no" v-pre>outbound</code> functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the <code translate="no" v-pre>outbound</code> configuration and functionality is ignored.</p>
 <p>If <code translate="no" v-pre>outbound</code> is enabled, Retype will find all external (outbound) links within the project, add a trailing <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg> icon, and set the link to open in a new tab when clicked.</p>
-<doc-anchor-target id="enabled-3">
+<doc-anchor-target id="enabled-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-4">#</doc-anchor-trigger>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
@@ -2761,9 +2829,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     </h2>
 </doc-anchor-target>
 <p>Configurations to control the Retype content templating engine for this project.</p>
-<doc-anchor-target id="enabled-4">
+<doc-anchor-target id="enabled-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-5">#</doc-anchor-trigger>
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
