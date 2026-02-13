@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824277532298">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824329180298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -38,15 +38,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824329180298" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824277532298" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824329180298" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824329180298" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -336,7 +336,7 @@
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml"># Project configuration
 backlinks:
-  enabled: true # or false to disable
+  enabled: true # or false to disable project-wide
   title: &quot;Referenced by&quot;
   maxResults: 10</code></pre>
 </doc-codeblock></div>
@@ -377,13 +377,20 @@ Additional content after backlinks...</code></pre>
     </h2>
 </doc-anchor-target>
 <p>Retype now automatically detects and switches between light and dark image variants based on the active theme. Simply add another image file to your project with the same file name but with a <code translate="no" v-pre>-dark</code> suffix and Retype handles everything else automatically.</p>
+<p><figure class="content-center">
+    <img src="/blog/images/2026-02-10-switcher.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width dark:hidden inline-block" />
+    <img src="/blog/images/2026-02-10-switcher-dark.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width hidden dark:inline-block" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="zero-configuration">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#zero-configuration">#</doc-anchor-trigger>
         <span>Zero Configuration</span>
     </h3>
 </doc-anchor-target>
-<p>Drop your dark variant files alongside the originals with a <code translate="no" v-pre>-dark</code> suffix. No manual configuration required. If no dark variant exists, Retype uses the original image for both <strong>light</strong> and <strong>dark</strong> themes.</p>
+<p>Drop your dark variant image files alongside the originals with a <code translate="no" v-pre>-dark</code> suffix. No manual configuration required. For example, if you have an image named <code translate="no" v-pre>sample.png</code>, create a dark mode version of the image named <code translate="no" v-pre>sample-dark.png</code> and place it in the same directory.</p>
+<p>If no dark variant exists, Retype uses the original image for both <strong>light</strong> and <strong>dark</strong> themes.</p>
 <p>This feature extends to favicons too. Place a <code translate="no" v-pre>favicon-dark.ico</code> or <code translate="no" v-pre>favicon-dark.svg</code> alongside your standard favicon and Retype automatically switches based on the user&#x27;s theme preference.</p>
 <doc-anchor-target id="supported-formats">
     <h3>
@@ -391,7 +398,7 @@ Additional content after backlinks...</code></pre>
         <span>Supported Formats</span>
     </h3>
 </doc-anchor-target>
-<p>All standard image formats are supported: AVIF, BMP, GIF, HEIF, JPEG, JPG, PNG, SVG, and WebP.</p>
+<p>All standard image formats are supported, including <code translate="no" v-pre>AVIF</code>, <code translate="no" v-pre>BMP</code>, <code translate="no" v-pre>GIF</code>, <code translate="no" v-pre>HEIF</code>, <code translate="no" v-pre>JPEG</code>, <code translate="no" v-pre>JPG</code>, <code translate="no" v-pre>PNG</code>, <code translate="no" v-pre>SVG</code>, and <code translate="no" v-pre>WebP</code>.</p>
 <doc-anchor-target id="color-preview-chips">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#color-preview-chips">#</doc-anchor-trigger>

@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824277532298">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824329180298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -35,15 +35,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824329180298" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824277532298" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824329180298" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824329180298" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -764,7 +764,7 @@ footer:
     <template #title>base : <code translate="no" v-pre>string</code></template>
 <p>An optional base path to a directory within the repository.</p>
 <p>The <code translate="no" v-pre>base</code> can be configured with an optional path to a directory within the <doc-anchor-trigger to="#repo"><code translate="no" v-pre>repo</code></doc-anchor-trigger>.</p>
-<p>The following sample demonstrates how <code translate="no" v-pre>edit.base</code> would be configured if the <strong>.md</strong> source files for this project are stored within the <strong>/src/docs</strong> sub-directory within the repo.</p>
+<p>The following sample demonstrates how <code translate="no" v-pre>edit.base</code> would be configured if the <code translate="no" v-pre>.md</code> source files for this project are stored within the <strong>/src/docs</strong> sub-directory within the repo.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">edit:
   repo: &quot;https://github.com/your-organization/your-repo&quot;
@@ -1225,7 +1225,7 @@ generator:
     </div>
 </div>
 <p>Include patterns are similar to allowable patterns within a <code translate="no" v-pre>.gitignore</code> file. The wildcards <code translate="no" v-pre>?</code>, <code translate="no" v-pre>*</code>, <code translate="no" v-pre>**</code>, and <code translate="no" v-pre>!</code> are supported.</p>
-<p>The following sample demonstrates how to include all <strong>.py</strong> files, all <strong>.js</strong> files that start with the name <code translate="no" v-pre>demo</code>, and the entire contents of any <code translate="no" v-pre>www</code> folder within the project.</p>
+<p>The following sample demonstrates how to include all <strong>.py</strong> files, all <code translate="no" v-pre>.js</code> files that start with the name <code translate="no" v-pre>demo</code>, and the entire contents of any <code translate="no" v-pre>www</code> folder within the project.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Include patterns</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">include:
@@ -1234,7 +1234,7 @@ generator:
   - &quot;**/www/**&quot;</code></pre>
 </doc-codeblock></div>
 <p>You could explicitly include everything in your project with <code translate="no" v-pre>include: [ &quot;*&quot; ]</code>, but be careful as all files within your <doc-anchor-trigger to="#input"><code translate="no" v-pre>input</code></doc-anchor-trigger> will be publicly availble once your website is published. We would not recommend doing this, but it&#x27;s your call. <span class="docs-emoji">&#x1F628;</span></p>
-<p>Retype treats all <strong>.md</strong> and <strong>.yml</strong> files as parsable content files that will be converted into <strong>.html</strong> files and are not copied over to the <doc-anchor-trigger to="#output"><code translate="no" v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code translate="no" v-pre>output</code> unchanged and become static files that can be linked to.</p>
+<p>Retype treats all <code translate="no" v-pre>.md</code> and <strong>.yml</strong> files as parsable content files that will be converted into <code translate="no" v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code translate="no" v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code translate="no" v-pre>output</code> unchanged and become static files that can be linked to.</p>
 <p>By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the <code translate="no" v-pre>output</code> unchanged. If you require any other file types, they would need to be explicitly added to the <code translate="no" v-pre>include</code> config.</p>
 <p>File types that are automatically included:</p>
 <ol>
@@ -1519,8 +1519,8 @@ host: docs.example.com/js/plausible.js</code></pre>
 </doc-anchor-target>
 <doc-panel id="link--string">
     <template #title>link : <code translate="no" v-pre>string</code></template>
-<p>The URL to use for the link. The link can be a <strong>.md</strong> file name, or to any internal path, or to any external URL.</p>
-<p>If a <strong>.md</strong> file set, such as <code translate="no" v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code translate="no" v-pre>sample.md</code> value will be replaced with the path to the actual generated <abbr title="Hyper Text Markup Language">HTML</abbr> file.</p>
+<p>The URL to use for the link. The link can be a <code translate="no" v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
+<p>If a <code translate="no" v-pre>.md</code> file set, such as <code translate="no" v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code translate="no" v-pre>sample.md</code> value will be replaced with the path to the actual generated <abbr title="Hyper Text Markup Language">HTML</abbr> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: About us
@@ -3258,7 +3258,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4Zm10 0v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/></svg>
                     <span>Page configuration</span>
                 </div>
-                <p>Individual .md pages can be configured using the metadata section added to the top of the page.</p>
+                <p>Individual .md pages can be configured using the Frontmatter metadata section added to the top of the page.</p>
             </div>
         </a>
         <a href="/guides/cli/" class="group no-link">

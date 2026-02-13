@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824277532298">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824329180298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Page configuration - Write On! with Retype</title>
     <meta name="title" content="Page configuration - Write On! with Retype">
-    <meta name="description" content="Individual .md pages can be configured using the metadata section added to the top of the page.">
+    <meta name="description" content="Individual .md pages can be configured using the Frontmatter metadata section added to the top of the page.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/configuration/page/">
@@ -22,26 +22,26 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/configuration/page/">
     <meta property="og:title" content="Page configuration - Write On! with Retype">
-    <meta property="og:description" content="Individual .md pages can be configured using the metadata section added to the top of the page.">
+    <meta property="og:description" content="Individual .md pages can be configured using the Frontmatter metadata section added to the top of the page.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/configuration/page/">
     <meta property="twitter:title" content="Page configuration - Write On! with Retype">
-    <meta property="twitter:description" content="Individual .md pages can be configured using the metadata section added to the top of the page.">
+    <meta property="twitter:description" content="Individual .md pages can be configured using the Frontmatter metadata section added to the top of the page.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824329180298" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824277532298" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824329180298" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824329180298" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -259,7 +259,7 @@
         <span>Page configuration</span>
     </h1>
 </doc-anchor-target>
-<p>Individual <strong>.md</strong> pages can be configured using the <a href="/faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
+<p>Individual <code translate="no" v-pre>.md</code> pages can be configured using the Frontmatter <a href="/faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
@@ -277,7 +277,7 @@ This is a sample page demonstrating page metadata.</code></pre>
         <span>Default pages</span>
     </h2>
 </doc-anchor-target>
-<p>Folder default pages are <strong>.md</strong> files that will be treated as the index (default) page of the folder.</p>
+<p>Folder default pages are <code translate="no" v-pre>.md</code> files that will be treated as the index (default) page of the folder.</p>
 <p>Retype will search using the following case insensitive priority:</p>
 <ol>
 <li><code translate="no" v-pre>index.md</code></li>
@@ -286,7 +286,7 @@ This is a sample page demonstrating page metadata.</code></pre>
 <li><code translate="no" v-pre>welcome.md</code> *only in the project root</li>
 <li><code translate="no" v-pre>home.md</code> *only in the project root</li>
 </ol>
-<p>Within a sub-folder, if you add a Markdown <strong>.md</strong> file with the exact same name as the folder name, Retype will also treat that <code translate="no" v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
+<p>Within a sub-folder, if you add a Markdown <code translate="no" v-pre>.md</code> file with the exact same name as the folder name, Retype will also treat that <code translate="no" v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">sample
   |-- sample.md
@@ -299,10 +299,10 @@ retype.yml</code></pre>
         <span>Separate .yml file</span>
     </h2>
 </doc-anchor-target>
-<p>If you would prefer to keep the page metadata separated and placed outside of the <strong>.md</strong> content page, the config can be moved into a paired <strong>.yml</strong> file.</p>
-<p>For instance, <strong>sample.md</strong> would need a matching <strong>sample.yml</strong> file. The separate <strong>.yml</strong> file must have the exact same filename as its paired <strong>.md</strong> page.</p>
+<p>If you would prefer to keep the page metadata separated and placed outside of the <code translate="no" v-pre>.md</code> content page, the config can be moved into a paired <strong>.yml</strong> file.</p>
+<p>For instance, <strong>sample.md</strong> would need a matching <strong>sample.yml</strong> file. The separate <strong>.yml</strong> file must have the exact same filename as its paired <code translate="no" v-pre>.md</code> page.</p>
 <p>Both <strong>.yml</strong> and <strong>.yaml</strong> extensions are supported.</p>
-<p>Adding your configs into the top metadata section of a <strong>.md</strong> page, or into a separate <strong>.yml</strong> file is just a matter of preference. Both techniques produce the same result.</p>
+<p>Adding your configs into the top metadata section of a <code translate="no" v-pre>.md</code> page, or into a separate <strong>.yml</strong> file is just a matter of preference. Both techniques produce the same result.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># Sample
@@ -329,7 +329,7 @@ order: 100</code></pre>
         </div>
         <div class="pr-5 ml-3 w-full">
 <p>If you add configs to both locations, the page <a href="/faq/#what-is-page-metadata">metadata</a> takes precedence, even if they are different configs.</p>
-<p>If you add one or more configs to a <strong>.md</strong> page, Retype will not look for nor read the separate <strong>.yml</strong> file. Just use one or the other, but not both.</p>
+<p>If you add one or more configs to a <code translate="no" v-pre>.md</code> page, Retype will not look for nor read the separate <strong>.yml</strong> file. Just use one or the other, but not both.</p>
         </div>
     </div>
 </div>
@@ -578,7 +578,7 @@ backlinks:
 <doc-panel id="category--string-or-list">
     <template #title>category : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>list</code></template>
 <p>A category for this page.</p>
-<p>A single <code translate="no" v-pre>category</code> or a list of <code translate="no" v-pre>categories</code> can be configured in each <strong>.md</strong> page you would like to categorize.</p>
+<p>A single <code translate="no" v-pre>category</code> or a list of <code translate="no" v-pre>categories</code> can be configured in each <code translate="no" v-pre>.md</code> page you would like to categorize.</p>
 <p>The <code translate="no" v-pre>category</code> is meant to be a broad grouping of content, where <doc-anchor-trigger to="#tags"><code translate="no" v-pre>tags</code></doc-anchor-trigger> are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
 <p>All of the following are acceptable techniques for configuring a single <code translate="no" v-pre>category</code> or multiple <code translate="no" v-pre>categories</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -631,7 +631,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
 <p>The <code translate="no" v-pre>expanded</code> option only applies to <a href="/configuration/folder/">folders</a> when configured within an <strong>index.yml</strong> folder configuration file.</p>
-<p>Setting <code translate="no" v-pre>expanded: true</code> within the metadata of an <strong>.md</strong> page or the paired <strong>.yml</strong> file will be ignored.</p>
+<p>Setting <code translate="no" v-pre>expanded: true</code> within the metadata of an <code translate="no" v-pre>.md</code> page or the paired <strong>.yml</strong> file will be ignored.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="icon">
@@ -729,7 +729,7 @@ date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)</code></pre>
 <tbody>
 <tr>
 <td><code translate="no" v-pre>default</code></td>
-<td>The default layout for all <strong>.md</strong> pages. The page is added to the main navigation.</td>
+<td>The default layout for all <code translate="no" v-pre>.md</code> pages. The page is added to the main navigation.</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>page</code></td>
@@ -1184,7 +1184,7 @@ permalink: /custom/path
 Some content here.</code></pre>
 </doc-codeblock></div>
 <p>A <code translate="no" v-pre>permalink</code> allows the folder and file structure to remain unchanged, but allowing the final URL&#x27;s to be customized.</p>
-<p>Configuring the <code translate="no" v-pre>permalink</code> is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <strong>.md</strong> files into a new structure. A <code translate="no" v-pre>permalink</code> allows for a clean disconnect of the page path from the final published URL path.</p>
+<p>Configuring the <code translate="no" v-pre>permalink</code> is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL&#x27;s, but would prefer to re-organize your <code translate="no" v-pre>.md</code> files into a new structure. A <code translate="no" v-pre>permalink</code> allows for a clean disconnect of the page path from the final published URL path.</p>
 <p>In the following sample, the generated URL by Retype would be <code translate="no" v-pre>/guide/2021-06-25-publishing-to-github-pages/</code>, but we override with a custom permalink which will publish the page to <code translate="no" v-pre>/tutorial/publish-to-github-pages/</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/guide/2021-06-25-publishing-to-github-pages.md</div>
@@ -1272,7 +1272,7 @@ redirect: getting-started.md
 </doc-anchor-target>
 <doc-panel id="tags--list">
     <template #title>tags : <code translate="no" v-pre>list</code></template>
-<p>A list of tags can be added to the metadata at the top of each <strong>.md</strong> page you would like to tag.</p>
+<p>A list of tags can be added to the metadata at the top of each <code translate="no" v-pre>.md</code> page you would like to tag.</p>
 <p>The <code translate="no" v-pre>tags</code> are meant to describe specific details of the content in that page. Tags are similar to <doc-anchor-trigger to="#category"><code translate="no" v-pre>category</code></doc-anchor-trigger>, although <code translate="no" v-pre>category</code> is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.</p>
 <p>If tags are configured in the page metadata, a list of tag links are added to the bottom of the page. See the bottom of this page for a working sample.</p>
 <p>Individual tag summary pages will be automatically generated by Retype at <a href="/tags/guide/"><code translate="no" v-pre>&lt;url&gt;/tags/&lt;tag&gt;</code></a>, plus an additional <a href="/tags/"><code translate="no" v-pre>&lt;url&gt;/tags</code></a> index page which lists all tags and their count used within the project.</p>
@@ -1427,7 +1427,7 @@ templating: false
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The <code translate="no" v-pre>title</code> is primarily used to support backwards compatibiity with the <strong>.md</strong> content style from other older legacy static site generator applications.</p>
+<p>The <code translate="no" v-pre>title</code> is primarily used to support backwards compatibiity with the <code translate="no" v-pre>.md</code> content style from other older legacy static site generator applications.</p>
         </div>
     </div>
 </div>
@@ -1714,7 +1714,7 @@ retype build --password &lt;your-password&gt;</code></pre>
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M2.5 10.5a8 8 0 1 1 16 0 .75.75 0 0 0 1.5 0 9.5 9.5 0 1 0-9.5 9.5h10.94l-2.72 2.72a.75.75 0 1 0 1.06 1.06l3.735-3.735c.44-.439.44-1.151 0-1.59L19.78 14.72a.75.75 0 0 0-1.06 1.06l2.72 2.72H10.5a8 8 0 0 1-8-8Z"/></svg>
                     <span>Backlinks</span>
                 </div>
-                <p>This component is Retype PRO only.</p>
+                <p>The Backlinks component displays a list of pages that link to the current page.</p>
             </div>
         </a>
         <a href="/changelog/" class="group no-link">

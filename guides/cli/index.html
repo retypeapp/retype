@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824277532298">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824329180298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824329180298" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824277532298" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824329180298" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824329180298" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -369,7 +369,7 @@ Options:
     </h2>
 </doc-anchor-target>
 <p>You can manually create a <strong>retype.yml</strong> file, or you can have Retype stub out a basic file with a few initial values by running the command <code translate="no" v-pre>retype init</code>.</p>
-<p>From your command line, navigate to any folder location where you have one or more Markdown <strong>.md</strong> files, such as the root of a GitHub project, then run the following command:</p>
+<p>From your command line, navigate to any folder location where you have one or more Markdown <code translate="no" v-pre>.md</code> files, such as the root of a GitHub project, then run the following command:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype init</code></pre>
 </doc-codeblock></div>
@@ -431,12 +431,12 @@ Options:
         <span><code translate="no" v-pre>retype build</code></span>
     </h2>
 </doc-anchor-target>
-<p>To generate your new website, run the command <code translate="no" v-pre>retype build</code>. This command builds a new website based upon the <strong>.md</strong> files within the <a href="/configuration/project/"><code translate="no" v-pre>input</code></a> location.</p>
+<p>To generate your new website, run the command <code translate="no" v-pre>retype build</code>. This command builds a new website based upon the <code translate="no" v-pre>.md</code> files within the <a href="/configuration/project/"><code translate="no" v-pre>input</code></a> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype build</code></pre>
 </doc-codeblock></div>
 <p>Within just a few seconds, Retype will create a new website and save to the <code translate="no" v-pre>output</code> location as defined in the <strong>retype.yml</strong>. By default, the <code translate="no" v-pre>output</code> location is a new folder named <code translate="no" v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
-<p>If the <strong>.md</strong> documentation files for your project were not located in the root (<code translate="no" v-pre>.</code>) but within a <code translate="no" v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code translate="no" v-pre>website</code> folder, you would use the following config:</p>
+<p>If the <code translate="no" v-pre>.md</code> documentation files for your project were not located in the root (<code translate="no" v-pre>.</code>) but within a <code translate="no" v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code translate="no" v-pre>website</code> folder, you would use the following config:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: docs
 output: website</code></pre>
@@ -446,7 +446,7 @@ output: website</code></pre>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: docs
 output: website/docs</code></pre>
 </doc-codeblock></div>
-<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code translate="no" v-pre>docs</code> folder, you could then move your <strong>.md</strong> files into a different subfolder and configure as follows:</p>
+<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code translate="no" v-pre>docs</code> folder, you could then move your <code translate="no" v-pre>.md</code> files into a different subfolder and configure as follows:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: src
 output: docs</code></pre>
@@ -751,7 +751,7 @@ Options:
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg>
                     <span>Markdown Docs Generator</span>
                 </div>
-                <p>Retype is a static website generator that builds a website based on simple Markdown (.md) text files.</p>
+                <p>Retype is a static website generator that transforms simple Markdown .md files into a complete website you fully own and can self-host anywhere.</p>
             </div>
         </a>
         <a href="/blog/2025-06-06-new-github-pages-community-key/" class="group no-link">

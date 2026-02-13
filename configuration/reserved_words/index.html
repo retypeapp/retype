@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824277532298">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824329180298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,14 +33,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824329180298" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824277532298" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824329180298" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824277532298" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824329180298" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -290,7 +290,7 @@
     </h3>
 </doc-anchor-target>
 <p>The <code translate="no" v-pre>/blog</code> folder is intended to host a Blog for your website.</p>
-<p>By default, <strong>.md</strong> pages created within the <code translate="no" v-pre>/blog</code> folder are assigned the <code translate="no" v-pre>layout: blog</code> layout, plus some additional features:</p>
+<p>By default, <code translate="no" v-pre>.md</code> pages created within the <code translate="no" v-pre>/blog</code> folder are assigned the <code translate="no" v-pre>layout: blog</code> layout, plus some additional features:</p>
 <ul>
 <li>A summary page of the blog posts is automatically created at <code translate="no" v-pre>/blog</code>.</li>
 <li>An RSS feed of the recent blog posts is created.</li>
@@ -320,7 +320,7 @@
         <span>/categories</span>
     </h3>
 </doc-anchor-target>
-<p>The default index page of the <code translate="no" v-pre>/categories</code> directory is reserved for a summary of any <a href="/configuration/page/#category">category</a> configs. Every category configured within an <strong>.md</strong> page of your Retype project will have a corresponding entry here.</p>
+<p>The default index page of the <code translate="no" v-pre>/categories</code> directory is reserved for a summary of any <a href="/configuration/page/#category">category</a> configs. Every category configured within an <code translate="no" v-pre>.md</code> page of your Retype project will have a corresponding entry here.</p>
 <p>Similar to <doc-anchor-trigger to="#tags"><code translate="no" v-pre>/tags</code></doc-anchor-trigger>, you can also add content to the <code translate="no" v-pre>/categories</code> page by creating your own <code translate="no" v-pre>/categories/index.md</code> page. Retype will create your page as normal and then add the list of Categories below your custom content.</p>
 <doc-anchor-target id="resources">
     <h3>
@@ -335,7 +335,7 @@
         <span>/tags</span>
     </h3>
 </doc-anchor-target>
-<p>The <code translate="no" v-pre>/tags</code> directory is reserved for <a href="/configuration/page/#tags">tags</a>. Every tag name configured within an <strong>.md</strong> page will have a corresponding entry here.</p>
+<p>The <code translate="no" v-pre>/tags</code> directory is reserved for <a href="/configuration/page/#tags">tags</a>. Every tag name configured within an <code translate="no" v-pre>.md</code> page will have a corresponding entry here.</p>
 <p>Similar to <doc-anchor-trigger to="#categories"><code translate="no" v-pre>/categories</code></doc-anchor-trigger>, you can also add content to the <code translate="no" v-pre>/tags</code> page by creating your own <code translate="no" v-pre>/tags/index.md</code> page. Retype will create your page as normal and then add the list of Tags below your custom content.</p>
 <hr>
 <doc-anchor-target id="files">
@@ -359,7 +359,7 @@
         <span>Default pages</span>
     </h3>
 </doc-anchor-target>
-<p>Folder default pages are <strong>.md</strong> files that will be treated as the index (default) page of the folder.</p>
+<p>Folder default pages are <code translate="no" v-pre>.md</code> files that will be treated as the index (default) page of the folder.</p>
 <p>Retype will search using the following case insensitive priority:</p>
 <ol>
 <li><code translate="no" v-pre>index.md</code></li>
@@ -368,7 +368,7 @@
 <li><code translate="no" v-pre>welcome.md</code> *only in the project root</li>
 <li><code translate="no" v-pre>home.md</code> *only in the project root</li>
 </ol>
-<p>Within a sub-folder, if you add a Markdown <strong>.md</strong> file with the exact same name as the folder name, Retype will also treat that <code translate="no" v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
+<p>Within a sub-folder, if you add a Markdown <code translate="no" v-pre>.md</code> file with the exact same name as the folder name, Retype will also treat that <code translate="no" v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">sample
   |-- sample.md
