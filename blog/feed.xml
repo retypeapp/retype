@@ -5,7 +5,7 @@
     <link>https://retype.com/blog/</link>
     <description>Blog &amp; News</description>
     <copyright>© Copyright 2026 - Retype | All rights reserved | Made in Canada 🇨🇦 | v3.12.0</copyright>
-    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 GMT</lastBuildDate>
     <generator>https://retype.com</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://retype.com/blog/feed.xml" />
     <image>
@@ -13,6 +13,14 @@
       <link>https://retype.com/blog/</link>
       <url>https://retype.com/favicon.ico</url>
     </image>
+    <item>
+      <title>What's New in Retype v3.12</title>
+      <guid isPermaLink="true">https://retype.com/blog/2026-02-10-whats-new-in-retype-v312/</guid>
+      <description>Retype v3.12 brings powerful new features for content discovery, visual design, and theme customization. This release introduces the </description>
+      <author>geoff@retype.com (@geoffreymcgill)</author>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
+    </item>
     <item>
       <title>What's New in Retype v3.11</title>
       <guid isPermaLink="true">https://retype.com/blog/2025-07-02-whats-new-in-retype-v311/</guid>
