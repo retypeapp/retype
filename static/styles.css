@@ -1,8 +1,56 @@
-blockquote.callout, .dark blockquote.callout {
-    font-size: 1.875rem;
-    font-weight: 500;
+/* Modern callout blockquote styling */
+blockquote.callout {
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-style: italic;
     text-align: center;
-    background-color: transparent;
-    border-left-width: 0;
     line-height: 1.5em;
+    padding: 3rem 2.5rem 2.5rem;
+    margin: 3rem auto;
+    max-width: 50rem;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--base-500) 3%, transparent) 0%, color-mix(in srgb, var(--base-500) 8%, transparent) 100%);
+    border-left-width: 0;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Accent line at bottom */
+blockquote.callout::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.25rem;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--base-500) 40%, transparent), color-mix(in srgb, var(--base-500) 80%, transparent), color-mix(in srgb, var(--base-500) 40%, transparent));
+    border-radius: 0.125rem;
+    transition: width 0.3s ease;
+}
+
+/* Hover effect */
+blockquote.callout:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--base-500) 5%, transparent) 0%, color-mix(in srgb, var(--base-500) 12%, transparent) 100%);
+}
+
+blockquote.callout:hover::after {
+    width: 8rem;
+}
+
+/* Dark mode styling */
+.dark blockquote.callout {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--base-500) 8%, transparent) 0%, color-mix(in srgb, var(--base-500) 15%, transparent) 100%);
+}
+
+.dark blockquote.callout::before {
+    color: color-mix(in srgb, var(--base-500) 25%, transparent);
+}
+
+.dark blockquote.callout::after {
+    background: linear-gradient(90deg, color-mix(in srgb, var(--base-500) 50%, transparent), var(--base-500), color-mix(in srgb, var(--base-500) 50%, transparent));
+}
+
+.dark blockquote.callout:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--base-500) 12%, transparent) 0%, color-mix(in srgb, var(--base-500) 20%, transparent) 100%);
 }
