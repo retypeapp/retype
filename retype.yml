@@ -4,6 +4,7 @@ outbound:
   exclude:
     - retype.com
     - github.com
+    - stripe.com
 
 breadcrumb:
   home: ":icon-home:"

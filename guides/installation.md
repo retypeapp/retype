@@ -4,7 +4,7 @@ icon: desktop-download
 ---
 # Installation
 
-Installation of Retype is super quick and you can be up and running within seconds.
+Retype is a command line tool. Installation is super quick and you can be up and running within seconds.
 
 !!!
 Please see the [Retype CLI](cli.md) for full details on each command.
@@ -16,7 +16,7 @@ Please see the [Retype CLI](cli.md) for full details on each command.
 
 Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
-You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you. :raised_hands:
+You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
 
 | Package Manager | Supported Platforms |
 | --- | --- |
@@ -47,7 +47,7 @@ retype start
 ```
 +++
 
-That's it! :tada: Your new Retype website should be up and running. :tada:
+That's it! Your new Retype website should be up and running. :tada:
 
 !!!
 If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance.

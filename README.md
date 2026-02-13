@@ -4,7 +4,7 @@ icon: home
 backlinks:
   enabled: false
 ---
-# Write On! with Retype
+# Markdown Docs Generator
 
 ![](/static/retype-hero.png)
 
@@ -89,7 +89,7 @@ If a change is detected, such as editing and saving an **.md** file, your Retype
 
 #### :icon-server: Host anywhere
 
-Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
+Retype generates an HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
 
 ---
 

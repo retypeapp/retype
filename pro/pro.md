@@ -18,13 +18,12 @@ Build more pages and unlock powerful **Pro** only features.
 | ---    | :---: | :---: | :---:      |
 |        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/28EbJ1agXcyHgk67Kr9IQ0r) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $499 |
-| Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years | 3 years |
-| Pro projects [:icon-question:](#what-is-a-project)<br>^* per domain name^ | Unlimited | 1 | Unlimited&nbsp;^[*](#what-is-a-project)^ |
+| Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years, or<br>[+$149 Forever](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | 3 years, or<br>[+$499 Forever](https://buy.stripe.com/28EbJ1agXcyHgk67Kr9IQ0r) |
+| Projects [:icon-question:](#what-is-a-project) | Unlimited | 1&nbsp;^[*](#what-is-a-project)^ | Unlimited&nbsp;^[*](#what-is-a-project)^ |
 | Max pages per project [:icon-question:](#what-is-a-project) | 100 | Unlimited | Unlimited |
-| Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | :icon-infinity: | :icon-infinity: | :icon-infinity: |
+| Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | Unlimited | Unlimited | Unlimited |
 | Commercial use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | Open source use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| Free upgrades | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Stacked](/configuration/project.md#nav) nav mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] Color [scheme](/configuration/project.md#scheme) mode (dark vs light) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
