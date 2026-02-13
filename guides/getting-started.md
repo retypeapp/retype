@@ -5,7 +5,9 @@ tags: [guide]
 ---
 # Getting Started
 
+***
 This guide will have you up and running generating your own Retype website in just a few minutes.
+***
 
 ## What is Retype?
 

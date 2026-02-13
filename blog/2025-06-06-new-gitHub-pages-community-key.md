@@ -31,15 +31,12 @@ retype wallet --add dEVPBhEAT01MR0NBQ0xBT0VHR0NDR0dGT09PRUFDTEZARE9PT09FRERET15a
 
 With the community key, you can now setup your project to be hosted using **GitHub Pages**. Please review the documentation to configure a [[GitHub Pages]] project with Retype with automatic deployment using [[GitHub Actions]].
 
-!!!tip
-Do you have any questions? Feel free to contact us using the **:icon-comment: live chat** (see bottom right corner). If we're online, we will be more than happy to answer questions or step you through any setup troublshooting.
-!!!
-
 ## What is included
 
 - [x] Open-source and Commercial use
 - [x] Unlock all projects hosted on `*.github.io`
 - [x] Up to 1000 pages
+- [x] All Pro Components
 - [x] Free, no cost
 - [x] Free Retype Pro upgrades
 - [x] Retype Pro features, including [nav](/configuration/project.md#nav), [scheme](/configuration/project.md#scheme), [outbound](/configuration/project.md#outbound), [breadcrumb](/configuration/project.md#breadcrumb), plus all future **Retype Pro** features

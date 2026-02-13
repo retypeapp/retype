@@ -6,9 +6,9 @@ nav:
 ---
 # Backlinks
 
-This component is Retype [!badge PRO](/pro/pro.md) only.
-
 The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the `[!backlinks]` markdown component syntax.
+
+This component is Retype [!badge PRO](/pro/pro.md) only.
 
 ```md
 [!backlinks]

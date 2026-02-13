@@ -35,7 +35,7 @@ Configure backlinks at the [project](/configuration/project.md#backlinks) or [pa
 ```yaml retype.yml
 # Project configuration
 backlinks:
-  enabled: true # or false to disable
+  enabled: true # or false to disable project-wide
   title: "Referenced by"
   maxResults: 10
 ```
@@ -73,15 +73,19 @@ The Backlinks component creates natural pathways between related topics, improve
 
 Retype now automatically detects and switches between light and dark image variants based on the active theme. Simply add another image file to your project with the same file name but with a `-dark` suffix and Retype handles everything else automatically.
 
+![](images/2026-02-10-switcher.png)
+
 ### Zero Configuration
 
-Drop your dark variant files alongside the originals with a `-dark` suffix. No manual configuration required. If no dark variant exists, Retype uses the original image for both **light** and **dark** themes.
+Drop your dark variant image files alongside the originals with a `-dark` suffix. No manual configuration required. For example, if you have an image named `sample.png`, create a dark mode version of the image named `sample-dark.png` and place it in the same directory.
+
+If no dark variant exists, Retype uses the original image for both **light** and **dark** themes.
 
 This feature extends to favicons too. Place a `favicon-dark.ico` or `favicon-dark.svg` alongside your standard favicon and Retype automatically switches based on the user's theme preference.
 
 ### Supported Formats
 
-All standard image formats are supported: AVIF, BMP, GIF, HEIF, JPEG, JPG, PNG, SVG, and WebP.
+All standard image formats are supported, including `AVIF`, `BMP`, `GIF`, `HEIF`, `JPEG`, `JPG`, `PNG`, `SVG`, and `WebP`.
 
 ## Color Preview Chips
 

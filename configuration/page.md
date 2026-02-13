@@ -6,7 +6,7 @@ tags: [config]
 ---
 # Page configuration
 
-Individual **.md** pages can be configured using the [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.
+Individual `.md` pages can be configured using the Frontmatter [metadata](/faq.md#what-is-page-metadata) section added to the top of the page.
 
 ```md sample.md
 ---
@@ -25,13 +25,13 @@ This is a sample page demonstrating page metadata.
 
 ## Separate .yml file
 
-If you would prefer to keep the page metadata separated and placed outside of the **.md** content page, the config can be moved into a paired **.yml** file.
+If you would prefer to keep the page metadata separated and placed outside of the `.md` content page, the config can be moved into a paired **.yml** file.
 
-For instance, **sample.md** would need a matching **sample.yml** file. The separate **.yml** file must have the exact same filename as its paired **.md** page.
+For instance, **sample.md** would need a matching **sample.yml** file. The separate **.yml** file must have the exact same filename as its paired `.md` page.
 
 Both **.yml** and **.yaml** extensions are supported.
 
-Adding your configs into the top metadata section of a **.md** page, or into a separate **.yml** file is just a matter of preference. Both techniques produce the same result.
+Adding your configs into the top metadata section of a `.md` page, or into a separate **.yml** file is just a matter of preference. Both techniques produce the same result.
 
 ```md sample.md
 # Sample
@@ -48,7 +48,7 @@ order: 100
 !!!
 If you add configs to both locations, the page [metadata](/faq.md#what-is-page-metadata) takes precedence, even if they are different configs.
 
-If you add one or more configs to a **.md** page, Retype will not look for nor read the separate **.yml** file. Just use one or the other, but not both.
+If you add one or more configs to a `.md` page, Retype will not look for nor read the separate **.yml** file. Just use one or the other, but not both.
 !!!
 
 See [folder configuration](folder.md) for details on how to configure a folder.
@@ -257,7 +257,7 @@ The configuration name `categories` is also supported. The name `categories` is 
 
 A category for this page.
 
-A single `category` or a list of `categories` can be configured in each **.md** page you would like to categorize.
+A single `category` or a list of `categories` can be configured in each `.md` page you would like to categorize.
 
 The `category` is meant to be a broad grouping of content, where [`tags`](#tags) are meant to describe specific details of the content in that particular page. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.
 
@@ -321,7 +321,7 @@ expanded: true
 
 The `expanded` option only applies to [folders](folder.md) when configured within an **index.yml** folder configuration file.
 
-Setting `expanded: true` within the metadata of an **.md** page or the paired **.yml** file will be ignored.
+Setting `expanded: true` within the metadata of an `.md` page or the paired **.yml** file will be ignored.
 ===
 
 ---
@@ -404,7 +404,7 @@ Supported values: `default`, `central`, `page`, and `blog`.
 
 Layout | Description
 --- | ---
-`default` | The default layout for all **.md** pages. The page is added to the main navigation.
+`default` | The default layout for all `.md` pages. The page is added to the main navigation.
 `page` | Similar to `default` layout, but is not added to the main navigation.
 `central` | A page with no left or right sidebar columns.
 `blog` | A blog page layout. Blog pages are not added to the main navigation and include blog specific `< Newer` and `Older >` navigation buttons at the bottom of each blog page.
@@ -717,7 +717,7 @@ Some content here.
 
 A `permalink` allows the folder and file structure to remain unchanged, but allowing the final URL's to be customized.
 
-Configuring the `permalink` is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL's, but would prefer to re-organize your **.md** files into a new structure. A `permalink` allows for a clean disconnect of the page path from the final published URL path.
+Configuring the `permalink` is an excellent solution when moving to Retype from another platform and you would like to maintain existing public URL's, but would prefer to re-organize your `.md` files into a new structure. A `permalink` allows for a clean disconnect of the page path from the final published URL path.
 
 In the following sample, the generated URL by Retype would be `/guide/2021-06-25-publishing-to-github-pages/`, but we override with a custom permalink which will publish the page to `/tutorial/publish-to-github-pages/`.
 
@@ -791,7 +791,7 @@ See [permalink](#permalink).
 
 === tags : `list`
 
-A list of tags can be added to the metadata at the top of each **.md** page you would like to tag.
+A list of tags can be added to the metadata at the top of each `.md` page you would like to tag.
 
 The `tags` are meant to describe specific details of the content in that page. Tags are similar to [`category`](#category), although `category` is meant to describe be a broad grouping of content. A page can belong to multiple (zero to many) categories and have multiple (zero to many) tags.
 
@@ -904,7 +904,7 @@ The `title` config instructs Retype to add a primary `# Page Title` to your page
 As a general rule, the actual content of your page should not be configured in the page metadata.
 
 !!!
-The `title` is primarily used to support backwards compatibiity with the **.md** content style from other older legacy static site generator applications.
+The `title` is primarily used to support backwards compatibiity with the `.md` content style from other older legacy static site generator applications.
 !!!
 
 The following sample demonstrates setting the `title` config instead of explicitly using a `# Page Title` to your page.

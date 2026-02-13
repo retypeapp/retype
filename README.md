@@ -8,7 +8,7 @@ backlinks:
 
 ![](/static/retype-hero.png)
 
-[Retype](https://retype.com/) is a static website generator that builds a website based on simple Markdown (.md) text files. Focus on your writing while Retype builds the rest.
+[Retype](https://retype.com/) is a static website generator that transforms simple Markdown `.md` files into a complete website you fully own and can self-host anywhere.
 
 {.callout}
 > “I don't want to write code to write docs, I just want to write docs.”
@@ -30,9 +30,9 @@ A new Retype powered website can be up and running within seconds once Retype is
 
 You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
-From your command line, navigate to a folder location where you have one or more Markdown (.md) files, such as a GitHub project.
+From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
 
-Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype start` [command](/guides/cli.md#retype-start):
+Next, choose one of the following tools to first install the `retypeapp` and then start Retype by using the `retype start` [command](/guides/cli.md#retype-start):
 
 +++ NPM
 ```
@@ -73,7 +73,7 @@ Don't blink. Retype was built for speed.
 
 #### :icon-gear: Easy install
 
-[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown **.md** file which Retype will start building a new website from.
+[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown `.md` file which Retype will start building a new website from.
 
 #### :icon-plug: Powerful
 
@@ -85,7 +85,7 @@ Pages are [formatted](/guides/formatting.md) using Markdown syntax and Retype [c
 
 #### :icon-sync: Live reload
 
-If a change is detected, such as editing and saving an **.md** file, your Retype website will be updated almost instantly within the browser.
+If a change is detected, such as editing and saving an `.md` file, your Retype website will be updated almost instantly within the browser.
 
 #### :icon-server: Host anywhere
 

@@ -20,4 +20,4 @@ Retype Flavored [Markdown](/guides/formatting.md) (RFM) supports custom **Compon
 | [:icon-list-unordered: List](list.md) | [:icon-image: Image](image.md) | [:icon-play: Button](button.md)
 | [:icon-table: Table](table.md) | [:icon-download: File Download](file-download.md) | [:icon-info: Callout](callout.md)
 |  | [:icon-video: YouTube](youtube.md) | [:icon-link: Reference Link](reference-link.md)
-|  | [:icon-code-review: Embed](embed.md) | |
+|  | [:icon-code-review: Embed](embed.md) | [:icon-iterations: Backlinks](backlinks.md)

@@ -18,7 +18,7 @@ All paths to folders or files within Retype are relative to your project [input]
 
 The `/blog` folder is intended to host a Blog for your website.
 
-By default, **.md** pages created within the `/blog` folder are assigned the `layout: blog` layout, plus some additional features:
+By default, `.md` pages created within the `/blog` folder are assigned the `layout: blog` layout, plus some additional features:
 
 - A summary page of the blog posts is automatically created at `/blog`.
 - An RSS feed of the recent blog posts is created.
@@ -31,7 +31,7 @@ Be sure to review the [`author`](/configuration/page.md#author) and [`date`](/co
 
 ### /categories
 
-The default index page of the `/categories` directory is reserved for a summary of any [category](/configuration/page.md#category) configs. Every category configured within an **.md** page of your Retype project will have a corresponding entry here.
+The default index page of the `/categories` directory is reserved for a summary of any [category](/configuration/page.md#category) configs. Every category configured within an `.md` page of your Retype project will have a corresponding entry here.
 
 Similar to [`/tags`](#tags), you can also add content to the `/categories` page by creating your own `/categories/index.md` page. Retype will create your page as normal and then add the list of Categories below your custom content.
 
@@ -41,7 +41,7 @@ Any files placed within this directory will be copied to the [output](/configura
 
 ### /tags
 
-The `/tags` directory is reserved for [tags](/configuration/page.md#tags). Every tag name configured within an **.md** page will have a corresponding entry here.
+The `/tags` directory is reserved for [tags](/configuration/page.md#tags). Every tag name configured within an `.md` page will have a corresponding entry here.
 
 Similar to [`/categories`](#categories), you can also add content to the `/tags` page by creating your own `/tags/index.md` page. Retype will create your page as normal and then add the list of Tags below your custom content.
 

@@ -421,7 +421,7 @@ An optional base path to a directory within the repository.
 
 The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
 
-The following sample demonstrates how `edit.base` would be configured if the **.md** source files for this project are stored within the **/src/docs** sub-directory within the repo.
+The following sample demonstrates how `edit.base` would be configured if the `.md` source files for this project are stored within the **/src/docs** sub-directory within the repo.
 
 ```yml
 edit:
@@ -763,7 +763,7 @@ That file or file type does not need to be explicitly configured to be included.
 
 Include patterns are similar to allowable patterns within a `.gitignore` file. The wildcards `?`, `*`, `**`, and `!` are supported.
 
-The following sample demonstrates how to include all **.py** files, all **.js** files that start with the name `demo`, and the entire contents of any `www` folder within the project.
+The following sample demonstrates how to include all **.py** files, all `.js` files that start with the name `demo`, and the entire contents of any `www` folder within the project.
 
 ```yml Include patterns
 include:
@@ -774,7 +774,7 @@ include:
 
 You could explicitly include everything in your project with `include: [ "*" ]`, but be careful as all files within your [`input`](#input) will be publicly availble once your website is published. We would not recommend doing this, but it's your call. :fearful:
 
-Retype treats all **.md** and **.yml** files as parsable content files that will be converted into **.html** files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
+Retype treats all `.md` and **.yml** files as parsable content files that will be converted into `.html` files and are not copied over to the [`output`](#output). All other included file types would be copied straight across to the `output` unchanged and become static files that can be linked to.
 
 By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the `output` unchanged. If you require any other file types, they would need to be explicitly added to the `include` config.
 
@@ -1011,9 +1011,9 @@ links:
 
 === link : `string`
 
-The URL to use for the link. The link can be a **.md** file name, or to any internal path, or to any external URL.
+The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
 
-If a **.md** file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
+If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
 
 ```yml
 links:

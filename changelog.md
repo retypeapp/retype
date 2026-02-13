@@ -453,7 +453,7 @@ generator:
 **Released:** [2022-03-22](https://github.com/retypeapp/retype/releases/tag/v2.1.0)
 
 +++ New :icon-shield-check:
-1. Deploy **.html** and `.htm` files from [`input`](/configuration/project.md#input) to [`output`](/configuration/project.md#output) by default. See [#302](https://github.com/retypeapp/retype/issues/302).
+1. Deploy `.html` and `.htm` files from [`input`](/configuration/project.md#input) to [`output`](/configuration/project.md#output) by default. See [#302](https://github.com/retypeapp/retype/issues/302).
 1. Apply generic attribute syntax to Retype generated [`<table>`](/components/table.md#compact) element.
 +++ Fixed :icon-bug:
 1. Project [`include`](/configuration/project.md#include) config not including pages if `_*` configured. See [#296](https://github.com/retypeapp/retype/discussions/296).
@@ -595,7 +595,7 @@ This release failed to run properly if the NPM package was installed. 🧐 We di
 1. Auto-generate a `robots.txt` file.
 1. Open Graph and Twitter meta tags generated for every page.
 1. [`serve.host`](/configuration/project.md#host) and [`serve.port`](/configuration/project.md#port) project configs.
-1. `/blog` summary for any **.md** page added to a `/blog` folder.
+1. `/blog` summary for any `.md` page added to a `/blog` folder.
 1. [`author`](/configuration/page.md#author), [`category`](/configuration/page.md#category), and [`date`](/configuration/page.md#date) page configs.
 1. [`redirect`](/configuration/page.md#redirect) page config.
 1. [`visibility`](/configuration/page.md#visibility) page config.
@@ -645,7 +645,7 @@ Released: 2021-05-12
 1. [`port`](/configuration/project.md#port) project config
 1. Larger font-size for `h1`, `h2`, and `h3` headers.
 1. Better handing of special characters within file names.
-1. Cleaner handling of **.md** pages created by GitHub Wiki.
+1. Cleaner handling of `.md` pages created by GitHub Wiki.
 +++
 
 ## v1.4.0

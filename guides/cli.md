@@ -94,7 +94,7 @@ If you _really really really_ want to try public self-hosting using the built in
 
 You can manually create a **retype.yml** file, or you can have Retype stub out a basic file with a few initial values by running the command `retype init`.
 
-From your command line, navigate to any folder location where you have one or more Markdown **.md** files, such as the root of a GitHub project, then run the following command:
+From your command line, navigate to any folder location where you have one or more Markdown `.md` files, such as the root of a GitHub project, then run the following command:
 
 ```
 retype init
@@ -158,7 +158,7 @@ See the [`--override`](#retype---override) docs below for additional details.
 
 ## `retype build`
 
-To generate your new website, run the command `retype build`. This command builds a new website based upon the **.md** files within the [`input`](/configuration/project.md) location.
+To generate your new website, run the command `retype build`. This command builds a new website based upon the `.md` files within the [`input`](/configuration/project.md) location.
 
 ```
 retype build
@@ -166,7 +166,7 @@ retype build
 
 Within just a few seconds, Retype will create a new website and save to the `output` location as defined in the **retype.yml**. By default, the `output` location is a new folder named `.retype`. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.
 
-If the **.md** documentation files for your project were not located in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
+If the `.md` documentation files for your project were not located in the root (`.`) but within a `docs` subfolder AND you wanted to have Retype send the output to a `website` folder, you would use the following config:
 
 ```yml
 input: docs
@@ -180,7 +180,7 @@ input: docs
 output: website/docs
 ```
 
-If you are hosting your website using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site) AND you wanted to host your website from the `docs` folder, you could then move your **.md** files into a different subfolder and configure as follows:
+If you are hosting your website using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site) AND you wanted to host your website from the `docs` folder, you could then move your `.md` files into a different subfolder and configure as follows:
 
 ```yml
 input: src
