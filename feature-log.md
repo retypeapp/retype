@@ -24,7 +24,7 @@ Please also check out the [[Changelog]] for a full summary of changes in each re
 
 ## v3.12
 
-[!badge PRO] Backlinks component
+[!badge PRO] [[Backlinks]] component
 : Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping users discover related content. Configure at [project](/configuration/project.md#backlinks) and [page](/configuration/page.md#backlinks) levels with `enabled`, `title`, and `maxResults` settings.
 
 Color preview chips
