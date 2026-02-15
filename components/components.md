@@ -13,7 +13,7 @@ Retype Flavored [Markdown](/guides/formatting.md) (RFM) supports custom **Compon
 | [:+1: Emoji](emoji.md) | [:icon-container: Container](container.md) | [:icon-code: Code Snippet](code-snippet.md) |
 | [:icon-smiley: Icon](icon.md) | [:icon-rows: Panel](panel.md) | [:icon-diff-added: Math Formulas](math-formulas.md) |
 | [:icon-mark-github: Octicons](octicons.md) | [:icon-browser: Tab](tab.md) | [:mermaid: Mermaid](mermaid.md) |
-| [:icon-code-review: Comments](comments.md) | | |
+| [:icon-code-review: Comments](comments.md) | | [:icon-paintbrush: Color Chip](color-chip.md) |
 
 | Lists | Media | Interactive |
 | --    | --    | --          |

@@ -89,7 +89,7 @@ All standard image formats are supported, including `AVIF`, `BMP`, `GIF`, `HEIF`
 
 ## Color Preview Chips
 
-Hexadecimal color codes now display with automatic visual previews. When you reference a color in inline code, Retype adds a small circular preview showing the actual color.
+Hexadecimal [color codes](/components/color-chip.md) now display with automatic visual previews. When you reference a color in inline code, Retype adds a small circular preview showing the actual color.
 
 Color: `#5495f1`
 
