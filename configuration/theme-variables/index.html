@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824436915295">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824441938312">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824436915295" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824441938312" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824436915295" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824441938312" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824436915295" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824436915295" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824441938312" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824441938312" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824436915295" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824441938312" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -363,8 +363,8 @@
 <tr>
 <td><code translate="no" v-pre>base-link-weight</code></td>
 <td>Link font weight</td>
-<td><code translate="no" v-pre>400</code></td>
-<td><code translate="no" v-pre>400</code></td>
+<td><code translate="no" v-pre>500</code></td>
+<td><code translate="no" v-pre>500</code></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>base-item-text</code></td>
@@ -1373,6 +1373,270 @@
 <td><code translate="no" v-pre>var(--gray-900)</code></td>
 <td><code translate="no" v-pre>var(--base-white)</code></td>
 </tr>
+<tr>
+<td><code translate="no" v-pre>heading-weight</code></td>
+<td>Default heading font weight</td>
+<td><code translate="no" v-pre>700</code></td>
+<td><code translate="no" v-pre>700</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-case</code></td>
+<td>Default heading text transform</td>
+<td><code translate="no" v-pre>normal-case</code></td>
+<td><code translate="no" v-pre>normal-case</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1</code></td>
+<td>H1 heading text color</td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2</code></td>
+<td>H2 heading text color</td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3</code></td>
+<td>H3 heading text color</td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4</code></td>
+<td>H4 heading text color</td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5</code></td>
+<td>H5 heading text color</td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6</code></td>
+<td>H6 heading text color</td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+<td><code translate="no" v-pre>var(--heading-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1-weight</code></td>
+<td>H1 heading font weight</td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2-weight</code></td>
+<td>H2 heading font weight</td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3-weight</code></td>
+<td>H3 heading font weight</td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4-weight</code></td>
+<td>H4 heading font weight</td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5-weight</code></td>
+<td>H5 heading font weight</td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6-weight</code></td>
+<td>H6 heading font weight</td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1-case</code></td>
+<td>H1 heading text transform</td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2-case</code></td>
+<td>H2 heading text transform</td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3-case</code></td>
+<td>H3 heading text transform</td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4-case</code></td>
+<td>H4 heading text transform</td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5-case</code></td>
+<td>H5 heading text transform</td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6-case</code></td>
+<td>H6 heading text transform</td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1-font-size</code></td>
+<td>H1 heading font size</td>
+<td><code translate="no" v-pre>2.5rem</code></td>
+<td><code translate="no" v-pre>2.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2-font-size</code></td>
+<td>H2 heading font size</td>
+<td><code translate="no" v-pre>2rem</code></td>
+<td><code translate="no" v-pre>2rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3-font-size</code></td>
+<td>H3 heading font size</td>
+<td><code translate="no" v-pre>1.5rem</code></td>
+<td><code translate="no" v-pre>1.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4-font-size</code></td>
+<td>H4 heading font size</td>
+<td><code translate="no" v-pre>1.125rem</code></td>
+<td><code translate="no" v-pre>1.125rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5-font-size</code></td>
+<td>H5 heading font size</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6-font-size</code></td>
+<td>H6 heading font size</td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1-margin-bottom</code></td>
+<td>H1 heading bottom margin</td>
+<td><code translate="no" v-pre>2rem</code></td>
+<td><code translate="no" v-pre>2rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2-margin-bottom</code></td>
+<td>H2 heading bottom margin</td>
+<td><code translate="no" v-pre>1.5rem</code></td>
+<td><code translate="no" v-pre>1.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3-margin-bottom</code></td>
+<td>H3 heading bottom margin</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4-margin-bottom</code></td>
+<td>H4 heading bottom margin</td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5-margin-bottom</code></td>
+<td>H5 heading bottom margin</td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6-margin-bottom</code></td>
+<td>H6 heading bottom margin</td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1-padding-top</code></td>
+<td>H1 heading top padding</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2-padding-top</code></td>
+<td>H2 heading top padding</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3-padding-top</code></td>
+<td>H3 heading top padding</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4-padding-top</code></td>
+<td>H4 heading top padding</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5-padding-top</code></td>
+<td>H5 heading top padding</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6-padding-top</code></td>
+<td>H6 heading top padding</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h1-border-top</code></td>
+<td>H1 heading top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h2-border-top</code></td>
+<td>H2 heading top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h3-border-top</code></td>
+<td>H3 heading top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h4-border-top</code></td>
+<td>H4 heading top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h5-border-top</code></td>
+<td>H5 heading top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>heading-h6-border-top</code></td>
+<td>H6 heading top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2153,7 +2417,7 @@
 <td><code translate="no" v-pre>badge-light-border-hover</code></td>
 <td>Light badge hover border color</td>
 <td><code translate="no" v-pre>var(--gray-400)</code></td>
-<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
 </tr>
 </tbody>
 </table>
@@ -3049,6 +3313,279 @@
 <td>Active tab border color</td>
 <td><code translate="no" v-pre>var(--base-500)</code></td>
 <td><code translate="no" v-pre>var(--base-500)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="color-preview-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#color-preview-component">#</doc-anchor-trigger>
+        <span>Color Preview Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing color preview appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>color-preview-display</code></td>
+<td>Color preview display mode</td>
+<td><code translate="no" v-pre>inline-block</code></td>
+<td><code translate="no" v-pre>inline-block</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>color-preview-width</code></td>
+<td>Color preview width</td>
+<td><code translate="no" v-pre>12px</code></td>
+<td><code translate="no" v-pre>12px</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>color-preview-height</code></td>
+<td>Color preview height</td>
+<td><code translate="no" v-pre>12px</code></td>
+<td><code translate="no" v-pre>12px</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>color-preview-margin-left</code></td>
+<td>Color preview left margin</td>
+<td><code translate="no" v-pre>0.25rem</code></td>
+<td><code translate="no" v-pre>0.25rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>color-preview-border</code></td>
+<td>Color preview border color</td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="description-block-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#description-block-component">#</doc-anchor-trigger>
+        <span>Description Block Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing description block appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>description-font-size</code></td>
+<td>Description block font size</td>
+<td><code translate="no" v-pre>1.2rem</code></td>
+<td><code translate="no" v-pre>1.2rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-weight</code></td>
+<td>Description block font weight</td>
+<td><code translate="no" v-pre>500</code></td>
+<td><code translate="no" v-pre>500</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-color</code></td>
+<td>Description block text color</td>
+<td><code translate="no" v-pre>var(--gray-400)</code></td>
+<td><code translate="no" v-pre>var(--dark-350)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-line-height</code></td>
+<td>Description block line height</td>
+<td><code translate="no" v-pre>1.75</code></td>
+<td><code translate="no" v-pre>1.75</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-margin-bottom</code></td>
+<td>Description block bottom margin</td>
+<td><code translate="no" v-pre>2rem</code></td>
+<td><code translate="no" v-pre>2rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-margin-top</code></td>
+<td>Description block top margin</td>
+<td><code translate="no" v-pre>-0.75rem</code></td>
+<td><code translate="no" v-pre>-0.75rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-letter-spacing</code></td>
+<td>Description block letter spacing</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-text-transform</code></td>
+<td>Description block text transform</td>
+<td><code translate="no" v-pre>none</code></td>
+<td><code translate="no" v-pre>none</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>description-display</code></td>
+<td>Description block display mode</td>
+<td><code translate="no" v-pre>block</code></td>
+<td><code translate="no" v-pre>block</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="backlinks-component">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#backlinks-component">#</doc-anchor-trigger>
+        <span>Backlinks Component</span>
+    </h2>
+</doc-anchor-target>
+<p>Variables for customizing backlinks appearance.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>backlinks-display</code></td>
+<td>Backlinks display mode</td>
+<td><code translate="no" v-pre>block</code></td>
+<td><code translate="no" v-pre>block</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-margin-top</code></td>
+<td>Backlinks top margin</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-margin-bottom</code></td>
+<td>Backlinks bottom margin</td>
+<td><code translate="no" v-pre>1.5rem</code></td>
+<td><code translate="no" v-pre>1.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-border-top</code></td>
+<td>Backlinks top border color</td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+<td><code translate="no" v-pre>var(--transparent)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title</code></td>
+<td>Backlinks title color</td>
+<td><code translate="no" v-pre>var(--heading-h2)</code></td>
+<td><code translate="no" v-pre>var(--heading-h2)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title-case</code></td>
+<td>Backlinks title text transform</td>
+<td><code translate="no" v-pre>var(--heading-h2-case)</code></td>
+<td><code translate="no" v-pre>var(--heading-h2-case)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title-padding-top</code></td>
+<td>Backlinks title top padding</td>
+<td><code translate="no" v-pre>var(--heading-h2-padding-top)</code></td>
+<td><code translate="no" v-pre>var(--heading-h2-padding-top)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title-margin-top</code></td>
+<td>Backlinks title top margin</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title-margin-bottom</code></td>
+<td>Backlinks title bottom margin</td>
+<td><code translate="no" v-pre>var(--heading-h2-margin-bottom)</code></td>
+<td><code translate="no" v-pre>var(--heading-h2-margin-bottom)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title-font-size</code></td>
+<td>Backlinks title font size</td>
+<td><code translate="no" v-pre>var(--heading-h2-font-size)</code></td>
+<td><code translate="no" v-pre>var(--heading-h2-font-size)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-title-font-weight</code></td>
+<td>Backlinks title font weight</td>
+<td><code translate="no" v-pre>var(--heading-h2-weight)</code></td>
+<td><code translate="no" v-pre>var(--heading-h2-weight)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-card-border</code></td>
+<td>Backlinks card border color</td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-card-border-hover</code></td>
+<td>Backlinks card hover border color</td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-card-rounded</code></td>
+<td>Backlinks card border radius</td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-card-shadow-hover</code></td>
+<td>Backlinks card hover shadow</td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-link</code></td>
+<td>Backlinks link color</td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
+<td><code translate="no" v-pre>var(--base-link)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-link-hover</code></td>
+<td>Backlinks link hover color</td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-link-hover)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-link-font-size</code></td>
+<td>Backlinks link font size</td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-text</code></td>
+<td>Backlinks text color</td>
+<td><code translate="no" v-pre>var(--body-text)</code></td>
+<td><code translate="no" v-pre>var(--body-text)</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-text-font-size</code></td>
+<td>Backlinks text font size</td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>backlinks-text-font-weight</code></td>
+<td>Backlinks text font weight</td>
+<td><code translate="no" v-pre>400</code></td>
+<td><code translate="no" v-pre>400</code></td>
 </tr>
 </tbody>
 </table>
