@@ -38,7 +38,7 @@ Core variables that define the fundamental appearance of your site.
 | `base-border-strong` | Strong border color | `var(--gray-400)` | `var(--gray-450)` |
 | `base-link` | Link color | `var(--base-500)` | `var(--base-500)` |
 | `base-link-hover` | Link hover color | `var(--base-800)` | `var(--base-300)` |
-| `base-link-weight` | Link font weight | `400` | `400` |
+| `base-link-weight` | Link font weight | `500` | `500` |
 | `base-item-text` | Base item text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
 | `base-item-text-active` | Active base item text color | `var(--base-link)` | `var(--base-link)` |
 | `base-item-bg` | Base item background | `var(--transparent)` | `var(--transparent)` |
@@ -50,7 +50,7 @@ Core variables that define the fundamental appearance of your site.
 Semantic color variants are used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant is available as a full color palette from `50` (lightest) to `900` (darkest).
 
 | Variable | Description | Default `base`  |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `base` | Foundation brand color for main actions and highlights | `#5495f1` |
 | `primary` | Primary color variant used for actions, highlights, and key elements across components | `#5495f1` |
 | `success` | Success state color for positive actions and confirmations | `#36ad99` |
@@ -303,6 +303,50 @@ Variables for heading text styling.
 | Variable | Description | Default `base`  | Default `dark`  |
 | --- | --- | --- | --- |
 | `heading-text` | Heading text color | `var(--gray-900)` | `var(--base-white)` |
+| `heading-weight` | Default heading font weight | `700` | `700` |
+| `heading-case` | Default heading text transform | `normal-case` | `normal-case` |
+| `heading-h1` | H1 heading text color | `var(--heading-text)` | `var(--heading-text)` |
+| `heading-h2` | H2 heading text color | `var(--heading-text)` | `var(--heading-text)` |
+| `heading-h3` | H3 heading text color | `var(--heading-text)` | `var(--heading-text)` |
+| `heading-h4` | H4 heading text color | `var(--heading-text)` | `var(--heading-text)` |
+| `heading-h5` | H5 heading text color | `var(--heading-text)` | `var(--heading-text)` |
+| `heading-h6` | H6 heading text color | `var(--heading-text)` | `var(--heading-text)` |
+| `heading-h1-weight` | H1 heading font weight | `var(--heading-weight)` | `var(--heading-weight)` |
+| `heading-h2-weight` | H2 heading font weight | `var(--heading-weight)` | `var(--heading-weight)` |
+| `heading-h3-weight` | H3 heading font weight | `var(--heading-weight)` | `var(--heading-weight)` |
+| `heading-h4-weight` | H4 heading font weight | `var(--heading-weight)` | `var(--heading-weight)` |
+| `heading-h5-weight` | H5 heading font weight | `var(--heading-weight)` | `var(--heading-weight)` |
+| `heading-h6-weight` | H6 heading font weight | `var(--heading-weight)` | `var(--heading-weight)` |
+| `heading-h1-case` | H1 heading text transform | `var(--heading-case)` | `var(--heading-case)` |
+| `heading-h2-case` | H2 heading text transform | `var(--heading-case)` | `var(--heading-case)` |
+| `heading-h3-case` | H3 heading text transform | `var(--heading-case)` | `var(--heading-case)` |
+| `heading-h4-case` | H4 heading text transform | `var(--heading-case)` | `var(--heading-case)` |
+| `heading-h5-case` | H5 heading text transform | `var(--heading-case)` | `var(--heading-case)` |
+| `heading-h6-case` | H6 heading text transform | `var(--heading-case)` | `var(--heading-case)` |
+| `heading-h1-font-size` | H1 heading font size | `2.5rem` | `2.5rem` |
+| `heading-h2-font-size` | H2 heading font size | `2rem` | `2rem` |
+| `heading-h3-font-size` | H3 heading font size | `1.5rem` | `1.5rem` |
+| `heading-h4-font-size` | H4 heading font size | `1.125rem` | `1.125rem` |
+| `heading-h5-font-size` | H5 heading font size | `1rem` | `1rem` |
+| `heading-h6-font-size` | H6 heading font size | `0.875rem` | `0.875rem` |
+| `heading-h1-margin-bottom` | H1 heading bottom margin | `2rem` | `2rem` |
+| `heading-h2-margin-bottom` | H2 heading bottom margin | `1.5rem` | `1.5rem` |
+| `heading-h3-margin-bottom` | H3 heading bottom margin | `1rem` | `1rem` |
+| `heading-h4-margin-bottom` | H4 heading bottom margin | `0.75rem` | `0.75rem` |
+| `heading-h5-margin-bottom` | H5 heading bottom margin | `0.5rem` | `0.5rem` |
+| `heading-h6-margin-bottom` | H6 heading bottom margin | `0.5rem` | `0.5rem` |
+| `heading-h1-padding-top` | H1 heading top padding | `0` | `0` |
+| `heading-h2-padding-top` | H2 heading top padding | `0` | `0` |
+| `heading-h3-padding-top` | H3 heading top padding | `0` | `0` |
+| `heading-h4-padding-top` | H4 heading top padding | `0` | `0` |
+| `heading-h5-padding-top` | H5 heading top padding | `0` | `0` |
+| `heading-h6-padding-top` | H6 heading top padding | `0` | `0` |
+| `heading-h1-border-top` | H1 heading top border color | `var(--transparent)` | `var(--transparent)` |
+| `heading-h2-border-top` | H2 heading top border color | `var(--transparent)` | `var(--transparent)` |
+| `heading-h3-border-top` | H3 heading top border color | `var(--transparent)` | `var(--transparent)` |
+| `heading-h4-border-top` | H4 heading top border color | `var(--transparent)` | `var(--transparent)` |
+| `heading-h5-border-top` | H5 heading top border color | `var(--transparent)` | `var(--transparent)` |
+| `heading-h6-border-top` | H6 heading top border color | `var(--transparent)` | `var(--transparent)` |
 
 ## Scheme
 
@@ -466,7 +510,7 @@ Variables for customizing badge components across all variants.
 | `badge-light-text` | Light badge text color | `var(--gray-600)` | `var(--dark-600)` |
 | `badge-light-text-hover` | Light badge hover text color | `var(--gray-600)` | `var(--dark-600)` |
 | `badge-light-border` | Light badge border color | `var(--gray-200)` | `var(--transparent)` |
-| `badge-light-border-hover` | Light badge hover border color | `var(--gray-400)` | `var(--transparent)` |
+| `badge-light-border-hover` | Light badge hover border color | `var(--gray-400)` | `var(--gray-400)` |
 
 ### Dark Badge
 
@@ -659,3 +703,59 @@ Variables for customizing tab appearance.
 | `tab-border` | Tab border color | `var(--transparent)` | `var(--transparent)` |
 | `tab-border-hover` | Tab hover border color | `var(--gray-300)` | `var(--dark-450)` |
 | `tab-border-active` | Active tab border color | `var(--base-500)` | `var(--base-500)` |
+
+## Color Preview Component
+
+Variables for customizing color preview appearance.
+
+| Variable | Description | Default `base`  | Default `dark`  |
+| --- | --- | --- | --- |
+| `color-preview-display` | Color preview display mode | `inline-block` | `inline-block` |
+| `color-preview-width` | Color preview width | `12px` | `12px` |
+| `color-preview-height` | Color preview height | `12px` | `12px` |
+| `color-preview-margin-left` | Color preview left margin | `0.25rem` | `0.25rem` |
+| `color-preview-border` | Color preview border color | `var(--base-border)` | `var(--base-border)` |
+
+## Description Block Component
+
+Variables for customizing description block appearance.
+
+| Variable | Description | Default `base`  | Default `dark`  |
+| --- | --- | --- | --- |
+| `description-font-size` | Description block font size | `1.2rem` | `1.2rem` |
+| `description-weight` | Description block font weight | `500` | `500` |
+| `description-color` | Description block text color | `var(--gray-400)` | `var(--dark-350)` |
+| `description-line-height` | Description block line height | `1.75` | `1.75` |
+| `description-margin-bottom` | Description block bottom margin | `2rem` | `2rem` |
+| `description-margin-top` | Description block top margin | `-0.75rem` | `-0.75rem` |
+| `description-letter-spacing` | Description block letter spacing | `0` | `0` |
+| `description-text-transform` | Description block text transform | `none` | `none` |
+| `description-display` | Description block display mode | `block` | `block` |
+
+## Backlinks Component
+
+Variables for customizing backlinks appearance.
+
+| Variable | Description | Default `base`  | Default `dark`  |
+| --- | --- | --- | --- |
+| `backlinks-display` | Backlinks display mode | `block` | `block` |
+| `backlinks-margin-top` | Backlinks top margin | `0` | `0` |
+| `backlinks-margin-bottom` | Backlinks bottom margin | `1.5rem` | `1.5rem` |
+| `backlinks-border-top` | Backlinks top border color | `var(--transparent)` | `var(--transparent)` |
+| `backlinks-title` | Backlinks title color | `var(--heading-h2)` | `var(--heading-h2)` |
+| `backlinks-title-case` | Backlinks title text transform | `var(--heading-h2-case)` | `var(--heading-h2-case)` |
+| `backlinks-title-padding-top` | Backlinks title top padding | `var(--heading-h2-padding-top)` | `var(--heading-h2-padding-top)` |
+| `backlinks-title-margin-top` | Backlinks title top margin | `0` | `0` |
+| `backlinks-title-margin-bottom` | Backlinks title bottom margin | `var(--heading-h2-margin-bottom)` | `var(--heading-h2-margin-bottom)` |
+| `backlinks-title-font-size` | Backlinks title font size | `var(--heading-h2-font-size)` | `var(--heading-h2-font-size)` |
+| `backlinks-title-font-weight` | Backlinks title font weight | `var(--heading-h2-weight)` | `var(--heading-h2-weight)` |
+| `backlinks-card-border` | Backlinks card border color | `var(--base-border)` | `var(--base-border)` |
+| `backlinks-card-border-hover` | Backlinks card hover border color | `var(--base-border-hover)` | `var(--base-border-hover)` |
+| `backlinks-card-rounded` | Backlinks card border radius | `0.5rem` | `0.5rem` |
+| `backlinks-card-shadow-hover` | Backlinks card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `backlinks-link` | Backlinks link color | `var(--base-link)` | `var(--base-link)` |
+| `backlinks-link-hover` | Backlinks link hover color | `var(--base-link-hover)` | `var(--base-link-hover)` |
+| `backlinks-link-font-size` | Backlinks link font size | `0.875rem` | `0.875rem` |
+| `backlinks-text` | Backlinks text color | `var(--body-text)` | `var(--body-text)` |
+| `backlinks-text-font-size` | Backlinks text font size | `0.875rem` | `0.875rem` |
+| `backlinks-text-font-weight` | Backlinks text font weight | `400` | `400` |

@@ -1,7 +1,5 @@
 ---
 icon: alert
-nav:
-  badge: NEW|info
 tags: [guide, pro]
 ---
 # Troubleshooting

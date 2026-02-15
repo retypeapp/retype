@@ -3,8 +3,6 @@ icon: sparkles-fill
 label: Feature Log
 order: -200
 templating: false
-nav:
-  badge: NEW|info
 ---
 # Feature Log
 

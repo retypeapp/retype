@@ -1,6 +1,8 @@
 ---
 icon: paintbrush
 tags: [component]
+nav:
+  badge: NEW|info
 ---
 # Color Chip
 
