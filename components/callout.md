@@ -58,11 +58,11 @@ Callouts come in nine different flavors which can be specified by passing a `var
 | `primary` (default) | `blue` |
 | `secondary` | `gray` |
 | `success` | `green` |
+| `question` | `purple` |
 | `tip` | `green` |
 | `danger` | `red` |
 | `warning` | `yellow` |
 | `info` | `light-blue` |
-| `question` | `purple` |
 | `light` | `light` |
 | `dark` | `dark` |
 | `ghost` | `light` or `dark` depending on time of day |
@@ -89,6 +89,10 @@ This is a `secondary` Callout.
 This is a `success` Callout.
 !!!
 
+!!!question Question
+This is a `question` Callout.
+!!!
+
 !!!tip Tip
 This is a `tip` Callout.
 !!!
@@ -103,10 +107,6 @@ This is a `warning` Callout.
 
 !!!info Info
 This is a `info` Callout.
-!!!
-
-!!!question Question
-This is a `question` Callout.
 !!!
 
 !!!light Light
@@ -142,6 +142,10 @@ This is a `secondary` Callout.
 This is a `success` Callout.
 !!!
 
+!!!question Question
+This is a `question` Callout.
+!!!
+
 !!!tip Tip
 This is a `tip` Callout.
 !!!
@@ -156,10 +160,6 @@ This is a `warning` Callout.
 
 !!!info Info
 This is a `info` Callout.
-!!!
-
-!!!question Question
-This is a `question` Callout.
 !!!
 
 !!!light Light
