@@ -175,7 +175,7 @@ The `backlinks` configuration controls the display of inbound links from other p
 
 ### enabled
 
-=== [!badge PRO] enabled : `boolean`
+=== enabled : `boolean`
 
 Enable or disable backlinks for this page. Default is `true`.
 
@@ -192,7 +192,7 @@ Set to `false` to disable backlinks on this page, even if enabled at the [projec
 
 ### title {#backlinks-title}
 
-=== [!badge PRO] title : `string`
+=== title : `string`
 
 Customize the heading text displayed above the backlinks section on this page. Default is `"See also"`.
 
@@ -209,7 +209,7 @@ This overrides the project-level title setting for this specific page.
 
 ### maxResults
 
-=== [!badge PRO] maxResults : `number`
+=== maxResults : `number`
 
 Set the maximum number of backlinks to display on this page. Default is `12`.
 
@@ -232,7 +232,7 @@ See also [Project](project.md#backlinks) configuration of [`backlinks`](project.
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-=== [!badge PRO] breadcrumb : `boolean`
+=== breadcrumb : `boolean`
 
 The `breadcrumb` config controls whether to include the [breadcrumb](project.md#breadcrumb) navigation on this page. Default is `true`.
 
@@ -492,7 +492,7 @@ Navigation configuration options to control the behavior of the left sidebar nav
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-=== [!badge PRO] badge : `string` or `object`
+=== badge : `string` or `object`
 
 Add a [[badge]] to the navigation item for this page in the left sidebar. The badge can be a simple text string or a detailed configuration object with styling options.
 
@@ -547,7 +547,7 @@ Property | Type | Description
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-=== [!badge PRO] mode : `string`
+=== mode : `string`
 Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for `mode` is `default`.
 
 Option | Description
