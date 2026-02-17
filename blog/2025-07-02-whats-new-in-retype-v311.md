@@ -200,7 +200,7 @@ The `base` variant is particularly useful when you want components to feel integ
 
 ![](images/2025-07-02-search-field.png)-
 
-Small improvements often make the biggest difference in daily use. The search and filter inputs now include keyboard shortcut hints and improved placeholder handling that hides the placeholder text when focused, reducing visual clutter and improving usability.
+The search and filter inputs now include keyboard shortcut hints and improved placeholder handling that hides the placeholder text when focused, reducing visual clutter and improving usability.
 
 These changes make the search experience feel more polished and help users discover keyboard shortcuts naturally.
 
