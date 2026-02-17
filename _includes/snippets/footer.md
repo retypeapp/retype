@@ -1,1 +1,1 @@
-© Copyright {{ date.now.year }} - [Retype](https://retype.com/) | All rights reserved | Made in Canada :flag-ca: | v{{ version }}
+© Copyright {{ date.now.year }} - [Retype](https://retype.com/ "Retype Markdown Docs Generator") | All rights reserved | Made in Canada :flag-ca: | v{{ version }}

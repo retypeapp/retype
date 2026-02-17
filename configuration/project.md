@@ -549,7 +549,12 @@ footer:
   links:
     - text: License
       link: license.md
+      title: View the software license agreement
+    - text: Support
+      link: https://github.com/retypeapp/retype/discussions/
+      title: Get help from the community
 ```
+
 ===
 
 ---
@@ -1098,6 +1103,35 @@ There are several other values that may be prefixed with an `_` character, inclu
 | `news1`               | `news1`                |
 | `nEWs2`               | `news2`                |
 | `recent NEWS`         | `recent-news`          |
+
+===
+
+### title
+
+=== title : `string`
+
+Sets the `title` attribute of the generated HTML hyperlink. This creates a browser tooltip that appears when users hover over the link.
+
+The `title` property applies to both [`links`](#links) and [`footer.links`](#footer) configured in the `retype.yml` file.
+
+```yml
+links:
+  - text: Getting Started
+    link: https://retype.com/getting_started/
+    title: Learn how to install and configure Retype
+```
+
+The configuration above generates the following HTML:
+
+```html
+<a href="https://retype.com/getting_started/" title="Learn how to install and configure Retype">Getting Started</a>
+```
+
+When a user hovers over the "Getting Started" link, the browser displays "Learn how to install and configure Retype" as a tooltip.
+
+!!!
+The `text` property sets the visible link text, while `title` sets the hover tooltip. The `title` is optional and useful for providing additional context or description without cluttering the visible interface.
+!!!
 
 ===
 
