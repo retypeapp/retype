@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824619484153">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824679651514">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=3.12.0.824619484153" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.12.0.824679651514" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824619484153" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.12.0.824679651514" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824619484153" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824619484153" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.12.0.824679651514" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=3.12.0.824679651514" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=3.12.0.824619484153" rel="stylesheet">
+    <link href="/static/styles.css?v=3.12.0.824679651514" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -478,10 +478,8 @@ author:
         <span>enabled</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-enabled--boolean">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> enabled : <code translate="no" v-pre>boolean</code></template>
+<doc-panel id="enabled--boolean">
+    <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable backlinks for this page. Default is <code translate="no" v-pre>true</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
@@ -497,10 +495,8 @@ backlinks:
         <span>title</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-title--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> title : <code translate="no" v-pre>string</code></template>
+<doc-panel id="title--string">
+    <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>Customize the heading text displayed above the backlinks section on this page. Default is <code translate="no" v-pre>&quot;See also&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
@@ -516,10 +512,8 @@ backlinks:
         <span>maxResults</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="badge-pro-maxresults--number">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> maxResults : <code translate="no" v-pre>number</code></template>
+<doc-panel id="maxresults--number">
+    <template #title>maxResults : <code translate="no" v-pre>number</code></template>
 <p>Set the maximum number of backlinks to display on this page. Default is <code translate="no" v-pre>12</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
@@ -540,10 +534,8 @@ backlinks:
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="badge-pro-breadcrumb--boolean">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> breadcrumb : <code translate="no" v-pre>boolean</code></template>
+<doc-panel id="breadcrumb--boolean">
+    <template #title>breadcrumb : <code translate="no" v-pre>boolean</code></template>
 <p>The <code translate="no" v-pre>breadcrumb</code> config controls whether to include the <a href="/configuration/project/#breadcrumb">breadcrumb</a> navigation on this page. Default is <code translate="no" v-pre>true</code>.</p>
 <p>Set to <code translate="no" v-pre>false</code> to disable the breadcrumb navigation on this page.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -844,10 +836,8 @@ meta:
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="badge-pro-badge--string-or-object">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> badge : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>object</code></template>
+<doc-panel id="badge--string-or-object">
+    <template #title>badge : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>object</code></template>
 <p>Add a <a href="/components/badge/">badge</a> to the navigation item for this page in the left sidebar. The badge can be a simple text string or a detailed configuration object with styling options.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Simple text badge</div>
@@ -944,10 +934,8 @@ nav:
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="badge-pro-mode--string">
-    <template #title><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> mode : <code translate="no" v-pre>string</code></template>
+<doc-panel id="mode--string">
+    <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code translate="no" v-pre>mode</code> is <code translate="no" v-pre>default</code>.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
