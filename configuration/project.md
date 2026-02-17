@@ -78,7 +78,7 @@ When set to `false`, backlinks will not be displayed on any page unless explicit
 
 ===
 
-### title
+### title {#backlinks-title}
 
 === [!badge PRO] title : `string`
 
@@ -203,7 +203,7 @@ branding:
 ```
 ===
 
-### title
+### title {#branding-title}
 
 === title : `string`
 
@@ -1194,7 +1194,7 @@ markdown:
 
 Project wide meta tag configuration options.
 
-### title
+### title {#meta-title}
 
 === title : `string`
 
@@ -1212,7 +1212,7 @@ Using the sample above, if we had an `About us` page, the final `<title>` would 
 ```
 
 !!!
-See also, the Page level [`meta.title`](page.md/#title) configuration.
+See also, the Page level [`meta.title`](page.md#meta) configuration.
 !!!
 ===
 
