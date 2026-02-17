@@ -190,7 +190,7 @@ Set to `false` to disable backlinks on this page, even if enabled at the [projec
 
 ===
 
-### title
+### title {#backlinks-title}
 
 === [!badge PRO] title : `string`
 
@@ -418,7 +418,7 @@ layout: page
 
 ## meta
 
-### title
+### title {#meta-title}
 
 === title : `string`
 
