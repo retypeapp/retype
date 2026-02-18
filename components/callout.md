@@ -254,3 +254,19 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All callout theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Callout Component](/configuration/theme-variables.md#callout-component) theme variables for the latest options.
 !!!
+
+---
+
+## Custom attributes
+
+Custom `id` and CSS `class` attributes can be applied to a Callout using the `{#id .class}` syntax.
+
+```md
+!!!warning Important {#critical-warning .highlight}
+This Callout has a custom id and class.
+!!!
+```
+
+!!!warning Important {#critical-warning .highlight}
+This Callout has a custom id and class.
+!!!
