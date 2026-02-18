@@ -26,7 +26,7 @@ You can customize the title of the backlinks section by passing a custom title s
 [!backlinks "Related pages"]
 ```
 
-The custom title overrides the default title configured at the [project](/configuration/project.md#title) or [page](/configuration/page.md#title-1) level.
+The custom title overrides the default title configured at the [project](/configuration/project.md#meta-title) or [page](/configuration/page.md#meta-title) level.
 
 ---
 

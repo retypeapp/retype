@@ -449,9 +449,9 @@ Without the `meta.title` set, by default, the `<title>` would be:
 ```
 
 !!!
-This `meta.title` config is not to be confused with the Page [`title`](#title-1) config, which we recommend not using.
+This `meta.title` config is not to be confused with the Page [`title`](#title) config, which we recommend not using.
 
-This `meta.title` config is also not to be confused with the Project level [`meta.title`](project.md#title-1) config.
+This `meta.title` config is also not to be confused with the Project level [`meta.title`](project.md#meta-title) config.
 !!!
 ===
 
