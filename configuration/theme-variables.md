@@ -233,6 +233,15 @@ Utility variables used throughout the theme system.
 | `transparent` | Transparent color value | `transparent` | `transparent` |
 | `skeleton-bg` | Skeleton loading background | `gray-200` | `dark-600` |
 
+## Selection
+
+Variables for customizing text selection highlight appearance.
+
+| Variable | Description | Default `base`  | Default `dark`  |
+| --- | --- | --- | --- |
+| `selection-bg` | Text selection background color | `var(--base-200)` | `var(--base-700)` |
+| `selection-text` | Text selection text color | `var(--base-text-strong)` | `var(--base-white)` |
+
 ## Branding
 
 Variables for customizing branding elements.
