@@ -68,6 +68,7 @@ branding:
 
 meta:
   title: " - Write On! with Retype"
+  siteName: Retype
 
 generator:
   paths: root
