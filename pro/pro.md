@@ -77,8 +77,10 @@ The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will
 License | Key required | Price | Free upgrades | Renewal | Pro&nbsp;projects<br>^* per domain^ | Max&nbsp;Pages<br>^* per project^
 -- | :--: | -- | -- | -- | :--: | :--:
 Free | No | Free | Free | $0 | 0 | 100
-Pro | Yes | $149 | 3 years | $99 | 1 | Unlimited
-Enterprise | Yes | $499 | 3 years | $349 | Unlimited ^[*](#what-is-a-project)^ | Unlimited
+Pro | Yes | $149 | 3 years | 20% off | 1 | Unlimited
+Pro+ | Yes | $298 | Forever | n/a | 1 | Unlimited
+Enterprise | Yes | $499 | 3 years | 20% off | Unlimited ^[*](#what-is-a-project)^ | Unlimited
+Enterprise+ | Yes | $998 | Forever | n/a | Unlimited ^[*](#what-is-a-project)^ | Unlimited
 
 !!!
 As your key end date approaches, we will send you a reminder email to renew. Renewal is optional and your project will continue to work even if your key is not [renewed](#what-happens-when-the-key-expires).
@@ -172,15 +174,9 @@ You like Retype, it is bringing you value and happiness :smiling_face_with_3_hea
 
 You decide NOT to renew your Retype key :cry:. No worries. Your project will continue to build forever, except you cannot upgrade the project to the next Retype release. You would stay on your current release.
 
-You would be able to upgrade Retype up until `v5.0`.
-
-Installing Retype `v5.1` would be possible, but your project would fail to build. You would need to downgrade back to `v5.0` or renew your Retype key, or remove the key from your project and use the free version of Retype.
-
 You would still be able to build up to 1000 pages and remove the **Powered by Retype** branding, but only if using the release at the time your key expired. Again, you just would not be able to upgrade to any future releases.
 
 If at some point in the future you would like to upgrade to the latest release, just [purchase](/pro/pro.md) a new Retype Pro key at that time.
-
-The renewal fee is 50% of the original purchase price. For pricing, see table [above](#please-summarize-how-the-licensing-works).
 
 ## Can I purchase two licenses and save one for future use?
 
