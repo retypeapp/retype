@@ -148,7 +148,7 @@ Optional logo label text. Default is `Docs`.
 branding:
   label: Docs
 ```
-The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#title) or [`logo`](#logo).
+The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#branding-title) or [`logo`](#logo).
 
 ![](/static/project-branding-title.png)
 ===
@@ -192,7 +192,7 @@ branding:
 
 === logoAlign : `string`
 
-Set a logo image alignment relative to the [`title`](#title). Supported values include `left` and `right`.
+Set a logo image alignment relative to the [`title`](#branding-title). Supported values include `left` and `right`.
 
 Default is `left`.
 
