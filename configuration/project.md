@@ -1250,6 +1250,24 @@ See also, the Page level [`meta.title`](page.md#meta) configuration.
 !!!
 ===
 
+### siteName
+
+=== siteName : `string`
+
+Sets the value for the `<meta property="og:site_name">` meta tag.
+
+```yml
+meta:
+  siteName: Retype
+```
+
+The above configuration generates:
+
+```html
+<meta property="og:site_name" content="Retype">
+```
+===
+
 ---
 
 ## nav
