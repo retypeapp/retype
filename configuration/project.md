@@ -304,6 +304,72 @@ breadcrumb:
 
 ---
 
+## blog
+
+The `blog` configuration controls the behavior and appearance of the blog summary pages, including pagination and URL structure.
+
+### pageSize
+
+=== pageSize : `number`
+
+The number of blog post items to display per page. Default is `10`.
+
+```yml
+blog:
+  pageSize: 5
+```
+
+If the total number of blog posts exceeds the `pageSize`, Retype will automatically generate additional paginated summary pages.
+
+===
+
+### maxResults
+
+=== maxResults : `number`
+
+The maximum total number of blog posts to include across all paginated summary pages. Default is unlimited.
+
+```yml
+blog:
+  maxResults: 100
+```
+
+By default, all blog posts are included. Setting a `maxResults` value will cap the total number of posts that appear in the blog summary pages. Posts beyond the limit are excluded from the summary but remain accessible via direct URL.
+
+===
+
+### title {#blog-title}
+
+=== title : `string`
+
+A custom heading title for the blog summary page. Default is `null`.
+
+```yml
+blog:
+  title: News
+```
+
+If no `title` is configured, Retype will use the default translated label for the current [`locale`](#locale).
+
+===
+
+### base {#blog-base}
+
+=== base : `string`
+
+The URL base path segment used for the blog summary pages. Default is `"blog"`.
+
+```yml
+blog:
+  base: news
+```
+
+Setting `base: news` would generate the blog summary pages at `/news/` instead of the default `/blog/` path.
+
+===
+
+---
+
 ## cache
 
 Cache configuration options.
