@@ -1,8 +1,6 @@
 ---
 icon: number
 tags: [theme, pro]
-nav:
-  badge: NEW|info
 ---
 # Theme variables
 
@@ -429,6 +427,34 @@ Variables controlling the footer appearance.
 | `footer-link-hover` | Footer link hover color | `base-link-hover` | `base-link-hover` |
 | `footer-link-weight` | Footer link font weight | `base-link-weight` | `base-link-weight` |
 
+## Backlinks Component
+
+Variables for customizing backlinks appearance.
+
+| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `backlinks-display` | Backlinks display mode | `block` | `block` |
+| `backlinks-margin-top` | Backlinks top margin | `0` | `0` |
+| `backlinks-margin-bottom` | Backlinks bottom margin | `1.5rem` | `1.5rem` |
+| `backlinks-border-top` | Backlinks top border color | `transparent` | `transparent` |
+| `backlinks-title` | Backlinks title color | `heading-h2` | `heading-h2` |
+| `backlinks-title-case` | Backlinks title text transform | `heading-h2-case` | `heading-h2-case` |
+| `backlinks-title-padding-top` | Backlinks title top padding | `heading-h2-padding-top` | `heading-h2-padding-top` |
+| `backlinks-title-margin-top` | Backlinks title top margin | `0` | `0` |
+| `backlinks-title-margin-bottom` | Backlinks title bottom margin | `heading-h2-margin-bottom` | `heading-h2-margin-bottom` |
+| `backlinks-title-font-size` | Backlinks title font size | `heading-h2-font-size` | `heading-h2-font-size` |
+| `backlinks-title-font-weight` | Backlinks title font weight | `heading-h2-weight` | `heading-h2-weight` |
+| `backlinks-card-border` | Backlinks card border color | `base-border` | `base-border` |
+| `backlinks-card-border-hover` | Backlinks card hover border color | `base-border-hover` | `base-border-hover` |
+| `backlinks-card-rounded` | Backlinks card border radius | `0.5rem` | `0.5rem` |
+| `backlinks-card-shadow-hover` | Backlinks card hover shadow | `shadow-xs` | `shadow-xs` |
+| `backlinks-link` | Backlinks link color | `base-link` | `base-link` |
+| `backlinks-link-hover` | Backlinks link hover color | `base-link-hover` | `base-link-hover` |
+| `backlinks-link-font-size` | Backlinks link font size | `0.875rem` | `0.875rem` |
+| `backlinks-text` | Backlinks text color | `body-text` | `body-text` |
+| `backlinks-text-font-size` | Backlinks text font size | `0.875rem` | `0.875rem` |
+| `backlinks-text-font-weight` | Backlinks text font weight | `400` | `400` |
+
 ## Badge Component
 
 Variables for customizing badge components across all variants.
@@ -703,38 +729,6 @@ Variables for customizing callout components.
 | `callout-contrast-text` | Contrast callout text color | `gray-300` | `dark-800` |
 | `callout-contrast-border` | Contrast callout border color | `gray-900` | `dark-700` |
 
-## Image Component
-
-Variables for customizing image appearance.
-
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
-| --- | --- | --- | --- |
-| `image-rounded` | Image border radius | `0px` | `0px` |
-| `image-border` | Image border color | `base-border` | `base-border` |
-| `image-border-width` | Image border width | `0` | `0` |
-
-## List Component
-
-Variables for customizing list appearance.
-
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
-| --- | --- | --- | --- |
-| `list-checked` | Checked list item color | `base-500` | `base-500` |
-| `list-unchecked` | Unchecked list item color | `gray-300` | `dark-400` |
-
-## Tab Component
-
-Variables for customizing tab appearance.
-
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
-| --- | --- | --- | --- |
-| `tab-text` | Tab text color | `gray-500` | `dark-350` |
-| `tab-text-hover` | Tab hover text color | `base-500` | `base-500` |
-| `tab-text-active` | Active tab text color | `base-500` | `base-500` |
-| `tab-border` | Tab border color | `transparent` | `transparent` |
-| `tab-border-hover` | Tab hover border color | `gray-300` | `dark-450` |
-| `tab-border-active` | Active tab border color | `base-500` | `base-500` |
-
 ## Color Preview Component
 
 Variables for customizing color preview appearance.
@@ -763,30 +757,63 @@ Variables for customizing description block appearance.
 | `description-text-transform` | Description block text transform | `none` | `none` |
 | `description-display` | Description block display mode | `block` | `block` |
 
-## Backlinks Component
+## Image Component
 
-Variables for customizing backlinks appearance.
+Variables for customizing image appearance.
 
 | Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `backlinks-display` | Backlinks display mode | `block` | `block` |
-| `backlinks-margin-top` | Backlinks top margin | `0` | `0` |
-| `backlinks-margin-bottom` | Backlinks bottom margin | `1.5rem` | `1.5rem` |
-| `backlinks-border-top` | Backlinks top border color | `transparent` | `transparent` |
-| `backlinks-title` | Backlinks title color | `heading-h2` | `heading-h2` |
-| `backlinks-title-case` | Backlinks title text transform | `heading-h2-case` | `heading-h2-case` |
-| `backlinks-title-padding-top` | Backlinks title top padding | `heading-h2-padding-top` | `heading-h2-padding-top` |
-| `backlinks-title-margin-top` | Backlinks title top margin | `0` | `0` |
-| `backlinks-title-margin-bottom` | Backlinks title bottom margin | `heading-h2-margin-bottom` | `heading-h2-margin-bottom` |
-| `backlinks-title-font-size` | Backlinks title font size | `heading-h2-font-size` | `heading-h2-font-size` |
-| `backlinks-title-font-weight` | Backlinks title font weight | `heading-h2-weight` | `heading-h2-weight` |
-| `backlinks-card-border` | Backlinks card border color | `base-border` | `base-border` |
-| `backlinks-card-border-hover` | Backlinks card hover border color | `base-border-hover` | `base-border-hover` |
-| `backlinks-card-rounded` | Backlinks card border radius | `0.5rem` | `0.5rem` |
-| `backlinks-card-shadow-hover` | Backlinks card hover shadow | `shadow-xs` | `shadow-xs` |
-| `backlinks-link` | Backlinks link color | `base-link` | `base-link` |
-| `backlinks-link-hover` | Backlinks link hover color | `base-link-hover` | `base-link-hover` |
-| `backlinks-link-font-size` | Backlinks link font size | `0.875rem` | `0.875rem` |
-| `backlinks-text` | Backlinks text color | `body-text` | `body-text` |
-| `backlinks-text-font-size` | Backlinks text font size | `0.875rem` | `0.875rem` |
-| `backlinks-text-font-weight` | Backlinks text font weight | `400` | `400` |
+| `image-rounded` | Image border radius | `0px` | `0px` |
+| `image-border` | Image border color | `base-border` | `base-border` |
+| `image-border-width` | Image border width | `0` | `0` |
+
+## List Component
+
+Variables for customizing list appearance.
+
+| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `list-checked` | Checked list item color | `base-500` | `base-500` |
+| `list-unchecked` | Unchecked list item color | `gray-300` | `dark-400` |
+
+## Pager Component
+
+Variables for customizing blog pagination appearance.
+
+| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `pager-margin-top` | Pager top margin | `2.5rem` | `2.5rem` |
+| `pager-margin-bottom` | Pager bottom margin | `1.5rem` | `1.5rem` |
+| `pager-gap` | Gap between pager items | `0.5rem` | `0.5rem` |
+| `pager-item-size` | Width and height of pager items | `2.5rem` | `2.5rem` |
+| `pager-font-size` | Pager text font size | `0.875rem` | `0.875rem` |
+| `pager-font-weight` | Pager text font weight | `500` | `500` |
+| `pager-text-decoration` | Pager link text decoration | `none` | `none` |
+| `pager-border-radius` | Pager item border radius | `0.25rem` | `0.25rem` |
+| `pager-border-width` | Pager item border width | `1px` | `1px` |
+| `pager-transition-duration` | Pager color transition duration | `200ms` | `200ms` |
+| `pager-text` | Pager item text color | `base-500` | `dark-300` |
+| `pager-bg` | Pager item background | `transparent` | `transparent` |
+| `pager-border` | Pager item border color | `gray-200` | `dark-550` |
+| `pager-text-hover` | Pager item hover text color | `base-500` | `dark-300` |
+| `pager-bg-hover` | Pager item hover background | `gray-150` | `dark-600` |
+| `pager-border-hover` | Pager item hover border color | `gray-200` | `dark-550` |
+| `pager-text-active` | Active pager item text color | `base-white` | `base-white` |
+| `pager-bg-active` | Active pager item background | `base-500` | `base-700` |
+| `pager-border-active` | Active pager item border color | `base-600` | `base-800` |
+| `pager-text-active-hover` | Active pager item hover text color | `base-white` | `base-white` |
+| `pager-bg-active-hover` | Active pager item hover background | `base-400` | `base-500` |
+| `pager-border-active-hover` | Active pager item hover border color | `base-500` | `base-600` |
+
+## Tab Component
+
+Variables for customizing tab appearance.
+
+| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `tab-text` | Tab text color | `gray-500` | `dark-350` |
+| `tab-text-hover` | Tab hover text color | `base-500` | `base-500` |
+| `tab-text-active` | Active tab text color | `base-500` | `base-500` |
+| `tab-border` | Tab border color | `transparent` | `transparent` |
+| `tab-border-hover` | Tab hover border color | `gray-300` | `dark-450` |
+| `tab-border-active` | Active tab border color | `base-500` | `base-500` |
