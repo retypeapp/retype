@@ -729,6 +729,41 @@ Variables for customizing callout components.
 | `callout-contrast-text` | Contrast callout text color | `gray-300` | `dark-800` |
 | `callout-contrast-border` | Contrast callout border color | `gray-900` | `dark-700` |
 
+## Card Component
+
+Variables for customizing card appearance. Cards are used for blog listings, category pages, tag pages, and inline `[!card]` components.
+
+| Variable | Description | Default `base` | Default `dark` |
+| --- | --- | --- | --- |
+| `card-bg` | Card background color | `var(--base-bg)` | `var(--base-bg)` |
+| `card-border` | Card border color | `var(--gray-200)` | `var(--dark-700)` |
+| `card-border-hover` | Card hover border color | `var(--gray-400)` | `var(--dark-450)` |
+| `card-rounded` | Card border radius | `0.5rem` | `0.5rem` |
+| `card-padding` | Card content padding | `1.5rem` | `1.5rem` |
+| `card-margin-bottom` | Card bottom margin | `1.5rem` | `1.5rem` |
+| `card-max-width` | Card maximum width (wide screens) | `750px` | `750px` |
+| `card-max-width-sm` | Card maximum width (narrow screens) | `400px` | `400px` |
+| `card-min-width` | Card minimum width | `250px` | `250px` |
+| `card-flex-basis` | Card flex basis for portrait layout | `250px` | `250px` |
+| `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |
+| `card-image-width` | Card image width percentage | `41.666667%` | `41.666667%` |
+| `card-title-text` | Card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-title-font-size` | Card title font size | `1.125rem` | `1.125rem` |
+| `card-title-font-size-md` | Card title font size (wide screens) | `1.25rem` | `1.25rem` |
+| `card-title-font-weight` | Card title font weight | `600` | `600` |
+| `card-title-leading` | Card title line height | `1.375` | `1.375` |
+| `card-description-text` | Card description text color | `var(--body-text)` | `var(--body-text)` |
+| `card-description-margin-top` | Card description top margin | `0.5rem` | `0.5rem` |
+| `card-category-text` | Card category text color | `var(--body-link)` | `var(--body-link)` |
+| `card-category-font-size` | Card category font size | `0.8125rem` | `0.8125rem` |
+| `card-category-font-weight` | Card category font weight | `600` | `600` |
+| `card-category-case` | Card category text transform | `uppercase` | `uppercase` |
+| `card-date-text` | Card date text color | `var(--gray-500)` | `var(--dark-350)` |
+| `card-date-font-size` | Card date font size | `0.875rem` | `0.875rem` |
+| `card-date-margin-top` | Card date top margin | `0.75rem` | `0.75rem` |
+| `card-group-gap` | Portrait card group gap spacing | `1.5rem` | `1.5rem` |
+| `card-group-margin-bottom` | Portrait card group bottom margin | `1.5rem` | `1.5rem` |
+
 ## Color Preview Component
 
 Variables for customizing color preview appearance.
