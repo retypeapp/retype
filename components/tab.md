@@ -89,3 +89,25 @@ To get the tab URL with the anchor, right-click on the tab and select `Copy Link
 ```
 
 [Tab anchor link](#tab-3)
+
+---
+
+## Custom attributes
+
+Custom `id` and CSS `class` attributes can be applied to a Tab using the `{#id .class}` syntax.
+
+```md
++++ Tab 1 {#getting-started .highlight}
+This Tab has a custom id and class.
++++ Tab 2
+This is another Tab.
++++
+```
+
++++ Tab 1 {#getting-started .highlight}
+This Tab has a custom id and class.
++++ Tab 2
+This is another Tab.
++++
+
+Linking to the custom id scrolls to and activates the Tab: [Go to getting started](#getting-started)

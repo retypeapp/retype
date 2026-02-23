@@ -27,10 +27,13 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 [!button My Button]
 
 // Text with variant
-[!button variant="base" text="My Button"]
+[!button text="My Button" variant="success"]
+
+Using text|variant shorthand notation 
+[!button My Button|success]
 
 // With link and variant
-[!button variant="primary" text="My Button"](https://retype.com/)
+[!button text="My Button" variant="success"](https://retype.com/)
 ```
 
 | Variant | Example |
@@ -39,6 +42,7 @@ Similar to a [Badge](badge.md), the Button component uses the same syntax as a h
 | `primary` (default) | [!button variant="primary" text="Primary"] |
 | `secondary` | [!button variant="secondary" text="Secondary"] |
 | `success` | [!button variant="success" text="Success"] |
+| `question` | [!button variant="question" text="Question"] |
 | `danger` | [!button variant="danger" text="Danger"] |
 | `warning` | [!button variant="warning" text="Warning"] |
 | `info` | [!button variant="info" text="Info"] |

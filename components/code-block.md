@@ -296,3 +296,21 @@ console.log("Hello, world!");
 ```py
 print('Hello, world!')
 +++
+
+---
+
+## Custom attributes
+
+Custom `id` and CSS `class` attributes can be applied to a code block using the `{#id .class}` syntax.
+
++++ :icon-code: Source
+~~~
+```js {#example-code .highlight}
+const msg = "hello, world";
+```
+~~~
++++ :icon-play: Demo
+```js {#example-code .highlight}
+const msg = "hello, world";
+```
++++

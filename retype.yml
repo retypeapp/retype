@@ -68,6 +68,7 @@ branding:
 
 meta:
   title: " - Write On! with Retype"
+  siteName: Retype
 
 generator:
   paths: root
@@ -79,19 +80,23 @@ links:
   - text: Pro Pricing
     link: /pro/pro.md
     icon: verified
+    title: View Retype Pro plans and pricing options
 
   - text: Blog & News
     link: /blog/
     icon: rss
+    title: Latest updates, announcements, and articles
 
   - text: Support
     link: https://github.com/retypeapp/retype/issues
     icon: comment-discussion
+    title: Latest updates, announcements, and articles
     target: blank
 
   - text: Social
     link: https://twitter.com/retypeapp/
     icon: mention
+    title: Follow Retype on Twitter for updates
     target: blank
 
 data:
@@ -112,7 +117,9 @@ footer:
     - text: About
       link: about.md
       icon: question
+      title: Learn more about Retype
 
     - text: License
       link: license.md
       icon: shield-check
+      title: View the software license agreement
