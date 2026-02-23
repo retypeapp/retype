@@ -70,28 +70,6 @@ You can also use the attribute syntax:
 
 ---
 
-## Single card
-
-A single card displays at full width in horizontal layout or constrained width in vertical layout.
-
-### Horizontal
-
-```md
-[!card]({{ blog0 }})
-```
-
-[!card]({{ blog0 }})
-
-### Vertical
-
-```md
-[!card vert]({{ blog0 }})
-```
-
-[!card vert]({{ blog0 }})
-
----
-
 ## Two cards
 
 Place multiple vertical cards together to create a responsive grid. With two cards, they display side by side on wider screens.
