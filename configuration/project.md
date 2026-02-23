@@ -65,7 +65,7 @@ When enabled, backlinks are automatically included at the end of pages that have
 
 ### enabled
 
-=== [!badge PRO] enabled : `boolean`
+=== enabled : `boolean`
 
 Enable or disable backlinks for the entire project. Default is `true`.
 
@@ -80,7 +80,7 @@ When set to `false`, backlinks will not be displayed on any page unless explicit
 
 ### title {#backlinks-title}
 
-=== [!badge PRO] title : `string`
+=== title : `string`
 
 Customize the heading text displayed above the backlinks section. Default is `"See also"`.
 
@@ -93,7 +93,7 @@ The title appears as a heading above the list of pages that link to the current 
 
 ===
 
-### [!badge PRO] maxResults
+### maxResults
 
 === maxResults : `number`
 
@@ -123,7 +123,7 @@ Branding configuration for your Retype generated website.
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-=== [!badge PRO] baseColor : `string`
+=== baseColor : `string`
 
 Set the base brand color for your project. 
 
