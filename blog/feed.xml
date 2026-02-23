@@ -53,13 +53,5 @@
       <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
       <category domain="https://retype.com/categories/release/">release</category>
     </item>
-    <item>
-      <title>What's New in Retype v3.8</title>
-      <guid isPermaLink="true">https://retype.com/blog/2025-05-04-whats-new-in-retype-v38/</guid>
-      <description>Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features. This release focuses on</description>
-      <author>geoff@retype.com (@geoffreymcgill)</author>
-      <pubDate>Sun, 04 May 2025 00:00:00 GMT</pubDate>
-      <category domain="https://retype.com/categories/release/">release</category>
-    </item>
   </channel>
 </rss>
