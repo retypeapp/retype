@@ -33,14 +33,17 @@ With the Badge component, the link is optional and can be omitted.
 ## Variant
 
 ```md
-// Text only (default Primary variant)
+Text only (default Primary variant)
 [!badge My Badge]
 
-// Text with variant
-[!badge variant="base" text="My Badge"]
+Text with variant
+[!badge text="My Badge" variant="success"]
 
-// With link and variant
-[!badge variant="primary" text="My Badge"](https://retype.com/)
+Using text|variant shorthand notation 
+[!badge My Badge|success]
+
+With link and variant
+[!badge text="My Badge" variant="success"](https://retype.com/)
 ```
 
 | Variant | Text only | With link | 
@@ -49,6 +52,7 @@ With the Badge component, the link is optional and can be omitted.
 | `primary` (default) | [!badge variant="primary" text="Primary"] | [!badge variant="primary" text="Primary"](#variant) |
 | `secondary` | [!badge variant="secondary" text="Secondary"] | [!badge variant="secondary" text="Secondary"](#variant) |
 | `success` | [!badge variant="success" text="Success"] | [!badge variant="success" text="Success"](#variant) |
+| `question` | [!badge variant="question" text="Question"] | [!badge variant="question" text="Question"](#variant) |
 | `danger` | [!badge variant="danger" text="Danger"] | [!badge variant="danger" text="Danger"](#variant) |
 | `warning` | [!badge variant="warning" text="Warning"] | [!badge variant="warning" text="Warning"](#variant) |
 | `info` | [!badge variant="info" text="Info"] | [!badge variant="info" text="Info"](#variant) |

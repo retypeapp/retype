@@ -192,3 +192,25 @@ Getting started with Retype is simple! Just install the Retype CLI and run `rety
 Retype sites can be deployed to any static hosting service like GitHub [Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), Vercel, or your own web server.
 ===
 
+---
+
+## Custom attributes
+
+Custom `id` and CSS `class` attributes can be applied to a Panel using the `{#id .class}` syntax.
+
+==- What can I do to get more involved? {#involved}
+...
+===
+
+```
+=== My Panel {#features-panel .highlight}
+This Panel has a custom id and class.
+===
+```
+
+=== My Panel {#features-panel .highlight}
+This Panel has a custom id and class.
+===
+
+Linking to the custom id scrolls to and expands the Panel: [Go to features panel](#features-panel)
+

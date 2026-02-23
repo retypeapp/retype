@@ -58,11 +58,11 @@ Callouts come in nine different flavors which can be specified by passing a `var
 | `primary` (default) | `blue` |
 | `secondary` | `gray` |
 | `success` | `green` |
+| `question` | `purple` |
 | `tip` | `green` |
 | `danger` | `red` |
 | `warning` | `yellow` |
 | `info` | `light-blue` |
-| `question` | `purple` |
 | `light` | `light` |
 | `dark` | `dark` |
 | `ghost` | `light` or `dark` depending on time of day |
@@ -89,6 +89,10 @@ This is a `secondary` Callout.
 This is a `success` Callout.
 !!!
 
+!!!question Question
+This is a `question` Callout.
+!!!
+
 !!!tip Tip
 This is a `tip` Callout.
 !!!
@@ -103,10 +107,6 @@ This is a `warning` Callout.
 
 !!!info Info
 This is a `info` Callout.
-!!!
-
-!!!question Question
-This is a `question` Callout.
 !!!
 
 !!!light Light
@@ -142,6 +142,10 @@ This is a `secondary` Callout.
 This is a `success` Callout.
 !!!
 
+!!!question Question
+This is a `question` Callout.
+!!!
+
 !!!tip Tip
 This is a `tip` Callout.
 !!!
@@ -156,10 +160,6 @@ This is a `warning` Callout.
 
 !!!info Info
 This is a `info` Callout.
-!!!
-
-!!!question Question
-This is a `question` Callout.
 !!!
 
 !!!light Light
@@ -253,4 +253,20 @@ To learn more about theme variables and how they work across Retype, check out t
 
 !!!
 All callout theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Callout Component](/configuration/theme-variables.md#callout-component) theme variables for the latest options.
+!!!
+
+---
+
+## Custom attributes
+
+Custom `id` and CSS `class` attributes can be applied to a Callout using the `{#id .class}` syntax.
+
+```md
+!!!warning Important {#critical-warning .highlight}
+This Callout has a custom id and class.
+!!!
+```
+
+!!!warning Important {#critical-warning .highlight}
+This Callout has a custom id and class.
 !!!

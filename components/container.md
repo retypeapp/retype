@@ -185,3 +185,19 @@ This text should be centered :+1:
 This text should be centered :+1:
 :::
 ```
+
+---
+
+## Custom attributes
+
+Custom `id` and CSS `class` attributes can be applied to a Container using the `{#id .class}` syntax.
+
+```
+::: {#my-container .custom-style}
+This Container has a custom id and class.
+:::
+```
+
+::: {#my-container .custom-style}
+This Container has a custom id and class.
+:::

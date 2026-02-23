@@ -65,7 +65,7 @@ When enabled, backlinks are automatically included at the end of pages that have
 
 ### enabled
 
-=== [!badge PRO] enabled : `boolean`
+=== enabled : `boolean`
 
 Enable or disable backlinks for the entire project. Default is `true`.
 
@@ -80,7 +80,7 @@ When set to `false`, backlinks will not be displayed on any page unless explicit
 
 ### title {#backlinks-title}
 
-=== [!badge PRO] title : `string`
+=== title : `string`
 
 Customize the heading text displayed above the backlinks section. Default is `"See also"`.
 
@@ -93,7 +93,7 @@ The title appears as a heading above the list of pages that link to the current 
 
 ===
 
-### [!badge PRO] maxResults
+### maxResults
 
 === maxResults : `number`
 
@@ -123,7 +123,7 @@ Branding configuration for your Retype generated website.
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
-=== [!badge PRO] baseColor : `string`
+=== baseColor : `string`
 
 Set the base brand color for your project. 
 
@@ -300,6 +300,72 @@ Using an [icon](/components/icon.md) as the separator:
 breadcrumb:
   separator: ":icon-dot:"
 ```
+===
+
+---
+
+## blog
+
+The `blog` configuration controls the behavior and appearance of the blog summary pages, including pagination and URL structure.
+
+### pageSize
+
+=== pageSize : `number`
+
+The number of blog post items to display per page. Default is `10`.
+
+```yml
+blog:
+  pageSize: 5
+```
+
+If the total number of blog posts exceeds the `pageSize`, Retype will automatically generate additional paginated summary pages.
+
+===
+
+### maxResults
+
+=== maxResults : `number`
+
+The maximum total number of blog posts to include across all paginated summary pages. Default is unlimited.
+
+```yml
+blog:
+  maxResults: 100
+```
+
+By default, all blog posts are included. Setting a `maxResults` value will cap the total number of posts that appear in the blog summary pages. Posts beyond the limit are excluded from the summary but remain accessible via direct URL.
+
+===
+
+### title {#blog-title}
+
+=== title : `string`
+
+A custom heading title for the blog summary page. Default is `null`.
+
+```yml
+blog:
+  title: News
+```
+
+If no `title` is configured, Retype will use the default translated label for the current [`locale`](#locale).
+
+===
+
+### base {#blog-base}
+
+=== base : `string`
+
+The URL base path segment used for the blog summary pages. Default is `"blog"`.
+
+```yml
+blog:
+  base: news
+```
+
+Setting `base: news` would generate the blog summary pages at `/news/` instead of the default `/blog/` path.
+
 ===
 
 ---
@@ -549,7 +615,12 @@ footer:
   links:
     - text: License
       link: license.md
+      title: View the software license agreement
+    - text: Support
+      link: https://github.com/retypeapp/retype/discussions/
+      title: Get help from the community
 ```
+
 ===
 
 ---
@@ -1101,6 +1172,35 @@ There are several other values that may be prefixed with an `_` character, inclu
 
 ===
 
+### title
+
+=== title : `string`
+
+Sets the `title` attribute of the generated HTML hyperlink. This creates a browser tooltip that appears when users hover over the link.
+
+The `title` property applies to both [`links`](#links) and [`footer.links`](#footer) configured in the `retype.yml` file.
+
+```yml
+links:
+  - text: Getting Started
+    link: https://retype.com/getting_started/
+    title: Learn how to install and configure Retype
+```
+
+The configuration above generates the following HTML:
+
+```html
+<a href="https://retype.com/getting_started/" title="Learn how to install and configure Retype">Getting Started</a>
+```
+
+When a user hovers over the "Getting Started" link, the browser displays "Learn how to install and configure Retype" as a tooltip.
+
+!!!
+The `text` property sets the visible link text, while `title` sets the hover tooltip. The `title` is optional and useful for providing additional context or description without cluttering the visible interface.
+!!!
+
+===
+
 ---
 
 ## locale
@@ -1214,6 +1314,24 @@ Using the sample above, if we had an `About us` page, the final `<title>` would 
 !!!
 See also, the Page level [`meta.title`](page.md#meta) configuration.
 !!!
+===
+
+### siteName
+
+=== siteName : `string`
+
+Sets the value for the `<meta property="og:site_name">` meta tag.
+
+```yml
+meta:
+  siteName: Retype
+```
+
+The above configuration generates:
+
+```html
+<meta property="og:site_name" content="Retype">
+```
 ===
 
 ---
