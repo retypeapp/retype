@@ -3,16 +3,18 @@ icon: note
 tags: [component]
 nav:
   badge: NEW|info
+data:
+  filePath: {{ content.blog.posts[0].filePath }}
 ---
 # Card
 
 The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page's title, category, description, date, and image.
 
 ```md
-[!card](/blog/2026-02-10-whats-new-in-retype-v312.md)
+[!card]({{ filePath }})
 ```
 
-[!card](/blog/2026-02-10-whats-new-in-retype-v312.md)
+[!card]({{ filePath }})
 
 ---
 
