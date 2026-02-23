@@ -20,6 +20,35 @@ Please also check out the [[Changelog]] for a full summary of changes in each re
 
 ---
 
+## v4.0.0
+
+[[Card]] component
+: A styled preview card linking to another page in your project. Cards automatically display the target page's title, category, description, date, and image. Supports horizontal and vertical layouts with responsive grid behavior when multiple cards are placed together, see [docs](/components/card.md).
+
+[[Steps]] component
+: Create numbered step-by-step instructions with the `>>>` syntax. Each step includes a title and content area, with support for custom start numbers and nested content like code blocks, tabs, and callouts. Steps automatically generate anchor links for deep linking, see [docs](/components/steps.md).
+
+Question variant for [[Button]] and [[Badge]]
+: New `question` variant for Button and Badge components. Provides a question mark styled option for FAQ sections, help buttons, and troubleshooting guidance, see [docs](/components/button.md#variants) and [#658](https://github.com/retypeapp/retype/issues/658).
+
+[`project` and `page` variables](/guides/page-and-property-variables.md)
+: Access page metadata and project configuration values directly in your templates. Use `page.*` for frontmatter properties and `project.*` for `retype.yml` settings. Enables dynamic content generation without hardcoding values, see [#619](https://github.com/retypeapp/retype/issues/619).
+
+`content` template variables
+: Query and access site content programmatically within templates. Includes `content.pages`, `content.blog.posts`, `content.tags`, `content.categories`, and `content.authors`. Supports wikilink-style lookup with `content["page-key"]` and search with `content.search("query")`.
+
+[Blog configuration](/configuration/project.md#blog)
+: Expanded blog configuration with `pageSize`, `maxResults`, `title`, and `base` settings. Control pagination, limit total posts on summary pages, customize the blog heading, and change the URL base path, see [#747](https://github.com/retypeapp/retype/issues/747).
+
+`title` property on [`links`](/configuration/project.md#title)
+: Add tooltip descriptions to navigation links. The `title` property on `links` and `footer.links` sets the HTML title attribute for hover tooltips, providing additional context without cluttering the interface, see [#672](https://github.com/retypeapp/retype/issues/672).
+
+[`meta.siteName`](/configuration/project.md#sitename)
+: Set the `og:site_name` meta tag for improved social media sharing. Defines the site name that appears when pages are shared on platforms like Facebook, Twitter, and LinkedIn.
+
+Library and dependency upgrades
+: Complete upgrade to the latest versions of all libraries and dependencies, including performance improvements and security updates.
+
 ## v3.12
 
 [!badge PRO] [[Backlinks]] component

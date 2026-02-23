@@ -23,9 +23,40 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
-## v4.0.0 [!badge @next|info]
+## v4.0.0-preview [!badge @next|info]
 
-Scheduled for late Q1-2026.
+**Released:** [2026-02-23](https://github.com/retypeapp/retype/releases/tag/v4.0.0-preview)
+
+There were **15 changes** in Retype `v4.0.0-preview`. 
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v400) for highlights.
+
++++ New :icon-shield-check:
+
+1. New [[Card]] component
+1. New [[Steps]] component
+1. New Question variant for [[Button]] and [[Badge]] components
+1. New `project` and `page` variables available to templating, see [#619](https://github.com/retypeapp/retype/issues/619)
+1. New `content` template variables and data
+1. New blog configuration and paging, see [#747](https://github.com/retypeapp/retype/issues/747)
+1. New `title` property on `links` and `footer.links`, see [#672](https://github.com/retypeapp/retype/issues/672)
+1. New `meta.siteName` project setting
+1. Complete upgrade to latest libraries and dependencies
+
++++ Improved :icon-thumbsup:
+
+1. Upgrade to latest TailwindCSS v4 release
+1. Generate modern Open Graph meta tags
+1. Added `color-scheme` meta tag to improve light/dark mode integration
+1. Add text selection theme variables (`selection-bg`, `selection-text`, etc)
+1. Set custom id and css class attributes on Panel, Tab, Callout, Code Block, and Container components, see [#797](https://github.com/retypeapp/retype/issues/797)
+1. Upgrade Octicons icons library from v19.21.2 to v19.22.0
+
++++ Fixed :icon-bug:
+
+1. Automatic detection of `-dark` images failing if hosting from base folder
+
++++
 
 ---
 

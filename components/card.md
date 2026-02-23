@@ -150,4 +150,4 @@ Render the latest blog post as a Card using templating syntax to dynamically ref
 
 [!card]({{ content.blog.posts[0].filePath }})
 
-The `content.blog.posts` array contains all blog posts sorted by date (newest first). Use `posts[0]` to get the latest post and access its `filePath` property for the Card component.
+The `content.blog.posts` array contains all blog posts sorted by date (newest first). Use `content.blog.posts[0]` to get the latest post and access its `filePath` property to set that value as the link for a Card component.
