@@ -23,6 +23,44 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
+## v4.0.0
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-02-24](https://github.com/retypeapp/retype/releases/tag/v4.0.0)
+
+# Version 4.0.0
+
+There were 16 changes in Retype 4.0.0.
+
+## New
+
+1. New Question variant for Button and Badge components
+1. New `title` property on `links` and `footer.links`, see #672
+1. New `meta.siteName` project setting
+1. New project and page variables available to templating, see #619
+1. New blog configuration and paging, see #747
+1. New `[!card]` inline component: render a Page Card anywhere in content
+1. New `content` template variables and data
+1. New Steps component
+
+## Improved
+
+1. Upgrade Octicons icons library from v19.21.2 to v19.22.0
+1. Upgrade to latest TailwindCSS v4 release
+1. Generate modern Open Graph meta tags
+1. Added `color-scheme` meta tag to improve light/dark mode integration
+1. Add text selection theme variables (selection-bg, selection-text)
+1. Set custom id and css class attributes on Panel, Tab, Callout, Code Block, and Container components, see #797
+
+## Fixed
+
+1. Automatic detection of `-dark` images failing if hosting from base folder
+1. Browser back button does not restore scroll position with Turbo
+
+
+---
+
 ## v4.0.0-preview [!badge @next|info]
 
 **Released:** [2026-02-23](https://github.com/retypeapp/retype/releases/tag/v4.0.0-preview)
