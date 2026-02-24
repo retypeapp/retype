@@ -8,11 +8,37 @@ poweredByRetype: true         # Set to false to remove "Powered by Retype"
 
 # -----------------------------------------------------------------------------
 
+backlinks:
+  enabled: true               # Enable or disable backlinks (default: true)
+  title: "See also"           # Heading text above the backlinks section
+  maxResults: 12              # Max number of backlinks to display per page
+
+# -----------------------------------------------------------------------------
+
 breadcrumb:
   enabled: true               # Enabled by default on Pro projects
   home: Home                  # Custom label for the first item
   home: ":icon-home:"         # or, use an icon
   separator: "|"              # Custom item separator
+
+# -----------------------------------------------------------------------------
+
+hub:
+  link: https://example.com/  # Set a URL to enable the Hub link
+  alt: Go to example.com      # Tooltip text for the hub link
+  target: blank               # Open in a new tab
+
+# -----------------------------------------------------------------------------
+
+nav:
+  mode: default               # Navigation mode: default | stack
+  icons:
+    mode: all                 # Icon display: all | none | folders | pages | top
+
+# -----------------------------------------------------------------------------
+
+nextprev:
+  mode: show                  # Next/Previous buttons: show | hide | exclude
 
 # -----------------------------------------------------------------------------
 
@@ -31,6 +57,21 @@ outbound:
     - example.com             # Only include links containing example.com
     - example.com/docs/*      # Wildcards are valid
 
+# -----------------------------------------------------------------------------
+
+scheme:
+  mode: system                # Color scheme: system | dark | light
+
+# -----------------------------------------------------------------------------
+
+theme:
+  base:                       # Light mode theme overrides
+    base-color: "#8839ef"     # Primary brand color
+    base-bg: "#eff1f5"        # Base background color
+    base-link-weight: 500     # Link font weight
+  dark:                       # Dark mode theme overrides
+    base-color: "#ca9ee6"
+    base-bg: "#303446"
 
 # -----------------------------------------------------------------------------
 # Retype
@@ -56,6 +97,7 @@ url: https://example.com/docs # Can also include a protocol
 
 branding:
   title: Example              # Your custom website title; keep it short
+  baseColor: "#8839ef"        # Base brand color for the project (Pro only)
   logo: /logo.png             # Path to a logo file
   logoDark: /logo-dark.png    # Path to a logo file to use in dark mode
   logoAlign: right            # Align the logo to the right or the left
@@ -72,6 +114,7 @@ links:                        # Custom links to add to the top bar
                               # See also: footer.links
   - text: Home                # The text to use for the link
     link: https://example.com # Link to an internal file or external URL
+    title: Go to the home page # Tooltip text on hover
   - text: API
     link: /getting-started.md # Link to an internal file
     icon: gear                # A custom icon name, :emoji:, <svg>, or
@@ -88,6 +131,15 @@ footer:
                               # See also: links
     - text: License           # The text to use for the link
       link: license.md        # Point to an internal file or external URL
+      title: View the software license # Tooltip text on hover
+
+# -----------------------------------------------------------------------------
+
+blog:
+  pageSize: 10                # Number of posts per summary page
+  maxResults: 100             # Max total posts across all summary pages
+  title: "Blog"               # Custom heading for the blog summary page
+  base: blog                  # URL base path for blog summary pages
 
 # -----------------------------------------------------------------------------
 
@@ -133,6 +185,17 @@ generator:
   recase: all                 # `none` to not recase any file or folder names
                               # By default, all generated file and folder names
                               # are generated in all lowercase
+  directoryIndex:
+    altNames:                 # File names to treat as default HTML files
+      - index.html
+      - index.htm
+      - default.html
+      - default.htm
+    append: false             # Append default file name to resolved URLs
+                              # If true, links become /guide/index.html
+    name: index.html          # Default HTML document file name
+  paths: relative             # URL path style: relative | root | source
+  trailingSlash: true         # Append trailing / to generated links
 
 # -----------------------------------------------------------------------------
 
@@ -156,6 +219,11 @@ integrations:
 
 # -----------------------------------------------------------------------------
 
+locale: en                    # Primary language for the generated website
+                              # See: https://retype.com/configuration/project/#locale
+
+# -----------------------------------------------------------------------------
+
 markdown:                     # Markdown configuration options
   lineBreaks: soft            # Switch between `soft` and `hard` line breaks
 
@@ -163,6 +231,7 @@ markdown:                     # Markdown configuration options
 
 meta:
   title: " | Widgets"         # Appended to the <title> element on all pages
+  siteName: Example           # Sets the og:site_name meta tag
 
 # -----------------------------------------------------------------------------
 
@@ -176,6 +245,7 @@ search:                       # Custom configuration of the website search
                               # Options include: full | partial | basic
   noResultsFoundMsg: "No results" # Message when no results are found
   placeholder: Search         # Placeholder text used in the input field
+  preload: false              # Preload the search index (default: false)
 
 # -----------------------------------------------------------------------------
 
@@ -212,6 +282,7 @@ templating:
   liquid: false               # Is Liquid syntax {% ... %} enabled?
                               # If true, Retype is incompatible with the
                               # GitBook style of component configuration
+  loopLimit: 1000             # Max loop iterations allowed in templates
 
 # -----------------------------------------------------------------------------
 
