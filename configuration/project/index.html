@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.825260597848">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.825263743862">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.0.0">
@@ -34,15 +34,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0.825260597848" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.0.0.825263743862" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0.825260597848" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0.825263743862" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0.825260597848" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0.825260597848" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0.825263743862" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0.825263743862" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0.825260597848" rel="stylesheet">
+    <link href="/static/styles.css?v=4.0.0.825263743862" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -253,7 +253,6 @@
                 </nav>
 
                 <!-- Page content  -->
-<!-- Add content to _includes/top.md to include here -->
 <doc-anchor-target id="project-configuration" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#project-configuration">#</doc-anchor-trigger>
@@ -284,16 +283,17 @@
 <p>If you run the command <code translate="no" v-pre>retype start</code> and do not have a <strong>retype.yml</strong> project configuration file within the root of your project, Retype will auto-generate a basic <strong>retype.yml</strong> file for your project. You can then edit the file to customize your project.</p>
 <p>You can also explicitly have Retype generate a <strong>retype.yml</strong> file by running the command <code translate="no" v-pre>retype init</code>.</p>
 <p>The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.</p>
+<p>{%{</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample retype.yml</div>
+<div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: .
 output: .retype
 
 url: docs.example.com # Use your website address here
 
 start:
-  # Uncomment the next line to try Retype Pro features
-  # pro: true
+  # Try the Retype Pro features
+  pro: true
 
 branding:
   title: Project Name
@@ -306,16 +306,13 @@ links:
 footer:
   copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
+<p>}%}</p>
 <p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Full retype.yml sample</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/samples/advanced-project-config/</span>
+<div class="relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
+    <div class="p-card-padding">
+        <div class="text-card-category font-card-category text-card-category-text card-category-case">Samples</div>
+        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Advanced project config</div>
+        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use this as a comprehensive project configuration reference to customize your <strong>retype.yml</strong> with advanced settings for branding, navigation, versioning, and more. Download retype.yml</p></div>
     </div>
     <a href="/samples/advanced-project-config/" class="absolute block inset-0"></a>
 </div>
@@ -672,8 +669,8 @@ footer:
 </doc-anchor-target>
 <doc-panel id="strategy--string">
     <template #title>strategy : <code translate="no" v-pre>string</code></template>
-<p>Cache busting configuration for the website resources, such as the JavaScript (.js) and <abbr title="Cascading Style Sheet">CSS</abbr> (.css) files.</p>
-<p>Helps to ensure a loaded page refers to the most recent JavaScript and <abbr title="Cascading Style Sheet">CSS</abbr> resources.</p>
+<p>Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files.</p>
+<p>Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.</p>
 <p>Specifies the approach Retype will use for cache invalidation.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -767,6 +764,53 @@ footer:
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">cname: false</code></pre>
 </doc-codeblock></div>
 <p>If you do manually create a <strong>CNAME</strong> file, please ensure the value in the <strong>CNAME</strong> file matches the value set in the <doc-anchor-trigger to="#url"><code translate="no" v-pre>url</code></doc-anchor-trigger>.</p>
+</doc-panel>
+<hr>
+<doc-anchor-target id="data">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#data">#</doc-anchor-trigger>
+        <span>data</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="data--object">
+    <template #title>data : <code translate="no" v-pre>object</code></template>
+<p>Custom data object for use in <a href="/templating/readme.md">templates</a>. Each key defined in <code translate="no" v-pre>data</code> becomes a top-level variable available in all pages.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">data:
+  productName: Company X
+  productVersion: v5.1</code></pre>
+</doc-codeblock></div>
+<p>With the above configuration, <code translate="no" v-pre>{{ productName }}</code> outputs <code translate="no" v-pre>Retype</code> in any page.</p>
+<p>Data values can also be nested objects and arrays:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">data:
+  company:
+    name: Company X
+    foundedAt: 2020
+  features:
+    - Templating
+    - Markdown
+    - Search</code></pre>
+</doc-codeblock></div>
+<p>Nested values are accessed using dot notation, such as <code translate="no" v-pre>{{ company.name }}</code>. Arrays can be iterated with <code translate="no" v-pre>{{ for item in features }}</code>.</p>
+<p>Data is also accessible through the <code translate="no" v-pre>project.data</code> variable, for example <code translate="no" v-pre>{{ project.data.productName }}</code>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Page-level <code translate="no" v-pre>data</code> can also be set in the page <a href="/configuration/page/">frontmatter</a>. Page-level data keys override project-level data keys of the same name.</p>
+        </div>
+    </div>
+</div>
 </doc-panel>
 <hr>
 <doc-anchor-target id="edit">
@@ -956,11 +1000,13 @@ footer:
 </doc-anchor-target>
 <doc-panel id="copyright--string">
     <template #title>copyright : <code translate="no" v-pre>string</code></template>
-<p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code translate="no" v-pre>{{ year }}</code> variable.</p>
+<p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and {%{<code translate="no" v-pre>{{ year }}</code>}%} variable.</p>
+<p>{%{</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">footer:
   copyright: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.com/) All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
+<p>}%}</p>
 </doc-panel>
 <doc-anchor-target id="links-footer">
     <h3>
@@ -1004,7 +1050,7 @@ footer:
 </doc-anchor-target>
 <doc-panel id="altnames--list">
     <template #title>altNames : <code translate="no" v-pre>list</code></template>
-<p>A list of file names to treat as default <abbr title="Hyper Text Markup Language">HTML</abbr> files.</p>
+<p>A list of file names to treat as default HTML files.</p>
 <p>By default, Retype will treat all of the following files as default pages if they are within a folder.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
@@ -1056,7 +1102,7 @@ generator:
 </doc-anchor-target>
 <doc-panel id="name--string">
     <template #title>name : <code translate="no" v-pre>string</code></template>
-<p>The default <abbr title="Hyper Text Markup Language">HTML</abbr> document file name generated by Retype.</p>
+<p>The default HTML document file name generated by Retype.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   directoryIndex:
@@ -1583,7 +1629,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 <doc-panel id="link--string">
     <template #title>link : <code translate="no" v-pre>string</code></template>
 <p>The URL to use for the link. The link can be a <code translate="no" v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
-<p>If a <code translate="no" v-pre>.md</code> file set, such as <code translate="no" v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code translate="no" v-pre>sample.md</code> value will be replaced with the path to the actual generated <abbr title="Hyper Text Markup Language">HTML</abbr> file.</p>
+<p>If a <code translate="no" v-pre>.md</code> file set, such as <code translate="no" v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code translate="no" v-pre>sample.md</code> value will be replaced with the path to the actual generated HTML file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: About us
@@ -1707,7 +1753,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </doc-anchor-target>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
-<p>Sets the <code translate="no" v-pre>title</code> attribute of the generated <abbr title="Hyper Text Markup Language">HTML</abbr> hyperlink. This creates a browser tooltip that appears when users hover over the link.</p>
+<p>Sets the <code translate="no" v-pre>title</code> attribute of the generated HTML hyperlink. This creates a browser tooltip that appears when users hover over the link.</p>
 <p>The <code translate="no" v-pre>title</code> property applies to both <doc-anchor-trigger to="#links"><code translate="no" v-pre>links</code></doc-anchor-trigger> and <doc-anchor-trigger to="#footer"><code translate="no" v-pre>footer.links</code></doc-anchor-trigger> configured in the <code translate="no" v-pre>retype.yml</code> file.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
@@ -1715,7 +1761,7 @@ host: docs.example.com/js/plausible.js</code></pre>
     link: https://retype.com/getting_started/
     title: Learn how to install and configure Retype</code></pre>
 </doc-codeblock></div>
-<p>The configuration above generates the following <abbr title="Hyper Text Markup Language">HTML</abbr>:</p>
+<p>The configuration above generates the following HTML:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;a href=&quot;https://retype.com/getting_started/&quot; title=&quot;Learn how to install and configure Retype&quot;&gt;Getting Started&lt;/a&gt;</code></pre>
 </doc-codeblock></div>
@@ -1966,8 +2012,8 @@ host: docs.example.com/js/plausible.js</code></pre>
     <template #title>lineBreaks : <code translate="no" v-pre>string</code></template>
 <p>Switches between <code translate="no" v-pre>soft</code> and <code translate="no" v-pre>hard</code> line break modes. The option instructs Retype in what way a regular line ending should be handled.</p>
 <ul>
-<li>in <code translate="no" v-pre>soft</code> mode, regular line breaks are processed as <a href="https://spec.commonmark.org/0.30/#soft-line-breaks" class="outbound" target="_blank"><span>soft breaks</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> (no <code translate="no" v-pre>&lt;br /&gt;</code> is emitted to <abbr title="Hyper Text Markup Language">HTML</abbr> markup), unless a line contains 2+ spaces before a line break.</li>
-<li>in <code translate="no" v-pre>hard</code> mode, regular line breaks are always emitted as <code translate="no" v-pre>&lt;br /&gt;</code> <abbr title="Hyper Text Markup Language">HTML</abbr> elements.</li>
+<li>in <code translate="no" v-pre>soft</code> mode, regular line breaks are processed as <a href="https://spec.commonmark.org/0.30/#soft-line-breaks" class="outbound" target="_blank"><span>soft breaks</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> (no <code translate="no" v-pre>&lt;br /&gt;</code> is emitted to HTML markup), unless a line contains 2+ spaces before a line break.</li>
+<li>in <code translate="no" v-pre>hard</code> mode, regular line breaks are always emitted as <code translate="no" v-pre>&lt;br /&gt;</code> HTML elements.</li>
 </ul>
 <p>Default is <code translate="no" v-pre>soft</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -3032,7 +3078,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>This error indicates that a template contains loops that process more items than the configured limit allows. To resolve this, either:</p>
 <ol>
 <li>Increase the <code translate="no" v-pre>loopLimit</code> value if the large loop is intentional</li>
-<li>Optimise the template to reduce the number of loop iterations</li>
+<li>Optimize the template to reduce the number of loop iterations</li>
 <li>Split large datasets into smaller, more manageable chunks</li>
 </ol>
 <doc-anchor-target id="performance">
@@ -3048,6 +3094,28 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <li><strong>Template complexity</strong>: Nested loops count towards the total iteration limit</li>
 </ul>
 <p>For most projects, the default limit of 1000 iterations provides a good balance between flexibility and performance protection.</p>
+</doc-panel>
+<doc-anchor-target id="namespace">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#namespace">#</doc-anchor-trigger>
+        <span>namespace</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="namespace--string">
+    <template #title>namespace : <code translate="no" v-pre>string</code></template>
+<p>An optional namespace prefix for template variables. When set, <code translate="no" v-pre>project</code>, <code translate="no" v-pre>page</code>, and <code translate="no" v-pre>content</code> variables are nested under the specified namespace.</p>
+<p>Default is <code translate="no" v-pre>null</code> (no namespace prefix).</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  namespace: retype</code></pre>
+</doc-codeblock></div>
+<p>With the above configuration, template variables are accessed as <code translate="no" v-pre>{{ retype.project.branding.title }}</code> instead of <code translate="no" v-pre>{{ project.branding.title }}</code>.</p>
+<p>Nested namespaces are also supported:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  namespace: my.docs</code></pre>
+</doc-codeblock></div>
+<p>This would make variables accessible as <code translate="no" v-pre>{{ my.docs.project.branding.title }}</code>.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="theme">
@@ -3410,8 +3478,6 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
         </a>
     </div>
 </div>
-<!-- Add content to _includes/bottom.md to include here -->
-<!-- Project wide abbreviations, _includes/bottom.md -->
 
                 <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
                     <span>
