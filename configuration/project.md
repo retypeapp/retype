@@ -28,15 +28,15 @@ You can also explicitly have Retype generate a **retype.yml** file by running th
 The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.
 
 {%{
-```yml Sample retype.yml
+```yml retype.yml
 input: .
 output: .retype
 
 url: docs.example.com # Use your website address here
 
 start:
-  # Uncomment the next line to try Retype Pro features
-  # pro: true
+  # Try the Retype Pro features
+  pro: true
 
 branding:
   title: Project Name

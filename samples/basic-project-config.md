@@ -1,11 +1,12 @@
 ---
 icon: file
 order: 1000
+templating: false
 ---
 # Basic project config
 
 The following is a basic **retype.yml** [project configuration](/configuration/project.md) file.
-{%{
+
 ```yml retype.yml
 input: .
 output: .retype
@@ -13,8 +14,8 @@ output: .retype
 url: docs.example.com # Use your website address here
 
 start:
-  # Uncomment the next line to try Retype Pro features
-  # pro: true
+  # Try the Retype Pro features
+  pro: true
 
 branding:
   title: Project Name
@@ -27,7 +28,7 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 ```
-}%}
+
 !!!
 All settings are optional. If a setting is not set, Retype will use default values.
 !!!
