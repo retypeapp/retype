@@ -4,11 +4,12 @@ order: 1200
 tags:
   - community
   - github
-label: Community #[NEW]
 nav:
   badge: NEW|info
 ---
-# Community
+# Community Keys
+
+![](static/community-hero.png)
 
 ## Keys
 
