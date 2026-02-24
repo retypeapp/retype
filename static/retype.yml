@@ -283,6 +283,8 @@ templating:
                               # If true, Retype is incompatible with the
                               # GitBook style of component configuration
   loopLimit: 1000             # Max loop iterations allowed in templates
+  # namespace: null           # Optional namespace prefix for template variables
+                              # Example: "retype" makes vars {{ retype.project.* }}
 
 # -----------------------------------------------------------------------------
 

@@ -451,6 +451,45 @@ If you do manually create a **CNAME** file, please ensure the value in the **CNA
 
 ---
 
+## data
+
+=== data : `object`
+
+Custom data object for use in [templates](/templating/readme.md). Each key defined in `data` becomes a top-level variable available in all pages.
+
+```yml
+data:
+  productName: Company X
+  productVersion: v5.1
+```
+
+With the above configuration, `{{ productName }}` outputs `Retype` in any page.
+
+Data values can also be nested objects and arrays:
+
+```yml
+data:
+  company:
+    name: Company X
+    foundedAt: 2020
+  features:
+    - Templating
+    - Markdown
+    - Search
+```
+
+Nested values are accessed using dot notation, such as `{{ company.name }}`. Arrays can be iterated with `{{ for item in features }}`.
+
+Data is also accessible through the `project.data` variable, for example `{{ project.data.productName }}`.
+
+!!!
+Page-level `data` can also be set in the page [frontmatter](page.md). Page-level data keys override project-level data keys of the same name.
+!!!
+
+===
+
+---
+
 ## edit
 
 The `edit` config allows for enabling and customization of the `Edit this page` links on content pages.
@@ -2090,7 +2129,7 @@ ERROR: [template.md:1] Evaluation error. Exceeding number of iteration limit `10
 This error indicates that a template contains loops that process more items than the configured limit allows. To resolve this, either:
 
 1. Increase the `loopLimit` value if the large loop is intentional
-2. Optimise the template to reduce the number of loop iterations
+2. Optimize the template to reduce the number of loop iterations
 3. Split large datasets into smaller, more manageable chunks
 
 #### Performance
@@ -2102,6 +2141,32 @@ Loop limits help maintain build performance by preventing runaway templates. Con
 - **Template complexity**: Nested loops count towards the total iteration limit
 
 For most projects, the default limit of 1000 iterations provides a good balance between flexibility and performance protection.
+
+===
+
+### namespace
+
+=== namespace : `string`
+
+An optional namespace prefix for template variables. When set, `project`, `page`, and `content` variables are nested under the specified namespace.
+
+Default is `null` (no namespace prefix).
+
+```yml
+templating:
+  namespace: retype
+```
+
+With the above configuration, template variables are accessed as `{{ retype.project.branding.title }}` instead of `{{ project.branding.title }}`.
+
+Nested namespaces are also supported:
+
+```yml
+templating:
+  namespace: my.docs
+```
+
+This would make variables accessible as `{{ my.docs.project.branding.title }}`.
 
 ===
 

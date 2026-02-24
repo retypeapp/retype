@@ -4,7 +4,7 @@ order: 900
 ---
 # Advanced project config
 
-The following **retype.yml** sample includes all possible [project configuration](/configuration/project.md) options.
+Use this as a comprehensive [project configuration](/configuration/project.md) reference to customize your **retype.yml** with advanced settings for branding, navigation, versioning, and more.
 
 [!file Download retype.yml](/static/retype.yml)
 
