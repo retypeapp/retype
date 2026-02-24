@@ -51,7 +51,7 @@ footer:
 ```
 }%}
 
-[!ref Full retype.yml sample](/samples/advanced-project-config.md)
+[!card](/samples/advanced-project-config.md)
 
 ---
 
