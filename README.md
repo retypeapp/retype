@@ -65,7 +65,7 @@ All operating systems are supported: including Mac, Windows, and Linux.
 
 #### :icon-shield-check: It just works
 
-Retype has been built to be easy to use and should _"just work"_ out-of-the-box without any special configuration or troublesome setup.
+Retype has been built to be easy to use and should **_just work_** out-of-the-box without any special configuration or troublesome setup.
 
 #### :icon-zap: Lightning fast
 
@@ -89,7 +89,7 @@ If a change is detected, such as editing and saving an `.md` file, your Retype w
 
 #### :icon-server: Host anywhere
 
-Retype generates an HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
+Retype generates an HTML website that you can self-host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
 
 ---
 

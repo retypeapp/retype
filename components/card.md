@@ -5,7 +5,7 @@ nav:
   badge: NEW|info
 data:
 {{ for post in content.blog.posts | array.limit 5 ~}}
-  blog{{ for.index }}: {{ post.filePath }}
+  blog{{ for.index }}: "{{ post.filePath }}"
 {{ end }}
 ---
 # Card
