@@ -5,7 +5,7 @@
     <link>https://retype.com/blog/</link>
     <description>Blog &amp; News</description>
     <copyright>© Copyright 2026 - Retype | All rights reserved | Made in Canada 🇨🇦</copyright>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 GMT</lastBuildDate>
     <generator>https://retype.com</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://retype.com/blog/feed.xml" />
     <image>
@@ -13,6 +13,14 @@
       <link>https://retype.com/blog/</link>
       <url>https://retype.com/favicon.ico</url>
     </image>
+    <item>
+      <title>What's New in Retype v4.0</title>
+      <guid isPermaLink="true">https://retype.com/blog/2026-02-23-whats-new-in-retype-v40/</guid>
+      <description>Retype v4.0 is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal</description>
+      <author>geoff@retype.com (@geoffreymcgill)</author>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
+    </item>
     <item>
       <title>What's New in Retype v3.12</title>
       <guid isPermaLink="true">https://retype.com/blog/2026-02-10-whats-new-in-retype-v312/</guid>
@@ -44,14 +52,6 @@
       <author>geoff@retype.com (@geoffreymcgill)</author>
       <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
       <category domain="https://retype.com/categories/news/">news</category>
-    </item>
-    <item>
-      <title>What's New in Retype v3.9</title>
-      <guid isPermaLink="true">https://retype.com/blog/2025-05-28-whats-new-in-retype-v39/</guid>
-      <description>Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print</description>
-      <author>geoff@retype.com (@geoffreymcgill)</author>
-      <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
-      <category domain="https://retype.com/categories/release/">release</category>
     </item>
   </channel>
 </rss>
