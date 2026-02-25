@@ -103,7 +103,7 @@ links:
     target: blank
 
 data:
-  version: "4.0.0"
+  version: "4.0.1"
   abbreviations:
     HTML: Hyper Text Markup Language
     CSS: Cascading Style Sheet

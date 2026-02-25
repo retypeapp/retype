@@ -23,6 +23,24 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
+## v4.0.1
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-02-25](https://github.com/retypeapp/retype/releases/tag/v4.0.1)
+
+# Version 4.0.1
+
+There were 2 changes in Retype 4.0.1.
+
+## Improved
+
+1. Print stylesheet improvements
+1. Improve scroll position logic and reloading
+
+
+---
+
 ## v4.0.0
 
 [!badge text="LATEST" variant="info"]
