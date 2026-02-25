@@ -4,7 +4,7 @@ icon: home
 backlinks:
   enabled: false
 ---
-# Markdown Docs Generator
+# Markdown Website Generator
 
 ![](/static/retype-hero.png)
 
