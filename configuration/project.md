@@ -455,7 +455,7 @@ If you do manually create a **CNAME** file, please ensure the value in the **CNA
 
 === data : `object`
 
-Custom data object for use in [templates](/templating/readme.md). Each key defined in `data` becomes a top-level variable available in all pages.
+Custom data object for use in templates. Each key defined in `data` becomes a top-level variable available in all pages.
 
 ```yml
 data:
@@ -478,9 +478,9 @@ data:
     - Search
 ```
 
-Nested values are accessed using dot notation, such as `{{ company.name }}`. Arrays can be iterated with `{{ for item in features }}`.
+Nested values are accessed using dot notation, such as {%{`{{ company.name }}`}%}. Arrays can be iterated with {%{`{{ for item in features }}`}%}.
 
-Data is also accessible through the `project.data` variable, for example `{{ project.data.productName }}`.
+Data is also accessible through the `project.data` variable, for example {%{`{{ project.data.productName }}`}%}.
 
 !!!
 Page-level `data` can also be set in the page [frontmatter](page.md). Page-level data keys override project-level data keys of the same name.
@@ -2157,7 +2157,7 @@ templating:
   namespace: retype
 ```
 
-With the above configuration, template variables are accessed as `{{ retype.project.branding.title }}` instead of `{{ project.branding.title }}`.
+With the above configuration, template variables are accessed as {%{`{{ retype.project.branding.title }}`}%} instead of {%{`{{ project.branding.title }}`}%}.
 
 Nested namespaces are also supported:
 
@@ -2166,7 +2166,7 @@ templating:
   namespace: my.docs
 ```
 
-This would make variables accessible as `{{ my.docs.project.branding.title }}`.
+This would make variables accessible as {%{`{{ my.docs.project.branding.title }}`}%}.
 
 ===
 

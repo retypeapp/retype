@@ -30,5 +30,5 @@ footer:
 ```
 
 !!!
-All settings are optional. If a setting is not set, Retype will use default values.
+All Project settings are optional. If a setting is not configured, Retype will use default values.
 !!!

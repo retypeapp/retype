@@ -29,9 +29,9 @@ Please also check out the [[Changelog]] for a full summary of changes in each re
 : Create numbered step-by-step instructions with the `>>>` syntax. Each step includes a title and content area, with support for custom start numbers and nested content like code blocks, tabs, and callouts. Steps automatically generate anchor links for deep linking, see [docs](/components/steps.md).
 
 Question variant for [[Button]] and [[Badge]]
-: New `question` variant for Button and Badge components. Provides a question mark styled option for FAQ sections, help buttons, and troubleshooting guidance, see [docs](/components/button.md#variants) and [#658](https://github.com/retypeapp/retype/issues/658).
+: New `question` variant for Button and Badge components. Provides a question mark styled option for FAQ sections, help buttons, and troubleshooting guidance, see [docs](/components/button.md#variant) and [#658](https://github.com/retypeapp/retype/issues/658).
 
-[`project` and `page` variables](/guides/page-and-property-variables.md)
+[`project`](/templating/project-properties.md) and [`page`](/templating/page-properties.md) properties
 : Access page metadata and project configuration values directly in your templates. Use `page.*` for frontmatter properties and `project.*` for `retype.yml` settings. Enables dynamic content generation without hardcoding values, see [#619](https://github.com/retypeapp/retype/issues/619).
 
 `content` template variables
@@ -66,7 +66,7 @@ Dark mode favicon support
 Triple-star description syntax
 : New `***` syntax block for defining page descriptions directly in markdown if placed immediately after the opening H1 heading. Provides a cleaner alternative to YAML frontmatter for setting page meta descriptions.
 
-[`templating.loopLimit`](/configuration/project.md#templating-looplimit)
+[`templating.loopLimit`](/configuration/project.md#looplimit)
 : New project configuration setting to control the maximum number of loop iterations in templates. Helps prevent infinite loops and improves template safety.
 
 [`target`](/configuration/page.md#target)
