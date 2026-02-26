@@ -5,7 +5,6 @@ authors:
     link: https://github.com/retypeapp
 category:
   - release
-layout: blog
 ---
 # What's New in Retype v4.0
 
