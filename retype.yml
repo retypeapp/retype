@@ -63,7 +63,7 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v4.0
+  label: v4.1-pre
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
@@ -103,7 +103,7 @@ links:
     target: blank
 
 data:
-  version: "4.0.1"
+  version: "4.1.0-preview"
   abbreviations:
     HTML: Hyper Text Markup Language
     CSS: Cascading Style Sheet
