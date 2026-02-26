@@ -741,8 +741,8 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | `card-rounded` | Card border radius | `0.5rem` | `0.5rem` |
 | `card-padding` | Card content padding | `1.5rem` | `1.5rem` |
 | `card-margin-bottom` | Card bottom margin | `1.5rem` | `1.5rem` |
-| `card-max-width` | Card maximum width (wide screens) | `750px` | `750px` |
-| `card-max-width-sm` | Card maximum width (narrow screens) | `400px` | `400px` |
+| `card-max-width` | Card maximum width (wide screens) | `960px` | `960px` |
+| `card-max-width-sm` | Card maximum width (narrow screens) | `558px` | `558px` |
 | `card-min-width` | Card minimum width | `250px` | `250px` |
 | `card-flex-basis` | Card flex basis for portrait layout | `250px` | `250px` |
 | `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |

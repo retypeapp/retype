@@ -5,6 +5,7 @@ authors:
     link: https://github.com/retypeapp
 category:
   - release
+layout: blog
 ---
 # What's New in Retype v4.0
 
@@ -188,7 +189,7 @@ This page was written by {{ page.author }}.
 
 Use `page.*` to reference any frontmatter property on the page. Use `project.*` to pull values from your `retype.yml`. No more hardcoding values that might change.
 
-See the [Page and Project Variables](/guides/page-and-property-variables.md) guide for details.
+See the [Page](/templating/page-properties.md) and [Project](/templating/project-properties.md) properties guide for details.
 
 ### Content Variables
 

@@ -3,7 +3,6 @@ authors:
   - name: "@geoffreymcgill"
     email: geoff@retype.com
     link: https://github.com/retypeapp
-label: Collaborative Obsidian Workflow
 category: [blog]
 ---
 # Self-hosting Obsidian Vault with Retype
