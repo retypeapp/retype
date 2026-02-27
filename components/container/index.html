@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Container - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -262,13 +262,13 @@
 <div><p>This text is inside a Container component.</p>
 </div>
 <p>The syntax used to create the above line is as follows:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="container-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">:::
 This text is inside a Container component.
 :::</code></pre>
 </doc-codeblock></div>
 <p>The difference is in the generated <abbr title="Hyper Text Markup Language">HTML</abbr>. The above line of text is now created within a new <code translate="no" v-pre>&lt;div&gt;</code> element:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="container-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;div&gt;
     &lt;p&gt;This text is inside a Container component.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
@@ -295,7 +295,7 @@ This text is inside a Container component.
 <div class="sample"><p>This text is wrapped in a Container component and has a custom css <code translate="no" v-pre>class</code> applied.</p>
 </div>
 <p>The above Container is configured by assigning the <code translate="no" v-pre>:::sample</code> class to the opening of Container, and then defining an inline <abbr title="Cascading Style Sheet">CSS</abbr> class.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-css-class-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&lt;style&gt;
     .sample {
         text-align: center;
@@ -322,13 +322,13 @@ This text is wrapped in a Container component and has a custom css `class` appli
 <div id="container1" class="sample"><p>This Container has a custom <code translate="no" v-pre>id</code> attribute.</p>
 </div>
 <p>The following sample is used to configure the above Container:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="generic-attributes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">:::sample { #container1 }
 This Container has a custom `id` attribute.
 :::</code></pre>
 </doc-codeblock></div>
 <p>The generated <abbr title="Hyper Text Markup Language">HTML</abbr> would be:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="generic-attributes-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;div id=&quot;container1&quot; class=&quot;sample&quot;&gt;
     &lt;p&gt;This Container has a custom &lt;code&gt;id&lt;/code&gt; attribute.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
@@ -344,7 +344,7 @@ This Container has a custom `id` attribute.
 <p>The contents of <strong>_includes/head.html</strong> are added to all pages of the generated website.</p>
 <p>For example, the inline <code translate="no" v-pre>&lt;style&gt;</code> block above could be moved out of the page and then included automatically into all pages.</p>
 <p>Create a new <strong>head.html</strong> file and place the file within a <strong>/_includes/</strong> folder in the root of your project.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-global-css-_includesheadhtml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">_includes/head.html</div>
 <pre translate="no" class="language-css"><code v-pre class="language-css">&lt;style&gt;
     .sample {
@@ -361,7 +361,7 @@ This Container has a custom `id` attribute.
 <p>Moving the <code translate="no" v-pre>&lt;style&gt;</code> block into the <strong>_includes/head.html</strong> is all you need to do. Save the file and your new <code translate="no" v-pre>.sample</code> css class is now available on all pages your website.</p>
 <div class="sample"><p>This Container uses the <code translate="no" v-pre>sample</code> class.</p>
 </div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-global-css-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">:::sample
 This Container uses the `sample` class.
 :::</code></pre>
@@ -373,11 +373,11 @@ This Container uses the `sample` class.
     </h3>
 </doc-anchor-target>
 <p>Since the <strong>_includes/head.html</strong> can contain any custom <abbr title="Hyper Text Markup Language">HTML</abbr>, you could also move your <abbr title="Cascading Style Sheet">CSS</abbr> into a separate <code translate="no" v-pre>.css</code> file that is included on all pages of your generated website.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="global-css-file-_includesheadhtml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/_includes/head.html</div>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;link href=&quot;/static/custom.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="global-css-file-staticcustomcss" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/static/custom.css</div>
 <pre translate="no" class="language-css"><code v-pre class="language-css">.sample {
     text-align: center;
@@ -426,7 +426,7 @@ This Container uses the `sample` class.
 </div>
 <div class="text-center"><p>This text should be centered <span class="docs-emoji">&#x1F44D;</span></p>
 </div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="center-on-page-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">:::content-center
 [!button My Button]
 :::
@@ -443,7 +443,7 @@ This text should be centered :+1:
     </h2>
 </doc-anchor-target>
 <p>Custom <code translate="no" v-pre>id</code> and <abbr title="Cascading Style Sheet">CSS</abbr> <code translate="no" v-pre>class</code> attributes can be applied to a Container using the <code translate="no" v-pre>{#id .class}</code> syntax.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-attributes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">::: {#my-container .custom-style}
 This Container has a custom id and class.
 :::</code></pre>

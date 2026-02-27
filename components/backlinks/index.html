@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Backlinks - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -260,7 +260,7 @@
 <p>This component is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="backlinks-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!backlinks]</code></pre>
 </doc-codeblock></div>
 <p>Manual placement gives you control over where backlinks appear and disables the automatic placement at the bottom of the page.</p>
@@ -272,7 +272,7 @@
     </h2>
 </doc-anchor-target>
 <p>You can customize the title of the backlinks section by passing a custom title string.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-title-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!backlinks &quot;Related pages&quot;]</code></pre>
 </doc-codeblock></div>
 <p>The custom title overrides the default title configured at the <a href="/configuration/project/#meta-title">project</a> or <a href="/configuration/page/#meta-title">page</a> level.</p>
@@ -327,7 +327,7 @@ More information and external links...</code></pre>
     </h3>
 </doc-anchor-target>
 <p>Configure backlinks for the entire project in your <code translate="no" v-pre>retype.yml</code> file:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="project-level-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">backlinks:
   enabled: true
   title: &quot;Referenced by&quot;
@@ -340,7 +340,7 @@ More information and external links...</code></pre>
     </h3>
 </doc-anchor-target>
 <p>Override project settings for individual pages using the page metadata:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="page-level-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 backlinks:
   enabled: true

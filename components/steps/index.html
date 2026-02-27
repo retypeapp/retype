@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Steps - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -257,7 +257,7 @@
     </h1>
 </doc-anchor-target>
 <p>A Steps component is created by surrounding a block of content with <code translate="no" v-pre>&gt;&gt;&gt;</code> and including a title for each step.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="steps-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; Step 1
 This is the first step.
 &gt;&gt;&gt;</code></pre>
@@ -277,7 +277,7 @@ This is the first step.
     </h2>
 </doc-anchor-target>
 <p>Multiple steps can be configured by stacking multiple <code translate="no" v-pre>&gt;&gt;&gt;</code> blocks and adding a title for each step.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="multiple-steps-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; Create the project
 Initialize a new project in your workspace.
 
@@ -310,7 +310,7 @@ Launch the development server and verify it is running.
     </h2>
 </doc-anchor-target>
 <p>Start the steps at a custom number using the <code translate="no" v-pre>&gt;&gt;&gt; 12. Title</code> syntax. The number followed by a <code translate="no" v-pre>.</code> and a space sets the starting step number. Following steps will auto-increment from the custom start number.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-start-number-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; 12. Configure the server
 Server configuration instructions here.
 
@@ -344,7 +344,7 @@ Verification steps here.
     </h2>
 </doc-anchor-target>
 <p>Any content can be added inside a Step, including other components such as <a href="/components/code-block/">Code Blocks</a>, <a href="/components/tab/">Tabs</a>, and <a href="/components/callout/">Callouts</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="inner-content-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; Install the package
 
   +++ npm
@@ -410,7 +410,7 @@ Verification steps here.
 <p>Each Step is an anchor that allows for linking directly to the step by passing the anchor in a URL.</p>
 <p>If the step anchor is passed in the URL, when the page loads, the page will be automatically scrolled to that step position.</p>
 <p>To get the step URL with the anchor, right-click on the step title and select <code translate="no" v-pre>Copy Link Address</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="anchors-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[Go to Step 2](#install-dependencies)</code></pre>
 </doc-codeblock></div>
 <p><doc-anchor-trigger to="#install-dependencies">Go to Step 2</doc-anchor-trigger></p>

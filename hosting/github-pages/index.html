@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>GitHub Pages - Write On! with Retype</title>
@@ -34,15 +34,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -293,7 +293,7 @@
 </doc-anchor-target>
 <p>With some simple configuration, GitHub can host your website for free.</p>
 <p>To get started, navigate to the <strong>Settings</strong> &gt; <strong>Pages</strong> page of your repo. The URL should be the following, although you will need to replace <code translate="no" v-pre>&lt;organization&gt;</code> and <code translate="no" v-pre>&lt;repo&gt;</code> with your values:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-2-configure-github-pages-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">https://github.com/&lt;organization&gt;/&lt;repo&gt;/settings/pages</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="pick-a-branch">
@@ -342,15 +342,15 @@
 <p>With the above sample, GitHub will provide a unique <code translate="no" v-pre>github.io</code> subdomain to host your website from.</p>
 <p>Your website will be available from a subfolder of that subdomain. In our scenario, our website will be available in the <code translate="no" v-pre>/retype/</code> subfolder.</p>
 <p>For example, the URL will use the following pattern:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="set-a-url-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">https://&lt;organization&gt;.github.io/&lt;repo&gt;/</code></pre>
 </doc-codeblock></div>
 <p>You would then set the <a href="/configuration/project/#url"><code translate="no" v-pre>url</code></a> configuration with the following, where <code translate="no" v-pre>&lt;organization&gt;</code> is replaced with your GitHub organization name and <code translate="no" v-pre>&lt;repo&gt;</code> is replaced with your repository name.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="set-a-url-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: &lt;organization&gt;.github.io/&lt;repo&gt;/</code></pre>
 </doc-codeblock></div>
 <p>If your GitHub organization name was <code translate="no" v-pre>CompanyX</code> and your repo name was <code translate="no" v-pre>Docs</code>, your <code translate="no" v-pre>url</code> configuration would be:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="set-a-url-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: companyx.github.io/docs/</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="custom-domain">
@@ -370,7 +370,7 @@
 <p>If your website will be available at <code translate="no" v-pre>https://docs.example.com</code>, use <code translate="no" v-pre>docs.example.com</code>.</p>
 <p>You will then need to <a href="https://docs.github.com/articles/using-a-custom-domain-with-github-pages/">configure the DNS</a> for your domain name.</p>
 <p>The last step would be updating the <a href="/configuration/project/#url"><code translate="no" v-pre>url</code></a> project configuration with the same value. For example, if your website will be available at <code translate="no" v-pre>https://example.com</code>, use the following <code translate="no" v-pre>url</code> configuration:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-domain-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">url: example.com</code></pre>
 </doc-codeblock></div>
 <div id="retype-backlinks">

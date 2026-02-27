@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Page configuration - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -257,7 +257,7 @@
     </h1>
 </doc-anchor-target>
 <p>Individual <code translate="no" v-pre>.md</code> pages can be configured using the Frontmatter <a href="/faq/#what-is-page-metadata">metadata</a> section added to the top of the page.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="page-configuration-samplemd" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 label: Sample
@@ -284,7 +284,7 @@ This is a sample page demonstrating page metadata.</code></pre>
 <li><code translate="no" v-pre>home.md</code> *only in the project root</li>
 </ol>
 <p>Within a sub-folder, if you add a Markdown <code translate="no" v-pre>.md</code> file with the exact same name as the folder name, Retype will also treat that <code translate="no" v-pre>.md</code> as a default page. For instance, given the following basic project structure, the <strong>/sample/sample.md</strong> file will function as a default page for the folder. The result will be the same as though you named it <strong>/sample/index.md</strong>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="default-pages-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">sample
   |-- sample.md
 readme.md
@@ -300,13 +300,13 @@ retype.yml</code></pre>
 <p>For instance, <strong>sample.md</strong> would need a matching <strong>sample.yml</strong> file. The separate <strong>.yml</strong> file must have the exact same filename as its paired <code translate="no" v-pre>.md</code> page.</p>
 <p>Both <strong>.yml</strong> and <strong>.yaml</strong> extensions are supported.</p>
 <p>Adding your configs into the top metadata section of a <code translate="no" v-pre>.md</code> page, or into a separate <strong>.yml</strong> file is just a matter of preference. Both techniques produce the same result.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="separate-yml-file-samplemd" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># Sample
 
 This is a sample page demonstrating page metadata.</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="separate-yml-file-sampleyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">label: Sample
 layout: page
@@ -371,13 +371,13 @@ author: frank@example.com
 </doc-panel>
 <p>An author object can also be configured with specific values for the <doc-anchor-trigger to="#name"><code translate="no" v-pre>name</code></doc-anchor-trigger>, <doc-anchor-trigger to="#email"><code translate="no" v-pre>email</code></doc-anchor-trigger>, <doc-anchor-trigger to="#link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#avatar"><code translate="no" v-pre>avatar</code></doc-anchor-trigger>.</p>
 <p>The <code translate="no" v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="author-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 authors: [Frank, Annette Jones, steffen@example.com]
 ---</code></pre>
 </doc-codeblock></div>
 <p>Mixed author types are also permitted, including adding a list of authors by name, email, or author configuration objects.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="author-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 # Mix of author types
 authors:
@@ -1577,7 +1577,7 @@ Some content here.</code></pre>
 <p>With <code translate="no" v-pre>hidden</code>, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
 <p>Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.</p>
 <p>The following <a href="/samples/hidden/">sample</a> demonstrates hiding a page:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="hidden-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 visibility: hidden
 ---
@@ -1612,7 +1612,7 @@ This page will be hidden from the menu and search results.</code></pre>
     </div>
 </div>
 <p>The following <a href="/samples/protected/">sample</a> (password: test) demonstrates creating a protected page:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="protected-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 visibility: protected
 ---
@@ -1621,13 +1621,13 @@ visibility: protected
 This page will be visible in the main navigation, but will require a password to view the page.</code></pre>
 </doc-codeblock></div>
 <p>Then call either of the following commands to set the password for the project:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="protected-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
 <p>The project password can also be set as an Environment variable by using <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a>.</p>
 <p>An entire folder can be set to <code translate="no" v-pre>protected</code> by adding an <code translate="no" v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="protected-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: protected</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="private">
@@ -1655,7 +1655,7 @@ retype build --password &lt;your-password&gt;</code></pre>
     </div>
 </div>
 <p>The following <a href="/samples/private/">sample</a> (password: test) demonstrates creating a private page:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="private-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 visibility: private
 ---
@@ -1664,7 +1664,7 @@ visibility: private
 This page will not be visible in the main navigation and will require a password to view the page.</code></pre>
 </doc-codeblock></div>
 <p>Then call either of the following commands to set the password for the project:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="private-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
@@ -1687,7 +1687,7 @@ retype build --password &lt;your-password&gt;</code></pre>
     </div>
 </div>
 <p>An entire folder can be set to <code translate="no" v-pre>private</code> by adding an <code translate="no" v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="private-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: private</code></pre>
 </doc-codeblock></div>
 <div id="retype-backlinks">

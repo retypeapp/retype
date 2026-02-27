@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Embed - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -258,11 +258,11 @@
 </doc-anchor-target>
 <p>The <code translate="no" v-pre>embed</code> component helps with content embedding.</p>
 <p>The embed component syntax is similar to many other Retype components. The <code translate="no" v-pre>!embed</code> keyword is used to specify the component and a link to the resource is included.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="embed-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed](link)</code></pre>
 </doc-codeblock></div>
 <p>The link is the full URL to the embedded resource. For instance, embeding a YouTube or Vimeo video would require the following component syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="embed-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>The above Retype component would render as follows:</p>
@@ -284,7 +284,7 @@
 <p>Typically, this attribute is used by embeded videos, such as a YouTube or Vimeo, to enable the <strong>Full screen</strong> button.</p>
 <p>The default value of <code translate="no" v-pre>allowFullScreen</code> is <code translate="no" v-pre>true</code>. Setting to <code translate="no" v-pre>false</code> will remove or disable the full screen button.</p>
 <p>You do not need to explicitly enable the full screen option for videos. By default, the button will be enabled when a Retype <code translate="no" v-pre>[!embed]</code> component is used.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="allowfullscreen-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -295,7 +295,7 @@
 </figure>
 </p>
 <p>To explicitly remove or disable the full screen option, include <code translate="no" v-pre>allowFullScreen=&quot;false&quot;</code> in your <code translate="no" v-pre>[!embed]</code> component configuration.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="allowfullscreen-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed allowFullScreen=&quot;false&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -313,7 +313,7 @@
     </h2>
 </doc-anchor-target>
 <p>Specifies the video&#x27;s pixel aspect ratio.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="aspect-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed aspect=&quot;4:3&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -355,7 +355,7 @@
     </h2>
 </doc-anchor-target>
 <p>Specifies which <abbr title="Hyper Text Markup Language">HTML</abbr> element should be used to wrap the embedded content.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="el-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed el=&quot;embed&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -397,7 +397,7 @@
     </h2>
 </doc-anchor-target>
 <p>Specifies a height for the embedded content&#x27;s area.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="height-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed height=&quot;120&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -414,7 +414,7 @@
     </h2>
 </doc-anchor-target>
 <p>Adds a caption to the embedded content.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="text-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed text=&quot;Test Video&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -433,7 +433,7 @@
     </h2>
 </doc-anchor-target>
 <p>Specifies a width for the embedded content&#x27;s area.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="width-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!embed width=&quot;300&quot;](https://www.youtube.com/embed/C0DPdy98e4c)</code></pre>
 </doc-codeblock></div>
 <p>

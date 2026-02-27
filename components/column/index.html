@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Column - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -259,7 +259,7 @@
 <p>The column component is used to create multiple equal width columns with a title for each column.</p>
 <p>The column component is configured by wrapping any block of content in an opening and closing <code translate="no" v-pre>|||</code> and setting a title for each column.</p>
 <p>A column can contain any other content, such as text, paragraphs, links, tables, images, and other Retype <a href="/components/">components</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="column-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">||| Column 1
 This is a paragraph inside a **column**.
 |||</code></pre>
@@ -297,7 +297,7 @@ This is a paragraph inside a **column**.
     </h2>
 </doc-anchor-target>
 <p>One or more columns can be configured by <em>stacking</em> multiple column blocks.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="multiple-columns-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">||| Column 1
 Content 1
 ||| Column 2
@@ -336,7 +336,7 @@ Content 3
     </h2>
 </doc-anchor-target>
 <p>A special Code Column is created when a code block is configured inside a column and the only content of the column is a code block. The following sample demonstrates a 2-column layout with a code block in the second column position.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="code-column-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">||| Demo
 [!button Button](button.md)
 ||| Source
@@ -364,7 +364,7 @@ Content 3
     </div>
 </div>
 <p>If any other content is directly inside the column, the column and code block will be rendered as normal. For example, let&#x27;s add some text to the second column and see difference:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="code-column-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">||| Demo
 [!button Button](button.md)
 ||| Source
@@ -401,7 +401,7 @@ This is a Button component inside a column.
     </h2>
 </doc-anchor-target>
 <p>The column titles support configuring with Markdown, so links, <a href="/components/emoji/">emojis</a>, or <a href="/components/icon/">icons</a> could also be added.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-title-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">||| Title with emoji :thumbsup:
 
 A column title with the [emoji](emoji.md) `:thumbsup:`.

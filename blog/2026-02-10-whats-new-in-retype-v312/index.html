@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v3.12 - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -331,7 +331,7 @@
     </h3>
 </doc-anchor-target>
 <p>Configure backlinks at the <a href="/configuration/project/#backlinks">project</a> or <a href="/configuration/page/#backlinks">page</a> level:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="flexible-configuration-retypeyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml"># Project configuration
 backlinks:
@@ -339,7 +339,7 @@ backlinks:
   title: &quot;Referenced by&quot;
   maxResults: 10</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="flexible-configuration-sample-pagemd" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">sample-page.md</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 # Page-level override
@@ -359,7 +359,7 @@ This is a sample page.</code></pre>
     </h3>
 </doc-anchor-target>
 <p>By default, the backlinks are automatically added to the bottom of each page, but you can manually place the component anywhere in your content using the <code translate="no" v-pre>[!backlinks]</code> Markdown component syntax.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="manual-placement-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># My Page Content
 
 Main content here...
@@ -413,7 +413,7 @@ Additional content after backlinks...</code></pre>
     </h3>
 </doc-anchor-target>
 <p>Works with both 3-digit and 6-digit hex codes:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="automatic-detection-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">The primary brand color is `#5495f1` and the accent is `#ff6b35`.
 
 Short format also works: `#abc` or `#F00`.</code></pre>
@@ -427,7 +427,7 @@ Short format also works: `#abc` or `#F00`.</code></pre>
     </h2>
 </doc-anchor-target>
 <p>Define page descriptions using the new triple-star (<code translate="no" v-pre>***</code>) syntax blocks placed immediately following H1 headings. Descriptions render visually below the title and populate meta tags for SEO.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="enhanced-page-descriptions-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># Page Title
 
 ***
@@ -443,7 +443,7 @@ Regular content starts here.</code></pre>
     </h3>
 </doc-anchor-target>
 <p>Use the <a href="/configuration/page/#description">description</a> page setting for meta tag value and <code translate="no" v-pre>***</code> for page content:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="dual-source-support-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 description: &quot;SEO-optimized description for description meta tag&quot;
 ---
@@ -467,7 +467,7 @@ A more detailed, visually formatted description with **emphasis** for readers.
     </h2>
 </doc-anchor-target>
 <p>Comprehensive <a href="/configuration/theme-variables/#heading">theme</a> customization for headings <code translate="no" v-pre>H1</code> through <code translate="no" v-pre>H6</code>. Control border, margin, padding, color, weight, casing, and font size individually for each heading level.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="expanded-heading-theme-variables-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-css"><code v-pre class="language-css">/* Individual heading customization */
 --heading-h1-font-size: 2.5rem;
 --heading-h1-margin-bottom: 2rem;

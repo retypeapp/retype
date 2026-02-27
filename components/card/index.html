@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Card - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -257,7 +257,7 @@
     </h1>
 </doc-anchor-target>
 <p>The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page&#x27;s title, category, description, date, and image.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="card-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -284,7 +284,7 @@
     </h2>
 </doc-anchor-target>
 <p>The basic syntax uses the <code translate="no" v-pre>[!card]</code> identifier followed by a path to any page in your project.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="syntax-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](path/to/page.md)</code></pre>
 </doc-codeblock></div>
 <p>Cards automatically extract and display metadata from the target page, including:</p>
@@ -310,7 +310,7 @@
     </h3>
 </doc-anchor-target>
 <p>The default horizontal layout displays the image on the left and content on the right. This layout is ideal for single cards or when you want each card to take the full content width.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="horizontal-default-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-02-23-whats-new-in-retype-v40.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -336,7 +336,7 @@
     </h3>
 </doc-anchor-target>
 <p>Use the <code translate="no" v-pre>vertical</code> or <code translate="no" v-pre>vert</code> layout for a stacked card design with the image on top and content below. Vertical cards are perfect for grid layouts with multiple cards.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="vertical-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -358,7 +358,7 @@
 </div>
 </p>
 <p>You can also use the attribute syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="vertical-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vertical&quot;](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)</code></pre>
 </doc-codeblock></div>
 <hr>
@@ -369,7 +369,7 @@
     </h2>
 </doc-anchor-target>
 <p>Place multiple vertical cards together to create a responsive grid. With two cards, they display side by side on wider screens.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="two-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
 [!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)</code></pre>
 </doc-codeblock></div>
@@ -413,7 +413,7 @@
     </h2>
 </doc-anchor-target>
 <p>Three vertical cards create a balanced row on desktop screens.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="three-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
 [!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)
 [!card vert](/blog/2026-02-10-whats-new-in-retype-v312.md)</code></pre>
@@ -472,7 +472,7 @@
     </h2>
 </doc-anchor-target>
 <p>When displaying five cards, they automatically wrap into rows. On wider screens, you&#x27;ll see three cards on the first row and two on the second. The cards in partial rows expand to fill the available space.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="five-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
 [!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)
 [!card vert](/blog/2026-02-10-whats-new-in-retype-v312.md)
@@ -561,7 +561,7 @@
     </h2>
 </doc-anchor-target>
 <p>You can mix horizontal and vertical cards on the same page. Horizontal cards display individually while consecutive vertical cards group into a flex container.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="mixed-layouts-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
 [!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)
 [!card vert](/blog/2026-02-10-whats-new-in-retype-v312.md)
@@ -635,7 +635,7 @@
     </h2>
 </doc-anchor-target>
 <p>Render the latest blog post as a Card using templating syntax to dynamically reference the most recent post.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="latest-blog-post-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card]({{ content.blog.posts[0].filePath }})</code></pre>
 </doc-codeblock></div>
 <p>
@@ -658,11 +658,11 @@
 <div id="retype-backlinks">
     <h2>See also</h2>
     <div class="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
-        <a href="/guides/blog-posts/" class="group no-link">
+        <a href="/guides/blogging/" class="group no-link">
             <div class="flex flex-col">
                 <div>
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
-                    <span>Blog posts</span>
+                    <span>Blogging</span>
                 </div>
                 <p>Adding a blog to your Retype website is as quick as adding a new .md file to your project.</p>
             </div>

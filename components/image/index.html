@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Image - Write On! with Retype</title>
@@ -34,15 +34,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -270,7 +270,7 @@
     </h2>
 </doc-anchor-target>
 <p>To add an image to your document, a similar syntax to links is used but prefixed with an exclamation mark <code translate="no" v-pre>!</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-syntax-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -286,7 +286,7 @@
     </h2>
 </doc-anchor-target>
 <p>An optional caption below the image can be set by adding your caption text between the <code translate="no" v-pre>[]</code> brackets. The following sample demonstrates adding a caption:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="optional-caption-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -302,7 +302,7 @@
     </h2>
 </doc-anchor-target>
 <p>An optional <code translate="no" v-pre>title</code> attribute for the resulting <abbr title="Hyper Text Markup Language">HTML</abbr> <code translate="no" v-pre>&lt;img&gt;</code> element can be set by adding the title text after the link. The title can be used differently within different browsers, but is typically shown as a tooltip when mouse pointer is held over the image. The following sample demonstrates adding a title:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="optional-title-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![This is an optional caption](/static/sample.jpg &quot;This is an optional title&quot;)</code></pre>
 </doc-codeblock></div>
 <p>Hold your mouse pointer over the image to see the title.</p>
@@ -321,7 +321,7 @@
 <p>By default, images are not links, but it&#x27;s easy to make your image into a link by just wrapping the image in a link.</p>
 <p>You can link to an external (see outbound) location or any page within your project.</p>
 <p>The following demonstrates adding an outbound link to an image:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="links-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[![](/static/sample.jpg)](https://retype.com)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -332,7 +332,7 @@
 </figure>
 </p>
 <p>The following demonstrates adding an outbound link to another page:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="links-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[![](/static/sample.jpg)](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -357,7 +357,7 @@
     </h3>
 </doc-anchor-target>
 <p>To set both width and height, use the format <code translate="no" v-pre>widthxheight</code> after the pipe separator:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="setting-width-and-height-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![Sample Image|300x200](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -372,7 +372,7 @@
     </h3>
 </doc-anchor-target>
 <p>To set only the width, specify a single number after the pipe separator. The image will automatically scale its height to maintain the original aspect ratio:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="setting-width-only-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![Sample Image|300](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -412,7 +412,7 @@
     </h3>
 </doc-anchor-target>
 <p>Add a unique identifier to your image for styling or JavaScript targeting. The <code translate="no" v-pre>id</code> attribute is prefixed with a <code translate="no" v-pre>#</code> symbol.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-id-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){#custom-id}
 
 // Creates the following HTML
@@ -430,7 +430,7 @@
     </h3>
 </doc-anchor-target>
 <p>Apply <abbr title="Cascading Style Sheet">CSS</abbr> classes to your image for styling. Class names are prefixed with a <code translate="no" v-pre>.</code> dot. You can add multiple classes by separating them with spaces.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-css-class-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){.rounded-lg}
 
 // Creates the following HTML
@@ -448,7 +448,7 @@
     </h3>
 </doc-anchor-target>
 <p>Set specific dimensions for your image using the <code translate="no" v-pre>width</code> and <code translate="no" v-pre>height</code> attributes. Values can be specified in pixels (px) or other <abbr title="Cascading Style Sheet">CSS</abbr> units.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-width-or-height-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){width=&quot;300&quot; height=&quot;200&quot;}
 
 // Creates the following HTML
@@ -466,7 +466,7 @@
     </h3>
 </doc-anchor-target>
 <p>Combine <abbr title="Cascading Style Sheet">CSS</abbr> classes with specific dimensions to create perfectly styled images.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-css-class-and-width-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){.rounded-lg width=&quot;300&quot;}
 
 // Creates the following HTML
@@ -484,7 +484,7 @@
     </h3>
 </doc-anchor-target>
 <p>Add custom data attributes to your images for JavaScript functionality or additional metadata. Data attributes are created using the <code translate="no" v-pre>data-*</code> naming convention.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-data-attributes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![](/static/sample.jpg){data-location=&quot;Korea&quot;}
 
 // Creates the following HTML

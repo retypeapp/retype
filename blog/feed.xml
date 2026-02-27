@@ -45,5 +45,13 @@
       <pubDate>Wed, 02 Jul 2025 00:00:00 GMT</pubDate>
       <category domain="https://retype.com/categories/release/">release</category>
     </item>
+    <item>
+      <title>What's New in Retype v3.10</title>
+      <guid isPermaLink="true">https://retype.com/blog/2025-06-09-whats-new-in-retype-v310/</guid>
+      <description>We're excited to share the latest release of Retype, packed with features that make documentation more flexible and powerful. This release focuses on</description>
+      <author>geoff@retype.com (@geoffreymcgill)</author>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
+    </item>
   </channel>
 </rss>

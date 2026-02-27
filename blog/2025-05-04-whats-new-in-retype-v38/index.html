@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v3.8 - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -318,7 +318,7 @@
     </h3>
 </doc-anchor-target>
 <p>Enable stack mode for all top-level folders in your project by adding the following setting to your project <code translate="no" v-pre>retype.yml</code> file. See <a href="/configuration/project/#nav-mode">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="project-configuration-retypeyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
   mode: stack</code></pre>
@@ -331,7 +331,7 @@
     </h3>
 </doc-anchor-target>
 <p>You can also enable stack mode for specific folders by adding the same setting into a <code translate="no" v-pre>index.yml</code> file within your folder. See <a href="/configuration/page/#nav-mode">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="page-configuration-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 nav:
@@ -377,7 +377,7 @@ nav:
     </h3>
 </doc-anchor-target>
 <p>Create links using double square brackets:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-wikilinks-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Check out the Retype [[Getting Started]] guide.
 
 The same link using Markdown would be [Getting Started](/guides/getting-started.md).</code></pre>
@@ -391,7 +391,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
     </h3>
 </doc-anchor-target>
 <p>Provide custom link text using the pipe syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="wikilinks-with-custom-labels-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Read our [[installation-guide|Installation Guide]] to get started.</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="image-wikilinks">
@@ -401,7 +401,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
     </h3>
 </doc-anchor-target>
 <p>Embed images using the same syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="image-wikilinks-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![[sample.jpg]]
 ![[sample.jpg|Sample image]]</code></pre>
 </doc-codeblock></div>
@@ -417,7 +417,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
     </h3>
 </doc-anchor-target>
 <p>Link to specific sections within pages:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="anchor-links-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[[troubleshooting#common-issues]]
 [[#local-section]]  &lt;!-- Same page anchor --&gt;</code></pre>
 </doc-codeblock></div>
@@ -429,7 +429,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
     </h2>
 </doc-anchor-target>
 <p>Retype now automatically converts YouTube URLs into embedded video players. Simply paste a YouTube URL on its own line. See <a href="/components/youtube/">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="youtube-auto-embedding-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ</code></pre>
 </doc-codeblock></div>
 <div class="aspect-video w-full rounded-lg overflow-hidden mb-6 shadow-lg dark:shadow-lg">
@@ -457,7 +457,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
     </h2>
 </doc-anchor-target>
 <p>You can now use <code translate="no" v-pre>home.md</code> as your project&#x27;s home page, providing another option alongside the existing <code translate="no" v-pre>readme.md</code>, <code translate="no" v-pre>index.md</code>, <code translate="no" v-pre>default.md</code>, and <code translate="no" v-pre>welcome.md</code> files.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="homemd-support-homemd" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">home.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># Welcome Home
 
@@ -491,7 +491,7 @@ This is your project's home page using home.md.</code></pre>
     </h3>
 </doc-anchor-target>
 <p>You can still manually configure search languages if needed:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="manual-configuration-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
   languages:
     - en
@@ -507,7 +507,7 @@ This is your project's home page using home.md.</code></pre>
     </h2>
 </doc-anchor-target>
 <p>The <code translate="no" v-pre>include</code> feature now supports accessing files outside of your project directory, giving you more flexibility in content organization:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="enhanced-include-functionality-docsreadmemd" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">/docs/readme.md</div>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;../readme.md&quot; }}</code></pre>
 </doc-codeblock></div>

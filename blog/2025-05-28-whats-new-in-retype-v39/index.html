@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v3.9 - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -292,7 +292,7 @@
     </h2>
 </doc-anchor-target>
 <p>Meet the new <code translate="no" v-pre>question</code> <a href="/components/callout/">callout</a> variant, perfect for FAQ sections, troubleshooting guides, or any content that poses questions to readers. See <a href="/components/callout/">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="new-question-callout-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!!question Common Question
 How do I configure my documentation site?
 !!!</code></pre>
@@ -324,7 +324,7 @@ How do I configure my documentation site?
 </doc-anchor-target>
 <p>Set image dimensions using intuitive pipe separated syntax. See <a href="/components/image/#dimensions">docs</a>.</p>
 <p>You can add a custom <code translate="no" v-pre>width</code> or <code translate="no" v-pre>width</code> x <code translate="no" v-pre>height</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="pipe-separator-image-dimensions-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![Sample Image|300](/static/sample.jpg)
 ![Sample Image|300x200](/static/sample.jpg)</code></pre>
 </doc-codeblock></div>
@@ -335,7 +335,7 @@ How do I configure my documentation site?
 </p>
 <p>This syntax is cleaner than adding generic attributes and works seamlessly with Retype&#x27;s image processing.</p>
 <p>Generic attributes on images are still supported and provide an alternative syntax for adding a custom <code translate="no" v-pre>id</code>, <abbr title="Cascading Style Sheet">CSS</abbr> class, dimensions, or any custom attributes:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="pipe-separator-image-dimensions-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">![My image](image.jpg){.custom-css-class}
 ![My image](image.jpg){#custom-id}
 ![My image](image.jpg){#custom-id width=&quot;300&quot;}</code></pre>
@@ -386,7 +386,7 @@ How do I configure my documentation site?
         </div>
     </div>
 </div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="navigation-icon-control-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
   icons:
     mode: folders  # Options: all, folders, pages, top, none</code></pre>
@@ -463,7 +463,7 @@ How do I configure my documentation site?
 </div>
 <p>The <code translate="no" v-pre>scheme</code> configuration allows you to control the default color mode (<strong>light</strong> or <strong>dark</strong>) for your Retype generated website. By default, Retype will automatically match the visitor&#x27;s system preference, but now you can explicitly set the site to start in either <code translate="no" v-pre>dark</code> or <code translate="no" v-pre>light</code> mode.</p>
 <p>Add the following to your <code translate="no" v-pre>retype.yml</code> file:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="dark-or-light-scheme-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">scheme:
   mode: dark  # Options: system, dark, light</code></pre>
 </doc-codeblock></div>

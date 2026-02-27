@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Project properties - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -265,16 +265,16 @@
         <span>Basic usage</span>
     </h2>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-usage-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Welcome to {{ project.branding.title }}!</code></pre>
 </doc-codeblock></div>
 <p>If your <code translate="no" v-pre>retype.yml</code> contains:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-usage-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   title: My Documentation</code></pre>
 </doc-codeblock></div>
 <p><strong>Output:</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-usage-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">Welcome to My Documentation!</code></pre>
 </doc-codeblock></div>
 <hr>
@@ -324,7 +324,7 @@
     </h2>
 </doc-anchor-target>
 <p>The <code translate="no" v-pre>links</code> property is an array. Loop through all links:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="accessing-links-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for link in project.links }}
 1. {{ link.text }}
 {{ end }}</code></pre>
@@ -337,12 +337,12 @@
 <li>Social</li>
 </ol>
 <p>Or access individual links by index:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="accessing-links-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">First link: {{ project.links[0].text }}
 Third link: {{ project.links[2].text }}</code></pre>
 </doc-codeblock></div>
 <p><strong>Output:</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="accessing-links-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">First link: Pro Pricing
 Third link: Support</code></pre>
 </doc-codeblock></div>
@@ -360,7 +360,7 @@ Third link: Support</code></pre>
     </h3>
 </doc-anchor-target>
 <p>To display literal <code translate="no" v-pre>{{ }}</code> syntax without the template engine processing it, wrap the content in opening <code translate="no" v-pre>{%{</code> and closing <code translate="no" v-pre>}%}</code> escape tags:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="inline-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-javascript"><code v-pre class="language-javascript">{%{ {{ page.title }} }%}</code></pre>
 </doc-codeblock></div>
 <p>This is useful when documenting template syntax or showing code samples that include double curly braces.</p>
@@ -371,7 +371,7 @@ Third link: Support</code></pre>
     </h3>
 </doc-anchor-target>
 <p>To disable templating for an entire page, set <code translate="no" v-pre>templating: false</code> in the page settings:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="page-level-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 templating: false
 ---</code></pre>
@@ -383,7 +383,7 @@ templating: false
     </h3>
 </doc-anchor-target>
 <p>To disable templating project-wide, update your <code translate="no" v-pre>retype.yml</code> with the following:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="project-level-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
   enabled: false</code></pre>
 </doc-codeblock></div>

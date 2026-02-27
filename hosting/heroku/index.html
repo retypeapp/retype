@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Heroku - Write On! with Retype</title>
@@ -34,15 +34,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -266,7 +266,7 @@
 </doc-anchor-target>
 <p>Clone a git repository using the <code translate="no" v-pre>git</code> command line client.</p>
 <p>For demonstrations purposes, let&#x27;s use the Retype website <a href="https://github.com/retypeapp/retype">repo</a>, but of course you likely want to use your own project.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-1-clone-repository-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">git clone https://github.com/retypeapp/retype</code></pre>
 </doc-codeblock></div>
 <p>Cloning will create a <code translate="no" v-pre>retype</code> directory containing a copy of this website.</p>
@@ -277,7 +277,7 @@
     </h3>
 </doc-anchor-target>
 <p>This is important for Heroku to be able to set up the repository remotes in the next step.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="switch-folders-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">cd retype</code></pre>
 </doc-codeblock></div>
 <hr>
@@ -288,7 +288,7 @@
     </h2>
 </doc-anchor-target>
 <p>Run the following command to create a new Heroku app instance.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-2-create-the-app-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">heroku create my-app-name</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
@@ -316,7 +316,7 @@
     </h3>
 </doc-anchor-target>
 <p>If you are not already signed into Heroku, run the <code translate="no" v-pre>heroku login</code> command.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="login-to-heroku-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">heroku login</code></pre>
 </doc-codeblock></div>
 <hr>
@@ -331,7 +331,7 @@ Assign the element address.
 Should be retypeapp/heroku-buildpack, or whatever is published to Heroku Elements
 -->
 <p>Enable the Retype Heroku buildpack using the Heroku CLI.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-3-enable-buildpack-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">heroku buildpacks:set https://github.com/retypeapp/heroku-buildpack</code></pre>
 </doc-codeblock></div>
 <p>The Retype Heroku buildpack will do all the magic. Once the documentation project is pushed to Heroku, the Retype buildpack will start up and handle the documentation build.</p>
@@ -343,7 +343,7 @@ Should be retypeapp/heroku-buildpack, or whatever is published to Heroku Element
     </h2>
 </doc-anchor-target>
 <p>Push the repository to Heroku using the <code translate="no" v-pre>git push</code> command.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-4-publish-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">git push heroku main</code></pre>
 </doc-codeblock></div>
 <p>The <code translate="no" v-pre>git push</code> process should only take a few seconds to finish. Once complete, the last lines of output should print out the URL to your app.</p>

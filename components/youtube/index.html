@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>YouTube - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -264,7 +264,7 @@
     </h2>
 </doc-anchor-target>
 <p>To embed a YouTube video, simply paste a YouTube URL on its own line in your markdown document:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-usage-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ</code></pre>
 </doc-codeblock></div>
 <p>This will be transformed to the following:</p>
@@ -298,7 +298,7 @@
     </h3>
 </doc-anchor-target>
 <p>To automatically start playback when the player loads, add the <code translate="no" v-pre>autoplay=1</code> parameter:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="autoplay-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;autoplay=1</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="loop">
@@ -308,7 +308,7 @@
     </h3>
 </doc-anchor-target>
 <p>To make a video play repeatedly, add the <code translate="no" v-pre>loop=1</code> parameter:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="loop-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;loop=1</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="controls">
@@ -318,7 +318,7 @@
     </h3>
 </doc-anchor-target>
 <p>You can hide the player controls by setting <code translate="no" v-pre>controls=0</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="controls-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;controls=0</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="mute">
@@ -328,7 +328,7 @@
     </h3>
 </doc-anchor-target>
 <p>To start the video with audio muted (often used in conjunction with autoplay):</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="mute-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;mute=1&amp;autoplay=1</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="start-and-end-times">
@@ -338,7 +338,7 @@
     </h3>
 </doc-anchor-target>
 <p>To specify both start and end times for your video:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="start-and-end-times-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;start=30&amp;end=60</code></pre>
 </doc-codeblock></div>
 <p>This plays only the segment from 30 seconds to 60 seconds.</p>
@@ -350,7 +350,7 @@
     </h2>
 </doc-anchor-target>
 <p>You can include a specific start time for your video by adding a timestamp parameter:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="timestamp-support-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;t=30s</code></pre>
 </doc-codeblock></div>
 <p>This will start the video at the 30-second mark:</p>
@@ -358,7 +358,7 @@
     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?t=30s" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full h-full"></iframe>
 </div>
 <p>You can also use the shorter <code translate="no" v-pre>youtu.be</code> format with timestamps:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="timestamp-support-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://youtu.be/dQw4w9WgXcQ?t=45</code></pre>
 </doc-codeblock></div>
 <div id="retype-backlinks">

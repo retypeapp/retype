@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v3.10 - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -354,7 +354,7 @@
     </h3>
 </doc-anchor-target>
 <p>Configure project wide by adding the setting to your <code translate="no" v-pre>retype.yml</code> file. See <a href="/configuration/project/#nextprev">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="project-level-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nextprev:
   mode: show</code></pre>
 </doc-codeblock></div>
@@ -365,7 +365,7 @@
     </h3>
 </doc-anchor-target>
 <p>Configure on individual pages. See <a href="/configuration/page/#nextprev">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="page-level-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 nextprev:
   mode: exclude
@@ -393,7 +393,7 @@ nextprev:
     </h3>
 </doc-anchor-target>
 <p>Configure an entire folder by adding the setting to a <code translate="no" v-pre>index.yml</code> file within the folder, or any of the default folder pages, such as <code translate="no" v-pre>readme.md</code>, <code translate="no" v-pre>index.md</code>, or <code translate="no" v-pre>default.md</code>. See <a href="/configuration/folder/#nextprev">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="folder-level-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nextprev:
   mode: hide</code></pre>
 </doc-codeblock></div>
@@ -411,7 +411,7 @@ nextprev:
     </h3>
 </doc-anchor-target>
 <p>Add comments anywhere in your text using the <code translate="no" v-pre>%%comment%%</code> syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="inline-comments-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">The comment disappears completely%%from the rendered page%%.</code></pre>
 </doc-codeblock></div>
 <p>The comment disappears completely.</p>
@@ -422,7 +422,7 @@ nextprev:
     </h3>
 </doc-anchor-target>
 <p>For longer notes or multi-line comments, use the comment block syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="block-comments-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">%%
 This entire block is a comment.
 You can write multiple lines here.
@@ -442,7 +442,7 @@ None of this will appear in the final output.
     </h2>
 </doc-anchor-target>
 <p>A new <a href="/components/callout/">callout</a> type has been added specifically for helpful tips, complete with a lightbulb icon.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="new-tip-callout-variant-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!!tip Pro Tip
 Here's a helpful suggestion that will save you time.
 !!!</code></pre>
@@ -471,14 +471,14 @@ Here's a helpful suggestion that will save you time.
     </h2>
 </doc-anchor-target>
 <p>You can now apply <abbr title="Cascading Style Sheet">CSS</abbr> classes, IDs, and other custom attributes directly to individual <a href="/components/list/#generic-attributes">list items</a> using the generic attribute syntax. See <a href="/components/list/#generic-attributes">docs</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="generic-attributes-for-list-items-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- Regular list item
 - Important item {.highlight}
 - Item with ID {#special-item}
 - Item with multiple attributes {#my-id .class-name data-value=&quot;test&quot;}</code></pre>
 </doc-codeblock></div>
 <p>The above Markdown sample creates the following <abbr title="Hyper Text Markup Language">HTML</abbr> with the added attributes:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="generic-attributes-for-list-items-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;ul&gt;
   &lt;li&gt;Regular list item&lt;/li&gt;
   &lt;li class=&quot;highlight&quot;&gt;Important item&lt;/li&gt;

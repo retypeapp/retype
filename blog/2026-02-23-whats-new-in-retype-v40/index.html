@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v4.0 - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -294,7 +294,7 @@
 </doc-anchor-target>
 <p>The new <a href="/components/card/">Card</a> component creates styled preview cards that link to other pages in your project. Cards automatically pull in the target page&#x27;s title, category, description, date, and image. No manual configuration needed.</p>
 <!-- TODO: Add screenshot ![](images/2026-02-23-card.png) -->
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="new-card-component-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -320,7 +320,7 @@
     </h3>
 </doc-anchor-target>
 <p>The Card component supports both horizontal (default) and vertical (or <code translate="no" v-pre>vert</code>) card layouts:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="card-layout-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](path/to/page.md)
 [!card vert](path/to/page.md)</code></pre>
 </doc-codeblock></div>
@@ -365,7 +365,7 @@
     </h2>
 </doc-anchor-target>
 <p>Create numbered step-by-step instructions with the new <a href="/components/steps/">Steps</a> component. Wrap your content in <code translate="no" v-pre>&gt;&gt;&gt;</code> blocks with a title for each step:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="new-steps-component-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; Create the project
 Initialize a new project in your workspace.
 
@@ -398,7 +398,7 @@ Launch the development server and verify it's running.
 </doc-anchor-target>
 <p>Each step can contain any Markdown content, including code blocks, tabs, callouts, and other components.</p>
 <p>Any content can be added inside a Step, including other components such as <a href="/components/code-block/">Code Blocks</a>, <a href="/components/tab/">Tabs</a>, and <a href="/components/callout/">Callouts</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="rich-content-support-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; Install the package
 
   +++ npm
@@ -451,7 +451,7 @@ Launch the development server and verify it's running.
     </h3>
 </doc-anchor-target>
 <p>Start your steps at any number you want. Prefix your step title with a number and that number will be used to set a custom starting point with additional steps auto-incrementing from that number:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-step-numbering-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt;&gt;&gt; 5. Configure the server
 Server configuration instructions here.
 
@@ -485,7 +485,7 @@ Verification steps here.
     </h2>
 </doc-anchor-target>
 <p>A new <code translate="no" v-pre>question</code> variant is available for <a href="/components/callout/">Callout</a>, <a href="/components/button/">Button</a> and <a href="/components/badge/">Badge</a> components. Use it for FAQ sections, help buttons, or troubleshooting guidance:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="new-question-variant-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!!question
 How do I configure my documentation site?
 !!!
@@ -532,7 +532,7 @@ How do I configure my documentation site?
     </h3>
 </doc-anchor-target>
 <p>Access all page metadata and project configuration directly in your templates with <code translate="no" v-pre>page.*</code> and <code translate="no" v-pre>project.*</code> variables:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="page-and-project-variables-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Welcome to **{{ project.branding.title }}**!
 
 This page was written by {{ page.author }}.</code></pre>
@@ -546,7 +546,7 @@ This page was written by {{ page.author }}.</code></pre>
     </h3>
 </doc-anchor-target>
 <p>Query your entire site&#x27;s content programmatically with the new <code translate="no" v-pre>content</code> template object. The following sample demonstrates how to get a list of the last three blog posts:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="content-variables-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for post in content.blog.posts | array.limit 3 ~}}
 - [{{ post.title }}]({{ post.url }})
 {{ end }}</code></pre>
@@ -560,7 +560,7 @@ This page was written by {{ page.author }}.</code></pre>
 <li><code translate="no" v-pre>content.authors</code> - Pages grouped by author</li>
 </ul>
 <p>You can also get specific pages by using <code translate="no" v-pre>content[&quot;key&quot;]</code> syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="content-variables-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ content[&quot;getting-started&quot;].description }}</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="blog-configuration">
@@ -570,7 +570,7 @@ This page was written by {{ page.author }}.</code></pre>
     </h2>
 </doc-anchor-target>
 <p>Expanded <a href="/configuration/project/#blog">blog configuration</a> options now give you more control over your blog creation:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="blog-configuration-retypeyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
   pageSize: 5       # Posts per page (default: 10)
@@ -586,7 +586,7 @@ This page was written by {{ page.author }}.</code></pre>
     </h2>
 </doc-anchor-target>
 <p>Add tooltip descriptions to your header and footer navigation links with the new <a href="/configuration/project/#title"><code translate="no" v-pre>title</code></a> property on <code translate="no" v-pre>links</code> and <code translate="no" v-pre>footer.links</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="link-tooltips-retypeyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Getting Started
@@ -602,7 +602,7 @@ This page was written by {{ page.author }}.</code></pre>
     </h2>
 </doc-anchor-target>
 <p>If you&#x27;re using GitHub Actions with the <code translate="no" v-pre>setup-dotnet</code> step, you may need to update your workflow. Retype <code translate="no" v-pre>v4.0</code> requires .NET 10, so update your <code translate="no" v-pre>dotnet-version</code> from <code translate="no" v-pre>9.x</code> to <code translate="no" v-pre>10.x</code> and it&#x27;s also a good time to update the action to use <code translate="no" v-pre>@v6</code> now as well:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="github-actions-upgrade-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: actions/setup-dotnet@v6
   with:
     dotnet-version: 10.x</code></pre>

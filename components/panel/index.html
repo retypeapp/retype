@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Panel - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -257,7 +257,7 @@
     </h1>
 </doc-anchor-target>
 <p>A Panel is created by surrounding a block of content with <code translate="no" v-pre>===</code> and including a <code translate="no" v-pre>title</code> for the Panel.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="panel-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">=== My Panel
 This is a Panel. Expanded by default.
 ===</code></pre>
@@ -268,7 +268,7 @@ This is a Panel. Expanded by default.
 </doc-panel>
 <p>The <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>===</code> by one space. The pattern <code translate="no" v-pre>=== My Panel</code> will work as expected, and <code translate="no" v-pre>===My Panel</code> will not.</p>
 <p>Multiple Panels can be <doc-anchor-trigger to="#stacking">stacked</doc-anchor-trigger> by repeating Panel component configurations.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="panel-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">=== Panel 1
 Content 1
 === Panel 2
@@ -311,7 +311,7 @@ Content 2
     </h2>
 </doc-anchor-target>
 <p>By default, Panels are collapsible and will initially render in their expanded state. You can configure Panels to initially render in their collapsed state by using <code translate="no" v-pre>==-</code> specifier.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="collapsed-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">==- My Panel
 This is a collapsed Panel. :+1:
 ===</code></pre>
@@ -321,7 +321,7 @@ This is a collapsed Panel. :+1:
 <p>This is a collapsed Panel. <span class="docs-emoji">&#x1F44D;</span></p>
 </doc-panel>
 <p>Either just the opening <code translate="no" v-pre>==-</code> can be configured, or both opening and closing <code translate="no" v-pre>==-</code> can be used.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="collapsed-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">==- My Panel
 This is another collapsed Panel.
 ==-</code></pre>
@@ -338,7 +338,7 @@ This is another collapsed Panel.
     </h2>
 </doc-anchor-target>
 <p>Any content can be added inside a Panel, include other components such as a <a href="/components/code-block/">code block</a> and tables.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="inner-content-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">=== Code Sample
 ```js
 const msg = &quot;Hello, world&quot;;
@@ -395,7 +395,7 @@ console.log(msg);</code></pre>
 </doc-anchor-target>
 <p>Multiple Panel components can be <em>stacked</em> into a group by repeating Panel component configurations.</p>
 <p>A basic scenario is grouping two Panels:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="stacking-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">=== Panel 1
 Content for the **first** panel.
 === Panel 2
@@ -414,7 +414,7 @@ Content for the **second** panel.
 </doc-panels>
 <p>As well, individual Panels within a stack can be configured as collapsed.</p>
 <p>The following sample demonstrates a two-panel stack with the second Panel being collapsed.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="stacking-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">=== Expanded Panel
 
 Panels are expanded by default, but can be configured as collapsed too!
@@ -443,7 +443,7 @@ Add any content or components inside a Panel.
     </h2>
 </doc-anchor-target>
 <p>Panels can be used to create an accordion-style layout, perfect for FAQs or collapsible content sections. Here&#x27;s an example with three collapsed panels:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="accordion-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">==- What is Retype?
 Retype is a modern documentation generator that helps you create beautiful documentation websites from your Markdown files. It's designed to be fast, flexible, and easy to use.
 
@@ -480,7 +480,7 @@ Retype sites can be deployed to any static hosting service like GitHub [Pages](/
     <template #title>What can I do to get more involved?</template>
 <p>...</p>
 </doc-panel>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-attributes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">=== My Panel {#features-panel .highlight}
 This Panel has a custom id and class.
 ===</code></pre>

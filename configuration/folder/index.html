@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Folder configuration - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -282,7 +282,7 @@
     </h2>
 </doc-anchor-target>
 <p>Set a custom <a href="/configuration/page/#icon">icon</a> for the folder.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="icon-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: gear</code></pre>
 </doc-codeblock></div>
@@ -294,7 +294,7 @@
     </h2>
 </doc-anchor-target>
 <p>Expand the folder node in the tree navigation with the <a href="/configuration/page/#expanded">expanded</a> config.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="expanded-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">expanded: true</code></pre>
 </doc-codeblock></div>
@@ -306,7 +306,7 @@
     </h2>
 </doc-anchor-target>
 <p>Change the folder <a href="/configuration/page/#label">label</a> used for the left navigation tree node label.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="label-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">label: Custom label</code></pre>
 </doc-codeblock></div>
@@ -318,12 +318,12 @@
     </h2>
 </doc-anchor-target>
 <p>Move a folder up to the top of the navigation by setting the <a href="/configuration/page/#order">order</a>. The higher the number, the higher in the stack the folder will be placed.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="order-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">order: 1000</code></pre>
 </doc-codeblock></div>
 <p>Move a folder to the bottom of the navigation. The lower the number, the lower in the stack it will be placed.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="order-indexyml-1" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">order: -1000</code></pre>
 </doc-codeblock></div>
@@ -387,7 +387,7 @@
 </doc-anchor-target>
 <p>Configures a new permanent base path for all pages within this directory.</p>
 <p>See <strong>Page</strong> <a href="/configuration/page/#permalink"><code translate="no" v-pre>permalink</code></a> for full details.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="permalink-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">permalink: /tutorials</code></pre>
 </doc-codeblock></div>
@@ -399,13 +399,13 @@
     </h2>
 </doc-anchor-target>
 <p>Hide a folder by setting the <a href="/configuration/page/#visibility">visibility</a> configuration.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-indexyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: hidden</code></pre>
 </doc-codeblock></div>
 <p>Another option to completely ignore a folder or a file would be to prefix the folder name or file name with an underscore <code translate="no" v-pre>_</code>. For instance, naming a folder <code translate="no" v-pre>_guides</code> would instruct Retype to ignore the folder.</p>
 <p>Password protect an entire folder by setting the <code translate="no" v-pre>visibility</code> to either <a href="/configuration/page/#protected"><code translate="no" v-pre>protected</code></a> or <a href="/configuration/page/#private"><code translate="no" v-pre>private</code></a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-indexyml-1" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">index.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: protected</code></pre>
 </doc-codeblock></div>

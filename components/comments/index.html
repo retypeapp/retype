@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Comments - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -275,7 +275,7 @@
     </h3>
 </doc-anchor-target>
 <p>Inline comments can be added anywhere within a line:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="inline-comments-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">This is a %%inline %%comment.
 
 This is an inline comment%at the end of a line%.
@@ -283,7 +283,7 @@ This is an inline comment%at the end of a line%.
 %%This is an %Inline comment at the beginning of a line.</code></pre>
 </doc-codeblock></div>
 <p>The above will be created as:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="inline-comments-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">This is a comment.
 
 This is an inline comment.
@@ -297,7 +297,7 @@ Inline comment at the beginning of a line.</code></pre>
     </h3>
 </doc-anchor-target>
 <p>Block comments can span multiple lines by using opening <code translate="no" v-pre>%%</code> and closing <code translate="no" v-pre>%%</code> at the start and end of the comment block. Everything between the opening and closing <code translate="no" v-pre>%%</code> will be removed.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="block-comments-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">%%
 This is a block comment.
 
@@ -317,7 +317,7 @@ Block comments can span multiple lines.
     </h3>
 </doc-anchor-target>
 <p>Comments are particularly useful for adding notes about code blocks that should not be visible in the rendered documentation:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="adding-notes-to-code-blocks-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">%%
 This code block demonstrates a complex algorithm.
 The implementation details are explained in the comments.
@@ -335,7 +335,7 @@ function complexAlgorithm() {
     </h3>
 </doc-anchor-target>
 <p>Comments can be used to document changes or TODOs that should be addressed later:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="documenting-changes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">%%
 TODO: Update this section when the new API is released.
 %%</code></pre>
@@ -347,7 +347,7 @@ TODO: Update this section when the new API is released.
     </h3>
 </doc-anchor-target>
 <p>Comments can be used to hide draft content that isn&#x27;t ready for publication:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="hiding-draft-content-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">%%
 Draft content - Not ready for publication
 This section needs more examples and better explanations.

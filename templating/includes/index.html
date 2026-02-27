@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Includes - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -263,7 +263,7 @@
         <span>Basic usage</span>
     </h2>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-usage-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;snippets/support&quot; }}</code></pre>
 </doc-codeblock></div>
 <p>Retype resolves the file, processes any templating within it, and renders the content inline.</p>
@@ -282,7 +282,7 @@
 </ol>
 <p>The <code translate="no" v-pre>.md</code> extension is optional. If omitted, Retype automatically tries appending <code translate="no" v-pre>.md</code>.</p>
 <p>If the path starts with <code translate="no" v-pre>..</code>, Retype resolves it as an external file relative to the calling page&#x27;s directory.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="file-resolution-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;setup&quot; }}
 {{ include &quot;snippets/support&quot; }}
 {{ include &quot;../external/readme.md&quot; }}</code></pre>
@@ -296,7 +296,7 @@
 </doc-anchor-target>
 <p>Both <code translate="no" v-pre>.md</code> and <code translate="no" v-pre>.html</code> files can be included.</p>
 <p>Markdown files are processed and rendered as part of the page. HTML files in the <code translate="no" v-pre>_includes</code> folder support full templating syntax and are useful for injecting custom markup.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="file-types-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;snippets/support&quot; }}
 {{ include &quot;components/button&quot; }}</code></pre>
 </doc-codeblock></div>
@@ -352,22 +352,17 @@
     </h2>
 </doc-anchor-target>
 <p>Pass data to an included template using named arguments:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="passing-parameters-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;components/octicons&quot; list: octicons_new }}</code></pre>
 </doc-codeblock></div>
 <p>Inside the included template, each named argument is available as a local variable:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="passing-parameters-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">| Icon | Shortcode |
 | :---: | --- |
 {{~ for $i in $.list ~}}
 | :icon-{{ $i }}: | {{ $i }} |
 {{~ end ~}}</code></pre>
 </doc-codeblock></div>
-<p>You can also pass an object as the second argument:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;user-card&quot; { name: &quot;Jane&quot;, role: &quot;Developer&quot; } }}</code></pre>
-</doc-codeblock></div>
-<p>See <a href="context-scope.md">Context and Scope</a> for more on how variables are passed between templates.</p>
 <hr>
 <doc-anchor-target id="nested-includes">
     <h2>
@@ -376,7 +371,7 @@
     </h2>
 </doc-anchor-target>
 <p>Included files can include other files. Retype resolves each nested include using the same resolution rules.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="nested-includes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# page.md }}
 {{ include &quot;snippets/header&quot; }}
 
@@ -384,7 +379,7 @@
 
 {{ include &quot;snippets/footer&quot; }}</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="nested-includes-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# _includes/snippets/header.md }}
 {{ include &quot;snippets/logo&quot; }}
 Welcome to the site.</code></pre>
@@ -397,7 +392,7 @@ Welcome to the site.</code></pre>
     </h2>
 </doc-anchor-target>
 <p>A typical <code translate="no" v-pre>_includes</code> folder structure:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="organizing-includes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">_includes/
 ├── head.html
 ├── body.html

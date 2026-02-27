@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Reference Link - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -257,7 +257,7 @@
     </h1>
 </doc-anchor-target>
 <p>A special type of reference link can be configured by using the <code translate="no" v-pre>!ref</code> specifier in a link.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="reference-link-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -283,7 +283,7 @@
     </h2>
 </doc-anchor-target>
 <p>The text of the link can be explicitly set by passing as the first part of the component config. In the following sample, we explicitly set the reference link text to <code translate="no" v-pre>Getting Started</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-text-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref Getting Started](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -316,7 +316,7 @@
 <li>Image file URL</li>
 </ul>
 <p>The following samples demonstrate setting a custom <code translate="no" v-pre>icon</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-icon-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot;](/guides/getting-started.md)
 [!ref icon=&quot;:rocket:&quot;](/guides/getting-started.md)
 [!ref icon=&quot;../static/retype-icon.svg&quot;](/guides/getting-started.md)</code></pre>
@@ -360,7 +360,7 @@
 </div>
 </p>
 <p>By default, the referred page title is used as the component text value and the text can be customized by explicitly passing a separate <code translate="no" v-pre>text</code> value.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-icon-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">[!ref icon=&quot;rocket&quot; text=&quot;To the moon&quot;](/guides/getting-started.md)</code></pre>
 </doc-codeblock></div>
 <p>
@@ -399,7 +399,7 @@
     <a href="https://retype.com/" target="_blank" class="absolute block inset-0"></a>
 </div>
 </p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="target-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref target=&quot;blank&quot; text=&quot;Retype&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>target</code> is configured, the link will open in the current tab.</p>

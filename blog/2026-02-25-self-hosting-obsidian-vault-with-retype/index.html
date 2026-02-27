@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Self-hosting Obsidian Vault with Retype - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -292,7 +292,7 @@
         <span>Start With Markdown, Stay Organized</span>
     </h2>
 </doc-anchor-target>
-<p>Most teams just want to write and update content without hassle. <a href="/guides/formatting/">Markdown</a> fits this need with plain text, easy to read, and easy to version. Editors like Obsidian build on this foundation with features like page linking, advanced components, and WYSIWYG editing.</p>
+<p>Most teams just want to write and update content without hassle. <a href="/guides/formatting.md">Markdown</a> fits this need with plain text, easy to read, and easy to version. Editors like Obsidian build on this foundation with features like page linking, advanced components, and WYSIWYG editing.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -411,7 +411,7 @@
 </figure>
 </p>
 <p>Once you have a copy locally, within your Terminal, move into the <code translate="no" v-pre>en</code> sub-directory:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-2--get-obsidian-help-github-repository-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">cd en</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -426,7 +426,7 @@
     </h3>
 </doc-anchor-target>
 <p>To start Retype, run the command <code translate="no" v-pre>retype start</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-3--start-retype-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">retype start</code></pre>
 </doc-codeblock></div>
 <p>Within a few seconds, a new browser window will open and the website will load. We&#x27;re going to customize the project in the next step...</p>
@@ -438,7 +438,7 @@
 </doc-anchor-target>
 <p>Within the root of the <code translate="no" v-pre>/en</code> directory, you should see a new <code translate="no" v-pre>retype.yml</code> file. The <code translate="no" v-pre>retype.yml</code> file contains the Retype <a href="/configuration/project/">project</a> settings and can be customized to your requirements.</p>
 <p>Feel free to adjust and play with the settings in the <code translate="no" v-pre>retype.yml</code>, or copy and paste the following settings that fit well with the Obsidian Help documentation:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-4--configure-retype-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml"># DISCLAIMER: THIS SITE DISPLAYS THE 
 # [OBSIDIAN HELP](HTTPS://GITHUB.COM/OBSIDIANMD/OBSIDIAN-HELP) DOCUMENTATION,
 # WHICH IS © [OBSIDIAN](HTTPS://OBSIDIAN.MD/). THE CONTENT IS REPRODUCED HERE

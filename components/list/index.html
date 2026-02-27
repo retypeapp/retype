@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>List - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -276,7 +276,7 @@
         <span>Bullet</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="bullet-unordered-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample unordered list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">- Item 1
 - Item 2
@@ -293,7 +293,7 @@
         <span>Task list</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="task-list-task-list-with-checked-and-unchecked-items" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample task list with checked and unchecked items</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">- [x] Item 1
 - [x] Item 2
@@ -311,7 +311,7 @@
     </h3>
 </doc-anchor-target>
 <p>By applying the following <code translate="no" v-pre>{.list-icon}</code> generic attribute, you can convert a bullet list into an icon list.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="icon-list-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.list-icon}
 - :icon-check-circle: Item 1
     - :icon-check-circle: This is sub-item 1.1
@@ -394,7 +394,7 @@
         <span>Numbers</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="numbers-ordered-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample ordered list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">1. Item 1
 2. Item 2
@@ -411,7 +411,7 @@
         <span>Lowercase letters</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="lowercase-letters-for-lowercase-letter-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample for lowercase letter list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">a. Item 1
 b. Item 2
@@ -428,7 +428,7 @@ c. Item 3</code></pre>
         <span>Uppercase letters</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="uppercase-letters-for-uppercase-letter-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample for uppercase letter list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">A. Item 1
 B. Item 2
@@ -462,7 +462,7 @@ C. Item 3</code></pre>
         <span>Lowercase Roman numerals</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="lowercase-roman-numerals-for-lowercase-roman-numeral-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample for lowercase Roman numeral list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">i. Item 1
 ii. Item 2
@@ -479,7 +479,7 @@ iii. Item 3</code></pre>
         <span>Uppercase Roman numerals</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="uppercase-roman-numerals-for-uppercase-roman-numeral-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample for uppercase Roman numeral list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">I. Item 1
 II. Item 2
@@ -522,7 +522,7 @@ III. Item 3</code></pre>
         <span>Basic list</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-list-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Term 1
 : Detail 1
 
@@ -546,7 +546,7 @@ Term 3
         <span>Include nested components</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="include-nested-components-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Term 1
 : Detail 1
   With a paragraph
@@ -601,7 +601,7 @@ This is a paragraph continuing the details.</p>
     </h3>
 </doc-anchor-target>
 <p>Tight lists have no blank lines between list items. They are more compact and are useful for simple, concise lists.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="tight-lists-tight-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample tight list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">- First item
 - Second item
@@ -627,7 +627,7 @@ This is a paragraph continuing the details.</p>
     </h3>
 </doc-anchor-target>
 <p>Loose lists have blank lines between list items. They are useful when list items contain multiple paragraphs or complex content.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="loose-lists-loose-list" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample loose list</div>
 <pre translate="no" class="language-none"><code v-pre class="language-none">- First item with multiple paragraphs.
 
@@ -693,7 +693,7 @@ This is a paragraph continuing the details.</p>
     </h3>
 </doc-anchor-target>
 <p>You can customize the color of list item markers using <abbr title="Cascading Style Sheet">CSS</abbr> and generic attributes:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-marker-colors-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&lt;style&gt;
 li.item-green::marker {
     color: green;
@@ -737,7 +737,7 @@ li.item-red::marker {
     </h3>
 </doc-anchor-target>
 <p>You can also apply a custom color to a list item:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-text-colors-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&lt;style&gt;
 .item-orange {
     color: orange;
@@ -765,13 +765,13 @@ li.item-red::marker {
     </h3>
 </doc-anchor-target>
 <p>A custom <code translate="no" v-pre>id</code> can be added to the list item by appending the <code translate="no" v-pre>{#id-name}</code> generic attribute syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-id-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- Regular item
 - Item with custom ID {#custom-id}
 - Another regular item</code></pre>
 </doc-codeblock></div>
 <p>The above will create one list item with the custom <code translate="no" v-pre>id</code> attribute:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-id-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;li&gt;Regular item&lt;/li&gt;
 &lt;li id=&quot;custom-id&quot;&gt;Item with custom ID &lt;/li&gt;
 &lt;li&gt;Another regular item&lt;/li&gt;</code></pre>

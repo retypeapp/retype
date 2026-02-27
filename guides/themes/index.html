@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Themes - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -286,7 +286,7 @@
     </h2>
 </doc-anchor-target>
 <p>The quickest way to customize your site&#x27;s appearance is by adding a <code translate="no" v-pre>theme</code> configuration to your <code translate="no" v-pre>retype.yml</code> file and setting a custom <a href="/configuration/theme-variables/#base-variables"><code translate="no" v-pre>base-color</code></a> theme variable.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="quick-start-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-color: &quot;#8839ef&quot;</code></pre>
@@ -305,7 +305,7 @@
     </h3>
 </doc-anchor-target>
 <p>The <a href="/configuration/project/#theme"><code translate="no" v-pre>base</code></a> theme controls the light mode appearance and serves as the foundation for your project&#x27;s visual style:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="base-theme-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-color: &quot;#8839ef&quot;
@@ -320,7 +320,7 @@
     </h3>
 </doc-anchor-target>
 <p>The <a href="/configuration/project/#theme-dark"><code translate="no" v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#base-theme">base theme</doc-anchor-trigger> variables. The following demonstrates how to configure the <code translate="no" v-pre>dark</code> theme variables:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="dark-theme-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   dark:
     base-color: &quot;#ca9ee6&quot;
@@ -339,7 +339,7 @@
     </h3>
 </doc-anchor-target>
 <p>To match your brand colors:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="brand-color-customization-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-color: &quot;#ff6b35&quot;  # Orange brand color</code></pre>
@@ -351,7 +351,7 @@
     </h3>
 </doc-anchor-target>
 <p>To better match your project style and user-experience requirements:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="typography-adjustments-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-link-weight: 500            # Slightly bolder links
@@ -365,7 +365,7 @@
     </h3>
 </doc-anchor-target>
 <p>To adjust the dark mode:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="dark-mode-optimization-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   dark:
     base-bg: &quot;#0a0e1a&quot;              # Very dark blue background
@@ -381,7 +381,7 @@
     </h3>
 </doc-anchor-target>
 <p>To customize component colors and other elements:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="component-styling-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     # Rounded images
@@ -407,7 +407,7 @@
     </h3>
 </doc-anchor-target>
 <p>Begin by tweaking a few brand colors before diving into full theme customization. This keeps things manageable and easier to approve before moving on to further theme refinements.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="1-start-with-the-base-color-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-color: &quot;#8839ef&quot; #your-brand-color</code></pre>
@@ -419,7 +419,7 @@
     </h3>
 </doc-anchor-target>
 <p>Contrast between text and background is important for readability and accessibility. Avoid color combinations that are too similar and do not provide enough contrast.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="2-prioritize-readability-and-contrast-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-text: &quot;#4c4f69&quot;     # A strong neutral text color
@@ -447,7 +447,7 @@
     </h3>
 </doc-anchor-target>
 <p>If you are customizing both the <code translate="no" v-pre>base</code> and <code translate="no" v-pre>dark</code> themes, be sure to test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode, and require further refinement.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="3-check-light-and-dark-modes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     base-color: &quot;#8839ef&quot;
@@ -461,7 +461,7 @@
     </h3>
 </doc-anchor-target>
 <p>Instead of hardcoding colors everywhere, use the built-in semantic <a href="/configuration/theme-variables/">theme variables</a>. It keeps your theme consistent and easier to maintain.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="4-use-semantic-variables-where-possible-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     nav-item-text-active: &quot;var(--base-500)&quot;  # Uses a consistent brand tone</code></pre>
@@ -594,11 +594,11 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/formatting/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/cli/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Markdown (RFM)</span>
+                                <span class="block mt-1">Retype CLI</span>
                             </span>
                         </a>
                     </div>

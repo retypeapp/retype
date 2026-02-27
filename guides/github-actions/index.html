@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>GitHub Actions - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -308,7 +308,7 @@
 </doc-anchor-target>
 <p>Add the following <strong>retype-action.yml</strong> file to your GitHub project within the <code translate="no" v-pre>.github/workflows/</code> folder.</p>
 <p>If the <code translate="no" v-pre>.github/workflows/</code> folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the <strong>retype-action.yml</strong>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-1-add-retype-actionyml-workflow-githubworkflowsretype-actionyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">.github/workflows/retype-action.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
 on:
@@ -335,7 +335,7 @@ jobs:
 <p>The above <strong>retype-action.yml</strong> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code translate="no" v-pre>main</code> branch, and then deploy your new Retype powered website to a <code translate="no" v-pre>retype</code> branch.</p>
 <p>If the <code translate="no" v-pre>retype</code> branch is not available, the GitHub Action will automatically create the branch.</p>
 <p>If the default branch in your repo is <code translate="no" v-pre>master</code>, change <code translate="no" v-pre>- main</code> to <code translate="no" v-pre>- master</code>. If the docs project was within a <code translate="no" v-pre>docs</code> branch, change <code translate="no" v-pre>- main</code> to <code translate="no" v-pre>- docs</code>. The following snippet demonstrates setting the branch to <code translate="no" v-pre>master</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-1-add-retype-actionyml-workflow-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">  push:
     branches:
       - master</code></pre>
@@ -348,7 +348,7 @@ jobs:
     </h3>
 </doc-anchor-target>
 <p>If your project requires a Retype key, that key can be configured by adding a <a href="/configuration/envvars/#retype_key"><code translate="no" v-pre>RETYPE_KEY</code></a> secret to your repository settings and the corresponding <code translate="no" v-pre>env</code> configuration to your project <strong>.github/workflows/retype-action.yml</strong> file.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="retype_key-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
   env:
     RETYPE_KEY: ${{ secrets.RETYPE_KEY }}</code></pre>
@@ -370,7 +370,7 @@ jobs:
     </div>
 </div>
 <p>The following sample demonstrates a basic template to use for a workflow configuration file, if including the <code translate="no" v-pre>RETYPE_KEY</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="retype_key-githubworkflowsretype-actionyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">.github/workflows/retype-action.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
 on:
@@ -424,13 +424,13 @@ jobs:
     </div>
 </div>
 <p>A password can be configured by adding a <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a> secret to your repository settings and the following <code translate="no" v-pre>env</code> configuration to your project <strong>.github/workflows/retype-action.yml</strong> file.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="retype_password-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
   env:
     RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}</code></pre>
 </doc-codeblock></div>
 <p>If both the <code translate="no" v-pre>RETYPE_KEY</code> and <code translate="no" v-pre>RETYPE_PASSWORD</code> are needed, the configuration should be the following:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="retype_password-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
   env:
     RETYPE_KEY: ${{ secrets.RETYPE_KEY }}
@@ -556,20 +556,20 @@ jobs:
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/blog-posts/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/blogging/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Blog posts</span>
+                                <span class="block mt-1">Blogging</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/formatting/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/key-setup/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Markdown (RFM)</span>
+                                <span class="block mt-1">Key setup</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>

@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Callout - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -258,7 +258,7 @@
 </doc-anchor-target>
 <p>Callout components help to highlight important messages for the reader.</p>
 <p>To create an Callout, just surround a block of text or any markdown content with <code translate="no" v-pre>!!!</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="callout-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!!
 This is an Callout.
 !!!</code></pre>
@@ -288,7 +288,7 @@ This is an Callout.
     </h2>
 </doc-anchor-target>
 <p>Callouts can also have titles. Add a space, then add your title, such as <code translate="no" v-pre>!!! My title</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="title-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!! My title
 This is an Callout.
 !!!</code></pre>
@@ -312,7 +312,7 @@ This is an Callout.
     </div>
 </div>
 <p>Some basic Markdown syntax and emoji <code translate="no" v-pre>:shortcodes:</code> are supported in the titles.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="title-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!! :zap: [Getting Started](/guides/getting-started.md) :zap:
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!</code></pre>
@@ -414,7 +414,7 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
         <span>Samples</span>
     </h2>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="samples-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">!!!base Base
 This is a `base` Callout.
 !!!
@@ -703,7 +703,7 @@ This is a `contrast` Callout.
     </h2>
 </doc-anchor-target>
 <p>In addition to the Retype Callout component syntax options above, Retype also supports fully the GitHub <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts">Alert</a> extension which is an adaptation of the Markdown blockquote syntax.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="github-alerts-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt; [!NOTE]
 &gt; Useful information that users should know.
 
@@ -813,7 +813,7 @@ This is a `contrast` Callout.
     </h3>
 </doc-anchor-target>
 <p>Retype also supports setting a custom title value on the GitHub Alerts using the following syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-title-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">&gt; [!NOTE] Custom Title
 &gt; Useful information that users should know.</code></pre>
 </doc-codeblock></div>
@@ -845,7 +845,7 @@ This is a `contrast` Callout.
 <p>Retype gives you full control over the look and feel of your callout components through customizable <a href="/configuration/theme-variables/">theme variables</a>.</p>
 <p>You can override any of theme variable in your <code translate="no" v-pre>retype.yml</code> configuration file using the <code translate="no" v-pre>theme.base</code> and <code translate="no" v-pre>theme.dark</code> settings.</p>
 <p>For example, to change the <code translate="no" v-pre>primary</code> callout color for all instances of the <code translate="no" v-pre>primary</code> callout within your project, add the following to your project&#x27;s <code translate="no" v-pre>retype.yml</code> file:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="theme-variables-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     # Revise the primary variant base color
@@ -881,7 +881,7 @@ This is a `contrast` Callout.
     </h2>
 </doc-anchor-target>
 <p>Custom <code translate="no" v-pre>id</code> and <abbr title="Cascading Style Sheet">CSS</abbr> <code translate="no" v-pre>class</code> attributes can be applied to a Callout using the <code translate="no" v-pre>{#id .class}</code> syntax.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="custom-attributes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">!!!warning Important {#critical-warning .highlight}
 This Callout has a custom id and class.
 !!!</code></pre>
@@ -942,15 +942,6 @@ This Callout has a custom id and class.
                 <p>Stay ahead with the latest and greatest from Retype!</p>
             </div>
         </a>
-        <a href="/guides/formatting/" class="group no-link">
-            <div class="flex flex-col">
-                <div>
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></svg>
-                    <span>Formatting</span>
-                </div>
-                <p>Markdown .md pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.</p>
-            </div>
-        </a>
         <a href="/guides/getting-started/" class="group no-link">
             <div class="flex flex-col">
                 <div>
@@ -967,6 +958,15 @@ This Callout has a custom id and class.
                     <span>Icon</span>
                 </div>
                 <p>Similar to the Emoji :shortcode: syntax, you can add icons using :icon-shortcode:, where the shortcode is an Octicon icon name.</p>
+            </div>
+        </a>
+        <a href="/guides/markdown/" class="group no-link">
+            <div class="flex flex-col">
+                <div>
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></svg>
+                    <span>Markdown</span>
+                </div>
+                <p>Markdown .md pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.</p>
             </div>
         </a>
         <a href="/components/steps/" class="group no-link">

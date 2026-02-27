@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v3.11 - Write On! with Retype</title>
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -325,7 +325,7 @@
     </h3>
 </doc-anchor-target>
 <p>Set up custom themes in your <code translate="no" v-pre>retype.yml</code> file starting with the Project <a href="/configuration/project/#theme"><code translate="no" v-pre>theme</code></a> setting and adding <a href="/configuration/theme-variables/">theme variables</a>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="configure-your-color-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
   base:
     # Catppuccin Theme: Latte
@@ -385,7 +385,7 @@
         </div>
     </div>
 </div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="quick-brand-color-setup-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   baseColor: &quot;#8839ef&quot;</code></pre>
 </doc-codeblock></div>
@@ -418,7 +418,7 @@
     </div>
 </div>
 <p>The Badge configuration is added directly to the <a href="/configuration/page/#nav-badge">Page</a> settings, ensuring your navigation badges stay with their content and won&#x27;t get lost in separate configuration files.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="navigation-badges-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 nav:
   badge:
@@ -433,7 +433,7 @@ nav:
 </figure>
 </p>
 <p>The <code translate="no" v-pre>badge</code> also supports the new <code translate="no" v-pre>text|variant</code> pipe shorthand notation (see <doc-anchor-trigger to="#variant-pipe-notation-syntax">below</doc-anchor-trigger>) for specifying both the <code translate="no" v-pre>text</code> and <code translate="no" v-pre>variant</code> of the Badge in one simple configuration:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="navigation-badges-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 nav:
   badge: NEW|info
@@ -441,7 +441,7 @@ nav:
 # Themes</code></pre>
 </doc-codeblock></div>
 <p>Navigation badges support all the same variants and configuration options as regular <a href="/components/badge/">badge</a> components, including <code translate="no" v-pre>corners</code>, <code translate="no" v-pre>size</code>, <code translate="no" v-pre>icon</code>, and <strong>you can even configure the Badge to <code translate="no" v-pre>link</code> to a different internal or external location</strong>. The following demonstrates linking to an external website:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="navigation-badges-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 nav:
   badge:
@@ -497,7 +497,7 @@ nav:
         <span>Before</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="before-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!badge text=&quot;NEW&quot; variant=&quot;info&quot;]
 
 [!button text=&quot;Good Job!&quot; variant=&quot;success&quot;]</code></pre>
@@ -508,7 +508,7 @@ nav:
         <span>After</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="after-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!badge NEW|info]
 
 [!button Good Job!|success]</code></pre>
@@ -527,7 +527,7 @@ nav:
     </h2>
 </doc-anchor-target>
 <p>Clean up your header and footer navigation with support for icon-only <a href="/configuration/project/#links">header links</a> and <a href="/configuration/project/#links-footer">footer links</a>. You no longer need to provide <code translate="no" v-pre>text</code> when you want to display only an icon.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="icon-only-links-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - icon: &quot;github&quot;
     link: &quot;https://github.com/yourcompany&quot;
@@ -541,7 +541,7 @@ nav:
     </h2>
 </doc-anchor-target>
 <p>A new <code translate="no" v-pre>base</code> variant is now available for <a href="/components/badge/">Badge</a>, <a href="/components/button/">Button</a>, and <a href="/components/callout/">Callout</a> components. This variant uses your project&#x27;s <a href="/guides/themes/">base color</a> to create consistent styling that automatically adapts to your brand colors.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="base-variant-for-components-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!badge Badge|base]
 
 [!button Button|base]
@@ -603,7 +603,7 @@ This callout uses your project `base-color` theme variable.
     </h2>
 </doc-anchor-target>
 <p>The <a href="/configuration/project/#copyright"><code translate="no" v-pre>footer.copyright</code></a> setting now supports full templating, including data variables, includes, and functions. This enables dynamic footer content that can pull from your project data or include shared footer components.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="footer-template-support-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">footer:
   copyright: &quot;{{ include \&quot;snippets/copyright\&quot; }}&quot;</code></pre>
 </doc-codeblock></div>

@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0-preview.825480774004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0-preview2.825501502145">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.0.0-preview">
+    <meta name="generator" content="Retype 4.1.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Getting Started - Write On! with Retype</title>
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.0.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.0.0-preview.825480774004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.0.0-preview.825480774004" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0-preview2.825501502145" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0-preview2.825501502145" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.0.0-preview.825480774004" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0-preview2.825501502145" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -264,7 +264,7 @@
         <span>What is Retype?</span>
     </h2>
 </doc-anchor-target>
-<p>Retype is a website generator that turns your Markdown <code translate="no" v-pre>.md</code> files into a beautiful and functional documentation website. No coding required. Just write in <a href="/guides/formatting/">Markdown</a> and Retype handles the rest.</p>
+<p>Retype is a website generator that turns your Markdown <code translate="no" v-pre>.md</code> files into a beautiful and functional documentation website. No coding required. Just write in <a href="/guides/markdown/">Markdown</a> and Retype handles the rest.</p>
 <p>Retype is perfect for:</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Project documentation</li>
@@ -283,7 +283,7 @@
 </doc-anchor-target>
 <p>The first thing to complete is <a href="/guides/installation/">installing</a> Retype.</p>
 <p>Once you have Retype installed, you can verify using the following command to output the Retype version number:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-1-installation-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype --version</code></pre>
 </doc-codeblock></div>
 <p>If the above is not working, then Retype is not installed.</p>
@@ -295,17 +295,17 @@
     </h2>
 </doc-anchor-target>
 <p>Still using the command line, navigate to any folder with Markdown files:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-2-start-retype-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">cd your-project-folder</code></pre>
 </doc-codeblock></div>
 <p>If you do not have Markdown files in that directory, create a new file such as the following <code translate="no" v-pre>readme.md</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-2-start-retype-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># Welcome!
 
 This is a basic page, with only a title and some text content.</code></pre>
 </doc-codeblock></div>
 <p>Then run the command <code translate="no" v-pre>retype start</code>:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="step-2-start-retype-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">retype start</code></pre>
 </doc-codeblock></div>
 <p>That&#x27;s it! Retype will automatically:</p>
@@ -322,14 +322,14 @@ This is a basic page, with only a title and some text content.</code></pre>
         <span>Next Steps: Add more content</span>
     </h2>
 </doc-anchor-target>
-<p>Retype supports standard <a href="/guides/formatting/">Markdown</a> plus powerful extensions. Experiment with adding the following markdown to your page.</p>
+<p>Retype supports standard <a href="/guides/markdown/">Markdown</a> plus powerful extensions. Experiment with adding the following markdown to your page.</p>
 <doc-anchor-target id="basic-markdown">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#basic-markdown">#</doc-anchor-trigger>
         <span>Basic Markdown</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="basic-markdown-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown"># Welcome!
 
 This is a paragraph.
@@ -380,7 +380,7 @@ Need to draw attention to something? Use an alert.
     </h2>
 </doc-anchor-target>
 <p>To generate the static website files, run the following command:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div id="hosting-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">retype build</code></pre>
 </doc-codeblock></div>
 <p>By default, the files will be copied to a new <code translate="no" v-pre>.retype</code> folder within your project, although this is configurable with the <a href="/configuration/project/#output"><code translate="no" v-pre>output</code></a> setting.</p>
