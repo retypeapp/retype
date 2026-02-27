@@ -67,7 +67,7 @@ branding:
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
-  pageSize: 4
+  pageSize: 5
 
 meta:
   title: " - Write On! with Retype"
