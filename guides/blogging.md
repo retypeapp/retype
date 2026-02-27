@@ -4,7 +4,7 @@ tags: [guide]
 nav:
   badge: NEW|info
 ---
-# Blog posts
+# Blogging
 
 Adding a blog to your Retype website is as quick as adding a new `.md` file to your project.
 

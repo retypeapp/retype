@@ -1,9 +1,9 @@
 ---
 icon: note
 tags: [guide]
-label: Markdown (RFM)
+label: Markdown
 ---
-# Formatting
+# Markdown
 
 Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
 

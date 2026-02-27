@@ -87,14 +87,6 @@ Inside the included template, each named argument is available as a local variab
 {{~ end ~}}
 ```
 
-You can also pass an object as the second argument:
-
-```markdown
-{{ include "user-card" { name: "Jane", role: "Developer" } }}
-```
-
-See [Context and Scope](context-scope.md) for more on how variables are passed between templates.
-
 ---
 
 ## Nested includes

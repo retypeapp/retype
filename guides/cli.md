@@ -1,5 +1,4 @@
 ---
-order: -100
 icon: terminal
 tags: [guide]
 ---

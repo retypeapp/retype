@@ -11,7 +11,7 @@ This guide will have you up and running generating your own Retype website in ju
 
 ## What is Retype?
 
-Retype is a website generator that turns your Markdown `.md` files into a beautiful and functional documentation website. No coding required. Just write in [Markdown](/guides/formatting.md) and Retype handles the rest.
+Retype is a website generator that turns your Markdown `.md` files into a beautiful and functional documentation website. No coding required. Just write in [Markdown](/guides/markdown.md) and Retype handles the rest.
 
 Retype is perfect for:
 - [x] Project documentation
@@ -66,7 +66,7 @@ That's it! Retype will automatically:
 
 ## Next Steps: Add more content
 
-Retype supports standard [Markdown](formatting.md) plus powerful extensions. Experiment with adding the following markdown to your page.
+Retype supports standard [Markdown](markdown.md) plus powerful extensions. Experiment with adding the following markdown to your page.
 
 ### Basic Markdown
 

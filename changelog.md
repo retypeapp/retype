@@ -668,7 +668,7 @@ This release failed to run properly if the NPM package was installed. 🧐 We di
 1. Open Graph and Twitter card support.
 1. [Mermaid](/components/mermaid.md) diagram and visualization support.
 1. [`target`](/configuration/project.md#target) config for all `links` within **retype.yml**.
-1. Default page support for [`default.md`](/guides/formatting.md#home-page).
+1. Default page support for [`default.md`](/guides/markdown.md#home-page).
 1. Hover style on [Badge](/components/badge.md) component when links.
 1. Super improved handling of áccënt characters.
 +++
