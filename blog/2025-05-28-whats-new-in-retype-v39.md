@@ -14,7 +14,7 @@ Retype v3.9 brings improvements to [[callout]] components, broader syntax featur
 
 ## New `question` Callout
 
-Meet the new `question` [[callout]] variant, perfect for FAQ sections, troubleshooting guides, or any content that poses questions to readers. See [docs](/components/callout.md).
+Meet the new `question` [[callout]] variant, perfect for FAQ sections, troubleshooting guides, or any content that poses questions to readers.
 
 ```md
 !!!question Common Question
