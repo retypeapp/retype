@@ -1701,6 +1701,20 @@ start:
 
 Customization of the website search component.
 
+### excludeCode
+
+=== excludeCode : `boolean`
+Exclude code blocks from the search index. Default is `false`.
+
+When set to `true`, code blocks will not be included in the search index and will not appear in search results.
+
+```yml
+search:
+  excludeCode: true # Default is false
+```
+
+===
+
 ### hotkeys
 
 === hotkeys : `list`
