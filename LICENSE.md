@@ -4,7 +4,7 @@ layout: page
 ---
 # Retype Software License Agreement
 
-#### Version 3.10.1
+#### Version 4.1.0-preview3
 
 THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN RETYPE, INC. ("We," "Us")
 AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",

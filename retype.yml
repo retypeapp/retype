@@ -63,7 +63,7 @@ url: retype.com
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v4.1-pre
+  label: v4.1.0-preview3
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
