@@ -79,10 +79,12 @@ Combine a `for` loop with vertical cards to display your three most recent posts
 
 ## Blog summary page
 
-The `/blog/` folder can include a `blog.md` (or `index.md`) file to customize the blog summary page heading or add introductory content above the post listing.
+The `/blog/` folder can include a `index.md` (or `default.md` or `readme.md`) file to customize the blog summary page heading or add introductory content above the post listing.
 
-```md /blog/blog.md
+```md /blog/index.md
 # Company Blog
+
+This is our company blog.
 ```
 
 ---
