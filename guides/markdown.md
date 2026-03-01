@@ -12,7 +12,7 @@ No special software is required to create a `.md` file. Any basic text editor wi
 Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a full demonstration of the formatting possibilities and best practices.
 
 !!!
-View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/guides/formatting.md) source file used to create this page.
+View the actual [`markdown.md`](https://github.com/retypeapp/retype/blob/main/guides/markdown.md) source file used to create this page.
 !!!
 
 ---

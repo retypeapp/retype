@@ -81,7 +81,7 @@ Project level [configuration](/configuration/project.md) using **retype.yml** un
 
 #### :icon-pencil: Simple formatting
 
-Pages are [formatted](/guides/formatting.md) using Markdown syntax and Retype [components](/components/components.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
+Pages are formatted using [[Markdown]] syntax and Retype [components](/components/components.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
 
 #### :icon-sync: Live reload
 

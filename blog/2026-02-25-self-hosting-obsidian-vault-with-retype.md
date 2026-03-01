@@ -15,7 +15,7 @@ If you use [Obsidian](https://obsidian.md/), chances are you’ve thought about 
 
 ## Start With Markdown, Stay Organized
 
-Most teams just want to write and update content without hassle. [Markdown](/guides/formatting.md) fits this need with plain text, easy to read, and easy to version. Editors like Obsidian build on this foundation with features like page linking, advanced components, and WYSIWYG editing. 
+Most teams just want to write and update content without hassle. [Markdown](/guides/markdown.md) fits this need with plain text, easy to read, and easy to version. Editors like Obsidian build on this foundation with features like page linking, advanced components, and WYSIWYG editing. 
 
 !!!tip
 With Markdown, there’s no weird file format, your docs stay portable, easy to back up, and free from vendor lock-in. Obsidian, like Retype, **is offline-first**. All documents remain stored as plain Markdown files on your device.
