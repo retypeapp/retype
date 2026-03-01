@@ -1,0 +1,25 @@
+{
+    "name": "retype",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "2.4.0-ubuntu-amd64",
+            "MICROSOFT_BASE_IMAGE": "mcr.microsoft.com/vscode/devcontainers/base:debian-11"
+        }
+    },
+
+    "mounts": [
+        "source=${localEnv:HOME}/.bash_history,target=/home/vscode/.bash_history,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+        "source=/etc/resolv.conf,target=/etc/resolv.conf,type=bind,consistency=cached"
+    ],
+
+    "containerEnv": {
+        "EDITOR": "vim",
+        "GIT_EDITOR": "vim"
+    },
+
+    "forwardPorts": [5000],
+    "remoteUser": "vscode"
+}
