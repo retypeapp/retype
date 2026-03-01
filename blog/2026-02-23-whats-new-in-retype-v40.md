@@ -232,6 +232,8 @@ blog:
 
 Control pagination, limit total posts on summary pages, customize the heading, and change the URL base path to match your site's terminology.
 
+Also checkout the new [[Blogging]] guide for more tips.
+
 ## Link Tooltips
 
 Add tooltip descriptions to your header and footer navigation links with the new [`title`](/configuration/project.md#title) property on `links` and `footer.links`:
