@@ -308,18 +308,35 @@ breadcrumb:
 
 The `blog` configuration controls the behavior and appearance of the blog summary pages, including pagination and URL structure.
 
-### pageSize
+### base {#blog-base}
 
-=== pageSize : `number`
+=== base : `string`
 
-The number of blog post items to display per page. Default is `10`.
+The URL base path segment used for the blog summary pages. Default is `"blog"`.
 
 ```yml
 blog:
-  pageSize: 5
+  base: news
 ```
 
-If the total number of blog posts exceeds the `pageSize`, Retype will automatically generate additional paginated summary pages.
+Setting `base: news` would generate the blog summary pages at `/news/` instead of the default `/blog/` path.
+
+===
+
+### layout {#blog-layout}
+
+=== layout : `string`
+
+Set the default [layout](/configuration/page.md#layout) for all blog posts. Default is `blog`.
+
+```yml
+blog:
+  layout: page
+```
+
+Setting `layout: page` will render all blog posts using the `page` layout, which includes the left sidebar tree navigation and the right-side table of contents.
+
+The `layout` can still be overridden on individual blog posts by setting the [`layout`](/configuration/page.md#layout) in the page frontmatter.
 
 ===
 
@@ -338,6 +355,21 @@ By default, all blog posts are included. Setting a `maxResults` value will cap t
 
 ===
 
+### pageSize
+
+=== pageSize : `number`
+
+The number of blog post items to display per page. Default is `10`.
+
+```yml
+blog:
+  pageSize: 5
+```
+
+If the total number of blog posts exceeds the `pageSize`, Retype will automatically generate additional paginated summary pages.
+
+===
+
 ### title {#blog-title}
 
 === title : `string`
@@ -350,21 +382,6 @@ blog:
 ```
 
 If no `title` is configured, Retype will use the default translated label for the current [`locale`](#locale).
-
-===
-
-### base {#blog-base}
-
-=== base : `string`
-
-The URL base path segment used for the blog summary pages. Default is `"blog"`.
-
-```yml
-blog:
-  base: news
-```
-
-Setting `base: news` would generate the blog summary pages at `/news/` instead of the default `/blog/` path.
 
 ===
 
