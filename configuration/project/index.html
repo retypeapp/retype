@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825725198152">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825726172277">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -34,15 +34,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.1.0.825725198152" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0.825726172277" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825725198152" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825726172277" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825725198152" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0.825725198152" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825726172277" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0.825726172277" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.1.0.825725198152" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0.825726172277" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -64,7 +64,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.1-pre</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.1</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -592,20 +592,36 @@ footer:
     </h2>
 </doc-anchor-target>
 <p>The <code translate="no" v-pre>blog</code> configuration controls the behavior and appearance of the blog summary pages, including pagination and URL structure.</p>
-<doc-anchor-target id="pagesize">
+<doc-anchor-target id="blog-base">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pagesize">#</doc-anchor-trigger>
-        <span>pageSize</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-base">#</doc-anchor-trigger>
+        <span>base</span>
     </h3>
 </doc-anchor-target>
-<doc-panel id="pagesize--number">
-    <template #title>pageSize : <code translate="no" v-pre>number</code></template>
-<p>The number of blog post items to display per page. Default is <code translate="no" v-pre>10</code>.</p>
+<doc-panel id="base--string">
+    <template #title>base : <code translate="no" v-pre>string</code></template>
+<p>The URL base path segment used for the blog summary pages. Default is <code translate="no" v-pre>&quot;blog&quot;</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
-  pageSize: 5</code></pre>
+  base: news</code></pre>
 </doc-codeblock></div>
-<p>If the total number of blog posts exceeds the <code translate="no" v-pre>pageSize</code>, Retype will automatically generate additional paginated summary pages.</p>
+<p>Setting <code translate="no" v-pre>base: news</code> would generate the blog summary pages at <code translate="no" v-pre>/news/</code> instead of the default <code translate="no" v-pre>/blog/</code> path.</p>
+</doc-panel>
+<doc-anchor-target id="blog-layout">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-layout">#</doc-anchor-trigger>
+        <span>layout</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="layout--string">
+    <template #title>layout : <code translate="no" v-pre>string</code></template>
+<p>Set the default <a href="/configuration/page/#layout">layout</a> for all blog posts. Default is <code translate="no" v-pre>blog</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  layout: page</code></pre>
+</doc-codeblock></div>
+<p>Setting <code translate="no" v-pre>layout: page</code> will render all blog posts using the <code translate="no" v-pre>page</code> layout, which includes the left sidebar tree navigation and the right-side table of contents.</p>
+<p>The <code translate="no" v-pre>layout</code> can still be overridden on individual blog posts by setting the <a href="/configuration/page/#layout"><code translate="no" v-pre>layout</code></a> in the page frontmatter.</p>
 </doc-panel>
 <doc-anchor-target id="maxresults-1">
     <h3>
@@ -622,6 +638,21 @@ footer:
 </doc-codeblock></div>
 <p>By default, all blog posts are included. Setting a <code translate="no" v-pre>maxResults</code> value will cap the total number of posts that appear in the blog summary pages. Posts beyond the limit are excluded from the summary but remain accessible via direct URL.</p>
 </doc-panel>
+<doc-anchor-target id="pagesize">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pagesize">#</doc-anchor-trigger>
+        <span>pageSize</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="pagesize--number">
+    <template #title>pageSize : <code translate="no" v-pre>number</code></template>
+<p>The number of blog post items to display per page. Default is <code translate="no" v-pre>10</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  pageSize: 5</code></pre>
+</doc-codeblock></div>
+<p>If the total number of blog posts exceeds the <code translate="no" v-pre>pageSize</code>, Retype will automatically generate additional paginated summary pages.</p>
+</doc-panel>
 <doc-anchor-target id="blog-title">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#blog-title">#</doc-anchor-trigger>
@@ -636,21 +667,6 @@ footer:
   title: News</code></pre>
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>title</code> is configured, Retype will use the default translated label for the current <doc-anchor-trigger to="#locale"><code translate="no" v-pre>locale</code></doc-anchor-trigger>.</p>
-</doc-panel>
-<doc-anchor-target id="blog-base">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-base">#</doc-anchor-trigger>
-        <span>base</span>
-    </h3>
-</doc-anchor-target>
-<doc-panel id="base--string">
-    <template #title>base : <code translate="no" v-pre>string</code></template>
-<p>The URL base path segment used for the blog summary pages. Default is <code translate="no" v-pre>&quot;blog&quot;</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
-  base: news</code></pre>
-</doc-codeblock></div>
-<p>Setting <code translate="no" v-pre>base: news</code> would generate the blog summary pages at <code translate="no" v-pre>/news/</code> instead of the default <code translate="no" v-pre>/blog/</code> path.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="cache">
