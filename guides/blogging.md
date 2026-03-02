@@ -159,6 +159,38 @@ blog:
   base: news
 ```
 
+### base
+
+The URL path segment for the blog. Default is `"blog"`.
+
+```yml
+blog:
+  base: news
+```
+
+Setting `base: news` generates the blog summary at `/news/` instead of `/blog/`. Your blog post files still live in the `/blog/` folder in your project source.
+
+### layout
+
+Set the default [`layout`](/configuration/page.md#layout) for all blog posts. Default is `blog`. To include the left sidebar tree navigation and the right-side table of contents, set `layout: page`.
+
+```yml
+blog:
+  layout: page
+```
+
+### maxResults
+
+The maximum total number of posts included across all paginated summary pages. Default is all blog posts.
+
+```yml
+blog:
+  maxResults: 100
+```
+
+Posts beyond the limit are excluded from the summary but remain accessible by direct URL.
+
+
 ### pageSize
 
 The number of posts displayed per summary page. Default is `10`.
@@ -170,17 +202,6 @@ blog:
 
 If the total number of posts exceeds the `pageSize`, Retype automatically generates paginated summary pages.
 
-### maxResults
-
-The maximum total number of posts included across all paginated summary pages. Default is unlimited.
-
-```yml
-blog:
-  maxResults: 100
-```
-
-Posts beyond the limit are excluded from the summary but remain accessible by direct URL.
-
 ### title
 
 A custom heading for the blog summary page. Default uses the locale translation.
@@ -189,14 +210,3 @@ A custom heading for the blog summary page. Default uses the locale translation.
 blog:
   title: News & Updates
 ```
-
-### base
-
-The URL path segment for the blog. Default is `"blog"`.
-
-```yml
-blog:
-  base: news
-```
-
-Setting `base: news` generates the blog summary at `/news/` instead of `/blog/`. Your blog post files still live in the `/blog/` folder in your project source.
