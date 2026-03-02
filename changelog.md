@@ -23,13 +23,40 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
-## Version 4.1.0 [!badge @next|info]
+## Version 4.2.0 [!badge @next|info]
 
-Expected Q1 2026. 
+Expected early Q2 2026.
 
 ---
 
-## Version 4.0.1 [!badge @latest|info]
+## Version 4.1.0 [!badge @latest|info]
+
+**Released:** [2026-03-01](https://github.com/retypeapp/retype/releases/tag/v4.1.0)
+
+There were **8 changes** in Retype 4.1.0.
+
++++ New :icon-shield-check:
+
+1. New search experience with improved ranking, UI, and navigation, see [#680](https://github.com/retypeapp/retype/discussions/680)
+1. New [`blog.layout`](/configuration/project.md#blog-layout) project setting to configure default blog post layout, see [#729](https://github.com/retypeapp/retype/discussions/729)
+1. New support for setting a unicode character on icon properties, see [#785](https://github.com/retypeapp/retype/discussions/785)
+
++++ Improved :icon-thumbsup:
+
+1. Index code blocks in search results, see [#680](https://github.com/retypeapp/retype/discussions/680)
+1. Allow pager links to wrap to next line when container width is full
+
++++ Fixed :icon-bug:
+
+1. NextPrev project configuration not able to `hide` or `exclude` Next and Previous nav elements, see [#781](https://github.com/retypeapp/retype/discussions/781)
+1. Fix platform detection: Linux arm64 falls through to osx-x64, see [#802](https://github.com/retypeapp/retype/discussions/802)
+1. Fill empty table cells with a space - `&nbsp;`
+
++++
+
+---
+
+## Version 4.0.1
 
 **Released:** [2026-02-25](https://github.com/retypeapp/retype/releases/tag/v4.0.1)
 
@@ -41,36 +68,6 @@ There were **2 changes** in Retype `v4.0.1`.
 1. Improve scroll position logic and reloading
 
 +++
-
----
-
-## v4.1.0
-
-[!badge text="LATEST" variant="info"]
-
-Released: [2026-03-02](https://github.com/retypeapp/retype/releases/tag/v4.1.0)
-
-# Version 4.1.0
-
-There were 8 changes in Retype 4.1.0.
-
-## New
-
-1. New search experience with improved ranking, UI, and navigation, see #680
-
-## Improved
-
-1. New `blog.layout` project setting to configure default blog post layout, see #729
-1. New support for setting a unicode character on icon properties, see #785
-1. Index code blocks in search results, see #680
-1. Allow pager links to wrap to next line when container width is full
-
-## Fixed
-
-1. NextPrev project configuration not able to `hide` or `exclude` Next and Previous nav elements, see #781
-1. Fix platform detection: Linux arm64 falls through to osx-x64, see #802
-1. Fill empty table cells with a space - `&nbsp;`
-
 
 ---
 
