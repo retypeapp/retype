@@ -44,6 +44,36 @@ There were **2 changes** in Retype `v4.0.1`.
 
 ---
 
+## v4.1.0
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-03-02](https://github.com/retypeapp/retype/releases/tag/v4.1.0)
+
+# Version 4.1.0
+
+There were 8 changes in Retype 4.1.0.
+
+## New
+
+1. New search experience with improved ranking, UI, and navigation, see #680
+
+## Improved
+
+1. New `blog.layout` project setting to configure default blog post layout, see #729
+1. New support for setting a unicode character on icon properties, see #785
+1. Index code blocks in search results, see #680
+1. Allow pager links to wrap to next line when container width is full
+
+## Fixed
+
+1. NextPrev project configuration not able to `hide` or `exclude` Next and Previous nav elements, see #781
+1. Fix platform detection: Linux arm64 falls through to osx-x64, see #802
+1. Fill empty table cells with a space - `&nbsp;`
+
+
+---
+
 ## v4.0.0
 
 **Released:** [2026-02-23](https://github.com/retypeapp/retype/releases/tag/v4.0.0)
