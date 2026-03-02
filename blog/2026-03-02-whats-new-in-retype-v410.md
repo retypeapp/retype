@@ -87,6 +87,9 @@ icon: ":newspaper:"
 label: News & Views
 order: 1000
 ---
+# News & Views
+
+Be sure to check out our latest news and views!
 ```
 
 This gives you full control over where the blog appears in the navigation and how it is labeled, without any special project-level configuration.
