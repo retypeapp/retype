@@ -109,17 +109,21 @@ Check whether a page exists before linking to it. This is useful for optional or
 
 ## Search
 
-Use `content.search("term")` to find pages whose title, description, or content matches the search term. Results are returned as an array of page objects.
+Use `content.search("term")` to find pages whose title contains the search term. Results are returned as an array of page objects.
 
 ### Basic search
 
 {%{
 ```md
-{{ for item in content.search("installation") ~}}
+{{ for item in content.search("obsidian") ~}}
 - [{{ item.title }}]({{ item.path }})
 {{ end }}
 ```
 }%}
+
+{{ for item in content.search("obsidian") ~}}
+- [{{ item.title }}]({{ item.path }})
+{{ end }}
 
 ### Access a specific result
 
@@ -130,17 +134,24 @@ description: {{ content.search("getting started")[0].description }}
 ```
 }%}
 
+**title:** {{ content.search("getting started")[0].title }}\
+**description:** {{ content.search("getting started")[0].description }}
+
 ### Limit search results
 
 Combine with the `array.limit` filter to cap the number of results.
 
 {%{
 ```md
-{{ for item in content.search("guide") | array.limit 5 ~}}
+{{ for item in content.search("retype") | array.limit 5 ~}}
 [!card vert]({{ item.path }})
 {{ end }}
 ```
 }%}
+
+{{ for item in content.search("retype") | array.limit 5 ~}}
+[!card vert]({{ item.path }})
+{{ end }}
 
 ---
 
@@ -153,20 +164,28 @@ Combine with the `array.limit` filter to cap the number of results.
 {%{
 ```md
 {{ for tag in content.tags ~}}
-- {{ tag.title }} ({{ tag.pages | array.size }} pages)
+- [{{ tag.title }}](/tags/{{ tag.title }}) ({{ tag.pages | array.size }} pages)
 {{ end }}
 ```
 }%}
+
+{{ for tag in content.tags ~}}
+- [{{ tag.title }}](/tags/{{ tag.title }}) ({{ tag.pages | array.size }} pages)
+{{ end }}
 
 ### Pages for a specific tag
 
 {%{
 ```md
-{{ for page in content.tags["component"].pages ~}}
+{{ for page in content.tags["guide"].pages ~}}
 - [{{ page.title }}]({{ page.path }})
 {{ end }}
 ```
 }%}
+
+{{ for page in content.tags["guide"].pages ~}}
+- [{{ page.title }}]({{ page.path }})
+{{ end }}
 
 ---
 
@@ -179,10 +198,14 @@ Combine with the `array.limit` filter to cap the number of results.
 {%{
 ```md
 {{ for cat in content.categories ~}}
-- {{ cat.title }} ({{ cat.pages | array.size }} pages)
+- [{{ cat.title }}](/categories/{{ cat.title }}) ({{ cat.pages | array.size }} pages)
 {{ end }}
 ```
 }%}
+
+{{ for cat in content.categories ~}}
+- [{{ cat.title }}](/categories/{{ cat.title }}) ({{ cat.pages | array.size }} pages)
+{{ end }}
 
 ---
 
@@ -236,6 +259,10 @@ Combine with the `array.limit` filter to cap the number of results.
 ```
 }%}
 
+{{ for post in content.blog.posts ~}}
+1. [{{ post.title }}]({{ post.path }})
+{{ end }}
+
 ### Most recent as Cards
 
 {%{
@@ -265,6 +292,10 @@ Combine with the `array.limit` filter to cap the number of results.
 {{ end }}
 ```
 }%}
+
+{{ for item in content.nav.children ~}}
+- {{ item.label }} ({{ item.children | array.size }} children)
+{{ end }}
 
 ---
 
