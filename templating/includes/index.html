@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825823371227">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825824788867">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Includes - Write On! with Retype</title>
     <meta name="title" content="Includes - Write On! with Retype">
-    <meta name="description" content="The include function pulls content from another file into your page. Write a block of content once, then include in multiple locations across your site.">
+    <meta name="description" content="The include function pulls content from another file into your page. Write a block of content once and reuse it across as many pages as you like.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/templating/includes/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/templating/includes/">
     <meta property="og:title" content="Includes - Write On! with Retype">
-    <meta property="og:description" content="The include function pulls content from another file into your page. Write a block of content once, then include in multiple locations across your site.">
+    <meta property="og:description" content="The include function pulls content from another file into your page. Write a block of content once and reuse it across as many pages as you like.">
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.1.0.825823371227" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0.825824788867" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825823371227" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825824788867" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825823371227" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0.825823371227" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825824788867" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0.825824788867" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.1.0.825823371227" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0.825824788867" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -255,7 +255,7 @@
         <span>Includes</span>
     </h1>
 </doc-anchor-target>
-<p>The <code translate="no" v-pre>include</code> function pulls content from another file into your page. Write a block of content once, then include in multiple locations across your site.</p>
+<p>The <code translate="no" v-pre>include</code> function pulls content from another file into your page. Write a block of content once and reuse it across as many pages as you like.</p>
 <hr>
 <doc-anchor-target id="basic-usage">
     <h2>
@@ -266,7 +266,7 @@
 <div id="basic-usage-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;snippets/support&quot; }}</code></pre>
 </doc-codeblock></div>
-<p>Retype resolves the file, processes any templating within it, and renders the content inline.</p>
+<p>Retype resolves the file, processes any templating within it, and renders the output inline at the point of the <code translate="no" v-pre>include</code> call.</p>
 <hr>
 <doc-anchor-target id="file-resolution">
     <h2>
@@ -277,16 +277,17 @@
 <p>Retype searches for the included file using the following order:</p>
 <ol>
 <li><strong>Current directory</strong> of the calling page</li>
-<li><strong><code translate="no" v-pre>_includes</code>-prefixed path</strong> from the current directory</li>
-<li><strong>Walk up parent directories</strong>, repeating steps 1 and 2 at each level until reaching the project root</li>
+<li><strong><code translate="no" v-pre>_includes</code> subfolder</strong> of the current directory</li>
+<li><strong>Walk up parent directories</strong>, repeating steps 1 and 2 at each level until the project root is reached</li>
 </ol>
 <p>The <code translate="no" v-pre>.md</code> extension is optional. If omitted, Retype automatically tries appending <code translate="no" v-pre>.md</code>.</p>
-<p>If the path starts with <code translate="no" v-pre>..</code>, Retype resolves it as an external file relative to the calling page&#x27;s directory.</p>
+<p>All three of the following calls use the same resolution rules:</p>
 <div id="file-resolution-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;setup&quot; }}
 {{ include &quot;snippets/support&quot; }}
-{{ include &quot;../external/readme.md&quot; }}</code></pre>
+{{ include &quot;../shared/notice.md&quot; }}</code></pre>
 </doc-codeblock></div>
+<p>If the path starts with <code translate="no" v-pre>..</code>, Retype resolves it relative to the calling page&#x27;s directory.</p>
 <hr>
 <doc-anchor-target id="file-types">
     <h2>
@@ -295,10 +296,10 @@
     </h2>
 </doc-anchor-target>
 <p>Both <code translate="no" v-pre>.md</code> and <code translate="no" v-pre>.html</code> files can be included.</p>
-<p>Markdown files are processed and rendered as part of the page. HTML files in the <code translate="no" v-pre>_includes</code> folder support full templating syntax and are useful for injecting custom markup.</p>
+<p>Markdown files are processed as Markdown and rendered as part of the page. HTML files support full templating syntax and are useful for injecting custom markup, such as <code translate="no" v-pre>&lt;script&gt;</code> tags or analytics snippets.</p>
 <div id="file-types-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;snippets/support&quot; }}
-{{ include &quot;components/button&quot; }}</code></pre>
+{{ include &quot;components/alert.html&quot; }}</code></pre>
 </doc-codeblock></div>
 <hr>
 <doc-anchor-target id="site-wide-includes">
@@ -307,43 +308,47 @@
         <span>Site-wide includes</span>
     </h2>
 </doc-anchor-target>
-<p>Retype automatically includes the following files on every page if they exist in your <code translate="no" v-pre>_includes</code> folder:</p>
+<p>Retype automatically processes the following files on every page if they exist in the <code translate="no" v-pre>_includes</code> folder at your project root:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
 <th>File</th>
-<th>Description</th>
+<th>Location injected</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code translate="no" v-pre>_includes/head.html</code></td>
-<td>Injected into the <code translate="no" v-pre>&lt;head&gt;</code> element</td>
-</tr>
-<tr>
 <td><code translate="no" v-pre>_includes/head-top.html</code></td>
-<td>Injected at the top of the <code translate="no" v-pre>&lt;head&gt;</code> element</td>
+<td>Beginning of the <code translate="no" v-pre>&lt;head&gt;</code> element</td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>_includes/body.html</code></td>
-<td>Injected into the <code translate="no" v-pre>&lt;body&gt;</code> element</td>
+<td><code translate="no" v-pre>_includes/head.html</code></td>
+<td>End of the <code translate="no" v-pre>&lt;head&gt;</code> element</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>_includes/body-top.html</code></td>
-<td>Injected at the top of the <code translate="no" v-pre>&lt;body&gt;</code> element</td>
+<td>Beginning of the <code translate="no" v-pre>&lt;body&gt;</code> element</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>_includes/body.html</code></td>
+<td>End of the <code translate="no" v-pre>&lt;body&gt;</code> element</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>_includes/top.md</code></td>
-<td>Content rendered at the top of every page</td>
+<td>Top of every page, before the page content</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>_includes/bottom.md</code></td>
-<td>Content rendered at the bottom of every page</td>
+<td>Bottom of every page, after the page content</td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>These files are automatically applied without any <code translate="no" v-pre>include</code> call in your pages. For example, adding a <code translate="no" v-pre>&lt;link&gt;</code> tag to <code translate="no" v-pre>_includes/head.html</code> injects a stylesheet on every page:</p>
+<div id="site-wide-includes-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;link href=&quot;/static/styles.css?v={{ nonce }}&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+</doc-codeblock></div>
 <hr>
 <doc-anchor-target id="passing-parameters">
     <h2>
@@ -351,17 +356,22 @@
         <span>Passing parameters</span>
     </h2>
 </doc-anchor-target>
-<p>Pass data to an included template using named arguments:</p>
+<p>Pass named arguments to an included template by listing them after the file path:</p>
 <div id="passing-parameters-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;components/octicons&quot; list: octicons_new }}</code></pre>
 </doc-codeblock></div>
-<p>Inside the included template, each named argument is available as a local variable:</p>
+<p>Inside the included file, access passed arguments using the <code translate="no" v-pre>$.</code> prefix:</p>
 <div id="passing-parameters-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">| Icon | Shortcode |
-| :---: | --- |
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">| Icon | Shortcode | Sample |
+| :---: | --- | --- |
 {{~ for $i in $.list ~}}
-| :icon-{{ $i }}: | {{ $i }} |
+| :icon-{{ $i }}: | {{ $i }} | `:icon-{{ $i }}:` |
 {{~ end ~}}</code></pre>
+</doc-codeblock></div>
+<p>The <code translate="no" v-pre>$.list</code> expression accesses the <code translate="no" v-pre>list</code> argument passed from the caller. The <code translate="no" v-pre>$i</code> loop variable uses the <code translate="no" v-pre>$</code> prefix to avoid shadowing outer variables.</p>
+<p>Multiple named arguments can be passed in the same call:</p>
+<div id="passing-parameters-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;components/alert&quot; type: &quot;warning&quot; message: &quot;This feature is in beta.&quot; }}</code></pre>
 </doc-codeblock></div>
 <hr>
 <doc-anchor-target id="nested-includes">
@@ -370,20 +380,21 @@
         <span>Nested includes</span>
     </h2>
 </doc-anchor-target>
-<p>Included files can include other files. Retype resolves each nested include using the same resolution rules.</p>
+<p>Included files can themselves include other files. Retype resolves each nested include using the same resolution rules, starting from the included file&#x27;s own directory.</p>
+<p><strong><code translate="no" v-pre>page.md</code></strong></p>
 <div id="nested-includes-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# page.md }}
-{{ include &quot;snippets/header&quot; }}
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;snippets/header&quot; }}
 
 # Page content
 
 {{ include &quot;snippets/footer&quot; }}</code></pre>
 </doc-codeblock></div>
+<p><strong><code translate="no" v-pre>_includes/snippets/header.md</code></strong></p>
 <div id="nested-includes-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# _includes/snippets/header.md }}
-{{ include &quot;snippets/logo&quot; }}
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;snippets/logo&quot; }}
 Welcome to the site.</code></pre>
 </doc-codeblock></div>
+<p>Circular includes — where file A includes file B and file B includes file A — are detected and reported as build errors.</p>
 <hr>
 <doc-anchor-target id="organizing-includes">
     <h2>
@@ -394,7 +405,9 @@ Welcome to the site.</code></pre>
 <p>A typical <code translate="no" v-pre>_includes</code> folder structure:</p>
 <div id="organizing-includes-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">_includes/
+├── head-top.html
 ├── head.html
+├── body-top.html
 ├── body.html
 ├── top.md
 ├── bottom.md
@@ -405,7 +418,7 @@ Welcome to the site.</code></pre>
     ├── contact-us.md
     └── default-pages.md</code></pre>
 </doc-codeblock></div>
-<p>Files in <code translate="no" v-pre>_includes</code> are excluded from the generated site output and the sitemap. They exist only to be included by other pages.</p>
+<p>Files inside <code translate="no" v-pre>_includes</code> are excluded from the generated site output and the sitemap. They serve only as reusable content fragments for other pages.</p>
 <hr>
 <doc-anchor-target id="error-handling">
     <h2>
@@ -413,21 +426,8 @@ Welcome to the site.</code></pre>
         <span>Error handling</span>
     </h2>
 </doc-anchor-target>
-<p>If an included file cannot be found, Retype logs an unresolved partial warning during the build. The include is replaced with an <code translate="no" v-pre>[UNRESOLVED PARTIAL]</code> marker in the output.</p>
-<p>Template syntax errors within an included file stop processing at the error and display the file and line number in the build output.</p>
-<hr>
-<doc-anchor-target id="tips">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tips">#</doc-anchor-trigger>
-        <span>Tips</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li>Enable <code translate="no" v-pre>templating: true</code> in the frontmatter of any page that uses <code translate="no" v-pre>{{ include }}</code>.</li>
-<li>Keep include files focused on a single block of content.</li>
-<li>Use descriptive folder and file names like <code translate="no" v-pre>snippets/support.md</code>.</li>
-<li>Avoid circular includes where file A includes file B and file B includes file A.</li>
-</ul>
+<p>If an included file cannot be found, Retype logs an unresolved include warning during the build and replaces the include call with an <code translate="no" v-pre>[UNRESOLVED PARTIAL]</code> marker in the output.</p>
+<p>Template syntax errors within an included file stop processing at the error point. The build output reports the included file&#x27;s name and the line number of the error.</p>
 
                 <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
                     <span>
