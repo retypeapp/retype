@@ -7,7 +7,7 @@ templating: false
 ---
 # Functions and Filters
 
-Retype's templating system is powered by [Scriban](https://github.com/scriban/scriban) and includes a comprehensive set of built-in functions and filters for transforming strings, working with arrays, formatting dates, performing math, processing HTML, and inspecting objects.
+Retype's templating system is powered by [Scriban](https://scriban.github.io/) and includes a comprehensive set of built-in functions and filters for transforming strings, working with arrays, formatting dates, performing math, processing HTML, and inspecting objects.
 
 ---
 
