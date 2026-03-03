@@ -36,20 +36,20 @@ Using text|variant shorthand notation
 [!button text="My Button" variant="success"](https://retype.com/)
 ```
 
-| Variant | Example |
-| --- | --- |
-| `base` | [!button variant="base" text="Base"] |
-| `primary` (default) | [!button variant="primary" text="Primary"] |
-| `secondary` | [!button variant="secondary" text="Secondary"] |
-| `success` | [!button variant="success" text="Success"] |
-| `question` | [!button variant="question" text="Question"] |
-| `danger` | [!button variant="danger" text="Danger"] |
-| `warning` | [!button variant="warning" text="Warning"] |
-| `info` | [!button variant="info" text="Info"] |
-| `light` | [!button variant="light" text="Light"] |
-| `dark` | [!button variant="dark" text="Dark"] |
-| `ghost` | [!button variant="ghost" text="Ghost"] |
-| `contrast` | [!button variant="contrast" text="Contrast"] |
+| Variant             | Example                                        |
+| ------------------- | ---------------------------------------------- |
+| `base`              | [!button variant="base" text="Base"]           |
+| `primary` (default) | [!button variant="primary" text="Primary"]     |
+| `secondary`         | [!button variant="secondary" text="Secondary"] |
+| `success`           | [!button variant="success" text="Success"]     |
+| `question`          | [!button variant="question" text="Question"]   |
+| `danger`            | [!button variant="danger" text="Danger"]       |
+| `warning`           | [!button variant="warning" text="Warning"]     |
+| `info`              | [!button variant="info" text="Info"]           |
+| `light`             | [!button variant="light" text="Light"]         |
+| `dark`              | [!button variant="dark" text="Dark"]           |
+| `ghost`             | [!button variant="ghost" text="Ghost"]         |
+| `contrast`          | [!button variant="contrast" text="Contrast"]   |
 
 ---
 
