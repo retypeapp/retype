@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825826096753">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825828421516">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -30,15 +30,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.1.0.825826096753" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0.825828421516" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825826096753" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825828421516" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825826096753" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0.825826096753" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825828421516" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.1.0.825828421516" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.1.0.825826096753" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0.825828421516" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -397,7 +397,7 @@ filePath: /guides/getting-started.md</code></pre>
         <span>Search</span>
     </h2>
 </doc-anchor-target>
-<p>Use <code translate="no" v-pre>content.search(&quot;term&quot;)</code> to find pages whose title, description, or content matches the search term. Results are returned as an array of page objects.</p>
+<p>Use <code translate="no" v-pre>content.search(&quot;term&quot;)</code> to find pages whose title contains the search term. Results are returned as an array of page objects.</p>
 <doc-anchor-target id="basic-search">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#basic-search">#</doc-anchor-trigger>
@@ -405,10 +405,13 @@ filePath: /guides/getting-started.md</code></pre>
     </h3>
 </doc-anchor-target>
 <div id="basic-search-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.search(&quot;installation&quot;) ~}}
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.search(&quot;obsidian&quot;) ~}}
 - [{{ item.title }}]({{ item.path }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<ul>
+<li><a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/">Self-hosting Obsidian Vault with Retype</a></li>
+</ul>
 <doc-anchor-target id="access-a-specific-result">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#access-a-specific-result">#</doc-anchor-trigger>
@@ -419,6 +422,8 @@ filePath: /guides/getting-started.md</code></pre>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">title: {{ content.search(&quot;getting started&quot;)[0].title }}
 description: {{ content.search(&quot;getting started&quot;)[0].description }}</code></pre>
 </doc-codeblock></div>
+<p><strong>title:</strong> Getting Started<br />
+<strong>description:</strong> This guide will have you up and running generating your own Retype website in just a few minutes.</p>
 <doc-anchor-target id="limit-search-results">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#limit-search-results">#</doc-anchor-trigger>
@@ -427,10 +432,84 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 </doc-anchor-target>
 <p>Combine with the <code translate="no" v-pre>array.limit</code> filter to cap the number of results.</p>
 <div id="limit-search-results-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.search(&quot;guide&quot;) | array.limit 5 ~}}
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.search(&quot;retype&quot;) | array.limit 5 ~}}
 [!card vert]({{ item.path }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<p>
+<div class="flex flex-wrap gap-card-group-gap mb-card-group-margin-bottom">
+<div class="group relative no-link overflow-hidden border border-card-border rounded-card-rounded w-full flex flex-col hover:border-card-border-hover" style="max-width: var(--card-max-width-sm); min-width: var(--card-min-width); flex: 1 1 var(--card-flex-basis);">
+    <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2025-05-04.png">
+    </div>
+    <div class="p-card-padding mt-auto">
+        <div class="text-card-category font-card-category text-card-category-text card-category-case">release</div>
+        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.8</div>
+        <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features. This release focuses on making documentation more interconnected and discoverable while adding modern conveniences for content creators.</p></div>
+        <div class="flex mt-card-date-margin-top items-center">
+            <div class="text-card-date text-card-date-text"><span>2025-05-04</span></div>
+        </div>
+    </div>
+    <a href="/blog/2025-05-04-whats-new-in-retype-v38/" class="absolute block inset-0"></a>
+</div>
+<div class="group relative no-link overflow-hidden border border-card-border rounded-card-rounded w-full flex flex-col hover:border-card-border-hover" style="max-width: var(--card-max-width-sm); min-width: var(--card-min-width); flex: 1 1 var(--card-flex-basis);">
+    <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2025-05-28.png">
+    </div>
+    <div class="p-card-padding mt-auto">
+        <div class="text-card-category font-card-category text-card-category-text card-category-case">release</div>
+        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.9</div>
+        <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print functionality. This release focuses on making Retype more compatible with other documentation platforms while adding powerful new features.</p></div>
+        <div class="flex mt-card-date-margin-top items-center">
+            <div class="text-card-date text-card-date-text"><span>2025-05-28</span></div>
+        </div>
+    </div>
+    <a href="/blog/2025-05-28-whats-new-in-retype-v39/" class="absolute block inset-0"></a>
+</div>
+<div class="group relative no-link overflow-hidden border border-card-border rounded-card-rounded w-full flex flex-col hover:border-card-border-hover" style="max-width: var(--card-max-width-sm); min-width: var(--card-min-width); flex: 1 1 var(--card-flex-basis);">
+    <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2025-06-09.png">
+    </div>
+    <div class="p-card-padding mt-auto">
+        <div class="text-card-category font-card-category text-card-category-text card-category-case">release</div>
+        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.10</div>
+        <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">We're excited to share the latest release of Retype, packed with features that make documentation more flexible and powerful. This release focuses on improving content authoring, navigation control, and extending markdown capabilities. See the full changelog for the <code translate="no" v-pre>v3.10</code> release.</p></div>
+        <div class="flex mt-card-date-margin-top items-center">
+            <div class="text-card-date text-card-date-text"><span>2025-06-09</span></div>
+        </div>
+    </div>
+    <a href="/blog/2025-06-09-whats-new-in-retype-v310/" class="absolute block inset-0"></a>
+</div>
+<div class="group relative no-link overflow-hidden border border-card-border rounded-card-rounded w-full flex flex-col hover:border-card-border-hover" style="max-width: var(--card-max-width-sm); min-width: var(--card-min-width); flex: 1 1 var(--card-flex-basis);">
+    <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2025-07-02-hero.png">
+    </div>
+    <div class="p-card-padding mt-auto">
+        <div class="text-card-category font-card-category text-card-category-text card-category-case">release</div>
+        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.11</div>
+        <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v3.11</code> puts you in control of your project's visual identity, while keeping everything fast, clean, and easy to use. This release brings Pro-level <strong>theme</strong> customization, smarter navigation, and faster syntax options to help you create documentation that feels more like your own.</p></div>
+        <div class="flex mt-card-date-margin-top items-center">
+            <div class="text-card-date text-card-date-text"><span>2025-07-02</span></div>
+        </div>
+    </div>
+    <a href="/blog/2025-07-02-whats-new-in-retype-v311/" class="absolute block inset-0"></a>
+</div>
+<div class="group relative no-link overflow-hidden border border-card-border rounded-card-rounded w-full flex flex-col hover:border-card-border-hover" style="max-width: var(--card-max-width-sm); min-width: var(--card-min-width); flex: 1 1 var(--card-flex-basis);">
+    <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-10-whats-new-in-retype-v312.png">
+    </div>
+    <div class="p-card-padding mt-auto">
+        <div class="text-card-category font-card-category text-card-category-text card-category-case">release</div>
+        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.12</div>
+        <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v3.12</code> brings powerful new features for content discovery, visual design, and theme customization. This release introduces the Backlinks component for Retype Pro, automatic dark mode image switching, color preview chips, enhanced page descriptions, and comprehensive theming improvements.</p></div>
+        <div class="flex mt-card-date-margin-top items-center">
+            <div class="text-card-date text-card-date-text"><span>2026-02-10</span></div>
+        </div>
+    </div>
+    <a href="/blog/2026-02-10-whats-new-in-retype-v312/" class="absolute block inset-0"></a>
+</div>
+</div>
+</p>
 <hr>
 <doc-anchor-target id="tags">
     <h2>
@@ -447,9 +526,22 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <p><code translate="no" v-pre>content.tags</code> returns all tags defined across the project. Each tag has a <code translate="no" v-pre>title</code> and a <code translate="no" v-pre>pages</code> array.</p>
 <div id="list-all-tags-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for tag in content.tags ~}}
-- {{ tag.title }} ({{ tag.pages | array.size }} pages)
+- [{{ tag.title }}](/tags/{{ tag.title }}) ({{ tag.pages | array.size }} pages)
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<ul>
+<li><a href="/tags/community/">community</a> (2 pages)</li>
+<li><a href="/tags/github/">github</a> (4 pages)</li>
+<li><a href="/tags/component/">component</a> (23 pages)</li>
+<li><a href="/tags/icon/">icon</a> (1 pages)</li>
+<li><a href="/tags/templating/">templating</a> (5 pages)</li>
+<li><a href="/tags/guide/">guide</a> (14 pages)</li>
+<li><a href="/tags/hosting/">hosting</a> (6 pages)</li>
+<li><a href="/tags/ftp/">ftp</a> (1 pages)</li>
+<li><a href="/tags/config/">config</a> (5 pages)</li>
+<li><a href="/tags/theme/">theme</a> (1 pages)</li>
+<li><a href="/tags/pro/">pro</a> (3 pages)</li>
+</ul>
 <doc-anchor-target id="pages-for-a-specific-tag">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#pages-for-a-specific-tag">#</doc-anchor-trigger>
@@ -457,10 +549,26 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
     </h3>
 </doc-anchor-target>
 <div id="pages-for-a-specific-tag-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for page in content.tags[&quot;component&quot;].pages ~}}
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for page in content.tags[&quot;guide&quot;].pages ~}}
 - [{{ page.title }}]({{ page.path }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<ul>
+<li><a href="/hosting/cloudflare/">Cloudflare Pages</a></li>
+<li><a href="/hosting/docker/">Docker</a></li>
+<li><a href="/hosting/ftp/">Publish using FTP</a></li>
+<li><a href="/hosting/github-pages/">GitHub Pages</a></li>
+<li><a href="/hosting/gitlab-pages/">GitLab Pages</a></li>
+<li><a href="/hosting/heroku/">Heroku</a></li>
+<li><a href="/hosting/netlify/">Netlify</a></li>
+<li><a href="/guides/blogging/">Blogging</a></li>
+<li><a href="/guides/cli/">Retype CLI</a></li>
+<li><a href="/guides/getting-started/">Getting Started</a></li>
+<li><a href="/guides/github-actions/">GitHub Actions</a></li>
+<li><a href="/guides/markdown/">Markdown</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/troubleshooting/">Troubleshooting</a></li>
+</ul>
 <hr>
 <doc-anchor-target id="categories">
     <h2>
@@ -477,9 +585,14 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <p><code translate="no" v-pre>content.categories</code> returns all categories defined across the project. Each category has a <code translate="no" v-pre>title</code> and a <code translate="no" v-pre>pages</code> array.</p>
 <div id="list-all-categories-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for cat in content.categories ~}}
-- {{ cat.title }} ({{ cat.pages | array.size }} pages)
+- [{{ cat.title }}](/categories/{{ cat.title }}) ({{ cat.pages | array.size }} pages)
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<ul>
+<li><a href="/categories/release/">release</a> (7 pages)</li>
+<li><a href="/categories/news/">news</a> (1 pages)</li>
+<li><a href="/categories/blog/">blog</a> (1 pages)</li>
+</ul>
 <hr>
 <doc-anchor-target id="authors">
     <h2>
@@ -554,6 +667,17 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 1. [{{ post.title }}]({{ post.path }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<ol>
+<li><a href="/blog/2026-03-02-whats-new-in-retype-v410/">What&#x27;s New in Retype v4.1</a></li>
+<li><a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/">Self-hosting Obsidian Vault with Retype</a></li>
+<li><a href="/blog/2026-02-23-whats-new-in-retype-v40/">What&#x27;s New in Retype v4.0</a></li>
+<li><a href="/blog/2026-02-10-whats-new-in-retype-v312/">What&#x27;s New in Retype v3.12</a></li>
+<li><a href="/blog/2025-07-02-whats-new-in-retype-v311/">What&#x27;s New in Retype v3.11</a></li>
+<li><a href="/blog/2025-06-09-whats-new-in-retype-v310/">What&#x27;s New in Retype v3.10</a></li>
+<li><a href="/blog/2025-06-06-new-github-pages-community-key/">New GitHub Pages Community Key</a></li>
+<li><a href="/blog/2025-05-28-whats-new-in-retype-v39/">What&#x27;s New in Retype v3.9</a></li>
+<li><a href="/blog/2025-05-04-whats-new-in-retype-v38/">What&#x27;s New in Retype v3.8</a></li>
+</ol>
 <doc-anchor-target id="most-recent-as-cards">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#most-recent-as-cards">#</doc-anchor-trigger>
@@ -630,6 +754,24 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 - {{ item.label }} ({{ item.children | array.size }} children)
 {{ end }}</code></pre>
 </doc-codeblock></div>
+<ul>
+<li>LICENSE (0 children)</li>
+<li>About (0 children)</li>
+<li>Changelog (0 children)</li>
+<li>Community (0 children)</li>
+<li>Faq (0 children)</li>
+<li>Feature log (0 children)</li>
+<li>Features (0 children)</li>
+<li>Components (27 children)</li>
+<li>Blog (9 children)</li>
+<li>Templating (5 children)</li>
+<li>Pro (1 children)</li>
+<li>Hosting (8 children)</li>
+<li>Samples (7 children)</li>
+<li>Configuration (6 children)</li>
+<li>Guides (9 children)</li>
+<li>Not Found (0 children)</li>
+</ul>
 <hr>
 <doc-anchor-target id="all-pages">
     <h2>
