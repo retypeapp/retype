@@ -14,10 +14,10 @@ The `include` function pulls content from another file into your page. Write a b
 ## Basic usage
 
 ```md
-{{ include "snippets/support" }}
+{{ include "contact-us" }}
 ```
 
-Retype resolves the file, processes any templating within it, and renders the output inline at the point of the `include` call.
+By default, Retype looks for the included file within the `_includes` folder at the project root. Retype resolves the file, processes any templating within it, and renders the output inline at the point of the `include` call.
 
 ---
 
