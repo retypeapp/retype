@@ -288,6 +288,7 @@ templating:
 
 # -----------------------------------------------------------------------------
 
+# Table of Contents configuration (Pro only)
 toc:                          # Table of Contents configuration (Pro only)
   depth: 2-3                  # Heading depth to include in right sidebar
   label: "On this page"       # Custom label for the Table of Contents
