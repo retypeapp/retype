@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825840541821">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825974808905">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -30,14 +30,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.1.0.825840541821" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.1.0.825974808905" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825840541821" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.825974808905" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825840541821" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.825974808905" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.1.0.825840541821" rel="stylesheet">
+    <link href="/static/styles.css?v=4.1.0.825974808905" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -273,15 +273,11 @@
         </div>
     </div>
 </div>
-<hr>
-<doc-anchor-target id="step-1-prerequisites">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-prerequisites">#</doc-anchor-trigger>
-        <span>Step 1: Prerequisites</span>
-    </h2>
-</doc-anchor-target>
+<doc-steps>
+   <doc-step id="confirm-prerequisites" step-number="1">
+      <template #title>Confirm Prerequisites</template>
 <p>Retype is installed using either <a href="https://www.npmjs.com/get-npm" class="outbound" target="_blank"><span><code translate="no" v-pre>npm</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, <a href="https://classic.yarnpkg.com/en/docs/install/" class="outbound" target="_blank"><span><code translate="no" v-pre>yarn</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core" class="outbound" target="_blank"><span><code translate="no" v-pre>dotnet</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> CLI.</p>
-<p>You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It&#x27;s up to you.</p>
+<p>You only need one of the three package managers as a prerequisite, although all three could be installed on your computer too. It&#x27;s up to you.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -324,37 +320,43 @@
 </tbody>
 </table>
 </div>
-<hr>
-<doc-anchor-target id="step-2-install">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-install">#</doc-anchor-trigger>
-        <span>Step 2: Install</span>
-    </h2>
-</doc-anchor-target>
+   </doc-step>
+   <doc-step id="install-retype" step-number="2">
+      <template #title>Install Retype</template>
 <p>Once you have a package manager installed, it takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.</p>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">npm install retypeapp --global
-retype start</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">npm install retypeapp --global</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="yarn">
 <template #title>yarn</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">yarn global add retypeapp
-retype start</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">yarn global add retypeapp</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="dotnet">
 <template #title>dotnet</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global
-retype start</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-step>
+   <doc-step id="verify-and-start-retype" step-number="3">
+      <template #title>Verify and Start Retype</template>
+<p>You can verify that Retype has been installed correctly by running the command <code translate="no" v-pre>retype --version</code> or <code translate="no" v-pre>retype -v</code> to get the current Retype version number. Checking the <code translate="no" v-pre>version</code> is totally optional but is also just a nice confirmation that everything is working as expected.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype --version</code></pre>
+</doc-codeblock></div>
+<p>To start Retype for your project, run the command <code translate="no" v-pre>retype start</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype start</code></pre>
+</doc-codeblock></div>
+   </doc-step>
+</doc-steps>
 <p>That&#x27;s it! Your new Retype website should be up and running. <span class="docs-emoji">&#x1F389;</span></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -369,7 +371,7 @@ retype start</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If you already have the <code translate="no" v-pre>dotnet</code> CLI installed on your machine, installing using <code translate="no" v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance.</p>
+<p>If you already have the <code translate="no" v-pre>dotnet</code> CLI installed on your machine, installing using <code translate="no" v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with exactly the same performance.</p>
         </div>
     </div>
 </div>
