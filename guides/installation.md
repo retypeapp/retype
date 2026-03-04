@@ -10,13 +10,11 @@ Retype is a command line tool. Installation is super quick and you can be up and
 Please see the [Retype CLI](cli.md) for full details on each command.
 !!!
 
----
-
-## Step 1: Prerequisites
+>>> Confirm Prerequisites
 
 Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
-You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
+You only need one of the three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
 
 | Package Manager | Supported Platforms |
 | --- | --- |
@@ -24,33 +22,44 @@ You only need one of those three package managers as a prerequisite, although al
 | [`yarn`](https://classic.yarnpkg.com/en/docs/install/) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="dark"]
 | [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="dark"]
 
----
-
-## Step 2: Install
+>>> Install Retype
 
 Once you have a package manager installed, it takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.
 
 +++ npm
 ```
 npm install retypeapp --global
-retype start
 ```
 +++ yarn
 ```
 yarn global add retypeapp
-retype start
 ```
 +++ dotnet
 ```
 dotnet tool install retypeapp --global
-retype start
 ```
 +++
+
+>>> Verify and Start Retype
+
+You can verify that Retype has been installed correctly by running the command `retype --version` or `retype -v` to get the current Retype version number. Checking the `version` is totally optional but is also just a nice confirmation that everything is working as expected.
+
+```
+retype --version
+```
+
+To start Retype for your project, run the command `retype start`:
+
+```
+retype start
+```
+
+>>>
 
 That's it! Your new Retype website should be up and running. :tada:
 
 !!!
-If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance.
+If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with exactly the same performance.
 !!!
 
 ---
