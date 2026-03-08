@@ -34,6 +34,7 @@ Commands:
   build <path>  Generate a static website from the project
   serve <path>  Serve the website in a local development only web server
   clean <path>  Clean the output directory
+  stop <path>   Stop Retype web servers
   wallet        Manage Your Retype Keys
 ```
 
@@ -74,12 +75,12 @@ Arguments:
   <path>  Path to the project root or project config file [Optional]
 
 Options:
-  --pro                  Enable Retype Pro preview
+  --debounce <ms>        Rebuild delay in milliseconds
   --key <key>            Your Retype Key
-  --password <password>  Private page password
   --host <host>          Custom Host name or IP address
+  --password <password>  Private page password
   --port <port>          Custom TCP port
-  --debounce <ms>        Delay watch-triggered rebuilds in milliseconds
+  --pro                  Enable Retype Pro preview
   -n, --no-open          Prevent default web browser from being opened
   -v, --verbose          Enable verbose logging
   -a, --api              Watch for API changes
@@ -283,6 +284,56 @@ Options:
   --dry           List files and directories that would be deleted
   -v, --verbose   Enable verbose logging
   -?, -h, --help  Show help and usage information
+```
+
+---
+
+## `retype stop`
+
+The `retype stop` command stops the Retype web server for the current project.
+
+```
+retype stop
+```
+
+If you have more than one Retype web server running, pass the `--list` option to review the available servers.
+
+```
+retype stop --list
+```
+
+Retype servers can be stopped by `--id`, `--index`, or `--port`. Use `retype stop --list` to discover the available `id` and `index` values, then pass the one you want to stop.
+
+```
+retype stop --port 5001
+```
+
+Use the `--all` option to stop all running Retype web servers.
+
+```
+retype stop --all
+```
+
+### Options
+
+```
+Description:
+  Stop Retype web servers
+
+Usage:
+  retype stop [<path>] [options]
+
+Arguments:
+  <path>  Path to the project root or project config file [Optional]
+
+Options:
+  --list           List running Retype web servers, including servers that may not be stoppable
+  --all            Stop all running Retype web servers
+  --id <id>        Stop a specific Retype web server by id
+  --index <index>  Stop a specific Retype web server by index
+  --port <port>    Stop a specific Retype web server by port number
+  -v, --verbose    Enable verbose logging
+  -?, -h, --help   Show help and usage information
 ```
 
 ---
