@@ -2156,6 +2156,23 @@ Using the [CLI](../guides/cli.md#retype-start) command `retype start --pro` will
 
 ===
 
+### debounce
+
+=== debounce : `number`
+
+Delay how quickly `retype start` reacts to file changes, in milliseconds. The default is `100`.
+
+The following sample demonstrates adding a 500 ms debounce during `retype start`:
+
+```yml
+start:
+  debounce: 500
+```
+
+Using the [CLI](../guides/cli.md#retype-start) command `retype start --debounce 500` will override this project setting for the current run.
+
+===
+
 ## templating
 
 Configurations to control the Retype content templating engine for this project.

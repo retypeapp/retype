@@ -55,6 +55,12 @@ The `retype start` command automatically opens the default web browser on your m
 retype start -n
 ```
 
+If you want Retype to wait briefly before reacting to file changes, pass the `--debounce <ms>` option. This can be helpful when multiple saves happen in quick succession.
+
+```
+retype start --debounce 500
+```
+
 ### Options
 
 ```
@@ -73,6 +79,7 @@ Options:
   --password <password>  Private page password
   --host <host>          Custom Host name or IP address
   --port <port>          Custom TCP port
+  --debounce <ms>        Delay watch-triggered rebuilds in milliseconds
   -n, --no-open          Prevent default web browser from being opened
   -v, --verbose          Enable verbose logging
   -a, --api              Watch for API changes
