@@ -301,7 +301,28 @@ date: 2020-11-25 # November 25, 2020
 date: 2020-11-25T15:30 # November 25, 2020 at 15:30 (3:30 PM)
 ```
 
-The `date` is used by Retype to order blog pages. Newer blog pages are ordered first.
+The `date` is used by Retype to order blog pages. Newer blog pages are ordered first. See also [`created`](#created) and [`lastUpdated`](#lastupdated).
+
+===
+
+---
+
+## created
+
+=== created : `string`
+
+A custom created date for this page.
+
+Use `created` when you want to preserve when a page first went live. This works well for long-lived guides, migration pages, and other content that may be updated over time.
+
+The date must be provided in the `yyyy-mm-dd` ISO format or `yyyy-mm-ddThh:mm` if you want to include a date and a time.
+
+```yml
+created: 2024-05-14
+created: 2024-05-14T09:00
+```
+
+If you are also using [`date`](#date), the `date` value remains the publish date and `created` can reflect when the page was first created. See also [`lastUpdated`](#lastupdated).
 
 ===
 
@@ -390,6 +411,27 @@ Custom label for the navigation node for the current page. Default is `null`.
 ```yml
 label: Custom label
 ```
+===
+
+---
+
+## lastUpdated
+
+=== lastUpdated : `string`
+
+A custom last updated date for this page.
+
+Use `lastUpdated` when you want readers to see that a page has been reviewed or refreshed after it was first published.
+
+The date must be provided in the `yyyy-mm-dd` ISO format or `yyyy-mm-ddThh:mm` if you want to include a date and a time.
+
+```yml
+lastUpdated: 2026-03-01
+lastUpdated: 2026-03-01T16:45
+```
+
+This setting is often used alongside [`created`](#created) so a page can show both when it first went live and when it was last updated. See also [`date`](#date).
+
 ===
 
 ---
