@@ -210,3 +210,17 @@ A custom heading for the blog summary page. Default uses the locale translation.
 blog:
   title: News & Updates
 ```
+
+### rss
+
+Use the `blog.rss` settings in your `retype.yml` file to customize the generated RSS feed metadata.
+
+```yml
+blog:
+  rss:
+    title: News & Updates
+    description: Product announcements, release notes, and updates
+    copyright: "&copy; Copyright {{ year }}. All rights reserved."
+```
+
+See the [`blog.rss`](/configuration/project.md#blog-rss) project configuration documentation for the full list of RSS settings.
