@@ -245,6 +245,48 @@ That broader view is also useful when it surfaces an older listener that Retype 
 
 The real value here is confidence. Retype can stop the servers it owns without taking down unrelated local processes.
 
+## Reference-style links for more components
+
+`v4.2` also makes reference-style Markdown links much more useful across Retype components such as buttons, badges, refs, files, cards, and embeds.
+
+This is one of those small features that becomes very practical once a page starts growing. You can keep the actual target in one place, keep the source easier to scan, and reuse the same destination across body copy and richer UI-style components without repeating the same URL over and over.
+
+If a page points readers to the same guide from several places, the Markdown stays clean:
+
+```md
+Start with the [setup guide][setup].
+
+[!button Get Started][setup]
+[!badge Setup][setup]
+[!ref Installation Guide][setup]
+
+[setup]: /guides/getting-started/
+```
+
+That is especially helpful in real-world content such as release notes, onboarding pages, migration guides, and product announcements, where the same destination often appears in prose, a call-to-action button, and a quick reference link.
+
+It also helps when the target changes later. Update one reference definition, and every matching component stays in sync:
+
+```md
+[!button Read the migration guide][migration]
+[!file Download the checklist][checklist]
+
+[migration]: /guides/migration/v4-2/
+[checklist]: /static/files/v4-2-checklist.pdf
+```
+
+And it is not just for docs pages. Blog posts and launch notes can keep richer content readable too:
+
+```md
+[!card Release notes][release-notes]
+[!embed Watch the walkthrough][walkthrough]
+
+[release-notes]: /blog/2026-03-12-whats-new-in-retype-v420/
+[walkthrough]: https://www.youtube.com/watch?v=VIDEO_ID
+```
+
+In practice, this is most useful when you want cleaner source files, repeated links that stay consistent, and examples that still read like normal Markdown instead of a wall of inline URLs.
+
 ## More Practical Polish Across v4.2
 
 What stands out in `v4.2` so far is not one giant headline feature. It is the steady accumulation of improvements that help Retype fit more naturally into real publishing workflows.
