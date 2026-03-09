@@ -1,8 +1,6 @@
 ---
 icon: code
 tags: [templating]
-nav:
-  badge: NEW|info
 ---
 # Content
 
