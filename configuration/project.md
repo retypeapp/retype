@@ -385,6 +385,90 @@ If no `title` is configured, Retype will use the default translated label for th
 
 ===
 
+### rss {#blog-rss}
+
+Custom configuration for the generated blog RSS feed.
+
+#### maxResults{#blog-rss-maxresults}
+
+=== maxResults : `number`
+
+The maximum total number of blog posts to include in the generated RSS feed. Default is `20`.
+
+```yml
+blog:
+  rss:
+    maxResults: 25
+```
+
+This setting applies only to the generated RSS feed and does not change the `blog.maxResults` limit used by the paginated blog summary pages.
+
+===
+
+#### title{#blog-rss-title}
+
+=== title : `string`
+
+A custom title for the generated RSS feed. Default is `null`.
+
+```yml
+blog:
+  rss:
+    title: Project Updates
+```
+
+If no `title` is configured, Retype will use the resolved blog title. The resolved blog title uses `blog.title` when configured, otherwise the generated blog summary heading. When available, `meta.siteName` or `branding.title` is prefixed to that value.
+
+===
+
+#### description{#blog-rss-description}
+
+=== description : `string`
+
+A custom description for the generated RSS feed. Default is `null`.
+
+```yml
+blog:
+  rss:
+    description: Latest project updates and release notes
+```
+
+If no `description` is configured, Retype will use the project `meta.description` value. If neither value is configured, the RSS `description` node is omitted.
+
+===
+
+#### copyright{#blog-rss-copyright}
+
+=== copyright : `string`
+
+A custom copyright value for the generated RSS feed. Default is `null`.
+
+```yml
+blog:
+  rss:
+    copyright: "© Copyright {{ year }}. Example, Inc. All rights reserved."
+```
+
+If no `copyright` is configured, Retype will use the resolved `footer.copyright` value. If neither value is configured, the RSS `copyright` node is omitted.
+
+===
+
+#### imageUrl{#blog-rss-imageurl}
+
+=== imageUrl : `string`
+
+A custom image URL for the RSS `<image>` node. Default is `null`.
+
+```yml
+blog:
+  rss:
+    imageUrl: https://example.com/static/feed.png
+```
+
+If no `imageUrl` is configured, Retype will use the resolved site `favicon` URL when the favicon is a supported RSS image type (`.gif`, `.jpeg`, `.jpg`, `.ico`, or `.png`). If neither value resolves, the RSS `<image>` node is omitted.
+
+===
+
 ---
 
 ## cache
@@ -2069,6 +2153,23 @@ start:
 ```
 
 Using the [CLI](../guides/cli.md#retype-start) command `retype start --pro` will also start the project in Pro mode. 
+
+===
+
+### debounce
+
+=== debounce : `number`
+
+Delay how quickly `retype start` reacts to file changes, in milliseconds. The default is `100`.
+
+The following sample demonstrates adding a 500 ms debounce during `retype start`:
+
+```yml
+start:
+  debounce: 500
+```
+
+Using the [CLI](../guides/cli.md#retype-start) command `retype start --debounce 500` will override this project setting for the current run.
 
 ===
 

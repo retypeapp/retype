@@ -36,12 +36,37 @@ Property | Description
 `page.title` | The page title
 `page.label` | The navigation label
 `page.author` | Author name or object
-`page.date` | The publish date
+`page.created` | The original publish date
+`page.lastUpdated` | The most recent update date
 `page.tags` | Tags assigned to the page
 `page.categories` | Categories assigned to the page
 `page.layout` | The page layout type
 `page.icon` | The page icon
 `page.order` | The navigation order value
+
+---
+
+## Date properties
+
+Use `page.created` and `page.lastUpdated` when you want to show when a page was first created and when it was last updated.
+
+{%{
+```yml
+---
+created: 2024-05-14
+lastUpdated: 2026-03-01
+---
+Published: {{ page.created }}
+Updated: {{ page.lastUpdated }}
+```
+}%}
+
+**Output:**
+
+```
+Published: 2024-05-14
+Updated: 2026-03-01
+```
 
 ---
 
