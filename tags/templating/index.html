@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826395508215">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826434375912">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.1.0">
+    <meta name="generator" content="Retype 4.2.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>templating - Write On! with Retype</title>
@@ -25,17 +25,20 @@
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="https://retype.com/blog/feed.xml">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.1.0.826395508215" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview.826434375912" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.826395508215" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.826395508215" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.1.0.826395508215" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview.826434375912" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -253,52 +256,58 @@
     </h1>
 </doc-anchor-target>
 <p>See all <a href="/tags/">tags</a>.</p>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Templating</div>
-        <div class="line-clamp-7"><p class="mt-card-description-margin-top text-card-description-text">Retype's templating system lets you embed dynamic content directly in your Markdown pages. Think of it as <em>&quot;programmable content&quot;</em>. Templating is powered by Scriban and requires no separate build step or configuration. Write a template expression anywhere in your content and Retype evaluates it when the page is built.</p></div>
-    </div>
-    <a href="/templating/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/templating/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Templating</div>
+            <div class="line-clamp-7"><p class="mt-card-description-margin-top text-card-description-text">Retype's templating system lets you embed dynamic content directly in your Markdown pages. Think of it as <em>&quot;programmable content&quot;</em>. Templating is powered by Scriban and requires no separate build step or configuration. Write a template expression anywhere in your content and Retype evaluates it when the page is built.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Templating</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Content</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use <code translate="no" v-pre>content</code> to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and iterate over collections such as tags, categories, authors, blog posts, and navigation items. For page-level metadata, see Page properties. For project configuration values, see Project properties.</p></div>
-    </div>
-    <a href="/templating/content/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/templating/content/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Templating</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Content</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use <code translate="no" v-pre>content</code> to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and iterate over collections such as tags, categories, authors, blog posts, and navigation items. For page-level metadata, see Page properties. For project configuration values, see Project properties.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Templating</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Functions and Filters</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype's templating system is powered by Scriban and includes a comprehensive set of built-in functions and filters for transforming strings, working with arrays, formatting dates, performing math, processing HTML, and inspecting objects.</p></div>
-    </div>
-    <a href="/templating/functions-filters/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/templating/functions-filters/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Templating</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Functions and Filters</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype's templating system is powered by Scriban and includes a comprehensive set of built-in functions and filters for transforming strings, working with arrays, formatting dates, performing math, processing HTML, and inspecting objects.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Templating</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Includes</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The <code translate="no" v-pre>include</code> function pulls content from another file into your page. Write a block of content once and reuse it across as many pages as you like.</p></div>
-    </div>
-    <a href="/templating/includes/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/templating/includes/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Templating</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Includes</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The <code translate="no" v-pre>include</code> function pulls content from another file into your page. Write a block of content once and reuse it across as many pages as you like.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Templating</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Page properties</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use <code translate="no" v-pre>page.*</code> to access metadata from the current page's frontmatter. These properties let you dynamically reference page values without hardcoding them. For project-level configuration, see Project properties.</p></div>
-    </div>
-    <a href="/templating/page-properties/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/templating/page-properties/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Templating</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Page properties</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use <code translate="no" v-pre>page.*</code> to access metadata from the current page's frontmatter. These properties let you dynamically reference page values without hardcoding them. For project-level configuration, see Project properties.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Templating</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Project properties</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use <code translate="no" v-pre>project.*</code> to access configuration values from your <code translate="no" v-pre>retype.yml</code> file. This keeps your content in sync with project settings and avoids hardcoding values that might change. For page-level metadata, see Page properties.</p></div>
-    </div>
-    <a href="/templating/project-properties/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/templating/project-properties/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Templating</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Project properties</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Use <code translate="no" v-pre>project.*</code> to access configuration values from your <code translate="no" v-pre>retype.yml</code> file. This keeps your content in sync with project settings and avoids hardcoding values that might change. For page-level metadata, see Page properties.</p></div>
+        </div>
+    </a>
 </div>
 
                 

@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826395508215">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826434375912">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.1.0">
+    <meta name="generator" content="Retype 4.2.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>component - Write On! with Retype</title>
@@ -25,17 +25,20 @@
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="https://retype.com/blog/feed.xml">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.1.0.826395508215" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview.826434375912" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.1.0.826395508215" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.1.0.826395508215" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.1.0.826395508215" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview.826434375912" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -253,211 +256,236 @@
     </h1>
 </doc-anchor-target>
 <p>See all <a href="/tags/">tags</a>.</p>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Backlinks</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the <code translate="no" v-pre>[!backlinks]</code> markdown component syntax.</p></div>
-    </div>
-    <a href="/components/backlinks/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/backlinks/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Backlinks</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the <code translate="no" v-pre>[!backlinks]</code> markdown component syntax.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Badge</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a <code translate="no" v-pre>!badge</code> identifier. With the Badge component, the link is optional and can be omitted.</p></div>
-    </div>
-    <a href="/components/badge/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/badge/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Badge</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a <code translate="no" v-pre>!badge</code> identifier. With the Badge component, the link is optional and can be omitted.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Button</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Similar to a Badge, the Button component uses the same syntax as a hyperlink, but is prefixed with a <code translate="no" v-pre>!button</code> identifier.</p></div>
-    </div>
-    <a href="/components/button/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/button/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Button</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Similar to a Badge, the Button component uses the same syntax as a hyperlink, but is prefixed with a <code translate="no" v-pre>!button</code> identifier.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Callout</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Callout components help to highlight important messages for the reader. To create an Callout, just surround a block of text or any markdown content with <code translate="no" v-pre>!!!</code>.</p></div>
-    </div>
-    <a href="/components/callout/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/callout/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Callout</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Callout components help to highlight important messages for the reader. To create an Callout, just surround a block of text or any markdown content with <code translate="no" v-pre>!!!</code>.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Card</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page's title, category, description, date, and image.</p></div>
-    </div>
-    <a href="/components/card/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/card/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Card</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page's title, category, description, date, and image.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Code Block</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.</p></div>
-    </div>
-    <a href="/components/code-block/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/code-block/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Code Block</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Code Snippet</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page. A common scenario for using the code snippet component is to include a portion of a source code file located elsewhere within your repository, but not explicitly within the documentation. For instance, you could include code samples directly from the source code of the project you are documenting, or import code being used within a working demo.</p></div>
-    </div>
-    <a href="/components/code-snippet/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/code-snippet/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Code Snippet</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page. A common scenario for using the code snippet component is to include a portion of a source code file located elsewhere within your repository, but not explicitly within the documentation. For instance, you could include code samples directly from the source code of the project you are documenting, or import code being used within a working demo.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Color Chip</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype automatically detects hex color codes written in inline code and displays them with a visual color preview chip. When you write a valid hex color code using backticks, Retype renders the color value alongside a small circular preview of that color.</p></div>
-    </div>
-    <a href="/components/color-chip/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/color-chip/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Color Chip</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype automatically detects hex color codes written in inline code and displays them with a visual color preview chip. When you write a valid hex color code using backticks, Retype renders the color value alongside a small circular preview of that color.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Column</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The column component is used to create multiple equal width columns with a title for each column. The column component is configured by wrapping any block of content in an opening and closing <code translate="no" v-pre>|||</code> and setting a title for each column. A column can contain any other content, such as text, paragraphs, links, tables, images, and other Retype components.</p></div>
-    </div>
-    <a href="/components/column/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/column/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Column</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The column component is used to create multiple equal width columns with a title for each column. The column component is configured by wrapping any block of content in an opening and closing <code translate="no" v-pre>|||</code> and setting a title for each column. A column can contain any other content, such as text, paragraphs, links, tables, images, and other Retype components.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Comments</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype supports adding hidden comments to your Markdown files that are not rendered in the final generated HTML. Comments are useful for adding notes, reminders, or explanations that should only be visible in the source Markdown files.</p></div>
-    </div>
-    <a href="/components/comments/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/comments/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Comments</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype supports adding hidden comments to your Markdown files that are not rendered in the final generated HTML. Comments are useful for adding notes, reminders, or explanations that should only be visible in the source Markdown files.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Container</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A Container component can be used to wrap any content in a <code translate="no" v-pre>&lt;div&gt;</code> container. A Container component is created by adding <code translate="no" v-pre>:::</code> above and below any content. In of itself, there should be no visible difference between content inside a Container vs not inside a Container. Visually, the final rendered content should look the same. For example:</p></div>
-    </div>
-    <a href="/components/container/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/container/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Container</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A Container component can be used to wrap any content in a <code translate="no" v-pre>&lt;div&gt;</code> container. A Container component is created by adding <code translate="no" v-pre>:::</code> above and below any content. In of itself, there should be no visible difference between content inside a Container vs not inside a Container. Visually, the final rendered content should look the same. For example:</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Embed</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The <code translate="no" v-pre>embed</code> component helps with content embedding. The embed component syntax is similar to many other Retype components. The <code translate="no" v-pre>!embed</code> keyword is used to specify the component and a link to the resource is included. The link is the full URL to the embedded resource. For instance, embeding a YouTube or Vimeo video would require the following component syntax:</p></div>
-    </div>
-    <a href="/components/embed/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/embed/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Embed</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">The <code translate="no" v-pre>embed</code> component helps with content embedding. The embed component syntax is similar to many other Retype components. The <code translate="no" v-pre>!embed</code> keyword is used to specify the component and a link to the resource is included. The link is the full URL to the embedded resource. For instance, embeding a YouTube or Vimeo video would require the following component syntax:</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Emoji</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype uses Mojee to find emoji <code translate="no" v-pre>:shortcodes:</code> within your document and replace with actual emoji characters. 👍 You can place emoji <code translate="no" v-pre>:shortcodes:</code> anywhere within your document, such as <code translate="no" v-pre>:smile:</code> 😄 or <code translate="no" v-pre>:unicorn_face:</code> 🦄. Below you’ll find all available emojis, their shortcodes, aliases, descriptions, and related tags.</p></div>
-    </div>
-    <a href="/components/emoji/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/emoji/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Emoji</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype uses Mojee to find emoji <code translate="no" v-pre>:shortcodes:</code> within your document and replace with actual emoji characters. 👍 You can place emoji <code translate="no" v-pre>:shortcodes:</code> anywhere within your document, such as <code translate="no" v-pre>:smile:</code> 😄 or <code translate="no" v-pre>:unicorn_face:</code> 🦄. Below you’ll find all available emojis, their shortcodes, aliases, descriptions, and related tags.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">File Download</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A static file download component can be configured by using the <code translate="no" v-pre>!file</code> specifier in a link. File download</p></div>
-    </div>
-    <a href="/components/file-download/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/file-download/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">File Download</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A static file download component can be configured by using the <code translate="no" v-pre>!file</code> specifier in a link. File download</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Icon</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Similar to the Emoji <code translate="no" v-pre>:shortcode:</code> syntax, you can add icons using <code translate="no" v-pre>:icon-shortcode:</code>, where the <code translate="no" v-pre>shortcode</code> is an Octicon icon name. For example, to add the <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 1-.565-.41L12 2.694Z"/></g></g></svg> <code translate="no" v-pre>star</code> icon, use the <code translate="no" v-pre>:icon-star:</code> icon shortcode. Icons can be added anywhere within your document, including paragraph text, headings, table content, Panel component titles, Callouts, code block titles, etc. <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13.349 2.378a.748.748 0 0 1 .808-.361l.127.027a3.875 3.875 0 0 1 2.879 4.97L16.527 9h1.137c2.645 0 4.513 2.591 3.676 5.1l-1.559 4.678A3.25 3.25 0 0 1 16.698 21h-5.289a4.503 4.503 0 0 1-2.828-.999A1.75 1.75 0 0 1 7 21H4.75A1.75 1.75 0 0 1 3 19.25v-8.5C3 9.784 3.784 9 4.75 9h4.67a.251.251 0 0 0 .217-.126l3.712-6.496ZM8.75 18.16l.683.598a3.003 3.003 0 0 0 1.976.742h5.289a1.75 1.75 0 0 0 1.66-1.197l1.559-4.677a2.375 2.375 0 0 0-2.253-3.126H15.5a.75.75 0 0 1-.714-.979l.948-2.964a2.375 2.375 0 0 0-1.373-2.927l-3.422 5.988a1.749 1.749 0 0 1-1.519.882h-.67v7.66Zm-1.5-7.66h-2.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25H7a.25.25 0 0 0 .25-.25V10.5Z"/></g></g></svg></p></div>
-    </div>
-    <a href="/components/icon/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/icon/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Icon</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Similar to the Emoji <code translate="no" v-pre>:shortcode:</code> syntax, you can add icons using <code translate="no" v-pre>:icon-shortcode:</code>, where the <code translate="no" v-pre>shortcode</code> is an Octicon icon name. For example, to add the <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 1-.565-.41L12 2.694Z"/></g></g></svg> <code translate="no" v-pre>star</code> icon, use the <code translate="no" v-pre>:icon-star:</code> icon shortcode. Icons can be added anywhere within your document, including paragraph text, headings, table content, Panel component titles, Callouts, code block titles, etc. <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13.349 2.378a.748.748 0 0 1 .808-.361l.127.027a3.875 3.875 0 0 1 2.879 4.97L16.527 9h1.137c2.645 0 4.513 2.591 3.676 5.1l-1.559 4.678A3.25 3.25 0 0 1 16.698 21h-5.289a4.503 4.503 0 0 1-2.828-.999A1.75 1.75 0 0 1 7 21H4.75A1.75 1.75 0 0 1 3 19.25v-8.5C3 9.784 3.784 9 4.75 9h4.67a.251.251 0 0 0 .217-.126l3.712-6.496ZM8.75 18.16l.683.598a3.003 3.003 0 0 0 1.976.742h5.289a1.75 1.75 0 0 0 1.66-1.197l1.559-4.677a2.375 2.375 0 0 0-2.253-3.126H15.5a.75.75 0 0 1-.714-.979l.948-2.964a2.375 2.375 0 0 0-1.373-2.927l-3.422 5.988a1.749 1.749 0 0 1-1.519.882h-.67v7.66Zm-1.5-7.66h-2.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25H7a.25.25 0 0 0 .25-.25V10.5Z"/></g></g></svg></p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
-        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/sample.jpg">
-    </div>
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Image</div>
-        <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">The image component embeds an image in your document. You can point to image files stored within the project, or an external URL. Checkout the Markdown Guide for more details on configuring images.</p></div>
-    </div>
-    <a href="/components/image/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/image/" class="group card no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/sample.jpg">
+        </div>
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Image</div>
+            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">The image component embeds an image in your document. You can point to image files stored within the project, or an external URL. Checkout the Markdown Guide for more details on configuring images.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">List</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype includes broad support for creating lists of items, including unordered, ordered, and description lists.</p></div>
-    </div>
-    <a href="/components/list/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/list/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">List</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype includes broad support for creating lists of items, including unordered, ordered, and description lists.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Math Formulas</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype supports rendering math formulas written according to the LaTeX grammar. Internally, Retype is powered by \KaTeX and supports all syntax of the library. Math equations can be rendered inline by wrapping the equation in <code translate="no" v-pre>$</code> characters, or as separate blocks by fencing the equation in <code translate="no" v-pre>$$</code> characters.</p></div>
-    </div>
-    <a href="/components/math-formulas/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/math-formulas/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Math Formulas</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype supports rendering math formulas written according to the LaTeX grammar. Internally, Retype is powered by \KaTeX and supports all syntax of the library. Math equations can be rendered inline by wrapping the equation in <code translate="no" v-pre>$</code> characters, or as separate blocks by fencing the equation in <code translate="no" v-pre>$$</code> characters.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
-        <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/mermaid-header.png">
-    </div>
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Mermaid</div>
-        <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Mermaid is a diagramming and charting tool that can be defined inside Markdown code blocks.</p></div>
-    </div>
-    <a href="/components/mermaid/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/mermaid/" class="group card no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/mermaid-header.png">
+        </div>
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Mermaid</div>
+            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Mermaid is a diagramming and charting tool that can be defined inside Markdown code blocks.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Panel</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A Panel is created by surrounding a block of content with <code translate="no" v-pre>===</code> and including a <code translate="no" v-pre>title</code> for the Panel. The <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>===</code> by one space. The pattern <code translate="no" v-pre>=== My Panel</code> will work as expected, and <code translate="no" v-pre>===My Panel</code> will not. Multiple Panels can be stacked by repeating Panel component configurations.</p></div>
-    </div>
-    <a href="/components/panel/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/panel/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Panel</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A Panel is created by surrounding a block of content with <code translate="no" v-pre>===</code> and including a <code translate="no" v-pre>title</code> for the Panel. The <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>===</code> by one space. The pattern <code translate="no" v-pre>=== My Panel</code> will work as expected, and <code translate="no" v-pre>===My Panel</code> will not. Multiple Panels can be stacked by repeating Panel component configurations.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Reference Link</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A special type of reference link can be configured by using the <code translate="no" v-pre>!ref</code> specifier in a link. Reference link By default, the text of the link is not required if the <code translate="no" v-pre>.md</code> page you are linking to is within the project. Retype will automatically use the <code translate="no" v-pre>label</code> of the <code translate="no" v-pre>.md</code> page as the link text.</p></div>
-    </div>
-    <a href="/components/reference-link/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/reference-link/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Reference Link</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A special type of reference link can be configured by using the <code translate="no" v-pre>!ref</code> specifier in a link. Reference link By default, the text of the link is not required if the <code translate="no" v-pre>.md</code> page you are linking to is within the project. Retype will automatically use the <code translate="no" v-pre>label</code> of the <code translate="no" v-pre>.md</code> page as the link text.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Steps</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A Steps component is created by surrounding a block of content with <code translate="no" v-pre>&gt;&gt;&gt;</code> and including a title for each step. The step <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>&gt;&gt;&gt;</code> by one space. The pattern <code translate="no" v-pre>&gt;&gt;&gt; Step 1</code> will work as expected, and <code translate="no" v-pre>&gt;&gt;&gt;Step 1</code> will not.</p></div>
-    </div>
-    <a href="/components/steps/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/steps/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Steps</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">A Steps component is created by surrounding a block of content with <code translate="no" v-pre>&gt;&gt;&gt;</code> and including a title for each step. The step <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>&gt;&gt;&gt;</code> by one space. The pattern <code translate="no" v-pre>&gt;&gt;&gt; Step 1</code> will work as expected, and <code translate="no" v-pre>&gt;&gt;&gt;Step 1</code> will not.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Tab</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">With Retype, a Tab component is super simple to configure by surrounding a block of text with <code translate="no" v-pre>+++</code> and including a title for the tab. The tab <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>+++</code> by one space. The pattern <code translate="no" v-pre>+++ Tab </code> will work as expected, and <code translate="no" v-pre>+++Tab 1</code> will not.</p></div>
-    </div>
-    <a href="/components/tab/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/tab/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Tab</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">With Retype, a Tab component is super simple to configure by surrounding a block of text with <code translate="no" v-pre>+++</code> and including a title for the tab. The tab <code translate="no" v-pre>title</code> must be separated from the opening <code translate="no" v-pre>+++</code> by one space. The pattern <code translate="no" v-pre>+++ Tab </code> will work as expected, and <code translate="no" v-pre>+++Tab 1</code> will not.</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Table</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Tables are configured using a combination of <code translate="no" v-pre>|</code> pipe characters to separate columns and at least three <code translate="no" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration: The above configuration creates the following table in the final generated website:</p></div>
-    </div>
-    <a href="/components/table/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/table/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Table</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Tables are configured using a combination of <code translate="no" v-pre>|</code> pipe characters to separate columns and at least three <code translate="no" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration: The above configuration creates the following table in the final generated website:</p></div>
+        </div>
+    </a>
 </div>
-<div class="group relative no-link mb-card-margin-bottom overflow-hidden border border-card-border rounded-card-rounded max-w-card-max-width-sm min-w-card-min-width md:max-w-card-max-width md:flex hover:border-card-border-hover mx-auto">
-    <div class="p-card-padding">
-        <div class="text-card-category font-card-category text-card-category-text card-category-case">Components</div>
-        <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">YouTube</div>
-        <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype makes it easy to embed YouTube videos in your documentation. Simply place a YouTube URL on its own line in your markdown file, and Retype will automatically convert it into a responsive embedded video player.</p></div>
-    </div>
-    <a href="/components/youtube/" class="absolute block inset-0"></a>
+<div class="card-container">
+    <a href="/components/youtube/" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">YouTube</div>
+            <div class="line-clamp-5"><p class="mt-card-description-margin-top text-card-description-text">Retype makes it easy to embed YouTube videos in your documentation. Simply place a YouTube URL on its own line in your markdown file, and Retype will automatically convert it into a responsive embedded video player.</p></div>
+        </div>
+    </a>
 </div>
 
                 
