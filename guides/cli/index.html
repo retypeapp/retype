@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826434375912">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826436180555">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0-preview">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview.826434375912" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview.826436180555" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826436180555" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826434375912" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826436180555" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826436180555" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview.826434375912" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview.826436180555" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -63,7 +63,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.1</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -298,6 +298,7 @@ Commands:
   build &lt;path&gt;  Generate a static website from the project
   serve &lt;path&gt;  Serve the website in a local development only web server
   clean &lt;path&gt;  Clean the output directory
+  stop &lt;path&gt;   Stop Retype web servers
   wallet        Manage Your Retype Keys</code></pre>
 </doc-codeblock></div>
 <hr>
@@ -316,6 +317,10 @@ Commands:
 <div id="retype-start-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start -n</code></pre>
 </doc-codeblock></div>
+<p>If you want Retype to wait briefly before reacting to file changes, pass the <code translate="no" v-pre>--debounce &lt;ms&gt;</code> option. This can be helpful when multiple saves happen in quick succession.</p>
+<div id="retype-start-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype start --debounce 500</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="options">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
@@ -333,11 +338,12 @@ Arguments:
   &lt;path&gt;  Path to the project root or project config file [Optional]
 
 Options:
-  --pro                  Enable Retype Pro preview
+  --debounce &lt;ms&gt;        Rebuild delay in milliseconds
   --key &lt;key&gt;            Your Retype Key
-  --password &lt;password&gt;  Private page password
   --host &lt;host&gt;          Custom Host name or IP address
+  --password &lt;password&gt;  Private page password
   --port &lt;port&gt;          Custom TCP port
+  --pro                  Enable Retype Pro preview
   -n, --no-open          Prevent default web browser from being opened
   -v, --verbose          Enable verbose logging
   -a, --api              Watch for API changes
@@ -561,6 +567,54 @@ Options:
   -?, -h, --help  Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr>
+<doc-anchor-target id="retype-stop">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-stop">#</doc-anchor-trigger>
+        <span><code translate="no" v-pre>retype stop</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The <code translate="no" v-pre>retype stop</code> command stops the Retype web server for the current project.</p>
+<div id="retype-stop-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype stop</code></pre>
+</doc-codeblock></div>
+<p>If you have more than one Retype web server running, pass the <code translate="no" v-pre>--list</code> option to review the available servers.</p>
+<div id="retype-stop-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype stop --list</code></pre>
+</doc-codeblock></div>
+<p>Retype servers can be stopped by <code translate="no" v-pre>--id</code>, <code translate="no" v-pre>--index</code>, or <code translate="no" v-pre>--port</code>. Use <code translate="no" v-pre>retype stop --list</code> to discover the available <code translate="no" v-pre>id</code> and <code translate="no" v-pre>index</code> values, then pass the one you want to stop.</p>
+<div id="retype-stop-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype stop --port 5001</code></pre>
+</doc-codeblock></div>
+<p>Use the <code translate="no" v-pre>--all</code> option to stop all running Retype web servers.</p>
+<div id="retype-stop-code-4" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">retype stop --all</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="options-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h3>
+</doc-anchor-target>
+<div id="options-5-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">Description:
+  Stop Retype web servers
+
+Usage:
+  retype stop [&lt;path&gt;] [options]
+
+Arguments:
+  &lt;path&gt;  Path to the project root or project config file [Optional]
+
+Options:
+  --list           List running Retype web servers, including servers that may not be stoppable
+  --all            Stop all running Retype web servers
+  --id &lt;id&gt;        Stop a specific Retype web server by id
+  --index &lt;index&gt;  Stop a specific Retype web server by index
+  --port &lt;port&gt;    Stop a specific Retype web server by port number
+  -v, --verbose    Enable verbose logging
+  -?, -h, --help   Show help and usage information</code></pre>
+</doc-codeblock></div>
+<hr>
 <doc-anchor-target id="retype-wallet">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype-wallet">#</doc-anchor-trigger>
@@ -585,13 +639,13 @@ Options:
     </h3>
 </doc-anchor-target>
 <p>See how to configure a <a href="/configuration/envvars/#retype_key"><code translate="no" v-pre>RETYPE_KEY</code></a> Environment variable for an option to set your project key during runtime.</p>
-<doc-anchor-target id="options-5">
+<doc-anchor-target id="options-6">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-6">#</doc-anchor-trigger>
         <span>Options</span>
     </h3>
 </doc-anchor-target>
-<div id="options-5-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="options-6-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">Description:
   Manage Your Retype Keys
 

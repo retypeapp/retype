@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826434375912">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826436180555">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0-preview">
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview.826434375912" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview.826436180555" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826436180555" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826434375912" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826434375912" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826436180555" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826436180555" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview.826434375912" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview.826436180555" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -67,7 +67,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.1</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -671,6 +671,93 @@ footer:
   title: News</code></pre>
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>title</code> is configured, Retype will use the default translated label for the current <doc-anchor-trigger to="#locale"><code translate="no" v-pre>locale</code></doc-anchor-trigger>.</p>
+</doc-panel>
+<doc-anchor-target id="blog-rss">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss">#</doc-anchor-trigger>
+        <span>rss</span>
+    </h3>
+</doc-anchor-target>
+<p>Custom configuration for the generated blog RSS feed.</p>
+<doc-anchor-target id="blog-rss-maxresults">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-maxresults">#</doc-anchor-trigger>
+        <span>maxResults</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="maxresults--number">
+    <template #title>maxResults : <code translate="no" v-pre>number</code></template>
+<p>The maximum total number of blog posts to include in the generated RSS feed. Default is <code translate="no" v-pre>20</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  rss:
+    maxResults: 25</code></pre>
+</doc-codeblock></div>
+<p>This setting applies only to the generated RSS feed and does not change the <code translate="no" v-pre>blog.maxResults</code> limit used by the paginated blog summary pages.</p>
+</doc-panel>
+<doc-anchor-target id="blog-rss-title">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-title">#</doc-anchor-trigger>
+        <span>title</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="title--string">
+    <template #title>title : <code translate="no" v-pre>string</code></template>
+<p>A custom title for the generated RSS feed. Default is <code translate="no" v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  rss:
+    title: Project Updates</code></pre>
+</doc-codeblock></div>
+<p>If no <code translate="no" v-pre>title</code> is configured, Retype will use the resolved blog title. The resolved blog title uses <code translate="no" v-pre>blog.title</code> when configured, otherwise the generated blog summary heading. When available, <code translate="no" v-pre>meta.siteName</code> or <code translate="no" v-pre>branding.title</code> is prefixed to that value.</p>
+</doc-panel>
+<doc-anchor-target id="blog-rss-description">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-description">#</doc-anchor-trigger>
+        <span>description</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="description--string">
+    <template #title>description : <code translate="no" v-pre>string</code></template>
+<p>A custom description for the generated RSS feed. Default is <code translate="no" v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  rss:
+    description: Latest project updates and release notes</code></pre>
+</doc-codeblock></div>
+<p>If no <code translate="no" v-pre>description</code> is configured, Retype will use the project <code translate="no" v-pre>meta.description</code> value. If neither value is configured, the RSS <code translate="no" v-pre>description</code> node is omitted.</p>
+</doc-panel>
+<doc-anchor-target id="blog-rss-copyright">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-copyright">#</doc-anchor-trigger>
+        <span>copyright</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="copyright--string">
+    <template #title>copyright : <code translate="no" v-pre>string</code></template>
+<p>A custom copyright value for the generated RSS feed. Default is <code translate="no" v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  rss:
+    copyright: &quot;© Copyright . Example, Inc. All rights reserved.&quot;</code></pre>
+</doc-codeblock></div>
+<p>If no <code translate="no" v-pre>copyright</code> is configured, Retype will use the resolved <code translate="no" v-pre>footer.copyright</code> value. If neither value is configured, the RSS <code translate="no" v-pre>copyright</code> node is omitted.</p>
+</doc-panel>
+<doc-anchor-target id="blog-rss-imageurl">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-imageurl">#</doc-anchor-trigger>
+        <span>imageUrl</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="imageurl--string">
+    <template #title>imageUrl : <code translate="no" v-pre>string</code></template>
+<p>A custom image URL for the RSS <code translate="no" v-pre>&lt;image&gt;</code> node. Default is <code translate="no" v-pre>null</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
+  rss:
+    imageUrl: https://example.com/static/feed.png</code></pre>
+</doc-codeblock></div>
+<p>If no <code translate="no" v-pre>imageUrl</code> is configured, Retype will use the resolved site <code translate="no" v-pre>favicon</code> URL when the favicon is a supported RSS image type (<code translate="no" v-pre>.gif</code>, <code translate="no" v-pre>.jpeg</code>, <code translate="no" v-pre>.jpg</code>, <code translate="no" v-pre>.ico</code>, or <code translate="no" v-pre>.png</code>). If neither value resolves, the RSS <code translate="no" v-pre>&lt;image&gt;</code> node is omitted.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="cache">
@@ -3019,6 +3106,22 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
   pro: true</code></pre>
 </doc-codeblock></div>
 <p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code translate="no" v-pre>retype start --pro</code> will also start the project in Pro mode.</p>
+</doc-panel>
+<doc-anchor-target id="debounce">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#debounce">#</doc-anchor-trigger>
+        <span>debounce</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="debounce--number">
+    <template #title>debounce : <code translate="no" v-pre>number</code></template>
+<p>Delay how quickly <code translate="no" v-pre>retype start</code> reacts to file changes, in milliseconds. The default is <code translate="no" v-pre>100</code>.</p>
+<p>The following sample demonstrates adding a 500 ms debounce during <code translate="no" v-pre>retype start</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">start:
+  debounce: 500</code></pre>
+</doc-codeblock></div>
+<p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code translate="no" v-pre>retype start --debounce 500</code> will override this project setting for the current run.</p>
 </doc-panel>
 <doc-anchor-target id="templating">
     <h2>
