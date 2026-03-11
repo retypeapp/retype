@@ -744,7 +744,6 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | `card-max-width` | Card maximum width (wide screens) | `960px` | `960px` |
 | `card-max-width-sm` | Card maximum width (narrow screens) | `558px` | `558px` |
 | `card-min-width` | Card minimum width | `250px` | `250px` |
-| `card-flex-basis` | Card flex basis for portrait layout | `250px` | `250px` |
 | `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |
 | `card-image-width` | Card image width percentage | `41.666667%` | `41.666667%` |
 | `card-title-text` | Card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |

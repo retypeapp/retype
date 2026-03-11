@@ -7,7 +7,7 @@ templating: false
 ---
 # Templating
 
-Retype's templating system lets you embed dynamic content directly in your Markdown pages. Think of it as _"programmable content"_. 
+Retype's templating engine lets you embed dynamic content directly in your Markdown pages. Think of it as _"programmable content"_. 
 
 Templating is powered by [Scriban](https://scriban.github.io/) and requires no separate build step or configuration. Write a template expression anywhere in your content and Retype evaluates it when the page is built.
 

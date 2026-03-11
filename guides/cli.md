@@ -56,7 +56,7 @@ The `retype start` command automatically opens the default web browser on your m
 retype start -n
 ```
 
-If you want Retype to wait briefly before reacting to file changes, pass the `--debounce <ms>` option. This can be helpful when multiple saves happen in quick succession.
+If you want Retype to wait briefly before reacting to file changes, pass the `--debounce <ms>` option. This can be helpful when multiple file save events might happen in quick succession.
 
 ```
 retype start --debounce 500

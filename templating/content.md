@@ -52,6 +52,7 @@ title: {{ content["getting-started"].title }}
 description: {{ content["getting-started"].description }}
 url: {{ content["getting-started"].url }}
 path: {{ content["getting-started"].path }}
+filePath: {{ content["getting-started"].filePath }}
 ```
 }%}
 
@@ -98,7 +99,7 @@ Check whether a page exists before linking to it. This is useful for optional or
 {%{
 ```md
 {{ if content["premium-features"] }}
-  Check out our [Premium Features]({{ content["premium-features"].path }}).
+  Check out our [Premium Features]({{ content["premium-features"].filePath }}).
 {{ end }}
 ```
 }%}
@@ -114,13 +115,13 @@ Use `content.search("term")` to find pages whose title contains the search term.
 {%{
 ```md
 {{ for item in content.search("obsidian") ~}}
-- [{{ item.title }}]({{ item.path }})
+- [{{ item.title }}]({{ item.filePath }})
 {{ end }}
 ```
 }%}
 
 {{ for item in content.search("obsidian") ~}}
-- [{{ item.title }}]({{ item.path }})
+- [{{ item.title }}]({{ item.filePath }})
 {{ end }}
 
 ### Access a specific result
@@ -137,18 +138,18 @@ description: {{ content.search("getting started")[0].description }}
 
 ### Limit search results
 
-Combine with the `array.limit` filter to cap the number of results.
+Combine with the `array.limit` filter to cap the number of results. The following sample then outputs each of the results into a `compact` card component:
 
 {%{
 ```md
 {{ for item in content.search("retype") | array.limit 5 ~}}
-[!card vert]({{ item.path }})
+[!card compact]({{ item.filePath }})
 {{ end }}
 ```
 }%}
 
 {{ for item in content.search("retype") | array.limit 5 ~}}
-[!card vert]({{ item.path }})
+[!card compact]({{ item.filePath }})
 {{ end }}
 
 ---
@@ -161,28 +162,34 @@ Combine with the `array.limit` filter to cap the number of results.
 
 {%{
 ```md
-{{ for tag in content.tags ~}}
-- [{{ tag.title }}](/tags/{{ tag.title }}) ({{ tag.pages | array.size }} pages)
+Tag | Page count
+--- | ---
+{{ for tag in content.tags | array.sort "title" ~}}
+[!badge {{ tag.title }}|info](/tags/{{ tag.title }}) | {{ tag.pages | array.size }}
 {{ end }}
 ```
 }%}
 
-{{ for tag in content.tags ~}}
-- [{{ tag.title }}](/tags/{{ tag.title }}) ({{ tag.pages | array.size }} pages)
+Tag | Page count {.compact}
+--- | ---
+{{ for tag in content.tags | array.sort "title" ~}}
+[!badge {{ tag.title }}|info](/tags/{{ tag.title }}) | {{ tag.pages | array.size }}
 {{ end }}
 
 ### Pages for a specific tag
 
+The following sample demonstrates how to get all the Pages based on a specific tag:
+
 {%{
 ```md
 {{ for page in content.tags["guide"].pages ~}}
-- [{{ page.title }}]({{ page.path }})
+- [{{ page.title }}]({{ page.filePath }})
 {{ end }}
 ```
 }%}
 
 {{ for page in content.tags["guide"].pages ~}}
-- [{{ page.title }}]({{ page.path }})
+- [{{ page.title }}]({{ page.filePath }})
 {{ end }}
 
 ---
@@ -226,7 +233,7 @@ Combine with the `array.limit` filter to cap the number of results.
 {%{
 ```md
 {{ for page in content.authors["Jane Smith"].pages ~}}
-- [{{ page.title }}]({{ page.path }})
+- [{{ page.title }}]({{ page.filePath }})
 {{ end }}
 ```
 }%}
@@ -241,24 +248,24 @@ Combine with the `array.limit` filter to cap the number of results.
 
 {%{
 ```md
-[!card]({{ content.blog.posts[0].path }})
+[!card]({{ content.blog.posts[0].filePath }})
 ```
 }%}
 
-[!card]({{ content.blog.posts[0].path }})
+[!card]({{ content.blog.posts[0].filePath }})
 
 ### List all blog posts
 
 {%{
 ```md
 {{ for post in content.blog.posts ~}}
-1. [{{ post.title }}]({{ post.path }})
+1. [{{ post.title }}]({{ post.filePath }})
 {{ end }}
 ```
 }%}
 
 {{ for post in content.blog.posts ~}}
-1. [{{ post.title }}]({{ post.path }})
+1. [{{ post.title }}]({{ post.filePath }})
 {{ end }}
 
 ### Most recent as Cards
@@ -266,13 +273,13 @@ Combine with the `array.limit` filter to cap the number of results.
 {%{
 ```md
 {{ for post in content.blog.posts | array.limit 3 ~}}
-[!card vert]({{ post.path }})
+[!card vert]({{ post.filePath }})
 {{ end }}
 ```
 }%}
 
 {{ for post in content.blog.posts | array.limit 3 ~}}
-[!card vert]({{ post.path }})
+[!card vert]({{ post.filePath }})
 {{ end }}
 
 ---
@@ -317,7 +324,7 @@ Combine `content.pages` with array filters for curated page grids.
 {%{
 ```md
 {{ for page in content.pages | array.limit 3 ~}}
-[!card vert]({{ page.path }})
+[!card vert]({{ page.filePath }})
 {{ end }}
 ```
 }%}

@@ -14,7 +14,7 @@ Please see the [Retype CLI](cli.md) for full details on each command.
 
 Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
-You only need one of the three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
+You only need one of the following three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
 
 | Package Manager | Supported Platforms |
 | --- | --- |
