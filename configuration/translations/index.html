@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826525121069">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview2.826526417453">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0-preview">
+    <meta name="generator" content="Retype 4.2.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Translations - Write On! with Retype</title>
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview.826525121069" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview2.826526417453" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826525121069" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826525121069" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826525121069" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview2.826526417453" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview2.826526417453" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview2.826526417453" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview.826525121069" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview2.826526417453" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -538,13 +538,13 @@ labels:
 </tr>
 <tr>
 <td><code translate="no" v-pre>ContentFooter_LastUpdated_AbsoluteTemplate</code></td>
-<td> </td>
-<td> </td>
+<td>Last updated on {0}</td>
+<td>Última actualización el {0}</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ContentFooter_LastUpdated_AbsoluteByTemplate</code></td>
-<td> </td>
-<td> </td>
+<td>Last updated on {0} by {1}</td>
+<td>Última actualización el {0} por {1}</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ContentFooter_LastUpdated_RelativeTemplate</code></td>
@@ -553,8 +553,8 @@ labels:
 </tr>
 <tr>
 <td><code translate="no" v-pre>ContentFooter_LastUpdated_RelativeByTemplate</code></td>
-<td> </td>
-<td> </td>
+<td>Last updated {0} by {1}</td>
+<td>Última actualización {0} por {1}</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>Editor_CancelButton_Label</code></td>
@@ -903,6 +903,9 @@ labels:
                 </a></span>
                     </span>
                 
+                    <time id="retype-last-updated" class="inline-flex items-center text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T06:39:57" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-relative-template="Last updated {0}">
+                        Last updated on 2026-03-11
+                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

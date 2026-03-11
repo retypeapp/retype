@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826525121069">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview2.826526417453">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0-preview">
+    <meta name="generator" content="Retype 4.2.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Installation - Write On! with Retype</title>
@@ -33,14 +33,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview.826525121069" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview2.826526417453" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826525121069" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826525121069" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview2.826526417453" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview2.826526417453" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview.826525121069" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview2.826526417453" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -453,7 +453,7 @@
 <p><a href="https://www.npmjs.com/package/retypeapp?activeTab=versions" class="outbound" target="_blank"><span>NPM</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, Yarn, and <a href="https://www.nuget.org/packages/retypeapp/" class="outbound" target="_blank"><span>dotnet</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> offer their own syntax and methods for specifying which version or tag of a software package to install, enabling precise control over the dependencies of your projects.</p>
 <p>When using NPM or Yarn, specifying the <code translate="no" v-pre>@latest</code> tag will always install the latest public release. The <code translate="no" v-pre>@latest</code> is optional. If no <code translate="no" v-pre>@version</code> or <code translate="no" v-pre>@tag</code> is provided, Retype will install the <code translate="no" v-pre>@latest</code> release by default.</p>
 <p>Using the <code translate="no" v-pre>@next</code> tag will install an upcoming <code translate="no" v-pre>-preview</code> release, if available.</p>
-<p>In the following samples, replace <code translate="no" v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the <code translate="no" v-pre>v4.2.0-preview</code> release of Retype using NPM, run the command <code translate="no" v-pre>npm install retypeapp@4.2.0-preview --global</code>.</p>
+<p>In the following samples, replace <code translate="no" v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the <code translate="no" v-pre>v4.2.0-preview2</code> release of Retype using NPM, run the command <code translate="no" v-pre>npm install retypeapp@4.2.0-preview2 --global</code>.</p>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
@@ -723,17 +723,6 @@ yarn global add retypeapp-win-x86</code></pre>
     </a>
 </div>
 <div class="card-compact-container">
-    <a href="/guides/cli/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53Zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5h-5Z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></svg></span>
-                <span class="card-compact-title">Retype CLI</span>
-            </div>
-            <p class="card-compact-description">The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
     <a href="/pro/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
@@ -779,7 +768,13 @@ yarn global add retypeapp-win-x86</code></pre>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
+                <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
+                    <time id="retype-last-updated" class="inline-flex items-center text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T06:39:57" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-relative-template="Last updated {0}">
+                        Last updated on 2026-03-11
+                    </time>
+                </div>
+
                 <!-- Required only on API pages -->
                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
             </div>
