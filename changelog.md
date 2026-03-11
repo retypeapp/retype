@@ -71,6 +71,50 @@ There were **2 changes** in Retype `v4.0.1`.
 
 ---
 
+## v4.2.0
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-03-11](https://github.com/retypeapp/retype/releases/tag/v4.2.0)
+
+# Version 4.2.0
+
+There were 22 changes in Retype 4.2.0.
+
+## New
+
+1. New `labels` project setting to configure all string labels, see #781
+1. New `blog.rss` project settings for configuring the `maxResults`, `title`, `description`, `copyright`, and `imageUrl`
+1. New `retype stop` CLI command
+1. New Search settings to explicitly `include` or `exclude` files, folders, or paths from indexing, see #258
+1. New `created` and `lastUpdated` Page settings
+1. New `Last updated` date on pages where `lastUpdated` is configured
+1. New custom language configuration
+1. New `--debounce` flag on `retype start` and `start.debounce` project setting
+1. New `compact` layout for the Card component
+1. New \"Retype for Obsidian\" plugin, see #431
+1. New `Last updated on` page label, see #383
+1. Automatically convert Obsidian wikilink list pairs into `compact` cards
+1. Keyboard shortcuts for Previous and Next page navigation
+
+## Improved
+
+1. Add blog meta tag RSS feed to all pages if blog exists
+1. Minor UI refinements to the Steps component
+1. Search results refinements and UI improvements
+1. Automatically read content image dimensions and add to <img> attributes
+1. Support reference-style links in button shortcode rendering, see #796
+1. Auto-display icon in reference link component from target frontmatter, see #669
+
+## Fixed
+
+1. Fix list continuation line separator rendering inside panels, see #780
+1. Fixed anchor link resolution for headings with emoji shortcodes, see #787
+1. Single + in superscript or subscript, see #695
+
+
+---
+
 ## v4.0.0
 
 **Released:** [2026-02-23](https://github.com/retypeapp/retype/releases/tag/v4.0.0)
