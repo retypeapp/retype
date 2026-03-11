@@ -134,7 +134,12 @@ The following table lists all the keys and default values that can be customized
 | `ContentFooter_NextButton_Label` | {{ project.labels["ContentFooter_NextButton_Label"] }} | {{ project.labels.es["ContentFooter_NextButton_Label"] }} |
 | `ContentFooter_OlderButton_Label` | {{ project.labels["ContentFooter_OlderButton_Label"] }} | {{ project.labels.es["ContentFooter_OlderButton_Label"] }} |
 | `ContentFooter_PrevButton_Label` | {{ project.labels["ContentFooter_PrevButton_Label"] }} | {{ project.labels.es["ContentFooter_PrevButton_Label"] }} |
-| `ContentFooter_LastUpdated_Label` | {{ project.labels["ContentFooter_LastUpdated_Label"] }} | {{ project.labels.es["ContentFooter_LastUpdated_Label"] }} |
+| `ContentFooter_LastUpdated_AbsoluteTemplate` | {{ project.labels["ContentFooter_LastUpdated_AbsoluteTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_AbsoluteTemplate"] }} |
+| `ContentFooter_LastUpdated_AbsoluteByTemplate` | {{ project.labels["ContentFooter_LastUpdated_AbsoluteByTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_AbsoluteByTemplate"] }} |
+| `ContentFooter_LastUpdated_RelativeTemplate` | {{ project.labels["ContentFooter_LastUpdated_RelativeTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_RelativeTemplate"] }} |
+| `ContentFooter_LastUpdated_RelativeByTemplate` | {{ project.labels["ContentFooter_LastUpdated_RelativeByTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_RelativeByTemplate"] }} |
+| `Editor_CancelButton_Label` | {{ project.labels["Editor_CancelButton_Label"] }} | {{ project.labels.es["Editor_CancelButton_Label"] }} |
+| `Editor_EditButton_Label` | {{ project.labels["Editor_EditButton_Label"] }} | {{ project.labels.es["Editor_EditButton_Label"] }} |
 | `Editor_SaveButton_Label` | {{ project.labels["Editor_SaveButton_Label"] }} | {{ project.labels.es["Editor_SaveButton_Label"] }} |
 | `Filter_NoMembersFound_Label` | {{ project.labels["Filter_NoMembersFound_Label"] }} | {{ project.labels.es["Filter_NoMembersFound_Label"] }} |
 | `History_AgoTime_Label` | {{ project.labels["History_AgoTime_Label"] }} | {{ project.labels.es["History_AgoTime_Label"] }} |
@@ -185,6 +190,7 @@ The following table lists all the keys and default values that can be customized
 | `Search_NoResults_Label` | {{ project.labels["Search_NoResults_Label"] }} | {{ project.labels.es["Search_NoResults_Label"] }} |
 | `Search_Navigate_Label` | {{ project.labels["Search_Navigate_Label"] }} | {{ project.labels.es["Search_Navigate_Label"] }} |
 | `Search_Open_Label` | {{ project.labels["Search_Open_Label"] }} | {{ project.labels.es["Search_Open_Label"] }} |
+| `Search_Close_Label` | {{ project.labels["Search_Close_Label"] }} | {{ project.labels.es["Search_Close_Label"] }} |
 | `Search_TopResults_Label` | {{ project.labels["Search_TopResults_Label"] }} | {{ project.labels.es["Search_TopResults_Label"] }} |
 | `Search_Result_Singular_Label` | {{ project.labels["Search_Result_Singular_Label"] }} | {{ project.labels.es["Search_Result_Singular_Label"] }} |
 | `Search_Result_Plural_Label` | {{ project.labels["Search_Result_Plural_Label"] }} | {{ project.labels.es["Search_Result_Plural_Label"] }} |
