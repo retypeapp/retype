@@ -15,8 +15,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
       - uses: retypeapp/action-build@next
         env:
