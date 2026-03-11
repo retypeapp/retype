@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview4.826577023471">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview4.826577452407">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0-preview4">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview4.826577023471" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview4.826577452407" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview4.826577023471" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview4.826577452407" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview4" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview4.826577023471" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview4.826577023471" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview4.826577452407" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview4.826577452407" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview4.826577023471" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview4.826577452407" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -688,6 +688,62 @@
 </div>
 </p>
 <hr>
+<doc-anchor-target id="list-pair-cards">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#list-pair-cards">#</doc-anchor-trigger>
+        <span>List pair cards</span>
+    </h2>
+</doc-anchor-target>
+<p>You can create an array of cards from list pairs by using a wikilink as the top-level list item and a nested list item for the description.</p>
+<p>The link must be a wikilink to a local page in your project. The nested text is always configured manually and is not pulled from the linked page.</p>
+<div id="list-pair-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- [[Blogging]]
+  - Create blog posts and let Retype generate the rss feed and pages automatically.
+- [[Installation]]
+  - Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.
+- [[Community]]
+  - Get a free Retype Pro key for use in GitHub Pages projects.</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/guides/blogging/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg></span>
+                <span class="card-compact-title">Blogging</span>
+            </div>
+            <p class="card-compact-description">Create blog posts and let Retype generate the rss feed and pages automatically.</p>
+        </div>
+    </a>
+</div>
+ 
+<div class="card-compact-container">
+    <a href="/guides/installation/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/></svg></span>
+                <span class="card-compact-title">Installation</span>
+            </div>
+            <p class="card-compact-description">Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.</p>
+        </div>
+    </a>
+</div>
+ 
+<div class="card-compact-container">
+    <a href="/community/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></svg></span>
+                <span class="card-compact-title">Community</span>
+            </div>
+            <p class="card-compact-description">Get a free Retype Pro key for use in GitHub Pages projects.</p>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
 <doc-anchor-target id="template-driven-cards">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#template-driven-cards">#</doc-anchor-trigger>
@@ -717,6 +773,7 @@
 </div>
 </p>
 <p>The <a href="/templating/content/#blog-posts"><code translate="no" v-pre>content.blog.posts</code></a> array contains all blog posts in your project sorted by date, newest first.</p>
+<hr>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -800,9 +857,6 @@
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T00:04:34" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-absolute-label-html="Last updated on 2026-03-11" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-11
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->
