@@ -1349,7 +1349,7 @@ The `text` property sets the visible link text, while `title` sets the hover too
 
 Customize built-in UI labels and messages for your project.
 
-The `labels` config is organized into named buckets. Each bucket contains one or more label keys, such as `search_input_placeholder` or `toc_contents_label`.
+The `labels` config is organized into named collections. Each collection contains one or more label keys, such as `search_input_placeholder` or `toc_contents_label`.
 
 ```yml
 labels:
@@ -1361,9 +1361,9 @@ labels:
     search_input_placeholder: Rechercher dans la documentation
 ```
 
-Use the `default` bucket to override the built-in English defaults and to provide fallback values. Add a bucket matching the active [`locale`](#locale), such as `fr`, when you want to override the built-in wording for that language.
+Use the `default` collection to override the built-in English defaults and to provide fallback values. Add a collection matching the active [`locale`](#locale), such as `fr`, when you want to override the built-in wording for that language.
 
-For supported locales, Retype uses the built-in translation for the active locale and then applies any matching `labels.<locale>` overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom `locale` values, Retype uses your configured label buckets.
+For supported locales, Retype uses the built-in translation for the active locale and then applies any matching `labels.<locale>` overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom `locale` values, Retype uses your configured label collections.
 
 ```yml
 locale: partner
@@ -1386,7 +1386,7 @@ Using the [template](/templating/project-properties.md) syntax, the labels are a
 
 ## locale
 
-The value of the `locale` config defines the primary language that will be used on the generated website. For supported locales, Retype will generate the website using system messages and labels in that language. The same setting can also point to a custom [`labels`](#labels) bucket when you want alternate wording for a specific audience.
+The value of the `locale` config defines the primary language that will be used on the generated website. For supported locales, Retype will generate the website using system messages and labels in that language. The same setting can also point to a custom [`labels`](#labels) collection when you want alternate wording for a specific audience.
 
 This flexibility makes your application more versatile and accessible to users from different languages. Currently, 24 languages are supported by Retype.
 
@@ -1396,7 +1396,7 @@ Please visit the [Retype Translation](https://retypeapp.github.io/retype-transla
 
 === locale : `string`
 
-You can switch the `locale` to any other supported language by providing the corresponding ISO language code as listed below. You can also set `locale` to a custom value that matches a bucket in [`labels`](#labels).
+You can switch the `locale` to any other supported language by providing the corresponding ISO language code as listed below. You can also set `locale` to a custom value that matches a collection in [`labels`](#labels).
 
 Default is `en`.
 
