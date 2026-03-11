@@ -437,15 +437,7 @@ There were 9 changes in Retype `v3.6.0`.
 1. Remove Page `Edit` button on generated Welcome page
 1. Links with icon that are images get empty alt attribute, see [#523](https://github.com/retypeapp/retype/issues/523)
 1. Rename `server` project config to [`serve`](configuration/project.md#serve)
-1. Upgrade Octicons icons library from v17.2.0 to v17.3.0
-1. Upgrade Octicons icons library from v17.9.0 to v17.10.0
-1. Upgrade Octicons icons library from v17.10.0 to v17.10.1
-1. Upgrade Octicons icons library from v17.10.2 to v17.11.1
-1. Upgrade Octicons icons library from v17.11.1 to v17.12.0
-1. Upgrade Octicons icons library from v17.12.0 to v18.0.0
-1. Upgrade Octicons icons library from v18.2.0 to v18.3.0
-1. Upgrade Octicons icons library from v18.3.0 to v19.0.0
-1. Upgrade Octicons icons library from v19.0.0 to v19.1.0
+1. Upgrade Octicons icons library from v17.2.0 to v19.1.0
 +++ Fixed :icon-bug:
 1. JavaScript error if one stacked Panel is missing content, see [#388](https://github.com/retypeapp/retype/issues/388)
 1. `--override` command fails when used with a templating data object, see [#509](https://github.com/retypeapp/retype/issues/509)
