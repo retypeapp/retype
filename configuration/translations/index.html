@@ -12,18 +12,18 @@
     <meta name="generator" content="Retype 4.2.0-preview">
 
     <!-- Primary Meta Tags -->
-    <title>Themes - Write On! with Retype</title>
-    <meta name="title" content="Themes - Write On! with Retype">
-    <meta name="description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables. With themes, you can adjust colors,">
+    <title>Translations - Write On! with Retype</title>
+    <meta name="title" content="Translations - Write On! with Retype">
+    <meta name="description" content="Use labels and locale to customize Retype's built-in UI text, including search labels, table of contents labels, next and previous buttons, callout titles,">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://retype.com/guides/themes/">
+    <link rel="canonical" href="https://retype.com/configuration/translations/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://retype.com/guides/themes/">
-    <meta property="og:title" content="Themes - Write On! with Retype">
-    <meta property="og:description" content="Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables. With themes, you can adjust colors,">
+    <meta property="og:url" content="https://retype.com/configuration/translations/">
+    <meta property="og:title" content="Translations - Write On! with Retype">
+    <meta property="og:description" content="Use labels and locale to customize Retype's built-in UI text, including search labels, table of contents labels, next and previous buttons, callout titles,">
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
@@ -237,15 +237,15 @@
                         </li>
                         <li class="pr-4">
                             <span class="pr-4">
-                                Guides
+                                Configuration
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
                             </svg>
                         </li>
                         <li class="pr-4">
-                            <a href="/guides/themes/" class="pr-4">
-                                Themes
+                            <a href="/configuration/translations/" class="pr-4">
+                                Translations
                             </a>
                         </li>
                     </ol>
@@ -253,354 +253,643 @@
 
                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<doc-anchor-target id="themes" class="break-words">
+<doc-anchor-target id="translations" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#themes">#</doc-anchor-trigger>
-        <span>Themes</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#translations">#</doc-anchor-trigger>
+        <span>Translations</span>
     </h1>
 </doc-anchor-target>
-<p>Retype&#x27;s <a href="/configuration/project/#theme"><code translate="no" v-pre>theme</code></a> system allows you to customize the visual appearance of your website by overriding <a href="/configuration/theme-variables/">theme variables</a>. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or project preferences.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-base"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-base" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Pro Feature</h5>
-<p>The theme functionality requires a <a href="/pro/">Retype Pro</a> key or adding the following <a href="/configuration/project/#pro"><code translate="no" v-pre>pro</code></a> trial mode setting into your project <code translate="no" v-pre>retype.yml</code> configuration file:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">start
-  pro: true</code></pre>
-</doc-codeblock></div>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="quick-start">
+<p>Use <a href="/configuration/project/#labels"><code translate="no" v-pre>labels</code></a> and <a href="/configuration/project/#locale"><code translate="no" v-pre>locale</code></a> to customize Retype&#x27;s built-in UI text, including search labels, table of contents labels, next and previous buttons, callout titles, and much more.</p>
+<p>The default values for all supported languages are available in the <a href="https://github.com/retypeapp/retype-translations"><code translate="no" v-pre>retype-translations</code></a> project.</p>
+<doc-anchor-target id="how-labels-work">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#quick-start">#</doc-anchor-trigger>
-        <span>Quick Start</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-labels-work">#</doc-anchor-trigger>
+        <span>How <code translate="no" v-pre>labels</code> work</span>
     </h2>
 </doc-anchor-target>
-<p>The quickest way to customize your site&#x27;s appearance is by adding a <code translate="no" v-pre>theme</code> configuration to your <code translate="no" v-pre>retype.yml</code> file and setting a custom <a href="/configuration/theme-variables/#base-variables"><code translate="no" v-pre>base-color</code></a> theme variable.</p>
-<div id="quick-start-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-color: &quot;#8839ef&quot;</code></pre>
+<p>The table of <doc-anchor-trigger to="#keys">keys</doc-anchor-trigger> below lists all the labels that can be customized in Retype.</p>
+<p>If you see a label in your project that you want to customize, check the table below to find the corresponding key.</p>
+<p>Label key lookup is case-insensitive and treats <code translate="no" v-pre>_</code> and <code translate="no" v-pre>-</code> as equivalent. For example, <code translate="no" v-pre>Search_Input_Placeholder</code> and <code translate="no" v-pre>search_input_placeholder</code> and <code translate="no" v-pre>search-input-placeholder</code> are all treated as the same key.</p>
+<p>Label collections are also case-insensitive, so <code translate="no" v-pre>fr</code> and <code translate="no" v-pre>FR</code> refer to the collection of keys. In this case, French language translations.</p>
+<doc-anchor-target id="default-labels">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#default-labels">#</doc-anchor-trigger>
+        <span>Default labels</span>
+    </h3>
+</doc-anchor-target>
+<p>Use <code translate="no" v-pre>labels.default</code> to set project-wide fallback values and to override the English defaults.</p>
+<div id="default-labels-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">labels:
+  default:
+    search_input_placeholder: Search the docs
+    toc_contents_label: On this page</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="configuration-structure">
+<doc-anchor-target id="locale-specific-labels">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#locale-specific-labels">#</doc-anchor-trigger>
+        <span>Locale-specific labels</span>
+    </h3>
+</doc-anchor-target>
+<p>When <a href="/configuration/project/#locale"><code translate="no" v-pre>locale</code></a> is set to a supported built-in locale such as <code translate="no" v-pre>fr</code>, Retype loads the built-in translated strings for that locale and then applies any matching <code translate="no" v-pre>labels.&lt;locale&gt;</code> overrides.</p>
+<div id="locale-specific-labels-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: fr
+
+labels:
+  default:
+    toolbar_filter_placeholder: Filter docs
+
+  fr:
+    search_input_placeholder: Rechercher dans la documentation
+    toc_contents_label: Sur cette page</code></pre>
+</doc-codeblock></div>
+<p>One subtle point matters here: <code translate="no" v-pre>labels.default</code> does not automatically replace built-in non-English translations. If a supported locale already has a built-in translated value, that value remains in use unless you override the same key in <code translate="no" v-pre>labels.&lt;locale&gt;</code>.</p>
+<doc-anchor-target id="custom-groups">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-groups">#</doc-anchor-trigger>
+        <span>Custom groups</span>
+    </h3>
+</doc-anchor-target>
+<p>You can also set <code translate="no" v-pre>locale</code> to a custom value and provide a matching group in <code translate="no" v-pre>labels</code>. This is useful for partner portals, internal docs, or branded variants that need wording different from the built-in locales.</p>
+<div id="custom-groups-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: partner
+
+labels:
+  default:
+    search_input_placeholder: Search docs
+
+  partner:
+    search_input_placeholder: Search partner docs
+    toc_contents_label: In this section</code></pre>
+</doc-codeblock></div>
+<p>With a custom locale, Retype uses the matching collection as the active locale source and falls back to <code translate="no" v-pre>labels.default</code> when needed.</p>
+<doc-anchor-target id="template-access">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configuration-structure">#</doc-anchor-trigger>
-        <span>Configuration Structure</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#template-access">#</doc-anchor-trigger>
+        <span>Template access</span>
     </h2>
 </doc-anchor-target>
-<p>The theme configuration supports two main sections:</p>
-<doc-anchor-target id="base-theme">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base-theme">#</doc-anchor-trigger>
-        <span><code translate="no" v-pre>base</code> theme</span>
-    </h3>
-</doc-anchor-target>
-<p>The <a href="/configuration/project/#theme"><code translate="no" v-pre>base</code></a> theme controls the light mode appearance and serves as the foundation for your project&#x27;s visual style:</p>
-<div id="base-theme-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-color: &quot;#8839ef&quot;
-    base-bg: &quot;#eff1f5&quot;
-    base-link-weight: 500
-    image-rounded: 0.75rem</code></pre>
+<p>Using the <a href="/templating/project-properties/">template</a> syntax, all label values are available from the <code translate="no" v-pre>project.labels</code> object.</p>
+<p>The following sample demonstrates how to get the label value for a specific key:</p>
+<div id="template-access-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{{ project.labels[&quot;Search_NoResults_Label&quot;] }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="dark-theme">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-theme">#</doc-anchor-trigger>
-        <span><code translate="no" v-pre>dark</code> theme</span>
-    </h3>
-</doc-anchor-target>
-<p>The <a href="/configuration/project/#theme-dark"><code translate="no" v-pre>dark</code></a> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#base-theme">base theme</doc-anchor-trigger> variables. The following demonstrates how to configure the <code translate="no" v-pre>dark</code> theme variables:</p>
-<div id="dark-theme-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  dark:
-    base-color: &quot;#ca9ee6&quot;
-    base-bg: &quot;#303446&quot;</code></pre>
+<p>The above outputs the value: <code translate="no" v-pre>Sorry, no results found.</code></p>
+<p>You can also access a specific locale using the following syntax:</p>
+<div id="template-access-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{{ project.labels.fr[&quot;Search_NoResults_Label&quot;] }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="examples">
+<p>The above outputs the value: <code translate="no" v-pre>Désolé, aucun résultat trouvé.</code></p>
+<doc-anchor-target id="keys">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
-        <span>Examples</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#keys">#</doc-anchor-trigger>
+        <span>Keys</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="brand-color-customization">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#brand-color-customization">#</doc-anchor-trigger>
-        <span>Brand Color Customization</span>
-    </h3>
-</doc-anchor-target>
-<p>To match your brand colors:</p>
-<div id="brand-color-customization-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-color: &quot;#ff6b35&quot;  # Orange brand color</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="typography-adjustments">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#typography-adjustments">#</doc-anchor-trigger>
-        <span>Typography Adjustments</span>
-    </h3>
-</doc-anchor-target>
-<p>To better match your project style and user-experience requirements:</p>
-<div id="typography-adjustments-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-link-weight: 500            # Slightly bolder links
-    nav-item-text-active-weight: 700 # Bold active navigation
-    heading-text: &quot;#1a202c&quot;          # Darker headings</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="dark-mode-optimization">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-mode-optimization">#</doc-anchor-trigger>
-        <span>Dark Mode Optimization</span>
-    </h3>
-</doc-anchor-target>
-<p>To adjust the dark mode:</p>
-<div id="dark-mode-optimization-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  dark:
-    base-bg: &quot;#0a0e1a&quot;              # Very dark blue background
-    sidebar-left-bg: &quot;#1a1f2e&quot;      # Slightly lighter sidebar
-    base-text: &quot;#e2e8f0&quot;            # Light grey text
-    heading-text: &quot;#ffffff&quot;         # Pure white headings
-    base-border: &quot;#2d3748&quot;          # Subtle borders</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="component-styling">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#component-styling">#</doc-anchor-trigger>
-        <span>Component Styling</span>
-    </h3>
-</doc-anchor-target>
-<p>To customize component colors and other elements:</p>
-<div id="component-styling-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    # Rounded images
-    image-rounded: 0.75rem
-    
-    # Custom variant colors
-    primary: &quot;#8caaee&quot; # Blue
-    success: &quot;#a6d189&quot; # Green
-    danger: &quot;#e78284&quot;  # Red
-    warning: &quot;#e5c890&quot; # Yellow    </code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="best-practices">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-practices">#</doc-anchor-trigger>
-        <span>Best Practices</span>
-    </h2>
-</doc-anchor-target>
-<p>When customizing your Retype <a href="/configuration/project/#theme">theme</a>, it’s best to start with small changes and gradually build up. Here are some guidelines to help you maintain a clean, accessible, and consistent design.</p>
-<doc-anchor-target id="1-start-with-the-base-color">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-start-with-the-base-color">#</doc-anchor-trigger>
-        <span>1. Start with the <code translate="no" v-pre>base-color</code></span>
-    </h3>
-</doc-anchor-target>
-<p>Begin by tweaking a few brand colors before diving into full theme customization. This keeps things manageable and easier to approve before moving on to further theme refinements.</p>
-<div id="1-start-with-the-base-color-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-color: &quot;#8839ef&quot; #your-brand-color</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="2-prioritize-readability-and-contrast">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-prioritize-readability-and-contrast">#</doc-anchor-trigger>
-        <span>2. Prioritize readability and contrast</span>
-    </h3>
-</doc-anchor-target>
-<p>Contrast between text and background is important for readability and accessibility. Avoid color combinations that are too similar and do not provide enough contrast.</p>
-<div id="2-prioritize-readability-and-contrast-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-text: &quot;#4c4f69&quot;     # A strong neutral text color
-    base-bg: &quot;#ffffff&quot;       # Clean light background</code></pre>
-</doc-codeblock></div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-tip" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M7.90625 2.15625C4.50944 2.15625 2.15625 4.58563 2.15625 7.54688C2.15625 8.96138 2.76575 9.88281 3.57075 10.8589L3.87837 11.2226C4.19894 11.6021 4.554 12.0218 4.84581 12.4416C5.25406 13.0324 5.61775 13.7296 5.7385 14.5834C5.76728 14.8608 5.68746 15.1386 5.51579 15.3583C5.34413 15.5781 5.09399 15.7228 4.8179 15.7621C4.5418 15.8013 4.26124 15.7321 4.03512 15.5689C3.809 15.4056 3.65493 15.1612 3.60525 14.8867C3.54775 14.4814 3.37094 14.1004 3.07338 13.6692C2.8306 13.3302 2.57055 13.0039 2.29425 12.6917C2.1735 12.5479 2.04556 12.397 1.909 12.2317C1.00769 11.1406 0 9.72613 0 7.54688C0 3.32062 3.39681 0 7.90625 0C12.4157 0 15.8125 3.32062 15.8125 7.54688C15.8125 9.72613 14.8048 11.1406 13.9035 12.2317C13.7669 12.397 13.639 12.5479 13.5183 12.6903C13.2207 13.0424 12.9677 13.3414 12.7406 13.6692C12.4416 14.1004 12.2662 14.4814 12.2087 14.8867C12.1557 15.1584 12.0003 15.3994 11.7747 15.5598C11.5492 15.7202 11.2706 15.7879 10.9965 15.7488C10.7225 15.7096 10.474 15.5667 10.3023 15.3496C10.1306 15.1325 10.0489 14.8577 10.074 14.582C10.1948 13.7296 10.5584 13.0324 10.9667 12.4416C11.2585 12.0218 11.6136 11.6021 11.9341 11.2226C12.0419 11.0961 12.1454 10.9739 12.2403 10.8589C13.0468 9.88281 13.6562 8.96138 13.6562 7.54688C13.6562 4.58563 11.3031 2.15625 7.90625 2.15625ZM4.67188 17.25H11.1406C11.4266 17.25 11.7008 17.3636 11.903 17.5658C12.1052 17.768 12.2188 18.0422 12.2188 18.3281C12.2188 18.6141 12.1052 18.8883 11.903 19.0905C11.7008 19.2927 11.4266 19.4062 11.1406 19.4062H4.67188C4.38594 19.4062 4.11171 19.2927 3.90953 19.0905C3.70734 18.8883 3.59375 18.6141 3.59375 18.3281C3.59375 18.0422 3.70734 17.768 3.90953 17.5658C4.11171 17.3636 4.38594 17.25 4.67188 17.25ZM5.03125 21.9219C5.03125 21.6359 5.14484 21.3617 5.34703 21.1595C5.54921 20.9573 5.82344 20.8438 6.10938 20.8438H9.70312C9.98906 20.8438 10.2633 20.9573 10.4655 21.1595C10.6677 21.3617 10.7812 21.6359 10.7812 21.9219C10.7812 22.2078 10.6677 22.482 10.4655 22.6842C10.2633 22.8864 9.98906 23 9.70312 23H6.10938C5.82344 23 5.54921 22.8864 5.34703 22.6842C5.14484 22.482 5.03125 22.2078 5.03125 21.9219Z" />
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Use online contrast checkers to validate your color palette against WCAG standards.</p>
-        </div>
-    </div>
+<p>The following table lists all the keys and default values that can be customized in a Retype project. The <code translate="no" v-pre>es</code> (Spanish) values are also provided for reference.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Key</th>
+<th><code translate="no" v-pre>default</code> (English)</th>
+<th><code translate="no" v-pre>es</code> (Spanish)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>Callout_Caution_Title</code></td>
+<td>CAUTION</td>
+<td>PRECAUCIÓN</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Callout_Danger_Title</code></td>
+<td>DANGER</td>
+<td>PELIGRO</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Callout_Info_Title</code></td>
+<td>INFO</td>
+<td>INFORMACIÓN</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Callout_Note_Title</code></td>
+<td>NOTE</td>
+<td>NOTA</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Callout_Tip_Title</code></td>
+<td>TIP</td>
+<td>CONSEJO</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_AccessFilter_Label</code></td>
+<td>Access</td>
+<td>Acceso</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_ClassType_Name</code></td>
+<td>Class</td>
+<td>Clase</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_CopiedAckHint_Label</code></td>
+<td>Copied!</td>
+<td>Copiado!</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_CopyHint_Label</code></td>
+<td>Copy</td>
+<td>Copiar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_CopyLinkHint_Label</code></td>
+<td>Copy link</td>
+<td>Copiar enlace</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_CopyNameHint_Label</code></td>
+<td>Copy name</td>
+<td>Copiar nombre</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_DefaultParameterValue_Label</code></td>
+<td>Default value</td>
+<td>Valor predeterminado</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_DelegateType_Name</code></td>
+<td>Delegate</td>
+<td>Delegado</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_EnumType_Name</code></td>
+<td>Enum</td>
+<td>Enumeración</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_EventGroup_Title</code></td>
+<td>Events</td>
+<td>Eventos</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_FieldGroup_Title</code></td>
+<td>Fields</td>
+<td>Campos</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_InheritedFilter_Label</code></td>
+<td>Inherited</td>
+<td>Heredado</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_InterfaceType_Name</code></td>
+<td>Interface</td>
+<td>Interfaz</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_MethodGroup_Title</code></td>
+<td>Methods</td>
+<td>Métodos</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_MoreDropdownItems_Label</code></td>
+<td>More</td>
+<td>Más</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_MoreOverloads_Label</code></td>
+<td>more</td>
+<td>más</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_OptionalParameter_Label</code></td>
+<td>optional</td>
+<td>opcional</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_ParameterSection_Label</code></td>
+<td>PARAMETERS</td>
+<td>PARÁMETROS</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_PropertyGroup_Title</code></td>
+<td>Properties</td>
+<td>Propiedades</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_ProtectedAccess_Name</code></td>
+<td>Protected</td>
+<td>Protegido</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_PublicAccess_Name</code></td>
+<td>Public</td>
+<td>Público</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_RecordType_Name</code></td>
+<td>Record</td>
+<td>Registro</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_SecurityAlert_Title</code></td>
+<td>Security</td>
+<td>Seguridad</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_SecurityNoteAlert_Title</code></td>
+<td>Security Note</td>
+<td>Nota de seguridad</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_SignatureSection_Label</code></td>
+<td>SIGNATURE</td>
+<td>FIRMA</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_StructType_Name</code></td>
+<td>Struct</td>
+<td>Structura</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>API_TypeHierarchyPanel_Title</code></td>
+<td>Hierarchy</td>
+<td>Jerarquía</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_NewerButton_Label</code></td>
+<td>Newer</td>
+<td>Más nuevo</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_NextButton_Label</code></td>
+<td>Next</td>
+<td>Siguiente</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_OlderButton_Label</code></td>
+<td>Older</td>
+<td>Más antiguo</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_PrevButton_Label</code></td>
+<td>Previous</td>
+<td>Anterior</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_LastUpdated_AbsoluteTemplate</code></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_LastUpdated_AbsoluteByTemplate</code></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_LastUpdated_RelativeTemplate</code></td>
+<td>Last updated {0}</td>
+<td>Última actualización {0}</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ContentFooter_LastUpdated_RelativeByTemplate</code></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Editor_CancelButton_Label</code></td>
+<td>Cancel</td>
+<td>Cancelar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Editor_EditButton_Label</code></td>
+<td>Edit</td>
+<td>Editar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Editor_SaveButton_Label</code></td>
+<td>Save</td>
+<td>Guardar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Filter_NoMembersFound_Label</code></td>
+<td>No member names found containing the query</td>
+<td>No se encontraron nombres de miembros que contengan la consulta</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_AgoTime_Label</code></td>
+<td>ago</td>
+<td>hace</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_ClearLink_Label</code></td>
+<td>Clear</td>
+<td>Limpiar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_DayTime_Label</code></td>
+<td>d</td>
+<td>d</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_HourTime_Label</code></td>
+<td>h</td>
+<td>h</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_JustNowTime_Label</code></td>
+<td>just now</td>
+<td>justo ahora</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_MinuteTime_Label</code></td>
+<td>m</td>
+<td>min</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_MonthTime_Label</code></td>
+<td>mo</td>
+<td>mes</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_NoHistory_Label</code></td>
+<td>No history items</td>
+<td>No hay elementos de historial</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_SecondTime_Label</code></td>
+<td>s</td>
+<td>s</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_Title_Label</code></td>
+<td>History</td>
+<td>Historial</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>History_YearTime_Label</code></td>
+<td>y</td>
+<td>año</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Note_Question_Title</code></td>
+<td>Question</td>
+<td>Pregunta</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Note_Caution_Title</code></td>
+<td>Caution</td>
+<td>Precaución</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Note_Important_Title</code></td>
+<td>Important</td>
+<td>Importante</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Note_Note_Title</code></td>
+<td>Note</td>
+<td>Nota</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Note_Tip_Title</code></td>
+<td>Tip</td>
+<td>Consejo</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Note_Warning_Title</code></td>
+<td>Warning</td>
+<td>Advertencia</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PageMeta_By_Label</code></td>
+<td>By</td>
+<td>Por</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PageMeta_In_Label</code></td>
+<td>In</td>
+<td>En</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PageMeta_Published_Label</code></td>
+<td>Published</td>
+<td>Publicado</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Panel_Title_Details</code></td>
+<td>Details</td>
+<td>Detalles</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_404_GoToHomeButton_Label</code></td>
+<td>Go to homepage</td>
+<td>Ir a la página principal</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_404_MessageBody</code></td>
+<td>You may have mistyped the address or the page may have been moved.</td>
+<td>Puede que haya escrito incorrectamente la dirección o que la página se haya movido.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_404_MessageTitle</code></td>
+<td>Oops! The page you’re looking for doesn’t exist.</td>
+<td>¡Vaya! La página que buscas no existe.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_404_Title</code></td>
+<td>Not Found</td>
+<td>No encontrado</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Blog_Title</code></td>
+<td>Blog</td>
+<td>Blog</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Page</code></td>
+<td>Page</td>
+<td>Page</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Categories_Title</code></td>
+<td>Categories</td>
+<td>Categorías</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Category_Categories_Label</code></td>
+<td>categories</td>
+<td>categorías</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Category_SeeAll_Label</code></td>
+<td>See all</td>
+<td>Ver todas</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Category_Title</code></td>
+<td>Category</td>
+<td>Categoría</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Docs_Title</code></td>
+<td>Docs</td>
+<td>Documentos</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Tags_Title</code></td>
+<td>Tags</td>
+<td>Etiquetas</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Tag_SeeAll_Label</code></td>
+<td>See all</td>
+<td>Ver todas</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Tag_Tags_Label</code></td>
+<td>tags</td>
+<td>etiquetas</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Tag_Title</code></td>
+<td>Tag</td>
+<td>Etiqueta</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Page_Welcome_Title</code></td>
+<td>Welcome</td>
+<td>Bienvenido/a</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Plugin_Edit_EditThisPage_Label</code></td>
+<td>Edit this page</td>
+<td>Editar esta página</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PrivatePage_Password_Label</code></td>
+<td>Enter password:</td>
+<td>Introduzca la contraseña:</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PrivatePage_Password_Title</code></td>
+<td>This page is password protected</td>
+<td>Esta página está protegida con contraseña</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PrivatePage_Password_Unlock</code></td>
+<td>Unlock</td>
+<td>Desbloquear</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>PrivatePage_Password_Wrong</code></td>
+<td>Wrong password!</td>
+<td>¡Contraseña incorrecta!</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Project_DefaultTitle_Value</code></td>
+<td>Project Name</td>
+<td>Nombre del proyecto</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Input_Placeholder</code></td>
+<td>Search</td>
+<td>Buscar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Navigate_Label</code></td>
+<td>navigate</td>
+<td>navegar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_NoResults_Label</code></td>
+<td>Sorry, no results found.</td>
+<td>Lo siento, no se encontraron resultados.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Navigate_Label</code></td>
+<td>navigate</td>
+<td>navegar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Open_Label</code></td>
+<td>open</td>
+<td>abrir</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Close_Label</code></td>
+<td>close</td>
+<td>cerrar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_TopResults_Label</code></td>
+<td>Top {0} results</td>
+<td>Top {0} resultados</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Result_Singular_Label</code></td>
+<td>{0} result</td>
+<td>{0} resultado</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Search_Result_Plural_Label</code></td>
+<td>{0} results</td>
+<td>{0} resultados</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Sidebar_Filter_Placeholder</code></td>
+<td>Filter</td>
+<td>Filtrar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Toc_Contents_Label</code></td>
+<td>Contents</td>
+<td>Contenidos</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Toc_RelatedClasses_Label</code></td>
+<td>Related Classes</td>
+<td>Clases relacionadas</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Toolbar_Access_Placeholder</code></td>
+<td>Access</td>
+<td>Acceso</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Toolbar_Filters_Placeholder</code></td>
+<td>Filters</td>
+<td>Filtros</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Toolbar_Filter_Placeholder</code></td>
+<td>Filter</td>
+<td>Filtrar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Text_Light</code></td>
+<td>Light</td>
+<td>Claro</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Text_Dark</code></td>
+<td>Dark</td>
+<td>Oscuro</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Text_System</code></td>
+<td>System</td>
+<td>Sistema</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>Backlinks_Title</code></td>
+<td>See also</td>
+<td>Véase también</td>
+</tr>
+</tbody>
+</table>
 </div>
-<doc-anchor-target id="3-check-light-and-dark-modes">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-check-light-and-dark-modes">#</doc-anchor-trigger>
-        <span>3. Check light and dark modes</span>
-    </h3>
-</doc-anchor-target>
-<p>If you are customizing both the <code translate="no" v-pre>base</code> and <code translate="no" v-pre>dark</code> themes, be sure to test your changes in each mode. A color that works well in light mode might look washed out or harsh in dark mode, and require further refinement.</p>
-<div id="3-check-light-and-dark-modes-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    base-color: &quot;#8839ef&quot;
-  dark:
-    base-color: &quot;#ca9ee6&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="4-use-semantic-variables-where-possible">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-use-semantic-variables-where-possible">#</doc-anchor-trigger>
-        <span>4. Use Semantic variables where possible</span>
-    </h3>
-</doc-anchor-target>
-<p>Instead of hardcoding colors everywhere, use the built-in semantic <a href="/configuration/theme-variables/">theme variables</a>. It keeps your theme consistent and easier to maintain.</p>
-<div id="4-use-semantic-variables-where-possible-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
-  base:
-    nav-item-text-active: &quot;var(--base-500)&quot;  # Uses a consistent brand tone</code></pre>
-</doc-codeblock></div>
-<p>Following these practices helps ensure your site looks good, stays accessible, and is easy to maintain as it grows.</p>
-<doc-anchor-target id="troubleshooting">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
-        <span>Troubleshooting</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="theme-not-applied">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#theme-not-applied">#</doc-anchor-trigger>
-        <span>Theme Not Applied</span>
-    </h3>
-</doc-anchor-target>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Ensure you have a valid Retype Pro license or add <a href="/configuration/project/#pro"><code translate="no" v-pre>start.pro: true</code></a></li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Check that the syntax is correct in your <code translate="no" v-pre>retype.yml</code> file</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Verify <a href="/configuration/theme-variables/">theme variable</a> names match exactly</li>
-</ul>
-<doc-anchor-target id="dark-mode-issues">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dark-mode-issues">#</doc-anchor-trigger>
-        <span>Dark Mode Issues</span>
-    </h3>
-</doc-anchor-target>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Remember that <code translate="no" v-pre>dark</code> theme variables only apply in dark mode</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Test with the theme switcher on your website</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Some variables may need both <code translate="no" v-pre>base</code> and <code translate="no" v-pre>dark</code> configured to provide proper contrast</li>
-</ul>
-<doc-anchor-target id="variable-names">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#variable-names">#</doc-anchor-trigger>
-        <span>Variable Names</span>
-    </h3>
-</doc-anchor-target>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> All variable names use <code translate="no" v-pre>kebab-case</code> (hyphens, not underscores)</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Variables are case-sensitive</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Don&#x27;t include the <code translate="no" v-pre>--</code> prefix in your configuration</li>
-</ul>
-<div id="retype-backlinks">
-    <h2>See also</h2>
-<div class="card-compact-group">
-<div class="card-compact-container">
-    <a href="/components/badge/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M10.75 3h2.5c.464 0 .909.184 1.237.513.329.328.513.773.513 1.237V7h5.25c.464 0 .909.184 1.237.513.329.328.513.773.513 1.237v10.5c0 .464-.184.909-.513 1.237A1.746 1.746 0 0 1 20.25 21H3.75A1.75 1.75 0 0 1 2 19.25V8.75c0-.464.184-.909.513-1.237A1.746 1.746 0 0 1 3.75 7H9V4.75c0-.464.184-.909.513-1.237A1.746 1.746 0 0 1 10.75 3Zm3.646 6.573A1.753 1.753 0 0 1 13.25 10h-2.5a1.753 1.753 0 0 1-1.732-1.5H3.75a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V8.75a.25.25 0 0 0-.25-.25h-5.268c-.06.416-.268.797-.586 1.073Zm-8.25 1.573A.504.504 0 0 1 6.5 11h3c.133 0 .26.053.354.146A.504.504 0 0 1 10 11.5v5c0 .133-.053.26-.146.354A.504.504 0 0 1 9.5 17h-3a.504.504 0 0 1-.354-.146A.504.504 0 0 1 6 16.5v-5c0-.133.053-.26.146-.354ZM10.5 4.75v3.5a.25.25 0 0 0 .25.25h2.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Zm.72 7.47a.747.747 0 0 1 .53-.22h5.5c.199 0 .39.079.53.22a.747.747 0 0 1 0 1.06.747.747 0 0 1-.53.22h-5.5a.747.747 0 0 1-.53-.22.747.747 0 0 1 0-1.06Zm0 2.525a.747.747 0 0 1 .53-.22h3.5c.199 0 .39.079.53.22a.747.747 0 0 1 0 1.06.747.747 0 0 1-.53.22h-3.5a.747.747 0 0 1-.53-.22.747.747 0 0 1 0-1.06Z"/></svg></span>
-                <span class="card-compact-title">Badge</span>
-            </div>
-            <p class="card-compact-description">Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a !badge identifier.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/components/button/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></svg></span>
-                <span class="card-compact-title">Button</span>
-            </div>
-            <p class="card-compact-description">Similar to a Badge, the Button component uses the same syntax as a hyperlink, but is prefixed with a !button identifier.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/components/callout/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13 7.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-3 3.75a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v4.25h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5h.75V12h-.75a.75.75 0 0 1-.75-.75Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg></span>
-                <span class="card-compact-title">Callout</span>
-            </div>
-            <p class="card-compact-description">Callout components help to highlight important messages for the reader.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/templating/content/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></svg></span>
-                <span class="card-compact-title">Content</span>
-            </div>
-            <p class="card-compact-description">Use content to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/feature-log/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/></svg></span>
-                <span class="card-compact-title">Feature Log</span>
-            </div>
-            <p class="card-compact-description">Stay ahead with the latest and greatest from Retype!</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/configuration/project/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></svg></span>
-                <span class="card-compact-title">Project configuration</span>
-            </div>
-            <p class="card-compact-description">Retype will read the retype.yml file for additional instructions on how to configure and build your project.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/configuration/theme-variables/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.003 7.754a.75.75 0 0 1 .75-.75h5.232a.75.75 0 0 1 .53 1.28l-2.776 2.777c.55.097 1.057.253 1.492.483.905.477 1.504 1.284 1.504 2.418 0 .966-.471 1.75-1.172 2.27-.687.511-1.587.77-2.521.77-1.367 0-2.274-.528-2.667-.756a.75.75 0 0 1 .755-1.297c.331.193.953.553 1.912.553.673 0 1.243-.188 1.627-.473.37-.275.566-.635.566-1.067 0-.5-.219-.836-.703-1.091-.538-.284-1.375-.443-2.471-.443a.75.75 0 0 1-.53-1.28l2.643-2.644h-3.421a.75.75 0 0 1-.75-.75ZM7.88 15.215a1.4 1.4 0 0 0-1.446.83.75.75 0 0 1-1.37-.61 2.899 2.899 0 0 1 2.986-1.71c.589.06 1.139.323 1.557.743.434.446.685 1.058.685 1.778 0 1.641-1.254 2.437-2.12 2.986-.538.341-1.18.694-1.495 1.273H9.75a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75c0-1.799 1.337-2.63 2.243-3.21 1.032-.659 1.55-1.031 1.55-1.8 0-.355-.116-.584-.26-.732a1.071 1.071 0 0 0-.652-.298Zm.234-13.121a.75.75 0 0 1 .386.656V9h1.252a.75.75 0 0 1 0 1.5H5.75a.75.75 0 0 1 0-1.5H7V4.103l-.853.533a.749.749 0 1 1-.795-1.272l2-1.25a.749.749 0 0 1 .762-.02Z"/></svg></span>
-                <span class="card-compact-title">Theme variables</span>
-            </div>
-            <p class="card-compact-description">This reference documents all available customizable theme variables that can be added to your retype.yml file. Each variable can be overridden in both base</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/blog/2025-07-02-whats-new-in-retype-v311/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v3.11</span>
-            </div>
-            <p class="card-compact-description">Retype v3.11 puts you in control of your project's visual identity, while keeping everything fast, clean, and easy to use. This release brings Pro-level</p>
-        </div>
-    </a>
-</div>
-</div>
-</div>
+<!-- RETYPE_BACKLINKS_PLACEHOLDER -->
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
 
@@ -609,11 +898,8 @@
                         <a href="/tags/">
                             <svg class="inline-block -mb-px mr-1.5 text-body-link hover:text-body-link-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                         </a>
-                        <span class="mr-2"><a href="/tags/guide/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                    <span>guide</span>
-                </a></span>
-                        <span class="mr-2"><a href="/tags/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                    <span>pro</span>
+                        <span class="mr-2"><a href="/tags/config/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                    <span>config</span>
                 </a></span>
                     </span>
                 
@@ -624,7 +910,7 @@
             </div>
             <footer id="retype-content-footer" class="clear-both">
                 <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-14">
-                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/guides/themes.md" target="_blank" rel="noopener">
+                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/configuration/translations.md" target="_blank" rel="noopener">
                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         <span>Edit this page</span>
                     </a>
@@ -632,20 +918,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/cli/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/configuration/theme-variables/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Retype CLI</span>
+                                <span class="block mt-1">Theme variables</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/troubleshooting/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/configuration/envvars/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Troubleshooting</span>
+                                <span class="block mt-1">Environment variables</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -709,7 +995,7 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Themes", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Translations", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>

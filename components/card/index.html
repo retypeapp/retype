@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826511662579">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826525121069">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0-preview">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Card - Write On! with Retype</title>
     <meta name="title" content="Card - Write On! with Retype">
-    <meta name="description" content="The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page's title, category,">
+    <meta name="description" content="The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/components/card/">
@@ -23,7 +23,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/components/card/">
     <meta property="og:title" content="Card - Write On! with Retype">
-    <meta property="og:description" content="The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page's title, category,">
+    <meta property="og:description" content="The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override">
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview.826511662579" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview.826525121069" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826511662579" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826525121069" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826511662579" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826511662579" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826525121069" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826525121069" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview.826511662579" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview.826525121069" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -259,23 +259,14 @@
         <span>Card</span>
     </h1>
 </doc-anchor-target>
-<p>The Card component creates a styled preview card linking to another page in your project. Cards automatically display the target page&#x27;s title, category, description, date, and image.</p>
+<p>The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.</p>
 <div id="card-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-03-10-whats-new-in-retype-v420.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-container">
-    <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-02-whats-new-in-retype-v410.png">
-        </div>
+    <a href="/blog/2026-03-10-whats-new-in-retype-v420.md" class="group card no-link">
         <div class="p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release. This release delivers a completely redesigned search experience, Unicode icon support, and new blog layout options.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
-            </div>
         </div>
     </a>
 </div>
@@ -287,49 +278,47 @@
         <span>Syntax</span>
     </h2>
 </doc-anchor-target>
-<p>The basic syntax uses the <code translate="no" v-pre>[!card]</code> identifier followed by a path to any page in your project.</p>
+<p>Use the destination in parentheses for the link target. Add an optional layout shorthand or attribute list inside <code translate="no" v-pre>[!card ...]</code>.</p>
 <div id="syntax-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](path/to/page.md)</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](path/to/page.md)
+[!card vert](path/to/page.md)
+[!card compact](path/to/page.md)
+[!card layout=&quot;compact&quot;](path/to/page.md)
+[!card title=&quot;Custom title&quot; text=&quot;Custom text&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
-<p>Cards automatically extract and display metadata from the target page, including:</p>
+<p>For local pages, Retype can automatically resolve:</p>
 <ul>
-<li>Page title</li>
-<li>Category (if configured)</li>
-<li>Description</li>
-<li>Date (if configured)</li>
-<li>Image (if configured)</li>
+<li><code translate="no" v-pre>title</code> from the page title</li>
+<li><code translate="no" v-pre>text</code> from the excerpt or description</li>
+<li><code translate="no" v-pre>image</code> from the page image</li>
+<li><code translate="no" v-pre>kicker</code> from categories or parent navigation labels</li>
+<li><code translate="no" v-pre>footer</code> from <code translate="no" v-pre>date</code> or <code translate="no" v-pre>created</code></li>
 </ul>
+<p>If you override only one field, the remaining fields still fall back to page metadata when available.</p>
+<p>The link target always comes from the destination in parentheses. There is no separate <code translate="no" v-pre>link</code> Card attribute.</p>
+<p>Use shorthand labels such as <code translate="no" v-pre>vert</code> only when no other Card properties are set. If you combine a layout with custom properties, set it with the <code translate="no" v-pre>layout</code> attribute, such as <code translate="no" v-pre>layout=&quot;vert&quot;</code>, <code translate="no" v-pre>layout=&quot;vertical&quot;</code>, or <code translate="no" v-pre>layout=&quot;compact&quot;</code>.</p>
 <hr>
-<doc-anchor-target id="layout">
+<doc-anchor-target id="layouts">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#layout">#</doc-anchor-trigger>
-        <span>Layout</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#layouts">#</doc-anchor-trigger>
+        <span>Layouts</span>
     </h2>
 </doc-anchor-target>
-<p>Cards support two layout modes: horizontal (default) and vertical.</p>
+<p>Cards support three layout modes: horizontal, vertical, and compact.</p>
 <doc-anchor-target id="horizontal-default">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#horizontal-default">#</doc-anchor-trigger>
         <span>Horizontal (default)</span>
     </h3>
 </doc-anchor-target>
-<p>The default horizontal layout displays the image on the left and content on the right. This layout is ideal for single cards or when you want each card to take the full content width.</p>
+<p>The default layout shows the image beside the content and works well for a single prominent card.</p>
 <div id="horizontal-default-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](/blog/2026-03-10-whats-new-in-retype-v420.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-container">
-    <a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/" class="group card no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-25-self-hosting-obsidian-vault-with-retype.png">
-        </div>
+    <a href="/blog/2026-03-10-whats-new-in-retype-v420.md" class="group card no-link">
         <div class="p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">blog</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Self-hosting Obsidian Vault with Retype</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation. Obsidian Publish is a great option, and if you prefer to self-host and have full control over where your site is deployed, Retype is worth a look.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-25</span></div>
-            </div>
         </div>
     </a>
 </div>
@@ -340,12 +329,19 @@
         <span>Vertical</span>
     </h3>
 </doc-anchor-target>
-<p>Use the <code translate="no" v-pre>vertical</code> or <code translate="no" v-pre>vert</code> layout for a stacked card design with the image on top and content below. Vertical cards are perfect for grid layouts with multiple cards.</p>
+<p>Use <code translate="no" v-pre>vertical</code> or <code translate="no" v-pre>vert</code> for stacked cards with the image above the content. Consecutive vertical cards form a responsive group automatically.</p>
 <div id="vertical-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card layout=&quot;vertical&quot;](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/blog/2026-03-10-whats-new-in-retype-v420.md" class="group card-vert no-link">
+        <div class="p-card-padding mt-auto">
+        </div>
+    </a>
+</div>
 <div class="card-vert-container">
     <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-vert no-link">
         <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
@@ -363,21 +359,246 @@
 </div>
 </div>
 </p>
-<p>You can also use the attribute syntax:</p>
-<div id="vertical-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vertical&quot;](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
+<doc-anchor-target id="compact">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#compact">#</doc-anchor-trigger>
+        <span>Compact</span>
+    </h3>
+</doc-anchor-target>
+<p>Use <code translate="no" v-pre>compact</code> for a smaller card that flows inline with other compact cards. Compact cards do not render an <code translate="no" v-pre>image</code>, <code translate="no" v-pre>kicker</code>, or <code translate="no" v-pre>footer</code>. When <code translate="no" v-pre>text</code> is overridden, it is rendered as plain text, whereas the default and <code translate="no" v-pre>vert</code> cards will render basic markdown sysntax.</p>
+<div id="compact-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card compact](/guides/getting-started.md)
+[!card layout=&quot;compact&quot;](/guides/installation.md)
+[!card title=&quot;Retype website&quot; text=&quot;Visit retype.com.&quot; icon=&quot;:smile:&quot; layout=&quot;compact&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
+<p>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/guides/getting-started/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+                <span class="card-compact-title">Getting Started</span>
+            </div>
+            <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/guides/installation/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/></svg></span>
+                <span class="card-compact-title">Installation</span>
+            </div>
+            <p class="card-compact-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="https://retype.com/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F604;</span></span>
+                <span class="card-compact-title">Retype website</span>
+            </div>
+            <p class="card-compact-description">Visit retype.com.</p>
+        </div>
+    </a>
+</div>
+</div>
+</p>
 <hr>
-<doc-anchor-target id="two-cards">
+<doc-anchor-target id="property-overrides">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#two-cards">#</doc-anchor-trigger>
-        <span>Two cards</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#property-overrides">#</doc-anchor-trigger>
+        <span>Property overrides</span>
     </h2>
 </doc-anchor-target>
-<p>Place multiple vertical cards together to create a responsive grid. With two cards, they display side by side on wider screens.</p>
-<div id="two-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
+<p>You can override any combination of supported Card fields.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>layout</code></td>
+<td>Sets the Card layout.</td>
+<td>Use <code translate="no" v-pre>vert</code>, <code translate="no" v-pre>vertical</code>, or <code translate="no" v-pre>compact</code>. The default is horizontal.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>title</code></td>
+<td>Overrides the title.</td>
+<td>Works with all layouts.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>text</code></td>
+<td>Overrides the description or excerpt.</td>
+<td>Horizontal and vertical cards render formatted text. Compact cards render plain text.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>icon</code></td>
+<td>Overrides the icon.</td>
+<td>Compact cards render the icon.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>image</code></td>
+<td>Overrides the image.</td>
+<td>Used by horizontal and vertical cards. Compact cards ignore it.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>kicker</code></td>
+<td>Overrides the kicker above the title.</td>
+<td>Used by horizontal and vertical cards. Compact cards ignore it.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>footer</code></td>
+<td>Overrides the footer below the content.</td>
+<td>Used by horizontal and vertical cards. Compact cards ignore it.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>See the layout examples above for <code translate="no" v-pre>layout</code>. The following samples focus on the content properties.</p>
+<doc-anchor-target id="title-and-text">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#title-and-text">#</doc-anchor-trigger>
+        <span>Title and text</span>
+    </h3>
+</doc-anchor-target>
+<p>Override one field and let the remaining values fall back to the target page.</p>
+<div id="title-and-text-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; title=&quot;Start with v4.2&quot;](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card layout=&quot;vert&quot; text=&quot;Read the `v4.1` release summary.&quot;](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/blog/2026-03-10-whats-new-in-retype-v420.md" class="group card-vert no-link">
+        <div class="p-card-padding mt-auto">
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Start with v4.2</div>
+        </div>
+    </a>
+</div>
+<div class="card-vert-container">
+    <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-02-whats-new-in-retype-v410.png">
+        </div>
+        <div class="p-card-padding mt-auto">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Read the <code translate="no" v-pre>v4.1</code> release summary.</p></div>
+            <div class="flex mt-card-footer-margin-top items-center">
+                <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<doc-anchor-target id="image-kicker-and-footer">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#image-kicker-and-footer">#</doc-anchor-trigger>
+        <span>Image, kicker, and footer</span>
+    </h3>
+</doc-anchor-target>
+<p>These properties let you replace the metadata-style parts of a horizontal or vertical card.</p>
+<div id="image-kicker-and-footer-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; image=&quot;/blog/images/2026-03-10-whats-new-in-retype-v420.png&quot;](/guides/blogging.md)
+[!card layout=&quot;vert&quot; kicker=&quot;Release note&quot;](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card layout=&quot;vert&quot; footer=&quot;Custom footer&quot;](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/guides/blogging/" class="group card-vert no-link">
+        <div class="p-card-padding mt-auto">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Guides</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Blogging</div>
+            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Adding a blog to your Retype website is as quick as adding a new <code translate="no" v-pre>.md</code> file to your project. Retype automatically handles the rest:</p></div>
+        </div>
+    </a>
+</div>
+<div class="card-vert-container">
+    <a href="/blog/2026-03-10-whats-new-in-retype-v420.md" class="group card-vert no-link">
+        <div class="p-card-padding mt-auto">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Release note</div>
+        </div>
+    </a>
+</div>
+<div class="card-vert-container">
+    <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-02-whats-new-in-retype-v410.png">
+        </div>
+        <div class="p-card-padding mt-auto">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release. This release delivers a completely redesigned search experience, Unicode icon support, and new blog layout options.</p></div>
+            <div class="flex mt-card-footer-margin-top items-center">
+                <div class="text-card-footer text-card-footer-text"><span>Custom footer</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<doc-anchor-target id="icon">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
+        <span>Icon</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code translate="no" v-pre>icon</code> override is rendered by compact cards.</p>
+<div id="icon-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Retype website&quot; text=&quot;Visit retype.com&quot; icon=&quot;home&quot; layout=&quot;compact&quot;](https://retype.com/)
+[!card icon=&quot;:rocket:&quot; layout=&quot;compact&quot;](/guides/getting-started.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="https://retype.com/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <span class="card-compact-title">Retype website</span>
+            </div>
+            <p class="card-compact-description">Visit retype.com</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/guides/getting-started/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F680;</span></span>
+                <span class="card-compact-title">Getting Started</span>
+            </div>
+            <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<doc-anchor-target id="automatic-and-manual-versions-of-the-same-vertical-card">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#automatic-and-manual-versions-of-the-same-vertical-card">#</doc-anchor-trigger>
+        <span>Automatic and manual versions of the same vertical card</span>
+    </h3>
+</doc-anchor-target>
+<p>The first card uses page metadata. The second spells out the same values directly.</p>
+<div id="automatic-and-manual-versions-of-the-same-vertical-card-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
-[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)</code></pre>
+[!card kicker=&quot;Release&quot; footer=&quot;2026-03-02&quot; image=&quot;/blog/images/2026-03-02-whats-new-in-retype-v410.png&quot; title=&quot;What's NEW in Retype v4.1&quot; layout=&quot;vert&quot; text=&quot;Retype `v4.1` has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release.&quot;](/blog/2026-03-02-whats-new-in-retype-v410.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-vert-group">
@@ -397,265 +618,82 @@
     </a>
 </div>
 <div class="card-vert-container">
-    <a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-25-self-hosting-obsidian-vault-with-retype.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">blog</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Self-hosting Obsidian Vault with Retype</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation. Obsidian Publish is a great option, and if you prefer to self-host and have full control over where your site is deployed, Retype is worth a look.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-25</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-</div>
-</p>
-<hr>
-<doc-anchor-target id="three-cards">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#three-cards">#</doc-anchor-trigger>
-        <span>Three cards</span>
-    </h2>
-</doc-anchor-target>
-<p>Three vertical cards create a balanced row on desktop screens.</p>
-<div id="three-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
-[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
-[!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="card-vert-group">
-<div class="card-vert-container">
     <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-vert no-link">
         <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
             <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-02-whats-new-in-retype-v410.png">
         </div>
         <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release. This release delivers a completely redesigned search experience, Unicode icon support, and new blog layout options.</p></div>
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Release</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's NEW in Retype v4.1</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
                 <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
             </div>
         </div>
     </a>
 </div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-25-self-hosting-obsidian-vault-with-retype.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">blog</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Self-hosting Obsidian Vault with Retype</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation. Obsidian Publish is a great option, and if you prefer to self-host and have full control over where your site is deployed, Retype is worth a look.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-25</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-23-whats-new-in-retype-v40/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-23-whats-new-in-retype-v40.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.0</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.0</code> is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies. Your existing projects will work exactly as before, just faster and with a pile of new powerful features for all Retype users.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-23</span></div>
-            </div>
-        </div>
-    </a>
-</div>
 </div>
 </p>
 <hr>
-<doc-anchor-target id="five-cards">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#five-cards">#</doc-anchor-trigger>
-        <span>Five cards</span>
-    </h2>
+<doc-anchor-target id="compact-cards-with-manual-values">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#compact-cards-with-manual-values">#</doc-anchor-trigger>
+        <span>Compact cards with manual values</span>
+    </h3>
 </doc-anchor-target>
-<p>When displaying five cards, they automatically wrap into rows. On wider screens, you&#x27;ll see three cards on the first row and two on the second. The cards in partial rows expand to fill the available space.</p>
-<div id="five-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
-[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
-[!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)
-[!card vert](/blog/2026-02-10-whats-new-in-retype-v312.md)
-[!card vert](/blog/2025-07-02-whats-new-in-retype-v311.md)</code></pre>
+<p>Compact cards are useful when you want a smaller inline set of links, including cards for external URLs.</p>
+<div id="compact-cards-with-manual-values-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card compact](/guides/getting-started.md)
+[!card title=&quot;Install Retype&quot; text=&quot;Install the Retype CLI.&quot; layout=&quot;compact&quot;](/guides/installation.md)
+[!card title=&quot;Retype website&quot; text=&quot;Visit retype.com.&quot; icon=&quot;:smile:&quot; layout=&quot;compact&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
 <p>
-<div class="card-vert-group">
-<div class="card-vert-container">
-    <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-02-whats-new-in-retype-v410.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release. This release delivers a completely redesigned search experience, Unicode icon support, and new blog layout options.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/guides/getting-started/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+                <span class="card-compact-title">Getting Started</span>
             </div>
+            <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
         </div>
     </a>
 </div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-25-self-hosting-obsidian-vault-with-retype.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">blog</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Self-hosting Obsidian Vault with Retype</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation. Obsidian Publish is a great option, and if you prefer to self-host and have full control over where your site is deployed, Retype is worth a look.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-25</span></div>
+<div class="card-compact-container">
+    <a href="/guides/installation/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/></svg></span>
+                <span class="card-compact-title">Install Retype</span>
             </div>
+            <p class="card-compact-description">Install the Retype CLI.</p>
         </div>
     </a>
 </div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-23-whats-new-in-retype-v40/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-23-whats-new-in-retype-v40.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.0</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.0</code> is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies. Your existing projects will work exactly as before, just faster and with a pile of new powerful features for all Retype users.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-23</span></div>
+<div class="card-compact-container">
+    <a href="https://retype.com/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F604;</span></span>
+                <span class="card-compact-title">Retype website</span>
             </div>
-        </div>
-    </a>
-</div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-10-whats-new-in-retype-v312/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-10-whats-new-in-retype-v312.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.12</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v3.12</code> brings powerful new features for content discovery, visual design, and theme customization. This release introduces the Backlinks component for Retype Pro, automatic dark mode image switching, color preview chips, enhanced page descriptions, and comprehensive theming improvements.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-10</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-<div class="card-vert-container">
-    <a href="/blog/2025-07-02-whats-new-in-retype-v311/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2025-07-02-hero.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.11</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v3.11</code> puts you in control of your project's visual identity, while keeping everything fast, clean, and easy to use. This release brings Pro-level <strong>theme</strong> customization, smarter navigation, and faster syntax options to help you create documentation that feels more like your own.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2025-07-02</span></div>
-            </div>
+            <p class="card-compact-description">Visit retype.com.</p>
         </div>
     </a>
 </div>
 </div>
 </p>
 <hr>
-<doc-anchor-target id="mixed-layouts">
+<doc-anchor-target id="template-driven-cards">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mixed-layouts">#</doc-anchor-trigger>
-        <span>Mixed layouts</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#template-driven-cards">#</doc-anchor-trigger>
+        <span>Template-driven cards</span>
     </h2>
 </doc-anchor-target>
-<p>You can mix horizontal and vertical cards on the same page. Horizontal cards display individually while consecutive vertical cards group into a flex container.</p>
-<div id="mixed-layouts-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
-[!card vert](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
-[!card vert](/blog/2026-02-23-whats-new-in-retype-v40.md)
-[!card](/blog/2026-02-10-whats-new-in-retype-v312.md)</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="card-vert-group">
-<div class="card-vert-container">
-    <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-02-whats-new-in-retype-v410.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release. This release delivers a completely redesigned search experience, Unicode icon support, and new blog layout options.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-25-self-hosting-obsidian-vault-with-retype.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">blog</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Self-hosting Obsidian Vault with Retype</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation. Obsidian Publish is a great option, and if you prefer to self-host and have full control over where your site is deployed, Retype is worth a look.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-25</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-<div class="card-vert-container">
-    <a href="/blog/2026-02-23-whats-new-in-retype-v40/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-23-whats-new-in-retype-v40.png">
-        </div>
-        <div class="p-card-padding mt-auto">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.0</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.0</code> is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies. Your existing projects will work exactly as before, just faster and with a pile of new powerful features for all Retype users.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-23</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-</div>
-<div class="card-container">
-    <a href="/blog/2026-02-10-whats-new-in-retype-v312/" class="group card no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-02-10-whats-new-in-retype-v312.png">
-        </div>
-        <div class="p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v3.12</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v3.12</code> brings powerful new features for content discovery, visual design, and theme customization. This release introduces the Backlinks component for Retype Pro, automatic dark mode image switching, color preview chips, enhanced page descriptions, and comprehensive theming improvements.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-02-10</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-</p>
-<hr>
-<doc-anchor-target id="latest-blog-post">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#latest-blog-post">#</doc-anchor-trigger>
-        <span>Latest blog post</span>
-    </h2>
-</doc-anchor-target>
-<p>Render the latest blog post as a Card using templating syntax to dynamically reference the most recent post.</p>
-<div id="latest-blog-post-code-1" class="codeblock-wrapper"><doc-codeblock>
+<p>The Retype <a href="templating">templating</a> engine can read from content collections, which makes it easy to generate Cards dynamically instead of hardcoding paths.</p>
+<p>The following sample demonstrates how to display the latest blog post by passing its <code translate="no" v-pre>filePath</code> to the Card component.</p>
+<div id="template-driven-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card]({{ content.blog.posts[0].filePath }})</code></pre>
 </doc-codeblock></div>
 <p>
@@ -675,7 +713,7 @@
     </a>
 </div>
 </p>
-<p>The <code translate="no" v-pre>content.blog.posts</code> array contains all blog posts sorted by date (newest first). Use <code translate="no" v-pre>content.blog.posts[0]</code> to get the latest post and access its <code translate="no" v-pre>filePath</code> property to set that value as the link for a Card component.</p>
+<p>The <a href="/templating/content/#blog-posts"><code translate="no" v-pre>content.blog.posts</code></a> array contains all blog posts in your project sorted by date, newest first.</p>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -731,6 +769,28 @@
                 <span class="card-compact-title">Feature Log</span>
             </div>
             <p class="card-compact-description">Stay ahead with the latest and greatest from Retype!</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/guides/getting-started/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+                <span class="card-compact-title">Getting Started</span>
+            </div>
+            <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/guides/installation/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/></svg></span>
+                <span class="card-compact-title">Installation</span>
+            </div>
+            <p class="card-compact-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
         </div>
     </a>
 </div>
