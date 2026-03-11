@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826436180555">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0-preview.826511662579">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0-preview">
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0-preview.826436180555" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0-preview.826511662579" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826436180555" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0-preview.826511662579" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826436180555" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826436180555" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0-preview.826511662579" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0-preview.826511662579" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0-preview.826436180555" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0-preview.826511662579" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -1889,13 +1889,48 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 </doc-panel>
 <hr>
+<doc-anchor-target id="labels">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#labels">#</doc-anchor-trigger>
+        <span>labels</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="labels--object">
+    <template #title>labels : <code translate="no" v-pre>object</code></template>
+<p>Customize built-in UI labels and messages for your project.</p>
+<p>The <code translate="no" v-pre>labels</code> config is organized into named buckets. Each bucket contains one or more label keys, such as <code translate="no" v-pre>search_input_placeholder</code> or <code translate="no" v-pre>toc_contents_label</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">labels:
+  default:
+    search_input_placeholder: Search the docs
+    toc_contents_label: On this page
+
+  fr:
+    search_input_placeholder: Rechercher dans la documentation</code></pre>
+</doc-codeblock></div>
+<p>Use the <code translate="no" v-pre>default</code> bucket to override the built-in English defaults and to provide fallback values. Add a bucket matching the active <doc-anchor-trigger to="#locale"><code translate="no" v-pre>locale</code></doc-anchor-trigger>, such as <code translate="no" v-pre>fr</code>, when you want to override the built-in wording for that language.</p>
+<p>For supported locales, Retype uses the built-in translation for the active locale and then applies any matching <code translate="no" v-pre>labels.&lt;locale&gt;</code> overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom <code translate="no" v-pre>locale</code> values, Retype uses your configured label buckets.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: partner
+
+labels:
+  default:
+    search_input_placeholder: Search docs
+
+  partner:
+    search_input_placeholder: Search partner docs</code></pre>
+</doc-codeblock></div>
+<p>This is useful when you want different wording for a partner portal, support site, or internal handbook without maintaining theme overrides.</p>
+<p>Using the <a href="/templating/project-properties/">template</a> syntax, the labels are also available through <code translate="no" v-pre>project.labels</code>, such as <code translate="no" v-pre>{{ project.labels[&quot;search_input_placeholder&quot;] }}</code>.</p>
+</doc-panel>
+<hr>
 <doc-anchor-target id="locale">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#locale">#</doc-anchor-trigger>
         <span>locale</span>
     </h2>
 </doc-anchor-target>
-<p>The value of the <code translate="no" v-pre>locale</code> config defines the primary language that will be used on the generated website. Retype will generate the website using system messages and labels in this language.</p>
+<p>The value of the <code translate="no" v-pre>locale</code> config defines the primary language that will be used on the generated website. For supported locales, Retype will generate the website using system messages and labels in that language. The same setting can also point to a custom <doc-anchor-trigger to="#labels"><code translate="no" v-pre>labels</code></doc-anchor-trigger> bucket when you want alternate wording for a specific audience.</p>
 <p>This flexibility makes your application more versatile and accessible to users from different languages. Currently, 24 languages are supported by Retype.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -1916,7 +1951,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </div>
 <doc-panel id="locale--string">
     <template #title>locale : <code translate="no" v-pre>string</code></template>
-<p>You can switch the <code translate="no" v-pre>locale</code> to any other supported language by providing the corresponding ISO language code as listed below.</p>
+<p>You can switch the <code translate="no" v-pre>locale</code> to any other supported language by providing the corresponding ISO language code as listed below. You can also set <code translate="no" v-pre>locale</code> to a custom value that matches a bucket in <doc-anchor-trigger to="#labels"><code translate="no" v-pre>labels</code></doc-anchor-trigger>.</p>
 <p>Default is <code translate="no" v-pre>en</code>.</p>
 <p>The following sample demonstrates switching the project to use French.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
