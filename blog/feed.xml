@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Retype Blog &amp; News</title>
+    <title>Retype News by RSS</title>
     <link>https://retype.com/blog/</link>
-    <copyright>© Copyright 2026 - Retype | All rights reserved | Made in Canada 🇨🇦</copyright>
+    <description>Latest updates, announcements, and articles from Retype</description>
+    <copyright>© Retype 2026. All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 Mar 2026 00:00:00 GMT</lastBuildDate>
     <generator>Retype 4.2.0-preview2</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://retype.com/blog/feed.xml" />
     <image>
-      <title>Retype Blog &amp; News</title>
+      <title>Retype News by RSS</title>
       <link>https://retype.com/blog/</link>
       <url>https://retype.com/favicon.ico</url>
     </image>
