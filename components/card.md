@@ -176,6 +176,30 @@ Compact cards are useful when you want a smaller inline set of links, including 
 
 ---
 
+## List pair cards
+
+You can create an array of cards from list pairs by using a wikilink as the top-level list item and a nested list item for the description.
+
+The link must be a wikilink to a local page in your project. The nested text is always configured manually and is not pulled from the linked page.
+
+```md
+- [[Blogging]]
+  - Create blog posts and let Retype generate the rss feed and pages automatically.
+- [[Installation]]
+  - Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.
+- [[Community]]
+  - Get a free Retype Pro key for use in GitHub Pages projects.
+```
+
+- [[Blogging]]
+  - Create blog posts and let Retype generate the rss feed and pages automatically.
+- [[Installation]]
+  - Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.
+- [[Community]]
+  - Get a free Retype Pro key for use in GitHub Pages projects.
+
+---
+
 ## Template-driven cards
 
 The Retype [[templating]] engine can read from content collections, which makes it easy to generate Cards dynamically instead of hardcoding paths.
@@ -191,3 +215,5 @@ The following sample demonstrates how to display the latest blog post by passing
 [!card]({{ content.blog.posts[0].filePath }})
 
 The [`content.blog.posts`](/templating/content.md#blog-posts) array contains all blog posts in your project sorted by date, newest first.
+
+---
