@@ -153,6 +153,47 @@ The `label` is rendered as the following label in the upper-left corner of the g
 ![](/static/project-branding-title.png)
 ===
 
+### colors {#branding-colors}
+
+=== colors : `object`
+
+Optional branding color overrides.
+
+Use `branding.colors` when you want more control over the label styling than the default theme provides.
+
+```yml
+branding:
+  colors:
+    label:
+      text: "#ffffff"
+      background: "#ff0000"
+```
+
+===
+
+#### label {#branding-colors-label}
+
+=== label : `object`
+
+Configure colors for the optional branding label shown beside the project title or logo.
+
+| Option | Type | Description |
+| ------ | ---- | ----------- |
+| `text` | `string` | Custom text color for the branding label. |
+| `background` | `string` | Custom background color for the branding label. |
+
+```yml
+branding:
+  colors:
+    label:
+      text: "#ffffff"
+      background: "#ff0000"
+```
+
+If either value is omitted, Retype uses the built-in theme styling for that part of the label.
+
+===
+
 ### logo
 
 === logo : `string`
@@ -1193,6 +1234,156 @@ host: docs.example.com/js/plausible.js
 
 ---
 
+## labels
+
+=== labels : `object`
+
+Customize built-in UI labels and messages for your project.
+
+The `labels` config is organized into named collections. Each collection contains one or more label keys, such as `search_input_placeholder` or `toc_contents_label`.
+
+```yml
+labels:
+  default:
+    search_input_placeholder: Search the docs
+    toc_contents_label: On this page
+
+  fr:
+    search_input_placeholder: Rechercher dans la documentation
+```
+
+Use the `default` collection to override the built-in English defaults and to provide fallback values. Add a collection matching the active [`locale`](#locale), such as `fr`, when you want to override the built-in wording for that language.
+
+For supported locales, Retype uses the built-in translation for the active locale and then applies any matching `labels.<locale>` overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom `locale` values, Retype uses your configured label collections.
+
+```yml
+locale: partner
+
+labels:
+  default:
+    search_input_placeholder: Search docs
+
+  partner:
+    search_input_placeholder: Search partner docs
+```
+
+This is useful when you want different wording for a partner portal, support site, or internal handbook without maintaining theme overrides.
+
+Using the [template](/templating/project-properties.md) syntax, the labels are also available through `project.labels`, such as {%{`{{ project.labels["search_input_placeholder"] }}`}%}.
+
+===
+
+---
+
+## lastUpdated
+
+The `lastUpdated` project configuration controls the automatic last updated footer metadata for pages across the entire project.
+
+Retype reads Git commit metadata for each page and can render the last updated date and, optionally, who made the change. If the build does not have full Git history, the generated values are skipped.
+
+The default project behavior is equivalent to:
+
+```yml
+lastUpdated:
+  date:
+    enabled: true
+    source: committer
+  by:
+    enabled: false
+    source: committer
+```
+
+If you want to set fixed values for one page, use the [page](page.md#lastupdated) `lastUpdated` configuration instead. Manual page values override the project-level generated values for that page.
+
+### date {#lastupdated-date}
+
+Controls the automatic last updated **date** in the page footer.
+
+#### enabled {#lastupdated-date-enabled}
+
+=== enabled : `boolean`
+
+Enable or disable automatic last updated date generation. Default is `true`.
+
+```yml
+lastUpdated:
+  date:
+    enabled: false
+```
+
+Set `date.enabled: false` when you do not want Retype to show a generated last updated date in the footer.
+
+===
+
+#### source {#lastupdated-date-source}
+
+=== source : `string`
+
+Choose which Git revision timestamp is used for the last updated date. Supported values are `author` and `committer`. Default is `committer`.
+
+```yml
+lastUpdated:
+  date:
+    source: author
+```
+
+Use `author` when the footer should reflect the original author timestamp. Use `committer` when it should reflect the most recent committed change.
+
+===
+
+### by {#lastupdated-by}
+
+Controls the automatic last updated **by** value in the page footer.
+
+#### enabled {#lastupdated-by-enabled}
+
+=== enabled : `boolean`
+
+Enable or disable automatic last updated by generation. Default is `false`.
+
+```yml
+lastUpdated:
+  by:
+    enabled: true
+```
+
+This is off by default, so turn it on only when you want the footer to show who made the change.
+
+===
+
+#### source {#lastupdated-by-source}
+
+=== source : `string`
+
+Choose which Git revision identity is used for the `by` value. Supported values are `author` and `committer`. Default is `committer`.
+
+```yml
+lastUpdated:
+  by:
+    enabled: true
+    source: author
+```
+
+Use `author` when the footer should show the original author name. Use `committer` when it should show the person who actually committed the change.
+
+===
+
+### GitHub Actions
+
+If you build in GitHub Actions, fetch the full history so Git-backed `lastUpdated` values are available:
+
+```yml
+- uses: actions/checkout@v6
+  with:
+    fetch-depth: 0
+```
+
+`fetch-depth: 0` tells GitHub Actions to download the full commit history instead of only the most recent commits.
+
+See also the [Last Updated](/components/last-updated.md) component, [page](page.md#lastupdated) configuration, and the [GitHub Actions guide](/guides/github-actions.md).
+
+---
+
 ## links
 
 Custom links added to the top-bar navigation of all pages.
@@ -1343,47 +1534,6 @@ The `text` property sets the visible link text, while `title` sets the hover too
 
 ---
 
-## labels
-
-=== labels : `object`
-
-Customize built-in UI labels and messages for your project.
-
-The `labels` config is organized into named collections. Each collection contains one or more label keys, such as `search_input_placeholder` or `toc_contents_label`.
-
-```yml
-labels:
-  default:
-    search_input_placeholder: Search the docs
-    toc_contents_label: On this page
-
-  fr:
-    search_input_placeholder: Rechercher dans la documentation
-```
-
-Use the `default` collection to override the built-in English defaults and to provide fallback values. Add a collection matching the active [`locale`](#locale), such as `fr`, when you want to override the built-in wording for that language.
-
-For supported locales, Retype uses the built-in translation for the active locale and then applies any matching `labels.<locale>` overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom `locale` values, Retype uses your configured label collections.
-
-```yml
-locale: partner
-
-labels:
-  default:
-    search_input_placeholder: Search docs
-
-  partner:
-    search_input_placeholder: Search partner docs
-```
-
-This is useful when you want different wording for a partner portal, support site, or internal handbook without maintaining theme overrides.
-
-Using the [template](/templating/project-properties.md) syntax, the labels are also available through `project.labels`, such as {%{`{{ project.labels["search_input_placeholder"] }}`}%}.
-
-===
-
----
-
 ## locale
 
 The value of the `locale` config defines the primary language that will be used on the generated website. For supported locales, Retype will generate the website using system messages and labels in that language. The same setting can also point to a custom [`labels`](#labels) collection when you want alternate wording for a specific audience.
@@ -1407,7 +1557,6 @@ locale: fr
 ```
 
 ===
-
 
 ### Supported Languages
 
@@ -2499,11 +2648,3 @@ url: companyx.github.io/docs
 ===
 
 ---
-
-## Additional options
-
-| Option       | Type     | Default value | Description                                                   |
-| ------------ | -------- | ------------- | ------------------------------------------------------------- |
-| `api`        | `object` |               | API reference doc generation                                  |
-| `api.input`  | `string` |               | Path to a project file or a project directory                 |
-| `api.output` | `string` | `./api`       | Custom path to the API output directory. Relative to `output` |
