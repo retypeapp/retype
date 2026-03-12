@@ -417,22 +417,76 @@ label: Custom label
 
 ## lastUpdated
 
-=== lastUpdated : `string`
+=== lastUpdated : `string` or `object`
 
-A custom last updated date for this page.
+The `lastUpdated` page setting controls the last updated footer metadata for a single page.
 
-Use `lastUpdated` when you want readers to see that a page has been reviewed or refreshed after it was first published.
+Use a string when you want to set a manual date. Use an object when you want to set both manual values or configure Git-backed values for just one page.
 
 The date must be provided in the `yyyy-mm-dd` ISO format or `yyyy-mm-ddThh:mm` if you want to include a date and a time.
 
 ```yml
+---
 lastUpdated: 2026-03-01
-lastUpdated: 2026-03-01T16:45
+---
 ```
+
+To include time, use a value such as `lastUpdated: 2026-03-01T16:45`.
 
 This setting is often used alongside [`created`](#created) so a page can show both when it first went live and when it was last updated. See also [`date`](#date).
 
 ===
+
+### Manual date and by
+
+To set both values manually on one page, use the nested `date` and `by` settings:
+
+```yml
+---
+lastUpdated:
+  date: 2026-03-12
+  by: Documentation Team
+---
+```
+
+### Automatic Git-backed values
+
+To configure the [Last updated](/components/last-updated.md) component behavior, use the `enabled` and `source` settings:
+
+```yml
+---
+lastUpdated:
+  date:
+    enabled: true # default is true. false to disable
+    source: author
+  by:
+    enabled: true
+    source: committer
+---
+```
+
+Supported `source` values are `author` and `committer`.
+
+Automatic values require Git history for the page. If your build has no Git history, or only a shallow clone, Retype skips the generated footer values.
+
+### lastUpdatedBy alias
+
+The `lastUpdatedBy` page setting is also supported as a backward-compatible alias for setting a manual `by` value.
+
+```yml
+---
+lastUpdated: 2026-03-12
+lastUpdatedBy: Documentation Team
+---
+```
+
+!!!
+Manual page values and generated Git values are both supported, but they are not mixed on the same page.
+
+If you manually set either `lastUpdated` or `lastUpdatedBy`, Retype uses those manual values for that page instead of filling in the missing value from Git.
+
+See also [Project](project.md#lastupdated) configuration and the [Last Updated](/components/last-updated.md) component.
+!!!
 
 ---
 
