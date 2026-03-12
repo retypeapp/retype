@@ -1992,6 +1992,51 @@ start:
 
 Customization of the website search component.
 
+### exclude {#search-exclude}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+=== exclude : `list`
+Exclude pages, folders, or patterns from the search index while still generating that content in the final website.
+
+Use `search.exclude` when you want content to remain accessible on the website, but not appear in search results. If you want to exclude content from the generated website entirely, use the project [`exclude`](#exclude) config instead.
+
+Search filtering rules use the same path and pattern behavior as the project-level [`exclude`](#exclude) and [`include`](#include) configs. The wildcards `?`, `*`, `**`, and `!` are supported.
+
+The following sample excludes all content under `/blog` and `/draft` from search results:
+
+```yml
+search:
+  exclude:
+    - /blog
+    - /draft
+```
+
+===
+
+### include {#search-include}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+=== include : `list`
+Explicitly include pages, folders, or patterns in the search index that might otherwise be filtered out by [`search.exclude`](#search-exclude).
+
+Search filtering rules use the same path and pattern behavior as the project-level [`exclude`](#exclude) and [`include`](#include) configs. The wildcards `?`, `*`, `**`, and `!` are supported.
+
+Rules in `search.include` override matching rules in [`search.exclude`](#search-exclude). This makes it possible to exclude everything from search first, then selectively include only the content you want searchable.
+
+The following sample excludes everything from search, then re-includes only `/blog`:
+
+```yml
+search:
+  exclude:
+    - "*"
+  include:
+    - /blog
+```
+
+===
+
 ### excludeCode
 
 === excludeCode : `boolean`
