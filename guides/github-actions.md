@@ -60,6 +60,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
 
@@ -69,6 +71,10 @@ jobs:
 ```
 
 The above **retype-action.yml** workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the `main` branch, and then deploy your new Retype powered website to a `retype` branch.
+
+!!!tip
+The `fetch-depth: 0` setting tells GitHub Actions to download the full Git history instead of a shallow clone. This is required if you want Retype to generate automatic [`lastUpdated`](/components/last-updated.md) footer values from Git commit metadata.
+!!!
 
 If the `retype` branch is not available, the GitHub Action will automatically create the branch.
 
@@ -80,11 +86,11 @@ If the default branch in your repo is `master`, change `- main` to `- master`. I
       - master
 ```
 
-Commit your **.github/workflows/retype-action.yml** file and push to your repo.
+Commit your `.github/workflows/retype-action.yml` file and push to your repo.
 
 ### RETYPE_KEY
 
-If your project requires a Retype key, that key can be configured by adding a [`RETYPE_KEY`](../configuration/envvars.md/#retype_key) secret to your repository settings and the corresponding `env` configuration to your project **.github/workflows/retype-action.yml** file.
+If your project requires a Retype key, that key can be configured by adding a [`RETYPE_KEY`](../configuration/envvars.md/#retype_key) secret to your repository settings and the corresponding `env` configuration to your project `.github/workflows/retype-action.yml` file.
 
 {%{
 ```yml
@@ -119,6 +125,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
         env:
@@ -135,7 +143,7 @@ If your project uses either [`protected`](/configuration/page.md#protected) or [
 
 {{ include "snippets/password-notice.md" }}
 
-A password can be configured by adding a [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password) secret to your repository settings and the following `env` configuration to your project **.github/workflows/retype-action.yml** file.
+A password can be configured by adding a [`RETYPE_PASSWORD`](../configuration/envvars.md/#retype_password) secret to your repository settings and the following `env` configuration to your project `.github/workflows/retype-action.yml` file.
 
 {%{
 ```yml
