@@ -31,7 +31,7 @@ Here's where Retype elevates the entire workflow:
 
 >>> Maintain everything in standard Markdown
 
-Your content stays portable and future-proof. No vendor lock-in means you can migrate easily at anytime. Git integration tracks every change and enables branch-based workflows for major updates.
+Your content stays portable and future-proof. No vendor lock-in means you can migrate easily at any time. Git integration tracks every change and enables branch-based workflows for major updates.
 
 >>> Generate professional sites instantly
 
