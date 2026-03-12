@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826643731811">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826644064663">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -33,14 +33,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826643731811" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0.826644064663" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826643731811" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826644064663" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826643731811" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826644064663" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826643731811" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0.826644064663" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -319,6 +319,48 @@
 <dd>Enable and configure an in-page table of contents with the <code translate="no" v-pre>toc</code> project setting. Configurable at <a href="/configuration/project/#toc">project</a> and <a href="/configuration/page/#toc">page</a> levels, with control over heading depth and label.</dd>
 </dl>
 <hr>
+<doc-anchor-target id="v420">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v420">#</doc-anchor-trigger>
+        <span>v4.2.0</span>
+    </h2>
+</doc-anchor-target>
+<dl>
+<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> <a href="/components/last-updated/">Last updated</a> label</dt>
+<dd>Automatic &quot;Last updated&quot; date and author footer for each page, sourced from Git commit metadata. Configurable at <a href="/configuration/project/#lastupdated">project</a> and <a href="/configuration/page/#lastupdated">page</a> levels with control over date source (author vs committer) and display format.</dd>
+<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> <a href="/configuration/project/#labels">Custom UI labels</a></dt>
+<dd>Override any built-in UI string using the <code translate="no" v-pre>labels</code> project setting. Supports per-locale overrides and integrates with Retype&#x27;s templating system via <code translate="no" v-pre>project.labels</code>, see <a href="https://github.com/retypeapp/retype/discussions/781">#781</a>.</dd>
+<dt><a href="/configuration/project/#blog-rss">Blog RSS</a> feed configuration</dt>
+<dd>New <code translate="no" v-pre>blog.rss</code> project settings for configuring the RSS feed <code translate="no" v-pre>maxResults</code>, <code translate="no" v-pre>title</code>, <code translate="no" v-pre>description</code>, <code translate="no" v-pre>copyright</code>, and <code translate="no" v-pre>imageUrl</code>. The feed link is automatically added to all pages when a blog exists, see <a href="https://github.com/retypeapp/retype/issues/747">#747</a>.</dd>
+<dt><a href="/configuration/page/#created"><code translate="no" v-pre>created</code></a> and <a href="/configuration/page/#lastupdated"><code translate="no" v-pre>lastUpdated</code></a> page settings</dt>
+<dd>Set a fixed creation date or last updated date directly in page frontmatter. Useful for migrated content or pages where Git history does not reflect the true dates.</dd>
+<dt><code translate="no" v-pre>compact</code> layout for <a href="/components/card/">Card</a> component</dt>
+<dd>New compact card layout for displaying multiple wikilink cards in a tight list format. Supports the wikilink list pairs syntax for quick card group creation, see <a href="/components/card/#list-pair-cards">docs</a>.</dd>
+<dt><a href="/configuration/project/#search-exclude">Search filtering</a></dt>
+<dd>New <code translate="no" v-pre>search.exclude</code> and <code translate="no" v-pre>search.include</code> project settings to explicitly control which pages, folders, or path patterns appear in search results, see <a href="https://github.com/retypeapp/retype/discussions/258">#258</a>.</dd>
+<dt><a href="/guides/cli/#retype-stop"><code translate="no" v-pre>retype stop</code></a> command</dt>
+<dd>New CLI command to stop a running <code translate="no" v-pre>retype start</code> development server process.</dd>
+</dl>
+<hr>
+<doc-anchor-target id="v410">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v410">#</doc-anchor-trigger>
+        <span>v4.1.0</span>
+    </h2>
+</doc-anchor-target>
+<dl>
+<dt>New search experience</dt>
+<dd>Improved search ranking, result UI, and keyboard navigation. Code blocks are now indexed and included in search results, see <a href="https://github.com/retypeapp/retype/discussions/680">#680</a>.</dd>
+<dt><a href="/configuration/project/#blog-layout"><code translate="no" v-pre>blog.layout</code></a> setting</dt>
+<dd>New project setting to configure the default layout for blog posts. Set a consistent layout across all posts without having to specify it in each page&#x27;s frontmatter, see <a href="https://github.com/retypeapp/retype/discussions/729">#729</a>.</dd>
+<dt>Unicode icon support</dt>
+<dd>Set a unicode character directly on any <code translate="no" v-pre>icon</code> property in page frontmatter or project configuration, see <a href="https://github.com/retypeapp/retype/discussions/785">#785</a>.</dd>
+</dl>
+<hr>
 <doc-anchor-target id="v400">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#v400">#</doc-anchor-trigger>
@@ -345,10 +387,10 @@
 <dt>Library and dependency upgrades</dt>
 <dd>Complete upgrade to the latest versions of all libraries and dependencies, including performance improvements and security updates.</dd>
 </dl>
-<doc-anchor-target id="v312">
+<doc-anchor-target id="v3120">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v312">#</doc-anchor-trigger>
-        <span>v3.12</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3120">#</doc-anchor-trigger>
+        <span>v3.12.0</span>
     </h2>
 </doc-anchor-target>
 <dl>
@@ -370,10 +412,10 @@
 <dd>Expanded theme variable support for all heading levels (H1 through H6). Customize typography, colors, and spacing for each heading level independently through theme configuration.</dd>
 </dl>
 <hr>
-<doc-anchor-target id="v311">
+<doc-anchor-target id="v3110">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v311">#</doc-anchor-trigger>
-        <span>v3.11</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3110">#</doc-anchor-trigger>
+        <span>v3.11.0</span>
     </h2>
 </doc-anchor-target>
 <dl>
@@ -399,10 +441,10 @@
 <dd>Full templating support in <a href="/configuration/project/#copyright"><code translate="no" v-pre>footer.copyright</code></a> including use of data variables, includes, and functions</dd>
 </dl>
 <hr>
-<doc-anchor-target id="v310">
+<doc-anchor-target id="v3100">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v310">#</doc-anchor-trigger>
-        <span>v3.10</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v3100">#</doc-anchor-trigger>
+        <span>v3.10.0</span>
     </h2>
 </doc-anchor-target>
 <dl>
@@ -422,10 +464,10 @@
 <dd>Support for custom <a href="https://obsidian.md/" class="outbound" target="_blank"><span>Obsidian</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> style anchor points using <code translate="no" v-pre>^anchor</code> syntax for block references. Enables wiki-style block linking and referencing.</dd>
 </dl>
 <hr>
-<doc-anchor-target id="v39">
+<doc-anchor-target id="v390">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v39">#</doc-anchor-trigger>
-        <span>v3.9</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v390">#</doc-anchor-trigger>
+        <span>v3.9.0</span>
     </h2>
 </doc-anchor-target>
 <dl>
@@ -447,10 +489,10 @@
 <dd>Automatic conversion of HTML <code translate="no" v-pre>details</code> elements into Retype Panel components to ensure seamless integration with other platforms, such as GitHub.</dd>
 </dl>
 <hr>
-<doc-anchor-target id="v38">
+<doc-anchor-target id="v380">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#v38">#</doc-anchor-trigger>
-        <span>v3.8</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#v380">#</doc-anchor-trigger>
+        <span>v3.8.0</span>
     </h2>
 </doc-anchor-target>
 <dl>
@@ -548,7 +590,7 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-12T09:06:38" title="2026-03-12" data-absolute-label="Last updated on 2026-03-12" data-absolute-label-html="Last updated on 2026-03-12" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-12T09:20:36" title="2026-03-12" data-absolute-label="Last updated on 2026-03-12" data-absolute-label-html="Last updated on 2026-03-12" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-03-12
                     </time>
                 </div>
