@@ -9,12 +9,6 @@ You can find which version you have installed by running the command [`retype --
 
 The entire release archive of Retype is available on [NPM](https://www.npmjs.com/package/retypeapp) and [NuGet](https://nuget.org/packages/retypeapp).
 
-Retype does not have a fixed release cycle:
-
-- Patch releases are released as needed.
-- Minor version releases always contain new features, with a typical time frame of 2 to 4 months in between.
-- Major version releases will be announced well ahead of time and will go through multiple pre-release phases.
-
 !!!
 Do have a suggestion for a new feature in Retype? Please open an [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
 !!!
