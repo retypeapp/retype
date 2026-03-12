@@ -10,6 +10,8 @@ The "Last updated" label shows readers when a page was last refreshed.
 
 You do not add this component with markdown syntax. Retype renders it automatically in the page footer when [`lastUpdated`](/configuration/project.md#lastupdated) is configured.
 
+This component is Retype [!badge PRO](/pro/pro.md) only.
+
 Retype can get the date automatically from the Git commit metadata, or you can set the values manually in page metadata.
 
 ---

@@ -24,16 +24,24 @@ Build more pages and unlock powerful **Pro** only features.
 | Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | Unlimited | Unlimited | Unlimited |
 | Commercial use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | Open source use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Stacked](/configuration/project.md#nav) nav mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] Color [scheme](/configuration/project.md#scheme) mode (dark vs light) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [[Backlinks]] component | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [Protected](/configuration/page.md#protected) pages and folders | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Custom themes](/guides/themes.md) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Custom UI labels](/configuration/project.md#labels) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Default color scheme](/configuration/project.md#scheme) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Table of Contents](/configuration/project.md#toc) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] Nav [icon](/configuration/project.md#icons) customization | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation customization | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Last updated](/components/last-updated.md) label | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [`nav.badge`](/configuration/page.md#nav-badge) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Navigation icon](/configuration/project.md#icons) control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [protected](/configuration/page.md#protected) pages | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [`branding.baseColor`](/configuration/project.md#basecolor) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Search](/configuration/project.md#search-exclude) filtering | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Stack](/configuration/project.md#nav-mode) navigation mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] Strict [build](/guides/cli.md) mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Table of contents](/configuration/project.md#toc) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | Future Retype Pro only features | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 
 ## :icon-question: Questions & Answers
