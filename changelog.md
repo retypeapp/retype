@@ -29,6 +29,8 @@ Expected early Q2 2026.
 
 There were **22 changes** in Retype 4.2.0.
 
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v420) for highlights.
+
 +++ New :icon-shield-check:
 
 1. [!badge PRO](/pro/pro.md) New [`Last updated`](/components/last-updated.md) page label, see [#383](https://github.com/retypeapp/retype/discussions/383)
@@ -67,6 +69,8 @@ There were **22 changes** in Retype 4.2.0.
 **Released:** [2026-03-01](https://github.com/retypeapp/retype/releases/tag/v4.1.0)
 
 There were **8 changes** in Retype 4.1.0.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v410) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -147,7 +151,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v400) for highlights.
 
 There were **15 changes** in Retype `v3.12.0`. 
 
-See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v312) for highlights.
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v3120) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -182,7 +186,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v312) for highlights.
 
 There were **15 changes** in Retype `v3.11.0`. 
 
-See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v311) for highlights.
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v3110) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -219,7 +223,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v311) for highlights.
 
 There were **13 changes** in `v3.10.0`.
 
-See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v310) for highlights.
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v3100) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -255,7 +259,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v310) for highlights.
 
 There were **19 changes** in Retype `v3.9.0`.
 
-See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v39) for highlights.
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v390) for highlights.
 
 +++ New :icon-shield-check:
 
@@ -293,7 +297,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v39) for highlights.
 
 There were **16 changes** in Retype `v3.8.0`.
 
-See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v38) for highlights.
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v380) for highlights.
 
 +++ New :icon-shield-check:
 

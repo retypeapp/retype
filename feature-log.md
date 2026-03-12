@@ -80,6 +80,44 @@ Strict [build](/guides/cli.md) mode
 
 ---
 
+## v4.2.0
+
+[!badge PRO] [Last updated](/components/last-updated.md) label
+: Automatic "Last updated" date and author footer for each page, sourced from Git commit metadata. Configurable at [project](/configuration/project.md#lastupdated) and [page](/configuration/page.md#lastupdated) levels with control over date source (author vs committer) and display format.
+
+[!badge PRO] [Custom UI labels](/configuration/project.md#labels)
+: Override any built-in UI string using the `labels` project setting. Supports per-locale overrides and integrates with Retype's templating system via `project.labels`, see [#781](https://github.com/retypeapp/retype/discussions/781).
+
+[Blog RSS](/configuration/project.md#blog-rss) feed configuration
+: New `blog.rss` project settings for configuring the RSS feed `maxResults`, `title`, `description`, `copyright`, and `imageUrl`. The feed link is automatically added to all pages when a blog exists, see [#747](https://github.com/retypeapp/retype/issues/747).
+
+[`created`](/configuration/page.md#created) and [`lastUpdated`](/configuration/page.md#lastupdated) page settings
+: Set a fixed creation date or last updated date directly in page frontmatter. Useful for migrated content or pages where Git history does not reflect the true dates.
+
+`compact` layout for [[Card]] component
+: New compact card layout for displaying multiple wikilink cards in a tight list format. Supports the wikilink list pairs syntax for quick card group creation, see [docs](/components/card.md#list-pair-cards).
+
+[Search filtering](/configuration/project.md#search-exclude)
+: New `search.exclude` and `search.include` project settings to explicitly control which pages, folders, or path patterns appear in search results, see [#258](https://github.com/retypeapp/retype/discussions/258).
+
+[`retype stop`](/guides/cli.md#retype-stop) command
+: New CLI command to stop a running `retype start` development server process.
+
+---
+
+## v4.1.0
+
+New search experience
+: Improved search ranking, result UI, and keyboard navigation. Code blocks are now indexed and included in search results, see [#680](https://github.com/retypeapp/retype/discussions/680).
+
+[`blog.layout`](/configuration/project.md#blog-layout) setting
+: New project setting to configure the default layout for blog posts. Set a consistent layout across all posts without having to specify it in each page's frontmatter, see [#729](https://github.com/retypeapp/retype/discussions/729).
+
+Unicode icon support
+: Set a unicode character directly on any `icon` property in page frontmatter or project configuration, see [#785](https://github.com/retypeapp/retype/discussions/785).
+
+---
+
 ## v4.0.0
 
 [[Card]] component
@@ -109,7 +147,7 @@ Question variant for [[Button]] and [[Badge]]
 Library and dependency upgrades
 : Complete upgrade to the latest versions of all libraries and dependencies, including performance improvements and security updates.
 
-## v3.12
+## v3.12.0
 
 [[Backlinks]] component
 : Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping users discover related content. Configure at [project](/configuration/project.md#backlinks) and [page](/configuration/page.md#backlinks) levels with `enabled`, `title`, and `maxResults` settings.
@@ -137,7 +175,7 @@ Heading theme variables
 
 ---
 
-## v3.11
+## v3.11.0
 
 Custom themes
 : Comprehensive [[theme variables]] customization for both [light](/configuration/project.md#theme-base) and [dark](/configuration/project.md#theme-dark) modes, see [docs](/configuration/project.md#theme), [Themes](/guides/themes.md) guide, and [[Theme Variables]].
@@ -171,7 +209,7 @@ Footer template support
 
 ---
 
-## v3.10
+## v3.10.0
 
 Next/Previous navigation control
 : Configure visibility and sequencing of `Next/Previous` navigation buttons. Configure at project, page, and folder levels with `show`, `hide`, and `exclude` modes, see [blog post](/blog/2025-06-09-whats-new-in-retype-v310.md), [Project](/configuration/project.md#nextprev) settings, [Page](/configuration/page.md#nextprev) settings, and [Folder](/configuration/folder.md#nextprev) settings.
@@ -196,7 +234,7 @@ Custom Anchors
 
 ---
 
-## v3.9
+## v3.9.0
 
 Navigation icon settings
 : Control which navigation items show icons with [`nav.icons.mode`](/configuration/project.md#icons) setting. Options include: `all`, `folders`, `pages`, `top`, `none`.
@@ -224,7 +262,7 @@ Details/summary conversion
 
 ---
 
-## v3.8
+## v3.8.0
 
 Stack navigation mode
 : Transform top-level folders into visually distinct stacked blocks. Better organization and visual hierarchy for complex documentation sites, Configure at project or page level, see [blog post](/blog/2025-05-04-whats-new-in-retype-v38.md), [Project](/configuration/project.md#nav-mode) settings, and [Page](/configuration/page.md#nav-mode) settings.
