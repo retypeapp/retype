@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826613945129">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826643647794">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -33,14 +33,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826613945129" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0.826643647794" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826613945129" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826643647794" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826613945129" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826643647794" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826613945129" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0.826643647794" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -271,6 +271,54 @@
 </div>
 <p>Please also check out the <a href="/changelog/">Changelog</a> for a full summary of changes in each release.</p>
 <hr>
+<doc-anchor-target id="pro-features">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-features">#</doc-anchor-trigger>
+        <span>Pro features</span>
+    </h2>
+</doc-anchor-target>
+<p>The following features require a Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> or Enterprise license.</p>
+<dl>
+<dt><a href="/components/backlinks/">Backlinks</a> component</dt>
+<dd>Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping readers discover related content. Configurable at <a href="/configuration/project/#backlinks">project</a> and <a href="/configuration/page/#backlinks">page</a> levels.</dd>
+<dt><a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a> setting</dt>
+<dd>Quick method to set a brand base color without full theme configuration. Applies the color to the left navigation and other key UI elements.</dd>
+<dt><a href="/configuration/project/#breadcrumb">Breadcrumb</a> navigation</dt>
+<dd>Add breadcrumb navigation trails to pages with the <code translate="no" v-pre>breadcrumb</code> project setting. Configurable at <a href="/configuration/project/#breadcrumb">project</a> and <a href="/configuration/page/#breadcrumb">page</a> levels.</dd>
+<dt><a href="/guides/themes/">Custom themes</a></dt>
+<dd>Full customization of your site&#x27;s visual appearance through <a href="/configuration/theme-variables/">Theme Variables</a> for both light and dark modes. Override colors, typography, and other design tokens via the <code translate="no" v-pre>theme</code> project setting.</dd>
+<dt><a href="/configuration/project/#labels">Custom UI labels</a></dt>
+<dd>Override any built-in UI string (search placeholders, table of contents heading, and more) using the <code translate="no" v-pre>labels</code> project setting. Supports per-locale overrides and integrates with Retype&#x27;s templating system.</dd>
+<dt><a href="/configuration/project/#scheme">Default color scheme</a> setting</dt>
+<dd>Control whether the site renders in <code translate="no" v-pre>light</code>, <code translate="no" v-pre>dark</code>, or <code translate="no" v-pre>system</code> mode by default using the <code translate="no" v-pre>scheme.mode</code> project setting. Without a Pro key the site always follows the visitor&#x27;s system preference.</dd>
+<dt><a href="/configuration/project/#hub">Hub</a> link</dt>
+<dd>Add a back-link to a parent hub site in the header using the <code translate="no" v-pre>hub</code> project setting. Displays a <code translate="no" v-pre>&lt;</code> link alongside the project logo for navigating back to a central documentation portal.</dd>
+<dt><a href="/components/last-updated/">Last updated</a> label</dt>
+<dd>Display an automatic &quot;Last updated&quot; date and author in the page footer, sourced from Git commit metadata. Configurable at <a href="/configuration/project/#lastupdated">project</a> and <a href="/configuration/page/#lastupdated">page</a> levels.</dd>
+<dt><a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a> setting</dt>
+<dd>Add a badge to any page&#x27;s entry in the left sidebar navigation. Supports all badge variants and the pipe shorthand notation.</dd>
+<dt><a href="/configuration/project/#icons">Navigation icon</a> control</dt>
+<dd>Show or hide navigation icons for all, some, or no items with the <code translate="no" v-pre>nav.icons.mode</code> setting. Options include <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, and <code translate="no" v-pre>none</code>.</dd>
+<dt><a href="/configuration/project/#nextprev">Next/Previous</a> navigation control</dt>
+<dd>Configure the visibility and sequencing of Next and Previous navigation buttons. Supports <code translate="no" v-pre>show</code>, <code translate="no" v-pre>hide</code>, and <code translate="no" v-pre>exclude</code> modes at <a href="/configuration/project/#nextprev">project</a>, <a href="/configuration/page/#nextprev">page</a>, and folder levels.</dd>
+<dt><a href="/configuration/project/#outbound">Outbound</a> links</dt>
+<dd>Automatically annotate and style all external outbound links with a trailing icon and new-tab behaviour. Control which domains are treated as outbound and customize the icon, target, and exclusions.</dd>
+<dt><a href="/configuration/page/#private">Private</a> and <a href="/configuration/page/#protected">protected</a> pages</dt>
+<dd>Restrict access to pages and folders using <code translate="no" v-pre>visibility: private</code> or <code translate="no" v-pre>visibility: protected</code>. Private pages are excluded from navigation, search, and the generated website. Protected pages are hidden from navigation and search but remain accessible via direct URL.</dd>
+<dt>Remove <a href="/configuration/project/#poweredbyretype">Powered by Retype</a> branding</dt>
+<dd>Remove the <code translate="no" v-pre>Powered by Retype</code> footer branding by setting <code translate="no" v-pre>poweredByRetype: false</code> in your project <code translate="no" v-pre>retype.yml</code>.</dd>
+<dt><a href="/configuration/project/#search-exclude">Search</a> filtering</dt>
+<dd>Fine-grained control over what content appears in search results. Use <code translate="no" v-pre>search.exclude</code> to remove pages, folders, or path patterns from the index, and <code translate="no" v-pre>search.include</code> to re-include specific paths within an excluded set.</dd>
+<dt><a href="/configuration/project/#nav-mode">Stack</a> navigation mode</dt>
+<dd>Transform top-level folders in the sidebar into visually distinct stacked blocks with <code translate="no" v-pre>nav.mode: stack</code>. Configurable at <a href="/configuration/project/#nav-mode">project</a> and <a href="/configuration/page/#nav-mode">page</a> levels.</dd>
+<dt>Strict <a href="/guides/cli/">build</a> mode</dt>
+<dd>The <code translate="no" v-pre>--strict</code> flag on <code translate="no" v-pre>retype build</code> returns a non-zero exit code when the build produces any errors or warnings. Useful for enforcing quality gates in CI pipelines.</dd>
+<dt><a href="/configuration/project/#toc">Table of contents</a></dt>
+<dd>Enable and configure an in-page table of contents with the <code translate="no" v-pre>toc</code> project setting. Configurable at <a href="/configuration/project/#toc">project</a> and <a href="/configuration/page/#toc">page</a> levels, with control over heading depth and label.</dd>
+</dl>
+<hr>
 <doc-anchor-target id="v400">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#v400">#</doc-anchor-trigger>
@@ -304,9 +352,7 @@
     </h2>
 </doc-anchor-target>
 <dl>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> <a href="/components/backlinks/">Backlinks</a> component</dt>
+<dt><a href="/components/backlinks/">Backlinks</a> component</dt>
 <dd>Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping users discover related content. Configure at <a href="/configuration/project/#backlinks">project</a> and <a href="/configuration/page/#backlinks">page</a> levels with <code translate="no" v-pre>enabled</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>maxResults</code> settings.</dd>
 <dt>Color preview chips</dt>
 <dd>Automatic color preview chips for hexadecimal color codes in your documentation. When you write a hex color like <code translate="no" class="whitespace-nowrap" v-pre>#FF5733<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#ff5733;"></span></code>, Retype automatically displays a small color swatch next to it for instant visual reference.</dd>
@@ -331,17 +377,11 @@
     </h2>
 </doc-anchor-target>
 <dl>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> Custom themes</dt>
+<dt>Custom themes</dt>
 <dd>Comprehensive <a href="/configuration/theme-variables/">theme variables</a> customization for both <a href="/configuration/project/#theme-base">light</a> and <a href="/configuration/project/#theme-dark">dark</a> modes, see <a href="/configuration/project/#theme">docs</a>, <a href="/guides/themes/">Themes</a> guide, and <a href="/configuration/theme-variables/">Theme Variables</a>.</dd>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> <a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a></dt>
+<dt><a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a></dt>
 <dd>Quick method to set the base brand color without full <a href="/configuration/project/#theme">theme</a> configuration, see <a href="/configuration/project/#basecolor">docs</a>.</dd>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> <a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a></dt>
+<dt><a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a></dt>
 <dd>Add a badge to navigation items in the left sidebar, see <a href="/configuration/page/#nav-badge">docs</a>.</dd>
 <dt>Three-way switcher</dt>
 <dd>Enhanced color scheme switcher with <code translate="no" v-pre>Light</code>, <code translate="no" v-pre>Dark</code>, and <code translate="no" v-pre>System</code> options. Allows users to return to system preference after manual selection.</dd>
@@ -366,9 +406,7 @@
     </h2>
 </doc-anchor-target>
 <dl>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> Next/Previous navigation control</dt>
+<dt>Next/Previous navigation control</dt>
 <dd>Configure visibility and sequencing of <code translate="no" v-pre>Next/Previous</code> navigation buttons. Configure at project, page, and folder levels with <code translate="no" v-pre>show</code>, <code translate="no" v-pre>hide</code>, and <code translate="no" v-pre>exclude</code> modes, see <a href="/blog/2025-06-09-whats-new-in-retype-v310/">blog post</a>, <a href="/configuration/project/#nextprev">Project</a> settings, <a href="/configuration/page/#nextprev">Page</a> settings, and <a href="/configuration/folder/#nextprev">Folder</a> settings.</dd>
 <dt>GitHub Pages community key</dt>
 <dd>Retype Pro Community Key unlocks all Pro features for GitHub Pages projects. No cost, no strings attached for <code translate="no" v-pre>*.github.io</code> domains, with up to 1000 pages with all <a href="/pro/">Pro</a> features included, see <a href="/blog/2025-06-06-new-github-pages-community-key/">blog post</a> and <a href="/hosting/github-pages/">GitHub Pages</a> setup.</dd>
@@ -391,13 +429,9 @@
     </h2>
 </doc-anchor-target>
 <dl>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> Navigation icon settings</dt>
+<dt>Navigation icon settings</dt>
 <dd>Control which navigation items show icons with <a href="/configuration/project/#icons"><code translate="no" v-pre>nav.icons.mode</code></a> setting. Options include: <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, <code translate="no" v-pre>none</code>.</dd>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> Default color scheme</dt>
+<dt>Default color scheme</dt>
 <dd>Set project&#x27;s default color scheme with <a href="/configuration/project/#scheme"><code translate="no" v-pre>scheme.mode</code></a> configuration. Options include: <code translate="no" v-pre>system</code>, <code translate="no" v-pre>dark</code>, <code translate="no" v-pre>light</code>.</dd>
 <dt>Print-Friendly Stylesheets</dt>
 <dd>Comprehensive print stylesheet for professional PDF and paper output. Removes navigation, optimizes typography, prevents awkward page breaks. Shows full URLs for external links in print.</dd>
@@ -420,9 +454,7 @@
     </h2>
 </doc-anchor-target>
 <dl>
-<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>PRO</span>
-</span> Stack navigation mode</dt>
+<dt>Stack navigation mode</dt>
 <dd>Transform top-level folders into visually distinct stacked blocks. Better organization and visual hierarchy for complex documentation sites, Configure at project or page level, see <a href="/blog/2025-05-04-whats-new-in-retype-v38/">blog post</a>, <a href="/configuration/project/#nav-mode">Project</a> settings, and <a href="/configuration/page/#nav-mode">Page</a> settings.</dd>
 <dt>WikiLinks Support</dt>
 <dd>Comprehensive wiki-style linking with double square brackets: <code translate="no" v-pre>[[Page Name]]</code>. Intelligent link resolution that handles filename variations and support for custom labels using the syntax <code translate="no" v-pre>[[page|Custom Label]]</code> for text links and <code translate="no" v-pre>![[image.jpg|Alt text]]</code> for image wikilinks.</dd>
@@ -516,8 +548,8 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-02-24T21:31:42" title="2026-02-24" data-absolute-label="Last updated on 2026-02-24" data-absolute-label-html="Last updated on 2026-02-24" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-02-24
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-12T09:06:38" title="2026-03-12" data-absolute-label="Last updated on 2026-03-12" data-absolute-label-html="Last updated on 2026-03-12" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-12
                     </time>
                 </div>
 
