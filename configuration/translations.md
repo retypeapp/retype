@@ -138,6 +138,7 @@ The following table lists all the keys and default values that can be customized
 | `ContentFooter_LastUpdated_AbsoluteByTemplate` | {{ project.labels["ContentFooter_LastUpdated_AbsoluteByTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_AbsoluteByTemplate"] }} |
 | `ContentFooter_LastUpdated_RelativeTemplate` | {{ project.labels["ContentFooter_LastUpdated_RelativeTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_RelativeTemplate"] }} |
 | `ContentFooter_LastUpdated_RelativeByTemplate` | {{ project.labels["ContentFooter_LastUpdated_RelativeByTemplate"] }} | {{ project.labels.es["ContentFooter_LastUpdated_RelativeByTemplate"] }} |
+| `Default_DateFormat` | {{ project.labels["Default_DateFormat"] }} | {{ project.labels.es["Default_DateFormat"] }} |
 | `Editor_CancelButton_Label` | {{ project.labels["Editor_CancelButton_Label"] }} | {{ project.labels.es["Editor_CancelButton_Label"] }} |
 | `Editor_EditButton_Label` | {{ project.labels["Editor_EditButton_Label"] }} | {{ project.labels.es["Editor_EditButton_Label"] }} |
 | `Editor_SaveButton_Label` | {{ project.labels["Editor_SaveButton_Label"] }} | {{ project.labels.es["Editor_SaveButton_Label"] }} |
@@ -188,7 +189,6 @@ The following table lists all the keys and default values that can be customized
 | `Search_Input_Placeholder` | {{ project.labels["Search_Input_Placeholder"] }} | {{ project.labels.es["Search_Input_Placeholder"] }} |
 | `Search_Navigate_Label` | {{ project.labels["Search_Navigate_Label"] }} | {{ project.labels.es["Search_Navigate_Label"] }} |
 | `Search_NoResults_Label` | {{ project.labels["Search_NoResults_Label"] }} | {{ project.labels.es["Search_NoResults_Label"] }} |
-| `Search_Navigate_Label` | {{ project.labels["Search_Navigate_Label"] }} | {{ project.labels.es["Search_Navigate_Label"] }} |
 | `Search_Open_Label` | {{ project.labels["Search_Open_Label"] }} | {{ project.labels.es["Search_Open_Label"] }} |
 | `Search_Close_Label` | {{ project.labels["Search_Close_Label"] }} | {{ project.labels.es["Search_Close_Label"] }} |
 | `Search_TopResults_Label` | {{ project.labels["Search_TopResults_Label"] }} | {{ project.labels.es["Search_TopResults_Label"] }} |
