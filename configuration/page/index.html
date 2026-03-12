@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826581040888">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826600855773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0.826600855773" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826581040888" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826600855773" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0.826600855773" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -63,7 +63,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2-pre</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -724,17 +724,85 @@ created: 2024-05-14T09:00</code></pre>
         <span>lastUpdated</span>
     </h2>
 </doc-anchor-target>
-<doc-panel id="lastupdated--string">
-    <template #title>lastUpdated : <code translate="no" v-pre>string</code></template>
-<p>A custom last updated date for this page.</p>
-<p>Use <code translate="no" v-pre>lastUpdated</code> when you want readers to see that a page has been reviewed or refreshed after it was first published.</p>
+<doc-panel id="lastupdated--string-or-object">
+    <template #title>lastUpdated : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>object</code></template>
+<p>The <code translate="no" v-pre>lastUpdated</code> page setting controls the last updated footer metadata for a single page.</p>
+<p>Use a string when you want to set a manual date. Use an object when you want to set both manual values or configure Git-backed values for just one page.</p>
 <p>The date must be provided in the <code translate="no" v-pre>yyyy-mm-dd</code> ISO format or <code translate="no" v-pre>yyyy-mm-ddThh:mm</code> if you want to include a date and a time.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated: 2026-03-01
-lastUpdated: 2026-03-01T16:45</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+lastUpdated: 2026-03-01
+---</code></pre>
 </doc-codeblock></div>
+<p>To include time, use a value such as <code translate="no" v-pre>lastUpdated: 2026-03-01T16:45</code>.</p>
 <p>This setting is often used alongside <doc-anchor-trigger to="#created"><code translate="no" v-pre>created</code></doc-anchor-trigger> so a page can show both when it first went live and when it was last updated. See also <doc-anchor-trigger to="#date"><code translate="no" v-pre>date</code></doc-anchor-trigger>.</p>
 </doc-panel>
+<doc-anchor-target id="manual-date-and-by">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#manual-date-and-by">#</doc-anchor-trigger>
+        <span>Manual date and by</span>
+    </h3>
+</doc-anchor-target>
+<p>To set both values manually on one page, use the nested <code translate="no" v-pre>date</code> and <code translate="no" v-pre>by</code> settings:</p>
+<div id="manual-date-and-by-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+lastUpdated:
+  date: 2026-03-12
+  by: Documentation Team
+---</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="automatic-git-backed-values">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#automatic-git-backed-values">#</doc-anchor-trigger>
+        <span>Automatic Git-backed values</span>
+    </h3>
+</doc-anchor-target>
+<p>To configure the <a href="/components/last-updated/">Last updated</a> component behavior, use the <code translate="no" v-pre>enabled</code> and <code translate="no" v-pre>source</code> settings:</p>
+<div id="automatic-git-backed-values-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+lastUpdated:
+  date:
+    enabled: true # default is true. false to disable
+    source: author
+  by:
+    enabled: true
+    source: committer
+---</code></pre>
+</doc-codeblock></div>
+<p>Supported <code translate="no" v-pre>source</code> values are <code translate="no" v-pre>author</code> and <code translate="no" v-pre>committer</code>.</p>
+<p>Automatic values require Git history for the page. If your build has no Git history, or only a shallow clone, Retype skips the generated footer values.</p>
+<doc-anchor-target id="lastupdatedby-alias">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdatedby-alias">#</doc-anchor-trigger>
+        <span>lastUpdatedBy alias</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code translate="no" v-pre>lastUpdatedBy</code> page setting is also supported as a backward-compatible alias for setting a manual <code translate="no" v-pre>by</code> value.</p>
+<div id="lastupdatedby-alias-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+lastUpdated: 2026-03-12
+lastUpdatedBy: Documentation Team
+---</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Manual page values and generated Git values are both supported, but they are not mixed on the same page.</p>
+<p>If you manually set either <code translate="no" v-pre>lastUpdated</code> or <code translate="no" v-pre>lastUpdatedBy</code>, Retype uses those manual values for that page instead of filling in the missing value from Git.</p>
+<p>See also <a href="/configuration/project/#lastupdated">Project</a> configuration and the <a href="/components/last-updated/">Last Updated</a> component.</p>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="layout">
     <h2>
@@ -1810,6 +1878,17 @@ retype build --password &lt;your-password&gt;</code></pre>
     </a>
 </div>
 <div class="card-compact-container">
+    <a href="/components/last-updated/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.998 2.5A9.503 9.503 0 0 0 3.378 8H5.75a.75.75 0 0 1 0 1.5H2a1 1 0 0 1-1-1V4.75a.75.75 0 0 1 1.5 0v1.697A10.997 10.997 0 0 1 11.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 0 1 1.5-.037 9.5 9.5 0 0 0 9.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5Z"/><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/></svg></span>
+                <span class="card-compact-title">Last Updated</span>
+            </div>
+            <p class="card-compact-description">The "Last updated" label shows readers when a page was last refreshed.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
     <a href="/components/octicons/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
@@ -1843,16 +1922,6 @@ retype build --password &lt;your-password&gt;</code></pre>
     </a>
 </div>
 <div class="card-compact-container">
-    <a href="/blog/2025-06-09-whats-new-in-retype-v310/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v3.10</span>
-            </div>
-            <p class="card-compact-description">We're excited to share the latest release of Retype, packed with features that make documentation more flexible and powerful. This release focuses on</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
     <a href="/blog/2025-05-04-whats-new-in-retype-v38/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
@@ -1877,8 +1946,8 @@ retype build --password &lt;your-password&gt;</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-08T00:45:02" title="2026-03-08" data-absolute-label="Last updated on 2026-03-08" data-absolute-label-html="Last updated on 2026-03-08" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-08
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T20:33:38" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-absolute-label-html="Last updated on 2026-03-11" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-11
                     </time>
                 </div>
 

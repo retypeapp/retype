@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826581040888">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826600855773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0.826600855773" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826581040888" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826600855773" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0.826600855773" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -63,7 +63,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2-pre</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -328,6 +328,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
 
@@ -336,6 +338,21 @@ jobs:
           update-branch: true</code></pre>
 </doc-codeblock></div>
 <p>The above <strong>retype-action.yml</strong> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code translate="no" v-pre>main</code> branch, and then deploy your new Retype powered website to a <code translate="no" v-pre>retype</code> branch.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-tip" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M7.90625 2.15625C4.50944 2.15625 2.15625 4.58563 2.15625 7.54688C2.15625 8.96138 2.76575 9.88281 3.57075 10.8589L3.87837 11.2226C4.19894 11.6021 4.554 12.0218 4.84581 12.4416C5.25406 13.0324 5.61775 13.7296 5.7385 14.5834C5.76728 14.8608 5.68746 15.1386 5.51579 15.3583C5.34413 15.5781 5.09399 15.7228 4.8179 15.7621C4.5418 15.8013 4.26124 15.7321 4.03512 15.5689C3.809 15.4056 3.65493 15.1612 3.60525 14.8867C3.54775 14.4814 3.37094 14.1004 3.07338 13.6692C2.8306 13.3302 2.57055 13.0039 2.29425 12.6917C2.1735 12.5479 2.04556 12.397 1.909 12.2317C1.00769 11.1406 0 9.72613 0 7.54688C0 3.32062 3.39681 0 7.90625 0C12.4157 0 15.8125 3.32062 15.8125 7.54688C15.8125 9.72613 14.8048 11.1406 13.9035 12.2317C13.7669 12.397 13.639 12.5479 13.5183 12.6903C13.2207 13.0424 12.9677 13.3414 12.7406 13.6692C12.4416 14.1004 12.2662 14.4814 12.2087 14.8867C12.1557 15.1584 12.0003 15.3994 11.7747 15.5598C11.5492 15.7202 11.2706 15.7879 10.9965 15.7488C10.7225 15.7096 10.474 15.5667 10.3023 15.3496C10.1306 15.1325 10.0489 14.8577 10.074 14.582C10.1948 13.7296 10.5584 13.0324 10.9667 12.4416C11.2585 12.0218 11.6136 11.6021 11.9341 11.2226C12.0419 11.0961 12.1454 10.9739 12.2403 10.8589C13.0468 9.88281 13.6562 8.96138 13.6562 7.54688C13.6562 4.58563 11.3031 2.15625 7.90625 2.15625ZM4.67188 17.25H11.1406C11.4266 17.25 11.7008 17.3636 11.903 17.5658C12.1052 17.768 12.2188 18.0422 12.2188 18.3281C12.2188 18.6141 12.1052 18.8883 11.903 19.0905C11.7008 19.2927 11.4266 19.4062 11.1406 19.4062H4.67188C4.38594 19.4062 4.11171 19.2927 3.90953 19.0905C3.70734 18.8883 3.59375 18.6141 3.59375 18.3281C3.59375 18.0422 3.70734 17.768 3.90953 17.5658C4.11171 17.3636 4.38594 17.25 4.67188 17.25ZM5.03125 21.9219C5.03125 21.6359 5.14484 21.3617 5.34703 21.1595C5.54921 20.9573 5.82344 20.8438 6.10938 20.8438H9.70312C9.98906 20.8438 10.2633 20.9573 10.4655 21.1595C10.6677 21.3617 10.7812 21.6359 10.7812 21.9219C10.7812 22.2078 10.6677 22.482 10.4655 22.6842C10.2633 22.8864 9.98906 23 9.70312 23H6.10938C5.82344 23 5.54921 22.8864 5.34703 22.6842C5.14484 22.482 5.03125 22.2078 5.03125 21.9219Z" />
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The <code translate="no" v-pre>fetch-depth: 0</code> setting tells GitHub Actions to download the full Git history instead of a shallow clone. This is required if you want Retype to generate automatic <a href="/components/last-updated/"><code translate="no" v-pre>lastUpdated</code></a> footer values from Git commit metadata.</p>
+        </div>
+    </div>
+</div>
 <p>If the <code translate="no" v-pre>retype</code> branch is not available, the GitHub Action will automatically create the branch.</p>
 <p>If the default branch in your repo is <code translate="no" v-pre>master</code>, change <code translate="no" v-pre>- main</code> to <code translate="no" v-pre>- master</code>. If the docs project was within a <code translate="no" v-pre>docs</code> branch, change <code translate="no" v-pre>- main</code> to <code translate="no" v-pre>- docs</code>. The following snippet demonstrates setting the branch to <code translate="no" v-pre>master</code>.</p>
 <div id="step-1-add-retype-actionyml-workflow-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -343,14 +360,14 @@ jobs:
     branches:
       - master</code></pre>
 </doc-codeblock></div>
-<p>Commit your <strong>.github/workflows/retype-action.yml</strong> file and push to your repo.</p>
+<p>Commit your <code translate="no" v-pre>.github/workflows/retype-action.yml</code> file and push to your repo.</p>
 <doc-anchor-target id="retype_key">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#retype_key">#</doc-anchor-trigger>
         <span>RETYPE_KEY</span>
     </h3>
 </doc-anchor-target>
-<p>If your project requires a Retype key, that key can be configured by adding a <a href="/configuration/envvars/#retype_key"><code translate="no" v-pre>RETYPE_KEY</code></a> secret to your repository settings and the corresponding <code translate="no" v-pre>env</code> configuration to your project <strong>.github/workflows/retype-action.yml</strong> file.</p>
+<p>If your project requires a Retype key, that key can be configured by adding a <a href="/configuration/envvars/#retype_key"><code translate="no" v-pre>RETYPE_KEY</code></a> secret to your repository settings and the corresponding <code translate="no" v-pre>env</code> configuration to your project <code translate="no" v-pre>.github/workflows/retype-action.yml</code> file.</p>
 <div id="retype_key-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
   env:
@@ -393,6 +410,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
         env:
@@ -426,7 +445,7 @@ jobs:
         </div>
     </div>
 </div>
-<p>A password can be configured by adding a <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a> secret to your repository settings and the following <code translate="no" v-pre>env</code> configuration to your project <strong>.github/workflows/retype-action.yml</strong> file.</p>
+<p>A password can be configured by adding a <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a> secret to your repository settings and the following <code translate="no" v-pre>env</code> configuration to your project <code translate="no" v-pre>.github/workflows/retype-action.yml</code> file.</p>
 <div id="retype_password-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
   env:
@@ -517,6 +536,17 @@ jobs:
     </a>
 </div>
 <div class="card-compact-container">
+    <a href="/components/last-updated/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.998 2.5A9.503 9.503 0 0 0 3.378 8H5.75a.75.75 0 0 1 0 1.5H2a1 1 0 0 1-1-1V4.75a.75.75 0 0 1 1.5 0v1.697A10.997 10.997 0 0 1 11.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 0 1 1.5-.037 9.5 9.5 0 0 0 9.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5Z"/><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/></svg></span>
+                <span class="card-compact-title">Last Updated</span>
+            </div>
+            <p class="card-compact-description">The "Last updated" label shows readers when a page was last refreshed.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
     <a href="/blog/2025-06-06-new-github-pages-community-key/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
@@ -574,8 +604,8 @@ jobs:
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-02-23T14:30:45" title="2026-02-23" data-absolute-label="Last updated on 2026-02-23" data-absolute-label-html="Last updated on 2026-02-23" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-02-23
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T20:19:24" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-absolute-label-html="Last updated on 2026-03-11" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-11
                     </time>
                 </div>
 

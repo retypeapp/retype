@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826581040888">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826600855773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -33,15 +33,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0.826600855773" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826581040888" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826600855773" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0.826600855773" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -63,7 +63,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2-pre</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -270,7 +270,7 @@
     </div>
     <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
         <span>retype.yml</span>
-        <span class="inline-block ml-2">13.5KB</span>
+        <span class="inline-block ml-2">15.3KB</span>
     </div>
     <a href="/static/retype.yml" class="absolute block inset-0" target="_blank" download="retype.yml"></a>
 </div>
@@ -306,6 +306,16 @@ hub:
   link: https://example.com/  # Set a URL to enable the Hub link
   alt: Go to example.com      # Tooltip text for the hub link
   target: blank               # Open in a new tab
+
+# -----------------------------------------------------------------------------
+
+lastUpdated:
+  date:
+    enabled: true             # Generate the last updated date in the footer
+    source: committer         # Choose: author | committer
+  by:
+    enabled: false            # Generate who made the change
+    source: committer         # Choose: author | committer
 
 # -----------------------------------------------------------------------------
 
@@ -419,6 +429,13 @@ blog:
   maxResults: 100             # Max total posts across all summary pages
   title: &quot;Blog&quot;               # Custom heading for the blog summary page
   base: blog                  # URL base path for blog summary pages
+  layout: page                # Default layout for blog posts
+  rss:
+    maxResults: 25            # Max posts included in the generated RSS feed
+    title: Project Updates    # Custom RSS feed title
+    description: Latest project updates and release notes
+    copyright: &quot;© Copyright {{ year }}. All rights reserved.&quot;
+    imageUrl: /static/feed.png
 
 # -----------------------------------------------------------------------------
 
@@ -503,6 +520,15 @@ locale: en                    # Primary language for the generated website
 
 # -----------------------------------------------------------------------------
 
+labels:                       # Override built-in UI labels and messages
+  default:
+    Page_Tag_Title: Tag
+    default-dateformat: &quot;MMM d, yyyy&quot;
+  es:
+    Page_Tag_Title: Etiqueta
+
+# -----------------------------------------------------------------------------
+
 markdown:                     # Markdown configuration options
   lineBreaks: soft            # Switch between `soft` and `hard` line breaks
 
@@ -514,7 +540,17 @@ meta:
 
 # -----------------------------------------------------------------------------
 
+data:                         # Custom data available in templates
+  productVersion: v1.0        # Example:
+  productName: Widgets        #   {{ productName }} --&gt; &quot;Widgets&quot;
+  company:                    #
+    name: Example             #   {{ company.name }} --&gt; &quot;Example&quot;
+    foundedAt: 2020           #   {{ page.data.company.foundedAt }} --&gt; &quot;2020&quot;
+
+# -----------------------------------------------------------------------------
+
 search:                       # Custom configuration of the website search
+  excludeCode: false          # Exclude code blocks from the search index
   hotkeys:
     - &quot;/&quot;                     # Keyboard key to set focus in the search field
                               # Default is &quot;k&quot;
@@ -523,6 +559,7 @@ search:                       # Custom configuration of the website search
   mode: full                  # The search index creation mode
                               # Options include: full | partial | basic
   noResultsFoundMsg: &quot;No results&quot; # Message when no results are found
+                              # or use labeles.default.Search_NoResults_Label
   placeholder: Search         # Placeholder text used in the input field
   preload: false              # Preload the search index (default: false)
 
@@ -545,6 +582,7 @@ serve:
 start:
   open: false                 # Do not automatically open web browser on start
   pro: false                  # Start project in Pro mode and trial features
+  debounce: 500               # Delay file change reactions, in milliseconds
 
 # -----------------------------------------------------------------------------
 
@@ -562,19 +600,22 @@ templating:
                               # If true, Retype is incompatible with the
                               # GitBook style of component configuration
   loopLimit: 1000             # Max loop iterations allowed in templates
-  # namespace: null           # Optional namespace prefix for template variables
-                              # Example: &quot;retype&quot; makes vars {{ retype.project.* }}
+  namespace: companyx         # Optional namespace prefix for template variables
+                              # Example:
+                              #   {{ companyx.project.* }} and
+                              #   {{ companyx.page.* }}
 
 # -----------------------------------------------------------------------------
 
-# Table of Contents configuration (Pro only)
 toc:                          # Table of Contents configuration (Pro only)
   depth: 2-3                  # Heading depth to include in right sidebar
   label: &quot;On this page&quot;       # Custom label for the Table of Contents
 
 # -----------------------------------------------------------------------------
 
-showSidebarFilter: true       # Control visibility of filter component in sidebar</code></pre>
+showSidebarFilter: true       # Control visibility of filter component in sidebar
+
+# -----------------------------------------------------------------------------</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826581040888">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826600855773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -37,15 +37,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.2.0.826600855773" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826581040888" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826581040888" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826600855773" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826600855773" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826581040888" rel="stylesheet">
+    <link href="/static/styles.css?v=4.2.0.826600855773" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -67,7 +67,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2-pre</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -429,6 +429,65 @@ footer:
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+</doc-panel>
+<doc-anchor-target id="branding-colors">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#branding-colors">#</doc-anchor-trigger>
+        <span>colors</span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="colors--object">
+    <template #title>colors : <code translate="no" v-pre>object</code></template>
+<p>Optional branding color overrides.</p>
+<p>Use <code translate="no" v-pre>branding.colors</code> when you want more control over the label styling than the default theme provides.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
+  colors:
+    label:
+      text: &quot;#ffffff&quot;
+      background: &quot;#ff0000&quot;</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="branding-colors-label">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#branding-colors-label">#</doc-anchor-trigger>
+        <span>label</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="label--object">
+    <template #title>label : <code translate="no" v-pre>object</code></template>
+<p>Configure colors for the optional branding label shown beside the project title or logo.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>text</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Custom text color for the branding label.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>background</code></td>
+<td><code translate="no" v-pre>string</code></td>
+<td>Custom background color for the branding label.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
+  colors:
+    label:
+      text: &quot;#ffffff&quot;
+      background: &quot;#ff0000&quot;</code></pre>
+</doc-codeblock></div>
+<p>If either value is omitted, Retype uses the built-in theme styling for that part of the label.</p>
 </doc-panel>
 <doc-anchor-target id="logo">
     <h3>
@@ -1696,6 +1755,154 @@ host: docs.example.com/js/plausible.js</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
+<doc-anchor-target id="labels">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#labels">#</doc-anchor-trigger>
+        <span>labels</span>
+    </h2>
+</doc-anchor-target>
+<doc-panel id="labels--object">
+    <template #title>labels : <code translate="no" v-pre>object</code></template>
+<p>Customize built-in UI labels and messages for your project.</p>
+<p>The <code translate="no" v-pre>labels</code> config is organized into named collections. Each collection contains one or more label keys, such as <code translate="no" v-pre>search_input_placeholder</code> or <code translate="no" v-pre>toc_contents_label</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">labels:
+  default:
+    search_input_placeholder: Search the docs
+    toc_contents_label: On this page
+
+  fr:
+    search_input_placeholder: Rechercher dans la documentation</code></pre>
+</doc-codeblock></div>
+<p>Use the <code translate="no" v-pre>default</code> collection to override the built-in English defaults and to provide fallback values. Add a collection matching the active <doc-anchor-trigger to="#locale"><code translate="no" v-pre>locale</code></doc-anchor-trigger>, such as <code translate="no" v-pre>fr</code>, when you want to override the built-in wording for that language.</p>
+<p>For supported locales, Retype uses the built-in translation for the active locale and then applies any matching <code translate="no" v-pre>labels.&lt;locale&gt;</code> overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom <code translate="no" v-pre>locale</code> values, Retype uses your configured label collections.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: partner
+
+labels:
+  default:
+    search_input_placeholder: Search docs
+
+  partner:
+    search_input_placeholder: Search partner docs</code></pre>
+</doc-codeblock></div>
+<p>This is useful when you want different wording for a partner portal, support site, or internal handbook without maintaining theme overrides.</p>
+<p>Using the <a href="/templating/project-properties/">template</a> syntax, the labels are also available through <code translate="no" v-pre>project.labels</code>, such as <code translate="no" v-pre>{{ project.labels[&quot;search_input_placeholder&quot;] }}</code>.</p>
+</doc-panel>
+<hr>
+<doc-anchor-target id="lastupdated">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated">#</doc-anchor-trigger>
+        <span>lastUpdated</span>
+    </h2>
+</doc-anchor-target>
+<p>The <code translate="no" v-pre>lastUpdated</code> project configuration controls the automatic last updated footer metadata for pages across the entire project.</p>
+<p>Retype reads Git commit metadata for each page and can render the last updated date and, optionally, who made the change. If the build does not have full Git history, the generated values are skipped.</p>
+<p>The default project behavior is equivalent to:</p>
+<div id="lastupdated-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated:
+  date:
+    enabled: true
+    source: committer
+  by:
+    enabled: false
+    source: committer</code></pre>
+</doc-codeblock></div>
+<p>If you want to set fixed values for one page, use the <a href="/configuration/page/#lastupdated">page</a> <code translate="no" v-pre>lastUpdated</code> configuration instead. Manual page values override the project-level generated values for that page.</p>
+<doc-anchor-target id="lastupdated-date">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-date">#</doc-anchor-trigger>
+        <span>date</span>
+    </h3>
+</doc-anchor-target>
+<p>Controls the automatic last updated <strong>date</strong> in the page footer.</p>
+<doc-anchor-target id="lastupdated-date-enabled">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-date-enabled">#</doc-anchor-trigger>
+        <span>enabled</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="enabled--boolean">
+    <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
+<p>Enable or disable automatic last updated date generation. Default is <code translate="no" v-pre>true</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated:
+  date:
+    enabled: false</code></pre>
+</doc-codeblock></div>
+<p>Set <code translate="no" v-pre>date.enabled: false</code> when you do not want Retype to show a generated last updated date in the footer.</p>
+</doc-panel>
+<doc-anchor-target id="lastupdated-date-source">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-date-source">#</doc-anchor-trigger>
+        <span>source</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="source--string">
+    <template #title>source : <code translate="no" v-pre>string</code></template>
+<p>Choose which Git revision timestamp is used for the last updated date. Supported values are <code translate="no" v-pre>author</code> and <code translate="no" v-pre>committer</code>. Default is <code translate="no" v-pre>committer</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated:
+  date:
+    source: author</code></pre>
+</doc-codeblock></div>
+<p>Use <code translate="no" v-pre>author</code> when the footer should reflect the original author timestamp. Use <code translate="no" v-pre>committer</code> when it should reflect the most recent committed change.</p>
+</doc-panel>
+<doc-anchor-target id="lastupdated-by">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-by">#</doc-anchor-trigger>
+        <span>by</span>
+    </h3>
+</doc-anchor-target>
+<p>Controls the automatic last updated <strong>by</strong> value in the page footer.</p>
+<doc-anchor-target id="lastupdated-by-enabled">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-by-enabled">#</doc-anchor-trigger>
+        <span>enabled</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="enabled--boolean">
+    <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
+<p>Enable or disable automatic last updated by generation. Default is <code translate="no" v-pre>false</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated:
+  by:
+    enabled: true</code></pre>
+</doc-codeblock></div>
+<p>This is off by default, so turn it on only when you want the footer to show who made the change.</p>
+</doc-panel>
+<doc-anchor-target id="lastupdated-by-source">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-by-source">#</doc-anchor-trigger>
+        <span>source</span>
+    </h4>
+</doc-anchor-target>
+<doc-panel id="source--string">
+    <template #title>source : <code translate="no" v-pre>string</code></template>
+<p>Choose which Git revision identity is used for the <code translate="no" v-pre>by</code> value. Supported values are <code translate="no" v-pre>author</code> and <code translate="no" v-pre>committer</code>. Default is <code translate="no" v-pre>committer</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated:
+  by:
+    enabled: true
+    source: author</code></pre>
+</doc-codeblock></div>
+<p>Use <code translate="no" v-pre>author</code> when the footer should show the original author name. Use <code translate="no" v-pre>committer</code> when it should show the person who actually committed the change.</p>
+</doc-panel>
+<doc-anchor-target id="github-actions">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#github-actions">#</doc-anchor-trigger>
+        <span>GitHub Actions</span>
+    </h3>
+</doc-anchor-target>
+<p>If you build in GitHub Actions, fetch the full history so Git-backed <code translate="no" v-pre>lastUpdated</code> values are available:</p>
+<div id="github-actions-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: actions/checkout@v6
+  with:
+    fetch-depth: 0</code></pre>
+</doc-codeblock></div>
+<p><code translate="no" v-pre>fetch-depth: 0</code> tells GitHub Actions to download the full commit history instead of only the most recent commits.</p>
+<p>See also the <a href="/components/last-updated/">Last Updated</a> component, <a href="/configuration/page/#lastupdated">page</a> configuration, and the <a href="/guides/github-actions/">GitHub Actions guide</a>.</p>
+<hr>
 <doc-anchor-target id="links">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#links">#</doc-anchor-trigger>
@@ -1887,41 +2094,6 @@ host: docs.example.com/js/plausible.js</code></pre>
         </div>
     </div>
 </div>
-</doc-panel>
-<hr>
-<doc-anchor-target id="labels">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#labels">#</doc-anchor-trigger>
-        <span>labels</span>
-    </h2>
-</doc-anchor-target>
-<doc-panel id="labels--object">
-    <template #title>labels : <code translate="no" v-pre>object</code></template>
-<p>Customize built-in UI labels and messages for your project.</p>
-<p>The <code translate="no" v-pre>labels</code> config is organized into named collections. Each collection contains one or more label keys, such as <code translate="no" v-pre>search_input_placeholder</code> or <code translate="no" v-pre>toc_contents_label</code>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">labels:
-  default:
-    search_input_placeholder: Search the docs
-    toc_contents_label: On this page
-
-  fr:
-    search_input_placeholder: Rechercher dans la documentation</code></pre>
-</doc-codeblock></div>
-<p>Use the <code translate="no" v-pre>default</code> collection to override the built-in English defaults and to provide fallback values. Add a collection matching the active <doc-anchor-trigger to="#locale"><code translate="no" v-pre>locale</code></doc-anchor-trigger>, such as <code translate="no" v-pre>fr</code>, when you want to override the built-in wording for that language.</p>
-<p>For supported locales, Retype uses the built-in translation for the active locale and then applies any matching <code translate="no" v-pre>labels.&lt;locale&gt;</code> overrides. If no locale-specific override is configured, Retype continues using the built-in translation. For custom <code translate="no" v-pre>locale</code> values, Retype uses your configured label collections.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: partner
-
-labels:
-  default:
-    search_input_placeholder: Search docs
-
-  partner:
-    search_input_placeholder: Search partner docs</code></pre>
-</doc-codeblock></div>
-<p>This is useful when you want different wording for a partner portal, support site, or internal handbook without maintaining theme overrides.</p>
-<p>Using the <a href="/templating/project-properties/">template</a> syntax, the labels are also available through <code translate="no" v-pre>project.labels</code>, such as <code translate="no" v-pre>{{ project.labels[&quot;search_input_placeholder&quot;] }}</code>.</p>
 </doc-panel>
 <hr>
 <doc-anchor-target id="locale">
@@ -2667,6 +2839,51 @@ labels:
     </h2>
 </doc-anchor-target>
 <p>Customization of the website search component.</p>
+<doc-anchor-target id="search-exclude">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search-exclude">#</doc-anchor-trigger>
+        <span>exclude</span>
+    </h3>
+</doc-anchor-target>
+<p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<doc-panel id="exclude--list">
+    <template #title>exclude : <code translate="no" v-pre>list</code></template>
+<p>Exclude pages, folders, or patterns from the search index while still generating that content in the final website.</p>
+<p>Use <code translate="no" v-pre>search.exclude</code> when you want content to remain accessible on the website, but not appear in search results. If you want to exclude content from the generated website entirely, use the project <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> config instead.</p>
+<p>Search filtering rules use the same path and pattern behavior as the project-level <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> and <doc-anchor-trigger to="#include"><code translate="no" v-pre>include</code></doc-anchor-trigger> configs. The wildcards <code translate="no" v-pre>?</code>, <code translate="no" v-pre>*</code>, <code translate="no" v-pre>**</code>, and <code translate="no" v-pre>!</code> are supported.</p>
+<p>The following sample excludes all content under <code translate="no" v-pre>/blog</code> and <code translate="no" v-pre>/draft</code> from search results:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
+  exclude:
+    - /blog
+    - /draft</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<doc-anchor-target id="search-include">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search-include">#</doc-anchor-trigger>
+        <span>include</span>
+    </h3>
+</doc-anchor-target>
+<p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<doc-panel id="include--list">
+    <template #title>include : <code translate="no" v-pre>list</code></template>
+<p>Explicitly include pages, folders, or patterns in the search index that might otherwise be filtered out by <doc-anchor-trigger to="#search-exclude"><code translate="no" v-pre>search.exclude</code></doc-anchor-trigger>.</p>
+<p>Search filtering rules use the same path and pattern behavior as the project-level <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> and <doc-anchor-trigger to="#include"><code translate="no" v-pre>include</code></doc-anchor-trigger> configs. The wildcards <code translate="no" v-pre>?</code>, <code translate="no" v-pre>*</code>, <code translate="no" v-pre>**</code>, and <code translate="no" v-pre>!</code> are supported.</p>
+<p>Rules in <code translate="no" v-pre>search.include</code> override matching rules in <doc-anchor-trigger to="#search-exclude"><code translate="no" v-pre>search.exclude</code></doc-anchor-trigger>. This makes it possible to exclude everything from search first, then selectively include only the content you want searchable.</p>
+<p>The following sample excludes everything from search, then re-includes only <code translate="no" v-pre>/blog</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
+  exclude:
+    - &quot;*&quot;
+  include:
+    - /blog</code></pre>
+</doc-codeblock></div>
+</doc-panel>
 <doc-anchor-target id="excludecode">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#excludecode">#</doc-anchor-trigger>
@@ -3497,44 +3714,6 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="additional-options">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#additional-options">#</doc-anchor-trigger>
-        <span>Additional options</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Option</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code translate="no" v-pre>api</code></td>
-<td><code translate="no" v-pre>object</code></td>
-<td> </td>
-<td>API reference doc generation</td>
-</tr>
-<tr>
-<td><code translate="no" v-pre>api.input</code></td>
-<td><code translate="no" v-pre>string</code></td>
-<td> </td>
-<td>Path to a project file or a project directory</td>
-</tr>
-<tr>
-<td><code translate="no" v-pre>api.output</code></td>
-<td><code translate="no" v-pre>string</code></td>
-<td><code translate="no" v-pre>./api</code></td>
-<td>Custom path to the API output directory. Relative to <code translate="no" v-pre>output</code></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -3685,7 +3864,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T00:04:59" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-absolute-label-html="Last updated on 2026-03-11" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T21:11:53" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-absolute-label-html="Last updated on 2026-03-11" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-03-11
                     </time>
                 </div>
