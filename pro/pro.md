@@ -139,7 +139,7 @@ Retype Enterprise licenses can be purchased to unlock an entire domain name and 
 
 No problem. Within the first 15 days, one change to a different extension or subdomain can be made to a Retype Pro license. Just send a quick email to hello@retype.com with the request.
 
-This flexibiity gives you lots of time to create your project then decide what domain name or subdomain name you want to go live with.
+This flexibility gives you lots of time to create your project then decide what domain name or subdomain name you want to go live with.
 
 After 15 days, we cannot change the URL associated to your key and purchasing a new key would be required.
 

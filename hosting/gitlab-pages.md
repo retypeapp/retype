@@ -52,7 +52,7 @@ GitLab Pages will publish your website every time the deploy stage is triggered 
 
 The `--key $RETYPE_KEY` is optional.
 
-The `only: main` argument is to ensure the rebuild is only triggered if commit new code is commited to the main branch.
+The `only: main` argument is to ensure the rebuild is only triggered if commit new code is committed to the main branch.
 
 ```yml
 pages:

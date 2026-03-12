@@ -72,7 +72,7 @@ Use `vertical` or `vert` for stacked cards with the image above the content. Con
 
 ### Compact
 
-Use `compact` for a smaller card that flows inline with other compact cards. Compact cards do not render an `image`, `kicker`, or `footer`. When `text` is overridden, it is rendered as plain text, whereas the default and `vert` cards will render basic markdown sysntax.
+Use `compact` for a smaller card that flows inline with other compact cards. Compact cards do not render an `image`, `kicker`, or `footer`. When `text` is overridden, it is rendered as plain text, whereas the default and `vert` cards will render basic markdown syntax.
 
 ```md
 [!card compact](/guides/getting-started.md)
