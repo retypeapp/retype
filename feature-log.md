@@ -20,6 +20,66 @@ Please also check out the [[Changelog]] for a full summary of changes in each re
 
 ---
 
+## Pro features
+
+The following features require a Retype [!badge PRO](/pro/pro.md) or Enterprise license.
+
+[[Backlinks]] component
+: Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping readers discover related content. Configurable at [project](/configuration/project.md#backlinks) and [page](/configuration/page.md#backlinks) levels.
+
+[`branding.baseColor`](/configuration/project.md#basecolor) setting
+: Quick method to set a brand base color without full theme configuration. Applies the color to the left navigation and other key UI elements.
+
+[Breadcrumb](/configuration/project.md#breadcrumb) navigation
+: Add breadcrumb navigation trails to pages with the `breadcrumb` project setting. Configurable at [project](/configuration/project.md#breadcrumb) and [page](/configuration/page.md#breadcrumb) levels.
+
+[Custom themes](/guides/themes.md)
+: Full customization of your site's visual appearance through [[Theme Variables]] for both light and dark modes. Override colors, typography, and other design tokens via the `theme` project setting.
+
+[Custom UI labels](/configuration/project.md#labels)
+: Override any built-in UI string (search placeholders, table of contents heading, and more) using the `labels` project setting. Supports per-locale overrides and integrates with Retype's templating system.
+
+[Default color scheme](/configuration/project.md#scheme) setting
+: Control whether the site renders in `light`, `dark`, or `system` mode by default using the `scheme.mode` project setting. Without a Pro key the site always follows the visitor's system preference.
+
+[Hub](/configuration/project.md#hub) link
+: Add a back-link to a parent hub site in the header using the `hub` project setting. Displays a `<` link alongside the project logo for navigating back to a central documentation portal.
+
+[Last updated](/components/last-updated.md) label
+: Display an automatic "Last updated" date and author in the page footer, sourced from Git commit metadata. Configurable at [project](/configuration/project.md#lastupdated) and [page](/configuration/page.md#lastupdated) levels.
+
+[`nav.badge`](/configuration/page.md#nav-badge) setting
+: Add a badge to any page's entry in the left sidebar navigation. Supports all badge variants and the pipe shorthand notation.
+
+[Navigation icon](/configuration/project.md#icons) control
+: Show or hide navigation icons for all, some, or no items with the `nav.icons.mode` setting. Options include `all`, `folders`, `pages`, `top`, and `none`.
+
+[Next/Previous](/configuration/project.md#nextprev) navigation control
+: Configure the visibility and sequencing of Next and Previous navigation buttons. Supports `show`, `hide`, and `exclude` modes at [project](/configuration/project.md#nextprev), [page](/configuration/page.md#nextprev), and folder levels.
+
+[Outbound](/configuration/project.md#outbound) links
+: Automatically annotate and style all external outbound links with a trailing icon and new-tab behaviour. Control which domains are treated as outbound and customize the icon, target, and exclusions.
+
+[Private](/configuration/page.md#private) and [protected](/configuration/page.md#protected) pages
+: Restrict access to pages and folders using `visibility: private` or `visibility: protected`. Private pages are excluded from navigation, search, and the generated website. Protected pages are hidden from navigation and search but remain accessible via direct URL.
+
+Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding
+: Remove the `Powered by Retype` footer branding by setting `poweredByRetype: false` in your project `retype.yml`.
+
+[Search](/configuration/project.md#search-exclude) filtering
+: Fine-grained control over what content appears in search results. Use `search.exclude` to remove pages, folders, or path patterns from the index, and `search.include` to re-include specific paths within an excluded set.
+
+[Stack](/configuration/project.md#nav-mode) navigation mode
+: Transform top-level folders in the sidebar into visually distinct stacked blocks with `nav.mode: stack`. Configurable at [project](/configuration/project.md#nav-mode) and [page](/configuration/page.md#nav-mode) levels.
+
+Strict [build](/guides/cli.md) mode
+: The `--strict` flag on `retype build` returns a non-zero exit code when the build produces any errors or warnings. Useful for enforcing quality gates in CI pipelines.
+
+[Table of contents](/configuration/project.md#toc)
+: Enable and configure an in-page table of contents with the `toc` project setting. Configurable at [project](/configuration/project.md#toc) and [page](/configuration/page.md#toc) levels, with control over heading depth and label.
+
+---
+
 ## v4.0.0
 
 [[Card]] component
@@ -51,7 +111,7 @@ Library and dependency upgrades
 
 ## v3.12
 
-[!badge PRO] [[Backlinks]] component
+[[Backlinks]] component
 : Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping users discover related content. Configure at [project](/configuration/project.md#backlinks) and [page](/configuration/page.md#backlinks) levels with `enabled`, `title`, and `maxResults` settings.
 
 Color preview chips
@@ -79,13 +139,13 @@ Heading theme variables
 
 ## v3.11
 
-[!badge PRO] Custom themes
+Custom themes
 : Comprehensive [[theme variables]] customization for both [light](/configuration/project.md#theme-base) and [dark](/configuration/project.md#theme-dark) modes, see [docs](/configuration/project.md#theme), [Themes](/guides/themes.md) guide, and [[Theme Variables]].
 
-[!badge PRO] [`branding.baseColor`](/configuration/project.md#basecolor)
+[`branding.baseColor`](/configuration/project.md#basecolor)
 : Quick method to set the base brand color without full [theme](/configuration/project.md#theme) configuration, see [docs](/configuration/project.md#basecolor).
 
-[!badge PRO] [`nav.badge`](/configuration/page.md#nav-badge)
+[`nav.badge`](/configuration/page.md#nav-badge)
 : Add a badge to navigation items in the left sidebar, see [docs](/configuration/page.md#nav-badge).
 
 Three-way switcher
@@ -113,7 +173,7 @@ Footer template support
 
 ## v3.10
 
-[!badge PRO] Next/Previous navigation control
+Next/Previous navigation control
 : Configure visibility and sequencing of `Next/Previous` navigation buttons. Configure at project, page, and folder levels with `show`, `hide`, and `exclude` modes, see [blog post](/blog/2025-06-09-whats-new-in-retype-v310.md), [Project](/configuration/project.md#nextprev) settings, [Page](/configuration/page.md#nextprev) settings, and [Folder](/configuration/folder.md#nextprev) settings.
 
 GitHub Pages community key
@@ -138,10 +198,10 @@ Custom Anchors
 
 ## v3.9
 
-[!badge PRO] Navigation icon settings
+Navigation icon settings
 : Control which navigation items show icons with [`nav.icons.mode`](/configuration/project.md#icons) setting. Options include: `all`, `folders`, `pages`, `top`, `none`.
 
-[!badge PRO] Default color scheme
+Default color scheme
 : Set project's default color scheme with [`scheme.mode`](/configuration/project.md#scheme) configuration. Options include: `system`, `dark`, `light`.
 
 Print-Friendly Stylesheets
@@ -166,7 +226,7 @@ Details/summary conversion
 
 ## v3.8
 
-[!badge PRO] Stack navigation mode
+Stack navigation mode
 : Transform top-level folders into visually distinct stacked blocks. Better organization and visual hierarchy for complex documentation sites, Configure at project or page level, see [blog post](/blog/2025-05-04-whats-new-in-retype-v38.md), [Project](/configuration/project.md#nav-mode) settings, and [Page](/configuration/page.md#nav-mode) settings.
 
 WikiLinks Support
