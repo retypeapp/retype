@@ -23,13 +23,52 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
-## Version 4.2.0 [!badge @next|info]
+## v4.3.0 [!badge @next|info]
 
 Expected early Q2 2026.
 
 ---
 
-## Version 4.1.0 [!badge @latest|info]
+## v4.2.0 [!badge @latest|info]
+
+**Released:** [2026-03-11](https://github.com/retypeapp/retype/releases/tag/v4.2.0)
+
+There were **22 changes** in Retype 4.2.0.
+
++++ New :icon-shield-check:
+
+1. [!badge PRO](/pro/pro.md) New [`Last updated`](/components/last-updated.md) page label, see [#383](https://github.com/retypeapp/retype/discussions/383)
+1. [!badge PRO](/pro/pro.md) New [`labels`](/configuration/project.md#labels) project setting to configure all string labels, see [#781](https://github.com/retypeapp/retype/discussions/781)
+1. New [`blog.rss`](/configuration/project.md#blog-rss) project settings for configuring the `maxResults`, `title`, `description`, `copyright`, and `imageUrl`
+1. New [`retype stop`](/guides/cli.md#retype-stop) CLI command
+1. New Search settings to explicitly [`exclude`](/configuration/project.md#search-exclude) or [`include`](/configuration/project.md#search-include) files, folders, or paths from indexing, see [#258](https://github.com/retypeapp/retype/discussions/258)
+1. New [`created`](/configuration/page.md#created) and [`lastUpdated`](/configuration/page.md#lastupdated) Page settings
+1. New `--debounce` flag on [`retype start`](/guides/cli.md#retype-start) and `start.debounce` project setting
+1. New `compact` layout for the [[Card]] component
+1. New **Retype for Obsidian** plugin, see [#431](https://github.com/retypeapp/retype/discussions/431)
+1. New wikilink [list pairs](/components/card.md#list-pair-cards) syntax for `compact` card groups
+1. New `[` and `]` keyboard navigation for Next and Previous page navigation
+
++++ Improved :icon-thumbsup:
+
+1. Add blog meta tag [RSS](/guides/blogging.md#rss) feed to all pages if blog exists
+1. Minor UI refinements to the [[Steps]] component
+1. Search results refinements and UI improvements
+1. Automatically read content image dimensions and add to generated `<img>` attributes
+1. Support reference-style links in button shortcode rendering, see [#796](https://github.com/retypeapp/retype/discussions/796)
+1. Auto-display icon in reference link component from target frontmatter, see [#669](https://github.com/retypeapp/retype/discussions/669)
+
++++ Fixed :icon-bug:
+
+1. Fix list continuation line separator rendering inside panels, see [#780](https://github.com/retypeapp/retype/discussions/780)
+1. Fixed anchor link resolution for headings with emoji shortcodes, see [#787](https://github.com/retypeapp/retype/discussions/787)
+1. Single + in superscript or subscript, see [#695](https://github.com/retypeapp/retype/discussions/695)
+
++++
+
+---
+
+## v4.1.0
 
 **Released:** [2026-03-01](https://github.com/retypeapp/retype/releases/tag/v4.1.0)
 
@@ -56,7 +95,7 @@ There were **8 changes** in Retype 4.1.0.
 
 ---
 
-## Version 4.0.1
+## v4.0.1
 
 **Released:** [2026-02-25](https://github.com/retypeapp/retype/releases/tag/v4.0.1)
 
@@ -68,50 +107,6 @@ There were **2 changes** in Retype `v4.0.1`.
 1. Improve scroll position logic and reloading
 
 +++
-
----
-
-## v4.2.0
-
-[!badge text="LATEST" variant="info"]
-
-Released: [2026-03-11](https://github.com/retypeapp/retype/releases/tag/v4.2.0)
-
-# Version 4.2.0
-
-There were 22 changes in Retype 4.2.0.
-
-## New
-
-1. New `labels` project setting to configure all string labels, see #781
-1. New `blog.rss` project settings for configuring the `maxResults`, `title`, `description`, `copyright`, and `imageUrl`
-1. New `retype stop` CLI command
-1. New Search settings to explicitly `include` or `exclude` files, folders, or paths from indexing, see #258
-1. New `created` and `lastUpdated` Page settings
-1. New `Last updated` date on pages where `lastUpdated` is configured
-1. New custom language configuration
-1. New `--debounce` flag on `retype start` and `start.debounce` project setting
-1. New `compact` layout for the Card component
-1. New \"Retype for Obsidian\" plugin, see #431
-1. New `Last updated on` page label, see #383
-1. Automatically convert Obsidian wikilink list pairs into `compact` cards
-1. Keyboard shortcuts for Previous and Next page navigation
-
-## Improved
-
-1. Add blog meta tag RSS feed to all pages if blog exists
-1. Minor UI refinements to the Steps component
-1. Search results refinements and UI improvements
-1. Automatically read content image dimensions and add to <img> attributes
-1. Support reference-style links in button shortcode rendering, see #796
-1. Auto-display icon in reference link component from target frontmatter, see #669
-
-## Fixed
-
-1. Fix list continuation line separator rendering inside panels, see #780
-1. Fixed anchor link resolution for headings with emoji shortcodes, see #787
-1. Single + in superscript or subscript, see #695
-
 
 ---
 
