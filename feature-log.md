@@ -6,7 +6,7 @@ templating: false
 ---
 # Feature Log
 
-A running log of notable features added to Retype, with links to the relevant docs.
+A running log of notable features added to Retype, including short summaries and links to relevant documentation.
 
 For a complete list of changes in each release, see the [[Changelog]].
 
