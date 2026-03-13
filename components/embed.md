@@ -1,5 +1,5 @@
 ---
-icon: code-review
+icon: file-added
 tags: [component]
 ---
 # Embed
