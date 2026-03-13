@@ -6,17 +6,13 @@ templating: false
 ---
 # Feature Log
 
-Stay ahead with the latest and greatest from Retype! 
+A running log of notable features added to Retype, with links to the relevant docs.
 
-The **Feature Log** is your go-to source for all the powerful new features, enhancements, and innovations we're rolling out to make your documentation experience faster, smarter, and more elegant.
-
-Explore what's new, discover hidden gems, and see how Retype is constantly evolving to meet your needs.
+For a complete list of changes in each release, see the [[Changelog]].
 
 !!!
-Do have a suggestion for a new feature in Retype? Please open an [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
+Have a feature idea? Open an [issue](https://github.com/retypeapp/retype/issues) and let's chat. :icon-comment:
 !!!
-
-Please also check out the [[Changelog]] for a full summary of changes in each release.
 
 ---
 
