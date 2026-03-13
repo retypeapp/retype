@@ -5,8 +5,6 @@ authors:
     link: https://github.com/retypeapp
 category:
   - release
-# layout: page
-lastUpdated: 2026-03-10T19:12
 ---
 # What's New in Retype v4.2
 
