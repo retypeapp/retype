@@ -131,10 +131,10 @@ lastUpdated:
 
 This is useful when you want the footer to show both the most recent commit date and who made the change, without maintaining those values by hand.
 
-!!! tip Full Git history required
+!!! Full Git history required
 Automatic `lastUpdated` values depend on Git history. If your build runs from a shallow clone, Retype will skip the generated footer values.
 
-For GitHub Actions, make sure the checkout step fetches the full history:
+For GitHub Actions, the following `fetch-depth: 0` configuration fetches the full history:
 
 ```yml
 - uses: actions/checkout@v6
