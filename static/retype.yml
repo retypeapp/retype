@@ -1,17 +1,39 @@
 # -----------------------------------------------------------------------------
-# Retype Pro
-# -----------------------------------------------------------------------------
-
-poweredByRetype: true         # Set to false to remove "Powered by Retype"
-                              # A Retype Pro license is required
-                              # See: https://retype.com/pro
-
-# -----------------------------------------------------------------------------
 
 backlinks:
   enabled: true               # Enable or disable backlinks (default: true)
   title: "See also"           # Heading text above the backlinks section
   maxResults: 12              # Max number of backlinks to display per page
+
+# -----------------------------------------------------------------------------
+
+blog:
+  pageSize: 10                # Number of posts per summary page
+  maxResults: 100             # Max total posts across all summary pages
+  title: "Blog"               # Custom heading for the blog summary page
+  base: blog                  # URL base path for blog summary pages
+  layout: page                # Default layout for blog posts
+  rss:
+    maxResults: 25            # Max posts included in the generated RSS feed
+    title: Project Updates    # Custom RSS feed title
+    description: Latest project updates and release notes
+    copyright: "© Copyright {{ year }}. All rights reserved."
+    imageUrl: /static/feed.png
+
+# -----------------------------------------------------------------------------
+
+branding:
+  title: Example              # Your custom website title; keep it short
+  baseColor: "#8839ef"        # Base brand color for the project (Pro only)
+  logo: /logo.png             # Path to a logo file
+  logoDark: /logo-dark.png    # Path to a logo file to use in dark mode
+  logoAlign: right            # Align the logo to the right or the left
+  label: Docs                 # Optional label
+                              # To remove the label, remove this config
+  colors:
+    label:                    # Label colors
+      text: "#ffffff"         # Custom color for the label text
+      background: "#ff0000"   # Custom color for the label background
 
 # -----------------------------------------------------------------------------
 
@@ -23,10 +45,120 @@ breadcrumb:
 
 # -----------------------------------------------------------------------------
 
+cache:
+  strategy: query             # Cache busting strategy
+                              # Options: none | path | query (default)
+  token: v5                   # Optional unique token for cache invalidation
+
+# -----------------------------------------------------------------------------
+
+cname: example.com            # The CNAME file value
+                              # or, false to not create a CNAME file
+
+# -----------------------------------------------------------------------------
+
+data:                         # Custom data available in templates
+  productVersion: v1.0        # Example:
+  productName: Widgets        #   {{ productName }} --> "Widgets"
+  company:                    #
+    name: Example             #   {{ company.name }} --> "Example"
+    foundedAt: 2020           #   {{ page.data.company.foundedAt }} --> "2020"
+
+# -----------------------------------------------------------------------------
+
+edit:
+  repo: ""                    # The URL to source files for this project
+  base: ""                    # Optional base path to a directory within repo
+  branch: ""                  # Point to a custom branch within the repo
+  label: "Edit this page"     # A custom label for the generated link
+
+# -----------------------------------------------------------------------------
+
+editor:                       # Configure the page live editor functionality
+                              # that is only available during `retype start`
+  enabled: true               # false to disable and hide the live editor
+
+# -----------------------------------------------------------------------------
+
+exclude:                      # Files or folders to exclude from the build
+                              # See also: include
+  - "*_temp/"                 # Wildcards are valid
+  - "/src/temp.md"            # Exclude a specific file
+
+# -----------------------------------------------------------------------------
+
+favicon: static/favicon.png   # Path to a custom favicon, or
+                              # just put a favicon.ico in your project root
+
+# -----------------------------------------------------------------------------
+
+footer:
+  copyright: "© All rights reserved." # A custom copyright statement
+  links:                      # A list of links to include in the footer
+                              # See also: links
+    - text: License           # The text to use for the link
+      link: license.md        # Point to an internal file or external URL
+      title: View the software license # Tooltip text on hover
+
+# -----------------------------------------------------------------------------
+
+generator:
+  recase: all                 # `none` to not recase any file or folder names
+                              # By default, all generated file and folder names
+                              # are generated in all lowercase
+  directoryIndex:
+    altNames:                 # File names to treat as default HTML files
+      - index.html
+      - index.htm
+      - default.html
+      - default.htm
+    append: false             # Append default file name to resolved URLs
+                              # If true, links become /guide/index.html
+    name: index.html          # Default HTML document file name
+  paths: relative             # URL path style: relative | root | source
+  trailingSlash: true         # Append trailing / to generated links
+
+# -----------------------------------------------------------------------------
+
 hub:
   link: https://example.com/  # Set a URL to enable the Hub link
   alt: Go to example.com      # Tooltip text for the hub link
   target: blank               # Open in a new tab
+
+# -----------------------------------------------------------------------------
+
+include:                      # Files or folders to include in the build
+                              # See also: exclude
+  - "*.py"                    # Wildcards are valid
+
+# -----------------------------------------------------------------------------
+
+input: .                      # Local path from this retype.yml file to the
+                              # root of your project content files
+                              # See also: output
+
+# -----------------------------------------------------------------------------
+
+integrations:
+  googleAnalytics:
+    id: ""                    # Your Google Analytics measurement id
+  googleTagManager:
+    id: ""                    # Your Google Tag Manager measurement id
+  gravatar:
+    enabled: true             # false to disable using Gravatar images
+    default: mp               # What Gravatar profile image to use
+  plausible:                  # Plausible.io integration
+    domain: domain1.com,domain2.com # Your plausible domain(s)
+    host: plausible.example.com     # Custom Plausible host name
+
+# -----------------------------------------------------------------------------
+
+labels:                       # Override built-in UI labels and messages
+  default:
+    Page_Tag_Title: Tag
+    default-dateformat: "MMM d, yyyy"
+  es:
+    Page_Tag_Title: Etiqueta
 
 # -----------------------------------------------------------------------------
 
@@ -37,6 +169,37 @@ lastUpdated:
   by:
     enabled: false            # Generate who made the change
     source: committer         # Choose: author | committer
+
+# -----------------------------------------------------------------------------
+
+links:                        # Custom links to add to the top bar
+                              # See also: footer.links
+  - text: Home                # The text to use for the link
+    link: https://example.com # Link to an internal file or external URL
+    title: Go to the home page # Tooltip text on hover
+  - text: API
+    link: /getting-started.md # Link to an internal file
+    icon: gear                # A custom icon name, :emoji:, <svg>, or
+                              # a path to a file
+    iconAlign: left           # Icon alignment, to the left or right
+    target: blank             # Custom target
+                              # Use "blank" to open link in a new window
+
+# -----------------------------------------------------------------------------
+
+locale: en                    # Primary language for the generated website
+                              # See: https://retype.com/configuration/project/#locale
+
+# -----------------------------------------------------------------------------
+
+markdown:                     # Markdown configuration options
+  lineBreaks: soft            # Switch between `soft` and `hard` line breaks
+
+# -----------------------------------------------------------------------------
+
+meta:
+  title: " | Widgets"         # Appended to the <title> element on all pages
+  siteName: Example           # Sets the og:site_name meta tag
 
 # -----------------------------------------------------------------------------
 
@@ -69,204 +232,19 @@ outbound:
 
 # -----------------------------------------------------------------------------
 
-scheme:
-  mode: system                # Color scheme: system | dark | light
-
-# -----------------------------------------------------------------------------
-
-theme:
-  base:                       # Light mode theme overrides
-    base-color: "#8839ef"     # Primary brand color
-    base-bg: "#eff1f5"        # Base background color
-    base-link-weight: 500     # Link font weight
-  dark:                       # Dark mode theme overrides
-    base-color: "#ca9ee6"
-    base-bg: "#303446"
-
-# -----------------------------------------------------------------------------
-# Retype
-# -----------------------------------------------------------------------------
-
-input: .                      # Local path from this retype.yml file to the
-                              # root of your project content files
-                              # See also: output
-
-# -----------------------------------------------------------------------------
-
 output: .retype               # Custom path to the output directory
                               # See also: input
 
 # -----------------------------------------------------------------------------
 
-url: example.com              # The base URL of your website
-url: docs.example.com         # Can also be a sub-domain
-url: example.com/docs         # Can also include a sub-folder path
-url: https://example.com/docs # Can also include a protocol
+poweredByRetype: true         # Set to false to remove "Powered by Retype"
+                              # A Retype Pro license is required
+                              # See: https://retype.com/pro
 
 # -----------------------------------------------------------------------------
 
-branding:
-  title: Example              # Your custom website title; keep it short
-  baseColor: "#8839ef"        # Base brand color for the project (Pro only)
-  logo: /logo.png             # Path to a logo file
-  logoDark: /logo-dark.png    # Path to a logo file to use in dark mode
-  logoAlign: right            # Align the logo to the right or the left
-  label: Docs                 # Optional label
-                              # To remove the label, remove this config
-  colors:
-    label:                    # Label colors
-      text: "#ffffff"         # Custom color for the label text
-      background: "#ff0000"   # Custom color for the label background
-
-# -----------------------------------------------------------------------------
-
-links:                        # Custom links to add to the top bar
-                              # See also: footer.links
-  - text: Home                # The text to use for the link
-    link: https://example.com # Link to an internal file or external URL
-    title: Go to the home page # Tooltip text on hover
-  - text: API
-    link: /getting-started.md # Link to an internal file
-    icon: gear                # A custom icon name, :emoji:, <svg>, or
-                              # a path to a file
-    iconAlign: left           # Icon alignment, to the left or right
-    target: blank             # Custom target
-                              # Use "blank" to open link in a new window
-
-# -----------------------------------------------------------------------------
-
-footer:
-  copyright: "© All rights reserved." # A custom copyright statement
-  links:                      # A list of links to include in the footer
-                              # See also: links
-    - text: License           # The text to use for the link
-      link: license.md        # Point to an internal file or external URL
-      title: View the software license # Tooltip text on hover
-
-# -----------------------------------------------------------------------------
-
-blog:
-  pageSize: 10                # Number of posts per summary page
-  maxResults: 100             # Max total posts across all summary pages
-  title: "Blog"               # Custom heading for the blog summary page
-  base: blog                  # URL base path for blog summary pages
-  layout: page                # Default layout for blog posts
-  rss:
-    maxResults: 25            # Max posts included in the generated RSS feed
-    title: Project Updates    # Custom RSS feed title
-    description: Latest project updates and release notes
-    copyright: "© Copyright {{ year }}. All rights reserved."
-    imageUrl: /static/feed.png
-
-# -----------------------------------------------------------------------------
-
-cache:
-  strategy: query             # Cache busting strategy
-                              # Options: none | path | query (default)
-  token: v5                   # Optional unique token for cache invalidation
-
-# -----------------------------------------------------------------------------
-
-cname: example.com            # The CNAME file value
-                              # or, false to not create a CNAME file
-
-# -----------------------------------------------------------------------------
-
-edit:
-  repo: ""                    # The URL to source files for this project
-  base: ""                    # Optional base path to a directory within repo
-  branch: ""                  # Point to a custom branch within the repo
-  label: "Edit this page"     # A custom label for the generated link
-
-# -----------------------------------------------------------------------------
-
-editor:                       # Configure the page live editor functionality
-                              # that is only available during `retype start`
-  enabled: true               # false to disable and hide the live editor
-
-# -----------------------------------------------------------------------------
-
-exclude:                      # Files or folders to exclude from the build
-                              # See also: include
-  - "*_temp/"                 # Wildcards are valid
-  - "/src/temp.md"            # Exclude a specific file
-
-# -----------------------------------------------------------------------------
-
-favicon: static/favicon.png   # Path to a custom favicon, or
-                              # just put a favicon.ico in your project root
-
-# -----------------------------------------------------------------------------
-
-generator:
-  recase: all                 # `none` to not recase any file or folder names
-                              # By default, all generated file and folder names
-                              # are generated in all lowercase
-  directoryIndex:
-    altNames:                 # File names to treat as default HTML files
-      - index.html
-      - index.htm
-      - default.html
-      - default.htm
-    append: false             # Append default file name to resolved URLs
-                              # If true, links become /guide/index.html
-    name: index.html          # Default HTML document file name
-  paths: relative             # URL path style: relative | root | source
-  trailingSlash: true         # Append trailing / to generated links
-
-# -----------------------------------------------------------------------------
-
-include:                      # Files or folders to include in the build
-                              # See also: exclude
-  - "*.py"                    # Wildcards are valid
-
-# -----------------------------------------------------------------------------
-
-integrations:
-  googleAnalytics:
-    id: ""                    # Your Google Analytics measurement id
-  googleTagManager:
-    id: ""                    # Your Google Tag Manager measurement id
-  gravatar:
-    enabled: true             # false to disable using Gravatar images
-    default: mp               # What Gravatar profile image to use
-  plausible:                  # Plausible.io integration
-    domain: domain1.com,domain2.com # Your plausible domain(s)
-    host: plausible.example.com     # Custom Plausible host name
-
-# -----------------------------------------------------------------------------
-
-locale: en                    # Primary language for the generated website
-                              # See: https://retype.com/configuration/project/#locale
-
-# -----------------------------------------------------------------------------
-
-labels:                       # Override built-in UI labels and messages
-  default:
-    Page_Tag_Title: Tag
-    default-dateformat: "MMM d, yyyy"
-  es:
-    Page_Tag_Title: Etiqueta
-
-# -----------------------------------------------------------------------------
-
-markdown:                     # Markdown configuration options
-  lineBreaks: soft            # Switch between `soft` and `hard` line breaks
-
-# -----------------------------------------------------------------------------
-
-meta:
-  title: " | Widgets"         # Appended to the <title> element on all pages
-  siteName: Example           # Sets the og:site_name meta tag
-
-# -----------------------------------------------------------------------------
-
-data:                         # Custom data available in templates
-  productVersion: v1.0        # Example:
-  productName: Widgets        #   {{ productName }} --> "Widgets"
-  company:                    #
-    name: Example             #   {{ company.name }} --> "Example"
-    foundedAt: 2020           #   {{ page.data.company.foundedAt }} --> "2020"
+scheme:
+  mode: system                # Color scheme: system | dark | light
 
 # -----------------------------------------------------------------------------
 
@@ -300,10 +278,7 @@ serve:
 
 # -----------------------------------------------------------------------------
 
-start:
-  open: false                 # Do not automatically open web browser on start
-  pro: false                  # Start project in Pro mode and trial features
-  debounce: 500               # Delay file change reactions, in milliseconds
+showSidebarFilter: true       # Control visibility of filter component in sidebar
 
 # -----------------------------------------------------------------------------
 
@@ -312,6 +287,13 @@ snippets:                     # Custom code snippets configuration
   lineNumbers:                # Language shortcodes to enable line numbering on
     - js
     - none                    # `none` to disable line-numbering on snippets
+
+# -----------------------------------------------------------------------------
+
+start:
+  open: false                 # Do not automatically open web browser on start
+  pro: false                  # Start project in Pro mode and trial features
+  debounce: 500               # Delay file change reactions, in milliseconds
 
 # -----------------------------------------------------------------------------
 
@@ -328,12 +310,26 @@ templating:
 
 # -----------------------------------------------------------------------------
 
+theme:
+  base:                       # Light mode theme overrides
+    base-color: "#8839ef"     # Primary brand color
+    base-bg: "#eff1f5"        # Base background color
+    base-link-weight: 500     # Link font weight
+  dark:                       # Dark mode theme overrides
+    base-color: "#ca9ee6"
+    base-bg: "#303446"
+
+# -----------------------------------------------------------------------------
+
 toc:                          # Table of Contents configuration (Pro only)
   depth: 2-3                  # Heading depth to include in right sidebar
   label: "On this page"       # Custom label for the Table of Contents
 
 # -----------------------------------------------------------------------------
 
-showSidebarFilter: true       # Control visibility of filter component in sidebar
+url: example.com              # The base URL of your website
+url: docs.example.com         # Can also be a sub-domain
+url: example.com/docs         # Can also include a sub-folder path
+url: https://example.com/docs # Can also include a protocol
 
 # -----------------------------------------------------------------------------
