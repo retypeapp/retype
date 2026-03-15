@@ -32,6 +32,7 @@ theme:
     base-link-weight: 500
     nav-item-text-active-weight: 700
     image-rounded: 0.75rem
+    header-links-dropdown-offset: -1rem
   dark:
     # Catppuccin Theme: Frappé
     # base-color: "#ca9ee6"
@@ -84,15 +85,30 @@ edit:
   repo: github.com/retypeapp/retype
 
 links:
+  - text: What's New
+    icon: megaphone
+    title: Latest updates, announcements, and articles
+    items:
+      - text: Blog & News
+        link: /blog/index.md
+        icon: broadcast
+        title: Visit the Retype Blog
+        description: News and updates from Retype
+      - text: Changelog
+        link: /changelog.md
+        icon: log
+        title: All the new features and fixes
+        description: Full history of every release
+      - text: Feature Log
+        link: /feature-log.md
+        icon: sparkles-fill
+        title: Top new features in each release
+        description: Highlights of the best new features
+
   - text: Pro Pricing
     link: /pro/pro.md
     icon: verified
     title: View Retype Pro plans and pricing options
-
-  - text: Blog & News
-    link: /blog/
-    icon: broadcast
-    title: Latest updates, announcements, and articles
 
   - text: Support
     link: https://github.com/retypeapp/retype/issues
