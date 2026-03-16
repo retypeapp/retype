@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -39,14 +39,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -334,28 +334,12 @@
 <!-- Add content to _includes/top.md to include here -->
 <h1 id="installation">Installation</h1>
 <p>Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Please see the <a href="/guides/cli/">Retype CLI</a> for full details on each command.</p>
-        </div>
-    </div>
-</div>
+<h2 id="new-install">New install</h2>
 <doc-steps>
    <doc-step id="confirm-prerequisites" step-number="1">
       <template #title>Confirm Prerequisites</template>
 <p>Retype is installed using either <a href="https://www.npmjs.com/get-npm" class="outbound" target="_blank"><span><code translate="no" v-pre>npm</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, <a href="https://classic.yarnpkg.com/en/docs/install/" class="outbound" target="_blank"><span><code translate="no" v-pre>yarn</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core" class="outbound" target="_blank"><span><code translate="no" v-pre>dotnet</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> CLI.</p>
-<p>You only need one of the following three package managers as a prerequisite, although all three could be installed on your computer too. It&#x27;s up to you.</p>
+<p>You only need one of the three package managers as a prerequisite, although all three could be installed on your computer too. It&#x27;s up to you.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -401,7 +385,7 @@
    </doc-step>
    <doc-step id="install-retype" step-number="2">
       <template #title>Install Retype</template>
-<p>Once you have a package manager installed, it takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.</p>
+<p>Based on the package manager you have installed on your computer, copy and run one of the following commands.</p>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
@@ -425,7 +409,8 @@
    </doc-step>
    <doc-step id="verify-and-start-retype" step-number="3">
       <template #title>Verify and Start Retype</template>
-<p>You can verify that Retype has been installed correctly by running the command <code translate="no" v-pre>retype --version</code> or <code translate="no" v-pre>retype -v</code> to get the current Retype version number. Checking the <code translate="no" v-pre>version</code> is totally optional but is also just a nice confirmation that everything is working as expected.</p>
+<p>You can verify that <a href="/guides/cli/">Retype CLI</a> has been installed correctly by running the command <code translate="no" v-pre>retype --version</code>.</p>
+<p>Checking the <code translate="no" v-pre>version</code> is totally optional but is also just a nice confirmation that everything is working as expected. <span class="docs-emoji">&#x1F44D;</span></p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype --version</code></pre>
 </doc-codeblock></div>
@@ -436,26 +421,8 @@
    </doc-step>
 </doc-steps>
 <p>That&#x27;s it! Your new Retype website should be up and running. <span class="docs-emoji">&#x1F389;</span></p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you already have the <code translate="no" v-pre>dotnet</code> CLI installed on your machine, installing using <code translate="no" v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with exactly the same performance.</p>
-        </div>
-    </div>
-</div>
 <hr>
-<h2 id="other-options">Other Options</h2>
-<h3 id="update">Update</h3>
+<h2 id="update">Update</h2>
 <p>Update to the latest release of Retype using one of the following commands for the package manager that you initially installed Retype with. For instance, if you used <code translate="no" v-pre>npm</code> to install Retype, run the <code translate="no" v-pre>npm</code> update command to update Retype locally.</p>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
@@ -478,7 +445,7 @@
 </doc-tab>
 </doc-tabs>
 <hr>
-<h3 id="uninstall">Uninstall</h3>
+<h2 id="uninstall">Uninstall</h2>
 <p>Done with Retype? It&#x27;s okay, we understand. <span class="docs-emoji">&#x1F622;</span></p>
 <p>Uninstalling Retype is just as simple as installing. Use the same package manager to uninstall as you did to install. For instance, if you used <code translate="no" v-pre>npm</code> to install Retype, run the <code translate="no" v-pre>npm</code> uninstall command to remove.</p>
 <doc-tabs>
@@ -503,12 +470,12 @@
 </doc-tabs>
 <p>All Retype related files and folders within your project can be deleted, such as the <strong>retype.yml</strong> file and the generated <code translate="no" v-pre>.retype</code> folder.</p>
 <hr>
-<h3 id="version-and-tag-specific">Version and Tag specific</h3>
+<h2 id="version-and-tag-specific">Version and Tag specific</h2>
 <p>When managing project dependencies, it is sometimes necessary to install a specific version or a tagged release of a software package to ensure compatibility or access to certain features.</p>
 <p><a href="https://www.npmjs.com/package/retypeapp?activeTab=versions" class="outbound" target="_blank"><span>NPM</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, Yarn, and <a href="https://www.nuget.org/packages/retypeapp/" class="outbound" target="_blank"><span>dotnet</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> offer their own syntax and methods for specifying which version or tag of a software package to install, enabling precise control over the dependencies of your projects.</p>
 <p>When using NPM or Yarn, specifying the <code translate="no" v-pre>@latest</code> tag will always install the latest public release. The <code translate="no" v-pre>@latest</code> is optional. If no <code translate="no" v-pre>@version</code> or <code translate="no" v-pre>@tag</code> is provided, Retype will install the <code translate="no" v-pre>@latest</code> release by default.</p>
 <p>Using the <code translate="no" v-pre>@next</code> tag will install an upcoming <code translate="no" v-pre>-preview</code> release, if available.</p>
-<p>In the following samples, replace <code translate="no" v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the <code translate="no" v-pre>v4.3.0-preview</code> release of Retype using NPM, run the command <code translate="no" v-pre>npm install retypeapp@4.3.0-preview --global</code>.</p>
+<p>In the following samples, replace <code translate="no" v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the version <code translate="no" v-pre>4.3.0-preview</code> release of Retype using NPM, run the command <code translate="no" v-pre>npm install retypeapp@4.3.0-preview --global</code>.</p>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
@@ -530,12 +497,29 @@
 </doc-tab>
 </doc-tabs>
 <hr>
-<h3 id="platform-specific">Platform specific</h3>
+<h2 id="platform-specific">Platform specific</h2>
 <p>The default <code translate="no" v-pre>retypapp</code> <strong>NPM</strong> package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.</p>
 <p>The bundle provides convenience although at the cost of an increased download size.</p>
 <p>The <strong>dotnet</strong> package installer will automatically download the platform specific package.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If you already have the <code translate="no" v-pre>dotnet</code> CLI installed on your machine, installing using <code translate="no" v-pre>dotnet tool install retypeapp --global</code> will be the fastest option, but all the package maangers should install within seconds. They all produce the same result and run with exactly the same performance.</p>
+        </div>
+    </div>
+</div>
 <p>For <strong>NPM</strong> and <strong>Yarn</strong>, it is possible to install smaller platform specific packages without the bundling. Currently, three separate platforms are supported and can be installed independently from the primary <code translate="no" v-pre>retypeapp</code> package.</p>
-<h4 id="macos"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> macOS</h4>
+<h3 id="macos"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> macOS</h3>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
@@ -574,7 +558,7 @@
 </tbody>
 </table>
 </div>
-<h4 id="windows"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> Windows</h4>
+<h3 id="windows"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> Windows</h3>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
@@ -637,7 +621,7 @@ yarn global add retypeapp-win-x86</code></pre>
 </tbody>
 </table>
 </div>
-<h4 id="linux"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> Linux</h4>
+<h3 id="linux"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"/></g></g></svg> Linux</h3>
 <doc-tabs>
 <doc-tab v-cloak id="npm">
 <template #title>npm</template>
@@ -825,7 +809,7 @@ yarn global add retypeapp-win-x86</code></pre>
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:19" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-03-16
                     </time>
                 </div>

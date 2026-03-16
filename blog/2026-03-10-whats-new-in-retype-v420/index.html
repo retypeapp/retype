@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -46,15 +46,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827018258540" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -364,6 +364,7 @@
 </p>
 <p>Retype <code translate="no" v-pre>v4.2</code> adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing easier to fine tune.</p>
 <p>See the full <a href="/changelog/">Changelog</a> and <a href="/feature-log/">Feature Log</a> for a detailed list of updates in the <code translate="no" v-pre>v4.2</code> release.</p>
+<hr>
 <h2 id="new-rss-settings">New RSS settings</h2>
 <p>Retype <code translate="no" v-pre>v4.2</code> introduces more control over the generated RSS feed for your blog via the new <code translate="no" v-pre>blog.rss</code> project settings.</p>
 <h3 id="metadata-and-limits">Metadata and limits</h3>
@@ -381,6 +382,7 @@
 </doc-codeblock></div>
 <p>Configuring the <code translate="no" v-pre>maxResults</code> is useful when you have a deep blog archive, but your feed should stay focused on the latest posts.</p>
 <p>If you have blog, Retype now includes the rss meta tag on all pages to help readers discover the feed faster.</p>
+<hr>
 <h2 id="new-labels-project-setting">New <code translate="no" v-pre>labels</code> project setting</h2>
 <p><code translate="no" v-pre>v4.2</code> adds a project-level <a href="/configuration/project/#labels"><code translate="no" v-pre>labels</code></a> setting so you can customize all labels and messages for your project.</p>
 <div id="new-labels-project-setting-retypeyml" class="codeblock-wrapper"><doc-codeblock>
@@ -411,6 +413,7 @@ labels:
     text_next: Next step</code></pre>
 </doc-codeblock></div>
 <p>That makes it easy to give a partner portal, support site, or internal handbook its own voice while keeping most labels shared.</p>
+<hr>
 <h2 id="new-searchinclude-and-searchexclude">New <code translate="no" v-pre>search.include</code> and <code translate="no" v-pre>search.exclude</code></h2>
 <p><code translate="no" v-pre>v4.2</code> adds <code translate="no" v-pre>search.exclude</code> and <code translate="no" v-pre>search.include</code> so you can control what lands in the search index without changing what gets published.</p>
 <p>If you want to keep a section such as <code translate="no" v-pre>/blog</code> out of search, the config stays simple:</p>
@@ -430,6 +433,7 @@ labels:
     - &quot;/blog&quot;</code></pre>
 </doc-codeblock></div>
 <p>This is useful when only part of a mixed-content site should be searchable.</p>
+<hr>
 <h2 id="new-created-and-lastupdated-page-settings">New <code translate="no" v-pre>created</code> and <code translate="no" v-pre>lastUpdated</code> page settings</h2>
 <p><code translate="no" v-pre>v4.2</code> adds <code translate="no" v-pre>created</code> and <code translate="no" v-pre>lastUpdated</code> page front matter settings.</p>
 <p>Use <code translate="no" v-pre>created</code> when you want to preserve when a page first went live, and use <code translate="no" v-pre>lastUpdated</code> when readers should see that the page was reviewed or refreshed later.</p>
@@ -479,6 +483,7 @@ lastUpdated: 2026-03-01
 </div>
 <p>Manual page values and generated Git values are both supported, but they are not mixed on the same page. If you manually set <code translate="no" v-pre>lastUpdated</code> or <code translate="no" v-pre>lastUpdatedBy</code>, Retype uses those manual values for that page instead of filling in the missing pieces from Git.</p>
 <p>It works well for long-lived guides, release notes, and migration pages that continue to evolve after launch.</p>
+<hr>
 <h2 id="card-component-upgrade">Card component upgrade</h2>
 <p><code translate="no" v-pre>v4.2</code> adds a new <a href="/components/card/#compact"><code translate="no" v-pre>compact</code></a> Card layout and new customizable <a href="/components/card/#property-overrides">properties</a> such as <code translate="no" v-pre>title</code>, <code translate="no" v-pre>text</code>, <code translate="no" v-pre>icon</code>, <code translate="no" v-pre>image</code>, <code translate="no" v-pre>kicker</code>, and <code translate="no" v-pre>footer</code>.</p>
 <p>Use the <code translate="no" v-pre>compact</code> layout when you want a smaller card without an image.</p>
@@ -563,6 +568,7 @@ lastUpdated: 2026-03-01
 </div>
 </div>
 </p>
+<hr>
 <h2 id="new-debounce-control-for-retype-start">New debounce control for <code translate="no" v-pre>retype start</code></h2>
 <p>A new debounce option for <a href="/guides/cli/#retype-start"><code translate="no" v-pre>retype start</code></a> has been added to help reduce rebuild churn when one edit turns into a burst of file changes. Some markdown editors can be rapidly auto-saving the file you&#x27;re working on, which can trigger multiple rebuilds in quick succession.</p>
 <p>With <code translate="no" v-pre>debounce</code>, Retype waits briefly for the change burst to settle, then rebuilds once instead of reacting to every intermediate update.</p>
@@ -593,6 +599,7 @@ lastUpdated: 2026-03-01
         </div>
     </div>
 </div>
+<hr>
 <h2 id="new-retype-stop-command">New <code translate="no" v-pre>retype stop</code> command</h2>
 <p>Retype <code translate="no" v-pre>v4.2</code> adds the <a href="/guides/cli/#retype-stop"><code translate="no" v-pre>retype stop</code></a> CLI command to make it easier to stop a local server that was started using <code translate="no" v-pre>retype start</code>.</p>
 <p>Run <code translate="no" v-pre>retype stop</code> from the same command line location that your started the project from, and Retype will stop the server for that project.</p>
@@ -656,7 +663,7 @@ lastUpdated: 2026-03-01
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:00" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                     Last updated on 2026-03-16
                 </time>
             </div>

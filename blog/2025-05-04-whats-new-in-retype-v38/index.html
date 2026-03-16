@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -46,15 +46,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827018258540" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -363,6 +363,7 @@
 </figure>
 </p>
 <p>Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features. This release focuses on making documentation more interconnected and discoverable while adding modern conveniences for content creators.</p>
+<hr>
 <h2 id="stack-navigation-mode">Stack navigation mode</h2>
 <p>New navigation mode that transforms your top-level folders into visually distinct stacked blocks. This feature is perfect for complex documentation sites that need better organization and visual hierarchy.</p>
 <div class="flex mb-6">
@@ -416,6 +417,7 @@ nav:
 <li>Folders must contain child pages to be rendered as stacks</li>
 </ul>
 <p>This feature is particularly useful for documentation sites with multiple product lines, different user types, or distinct content categories that benefit from clear visual separation.</p>
+<hr>
 <h2 id="wikilinks-support">WikiLinks Support</h2>
 <p>Another big new feature in v3.8 is comprehensive WikiLink syntax support, bringing wiki-style linking to Retype. This makes it easier to create interconnected documentation with flexible, forgiving link resolution.</p>
 <h3 id="basic-wikilinks">Basic WikiLinks</h3>
@@ -450,6 +452,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
 [[#local-section]]  &lt;!-- Same page anchor --&gt;</code></pre>
 </doc-codeblock></div>
 <p>WikiLinks use intelligent resolution that can find pages even when the link doesn&#x27;t exactly match the filename, making your documentation more maintainable.</p>
+<hr>
 <h2 id="youtube-auto-embedding">YouTube Auto-Embedding</h2>
 <p>Retype now automatically converts YouTube URLs into embedded video players. Simply paste a YouTube URL on its own line. See <a href="/components/youtube/">docs</a>.</p>
 <div id="youtube-auto-embedding-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -468,6 +471,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
 <li>URLs with timestamps: <code translate="no" v-pre>https://www.youtube.com/watch?v=VIDEO_ID&amp;t=120s</code></li>
 <li>Playlist URLs with additional parameters</li>
 </ul>
+<hr>
 <h2 id="homemd-support">Home.md Support</h2>
 <p>You can now use <code translate="no" v-pre>home.md</code> as your project&#x27;s home page, providing another option alongside the existing <code translate="no" v-pre>readme.md</code>, <code translate="no" v-pre>index.md</code>, <code translate="no" v-pre>default.md</code>, and <code translate="no" v-pre>welcome.md</code> files.</p>
 <div id="homemd-support-homemd" class="codeblock-wrapper"><doc-codeblock>
@@ -477,6 +481,7 @@ The same link using Markdown would be [Getting Started](/guides/getting-started.
 This is your project's home page using home.md.</code></pre>
 </doc-codeblock></div>
 <p>This gives you more flexibility in organising your content and aligns with common documentation conventions.</p>
+<hr>
 <h2 id="automatic-search-language-detection">Automatic Search Language Detection</h2>
 <p>Retype now automatically detects the languages used in your content and optimises search accordingly. This happens behind the scenes without any configuration needed.</p>
 <h3 id="how-it-works-1">How It Works</h3>
@@ -498,6 +503,7 @@ This is your project's home page using home.md.</code></pre>
     - &quot;*&quot;  # Enable auto-detection alongside manual languages</code></pre>
 </doc-codeblock></div>
 <p>The <code translate="no" v-pre>&quot;*&quot;</code> token enables auto-detection while keeping your manually specified languages.</p>
+<hr>
 <h2 id="enhanced-include-functionality">Enhanced Include Functionality</h2>
 <p>The <code translate="no" v-pre>include</code> feature now supports accessing files outside of your project directory, giving you more flexibility in content organization:</p>
 <div id="enhanced-include-functionality-docsreadmemd" class="codeblock-wrapper"><doc-codeblock>
@@ -505,6 +511,7 @@ This is your project's home page using home.md.</code></pre>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ include &quot;../readme.md&quot; }}</code></pre>
 </doc-codeblock></div>
 <p>This is particularly useful for grabbing the <code translate="no" v-pre>readme.md</code> outside of your documentation directory.</p>
+<hr>
 <h2 id="greek-and-hebrew-language-support">Greek and Hebrew Language Support</h2>
 <p>Retype now includes full support for Greek and Hebrew languages, including:</p>
 <ul>
@@ -549,7 +556,7 @@ This is your project's home page using home.md.</code></pre>
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:00" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                     Last updated on 2026-03-16
                 </time>
             </div>

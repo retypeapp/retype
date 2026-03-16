@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -46,15 +46,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827018258540" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -363,6 +363,7 @@
 </figure>
 </p>
 <p>Retype v3.9 brings improvements to <a href="/components/callout/">callout</a> components, broader syntax features to support other systems, enhanced image handling, and better print functionality. This release focuses on making Retype more compatible with other documentation platforms while adding powerful new features.</p>
+<hr>
 <h2 id="new-question-callout">New <code translate="no" v-pre>question</code> Callout</h2>
 <p>Meet the new <code translate="no" v-pre>question</code> <a href="/components/callout/">callout</a> variant, perfect for FAQ sections, troubleshooting guides, or any content that poses questions to readers.</p>
 <div id="new-question-callout-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -389,6 +390,7 @@ How do I configure my documentation site?
     </div>
 </div>
 <p>The <code translate="no" v-pre>question</code> callout features a distinctive question mark icon and styling that makes it stand out from other callout types.</p>
+<hr>
 <h2 id="pipe-separator-image-dimensions">Pipe separator image dimensions</h2>
 <p>Set image dimensions using intuitive pipe separated syntax. See <a href="/components/image/#dimensions">docs</a>.</p>
 <p>You can add a custom <code translate="no" v-pre>width</code> or <code translate="no" v-pre>width</code> x <code translate="no" v-pre>height</code>:</p>
@@ -408,6 +410,7 @@ How do I configure my documentation site?
 ![My image](image.jpg){#custom-id}
 ![My image](image.jpg){#custom-id width=&quot;300&quot;}</code></pre>
 </doc-codeblock></div>
+<hr>
 <h2 id="printer-friendly">Printer friendly</h2>
 <p>Retype now includes a comprehensive print stylesheet that help makes your documentation look great printed to PDF or paper.</p>
 <dl>
@@ -423,6 +426,7 @@ How do I configure my documentation site?
 <dd>Ensures text is readable in black and white</dd>
 </dl>
 <p>Simply use the browser&#x27;s print function <kbd>Ctrl + p</kbd> or <kbd>⌘ + p</kbd> to get professional printed results.</p>
+<hr>
 <h2 id="navigation-icon-control">Navigation icon control</h2>
 <p>Adjust your left sidebar navigation visual appearance with the new <code translate="no" v-pre>nav.icons</code> setting. See <a href="/configuration/project/#nav-icons">docs</a>.</p>
 <div class="flex mb-6">
@@ -488,6 +492,7 @@ How do I configure my documentation site?
 </table>
 </div>
 <p>This is particularly useful for documentation sites that prefer a cleaner, text-focused navigation.</p>
+<hr>
 <h2 id="dark-or-light-scheme">Dark or Light scheme</h2>
 <p>Set your project&#x27;s default color scheme with the new <code translate="no" v-pre>scheme</code> configuration. See <a href="/configuration/project/#scheme">docs</a>.</p>
 <div class="flex mb-6">
@@ -540,6 +545,7 @@ How do I configure my documentation site?
 </table>
 </div>
 <p>The new <code translate="no" v-pre>scheme</code> setting gives you control over the initial appearance while still allowing users to switch themes to match their preference.</p>
+<hr>
 <h2 id="migration-made-easy">Migration made easy</h2>
 <p>With universal <a href="/components/callout/">callout</a> syntax support, migrating from other documentation platforms is now seamless. Whether you&#x27;re upgrading from Notion, GitHub, Obsidian, or any other platform, your existing callouts will work immediately in Retype.</p>
 <p>The enhanced image syntax and print support make Retype suitable for both digital and print documentation workflows, while the navigation customization options let you create the exact look you want.</p>
@@ -579,7 +585,7 @@ How do I configure my documentation site?
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:00" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                     Last updated on 2026-03-16
                 </time>
             </div>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -46,15 +46,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827018258540" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -364,6 +364,7 @@
 </p>
 <p>Retype <code translate="no" v-pre>v3.12</code> brings powerful new features for content discovery, visual design, and theme customization. This release introduces the <a href="/components/backlinks/">Backlinks</a> component for Retype Pro, automatic dark mode image switching, color preview chips, enhanced page descriptions, and comprehensive theming improvements.</p>
 <p>See the full <a href="/changelog/">Changelog</a> and <a href="/feature-log/">Feature Log</a> for a detailed list of updates in the <code translate="no" v-pre>v3.12</code> release.</p>
+<hr>
 <h2 id="new-backlinks-component">New Backlinks Component</h2>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -427,6 +428,7 @@ Main content here...
 Additional content after backlinks...</code></pre>
 </doc-codeblock></div>
 <p>The Backlinks component creates natural pathways between related topics, improves content discovery, and helps authors see which pages reference their content.</p>
+<hr>
 <h2 id="automatic-dark-mode-image-switching">Automatic Dark Mode Image Switching</h2>
 <p>Retype now automatically detects and switches between light and dark image variants based on the active theme. Simply add another image file to your project with the same file name but with a <code translate="no" v-pre>-dark</code> suffix and Retype handles everything else automatically.</p>
 <p><figure class="content-center">
@@ -453,6 +455,7 @@ Short format also works: `#abc` or `#F00`.</code></pre>
 </doc-codeblock></div>
 <p>The primary brand color is <code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code> and the accent is <code translate="no" class="whitespace-nowrap" v-pre>#ff6b35<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#ff6b35;"></span></code>.</p>
 <p>Short format also works: <code translate="no" class="whitespace-nowrap" v-pre>#abc<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#abc;"></span></code> or <code translate="no" class="whitespace-nowrap" v-pre>#F00<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#f00;"></span></code>.</p>
+<hr>
 <h2 id="enhanced-page-descriptions">Enhanced Page Descriptions</h2>
 <p>Define page descriptions using the new triple-star (<code translate="no" v-pre>***</code>) syntax blocks placed immediately following H1 headings. Descriptions render visually below the title and populate meta tags for SEO.</p>
 <div id="enhanced-page-descriptions-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -478,6 +481,7 @@ A more detailed, visually formatted description with **emphasis** for readers.
 </doc-codeblock></div>
 <h3 id="content-restrictions">Content Restrictions</h3>
 <p>Descriptions support single paragraphs with limited inline formatting: bold, italic, inline code, strikethrough, and emojis. Links, images, and <abbr title="Hyper Text Markup Language">HTML</abbr> tags are prohibited to ensure clean metadata.</p>
+<hr>
 <h2 id="expanded-heading-theme-variables">Expanded Heading Theme Variables</h2>
 <p>Comprehensive <a href="/configuration/theme-variables/#heading">theme</a> customization for headings <code translate="no" v-pre>H1</code> through <code translate="no" v-pre>H6</code>. Control border, margin, padding, color, weight, casing, and font size individually for each heading level.</p>
 <div id="expanded-heading-theme-variables-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -516,7 +520,7 @@ A more detailed, visually formatted description with **emphasis** for readers.
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:00" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                     Last updated on 2026-03-16
                 </time>
             </div>

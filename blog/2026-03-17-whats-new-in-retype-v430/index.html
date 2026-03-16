@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -40,15 +40,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827018258540" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -547,6 +547,7 @@
 </tbody>
 </table>
 </div>
+<p>The date format also respects the <code translate="no" v-pre>locale</code> setting. For example, using the <code translate="no" v-pre>locale: fr</code> configuration in your project will output French month and day names.</p>
 <hr>
 <h2 id="new-keyboard-navigation">New keyboard navigation</h2>
 <p>A new <kbd>gh</kbd> keyboard shortcut is short for <strong>Go Home</strong> and jumps you back to the home page of the website from any page within the website.</p>
@@ -598,7 +599,11 @@
 <dt>Twitter meta tags</dt>
 <dd>Dedicated <a href="https://x.com/retypeapp" class="outbound" target="_blank"><span>Twitter/X</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> meta tags are now emitted alongside existing Open Graph tags. Sharing Retype-built pages to X will now render richer previews.</dd>
 <dt>SEO improvements</dt>
-<dd>A number of important SEO improvements have been made in <code translate="no" v-pre>v4.3</code>, including automatic image dimension detection, setting alt text, and improved handling of <code translate="no" v-pre>aria</code> related attributes.</dd>
+<dd>
+<p>A number of important SEO improvements have been made in <code translate="no" v-pre>v4.3</code>, including automatic image dimension detection, setting alt text, and improved handling of <code translate="no" v-pre>aria</code> related attributes.</p>
+<p>The following Lighthouse report still shows some areas for improvement, but we&#x27;re working on it!</p>
+<p><img src="images/v430-lighthouse-report.png" alt="" class="max-w-full h-auto" /></p>
+</dd>
 <dt>Backlinks for all pages</dt>
 <dd><a href="/components/backlinks/">Backlinks</a> are now enabled by default for all page layouts, including <code translate="no" v-pre>blog</code> pages. Backlinks can be disabled for individual pages or folders by configuring the <a href="/configuration/project/#backlinks-enabled"><code translate="no" v-pre>backlinks.enabled</code></a> project setting.</dd>
 <dt>Folder-Level backlinks inheritance</dt>
@@ -679,7 +684,7 @@ backlinks:
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:00" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                     Last updated on 2026-03-16
                 </time>
             </div>

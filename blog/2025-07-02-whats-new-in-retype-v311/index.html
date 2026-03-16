@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827018258540">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -46,15 +46,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827018258540" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827018258540" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827018258540" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -363,6 +363,7 @@
 </p>
 <p>Retype <code translate="no" v-pre>v3.11</code> puts you in control of your project&#x27;s visual identity, while keeping everything fast, clean, and easy to use. This release brings Pro-level <strong>theme</strong> customization, smarter navigation, and faster syntax options to help you create documentation that feels more like your own.</p>
 <p>See the full <a href="/changelog/">Changelog</a> and <a href="/feature-log/">Feature Log</a> for a detailed list of updates in the <code translate="no" v-pre>v3.11</code> release.</p>
+<hr>
 <h2 id="custom-themes">Custom Themes</h2>
 <p>Take complete control over your documentation&#x27;s visual design with the new <a href="/guides/themes/">theme</a> customization. This <strong>Retype Pro</strong> feature allows you to override any <a href="/configuration/theme-variables/">theme variable</a> for both <code translate="no" v-pre>light</code> and <code translate="no" v-pre>dark</code> modes, giving you flexibility in creating a unique brand experience.</p>
 <div class="flex mb-6">
@@ -422,6 +423,7 @@
         </div>
     </div>
 </div>
+<hr>
 <h2 id="quick-brand-color-setup">Quick Brand Color Setup</h2>
 <p>For teams that need a simple way to set their brand color without diving into full theme customization, the new <a href="/configuration/project/#branding-basecolor"><code translate="no" v-pre>branding.baseColor</code></a> setting provides a streamlined approach.</p>
 <div class="flex mb-6">
@@ -449,6 +451,7 @@
 </doc-codeblock></div>
 <p>Setting <code translate="no" v-pre>branding.baseColor</code> is equivalent to setting the <code translate="no" v-pre>base-color</code> theme variable under the <code translate="no" v-pre>theme.base</code> setting.</p>
 <p>This single setting automatically applies your brand color to navigation highlights, links, and interactive elements throughout your site. It&#x27;s perfect for getting started with brand customization before moving to more advanced theme configurations.</p>
+<hr>
 <h2 id="navigation-badges">Navigation Badges</h2>
 <p>Add visual indicators to your navigation items with the new Page level <a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a> feature. A navigation badge is particularly useful for highlighting new content, marking beta features, or indicating content status.</p>
 <div class="flex mb-6">
@@ -505,6 +508,7 @@ nav:
 ---
 # Themes</code></pre>
 </doc-codeblock></div>
+<hr>
 <h2 id="three-way-color-scheme-switcher">Three-Way Color Scheme Switcher</h2>
 <p><figure class="content-right">
     <img src="/blog/images/2025-07-02-color-scheme.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="400" height="195" />
@@ -532,6 +536,7 @@ nav:
         </div>
     </div>
 </div>
+<hr>
 <h2 id="variant-pipe-notation-syntax">Variant Pipe Notation Syntax</h2>
 <p>Writing component markup is now faster with the new pipe notation syntax. Instead of verbose attribute syntax, you can use a simple <code translate="no" v-pre>text|variant</code> format for badges, buttons, and navigation badges.</p>
 <h3 id="before">Before</h3>
@@ -553,6 +558,7 @@ nav:
     <span>Good Job!</span>
 </button></p>
 <p>This shorthand syntax reduces typing and makes component markup more readable, especially when you are adding multiple badges or buttons to a page. The pipe notation works with all existing component features and variants.</p>
+<hr>
 <h2 id="icon-only-links">Icon-Only Links</h2>
 <p>Clean up your header and footer navigation with support for icon-only <a href="/configuration/project/#links">header links</a> and <a href="/configuration/project/#footer-links">footer links</a>. You no longer need to provide <code translate="no" v-pre>text</code> when you want to display only an icon.</p>
 <div id="icon-only-links-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -562,6 +568,7 @@ nav:
     target: &quot;blank&quot;</code></pre>
 </doc-codeblock></div>
 <p>This feature is perfect for social media links, external tool integrations, or any navigation where the icon alone communicates the destination. The links maintain full accessibility with proper ARIA labels while keeping your navigation visually clean.</p>
+<hr>
 <h2 id="base-variant-for-components">Base Variant for Components</h2>
 <p>A new <code translate="no" v-pre>base</code> variant is now available for <a href="/components/badge/">Badge</a>, <a href="/components/button/">Button</a>, and <a href="/components/callout/">Callout</a> components. This variant uses your project&#x27;s <a href="/guides/themes/">base color</a> to create consistent styling that automatically adapts to your brand colors.</p>
 <div id="base-variant-for-components-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -598,6 +605,7 @@ This callout uses your project `base-color` theme variable.
     </div>
 </div>
 <p>The <code translate="no" v-pre>base</code> variant is particularly useful when you want components to feel integrated with your overall design rather than standing out with predefined colors.</p>
+<hr>
 <h2 id="enhanced-search-and-filter-experience">Enhanced Search and Filter Experience</h2>
 <p><figure class="content-right">
     <img src="/blog/images/2025-07-02-search-field.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="380" height="80" />
@@ -606,9 +614,11 @@ This callout uses your project `base-color` theme variable.
 </p>
 <p>The search and filter inputs now include keyboard shortcut hints and improved placeholder handling that hides the placeholder text when focused, reducing visual clutter and improving usability.</p>
 <p>These changes make the search experience feel more polished and help users discover keyboard shortcuts naturally.</p>
+<hr>
 <h2 id="better-print-rendering">Better Print Rendering</h2>
 <p>Documentation often needs to work in print format for offline reference or formal documentation packages. This release improves print styles with better link handling and more consistent visual rendering across different browsers and print settings.</p>
 <p>Try printing any page using the built-in browser print function with <kbd>Ctrl P</kbd> on Windows or <kbd>⌘P</kbd> on Mac.</p>
+<hr>
 <h2 id="footer-template-support">Footer Template Support</h2>
 <p>The <a href="/configuration/project/#footer-copyright"><code translate="no" v-pre>footer.copyright</code></a> setting now supports full templating, including data variables, includes, and functions. This enables dynamic footer content that can pull from your project data or include shared footer components.</p>
 <div id="footer-template-support-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -640,7 +650,7 @@ This callout uses your project `base-color` theme variable.
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T17:16:00" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                     Last updated on 2026-03-16
                 </time>
             </div>
