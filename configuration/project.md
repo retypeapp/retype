@@ -458,7 +458,7 @@ blog:
     title: Project Updates
 ```
 
-If no `title` is configured, Retype will use the resolved blog title. The resolved blog title uses `blog.title` when configured, otherwise the generated blog summary heading. When available, `meta.siteName` or `branding.title` is prefixed to that value.
+If no `title` is configured, Retype will use the resolved blog title. The resolved blog title uses `blog.title` when configured, otherwise the generated blog summary heading. When available, [`meta.siteName`](#sitename) or [`branding.title`](#branding-title) is prefixed to that value.
 
 ===
 
