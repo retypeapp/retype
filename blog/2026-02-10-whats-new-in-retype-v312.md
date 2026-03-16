@@ -14,6 +14,8 @@ Retype `v3.12` brings powerful new features for content discovery, visual design
 
 See the full [[Changelog]] and [[Feature Log]] for a detailed list of updates in the `v3.12` release.
 
+---
+
 ## New Backlinks Component
 
 !!!
@@ -69,6 +71,8 @@ Additional content after backlinks...
 
 The Backlinks component creates natural pathways between related topics, improves content discovery, and helps authors see which pages reference their content.
 
+---
+
 ## Automatic Dark Mode Image Switching
 
 Retype now automatically detects and switches between light and dark image variants based on the active theme. Simply add another image file to your project with the same file name but with a `-dark` suffix and Retype handles everything else automatically.
@@ -107,6 +111,8 @@ The primary brand color is `#5495f1` and the accent is `#ff6b35`.
 
 Short format also works: `#abc` or `#F00`.
 
+---
+
 ## Enhanced Page Descriptions
 
 Define page descriptions using the new triple-star (`***`) syntax blocks placed immediately following H1 headings. Descriptions render visually below the title and populate meta tags for SEO.
@@ -139,6 +145,8 @@ A more detailed, visually formatted description with **emphasis** for readers.
 ### Content Restrictions
 
 Descriptions support single paragraphs with limited inline formatting: bold, italic, inline code, strikethrough, and emojis. Links, images, and HTML tags are prohibited to ensure clean metadata.
+
+---
 
 ## Expanded Heading Theme Variables
 

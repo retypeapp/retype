@@ -14,6 +14,8 @@ Retype `v4.1` has been primarily a community-driven release shaped by suggestion
 
 See the full [[Changelog]] and [[Feature Log]] for a detailed list of updates in the `v4.1` release.
 
+---
+
 ## New Search Experience
 
 Search in Retype `v4.1` has been rebuilt from the ground up. This release brings improvements to the search index process, search result quality, and a crispy fresh UI.
@@ -39,6 +41,8 @@ Thank you [@gregdubiel](https://github.com/gregdubiel) in issue [#680](https://g
 
 Search result ranking has been tuned to return more targeted results. As well, UI and keyboard navigation improvements make it faster to scan and jump to results without leaving the keyboard.
 
+---
+
 ## Unicode Character Icons
 
 Any single Unicode character can now be used as an icon on the `icon` frontmatter property and everywhere else that 
@@ -59,6 +63,8 @@ Use an emoji, a Dingbat, or any other Unicode character to give your pages a dis
 [!button icon="✨" text="Sparkles"]
 
 Thank you [@ApolonTorq](https://github.com/ApolonTorq) in issue [#785](https://github.com/retypeapp/retype/discussions/785) for the suggestion!
+
+---
 
 ## Blog Improvements
 

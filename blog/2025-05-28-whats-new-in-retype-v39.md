@@ -12,6 +12,8 @@ category:
 
 Retype v3.9 brings improvements to [[callout]] components, broader syntax features to support other systems, enhanced image handling, and better print functionality. This release focuses on making Retype more compatible with other documentation platforms while adding powerful new features.
 
+---
+
 ## New `question` Callout
 
 Meet the new `question` [[callout]] variant, perfect for FAQ sections, troubleshooting guides, or any content that poses questions to readers.
@@ -27,6 +29,8 @@ How do I configure my documentation site?
 !!!
 
 The `question` callout features a distinctive question mark icon and styling that makes it stand out from other callout types.
+
+---
 
 ## Pipe separator image dimensions
 
@@ -51,6 +55,8 @@ Generic attributes on images are still supported and provide an alternative synt
 ![My image](image.jpg){#custom-id width="300"}
 ```
 
+---
+
 ## Printer friendly
 
 Retype now includes a comprehensive print stylesheet that help makes your documentation look great printed to PDF or paper.
@@ -71,6 +77,8 @@ High Contrast
 : Ensures text is readable in black and white
 
 Simply use the browser's print function <kbd>Ctrl + p</kbd> or <kbd>⌘ + p</kbd> to get professional printed results.
+
+---
 
 ## Navigation icon control
 
@@ -100,6 +108,8 @@ nav:
 
 This is particularly useful for documentation sites that prefer a cleaner, text-focused navigation.
 
+---
+
 ## Dark or Light scheme
 
 Set your project's default color scheme with the new `scheme` configuration. See [docs](/configuration/project.md#scheme).
@@ -124,6 +134,8 @@ Mode      | Description
 `light`   | Start in light mode.
 
 The new `scheme` setting gives you control over the initial appearance while still allowing users to switch themes to match their preference.
+
+---
 
 ## Migration made easy
 

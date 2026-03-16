@@ -15,6 +15,8 @@ Retype `v3.11` puts you in control of your project's visual identity, while keep
 
 See the full [[Changelog]] and [[Feature Log]] for a detailed list of updates in the `v3.11` release.
 
+---
+
 ## Custom Themes
 
 Take complete control over your documentation's visual design with the new [theme](/guides/themes.md) customization. This **Retype Pro** feature allows you to override any [theme variable](/configuration/theme-variables.md) for both `light` and `dark` modes, giving you flexibility in creating a unique brand experience.
@@ -51,6 +53,8 @@ The theme system uses colors based on your `base-color` to automatically apply t
 See the complete [Theme Variables](/configuration/theme-variables.md) and [Themes guide](/guides/themes.md) for detailed `theme` configuration options.
 !!!
 
+---
+
 ## Quick Brand Color Setup
 
 For teams that need a simple way to set their brand color without diving into full theme customization, the new [`branding.baseColor`](/configuration/project.md#branding-basecolor) setting provides a streamlined approach.
@@ -67,6 +71,8 @@ branding:
 Setting `branding.baseColor` is equivalent to setting the `base-color` theme variable under the `theme.base` setting.
 
 This single setting automatically applies your brand color to navigation highlights, links, and interactive elements throughout your site. It's perfect for getting started with brand customization before moving to more advanced theme configurations.
+
+---
 
 ## Navigation Badges
 
@@ -114,6 +120,8 @@ nav:
 # Themes
 ```
 
+---
+
 ## Three-Way Color Scheme Switcher
 
 ![](images/2025-07-02-color-scheme.png)-
@@ -131,6 +139,8 @@ scheme:
   mode: dark  # Options: system, dark, light
 ```
 !!!
+
+---
 
 ## Variant Pipe Notation Syntax
 
@@ -158,6 +168,8 @@ Writing component markup is now faster with the new pipe notation syntax. Instea
 
 This shorthand syntax reduces typing and makes component markup more readable, especially when you are adding multiple badges or buttons to a page. The pipe notation works with all existing component features and variants.
 
+---
+
 ## Icon-Only Links
 
 Clean up your header and footer navigation with support for icon-only [header links](/configuration/project.md#links) and [footer links](/configuration/project.md#footer-links). You no longer need to provide `text` when you want to display only an icon.
@@ -170,6 +182,8 @@ links:
 ```
 
 This feature is perfect for social media links, external tool integrations, or any navigation where the icon alone communicates the destination. The links maintain full accessibility with proper ARIA labels while keeping your navigation visually clean.
+
+---
 
 ## Base Variant for Components
 
@@ -196,6 +210,8 @@ This callout uses your project `base-color` theme variable.
 
 The `base` variant is particularly useful when you want components to feel integrated with your overall design rather than standing out with predefined colors.
 
+---
+
 ## Enhanced Search and Filter Experience
 
 ![](images/2025-07-02-search-field.png)-
@@ -204,11 +220,15 @@ The search and filter inputs now include keyboard shortcut hints and improved pl
 
 These changes make the search experience feel more polished and help users discover keyboard shortcuts naturally.
 
+---
+
 ## Better Print Rendering
 
 Documentation often needs to work in print format for offline reference or formal documentation packages. This release improves print styles with better link handling and more consistent visual rendering across different browsers and print settings.
 
 Try printing any page using the built-in browser print function with <kbd>Ctrl P</kbd> on Windows or <kbd>⌘P</kbd> on Mac.
+
+---
 
 ## Footer Template Support
 

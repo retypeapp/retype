@@ -14,6 +14,8 @@ We're excited to share the latest release of [Retype](https://retype.com/), pack
 
 See the full [[CHANGELOG#v3100|changelog]] for the `v3.10` release.
 
+---
+
 ## Next/Previous Navigation Control
 
 ![Previous and Next page sequencing navigation](images/2025-06-09-nextprev.png)
@@ -65,6 +67,8 @@ nextprev:
   mode: hide
 ```
 
+---
+
 ## Hidden Comments
 
 You can now add hidden [[comments]] to your markdown that won't appear in the final website, making it easier to leave notes for yourself or your team. See [docs](/components/comments.md).
@@ -96,6 +100,8 @@ This is particularly useful for:
 - Temporarily hiding content without deleting it
 - Adding context that shouldn't be public
 
+---
+
 ## New `tip` Callout Variant
 
 A new [[callout]] type has been added specifically for helpful tips, complete with a lightbulb icon.
@@ -111,6 +117,8 @@ Here's a helpful suggestion that will save you time.
 !!!
 
 The tip callout uses a friendly green color scheme and stands out nicely from other callout types like warnings or notes. It's perfect for sharing best practices or helpful hints.
+
+---
 
 ## Generic Attributes for List Items
 

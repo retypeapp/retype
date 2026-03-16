@@ -14,6 +14,8 @@ Retype `v4.2` adds new RSS controls, customizable labels, new search indexing co
 
 See the full [[Changelog]] and [[Feature Log]] for a detailed list of updates in the `v4.2` release.
 
+---
+
 ## New RSS settings
 
 Retype `v4.2` introduces more control over the generated RSS feed for your blog via the new `blog.rss` project settings.
@@ -38,6 +40,8 @@ blog:
 Configuring the `maxResults` is useful when you have a deep blog archive, but your feed should stay focused on the latest posts.
 
 If you have blog, Retype now includes the rss meta tag on all pages to help readers discover the feed faster.
+
+---
 
 ## New `labels` project setting
 
@@ -76,6 +80,8 @@ labels:
 
 That makes it easy to give a partner portal, support site, or internal handbook its own voice while keeping most labels shared.
 
+---
+
 ## New `search.include` and `search.exclude`
 
 `v4.2` adds `search.exclude` and `search.include` so you can control what lands in the search index without changing what gets published.
@@ -99,6 +105,8 @@ search:
 ```
 
 This is useful when only part of a mixed-content site should be searchable.
+
+---
 
 ## New `created` and `lastUpdated` page settings
 
@@ -147,6 +155,8 @@ Manual page values and generated Git values are both supported, but they are not
 
 It works well for long-lived guides, release notes, and migration pages that continue to evolve after launch.
 
+---
+
 ## Card component upgrade
 
 `v4.2` adds a new [`compact`](/components/card.md#compact) Card layout and new customizable [properties](/components/card.md#property-overrides) such as `title`, `text`, `icon`, `image`, `kicker`, and `footer`.
@@ -185,6 +195,8 @@ The top-level link must be a wikilink to a local page in your project. The neste
 - [[Community]]
   - Learn about the free community key and other community resources.
 
+---
+
 ## New debounce control for `retype start`
 
 A new debounce option for [`retype start`](/guides/cli.md#retype-start) has been added to help reduce rebuild churn when one edit turns into a burst of file changes. Some markdown editors can be rapidly auto-saving the file you're working on, which can trigger multiple rebuilds in quick succession.
@@ -207,6 +219,8 @@ start:
 !!!
 If you want Retype to react faster to changes, reduce the `debounce` value. The default value is `100` ms.
 !!!
+
+---
 
 ## New `retype stop` command
 

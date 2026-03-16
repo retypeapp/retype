@@ -121,6 +121,8 @@ Common full date string configurations can be composed by combining individual s
 | `dateFormat: MMMM d, yyyy` | {{ date.now | date.to_string "%B" }} {{ date.now.day }}, {{ date.now.year }} |
 | `dateFormat: dddd, MMMM d, yyyy` | {{ date.now | date.to_string "%A, %B" }} {{ date.now.day }}, {{ date.now.year }} |
 
+The date format also respects the `locale` setting. For example, using the `locale: fr` configuration in your project will output French month and day names.
+
 ---
 
 ## New keyboard navigation
@@ -178,6 +180,10 @@ Twitter meta tags
 
 SEO improvements
 : A number of important SEO improvements have been made in `v4.3`, including automatic image dimension detection, setting alt text, and improved handling of `aria` related attributes.
+
+  The following Lighthouse report still shows some areas for improvement, but we're working on it!
+
+  ![](images/v430-lighthouse-report.png)
 
 Backlinks for all pages
 : [[Backlinks]] are now enabled by default for all page layouts, including `blog` pages. Backlinks can be disabled for individual pages or folders by configuring the [`backlinks.enabled`](/configuration/project.md#backlinks-enabled) project setting.

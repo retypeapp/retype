@@ -14,6 +14,8 @@ Retype `v4.0` is here! This major version release brings powerful new components
 
 See the full [[Changelog]] and [[Feature Log]] for a detailed list of updates in the `v4.0` release.
 
+---
+
 ## New Card Component
 
 The new [[Card]] component creates styled preview cards that link to other pages in your project. Cards automatically pull in the target page's title, category, description, date, and image. No manual configuration needed.
@@ -42,6 +44,8 @@ Place multiple vertical cards together and they automatically form a responsive 
 {{ end }}
 
 See the [[Card]] documentation for more examples.
+
+---
 
 ## New Steps Component
 
@@ -147,6 +151,8 @@ The `5. ` prefix is stripped from the rendered title, and the following steps au
 
 See the [[Steps]] documentation for more configuration options.
 
+---
+
 ## New Question Variant
 
 A new `question` variant is available for [[Callout]], [[Button]] and [[Badge]] components. Use it for FAQ sections, help buttons, or troubleshooting guidance:
@@ -169,6 +175,8 @@ How do I configure my documentation site?
 [!button Need Help?|question]
 
 The question variant uses a question mark icon and distinct styling that signals "help" or "inquiry" to users.
+
+---
 
 ## New Template Variables
 
@@ -218,6 +226,8 @@ You can also get specific pages by using `content["key"]` syntax:
 ```
 }%}
 
+---
+
 ## Blog Configuration
 
 Expanded [blog configuration](/configuration/project.md#blog) options now give you more control over your blog creation:
@@ -234,6 +244,8 @@ Control pagination, limit total posts on summary pages, customize the heading, a
 
 Also checkout the new [[Blogging]] guide for more tips.
 
+---
+
 ## Link Tooltips
 
 Add tooltip descriptions to your header and footer navigation links with the new [`title`](/configuration/project.md#links-title) property on `links` and `footer.links`:
@@ -249,7 +261,9 @@ When users hover over the link, the browser displays the tooltip. This provides 
 
 The `title` property is now supported on both [`links`](/configuration/project.md#links) and [`footer.links`](/configuration/project.md#footer).
 
-## GitHub Actions Upgrade
+---
+
+## GitHub Actions upgrade
 
 If you're using GitHub Actions with the `setup-dotnet` step, you may need to update your workflow. Retype `v4.0` requires .NET 10, so update your `dotnet-version` from `9.x` to `10.x` and it's also a good time to update the action to use `@v6` now as well:
 
@@ -258,6 +272,8 @@ If you're using GitHub Actions with the `setup-dotnet` step, you may need to upd
   with:
     dotnet-version: 10.x
 ```
+
+---
 
 ## Library and Dependency Upgrades
 

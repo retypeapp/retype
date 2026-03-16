@@ -12,6 +12,8 @@ category:
 
 Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features. This release focuses on making documentation more interconnected and discoverable while adding modern conveniences for content creators.
 
+---
+
 ## Stack navigation mode
 
 New navigation mode that transforms your top-level folders into visually distinct stacked blocks. This feature is perfect for complex documentation sites that need better organization and visual hierarchy.
@@ -58,6 +60,8 @@ Stack mode only applies to top-level folders that contain child pages. When enab
 - Folders must contain child pages to be rendered as stacks
 
 This feature is particularly useful for documentation sites with multiple product lines, different user types, or distinct content categories that benefit from clear visual separation.
+
+---
 
 ## WikiLinks Support
 
@@ -107,6 +111,8 @@ Link to specific sections within pages:
 
 WikiLinks use intelligent resolution that can find pages even when the link doesn't exactly match the filename, making your documentation more maintainable.
 
+---
+
 ## YouTube Auto-Embedding
 
 Retype now automatically converts YouTube URLs into embedded video players. Simply paste a YouTube URL on its own line. See [docs](/components/youtube.md).
@@ -129,6 +135,8 @@ Retype recognises all common YouTube URL formats:
 - URLs with timestamps: `https://www.youtube.com/watch?v=VIDEO_ID&t=120s`
 - Playlist URLs with additional parameters
 
+---
+
 ## Home.md Support
 
 You can now use `home.md` as your project's home page, providing another option alongside the existing `readme.md`, `index.md`, `default.md`, and `welcome.md` files.
@@ -140,6 +148,8 @@ This is your project's home page using home.md.
 ```
 
 This gives you more flexibility in organising your content and aligns with common documentation conventions.
+
+---
 
 ## Automatic Search Language Detection
 
@@ -168,6 +178,8 @@ search:
 
 The `"*"` token enables auto-detection while keeping your manually specified languages.
 
+---
+
 ## Enhanced Include Functionality
 
 The `include` feature now supports accessing files outside of your project directory, giving you more flexibility in content organization:
@@ -179,6 +191,8 @@ The `include` feature now supports accessing files outside of your project direc
 }%}
 
 This is particularly useful for grabbing the `readme.md` outside of your documentation directory.
+
+---
 
 ## Greek and Hebrew Language Support
 

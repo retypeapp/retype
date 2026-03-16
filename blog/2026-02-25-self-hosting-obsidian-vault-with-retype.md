@@ -13,6 +13,8 @@ If you use [Obsidian](https://obsidian.md/), chances are you’ve thought about 
 
 [Retype](https://retype.com/) transforms your existing Obsidian vault into a fast, beautiful, and fully self-hosted website with no migration required. You keep your files. You own your content. And with [GitHub](/hosting/github-pages.md), [Cloudflare](/hosting/cloudflare.md), [Netlify](/hosting/netlify.md), or any web server, you can host your website for free.
 
+---
+
 ## Start With Markdown, Stay Organized
 
 Most teams just want to write and update content without hassle. [Markdown](/guides/markdown.md) fits this need with plain text, easy to read, and easy to version. Editors like Obsidian build on this foundation with features like page linking, advanced components, and WYSIWYG editing. 
@@ -20,6 +22,8 @@ Most teams just want to write and update content without hassle. [Markdown](/gui
 !!!tip
 With Markdown, there’s no weird file format, your docs stay portable, easy to back up, and free from vendor lock-in. Obsidian, like Retype, **is offline-first**. All documents remain stored as plain Markdown files on your device.
 !!!
+
+---
 
 ## A Workflow That Actually Works
 
@@ -48,6 +52,8 @@ Read about the free [Community](/blog/2025-06-06-new-gitHub-pages-community-key.
 !!!
 
 [!card](/community.md)
+
+---
 
 ## Demo
 
@@ -172,6 +178,8 @@ templating:
   # we will turn templating off for now:
   enabled: false
 ```
+
+---
 
 ## Write On!
 
