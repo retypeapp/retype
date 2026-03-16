@@ -37,7 +37,7 @@ See [configuring](../guides/github-actions.md/#retype_key) a GitHub Workflow to 
 
 ## RETYPE_PASSWORD
 
-Set an environment variable for the [`protected`](page.md/#protected) and [`private`](page.md/#private) pages. The `RETYPE_PASSWORD` value is set using exactly the same process as the [`RETYPE_KEY`](#retype_key) above. 
+Set an environment variable for the [`protected`](page.md#visibility-protected) and [`private`](page.md#visibility-private) pages. The `RETYPE_PASSWORD` value is set using exactly the same process as the [`RETYPE_KEY`](#retype_key) above. 
 
 If you add both the `RETYPE_PASSWORD` and `RETYPE_KEY`, your list of **Repository secrets** should look like the following:
 
@@ -45,7 +45,7 @@ If you add both the `RETYPE_PASSWORD` and `RETYPE_KEY`, your list of **Repositor
 
 ## RETYPE_DEFAULT_HOST
 
-Default [`host`](project.md/#host) to be used by the Retype server instead of `localhost`.
+Default [`host`](project.md#serve-host) to be used by the Retype server instead of `localhost`.
 
 The `RETYPE_DEFAULT_HOST` secret is set exactly the same as the other secrets.
 

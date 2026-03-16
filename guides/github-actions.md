@@ -139,7 +139,7 @@ jobs:
 
 ### RETYPE_PASSWORD
 
-If your project uses either [`protected`](/configuration/page.md#protected) or [`private`](/configuration/page.md#private) pages, adding a password for your visitors to use is required.
+If your project uses either [`protected`](/configuration/page.md#visibility-protected) or [`private`](/configuration/page.md#visibility-private) pages, adding a password for your visitors to use is required.
 
 {{ include "snippets/password-notice.md" }}
 

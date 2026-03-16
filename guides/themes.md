@@ -9,7 +9,7 @@ tags: [guide, pro]
 Retype's [`theme`](/configuration/project.md#theme) system allows you to customize the visual appearance of your website by overriding [[theme variables]]. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or project preferences.
 
 !!!base Pro Feature
-The theme functionality requires a [Retype Pro](/pro/pro.md) key or adding the following [`pro`](/configuration/project.md#pro) trial mode setting into your project `retype.yml` configuration file:
+The theme functionality requires a [Retype Pro](/pro/pro.md) key or adding the following [`pro`](/configuration/project.md#start-pro) trial mode setting into your project `retype.yml` configuration file:
 
 ```yaml
 start
@@ -167,7 +167,7 @@ Following these practices helps ensure your site looks good, stays accessible, a
 
 ### Theme Not Applied
 
-- [x] Ensure you have a valid Retype Pro license or add [`start.pro: true`](/configuration/project.md#pro)
+- [x] Ensure you have a valid Retype Pro license or add [`start.pro: true`](/configuration/project.md#start-pro)
 - [x] Check that the syntax is correct in your `retype.yml` file
 - [x] Verify [theme variable](/configuration/theme-variables.md) names match exactly
 

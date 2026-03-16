@@ -191,7 +191,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v3110) for highlights
 +++ New :icon-shield-check:
 
 1. [!badge PRO](/pro/pro.md) New [theme](/configuration/project.md#theme) color customization for `base` and `dark` themes, see [#42](https://github.com/retypeapp/retype/discussions/42) and [#697](https://github.com/retypeapp/retype/discussions/697)
-1. [!badge PRO](/pro/pro.md) New [`branding.baseColor`](/configuration/project.md#basecolor) setting for quick configuration of the project `base-color` [theme variable](/configuration/theme-variables.md) to left navigation nodes, see [#763](https://github.com/retypeapp/retype/discussions/763)
+1. [!badge PRO](/pro/pro.md) New [`branding.baseColor`](/configuration/project.md#branding-basecolor) setting for quick configuration of the project `base-color` [theme variable](/configuration/theme-variables.md) to left navigation nodes, see [#763](https://github.com/retypeapp/retype/discussions/763)
 1. [!badge PRO](/pro/pro.md) New Page level [`nav.badge`](/configuration/page.md#nav-badge) setting for adding a badge component to left navigation nodes, see [#763](https://github.com/retypeapp/retype/discussions/763)
 1. New 3-way `Light`, `Dark`, and `System` color [scheme](/configuration/project.md#scheme) selector, see [#421](https://github.com/retypeapp/retype/discussions/421) and [#624](https://github.com/retypeapp/retype/discussions/624)
 1. New pipe notation syntax support for adding variant to [[Button]], [[Badge]], and [Navigation Badge](/configuration/page.md#nav-badge) components
@@ -203,7 +203,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v3110) for highlights
 1. Upgrade to latest release of VueJS
 1. Update to latest v3.3.x release of TailwindCSS
 1. Add keyboard hint into Search field, see [#762](https://github.com/retypeapp/retype/discussions/762)
-1. Improve templating support within [`footer.copyright`](/configuration/project.md#copyright) project setting
+1. Improve templating support within [`footer.copyright`](/configuration/project.md#footer-copyright) project setting
 1. Hide the placeholder text in the Search and Filter input fields when focused, see [#762](https://github.com/retypeapp/retype/discussions/762)
 1. Upgrade Octicons icons library from v19.15.2 to v19.15.3
 1. Improve icon margins on icon-only Badge and Button components
@@ -230,7 +230,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v3100) for highlights
 1. [!badge PRO](/pro/pro.md) New `nextprev` [project](/configuration/project.md#nextprev) and [page](/configuration/page.md#nextprev) setting to configure Next and Previous page navigation, see [#34](https://github.com/retypeapp/retype/discussions/34)
 1. New Inline and block level hidden [[comments]] using wrapping `%%`
 1. New [[Callout]] `tip` variant
-1. New Page [`meta.description`](/configuration/page.md#description) configuration, see [#638](https://github.com/retypeapp/retype/discussions/638)
+1. New Page [`meta.description`](/configuration/page.md#meta-description) configuration, see [#638](https://github.com/retypeapp/retype/discussions/638)
 1. New support for adding [generic attribute](/components/list.md#generic-attributes) syntax on list items, see [#603](https://github.com/retypeapp/retype/discussions/603)
 1. New custom anchors using Obsidian [`^block`](https://help.obsidian.md/links#Link+to+a+block+in+a+note) syntax
 
@@ -263,7 +263,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v390) for highlights.
 
 +++ New :icon-shield-check:
 
-1. [!badge PRO](/pro/pro.md) New [`nav.icons.enabled`](/configuration/project.md#icons) Project setting to hide icons in navigation, see [#381](https://github.com/retypeapp/retype/discussions/381) and [#621](https://github.com/retypeapp/retype/discussions/621)
+1. [!badge PRO](/pro/pro.md) New [`nav.icons.enabled`](/configuration/project.md#nav-icons) Project setting to hide icons in navigation, see [#381](https://github.com/retypeapp/retype/discussions/381) and [#621](https://github.com/retypeapp/retype/discussions/621)
 1. [!badge PRO](/pro/pro.md) New [`scheme.mode`](/configuration/project.md#scheme-mode) project setting to default initial page rendering to be explicit `day`,`night`, or `system` modes, see [#421](https://github.com/retypeapp/retype/discussions/421)
 1. New automatic conversion of `details > summary` elements into Retype Panel component
 1. New print friendly stylesheet to enable better printing of pages, see [#85](https://github.com/retypeapp/retype/discussions/85) and [#628](https://github.com/retypeapp/retype/discussions/628)
@@ -369,7 +369,7 @@ There were 9 changes in Retype `v3.6.0`.
 
 +++ New :icon-shield-check:
 1. New [`--pro`](/guides/cli.md#retype-start) flag during `retype start` to enable trial mode of Retype Pro features, see [#612](https://github.com/retypeapp/retype/discussions/612)
-1. New [`start.pro: true`](/configuration/project.md#pro) project config to enable trial mode of Retype Pro features, see [#612](https://github.com/retypeapp/retype/discussions/612)
+1. New [`start.pro: true`](/configuration/project.md#start-pro) project config to enable trial mode of Retype Pro features, see [#612](https://github.com/retypeapp/retype/discussions/612)
 +++ Improved :icon-thumbsup:
 1. Path independent doc_theme local storage variable, see [#624](https://github.com/retypeapp/retype/discussions/624)
 +++
@@ -423,7 +423,7 @@ There were 9 changes in Retype `v3.6.0`.
 
 +++ New :icon-shield-check:
 1. [!badge PRO](/pro/pro.md) New [`outbound`](/configuration/project.md#outbound) project config for outbound external link configuration, see [#465](https://github.com/retypeapp/retype/issues/465)
-1. [!badge PRO](/pro/pro.md) New folder level [`visibility: private`](/configuration/page.md#private) and [`visibility: protected`](/configuration/page.md#protected) support
+1. [!badge PRO](/pro/pro.md) New folder level [`visibility: private`](/configuration/page.md#visibility-private) and [`visibility: protected`](/configuration/page.md#visibility-protected) support
 1. New support for Armenian, Kannada, Sankrit, and Telugu [languages](/configuration/project.md#supported-languages)
 1. The _includes/*.html files include full Templating support, see [#282](https://github.com/retypeapp/retype/discussions/282)
 +++ Improved :icon-thumbsup:
@@ -447,7 +447,7 @@ There were 9 changes in Retype `v3.6.0`.
 **Released:** [2023-05-29](https://github.com/retypeapp/retype/releases/tag/v3.0.0)
 
 +++ New :icon-shield-check:
-1. [!badge PRO](/pro/pro.md) New [`visibility: private`](configuration/page.md#private) and [`visibility: protected`](configuration/page.md#protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
+1. [!badge PRO](/pro/pro.md) New [`visibility: private`](configuration/page.md#visibility-private) and [`visibility: protected`](configuration/page.md#visibility-protected) pages, see [#341](https://github.com/retypeapp/retype/discussions/341)
 1. New multi-language [`locale`](configuration/project.md#locale) interface support for 22 languages, see [#18](https://github.com/retypeapp/retype/discussions/18) and [#24](https://github.com/retypeapp/retype/issues/24)
 1. New [`meta.title`](configuration/page.md#title) page level config, see [#346](https://github.com/retypeapp/retype/discussions/346) and [#350](https://github.com/retypeapp/retype/issues/350)
 1. New [CLI commands](guides/cli.md) and flags, see [#94](https://github.com/retypeapp/retype/issues/94) and [#323](https://github.com/retypeapp/retype/discussions/323)
@@ -574,7 +574,7 @@ generator:
 +++ New :icon-shield-check:
 1. Redesign of Search results.
 1. Page content live editor during [`retype start`](/guides/cli.md#retype-start).
-1. Project configuration for `full`, `partial`, and `basic` search index [modes](/configuration/project.md#mode).
+1. Project configuration for `full`, `partial`, and `basic` search index [modes](/configuration/project.md#search-mode).
 1. Content templating.
 1. [Disable](/configuration/page.md#templating) templating on a page.
 1. Line [highlighting](/components/code-block.md#line-highlighting) in code blocks.
@@ -582,10 +582,10 @@ generator:
 1. Custom site-wide includes for `<head>`, `<body>`, `top.md`, and `bottom.md`.
 1. Support for custom generic attributes on Markdown components.
 1. Support for adding images above the top `h1` page heading.
-1. [Google Tag Manager](/configuration/project.md#googletagmanager) integration.
-1. [Plausible](/configuration/project.md#plausible) IO integration.
+1. [Google Tag Manager](/configuration/project.md#integrations-googletagmanager) integration.
+1. [Plausible](/configuration/project.md#integrations-plausible) IO integration.
 1. Page limit handling has been improved during `retype start` mode.
-1. Include [`description`](/configuration/page.md#description) in search index.
+1. Include [`description`](/configuration/page.md#meta-description) in search index.
 +++ Fixed :icon-bug:
 1. Unable to scroll sidebar when navigating to a collapsed clickable sidebar menu. See [#128](https://github.com/retypeapp/retype/issues/128).
 1. Double-quote in image caption is not encoded. See [#245](https://github.com/retypeapp/retype/discussions/245).
@@ -639,7 +639,7 @@ generator:
 1. Auto generate RSS feed for blog posts.
 1. [`serve.start.polling`](/configuration/project.md#serve-watch-polling) project option.
 1. Gravatar support for [`author`](/configuration/page.md#author) avatars.
-1. [project](/configuration/project.md#gravatar) option to configure a [default](/configuration/project.md#integrations-gravatar-default) Gravatar image.
+1. [project](/configuration/project.md#integrations-gravatar) option to configure a [default](/configuration/project.md#integrations-gravatar-default) Gravatar image.
 1. [`target`](/components/reference-link.md#target) and [`icon`](/components/reference-link.md#custom-icon) attributes on [`[!ref]`](/components/reference-link.md) component.
 1. Smarter link resolution logic.
 +++
@@ -702,7 +702,7 @@ This release failed to run properly if the NPM package was installed. 🧐 We di
 1. Auto-generate a `sitemap.xml` file to inform search engines which pages to crawl.
 1. Auto-generate a `robots.txt` file.
 1. Open Graph and Twitter meta tags generated for every page.
-1. [`serve.host`](/configuration/project.md#host) and [`serve.port`](/configuration/project.md#port) project configs.
+1. [`serve.host`](/configuration/project.md#serve-host) and [`serve.port`](/configuration/project.md#serve-port) project configs.
 1. `/blog` summary for any `.md` page added to a `/blog` folder.
 1. [`author`](/configuration/page.md#author), [`category`](/configuration/page.md#category), and [`date`](/configuration/page.md#date) page configs.
 1. [`redirect`](/configuration/page.md#redirect) page config.
@@ -723,7 +723,7 @@ This release failed to run properly if the NPM package was installed. 🧐 We di
 1. Stacking [Panels](/components/panel.md#stacking) component.
 1. Open Graph and Twitter card support.
 1. [Mermaid](/components/mermaid.md) diagram and visualization support.
-1. [`target`](/configuration/project.md#target) config for all `links` within **retype.yml**.
+1. [`target`](/configuration/project.md#links-target) config for all `links` within **retype.yml**.
 1. Default page support for [`default.md`](/guides/markdown.md#home-page).
 1. Hover style on [Badge](/components/badge.md) component when links.
 1. Super improved handling of áccënt characters.
@@ -750,7 +750,7 @@ Released: 2021-05-12
 1. [Badge](/components/badge.md) component
 1. Syntax [highlighting](/components/code-block.md#syntax-highlighting) support for all code block languages
 1. [`route`](/configuration/page.md#route) page config
-1. [`port`](/configuration/project.md#port) project config
+1. [`port`](/configuration/project.md#serve-port) project config
 1. Larger font-size for `h1`, `h2`, and `h3` headers.
 1. Better handing of special characters within file names.
 1. Cleaner handling of `.md` pages created by GitHub Wiki.
@@ -777,7 +777,7 @@ Released: 2021-03-30
 +++ New :icon-shield-check:
 1. GitHub [Actions](/guides/github-actions.md) for Retype.
 1. [`expanded`](/configuration/page.md#expanded) config on [folder](/configuration/folder.md) configuration.
-1. [`icon`](/configuration/project.md#icon) and [`iconAlign`](/configuration/project.md#iconalign) configs on [`links`](/configuration/project.md#links).
+1. [`icon`](/configuration/project.md#links-icon) and [`iconAlign`](/configuration/project.md#links-iconalign) configs on [`links`](/configuration/project.md#links).
 +++
 
 ## v1.2.0

@@ -194,3 +194,5 @@ Retype now includes full support for Greek and Hebrew languages, including:
 All existing Retype features continue to work exactly as before. The new WikiLinks feature works alongside traditional Markdown links, so you can adopt it gradually or use both approaches as needed.
 
 Try out `v3.8` and experiment with the new features, then let us know what you think on [X](https://x.com/retypeapp) or by opening a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input helps shape the future of Retype.
+
+---

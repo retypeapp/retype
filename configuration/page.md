@@ -79,7 +79,7 @@ author: frank@example.com
 
 ===
 
-An author object can also be configured with specific values for the [`name`](#name), [`email`](#email), [`link`](#link), and [`avatar`](#avatar).
+An author object can also be configured with specific values for the [`name`](#author-name), [`email`](#author-email), [`link`](#author-link), and [`avatar`](#author-avatar).
 
 The `author` config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.
 
@@ -104,7 +104,7 @@ authors:
 ---
 ```
 
-### avatar
+### avatar {#author-avatar}
 
 === avatar : `string`
 
@@ -126,7 +126,7 @@ author:
 
 ===
 
-### email
+### email {#author-email}
 
 === email : `string`
 
@@ -139,7 +139,7 @@ author:
 
 ===
 
-### link
+### link {#author-link}
 
 === link : `string`
 
@@ -152,7 +152,7 @@ author:
 
 ===
 
-### name
+### name {#author-name}
 
 === name : `string`
 
@@ -173,7 +173,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `backlinks` configuration controls the display of inbound links from other pages in your project on this specific page. Backlinks help users discover related content by showing which pages reference the current page.
 
-### enabled
+### enabled {#backlinks-enabled}
 
 === enabled : `boolean`
 
@@ -207,7 +207,7 @@ This overrides the project-level title setting for this specific page.
 
 ===
 
-### maxResults
+### maxResults {#backlinks-maxresults}
 
 === maxResults : `number`
 
@@ -220,7 +220,7 @@ backlinks:
 ---
 ```
 
-This overrides the project-level [maxResults](project.md#maxresults) setting for this specific page.
+This overrides the project-level [maxResults](project.md#backlinks-maxresults) setting for this specific page.
 
 ===
 
@@ -551,7 +551,7 @@ This `meta.title` config is also not to be confused with the Project level [`met
 !!!
 ===
 
-### description
+### description {#meta-description}
 
 === description : `string`
 
@@ -584,7 +584,7 @@ With the above sample, the following meta tags will be generated:
 
 Navigation configuration options to control the behavior of the left sidebar navigation.
 
-### badge{#nav-badge}
+### badge {#nav-badge}
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
@@ -639,7 +639,7 @@ Property | Type | Description
 ===
 
 
-### mode{#nav-mode}
+### mode {#nav-mode}
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
@@ -674,7 +674,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
 
-### mode{#nextprev-mode}
+### mode {#nextprev-mode}
 
 === mode : `string`
 
@@ -1032,7 +1032,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `toc` config contains page options that apply to the right sidebar Table of Contents.
 
-### depth
+### depth {#toc-depth}
 
 === depth : `string`, `number`
 The heading depth to include in the right Table of Contents.
@@ -1062,7 +1062,7 @@ Value | Description
 
 ===
 
-### label
+### label {#toc-label}
 
 === label : `string`
 
@@ -1085,14 +1085,13 @@ Configure the visibility of the page to be `public`, `hidden`, `protected`, or `
 | Mode | Navigation | Search | Password | Description |
 | --- | :---: | :---: | :---: | --- |
 `public` | :white_check_mark: | :white_check_mark: | :no_entry_sign: | The page is public and visible in the main navigation. A password is not required to view this page.
-[`hidden`](#hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public ([sample](/samples/hidden.md)).
-[`protected`](#protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the public navigation but requires a password to access the content of the page ([sample](/samples/protected.md) password: `test`).
-[`private`](#private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden, not added to the navigation, and a password is required for access ([sample](/samples/private.md) password: `test`).
+[`hidden`](#visibility-hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public ([sample](/samples/hidden.md)).
+[`protected`](#visibility-protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the public navigation but requires a password to access the content of the page ([sample](/samples/protected.md) password: `test`).
+[`private`](#visibility-private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden, not added to the navigation, and a password is required for access ([sample](/samples/private.md) password: `test`).
 
 ===
 
-
-### hidden
+### hidden {#visibility-hidden}
 
 With `hidden`, the page will still be created and added to the final website, but it is _hidden_. You can still link to the page or share a link to the page.
 
@@ -1113,7 +1112,7 @@ The History :icon-history: component will continue to function as normal. Any hi
 
 Setting `visibility: hidden` on a page is a good way to create a _draft_ or _secret_ page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.
 
-### protected
+### protected {#visibility-protected}
 
 To create a protected page, add `visibility: protected` and then set the password for the project using the `--password` flag.
 
@@ -1145,7 +1144,7 @@ An entire folder can be set to `protected` by adding an `index.yml` file with th
 visibility: protected
 ```
 
-### private
+### private {#visibility-private}
 
 To create a private page, add `visibility: private` and then set the password for the project using the `--password` flag.
 

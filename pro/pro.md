@@ -33,11 +33,11 @@ Build more pages and unlock powerful **Pro** only features.
 | [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Last updated](/components/last-updated.md) label | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [`nav.badge`](/configuration/page.md#nav-badge) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Navigation icon](/configuration/project.md#icons) control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Navigation icon](/configuration/project.md#nav-icons) control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#private) and [protected](/configuration/page.md#protected) pages | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
-| [!badge text="PRO" variant="info"] [`branding.baseColor`](/configuration/project.md#basecolor) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#visibility-private) and [protected](/configuration/page.md#visibility-protected) pages | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [`branding.baseColor`](/configuration/project.md#branding-basecolor) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Search](/configuration/project.md#search-exclude) filtering | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] [Stack](/configuration/project.md#nav-mode) navigation mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | [!badge text="PRO" variant="info"] Strict [build](/guides/cli.md) mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |

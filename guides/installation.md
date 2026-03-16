@@ -1,6 +1,6 @@
 ---
 order: 1000
-icon: desktop-download
+icon: download
 ---
 # Installation
 

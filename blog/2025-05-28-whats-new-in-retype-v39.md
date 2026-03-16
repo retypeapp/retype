@@ -74,7 +74,7 @@ Simply use the browser's print function <kbd>Ctrl + p</kbd> or <kbd>⌘ + p</kbd
 
 ## Navigation icon control
 
-Adjust your left sidebar navigation visual appearance with the new `nav.icons` setting. See [docs](/configuration/project.md#icons).
+Adjust your left sidebar navigation visual appearance with the new `nav.icons` setting. See [docs](/configuration/project.md#nav-icons).
 
 !!!
 This feature is a [!badge Pro|info] only feature and a Retype [key](/pro/pro.md) is required to enable.
@@ -138,3 +138,5 @@ The enhanced image syntax and print support make Retype suitable for both digita
 This release represents a major step forward in making Retype the most compatible and feature-rich documentation platform available. We're continuing to expand platform compatibility and add new features based on your feedback.
 
 Try out `v3.9` and experiment with the new features, then let us know what you think on [X](https://x.com/retypeapp) or by opening a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input helps shape the future of Retype.
+
+---

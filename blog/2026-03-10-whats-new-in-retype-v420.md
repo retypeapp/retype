@@ -225,3 +225,5 @@ That makes restarts and cleanup safer when you have multiple preview servers run
 Retype `v4.2` brings better feed controls, more flexible UI labeling, tighter search indexing controls, and smoother local preview workflows. If you run a blog with Retype or maintain docs across different audiences, this release gives you more control without pushing that complexity into custom code.
 
 [Install or upgrade](/guides/installation.md) Retype to try the latest improvements, and keep the feedback coming on [X](https://x.com/retypeapp) or in GitHub [Issues](https://github.com/retypeapp/retype/issues).
+
+---

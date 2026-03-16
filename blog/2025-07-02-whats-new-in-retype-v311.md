@@ -53,7 +53,7 @@ See the complete [Theme Variables](/configuration/theme-variables.md) and [Theme
 
 ## Quick Brand Color Setup
 
-For teams that need a simple way to set their brand color without diving into full theme customization, the new [`branding.baseColor`](/configuration/project.md#basecolor) setting provides a streamlined approach.
+For teams that need a simple way to set their brand color without diving into full theme customization, the new [`branding.baseColor`](/configuration/project.md#branding-basecolor) setting provides a streamlined approach.
 
 !!!
 This feature is a [!badge Pro|info] only feature and a Retype [key](/pro/pro.md) is required to enable.
@@ -160,7 +160,7 @@ This shorthand syntax reduces typing and makes component markup more readable, e
 
 ## Icon-Only Links
 
-Clean up your header and footer navigation with support for icon-only [header links](/configuration/project.md#links) and [footer links](/configuration/project.md#links-footer). You no longer need to provide `text` when you want to display only an icon.
+Clean up your header and footer navigation with support for icon-only [header links](/configuration/project.md#links) and [footer links](/configuration/project.md#footer-links). You no longer need to provide `text` when you want to display only an icon.
 
 ```yaml
 links:
@@ -212,7 +212,7 @@ Try printing any page using the built-in browser print function with <kbd>Ctrl P
 
 ## Footer Template Support
 
-The [`footer.copyright`](/configuration/project.md#copyright) setting now supports full templating, including data variables, includes, and functions. This enables dynamic footer content that can pull from your project data or include shared footer components.
+The [`footer.copyright`](/configuration/project.md#footer-copyright) setting now supports full templating, including data variables, includes, and functions. This enables dynamic footer content that can pull from your project data or include shared footer components.
 
 ```yaml
 footer:
@@ -228,3 +228,5 @@ Retype `v3.11` represents a significant step forward in customization without sa
 These features address real pain points we hear from teams with the need for brand consistency, faster content authoring, and professional polish. Whether you are building internal documentation or public-facing product docs, v3.11 provides the tools to build a project that reflects your brand.
 
 Try out the latest Retype release and experiment with the new customization options. Share your themed website with us on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues) with feedback. Your input helps shape the future of Retype.
+
+---

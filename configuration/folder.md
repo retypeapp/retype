@@ -8,7 +8,7 @@ tags: [config]
 Using the same **.yml** technique and options as [Page configuration](/configuration/page.md), a folder can be configured using a separate **index.yml** file placed inside the folder.
 
 !!!
-Folders support the same properties as [pages](/configuration/page.md), although a few properties that are not applicable in the context of a folder configuration would be ignored, such as [`description`](/configuration/page.md#description).
+Folders support the same properties as [pages](/configuration/page.md), although a few properties that are not applicable in the context of a folder configuration would be ignored, such as [`description`](/configuration/page.md#meta-description).
 !!!
 
 ---
@@ -111,7 +111,7 @@ visibility: hidden
 
 Another option to completely ignore a folder or a file would be to prefix the folder name or file name with an underscore `_`. For instance, naming a folder `_guides` would instruct Retype to ignore the folder.
 
-Password protect an entire folder by setting the `visibility` to either [`protected`](page.md#protected) or [`private`](page.md#private).
+Password protect an entire folder by setting the `visibility` to either [`protected`](page.md#visibility-protected) or [`private`](page.md#visibility-private).
 
 ```yml index.yml
 visibility: protected

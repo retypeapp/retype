@@ -321,7 +321,7 @@ const msg = "hello, world";
 
 By default, the content of code blocks are included in the website search results. This means users can search for code samples and find matching results.
 
-To exclude code blocks from the search index, set [`excludeCode`](/configuration/project.md#excludecode) to `true` in your project `retype.yml` configuration file.
+To exclude code blocks from the search index, set [`excludeCode`](/configuration/project.md#search-excludecode) to `true` in your project `retype.yml` configuration file.
 
 ```yml retype.yml
 search:

@@ -103,3 +103,5 @@ Thank you [@7MinSec](https://github.com/7MinSec) and  [@latenitefilms](https://g
 Retype `v4.1` sharpens the search experience with better results, richer indexing, and a cleaner UI. Unicode icon support opens up more expressive navigation. The new blog layout setting gives you more control over how your [blog](/guides/blogging.md) looks without per-page configuration.
 
 [Install or upgrade](/guides/installation.md) Retype to try the latest release. Share your feedback on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input continues to shape the future of Retype.
+
+---

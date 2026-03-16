@@ -23,7 +23,7 @@ The following features require a Retype [!badge PRO](/pro/pro.md) or Enterprise 
 [[Backlinks]] component
 : Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping readers discover related content. Configurable at [project](/configuration/project.md#backlinks) and [page](/configuration/page.md#backlinks) levels.
 
-[`branding.baseColor`](/configuration/project.md#basecolor) setting
+[`branding.baseColor`](/configuration/project.md#branding-basecolor) setting
 : Quick method to set a brand base color without full theme configuration. Applies the color to the left navigation and other key UI elements.
 
 [Breadcrumb](/configuration/project.md#breadcrumb) navigation
@@ -47,7 +47,7 @@ The following features require a Retype [!badge PRO](/pro/pro.md) or Enterprise 
 [`nav.badge`](/configuration/page.md#nav-badge) setting
 : Add a badge to any page's entry in the left sidebar navigation. Supports all badge variants and the pipe shorthand notation.
 
-[Navigation icon](/configuration/project.md#icons) control
+[Navigation icon](/configuration/project.md#nav-icons) control
 : Show or hide navigation icons for all, some, or no items with the `nav.icons.mode` setting. Options include `all`, `folders`, `pages`, `top`, and `none`.
 
 [Next/Previous](/configuration/project.md#nextprev) navigation control
@@ -56,7 +56,7 @@ The following features require a Retype [!badge PRO](/pro/pro.md) or Enterprise 
 [Outbound](/configuration/project.md#outbound) links
 : Automatically annotate and style all external outbound links with a trailing icon and new-tab behaviour. Control which domains are treated as outbound and customize the icon, target, and exclusions.
 
-[Private](/configuration/page.md#private) and [protected](/configuration/page.md#protected) pages
+[Private](/configuration/page.md#visibility-private) and [protected](/configuration/page.md#visibility-protected) pages
 : Restrict access to pages and folders using `visibility: private` or `visibility: protected`. Private pages are excluded from navigation, search, and the generated website. Protected pages are hidden from navigation and search but remain accessible via direct URL.
 
 Remove [Powered by Retype](/configuration/project.md#poweredbyretype) branding
@@ -134,10 +134,10 @@ Question variant for [[Button]] and [[Badge]]
 [Blog configuration](/configuration/project.md#blog)
 : Expanded blog configuration with `pageSize`, `maxResults`, `title`, and `base` settings. Control pagination, limit total posts on summary pages, customize the blog heading, and change the URL base path, see [#747](https://github.com/retypeapp/retype/issues/747).
 
-`title` property on [`links`](/configuration/project.md#title)
+`title` property on [`links`](/configuration/project.md#links-title)
 : Add tooltip descriptions to navigation links. The `title` property on `links` and `footer.links` sets the HTML title attribute for hover tooltips, providing additional context without cluttering the interface, see [#672](https://github.com/retypeapp/retype/issues/672).
 
-[`meta.siteName`](/configuration/project.md#sitename)
+[`meta.siteName`](/configuration/project.md#meta-sitename)
 : Set the `og:site_name` meta tag for improved social media sharing. Defines the site name that appears when pages are shared on platforms like Facebook, Twitter, and LinkedIn.
 
 Library and dependency upgrades
@@ -160,7 +160,7 @@ Dark mode favicon support
 Triple-star description syntax
 : New `***` syntax block for defining page descriptions directly in markdown if placed immediately after the opening H1 heading. Provides a cleaner alternative to YAML frontmatter for setting page meta descriptions.
 
-[`templating.loopLimit`](/configuration/project.md#looplimit)
+[`templating.loopLimit`](/configuration/project.md#templating-looplimit)
 : New project configuration setting to control the maximum number of loop iterations in templates. Helps prevent infinite loops and improves template safety.
 
 [`target`](/configuration/page.md#target)
@@ -176,8 +176,8 @@ Heading theme variables
 Custom themes
 : Comprehensive [[theme variables]] customization for both [light](/configuration/project.md#theme-base) and [dark](/configuration/project.md#theme-dark) modes, see [docs](/configuration/project.md#theme), [Themes](/guides/themes.md) guide, and [[Theme Variables]].
 
-[`branding.baseColor`](/configuration/project.md#basecolor)
-: Quick method to set the base brand color without full [theme](/configuration/project.md#theme) configuration, see [docs](/configuration/project.md#basecolor).
+[`branding.baseColor`](/configuration/project.md#branding-basecolor)
+: Quick method to set the base brand color without full [theme](/configuration/project.md#theme) configuration, see [docs](/configuration/project.md#branding-basecolor).
 
 [`nav.badge`](/configuration/page.md#nav-badge)
 : Add a badge to navigation items in the left sidebar, see [docs](/configuration/page.md#nav-badge).
@@ -189,7 +189,7 @@ Pipe notation syntax
 : Shorthand syntax for [[Button]], [[Badge]], and [Navigation Badge](/configuration/page.md#nav-badge) components using `text|variant` format. Example: `[!badge NEW|info]` instead of `[!badge text="NEW" variant"info"]`.
 
 Icon-only links
-: Support for icon-only [`links`](/configuration/project.md#links) in header and [footer](/configuration/project.md#footer) configurations without requiring [`text`](/configuration/project.md#text). Enables cleaner, minimal navigation designs.
+: Support for icon-only [`links`](/configuration/project.md#links) in header and [footer](/configuration/project.md#footer) configurations without requiring [`text`](/configuration/project.md#links-text). Enables cleaner, minimal navigation designs.
 
 Base variant
 : New `base` variant for [[Button]], [[Badge]], and [[Callout]] components. Provides consistent styling with the site's base color theme.
@@ -201,7 +201,7 @@ Search and filter UX
 : Added keyboard shortcuts hints, improved placeholder handling, and better focus states
 
 Footer template support
-: Full templating support in [`footer.copyright`](/configuration/project.md#copyright) including use of data variables, includes, and functions
+: Full templating support in [`footer.copyright`](/configuration/project.md#footer-copyright) including use of data variables, includes, and functions
 
 ---
 
@@ -233,7 +233,7 @@ Custom Anchors
 ## v3.9.0
 
 Navigation icon settings
-: Control which navigation items show icons with [`nav.icons.mode`](/configuration/project.md#icons) setting. Options include: `all`, `folders`, `pages`, `top`, `none`.
+: Control which navigation items show icons with [`nav.icons.mode`](/configuration/project.md#nav-icons) setting. Options include: `all`, `folders`, `pages`, `top`, `none`.
 
 Default color scheme
 : Set project's default color scheme with [`scheme.mode`](/configuration/project.md#scheme) configuration. Options include: `system`, `dark`, `light`.

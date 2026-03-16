@@ -63,7 +63,7 @@ The `backlinks` configuration controls the automatic display of inbound links fr
 
 When enabled, backlinks are automatically included at the end of pages that have inbound links from other pages. The feature leverages Retype's dependency tracking system to build a web of interconnected content.
 
-### enabled
+### enabled {#backlinks-enabled}
 
 === enabled : `boolean`
 
@@ -93,7 +93,7 @@ The title appears as a heading above the list of pages that link to the current 
 
 ===
 
-### maxResults
+### maxResults {#backlinks-maxresults}
 
 === maxResults : `number`
 
@@ -119,7 +119,7 @@ The `backlinks` configuration can be set at two levels with the following preced
 
 Branding configuration for your Retype generated website.
 
-### baseColor
+### baseColor {#branding-basecolor}
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
@@ -138,7 +138,7 @@ The `baseColor` setting is equivalent to setting `base-color` in the [`theme`](#
 
 ===
 
-### label
+### label {#branding-label}
 
 === label : `string`
 
@@ -148,7 +148,7 @@ Optional logo label text. Default is `Docs`.
 branding:
   label: Docs
 ```
-The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#branding-title) or [`logo`](#logo).
+The `label` is rendered as the following label in the upper-left corner of the generated website, to the right of the [`title`](#branding-title) or [`logo`](#branding-logo).
 
 ![](/static/project-branding-title.png)
 ===
@@ -194,7 +194,7 @@ If either value is omitted, Retype uses the built-in theme styling for that part
 
 ===
 
-### logo
+### logo {#branding-logo}
 
 === logo : `string`
 
@@ -211,7 +211,7 @@ branding:
 ```
 ===
 
-### logoDark
+### logoDark {#branding-logodark}
 
 === logoDark : `string`
 
@@ -229,7 +229,7 @@ branding:
 ```
 ===
 
-### logoAlign
+### logoAlign {#branding-logoalign}
 
 === logoAlign : `string`
 
@@ -250,7 +250,7 @@ branding:
 
 The main text title added to the upper-left corner of the generated website.
 
-The `title` can be used in conjunction with [`logo`](#logo) and [`logoDark`](#logodark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
+The `title` can be used in conjunction with [`logo`](#branding-logo) and [`logoDark`](#branding-logodark). If a `title` and `logo` are configured, both will be added to the website. If only a `title` is configured, only the text title is used. If only a `logo` and/or `logoDark` are configured, only the logos are used.
 
 ```yml Set the website title
 branding:
@@ -270,7 +270,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The breadcrumb navigation provides a hierarchical representation of the user's location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.
 
-### enabled
+### enabled {#breadcrumb-enabled}
 
 === enabled : `boolean`
 To enable or disable the breadcrumb navigation within Retype Pro projects. Default is `true`.
@@ -287,7 +287,7 @@ breadcrumb:
 ```
 ===
 
-### home
+### home {#breadcrumb-home}
 
 === home : `string` or `boolean`
 The `home` config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a `string` or a `boolean` value.
@@ -323,7 +323,7 @@ breadcrumb:
 ```
 ===
 
-### separator
+### separator {#breadcrumb-separator}
 
 === separator : `string`
 The `separator` config allows for the customization of the node separator used between each page label in the breadcrumb navigation.
@@ -381,7 +381,7 @@ The `layout` can still be overridden on individual blog posts by setting the [`l
 
 ===
 
-### maxResults
+### maxResults {#blog-maxresults}
 
 === maxResults : `number`
 
@@ -396,7 +396,7 @@ By default, all blog posts are included. Setting a `maxResults` value will cap t
 
 ===
 
-### pageSize
+### pageSize {#blog-pagesize}
 
 === pageSize : `number`
 
@@ -430,7 +430,7 @@ If no `title` is configured, Retype will use the default translated label for th
 
 Custom configuration for the generated blog RSS feed.
 
-#### maxResults{#blog-rss-maxresults}
+#### maxResults {#blog-rss-maxresults}
 
 === maxResults : `number`
 
@@ -446,7 +446,7 @@ This setting applies only to the generated RSS feed and does not change the `blo
 
 ===
 
-#### title{#blog-rss-title}
+#### title {#blog-rss-title}
 
 === title : `string`
 
@@ -458,11 +458,11 @@ blog:
     title: Project Updates
 ```
 
-If no `title` is configured, Retype will use the resolved blog title. The resolved blog title uses `blog.title` when configured, otherwise the generated blog summary heading. When available, [`meta.siteName`](#sitename) or [`branding.title`](#branding-title) is prefixed to that value.
+If no `title` is configured, Retype will use the resolved blog title. The resolved blog title uses `blog.title` when configured, otherwise the generated blog summary heading. When available, [`meta.siteName`](#meta-sitename) or [`branding.title`](#branding-title) is prefixed to that value.
 
 ===
 
-#### description{#blog-rss-description}
+#### description {#blog-rss-description}
 
 === description : `string`
 
@@ -478,7 +478,7 @@ If no `description` is configured, Retype will use the project `meta.description
 
 ===
 
-#### copyright{#blog-rss-copyright}
+#### copyright {#blog-rss-copyright}
 
 === copyright : `string`
 
@@ -494,7 +494,7 @@ If no `copyright` is configured, Retype will use the resolved `footer.copyright`
 
 ===
 
-#### imageUrl{#blog-rss-imageurl}
+#### imageUrl {#blog-rss-imageurl}
 
 === imageUrl : `string`
 
@@ -516,7 +516,7 @@ If no `imageUrl` is configured, Retype will use the resolved site `favicon` URL 
 
 Cache configuration options.
 
-### strategy
+### strategy {#cache-strategy}
 
 === strategy : `string`
 Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files.
@@ -554,7 +554,7 @@ Below are demo URLs generated for corresponding `cache.busting.strategy` options
 
 ===
 
-### token
+### token {#cache-token}
 
 === token : `string`
 
@@ -640,7 +640,7 @@ The `edit` config allows for enabling and customization of the `Edit this page` 
 Check out the bottom of this page for a working sample of `Edit this page`.
 !!!
 
-### repo
+### repo {#edit-repo}
 
 === repo : `string`
 The repository URL where the source files for this project are located.
@@ -661,12 +661,12 @@ edit:
 
 ===
 
-### base
+### base {#edit-base}
 
 === base : `string`
 An optional base path to a directory within the repository.
 
-The `base` can be configured with an optional path to a directory within the [`repo`](#repo).
+The `base` can be configured with an optional path to a directory within the [`repo`](#edit-repo).
 
 The following sample demonstrates how `edit.base` would be configured if the `.md` source files for this project are stored within the **/src/docs** sub-directory within the repo.
 
@@ -680,7 +680,7 @@ The final **Edit this page** URL constructed by Retype for the sample above woul
 
 ===
 
-### branch
+### branch {#edit-branch}
 
 === branch : `string`
 Point to a custom branch within the repo. Default is `main`.
@@ -692,7 +692,7 @@ edit:
 ```
 ===
 
-### label
+### label {#edit-label}
 
 === label : `string`
 A custom label for the link. Default is `"Edit this page"`.
@@ -710,7 +710,7 @@ edit:
 
 Custom configuration to control the page live editor functionality that is only available when `retype start` is running.
 
-### enabled
+### enabled {#editor-enabled}
 
 === enabled : `boolean`
 To enable or disable the live editor. Default is `true`.
@@ -773,7 +773,7 @@ By default, Retype will look for a `favicon.ico` or `favicon.png` within the roo
 
 ## footer
 
-### copyright
+### copyright {#footer-copyright}
 
 === copyright : `string`
 Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and {%{`{{ year }}`}%} variable.
@@ -786,7 +786,7 @@ footer:
 }%}
 ===
 
-### links (footer)
+### links (footer) {#footer-links}
 
 === links : `object`
 The `footer.links` have the same configuration options as [`links`](#links).
@@ -808,11 +808,11 @@ footer:
 
 ## generator
 
-### directoryIndex
+### directoryIndex {#generator-directoryindex}
 
 Configuration options to instruct Retype on how and when to deal with the default directory index files, such as `index.html`.
 
-#### altNames
+#### altNames {#generator-directoryindex-altnames}
 
 === altNames : `list`
 A list of file names to treat as default HTML files.
@@ -840,7 +840,7 @@ generator:
 
 ===
 
-#### append{#generator-directoryindex-append}
+#### append {#generator-directoryindex-append}
 
 === append : `boolean`
 Specifies if the default document file name should be appended to resolved URLs. By default, Retype does not append the default file name.
@@ -853,7 +853,7 @@ generator:
     append: true # default is false
 ```
 
-Using `append: true` in combination with the [`search.preload`](#preload) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
+Using `append: true` in combination with the [`search.preload`](#search-preload) config allows for offline file system browsing of your generated website without having to install Retype and start a web server using [`retype start`](/guides/cli.md#retype-start). The following sample demonstrates how to configure:
 
 ```yml
 search:
@@ -866,7 +866,7 @@ generator:
 
 ===
 
-#### name
+#### name {#generator-directoryindex-name}
 
 === name : `string`
 The default HTML document file name generated by Retype.
@@ -878,7 +878,7 @@ generator:
 ```
 ===
 
-### paths
+### paths {#generator-paths}
 
 === paths : `string`
 Configures url kind preference for resolved urls. Supported values: `source`, `relative`, and `root`.
@@ -895,7 +895,7 @@ generator:
 ```
 ===
 
-### recase
+### recase {#generator-recase}
 
 === recase : `string`
 Instructs Retype on how to recase the project file and folder names created by the author. Default is `all`.
@@ -916,7 +916,7 @@ generator:
 ```
 ===
 
-### trailingSlash
+### trailingSlash {#generator-trailingslash}
 
 === trailingSlash : `boolean`
 By setting `trailingSlash: false` in the project config, authors can instruct Retype to remove (or not add) the trailing `/` character when constructing links from paths to Markdown files.
@@ -947,7 +947,7 @@ The hub link is useful when deploying multiple documentation projects and you wo
 
 The hub is optional. If you would like a hub link, just set a URL in the `link` config.
 
-### link
+### link {#hub-link}
 
 === link : `string`
 Set to a local path or external URL. By setting the `link` value, the Hub will be enabled. To disable, remove the `link` config.
@@ -958,7 +958,7 @@ hub:
 ```
 ===
 
-### alt
+### alt {#hub-alt}
 
 === alt : `string`
 Custom text value used to set the `title` attribute of the hub link.
@@ -970,7 +970,7 @@ hub:
 ```
 ===
 
-### target
+### target {#hub-target}
 
 === target : `string`
 Sets the `target` attribute of the hub link and specifies which window or tab to open the link into.
@@ -1083,7 +1083,7 @@ input: ./src
 
 More `integrations` will be added over time. Do you have an integration suggestion? [let us know](https://github.com/retypeapp/retype/issues).
 
-### googleAnalytics
+### googleAnalytics {#integrations-googleanalytics}
 
 Add [Google Analytics](https://analytics.google.com/analytics/web/) to your website.
 
@@ -1108,7 +1108,7 @@ integrations:
 
 ---
 
-### googleTagManager
+### googleTagManager {#integrations-googletagmanager}
 
 Add the [Google Tag Manager](https://tagmanager.google.com/) to your website.
 
@@ -1126,11 +1126,11 @@ Replace the `<id>` with your Google Tag Manager measurement id.
 
 ---
 
-### gravatar
+### gravatar {#integrations-gravatar}
 
 Specific setting to control Retype integration with the [Gravatar](https://gravatar.com/) profile picture service and used by the [page.authors](/configuration/page.md#author) configuration.
 
-#### default{#integrations-gravatar-default}
+#### default {#integrations-gravatar-default}
 
 === default : `string`
 
@@ -1153,7 +1153,7 @@ Please see the [Default Image](https://en.gravatar.com/site/implement/images#def
 
 ===
 
-#### enabled
+#### enabled {#integrations-gravatar-enabled}
 
 === enabled : `boolean`
 
@@ -1169,11 +1169,11 @@ Disabling Gravatar will also reset the default avatar to the Retype default.
 
 ---
 
-### plausible
+### plausible {#integrations-plausible}
 
 [Plausible.io](https://plausible.io/) is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.
 
-#### domain{#integration-plausible-domain}
+#### domain {#integration-plausible-domain}
 
 === domain : `string`
 
@@ -1197,7 +1197,7 @@ Check out the Plausible [documentation](https://plausible.io/docs/) for more det
 
 ===
 
-#### host{#integration-plausible-host}
+#### host {#integration-plausible-host}
 
 === host : `string`
 
@@ -1396,7 +1396,7 @@ links:
     link: https://retype.com/getting_started/
 ```
 
-### text
+### text {#links-text}
 
 === text : `string`
 
@@ -1409,7 +1409,7 @@ links:
 ```
 ===
 
-### link
+### link {#links-link}
 
 === link : `string`
 
@@ -1424,7 +1424,7 @@ links:
 ```
 ===
 
-### icon
+### icon {#links-icon}
 
 === icon : `string`
 
@@ -1456,7 +1456,7 @@ icon: ../static/rocket.png
 ```
 ===
 
-### iconAlign
+### iconAlign {#links-iconalign}
 
 === iconAlign : `string`
 
@@ -1471,7 +1471,7 @@ links:
 ```
 ===
 
-### target
+### target {#links-target}
 
 === target : `string`
 
@@ -1503,7 +1503,7 @@ There are several other values that may be prefixed with an `_` character, inclu
 
 ===
 
-### title
+### title {#links-title}
 
 === title : `string`
 
@@ -1600,7 +1600,7 @@ Code | Language | Native name
 
 Markdown configuration options.
 
-### lineBreaks
+### lineBreaks {#markdown-linebreaks}
 
 === lineBreaks : `string`
 
@@ -1646,7 +1646,7 @@ See also, the Page level [`meta.title`](page.md#meta) configuration.
 !!!
 ===
 
-### siteName
+### siteName {#meta-sitename}
 
 === siteName : `string`
 
@@ -1670,7 +1670,7 @@ The above configuration generates:
 
 Navigation configuration options to control the behavior of the left sidebar navigation.
 
-### mode{#nav-mode}
+### mode {#nav-mode}
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
@@ -1693,9 +1693,9 @@ To convert only one top-level directory to a `stack` type layout, please see the
 
 ===
 
-### icons
+### icons {#nav-icons}
 
-#### mode{#nav-icons-mode}
+#### mode {#nav-icons-mode}
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
@@ -1728,7 +1728,7 @@ nav:
     mode: none
 ```
 
-The `nav.icons.mode` setting can be used in conjunction with [`nav.mode: stack`](#mode) to handle many different icon and navigation rendering combinations.
+The `nav.icons.mode` setting can be used in conjunction with [`nav.mode: stack`](#nav-mode) to handle many different icon and navigation rendering combinations.
 
 ===
 
@@ -1740,7 +1740,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
 
-### mode{#nextprev-mode}
+### mode {#nextprev-mode}
 
 === mode : `string`
  
@@ -1779,7 +1779,7 @@ The `outbound` functionality will be automatically enabled for Retype Pro projec
 
 If `outbound` is enabled, Retype will find all external (outbound) links within the project, add a trailing :icon-link-external: icon, and set the link to open in a new tab when clicked.
 
-### enabled
+### enabled {#outbound-enabled}
 
 === enabled : `boolean`
 
@@ -1795,7 +1795,7 @@ outbound:
 ```
 ===
 
-### custom
+### custom {#outbound-custom}
 
 === custom : `string`
 
@@ -1809,11 +1809,11 @@ outbound:
 ```
 ===
 
-### icon
+### icon {#outbound-icon}
 
 === icon : `string`
 
-Defines the icon to be used for outbound links and accepts all the same options as the [`links.icon`](#icon) config. The default value is `link-external` :icon-link-external:.
+Defines the icon to be used for outbound links and accepts all the same options as the [`links.icon`](#links-icon) config. The default value is `link-external` :icon-link-external:.
 
 ```yml
 outbound:
@@ -1829,11 +1829,11 @@ outbound:
 
 ===
 
-### iconAlign
+### iconAlign {#outbound-iconalign}
 
 === iconAlign : `string`
 
-Determines the alignment of the icon for outbound links and accepts the same options as the [`links.iconAlign`](#iconalign) config. Acceptable values are `right` or `left`. The default value is `right`.
+Determines the alignment of the icon for outbound links and accepts the same options as the [`links.iconAlign`](#links-iconalign) config. Acceptable values are `right` or `left`. The default value is `right`.
 
 ```yml
 outbound:
@@ -1841,7 +1841,7 @@ outbound:
 ```
 ===
 
-### target
+### target {#outbound-target}
 
 === target : `string`
 
@@ -1853,7 +1853,7 @@ outbound:
 ```
 ===
 
-### exclude
+### exclude {#outbound-exclude}
 
 === exclude : `list`
 
@@ -1869,11 +1869,11 @@ outbound:
     - example.com
 ```
 
-Please also see [`outbound.include`](#include-1).
+Please also see [`outbound.include`](#outbound-include).
 
 ===
 
-### include
+### include {#outbound-include}
 
 === include : `list`
 
@@ -1889,7 +1889,7 @@ outbound:
     - example.com
 ```
 
-If any item is added to the `include` list, by default, all other paths will be excluded. Please also see [`outbound.exclude`](#exclude-1).
+If any item is added to the `include` list, by default, all other paths will be excluded. Please also see [`outbound.exclude`](#outbound-exclude).
 ===
 
 ---
@@ -1939,7 +1939,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `scheme` configuration allows you to control the default color mode (**light** or **dark**) for your Retype generated website. By default, Retype will automatically match the visitor's system preference, but you can explicitly set the site to always render in either `dark` or `light` mode.
 
-### mode{#scheme-mode}
+### mode {#scheme-mode}
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
 
@@ -2037,7 +2037,7 @@ search:
 
 ===
 
-### excludeCode
+### excludeCode {#search-excludecode}
 
 === excludeCode : `boolean`
 Exclude code blocks from the search index. Default is `false`.
@@ -2051,7 +2051,7 @@ search:
 
 ===
 
-### hotkeys
+### hotkeys {#search-hotkeys}
 
 === hotkeys : `list`
 Keyboard key to set the cursor focus into the search field. Default is `k`.
@@ -2065,7 +2065,7 @@ search:
 ```
 ===
 
-### maxResults
+### maxResults {#search-maxresults}
 
 === maxResults : `number`
 Max number of search results to render. Default is `20`.
@@ -2076,7 +2076,7 @@ search:
 ```
 ===
 
-### minChars
+### minChars {#search-minchars}
 
 === minChars : `number`
 Min number of characters required in a search query. Default is `2`.
@@ -2089,7 +2089,7 @@ search:
 ```
 ===
 
-### mode
+### mode {#search-mode}
 
 === mode : `string`
 The search index creation mode. Default is `full`.
@@ -2112,7 +2112,7 @@ If your project includes a lot of content and your users find the search is runn
 !!!
 ===
 
-### noResultsFoundMsg
+### noResultsFoundMsg {#search-noresultsfoundmsg}
 
 === noResultsFoundMsg : `string`
 Message rendered when no results were found. Default is `"Sorry, no results found."`.
@@ -2123,7 +2123,7 @@ search:
 ```
 ===
 
-### placeholder
+### placeholder {#search-placeholder}
 
 === placeholder : `string`
 Placeholder text rendered on the search component. Default is `"Search"`.
@@ -2134,7 +2134,7 @@ search:
 ```
 ===
 
-### preload
+### preload {#search-preload}
 
 === preload : `boolean`
 Specifies if the search index should be preloaded. Default is `false`.
@@ -2160,7 +2160,7 @@ generator:
 
 Custom configuration for the built in Retype development web server.
 
-### host
+### host {#serve-host}
 
 === host : `string`
 
@@ -2189,7 +2189,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port
 
 ===
 
-### port
+### port {#serve-port}
 
 === port : `number`
 
@@ -2205,7 +2205,7 @@ If the default port is already being used by another service, Retype will auto-i
 If a custom `port` is explicitly configured in the **retype.yml** and if that port is already being used by another service, Retype will write a message to the console and exit. In that scenario, because the `port` was explicitly configured, Retype will not attempt to auto-increment.
 
 !!!
-The port number can also be included in the [`host`](#host) config.
+The port number can also be included in the [`host`](#serve-host) config.
 !!!
 
 A custom `--port` value can also be passed as an argument to the [`retype start`](/guides/cli.md#options) and [`retype serve`](/guides/cli.md#options-3) commands. If included, the `--port` value will override the `port` set within your **retype.yml** project configuration file.
@@ -2216,11 +2216,11 @@ retype start --port 5005  # serve from a custom port
 
 ===
 
-### watch
+### watch {#serve-watch}
 
 Custom configuration for the [`retype serve`](/guides/cli.md#options-3) and [`retype start`](/guides/cli.md/#options) commands.
 
-#### mode{#serve-watch-mode}
+#### mode {#serve-watch-mode}
 
 === mode : `string`
 
@@ -2247,7 +2247,7 @@ The command [`retype build`](/guides/cli.md#retype-build) will always build and 
 
 ===
 
-#### polling{#serve-watch-polling}
+#### polling {#serve-watch-polling}
 
 === polling : `boolean` or `number`
 
@@ -2281,7 +2281,7 @@ On the flip side, increasing the polling interval may cause an annoying experien
 
 ===
 
-#### validation{#serve-watch-validation}
+#### validation {#serve-watch-validation}
 
 === validation : `string`
 
@@ -2319,7 +2319,7 @@ showSidebarFilter: false
 
 The `snippets` configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of [line numbering](/components/code-block.md#line-numbers).
 
-### lineNumbers
+### lineNumbers {#snippets-linenumbers}
 
 === lineNumbers : `list`
 
@@ -2355,7 +2355,7 @@ snippets:
 
 The `start` config contains project options that apply during the [`retype start`](../guides/cli.md#retype-start) CLI command.
 
-### open
+### open {#start-open}
 
 === open : `boolean`
 
@@ -2374,7 +2374,7 @@ Using the [CLI](../guides/cli.md#retype-start) command `retype start -n` or `ret
 
 ===
 
-### pro
+### pro {#start-pro}
 
 === pro : `boolean`
 
@@ -2391,7 +2391,7 @@ Using the [CLI](../guides/cli.md#retype-start) command `retype start --pro` will
 
 ===
 
-### debounce
+### debounce {#start-debounce}
 
 === debounce : `number`
 
@@ -2412,7 +2412,7 @@ Using the [CLI](../guides/cli.md#retype-start) command `retype start --debounce 
 
 Configurations to control the Retype content templating engine for this project.
 
-### enabled
+### enabled {#templating-enabled}
 
 === enabled : `boolean`
 
@@ -2427,7 +2427,7 @@ The templating engine can also be disabled on a per-page basis by setting `templ
 
 ===
 
-### liquid
+### liquid {#templating-liquid}
 
 === liquid : `boolean`
 
@@ -2442,7 +2442,7 @@ templating:
 
 ===
 
-### loopLimit
+### loopLimit {#templating-looplimit}
 
 === loopLimit : `number`
 
@@ -2511,7 +2511,7 @@ For most projects, the default limit of 1000 iterations provides a good balance 
 
 ===
 
-### namespace
+### namespace {#templating-namespace}
 
 === namespace : `string`
 
@@ -2549,7 +2549,7 @@ The `theme` configuration allows you to customize the visual appearance of your 
 
 [!ref text="Theme Variables"](/configuration/theme-variables.md)
 
-### base{#theme-base}
+### base {#theme-base}
 
 === base : `object`
 
@@ -2585,7 +2585,7 @@ theme:
 
 ===
 
-### dark{#theme-dark}
+### dark {#theme-dark}
 
 === dark : `object`
 
@@ -2608,7 +2608,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `toc` config contains project options that apply to the right sidebar Table of Contents.
 
-### depth
+### depth {#toc-depth}
 
 === depth : `string`, `number`
 The heading depth to include in the right Table of Contents.
@@ -2638,7 +2638,7 @@ Value | Description
 
 ===
 
-### label
+### label {#toc-label}
 
 === label : `string`
 

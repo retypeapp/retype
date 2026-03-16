@@ -236,7 +236,7 @@ Also checkout the new [[Blogging]] guide for more tips.
 
 ## Link Tooltips
 
-Add tooltip descriptions to your header and footer navigation links with the new [`title`](/configuration/project.md#title) property on `links` and `footer.links`:
+Add tooltip descriptions to your header and footer navigation links with the new [`title`](/configuration/project.md#links-title) property on `links` and `footer.links`:
 
 ```yaml retype.yml
 links:
@@ -270,3 +270,5 @@ Under the hood, Retype `v4.0` includes a complete upgrade of all internal librar
 Retype `v4.0` delivers new components for richer documentation, expanded templating for dynamic content, and a modernized foundation. The [[Card]] and [[Steps]] components help engage users and make your documentation more interactive. Template variables open up possibilities for dynamic content that stays current without manual updates.
 
 Try out the latest release by [installing or upgrading](/guides/installation.md) Retype and experiment with the new features. Share your projects with us on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues) with feedback. Your input helps shape the future of Retype.
+
+---

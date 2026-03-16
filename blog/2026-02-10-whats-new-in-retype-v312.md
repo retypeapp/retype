@@ -123,7 +123,7 @@ Regular content starts here.
 
 ### Dual-Source Support
 
-Use the [description](/configuration/page.md#description) page setting for meta tag value and `***` for page content:
+Use the [description](/configuration/page.md#meta-description) page setting for meta tag value and `***` for page content:
 
 ```yaml
 ---
@@ -164,3 +164,4 @@ Retype `v3.12` delivers powerful new capabilities for content discovery, visual 
 
 Try out the latest Retype release and experience these new features. Share your feedback with us on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input continues to shape the future of Retype.
 
+---

@@ -54,3 +54,5 @@ If your project is hosted using GitHub Pages with the default `github.io` domain
 You can now publish polished, full-featured documentation sites with Retype without worrying about cost.
 
 Let us know what you think on [X](https://x.com/retypeapp) or by opening a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input helps shape the future of Retype.
+
+---

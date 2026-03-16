@@ -173,7 +173,7 @@ templating:
   enabled: false
 ```
 
-## Try it
+## Write On!
 
 If you've been on the fence about publishing your Obsidian vault, Retype removes roadblocks. You already have the vault. You already write in Markdown. In minutes, you can have a fast, polished, and fully self-hosted website with no monthly subscription, no loss of content ownership, and no change to how you write. With Retype, you choose where your site lives. Host it on [GitHub Pages](/hosting/github-pages.md) for free, deploy to [Cloudflare](/hosting/cloudflare.md) or [Netlify](/hosting/netlify.md), or serve it from your own infrastructure. Your content stays on your terms.
 
@@ -181,4 +181,4 @@ If you've been on the fence about publishing your Obsidian vault, Retype removes
 
 Have feedback or ideas for Retype? Open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input helps shape the future of Retype.
 
-**Write On!**
+---

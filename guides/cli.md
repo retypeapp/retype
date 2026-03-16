@@ -413,7 +413,7 @@ retype build --override "{ \"url\": \"https://beta.retype.com\" }"
 
 The following sample demonstrates overriding a more complex configuration object.
 
-Using the following **retype.yml** project configuration file as an example, let's change the [`label`](/configuration/project.md#label) to `beta`, instead of `v1.10`.
+Using the following **retype.yml** project configuration file as an example, let's change the [`label`](/configuration/project.md#branding-label) to `beta`, instead of `v1.10`.
 
 ~~~yml **retype.yml**
 branding:
