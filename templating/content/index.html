@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826775240069">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.826949323343">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Content - Write On! with Retype</title>
@@ -27,21 +27,27 @@
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://retype.com/templating/content/">
+    <meta name="twitter:title" content="Content - Write On! with Retype">
+    <meta name="twitter:description" content="Use content to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and">
+
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Retype News by RSS" href="https://retype.com/blog/feed.xml">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826775240069" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.826949323343" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826775240069" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826775240069" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826775240069" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.826949323343" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.826949323343" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.826949323343" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826775240069" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.826949323343" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -58,10 +64,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="/" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
-                            <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg" alt="Retype" width="150" height="31">
+                            <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
@@ -75,40 +81,32 @@
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
                                 </svg>
                                 <span>Pro Pricing</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/blog/" title="Latest updates, announcements, and articles">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
                                 </svg>
                                 <span>Blog &amp; News</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                 </svg>
                                 <span>Support</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
                                 </svg>
                                 <span>Social</span>
                             </a>
@@ -164,40 +162,32 @@
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
                                         </svg>
                                         <span>Pro Pricing</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/blog/" title="Latest updates, announcements, and articles">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
                                         </svg>
                                         <span>Blog &amp; News</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                         </svg>
                                         <span>Support</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
                                         </svg>
                                         <span>Social</span>
                                     </a>
@@ -253,27 +243,12 @@
 
                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<doc-anchor-target id="content" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#content">#</doc-anchor-trigger>
-        <span>Content</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="content">Content</h1>
 <p>Use <code translate="no" v-pre>content</code> to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and iterate over collections such as tags, categories, authors, blog posts, and navigation items.</p>
 <p>For page-level metadata, see <a href="/templating/page-properties/">Page properties</a>. For project configuration values, see <a href="/templating/project-properties/">Project properties</a>.</p>
 <hr>
-<doc-anchor-target id="page-lookup">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#page-lookup">#</doc-anchor-trigger>
-        <span>Page lookup</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="by-key">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#by-key">#</doc-anchor-trigger>
-        <span>By key</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="page-lookup">Page lookup</h2>
+<h3 id="by-key">By key</h3>
 <p>Retrieve any page using <code translate="no" v-pre>content[&quot;key&quot;]</code>, where the key is the page&#x27;s filename (without extension), its title, or a relative path.</p>
 <div id="by-key-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ content[&quot;getting-started&quot;] }}</code></pre>
@@ -285,12 +260,7 @@
 {{ content[&quot;guides/getting-started&quot;] }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="page-properties">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#page-properties">#</doc-anchor-trigger>
-        <span>Page properties</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="page-properties">Page properties</h3>
 <p>Once you have a page reference, you can access all the <a href="/configuration/page/">page</a> settings, including:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -331,12 +301,7 @@ url: {{ content[&quot;getting-started&quot;].url }}
 path: {{ content[&quot;getting-started&quot;].path }}
 filePath: {{ content[&quot;getting-started&quot;].filePath }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="output">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#output">#</doc-anchor-trigger>
-        <span>Output</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="output">Output</h4>
 <div id="output-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">title: Getting Started
 description: This guide will have you up and running generating your own Retype website in just a few minutes.
@@ -345,12 +310,7 @@ path: /guides/getting-started/
 filePath: /guides/getting-started.md</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="render-as-a-card">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#render-as-a-card">#</doc-anchor-trigger>
-        <span>Render as a card</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="render-as-a-card">Render as a card</h3>
 <p>Pass a page <a href="/configuration/page/#filepath">filePath</a> to the <a href="/components/card/"><code translate="no" v-pre>[!card]</code></a> component to render a linked card for that page.</p>
 <div id="render-as-a-card-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card]({{ content[&quot;getting-started&quot;].filePath }})</code></pre>
@@ -384,12 +344,7 @@ filePath: /guides/getting-started.md</code></pre>
 </div>
 </p>
 <hr>
-<doc-anchor-target id="conditional-display">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conditional-display">#</doc-anchor-trigger>
-        <span>Conditional display</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="conditional-display">Conditional display</h3>
 <p>Check whether a page exists before linking to it. This is useful for optional or tier-specific content.</p>
 <div id="conditional-display-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ if content[&quot;premium-features&quot;] }}
@@ -397,19 +352,9 @@ filePath: /guides/getting-started.md</code></pre>
 {{ end }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="search">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
-        <span>Search</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="search">Search</h2>
 <p>Use <code translate="no" v-pre>content.search(&quot;term&quot;)</code> to find pages whose title contains the search term. Results are returned as an array of page objects.</p>
-<doc-anchor-target id="basic-search">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-search">#</doc-anchor-trigger>
-        <span>Basic search</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="basic-search">Basic search</h3>
 <div id="basic-search-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.search(&quot;obsidian&quot;) ~}}
 - [{{ item.title }}]({{ item.filePath }})
@@ -418,24 +363,14 @@ filePath: /guides/getting-started.md</code></pre>
 <ul>
 <li><a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/">Self-hosting Obsidian Vault with Retype</a></li>
 </ul>
-<doc-anchor-target id="access-a-specific-result">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#access-a-specific-result">#</doc-anchor-trigger>
-        <span>Access a specific result</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="access-a-specific-result">Access a specific result</h3>
 <div id="access-a-specific-result-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">title: {{ content.search(&quot;getting started&quot;)[0].title }}
 description: {{ content.search(&quot;getting started&quot;)[0].description }}</code></pre>
 </doc-codeblock></div>
 <p><strong>title:</strong> Getting Started<br />
 <strong>description:</strong> This guide will have you up and running generating your own Retype website in just a few minutes.</p>
-<doc-anchor-target id="limit-search-results">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#limit-search-results">#</doc-anchor-trigger>
-        <span>Limit search results</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="limit-search-results">Limit search results</h3>
 <p>Combine with the <code translate="no" v-pre>array.limit</code> filter to cap the number of results. The following sample then outputs each of the results into a <code translate="no" v-pre>compact</code> card component:</p>
 <div id="limit-search-results-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.search(&quot;retype&quot;) | array.limit 5 ~}}
@@ -497,18 +432,8 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 </div>
 </p>
 <hr>
-<doc-anchor-target id="tags">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tags">#</doc-anchor-trigger>
-        <span>Tags</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="list-all-tags">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#list-all-tags">#</doc-anchor-trigger>
-        <span>List all tags</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="tags">Tags</h2>
+<h3 id="list-all-tags">List all tags</h3>
 <p><code translate="no" v-pre>content.tags</code> returns all tags defined across the project. Each tag has a <code translate="no" v-pre>title</code> and a <code translate="no" v-pre>pages</code> array.</p>
 <div id="list-all-tags-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Tag | Page count
@@ -595,12 +520,7 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="pages-for-a-specific-tag">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pages-for-a-specific-tag">#</doc-anchor-trigger>
-        <span>Pages for a specific tag</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="pages-for-a-specific-tag">Pages for a specific tag</h3>
 <p>The following sample demonstrates how to get all the Pages based on a specific tag:</p>
 <div id="pages-for-a-specific-tag-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for page in content.tags[&quot;guide&quot;].pages ~}}
@@ -624,18 +544,8 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li><a href="/guides/troubleshooting/">Troubleshooting</a></li>
 </ul>
 <hr>
-<doc-anchor-target id="categories">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#categories">#</doc-anchor-trigger>
-        <span>Categories</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="list-all-categories">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#list-all-categories">#</doc-anchor-trigger>
-        <span>List all categories</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="categories">Categories</h2>
+<h3 id="list-all-categories">List all categories</h3>
 <p><code translate="no" v-pre>content.categories</code> returns all categories defined across the project. Each category has a <code translate="no" v-pre>title</code> and a <code translate="no" v-pre>pages</code> array.</p>
 <div id="list-all-categories-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for cat in content.categories ~}}
@@ -648,49 +558,24 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li><a href="/categories/blog/">blog</a> (1 pages)</li>
 </ul>
 <hr>
-<doc-anchor-target id="authors">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#authors">#</doc-anchor-trigger>
-        <span>Authors</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="list-all-authors">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#list-all-authors">#</doc-anchor-trigger>
-        <span>List all authors</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="authors">Authors</h2>
+<h3 id="list-all-authors">List all authors</h3>
 <p><code translate="no" v-pre>content.authors</code> returns all authors across the project. Each author entry has a <code translate="no" v-pre>name</code> and a <code translate="no" v-pre>pages</code> array.</p>
 <div id="list-all-authors-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for author in content.authors ~}}
 - {{ author.name }} ({{ author.pages | array.size }} pages)
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="pages-by-a-specific-author">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pages-by-a-specific-author">#</doc-anchor-trigger>
-        <span>Pages by a specific author</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="pages-by-a-specific-author">Pages by a specific author</h3>
 <div id="pages-by-a-specific-author-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for page in content.authors[&quot;Jane Smith&quot;].pages ~}}
 - [{{ page.title }}]({{ page.filePath }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="blog-posts">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-posts">#</doc-anchor-trigger>
-        <span>Blog Posts</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="blog-posts">Blog Posts</h2>
 <p><code translate="no" v-pre>content.blog.posts</code> returns all blog posts in the project, ordered by date descending.</p>
-<doc-anchor-target id="latest-as-a-card">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#latest-as-a-card">#</doc-anchor-trigger>
-        <span>Latest as a Card</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="latest-as-a-card">Latest as a Card</h3>
 <div id="latest-as-a-card-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card]({{ content.blog.posts[0].filePath }})</code></pre>
 </doc-codeblock></div>
@@ -711,12 +596,7 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
     </a>
 </div>
 </p>
-<doc-anchor-target id="list-all-blog-posts">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#list-all-blog-posts">#</doc-anchor-trigger>
-        <span>List all blog posts</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="list-all-blog-posts">List all blog posts</h3>
 <div id="list-all-blog-posts-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for post in content.blog.posts ~}}
 1. [{{ post.title }}]({{ post.filePath }})
@@ -734,12 +614,7 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li><a href="/blog/2025-05-28-whats-new-in-retype-v39/">What&#x27;s New in Retype v3.9</a></li>
 <li><a href="/blog/2025-05-04-whats-new-in-retype-v38/">What&#x27;s New in Retype v3.8</a></li>
 </ol>
-<doc-anchor-target id="most-recent-as-cards">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#most-recent-as-cards">#</doc-anchor-trigger>
-        <span>Most recent as Cards</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="most-recent-as-cards">Most recent as Cards</h3>
 <div id="most-recent-as-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for post in content.blog.posts | array.limit 3 ~}}
 [!card vert]({{ post.filePath }})
@@ -795,19 +670,9 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 </div>
 </p>
 <hr>
-<doc-anchor-target id="navigation">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#navigation">#</doc-anchor-trigger>
-        <span>Navigation</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="navigation">Navigation</h2>
 <p><code translate="no" v-pre>content.nav</code> exposes the project&#x27;s navigation tree. Use <code translate="no" v-pre>.children</code> to access the top-level items.</p>
-<doc-anchor-target id="list-top-level-navigation-items">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#list-top-level-navigation-items">#</doc-anchor-trigger>
-        <span>List top-level navigation items</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="list-top-level-navigation-items">List top-level navigation items</h3>
 <div id="list-top-level-navigation-items-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for item in content.nav.children ~}}
 - {{ item.label }} ({{ item.children | array.size }} children)
@@ -832,29 +697,14 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li>Not Found (0 children)</li>
 </ul>
 <hr>
-<doc-anchor-target id="all-pages">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#all-pages">#</doc-anchor-trigger>
-        <span>All pages</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="all-pages">All pages</h2>
 <p><code translate="no" v-pre>content.pages</code> is an array of all pages in the project. Use standard array filters to slice and query the list.</p>
-<doc-anchor-target id="access-a-page-by-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#access-a-page-by-index">#</doc-anchor-trigger>
-        <span>Access a page by index</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="access-a-page-by-index">Access a page by index</h3>
 <div id="access-a-page-by-index-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">title: {{ content.pages[0].title }}
 description: {{ content.pages[0].description }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="build-a-related-pages-section">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#build-a-related-pages-section">#</doc-anchor-trigger>
-        <span>Build a related pages section</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="build-a-related-pages-section">Build a related pages section</h3>
 <p>Combine <code translate="no" v-pre>content.pages</code> with array filters for curated page grids.</p>
 <div id="build-a-related-pages-section-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for page in content.pages | array.limit 3 ~}}
@@ -862,40 +712,20 @@ description: {{ content.pages[0].description }}</code></pre>
 {{ end }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="escaping-template-syntax">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#escaping-template-syntax">#</doc-anchor-trigger>
-        <span>Escaping template syntax</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="inline-escaping">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#inline-escaping">#</doc-anchor-trigger>
-        <span>Inline escaping</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="escaping-template-syntax">Escaping template syntax</h2>
+<h3 id="inline-escaping">Inline escaping</h3>
 <p>To display literal <code translate="no" v-pre>{{ }}</code> syntax without the template engine processing it, wrap the content in opening <code translate="no" v-pre>{%{</code> and closing <code translate="no" v-pre>}%}</code> escape tags:</p>
 <div id="inline-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-javascript"><code v-pre class="language-javascript">{%{ {{ content[&quot;getting-started&quot;].title }} }%}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="page-level-escaping">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#page-level-escaping">#</doc-anchor-trigger>
-        <span>Page-level escaping</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="page-level-escaping">Page-level escaping</h3>
 <p>To disable templating for an entire page, set <code translate="no" v-pre>templating: false</code> in the page frontmatter:</p>
 <div id="page-level-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 templating: false
 ---</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="project-level-escaping">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#project-level-escaping">#</doc-anchor-trigger>
-        <span>Project-level escaping</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="project-level-escaping">Project-level escaping</h3>
 <p>To disable templating project-wide, update your <code translate="no" v-pre>retype.yml</code> with the following:</p>
 <div id="project-level-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:

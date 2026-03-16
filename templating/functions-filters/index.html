@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826775240069">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.826949323343">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Functions and Filters - Write On! with Retype</title>
@@ -27,21 +27,27 @@
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://retype.com/templating/functions-filters/">
+    <meta name="twitter:title" content="Functions and Filters - Write On! with Retype">
+    <meta name="twitter:description" content="Retype's templating system is powered by Scriban and includes a comprehensive set of built-in functions and filters for transforming strings, working with">
+
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Retype News by RSS" href="https://retype.com/blog/feed.xml">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826775240069" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.826949323343" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826775240069" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826775240069" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826775240069" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.826949323343" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.826949323343" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.826949323343" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826775240069" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.826949323343" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -58,10 +64,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="/" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
-                            <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg" alt="Retype" width="150" height="31">
+                            <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
@@ -75,40 +81,32 @@
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
                                 </svg>
                                 <span>Pro Pricing</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/blog/" title="Latest updates, announcements, and articles">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
                                 </svg>
                                 <span>Blog &amp; News</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                 </svg>
                                 <span>Support</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
                                 </svg>
                                 <span>Social</span>
                             </a>
@@ -164,40 +162,32 @@
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
                                         </svg>
                                         <span>Pro Pricing</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/blog/" title="Latest updates, announcements, and articles">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
                                         </svg>
                                         <span>Blog &amp; News</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                         </svg>
                                         <span>Support</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
                                         </svg>
                                         <span>Social</span>
                                     </a>
@@ -252,50 +242,25 @@
                 </nav>
 
                 <!-- Page content  -->
-<doc-anchor-target id="functions-and-filters" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#functions-and-filters">#</doc-anchor-trigger>
-        <span>Functions and Filters</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="functions-and-filters">Functions and Filters</h1>
 <p>Retype&#x27;s templating system is powered by <a href="https://scriban.github.io/" class="outbound" target="_blank"><span>Scriban</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> and includes a comprehensive set of built-in functions and filters for transforming strings, working with arrays, formatting dates, performing math, processing HTML, and inspecting objects.</p>
 <hr>
-<doc-anchor-target id="using-functions-and-filters">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#using-functions-and-filters">#</doc-anchor-trigger>
-        <span>Using functions and filters</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="function-syntax">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#function-syntax">#</doc-anchor-trigger>
-        <span>Function syntax</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="using-functions-and-filters">Using functions and filters</h2>
+<h3 id="function-syntax">Function syntax</h3>
 <p>Call a function by passing the input as the first argument:</p>
 <div id="function-syntax-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ string.upcase &quot;hello world&quot; }}
 {{ array.size page.tags }}
 {{ date.now.year }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="pipe-filter-syntax">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pipe-filter-syntax">#</doc-anchor-trigger>
-        <span>Pipe (filter) syntax</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="pipe-filter-syntax">Pipe (filter) syntax</h3>
 <p>Use the pipe operator (<code translate="no" v-pre>|</code>) to pass the left-hand value as the first argument to the function on the right. This is equivalent to calling the function directly and is the most common style:</p>
 <div id="pipe-filter-syntax-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;hello world&quot; | string.upcase }}
 {{ page.tags | array.size }}
 {{ page.title | string.truncate 40 }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="chaining-filters">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#chaining-filters">#</doc-anchor-trigger>
-        <span>Chaining filters</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="chaining-filters">Chaining filters</h3>
 <p>Chain multiple filters together. Each filter receives the output of the previous one:</p>
 <div id="chaining-filters-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;  hello world  &quot; | string.strip | string.upcase }}
@@ -303,12 +268,7 @@
 {{ page.title | string.replace &quot;-&quot; &quot; &quot; | string.capitalizewords }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="string-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#string-functions">#</doc-anchor-trigger>
-        <span>String functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="string-functions">String functions</h2>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -437,12 +397,7 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="case-and-whitespace">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#case-and-whitespace">#</doc-anchor-trigger>
-        <span>Case and whitespace</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="case-and-whitespace">Case and whitespace</h3>
 <div id="case-and-whitespace-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;hello world&quot; | string.upcase }}           {{# HELLO WORLD #}}
 {{ &quot;HELLO WORLD&quot; | string.downcase }}         {{# hello world #}}
@@ -451,12 +406,7 @@
 {{ &quot;  hello  &quot; | string.strip }}              {{# hello #}}
 {{ &quot;hello\nworld&quot; | string.strip_newlines }}  {{# helloworld #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="append-prepend-and-replace">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#append-prepend-and-replace">#</doc-anchor-trigger>
-        <span>Append, prepend, and replace</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="append-prepend-and-replace">Append, prepend, and replace</h3>
 <div id="append-prepend-and-replace-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;Hello&quot; | string.append &quot; World&quot; }}                        {{# Hello World #}}
 {{ &quot;World&quot; | string.prepend &quot;Hello &quot; }}                       {{# Hello World #}}
@@ -464,12 +414,7 @@
 {{ &quot;Hello, world.&quot; | string.replace_first &quot;l&quot; &quot;L&quot; }}          {{# HeLlo, world. #}}
 {{ &quot;Hello, world.&quot; | string.remove &quot;world&quot; }}                 {{# Hello, . #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="truncation">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#truncation">#</doc-anchor-trigger>
-        <span>Truncation</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="truncation">Truncation</h3>
 <p>The <code translate="no" v-pre>string.truncate</code> character count includes the ellipsis characters:</p>
 <div id="truncation-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;The quick brown fox&quot; | string.truncate 13 }}
@@ -481,12 +426,7 @@
 {{ &quot;The quick brown fox&quot; | string.truncate 13 &quot;…&quot; }}
 {{# The quick brow… #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="testing-strings">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#testing-strings">#</doc-anchor-trigger>
-        <span>Testing strings</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="testing-strings">Testing strings</h3>
 <div id="testing-strings-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ if &quot;hello world&quot; | string.contains &quot;world&quot; }}
   Contains &quot;world&quot;
@@ -500,45 +440,25 @@
   Secure URL
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="split-and-join">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#split-and-join">#</doc-anchor-trigger>
-        <span>Split and join</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="split-and-join">Split and join</h3>
 <p>Split a string into an array, then loop or join the result:</p>
 <div id="split-and-join-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for word in &quot;one,two,three&quot; | string.split &quot;,&quot; ~}}
 - {{ word }}
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="pluralize">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pluralize">#</doc-anchor-trigger>
-        <span>Pluralize</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="pluralize">Pluralize</h3>
 <div id="pluralize-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.tags | array.size }} {{ page.tags | array.size | string.pluralize &quot;tag&quot; &quot;tags&quot; }}
 {{# 3 tags #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="handleize">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#handleize">#</doc-anchor-trigger>
-        <span>Handleize</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="handleize">Handleize</h3>
 <div id="handleize-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;Hello World! 100%&quot; | string.handleize }}
 {{# hello-world-100 #}}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="array-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#array-functions">#</doc-anchor-trigger>
-        <span>Array functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="array-functions">Array functions</h2>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -627,24 +547,14 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="accessing-elements">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#accessing-elements">#</doc-anchor-trigger>
-        <span>Accessing elements</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="accessing-elements">Accessing elements</h3>
 <div id="accessing-elements-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.tags | array.first }}             {{# first tag #}}
 {{ page.tags | array.last }}              {{# last tag #}}
 {{ page.tags | array.size }}              {{# number of tags #}}
 {{ page.tags[0] }}                        {{# first tag by index #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="limit-and-offset">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#limit-and-offset">#</doc-anchor-trigger>
-        <span>Limit and offset</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="limit-and-offset">Limit and offset</h3>
 <p><code translate="no" v-pre>array.limit</code> and <code translate="no" v-pre>array.offset</code> are commonly used together to paginate or select a window of items:</p>
 <div id="limit-and-offset-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for post in content.blog.posts | array.limit 3 ~}}
@@ -657,12 +567,7 @@
 - [{{ post.title }}]({{ post.path }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="sort-and-transform">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sort-and-transform">#</doc-anchor-trigger>
-        <span>Sort and transform</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="sort-and-transform">Sort and transform</h3>
 <p><code translate="no" v-pre>array.sort</code> sorts by element value. Pass a member name to sort objects by a property:</p>
 <div id="sort-and-transform-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# Sort primitive values #}}
@@ -672,12 +577,7 @@
 {{# Sort objects by a member #}}
 {{ content.blog.posts | array.sort &quot;title&quot; | array.map &quot;title&quot; | array.join &quot;, &quot; }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="map-join-and-uniq">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#map-join-and-uniq">#</doc-anchor-trigger>
-        <span>Map, join, and uniq</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="map-join-and-uniq">Map, join, and uniq</h3>
 <div id="map-join-and-uniq-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# Extract a single property from each object #}}
 {{ page.authors | array.map &quot;name&quot; | array.join &quot;, &quot; }}
@@ -685,23 +585,13 @@
 {{# Remove duplicates and join #}}
 {{ page.tags | array.uniq | array.sort | array.join &quot; · &quot; }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="compact">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#compact">#</doc-anchor-trigger>
-        <span>Compact</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="compact">Compact</h3>
 <div id="compact-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# Remove null values from an array #}}
 {{ [1, null, 2, null, 3] | array.compact }}
 {{# [1, 2, 3] #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="filter-with-a-function-reference">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#filter-with-a-function-reference">#</doc-anchor-trigger>
-        <span>Filter with a function reference</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="filter-with-a-function-reference">Filter with a function reference</h3>
 <p>Use <code translate="no" v-pre>array.filter</code> with a function reference (prefixed with <code translate="no" v-pre>@</code>) to keep only matching elements:</p>
 <div id="filter-with-a-function-reference-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{# Keep only empty strings #}}
@@ -709,12 +599,7 @@
 {{# [&quot;&quot;, &quot;&quot;] #}}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="date-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#date-functions">#</doc-anchor-trigger>
-        <span>Date functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="date-functions">Date functions</h2>
 <p>A date object returned by <code translate="no" v-pre>date.now</code> or <code translate="no" v-pre>date.parse</code> exposes the following properties:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -760,12 +645,7 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="current-date-and-time">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#current-date-and-time">#</doc-anchor-trigger>
-        <span>Current date and time</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="current-date-and-time">Current date and time</h3>
 <p>Date properties are accessed with dot notation directly on <code translate="no" v-pre>date.now</code>:</p>
 <div id="current-date-and-time-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ date.now }}                      {{# e.g. 02 Mar 2026 #}}
@@ -773,12 +653,7 @@
 {{ date.now.month }}                {{# 3 #}}
 {{ date.now.day }}                  {{# 2 #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="formatting">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#formatting">#</doc-anchor-trigger>
-        <span>Formatting</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="formatting">Formatting</h3>
 <p>Use <code translate="no" v-pre>date.to_string</code> with a format pattern. The default format is <code translate="no" v-pre>%d %b %Y</code>:</p>
 <div id="formatting-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ date.now | date.to_string &quot;%Y-%m-%d&quot; }}            {{# 2026-03-02 #}}
@@ -865,22 +740,12 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="parsing-a-date-string">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#parsing-a-date-string">#</doc-anchor-trigger>
-        <span>Parsing a date string</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="parsing-a-date-string">Parsing a date string</h3>
 <div id="parsing-a-date-string-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ date.parse &quot;2026-03-02&quot; | date.to_string &quot;%B %d, %Y&quot; }}
 {{# March 02, 2026 #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="date-arithmetic">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#date-arithmetic">#</doc-anchor-trigger>
-        <span>Date arithmetic</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="date-arithmetic">Date arithmetic</h3>
 <p>Pass a negative number to subtract from a date:</p>
 <div id="date-arithmetic-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ date.now | date.add_days 7 }}              {{# 7 days from now #}}
@@ -888,12 +753,7 @@
 {{ date.now | date.add_months 1 }}            {{# 1 month from now #}}
 {{ date.now | date.add_years 1 }}             {{# 1 year from now #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="date-comparison">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#date-comparison">#</doc-anchor-trigger>
-        <span>Date comparison</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="date-comparison">Date comparison</h3>
 <p>Standard comparison operators (<code translate="no" v-pre>==</code>, <code translate="no" v-pre>!=</code>, <code translate="no" v-pre>&lt;</code>, <code translate="no" v-pre>&gt;</code>, <code translate="no" v-pre>&lt;=</code>, <code translate="no" v-pre>&gt;=</code>) work on date objects:</p>
 <div id="date-comparison-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ releaseDate = date.parse &quot;2026-06-01&quot; }}
@@ -903,12 +763,7 @@
   Available now.
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="conditional-content-by-month">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conditional-content-by-month">#</doc-anchor-trigger>
-        <span>Conditional content by month</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="conditional-content-by-month">Conditional content by month</h3>
 <p>Access <code translate="no" v-pre>.month</code> as a property on <code translate="no" v-pre>date.now</code>, not as a piped function:</p>
 <div id="conditional-content-by-month-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ if date.now.month == 12 }}
@@ -918,12 +773,7 @@ Summer edition
 {{ end }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="math-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#math-functions">#</doc-anchor-trigger>
-        <span>Math functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="math-functions">Math functions</h2>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -988,12 +838,7 @@ Summer edition
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="basic-operations">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-operations">#</doc-anchor-trigger>
-        <span>Basic operations</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="basic-operations">Basic operations</h3>
 <div id="basic-operations-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ -15.5 | math.abs }}                         {{# 15.5 #}}
 {{ 4.3 | math.ceil }}                          {{# 5 #}}
@@ -1006,12 +851,7 @@ Summer edition
 {{ 10 | math.divided_by 3.0 | math.round 2 }}  {{# 3.33 #}}
 {{ 11 | math.modulo 3 }}                       {{# 2 #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="formatting-numbers">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#formatting-numbers">#</doc-anchor-trigger>
-        <span>Formatting numbers</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="formatting-numbers">Formatting numbers</h3>
 <p><code translate="no" v-pre>math.format</code> accepts <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings" class="outbound" target="_blank"><span>.NET standard numeric format strings</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>:</p>
 <div id="formatting-numbers-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ 1234.56 | math.format &quot;N2&quot; }}              {{# 1,234.56 #}}
@@ -1019,23 +859,13 @@ Summer edition
 {{ 1234567 | math.format &quot;C&quot; }}               {{# $1,234,567.00 #}}
 {{ 255 | math.format &quot;X4&quot; }}                  {{# 00FF #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="file-size-example">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#file-size-example">#</doc-anchor-trigger>
-        <span>File size example</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="file-size-example">File size example</h3>
 <p>When dividing, use a float divisor to preserve decimal precision:</p>
 <div id="file-size-example-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ fileSizeBytes | math.divided_by 1024 | math.divided_by 1024.0 | math.round 2 }} MB</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="html-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#html-functions">#</doc-anchor-trigger>
-        <span>HTML functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="html-functions">HTML functions</h2>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1068,12 +898,7 @@ Summer edition
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="examples">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
-        <span>Examples</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="examples">Examples</h3>
 <div id="examples-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;&lt;p&gt;Hello &lt;strong&gt;world&lt;/strong&gt;&lt;/p&gt;&quot; | html.strip }}
 {{# Hello world #}}
@@ -1088,12 +913,7 @@ Summer edition
 {{# user%40example.com #}}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="object-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#object-functions">#</doc-anchor-trigger>
-        <span>Object functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="object-functions">Object functions</h2>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1138,21 +958,11 @@ Summer edition
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="default-value">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#default-value">#</doc-anchor-trigger>
-        <span>Default value</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="default-value">Default value</h3>
 <div id="default-value-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.description | object.default &quot;No description provided.&quot; }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="inspect-an-object">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#inspect-an-object">#</doc-anchor-trigger>
-        <span>Inspect an object</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="inspect-an-object">Inspect an object</h3>
 <div id="inspect-an-object-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page | object.keys }}
 {{# [&quot;title&quot;, &quot;description&quot;, &quot;url&quot;, &quot;path&quot;, ...] #}}
@@ -1160,12 +970,7 @@ Summer edition
 {{ page | object.has_key &quot;description&quot; }}
 {{# true #}}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="type-checking">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#type-checking">#</doc-anchor-trigger>
-        <span>Type checking</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="type-checking">Type checking</h3>
 <p>Use <code translate="no" v-pre>object.typeof</code> to branch on the type of a value:</p>
 <div id="type-checking-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ if page.tags | object.typeof == &quot;array&quot; }}
@@ -1177,12 +982,7 @@ Summer edition
 {{ end }}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="user-defined-functions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#user-defined-functions">#</doc-anchor-trigger>
-        <span>User-defined functions</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="user-defined-functions">User-defined functions</h2>
 <p>Define reusable logic with <code translate="no" v-pre>func</code> and <code translate="no" v-pre>end</code>:</p>
 <div id="user-defined-functions-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ func format_author(author) }}
@@ -1191,12 +991,7 @@ Summer edition
 
 Written by {{ format_author page.author }}.</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="functions-with-default-parameters">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#functions-with-default-parameters">#</doc-anchor-trigger>
-        <span>Functions with default parameters</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="functions-with-default-parameters">Functions with default parameters</h3>
 <p>Parameters can have default values:</p>
 <div id="functions-with-default-parameters-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ func excerpt(text, length = 150) }}
@@ -1206,12 +1001,7 @@ Written by {{ format_author page.author }}.</code></pre>
 {{ excerpt page.description }}
 {{ excerpt page.description 80 }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="inline-function-shorthand">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#inline-function-shorthand">#</doc-anchor-trigger>
-        <span>Inline function shorthand</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="inline-function-shorthand">Inline function shorthand</h3>
 <p>Short functions can be written as a single assignment expression:</p>
 <div id="inline-function-shorthand-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ double(x) = x | math.times 2 }}
@@ -1219,57 +1009,27 @@ Written by {{ format_author page.author }}.</code></pre>
 {{# 10 #}}</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="practical-examples">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#practical-examples">#</doc-anchor-trigger>
-        <span>Practical examples</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="author-byline">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#author-byline">#</doc-anchor-trigger>
-        <span>Author byline</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="practical-examples">Practical examples</h2>
+<h3 id="author-byline">Author byline</h3>
 <div id="author-byline-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.author.name }} · {{ page.date | date.to_string &quot;%B %d, %Y&quot; }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="tag-list-with-count">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tag-list-with-count">#</doc-anchor-trigger>
-        <span>Tag list with count</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="tag-list-with-count">Tag list with count</h3>
 <div id="tag-list-with-count-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.tags | array.size }} {{ page.tags | array.size | string.pluralize &quot;tag&quot; &quot;tags&quot; }}:
 {{ page.tags | array.sort | array.join &quot; · &quot; }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="latest-blog-posts-as-cards">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#latest-blog-posts-as-cards">#</doc-anchor-trigger>
-        <span>Latest blog posts as cards</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="latest-blog-posts-as-cards">Latest blog posts as cards</h3>
 <div id="latest-blog-posts-as-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for post in content.blog.posts | array.limit 3 ~}}
 [!card vert]({{ post.path }})
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="conditional-description-fallback">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conditional-description-fallback">#</doc-anchor-trigger>
-        <span>Conditional description fallback</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="conditional-description-fallback">Conditional description fallback</h3>
 <div id="conditional-description-fallback-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.description | object.default page.title }}</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="copyright-year">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#copyright-year">#</doc-anchor-trigger>
-        <span>Copyright year</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="copyright-year">Copyright year</h3>
 <div id="copyright-year-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">© {{ date.now.year }} My Company. All rights reserved.</code></pre>
 </doc-codeblock></div>

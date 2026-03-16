@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826775240069">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.826949323343">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Project configuration - Write On! with Retype</title>
@@ -31,21 +31,29 @@
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://retype.com/configuration/project/">
+    <meta name="twitter:title" content="Project configuration - Write On! with Retype">
+    <meta name="twitter:description" content="Retype will read the retype.yml file for additional instructions on how to configure and build your project.">
+    <meta name="twitter:image" content="https://retype.com/static/project-branding-title.png">
+    <meta name="twitter:image:alt" content="Project configuration - Write On! with Retype">
+
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Retype News by RSS" href="https://retype.com/blog/feed.xml">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.2.0.826775240069" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.826949323343" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.2.0.826775240069" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.2.0.826775240069" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.2.0.826775240069" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.826949323343" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.826949323343" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.826949323343" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.2.0.826775240069" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.826949323343" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -62,10 +70,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="/" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
-                            <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg" alt="Retype" width="150" height="31">
+                            <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.2</span>
                 </div>
@@ -79,40 +87,32 @@
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
                                 </svg>
                                 <span>Pro Pricing</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/blog/" title="Latest updates, announcements, and articles">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
                                 </svg>
                                 <span>Blog &amp; News</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                 </svg>
                                 <span>Support</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
                                 </svg>
                                 <span>Social</span>
                             </a>
@@ -168,40 +168,32 @@
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
                                         </svg>
                                         <span>Pro Pricing</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/blog/" title="Latest updates, announcements, and articles">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
                                         </svg>
                                         <span>Blog &amp; News</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                         </svg>
                                         <span>Support</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
                                         </svg>
                                         <span>Social</span>
                                     </a>
@@ -257,12 +249,7 @@
 
                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<doc-anchor-target id="project-configuration" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#project-configuration">#</doc-anchor-trigger>
-        <span>Project configuration</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="project-configuration">Project configuration</h1>
 <p>Retype will read the <strong>retype.yml</strong> file for additional instructions on how to configure and build your project.</p>
 <p>The <strong>retype.yml</strong> file is typically placed in the root of your project, although it can be placed elsewhere. Please ensure the <doc-anchor-trigger to="#input"><code translate="no" v-pre>input</code></doc-anchor-trigger> and <doc-anchor-trigger to="#output"><code translate="no" v-pre>output</code></doc-anchor-trigger> paths are correct if moved to a different location.</p>
 <div class="flex mb-6">
@@ -321,23 +308,13 @@ footer:
 </div>
 </p>
 <hr>
-<doc-anchor-target id="backlinks">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#backlinks">#</doc-anchor-trigger>
-        <span>backlinks</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="backlinks">backlinks</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>backlinks</code> configuration controls the automatic display of inbound links from other pages in your project. Backlinks help users discover related content by showing which pages reference the current page.</p>
 <p>When enabled, backlinks are automatically included at the end of pages that have inbound links from other pages. The feature leverages Retype&#x27;s dependency tracking system to build a web of interconnected content.</p>
-<doc-anchor-target id="enabled">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="enabled">enabled</h3>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable backlinks for the entire project. Default is <code translate="no" v-pre>true</code>.</p>
@@ -347,12 +324,7 @@ footer:
 </doc-codeblock></div>
 <p>When set to <code translate="no" v-pre>false</code>, backlinks will not be displayed on any page unless explicitly enabled at the <a href="/configuration/page/#backlinks">page</a> level.</p>
 </doc-panel>
-<doc-anchor-target id="backlinks-title">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#backlinks-title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="backlinks-title">title</h3>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>Customize the heading text displayed above the backlinks section. Default is <code translate="no" v-pre>&quot;See also&quot;</code>.</p>
@@ -362,12 +334,7 @@ footer:
 </doc-codeblock></div>
 <p>The title appears as a heading above the list of pages that link to the current page.</p>
 </doc-panel>
-<doc-anchor-target id="maxresults">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#maxresults">#</doc-anchor-trigger>
-        <span>maxResults</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="maxresults">maxResults</h3>
 <doc-panel id="maxresults--number">
     <template #title>maxResults : <code translate="no" v-pre>number</code></template>
 <p>Set the maximum number of backlinks to display on each page. Default is <code translate="no" v-pre>12</code>.</p>
@@ -383,19 +350,9 @@ footer:
 <li><a href="/configuration/project/#backlinks">Project</a> level in your Project <code translate="no" v-pre>retype.yml</code> file</li>
 </ol>
 <hr>
-<doc-anchor-target id="branding">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#branding">#</doc-anchor-trigger>
-        <span>branding</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="branding">branding</h2>
 <p>Branding configuration for your Retype generated website.</p>
-<doc-anchor-target id="basecolor">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#basecolor">#</doc-anchor-trigger>
-        <span>baseColor</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="basecolor">baseColor</h3>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -409,12 +366,7 @@ footer:
 </doc-codeblock></div>
 <p>The <code translate="no" v-pre>baseColor</code> setting is equivalent to setting <code translate="no" v-pre>base-color</code> in the <doc-anchor-trigger to="#theme"><code translate="no" v-pre>theme</code></doc-anchor-trigger> configuration. For more advanced color customization, use the full theme system.</p>
 </doc-panel>
-<doc-anchor-target id="label">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#label">#</doc-anchor-trigger>
-        <span>label</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="label">label</h3>
 <doc-panel id="label--string">
     <template #title>label : <code translate="no" v-pre>string</code></template>
 <p>Optional logo label text. Default is <code translate="no" v-pre>Docs</code>.</p>
@@ -430,12 +382,7 @@ footer:
 </figure>
 </p>
 </doc-panel>
-<doc-anchor-target id="branding-colors">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#branding-colors">#</doc-anchor-trigger>
-        <span>colors</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="branding-colors">colors</h3>
 <doc-panel id="colors--object">
     <template #title>colors : <code translate="no" v-pre>object</code></template>
 <p>Optional branding color overrides.</p>
@@ -448,12 +395,7 @@ footer:
       background: &quot;#ff0000&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="branding-colors-label">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#branding-colors-label">#</doc-anchor-trigger>
-        <span>label</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="branding-colors-label">label</h4>
 <doc-panel id="label--object">
     <template #title>label : <code translate="no" v-pre>object</code></template>
 <p>Configure colors for the optional branding label shown beside the project title or logo.</p>
@@ -489,12 +431,7 @@ footer:
 </doc-codeblock></div>
 <p>If either value is omitted, Retype uses the built-in theme styling for that part of the label.</p>
 </doc-panel>
-<doc-anchor-target id="logo">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#logo">#</doc-anchor-trigger>
-        <span>logo</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="logo">logo</h3>
 <doc-panel id="logo--string">
     <template #title>logo : <code translate="no" v-pre>string</code></template>
 <p>One of the following:</p>
@@ -509,12 +446,7 @@ footer:
   logo: static/logo.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="logodark">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#logodark">#</doc-anchor-trigger>
-        <span>logoDark</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="logodark">logoDark</h3>
 <doc-panel id="logodark--string">
     <template #title>logoDark : <code translate="no" v-pre>string</code></template>
 <p>One of the following:</p>
@@ -530,12 +462,7 @@ footer:
   logoDark: static/logo-dark.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="logoalign">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#logoalign">#</doc-anchor-trigger>
-        <span>logoAlign</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="logoalign">logoAlign</h3>
 <doc-panel id="logoalign--string">
     <template #title>logoAlign : <code translate="no" v-pre>string</code></template>
 <p>Set a logo image alignment relative to the <doc-anchor-trigger to="#branding-title"><code translate="no" v-pre>title</code></doc-anchor-trigger>. Supported values include <code translate="no" v-pre>left</code> and <code translate="no" v-pre>right</code>.</p>
@@ -546,12 +473,7 @@ footer:
   logoAlign: right</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="branding-title">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#branding-title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="branding-title">title</h3>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>The main text title added to the upper-left corner of the generated website.</p>
@@ -569,22 +491,12 @@ footer:
 </p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="breadcrumb">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breadcrumb">#</doc-anchor-trigger>
-        <span>breadcrumb</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="breadcrumb">breadcrumb</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
 <p>The breadcrumb navigation provides a hierarchical representation of the user&#x27;s location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.</p>
-<doc-anchor-target id="enabled-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-1">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="enabled-1">enabled</h3>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>To enable or disable the breadcrumb navigation within Retype Pro projects. Default is <code translate="no" v-pre>true</code>.</p>
@@ -596,12 +508,7 @@ footer:
   enabled: false # Disabled project wide</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="home">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#home">#</doc-anchor-trigger>
-        <span>home</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="home">home</h3>
 <doc-panel id="home--string-or-boolean">
     <template #title>home : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>boolean</code></template>
 <p>The <code translate="no" v-pre>home</code> config allows customization of the initial node in the breadcrumb navigation. The parameter can accept either a <code translate="no" v-pre>string</code> or a <code translate="no" v-pre>boolean</code> value.</p>
@@ -627,12 +534,7 @@ footer:
   home: false # Do not include the Home node</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="separator">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#separator">#</doc-anchor-trigger>
-        <span>separator</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="separator">separator</h3>
 <doc-panel id="separator--string">
     <template #title>separator : <code translate="no" v-pre>string</code></template>
 <p>The <code translate="no" v-pre>separator</code> config allows for the customization of the node separator used between each page label in the breadcrumb navigation.</p>
@@ -648,19 +550,9 @@ footer:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="blog">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog">#</doc-anchor-trigger>
-        <span>blog</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="blog">blog</h2>
 <p>The <code translate="no" v-pre>blog</code> configuration controls the behavior and appearance of the blog summary pages, including pagination and URL structure.</p>
-<doc-anchor-target id="blog-base">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-base">#</doc-anchor-trigger>
-        <span>base</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="blog-base">base</h3>
 <doc-panel id="base--string">
     <template #title>base : <code translate="no" v-pre>string</code></template>
 <p>The URL base path segment used for the blog summary pages. Default is <code translate="no" v-pre>&quot;blog&quot;</code>.</p>
@@ -670,12 +562,7 @@ footer:
 </doc-codeblock></div>
 <p>Setting <code translate="no" v-pre>base: news</code> would generate the blog summary pages at <code translate="no" v-pre>/news/</code> instead of the default <code translate="no" v-pre>/blog/</code> path.</p>
 </doc-panel>
-<doc-anchor-target id="blog-layout">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-layout">#</doc-anchor-trigger>
-        <span>layout</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="blog-layout">layout</h3>
 <doc-panel id="layout--string">
     <template #title>layout : <code translate="no" v-pre>string</code></template>
 <p>Set the default <a href="/configuration/page/#layout">layout</a> for all blog posts. Default is <code translate="no" v-pre>blog</code>.</p>
@@ -686,12 +573,7 @@ footer:
 <p>Setting <code translate="no" v-pre>layout: page</code> will render all blog posts using the <code translate="no" v-pre>page</code> layout, which includes the left sidebar tree navigation and the right-side table of contents.</p>
 <p>The <code translate="no" v-pre>layout</code> can still be overridden on individual blog posts by setting the <a href="/configuration/page/#layout"><code translate="no" v-pre>layout</code></a> in the page frontmatter.</p>
 </doc-panel>
-<doc-anchor-target id="maxresults-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#maxresults-1">#</doc-anchor-trigger>
-        <span>maxResults</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="maxresults-1">maxResults</h3>
 <doc-panel id="maxresults--number">
     <template #title>maxResults : <code translate="no" v-pre>number</code></template>
 <p>The maximum total number of blog posts to include across all paginated summary pages. Default is unlimited.</p>
@@ -701,12 +583,7 @@ footer:
 </doc-codeblock></div>
 <p>By default, all blog posts are included. Setting a <code translate="no" v-pre>maxResults</code> value will cap the total number of posts that appear in the blog summary pages. Posts beyond the limit are excluded from the summary but remain accessible via direct URL.</p>
 </doc-panel>
-<doc-anchor-target id="pagesize">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pagesize">#</doc-anchor-trigger>
-        <span>pageSize</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="pagesize">pageSize</h3>
 <doc-panel id="pagesize--number">
     <template #title>pageSize : <code translate="no" v-pre>number</code></template>
 <p>The number of blog post items to display per page. Default is <code translate="no" v-pre>10</code>.</p>
@@ -716,12 +593,7 @@ footer:
 </doc-codeblock></div>
 <p>If the total number of blog posts exceeds the <code translate="no" v-pre>pageSize</code>, Retype will automatically generate additional paginated summary pages.</p>
 </doc-panel>
-<doc-anchor-target id="blog-title">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="blog-title">title</h3>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>A custom heading title for the blog summary page. Default is <code translate="no" v-pre>null</code>.</p>
@@ -731,19 +603,9 @@ footer:
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>title</code> is configured, Retype will use the default translated label for the current <doc-anchor-trigger to="#locale"><code translate="no" v-pre>locale</code></doc-anchor-trigger>.</p>
 </doc-panel>
-<doc-anchor-target id="blog-rss">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss">#</doc-anchor-trigger>
-        <span>rss</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="blog-rss">rss</h3>
 <p>Custom configuration for the generated blog RSS feed.</p>
-<doc-anchor-target id="blog-rss-maxresults">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-maxresults">#</doc-anchor-trigger>
-        <span>maxResults</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="blog-rss-maxresults">maxResults</h4>
 <doc-panel id="maxresults--number">
     <template #title>maxResults : <code translate="no" v-pre>number</code></template>
 <p>The maximum total number of blog posts to include in the generated RSS feed. Default is <code translate="no" v-pre>20</code>.</p>
@@ -754,12 +616,7 @@ footer:
 </doc-codeblock></div>
 <p>This setting applies only to the generated RSS feed and does not change the <code translate="no" v-pre>blog.maxResults</code> limit used by the paginated blog summary pages.</p>
 </doc-panel>
-<doc-anchor-target id="blog-rss-title">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="blog-rss-title">title</h4>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>A custom title for the generated RSS feed. Default is <code translate="no" v-pre>null</code>.</p>
@@ -770,12 +627,7 @@ footer:
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>title</code> is configured, Retype will use the resolved blog title. The resolved blog title uses <code translate="no" v-pre>blog.title</code> when configured, otherwise the generated blog summary heading. When available, <code translate="no" v-pre>meta.siteName</code> or <code translate="no" v-pre>branding.title</code> is prefixed to that value.</p>
 </doc-panel>
-<doc-anchor-target id="blog-rss-description">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-description">#</doc-anchor-trigger>
-        <span>description</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="blog-rss-description">description</h4>
 <doc-panel id="description--string">
     <template #title>description : <code translate="no" v-pre>string</code></template>
 <p>A custom description for the generated RSS feed. Default is <code translate="no" v-pre>null</code>.</p>
@@ -786,12 +638,7 @@ footer:
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>description</code> is configured, Retype will use the project <code translate="no" v-pre>meta.description</code> value. If neither value is configured, the RSS <code translate="no" v-pre>description</code> node is omitted.</p>
 </doc-panel>
-<doc-anchor-target id="blog-rss-copyright">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-copyright">#</doc-anchor-trigger>
-        <span>copyright</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="blog-rss-copyright">copyright</h4>
 <doc-panel id="copyright--string">
     <template #title>copyright : <code translate="no" v-pre>string</code></template>
 <p>A custom copyright value for the generated RSS feed. Default is <code translate="no" v-pre>null</code>.</p>
@@ -802,12 +649,7 @@ footer:
 </doc-codeblock></div>
 <p>If no <code translate="no" v-pre>copyright</code> is configured, Retype will use the resolved <code translate="no" v-pre>footer.copyright</code> value. If neither value is configured, the RSS <code translate="no" v-pre>copyright</code> node is omitted.</p>
 </doc-panel>
-<doc-anchor-target id="blog-rss-imageurl">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blog-rss-imageurl">#</doc-anchor-trigger>
-        <span>imageUrl</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="blog-rss-imageurl">imageUrl</h4>
 <doc-panel id="imageurl--string">
     <template #title>imageUrl : <code translate="no" v-pre>string</code></template>
 <p>A custom image URL for the RSS <code translate="no" v-pre>&lt;image&gt;</code> node. Default is <code translate="no" v-pre>null</code>.</p>
@@ -819,19 +661,9 @@ footer:
 <p>If no <code translate="no" v-pre>imageUrl</code> is configured, Retype will use the resolved site <code translate="no" v-pre>favicon</code> URL when the favicon is a supported RSS image type (<code translate="no" v-pre>.gif</code>, <code translate="no" v-pre>.jpeg</code>, <code translate="no" v-pre>.jpg</code>, <code translate="no" v-pre>.ico</code>, or <code translate="no" v-pre>.png</code>). If neither value resolves, the RSS <code translate="no" v-pre>&lt;image&gt;</code> node is omitted.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="cache">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cache">#</doc-anchor-trigger>
-        <span>cache</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="cache">cache</h2>
 <p>Cache configuration options.</p>
-<doc-anchor-target id="strategy">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#strategy">#</doc-anchor-trigger>
-        <span>strategy</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="strategy">strategy</h3>
 <doc-panel id="strategy--string">
     <template #title>strategy : <code translate="no" v-pre>string</code></template>
 <p>Cache busting configuration for the website resources, such as the JavaScript (.js) and <abbr title="Cascading Style Sheet">CSS</abbr> (.css) files.</p>
@@ -880,12 +712,7 @@ footer:
 <pre translate="no" class="language-markup"><code v-pre class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;/resources/js/retype.js?v=1.10&quot; /&gt;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="token">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#token">#</doc-anchor-trigger>
-        <span>token</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="token">token</h3>
 <doc-panel id="token--string">
     <template #title>token : <code translate="no" v-pre>string</code></template>
 <p>An optional unique token used for website resource cache invalidation.</p>
@@ -898,12 +725,7 @@ footer:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="cname">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cname">#</doc-anchor-trigger>
-        <span>cname</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="cname">cname</h2>
 <doc-panel id="cname--boolean-or-string">
     <template #title>cname : <code translate="no" v-pre>boolean</code> or <code translate="no" v-pre>string</code></template>
 <div class="flex mb-6">
@@ -931,12 +753,7 @@ footer:
 <p>If you do manually create a <strong>CNAME</strong> file, please ensure the value in the <strong>CNAME</strong> file matches the value set in the <doc-anchor-trigger to="#url"><code translate="no" v-pre>url</code></doc-anchor-trigger>.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="data">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#data">#</doc-anchor-trigger>
-        <span>data</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="data">data</h2>
 <doc-panel id="data--object">
     <template #title>data : <code translate="no" v-pre>object</code></template>
 <p>Custom data object for use in templates. Each key defined in <code translate="no" v-pre>data</code> becomes a top-level variable available in all pages.</p>
@@ -978,12 +795,7 @@ footer:
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="edit">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#edit">#</doc-anchor-trigger>
-        <span>edit</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="edit">edit</h2>
 <p>The <code translate="no" v-pre>edit</code> config allows for enabling and customization of the <code translate="no" v-pre>Edit this page</code> links on content pages.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -1002,12 +814,7 @@ footer:
         </div>
     </div>
 </div>
-<doc-anchor-target id="repo">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#repo">#</doc-anchor-trigger>
-        <span>repo</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="repo">repo</h3>
 <doc-panel id="repo--string">
     <template #title>repo : <code translate="no" v-pre>string</code></template>
 <p>The repository URL where the source files for this project are located.</p>
@@ -1022,12 +829,7 @@ footer:
   repo: &quot;https://github.com/&lt;your-organization&gt;/&lt;your-repo&gt;/edit/&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="base">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#base">#</doc-anchor-trigger>
-        <span>base</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="base">base</h3>
 <doc-panel id="base--string">
     <template #title>base : <code translate="no" v-pre>string</code></template>
 <p>An optional base path to a directory within the repository.</p>
@@ -1040,12 +842,7 @@ footer:
 </doc-codeblock></div>
 <p>The final <strong>Edit this page</strong> URL constructed by Retype for the sample above would be <code translate="no" v-pre>https://github.com/your-organization/your-repo/blob/main/src/docs/your-page.md</code>.</p>
 </doc-panel>
-<doc-anchor-target id="branch">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#branch">#</doc-anchor-trigger>
-        <span>branch</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="branch">branch</h3>
 <doc-panel id="branch--string">
     <template #title>branch : <code translate="no" v-pre>string</code></template>
 <p>Point to a custom branch within the repo. Default is <code translate="no" v-pre>main</code>.</p>
@@ -1055,12 +852,7 @@ footer:
   branch: master</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="label-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#label-1">#</doc-anchor-trigger>
-        <span>label</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="label-1">label</h3>
 <doc-panel id="label--string">
     <template #title>label : <code translate="no" v-pre>string</code></template>
 <p>A custom label for the link. Default is <code translate="no" v-pre>&quot;Edit this page&quot;</code>.</p>
@@ -1071,19 +863,9 @@ footer:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="editor">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#editor">#</doc-anchor-trigger>
-        <span>editor</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="editor">editor</h2>
 <p>Custom configuration to control the page live editor functionality that is only available when <code translate="no" v-pre>retype start</code> is running.</p>
-<doc-anchor-target id="enabled-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-2">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="enabled-2">enabled</h3>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>To enable or disable the live editor. Default is <code translate="no" v-pre>true</code>.</p>
@@ -1094,12 +876,7 @@ footer:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="exclude">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#exclude">#</doc-anchor-trigger>
-        <span>exclude</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="exclude">exclude</h2>
 <doc-panel id="exclude--list">
     <template #title>exclude : <code translate="no" v-pre>list</code></template>
 <p>Retype can exclude files or folders from being built or copied to the <doc-anchor-trigger to="#output"><code translate="no" v-pre>output</code></doc-anchor-trigger> by configuring an <code translate="no" v-pre>exclude</code> list within your projects <strong>retype.yml</strong> file.</p>
@@ -1134,12 +911,7 @@ footer:
 <p>To explicitly include any files or folders that might have been excluded, please see the <doc-anchor-trigger to="#include"><code translate="no" v-pre>include</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="favicon">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#favicon">#</doc-anchor-trigger>
-        <span>favicon</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="favicon">favicon</h2>
 <doc-panel id="favicon--string">
     <template #title>favicon : <code translate="no" v-pre>string</code></template>
 <p>A custom path to a <code translate="no" v-pre>.ico</code> or <code translate="no" v-pre>.png</code> file to be used as the <code translate="no" v-pre>favicon</code>. Default is <code translate="no" v-pre>null</code>.</p>
@@ -1151,18 +923,8 @@ footer:
 <p>By default, Retype will look for a <code translate="no" v-pre>favicon.ico</code> or <code translate="no" v-pre>favicon.png</code> within the root of the <doc-anchor-trigger to="#input"><code translate="no" v-pre>input</code></doc-anchor-trigger>. The <code translate="no" v-pre>favicon</code> config would typically only be used if you want to store the <code translate="no" v-pre>favicon</code> file in a subfolder of the <doc-anchor-trigger to="#output"><code translate="no" v-pre>output</code></doc-anchor-trigger> root.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="footer">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#footer">#</doc-anchor-trigger>
-        <span>footer</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="copyright">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#copyright">#</doc-anchor-trigger>
-        <span>copyright</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="footer">footer</h2>
+<h3 id="copyright">copyright</h3>
 <doc-panel id="copyright--string">
     <template #title>copyright : <code translate="no" v-pre>string</code></template>
 <p>Site-wide copyright statement that will be added to the footer of each page. Supports Markdown syntax and <code translate="no" v-pre>{{ year }}</code> variable.</p>
@@ -1171,12 +933,7 @@ footer:
   copyright: &quot;© Copyright {{ year }}. [Example, Inc.](https://example.com/) All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="links-footer">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#links-footer">#</doc-anchor-trigger>
-        <span>links (footer)</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="links-footer">links (footer)</h3>
 <doc-panel id="links--object">
     <template #title>links : <code translate="no" v-pre>object</code></template>
 <p>The <code translate="no" v-pre>footer.links</code> have the same configuration options as <doc-anchor-trigger to="#links"><code translate="no" v-pre>links</code></doc-anchor-trigger>.</p>
@@ -1192,25 +949,10 @@ footer:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="generator">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#generator">#</doc-anchor-trigger>
-        <span>generator</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="directoryindex">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#directoryindex">#</doc-anchor-trigger>
-        <span>directoryIndex</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="generator">generator</h2>
+<h3 id="directoryindex">directoryIndex</h3>
 <p>Configuration options to instruct Retype on how and when to deal with the default directory index files, such as <code translate="no" v-pre>index.html</code>.</p>
-<doc-anchor-target id="altnames">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#altnames">#</doc-anchor-trigger>
-        <span>altNames</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="altnames">altNames</h4>
 <doc-panel id="altnames--list">
     <template #title>altNames : <code translate="no" v-pre>list</code></template>
 <p>A list of file names to treat as default <abbr title="Hyper Text Markup Language">HTML</abbr> files.</p>
@@ -1232,12 +974,7 @@ footer:
       - index.html</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="generator-directoryindex-append">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#generator-directoryindex-append">#</doc-anchor-trigger>
-        <span>append</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="generator-directoryindex-append">append</h4>
 <doc-panel id="append--boolean">
     <template #title>append : <code translate="no" v-pre>boolean</code></template>
 <p>Specifies if the default document file name should be appended to resolved URLs. By default, Retype does not append the default file name.</p>
@@ -1257,12 +994,7 @@ generator:
     append: true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="name">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#name">#</doc-anchor-trigger>
-        <span>name</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="name">name</h4>
 <doc-panel id="name--string">
     <template #title>name : <code translate="no" v-pre>string</code></template>
 <p>The default <abbr title="Hyper Text Markup Language">HTML</abbr> document file name generated by Retype.</p>
@@ -1272,12 +1004,7 @@ generator:
     name: default.htm # Default is index.html</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="paths">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#paths">#</doc-anchor-trigger>
-        <span>paths</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="paths">paths</h3>
 <doc-panel id="paths--string">
     <template #title>paths : <code translate="no" v-pre>string</code></template>
 <p>Configures url kind preference for resolved urls. Supported values: <code translate="no" v-pre>source</code>, <code translate="no" v-pre>relative</code>, and <code translate="no" v-pre>root</code>.</p>
@@ -1310,12 +1037,7 @@ generator:
   paths: relative</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="recase">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#recase">#</doc-anchor-trigger>
-        <span>recase</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="recase">recase</h3>
 <doc-panel id="recase--string">
     <template #title>recase : <code translate="no" v-pre>string</code></template>
 <p>Instructs Retype on how to recase the project file and folder names created by the author. Default is <code translate="no" v-pre>all</code>.</p>
@@ -1346,12 +1068,7 @@ generator:
   recase: none</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="trailingslash">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#trailingslash">#</doc-anchor-trigger>
-        <span>trailingSlash</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="trailingslash">trailingSlash</h3>
 <doc-panel id="trailingslash--boolean">
     <template #title>trailingSlash : <code translate="no" v-pre>boolean</code></template>
 <p>By setting <code translate="no" v-pre>trailingSlash: false</code> in the project config, authors can instruct Retype to remove (or not add) the trailing <code translate="no" v-pre>/</code> character when constructing links from paths to Markdown files.</p>
@@ -1363,12 +1080,7 @@ generator:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="hub">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#hub">#</doc-anchor-trigger>
-        <span>hub</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="hub">hub</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -1381,12 +1093,7 @@ generator:
 <p>The hub link lets visitors easily jump back to your main site or central doc hub, such as linking from your documentation deployed at <code translate="no" v-pre>docs.example.com</code> to <code translate="no" v-pre>example.com</code>.</p>
 <p>The hub link is useful when deploying multiple documentation projects and you would like a bridge to your primary documentation hub.</p>
 <p>The hub is optional. If you would like a hub link, just set a URL in the <code translate="no" v-pre>link</code> config.</p>
-<doc-anchor-target id="link">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#link">#</doc-anchor-trigger>
-        <span>link</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="link">link</h3>
 <doc-panel id="link--string">
     <template #title>link : <code translate="no" v-pre>string</code></template>
 <p>Set to a local path or external URL. By setting the <code translate="no" v-pre>link</code> value, the Hub will be enabled. To disable, remove the <code translate="no" v-pre>link</code> config.</p>
@@ -1395,12 +1102,7 @@ generator:
   link: https://example.com/ # default is empty</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="alt">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#alt">#</doc-anchor-trigger>
-        <span>alt</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="alt">alt</h3>
 <doc-panel id="alt--string">
     <template #title>alt : <code translate="no" v-pre>string</code></template>
 <p>Custom text value used to set the <code translate="no" v-pre>title</code> attribute of the hub link.</p>
@@ -1410,12 +1112,7 @@ generator:
   alt: Go to example.com</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="target">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#target">#</doc-anchor-trigger>
-        <span>target</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="target">target</h3>
 <doc-panel id="target--string">
     <template #title>target : <code translate="no" v-pre>string</code></template>
 <p>Sets the <code translate="no" v-pre>target</code> attribute of the hub link and specifies which window or tab to open the link into.</p>
@@ -1469,12 +1166,7 @@ generator:
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="include">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#include">#</doc-anchor-trigger>
-        <span>include</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="include">include</h2>
 <doc-panel id="include--list">
     <template #title>include : <code translate="no" v-pre>list</code></template>
 <p>Retype can explicitly include files or folders that might have been excluded by default or excluded within the <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> config.</p>
@@ -1538,12 +1230,7 @@ generator:
 <p>If you would rather not include certain folders, files, or file types, please add the pattern to the <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> config.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="input">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#input">#</doc-anchor-trigger>
-        <span>input</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="input">input</h2>
 <doc-panel id="input--string">
     <template #title>input : <code translate="no" v-pre>string</code></template>
 <p>Custom path to the input directory. Default is <code translate="no" v-pre>.</code>.</p>
@@ -1554,19 +1241,9 @@ generator:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="integrations">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#integrations">#</doc-anchor-trigger>
-        <span>integrations</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="integrations">integrations</h2>
 <p>More <code translate="no" v-pre>integrations</code> will be added over time. Do you have an integration suggestion? <a href="https://github.com/retypeapp/retype/issues">let us know</a>.</p>
-<doc-anchor-target id="googleanalytics">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#googleanalytics">#</doc-anchor-trigger>
-        <span>googleAnalytics</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="googleanalytics">googleAnalytics</h3>
 <p>Add <a href="https://analytics.google.com/analytics/web/" class="outbound" target="_blank"><span>Google Analytics</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> to your website.</p>
 <doc-panel id="googleanalyticsid--string">
     <template #title>googleAnalytics.id : <code translate="no" v-pre>string</code></template>
@@ -1584,12 +1261,7 @@ generator:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="googletagmanager">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#googletagmanager">#</doc-anchor-trigger>
-        <span>googleTagManager</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="googletagmanager">googleTagManager</h3>
 <p>Add the <a href="https://tagmanager.google.com/" class="outbound" target="_blank"><span>Google Tag Manager</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> to your website.</p>
 <doc-panel id="googletagmanagerid--string">
     <template #title>googleTagManager.id : <code translate="no" v-pre>string</code></template>
@@ -1602,19 +1274,9 @@ generator:
 <p>Replace the <code translate="no" v-pre>&lt;id&gt;</code> with your Google Tag Manager measurement id.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="gravatar">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gravatar">#</doc-anchor-trigger>
-        <span>gravatar</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="gravatar">gravatar</h3>
 <p>Specific setting to control Retype integration with the <a href="https://gravatar.com/" class="outbound" target="_blank"><span>Gravatar</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> profile picture service and used by the <a href="/configuration/page/#author">page.authors</a> configuration.</p>
-<doc-anchor-target id="integrations-gravatar-default">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#integrations-gravatar-default">#</doc-anchor-trigger>
-        <span>default</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="integrations-gravatar-default">default</h4>
 <doc-panel id="default--string">
     <template #title>default : <code translate="no" v-pre>string</code></template>
 <p>The default profile image to return from Gravatar queries whenever no image is assigned to the queried email address. Default value is <code translate="no" v-pre>mp</code>.</p>
@@ -1665,12 +1327,7 @@ generator:
 </div>
 <p>Please see the <a href="https://en.gravatar.com/site/implement/images#default-image" class="outbound" target="_blank"><span>Default Image</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> documentation on the Gravatar website.</p>
 </doc-panel>
-<doc-anchor-target id="enabled-3">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-3">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="enabled-3">enabled</h4>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Whether Retype should use Gravatar to pull profile images. Default is <code translate="no" v-pre>true</code>.</p>
@@ -1694,19 +1351,9 @@ generator:
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="plausible">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plausible">#</doc-anchor-trigger>
-        <span>plausible</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="plausible">plausible</h3>
 <p><a href="https://plausible.io/" class="outbound" target="_blank"><span>Plausible.io</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> is a simple and privacy-friendly Google Analytics alternative which can be integrated easily into Retype generated websites.</p>
-<doc-anchor-target id="integration-plausible-domain">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#integration-plausible-domain">#</doc-anchor-trigger>
-        <span>domain</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="integration-plausible-domain">domain</h4>
 <doc-panel id="domain--string">
     <template #title>domain : <code translate="no" v-pre>string</code></template>
 <p>When you setup your project within Plausible, you enter a <a href="https://plausible.io/docs/add-website" class="outbound" target="_blank"><span><code translate="no" v-pre>Domain</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> value which is then used to set the <code translate="no" v-pre>integrations.plausible.domain</code> config within your <strong>retype.yml</strong> project configuration file.</p>
@@ -1723,12 +1370,7 @@ generator:
 </doc-codeblock></div>
 <p>Check out the Plausible <a href="https://plausible.io/docs/" class="outbound" target="_blank"><span>documentation</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> for more details.</p>
 </doc-panel>
-<doc-anchor-target id="integration-plausible-host">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#integration-plausible-host">#</doc-anchor-trigger>
-        <span>host</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="integration-plausible-host">host</h4>
 <doc-panel id="host--string">
     <template #title>host : <code translate="no" v-pre>string</code></template>
 <p>The Plausible service can be <a href="https://plausible.io/docs/self-hosting" class="outbound" target="_blank"><span>self-hosted</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> and your Retype project can be configured to use your custom <code translate="no" v-pre>host</code>.</p>
@@ -1755,12 +1397,7 @@ host: docs.example.com/js/plausible.js</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="labels">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#labels">#</doc-anchor-trigger>
-        <span>labels</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="labels">labels</h2>
 <doc-panel id="labels--object">
     <template #title>labels : <code translate="no" v-pre>object</code></template>
 <p>Customize built-in UI labels and messages for your project.</p>
@@ -1790,12 +1427,7 @@ labels:
 <p>Using the <a href="/templating/project-properties/">template</a> syntax, the labels are also available through <code translate="no" v-pre>project.labels</code>, such as <code translate="no" v-pre>{{ project.labels[&quot;search_input_placeholder&quot;] }}</code>.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="lastupdated">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated">#</doc-anchor-trigger>
-        <span>lastUpdated</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="lastupdated">lastUpdated</h2>
 <p>The <code translate="no" v-pre>lastUpdated</code> project configuration controls the automatic last updated footer metadata for pages across the entire project.</p>
 <p>Retype reads Git commit metadata for each page and can render the last updated date and, optionally, who made the change. If the build does not have full Git history, the generated values are skipped.</p>
 <p>The default project behavior is equivalent to:</p>
@@ -1809,19 +1441,9 @@ labels:
     source: committer</code></pre>
 </doc-codeblock></div>
 <p>If you want to set fixed values for one page, use the <a href="/configuration/page/#lastupdated">page</a> <code translate="no" v-pre>lastUpdated</code> configuration instead. Manual page values override the project-level generated values for that page.</p>
-<doc-anchor-target id="lastupdated-date">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-date">#</doc-anchor-trigger>
-        <span>date</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="lastupdated-date">date</h3>
 <p>Controls the automatic last updated <strong>date</strong> in the page footer.</p>
-<doc-anchor-target id="lastupdated-date-enabled">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-date-enabled">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="lastupdated-date-enabled">enabled</h4>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable automatic last updated date generation. Default is <code translate="no" v-pre>true</code>.</p>
@@ -1832,12 +1454,7 @@ labels:
 </doc-codeblock></div>
 <p>Set <code translate="no" v-pre>date.enabled: false</code> when you do not want Retype to show a generated last updated date in the footer.</p>
 </doc-panel>
-<doc-anchor-target id="lastupdated-date-source">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-date-source">#</doc-anchor-trigger>
-        <span>source</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="lastupdated-date-source">source</h4>
 <doc-panel id="source--string">
     <template #title>source : <code translate="no" v-pre>string</code></template>
 <p>Choose which Git revision timestamp is used for the last updated date. Supported values are <code translate="no" v-pre>author</code> and <code translate="no" v-pre>committer</code>. Default is <code translate="no" v-pre>committer</code>.</p>
@@ -1848,19 +1465,9 @@ labels:
 </doc-codeblock></div>
 <p>Use <code translate="no" v-pre>author</code> when the footer should reflect the original author timestamp. Use <code translate="no" v-pre>committer</code> when it should reflect the most recent committed change.</p>
 </doc-panel>
-<doc-anchor-target id="lastupdated-by">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-by">#</doc-anchor-trigger>
-        <span>by</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="lastupdated-by">by</h3>
 <p>Controls the automatic last updated <strong>by</strong> value in the page footer.</p>
-<doc-anchor-target id="lastupdated-by-enabled">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-by-enabled">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="lastupdated-by-enabled">enabled</h4>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable automatic last updated by generation. Default is <code translate="no" v-pre>false</code>.</p>
@@ -1871,12 +1478,7 @@ labels:
 </doc-codeblock></div>
 <p>This is off by default, so turn it on only when you want the footer to show who made the change.</p>
 </doc-panel>
-<doc-anchor-target id="lastupdated-by-source">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lastupdated-by-source">#</doc-anchor-trigger>
-        <span>source</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="lastupdated-by-source">source</h4>
 <doc-panel id="source--string">
     <template #title>source : <code translate="no" v-pre>string</code></template>
 <p>Choose which Git revision identity is used for the <code translate="no" v-pre>by</code> value. Supported values are <code translate="no" v-pre>author</code> and <code translate="no" v-pre>committer</code>. Default is <code translate="no" v-pre>committer</code>.</p>
@@ -1888,12 +1490,7 @@ labels:
 </doc-codeblock></div>
 <p>Use <code translate="no" v-pre>author</code> when the footer should show the original author name. Use <code translate="no" v-pre>committer</code> when it should show the person who actually committed the change.</p>
 </doc-panel>
-<doc-anchor-target id="github-actions">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#github-actions">#</doc-anchor-trigger>
-        <span>GitHub Actions</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="github-actions">GitHub Actions</h3>
 <p>If you build in GitHub Actions, fetch the full history so Git-backed <code translate="no" v-pre>lastUpdated</code> values are available:</p>
 <div id="github-actions-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: actions/checkout@v6
@@ -1903,12 +1500,7 @@ labels:
 <p><code translate="no" v-pre>fetch-depth: 0</code> tells GitHub Actions to download the full commit history instead of only the most recent commits.</p>
 <p>See also the <a href="/components/last-updated/">Last Updated</a> component, <a href="/configuration/page/#lastupdated">page</a> configuration, and the <a href="/guides/github-actions/">GitHub Actions guide</a>.</p>
 <hr>
-<doc-anchor-target id="links">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#links">#</doc-anchor-trigger>
-        <span>links</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="links">links</h2>
 <p>Custom links added to the top-bar navigation of all pages.</p>
 <p>The following sample demonstrates a basic <code translate="no" v-pre>links</code> scenario which would add one link to the top bar of all pages.</p>
 <div id="links-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -1916,12 +1508,7 @@ labels:
   - text: Getting Started
     link: https://retype.com/getting_started/</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="text">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#text">#</doc-anchor-trigger>
-        <span>text</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="text">text</h3>
 <doc-panel id="text--string">
     <template #title>text : <code translate="no" v-pre>string</code></template>
 <p>The link text label.</p>
@@ -1931,12 +1518,7 @@ labels:
     link: https://demo.example.com/</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="link-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#link-1">#</doc-anchor-trigger>
-        <span>link</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="link-1">link</h3>
 <doc-panel id="link--string">
     <template #title>link : <code translate="no" v-pre>string</code></template>
 <p>The URL to use for the link. The link can be a <code translate="no" v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
@@ -1947,12 +1529,7 @@ labels:
     link: /about/</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="icon">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#icon">#</doc-anchor-trigger>
-        <span>icon</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="icon">icon</h3>
 <doc-panel id="icon--string">
     <template #title>icon : <code translate="no" v-pre>string</code></template>
 <p>An icon to use with the link. Default is <code translate="no" v-pre>null</code>.</p>
@@ -1980,12 +1557,7 @@ labels:
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">icon: ../static/rocket.png</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="iconalign">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#iconalign">#</doc-anchor-trigger>
-        <span>iconAlign</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="iconalign">iconAlign</h3>
 <doc-panel id="iconalign--string">
     <template #title>iconAlign : <code translate="no" v-pre>string</code></template>
 <p>The position for the icon relative to the link <code translate="no" v-pre>text</code>. Either <code translate="no" v-pre>left</code> or <code translate="no" v-pre>right</code>. Default is <code translate="no" v-pre>left</code>.</p>
@@ -1997,12 +1569,7 @@ labels:
     iconAlign: right</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="target-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#target-1">#</doc-anchor-trigger>
-        <span>target</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="target-1">target</h3>
 <doc-panel id="target--string">
     <template #title>target : <code translate="no" v-pre>string</code></template>
 <p>Sets the <code translate="no" v-pre>target</code> attribute of the hyperlink and specifies which window or tab to open the link into.</p>
@@ -2056,12 +1623,7 @@ labels:
 </table>
 </div>
 </doc-panel>
-<doc-anchor-target id="title">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="title">title</h3>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>Sets the <code translate="no" v-pre>title</code> attribute of the generated <abbr title="Hyper Text Markup Language">HTML</abbr> hyperlink. This creates a browser tooltip that appears when users hover over the link.</p>
@@ -2096,12 +1658,7 @@ labels:
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="locale">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#locale">#</doc-anchor-trigger>
-        <span>locale</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="locale">locale</h2>
 <p>The value of the <code translate="no" v-pre>locale</code> config defines the primary language that will be used on the generated website. For supported locales, Retype will generate the website using system messages and labels in that language. The same setting can also point to a custom <doc-anchor-trigger to="#labels"><code translate="no" v-pre>labels</code></doc-anchor-trigger> collection when you want alternate wording for a specific audience.</p>
 <p>This flexibility makes your application more versatile and accessible to users from different languages. Currently, 24 languages are supported by Retype.</p>
 <div class="flex mb-6">
@@ -2130,12 +1687,7 @@ labels:
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: fr</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="supported-languages">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#supported-languages">#</doc-anchor-trigger>
-        <span>Supported Languages</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="supported-languages">Supported Languages</h3>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -2306,19 +1858,9 @@ labels:
 </table>
 </div>
 <hr>
-<doc-anchor-target id="markdown">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#markdown">#</doc-anchor-trigger>
-        <span>markdown</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="markdown">markdown</h2>
 <p>Markdown configuration options.</p>
-<doc-anchor-target id="linebreaks">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#linebreaks">#</doc-anchor-trigger>
-        <span>lineBreaks</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="linebreaks">lineBreaks</h3>
 <doc-panel id="linebreaks--string">
     <template #title>lineBreaks : <code translate="no" v-pre>string</code></template>
 <p>Switches between <code translate="no" v-pre>soft</code> and <code translate="no" v-pre>hard</code> line break modes. The option instructs Retype in what way a regular line ending should be handled.</p>
@@ -2333,19 +1875,9 @@ labels:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="meta">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#meta">#</doc-anchor-trigger>
-        <span>meta</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="meta">meta</h2>
 <p>Project wide meta tag configuration options.</p>
-<doc-anchor-target id="meta-title">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#meta-title">#</doc-anchor-trigger>
-        <span>title</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="meta-title">title</h3>
 <doc-panel id="title--string">
     <template #title>title : <code translate="no" v-pre>string</code></template>
 <p>Common site-wide suffix appended to the html <code translate="no" v-pre>&lt;title&gt;</code> element of all pages. Default is <code translate="no" v-pre>null</code>.</p>
@@ -2376,12 +1908,7 @@ labels:
     </div>
 </div>
 </doc-panel>
-<doc-anchor-target id="sitename">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sitename">#</doc-anchor-trigger>
-        <span>siteName</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="sitename">siteName</h3>
 <doc-panel id="sitename--string">
     <template #title>siteName : <code translate="no" v-pre>string</code></template>
 <p>Sets the value for the <code translate="no" v-pre>&lt;meta property=&quot;og:site_name&quot;&gt;</code> meta tag.</p>
@@ -2395,19 +1922,9 @@ labels:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="nav">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nav">#</doc-anchor-trigger>
-        <span>nav</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="nav">nav</h2>
 <p>Navigation configuration options to control the behavior of the left sidebar navigation.</p>
-<doc-anchor-target id="nav-mode">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nav-mode">#</doc-anchor-trigger>
-        <span>mode</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="nav-mode">mode</h3>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -2441,18 +1958,8 @@ labels:
 </doc-codeblock></div>
 <p>To convert only one top-level directory to a <code translate="no" v-pre>stack</code> type layout, please see the Page <a href="/configuration/page/#nav"><code translate="no" v-pre>nav</code></a> setting.</p>
 </doc-panel>
-<doc-anchor-target id="icons">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#icons">#</doc-anchor-trigger>
-        <span>icons</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="nav-icons-mode">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nav-icons-mode">#</doc-anchor-trigger>
-        <span>mode</span>
-    </h4>
-</doc-anchor-target>
+<h3 id="icons">icons</h3>
+<h4 id="nav-icons-mode">mode</h4>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -2507,22 +2014,12 @@ labels:
 <p>The <code translate="no" v-pre>nav.icons.mode</code> setting can be used in conjunction with <doc-anchor-trigger to="#mode"><code translate="no" v-pre>nav.mode: stack</code></doc-anchor-trigger> to handle many different icon and navigation rendering combinations.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="nextprev">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nextprev">#</doc-anchor-trigger>
-        <span>nextprev</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="nextprev">nextprev</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>nextprev</code> configuration controls the display of &quot;Next&quot; and &quot;Previous&quot; navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.</p>
-<doc-anchor-target id="nextprev-mode">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nextprev-mode">#</doc-anchor-trigger>
-        <span>mode</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="nextprev-mode">mode</h3>
 <doc-panel id="mode--string">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.</p>
@@ -2563,24 +2060,14 @@ labels:
 </ol>
 </doc-panel>
 <hr>
-<doc-anchor-target id="outbound">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#outbound">#</doc-anchor-trigger>
-        <span>outbound</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="outbound">outbound</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>outbound</code> configuration gives you the flexibility to customize the behavior of outbound links in your Retype project. It allows you to control which links are treated as outbound, where they open, what icon is used, and even exclude or include specific domains. For instance, <a href="https://example.com/" class="outbound" target="_blank"><span>example.com</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <p>The <code translate="no" v-pre>outbound</code> functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the <code translate="no" v-pre>outbound</code> configuration and functionality is ignored.</p>
 <p>If <code translate="no" v-pre>outbound</code> is enabled, Retype will find all external (outbound) links within the project, add a trailing <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg> icon, and set the link to open in a new tab when clicked.</p>
-<doc-anchor-target id="enabled-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-4">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="enabled-4">enabled</h3>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Controls whether the outbound links feature is enabled.</p>
@@ -2591,12 +2078,7 @@ labels:
   enabled: false</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="custom">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#custom">#</doc-anchor-trigger>
-        <span>custom</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="custom">custom</h3>
 <doc-panel id="custom--string">
     <template #title>custom : <code translate="no" v-pre>string</code></template>
 <p>Provides a way to specify custom attributes to be added to the outbound links. The default value is empty/null.</p>
@@ -2606,12 +2088,7 @@ labels:
   custom: 'rel=&quot;noopener noreferrer&quot;'</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="icon-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#icon-1">#</doc-anchor-trigger>
-        <span>icon</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="icon-1">icon</h3>
 <doc-panel id="icon--string">
     <template #title>icon : <code translate="no" v-pre>string</code></template>
 <p>Defines the icon to be used for outbound links and accepts all the same options as the <doc-anchor-trigger to="#icon"><code translate="no" v-pre>links.icon</code></doc-anchor-trigger> config. The default value is <code translate="no" v-pre>link-external</code> <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg>.</p>
@@ -2625,12 +2102,7 @@ labels:
   icon: &quot;&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="iconalign-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#iconalign-1">#</doc-anchor-trigger>
-        <span>iconAlign</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="iconalign-1">iconAlign</h3>
 <doc-panel id="iconalign--string">
     <template #title>iconAlign : <code translate="no" v-pre>string</code></template>
 <p>Determines the alignment of the icon for outbound links and accepts the same options as the <doc-anchor-trigger to="#iconalign"><code translate="no" v-pre>links.iconAlign</code></doc-anchor-trigger> config. Acceptable values are <code translate="no" v-pre>right</code> or <code translate="no" v-pre>left</code>. The default value is <code translate="no" v-pre>right</code>.</p>
@@ -2639,12 +2111,7 @@ labels:
   iconAlign: right</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="target-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#target-2">#</doc-anchor-trigger>
-        <span>target</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="target-2">target</h3>
 <doc-panel id="target--string">
     <template #title>target : <code translate="no" v-pre>string</code></template>
 <p>Specifies the <code translate="no" v-pre>target</code> attribute for the outbound links. The default value of <code translate="no" v-pre>&quot;blank&quot;</code> opens the link in a new window or tab.</p>
@@ -2653,12 +2120,7 @@ labels:
   target: blank</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="exclude-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#exclude-1">#</doc-anchor-trigger>
-        <span>exclude</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="exclude-1">exclude</h3>
 <doc-panel id="exclude--list">
     <template #title>exclude : <code translate="no" v-pre>list</code></template>
 <p>A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.</p>
@@ -2671,12 +2133,7 @@ labels:
 </doc-codeblock></div>
 <p>Please also see <doc-anchor-trigger to="#include-1"><code translate="no" v-pre>outbound.include</code></doc-anchor-trigger>.</p>
 </doc-panel>
-<doc-anchor-target id="include-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#include-1">#</doc-anchor-trigger>
-        <span>include</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="include-1">include</h3>
 <doc-panel id="include--list">
     <template #title>include : <code translate="no" v-pre>list</code></template>
 <p>A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of <code translate="no" v-pre>*</code> includes all links.</p>
@@ -2690,12 +2147,7 @@ labels:
 <p>If any item is added to the <code translate="no" v-pre>include</code> list, by default, all other paths will be excluded. Please also see <doc-anchor-trigger to="#exclude-1"><code translate="no" v-pre>outbound.exclude</code></doc-anchor-trigger>.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="output">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#output">#</doc-anchor-trigger>
-        <span>output</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="output">output</h2>
 <doc-panel id="output--string">
     <template #title>output : <code translate="no" v-pre>string</code></template>
 <p>Custom path to the output directory. Default is <code translate="no" v-pre>.retype</code>.</p>
@@ -2724,12 +2176,7 @@ labels:
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="poweredbyretype">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#poweredbyretype">#</doc-anchor-trigger>
-        <span>poweredByRetype</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="poweredbyretype">poweredByRetype</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -2747,22 +2194,12 @@ labels:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="scheme">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#scheme">#</doc-anchor-trigger>
-        <span>scheme</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="scheme">scheme</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>scheme</code> configuration allows you to control the default color mode (<strong>light</strong> or <strong>dark</strong>) for your Retype generated website. By default, Retype will automatically match the visitor&#x27;s system preference, but you can explicitly set the site to always render in either <code translate="no" v-pre>dark</code> or <code translate="no" v-pre>light</code> mode.</p>
-<doc-anchor-target id="scheme-mode">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#scheme-mode">#</doc-anchor-trigger>
-        <span>mode</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="scheme-mode">mode</h3>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -2832,19 +2269,9 @@ labels:
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="search">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
-        <span>search</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="search">search</h2>
 <p>Customization of the website search component.</p>
-<doc-anchor-target id="search-exclude">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#search-exclude">#</doc-anchor-trigger>
-        <span>exclude</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="search-exclude">exclude</h3>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -2861,12 +2288,7 @@ labels:
     - /draft</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="search-include">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#search-include">#</doc-anchor-trigger>
-        <span>include</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="search-include">include</h3>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -2884,12 +2306,7 @@ labels:
     - /blog</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="excludecode">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#excludecode">#</doc-anchor-trigger>
-        <span>excludeCode</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="excludecode">excludeCode</h3>
 <doc-panel id="excludecode--boolean">
     <template #title>excludeCode : <code translate="no" v-pre>boolean</code></template>
 <p>Exclude code blocks from the search index. Default is <code translate="no" v-pre>false</code>.</p>
@@ -2899,12 +2316,7 @@ labels:
   excludeCode: true # Default is false</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="hotkeys">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#hotkeys">#</doc-anchor-trigger>
-        <span>hotkeys</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="hotkeys">hotkeys</h3>
 <doc-panel id="hotkeys--list">
     <template #title>hotkeys : <code translate="no" v-pre>list</code></template>
 <p>Keyboard key to set the cursor focus into the search field. Default is <code translate="no" v-pre>k</code>.</p>
@@ -2915,12 +2327,7 @@ labels:
     - &quot;/&quot;</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="maxresults-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#maxresults-2">#</doc-anchor-trigger>
-        <span>maxResults</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="maxresults-2">maxResults</h3>
 <doc-panel id="maxresults--number">
     <template #title>maxResults : <code translate="no" v-pre>number</code></template>
 <p>Max number of search results to render. Default is <code translate="no" v-pre>20</code>.</p>
@@ -2929,12 +2336,7 @@ labels:
   maxResults: 20</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="minchars">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#minchars">#</doc-anchor-trigger>
-        <span>minChars</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="minchars">minChars</h3>
 <doc-panel id="minchars--number">
     <template #title>minChars : <code translate="no" v-pre>number</code></template>
 <p>Min number of characters required in a search query. Default is <code translate="no" v-pre>2</code>.</p>
@@ -2944,12 +2346,7 @@ labels:
   minChars: 3</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="mode">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mode">#</doc-anchor-trigger>
-        <span>mode</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="mode">mode</h3>
 <doc-panel id="mode--string">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>The search index creation mode. Default is <code translate="no" v-pre>full</code>.</p>
@@ -3000,12 +2397,7 @@ labels:
     </div>
 </div>
 </doc-panel>
-<doc-anchor-target id="noresultsfoundmsg">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#noresultsfoundmsg">#</doc-anchor-trigger>
-        <span>noResultsFoundMsg</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="noresultsfoundmsg">noResultsFoundMsg</h3>
 <doc-panel id="noresultsfoundmsg--string">
     <template #title>noResultsFoundMsg : <code translate="no" v-pre>string</code></template>
 <p>Message rendered when no results were found. Default is <code translate="no" v-pre>&quot;Sorry, no results found.&quot;</code>.</p>
@@ -3014,12 +2406,7 @@ labels:
   noResultsFoundMsg: Sorry, no results found.</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="placeholder">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder">#</doc-anchor-trigger>
-        <span>placeholder</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="placeholder">placeholder</h3>
 <doc-panel id="placeholder--string">
     <template #title>placeholder : <code translate="no" v-pre>string</code></template>
 <p>Placeholder text rendered on the search component. Default is <code translate="no" v-pre>&quot;Search&quot;</code>.</p>
@@ -3028,12 +2415,7 @@ labels:
   placeholder: Search</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="preload">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#preload">#</doc-anchor-trigger>
-        <span>preload</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="preload">preload</h3>
 <doc-panel id="preload--boolean">
     <template #title>preload : <code translate="no" v-pre>boolean</code></template>
 <p>Specifies if the search index should be preloaded. Default is <code translate="no" v-pre>false</code>.</p>
@@ -3051,19 +2433,9 @@ generator:
     append: true</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="serve">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#serve">#</doc-anchor-trigger>
-        <span>serve</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="serve">serve</h2>
 <p>Custom configuration for the built in Retype development web server.</p>
-<doc-anchor-target id="host">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#host">#</doc-anchor-trigger>
-        <span>host</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="host">host</h3>
 <doc-panel id="host--string">
     <template #title>host : <code translate="no" v-pre>string</code></template>
 <p>Serve the website from this host location. Default is <code translate="no" v-pre>localhost</code>.</p>
@@ -3083,12 +2455,7 @@ generator:
 retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="port">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#port">#</doc-anchor-trigger>
-        <span>port</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="port">port</h3>
 <doc-panel id="port--number">
     <template #title>port : <code translate="no" v-pre>number</code></template>
 <p>A custom port for the internal Retype development web server to use when hosting locally. Default is <code translate="no" v-pre>5001</code>.</p>
@@ -3120,19 +2487,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --port 5005  # serve from a custom port</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="watch">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#watch">#</doc-anchor-trigger>
-        <span>watch</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="watch">watch</h3>
 <p>Custom configuration for the <a href="/guides/cli/#options-3"><code translate="no" v-pre>retype serve</code></a> and <a href="/guides/cli/#options"><code translate="no" v-pre>retype start</code></a> commands.</p>
-<doc-anchor-target id="serve-watch-mode">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#serve-watch-mode">#</doc-anchor-trigger>
-        <span>mode</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="serve-watch-mode">mode</h4>
 <doc-panel id="mode--string">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>During <code translate="no" v-pre>retype start</code> and <code translate="no" v-pre>retype serve</code>, the <code translate="no" v-pre>mode</code> configuration instructs the web server on where to host files from.</p>
@@ -3166,12 +2523,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 <p>The command <a href="/guides/cli/#retype-build"><code translate="no" v-pre>retype build</code></a> will always build and write all files to disk. The <code translate="no" v-pre>memory</code> configuration is not an option with <code translate="no" v-pre>retype build</code>. The Retype <a href="/guides/github-actions/">GitHub Action</a> uses <code translate="no" v-pre>retype build</code>. The command <code translate="no" v-pre>retype start</code> is only to be used during local development and not on a live production web server.</p>
 </doc-panel>
-<doc-anchor-target id="serve-watch-polling">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#serve-watch-polling">#</doc-anchor-trigger>
-        <span>polling</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="serve-watch-polling">polling</h4>
 <doc-panel id="polling--boolean-or-number">
     <template #title>polling : <code translate="no" v-pre>boolean</code> or <code translate="no" v-pre>number</code></template>
 <p>Instructs the local web server on how it should listen for file changes.</p>
@@ -3228,12 +2580,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     </div>
 </div>
 </doc-panel>
-<doc-anchor-target id="serve-watch-validation">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#serve-watch-validation">#</doc-anchor-trigger>
-        <span>validation</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="serve-watch-validation">validation</h4>
 <doc-panel id="validation--string">
     <template #title>validation : <code translate="no" v-pre>string</code></template>
 <p>Configure how thorough Retype is while looking for changed files.</p>
@@ -3264,12 +2611,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="showsidebarfilter">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#showsidebarfilter">#</doc-anchor-trigger>
-        <span>showSidebarFilter</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="showsidebarfilter">showSidebarFilter</h2>
 <doc-panel id="showsidebarfilter--boolean">
     <template #title>showSidebarFilter : <code translate="no" v-pre>boolean</code></template>
 <p>The <code translate="no" v-pre>showSidebarFilter</code> project setting controls the visibility of the filter component in the left sidebar above the navigation tree. Default is <code translate="no" v-pre>true</code>.</p>
@@ -3280,19 +2622,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="snippets">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#snippets">#</doc-anchor-trigger>
-        <span>snippets</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="snippets">snippets</h2>
 <p>The <code translate="no" v-pre>snippets</code> configuration allows for the project with custom configuration of code block formatting, including the project wide enabling of <a href="/components/code-block/#line-numbers">line numbering</a>.</p>
-<doc-anchor-target id="linenumbers">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#linenumbers">#</doc-anchor-trigger>
-        <span>lineNumbers</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="linenumbers">lineNumbers</h3>
 <doc-panel id="linenumbers--list">
     <template #title>lineNumbers : <code translate="no" v-pre>list</code></template>
 <p>A list of code block reference language strings to enable line numbering on. Default is <code translate="no" v-pre>null</code>.</p>
@@ -3319,19 +2651,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="start">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#start">#</doc-anchor-trigger>
-        <span>start</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="start">start</h2>
 <p>The <code translate="no" v-pre>start</code> config contains project options that apply during the <a href="/guides/cli/#retype-start"><code translate="no" v-pre>retype start</code></a> CLI command.</p>
-<doc-anchor-target id="open">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#open">#</doc-anchor-trigger>
-        <span>open</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="open">open</h3>
 <doc-panel id="open--boolean">
     <template #title>open : <code translate="no" v-pre>boolean</code></template>
 <p>Set to <code translate="no" v-pre>false</code> to instruct Retype to not open the default web browser when the command <code translate="no" v-pre>retype start</code> is run. By default, Retype will open a web browser when <code translate="no" v-pre>retype start</code> is run.</p>
@@ -3343,12 +2665,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 <p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code translate="no" v-pre>retype start -n</code> or <code translate="no" v-pre>retype start --no-open</code> will also prevent the default web browser from being opened.</p>
 </doc-panel>
-<doc-anchor-target id="pro">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pro">#</doc-anchor-trigger>
-        <span>pro</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="pro">pro</h3>
 <doc-panel id="pro--boolean">
     <template #title>pro : <code translate="no" v-pre>boolean</code></template>
 <p>The default is <code translate="no" v-pre>false</code>.</p>
@@ -3359,12 +2676,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 <p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code translate="no" v-pre>retype start --pro</code> will also start the project in Pro mode.</p>
 </doc-panel>
-<doc-anchor-target id="debounce">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#debounce">#</doc-anchor-trigger>
-        <span>debounce</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="debounce">debounce</h3>
 <doc-panel id="debounce--number">
     <template #title>debounce : <code translate="no" v-pre>number</code></template>
 <p>Delay how quickly <code translate="no" v-pre>retype start</code> reacts to file changes, in milliseconds. The default is <code translate="no" v-pre>100</code>.</p>
@@ -3375,19 +2687,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 <p>Using the <a href="/guides/cli/#retype-start">CLI</a> command <code translate="no" v-pre>retype start --debounce 500</code> will override this project setting for the current run.</p>
 </doc-panel>
-<doc-anchor-target id="templating">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#templating">#</doc-anchor-trigger>
-        <span>templating</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="templating">templating</h2>
 <p>Configurations to control the Retype content templating engine for this project.</p>
-<doc-anchor-target id="enabled-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-5">#</doc-anchor-trigger>
-        <span>enabled</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="enabled-5">enabled</h3>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>A project-wide option to enable or disable the Retype content templating engine. Default is <code translate="no" v-pre>true</code>.</p>
@@ -3397,12 +2699,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 <p>The templating engine can also be disabled on a per-page basis by setting <code translate="no" v-pre>templating: false</code> in the page metadata.</p>
 </doc-panel>
-<doc-anchor-target id="liquid">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#liquid">#</doc-anchor-trigger>
-        <span>liquid</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="liquid">liquid</h3>
 <doc-panel id="liquid--boolean">
     <template #title>liquid : <code translate="no" v-pre>boolean</code></template>
 <p>Specifies if Liquid syntax <code translate="no" v-pre>{% ... %}</code> is enabled. If <code translate="no" v-pre>liquid: true</code> is set, Retype is incompatible with GitBook style of component configuration.</p>
@@ -3412,12 +2709,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
   liquid: false # Set to true to enable</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="looplimit">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#looplimit">#</doc-anchor-trigger>
-        <span>loopLimit</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="looplimit">loopLimit</h3>
 <doc-panel id="looplimit--number">
     <template #title>loopLimit : <code translate="no" v-pre>number</code></template>
 <p>Sets the maximum number of iterations allowed for loop statements in templates. This is a safety mechanism to prevent infinite loops and excessive resource consumption during template rendering.</p>
@@ -3436,12 +2728,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
   loopLimit: 0 # Disable loop limit (not recommended)</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="common-use-cases">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#common-use-cases">#</doc-anchor-trigger>
-        <span>Common use cases</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="common-use-cases">Common use cases</h4>
 <p><strong>Large datasets</strong>: If your templates process large collections of data (such as comprehensive lists, extensive navigation menus, or bulk content generation), you may need to increase the loop limit:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
@@ -3452,12 +2739,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
   loopLimit: 100 # Strict limit for performance-critical projects</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="error-handling">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#error-handling">#</doc-anchor-trigger>
-        <span>Error handling</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="error-handling">Error handling</h4>
 <p>When the loop limit is exceeded, Retype will display an error message similar to:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">ERROR: [template.md:1] Evaluation error. Exceeding number of iteration limit `1000` for loop statement.</code></pre>
@@ -3468,12 +2750,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <li>Optimize the template to reduce the number of loop iterations</li>
 <li>Split large datasets into smaller, more manageable chunks</li>
 </ol>
-<doc-anchor-target id="performance">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#performance">#</doc-anchor-trigger>
-        <span>Performance</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="performance">Performance</h4>
 <p>Loop limits help maintain build performance by preventing runaway templates. Consider the following when setting loop limits:</p>
 <ul>
 <li><strong>Build time</strong>: Higher limits allow more complex templates but may increase build times</li>
@@ -3482,12 +2759,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </ul>
 <p>For most projects, the default limit of 1000 iterations provides a good balance between flexibility and performance protection.</p>
 </doc-panel>
-<doc-anchor-target id="namespace">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#namespace">#</doc-anchor-trigger>
-        <span>namespace</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="namespace">namespace</h3>
 <doc-panel id="namespace--string">
     <template #title>namespace : <code translate="no" v-pre>string</code></template>
 <p>An optional namespace prefix for template variables. When set, <code translate="no" v-pre>project</code>, <code translate="no" v-pre>page</code>, and <code translate="no" v-pre>content</code> variables are nested under the specified namespace.</p>
@@ -3505,12 +2777,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>This would make variables accessible as <code translate="no" v-pre>{{ my.docs.project.branding.title }}</code>.</p>
 </doc-panel>
 <hr>
-<doc-anchor-target id="theme">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#theme">#</doc-anchor-trigger>
-        <span>theme</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="theme">theme</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
@@ -3543,12 +2810,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <a href="/configuration/theme-variables/" class="absolute block inset-0"></a>
 </div>
 </p>
-<doc-anchor-target id="theme-base">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#theme-base">#</doc-anchor-trigger>
-        <span>base</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="theme-base">base</h3>
 <doc-panel id="base--object">
     <template #title>base : <code translate="no" v-pre>object</code></template>
 <p>The <code translate="no" v-pre>base</code> theme configures the light mode appearance and serves as the foundation for your site&#x27;s design. All <code translate="no" v-pre>theme</code> variables can be customized within this section.</p>
@@ -3581,12 +2843,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     nav-item-text-active-weight: 700</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<doc-anchor-target id="theme-dark">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#theme-dark">#</doc-anchor-trigger>
-        <span>dark</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="theme-dark">dark</h3>
 <doc-panel id="dark--object">
     <template #title>dark : <code translate="no" v-pre>object</code></template>
 <p>The <code translate="no" v-pre>dark</code> theme specifically targets dark mode appearance. When the website is switched to dark mode, the dark theme variables override the <doc-anchor-trigger to="#theme-base">theme base</doc-anchor-trigger> variables. The following demonstrates how to configure the <code translate="no" v-pre>dark</code> theme variables:</p>
@@ -3599,22 +2856,12 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="toc">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#toc">#</doc-anchor-trigger>
-        <span>toc</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="toc">toc</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>toc</code> config contains project options that apply to the right sidebar Table of Contents.</p>
-<doc-anchor-target id="depth">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#depth">#</doc-anchor-trigger>
-        <span>depth</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="depth">depth</h3>
 <doc-panel id="depth--string-number">
     <template #title>depth : <code translate="no" v-pre>string</code>, <code translate="no" v-pre>number</code></template>
 <p>The heading depth to include in the right Table of Contents.</p>
@@ -3667,12 +2914,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </table>
 </div>
 </doc-panel>
-<doc-anchor-target id="label-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#label-2">#</doc-anchor-trigger>
-        <span>label</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="label-2">label</h3>
 <doc-panel id="label--string">
     <template #title>label : <code translate="no" v-pre>string</code></template>
 <p>A custom label for the top of the Table of Contents column.</p>
@@ -3682,12 +2924,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </doc-codeblock></div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="url">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#url">#</doc-anchor-trigger>
-        <span>url</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="url">url</h2>
 <doc-panel id="url--string">
     <template #title>url : <code translate="no" v-pre>string</code></template>
 <p>The base URL of your website.</p>
