@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.826949511416">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -46,15 +46,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.826949511416" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.826949511416" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.826949511416" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.826949511416" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.826949511416" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -423,7 +423,7 @@
     </div>
 </div>
 <h2 id="quick-brand-color-setup">Quick Brand Color Setup</h2>
-<p>For teams that need a simple way to set their brand color without diving into full theme customization, the new <a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a> setting provides a streamlined approach.</p>
+<p>For teams that need a simple way to set their brand color without diving into full theme customization, the new <a href="/configuration/project/#branding-basecolor"><code translate="no" v-pre>branding.baseColor</code></a> setting provides a streamlined approach.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -554,7 +554,7 @@ nav:
 </button></p>
 <p>This shorthand syntax reduces typing and makes component markup more readable, especially when you are adding multiple badges or buttons to a page. The pipe notation works with all existing component features and variants.</p>
 <h2 id="icon-only-links">Icon-Only Links</h2>
-<p>Clean up your header and footer navigation with support for icon-only <a href="/configuration/project/#links">header links</a> and <a href="/configuration/project/#links-footer">footer links</a>. You no longer need to provide <code translate="no" v-pre>text</code> when you want to display only an icon.</p>
+<p>Clean up your header and footer navigation with support for icon-only <a href="/configuration/project/#links">header links</a> and <a href="/configuration/project/#footer-links">footer links</a>. You no longer need to provide <code translate="no" v-pre>text</code> when you want to display only an icon.</p>
 <div id="icon-only-links-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - icon: &quot;github&quot;
@@ -610,7 +610,7 @@ This callout uses your project `base-color` theme variable.
 <p>Documentation often needs to work in print format for offline reference or formal documentation packages. This release improves print styles with better link handling and more consistent visual rendering across different browsers and print settings.</p>
 <p>Try printing any page using the built-in browser print function with <kbd>Ctrl P</kbd> on Windows or <kbd>⌘P</kbd> on Mac.</p>
 <h2 id="footer-template-support">Footer Template Support</h2>
-<p>The <a href="/configuration/project/#copyright"><code translate="no" v-pre>footer.copyright</code></a> setting now supports full templating, including data variables, includes, and functions. This enables dynamic footer content that can pull from your project data or include shared footer components.</p>
+<p>The <a href="/configuration/project/#footer-copyright"><code translate="no" v-pre>footer.copyright</code></a> setting now supports full templating, including data variables, includes, and functions. This enables dynamic footer content that can pull from your project data or include shared footer components.</p>
 <div id="footer-template-support-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">footer:
   copyright: &quot;{{ include \&quot;snippets/copyright\&quot; }}&quot;</code></pre>
@@ -620,6 +620,7 @@ This callout uses your project `base-color` theme variable.
 <p>Retype <code translate="no" v-pre>v3.11</code> represents a significant step forward in customization without sacrificing simplicity. The <a href="/guides/themes/">theme</a> system gives Pro users the flexibility they need for enterprise branding requirements, while the syntax improvements and UX enhancements benefit everyone.</p>
 <p>These features address real pain points we hear from teams with the need for brand consistency, faster content authoring, and professional polish. Whether you are building internal documentation or public-facing product docs, v3.11 provides the tools to build a project that reflects your brand.</p>
 <p>Try out the latest Retype release and experiment with the new customization options. Share your themed website with us on <a href="https://x.com/retypeapp" class="outbound" target="_blank"><span>X</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or open a GitHub <a href="https://github.com/retypeapp/retype/issues">Issue</a> with feedback. Your input helps shape the future of Retype.</p>
+<hr>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -639,8 +640,8 @@ This callout uses your project `base-color` theme variable.
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-02-17T14:31:47" title="2026-02-17" data-absolute-label="Last updated on 2026-02-17" data-absolute-label-html="Last updated on 2026-02-17" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                    Last updated on 2026-02-17
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    Last updated on 2026-03-16
                 </time>
             </div>
 

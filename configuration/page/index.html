@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.826949511416">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -39,15 +39,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.826949511416" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.826949511416" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.826949511416" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.826949511416" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0-preview.827014139519" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.826949511416" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -432,7 +432,7 @@ author: frank@example.com
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<p>An author object can also be configured with specific values for the <doc-anchor-trigger to="#name"><code translate="no" v-pre>name</code></doc-anchor-trigger>, <doc-anchor-trigger to="#email"><code translate="no" v-pre>email</code></doc-anchor-trigger>, <doc-anchor-trigger to="#link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#avatar"><code translate="no" v-pre>avatar</code></doc-anchor-trigger>.</p>
+<p>An author object can also be configured with specific values for the <doc-anchor-trigger to="#author-name"><code translate="no" v-pre>name</code></doc-anchor-trigger>, <doc-anchor-trigger to="#author-email"><code translate="no" v-pre>email</code></doc-anchor-trigger>, <doc-anchor-trigger to="#author-link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#author-avatar"><code translate="no" v-pre>avatar</code></doc-anchor-trigger>.</p>
 <p>The <code translate="no" v-pre>author</code> config is very flexible and can accept one or more author configurations and even a list of mixed types. The following sample demonstrates adding a list of authors. Two authors are added by name and a third is added only by their email address.</p>
 <div id="author-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
@@ -452,7 +452,7 @@ authors:
   - steffen@example.com
 ---</code></pre>
 </doc-codeblock></div>
-<h3 id="avatar">avatar</h3>
+<h3 id="author-avatar">avatar</h3>
 <doc-panel id="avatar--string">
     <template #title>avatar : <code translate="no" v-pre>string</code></template>
 <p>Possible options for the <code translate="no" v-pre>avatar</code> include:</p>
@@ -471,7 +471,7 @@ author:
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<h3 id="email">email</h3>
+<h3 id="author-email">email</h3>
 <doc-panel id="email--string">
     <template #title>email : <code translate="no" v-pre>string</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -481,7 +481,7 @@ author:
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<h3 id="link">link</h3>
+<h3 id="author-link">link</h3>
 <doc-panel id="link--string">
     <template #title>link : <code translate="no" v-pre>string</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -491,7 +491,7 @@ author:
 ---</code></pre>
 </doc-codeblock></div>
 </doc-panel>
-<h3 id="name">name</h3>
+<h3 id="author-name">name</h3>
 <doc-panel id="name--string">
     <template #title>name : <code translate="no" v-pre>string</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -507,7 +507,7 @@ author:
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>backlinks</code> configuration controls the display of inbound links from other pages in your project on this specific page. Backlinks help users discover related content by showing which pages reference the current page.</p>
-<h3 id="enabled">enabled</h3>
+<h3 id="backlinks-enabled">enabled</h3>
 <doc-panel id="enabled--boolean">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable backlinks for this page. Default is <code translate="no" v-pre>true</code>.</p>
@@ -531,7 +531,7 @@ backlinks:
 </doc-codeblock></div>
 <p>This overrides the project-level title setting for this specific page.</p>
 </doc-panel>
-<h3 id="maxresults">maxResults</h3>
+<h3 id="backlinks-maxresults">maxResults</h3>
 <doc-panel id="maxresults--number">
     <template #title>maxResults : <code translate="no" v-pre>number</code></template>
 <p>Set the maximum number of backlinks to display on this page. Default is <code translate="no" v-pre>12</code>.</p>
@@ -541,7 +541,7 @@ backlinks:
   maxResults: 3
 ---</code></pre>
 </doc-codeblock></div>
-<p>This overrides the project-level <a href="/configuration/project/#maxresults">maxResults</a> setting for this specific page.</p>
+<p>This overrides the project-level <a href="/configuration/project/#backlinks-maxresults">maxResults</a> setting for this specific page.</p>
 </doc-panel>
 <p>See also <a href="/configuration/project/#backlinks">Project</a> configuration of <a href="/configuration/project/#backlinks"><code translate="no" v-pre>backlinks</code></a>.</p>
 <hr>
@@ -833,7 +833,7 @@ meta:
     </div>
 </div>
 </doc-panel>
-<h3 id="description">description</h3>
+<h3 id="meta-description">description</h3>
 <doc-panel id="description--string">
     <template #title>description : <code translate="no" v-pre>string</code></template>
 <p>A custom value for the <code translate="no" v-pre>&lt;meta name=&quot;description&quot;&gt;</code> meta tag.</p>
@@ -1394,7 +1394,7 @@ Some content here.</code></pre>
     <span>PRO</span>
 </a> only.</p>
 <p>The <code translate="no" v-pre>toc</code> config contains page options that apply to the right sidebar Table of Contents.</p>
-<h3 id="depth">depth</h3>
+<h3 id="toc-depth">depth</h3>
 <doc-panel id="depth--string-number">
     <template #title>depth : <code translate="no" v-pre>string</code>, <code translate="no" v-pre>number</code></template>
 <p>The heading depth to include in the right Table of Contents.</p>
@@ -1447,7 +1447,7 @@ Some content here.</code></pre>
 </table>
 </div>
 </doc-panel>
-<h3 id="label-1">label</h3>
+<h3 id="toc-label">label</h3>
 <doc-panel id="label--string">
     <template #title>label : <code translate="no" v-pre>string</code></template>
 <p>A custom label for the top of the Table of Contents column.</p>
@@ -1481,21 +1481,21 @@ Some content here.</code></pre>
 <td>The page is public and visible in the main navigation. A password is not required to view this page.</td>
 </tr>
 <tr>
-<td><doc-anchor-trigger to="#hidden"><code translate="no" v-pre>hidden</code></doc-anchor-trigger></td>
+<td><doc-anchor-trigger to="#visibility-hidden"><code translate="no" v-pre>hidden</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td>The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public (<a href="/samples/hidden/">sample</a>).</td>
 </tr>
 <tr>
-<td><doc-anchor-trigger to="#protected"><code translate="no" v-pre>protected</code></doc-anchor-trigger></td>
+<td><doc-anchor-trigger to="#visibility-protected"><code translate="no" v-pre>protected</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
 <td>The page is added to the public navigation but requires a password to access the content of the page (<a href="/samples/protected/">sample</a> password: <code translate="no" v-pre>test</code>).</td>
 </tr>
 <tr>
-<td><doc-anchor-trigger to="#private"><code translate="no" v-pre>private</code></doc-anchor-trigger></td>
+<td><doc-anchor-trigger to="#visibility-private"><code translate="no" v-pre>private</code></doc-anchor-trigger></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x1F6AB;</span></td>
 <td style="text-align: center;"><span class="docs-emoji">&#x2705;</span></td>
@@ -1505,11 +1505,11 @@ Some content here.</code></pre>
 </table>
 </div>
 </doc-panel>
-<h3 id="hidden">hidden</h3>
+<h3 id="visibility-hidden">hidden</h3>
 <p>With <code translate="no" v-pre>hidden</code>, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
 <p>Retype would ensure no automatically generated links or references to the hidden page are created. If on a public page, a link to a hidden page is made by an author, the link will work and the hidden page will be visible.</p>
 <p>The following <a href="/samples/hidden/">sample</a> demonstrates hiding a page:</p>
-<div id="hidden-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-hidden-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 visibility: hidden
 ---
@@ -1519,7 +1519,7 @@ This page will be hidden from the menu and search results.</code></pre>
 </doc-codeblock></div>
 <p>The History <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.998 2.5A9.503 9.503 0 0 0 3.378 8H5.75a.75.75 0 0 1 0 1.5H2a1 1 0 0 1-1-1V4.75a.75.75 0 0 1 1.5 0v1.697A10.997 10.997 0 0 1 11.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 0 1 1.5-.037 9.5 9.5 0 0 0 9.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5Z"/><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/></g></g></svg> component will continue to function as normal. Any hidden page visited would still be logged in the history, although that history is only available to the visitor.</p>
 <p>Setting <code translate="no" v-pre>visibility: hidden</code> on a page is a good way to create a <em>draft</em> or <em>secret</em> page that you do not want included in the navigation, but you still want to share a link to the page for others to view if they have the link.</p>
-<h3 id="protected">protected</h3>
+<h3 id="visibility-protected">protected</h3>
 <p>To create a protected page, add <code translate="no" v-pre>visibility: protected</code> and then set the password for the project using the <code translate="no" v-pre>--password</code> flag.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -1539,7 +1539,7 @@ This page will be hidden from the menu and search results.</code></pre>
     </div>
 </div>
 <p>The following <a href="/samples/protected/">sample</a> (password: test) demonstrates creating a protected page:</p>
-<div id="protected-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-protected-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 visibility: protected
 ---
@@ -1548,16 +1548,16 @@ visibility: protected
 This page will be visible in the main navigation, but will require a password to view the page.</code></pre>
 </doc-codeblock></div>
 <p>Then call either of the following commands to set the password for the project:</p>
-<div id="protected-code-2" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-protected-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
 <p>The project password can also be set as an Environment variable by using <a href="/configuration/envvars/#retype_password"><code translate="no" v-pre>RETYPE_PASSWORD</code></a>.</p>
 <p>An entire folder can be set to <code translate="no" v-pre>protected</code> by adding an <code translate="no" v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
-<div id="protected-code-3" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-protected-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: protected</code></pre>
 </doc-codeblock></div>
-<h3 id="private">private</h3>
+<h3 id="visibility-private">private</h3>
 <p>To create a private page, add <code translate="no" v-pre>visibility: private</code> and then set the password for the project using the <code translate="no" v-pre>--password</code> flag.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -1577,7 +1577,7 @@ retype build --password &lt;your-password&gt;</code></pre>
     </div>
 </div>
 <p>The following <a href="/samples/private/">sample</a> (password: test) demonstrates creating a private page:</p>
-<div id="private-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-private-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
 visibility: private
 ---
@@ -1586,7 +1586,7 @@ visibility: private
 This page will not be visible in the main navigation and will require a password to view the page.</code></pre>
 </doc-codeblock></div>
 <p>Then call either of the following commands to set the password for the project:</p>
-<div id="private-code-2" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-private-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">retype start --password &lt;your-password&gt;
 retype build --password &lt;your-password&gt;</code></pre>
 </doc-codeblock></div>
@@ -1609,7 +1609,7 @@ retype build --password &lt;your-password&gt;</code></pre>
     </div>
 </div>
 <p>An entire folder can be set to <code translate="no" v-pre>private</code> by adding an <code translate="no" v-pre>index.yml</code> file with the following configuration to the root of the folder. See the <a href="/configuration/folder/">folder</a> docs for additional examples.</p>
-<div id="private-code-3" class="codeblock-wrapper"><doc-codeblock>
+<div id="visibility-private-code-3" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">visibility: private</code></pre>
 </doc-codeblock></div>
 <div id="retype-backlinks">
@@ -1737,12 +1737,12 @@ retype build --password &lt;your-password&gt;</code></pre>
     </a>
 </div>
 <div class="card-compact-container">
-    <a href="/blog/2025-05-04-whats-new-in-retype-v38/" class="group card-compact no-link">
+    <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v3.8</span>
+                <span class="card-compact-title">What's New</span>
             </div>
-            <p class="card-compact-description">Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features. This release focuses on</p>
+            <p class="card-compact-description">Retype v4.3 brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained</p>
         </div>
     </a>
 </div>
@@ -1761,8 +1761,8 @@ retype build --password &lt;your-password&gt;</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-11T20:33:38" title="2026-03-11" data-absolute-label="Last updated on 2026-03-11" data-absolute-label-html="Last updated on 2026-03-11" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-11
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-16
                     </time>
                 </div>
 

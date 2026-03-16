@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.826949511416">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0-preview.827014139519">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0-preview">
@@ -39,14 +39,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0-preview.826949511416" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0-preview.827014139519" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.826949511416" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.826949511416" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0-preview.827014139519" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0-preview.826949511416" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0-preview.827014139519" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -351,7 +351,7 @@
 <dl>
 <dt><a href="/components/backlinks/">Backlinks</a> component</dt>
 <dd>Automatic display of inbound links from other pages in your project. Shows which pages reference the current page, helping readers discover related content. Configurable at <a href="/configuration/project/#backlinks">project</a> and <a href="/configuration/page/#backlinks">page</a> levels.</dd>
-<dt><a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a> setting</dt>
+<dt><a href="/configuration/project/#branding-basecolor"><code translate="no" v-pre>branding.baseColor</code></a> setting</dt>
 <dd>Quick method to set a brand base color without full theme configuration. Applies the color to the left navigation and other key UI elements.</dd>
 <dt><a href="/configuration/project/#breadcrumb">Breadcrumb</a> navigation</dt>
 <dd>Add breadcrumb navigation trails to pages with the <code translate="no" v-pre>breadcrumb</code> project setting. Configurable at <a href="/configuration/project/#breadcrumb">project</a> and <a href="/configuration/page/#breadcrumb">page</a> levels.</dd>
@@ -367,13 +367,13 @@
 <dd>Display an automatic &quot;Last updated&quot; date and author in the page footer, sourced from Git commit metadata. Configurable at <a href="/configuration/project/#lastupdated">project</a> and <a href="/configuration/page/#lastupdated">page</a> levels.</dd>
 <dt><a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a> setting</dt>
 <dd>Add a badge to any page&#x27;s entry in the left sidebar navigation. Supports all badge variants and the pipe shorthand notation.</dd>
-<dt><a href="/configuration/project/#icons">Navigation icon</a> control</dt>
+<dt><a href="/configuration/project/#nav-icons">Navigation icon</a> control</dt>
 <dd>Show or hide navigation icons for all, some, or no items with the <code translate="no" v-pre>nav.icons.mode</code> setting. Options include <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, and <code translate="no" v-pre>none</code>.</dd>
 <dt><a href="/configuration/project/#nextprev">Next/Previous</a> navigation control</dt>
 <dd>Configure the visibility and sequencing of Next and Previous navigation buttons. Supports <code translate="no" v-pre>show</code>, <code translate="no" v-pre>hide</code>, and <code translate="no" v-pre>exclude</code> modes at <a href="/configuration/project/#nextprev">project</a>, <a href="/configuration/page/#nextprev">page</a>, and folder levels.</dd>
 <dt><a href="/configuration/project/#outbound">Outbound</a> links</dt>
 <dd>Automatically annotate and style all external outbound links with a trailing icon and new-tab behaviour. Control which domains are treated as outbound and customize the icon, target, and exclusions.</dd>
-<dt><a href="/configuration/page/#private">Private</a> and <a href="/configuration/page/#protected">protected</a> pages</dt>
+<dt><a href="/configuration/page/#visibility-private">Private</a> and <a href="/configuration/page/#visibility-protected">protected</a> pages</dt>
 <dd>Restrict access to pages and folders using <code translate="no" v-pre>visibility: private</code> or <code translate="no" v-pre>visibility: protected</code>. Private pages are excluded from navigation, search, and the generated website. Protected pages are hidden from navigation and search but remain accessible via direct URL.</dd>
 <dt>Remove <a href="/configuration/project/#poweredbyretype">Powered by Retype</a> branding</dt>
 <dd>Remove the <code translate="no" v-pre>Powered by Retype</code> footer branding by setting <code translate="no" v-pre>poweredByRetype: false</code> in your project <code translate="no" v-pre>retype.yml</code>.</dd>
@@ -433,9 +433,9 @@
 <dd>Query and access site content programmatically within templates. Includes <code translate="no" v-pre>content.pages</code>, <code translate="no" v-pre>content.blog.posts</code>, <code translate="no" v-pre>content.tags</code>, <code translate="no" v-pre>content.categories</code>, and <code translate="no" v-pre>content.authors</code>. Supports wikilink-style lookup with <code translate="no" v-pre>content[&quot;page-key&quot;]</code> and search with <code translate="no" v-pre>content.search(&quot;query&quot;)</code>.</dd>
 <dt><a href="/configuration/project/#blog">Blog configuration</a></dt>
 <dd>Expanded blog configuration with <code translate="no" v-pre>pageSize</code>, <code translate="no" v-pre>maxResults</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>base</code> settings. Control pagination, limit total posts on summary pages, customize the blog heading, and change the URL base path, see <a href="https://github.com/retypeapp/retype/issues/747">#747</a>.</dd>
-<dt><code translate="no" v-pre>title</code> property on <a href="/configuration/project/#title"><code translate="no" v-pre>links</code></a></dt>
+<dt><code translate="no" v-pre>title</code> property on <a href="/configuration/project/#links-title"><code translate="no" v-pre>links</code></a></dt>
 <dd>Add tooltip descriptions to navigation links. The <code translate="no" v-pre>title</code> property on <code translate="no" v-pre>links</code> and <code translate="no" v-pre>footer.links</code> sets the HTML title attribute for hover tooltips, providing additional context without cluttering the interface, see <a href="https://github.com/retypeapp/retype/issues/672">#672</a>.</dd>
-<dt><a href="/configuration/project/#sitename"><code translate="no" v-pre>meta.siteName</code></a></dt>
+<dt><a href="/configuration/project/#meta-sitename"><code translate="no" v-pre>meta.siteName</code></a></dt>
 <dd>Set the <code translate="no" v-pre>og:site_name</code> meta tag for improved social media sharing. Defines the site name that appears when pages are shared on platforms like Facebook, Twitter, and LinkedIn.</dd>
 <dt>Library and dependency upgrades</dt>
 <dd>Complete upgrade to the latest versions of all libraries and dependencies, including performance improvements and security updates.</dd>
@@ -452,7 +452,7 @@
 <dd>Automatic discovery and switching of favicon variants for light and dark modes. Retype detects dark mode favicon files and automatically switches between them based on the user&#x27;s color scheme preference.</dd>
 <dt>Triple-star description syntax</dt>
 <dd>New <code translate="no" v-pre>***</code> syntax block for defining page descriptions directly in markdown if placed immediately after the opening H1 heading. Provides a cleaner alternative to YAML frontmatter for setting page meta descriptions.</dd>
-<dt><a href="/configuration/project/#looplimit"><code translate="no" v-pre>templating.loopLimit</code></a></dt>
+<dt><a href="/configuration/project/#templating-looplimit"><code translate="no" v-pre>templating.loopLimit</code></a></dt>
 <dd>New project configuration setting to control the maximum number of loop iterations in templates. Helps prevent infinite loops and improves template safety.</dd>
 <dt><a href="/configuration/page/#target"><code translate="no" v-pre>target</code></a></dt>
 <dd>New page-level setting to control where links on a page open. Set to <code translate="no" v-pre>blank</code>, <code translate="no" v-pre>parent</code>, <code translate="no" v-pre>top</code>, or <code translate="no" v-pre>self</code> to control link behavior for the entire page.</dd>
@@ -464,8 +464,8 @@
 <dl>
 <dt>Custom themes</dt>
 <dd>Comprehensive <a href="/configuration/theme-variables/">theme variables</a> customization for both <a href="/configuration/project/#theme-base">light</a> and <a href="/configuration/project/#theme-dark">dark</a> modes, see <a href="/configuration/project/#theme">docs</a>, <a href="/guides/themes/">Themes</a> guide, and <a href="/configuration/theme-variables/">Theme Variables</a>.</dd>
-<dt><a href="/configuration/project/#basecolor"><code translate="no" v-pre>branding.baseColor</code></a></dt>
-<dd>Quick method to set the base brand color without full <a href="/configuration/project/#theme">theme</a> configuration, see <a href="/configuration/project/#basecolor">docs</a>.</dd>
+<dt><a href="/configuration/project/#branding-basecolor"><code translate="no" v-pre>branding.baseColor</code></a></dt>
+<dd>Quick method to set the base brand color without full <a href="/configuration/project/#theme">theme</a> configuration, see <a href="/configuration/project/#branding-basecolor">docs</a>.</dd>
 <dt><a href="/configuration/page/#nav-badge"><code translate="no" v-pre>nav.badge</code></a></dt>
 <dd>Add a badge to navigation items in the left sidebar, see <a href="/configuration/page/#nav-badge">docs</a>.</dd>
 <dt>Three-way switcher</dt>
@@ -473,7 +473,7 @@
 <dt>Pipe notation syntax</dt>
 <dd>Shorthand syntax for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/configuration/page/#nav-badge">Navigation Badge</a> components using <code translate="no" v-pre>text|variant</code> format. Example: <code translate="no" v-pre>[!badge NEW|info]</code> instead of <code translate="no" v-pre>[!badge text=&quot;NEW&quot; variant&quot;info&quot;]</code>.</dd>
 <dt>Icon-only links</dt>
-<dd>Support for icon-only <a href="/configuration/project/#links"><code translate="no" v-pre>links</code></a> in header and <a href="/configuration/project/#footer">footer</a> configurations without requiring <a href="/configuration/project/#text"><code translate="no" v-pre>text</code></a>. Enables cleaner, minimal navigation designs.</dd>
+<dd>Support for icon-only <a href="/configuration/project/#links"><code translate="no" v-pre>links</code></a> in header and <a href="/configuration/project/#footer">footer</a> configurations without requiring <a href="/configuration/project/#links-text"><code translate="no" v-pre>text</code></a>. Enables cleaner, minimal navigation designs.</dd>
 <dt>Base variant</dt>
 <dd>New <code translate="no" v-pre>base</code> variant for <a href="/components/button/">Button</a>, <a href="/components/badge/">Badge</a>, and <a href="/components/callout/">Callout</a> components. Provides consistent styling with the site&#x27;s base color theme.</dd>
 <dt>Better print mode rendering</dt>
@@ -481,7 +481,7 @@
 <dt>Search and filter UX</dt>
 <dd>Added keyboard shortcuts hints, improved placeholder handling, and better focus states</dd>
 <dt>Footer template support</dt>
-<dd>Full templating support in <a href="/configuration/project/#copyright"><code translate="no" v-pre>footer.copyright</code></a> including use of data variables, includes, and functions</dd>
+<dd>Full templating support in <a href="/configuration/project/#footer-copyright"><code translate="no" v-pre>footer.copyright</code></a> including use of data variables, includes, and functions</dd>
 </dl>
 <hr>
 <h2 id="v3100">v3.10.0</h2>
@@ -505,7 +505,7 @@
 <h2 id="v390">v3.9.0</h2>
 <dl>
 <dt>Navigation icon settings</dt>
-<dd>Control which navigation items show icons with <a href="/configuration/project/#icons"><code translate="no" v-pre>nav.icons.mode</code></a> setting. Options include: <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, <code translate="no" v-pre>none</code>.</dd>
+<dd>Control which navigation items show icons with <a href="/configuration/project/#nav-icons"><code translate="no" v-pre>nav.icons.mode</code></a> setting. Options include: <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, <code translate="no" v-pre>none</code>.</dd>
 <dt>Default color scheme</dt>
 <dd>Set project&#x27;s default color scheme with <a href="/configuration/project/#scheme"><code translate="no" v-pre>scheme.mode</code></a> configuration. Options include: <code translate="no" v-pre>system</code>, <code translate="no" v-pre>dark</code>, <code translate="no" v-pre>light</code>.</dd>
 <dt>Print-Friendly Stylesheets</dt>
@@ -564,6 +564,16 @@
     </a>
 </div>
 <div class="card-compact-container">
+    <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">What's New</span>
+            </div>
+            <p class="card-compact-description">Retype v4.3 brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
     <a href="/blog/2025-07-02-whats-new-in-retype-v311/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
@@ -618,8 +628,8 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-13T07:31:29" title="2026-03-13" data-absolute-label="Last updated on 2026-03-13" data-absolute-label-html="Last updated on 2026-03-13" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-13
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-16
                     </time>
                 </div>
 

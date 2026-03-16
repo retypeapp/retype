@@ -5,7 +5,7 @@
     <link>https://retype.com/blog/</link>
     <description>Latest updates, announcements, and articles from Retype</description>
     <copyright>© Retype 2026. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
     <generator>Retype 4.3.0-preview</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://retype.com/blog/feed.xml" />
     <image>
@@ -13,6 +13,14 @@
       <link>https://retype.com/blog/</link>
       <url>https://retype.com/favicon.ico</url>
     </image>
+    <item>
+      <title>What's New</title>
+      <guid isPermaLink="true">https://retype.com/blog/2026-03-17-whats-new-in-retype-v430/</guid>
+      <description>Retype v4.3 brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained</description>
+      <author>geoff@retype.com (@geoffreymcgill)</author>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+      <category domain="https://retype.com/categories/release/">release</category>
+    </item>
     <item>
       <title>What's New in Retype v4.2</title>
       <guid isPermaLink="true">https://retype.com/blog/2026-03-10-whats-new-in-retype-v420/</guid>

@@ -12,32 +12,26 @@
     <meta name="generator" content="Retype 4.3.0-preview">
 
     <!-- Primary Meta Tags -->
-    <title>What&#39;s New in Retype v4.2 - Write On! with Retype</title>
-    <meta name="title" content="What's New in Retype v4.2 - Write On! with Retype">
-    <meta name="description" content="Retype v4.2 adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing">
+    <title>What&#39;s New - Write On! with Retype</title>
+    <meta name="title" content="What's New - Write On! with Retype">
+    <meta name="description" content="Retype v4.3 brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://retype.com/blog/2026-03-10-whats-new-in-retype-v420/">
+    <link rel="canonical" href="https://retype.com/blog/2026-03-17-whats-new-in-retype-v430/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://retype.com/blog/2026-03-10-whats-new-in-retype-v420/">
-    <meta property="og:title" content="What's New in Retype v4.2 - Write On! with Retype">
-    <meta property="og:description" content="Retype v4.2 adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing">
-    <meta property="og:image" content="https://retype.com/blog/images/2026-03-10-whats-new-in-retype-v420.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="What's New in Retype v4.2 - Write On! with Retype">
+    <meta property="og:url" content="https://retype.com/blog/2026-03-17-whats-new-in-retype-v430/">
+    <meta property="og:title" content="What's New - Write On! with Retype">
+    <meta property="og:description" content="Retype v4.3 brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained">
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://retype.com/blog/2026-03-10-whats-new-in-retype-v420/">
-    <meta name="twitter:title" content="What's New in Retype v4.2 - Write On! with Retype">
-    <meta name="twitter:description" content="Retype v4.2 adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing">
-    <meta name="twitter:image" content="https://retype.com/blog/images/2026-03-10-whats-new-in-retype-v420.png">
-    <meta name="twitter:image:alt" content="What's New in Retype v4.2 - Write On! with Retype">
+    <meta name="twitter:url" content="https://retype.com/blog/2026-03-17-whats-new-in-retype-v430/">
+    <meta name="twitter:title" content="What's New - Write On! with Retype">
+    <meta name="twitter:description" content="Retype v4.3 brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained">
     <meta name="twitter:creator" content="@geoffreymcgill">
 
     <!-- RSS -->
@@ -330,8 +324,8 @@
                         </svg>
                     </li>
                     <li class="pr-4">
-                        <a href="/blog/2026-03-10-whats-new-in-retype-v420/" class="pr-4">
-                            What's New in Retype v​4.​2
+                        <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="pr-4">
+                            What's New
                         </a>
                     </li>
                 </ol>
@@ -339,7 +333,7 @@
 
             <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<h1 id="whats-new-in-retype-v42">What&#x27;s New in Retype v4.2</h1>
+<h1 id="whats-new">What&#x27;s New</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
     <div class="flex items-center">
         <div>By</div>
@@ -354,254 +348,275 @@
     <div>In&nbsp;</div>
     <div><a href="/categories/release/">release</a></div>
     <div class="mx-2">&#9679;</div>
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2026-03-10</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2026-03-17</span></div>
 </div>
 
 <p><figure class="content-center">
-    <img src="/blog/images/2026-03-10-whats-new-in-retype-v420.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1200" height="630" />
+    <img src="images/2026-03-17-whats-new-in-retype-v430.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Retype <code translate="no" v-pre>v4.2</code> adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing easier to fine tune.</p>
-<p>See the full <a href="/changelog/">Changelog</a> and <a href="/feature-log/">Feature Log</a> for a detailed list of updates in the <code translate="no" v-pre>v4.2</code> release.</p>
-<h2 id="new-rss-settings">New RSS settings</h2>
-<p>Retype <code translate="no" v-pre>v4.2</code> introduces more control over the generated RSS feed for your blog via the new <code translate="no" v-pre>blog.rss</code> project settings.</p>
-<h3 id="metadata-and-limits">Metadata and limits</h3>
-<p>The new <code translate="no" v-pre>rss</code> settings give you direct control over how many posts the rss feed includes, the title, description, and a custom copyright statement:</p>
-<div id="metadata-and-limits-retypeyml" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">blog:
-  title: Retype Blog
-  rss:
-    maxResults: 25
-    title: Release Notes
-    description: Product announcements, release notes, and shipping updates
-    copyright: © Copyright {{ date.now.year }}. All rights reserved.
-    imageUrl: /static/retype-feed.png</code></pre>
+<p>Retype <code translate="no" v-pre>v4.3</code> brings a set of new features and a solid round of enhancements. Header navigation gets dropdown sub-menu support, backlinks gain fine-grained <code translate="no" v-pre>include</code> and <code translate="no" v-pre>exclude</code> configuration, and date formatting becomes fully configurable via <code translate="no" v-pre>locale.dateFormat</code>.</p>
+<p>See the full <a href="/changelog/#v430">Changelog</a> and <a href="/feature-log/">Feature Log</a> for a detailed list of updates in the <code translate="no" v-pre>v4.3</code> release.</p>
+<hr>
+<h2 id="new-header-dropdown-menus">New header dropdown menus</h2>
+<p><figure class="content-right">
+    <img src="images/v430-dropdown-menu.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption caption-float"></figcaption>
+</figure>
+</p>
+<p>Header <a href="/configuration/project/#links"><code translate="no" v-pre>links</code></a> now support nested <code translate="no" v-pre>items</code> to create dropdown menus.</p>
+<p>Add a nested <code translate="no" v-pre>items</code> list to any link within <code translate="no" v-pre>links</code> and Retype renders a dropdown menu when the link is hovered.</p>
+<div id="new-header-dropdown-menus-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Guides
+    items:
+      - text: Installation
+        link: /guides/installation.md
+        icon: download
+      - text: Configuration
+        link: /configuration/project.md
+        icon: gear</code></pre>
 </doc-codeblock></div>
-<p>Configuring the <code translate="no" v-pre>maxResults</code> is useful when you have a deep blog archive, but your feed should stay focused on the latest posts.</p>
-<p>If you have blog, Retype now includes the rss meta tag on all pages to help readers discover the feed faster.</p>
-<h2 id="new-labels-project-setting">New <code translate="no" v-pre>labels</code> project setting</h2>
-<p><code translate="no" v-pre>v4.2</code> adds a project-level <a href="/configuration/project/#labels"><code translate="no" v-pre>labels</code></a> setting so you can customize all labels and messages for your project.</p>
-<div id="new-labels-project-setting-retypeyml" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
+<p>Menus are supported to one level deep. Each item supports the same properties as a top-level link, including <code translate="no" v-pre>text</code>, <code translate="no" v-pre>link</code>, <code translate="no" v-pre>icon</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>description</code>.</p>
+<p>The dropdown menu width and horizontal offsets are customizable using the <abbr title="Cascading Style Sheet">CSS</abbr> variables:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code translate="no" v-pre>header-links-dropdown-max-width</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code translate="no" v-pre>header-links-dropdown-offset</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> <code translate="no" v-pre>header-links-dropdown-gap</code></li>
+</ul>
+<p>On the retype.com website, we adjust the horizontal position of the menu using the following configuration:</p>
+<div id="new-header-dropdown-menus-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
+  base:
+    header-links-dropdown-offset: -1rem</code></pre>
+</doc-codeblock></div>
+<hr>
+<h2 id="new-backlinks-include-and-exclude">New backlinks include and exclude</h2>
+<p>The <a href="/configuration/page/#backlinks">backlinks</a> component now supports <code translate="no" v-pre>backlinks.include</code> and <code translate="no" v-pre>backlinks.exclude</code> settings to configure pages that should be explicitly included or excluded as backlinks in the <strong>See also</strong> sections across your project.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The Backlinks component, including <code translate="no" v-pre>include</code> and <code translate="no" v-pre>exclude</code> settings, requires a Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> key.</p>
+        </div>
+    </div>
+</div>
+<p>The following section demonstrates how to exclude blog posts from appearing in the <strong>See also</strong> section of pages:</p>
+<div id="new-backlinks-include-and-exclude-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">backlinks:
+  exclude:
+    - /blog</code></pre>
+</doc-codeblock></div>
+<p>This setting allows configuration using the same path-pattern rules as <a href="/configuration/project/#search-exclude"><code translate="no" v-pre>search.exclude</code></a>. Excluded pages still render and are navigable, but they simply won&#x27;t be added as backlinks on other pages.</p>
+<p>Thank you to <a href="https://github.com/7MinSec">@7MinSec</a> in issue <a href="https://github.com/retypeapp/retype/issues/809">#809</a> for the feature request!</p>
+<hr>
+<h2 id="new-custom-date-format">New custom date format</h2>
+<p>A new <a href="/configuration/project/#locale"><code translate="no" v-pre>dateFormat</code></a> setting in the <a href="/configuration/project/#locale"><code translate="no" v-pre>locale</code></a> project setting configures how dates are rendered across the site, including the date displayed as the published date and the <a href="/components/last-updated/">Last updated</a> date.</p>
+<div id="new-custom-date-format-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale:
+  dateFormat: MM-dd-yyyy</code></pre>
+</doc-codeblock></div>
+<p>A custom default date format can also be configured in <a href="/configuration/project/#labels"><code translate="no" v-pre>labels</code></a> using the <code translate="no" v-pre>Default_DateFormat</code> key. The following sample demonstrates:</p>
+<div id="new-custom-date-format-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">labels:
   default:
-    search_input_placeholder: Search the docs
-    toc_contents_label: On this page
-
-  fr:
-    search_input_placeholder: Rechercher dans la documentation
-    toc_contents_label: Sur cette page</code></pre>
+    Default_DateFormat: MM-dd-yyyy</code></pre>
 </doc-codeblock></div>
-<p>Use <code translate="no" v-pre>labels.default</code> for shared wording, then add a specific <a href="/configuration/project/#locale">locale</a> group, such as <code translate="no" v-pre>fr</code>, when you need to customize for a specific language.</p>
-<p>All label keys are available in the <a href="/configuration/translations/">translations</a> configuration reference.</p>
-<h3 id="custom-locale-ids-for-practical-wording">Custom <code translate="no" v-pre>locale</code> IDs for practical wording</h3>
-<p><code translate="no" v-pre>locale</code> can also point at your own label collections, not just built-in language collections.</p>
-<div id="custom-locale-ids-for-practical-wording-retypeyml" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">locale: partner
-
-labels:
-  default:
-    search_input_placeholder: Search docs
-
-  partner:
-    search_input_placeholder: Search partner docs
-    text_next: Next step</code></pre>
+<p>If <code translate="no" v-pre>locale.dateFormat</code> is configured, it takes precedence over the <code translate="no" v-pre>Default_DateFormat</code> label.</p>
+<p>The date format settings can be configured with the following specifiers:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Specifier</th>
+<th>Meaning</th>
+<th>Template sample</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>yy</code></td>
+<td>Two-digit year</td>
+<td><code translate="no" v-pre>dateFormat: yy</code></td>
+<td>26</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>yyyy</code></td>
+<td>Four-digit year</td>
+<td><code translate="no" v-pre>dateFormat: yyyy</code></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>M</code></td>
+<td>Month number</td>
+<td><code translate="no" v-pre>dateFormat: M</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>MM</code></td>
+<td>Two-digit month</td>
+<td><code translate="no" v-pre>dateFormat: MM</code></td>
+<td>03</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>MMM</code></td>
+<td>Abbreviated month name</td>
+<td><code translate="no" v-pre>dateFormat: MMM</code></td>
+<td>Mar</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>MMMM</code></td>
+<td>Full month name</td>
+<td><code translate="no" v-pre>dateFormat: MMMM</code></td>
+<td>March</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>d</code></td>
+<td>Day of month</td>
+<td><code translate="no" v-pre>dateFormat: d</code></td>
+<td>16</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dd</code></td>
+<td>Two-digit day of month</td>
+<td><code translate="no" v-pre>dateFormat: dd</code></td>
+<td>16</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>ddd</code></td>
+<td>Abbreviated day name</td>
+<td><code translate="no" v-pre>dateFormat: ddd</code></td>
+<td>Mon</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dddd</code></td>
+<td>Full day name</td>
+<td><code translate="no" v-pre>dateFormat: dddd</code></td>
+<td>Monday</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Common full date string configurations can be composed by combining individual specifiers:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Template sample</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>dateFormat: yyyy-MM-dd</code></td>
+<td>2026-03-16</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dateFormat: MM/dd/yyyy</code></td>
+<td>03/16/2026</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dateFormat: dd MMM yyyy</code></td>
+<td>16 Mar 2026</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dateFormat: MMM d, yyyy</code></td>
+<td>Mar 16, 2026</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dateFormat: MMMM d, yyyy</code></td>
+<td>March 16, 2026</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>dateFormat: dddd, MMMM d, yyyy</code></td>
+<td>Monday, March 16, 2026</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="new-keyboard-navigation">New keyboard navigation</h2>
+<p>A new <kbd>gh</kbd> keyboard shortcut is short for <strong>Go Home</strong> and jumps you back to the home page of the website from any page within the website.</p>
+<p>On your keyboard, just hit <kbd>g</kbd> then <kbd>h</kbd> to go back to the home page.</p>
+<p>The <kbd>gh</kbd> shortcut extends the existing <kbd>[</kbd> and <kbd>]</kbd> keyboard shortcuts for navigation to the Next or Previous pages.</p>
+<hr>
+<h2 id="logo-dimensions">Logo dimensions</h2>
+<p>Retype now auto-detects the dimensions of the <code translate="no" v-pre>branding.lgoo</code> automatically adds the <code translate="no" v-pre>width</code> and <code translate="no" v-pre>height</code> attributes to the image.</p>
+<p>When you need to set custom values for the logo dimensions, use the new <code translate="no" v-pre>branding.logoWidth</code> and <code translate="no" v-pre>branding.logoHeight</code> settings:</p>
+<div id="logo-dimensions-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
+  logo: ./logo.svg
+  logoWidth: 150
+  logoHeight: 31</code></pre>
 </doc-codeblock></div>
-<p>That makes it easy to give a partner portal, support site, or internal handbook its own voice while keeping most labels shared.</p>
-<h2 id="new-searchinclude-and-searchexclude">New <code translate="no" v-pre>search.include</code> and <code translate="no" v-pre>search.exclude</code></h2>
-<p><code translate="no" v-pre>v4.2</code> adds <code translate="no" v-pre>search.exclude</code> and <code translate="no" v-pre>search.include</code> so you can control what lands in the search index without changing what gets published.</p>
-<p>If you want to keep a section such as <code translate="no" v-pre>/blog</code> out of search, the config stays simple:</p>
-<div id="new-searchinclude-and-searchexclude-retypeyml" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
-  exclude:
-    - &quot;/blog&quot;</code></pre>
-</doc-codeblock></div>
-<p>And if you want to start from the opposite direction, <code translate="no" v-pre>search.include</code> can opt a path back in after a broader exclude:</p>
-<div id="new-searchinclude-and-searchexclude-retypeyml-1" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
-  exclude:
-    - &quot;*&quot;
-  include:
-    - &quot;/blog&quot;</code></pre>
-</doc-codeblock></div>
-<p>This is useful when only part of a mixed-content site should be searchable.</p>
-<h2 id="new-created-and-lastupdated-page-settings">New <code translate="no" v-pre>created</code> and <code translate="no" v-pre>lastUpdated</code> page settings</h2>
-<p><code translate="no" v-pre>v4.2</code> adds <code translate="no" v-pre>created</code> and <code translate="no" v-pre>lastUpdated</code> page front matter settings.</p>
-<p>Use <code translate="no" v-pre>created</code> when you want to preserve when a page first went live, and use <code translate="no" v-pre>lastUpdated</code> when readers should see that the page was reviewed or refreshed later.</p>
-<p>For a long-lived guide or migration page, the front matter can stay simple:</p>
-<div id="new-created-and-lastupdated-page-settings-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
-created: 2024-05-14
-lastUpdated: 2026-03-01
----</code></pre>
-</doc-codeblock></div>
-<p>That preserves when the page first went live while still surfacing a recent update.</p>
-<p><code translate="no" v-pre>lastUpdated</code> can also be filled automatically from Git commit metadata and rendered in the page footer. By default, Retype will try to add the last updated <strong>date</strong> using the latest <strong>committer</strong> metadata when full Git history is available. The <code translate="no" v-pre>by</code> value is available too, but it is off by default.</p>
-<div id="new-created-and-lastupdated-page-settings-retypeyml" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">lastUpdated:
-  date:
-    enabled: true
-    source: committer
-  by:
-    enabled: true
-    source: author</code></pre>
-</doc-codeblock></div>
-<p>This is useful when you want the footer to show both the most recent commit date and who made the change, without maintaining those values by hand.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
+<p>The <code translate="no" v-pre>alt</code> attribute of the logo is also now populated from <a href="/configuration/project/#meta-sitename"><code translate="no" v-pre>meta.siteName</code></a> setting.</p>
+<hr>
+<h2 id="enhancements">Enhancements</h2>
+<p>A pile of smaller tweaks and adjustments have been made in <code translate="no" v-pre>v4.3</code> too! Everything is listed in the <a href="/changelog/#v430">Changelog</a>, but here are a few of the more notable upgrades:</p>
+<dl>
+<dt>Footnotes</dt>
+<dd>Footnotes<a id="fnref:1" href="#fn:1" class="retype-footnote"><sup>1</sup></a> have had a complete makeover in Retype <code translate="no" v-pre>v4.3</code> and now have a much cleaner user-experience. Thank you for the community reports in issue <a href="https://github.com/retypeapp/retype/issues/676">#676</a>!</dd>
+<dt>Wikilink resolution</dt>
+<dd>
+<p>Components now accept wikilinks as a valid <code translate="no" v-pre>link</code> value. For example, configuring a Card component using <code translate="no" v-pre>[!card vert]([[Mermaid]])</code> with the <code translate="no" v-pre>[[Mermaid]]</code> wikilink as the path to the target page.</p>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/components/mermaid/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/mermaid-header.png">
         </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Full Git history required</h5>
-<p>Automatic <code translate="no" v-pre>lastUpdated</code> values depend on Git history. If your build runs from a shallow clone, Retype will skip the generated footer values.</p>
-<p>For GitHub Actions, the following <code translate="no" v-pre>fetch-depth: 0</code> configuration fetches the full history:</p>
+        <div class="card-vert-body p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Components</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Mermaid</div>
+            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Mermaid is a diagramming and charting tool that can be defined inside Markdown code blocks.</p></div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+</dd>
+<dt>Hyperlink style</dt>
+<dd>Links now render with an explicit <a href="/">underline</a> by default. Previously, link styling relied on color and weight alone, which reduced accessibility.</dd>
+<dt>Heading permalinks</dt>
+<dd>The headings permalinks with a <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></g></g></svg> icon that appear when hovering have been improved and moved to the right side of the heading text.</dd>
+<dt>Steps Permalink</dt>
+<dd>Step titles within the <a href="/components/steps/">Steps</a> component now show a permalink anchor on hover, matching the behavior of headings. This allows for deep linking to specific steps within a set of instructions.</dd>
+<dt>Twitter meta tags</dt>
+<dd>Dedicated <a href="https://x.com/retypeapp" class="outbound" target="_blank"><span>Twitter/X</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> meta tags are now emitted alongside existing Open Graph tags. Sharing Retype-built pages to X will now render richer previews.</dd>
+<dt>SEO improvements</dt>
+<dd>A number of important SEO improvements have been made in <code translate="no" v-pre>v4.3</code>, including automatic image dimension detection, setting alt text, and improved handling of <code translate="no" v-pre>aria</code> related attributes.</dd>
+<dt>Backlinks for all pages</dt>
+<dd><a href="/components/backlinks/">Backlinks</a> are now enabled by default for all page layouts, including <code translate="no" v-pre>blog</code> pages. Backlinks can be disabled for individual pages or folders by configuring the <a href="/configuration/project/#backlinks-enabled"><code translate="no" v-pre>backlinks.enabled</code></a> project setting.</dd>
+<dt>Folder-Level backlinks inheritance</dt>
+<dd>
+<p>The <code translate="no" v-pre>backlinks</code> setting is now configurable at the folder-level, to set <code translate="no" v-pre>backlinks.enabled</code> for all child pages in that folder.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">- uses: actions/checkout@v6
-  with:
-    fetch-depth: 0</code></pre>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml"># blog/index.yml
+backlinks:
+  enabled: false</code></pre>
 </doc-codeblock></div>
-        </div>
-    </div>
-</div>
-<p>Manual page values and generated Git values are both supported, but they are not mixed on the same page. If you manually set <code translate="no" v-pre>lastUpdated</code> or <code translate="no" v-pre>lastUpdatedBy</code>, Retype uses those manual values for that page instead of filling in the missing pieces from Git.</p>
-<p>It works well for long-lived guides, release notes, and migration pages that continue to evolve after launch.</p>
-<h2 id="card-component-upgrade">Card component upgrade</h2>
-<p><code translate="no" v-pre>v4.2</code> adds a new <a href="/components/card/#compact"><code translate="no" v-pre>compact</code></a> Card layout and new customizable <a href="/components/card/#property-overrides">properties</a> such as <code translate="no" v-pre>title</code>, <code translate="no" v-pre>text</code>, <code translate="no" v-pre>icon</code>, <code translate="no" v-pre>image</code>, <code translate="no" v-pre>kicker</code>, and <code translate="no" v-pre>footer</code>.</p>
-<p>Use the <code translate="no" v-pre>compact</code> layout when you want a smaller card without an image.</p>
-<div id="card-component-upgrade-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Start here&quot; text=&quot;Create your first Retype project.&quot; icon=&quot;:rocket:&quot; layout=&quot;compact&quot;](/guides/getting-started.md)
-[!card compact](/guides/installation.md)</code></pre>
-</doc-codeblock></div>
-<p>The default Card component layout shows an image on the left, <code translate="no" v-pre>vertical</code> places the image above, and <code translate="no" v-pre>compact</code> removes the image to tighten up the footprint.</p>
-<p>
-<div class="card-compact-group">
-<div class="card-compact-container">
-    <a href="/guides/getting-started/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F680;</span></span>
-                <span class="card-compact-title">Start here...</span>
-            </div>
-            <p class="card-compact-description">Create your first Retype project.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/guides/installation/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
-                <span class="card-compact-title">Installation</span>
-            </div>
-            <p class="card-compact-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
-        </div>
-    </a>
-</div>
-</div>
-</p>
-<h3 id="list-pair-cards">List pair cards</h3>
-<p>You can also create an array of cards from list pairs by using a wikilink as the top-level list item and a nested list item for the description.</p>
-<p>The top-level link must be a wikilink to a local page in your project. The nested text is always configured manually and is not pulled from the linked page.</p>
-<div id="list-pair-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- [[Changelog]]
-  - Review the full list of changes included in the latest Retype release.
-- [[Feature Log]]
-  - Explore the headline features and improvements added across recent releases.
-- [[Community]]
-  - Learn about the free community key and other community resources.</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="card-compact-group">
-<div class="card-compact-container">
-    <a href="/changelog/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/></svg></span>
-                <span class="card-compact-title">Changelog</span>
-            </div>
-            <p class="card-compact-description">Review the full list of changes included in the latest Retype release.</p>
-        </div>
-    </a>
-</div>
- 
-<div class="card-compact-container">
-    <a href="/feature-log/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/></svg></span>
-                <span class="card-compact-title">Feature Log</span>
-            </div>
-            <p class="card-compact-description">Explore the headline features and improvements added across recent releases.</p>
-        </div>
-    </a>
-</div>
- 
-<div class="card-compact-container">
-    <a href="/community/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></svg></span>
-                <span class="card-compact-title">Community</span>
-            </div>
-            <p class="card-compact-description">Learn about the free community key and other community resources.</p>
-        </div>
-    </a>
-</div>
-</div>
-</p>
-<h2 id="new-debounce-control-for-retype-start">New debounce control for <code translate="no" v-pre>retype start</code></h2>
-<p>A new debounce option for <a href="/guides/cli/#retype-start"><code translate="no" v-pre>retype start</code></a> has been added to help reduce rebuild churn when one edit turns into a burst of file changes. Some markdown editors can be rapidly auto-saving the file you&#x27;re working on, which can trigger multiple rebuilds in quick succession.</p>
-<p>With <code translate="no" v-pre>debounce</code>, Retype waits briefly for the change burst to settle, then rebuilds once instead of reacting to every intermediate update.</p>
-<p>To delay rebuilds, add a <code translate="no" v-pre>--debounce</code> flag and value on the command line. The following sample demonstrates how to add a 400 millisecond debounce to the <code translate="no" v-pre>retype start</code> command:</p>
-<div id="new-debounce-control-for-retype-start-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">retype start --debounce 400</code></pre>
-</doc-codeblock></div>
-<p>If you would like to configure a <code translate="no" v-pre>debounce</code> value as the default for the project without having to pass the <code translate="no" v-pre>--debounce</code> flag every time, you can add the setting to your <code translate="no" v-pre>retype.yml</code> file. The following sample demonstrates how to configure a 400 ms debounce to be added when running <code translate="no" v-pre>retype start</code>:</p>
-<div id="new-debounce-control-for-retype-start-retypeyml" class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">retype.yml</div>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">start:
-  debounce: 400</code></pre>
-</doc-codeblock></div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you want Retype to react faster to changes, reduce the <code translate="no" v-pre>debounce</code> value. The default value is <code translate="no" v-pre>100</code> ms.</p>
-        </div>
-    </div>
-</div>
-<h2 id="new-retype-stop-command">New <code translate="no" v-pre>retype stop</code> command</h2>
-<p>Retype <code translate="no" v-pre>v4.2</code> adds the <a href="/guides/cli/#retype-stop"><code translate="no" v-pre>retype stop</code></a> CLI command to make it easier to stop a local server that was started using <code translate="no" v-pre>retype start</code>.</p>
-<p>Run <code translate="no" v-pre>retype stop</code> from the same command line location that your started the project from, and Retype will stop the server for that project.</p>
-<p>When you want the bigger picture, <code translate="no" v-pre>retype stop --list</code> returns a list of all the currently running Retype servers.</p>
-<p>That makes restarts and cleanup safer when you have multiple preview servers running locally.</p>
+</dd>
+<dt>Symlink hot-reloading</dt>
+<dd>Symlinked content files now trigger live-reload rebuilds when their target files change during <code translate="no" v-pre>retype start</code>.</dd>
+</dl>
 <hr>
 <h2 id="write-on">Write On!</h2>
-<p>Retype <code translate="no" v-pre>v4.2</code> brings better feed controls, more flexible UI labeling, tighter search indexing controls, and smoother local preview workflows. If you run a blog with Retype or maintain docs across different audiences, this release gives you more control without pushing that complexity into custom code.</p>
-<p><a href="/guides/installation/">Install or upgrade</a> Retype to try the latest improvements, and keep the feedback coming on <a href="https://x.com/retypeapp" class="outbound" target="_blank"><span>X</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or in GitHub <a href="https://github.com/retypeapp/retype/issues">Issues</a>.</p>
+<p>Retype <code translate="no" v-pre>v4.3</code> delivers header dropdowns for richer site navigation, granular backlinks controls for cleaner <strong>See also</strong> sections, and a set of focused enhancements across footnotes, heading anchors, keyboard shortcuts, and SEO.</p>
+<p><a href="/guides/installation/">Install or upgrade</a> Retype to try the latest release. Share your feedback on <a href="https://x.com/retypeapp" class="outbound" target="_blank"><span>X</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or open a GitHub <a href="https://github.com/retypeapp/retype/issues">Issue</a>. Your input continues to shape the future of Retype.</p>
 <hr>
 <div id="retype-backlinks">
     <h2>See also</h2>
@@ -653,6 +668,14 @@ lastUpdated: 2026-03-01
 </div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
+<div class="retype-footnotes">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Footnotes are much nicer now!<a href="#fnref:1" class="footnote-back-ref"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M10.53 5.03a.75.75 0 1 0-1.06-1.06l-6.25 6.25a.75.75 0 0 0 0 1.06l6.25 6.25a.75.75 0 1 0 1.06-1.06L5.56 11.5H17a3.248 3.248 0 0 1 3.25 3.248v4.502a.75.75 0 0 0 1.5 0v-4.502A4.748 4.748 0 0 0 17 10H5.56l4.97-4.97Z"/></g></g></svg></a></p>
+</li>
+</ol>
+</div>
 
             <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
@@ -666,7 +689,7 @@ lastUpdated: 2026-03-01
         </div>
         <footer id="retype-content-footer" class="clear-both">
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-14">
-                <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/blog/2026-03-10-whats-new-in-retype-v420.md" target="_blank" rel="noopener">
+                <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/blog/2026-03-17-whats-new-in-retype-v430.md" target="_blank" rel="noopener">
                     <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                     <span>Edit this page</span>
                 </a>
@@ -674,20 +697,13 @@ lastUpdated: 2026-03-01
         
             <nav id="retype-nextprev" class="print:hidden flex mt-14">
                 <div class="w-1/2">
-                    <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/blog/2026-03-17-whats-new-in-retype-v430/">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                        <span>
-                            <span class="block text-xs font-normal text-base-text-muted">Newer</span>
-                            <span class="block mt-1">What's New</span>
-                        </span>
-                    </a>
                 </div>
         
                 <div class="w-1/2">
-                    <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/blog/2026-03-02-whats-new-in-retype-v410/">
+                    <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/blog/2026-03-10-whats-new-in-retype-v420/">
                         <span>
                             <span class="block text-xs font-normal text-right text-base-text-muted">Older</span>
-                            <span class="block mt-1">What's New in Retype v​4.​1</span>
+                            <span class="block mt-1">What's New in Retype v​4.​2</span>
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                     </a>
@@ -748,7 +764,7 @@ lastUpdated: 2026-03-01
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "What's New in Retype v4.2", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "What's New", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>
