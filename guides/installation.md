@@ -6,15 +6,13 @@ icon: download
 
 Retype is a command line tool. Installation is super quick and you can be up and running within seconds.
 
-!!!
-Please see the [Retype CLI](cli.md) for full details on each command.
-!!!
+## New install
 
 >>> Confirm Prerequisites
 
 Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
-You only need one of the following three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
+You only need one of the three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you.
 
 | Package Manager | Supported Platforms |
 | --- | --- |
@@ -24,7 +22,7 @@ You only need one of the following three package managers as a prerequisite, alt
 
 >>> Install Retype
 
-Once you have a package manager installed, it takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.
+Based on the package manager you have installed on your computer, copy and run one of the following commands. 
 
 +++ npm
 ```
@@ -42,7 +40,9 @@ dotnet tool install retypeapp --global
 
 >>> Verify and Start Retype
 
-You can verify that Retype has been installed correctly by running the command `retype --version` or `retype -v` to get the current Retype version number. Checking the `version` is totally optional but is also just a nice confirmation that everything is working as expected.
+You can verify that [Retype CLI](cli.md) has been installed correctly by running the command `retype --version`.
+
+Checking the `version` is totally optional but is also just a nice confirmation that everything is working as expected. :+1:
 
 ```
 retype --version
@@ -58,15 +58,9 @@ retype start
 
 That's it! Your new Retype website should be up and running. :tada:
 
-!!!
-If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with exactly the same performance.
-!!!
-
 ---
 
-## Other Options
-
-### Update
+## Update
 
 Update to the latest release of Retype using one of the following commands for the package manager that you initially installed Retype with. For instance, if you used `npm` to install Retype, run the `npm` update command to update Retype locally.
 
@@ -86,7 +80,7 @@ dotnet tool update retypeapp --global
 
 ---
 
-### Uninstall
+## Uninstall
 
 Done with Retype? It's okay, we understand. :cry:
 
@@ -110,7 +104,7 @@ All Retype related files and folders within your project can be deleted, such as
 
 ---
 
-### Version and Tag specific
+## Version and Tag specific
 
 When managing project dependencies, it is sometimes necessary to install a specific version or a tagged release of a software package to ensure compatibility or access to certain features.
 
@@ -120,7 +114,7 @@ When using NPM or Yarn, specifying the `@latest` tag will always install the lat
 
 Using the `@next` tag will install an upcoming `-preview` release, if available.
 
-In the following samples, replace `[version-or-tag]` with the actual version number or tag. For instance, to specifically install the `v{{ version }}` release of Retype using NPM, run the command `npm install retypeapp@{{ version }} --global`.
+In the following samples, replace `[version-or-tag]` with the actual version number or tag. For instance, to specifically install the version `{{ version }}` release of Retype using NPM, run the command `npm install retypeapp@{{ version }} --global`.
 
 +++ npm
 ```
@@ -138,7 +132,7 @@ dotnet tool install retypeapp --global --version [version]
 
 ---
 
-### Platform specific
+## Platform specific
 
 The default `retypapp` **NPM** package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.
 
@@ -146,9 +140,13 @@ The bundle provides convenience although at the cost of an increased download si
 
 The **dotnet** package installer will automatically download the platform specific package.
 
+!!!
+If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but all the package maangers should install within seconds. They all produce the same result and run with exactly the same performance.
+!!!
+
 For **NPM** and **Yarn**, it is possible to install smaller platform specific packages without the bundling. Currently, three separate platforms are supported and can be installed independently from the primary `retypeapp` package.
 
-#### :icon-package: macOS
+### :icon-package: macOS
 
 +++ npm
 ```
@@ -171,7 +169,7 @@ OS                                    | Version                 | Architectures 
 
 [macOS]: https://support.apple.com/macos
 
-#### :icon-package: Windows
+### :icon-package: Windows
 
 +++ npm
 ```
@@ -207,7 +205,7 @@ OS                                    | Version                 | Architectures 
 [Nano-Server]: https://learn.microsoft.com/windows-server/get-started/getting-started-with-nano-server
 [Windows-Server]: https://learn.microsoft.com/windows-server/
 
-#### :icon-package: Linux
+### :icon-package: Linux
 
 +++ npm
 ```
