@@ -76,6 +76,25 @@ Strict [build](/guides/cli.md) mode
 
 ---
 
+## v4.3.0
+
+[!badge PRO] [`backlinks.include` and `backlinks.exclude`](/configuration/project.md#backlinks-exclude)
+: Fine-grained control over which pages appear as backlinks in **See also** sections. Use `backlinks.exclude` to suppress pages or folders (e.g. blog posts) from being listed as backlinks elsewhere, and `backlinks.include` to explicitly re-include specific paths within an excluded set, see [#809](https://github.com/retypeapp/retype/discussions/809).
+
+Header dropdown menus
+: Header [`links`](/configuration/project.md#links) now support nested `items` to create dropdown sub-menus. Add an `items` list to any header link and Retype renders a dropdown on hover. Each item supports `text`, `link`, `icon`, `title`, and `description`. Menus are one level deep. Dropdown width and positioning are customizable via CSS [theme](/guides/themes.md) variables.
+
+[`locale.dateFormat`](/configuration/project.md#locale-dateformat) setting
+: Configure how dates are rendered across the site — including published dates and [Last updated](/components/last-updated.md) labels — using a format string composed of specifiers like `yyyy-MM-dd` or `MMMM d, yyyy`. Respects the `locale` setting for language-specific month and day names, see [#573](https://github.com/retypeapp/retype/discussions/573).
+
+`gh` keyboard shortcut
+: New <kbd>gh</kbd> keyboard shortcut navigates to the home page of the site from any page. Extends the existing <kbd>[</kbd> and <kbd>]</kbd> shortcuts for Next/Previous page navigation.
+
+[`branding.logoWidth`](/configuration/project.md#branding-logowidth) and [`branding.logoHeight`](/configuration/project.md#branding-logoheight) settings
+: Retype now auto-detects logo image dimensions and adds `width` and `height` attributes automatically. Use these new settings to override the detected values when custom dimensions are needed. The logo `alt` attribute is also now sourced from [`meta.siteName`](/configuration/project.md#meta-sitename), see [#523](https://github.com/retypeapp/retype/discussions/523).
+
+---
+
 ## v4.2.0
 
 [!badge PRO] [Last updated](/components/last-updated.md) label
