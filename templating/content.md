@@ -70,7 +70,7 @@ filePath: {{ content["getting-started"].filePath }}
 
 ### Render as a card
 
-Pass a page [filePath](/configuration/page.md#filepath) to the [`[!card]`](/components/card.md) component to render a linked card for that page.
+Pass a page `filePath` to the [`[!card]`](/components/card.md) component to render a linked card for that page.
 
 {%{
 ```md

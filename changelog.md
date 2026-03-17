@@ -17,53 +17,52 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
-## v4.3.0
-
-[!badge text="LATEST" variant="info"]
-
-Released: [2026-03-17](https://github.com/retypeapp/retype/releases/tag/v4.3.0)
-
-# Version 4.3.0
-
-There were 21 changes in Retype 4.3.0.
-
-## New
-
-1. Add backlinks.exclude and backlinks.include config options, see #809
-1. New sub-menus in header using `items`
-1. New `gh` keyboard command to navigate to home page
-1. Locale specific date format, see #573
-1. New logo image `branding.logoHeight` and `branding.logoWidth` settings
-
-## Improved
-
-1. Add `backlinks` setting to folder configuration
-1. Enable Backlinks for all page types, including `blog` and `page`
-1. Include support for + modifier on Obsidian callouts
-1. Support hot-reloading of symlink pages that are modified during `retype start`
-1. Add twitter meta tags back
-1. Improve generation and SEO of heading # anchor links on hover
-1. Move heading anchor link to right side and use link icon
-1. Add permalink support to Steps component
-1. Support wikilinks as path for url of a linkable component
-1. Improve default hyperlink styles
-1. Improve footnotes functionality and UI design, see #676
-1. Update all client library dependencies
-1. Improve SEO optimization of icons used in the navigation components
-1. Improve how the site logo HREF is set and alt attribute using `meta.siteName`
-1. Add `alt` attribute on branding logo based on `meta.siteName` value, see #523
-1. Convert folder nodes within the treenav to `<div>` instead of `<a>` elements
-
-
----
-
-## v4.3.0 [!badge @next|info]
+## v4.4.0 [!badge @next|info]
 
 Expected early Q2 2026.
 
 ---
 
-## v4.2.0 [!badge @latest|info]
+## v4.3.0 [!badge text="LATEST" variant="info"]
+
+**Released:** [2026-03-17](https://github.com/retypeapp/retype/releases/tag/v4.3.0)
+
+There were **21 changes** in Retype 4.3.0.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v430) for highlights.
+
++++ New :icon-shield-check:
+
+1. [!badge PRO](/pro/pro.md) Add [`backlinks.exclude`](/configuration/project.md#backlinks-exclude) and [`backlinks.include`](/configuration/project.md#backlinks-include) config options, see [#809](https://github.com/retypeapp/retype/discussions/809)
+1. New sub-menus in header using [`items`](/configuration/project.md#links-items)
+1. New `gh` keyboard command to navigate to home page
+1. Locale specific [`dateFormat`](/configuration/project.md#locale-dateformat), see [#573](https://github.com/retypeapp/retype/discussions/573)
+1. New logo image [`branding.logoHeight`](/configuration/project.md#branding-logoheight) and [`branding.logoWidth`](/configuration/project.md#branding-logowidth) settings
+
++++ Improved :icon-thumbsup:
+
+1. Add [`backlinks`](/configuration/folder.md#backlinks) setting to folder configuration
+1. Enable Backlinks for all page types, including `blog` and `page`
+1. Include support for + modifier on Obsidian callouts
+1. Support hot-reloading of symlink pages that are modified during [`retype start`](/guides/cli.md#retype-start)
+1. Include twitter meta tags
+1. Improve generation and SEO of heading `#` anchor links on hover
+1. Move heading anchor link to right side and use link icon
+1. Add permalink support to Steps component
+1. Support wikilinks as path for url of a linkable component
+1. Improve default hyperlink styles
+1. Improve footnotes functionality and UI design, see [#676](https://github.com/retypeapp/retype/discussions/676)
+1. Update all client library dependencies
+1. Improve SEO optimization of icons used in the navigation components
+1. Improve how the site logo HREF is set and alt attribute using [`meta.siteName`](/configuration/project.md#meta-sitename)
+1. Add `alt` attribute on branding logo based on [`meta.siteName`](/configuration/project.md#meta-sitename) value, see [#523](https://github.com/retypeapp/retype/discussions/523)
+1. Convert folder nodes within the treenav to `<div>` instead of `<a>` elements
+
++++
+
+---
+
+## v4.2.0
 
 **Released:** [2026-03-11](https://github.com/retypeapp/retype/releases/tag/v4.2.0)
 

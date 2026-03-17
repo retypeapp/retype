@@ -3,16 +3,19 @@ icon: note
 tags: [component]
 nav:
   badge: NEW|info
+data:
+  page1: "{{ content.blog.posts[0].filePath }}"
+  page2: "{{ content.blog.posts[1].filePath }}"
 ---
 # Card
 
 The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.
 
 ```md
-[!card](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card]({{ page1 }})
 ```
 
-[!card](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card]({{ page1 }})
 
 ---
 
@@ -53,22 +56,22 @@ Cards support three layout modes: horizontal, vertical, and compact.
 The default layout shows the image beside the content and works well for a single prominent card.
 
 ```md
-[!card](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card]({{ page1 }})
 ```
 
-[!card](/blog/2026-03-10-whats-new-in-retype-v420.md)
+[!card]({{ page1 }})
 
 ### Vertical
 
 Use `vertical` or `vert` for stacked cards with the image above the content. Consecutive vertical cards form a responsive group automatically.
 
 ```md
-[!card vert](/blog/2026-03-10-whats-new-in-retype-v420.md)
-[!card layout="vertical"](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card vert]({{ page1 }})
+[!card layout="vertical"]({{ page2 }})
 ```
 
-[!card vert](/blog/2026-03-10-whats-new-in-retype-v420.md)
-[!card layout="vertical"](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card vert]({{ page1 }})
+[!card layout="vertical"]({{ page2 }})
 
 ### Compact
 
@@ -107,12 +110,12 @@ See the layout examples above for `layout`. The following samples focus on the c
 Override one field and let the remaining values fall back to the target page.
 
 ```md
-[!card layout="vert" title="Start with v4.2"](/blog/2026-03-10-whats-new-in-retype-v420.md)
-[!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card layout="vert" title="Start with v4.2"]({{ page1 }})
+[!card layout="vert" text="Read the `v4.1` release summary."]({{ page2 }})
 ```
 
-[!card layout="vert" title="Start with v4.2"](/blog/2026-03-10-whats-new-in-retype-v420.md)
-[!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card layout="vert" title="Start with v4.2"]({{ page1 }})
+[!card layout="vert" text="Read the `v4.1` release summary."]({{ page2 }})
 
 ---
 
@@ -121,14 +124,14 @@ Override one field and let the remaining values fall back to the target page.
 These properties let you replace the metadata-style parts of a horizontal or vertical card.
 
 ```md
-[!card layout="vert" image="/blog/images/2026-03-10-whats-new-in-retype-v420.png"](/guides/blogging.md)
-[!card layout="vert" kicker="Release note"](/blog/2026-03-10-whats-new-in-retype-v420.md)
-[!card layout="vert" footer="Custom footer"](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card layout="vert" image="/static/community-hero.png"](/guides/blogging.md)
+[!card layout="vert" kicker="Release note"]({{ page1 }})
+[!card layout="vert" footer="Custom footer"]({{ page1 }})
 ```
 
-[!card layout="vert" image="/blog/images/2026-03-10-whats-new-in-retype-v420.png"](/guides/blogging.md)
-[!card layout="vert" kicker="Release note"](/blog/2026-03-10-whats-new-in-retype-v420.md)
-[!card layout="vert" footer="Custom footer"](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card layout="vert" image="/static/community-hero.png"](/guides/blogging.md)
+[!card layout="vert" kicker="Release note"]({{ page1 }})
+[!card layout="vert" footer="Custom footer"]({{ page1 }})
 
 ---
 
@@ -148,7 +151,7 @@ The `icon` override is rendered by compact cards.
 
 ### Automatic and manual versions of the same vertical card
 
-The first card uses page metadata. The second spells out the same values directly.
+The first card uses page metadata. The second manually configures the same values to provide a side-by-side comparison.
 
 ```md
 [!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)

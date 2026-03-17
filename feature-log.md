@@ -72,7 +72,7 @@ Strict [build](/guides/cli.md) mode
 : The `--strict` flag on `retype build` returns a non-zero exit code when the build produces any errors or warnings. Useful for enforcing quality gates in CI pipelines.
 
 [Table of contents](/configuration/project.md#toc)
-: Enable and configure an in-page table of contents with the `toc` project setting. Configurable at [project](/configuration/project.md#toc) and [page](/configuration/page.md#toc) levels, with control over heading depth and label.
+: Enable and configure the table of contents with the `toc` setting. Configurable at [project](/configuration/project.md#toc) and [page](/configuration/page.md#toc) levels, with control over heading depth and label.
 
 ---
 

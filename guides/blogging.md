@@ -8,16 +8,26 @@ nav:
 
 Adding a blog to your Retype website is as quick as adding a new `.md` file to your project.
 
->>> Add a `/blog/` folder
+## Setup
 
-Create a `/blog/` folder in your project.
+>>> Add a `/blog` folder
 
->>> Add a `.md` file
+Create a `/blog` folder in your project.
+
+>>> Add a blog post
 
 Create a new `.md` file using the format `YYYY-MM-DD-title.md` with that specific date format as the filename prefix:
 
 ```
 /blog/2025-11-15-hello-world.md
+```
+
+Or, give the file any name you like, such as `/blog/hello-world.md`, and set the [`date`](/configuration/page.md#date) in the page settings:
+
+```md /blog/hello-world.md
+---
+date: 2025-11-15
+---
 ```
 
 >>> Write your post:
@@ -101,9 +111,9 @@ tags: [release, update]
 ---
 ```
 
-### author
+### `author`
 
-Set one or more authors for the post. Accepts a simple name, email, or a full author object with `name`, `email`, `link`, and `avatar` properties.
+Set one or more [authors](/configuration/page.md#authors) for the post. Accepts a simple name, email, or a full author object with `name`, `email`, `link`, and `avatar` properties.
 
 ```yml
 ---
@@ -123,9 +133,9 @@ authors:
 
 See the full [`author`](/configuration/page.md#author) documentation for all options.
 
-### date
+### `date`
 
-A custom publish date in `YYYY-MM-DD` format. If set, Retype displays the date at the top of the post and uses it for ordering.
+A custom publish [`date`](/configuration/page.md#date) in `YYYY-MM-DD` format. If set, Retype displays the date at the top of the post and uses it for ordering.
 
 ```yml
 ---
@@ -133,11 +143,13 @@ date: 2025-11-15
 ---
 ```
 
-If no `date` frontmatter is set, Retype uses the date from the filename.
+If no `date` is set, Retype uses the date from the filename.
 
-### category
+The `date` must be configured in the `YYYY-MM-DD` format as this is considered data, but you can configure how the date is displayed to viewer by setting [`locale.dateFormat`](/configuration/project.md#locale-dateformat).
 
-Assign one or more categories. Retype automatically generates category summary pages at `/categories/`.
+### `category`
+
+Assign one or more [`categories`](/configuration/page.md#category). Retype automatically generates category summary pages at `/categories/`.
 
 ```yml
 ---
@@ -159,9 +171,9 @@ blog:
   base: news
 ```
 
-### base
+### `base`
 
-The URL path segment for the blog. Default is `"blog"`.
+The URL [`base`](/configuration/project.md#blog-base) path segment for the blog. Default is `"blog"`.
 
 ```yml
 blog:
@@ -170,16 +182,16 @@ blog:
 
 Setting `base: news` generates the blog summary at `/news/` instead of `/blog/`. Your blog post files still live in the `/blog/` folder in your project source.
 
-### layout
+### `layout`
 
-Set the default [`layout`](/configuration/page.md#layout) for all blog posts. Default is `blog`. To include the left sidebar tree navigation and the right-side table of contents, set `layout: page`.
+Set the default [`layout`](/configuration/project.md#blog-layout) for all blog posts. Default is `blog`. To include the left sidebar tree navigation and the right-side table of contents, set `layout: page`.
 
 ```yml
 blog:
   layout: page
 ```
 
-### maxResults
+### `maxResults`
 
 The maximum total number of posts included across all paginated summary pages. Default is all blog posts.
 
@@ -191,7 +203,7 @@ blog:
 Posts beyond the limit are excluded from the summary but remain accessible by direct URL.
 
 
-### pageSize
+### `pageSize`
 
 The number of posts displayed per summary page. Default is `10`.
 
@@ -202,7 +214,7 @@ blog:
 
 If the total number of posts exceeds the `pageSize`, Retype automatically generates paginated summary pages.
 
-### title
+### `title`
 
 A custom heading for the blog summary page. Default uses the locale translation.
 
@@ -211,9 +223,9 @@ blog:
   title: News & Updates
 ```
 
-### rss
+### `rss`
 
-Use the `blog.rss` settings in your `retype.yml` file to customize the generated RSS feed metadata.
+Use the [`blog.rss`](/configuration/project.md#blog-rss) settings in your `retype.yml` file to customize the generated RSS feed metadata.
 
 ```yml
 blog:
@@ -224,3 +236,5 @@ blog:
 ```
 
 See the [`blog.rss`](/configuration/project.md#blog-rss) project configuration documentation for the full list of RSS settings.
+
+---
