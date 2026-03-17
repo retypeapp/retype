@@ -17,6 +17,46 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
+## v4.3.0
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-03-17](https://github.com/retypeapp/retype/releases/tag/v4.3.0)
+
+# Version 4.3.0
+
+There were 21 changes in Retype 4.3.0.
+
+## New
+
+1. Add backlinks.exclude and backlinks.include config options, see #809
+1. New sub-menus in header using `items`
+1. New `gh` keyboard command to navigate to home page
+1. Locale specific date format, see #573
+1. New logo image `branding.logoHeight` and `branding.logoWidth` settings
+
+## Improved
+
+1. Add `backlinks` setting to folder configuration
+1. Enable Backlinks for all page types, including `blog` and `page`
+1. Include support for + modifier on Obsidian callouts
+1. Support hot-reloading of symlink pages that are modified during `retype start`
+1. Add twitter meta tags back
+1. Improve generation and SEO of heading # anchor links on hover
+1. Move heading anchor link to right side and use link icon
+1. Add permalink support to Steps component
+1. Support wikilinks as path for url of a linkable component
+1. Improve default hyperlink styles
+1. Improve footnotes functionality and UI design, see #676
+1. Update all client library dependencies
+1. Improve SEO optimization of icons used in the navigation components
+1. Improve how the site logo HREF is set and alt attribute using `meta.siteName`
+1. Add `alt` attribute on branding logo based on `meta.siteName` value, see #523
+1. Convert folder nodes within the treenav to `<div>` instead of `<a>` elements
+
+
+---
+
 ## v4.3.0 [!badge @next|info]
 
 Expected early Q2 2026.
