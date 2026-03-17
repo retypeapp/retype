@@ -68,7 +68,7 @@ branding:
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
-  pageSize: 5
+  pageSize: 6
   rss:
     title: Retype News by RSS
     description: Latest updates, announcements, and articles from Retype
@@ -86,7 +86,7 @@ edit:
 
 links:
   - text: What's New
-    icon: megaphone
+    icon: pulse
     title: Latest updates, announcements, and articles
     items:
       - text: Blog & News
