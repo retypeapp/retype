@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827026509154">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827026808182">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0">
@@ -39,14 +39,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0.827026509154" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0.827026808182" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0.827026509154" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0.827026808182" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0.827026509154" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0.827026808182" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0.827026509154" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0.827026808182" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -387,6 +387,22 @@
 <dd>Enable and configure the table of contents with the <code translate="no" v-pre>toc</code> setting. Configurable at <a href="/configuration/project/#toc">project</a> and <a href="/configuration/page/#toc">page</a> levels, with control over heading depth and label.</dd>
 </dl>
 <hr>
+<h2 id="v430">v4.3.0</h2>
+<dl>
+<dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</span> <a href="/configuration/project/#backlinks-exclude"><code translate="no" v-pre>backlinks.include</code> and <code translate="no" v-pre>backlinks.exclude</code></a></dt>
+<dd>Fine-grained control over which pages appear as backlinks in <strong>See also</strong> sections. Use <code translate="no" v-pre>backlinks.exclude</code> to suppress pages or folders (e.g. blog posts) from being listed as backlinks elsewhere, and <code translate="no" v-pre>backlinks.include</code> to explicitly re-include specific paths within an excluded set, see <a href="https://github.com/retypeapp/retype/discussions/809">#809</a>.</dd>
+<dt>Header dropdown menus</dt>
+<dd>Header <a href="/configuration/project/#links"><code translate="no" v-pre>links</code></a> now support nested <code translate="no" v-pre>items</code> to create dropdown sub-menus. Add an <code translate="no" v-pre>items</code> list to any header link and Retype renders a dropdown on hover. Each item supports <code translate="no" v-pre>text</code>, <code translate="no" v-pre>link</code>, <code translate="no" v-pre>icon</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>description</code>. Menus are one level deep. Dropdown width and positioning are customizable via CSS <a href="/guides/themes/">theme</a> variables.</dd>
+<dt><a href="/configuration/project/#locale-dateformat"><code translate="no" v-pre>locale.dateFormat</code></a> setting</dt>
+<dd>Configure how dates are rendered across the site — including published dates and <a href="/components/last-updated/">Last updated</a> labels — using a format string composed of specifiers like <code translate="no" v-pre>yyyy-MM-dd</code> or <code translate="no" v-pre>MMMM d, yyyy</code>. Respects the <code translate="no" v-pre>locale</code> setting for language-specific month and day names, see <a href="https://github.com/retypeapp/retype/discussions/573">#573</a>.</dd>
+<dt><code translate="no" v-pre>gh</code> keyboard shortcut</dt>
+<dd>New <kbd>gh</kbd> keyboard shortcut navigates to the home page of the site from any page. Extends the existing <kbd>[</kbd> and <kbd>]</kbd> shortcuts for Next/Previous page navigation.</dd>
+<dt><a href="/configuration/project/#branding-logowidth"><code translate="no" v-pre>branding.logoWidth</code></a> and <a href="/configuration/project/#branding-logoheight"><code translate="no" v-pre>branding.logoHeight</code></a> settings</dt>
+<dd>Retype now auto-detects logo image dimensions and adds <code translate="no" v-pre>width</code> and <code translate="no" v-pre>height</code> attributes automatically. Use these new settings to override the detected values when custom dimensions are needed. The logo <code translate="no" v-pre>alt</code> attribute is also now sourced from <a href="/configuration/project/#meta-sitename"><code translate="no" v-pre>meta.siteName</code></a>, see <a href="https://github.com/retypeapp/retype/discussions/523">#523</a>.</dd>
+</dl>
+<hr>
 <h2 id="v420">v4.2.0</h2>
 <dl>
 <dt><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
@@ -628,7 +644,7 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T19:16:19" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T19:39:40" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-03-16
                     </time>
                 </div>
