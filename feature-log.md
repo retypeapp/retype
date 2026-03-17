@@ -78,7 +78,7 @@ Strict [build](/guides/cli.md) mode
 
 ## v4.3.0
 
-[!badge PRO] [`backlinks.include` and `backlinks.exclude`](/configuration/project.md#backlinks-exclude)
+[!badge PRO] [`backlinks.include`](/configuration/project.md#backlinks-include) and [`backlinks.exclude`](/configuration/project.md#backlinks-exclude)
 : Fine-grained control over which pages appear as backlinks in **See also** sections. Use `backlinks.exclude` to suppress pages or folders (e.g. blog posts) from being listed as backlinks elsewhere, and `backlinks.include` to explicitly re-include specific paths within an excluded set, see [#809](https://github.com/retypeapp/retype/discussions/809).
 
 Header dropdown menus
