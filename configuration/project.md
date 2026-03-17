@@ -108,6 +108,48 @@ If a page has more inbound links than the `maxResults` value, only the first res
 
 ===
 
+### exclude {#backlinks-exclude}
+
+=== exclude : `list`
+
+Exclude pages, folders, or path patterns from being added as backlinks in the **See also** section while still generating that content in the final website.
+
+Use `backlinks.exclude` when you want content to remain accessible on the website, but not appear as a backlink on other pages.
+
+Backlink filtering rules use the same path and pattern behavior as the project-level [`exclude`](#exclude) and [`include`](#include) configs. The wildcards `?`, `*`, `**`, and `!` are supported.
+
+The following sample excludes all blog pages from being added to backlinks:
+
+```yml
+backlinks:
+  exclude:
+    - /blog
+```
+
+===
+
+### include {#backlinks-include}
+
+=== include : `list`
+
+Explicitly include pages, folders, or path patterns as backlink sources that might otherwise be filtered out by [`backlinks.exclude`](#backlinks-exclude).
+
+Backlink filtering rules use the same path and pattern behavior as the project-level [`exclude`](#exclude) and [`include`](#include) configs. The wildcards `?`, `*`, `**`, and `!` are supported.
+
+Rules in `backlinks.include` override matching rules in [`backlinks.exclude`](#backlinks-exclude). This makes it possible to exclude everything from backlinks first, then selectively include only the content you want to appear in **See also** sections.
+
+The following sample excludes everything from backlinks, then re-includes only `/guides`:
+
+```yml
+backlinks:
+  exclude:
+    - "*"
+  include:
+    - /guides
+```
+
+===
+
 The `backlinks` configuration can be set at two levels with the following precedence:
 
 1. [Page](page.md#backlinks) level in individual `.md` files
@@ -227,6 +269,38 @@ branding:
   logo: static/logo.png
   logoDark: static/logo-dark.png
 ```
+===
+
+### logoWidth {#branding-logowidth}
+
+=== logoWidth : `number`
+
+Set a custom width for the branding logo image.
+
+```yml
+branding:
+  logo: ./logo.svg
+  logoWidth: 150
+```
+
+If `logoWidth` is not configured, Retype will automatically detect the intrinsic width of the configured [`logo`](#branding-logo) or [`logoDark`](#branding-logodark) image when possible.
+
+===
+
+### logoHeight {#branding-logoheight}
+
+=== logoHeight : `number`
+
+Set a custom height for the branding logo image.
+
+```yml
+branding:
+  logo: ./logo.svg
+  logoHeight: 31
+```
+
+If `logoHeight` is not configured, Retype will automatically detect the intrinsic height of the configured [`logo`](#branding-logo) or [`logoDark`](#branding-logodark) image when possible.
+
 ===
 
 ### logoAlign {#branding-logoalign}
@@ -1503,6 +1577,30 @@ There are several other values that may be prefixed with an `_` character, inclu
 
 ===
 
+### items {#links-items}
+
+=== items : `list`
+
+Add nested menu items to a top-level [`links`](#links) entry to render a header dropdown menu.
+
+```yml
+links:
+  - text: Guides
+    items:
+      - text: Installation
+        link: /guides/installation.md
+        icon: download
+      - text: Configuration
+        link: /configuration/project.md
+        title: Project configuration options
+```
+
+When `items` are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.
+
+Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
+
+===
+
 ### title {#links-title}
 
 === title : `string`
@@ -1555,6 +1653,51 @@ The following sample demonstrates switching the project to use French.
 ```yml
 locale: fr
 ```
+
+===
+
+### dateFormat {#locale-dateformat}
+
+=== dateFormat : `string`
+
+Configure how dates are rendered across the website, including blog publish dates and the [Last Updated](/components/last-updated.md) component.
+
+```yml
+locale:
+  dateFormat: MM-dd-yyyy
+```
+
+If `dateFormat` is not configured, Retype uses the resolved default date format for the active locale. A custom default can also be configured using the `Default_DateFormat` label key in [`labels`](#labels).
+
+If both `locale.dateFormat` and `labels.default.Default_DateFormat` are configured, `locale.dateFormat` takes precedence.
+
+The following format specifiers are supported:
+
+| Specifier | Meaning | Template sample | Output | {.compact}
+| --- | --- | --- | --- |
+| `yy` | Two-digit year | `dateFormat: yy` | {{ date.now | date.to_string "%y" }} |
+| `yyyy` | Four-digit year | `dateFormat: yyyy` | {{ date.now | date.to_string "%Y" }} |
+| `M` | Month number | `dateFormat: M` | {{ date.now.month }} |
+| `MM` | Two-digit month | `dateFormat: MM` | {{ date.now | date.to_string "%m" }} |
+| `MMM` | Abbreviated month name | `dateFormat: MMM` | {{ date.now | date.to_string "%b" }} |
+| `MMMM` | Full month name | `dateFormat: MMMM` | {{ date.now | date.to_string "%B" }} |
+| `d` | Day of month | `dateFormat: d` | {{ date.now.day }} |
+| `dd` | Two-digit day of month | `dateFormat: dd` | {{ date.now | date.to_string "%d" }} |
+| `ddd` | Abbreviated day name | `dateFormat: ddd` | {{ date.now | date.to_string "%a" }} |
+| `dddd` | Full day name | `dateFormat: dddd` | {{ date.now | date.to_string "%A" }} |
+
+Common full date strings can be composed by combining the supported specifiers:
+
+| Template sample | Output | {.compact}
+| --- | --- |
+| `dateFormat: yyyy-MM-dd` | {{ date.now | date.to_string "%Y-%m-%d" }} |
+| `dateFormat: MM/dd/yyyy` | {{ date.now | date.to_string "%m/%d/%Y" }} |
+| `dateFormat: dd MMM yyyy` | {{ date.now | date.to_string "%d %b %Y" }} |
+| `dateFormat: MMM d, yyyy` | {{ date.now | date.to_string "%b" }} {{ date.now.day }}, {{ date.now.year }} |
+| `dateFormat: MMMM d, yyyy` | {{ date.now | date.to_string "%B" }} {{ date.now.day }}, {{ date.now.year }} |
+| `dateFormat: dddd, MMMM d, yyyy` | {{ date.now | date.to_string "%A, %B" }} {{ date.now.day }}, {{ date.now.year }} |
+
+Month and day names generated by `dateFormat` respect the active `locale`. For example, `locale: fr` outputs French month and day names.
 
 ===
 
