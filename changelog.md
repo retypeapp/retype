@@ -27,7 +27,7 @@ Expected early Q2 2026.
 
 **Released:** [2026-03-17](https://github.com/retypeapp/retype/releases/tag/v4.3.0)
 
-There were **21 changes** in Retype 4.3.0.
+There were **25 changes** in Retype 4.3.0.
 
 See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v430) for highlights.
 
@@ -57,6 +57,13 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v430) for highlights.
 1. Improve how the site logo HREF is set and alt attribute using [`meta.siteName`](/configuration/project.md#meta-sitename)
 1. Add `alt` attribute on branding logo based on [`meta.siteName`](/configuration/project.md#meta-sitename) value, see [#523](https://github.com/retypeapp/retype/discussions/523)
 1. Convert folder nodes within the treenav to `<div>` instead of `<a>` elements
+
++++ Fixed :icon-bug:
+
+1. "Website Configuration Error" on live reload during retype start, see [#807](https://github.com/retypeapp/retype/issues/807)
+1. Failure to stop server when [`retype stop`](/guides/cli.md#retype-stop) is called
+1. `page.filePath` not correctly resolving within template syntax if base root folder, see [content](/templating/content.md)
+1. Icon rendering issue when emoji used on [Ref](/components/reference-link.md) component
 
 +++
 
