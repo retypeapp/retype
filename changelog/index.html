@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827025412967">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827026509154">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0">
@@ -39,17 +39,17 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0.827025412967" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0.827026509154" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0.827025412967" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0.827026509154" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0.827025412967" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0.827025412967" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0.827026509154" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0.827026509154" defer></script>
     <link href="/resources/css/katex.css?v=4.3.0" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="/resources/js/katex.js?v=4.3.0" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0.827025412967" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0.827026509154" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -359,7 +359,7 @@
     <span>LATEST</span>
 </span></h2>
 <p><strong>Released:</strong> <a href="https://github.com/retypeapp/retype/releases/tag/v4.3.0">2026-03-17</a></p>
-<p>There were <strong>21 changes</strong> in Retype 4.3.0.</p>
+<p>There were <strong>25 changes</strong> in Retype 4.3.0.</p>
 <p>See the <a href="/feature-log/#v430"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/></g></g></svg> Feature Log</a> for highlights.</p>
 <doc-tabs>
 <doc-tab v-cloak id="new">
@@ -393,6 +393,15 @@
 <li>Improve how the site logo HREF is set and alt attribute using <a href="/configuration/project/#meta-sitename"><code translate="no" v-pre>meta.siteName</code></a></li>
 <li>Add <code translate="no" v-pre>alt</code> attribute on branding logo based on <a href="/configuration/project/#meta-sitename"><code translate="no" v-pre>meta.siteName</code></a> value, see <a href="https://github.com/retypeapp/retype/discussions/523">#523</a></li>
 <li>Convert folder nodes within the treenav to <code translate="no" v-pre>&lt;div&gt;</code> instead of <code translate="no" v-pre>&lt;a&gt;</code> elements</li>
+</ol>
+</doc-tab>
+<doc-tab v-cloak id="fixed">
+<template #title>Fixed <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.72.22a.75.75 0 0 1 1.06 0l1.204 1.203A4.98 4.98 0 0 1 12 1c.717 0 1.4.151 2.016.423L15.22.22a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-.971.972A4.991 4.991 0 0 1 17 6v1.104a2.755 2.755 0 0 1 1.917 1.974l1.998-.999a.75.75 0 0 1 .67 1.342L19 10.714V13.5l3.25.003a.75.75 0 0 1 0 1.5L19 15.001V16c0 .568-.068 1.134-.204 1.686l.04.018 2.75 1.375a.75.75 0 1 1-.671 1.342l-2.638-1.319A6.998 6.998 0 0 1 12 23a6.998 6.998 0 0 1-6.197-3.742l-2.758 1.181a.752.752 0 0 1-1.064-.776.752.752 0 0 1 .474-.602l2.795-1.199A6.976 6.976 0 0 1 5 16v-.996H1.75a.75.75 0 0 1 0-1.5H5v-2.79L2.415 9.42a.75.75 0 0 1 .67-1.342l1.998.999A2.756 2.756 0 0 1 7 7.104V6a4.99 4.99 0 0 1 1.69-3.748l-.97-.972a.75.75 0 0 1 0-1.06ZM6.5 9.75V16a5.5 5.5 0 1 0 11 0V9.75c0-.69-.56-1.25-1.25-1.25h-8.5c-.69 0-1.25.56-1.25 1.25ZM8.5 7h7V6a3.5 3.5 0 1 0-7 0Z"/></g></g></svg></template>
+<ol>
+<li>&quot;Website Configuration Error&quot; on live reload during retype start, see <a href="https://github.com/retypeapp/retype/issues/807">#807</a></li>
+<li>Failure to stop server when <a href="/guides/cli/#retype-stop"><code translate="no" v-pre>retype stop</code></a> is called</li>
+<li><code translate="no" v-pre>page.filePath</code> not correctly resolving within template syntax if base root folder, see <a href="/templating/content/">content</a></li>
+<li>Icon rendering issue when emoji used on <a href="/components/reference-link/">Ref</a> component</li>
 </ol>
 </doc-tab>
 </doc-tabs>
@@ -1475,7 +1484,7 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T19:16:19" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T19:34:42" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-03-16
                     </time>
                 </div>
