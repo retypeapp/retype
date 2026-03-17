@@ -59,6 +59,25 @@ order: -1000
 
 ---
 
+## backlinks
+
+This config is Retype [!badge PRO](/pro/pro.md) only.
+
+The `backlinks` configuration applies backlink settings to pages within the folder.
+
+```yml index.yml
+backlinks:
+  enabled: false
+```
+
+Use this option to enable or disable the **See also** backlinks section for all pages in the folder, or to set shared folder-level backlink options.
+
+Folder-level `backlinks` settings are inherited by child pages unless a page overrides the value in its own frontmatter.
+
+See also [Project](project.md#backlinks) and [Page](page.md#backlinks) configuration of `backlinks`.
+
+---
+
 ## nextprev
 
 This config is Retype [!badge PRO](/pro/pro.md) only.
