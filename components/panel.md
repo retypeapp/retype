@@ -198,10 +198,6 @@ Retype sites can be deployed to any static hosting service like GitHub [Pages](/
 
 Custom `id` and CSS `class` attributes can be applied to a Panel using the `{#id .class}` syntax.
 
-==- What can I do to get more involved? {#involved}
-...
-===
-
 ```
 === My Panel {#features-panel .highlight}
 This Panel has a custom id and class.
