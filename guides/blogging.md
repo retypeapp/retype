@@ -113,7 +113,7 @@ tags: [release, update]
 
 ### `author`
 
-Set one or more [authors](/configuration/page.md#authors) for the post. Accepts a simple name, email, or a full author object with `name`, `email`, `link`, and `avatar` properties.
+Set one or more [authors](/configuration/page.md#author) for the post. Accepts a simple name, email, or a full author object with `name`, `email`, `link`, and `avatar` properties.
 
 ```yml
 ---
