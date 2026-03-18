@@ -111,13 +111,13 @@ Retype allows you to add custom HTML attributes to your images using a simple cu
 Add a unique identifier to your image for styling or JavaScript targeting. The `id` attribute is prefixed with a `#` symbol.
 
 ```md
-![](/static/sample.jpg){#custom-id}
+![](/static/sample.jpg){#custom-image-id}
 
 // Creates the following HTML
-<img src="/static/sample.jpg" id="custom-id">
+<img src="/static/sample.jpg" id="custom-image-id">
 ```
 
-![](/static/sample.jpg){#custom-id}
+![](/static/sample.jpg){#custom-image-id}
 
 ### Custom CSS class
 
