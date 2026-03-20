@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827121075291">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827283232042">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0">
@@ -39,15 +39,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.3.0.827121075291" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.3.0.827283232042" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0.827121075291" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.3.0.827283232042" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0.827121075291" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0.827121075291" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.3.0.827283232042" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.3.0.827283232042" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.3.0.827121075291" rel="stylesheet">
+    <link href="/static/styles.css?v=4.3.0.827283232042" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -410,6 +410,64 @@ Third link: {{ project.links[2].text }}</code></pre>
 Third link: Support</code></pre>
 </doc-codeblock></div>
 <hr>
+<h2 id="data-object">Data object</h2>
+<p>Use the <code translate="no" v-pre>data</code> object in <code translate="no" v-pre>retype.yml</code> to define custom values that are available in templates across your project.</p>
+<div id="data-object-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">data:
+  productName: Widget Suite
+  productVersion: v5.1
+  company:
+    name: Company X
+    foundedAt: 2020
+  links:
+    github: https://github.com/companyx/widget-suite
+    status: https://status.companyx.com</code></pre>
+</doc-codeblock></div>
+<p>These values can be accessed directly or through the <code translate="no" v-pre>project.data</code> template property:</p>
+<div id="data-object-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ project.data.productName }}
+{{ project.data.company.name }}
+{{ project.data.links.github }}</code></pre>
+</doc-codeblock></div>
+<p>Project <code translate="no" v-pre>data</code> keys are also exposed as top-level template variables, so these are equivalent:</p>
+<div id="data-object-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ project.data.productVersion }}
+{{ project.data[&quot;productVersion&quot;] }}
+{{ productVersion }}</code></pre>
+</doc-codeblock></div>
+<h3 id="samples">Samples</h3>
+<p>Display a version banner from one central config value:</p>
+<div id="samples-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">You are reading the docs for **{{ productName }} {{ productVersion }}**.</code></pre>
+</doc-codeblock></div>
+<p>Output:</p>
+<div id="samples-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">You are reading the docs for Widget Suite v5.1.</code></pre>
+</doc-codeblock></div>
+<p>Reuse company details across multiple pages:</p>
+<div id="samples-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ project.data.company.name }} was founded in {{ project.data.company.foundedAt }}.</code></pre>
+</doc-codeblock></div>
+<p>Generate shared project links:</p>
+<div id="samples-code-4" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- [GitHub]({{ project.data.links.github }})
+- [Status page]({{ project.data.links.status }})</code></pre>
+</doc-codeblock></div>
+<p>Store arrays or nested objects for looping:</p>
+<div id="samples-code-5" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">data:
+  features:
+    - Fast search
+    - Markdown authoring
+    - Reusable templates</code></pre>
+</doc-codeblock></div>
+<div id="samples-code-6" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ for feature in project.data.features }}
+- {{ feature }}
+{{ end }}</code></pre>
+</doc-codeblock></div>
+<p>If a page also defines <code translate="no" v-pre>data</code> in its frontmatter, page-level values override project-level values with the same key on that page. For page-specific values, see the <a href="/templating/page-properties/#data-object">Data object section</a> in <a href="/templating/page-properties/">Page properties</a>.</p>
+<hr>
 <h2 id="escaping-template-syntax">Escaping template syntax</h2>
 <h3 id="inline-escaping">Inline escaping</h3>
 <p>To display literal <code translate="no" v-pre>{{ }}</code> syntax without the template engine processing it, wrap the content in opening <code translate="no" v-pre>{%{</code> and closing <code translate="no" v-pre>}%}</code> escape tags:</p>
@@ -500,7 +558,7 @@ templating: false
     </a>
 </div>
 <div class="card-compact-container">
-    <a href="/blog/2026-02-23-whats-new-in-retype-v40/" class="group card-compact no-link">
+    <a href="/blog/2026-02-23-whats-new-in-retype-v400/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-title">What's New in Retype v4.0</span>
@@ -524,8 +582,8 @@ templating: false
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-09T12:18:08" title="2026-03-09" data-absolute-label="Last updated on 2026-03-09" data-absolute-label-html="Last updated on 2026-03-09" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-09
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-19T18:52:07" title="2026-03-19" data-absolute-label="Last updated on 2026-03-19" data-absolute-label-html="Last updated on 2026-03-19" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-19
                     </time>
                 </div>
 
