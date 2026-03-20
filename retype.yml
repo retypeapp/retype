@@ -5,6 +5,7 @@ outbound:
     - retype.com
     - github.com
     - stripe.com
+  custom: 'rel="noopener noreferrer"'
 
 breadcrumb:
   home: ":icon-home:"
