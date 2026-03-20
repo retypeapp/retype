@@ -8,7 +8,7 @@ category:
 ---
 # What's New in Retype v4.0
 
-![](images/2026-02-23-whats-new-in-retype-v40.png)
+![](images/2026-02-23-whats-new-in-retype-v400.png)
 
 Retype `v4.0` is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies. Your existing projects will work exactly as before, just faster and with a pile of new powerful features for all Retype users.
 
