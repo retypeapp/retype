@@ -743,7 +743,7 @@ This release failed to run properly if the NPM package was installed. 🧐 We di
 **Released:** [2021-08-03](https://github.com/retypeapp/retype/releases/tag/v1.8.0)
 
 +++ New :icon-shield-check:
-1. [**retype.yml**](/configuration/project.md) project configuration file format.
+1. [`retype.yml`](/configuration/project.md) project configuration file format.
 1. [`url`](/configuration/project.md#url) project config for setting your website URL.
 1. Auto-generate a `sitemap.xml` file to inform search engines which pages to crawl.
 1. Auto-generate a `robots.txt` file.
