@@ -101,6 +101,33 @@ Multiple named arguments can be passed in the same call:
 {{ include "components/alert" type: "warning" message: "This feature is in beta." }}
 ```
 
+## Line ranges
+
+Append a `#` line selector to the include path when you only want part of a file:
+
+```md
+{{ include "partial#2" }}
+{{ include "partial#2-5" }}
+{{ include "partial#1-3, 5, 7-8" }}
+```
+
+Each selector is inclusive:
+
+- `#2` includes line 2 only
+- `#2-5` includes lines 2 through 5
+- `#1-3, 5, 7-8` includes multiple comma-separated lines and ranges
+
+Whitespace around `#`, `,`, and `-` is ignored, so the following are equivalent:
+
+```md
+{{ include "partial#1-3,5,6-7" }}
+{{ include "partial#1-3, 5, 6 - 7" }}
+```
+
+Retype normalizes overlapping and reversed ranges before rendering. For example, `#3-2` includes lines 2 and 3, and overlapping ranges such as `#2-4,3-5` include each line only once.
+
+If a range extends past the end of the file, Retype includes the lines that exist and logs a warning during the build.
+
 ---
 
 ## Nested includes
