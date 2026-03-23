@@ -63,9 +63,7 @@ output: .retype
 url: retype.com
 
 branding:
-  logo: /static/retype-logo.svg
-  logoDark: /static/retype-logo-dark.svg
-  label: v4.3
+  label: v4.4-pre
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
@@ -147,3 +145,7 @@ footer:
       link: license.md
       icon: shield-check
       title: View the software license agreement
+
+lastUpdated:
+  date:
+    enabled: false
