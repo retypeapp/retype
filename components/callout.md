@@ -46,8 +46,6 @@ Get up to speed with Retype quickly by checking out the Getting Started guide.
 Get up to speed with Retype quickly by checking out the Getting Started guide.
 !!!
 
----
-
 ## Variant
 
 Callouts come in nine different flavors which can be specified by passing a `variant` immediately after the `!!!`, such as `!!!danger`.
@@ -269,4 +267,48 @@ This Callout has a custom id and class.
 
 !!!warning Important {#critical-warning .highlight}
 This Callout has a custom id and class.
+!!!
+
+---
+
+## Collapsible
+
+Use `!!-` to create a collapsible Callout that is collapsed by default.
+
+```md
+!!- Maintenance window
+Database migrations begin at 10:00 PM UTC and are expected to finish within 30 minutes.
+!!!
+```
+
+!!- Maintenance window
+Database migrations begin at 10:00 PM UTC and are expected to finish within 30 minutes.
+!!!
+
+Use `!!+` to create a collapsible Callout that is expanded by default. 
+
+```md
+!!+ Release checklist
+Confirm the final changelog, deployment notes, and rollback steps before publishing the update.
+!!!
+
+!!- Maintenance window
+Database migrations begin at 10:00 PM UTC and are expected to finish within 30 minutes.
+!!!
+```
+
+!!+ Release checklist
+Confirm the final changelog, deployment notes, and rollback steps before publishing the update.
+!!!
+
+You can also combine the collapsible syntax with a variant, such as `!!-danger`.
+
+```md
+!!-danger Security incident response
+Rotate exposed credentials immediately and notify the on-call team before reopening external access.
+!!!
+```
+
+!!-danger Security incident response
+Rotate exposed credentials immediately and notify the on-call team before reopening external access.
 !!!
