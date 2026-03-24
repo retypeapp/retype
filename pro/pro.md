@@ -18,31 +18,31 @@ Build more pages and unlock powerful **Pro** only features.
 | ---    | :---: | :---: | :---:      |
 |        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/28EbJ1agXcyHgk67Kr9IQ0r) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $499 |
-| Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-fluent-checkmark: | 3 years, or<br>[+$149 Forever](https://buy.stripe.com/3cIfZh4WD7en3xk0hZ9IQ0t) | 3 years, or<br>[+$499 Forever](https://buy.stripe.com/8x2dR90GngOXfg2e8P9IQ0s) |
+| Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years, or<br>[+$149 Forever](https://buy.stripe.com/3cIfZh4WD7en3xk0hZ9IQ0t) | 3 years, or<br>[+$499 Forever](https://buy.stripe.com/8x2dR90GngOXfg2e8P9IQ0s) |
 | Projects [:icon-question:](#what-is-a-project) | Unlimited | 1&nbsp;^[*](#what-is-a-project)^ | Unlimited&nbsp;^[*](#what-is-a-project)^ |
 | Max pages per project [:icon-question:](#what-is-a-project) | 100 | Unlimited | Unlimited |
 | Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | Unlimited | Unlimited | Unlimited |
-| Commercial use | :icon-fluent-checkmark: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| Open source use | :icon-fluent-checkmark: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [[Backlinks]] component | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Custom themes](/guides/themes.md) | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Custom UI labels](/configuration/project.md#labels) | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Default color scheme](/configuration/project.md#scheme) setting | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Last updated](/components/last-updated.md) label | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [`nav.badge`](/configuration/page.md#nav-badge) setting | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Navigation icon](/configuration/project.md#nav-icons) control | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation control | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#visibility-private) and [protected](/configuration/page.md#visibility-protected) pages | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [`branding.baseColor`](/configuration/project.md#branding-basecolor) setting | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Search](/configuration/project.md#search-exclude) filtering | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Stack](/configuration/project.md#nav-mode) navigation mode | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] Strict [build](/guides/cli.md) mode | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| [!badge text="PRO" variant="info"] [Table of contents](/configuration/project.md#toc) | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
-| Future Retype Pro only features | :icon-x: | :icon-fluent-checkmark: | :icon-fluent-checkmark: |
+| Commercial use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| Open source use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] Remove [Powered by Retype](/configuration/project.md#poweredbyretype) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [[Backlinks]] component | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Custom themes](/guides/themes.md) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Custom UI labels](/configuration/project.md#labels) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Default color scheme](/configuration/project.md#scheme) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Hub](/configuration/project.md#hub) link | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Last updated](/components/last-updated.md) label | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [`nav.badge`](/configuration/page.md#nav-badge) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Navigation icon](/configuration/project.md#nav-icons) control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Next/Previous](/configuration/project.md#nextprev) navigation control | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Outbound](/configuration/project.md#outbound) links | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Private](/configuration/page.md#visibility-private) and [protected](/configuration/page.md#visibility-protected) pages | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [`branding.baseColor`](/configuration/project.md#branding-basecolor) setting | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Search](/configuration/project.md#search-exclude) filtering | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Stack](/configuration/project.md#nav-mode) navigation mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] Strict [build](/guides/cli.md) mode | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| [!badge text="PRO" variant="info"] [Table of contents](/configuration/project.md#toc) | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
+| Future Retype Pro only features | :icon-x: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 
 ## :icon-question: Questions & Answers
 
