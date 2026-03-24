@@ -76,6 +76,43 @@ Strict [build](/guides/cli.md) mode
 
 ---
 
+## v4.4.0
+
+Custom icons
+: Bring any SVG icon into your project using the new `_components/icon/` extensibility point. Organize icons into named packs by placing `.svg` files into subfolders, then reference them using the familiar `:icon-<pack>-<name>:` shortcode or `icon` property anywhere in your project. Built-in [[Octicons]] remain the default, and unlimited custom packs can be added alongside them. Popular packs such as Lucide, Font Awesome, Bootstrap, Tabler, Phosphor, Remix, Simple Icons, and Hero Icons all work out of the box, see [#123](https://github.com/retypeapp/retype/issues/123) and [#600](https://github.com/retypeapp/retype/issues/600).
+
+Advanced include selectors
+: The {%{`{{ include }}`}%} system now resolves a broader set of content targets beyond named regions. When a named region is not found, Retype falls back through a precedence chain: heading anchor, component or block with a matching `id`, then any other individually identifiable node. This enables reuse of specific headings, Callouts, Buttons, and other components from one page into another without wrapping them in a region block. Existing region-based includes are fully compatible and unchanged.
+
+Obsidian block identifier includes
+: Named block identifiers using the `^block-id` and `#^block-id` syntax are now valid include targets. Obsidian-style wikilink embed syntax (`![[page#^block-id]]`) is also supported, letting you pull specific blocks of content from other pages using the same conventions as Obsidian.
+
+Accordion mode for Panel groups
+: Panel groups now support true accordion behavior. When all panels in a group start collapsed, or all but one, expanding any panel automatically collapses the others. Write panels using the standard collapsed syntax and the accordion activates automatically based on the initial state of the group.
+
+Collapsible [[Callout]] component
+: Callouts now support expand and collapse using the `!!-` opening syntax. The collapsed Callout behaves the same as the [[Panel]] component, with a clickable title and arrow toggle on the right side of the header.
+
+Fallback path finder for images
+: When a local image link cannot be resolved from the path as written, Retype now searches a set of well-known project folders before treating the image as missing. Folders checked in order: `/static`, `/images`, `/img`, `/resources`, `/attachments`, `/assets`, `/public`. The first match wins, allowing content authors to use short paths for images in shared or central media folders.
+
+Auto-detect branding logo
+: If [`branding.logo`](/configuration/project.md#branding-logo) is not configured, Retype now automatically searches well-known resource directories — `/assets`, `/static`, `/images`, and others — for a `logo` image file and uses the first match as the project logo without any additional configuration, see [#819](https://github.com/retypeapp/retype/issues/819).
+
+Improved component IDs
+: Retype components and definition list terms now get unique `id` values assigned automatically, improving direct linking to individual components on a page. Retype also emits a build warning when duplicate `id` values are detected on the same page, see [#815](https://github.com/retypeapp/retype/issues/815).
+
+Anchor links reveal collapsed content
+: Links to anchors inside collapsed Panels now expand the Panel automatically before navigating to the target. If the anchor is inside an inactive Tab, Retype switches to that Tab first. This ensures deep links into collapsed or tabbed content always land on visible content, see [#816](https://github.com/retypeapp/retype/issues/816).
+
+Obsidian nested heading links
+: Wikilinks using multiple `#` anchor segments to target nested headings — such as `[[Settings#General#Account]]` — now resolve correctly.
+
+Outbound link accessibility
+: Outbound link elements now include `aria-hidden="true"` and `focusable="false"` on their icon, improving assistive technology support for screen readers and keyboard navigation.
+
+---
+
 ## v4.3.0
 
 [!badge PRO] [`backlinks.include`](/configuration/project.md#backlinks-include) and [`backlinks.exclude`](/configuration/project.md#backlinks-exclude)
