@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827630751269">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827658834534">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -39,15 +39,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.4.0.827630751269" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.4.0.827658834534" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827630751269" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827658834534" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827630751269" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.4.0.827630751269" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827658834534" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.4.0.827658834534" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.4.0.827630751269" rel="stylesheet">
+    <link href="/static/styles.css?v=4.4.0.827658834534" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -726,9 +726,46 @@ lastUpdated:
 </doc-codeblock></div>
 <p>Supported <code translate="no" v-pre>source</code> values are <code translate="no" v-pre>author</code> and <code translate="no" v-pre>committer</code>.</p>
 <p>Automatic values require Git history for the page. If your build has no Git history, or only a shallow clone, Retype skips the generated footer values.</p>
-<h3 id="lastupdatedby-alias">lastUpdatedBy alias</h3>
-<p>The <code translate="no" v-pre>lastUpdatedBy</code> page setting is also supported as a backward-compatible alias for setting a manual <code translate="no" v-pre>by</code> value.</p>
-<div id="lastupdatedby-alias-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Manual page values and generated Git values are both supported, but they are not mixed on the same page.</p>
+<p>If you manually set either <code translate="no" v-pre>lastUpdated</code> or <code translate="no" v-pre>lastUpdatedBy</code>, Retype uses those manual values for that page instead of filling in the missing value from Git.</p>
+<p>See also <a href="/configuration/project/#lastupdated">Project</a> configuration and the <a href="/components/last-updated/">Last Updated</a> component.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<h2 id="lastupdatedby">lastUpdatedBy</h2>
+<doc-panel id="lastupdatedby--string">
+    <template #title>lastUpdatedBy : <code translate="no" v-pre>string</code></template>
+<p>The <code translate="no" v-pre>lastUpdatedBy</code> page setting sets the author name displayed in the last updated footer for a single page.</p>
+<p>Use this setting when you want to manually specify the author without using the nested <code translate="no" v-pre>by</code> object syntax under <doc-anchor-trigger to="#lastupdated"><code translate="no" v-pre>lastUpdated</code></doc-anchor-trigger>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+lastUpdatedBy: Documentation Team
+---</code></pre>
+</doc-codeblock></div>
+<p>This setting is a shorthand equivalent to the nested form:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+lastUpdated:
+  by: Documentation Team
+---</code></pre>
+</doc-codeblock></div>
+<p>Both produce the same result. Use whichever form is more convenient for the page.</p>
+<p>When used alongside <doc-anchor-trigger to="#lastupdated"><code translate="no" v-pre>lastUpdated</code></doc-anchor-trigger>, set the date on one key and the author on the other:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
 lastUpdated: 2026-03-12
 lastUpdatedBy: Documentation Team
@@ -753,6 +790,7 @@ lastUpdatedBy: Documentation Team
         </div>
     </div>
 </div>
+</doc-panel>
 <hr>
 <h2 id="layout">layout</h2>
 <doc-panel id="layout--string">
@@ -1761,8 +1799,8 @@ retype build --password &lt;your-password&gt;</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T16:08:29" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-16
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-24T03:07:55" title="2026-03-24" data-absolute-label="Last updated on 2026-03-24" data-absolute-label-html="Last updated on 2026-03-24" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-24
                     </time>
                 </div>
 
