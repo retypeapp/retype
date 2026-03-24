@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827658834534">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827659211256">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -39,15 +39,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.4.0.827658834534" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.4.0.827659211256" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827658834534" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827659211256" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827658834534" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.4.0.827658834534" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827659211256" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.4.0.827659211256" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.4.0.827658834534" rel="stylesheet">
+    <link href="/static/styles.css?v=4.4.0.827659211256" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -401,6 +401,52 @@ lastUpdatedBy: Documentation Team
     </div>
 </div>
 <hr>
+<h2 id="custom-label-templates">Custom label templates</h2>
+<p>The text Retype renders for the last updated footer can be customized using label templates in <code translate="no" v-pre>retype.yml</code>. Four templates cover the combinations of absolute vs. relative date formatting and with or without an author name.</p>
+<div id="custom-label-templates-retypeyml" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">labels:
+  default:
+    contentfooter-lastupdated-absolutetemplate: &quot;Last updated on {0}&quot;
+    contentfooter-lastupdated-absolutebytemplate: &quot;Last updated on {0} by {1}&quot;
+    contentfooter-lastupdated-relativetemplate: &quot;Last updated {0}&quot;
+    contentfooter-lastupdated-relativebytemplate: &quot;Last updated {0} by {1}&quot;</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Template key</th>
+<th>Placeholder</th>
+<th>Used when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>contentfooter-lastupdated-absolutetemplate</code></td>
+<td><code translate="no" v-pre>{0}</code> = formatted date</td>
+<td>Absolute date, no author</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>contentfooter-lastupdated-absolutebytemplate</code></td>
+<td><code translate="no" v-pre>{0}</code> = formatted date, <code translate="no" v-pre>{1}</code> = author name</td>
+<td>Absolute date with author</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>contentfooter-lastupdated-relativetemplate</code></td>
+<td><code translate="no" v-pre>{0}</code> = relative time string (e.g. &quot;3 days ago&quot;)</td>
+<td>Relative date, no author</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>contentfooter-lastupdated-relativebytemplate</code></td>
+<td><code translate="no" v-pre>{0}</code> = relative time string, <code translate="no" v-pre>{1}</code> = author name</td>
+<td>Relative date with author</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Retype selects the appropriate template based on whether the date is rendered in absolute or relative format and whether an author name is present.</p>
+<p>For full details on the <code translate="no" v-pre>labels</code> configuration, including per-locale overrides, see the <a href="/configuration/translations/">Labels and translations</a> documentation.</p>
 <!-- RETYPE_BACKLINKS_PLACEHOLDER -->
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations, _includes/bottom.md -->
@@ -415,8 +461,8 @@ lastUpdatedBy: Documentation Team
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-12T09:06:38" title="2026-03-12" data-absolute-label="Last updated on 2026-03-12" data-absolute-label-html="Last updated on 2026-03-12" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-12
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-24T03:18:45" title="2026-03-24" data-absolute-label="Last updated on 2026-03-24" data-absolute-label-html="Last updated on 2026-03-24" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-24
                     </time>
                 </div>
 
