@@ -14,7 +14,7 @@ Take your projects to the next level with **Retype Pro** and **Enterprise**.
 Build more pages and unlock powerful **Pro** only features.
 :::
 
-| &nbsp; | Free  | Pro   | Enterprise | {.compact}
+| &nbsp; | Free  | Pro   | Enterprise |
 | ---    | :---: | :---: | :---:      |
 |        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/28EbJ1agXcyHgk67Kr9IQ0r) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $499 |
