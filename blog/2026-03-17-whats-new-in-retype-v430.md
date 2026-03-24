@@ -154,7 +154,7 @@ The `alt` attribute of the logo is also now populated from [`meta.siteName`](/co
 
 ---
 
-## Enhancements
+## Other Enhancements
 
 Retype `v4.3` also delivers a collection of polished upgrades and practical improvements.
 
