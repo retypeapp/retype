@@ -469,9 +469,42 @@ Supported `source` values are `author` and `committer`.
 
 Automatic values require Git history for the page. If your build has no Git history, or only a shallow clone, Retype skips the generated footer values.
 
-### lastUpdatedBy alias
+!!!
+Manual page values and generated Git values are both supported, but they are not mixed on the same page.
 
-The `lastUpdatedBy` page setting is also supported as a backward-compatible alias for setting a manual `by` value.
+If you manually set either `lastUpdated` or `lastUpdatedBy`, Retype uses those manual values for that page instead of filling in the missing value from Git.
+
+See also [Project](project.md#lastupdated) configuration and the [Last Updated](/components/last-updated.md) component.
+!!!
+
+---
+
+## lastUpdatedBy
+
+=== lastUpdatedBy : `string`
+
+The `lastUpdatedBy` page setting sets the author name displayed in the last updated footer for a single page.
+
+Use this setting when you want to manually specify the author without using the nested `by` object syntax under [`lastUpdated`](#lastupdated).
+
+```yml
+---
+lastUpdatedBy: Documentation Team
+---
+```
+
+This setting is a shorthand equivalent to the nested form:
+
+```yml
+---
+lastUpdated:
+  by: Documentation Team
+---
+```
+
+Both produce the same result. Use whichever form is more convenient for the page.
+
+When used alongside [`lastUpdated`](#lastupdated), set the date on one key and the author on the other:
 
 ```yml
 ---
@@ -487,6 +520,8 @@ If you manually set either `lastUpdated` or `lastUpdatedBy`, Retype uses those m
 
 See also [Project](project.md#lastupdated) configuration and the [Last Updated](/components/last-updated.md) component.
 !!!
+
+===
 
 ---
 
