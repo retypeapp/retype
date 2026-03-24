@@ -46,7 +46,7 @@ lastUpdated:
 ---
 ```
 
-You can also use the shortform `lastUpdatedBy` and `lastUpdatedBy` syntax:
+You can also use the shortform [`lastUpdated`](/configuration/page.md#lastupdated) and [`lastUpdatedBy`](/configuration/page.md#lastupdatedby) syntax:
 
 ```yml
 ---
