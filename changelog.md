@@ -17,56 +17,55 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
-## v4.4.0
-
-[!badge text="LATEST" variant="info"]
-
-Released: [2026-03-24](https://github.com/retypeapp/retype/releases/tag/v4.4.0)
-
-# Version 4.4.0
-
-There were 21 changes in Retype 4.4.0.
-
-## New
-
-1. New robust anchor ID based `{{ include }}` content targeting
-1. New `{{ include }}` support for Obsidian style block identifiers
-1. New Obsidian style syntax for linking to and embedding block identifiers
-1. Custom icons, see #123 and #600
-
-## Improved
-
-1. New true Accordion mode for collapsed Panel groups
-1. Collapsible Callout component
-1. Improve auto-generated `id` values for components, see #815
-1. New fallback path finder for local images
-1. Support Obsidian-style nested heading links with multiple # segments
-1. Expand collapsed panel when a targeted anchor ID is inside, see #816
-1. Improve assistive technology support for outbound link elements
-1. Auto detection of `logo` file within expected resource directories, see #819
-1. Upgrade all retype packages and dependencies
-
-## Fixed
-
-1. Panel component truncates tab content when tabs have unequal height, see #395 653 and #813
-1. Panel component ignores loose list formatting and renders all lists as tight, see #813 and #814
-1. False anchor-not-found warnings for IDs on definition list terms, see #67 and #815
-1. Do not nest `<figure>` element inside of `<p></p>` tags
-1. Wikilinks resolve path-qualified duplicate filenames to the wrong page
-1. Remove link underline from superscript and subscript links
-1. Fix logo height and width regression introduced in v4.3.0, see #819
-1. Fix Mermaid Gantt chart max-width constraint, see #626
-
-
----
-
-## v4.4.0 [!badge @next|info]
+## v4.5.0 [!badge @next|info]
 
 Expected early Q2 2026.
 
 ---
 
-## v4.3.0 [!badge text="LATEST" variant="info"]
+## v4.4.0 [!badge @latest|info]
+
+**Released:** [2026-03-24](https://github.com/retypeapp/retype/releases/tag/v4.4.0)
+
+There were **21 changes** in Retype 4.4.0.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v440) for highlights.
+
++++ New :icon-shield-check:
+
+1. New robust anchor ID based {%{`{{ include }}`}%} content targeting
+1. New {%{`{{ include }}`}%} support for Obsidian style block identifiers
+1. New Obsidian style syntax for linking to and embedding block identifiers
+1. Custom icons, see [#123](https://github.com/retypeapp/retype/issues/123) and [#600](https://github.com/retypeapp/retype/issues/600)
+
++++ Improved :icon-thumbsup:
+
+1. New true Accordion mode for collapsed Panel groups
+1. Collapsible Callout component
+1. Improve auto-generated `id` values for components, see [#815](https://github.com/retypeapp/retype/issues/815)
+1. New fallback path finder for local images
+1. Support Obsidian-style nested heading links with multiple # segments
+1. Expand collapsed panel when a targeted anchor ID is inside, see [#816](https://github.com/retypeapp/retype/issues/816)
+1. Improve assistive technology support for outbound link elements
+1. Auto detection of `logo` file within expected resource directories, see [#819](https://github.com/retypeapp/retype/issues/819)
+1. Upgrade all retype packages and dependencies
+
++++ Fixed :icon-bug:
+
+1. Panel component truncates tab content when tabs have unequal height, see [#395](https://github.com/retypeapp/retype/issues/395), [#653](https://github.com/retypeapp/retype/issues/653) and [#813](https://github.com/retypeapp/retype/issues/813)
+1. Panel component ignores loose list formatting and renders all lists as tight, see [#813](https://github.com/retypeapp/retype/issues/813) and [#814](https://github.com/retypeapp/retype/issues/814)
+1. False anchor-not-found warnings for IDs on definition list terms, see [#67](https://github.com/retypeapp/retype/issues/67) and [#815](https://github.com/retypeapp/retype/issues/815)
+1. Do not nest `<figure>` element inside of `<p></p>` tags
+1. Wikilinks resolve path-qualified duplicate filenames to the wrong page
+1. Remove link underline from superscript and subscript links
+1. Fix logo height and width regression introduced in v4.3.0, see [#819](https://github.com/retypeapp/retype/issues/819)
+1. Fix Mermaid Gantt chart max-width constraint, see [#626](https://github.com/retypeapp/retype/issues/626)
+
++++
+
+---
+
+## v4.3.0
 
 **Released:** [2026-03-17](https://github.com/retypeapp/retype/releases/tag/v4.3.0)
 
