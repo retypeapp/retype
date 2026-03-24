@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827630418669">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827630751269">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -39,14 +39,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.4.0.827630418669" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.4.0.827630751269" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827630418669" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827630751269" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827630418669" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827630751269" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.4.0.827630418669" rel="stylesheet">
+    <link href="/static/styles.css?v=4.4.0.827630751269" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -387,6 +387,32 @@
 <dd>Enable and configure the table of contents with the <code translate="no" v-pre>toc</code> setting. Configurable at <a href="/configuration/project/#toc">project</a> and <a href="/configuration/page/#toc">page</a> levels, with control over heading depth and label.</dd>
 </dl>
 <hr>
+<h2 id="v440">v4.4.0</h2>
+<dl>
+<dt id="custom-icons">Custom icons</dt>
+<dd>Bring any SVG icon into your project using the new <code translate="no" v-pre>_components/icon/</code> extensibility point. Organize icons into named packs by placing <code translate="no" v-pre>.svg</code> files into subfolders, then reference them using the familiar <code translate="no" v-pre>:icon-&lt;pack&gt;-&lt;name&gt;:</code> shortcode or <code translate="no" v-pre>icon</code> property anywhere in your project. Built-in <a href="/components/octicons/">Octicons</a> remain the default, and unlimited custom packs can be added alongside them. Popular packs such as Lucide, Font Awesome, Bootstrap, Tabler, Phosphor, Remix, Simple Icons, and Hero Icons all work out of the box, see <a href="https://github.com/retypeapp/retype/issues/123">#123</a> and <a href="https://github.com/retypeapp/retype/issues/600">#600</a>.</dd>
+<dt id="advanced-include-selectors">Advanced include selectors</dt>
+<dd>The {%{<code translate="no" v-pre>{{ include }}</code>}%} system now resolves a broader set of content targets beyond named regions. When a named region is not found, Retype falls back through a precedence chain: heading anchor, component or block with a matching <code translate="no" v-pre>id</code>, then any other individually identifiable node. This enables reuse of specific headings, Callouts, Buttons, and other components from one page into another without wrapping them in a region block. Existing region-based includes are fully compatible and unchanged.</dd>
+<dt id="obsidian-block-identifier-includes">Obsidian block identifier includes</dt>
+<dd>Named block identifiers using the <code translate="no" v-pre>^block-id</code> and <code translate="no" v-pre>#^block-id</code> syntax are now valid include targets. Obsidian-style wikilink embed syntax (<code translate="no" v-pre>![[page#^block-id]]</code>) is also supported, letting you pull specific blocks of content from other pages using the same conventions as Obsidian.</dd>
+<dt id="accordion-mode-for-panel-groups">Accordion mode for Panel groups</dt>
+<dd>Panel groups now support true accordion behavior. When all panels in a group start collapsed, or all but one, expanding any panel automatically collapses the others. Write panels using the standard collapsed syntax and the accordion activates automatically based on the initial state of the group.</dd>
+<dt id="collapsible-callout-component">Collapsible <a href="/components/callout/">Callout</a> component</dt>
+<dd>Callouts now support expand and collapse using the <code translate="no" v-pre>!!-</code> opening syntax. The collapsed Callout behaves the same as the <a href="/components/panel/">Panel</a> component, with a clickable title and arrow toggle on the right side of the header.</dd>
+<dt id="fallback-path-finder-for-images">Fallback path finder for images</dt>
+<dd>When a local image link cannot be resolved from the path as written, Retype now searches a set of well-known project folders before treating the image as missing. Folders checked in order: <code translate="no" v-pre>/static</code>, <code translate="no" v-pre>/images</code>, <code translate="no" v-pre>/img</code>, <code translate="no" v-pre>/resources</code>, <code translate="no" v-pre>/attachments</code>, <code translate="no" v-pre>/assets</code>, <code translate="no" v-pre>/public</code>. The first match wins, allowing content authors to use short paths for images in shared or central media folders.</dd>
+<dt id="auto-detect-branding-logo">Auto-detect branding logo</dt>
+<dd>If <a href="/configuration/project/#branding-logo"><code translate="no" v-pre>branding.logo</code></a> is not configured, Retype now automatically searches well-known resource directories — <code translate="no" v-pre>/assets</code>, <code translate="no" v-pre>/static</code>, <code translate="no" v-pre>/images</code>, and others — for a <code translate="no" v-pre>logo</code> image file and uses the first match as the project logo without any additional configuration, see <a href="https://github.com/retypeapp/retype/issues/819">#819</a>.</dd>
+<dt id="improved-component-ids">Improved component IDs</dt>
+<dd>Retype components and definition list terms now get unique <code translate="no" v-pre>id</code> values assigned automatically, improving direct linking to individual components on a page. Retype also emits a build warning when duplicate <code translate="no" v-pre>id</code> values are detected on the same page, see <a href="https://github.com/retypeapp/retype/issues/815">#815</a>.</dd>
+<dt id="anchor-links-reveal-collapsed-content">Anchor links reveal collapsed content</dt>
+<dd>Links to anchors inside collapsed Panels now expand the Panel automatically before navigating to the target. If the anchor is inside an inactive Tab, Retype switches to that Tab first. This ensures deep links into collapsed or tabbed content always land on visible content, see <a href="https://github.com/retypeapp/retype/issues/816">#816</a>.</dd>
+<dt id="obsidian-nested-heading-links">Obsidian nested heading links</dt>
+<dd>Wikilinks using multiple <code translate="no" v-pre>#</code> anchor segments to target nested headings — such as <code translate="no" v-pre>[[Settings#General#Account]]</code> — now resolve correctly.</dd>
+<dt id="outbound-link-accessibility">Outbound link accessibility</dt>
+<dd>Outbound link elements now include <code translate="no" v-pre>aria-hidden=&quot;true&quot;</code> and <code translate="no" v-pre>focusable=&quot;false&quot;</code> on their icon, improving assistive technology support for screen readers and keyboard navigation.</dd>
+</dl>
+<hr>
 <h2 id="v430">v4.3.0</h2>
 <dl>
 <dt id="pro--and"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
@@ -644,8 +670,8 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T20:01:06" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-16
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-23T19:22:44" title="2026-03-23" data-absolute-label="Last updated on 2026-03-23" data-absolute-label-html="Last updated on 2026-03-23" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-23
                     </time>
                 </div>
 
