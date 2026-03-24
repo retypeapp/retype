@@ -80,3 +80,27 @@ See [Project](/configuration/project.md#lastupdated) configuration and [Page](/c
 !!!
 
 ---
+
+## Custom label templates
+
+The text Retype renders for the last updated footer can be customized using label templates in `retype.yml`. Four templates cover the combinations of absolute vs. relative date formatting and with or without an author name.
+
+```yml retype.yml
+labels:
+  default:
+    contentfooter-lastupdated-absolutetemplate: "Last updated on {0}"
+    contentfooter-lastupdated-absolutebytemplate: "Last updated on {0} by {1}"
+    contentfooter-lastupdated-relativetemplate: "Last updated {0}"
+    contentfooter-lastupdated-relativebytemplate: "Last updated {0} by {1}"
+```
+
+| Template key | Placeholder | Used when |
+| --- | --- | --- |
+| `contentfooter-lastupdated-absolutetemplate` | `{0}` = formatted date | Absolute date, no author |
+| `contentfooter-lastupdated-absolutebytemplate` | `{0}` = formatted date, `{1}` = author name | Absolute date with author |
+| `contentfooter-lastupdated-relativetemplate` | `{0}` = relative time string (e.g. "3 days ago") | Relative date, no author |
+| `contentfooter-lastupdated-relativebytemplate` | `{0}` = relative time string, `{1}` = author name | Relative date with author |
+
+Retype selects the appropriate template based on whether the date is rendered in absolute or relative format and whether an author name is present.
+
+For full details on the `labels` configuration, including per-locale overrides, see the [Labels and translations](/configuration/translations.md) documentation.
