@@ -36,7 +36,7 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v440) for highlights.
 1. New robust anchor ID based {%{`{{ include }}`}%} content targeting
 1. New {%{`{{ include }}`}%} support for Obsidian style block identifiers
 1. New Obsidian style syntax for linking to and embedding block identifiers
-1. Custom icons, see [#123](https://github.com/retypeapp/retype/issues/123) and [#600](https://github.com/retypeapp/retype/issues/600)
+1. Custom icons, see [#123](https://github.com/retypeapp/retype/issues/123), [#600](https://github.com/retypeapp/retype/issues/600), [#701](https://github.com/retypeapp/retype/issues/701)
 
 +++ Improved :icon-thumbsup:
 
