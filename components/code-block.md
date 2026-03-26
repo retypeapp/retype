@@ -327,5 +327,3 @@ To exclude code blocks from the search index, set [`excludeCode`](/configuration
 search:
   excludeCode: true # Default is false
 ```
-
----

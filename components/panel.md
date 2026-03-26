@@ -209,4 +209,3 @@ This Panel has a custom id and class.
 ===
 
 Linking to the custom id scrolls to and expands the Panel: [Go to features panel](#features-panel)
-
