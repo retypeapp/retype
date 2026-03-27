@@ -218,5 +218,3 @@ The following sample demonstrates how to display the latest blog post by passing
 [!card]({{ content.blog.posts[0].filePath }})
 
 The [`content.blog.posts`](/templating/content.md#blog-posts) array contains all blog posts in your project sorted by date, newest first.
-
----
