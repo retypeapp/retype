@@ -71,7 +71,7 @@ For example, if you save a Lucide `rocket.svg` file to `_components/icon/lucide/
 
 The shortcode above renders as :icon-lucide-rocket:.
 
-![](../blog/images/2026-03-23-lucide-icon.png)
+![](/blog/images/2026-03-23-lucide-icon.png)
 
 ---
 
@@ -192,7 +192,7 @@ Icons | Count (March 2026) | Shortcode | Sample
 
 For the `rocket` examples above, the SVG files are organised like this:
 
-![](../blog/images/2026-03-23-rocket-icons.png)
+![](/blog/images/2026-03-23-rocket-icons.png)
 
 ---
 
