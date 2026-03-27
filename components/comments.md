@@ -20,9 +20,9 @@ Inline comments can be added anywhere within a line:
 ```md
 This is a %%inline %%comment.
 
-This is an inline comment%at the end of a line%.
+This is an inline comment%%at the end of a line%%.
 
-%%This is an %Inline comment at the beginning of a line.
+%%This is an %%Inline comment at the beginning of a line.
 ```
 
 The above will be created as:
