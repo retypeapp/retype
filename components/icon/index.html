@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827922475654">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827957176587">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Icon - Write On! with Retype</title>
     <meta name="title" content="Icon - Write On! with Retype">
-    <meta name="description" content="Similar to the Emoji :shortcode: syntax, you can add icons using :icon-shortcode:, where the shortcode is an Octicon icon name.">
+    <meta name="description" content="Retype supports icons using the :icon-shortcode: syntax.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/components/icon/">
@@ -23,7 +23,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/components/icon/">
     <meta property="og:title" content="Icon - Write On! with Retype">
-    <meta property="og:description" content="Similar to the Emoji :shortcode: syntax, you can add icons using :icon-shortcode:, where the shortcode is an Octicon icon name.">
+    <meta property="og:description" content="Retype supports icons using the :icon-shortcode: syntax.">
+    <meta property="og:image" content="https://retype.com/blog/images/2026-03-23-lucide-icon.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Icon - Write On! with Retype">
     <meta property="og:site_name" content="Retype">
     <meta property="og:locale" content="en_US">
 
@@ -31,7 +35,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://retype.com/components/icon/">
     <meta name="twitter:title" content="Icon - Write On! with Retype">
-    <meta name="twitter:description" content="Similar to the Emoji :shortcode: syntax, you can add icons using :icon-shortcode:, where the shortcode is an Octicon icon name.">
+    <meta name="twitter:description" content="Retype supports icons using the :icon-shortcode: syntax.">
+    <meta name="twitter:image" content="https://retype.com/blog/images/2026-03-23-lucide-icon.png">
+    <meta name="twitter:image:alt" content="Icon - Write On! with Retype">
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Retype News by RSS" href="https://retype.com/blog/feed.xml">
@@ -39,14 +45,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.4.0.827922475654" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.4.0.827957176587" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827922475654" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.827957176587" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827922475654" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.827957176587" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.4.0.827957176587" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.4.0.827922475654" rel="stylesheet">
+    <link href="/static/styles.css?v=4.4.0.827957176587" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -333,10 +340,36 @@
                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
 <h1 id="icon">Icon</h1>
-<p>Similar to the <a href="/components/emoji/">Emoji</a> <code translate="no" v-pre>:shortcode:</code> syntax, you can add icons using <code translate="no" v-pre>:icon-shortcode:</code>, where the <code translate="no" v-pre>shortcode</code> is an <a href="/components/octicons/">Octicon</a> icon name.</p>
-<p>For example, to add the <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 1-.565-.41L12 2.694Z"/></g></g></svg> <code translate="no" v-pre>star</code> icon, use the <code translate="no" v-pre>:icon-star:</code> icon shortcode.</p>
-<p>Icons can be added anywhere within your document, including paragraph text, headings, table content, <a href="/components/panel/">Panel</a> component titles, <a href="/components/callout/">Callouts</a>, <a href="/components/code-block/">code block</a> titles, etc. <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13.349 2.378a.748.748 0 0 1 .808-.361l.127.027a3.875 3.875 0 0 1 2.879 4.97L16.527 9h1.137c2.645 0 4.513 2.591 3.676 5.1l-1.559 4.678A3.25 3.25 0 0 1 16.698 21h-5.289a4.503 4.503 0 0 1-2.828-.999A1.75 1.75 0 0 1 7 21H4.75A1.75 1.75 0 0 1 3 19.25v-8.5C3 9.784 3.784 9 4.75 9h4.67a.251.251 0 0 0 .217-.126l3.712-6.496ZM8.75 18.16l.683.598a3.003 3.003 0 0 0 1.976.742h5.289a1.75 1.75 0 0 0 1.66-1.197l1.559-4.677a2.375 2.375 0 0 0-2.253-3.126H15.5a.75.75 0 0 1-.714-.979l.948-2.964a2.375 2.375 0 0 0-1.373-2.927l-3.422 5.988a1.749 1.749 0 0 1-1.519.882h-.67v7.66Zm-1.5-7.66h-2.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25H7a.25.25 0 0 0 .25-.25V10.5Z"/></g></g></svg></p>
-<p>Some icon shortcode names are made up of <code translate="no" v-pre>two-or-more</code> words. For instance, the <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/></g></g></svg> <code translate="no" v-pre>git-branch</code> icon would be configured as <code translate="no" v-pre>:icon-git-branch:</code>.</p>
+<p>Retype supports icons using the <code translate="no" v-pre>:icon-shortcode:</code> syntax.</p>
+<p>By default, Retype includes the built-in <a href="/components/octicons/">Octicons</a> icon set. Starting with Retype <code translate="no" v-pre>v4.4</code>, you can also add your own custom SVG icon packs to your project.</p>
+<p>Icons can be used inline in page content, in headings, in tables, in <a href="/components/panel/">Panel</a> titles, in <a href="/components/callout/">Callout</a> titles, and in components such as <a href="/components/button/">Button</a> and <a href="/components/badge/">Badge</a>.</p>
+<hr>
+<h2 id="built-in-octicons">Built-in Octicons</h2>
+<p>To add a built-in Octicon, use the <code translate="no" v-pre>:icon-shortcode:</code> syntax where <code translate="no" v-pre>shortcode</code> is the Octicon name.</p>
+<p>For example, use <code translate="no" v-pre>:icon-star:</code> to render <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 1-.565-.41L12 2.694Z"/></g></g></svg>.</p>
+<div id="built-in-octicons-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">:icon-star:</code></pre>
+</doc-codeblock></div>
+<p>Some icon names include multiple words separated with hyphens. For example, the <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/></g></g></svg> <code translate="no" v-pre>git-branch</code> icon is written as <code translate="no" v-pre>:icon-git-branch:</code>.</p>
+<p>For the full built-in icon list, see <a href="/components/octicons/">Octicons</a>.</p>
+<hr>
+<h2 id="custom-icon-packs">Custom icon packs</h2>
+<p>Retype can automatically discover custom SVG icons from the <code translate="no" v-pre>_components/icon/</code> folder in your project.</p>
+<p>Each subfolder inside <code translate="no" v-pre>_components/icon/</code> becomes an icon pack, and each <code translate="no" v-pre>.svg</code> file inside that folder becomes an icon.</p>
+<p>For example, the following folder structure adds a custom <code translate="no" v-pre>lucide</code> icon pack:</p>
+<div id="custom-icon-packs-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">_components/
+  icon/
+    lucide/</code></pre>
+</doc-codeblock></div>
+<p>Then add <code translate="no" v-pre>.svg</code> files into the pack folder:</p>
+<div id="custom-icon-packs-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">_components/
+  icon/
+    lucide/
+      rocket.svg</code></pre>
+</doc-codeblock></div>
+<p>That file immediately becomes available as the <code translate="no" v-pre>lucide-rocket</code> icon.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -350,11 +383,263 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>More icons <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="m12 20.703.343.667a.748.748 0 0 1-.686 0l-.003-.002-.007-.003-.025-.013a31.138 31.138 0 0 1-5.233-3.576C3.8 15.573 1 12.332 1 8.514v-.001C1 5.053 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262a31.148 31.148 0 0 1-5.233 3.576l-.025.013-.007.003-.002.001ZM6.736 4C4.657 4 2.5 5.88 2.5 8.514c0 3.107 2.324 5.96 4.861 8.12a29.655 29.655 0 0 0 4.566 3.175l.073.041.073-.04c.271-.153.661-.38 1.13-.674.94-.588 2.19-1.441 3.436-2.502 2.537-2.16 4.861-5.013 4.861-8.12C21.5 5.88 19.343 4 17.264 4c-2.106 0-3.801 1.389-4.553 3.643a.751.751 0 0 1-1.422 0C10.537 5.389 8.841 4 6.736 4Z"/></g></g></svg></h5>
-<p>In future releases of Retype, the plan is to support additional Icon packs and possibily even custom developer defined icon packs. <a href="https://github.com/retypeapp/retype/issues/">Let us know</a> if you are interested!</p>
+<p>Only <code translate="no" v-pre>.svg</code> files are supported for custom icon packs.</p>
         </div>
     </div>
 </div>
+<hr>
+<h2 id="custom-icon-shortcode-syntax">Custom icon shortcode syntax</h2>
+<p>Custom icons use the same <code translate="no" v-pre>:icon-shortcode:</code> syntax as built-in icons, but include the pack name as a prefix.</p>
+<p>For example, if you save a Lucide <code translate="no" v-pre>rocket.svg</code> file to <code translate="no" v-pre>_components/icon/lucide/rocket.svg</code>, use the icon as:</p>
+<div id="custom-icon-shortcode-syntax-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">:icon-lucide-rocket:</code></pre>
+</doc-codeblock></div>
+<p>The shortcode above renders as <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</g></g></g></svg>.</p>
+<figure class="content-center">
+    <img src="/blog/images/2026-03-23-lucide-icon.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="197" height="111" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<hr>
+<h2 id="add-a-custom-icon-pack">Add a custom icon pack</h2>
+<p>The following example demonstrates adding a Lucide <code translate="no" v-pre>rocket</code> icon.</p>
+<h3 id="1-create-the-icon-pack-folder">1. Create the icon pack folder</h3>
+<div id="1-create-the-icon-pack-folder-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">_components/
+  icon/
+    lucide/</code></pre>
+</doc-codeblock></div>
+<h3 id="2-download-the-svg-file">2. Download the SVG file</h3>
+<p>Download <a href="https://lucide.dev/icons/rocket" class="outbound" target="_blank" rel="noopener noreferrer"><span><code translate="no" v-pre>rocket.svg</code></span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> from Lucide and save it to:</p>
+<div id="2-download-the-svg-file-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">_components/icon/lucide/rocket.svg</code></pre>
+</doc-codeblock></div>
+<p>Your folder structure should look like this:</p>
+<div id="2-download-the-svg-file-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">_components/
+  icon/
+    lucide/
+      rocket.svg</code></pre>
+</doc-codeblock></div>
+<h3 id="3-use-the-icon">3. Use the icon</h3>
+<div id="3-use-the-icon-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">:icon-lucide-rocket:</code></pre>
+</doc-codeblock></div>
+<p>No additional configuration is required.</p>
+<hr>
+<h2 id="use-custom-icons-in-page-metadata">Use custom icons in page metadata</h2>
+<p>Custom icons can be used anywhere a normal Retype <code translate="no" v-pre>icon</code> value is accepted.</p>
+<p>For example, set a page icon using the pack name plus icon name:</p>
+<div id="use-custom-icons-in-page-metadata-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
+icon: lucide-rocket
+---
+# Sample page
+
+This is a sample page.</code></pre>
+</doc-codeblock></div>
+<p>The same pattern also works anywhere an <code translate="no" v-pre>icon</code> value is supported in Retype configuration.</p>
+<hr>
+<h2 id="use-custom-icons-in-components">Use custom icons in components</h2>
+<p>Custom icons can be used in components such as <a href="/components/button/">Button</a> and <a href="/components/badge/">Badge</a> by setting the <code translate="no" v-pre>icon</code> property.</p>
+<p>For example:</p>
+<div id="use-custom-icons-in-components-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button icon=&quot;lucide-rocket&quot; text=&quot;Button&quot;]</code></pre>
+</doc-codeblock></div>
+<p><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</g></g></svg></span>
+    <span>Button</span>
+</button></p>
+<p>Custom icons can also be used inline within content:</p>
+<div id="use-custom-icons-in-components-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Launch with :icon-lucide-rocket:</code></pre>
+</doc-codeblock></div>
+<p>Launch with <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</g></g></g></svg></p>
+<hr>
+<h2 id="how-retype-maps-icon-names">How Retype maps icon names</h2>
+<p>Retype derives the icon name from the folder name and file name:</p>
+<ul>
+<li>pack name → folder name under <code translate="no" v-pre>_components/icon/</code></li>
+<li>icon name → <code translate="no" v-pre>.svg</code> file name without the extension</li>
+</ul>
+<p>Examples:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>File path</th>
+<th>Icon name</th>
+<th>Shortcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>_components/icon/lucide/rocket.svg</code></td>
+<td><code translate="no" v-pre>lucide-rocket</code></td>
+<td><code translate="no" v-pre>:icon-lucide-rocket:</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>_components/icon/brand/logo.svg</code></td>
+<td><code translate="no" v-pre>brand-logo</code></td>
+<td><code translate="no" v-pre>:icon-brand-logo:</code></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>_components/icon/custom/help-circle.svg</code></td>
+<td><code translate="no" v-pre>custom-help-circle</code></td>
+<td><code translate="no" v-pre>:icon-custom-help-circle:</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The folder name does not need to match a public icon library name. You can choose any pack name that makes sense for your project.</p>
+<hr>
+<h2 id="popular-icon-pack-examples">Popular icon pack examples</h2>
+<p>Here are a few common packs you can add using the same folder-based approach:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Icons</th>
+<th>Count (March 2026)</th>
+<th>Shortcode</th>
+<th>Sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/components/octicons/">Octicons</a> (default)</td>
+<td>371</td>
+<td><code translate="no" v-pre>:icon-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://icons.getbootstrap.com/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Bootstrap</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>&gt;2000</td>
+<td><code translate="no" v-pre>:icon-boot-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><g fill="currentColor">
+  <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+  <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+  <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+</g></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://fontawesome.com/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Font Awesome</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>&gt;2000</td>
+<td><code translate="no" v-pre>:icon-fa-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 512 512" role="presentation"><g fill="currentColor"><g><!--!Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://heroicons.com/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Hero</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>316</td>
+<td><code translate="no" v-pre>:icon-hero-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><g fill="none" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+</g></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://lucide.dev/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Lucide</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>1685</td>
+<td><code translate="no" v-pre>:icon-lucide-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</g></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://phosphoricons.com/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Phosphor</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>9072</td>
+<td><code translate="no" v-pre>:icon-pho-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 256 256" role="presentation"><g fill="currentColor"><g><rect width="256" height="256" fill="none"/><path d="M191.11,112.89c24-24,25.5-52.55,24.75-65.28a8,8,0,0,0-7.47-7.47c-12.73-.75-41.26.73-65.28,24.75L80,128l48,48Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M136,72H74.35a8,8,0,0,0-5.65,2.34L34.35,108.69a8,8,0,0,0,4.53,13.57L80,128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M184,120v61.65a8,8,0,0,1-2.34,5.65l-34.35,34.35a8,8,0,0,1-13.57-4.53L128,176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M94.56,187.82C90.69,196.31,77.65,216,40,216c0-37.65,19.69-50.69,28.18-54.56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://remixicon.com/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Remix</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>3229</td>
+<td><code translate="no" v-pre>:icon-remix-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><g fill="currentColor"><path d="M4.99958 12.9999C4.99958 7.91198 7.90222 3.5636 11.9996 1.81799C16.0969 3.5636 18.9996 7.91198 18.9996 12.9999C18.9996 13.8229 18.9236 14.6264 18.779 15.4027L20.7194 17.2353C20.8845 17.3913 20.9238 17.6389 20.815 17.8383L18.3196 22.4133C18.1873 22.6557 17.8836 22.7451 17.6412 22.6128C17.5993 22.59 17.5608 22.5612 17.5271 22.5274L15.2925 20.2928C15.1049 20.1053 14.8506 19.9999 14.5854 19.9999H9.41379C9.14857 19.9999 8.89422 20.1053 8.70668 20.2928L6.47209 22.5274C6.27683 22.7227 5.96025 22.7227 5.76498 22.5274C5.73122 22.4937 5.70246 22.4552 5.67959 22.4133L3.18412 17.8383C3.07537 17.6389 3.11464 17.3913 3.27975 17.2353L5.22014 15.4027C5.07551 14.6264 4.99958 13.8229 4.99958 12.9999ZM6.47542 19.6957L7.29247 18.8786C7.85508 18.316 8.61814 17.9999 9.41379 17.9999H14.5854C15.381 17.9999 16.1441 18.316 16.7067 18.8786L17.5237 19.6957L18.5056 17.8955L17.4058 16.8568C16.9117 16.3901 16.6884 15.7045 16.8128 15.0364C16.9366 14.3722 16.9996 13.6911 16.9996 12.9999C16.9996 9.13037 15.0045 5.69965 11.9996 4.04033C8.99462 5.69965 6.99958 9.13037 6.99958 12.9999C6.99958 13.6911 7.06255 14.3722 7.18631 15.0364C7.31078 15.7045 7.08746 16.3901 6.59338 16.8568L5.49353 17.8955L6.47542 19.6957ZM11.9996 12.9999C10.895 12.9999 9.99958 12.1045 9.99958 10.9999C9.99958 9.89537 10.895 8.99994 11.9996 8.99994C13.1041 8.99994 13.9996 9.89537 13.9996 10.9999C13.9996 12.1045 13.1041 12.9999 11.9996 12.9999Z"></path></g></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://simpleicons.org/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Simple</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>3414</td>
+<td><code translate="no" v-pre>:icon-simple-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><title>Rocket</title><path d="M23.735.238V.236a.248.248 0 0 0-.2-.188c-.256-.04-6.336-.924-14.17 7.051a28.44 28.44 0 0 0-2.12 2.576l-4.047 1.166a.246.246 0 0 0-.124.08l-2.856 3.5a.248.248 0 0 0 .126.394l3.887 1.096.484-.566c.178-.208.37-.4.574-.58l.54-.472-.38.608a5.556 5.556 0 0 1-.482.66l-.52.606c.008.79.214 1.488.62 2.068L3.68 19.653c-.148.16-.036.272.12.428l1.11 1.086c.153.16.255.258.41.1l1.505-1.534c.34.122 1.162.334 2.4.14l.75-.576c.212-.164.438-.312.672-.442l.644-.36-.514.53c-.187.192-.387.37-.6.534l-.62.476 1.424 3.804a.246.246 0 0 0 .404.09l3.242-3.144a.248.248 0 0 0 .072-.136l.698-4.108c.884-.78 1.78-1.686 2.66-2.694 5.072-5.806 5.798-10.315 5.78-12.487-.008-.702-.094-1.094-.1-1.122h-.002zM16.49 11.165c-1.274 1.296-3.1 1.564-4.082.6-.98-.962-.744-2.794.53-4.09s3.1-1.566 4.08-.602c.982.964.746 2.796-.528 4.092z"/></g></g></svg></td>
+</tr>
+<tr>
+<td><a href="https://tabler.io/icons" class="outbound" target="_blank" rel="noopener noreferrer"><span>Tabler</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></td>
+<td>6074</td>
+<td><code translate="no" v-pre>:icon-tabler-rocket:</code></td>
+<td><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></g></g></g></svg></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For the <code translate="no" v-pre>rocket</code> examples above, the SVG files are organised like this:</p>
+<figure class="content-center">
+    <img src="/blog/images/2026-03-23-rocket-icons.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="197" height="483" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<hr>
+<h2 id="organise-icons-your-way">Organise icons your way</h2>
+<p>You are not limited to public icon libraries.</p>
+<p>You can:</p>
+<ul>
+<li>create a project-specific icon pack</li>
+<li>store your company or product icons in a custom folder</li>
+<li>mix SVG files from multiple sources into one pack</li>
+<li>use whatever file names make sense for your team</li>
+</ul>
+<p>For example:</p>
+<div id="organise-icons-your-way-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">_components/
+  icon/
+    brand/
+      logo.svg
+      product.svg
+      docs.svg</code></pre>
+</doc-codeblock></div>
+<p>Those files become:</p>
+<ul>
+<li><code translate="no" v-pre>:icon-brand-logo:</code></li>
+<li><code translate="no" v-pre>:icon-brand-product:</code></li>
+<li><code translate="no" v-pre>:icon-brand-docs:</code></li>
+</ul>
+<hr>
+<h2 id="when-to-use-which-format">When to use which format</h2>
+<p>Use the built-in Octicons when:</p>
+<ul>
+<li>you want the default Retype icon set</li>
+<li>you need common UI-style icons quickly</li>
+<li>you want the broadest compatibility with existing Retype samples</li>
+</ul>
+<p>Use custom icon packs when:</p>
+<ul>
+<li>you need icons from another library such as Lucide or Tabler</li>
+<li>you want brand-specific icons</li>
+<li>you want full control over the icons available in your project</li>
+</ul>
+<hr>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="/components/octicons/">Octicons</a></li>
+<li><a href="/components/button/#icon-and-emoji">Button</a></li>
+<li><a href="/components/badge/#icon-and-emoji">Badge</a></li>
+<li><a href="/configuration/page/#icon">Page configuration</a></li>
+</ul>
 <!-- RETYPE_BACKLINKS_PLACEHOLDER -->
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
@@ -372,8 +657,8 @@
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2025-05-05T13:54:48" title="2025-05-05" data-absolute-label="Last updated on 2025-05-05" data-absolute-label-html="Last updated on 2025-05-05" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2025-05-05
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-27T14:05:53" title="2026-03-27" data-absolute-label="Last updated on 2026-03-27" data-absolute-label-html="Last updated on 2026-03-27" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-03-27
                     </time>
                 </div>
 
@@ -467,7 +752,7 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Icon", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Icon", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>
