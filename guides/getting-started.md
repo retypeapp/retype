@@ -84,7 +84,7 @@ Now with a basic introduction to Markdown options, explore the following Retype 
 [Project](/configuration/project.md) settings
 : Project level configuration for your website
 
-[Page](https://retype.com/guides/deployment/) settings
+[Page](/configuration/page.md) settings
 : Page level configuration options
 
 ## Hosting

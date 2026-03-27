@@ -14,7 +14,7 @@ Retype `v4.4` is another big release, including two new extensibility features t
 
 On top of that, this release adds accordion behavior to Panel groups, collapsible Callouts, a fallback path finder for images in shared folders, auto-expanding collapsed panels, and several nice bug fixes.
 
-See the full [Changelog](https://retype.com/changelog/) and [Feature Log](https://retype.com/feature-log/) for a detailed list of updates in the `v4.4` release.
+See the full [Changelog](/changelog.md) and [Feature Log](/feature-log.md) for a detailed list of updates in the `v4.4` release.
 
 ---
 
@@ -78,7 +78,7 @@ Unlimited `.svg` icons can be added to your project, each pack can have any numb
 
 Here a few popular icon packs to get you started:
 
-Icons | Count (March 2026) | Shortcode | Sample
+Icons | Count (Q1 2026) | Shortcode | Sample
 --- | --- | --- | ---
 [Octicons](/components/octicons.md) (default) | 371 | `:icon-rocket:` | :icon-rocket:
 [Bootstrap](https://icons.getbootstrap.com/) | >2000 | `:icon-boot-rocket:` | :icon-boot-rocket:
@@ -288,4 +288,4 @@ Panel content truncation
 
 Retype `v4.4` is one of the most extensibility-focused releases yet. Custom icon packs open up unlimited icon options by letting you bring any SVG file directly into your project. Expanded include selectors turn your content into reusable building blocks, letting you pull headings, components, and individual nodes from one page into another. Together, these two features give you significantly more control over the look and structure of your documentation. Accordion panels, collapsible Callouts, and the fallback image path finder round out a release.
 
-[Install or upgrade](https://retype.com/guides/installation/) Retype to try the latest release. Share your feedback on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input continues to shape the future of Retype.
+[Install or upgrade](/guides/installation.md) Retype to try the latest release. Share your feedback on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input continues to shape the future of Retype.
