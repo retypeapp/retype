@@ -190,13 +190,13 @@ Icons | Count (March 2026) | Shortcode | Sample
 [Simple](https://simpleicons.org/) | 3414 | `:icon-simple-rocket:` | :icon-simple-rocket:
 [Tabler](https://tabler.io/icons) | 6074 | `:icon-tabler-rocket:` | :icon-tabler-rocket:
 
-For the `rocket` examples above, the SVG files are organised like this:
+For the `rocket` examples above, the SVG files are organized like this:
 
 ![](../blog/images/2026-03-23-rocket-icons.png)
 
 ---
 
-## Organise icons your way
+## Organize icons your way
 
 You are not limited to public icon libraries.
 
@@ -223,28 +223,3 @@ Those files become:
 - `:icon-brand-logo:`
 - `:icon-brand-product:`
 - `:icon-brand-docs:`
-
----
-
-## When to use which format
-
-Use the built-in Octicons when:
-
-- you want the default Retype icon set
-- you need common UI-style icons quickly
-- you want the broadest compatibility with existing Retype samples
-
-Use custom icon packs when:
-
-- you need icons from another library such as Lucide or Tabler
-- you want brand-specific icons
-- you want full control over the icons available in your project
-
----
-
-## See also
-
-- [Octicons](/components/octicons.md)
-- [Button](/components/button.md#icon-and-emoji)
-- [Badge](/components/badge.md#icon-and-emoji)
-- [Page configuration](/configuration/page.md#icon)
