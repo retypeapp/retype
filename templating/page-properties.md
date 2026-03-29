@@ -33,16 +33,20 @@ This guide was written by Jane Smith.
 
 Property | Description
 --- | ---
-`page.title` | The page title
-`page.label` | The navigation label
 `page.author` | Author name or object
-`page.created` | The original publish date
-`page.lastUpdated` | The most recent update date
-`page.tags` | Tags assigned to the page
 `page.categories` | Categories assigned to the page
-`page.layout` | The page layout type
+`page.created` | The original publish date
+`page.description` | The page description or excerpt
+`page.filePath` | The file system path to the source file
 `page.icon` | The page icon
+`page.label` | The navigation label
+`page.lastUpdated` | The most recent update date
+`page.layout` | The page layout type
 `page.order` | The navigation order value
+`page.path` | The root-relative path to the page
+`page.tags` | Tags assigned to the page
+`page.title` | The page title
+`page.url` | The full URL of the page
 
 ---
 

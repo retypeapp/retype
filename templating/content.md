@@ -40,11 +40,11 @@ Once you have a page reference, you can access all the [[page]] settings, includ
 
 Property | Description
 --- | ---
-`.title` | The page title
 `.description` | The page description or excerpt
-`.url` | The full URL of the page
-`.path` | The root-relative path to the page
 `.filePath` | The file system path to the source file
+`.path` | The root-relative path to the page
+`.title` | The page title
+`.url` | The full URL of the page
 
 {%{
 ```md
