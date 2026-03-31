@@ -30,6 +30,3 @@ ERROR: The specified secret is not valid for the "url" config host: "example.com
 ```
 
 If you see this error and are confident your Pro key and `url` are correctly configured, please send an email to hello@retype.com and we will investigate immediately.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

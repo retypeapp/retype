@@ -308,6 +308,3 @@ Rotate exposed credentials immediately and notify the on-call team before reopen
 !!-danger Security incident response
 Rotate exposed credentials immediately and notify the on-call team before reopening external access.
 !!!
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

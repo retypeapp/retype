@@ -130,6 +130,3 @@ Password protect an entire folder by setting the `visibility` to either [`protec
 ```yml index.yml
 visibility: protected
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -74,6 +74,3 @@ Color chips work great in tables for documenting color palettes:
 |||
 
 Only valid hex color codes trigger the color chip preview. Invalid formats like `#gggggg` or `#12` will render as regular inline code.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

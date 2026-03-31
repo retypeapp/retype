@@ -193,6 +193,3 @@ The following table lists all the keys and default values that can be customized
 | `Text_Dark` | Dark | Oscuro |
 | `Text_System` | System | Sistema |
 | `Backlinks_Title` | See also | Véase también |
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

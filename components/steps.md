@@ -143,6 +143,3 @@ To get the step URL with the anchor, right-click on the step title and select `C
 ```
 
 [Go to Step 2](#install-dependencies)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

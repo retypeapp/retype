@@ -227,6 +227,3 @@ blog:
 See the [`blog.rss`](/configuration/project.md#blog-rss) project configuration documentation for the full list of RSS settings.
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

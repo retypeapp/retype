@@ -22,6 +22,3 @@ We first recommend adding the [Retype GitHub Build Action](/guides/github-action
 6. Choose production branch as `retype`, but please ensure you have completed [Step 1](#step-1-add-retype-actionyml-workflow) above first
 7. Save and deploy
 8. Give Cloudflare a few moments and your website will be online :+1:
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

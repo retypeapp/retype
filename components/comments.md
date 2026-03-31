@@ -95,6 +95,3 @@ This section needs more examples and better explanations.
 - Comments are completely removed from the final HTML output
 - Comments cannot be nested
 - Comments should not be used for content that needs to be visible to end users 
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

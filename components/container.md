@@ -197,6 +197,3 @@ This Container has a custom id and class.
 ::: {#my-container .custom-style}
 This Container has a custom id and class.
 :::
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

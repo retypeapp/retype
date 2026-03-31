@@ -186,6 +186,3 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All button theme variables can be customized in this way. Please refer to the [Button Component](/configuration/theme-variables.md#button-component) theme variables for the latest options.
 !!!
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

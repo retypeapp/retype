@@ -221,6 +221,3 @@ thereof, it will be considered to be "commercial computer software" or "commerci
 software documentation," as those terms are used in 48 CFR § 12.212 or 48 CFR § 227.7202, and is
 being licensed with only those rights as are granted to all other licensees as set forth in this
 Agreement.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

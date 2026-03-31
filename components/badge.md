@@ -196,6 +196,3 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All badge theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Badge Component](/configuration/theme-variables.md#badge-component) theme variables for the latest options.
 !!!
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

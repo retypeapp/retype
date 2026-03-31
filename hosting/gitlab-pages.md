@@ -78,6 +78,3 @@ After the pipeline finishes successfully, your new generated website will be ava
 # Replace [username] and [project] with your values
 https://[username].gitlab.io/[project]/
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

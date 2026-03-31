@@ -201,6 +201,3 @@ The **plus** alignment options only apply when the page is `layout: central` or 
 For default page layouts with a left navigation and/or the right table of contents, the **plus** positions will fallback to their non-plus equivalents. For instance, `rightplus` will fallback to `right` and the `centerplus` will fallback to `center`.
 
 Photo credits to [carlos aranda](https://unsplash.com/@carlosaranda).
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

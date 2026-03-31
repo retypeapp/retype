@@ -39,6 +39,3 @@ Service | Domain | :icon-heart: Sponsor
 [Netlify](/hosting/netlify.md) | `*.netlify.app` | 
 [Render](https://render.com/) | `*.onrender.com` | 
 [Vercel](https://vercel.com/) | `*.vercel.app` | 
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

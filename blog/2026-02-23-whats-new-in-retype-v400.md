@@ -271,6 +271,3 @@ Retype `v4.0` delivers new components for richer documentation, expanded templat
 Try out the latest release by [installing or upgrading](/guides/installation.md) Retype and experiment with the new features. Share your projects with us on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues) with feedback. Your input helps shape the future of Retype.
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -45,6 +45,3 @@ You can now publish polished, full-featured documentation sites with Retype with
 Let us know what you think on [X](https://x.com/retypeapp) or by opening a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input helps shape the future of Retype.
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

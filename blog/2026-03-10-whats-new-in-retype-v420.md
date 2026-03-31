@@ -231,6 +231,3 @@ Retype `v4.2` brings better feed controls, more flexible UI labeling, tighter se
 [Install or upgrade](/guides/installation.md) Retype to try the latest improvements, and keep the feedback coming on [X](https://x.com/retypeapp) or in GitHub [Issues](https://github.com/retypeapp/retype/issues).
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

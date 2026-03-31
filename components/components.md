@@ -17,6 +17,3 @@ Retype Flavored [Markdown](/guides/markdown.md) (RFM) supports custom **Componen
 | [:icon-workflow: Steps](steps.md) | [:icon-video: YouTube](youtube.md) | [:icon-link: Reference Link](reference-link.md)
 |  | [:icon-code-review: Embed](embed.md) | [:icon-iterations: Backlinks](backlinks.md)
 |  |  | [:icon-history: Last Updated](last-updated.md)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

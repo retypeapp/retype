@@ -1752,6 +1752,3 @@ Emoji count: **1741**
 | :flag-zm: | `:flag-zm:`  | Zambia Flag | 
 | :flag-zw: | `:flag-zw:`  | Zimbabwe Flag | 
 | :flag-england: | `:flag-england:`  | England Flag | gbeng
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

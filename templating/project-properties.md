@@ -181,6 +181,3 @@ To disable templating project-wide, update your `retype.yml` with the following:
 templating:
   enabled: false
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

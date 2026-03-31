@@ -383,6 +383,3 @@ The above will create one list item with the custom `id` attribute:
 <li id="custom-id">Item with custom ID </li>
 <li>Another regular item</li>
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

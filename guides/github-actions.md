@@ -160,6 +160,3 @@ If both the `RETYPE_KEY` and `RETYPE_PASSWORD` are needed, the configuration sho
 ## Step 2: Configure GitHub Pages
 
 Once [Step 1](#step-1-add-retype-actionyml-workflow) is complete, now configure your [GitHub Pages](/hosting/github-pages.md) web site hosting.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

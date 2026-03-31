@@ -84,6 +84,3 @@ Config `target` value | Runtime `target` value
 `recent NEWS` | `recent-news`
 
 See also the [`links.target`](/configuration/project.md#links-target) configuration.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

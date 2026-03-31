@@ -418,5 +418,3 @@ search:
 <!-- Add content to _includes/bottom.md to include here -->
 
 <!-- Project wide abbreviations -->
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

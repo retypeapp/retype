@@ -91,6 +91,3 @@ Custom project config file names are also possible by explicitly passing a file 
 !!!
 
 Once a project configuration file is found, it is used. If the other files are found, they are ignored. Retype will not merge or override different configs or conflicting configs between two or more project files.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

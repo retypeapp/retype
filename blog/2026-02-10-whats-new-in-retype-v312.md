@@ -165,6 +165,3 @@ Retype `v3.12` delivers powerful new capabilities for content discovery, visual 
 Try out the latest Retype release and experience these new features. Share your feedback with us on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input continues to shape the future of Retype.
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

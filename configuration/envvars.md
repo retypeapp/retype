@@ -45,6 +45,3 @@ Default [`host`](project.md#serve-host) to be used by the Retype server instead 
 The `RETYPE_DEFAULT_HOST` secret is set exactly the same as the other secrets.
 
 ![](/static/add-retype-default-host.png)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -275,6 +275,3 @@ Panel content truncation
 Retype `v4.4` is one of the most extensibility-focused releases yet. Custom icon packs open up unlimited icon options by letting you bring any SVG file directly into your project. Expanded include selectors turn your content into reusable building blocks, letting you pull headings, components, and individual nodes from one page into another. Together, these two features give you significantly more control over the look and structure of your documentation. Accordion panels, collapsible Callouts, and the fallback image path finder round out a release.
 
 [Install or upgrade](/guides/installation.md) Retype to try the latest release. Share your feedback on [X](https://x.com/retypeapp) or open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input continues to shape the future of Retype.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

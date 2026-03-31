@@ -27,6 +27,3 @@ Please feel free to contact us any time:
 - [x] Email hello@retype.com, or
 - [x] Send a tweet to [@retypeapp](https://twitter.com/retypeapp)
 - [x] Online chat, see :icon-comment: button in bottom right corner
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

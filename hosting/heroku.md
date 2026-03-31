@@ -102,6 +102,3 @@ Please review the [Project](/configuration/project.md) configuration docs for al
 - [x] To create a Heroku account, see [heroku.com](https://heroku.com)
 - [x] Download the Heroku [CLI](https://devcenter.heroku.com/articles/heroku-cli)
 - [x] Heroku CLI [documentation](https://devcenter.heroku.com/categories/command-line)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -122,6 +122,3 @@ This is another Tab
 ~~~
 
 [!ref See all components](/components/components.md)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

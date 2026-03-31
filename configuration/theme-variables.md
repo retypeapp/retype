@@ -847,6 +847,3 @@ Variables for customizing tab appearance.
 | `tab-border` | Tab border color | `transparent` | `transparent` |
 | `tab-border-hover` | Tab hover border color | `gray-300` | `dark-450` |
 | `tab-border-active` | Active tab border color | `base-500` | `base-500` |
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

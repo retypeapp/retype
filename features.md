@@ -14,6 +14,3 @@ Multi-language search | :icon-check-circle: |
 [Gravatar](/configuration/project.md#integrations-gravatar) support on [`author`](/configuration/page.md#author) | :icon-check-circle: |
 Lightning fast incremental builds using page dependency graph | :icon-check-circle: |
 Active and engaged development team | :icon-check-circle: |
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

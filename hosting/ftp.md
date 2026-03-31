@@ -84,6 +84,3 @@ The action will be triggered and GitHub will then perform the following processe
 - Upload the website to the FTP server
 
 With the first workflow run, it will generate and upload every file. From the second time onwards, only changed files should be updated.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -81,6 +81,3 @@ The last step would be updating the [`url`](/configuration/project.md#url) proje
 ```yml
 url: example.com
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

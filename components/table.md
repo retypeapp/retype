@@ -120,6 +120,3 @@ Name | Long Message | Description
 --- | --- | ---
 Item 1 | This is an extra long message that should not wrap in the table | This is a description
 Item 2 | Another long content item | Another description
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

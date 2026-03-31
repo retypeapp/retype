@@ -39,6 +39,3 @@ When you make changes to your website, you can deploy them to Netlify using the 
 1. Push your changes to the retype branch of your GitHub repository.
 1. Netlify will automatically detect the changes and start the deployment process.
 1. Once the deployment is complete, your changes will be live on your website.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

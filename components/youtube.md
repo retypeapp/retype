@@ -91,6 +91,3 @@ You can also use the shorter `youtu.be` format with timestamps:
 ```markdown
 https://youtu.be/dQw4w9WgXcQ?t=45
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

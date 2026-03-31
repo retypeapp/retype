@@ -52,6 +52,3 @@ By default, the file name is used as the component text value and the text can b
 ```
 
 [!file icon="rocket" text="To the moon"](/static/sample.txt)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

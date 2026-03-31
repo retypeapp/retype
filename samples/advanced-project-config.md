@@ -9,6 +9,3 @@ Use this as a comprehensive [project configuration](/configuration/project.md) r
 !!!
 All configurations are optional. If a config is not set, Retype will use default values.
 !!!
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -455,6 +455,3 @@ In the following sample, the website will be built as though `url` was not confi
 ```
 retype build --override "{ \"url\": null }"
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

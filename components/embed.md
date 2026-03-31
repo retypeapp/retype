@@ -119,6 +119,3 @@ Specifies a width for the embedded content's area.
 ```
 
 [!embed width="300"](https://www.youtube.com/embed/C0DPdy98e4c)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -187,6 +187,3 @@ If you've been on the fence about publishing your Obsidian vault, Retype removes
 Have feedback or ideas for Retype? Open a GitHub [Issue](https://github.com/retypeapp/retype/issues). Your input helps shape the future of Retype.
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

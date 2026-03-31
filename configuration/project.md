@@ -2824,6 +2824,3 @@ url: companyx.github.io/docs
 ===
 
 ---
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

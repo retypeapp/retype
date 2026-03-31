@@ -405,6 +405,3 @@ sequenceDiagram
 ```
 
 [!ref :mermaid: Mermaid website](https://mermaid-js.github.io/mermaid/)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

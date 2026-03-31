@@ -121,6 +121,3 @@ A column title with the [emoji](emoji.md) `:thumbsup:`.
 A column title with the [icon](icon.md) `:icon-check-circle:`.
 
 |||
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

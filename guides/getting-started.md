@@ -129,6 +129,3 @@ Do you have a technical support question, find a defect, or would like to make a
 Do you have a general inquiry? Please feel free to contact us at hello@retype.com.
 
 We :heart: your feedback.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

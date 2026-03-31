@@ -119,6 +119,3 @@ For C# files with a `.cs` file extension, an optional `region` name can be confi
 ```
 
 If the copied code block from the `region` is indented, the left indentation will be removed from the file output so that the code block is normalized with a left-aligned positioning.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

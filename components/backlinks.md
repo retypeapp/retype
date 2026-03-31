@@ -93,6 +93,3 @@ The backlinks component will only render when:
 3. A valid Retype [Pro](/pro/pro.md) license is active
 
 If there are no pages linking to the current page, the backlinks component will not render, even when the `[!backlinks]` component is manually placed.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

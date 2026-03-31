@@ -107,6 +107,3 @@ This is another Tab.
 +++
 
 Linking to the custom id scrolls to and activates the Tab: [Go to getting started](#getting-started)
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -9,6 +9,3 @@ See [`visibility`](/configuration/page.md#visibility) documentation.
 ## :icon-code: Source
 
 :::code source="protected.md" :::
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

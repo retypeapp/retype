@@ -1227,6 +1227,3 @@ An entire folder can be set to `private` by adding an `index.yml` file with the 
 ```yml
 visibility: private
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

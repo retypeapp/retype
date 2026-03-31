@@ -176,6 +176,3 @@ Following these practices helps ensure your site looks good, stays accessible, a
 - [x] All variable names use `kebab-case` (hyphens, not underscores)
 - [x] Variables are case-sensitive
 - [x] Don't include the `--` prefix in your configuration
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

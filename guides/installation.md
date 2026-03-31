@@ -263,6 +263,3 @@ OS                                    | Version               | Architectures   
 [Ubuntu-pm]: https://learn.microsoft.com/dotnet/core/install/linux-package-manager-ubuntu-2004
 [glibc]: https://www.gnu.org/software/libc/
 [musl]: https://musl.libc.org/
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

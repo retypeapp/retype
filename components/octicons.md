@@ -451,6 +451,3 @@ As of v4.5.0-preview, there are 371 [Octicons](https://primer.github.io/octicons
 | :icon-zap: | zap | `:icon-zap:` |
 | :icon-zoom-in: | zoom-in | `:icon-zoom-in:` |
 | :icon-zoom-out: | zoom-out | `:icon-zoom-out:` |
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

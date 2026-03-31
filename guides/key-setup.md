@@ -41,6 +41,3 @@ Then add `RETYPE_KEY` secret to your [GitHub Actions](/guides/github-actions.md)
   with:
     key: ${{ secrets.RETYPE_KEY }}
 ```
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

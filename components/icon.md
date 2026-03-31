@@ -219,6 +219,3 @@ Those files become:
 - `:icon-brand-logo:`
 - `:icon-brand-product:`
 - `:icon-brand-docs:`
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -60,6 +60,3 @@ Math formula blocks can benefit from syntax highlighting by adding the `latex` l
 ~~~
 
 |||
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

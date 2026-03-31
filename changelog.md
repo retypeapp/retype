@@ -903,6 +903,3 @@ Released: 2021-02-11
 1. Publish to NuGet
 1. Initial `v1.0.0` release
 +++
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

@@ -98,6 +98,3 @@ labels:
 Retype selects the appropriate template based on whether the date is rendered in absolute or relative format and whether an author name is present.
 
 For full details on the `labels` configuration, including per-locale overrides, see the [Labels and translations](/configuration/translations.md) documentation.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language

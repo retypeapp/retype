@@ -207,6 +207,3 @@ The following sample demonstrates how to display the latest blog post by passing
 [!card](/blog/2026-03-23-whats-new-in-retype-v440.md)
 
 The [`content.blog.posts`](/templating/content.md#blog-posts) array contains all blog posts in your project sorted by date, newest first.
-
-*[CSS]: Cascading Style Sheet
-*[HTML]: Hyper Text Markup Language
