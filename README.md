@@ -4,20 +4,54 @@ icon: home
 backlinks:
   enabled: false
 ---
-# Markdown Website Generator
+# Build docs from Markdown
 
 ![](/static/retype-hero.png)
 
-[Retype](https://retype.com/) is a static website generator that transforms simple Markdown `.md` files into a complete website you fully own and can self-host anywhere.
-
-{.callout}
-> “I don't want to write code to write docs, I just want to write docs.”
+Write in plain Markdown `.md` files, preview locally, and publish a static site you fully own. No framework setup. Host it anywhere.
 
 No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
 !!!
 The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) files used to generate this very page.
 !!!
+
+---
+
+## Features
+
+### :icon-shield-check: It just works
+
+Retype has been built to be easy to use and should **_just work_** out-of-the-box without any special configuration, technical knowledge, or troublesome setup.
+
+### :icon-zap: Lightning fast
+
+Don't blink. Retype was built for speed.
+
+### :icon-gear: Easy install
+
+[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown `.md` file which Retype will start building a new website from.
+
+### :icon-plug: Powerful
+
+Project level [configuration](/configuration/project.md) using **retype.yml** unlocks many more features and customization.
+
+### :icon-pencil: Simple formatting
+
+Pages are formatted using [[Markdown]] syntax and Retype [components](/components/components.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
+
+### :icon-sync: Live reload
+
+If a change is detected, such as editing and saving an `.md` file, your Retype website will be updated almost instantly within the browser.
+
+### :icon-server: Host anywhere
+
+Retype generates an HTML website that you can self-host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
+
+---
+
+{.callout}
+> “I don't want to write code to write docs, I just want to write docs.”
 
 {.callout}
 > “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there.”
@@ -58,38 +92,6 @@ You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://cla
 
 All operating systems are supported: including Mac, Windows, and Linux.
 !!!
-
----
-
-## Features
-
-### :icon-shield-check: It just works
-
-Retype has been built to be easy to use and should **_just work_** out-of-the-box without any special configuration, technical knowledge, or troublesome setup.
-
-### :icon-zap: Lightning fast
-
-Don't blink. Retype was built for speed.
-
-### :icon-gear: Easy install
-
-[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown `.md` file which Retype will start building a new website from.
-
-### :icon-plug: Powerful
-
-Project level [configuration](/configuration/project.md) using **retype.yml** unlocks many more features and customization.
-
-### :icon-pencil: Simple formatting
-
-Pages are formatted using [[Markdown]] syntax and Retype [components](/components/components.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
-
-### :icon-sync: Live reload
-
-If a change is detected, such as editing and saving an `.md` file, your Retype website will be updated almost instantly within the browser.
-
-### :icon-server: Host anywhere
-
-Retype generates an HTML website that you can self-host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
 
 ---
 
