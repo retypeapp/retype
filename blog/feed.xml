@@ -6,7 +6,7 @@
     <description>Latest updates, announcements, and articles from Retype</description>
     <copyright>© Retype 2026. All rights reserved.</copyright>
     <lastBuildDate>Mon, 23 Mar 2026 00:00:00 GMT</lastBuildDate>
-    <generator>Retype 4.4.0</generator>
+    <generator>Retype 4.5.0-preview</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://retype.com/blog/feed.xml" />
     <image>
       <title>Retype News by RSS</title>

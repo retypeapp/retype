@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828300806343">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview.828314946031">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Octicons - Write On! with Retype</title>
@@ -18,6 +18,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/components/octicons/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://retype.com/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -36,17 +37,20 @@
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Retype News by RSS" href="https://retype.com/blog/feed.xml">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://retype.com/components/octicons.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.4.0.828300806343" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.0-preview.828314946031" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.4.0.828300806343" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.4.0.828300806343" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview.828314946031" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview.828314946031" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.4.0.828300806343" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.0-preview.828314946031" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -78,7 +82,7 @@
                 <!-- Top Nav -->
                 <nav id="retype-header-nav" class="hidden md:flex">
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
-                        <li class="mr-6 relative group/nav">
+                        <li class="mr-6 relative group/nav" data-retype-header-link-group>
                             <span class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text cursor-default group-hover/nav:text-header-text-hover group-focus-within/nav:text-header-text-hover" title="Latest updates, announcements, and articles">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                                     <path d="M9.002 2.5a.75.75 0 0 1 .691.464l6.302 15.305 2.56-6.301a.75.75 0 0 1 .695-.468h4a.75.75 0 0 1 0 1.5h-3.495l-3.06 7.532a.75.75 0 0 1-1.389.004L8.997 5.21l-3.054 7.329A.75.75 0 0 1 5.25 13H.75a.75.75 0 0 1 0-1.5h4l3.558-8.538a.75.75 0 0 1 .694-.462Z"/>
@@ -87,7 +91,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 opacity-60" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </span>
                             <span class="absolute bottom-full md:bottom-auto md:top-full" style="left: var(--header-links-dropdown-offset, 0rem); width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem)); height: var(--header-links-dropdown-gap, 0.5rem);"></span>
-                            <div class="absolute bottom-full md:bottom-auto md:top-full z-50 min-w-[180px] w-max opacity-0 invisible -translate-y-1 md:translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0 group-hover/nav:opacity-100 group-focus-within/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:visible pointer-events-none group-hover/nav:pointer-events-auto group-focus-within/nav:pointer-events-auto transition-all duration-150 ease-out" style="left: var(--header-links-dropdown-offset, 0rem); margin-bottom: var(--header-links-dropdown-gap, 0.5rem); margin-top: var(--header-links-dropdown-gap, 0.5rem); max-width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem));">
+                            <div class="absolute bottom-full md:bottom-auto md:top-full z-50 min-w-[180px] w-max opacity-0 invisible -translate-y-1 md:translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0 group-hover/nav:opacity-100 group-focus-within/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:visible pointer-events-none group-hover/nav:pointer-events-auto group-focus-within/nav:pointer-events-auto transition-all duration-150 ease-out" data-retype-header-link-menu style="left: var(--header-links-dropdown-offset, 0rem); margin-bottom: var(--header-links-dropdown-gap, 0.5rem); margin-top: var(--header-links-dropdown-gap, 0.5rem); max-width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem));">
                                 <ul class="flex flex-col rounded-lg border border-base-border bg-base-bg shadow-lg overflow-hidden w-full">
                                     <li>
                                         <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/blog/" title="Visit the Retype Blog">
@@ -204,7 +208,7 @@
                     <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
                         <nav>
                             <ul class="flex flex-wrap justify-center items-center">
-                                <li class="mr-6 relative group/nav">
+                                <li class="mr-6 relative group/nav" data-retype-header-link-group>
                                     <span class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text cursor-default group-hover/nav:text-header-text-hover group-focus-within/nav:text-header-text-hover" title="Latest updates, announcements, and articles">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                                             <path d="M9.002 2.5a.75.75 0 0 1 .691.464l6.302 15.305 2.56-6.301a.75.75 0 0 1 .695-.468h4a.75.75 0 0 1 0 1.5h-3.495l-3.06 7.532a.75.75 0 0 1-1.389.004L8.997 5.21l-3.054 7.329A.75.75 0 0 1 5.25 13H.75a.75.75 0 0 1 0-1.5h4l3.558-8.538a.75.75 0 0 1 .694-.462Z"/>
@@ -213,7 +217,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 opacity-60" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                     </span>
                                     <span class="absolute bottom-full md:bottom-auto md:top-full" style="left: var(--header-links-dropdown-offset, 0rem); width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem)); height: var(--header-links-dropdown-gap, 0.5rem);"></span>
-                                    <div class="absolute bottom-full md:bottom-auto md:top-full z-50 min-w-[180px] w-max opacity-0 invisible -translate-y-1 md:translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0 group-hover/nav:opacity-100 group-focus-within/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:visible pointer-events-none group-hover/nav:pointer-events-auto group-focus-within/nav:pointer-events-auto transition-all duration-150 ease-out" style="left: var(--header-links-dropdown-offset, 0rem); margin-bottom: var(--header-links-dropdown-gap, 0.5rem); margin-top: var(--header-links-dropdown-gap, 0.5rem); max-width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem));">
+                                    <div class="absolute bottom-full md:bottom-auto md:top-full z-50 min-w-[180px] w-max opacity-0 invisible -translate-y-1 md:translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0 group-hover/nav:opacity-100 group-focus-within/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:visible pointer-events-none group-hover/nav:pointer-events-auto group-focus-within/nav:pointer-events-auto transition-all duration-150 ease-out" data-retype-header-link-menu style="left: var(--header-links-dropdown-offset, 0rem); margin-bottom: var(--header-links-dropdown-gap, 0.5rem); margin-top: var(--header-links-dropdown-gap, 0.5rem); max-width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem));">
                                         <ul class="flex flex-col rounded-lg border border-base-border bg-base-bg shadow-lg overflow-hidden w-full">
                                             <li>
                                                 <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/blog/" title="Visit the Retype Blog">
@@ -299,7 +303,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -329,6 +333,8 @@
                         </li>
                     </ol>
                 </nav>
+
+                <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
@@ -380,7 +386,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <h2 id="new-icons">New icons</h2>
 <p>The following <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
     <span>NEW</span>
-</span> icons are included in Retype <strong>v4.4.0</strong>:</p>
+</span> icons are included in Retype <strong>v4.5.0-preview</strong>:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -560,7 +566,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 </table>
 </div>
 <h2 id="all-icons">All icons</h2>
-<p>As of v4.4.0, there are 371 <a href="https://primer.github.io/octicons/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> supported and more being added with each new release.</p>
+<p>As of v4.5.0-preview, there are 371 <a href="https://primer.github.io/octicons/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> supported and more being added with each new release.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1607,7 +1613,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <td><code translate="no" v-pre>:icon-logo-gist:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16.442 19.707V8.714h3.204v10.993h-3.204Zm9.469 0c-2.129 0-2.96-.881-2.96-2.739v-5.672h-2.028V8.714h2.028V6.523l3.203-.723v2.914h2.372v2.582h-2.372v4.988c0 .606.284.841.912.841h1.46v2.582h-2.615Zm22.18.195c-2.494 0-3.852-1.33-3.852-3.755V8.714h3.223v6.611c0 1.35.629 2.093 1.825 2.093 1.379 0 2.433-1.232 2.433-2.914v-5.79h3.223v10.993H51.72v-1.859c-.609 1.194-2.068 2.054-3.629 2.054Zm15.266 0c-1.662 0-3.081-.86-3.649-2.093v1.898h-3.203V4.372h3.223v6.357c.548-1.33 2.027-2.269 3.629-2.269 3.001 0 4.643 2.073 4.643 5.731 0 3.618-1.703 5.711-4.643 5.711Zm-1.135-2.601c1.561 0 2.473-1.193 2.473-3.11 0-1.937-.912-3.13-2.473-3.13-1.44 0-2.494 1.252-2.494 2.973v.176c0 1.78 1.054 3.091 2.494 3.091ZM39.312 4.372v6.22H33.27v-6.22h-3.447v15.335h3.447v-6.142h6.042v6.142h3.446V4.372h-3.446ZM7.664 20C2.96 20 0 16.89 0 12.02c0-4.871 3.021-7.942 7.806-7.942 3.892 0 6.244 1.604 6.994 4.303l-3.487.802c-.426-1.467-1.642-2.269-3.507-2.269-2.778 0-4.278 1.761-4.278 5.106 0 3.344 1.459 5.144 4.197 5.144 2.514 0 4.014-1.487 4.014-4.01v-.587l.892 1.193h-5.19v-2.816h7.785v1.78c0 4.674-2.818 7.276-7.562 7.276Zm10.38-12.323c1.075 0 1.906-.802 1.906-1.838C19.95 4.802 19.119 4 18.044 4c-1.074 0-1.906.802-1.906 1.839 0 1.036.832 1.838 1.906 1.838Z"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.472 3.088c4.225 0 6.777 1.805 7.592 4.841l-3.785.902c-.462-1.65-1.783-2.552-3.807-2.552-3.015 0-4.643 1.98-4.643 5.743s1.584 5.787 4.555 5.787c2.502 0 4.079-1.406 4.323-3.829H8.076v-3.168h8.45v2.002c0 5.26-3.059 8.186-8.208 8.186C3.213 21 0 17.501 0 12.022c0-5.48 3.279-8.934 8.472-8.934M51.62 15.741c0 1.518.682 2.355 1.98 2.355 1.496 0 2.64-1.387 2.64-3.28V8.304h3.5V20.67h-3.5v-2.09c-.66 1.342-2.244 2.31-3.938 2.31-2.707 0-4.181-1.496-4.181-4.225V8.303h3.499z"/><path fill-rule="evenodd" d="M65.063 10.57C65.775 9.073 67.38 8.017 69 8.017c3.375 0 5.157 2.333 5.04 6.448.118 4.07-1.73 6.425-5.04 6.425-1.686 0-3.226-.968-3.96-2.355v2.135h-3.477V3.418h3.499zm2.706.374c-1.444 0-2.588 1.408-2.707 3.345v.198c.119 2.002 1.263 3.476 2.707 3.476 1.813 0 2.803-1.342 2.685-3.498.118-2.179-.872-3.521-2.685-3.521"/><path d="M21.323 20.67h-3.477V8.303h3.477zm7.004-12.367h2.575v2.905h-2.575v5.611c0 .682.308.946.99.946h1.585v2.905h-2.839c-2.31 0-3.212-.99-3.212-3.08v-6.382H22.65V8.303h2.2V5.84l3.477-.814zm7.783-4.885v6.998h6.557V3.418h3.741V20.67h-3.74v-6.91H36.11v6.91h-3.74V3.418zM19.584 3c1.167 0 2.069.902 2.069 2.069a2.04 2.04 0 0 1-2.069 2.068 2.04 2.04 0 0 1-2.068-2.068c0-1.167.902-2.069 2.068-2.069"/></g></g></svg></td>
 <td>logo-github</td>
 <td><code translate="no" v-pre>:icon-logo-github:</code></td>
 </tr>
@@ -1622,7 +1628,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <td><code translate="no" v-pre>:icon-mail:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></g></g></svg></td>
 <td>mark-github</td>
 <td><code translate="no" v-pre>:icon-mark-github:</code></td>
 </tr>
@@ -2429,7 +2435,6 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 </tbody>
 </table>
 </div>
-<!-- RETYPE_BACKLINKS_PLACEHOLDER -->
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 
@@ -2530,7 +2535,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Octicons", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page" }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Octicons", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page", sanitizedMdPath: "../octicons.md" }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>

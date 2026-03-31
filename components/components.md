@@ -1,0 +1,22 @@
+# Components
+
+Retype Flavored [Markdown](/guides/markdown.md) (RFM) supports custom **Components**, including:
+
+| Text | Layout | Code |
+| --   | --     | --   |
+| [:icon-id-badge: Badge](badge.md) | [:icon-columns: Column](column.md) | [:icon-code-square: Code Block](code-block.md) |
+| [:+1: Emoji](emoji.md) | [:icon-container: Container](container.md) | [:icon-code: Code Snippet](code-snippet.md) |
+| [:icon-smiley: Icon](icon.md) | [:icon-rows: Panel](panel.md) | [:icon-diff-added: Math Formulas](math-formulas.md) |
+| [:icon-mark-github: Octicons](octicons.md) | [:icon-browser: Tab](tab.md) | [:mermaid: Mermaid](mermaid.md) |
+| [:icon-code-review: Comments](comments.md) | [:icon-note: Card](card.md) | [:icon-paintbrush: Color Chip](color-chip.md) |
+
+| Lists | Media | Interactive |
+| --    | --    | --          |
+| [:icon-list-unordered: List](list.md) | [:icon-image: Image](image.md) | [:icon-play: Button](button.md)
+| [:icon-table: Table](table.md) | [:icon-download: File Download](file-download.md) | [:icon-info: Callout](callout.md)
+| [:icon-workflow: Steps](steps.md) | [:icon-video: YouTube](youtube.md) | [:icon-link: Reference Link](reference-link.md)
+|  | [:icon-code-review: Embed](embed.md) | [:icon-iterations: Backlinks](backlinks.md)
+|  |  | [:icon-history: Last Updated](last-updated.md)
+
+*[CSS]: Cascading Style Sheet
+*[HTML]: Hyper Text Markup Language

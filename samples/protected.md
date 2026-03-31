@@ -1,0 +1,14 @@
+# Protected page
+
+This page will be visible in the main navigation, but will require a password to view the page.
+
+The password is `test`.
+
+See [`visibility`](/configuration/page.md#visibility) documentation.
+
+## :icon-code: Source
+
+:::code source="protected.md" :::
+
+*[CSS]: Cascading Style Sheet
+*[HTML]: Hyper Text Markup Language
