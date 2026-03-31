@@ -8,7 +8,7 @@ backlinks:
 
 ![](/static/retype-hero.png)
 
-Write in plain Markdown `.md` files, preview locally, and publish a static site you fully own. No framework setup. Host it anywhere.
+Retype turns your Markdown `.md` files into a beautiful, fully-functional documentation website. Write in plain Markdown, run one command, and you have a production-ready site you can host anywhere.
 
 No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
@@ -18,7 +18,9 @@ The [retype.com](https://retype.com/) website was generated using Retype. View t
 
 ---
 
-## Features
+## Why Retype?
+
+Retype is designed to get out of your way so you can focus on writing. There’s no complex build pipeline, no framework to learn, and no dependencies to maintain.
 
 ### :icon-shield-check: It just works
 
@@ -48,51 +50,42 @@ If a change is detected, such as editing and saving an `.md` file, your Retype w
 
 Retype generates an HTML website that you can self-host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organization's network.
 
----
-
 {.callout}
 > “I don't want to write code to write docs, I just want to write docs.”
 
-{.callout}
-> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there.”
+## How it works
 
-A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
+>>> Install Retype
 
----
-
-## Quick start
-
-You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
-
-From your command line, navigate to a folder location where you have one or more Markdown `.md` files, such as a GitHub project.
-
-Next, choose one of the following tools to first install the `retypeapp` and then start Retype by using the `retype start` [command](/guides/cli.md#retype-start):
+You can install Retype using [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI.
 
 +++ NPM
 ```
 npm install retypeapp --global
-retype start
 ```
 +++ Yarn
 ```
 yarn global add retypeapp
-retype start
 ```
 +++ dotnet
 ```
 dotnet tool install retypeapp --global
-retype start
 ```
 +++
 
-That's it! Your new Retype website should be up and running.
+>>> Start your project
 
-!!!
-You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
+Navigate to any folder with Markdown files and run `retype start`.
 
-All operating systems are supported: including Mac, Windows, and Linux.
-!!!
+```
+retype start
+```
 
----
+Retype builds your site and opens it in the browser automatically.
+
+>>>
+
+{.callout}
+> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there.”
 
 {{ include "snippets/support" }}
