@@ -40,6 +40,7 @@ Property | Description
 `page.filePath` | The file system path to the source file
 `page.icon` | The page icon
 `page.label` | The navigation label
+`page.md` | The full URL of the generated sanitized Markdown file
 `page.lastUpdated` | The most recent update date
 `page.layout` | The page layout type
 `page.order` | The navigation order value
