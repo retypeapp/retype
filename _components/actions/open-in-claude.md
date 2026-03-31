@@ -1,0 +1,8 @@
+---
+data:
+  prompt: Read and summarize the content of this page on {{ project.meta.siteName }}. Then help answer follow-up questions about it.
+
+steps:
+  - with:
+      link: https://claude.ai/new?q={{ prompt | html.url_encode }}%0A%0A{{ page.url | html.url_encode }}
+---

@@ -63,7 +63,7 @@ output: .retype
 url: retype.com
 
 branding:
-  label: v4.4
+  label: v4.5-pre
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
@@ -82,6 +82,36 @@ generator:
 
 edit:
   repo: github.com/retypeapp/retype
+
+actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - text: Copy link
+      action: copy-page-link
+      icon: link
+    - type: separator
+    - text: View as Markdown
+      action: view-page-markdown
+      icon: markdown
+    - text: Print page
+      action: print-page
+      icon: brand-printer
+    - type: separator
+    - text: Open in ChatGPT
+      icon: brand-openai
+      action: open-in-chatgpt
+      target: blank
+    - text: Open in Claude
+      icon: brand-claude
+      action: open-in-claude
+      target: blank
+    - type: separator
+    - text: Edit on GitHub
+      icon: mark-github
+      action: edit-on-github
+      target: blank
 
 links:
   - text: What's New
@@ -123,9 +153,9 @@ links:
 
 data:
   version: "4.5.0-preview"
-  abbreviations:
-    HTML: Hyper Text Markup Language
-    CSS: Cascading Style Sheet
+  # abbreviations:
+  #   HTML: Hyper Text Markup Language
+  #   CSS: Cascading Style Sheet
 
 templating:
   loopLimit: 2000
