@@ -1,6 +1,6 @@
 # Changelog
 
-The latest release of Retype is `v4.5.0-preview`.
+The latest release of Retype is `v4.5.0-preview2`.
 
 You can find which version you have installed by running the command [`retype --version`](/guides/cli.md).
 
