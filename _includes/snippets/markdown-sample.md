@@ -23,5 +23,5 @@ Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples
 > "Cool! This is a quotation."
 
 !!!
-Need to draw attention to something? Use an alert.
+Need to draw attention to something? Use an Callout.
 !!!
