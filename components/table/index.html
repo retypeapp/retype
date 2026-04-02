@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview2.828418685825">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview2.828418713860">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.0-preview2">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.0-preview2.828418685825" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.0-preview2.828418713860" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview2.828418685825" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview2.828418713860" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.0-preview2" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview2.828418685825" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.0-preview2.828418685825" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview2.828418713860" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.0-preview2.828418713860" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.0-preview2.828418685825" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.0-preview2.828418713860" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -341,70 +341,405 @@
 <!-- Add content to _includes/top.md to include here -->
 <h1 id="table">Table</h1>
 <p>Tables are configured using a combination of <code translate="no" v-pre>|</code> pipe characters to separate columns and at least three <code translate="no" v-pre>---</code> dashes to separate the header row from the table body.</p>
-<p>The following sample demonstrates a basic table configuration:</p>
+<p>The following sample demonstrates a basic table configuration and the default style:</p>
 <div id="table-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Name   | Value
----    | ---
-Item 1 | Blue
-Item 2 | Green</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
 </doc-codeblock></div>
-<p>The above configuration creates the following table in the final generated website:</p>
+<p>The above configuration creates the following table:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>Name</th>
-<th>Value</th>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Item 1</td>
-<td>Blue</td>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
 </tr>
 <tr>
-<td>Item 2</td>
-<td>Green</td>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>The <code translate="no" v-pre>|</code> pipe character column separators are not required to vertically align. Extra whitespace within the column widths is ignored and the result will look the same.</p>
 <div id="table-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Name | Value
---- | ---
-Item 1 | Blue
-Item 2 | Green</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Project | Status | Owner
+--- | --- | ---
+Website Redesign | [!badge Review] | Operations
+Quarterly Forecast | [!badge Approved|success] | Finance
+Customer Onboarding | [!badge Draft|secondary] | Product</code></pre>
 </doc-codeblock></div>
-<hr>
+<h2 id="clean">Clean</h2>
+<p>Apply the <code translate="no" v-pre>clean</code> class to remove the table borders.</p>
+<div id="clean-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.clean}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable clean">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="striped">Striped</h2>
+<p>Apply the <code translate="no" v-pre>striped</code> class to alternate the background color of body rows.</p>
+<h3 id="default">Default</h3>
+<div id="default-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.striped}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable striped">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="clean-1">Clean</h3>
+<div id="clean-1-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.clean .striped}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable clean striped">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="compact">Compact</h2>
+<p>Apply the <code translate="no" v-pre>compact</code> class to reduce the cell padding and text size.</p>
+<h3 id="default-1">Default</h3>
+<div id="default-1-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.compact}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="clean-2">Clean</h3>
+<div id="clean-2-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.clean .compact}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="clean compact">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="striped--compact">Striped + Compact</h2>
+<p>The <code translate="no" v-pre>striped</code> and <code translate="no" v-pre>compact</code> classes can be combined in both default and <code translate="no" v-pre>clean</code> table styles.</p>
+<h3 id="default-2">Default</h3>
+<div id="default-2-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.striped .compact}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="striped compact">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="clean-3">Clean</h3>
+<div id="clean-3-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.clean .striped .compact}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="clean striped compact">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 id="alignment">Alignment</h2>
 <p>The alignment of text within a column can be configured by using the <code translate="no" v-pre>:</code> colon character within the header separator row.</p>
 <p>By default, text is left aligned. To center align text, use <code translate="no" v-pre>:---:</code> with colons at both ends of the header separator. To right align text, use <code translate="no" v-pre>---:</code> with a colon on the right end of the header separator.</p>
 <div id="alignment-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Name   | Value | Description
-:---   | :---: | ---:
-Item 1 | Blue  | This is `Item 1`.
-Item 2 | Green | This is `Item 2`.</code></pre>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Project              | Status                     | Owner
+:---                 | :---:                      | ---:
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
 </doc-codeblock></div>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Value</th>
-<th style="text-align: right;">Description</th>
+<th style="text-align: left;">Project</th>
+<th style="text-align: center;">Status</th>
+<th style="text-align: right;">Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Item 1</td>
-<td style="text-align: center;">Blue</td>
-<td style="text-align: right;">This is <code translate="no" v-pre>Item 1</code>.</td>
+<td style="text-align: left;">Website Redesign</td>
+<td style="text-align: center;"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td style="text-align: right;">Operations</td>
 </tr>
 <tr>
-<td style="text-align: left;">Item 2</td>
-<td style="text-align: center;">Green</td>
-<td style="text-align: right;">This is <code translate="no" v-pre>Item 2</code>.</td>
+<td style="text-align: left;">Quarterly Forecast</td>
+<td style="text-align: center;"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td style="text-align: right;">Finance</td>
+</tr>
+<tr>
+<td style="text-align: left;">Customer Onboarding</td>
+<td style="text-align: center;"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td style="text-align: right;">Product</td>
 </tr>
 </tbody>
 </table>
@@ -426,55 +761,59 @@ Item 2 | Green | This is `Item 2`.</code></pre>
         </div>
     </div>
 </div>
-<hr>
-<h2 id="compact">Compact</h2>
-<p>A table compact style is possible by applying the <code translate="no" v-pre>compact</code> class.</p>
-<p>The compact style reduces the cell padding and text size across the entire table.</p>
-<div id="compact-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.compact}
-Name   | Value
----    | ---
-Item 1 | Blue
-Item 2 | Green</code></pre>
+<h2 id="equal">Equal</h2>
+<p>Apply the <code translate="no" v-pre>equal</code> class to distribute the table width evenly across columns.</p>
+<div id="equal-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.equal}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
 </doc-codeblock></div>
 <div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
+<table class="comfortable equal">
 <thead>
 <tr>
-<th>Name</th>
-<th>Value</th>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Item 1</td>
-<td>Blue</td>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
 </tr>
 <tr>
-<td>Item 2</td>
-<td>Green</td>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The <code translate="no" v-pre>compact</code> class can also be applied to the table using the following technique:</p>
-<div id="compact-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Name   | Value {.compact}
----    | ---
-Item 1 | Blue
-Item 2 | Green</code></pre>
-</doc-codeblock></div>
-<p class="compact">Name   | Value ---    | ---
-Item 1 | Blue
-Item 2 | Green</p>
 <h2 id="nowrap">Nowrap</h2>
 <p>The <code translate="no" v-pre>whitespace-nowrap</code> class prevents text within table cells from wrapping to the next line, keeping all content on a single line. This is useful for maintaining the layout of content that should stay on one line, such as code snippets or long strings.</p>
 <div id="nowrap-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.whitespace-nowrap}
-Name | Long Message | Description
---- | --- | ---
+Name   | Long Message                                                    | Description
+---    | ---                                                             | ---
 Item 1 | This is an extra long message that should not wrap in the table | This is a description
-Item 2 | Another long content item | Another description</code></pre>
+Item 2 | Another long content item                                       | Another description
+Item 3 | A third example with similarly long content on one line         | A final description</code></pre>
 </doc-codeblock></div>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable whitespace-nowrap">
@@ -496,16 +835,22 @@ Item 2 | Another long content item | Another description</code></pre>
 <td>Another long content item</td>
 <td>Another description</td>
 </tr>
+<tr>
+<td>Item 3</td>
+<td>A third example with similarly long content on one line</td>
+<td>A final description</td>
+</tr>
 </tbody>
 </table>
 </div>
 <p>You can also apply multiple custom CSS classes to combine formatting options:</p>
 <div id="nowrap-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.whitespace-nowrap .compact}
-Name | Long Message | Description
---- | --- | ---
+Name   | Long Message                                                    | Description
+---    | ---                                                             | ---
 Item 1 | This is an extra long message that should not wrap in the table | This is a description
-Item 2 | Another long content item | Another description</code></pre>
+Item 2 | Another long content item                                       | Another description
+Item 3 | A third example with similarly long content on one line         | A final description</code></pre>
 </doc-codeblock></div>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="whitespace-nowrap compact">
@@ -527,6 +872,11 @@ Item 2 | Another long content item | Another description</code></pre>
 <td>Another long content item</td>
 <td>Another description</td>
 </tr>
+<tr>
+<td>Item 3</td>
+<td>A third example with similarly long content on one line</td>
+<td>A final description</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -543,8 +893,8 @@ Item 2 | Another long content item | Another description</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2025-06-08T19:24:01" title="2025-06-08" data-absolute-label="Last updated on 2025-06-08" data-absolute-label-html="Last updated on 2025-06-08" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2025-06-08
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-01T22:18:11" title="2026-04-01" data-absolute-label="Last updated on 2026-04-01" data-absolute-label-html="Last updated on 2026-04-01" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-04-01
                     </time>
                 </div>
 
@@ -720,12 +1070,12 @@ Item 2 | Another long content item | Another description</code></pre>
     "mode": null
   },
   "backlinks": {},
-  "lastUpdated": "2025-06-08T19:24:01.0000000",
+  "lastUpdated": "2026-04-01T22:18:11.0000000",
   "md": "https://retype.com/components/table.md",
   "filePath": "/components/table.md",
   "path": "/components/table/",
   "url": "https://retype.com/components/table/",
-  "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration: The above configuration creates the following table in the final generated website:",
+  "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration and the default style: The above configuration creates the following table:",
   "key": "table"
 },"project":{
   "meta": {
@@ -5881,12 +6231,12 @@ Item 2 | Another long content item | Another description</code></pre>
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2025-06-08T19:24:01.0000000",
+      "lastUpdated": "2026-04-01T22:18:11.0000000",
       "md": "https://retype.com/components/table.md",
       "filePath": "/components/table.md",
       "path": "/components/table/",
       "url": "https://retype.com/components/table/",
-      "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration: The above configuration creates the following table in the final generated website:",
+      "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration and the default style: The above configuration creates the following table:",
       "key": "table"
     },
     {
@@ -10808,12 +11158,12 @@ Item 2 | Another long content item | Another description</code></pre>
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2025-06-08T19:24:01.0000000",
+          "lastUpdated": "2026-04-01T22:18:11.0000000",
           "md": "https://retype.com/components/table.md",
           "filePath": "/components/table.md",
           "path": "/components/table/",
           "url": "https://retype.com/components/table/",
-          "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration: The above configuration creates the following table in the final generated website:",
+          "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration and the default style: The above configuration creates the following table:",
           "key": "table"
         },
         {
@@ -16466,12 +16816,12 @@ Item 2 | Another long content item | Another description</code></pre>
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2025-06-08T19:24:01.0000000",
+              "lastUpdated": "2026-04-01T22:18:11.0000000",
               "md": "https://retype.com/components/table.md",
               "filePath": "/components/table.md",
               "path": "/components/table/",
               "url": "https://retype.com/components/table/",
-              "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration: The above configuration creates the following table in the final generated website:",
+              "excerpt": "Tables are configured using a combination of <code translate=\"no\" v-pre>|</code> pipe characters to separate columns and at least three <code translate=\"no\" v-pre>---</code> dashes to separate the header row from the table body. The following sample demonstrates a basic table configuration and the default style: The above configuration creates the following table:",
               "key": "table"
             },
             "children": []
