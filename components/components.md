@@ -7,6 +7,7 @@ backlinks:
 
 Retype Flavored [Markdown](/guides/markdown.md) (RFM) supports custom **Components**, including:
 
+{.equal}
 | Text | Layout | Code |
 | --   | --     | --   |
 | [:icon-id-badge: Badge](badge.md) | [:icon-columns: Column](column.md) | [:icon-code-square: Code Block](code-block.md) |
@@ -15,6 +16,7 @@ Retype Flavored [Markdown](/guides/markdown.md) (RFM) supports custom **Componen
 | [:icon-mark-github: Octicons](octicons.md) | [:icon-browser: Tab](tab.md) | [:mermaid: Mermaid](mermaid.md) |
 | [:icon-code-review: Comments](comments.md) | [:icon-note: Card](card.md) | [:icon-paintbrush: Color Chip](color-chip.md) |
 
+{.equal}
 | Lists | Media | Interactive |
 | --    | --    | --          |
 | [:icon-list-unordered: List](list.md) | [:icon-image: Image](image.md) | [:icon-play: Button](button.md)
