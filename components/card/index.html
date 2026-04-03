@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview3.828554326136">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview3.828575855738">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.0-preview3">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.0-preview3.828554326136" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.0-preview3.828575855738" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview3.828554326136" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview3.828575855738" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.0-preview3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview3.828554326136" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.0-preview3.828554326136" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview3.828575855738" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.0-preview3.828575855738" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.0-preview3.828554326136" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.0-preview3.828575855738" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -368,6 +368,8 @@
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card](path/to/page.md)
 [!card vert](path/to/page.md)
 [!card compact](path/to/page.md)
+[!card signal](path/to/page.md)
+[!card snap](path/to/page.md)
 [!card layout=&quot;compact&quot;](path/to/page.md)
 [!card title=&quot;Custom title&quot; text=&quot;Custom text&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
@@ -381,10 +383,10 @@
 </ul>
 <p>If you override only one field, the remaining fields still fall back to page metadata when available.</p>
 <p>The link target always comes from the destination in parentheses. There is no separate <code translate="no" v-pre>link</code> Card attribute.</p>
-<p>Use shorthand labels such as <code translate="no" v-pre>vert</code> only when no other Card properties are set. If you combine a layout with custom properties, set it with the <code translate="no" v-pre>layout</code> attribute, such as <code translate="no" v-pre>layout=&quot;vert&quot;</code>, <code translate="no" v-pre>layout=&quot;vertical&quot;</code>, or <code translate="no" v-pre>layout=&quot;compact&quot;</code>.</p>
+<p>Use shorthand labels such as <code translate="no" v-pre>vert</code> only when no other Card properties are set. If you combine a layout with custom properties, set it with the <code translate="no" v-pre>layout</code> attribute, such as <code translate="no" v-pre>layout=&quot;vert&quot;</code>, <code translate="no" v-pre>layout=&quot;vertical&quot;</code>, <code translate="no" v-pre>layout=&quot;compact&quot;</code>, <code translate="no" v-pre>layout=&quot;signal&quot;</code>, or <code translate="no" v-pre>layout=&quot;snap&quot;</code>.</p>
 <hr>
 <h2 id="layouts">Layouts</h2>
-<p>Cards support three layout modes: horizontal, vertical, and compact.</p>
+<p>Cards support five layout modes: horizontal, vertical, compact, signal, and snap.</p>
 <h3 id="horizontal-default">Horizontal (default)</h3>
 <p>The default layout shows the image beside the content and works well for a single prominent card.</p>
 <div id="horizontal-default-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -492,6 +494,214 @@
 </div>
 </p>
 <hr>
+<h3 id="signal">Signal</h3>
+<p>Use <code translate="no" v-pre>signal</code> for a compact navigation-style row. Signal auto-resolves <code translate="no" v-pre>title</code> and <code translate="no" v-pre>text</code> from local page metadata and renders a small icon beside the title.</p>
+<div id="signal-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;signal&quot; text=&quot;Install Retype in seconds using npm, yarn, or dotnet&quot;](/guides/installation.md)
+[!card layout=&quot;signal&quot; title=&quot;Quick Start&quot; text=&quot;Get your first Retype site running in minutes&quot;](/guides/getting-started.md)
+[!card layout=&quot;signal&quot; title=&quot;CLI Reference&quot; text=&quot;All commands, flags, and options for the Retype CLI&quot;](/guides/cli.md)
+[!card layout=&quot;signal&quot; icon=&quot;gear&quot; title=&quot;Configuration&quot; text=&quot;Customize your site with the retype.yml project file&quot;](/configuration/project.md)
+[!card layout=&quot;signal&quot; text=&quot;Enrich your content with tabs, callouts, cards, and more&quot;](/components/components.md)
+[!card layout=&quot;signal&quot; icon=&quot;server&quot; title=&quot;Hosting&quot; text=&quot;Deploy your site to GitHub Pages, Netlify, Cloudflare, and more&quot;](/hosting/github-pages.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-signal-group">
+<div class="card-signal-container">
+    <a href="/guides/installation/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Installation</div>
+            <p class="card-signal-description">Install Retype in seconds using npm, yarn, or dotnet</p>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/guides/getting-started/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Quick Start</div>
+            <p class="card-signal-description">Get your first Retype site running in minutes</p>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/guides/cli/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53Zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5h-5Z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">CLI Reference</div>
+            <p class="card-signal-description">All commands, flags, and options for the Retype CLI</p>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/configuration/project/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-1.5 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/><path d="M12 1c.266 0 .532.009.797.028.763.055 1.345.617 1.512 1.304l.352 1.45c.019.078.09.171.225.221.247.089.49.19.728.302.13.061.246.044.315.002l1.275-.776c.603-.368 1.411-.353 1.99.147.402.349.78.726 1.128 1.129.501.578.515 1.386.147 1.99l-.776 1.274c-.042.069-.058.185.002.315.112.238.213.481.303.728.048.135.142.205.22.225l1.45.352c.687.167 1.249.749 1.303 1.512.038.531.038 1.063 0 1.594-.054.763-.616 1.345-1.303 1.512l-1.45.352c-.078.019-.171.09-.221.225-.089.248-.19.491-.302.728-.061.13-.044.246-.002.315l.776 1.275c.368.603.353 1.411-.147 1.99-.349.402-.726.78-1.129 1.128-.578.501-1.386.515-1.99.147l-1.274-.776c-.069-.042-.185-.058-.314.002a8.606 8.606 0 0 1-.729.303c-.135.048-.205.142-.225.22l-.352 1.45c-.167.687-.749 1.249-1.512 1.303-.531.038-1.063.038-1.594 0-.763-.054-1.345-.616-1.512-1.303l-.352-1.45c-.019-.078-.09-.171-.225-.221a8.138 8.138 0 0 1-.728-.302c-.13-.061-.246-.044-.315-.002l-1.275.776c-.603.368-1.411.353-1.99-.147-.402-.349-.78-.726-1.128-1.129-.501-.578-.515-1.386-.147-1.99l.776-1.274c.042-.069.058-.185-.002-.314a8.606 8.606 0 0 1-.303-.729c-.048-.135-.142-.205-.22-.225l-1.45-.352c-.687-.167-1.249-.749-1.304-1.512a11.158 11.158 0 0 1 0-1.594c.055-.763.617-1.345 1.304-1.512l1.45-.352c.078-.019.171-.09.221-.225.089-.248.19-.491.302-.728.061-.13.044-.246.002-.315l-.776-1.275c-.368-.603-.353-1.411.147-1.99.349-.402.726-.78 1.129-1.128.578-.501 1.386-.515 1.99-.147l1.274.776c.069.042.185.058.315-.002.238-.112.481-.213.728-.303.135-.048.205-.142.225-.22l.352-1.45c.167-.687.749-1.249 1.512-1.304C11.466 1.01 11.732 1 12 1Zm-.69 1.525c-.055.004-.135.05-.161.161l-.353 1.45a1.832 1.832 0 0 1-1.172 1.277 7.147 7.147 0 0 0-.6.249 1.833 1.833 0 0 1-1.734-.074l-1.274-.776c-.098-.06-.186-.036-.228 0a9.774 9.774 0 0 0-.976.976c-.036.042-.06.131 0 .228l.776 1.274c.314.529.342 1.18.074 1.734a7.147 7.147 0 0 0-.249.6 1.831 1.831 0 0 1-1.278 1.173l-1.45.351c-.11.027-.156.107-.16.162a9.63 9.63 0 0 0 0 1.38c.004.055.05.135.161.161l1.45.353a1.832 1.832 0 0 1 1.277 1.172c.074.204.157.404.249.6.268.553.24 1.204-.074 1.733l-.776 1.275c-.06.098-.036.186 0 .228.301.348.628.675.976.976.042.036.131.06.228 0l1.274-.776a1.83 1.83 0 0 1 1.734-.075c.196.093.396.176.6.25a1.831 1.831 0 0 1 1.173 1.278l.351 1.45c.027.11.107.156.162.16a9.63 9.63 0 0 0 1.38 0c.055-.004.135-.05.161-.161l.353-1.45a1.834 1.834 0 0 1 1.172-1.278 6.82 6.82 0 0 0 .6-.248 1.831 1.831 0 0 1 1.733.074l1.275.776c.098.06.186.036.228 0 .348-.301.675-.628.976-.976.036-.042.06-.131 0-.228l-.776-1.275a1.834 1.834 0 0 1-.075-1.733c.093-.196.176-.396.25-.6a1.831 1.831 0 0 1 1.278-1.173l1.45-.351c.11-.027.156-.107.16-.162a9.63 9.63 0 0 0 0-1.38c-.004-.055-.05-.135-.161-.161l-1.45-.353c-.626-.152-1.08-.625-1.278-1.172a6.576 6.576 0 0 0-.248-.6 1.833 1.833 0 0 1 .074-1.734l.776-1.274c.06-.098.036-.186 0-.228a9.774 9.774 0 0 0-.976-.976c-.042-.036-.131-.06-.228 0l-1.275.776a1.831 1.831 0 0 1-1.733.074 6.88 6.88 0 0 0-.6-.249 1.835 1.835 0 0 1-1.173-1.278l-.351-1.45c-.027-.11-.107-.156-.162-.16a9.63 9.63 0 0 0-1.38 0Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Configuration</div>
+            <p class="card-signal-description">Customize your site with the retype.yml project file</p>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/components/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Components</div>
+            <p class="card-signal-description">Enrich your content with tabs, callouts, cards, and more</p>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/hosting/github-pages/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M10.75 6.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5ZM6 7.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 6 7.25Zm4 9a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1-.75-.75Zm-3.25-.75a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5Z"/><path d="M3.25 2h17.5c.966 0 1.75.784 1.75 1.75v7c0 .372-.116.716-.314 1 .198.284.314.628.314 1v7a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-7c0-.358.109-.707.314-1a1.741 1.741 0 0 1-.314-1v-7C1.5 2.784 2.284 2 3.25 2Zm0 10.5a.25.25 0 0 0-.25.25v7c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25v-7a.25.25 0 0 0-.25-.25Zm0-1.5h17.5a.25.25 0 0 0 .25-.25v-7a.25.25 0 0 0-.25-.25H3.25a.25.25 0 0 0-.25.25v7c0 .138.112.25.25.25Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Hosting</div>
+            <p class="card-signal-description">Deploy your site to GitHub Pages, Netlify, Cloudflare, and more</p>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<p>Signal also supports a <code translate="no" v-pre>kicker</code> to add a custom click-thru label:</p>
+<div id="signal-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;signal&quot; kicker=&quot;Install&quot;](/guides/installation.md)
+[!card layout=&quot;signal&quot; kicker=&quot;Release&quot;](/blog/2026-03-17-whats-new-in-retype-v430.md)
+[!card layout=&quot;signal&quot; title=&quot;Retype website&quot; text=&quot;Signal supports title, text, and kicker together.&quot; icon=&quot;rocket&quot; kicker=&quot;Visit&quot;](https://retype.com/)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-signal-group">
+<div class="card-signal-container">
+    <a href="/guides/installation/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Installation</div>
+            <p class="card-signal-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
+            <div class="card-signal-footer">
+                <span class="card-signal-kicker">Install</span>
+                <span class="card-signal-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-image" style="background-image:url('/blog/images/2026-03-17-whats-new-in-retype-v430.png');"></span>
+            </div>
+            <div class="card-signal-title">What's New in Retype v4.3</div>
+            <p class="card-signal-description">Retype v4.3 packs in notable new features and a solid round of enhancements. Header navigation now supports dropdown sub-menu support, backlinks gain</p>
+            <div class="card-signal-footer">
+                <span class="card-signal-kicker">Release</span>
+                <span class="card-signal-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="https://retype.com/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Retype website</div>
+            <p class="card-signal-description">Signal supports title, text, and kicker together.</p>
+            <div class="card-signal-footer">
+                <span class="card-signal-kicker">Visit</span>
+                <span class="card-signal-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<p>Signal supports <code translate="no" v-pre>title</code>, <code translate="no" v-pre>text</code>, <code translate="no" v-pre>kicker</code>, and <code translate="no" v-pre>icon</code> or <code translate="no" v-pre>image</code>.</p>
+<hr>
+<h3 id="snap">Snap</h3>
+<p>Use <code translate="no" v-pre>snap</code> for a tile-style card with a prominent icon or image above a short title. Snap is well suited for app pickers, integration lists, and icon-based navigation. Consecutive snap cards automatically form a responsive row.</p>
+<p>Only <code translate="no" v-pre>title</code> and <code translate="no" v-pre>icon</code> (or <code translate="no" v-pre>image</code>) are rendered. The <code translate="no" v-pre>text</code>, <code translate="no" v-pre>kicker</code>, and <code translate="no" v-pre>footer</code> properties are ignored.</p>
+<div id="snap-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;snap&quot; title=&quot;Notion&quot; icon=&quot;https://cdn.simpleicons.org/notion/111111&quot;](https://www.notion.so/)
+[!card layout=&quot;snap&quot; title=&quot;Evernote&quot; icon=&quot;https://cdn.simpleicons.org/evernote/00A82D&quot;](https://evernote.com/)
+[!card layout=&quot;snap&quot; title=&quot;Apple Notes&quot; icon=&quot;https://cdn.simpleicons.org/apple/111111&quot;](https://www.apple.com/macos/notes/)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-snap-group">
+<div class="card-snap-container">
+    <a href="https://www.notion.so/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><img src="https://cdn.simpleicons.org/notion/111111"></span>
+            <div class="card-snap-title">Notion</div>
+        </div>
+    </a>
+</div>
+<div class="card-snap-container">
+    <a href="https://evernote.com/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><img src="https://cdn.simpleicons.org/evernote/00A82D"></span>
+            <div class="card-snap-title">Evernote</div>
+        </div>
+    </a>
+</div>
+<div class="card-snap-container">
+    <a href="https://www.apple.com/macos/notes/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><img src="https://cdn.simpleicons.org/apple/111111"></span>
+            <div class="card-snap-title">Apple Notes</div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<p>For local pages, snap auto-resolves the icon from page metadata and falls back to the page image when no icon is set.</p>
+<div id="snap-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;snap&quot;](/guides/getting-started.md)
+[!card layout=&quot;snap&quot;](/blog/2026-03-17-whats-new-in-retype-v430.md)
+[!card layout=&quot;snap&quot; title=&quot;Remote snap card&quot; icon=&quot;home&quot;](https://retype.com/)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-snap-group">
+<div class="card-snap-container">
+    <a href="/guides/getting-started/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+            <div class="card-snap-title">Getting Started</div>
+        </div>
+    </a>
+</div>
+<div class="card-snap-container">
+    <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="group card-snap no-link">
+        <div class="card-snap-body">
+            <span class="card-snap-media card-snap-image" style="background-image:url('/blog/images/2026-03-17-whats-new-in-retype-v430.png');"></span>
+            <div class="card-snap-title">What's New in Retype v4.3</div>
+        </div>
+    </a>
+</div>
+<div class="card-snap-container">
+    <a href="https://retype.com/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+            <div class="card-snap-title">Remote snap card</div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
 <h2 id="property-overrides">Property overrides</h2>
 <p>You can override any combination of supported Card fields.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -507,7 +717,7 @@
 <tr>
 <td><code translate="no" v-pre>layout</code></td>
 <td>Sets the Card layout.</td>
-<td>Use <code translate="no" v-pre>vert</code>, <code translate="no" v-pre>vertical</code>, or <code translate="no" v-pre>compact</code>. The default is horizontal.</td>
+<td><code translate="no" v-pre>vert</code> / <code translate="no" v-pre>vertical</code>, <code translate="no" v-pre>compact</code>, <code translate="no" v-pre>signal</code>, <code translate="no" v-pre>snap</code>. Default is horizontal.</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>title</code></td>
@@ -517,27 +727,27 @@
 <tr>
 <td><code translate="no" v-pre>text</code></td>
 <td>Overrides the description or excerpt.</td>
-<td>Horizontal and vertical cards render formatted text. Compact cards render plain text.</td>
+<td>Horizontal and vertical render formatted text. Compact and signal render plain text. Snap ignores this property.</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>icon</code></td>
 <td>Overrides the icon.</td>
-<td>Compact cards render the icon.</td>
+<td>Compact, signal, and snap render the icon.</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>image</code></td>
 <td>Overrides the image.</td>
-<td>Used by horizontal and vertical cards. Compact cards ignore it.</td>
+<td>Used by horizontal, vertical, and snap. Signal and compact ignore it.</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>kicker</code></td>
 <td>Overrides the kicker above the title.</td>
-<td>Used by horizontal and vertical cards. Compact cards ignore it.</td>
+<td>Used by horizontal, vertical, and signal. Compact and snap ignore it.</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>footer</code></td>
 <td>Overrides the footer below the content.</td>
-<td>Used by horizontal and vertical cards. Compact cards ignore it.</td>
+<td>Used by horizontal and vertical. Compact, signal, and snap ignore it.</td>
 </tr>
 </tbody>
 </table>
@@ -639,7 +849,7 @@
 </p>
 <hr>
 <h3 id="icon">Icon</h3>
-<p>The <code translate="no" v-pre>icon</code> override is rendered by compact cards.</p>
+<p>The <code translate="no" v-pre>icon</code> override is rendered by compact, signal, and snap cards.</p>
 <div id="icon-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Retype website&quot; text=&quot;Visit retype.com&quot; icon=&quot;home&quot; layout=&quot;compact&quot;](https://retype.com/)
 [!card icon=&quot;:rocket:&quot; layout=&quot;compact&quot;](/guides/getting-started.md)</code></pre>
@@ -845,8 +1055,8 @@
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-26T15:54:20" title="2026-03-26" data-absolute-label="Last updated on 2026-03-26" data-absolute-label-html="Last updated on 2026-03-26" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-26
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-03T17:29:04" title="2026-04-03" data-absolute-label="Last updated on 2026-04-03" data-absolute-label-html="Last updated on 2026-04-03" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-04-03
                     </time>
                 </div>
 
@@ -1026,7 +1236,7 @@
     "page1": "{{ content.blog.posts[0].filePath }}",
     "page2": "{{ content.blog.posts[1].filePath }}"
   },
-  "lastUpdated": "2026-03-26T15:54:20.0000000",
+  "lastUpdated": "2026-04-03T17:29:04.0000000",
   "md": "https://retype.com/components/card.md",
   "filePath": "/components/card.md",
   "path": "/components/card/",
@@ -4807,7 +5017,7 @@
       "backlinks": {
         "enabled": false
       },
-      "lastUpdated": "2026-04-01T21:38:30.0000000",
+      "lastUpdated": "2026-04-03T17:57:08.0000000",
       "md": "https://retype.com/components/components.md",
       "filePath": "/components/components.md",
       "path": "/components/",
@@ -4850,7 +5060,7 @@
       },
       "nav": {
         "mode": null,
-        "badge": "NEW|info"
+        "badge": null
       },
       "toc": {
         "label": null,
@@ -4860,7 +5070,7 @@
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2026-03-26T15:54:20.0000000",
+      "lastUpdated": "2026-04-03T17:28:04.0000000",
       "md": "https://retype.com/components/backlinks.md",
       "filePath": "/components/backlinks.md",
       "path": "/components/backlinks/",
@@ -5076,7 +5286,7 @@
         "page1": "{{ content.blog.posts[0].filePath }}",
         "page2": "{{ content.blog.posts[1].filePath }}"
       },
-      "lastUpdated": "2026-03-26T15:54:20.0000000",
+      "lastUpdated": "2026-04-03T17:29:04.0000000",
       "md": "https://retype.com/components/card.md",
       "filePath": "/components/card.md",
       "path": "/components/card/",
@@ -5541,6 +5751,57 @@
       "redirect": null,
       "slug": null,
       "permalink": null,
+      "title": "Google Maps",
+      "label": null,
+      "sidebar_label": null,
+      "icon": "location",
+      "image": null,
+      "description": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted iframe snippet on its own line in Markdown.",
+      "hidden": null,
+      "expanded": null,
+      "breadcrumb": null,
+      "layout": null,
+      "target": null,
+      "order": null,
+      "tag": null,
+      "tags": null,
+      "category": null,
+      "categories": null,
+      "visibility": null,
+      "lastUpdatedBy": null,
+      "author": null,
+      "authors": null,
+      "templating": null,
+      "meta": {
+        "title": null,
+        "description": null
+      },
+      "nav": {
+        "mode": null,
+        "badge": "NEW|info"
+      },
+      "toc": {
+        "label": null,
+        "depth": null
+      },
+      "nextprev": {
+        "mode": null
+      },
+      "backlinks": {},
+      "lastUpdated": "2026-04-03T17:56:46.0000000",
+      "md": "https://retype.com/components/google-maps.md",
+      "filePath": "/components/google-maps.md",
+      "path": "/components/google-maps/",
+      "url": "https://retype.com/components/google-maps/",
+      "excerpt": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted <code translate=\"no\" v-pre>&lt;iframe&gt;</code> snippet on its own line in Markdown.",
+      "key": "google-maps"
+    },
+    {
+      "id": null,
+      "route": null,
+      "redirect": null,
+      "slug": null,
+      "permalink": null,
       "title": "Icon",
       "label": null,
       "sidebar_label": null,
@@ -5692,6 +5953,59 @@
       "url": "https://retype.com/components/image-alignment-demo/",
       "excerpt": "Please see image alignment docs for more details.",
       "key": "image-alignment-demo"
+    },
+    {
+      "id": null,
+      "route": null,
+      "redirect": null,
+      "slug": null,
+      "permalink": null,
+      "title": "Instagram",
+      "label": null,
+      "sidebar_label": null,
+      "icon": "brand-instagram",
+      "image": null,
+      "description": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+      "hidden": null,
+      "expanded": null,
+      "breadcrumb": null,
+      "layout": null,
+      "target": null,
+      "order": null,
+      "tag": null,
+      "tags": [
+        "component"
+      ],
+      "category": null,
+      "categories": null,
+      "visibility": null,
+      "lastUpdatedBy": null,
+      "author": null,
+      "authors": null,
+      "templating": null,
+      "meta": {
+        "title": null,
+        "description": null
+      },
+      "nav": {
+        "mode": null,
+        "badge": "NEW|info"
+      },
+      "toc": {
+        "label": null,
+        "depth": null
+      },
+      "nextprev": {
+        "mode": null
+      },
+      "backlinks": {},
+      "lastUpdated": "2026-04-03T17:28:24.0000000",
+      "md": "https://retype.com/components/instagram.md",
+      "filePath": "/components/instagram.md",
+      "path": "/components/instagram/",
+      "url": "https://retype.com/components/instagram/",
+      "excerpt": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+      "key": "instagram"
     },
     {
       "id": null,
@@ -7614,7 +7928,7 @@
       },
       "nav": {
         "mode": null,
-        "badge": "NEW|info"
+        "badge": null
       },
       "toc": {
         "label": null,
@@ -7624,7 +7938,7 @@
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2026-03-11T20:19:44.0000000",
+      "lastUpdated": "2026-04-03T17:28:04.0000000",
       "md": "https://retype.com/configuration/translations.md",
       "filePath": "/configuration/translations.md",
       "path": "/configuration/translations/",
@@ -8035,7 +8349,7 @@
       },
       "nav": {
         "mode": null,
-        "badge": "NEW|info"
+        "badge": null
       },
       "toc": {
         "label": null,
@@ -8045,7 +8359,7 @@
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2026-03-16T16:08:29.0000000",
+      "lastUpdated": "2026-04-03T17:28:04.0000000",
       "md": "https://retype.com/guides/themes.md",
       "filePath": "/guides/themes.md",
       "path": "/guides/themes/",
@@ -9882,7 +10196,7 @@
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -9892,7 +10206,7 @@
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-26T15:54:20.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/components/backlinks.md",
           "filePath": "/components/backlinks.md",
           "path": "/components/backlinks/",
@@ -10108,7 +10422,7 @@
             "page1": "{{ content.blog.posts[0].filePath }}",
             "page2": "{{ content.blog.posts[1].filePath }}"
           },
-          "lastUpdated": "2026-03-26T15:54:20.0000000",
+          "lastUpdated": "2026-04-03T17:29:04.0000000",
           "md": "https://retype.com/components/card.md",
           "filePath": "/components/card.md",
           "path": "/components/card/",
@@ -10653,6 +10967,59 @@
           "redirect": null,
           "slug": null,
           "permalink": null,
+          "title": "Instagram",
+          "label": null,
+          "sidebar_label": null,
+          "icon": "brand-instagram",
+          "image": null,
+          "description": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+          "hidden": null,
+          "expanded": null,
+          "breadcrumb": null,
+          "layout": null,
+          "target": null,
+          "order": null,
+          "tag": null,
+          "tags": [
+            "component"
+          ],
+          "category": null,
+          "categories": null,
+          "visibility": null,
+          "lastUpdatedBy": null,
+          "author": null,
+          "authors": null,
+          "templating": null,
+          "meta": {
+            "title": null,
+            "description": null
+          },
+          "nav": {
+            "mode": null,
+            "badge": "NEW|info"
+          },
+          "toc": {
+            "label": null,
+            "depth": null
+          },
+          "nextprev": {
+            "mode": null
+          },
+          "backlinks": {},
+          "lastUpdated": "2026-04-03T17:28:24.0000000",
+          "md": "https://retype.com/components/instagram.md",
+          "filePath": "/components/instagram.md",
+          "path": "/components/instagram/",
+          "url": "https://retype.com/components/instagram/",
+          "excerpt": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+          "key": "instagram"
+        },
+        {
+          "id": null,
+          "route": null,
+          "redirect": null,
+          "slug": null,
+          "permalink": null,
           "title": "Last Updated",
           "label": null,
           "sidebar_label": null,
@@ -11178,7 +11545,7 @@
           "key": "youtube"
         }
       ],
-      "count": 25
+      "count": 26
     },
     "icon": {
       "title": "icon",
@@ -11547,7 +11914,7 @@
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -11557,7 +11924,7 @@
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-11T20:19:44.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/configuration/translations.md",
           "filePath": "/configuration/translations.md",
           "path": "/configuration/translations/",
@@ -11725,7 +12092,7 @@
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -11735,7 +12102,7 @@
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-16T16:08:29.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/guides/themes.md",
           "filePath": "/guides/themes.md",
           "path": "/guides/themes/",
@@ -12106,7 +12473,7 @@
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -12116,7 +12483,7 @@
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-16T16:08:29.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/guides/themes.md",
           "filePath": "/guides/themes.md",
           "path": "/guides/themes/",
@@ -15258,7 +15625,7 @@
           "backlinks": {
             "enabled": false
           },
-          "lastUpdated": "2026-04-01T21:38:30.0000000",
+          "lastUpdated": "2026-04-03T17:57:08.0000000",
           "md": "https://retype.com/components/components.md",
           "filePath": "/components/components.md",
           "path": "/components/",
@@ -15305,7 +15672,7 @@
               },
               "nav": {
                 "mode": null,
-                "badge": "NEW|info"
+                "badge": null
               },
               "toc": {
                 "label": null,
@@ -15315,7 +15682,7 @@
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2026-03-26T15:54:20.0000000",
+              "lastUpdated": "2026-04-03T17:28:04.0000000",
               "md": "https://retype.com/components/backlinks.md",
               "filePath": "/components/backlinks.md",
               "path": "/components/backlinks/",
@@ -15551,7 +15918,7 @@
                 "page1": "{{ content.blog.posts[0].filePath }}",
                 "page2": "{{ content.blog.posts[1].filePath }}"
               },
-              "lastUpdated": "2026-03-26T15:54:20.0000000",
+              "lastUpdated": "2026-04-03T17:29:04.0000000",
               "md": "https://retype.com/components/card.md",
               "filePath": "/components/card.md",
               "path": "/components/card/",
@@ -16058,6 +16425,62 @@
             "children": []
           },
           {
+            "label": "Google Maps",
+            "url": "/components/google-maps/",
+            "page": {
+              "id": null,
+              "route": null,
+              "redirect": null,
+              "slug": null,
+              "permalink": null,
+              "title": "Google Maps",
+              "label": null,
+              "sidebar_label": null,
+              "icon": "location",
+              "image": null,
+              "description": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted iframe snippet on its own line in Markdown.",
+              "hidden": null,
+              "expanded": null,
+              "breadcrumb": null,
+              "layout": null,
+              "target": null,
+              "order": null,
+              "tag": null,
+              "tags": null,
+              "category": null,
+              "categories": null,
+              "visibility": null,
+              "lastUpdatedBy": null,
+              "author": null,
+              "authors": null,
+              "templating": null,
+              "meta": {
+                "title": null,
+                "description": null
+              },
+              "nav": {
+                "mode": null,
+                "badge": "NEW|info"
+              },
+              "toc": {
+                "label": null,
+                "depth": null
+              },
+              "nextprev": {
+                "mode": null
+              },
+              "backlinks": {},
+              "lastUpdated": "2026-04-03T17:56:46.0000000",
+              "md": "https://retype.com/components/google-maps.md",
+              "filePath": "/components/google-maps.md",
+              "path": "/components/google-maps/",
+              "url": "https://retype.com/components/google-maps/",
+              "excerpt": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted <code translate=\"no\" v-pre>&lt;iframe&gt;</code> snippet on its own line in Markdown.",
+              "key": "google-maps"
+            },
+            "children": []
+          },
+          {
             "label": "Icon",
             "url": "/components/icon/",
             "page": {
@@ -16227,6 +16650,64 @@
               "url": "https://retype.com/components/image-alignment-demo/",
               "excerpt": "Please see image alignment docs for more details.",
               "key": "image-alignment-demo"
+            },
+            "children": []
+          },
+          {
+            "label": "Instagram",
+            "url": "/components/instagram/",
+            "page": {
+              "id": null,
+              "route": null,
+              "redirect": null,
+              "slug": null,
+              "permalink": null,
+              "title": "Instagram",
+              "label": null,
+              "sidebar_label": null,
+              "icon": "brand-instagram",
+              "image": null,
+              "description": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+              "hidden": null,
+              "expanded": null,
+              "breadcrumb": null,
+              "layout": null,
+              "target": null,
+              "order": null,
+              "tag": null,
+              "tags": [
+                "component"
+              ],
+              "category": null,
+              "categories": null,
+              "visibility": null,
+              "lastUpdatedBy": null,
+              "author": null,
+              "authors": null,
+              "templating": null,
+              "meta": {
+                "title": null,
+                "description": null
+              },
+              "nav": {
+                "mode": null,
+                "badge": "NEW|info"
+              },
+              "toc": {
+                "label": null,
+                "depth": null
+              },
+              "nextprev": {
+                "mode": null
+              },
+              "backlinks": {},
+              "lastUpdated": "2026-04-03T17:28:24.0000000",
+              "md": "https://retype.com/components/instagram.md",
+              "filePath": "/components/instagram.md",
+              "path": "/components/instagram/",
+              "url": "https://retype.com/components/instagram/",
+              "excerpt": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+              "key": "instagram"
             },
             "children": []
           },
@@ -18355,7 +18836,7 @@
               },
               "nav": {
                 "mode": null,
-                "badge": "NEW|info"
+                "badge": null
               },
               "toc": {
                 "label": null,
@@ -18365,7 +18846,7 @@
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2026-03-11T20:19:44.0000000",
+              "lastUpdated": "2026-04-03T17:28:04.0000000",
               "md": "https://retype.com/configuration/translations.md",
               "filePath": "/configuration/translations.md",
               "path": "/configuration/translations/",
@@ -18823,7 +19304,7 @@
               },
               "nav": {
                 "mode": null,
-                "badge": "NEW|info"
+                "badge": null
               },
               "toc": {
                 "label": null,
@@ -18833,7 +19314,7 @@
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2026-03-16T16:08:29.0000000",
+              "lastUpdated": "2026-04-03T17:28:04.0000000",
               "md": "https://retype.com/guides/themes.md",
               "filePath": "/guides/themes.md",
               "path": "/guides/themes/",

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview3.828554326136">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview3.828575855738">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.0-preview3">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.0-preview3.828554326136" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.0-preview3.828575855738" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview3.828554326136" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.0-preview3.828575855738" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.0-preview3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview3.828554326136" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.0-preview3.828554326136" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.0-preview3.828575855738" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.0-preview3.828575855738" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.0-preview3.828554326136" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.0-preview3.828575855738" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -544,7 +544,7 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 </a> | 2
 <a href="/tags/component/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>component</span>
-</a> | 25
+</a> | 26
 <a href="/tags/config/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>config</span>
 </a> | 6
@@ -742,7 +742,7 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li>Features (0 children)</li>
 <li>Pro (1 children)</li>
 <li>Templating (5 children)</li>
-<li>Components (28 children)</li>
+<li>Components (30 children)</li>
 <li>Samples (7 children)</li>
 <li>Blog (12 children)</li>
 <li>Configuration (7 children)</li>
@@ -4794,7 +4794,7 @@ templating: false
       "backlinks": {
         "enabled": false
       },
-      "lastUpdated": "2026-04-01T21:38:30.0000000",
+      "lastUpdated": "2026-04-03T17:57:08.0000000",
       "md": "https://retype.com/components/components.md",
       "filePath": "/components/components.md",
       "path": "/components/",
@@ -4837,7 +4837,7 @@ templating: false
       },
       "nav": {
         "mode": null,
-        "badge": "NEW|info"
+        "badge": null
       },
       "toc": {
         "label": null,
@@ -4847,7 +4847,7 @@ templating: false
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2026-03-26T15:54:20.0000000",
+      "lastUpdated": "2026-04-03T17:28:04.0000000",
       "md": "https://retype.com/components/backlinks.md",
       "filePath": "/components/backlinks.md",
       "path": "/components/backlinks/",
@@ -5063,7 +5063,7 @@ templating: false
         "page1": "{{ content.blog.posts[0].filePath }}",
         "page2": "{{ content.blog.posts[1].filePath }}"
       },
-      "lastUpdated": "2026-03-26T15:54:20.0000000",
+      "lastUpdated": "2026-04-03T17:29:04.0000000",
       "md": "https://retype.com/components/card.md",
       "filePath": "/components/card.md",
       "path": "/components/card/",
@@ -5528,6 +5528,57 @@ templating: false
       "redirect": null,
       "slug": null,
       "permalink": null,
+      "title": "Google Maps",
+      "label": null,
+      "sidebar_label": null,
+      "icon": "location",
+      "image": null,
+      "description": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted iframe snippet on its own line in Markdown.",
+      "hidden": null,
+      "expanded": null,
+      "breadcrumb": null,
+      "layout": null,
+      "target": null,
+      "order": null,
+      "tag": null,
+      "tags": null,
+      "category": null,
+      "categories": null,
+      "visibility": null,
+      "lastUpdatedBy": null,
+      "author": null,
+      "authors": null,
+      "templating": null,
+      "meta": {
+        "title": null,
+        "description": null
+      },
+      "nav": {
+        "mode": null,
+        "badge": "NEW|info"
+      },
+      "toc": {
+        "label": null,
+        "depth": null
+      },
+      "nextprev": {
+        "mode": null
+      },
+      "backlinks": {},
+      "lastUpdated": "2026-04-03T17:56:46.0000000",
+      "md": "https://retype.com/components/google-maps.md",
+      "filePath": "/components/google-maps.md",
+      "path": "/components/google-maps/",
+      "url": "https://retype.com/components/google-maps/",
+      "excerpt": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted <code translate=\"no\" v-pre>&lt;iframe&gt;</code> snippet on its own line in Markdown.",
+      "key": "google-maps"
+    },
+    {
+      "id": null,
+      "route": null,
+      "redirect": null,
+      "slug": null,
+      "permalink": null,
       "title": "Icon",
       "label": null,
       "sidebar_label": null,
@@ -5679,6 +5730,59 @@ templating: false
       "url": "https://retype.com/components/image-alignment-demo/",
       "excerpt": "Please see image alignment docs for more details.",
       "key": "image-alignment-demo"
+    },
+    {
+      "id": null,
+      "route": null,
+      "redirect": null,
+      "slug": null,
+      "permalink": null,
+      "title": "Instagram",
+      "label": null,
+      "sidebar_label": null,
+      "icon": "brand-instagram",
+      "image": null,
+      "description": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+      "hidden": null,
+      "expanded": null,
+      "breadcrumb": null,
+      "layout": null,
+      "target": null,
+      "order": null,
+      "tag": null,
+      "tags": [
+        "component"
+      ],
+      "category": null,
+      "categories": null,
+      "visibility": null,
+      "lastUpdatedBy": null,
+      "author": null,
+      "authors": null,
+      "templating": null,
+      "meta": {
+        "title": null,
+        "description": null
+      },
+      "nav": {
+        "mode": null,
+        "badge": "NEW|info"
+      },
+      "toc": {
+        "label": null,
+        "depth": null
+      },
+      "nextprev": {
+        "mode": null
+      },
+      "backlinks": {},
+      "lastUpdated": "2026-04-03T17:28:24.0000000",
+      "md": "https://retype.com/components/instagram.md",
+      "filePath": "/components/instagram.md",
+      "path": "/components/instagram/",
+      "url": "https://retype.com/components/instagram/",
+      "excerpt": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+      "key": "instagram"
     },
     {
       "id": null,
@@ -7601,7 +7705,7 @@ templating: false
       },
       "nav": {
         "mode": null,
-        "badge": "NEW|info"
+        "badge": null
       },
       "toc": {
         "label": null,
@@ -7611,7 +7715,7 @@ templating: false
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2026-03-11T20:19:44.0000000",
+      "lastUpdated": "2026-04-03T17:28:04.0000000",
       "md": "https://retype.com/configuration/translations.md",
       "filePath": "/configuration/translations.md",
       "path": "/configuration/translations/",
@@ -8022,7 +8126,7 @@ templating: false
       },
       "nav": {
         "mode": null,
-        "badge": "NEW|info"
+        "badge": null
       },
       "toc": {
         "label": null,
@@ -8032,7 +8136,7 @@ templating: false
         "mode": null
       },
       "backlinks": {},
-      "lastUpdated": "2026-03-16T16:08:29.0000000",
+      "lastUpdated": "2026-04-03T17:28:04.0000000",
       "md": "https://retype.com/guides/themes.md",
       "filePath": "/guides/themes.md",
       "path": "/guides/themes/",
@@ -9869,7 +9973,7 @@ templating: false
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -9879,7 +9983,7 @@ templating: false
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-26T15:54:20.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/components/backlinks.md",
           "filePath": "/components/backlinks.md",
           "path": "/components/backlinks/",
@@ -10095,7 +10199,7 @@ templating: false
             "page1": "{{ content.blog.posts[0].filePath }}",
             "page2": "{{ content.blog.posts[1].filePath }}"
           },
-          "lastUpdated": "2026-03-26T15:54:20.0000000",
+          "lastUpdated": "2026-04-03T17:29:04.0000000",
           "md": "https://retype.com/components/card.md",
           "filePath": "/components/card.md",
           "path": "/components/card/",
@@ -10640,6 +10744,59 @@ templating: false
           "redirect": null,
           "slug": null,
           "permalink": null,
+          "title": "Instagram",
+          "label": null,
+          "sidebar_label": null,
+          "icon": "brand-instagram",
+          "image": null,
+          "description": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+          "hidden": null,
+          "expanded": null,
+          "breadcrumb": null,
+          "layout": null,
+          "target": null,
+          "order": null,
+          "tag": null,
+          "tags": [
+            "component"
+          ],
+          "category": null,
+          "categories": null,
+          "visibility": null,
+          "lastUpdatedBy": null,
+          "author": null,
+          "authors": null,
+          "templating": null,
+          "meta": {
+            "title": null,
+            "description": null
+          },
+          "nav": {
+            "mode": null,
+            "badge": "NEW|info"
+          },
+          "toc": {
+            "label": null,
+            "depth": null
+          },
+          "nextprev": {
+            "mode": null
+          },
+          "backlinks": {},
+          "lastUpdated": "2026-04-03T17:28:24.0000000",
+          "md": "https://retype.com/components/instagram.md",
+          "filePath": "/components/instagram.md",
+          "path": "/components/instagram/",
+          "url": "https://retype.com/components/instagram/",
+          "excerpt": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+          "key": "instagram"
+        },
+        {
+          "id": null,
+          "route": null,
+          "redirect": null,
+          "slug": null,
+          "permalink": null,
           "title": "Last Updated",
           "label": null,
           "sidebar_label": null,
@@ -11165,7 +11322,7 @@ templating: false
           "key": "youtube"
         }
       ],
-      "count": 25
+      "count": 26
     },
     "icon": {
       "title": "icon",
@@ -11534,7 +11691,7 @@ templating: false
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -11544,7 +11701,7 @@ templating: false
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-11T20:19:44.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/configuration/translations.md",
           "filePath": "/configuration/translations.md",
           "path": "/configuration/translations/",
@@ -11712,7 +11869,7 @@ templating: false
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -11722,7 +11879,7 @@ templating: false
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-16T16:08:29.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/guides/themes.md",
           "filePath": "/guides/themes.md",
           "path": "/guides/themes/",
@@ -12093,7 +12250,7 @@ templating: false
           },
           "nav": {
             "mode": null,
-            "badge": "NEW|info"
+            "badge": null
           },
           "toc": {
             "label": null,
@@ -12103,7 +12260,7 @@ templating: false
             "mode": null
           },
           "backlinks": {},
-          "lastUpdated": "2026-03-16T16:08:29.0000000",
+          "lastUpdated": "2026-04-03T17:28:04.0000000",
           "md": "https://retype.com/guides/themes.md",
           "filePath": "/guides/themes.md",
           "path": "/guides/themes/",
@@ -15245,7 +15402,7 @@ templating: false
           "backlinks": {
             "enabled": false
           },
-          "lastUpdated": "2026-04-01T21:38:30.0000000",
+          "lastUpdated": "2026-04-03T17:57:08.0000000",
           "md": "https://retype.com/components/components.md",
           "filePath": "/components/components.md",
           "path": "/components/",
@@ -15292,7 +15449,7 @@ templating: false
               },
               "nav": {
                 "mode": null,
-                "badge": "NEW|info"
+                "badge": null
               },
               "toc": {
                 "label": null,
@@ -15302,7 +15459,7 @@ templating: false
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2026-03-26T15:54:20.0000000",
+              "lastUpdated": "2026-04-03T17:28:04.0000000",
               "md": "https://retype.com/components/backlinks.md",
               "filePath": "/components/backlinks.md",
               "path": "/components/backlinks/",
@@ -15538,7 +15695,7 @@ templating: false
                 "page1": "{{ content.blog.posts[0].filePath }}",
                 "page2": "{{ content.blog.posts[1].filePath }}"
               },
-              "lastUpdated": "2026-03-26T15:54:20.0000000",
+              "lastUpdated": "2026-04-03T17:29:04.0000000",
               "md": "https://retype.com/components/card.md",
               "filePath": "/components/card.md",
               "path": "/components/card/",
@@ -16045,6 +16202,62 @@ templating: false
             "children": []
           },
           {
+            "label": "Google Maps",
+            "url": "/components/google-maps/",
+            "page": {
+              "id": null,
+              "route": null,
+              "redirect": null,
+              "slug": null,
+              "permalink": null,
+              "title": "Google Maps",
+              "label": null,
+              "sidebar_label": null,
+              "icon": "location",
+              "image": null,
+              "description": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted iframe snippet on its own line in Markdown.",
+              "hidden": null,
+              "expanded": null,
+              "breadcrumb": null,
+              "layout": null,
+              "target": null,
+              "order": null,
+              "tag": null,
+              "tags": null,
+              "category": null,
+              "categories": null,
+              "visibility": null,
+              "lastUpdatedBy": null,
+              "author": null,
+              "authors": null,
+              "templating": null,
+              "meta": {
+                "title": null,
+                "description": null
+              },
+              "nav": {
+                "mode": null,
+                "badge": "NEW|info"
+              },
+              "toc": {
+                "label": null,
+                "depth": null
+              },
+              "nextprev": {
+                "mode": null
+              },
+              "backlinks": {},
+              "lastUpdated": "2026-04-03T17:56:46.0000000",
+              "md": "https://retype.com/components/google-maps.md",
+              "filePath": "/components/google-maps.md",
+              "path": "/components/google-maps/",
+              "url": "https://retype.com/components/google-maps/",
+              "excerpt": "Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted <code translate=\"no\" v-pre>&lt;iframe&gt;</code> snippet on its own line in Markdown.",
+              "key": "google-maps"
+            },
+            "children": []
+          },
+          {
             "label": "Icon",
             "url": "/components/icon/",
             "page": {
@@ -16214,6 +16427,64 @@ templating: false
               "url": "https://retype.com/components/image-alignment-demo/",
               "excerpt": "Please see image alignment docs for more details.",
               "key": "image-alignment-demo"
+            },
+            "children": []
+          },
+          {
+            "label": "Instagram",
+            "url": "/components/instagram/",
+            "page": {
+              "id": null,
+              "route": null,
+              "redirect": null,
+              "slug": null,
+              "permalink": null,
+              "title": "Instagram",
+              "label": null,
+              "sidebar_label": null,
+              "icon": "brand-instagram",
+              "image": null,
+              "description": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+              "hidden": null,
+              "expanded": null,
+              "breadcrumb": null,
+              "layout": null,
+              "target": null,
+              "order": null,
+              "tag": null,
+              "tags": [
+                "component"
+              ],
+              "category": null,
+              "categories": null,
+              "visibility": null,
+              "lastUpdatedBy": null,
+              "author": null,
+              "authors": null,
+              "templating": null,
+              "meta": {
+                "title": null,
+                "description": null
+              },
+              "nav": {
+                "mode": null,
+                "badge": "NEW|info"
+              },
+              "toc": {
+                "label": null,
+                "depth": null
+              },
+              "nextprev": {
+                "mode": null
+              },
+              "backlinks": {},
+              "lastUpdated": "2026-04-03T17:28:24.0000000",
+              "md": "https://retype.com/components/instagram.md",
+              "filePath": "/components/instagram.md",
+              "path": "/components/instagram/",
+              "url": "https://retype.com/components/instagram/",
+              "excerpt": "Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.",
+              "key": "instagram"
             },
             "children": []
           },
@@ -18342,7 +18613,7 @@ templating: false
               },
               "nav": {
                 "mode": null,
-                "badge": "NEW|info"
+                "badge": null
               },
               "toc": {
                 "label": null,
@@ -18352,7 +18623,7 @@ templating: false
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2026-03-11T20:19:44.0000000",
+              "lastUpdated": "2026-04-03T17:28:04.0000000",
               "md": "https://retype.com/configuration/translations.md",
               "filePath": "/configuration/translations.md",
               "path": "/configuration/translations/",
@@ -18810,7 +19081,7 @@ templating: false
               },
               "nav": {
                 "mode": null,
-                "badge": "NEW|info"
+                "badge": null
               },
               "toc": {
                 "label": null,
@@ -18820,7 +19091,7 @@ templating: false
                 "mode": null
               },
               "backlinks": {},
-              "lastUpdated": "2026-03-16T16:08:29.0000000",
+              "lastUpdated": "2026-04-03T17:28:04.0000000",
               "md": "https://retype.com/guides/themes.md",
               "filePath": "/guides/themes.md",
               "path": "/guides/themes/",
