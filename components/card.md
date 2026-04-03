@@ -27,6 +27,8 @@ Use the destination in parentheses for the link target. Add an optional layout s
 [!card](path/to/page.md)
 [!card vert](path/to/page.md)
 [!card compact](path/to/page.md)
+[!card signal](path/to/page.md)
+[!card snap](path/to/page.md)
 [!card layout="compact"](path/to/page.md)
 [!card title="Custom title" text="Custom text"](https://retype.com/)
 ```
@@ -43,13 +45,13 @@ If you override only one field, the remaining fields still fall back to page met
 
 The link target always comes from the destination in parentheses. There is no separate `link` Card attribute.
 
-Use shorthand labels such as `vert` only when no other Card properties are set. If you combine a layout with custom properties, set it with the `layout` attribute, such as `layout="vert"`, `layout="vertical"`, or `layout="compact"`.
+Use shorthand labels such as `vert` only when no other Card properties are set. If you combine a layout with custom properties, set it with the `layout` attribute, such as `layout="vert"`, `layout="vertical"`, `layout="compact"`, `layout="signal"`, or `layout="snap"`.
 
 ---
 
 ## Layouts
 
-Cards support three layout modes: horizontal, vertical, and compact.
+Cards support five layout modes: horizontal, vertical, compact, signal, and snap.
 
 ### Horizontal (default)
 
@@ -89,19 +91,85 @@ Use `compact` for a smaller card that flows inline with other compact cards. Com
 
 ---
 
+### Signal
+
+Use `signal` for a compact navigation-style row. Signal auto-resolves `title` and `text` from local page metadata and renders a small icon beside the title.
+
+```md
+[!card layout="signal" text="Install Retype in seconds using npm, yarn, or dotnet"](/guides/installation.md)
+[!card layout="signal" title="Quick Start" text="Get your first Retype site running in minutes"](/guides/getting-started.md)
+[!card layout="signal" title="CLI Reference" text="All commands, flags, and options for the Retype CLI"](/guides/cli.md)
+[!card layout="signal" icon="gear" title="Configuration" text="Customize your site with the retype.yml project file"](/configuration/project.md)
+[!card layout="signal" text="Enrich your content with tabs, callouts, cards, and more"](/components/components.md)
+[!card layout="signal" icon="server" title="Hosting" text="Deploy your site to GitHub Pages, Netlify, Cloudflare, and more"](/hosting/github-pages.md)
+```
+
+[!card layout="signal" text="Install Retype in seconds using npm, yarn, or dotnet"](/guides/installation.md)
+[!card layout="signal" title="Quick Start" text="Get your first Retype site running in minutes"](/guides/getting-started.md)
+[!card layout="signal" title="CLI Reference" text="All commands, flags, and options for the Retype CLI"](/guides/cli.md)
+[!card layout="signal" icon="gear" title="Configuration" text="Customize your site with the retype.yml project file"](/configuration/project.md)
+[!card layout="signal" text="Enrich your content with tabs, callouts, cards, and more"](/components/components.md)
+[!card layout="signal" icon="server" title="Hosting" text="Deploy your site to GitHub Pages, Netlify, Cloudflare, and more"](/hosting/github-pages.md)
+
+Signal also supports a `kicker` to add a custom click-thru label:
+
+```md
+[!card layout="signal" kicker="Install"](/guides/installation.md)
+[!card layout="signal" kicker="Release"](/blog/2026-03-17-whats-new-in-retype-v430.md)
+[!card layout="signal" title="Retype website" text="Signal supports title, text, and kicker together." icon="rocket" kicker="Visit"](https://retype.com/)
+```
+
+[!card layout="signal" kicker="Install"](/guides/installation.md)
+[!card layout="signal" kicker="Release"](/blog/2026-03-17-whats-new-in-retype-v430.md)
+[!card layout="signal" title="Retype website" text="Signal supports title, text, and kicker together." icon="rocket" kicker="Visit"](https://retype.com/)
+
+Signal supports `title`, `text`, `kicker`, and `icon` or `image`.
+
+---
+
+### Snap
+
+Use `snap` for a tile-style card with a prominent icon or image above a short title. Snap is well suited for app pickers, integration lists, and icon-based navigation. Consecutive snap cards automatically form a responsive row.
+
+Only `title` and `icon` (or `image`) are rendered. The `text`, `kicker`, and `footer` properties are ignored.
+
+```md
+[!card layout="snap" title="Notion" icon="https://cdn.simpleicons.org/notion/111111"](https://www.notion.so/)
+[!card layout="snap" title="Evernote" icon="https://cdn.simpleicons.org/evernote/00A82D"](https://evernote.com/)
+[!card layout="snap" title="Apple Notes" icon="https://cdn.simpleicons.org/apple/111111"](https://www.apple.com/macos/notes/)
+```
+
+[!card layout="snap" title="Notion" icon="https://cdn.simpleicons.org/notion/111111"](https://www.notion.so/)
+[!card layout="snap" title="Evernote" icon="https://cdn.simpleicons.org/evernote/00A82D"](https://evernote.com/)
+[!card layout="snap" title="Apple Notes" icon="https://cdn.simpleicons.org/apple/111111"](https://www.apple.com/macos/notes/)
+
+For local pages, snap auto-resolves the icon from page metadata and falls back to the page image when no icon is set.
+
+```md
+[!card layout="snap"](/guides/getting-started.md)
+[!card layout="snap"](/blog/2026-03-17-whats-new-in-retype-v430.md)
+[!card layout="snap" title="Remote snap card" icon="home"](https://retype.com/)
+```
+
+[!card layout="snap"](/guides/getting-started.md)
+[!card layout="snap"](/blog/2026-03-17-whats-new-in-retype-v430.md)
+[!card layout="snap" title="Remote snap card" icon="home"](https://retype.com/)
+
+---
+
 ## Property overrides
 
 You can override any combination of supported Card fields.
 
 | Property | Description | Notes |
 | --- | --- | --- |
-| `layout` | Sets the Card layout. | Use `vert`, `vertical`, or `compact`. The default is horizontal. |
+| `layout` | Sets the Card layout. | `vert` / `vertical`, `compact`, `signal`, `snap`. Default is horizontal. |
 | `title` | Overrides the title. | Works with all layouts. |
-| `text` | Overrides the description or excerpt. | Horizontal and vertical cards render formatted text. Compact cards render plain text. |
-| `icon` | Overrides the icon. | Compact cards render the icon. |
-| `image` | Overrides the image. | Used by horizontal and vertical cards. Compact cards ignore it. |
-| `kicker` | Overrides the kicker above the title. | Used by horizontal and vertical cards. Compact cards ignore it. |
-| `footer` | Overrides the footer below the content. | Used by horizontal and vertical cards. Compact cards ignore it. |
+| `text` | Overrides the description or excerpt. | Horizontal and vertical render formatted text. Compact and signal render plain text. Snap ignores this property. |
+| `icon` | Overrides the icon. | Compact, signal, and snap render the icon. |
+| `image` | Overrides the image. | Used by horizontal, vertical, and snap. Signal and compact ignore it. |
+| `kicker` | Overrides the kicker above the title. | Used by horizontal, vertical, and signal. Compact and snap ignore it. |
+| `footer` | Overrides the footer below the content. | Used by horizontal and vertical. Compact, signal, and snap ignore it. |
 
 See the layout examples above for `layout`. The following samples focus on the content properties.
 
@@ -137,7 +205,7 @@ These properties let you replace the metadata-style parts of a horizontal or ver
 
 ### Icon
 
-The `icon` override is rendered by compact cards.
+The `icon` override is rendered by compact, signal, and snap cards.
 
 ```md
 [!card title="Retype website" text="Visit retype.com" icon="home" layout="compact"](https://retype.com/)
