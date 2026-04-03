@@ -1,5 +1,5 @@
 ---
-icon: brand-map-pin
+icon: location
 nav:
   badge: NEW|info
 ---
