@@ -13,7 +13,7 @@ Below you’ll find all available emojis, their shortcodes, aliases, description
 
 Emoji count: **{{ emojis.size }}**
 
-{.compact}
+{.clean .striped}
 | Emoji | Shortcode | Description | Tags |
 | :---: | --- | --- | --- |
 {{~ for $i in emojis ~}}
