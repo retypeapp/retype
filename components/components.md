@@ -23,4 +23,5 @@ Retype Flavored [Markdown](/guides/markdown.md) (RFM) supports custom **Componen
 | [:icon-table: Table](table.md) | [:icon-download: File Download](file-download.md) | [:icon-info: Callout](callout.md)
 | [:icon-workflow: Steps](steps.md) | [:icon-video: YouTube](youtube.md) | [:icon-link: Reference Link](reference-link.md)
 |  | [:icon-code-review: Embed](embed.md) | [:icon-iterations: Backlinks](backlinks.md)
-|  |  | [:icon-history: Last Updated](last-updated.md)
+|  | [:icon-location: Google Maps](google-maps.md) | [:icon-history: Last Updated](last-updated.md)
+|  | [:icon-brand-instagram: Instagram](instagram.md) |
