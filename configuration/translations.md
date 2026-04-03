@@ -1,8 +1,6 @@
 ---
 icon: globe
 tags: [config]
-nav:
-  badge: NEW|info
 ---
 
 # Translations

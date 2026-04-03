@@ -1,8 +1,6 @@
 ---
 icon: iterations
 tags: [component]
-nav:
-  badge: NEW|info
 ---
 # Backlinks
 

@@ -1,7 +1,5 @@
 ---
 icon: paintbrush
-nav:
-  badge: NEW|info
 tags: [guide, pro]
 ---
 # Themes
