@@ -8,7 +8,7 @@ Below you’ll find all available emojis, their shortcodes, aliases, description
 
 Emoji count: **1741**
 
-{.compact}
+{.clean .striped}
 | Emoji | Shortcode | Description | Tags |
 | :---: | --- | --- | --- |
 | :grinning: | `:grinning:`  | GRINNING FACE | face, grin
