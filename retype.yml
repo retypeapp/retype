@@ -176,6 +176,6 @@ footer:
       icon: shield-check
       title: View the software license agreement
 
-lastUpdated:
-  date:
-    enabled: true
+integrations:
+  crisp: 
+    id: 9ec0e13c-1299-4c3f-a5e9-ff39363c6960
