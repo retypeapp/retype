@@ -1,0 +1,109 @@
+﻿# Retype
+
+> Retype turns your Markdown .md files into a beautiful, fully-functional website. Write in plain Markdown, run one command, and you have a production-ready site you can host anywhere.
+
+- [Build docs from Markdown](https://retype.com/readme.md): Build docs from Markdown
+- [Retype Pro](https://retype.com/pro/pro.md): Take your projects to the next level with Retype Pro and Enterprise.
+- [Community Keys](https://retype.com/community.md): With the community key, you can now setup your project to be hosted using GitHub Pages and unlock Retype Pro features.
+- [Components](https://retype.com/components/components.md): Retype Flavored Markdown (RFM) supports custom Components, including:
+- [Templating](https://retype.com/templating/index.md): Retype's templating engine lets you embed dynamic content directly in your Markdown pages. Think of it as "programmable content".
+- [About](https://retype.com/about.md): Retype is professionally built and supported by a small dedicated team of software engineers.
+- [Changelog](https://retype.com/changelog.md): The latest release of Retype is v4.5.0-preview5.
+- [Retype Software License Agreement](https://retype.com/license.md): THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN RETYPE, INC. ("We," "Us") AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE
+- [Feature Log](https://retype.com/feature-log.md): A running log of notable features added to Retype, including links to relevant docs and demos.
+- [Frequently Asked Questions](https://retype.com/faq.md): Yes, Retype is free to use with both open-source and commercial projects up to 100 pages per project.
+
+## Guides
+
+- [Getting Started](https://retype.com/guides/getting-started.md): This guide will have you up and running generating your own Retype website in just a few minutes.
+- [Installation](https://retype.com/guides/installation.md): Retype is a command line tool. Installation is super quick and you can be up and running within seconds.
+- [Blogging](https://retype.com/guides/blogging.md): Adding a blog to your Retype website is as quick as adding a new .md file to your project.
+- [GitHub Actions](https://retype.com/guides/github-actions.md): Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.
+- [Key setup](https://retype.com/guides/key-setup.md): There are 3 different ways you can add a key to your project:
+- [Markdown](https://retype.com/guides/markdown.md): Markdown .md pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
+- [Retype CLI](https://retype.com/guides/cli.md): The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start
+- [Themes](https://retype.com/guides/themes.md): Retype's theme system allows you to customize the visual appearance of your website by overriding theme variables. With themes, you can adjust colors, spacing, typography, and other design elements to match your brand or project preferences.
+- [Troubleshooting](https://retype.com/guides/troubleshooting.md): If you encounter issues while using Retype, this guide will help you identify and resolve common problems quickly. Follow the steps below to troubleshoot and get your project back on track.
+
+## Configuration
+
+- [Project configuration](https://retype.com/configuration/project.md): Retype will read the retype.yml file for additional instructions on how to configure and build your project.
+- [Page configuration](https://retype.com/configuration/page.md): Individual .md pages can be configured using the Frontmatter metadata section added to the top of the page.
+- [Folder configuration](https://retype.com/configuration/folder.md): Using the same .yml technique and options as Page configuration, a folder can be configured using a separate index.yml file placed inside the folder.
+- [Reserved words](https://retype.com/configuration/reserved_words.md): There are several folder and file names within a Retype project that incorporate special behaviour and are considered reserved words.
+- [Theme variables](https://retype.com/configuration/theme-variables.md): This reference documents all available customizable theme variables that can be added to your retype.yml file. Each variable can be overridden in both base (light mode) and dark (dark mode) configurations.
+- [Translations](https://retype.com/configuration/translations.md): Use labels and locale to customize Retype's built-in UI text, including search labels, table of contents labels, next and previous buttons, callout titles, and much more.
+- [Environment variables](https://retype.com/configuration/envvars.md): A Retype key can be configured as a secret Environment variable and the key is NOT stored in the wallet.
+
+## Components
+
+- [Backlinks](https://retype.com/components/backlinks.md): The Backlinks component displays a list of pages that link to the current page. By default, backlinks are automatically included at the end of each page, but you can manually place them anywhere in your content using the [!backlinks] markdown component syntax.
+- [Badge](https://retype.com/components/badge.md): Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a !badge identifier.
+- [Button](https://retype.com/components/button.md): Similar to a Badge, the Button component uses the same syntax as a hyperlink, but is prefixed with a !button identifier.
+- [Callout](https://retype.com/components/callout.md): Callout components help to highlight important messages for the reader.
+- [Card](https://retype.com/components/card.md): The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.
+- [Code Block](https://retype.com/components/code-block.md): Blocks of code or any preformatted text can be displayed by wrapping with triple backticks characters before and after.
+- [Code Snippet](https://retype.com/components/code-snippet.md): A code snippet allow you to include the content of another text file or a portion of that file into a code block on another page.
+- [Color Chip](https://retype.com/components/color-chip.md): Retype automatically detects hex color codes written in inline code and displays them with a visual color preview chip.
+- [Column](https://retype.com/components/column.md): The column component is used to create multiple equal width columns with a title for each column.
+- [Comments](https://retype.com/components/comments.md): Retype supports adding hidden comments to your Markdown files that are not rendered in the final generated HTML. Comments are useful for adding notes, reminders, or explanations that should only be visible in the source Markdown files.
+- [Container](https://retype.com/components/container.md): A Container component can be used to wrap any content in a div container.
+- [Embed](https://retype.com/components/embed.md): The embed component helps with content embedding.
+- [Emoji](https://retype.com/components/emoji.md): Retype uses Mojee to find emoji :shortcodes: within your document and replace with actual emoji characters. 👍
+- [File Download](https://retype.com/components/file-download.md): A static file download component can be configured by using the !file specifier in a link.
+- [Google Maps](https://retype.com/components/google-maps.md): Retype can automatically embed Google Maps by placing a standalone Maps embed URL or a pasted iframe snippet on its own line in Markdown.
+- [Icon](https://retype.com/components/icon.md): Retype supports icons using the :icon-shortcode: syntax.
+- [Image](https://retype.com/components/image.md): The image component embeds an image in your document. You can point to image files stored within the project, or an external URL.
+- [Instagram](https://retype.com/components/instagram.md): Retype can automatically embed Instagram posts and Reels by placing a standalone Instagram URL on its own line in Markdown.
+- [Last Updated](https://retype.com/components/last-updated.md): The "Last updated" label shows readers when a page was last refreshed.
+- [List](https://retype.com/components/list.md): Retype includes broad support for creating lists of items, including unordered, ordered, and description lists.
+- [Math Formulas](https://retype.com/components/math-formulas.md): Retype supports rendering math formulas written according to the LaTeX grammar. Internally, Retype is powered by \KaTeX and supports all syntax of the library.
+- [Mermaid](https://retype.com/components/mermaid.md): Mermaid is a diagramming and charting tool that can be defined inside Markdown code blocks.
+- [Octicons](https://retype.com/components/octicons.md): Octicons can be used with the Icon component and several other components, including the Badge and Button.
+- [Panel](https://retype.com/components/panel.md): A Panel is created by surrounding a block of content with === and including a title for the Panel.
+- [Reference Link](https://retype.com/components/reference-link.md): A special type of reference link can be configured by using the !ref specifier in a link.
+- [Steps](https://retype.com/components/steps.md): A Steps component is created by surrounding a block of content with and including a title for each step.
+- [Tab](https://retype.com/components/tab.md): With Retype, a Tab component is super simple to configure by surrounding a block of text with +++ and including a title for the tab.
+- [Table](https://retype.com/components/table.md): Tables are configured using a combination of | pipe characters to separate columns and at least three --- dashes to separate the header row from the table body.
+- [YouTube](https://retype.com/components/youtube.md): Retype makes it easy to embed YouTube videos in your documentation. Simply place a YouTube URL on its own line in your markdown file, and Retype will automatically convert it into a responsive embedded video player.
+
+## Hosting
+
+- [Cloudflare Pages](https://retype.com/hosting/cloudflare.md): Cloudflare is a popular website used to host your websites and protect them, It's used by millions of people also using Retype.
+- [Docker](https://retype.com/hosting/docker.md): Using a docker container has numerous advantages, including:
+- [Publish using FTP](https://retype.com/hosting/ftp.md): Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website to any FTP host.
+- [GitHub Pages](https://retype.com/hosting/github-pages.md): Hosting your Retype built website on GitHub Pages is free and simple to setup.
+- [GitLab Pages](https://retype.com/hosting/gitlab-pages.md): Add a simple CI/CD pipeline to the project to automate the building and deployment of the Retype powered website via Gitlab Pages.
+- [Netlify](https://retype.com/hosting/netlify.md): Netlify is a popular web hosting platform that allows you to deploy your website easily. In this tutorial, we will go through the steps to sign up, configure, and deploy a Retype built website on Netlify, using GitHub as our version control system.
+- [Web server](https://retype.com/hosting/web-server.md): Retype can be hosted on any web server that allows you to host static website files such as .html, .js, .css, and images. That pretty much includes 100% of the website hosting solutions available, including all shared hosting services.
+
+## Samples
+
+- [Basic project config](https://retype.com/samples/basic-project-config.md): The following is a basic retype.yml project configuration file.
+- [Advanced project config](https://retype.com/samples/advanced-project-config.md): Use this as a comprehensive project configuration reference to customize your retype.yml with advanced settings for branding, navigation, versioning, and more.
+- [Welcome!](https://retype.com/samples/basic-page.md): This is a basic page, with only a title and some text content.
+- [Page with header](https://retype.com/samples/page-with-header.md): This is a page with a top feature image as the header.
+
+## Templating
+
+- [Content](https://retype.com/templating/content.md): Use content to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and iterate over collections such as tags, categories, authors, blog posts, and navigation items.
+- [Functions and Filters](https://retype.com/templating/functions-filters.md): Retype's templating system is powered by Scriban and includes a comprehensive set of built-in functions and filters for transforming strings, working with arrays, formatting dates, performing math, processing HTML, and inspecting objects.
+- [Includes](https://retype.com/templating/includes.md): The include function pulls content from another file into your page. Write a block of content once and reuse it across as many pages as you like.
+- [Page properties](https://retype.com/templating/page-properties.md): Use page.* to access metadata from the current page's frontmatter. These properties let you dynamically reference page values without hardcoding them.
+- [Project properties](https://retype.com/templating/project-properties.md): Use project.* to access configuration values from your retype.yml file. This keeps your content in sync with project settings and avoids hardcoding values that might change.
+
+## Blog & News
+
+- [Blog & News](https://retype.com/blog/index.md)
+- [What's New in Retype v4.4](https://retype.com/blog/2026-03-23-whats-new-in-retype-v440.md): Retype v4.4 is another big release, including two new extensibility features that we have all wanted for a long time. The all new, custom icons deliver
+- [What's New in Retype v4.3](https://retype.com/blog/2026-03-17-whats-new-in-retype-v430.md): Retype v4.3 packs in notable new features and a solid round of enhancements. Header navigation now supports dropdown sub-menu support, backlinks gain fine-grained include and exclude controls, and date formatting is now fully configurable.
+- [What's New in Retype v4.2](https://retype.com/blog/2026-03-10-whats-new-in-retype-v420.md): Retype v4.2 adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing easier to fine tune.
+- [What's New in Retype v4.1](https://retype.com/blog/2026-03-02-whats-new-in-retype-v410.md): Retype v4.1 has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release.
+- [Self-hosting Obsidian Vault with Retype](https://retype.com/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md): If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation.
+- [What's New in Retype v4.0](https://retype.com/blog/2026-02-23-whats-new-in-retype-v400.md): Retype v4.0 is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies.
+- [What's New in Retype v3.12](https://retype.com/blog/2026-02-10-whats-new-in-retype-v312.md): Retype v3.12 brings powerful new features for content discovery, visual design, and theme customization. This release introduces the Backlinks component for Retype Pro, automatic dark mode image switching, color preview chips, enhanced page descriptions, and comprehensive theming improvements.
+- [What's New in Retype v3.11](https://retype.com/blog/2025-07-02-whats-new-in-retype-v311.md): Retype v3.11 puts you in control of your project's visual identity, while keeping everything fast, clean, and easy to use. This release brings Pro-level theme customization, smarter navigation, and faster syntax options to help you create documentation that feels more like your own.
+- [What's New in Retype v3.10](https://retype.com/blog/2025-06-09-whats-new-in-retype-v310.md): We're excited to share the latest release of Retype, packed with features that make documentation more flexible and powerful. This release focuses on improving content authoring, navigation control, and extending markdown capabilities.
+- [New GitHub Pages Community Key](https://retype.com/blog/2025-06-06-new-github-pages-community-key.md): All projects should have access to professional-grade documentation, no matter their budget. Starting today, the Retype Pro Community Key for GitHub Pages brings Retype’s full feature set to any project published on GitHub Pages, at no cost and with no strings attached.
+- [What's New in Retype v3.9](https://retype.com/blog/2025-05-28-whats-new-in-retype-v39.md): Retype v3.9 brings improvements to callout components, broader syntax features to support other systems, enhanced image handling, and better print functionality.
+- [What's New in Retype v3.8](https://retype.com/blog/2025-05-04-whats-new-in-retype-v38.md): Retype v3.8 introduces powerful new linking capabilities, enhanced search functionality, and improved content management features. This release focuses on making documentation more interconnected and discoverable while adding modern conveniences for content creators.
