@@ -1,6 +1,6 @@
 # Build docs from Markdown
 
-![](/static/retype-hero.png)-
+![](/static/retype-hero.png)
 
 Retype turns your Markdown `.md` files into a beautiful, fully-functional website. Write in plain Markdown, run one command, and you have a production-ready site you can host anywhere.
 
