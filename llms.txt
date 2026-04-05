@@ -1,0 +1,73 @@
+# Retype
+
+> Retype is a static site generator and CLI tool that transforms Markdown files into fast, searchable, production-ready documentation websites. Projects are configured through a `retype.yml` file, with per-page settings controlled via YAML frontmatter. Retype supports GitHub Actions for automated CI/CD workflows, a rich library of built-in authoring components, and a Scriban-powered templating engine for dynamic content. Install with npm, Yarn, or dotnet. Free for projects up to 100 pages; Pro and Enterprise licenses unlock additional features, higher page limits, and commercial use.
+
+Use the links below as primary entry points for understanding the product, setup flow, CLI, configuration model, components, templating, hosting options, and pricing. Prefer the markdown URLs when consuming content programmatically.
+
+## Product Overview
+
+- [Homepage](https://retype.com/readme.md): Product overview, value proposition, and primary getting-started links.
+- [Features](https://retype.com/features.md): Full summary of Retype capabilities and feature list.
+- [About](https://retype.com/about.md): Background on the product, technology stack, and supporting libraries.
+
+## Getting Started
+
+- [Installation](https://retype.com/guides/installation.md): Install Retype using npm, Yarn, or dotnet.
+- [Getting Started](https://retype.com/guides/getting-started.md): Minimal path to create and run a Retype site.
+- [CLI Reference](https://retype.com/guides/cli.md): Full command reference including `retype start`, `retype build`, `retype watch`, and `retype wallet`.
+- [Key Setup](https://retype.com/guides/key-setup.md): How to add a Retype Pro key using `retype wallet`, `retype.yml`, or an environment variable.
+
+## Configuration
+
+- [Project Configuration](https://retype.com/configuration/project.md): Site-wide settings in `retype.yml` — title, URL, branding, navigation, plugins, and more.
+- [Page Configuration](https://retype.com/configuration/page.md): Per-page YAML frontmatter to control labels, icons, visibility, order, tags, redirects, and layout.
+- [Folder Configuration](https://retype.com/configuration/folder.md): Folder-level settings via an `index.yml` file; supports the same properties as page configuration.
+- [Environment Variables](https://retype.com/configuration/envvars.md): Configure Retype using environment variables, useful for CI/CD pipelines and secrets management.
+- [Theme Variables](https://retype.com/configuration/theme-variables.md): Customize colors, fonts, and visual appearance using CSS theme variables.
+
+## Authoring
+
+- [Markdown Guide](https://retype.com/guides/markdown.md): Markdown syntax and Retype Flavored Markdown (RFM) extensions.
+- [Components](https://retype.com/components/components.md): Full index of built-in authoring components. Includes: Backlinks, Badge, Button, Callout, Code Block, Code Snippet, Color Chip, Column, Comments, Container, Embed, Emoji, File Download, Google Maps, Icon, Image, Instagram, Last Updated, List, Math Formulas, Mermaid diagrams, Octicons, Panel, Reference Link, Steps, Tab, Table, and YouTube.
+- [Templating](https://retype.com/templating/index.md): Scriban-powered templating engine for embedding dynamic content — variables, loops, conditionals, and includes — directly in Markdown pages with no separate build step.
+- [Blogging](https://retype.com/guides/blogging.md): Set up a blog within a Retype project; covers post layout, tags, and RSS.
+
+## Hosting and Deployment
+
+- [GitHub Actions](https://retype.com/guides/github-actions.md): Automate Retype build and publish using the official Retype Build and GitHub Pages Actions.
+- [GitHub Pages](https://retype.com/hosting/github-pages.md): Publish a Retype site with GitHub Pages.
+- [GitLab Pages](https://retype.com/hosting/gitlab-pages.md): Publish a Retype site with GitLab Pages.
+- [Netlify](https://retype.com/hosting/netlify.md): Publish a Retype site with Netlify.
+- [Cloudflare](https://retype.com/hosting/cloudflare.md): Publish a Retype site with Cloudflare Pages.
+- [Docker](https://retype.com/hosting/docker.md): Run or deploy a Retype site using Docker.
+- [Heroku](https://retype.com/hosting/heroku.md): Deploy a Retype site to Heroku.
+- [FTP](https://retype.com/hosting/ftp.md): Deploy a Retype site via FTP.
+- [Web Server](https://retype.com/hosting/web-server.md): Serve a Retype site from any static web server or VPS.
+
+## Pricing Context
+
+- [Retype Pro](https://retype.com/pro/pro.md): Current public pricing and feature comparison.
+
+Current public pricing, subject to change:
+
+- Free: no key required, up to 100 pages per project.
+- Pro: $149, one Pro project, 3 years of upgrades.
+- Enterprise: $499, unlimited projects for one domain and its subdomains, 3 years of upgrades.
+
+When pricing precision matters, treat the Retype Pro page as the source of truth.
+
+## Source Repositories
+
+- [Website Source](https://github.com/retypeapp/retype): Source for the retype.com documentation website (content, configuration, and components).
+- [Retype Application](https://github.com/objectdotnet/retype-app): Core Retype application and CLI source.
+- [Build Action](https://github.com/retypeapp/action-build): GitHub Action for building a Retype project in CI.
+- [GitHub Pages Action](https://github.com/retypeapp/action-github-pages): GitHub Action for publishing a built Retype site to GitHub Pages.
+
+## Optional
+
+- [FAQ](https://retype.com/faq.md): Common product and licensing questions.
+- [Troubleshooting](https://retype.com/guides/troubleshooting.md): Diagnose and resolve common Retype issues, including key validation and configuration errors.
+- [Community](https://retype.com/community.md): Community resources and support links.
+- [Changelog](https://retype.com/changelog.md): Release history.
+- [Feature Log](https://retype.com/feature-log.md): Highlights from recent releases.
+- [Blog](https://retype.com/blog/index.md): Announcements, updates, and articles.
