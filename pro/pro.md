@@ -164,7 +164,7 @@ If you do not renew for another term, your project stays on the last release ava
 Let's run through two scenarios based on purchasing Retype Pro today using the following details:
 
 - You purchase today
-- Current release is Retype `v4.5.0`
+- Current release is Retype `v4.5.2`
 - Key expires three years from today
 - On your key end date, let's say Retype `v5.5.0` is the current release
 

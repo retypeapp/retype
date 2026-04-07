@@ -110,7 +110,7 @@ When using NPM or Yarn, specifying the `@latest` tag will always install the lat
 
 Using the `@next` tag will install an upcoming `-preview` release, if available.
 
-In the following samples, replace `[version-or-tag]` with the actual version number or tag. For instance, to specifically install the version `4.5.0` release of Retype using NPM, run the command `npm install retypeapp@4.5.0 --global`.
+In the following samples, replace `[version-or-tag]` with the actual version number or tag. For instance, to specifically install the version `4.5.2` release of Retype using NPM, run the command `npm install retypeapp@4.5.2 --global`.
 
 +++ npm
 ```

@@ -1,6 +1,6 @@
 # Changelog
 
-The latest release of Retype is `v4.5.0`.
+The latest release of Retype is `v4.5.2`.
 
 You can find which version you have installed by running the command [`retype --version`](/guides/cli.md).
 
@@ -11,6 +11,23 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 !!!
 
 Please also check out the [Feature Log](/feature-log.md) for a summary of all new features in each release.
+
+---
+
+## v4.5.2
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-04-07](https://github.com/retypeapp/retype/releases/tag/v4.5.2)
+
+Getting info about the 'v4.5.2' milestone: 1 open milestones, failed.
+::error::No milestone matching version: 4.5.2
+- Looked for: v4.5.2)
+- List of available milestones:
+v4.6.0
+---
+
+Aborting execution.
 
 ---
 
