@@ -8,13 +8,11 @@ backlinks:
 
 ![](/static/retype-hero.png)
 
-Retype turns your Markdown `.md` files into a beautiful, fully-functional website. Write in plain Markdown, run one command, and you have a production-ready site ready to share with the world.
+Retype turns your Markdown files into a beautiful, production-ready website. No design work, no coding, no recurring fees, **and no vendor lock-in**. Write your content, run one command, and your site is ready to share.
 
-No coding required, no recurring hosting fees, and no vendor lock-in.
+Host for free on [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md), or deploy to any web server you choose. Your content lives in plain Markdown files that you own and control, with no proprietary formats and no surprises.
 
-Host your site for free on [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md) — or deploy to any web server you choose. Your content lives in plain Markdown files that you own and control, with no proprietary formats and no surprises.
-
-Start with just one Markdown file, such as a `README.md`.
+All you need is a single `.md` file.
 
 ## Get Started
 
