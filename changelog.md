@@ -17,34 +17,38 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
-## v4.5.0
+## v4.6.0 [!badge @next|info]
 
-[!badge text="LATEST" variant="info"]
+Expected mid Q2 2026.
 
-Released: [2026-04-07](https://github.com/retypeapp/retype/releases/tag/v4.5.0)
+---
 
-# Version 4.5.0
+## v4.5.0 [!badge @latest|info]
 
-There were 34 changes in Retype 4.5.0.
+**Released:** [2026-04-07](https://github.com/retypeapp/retype/releases/tag/v4.5.0)
 
-## New
+There were **34 changes** in Retype 4.5.0.
 
-1. Automatically output sanitized .md source files along side .html files for each page
-1. Expose sanitized markdown via rel=\"alternate\" link tag
-1. New menu item separator configured using `type: separator`
-1. New page action button with Print, Copy, and other action options, see #761
-1. New `tags` in the left menu, see #791
-1. New handlers for executing basic client-side functionality
-1. New templating `{{ page.md }}` property to get file path to sanitized `.md` file
-1. Action plugins for buttons, menus, and links
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v450) for highlights.
+
++++ New :icon-shield-check:
+
+1. [!badge PRO](/pro/pro.md) New `tags` in the left menu, see [#791](https://github.com/retypeapp/retype/issues/791)
+1. New `llms.txt` support for AI-friendly documentation discovery
+1. New Action plugins for buttons, menus, and links
 1. New `signal` Card layout
 1. New `snap` Card layout
 1. New table style options including `clean`, `striped`, and `equal`
-1. Support Instagram auto-embed from standalone Markdown links
+1. New Instagram auto-embed from standalone Markdown links
 1. New Google Maps component support
-1. New llms.txt support for AI-friendly documentation discovery
+1. New sanitized `.md` source files output along side `.html` files for each page
+1. New meta tag to expose sanitized markdown via `rel="alternate"` link tag
+1. New menu item separator configured using `type: separator`
+1. New page action button with Print, Copy, and other action options, see [#761](https://github.com/retypeapp/retype/issues/761)
+1. New handlers for executing basic client-side functionality
+1. New templating {%{`{{ page.md }}`}%} property to get file path to sanitized `.md` file
 
-## Improved
++++ Improved :icon-thumbsup:
 
 1. Tidy up html output of markdown lists containing block elements
 1. Ensure 100% CommonMark spec html output compliance
@@ -54,32 +58,27 @@ There were 34 changes in Retype 4.5.0.
 1. New square button style for permalink
 1. Click on TOC column title scrolls page to top
 1. Upgrade Octicons icons library from v19.22.0 to v19.23.1
-1. Add sitemap.xml output and page-level sitemap discovery, see #590
-1. New git-based lastUpdated.date for sitemap lastmod
-1. Remove `<priority>` elements from sitemap.xml while preserving URL ordering
+1. Add `sitemap.xml` output and page-level sitemap discovery, see [#590](https://github.com/retypeapp/retype/issues/590)
+1. New git-based `lastUpdated.date` for sitemap `lastmod`
+1. Remove `<priority>` elements from `sitemap.xml` while preserving URL ordering
 1. Cache git last-modified metadata once per build
 
-## Fixed
++++ Fixed :icon-bug:
 
 1. Fixed Steps component number to label alignment issue
 1. Fixed inline and block comments failing to be removed under some inline and block comment scenarios
-1. Headings should clear floated image alignments, see #343
-1. Clicking back-to-top button should remove #anchor
-1. Local server served sanitized .md files without UTF-8 charset
+1. Headings should clear floated image alignments, see [#343](https://github.com/retypeapp/retype/issues/343)
+1. Clicking back-to-top button should remove `#anchor`
+1. Local server served sanitized `.md` files without UTF-8 charset
 1. Fix Octicons workflow run in the CI process
-1. Fix angle brackets stripped from breadcrumbs, TOC, and left nav when used in page titles, see #706
-1. Fix same-page anchor links not expanding collapsed Panels, see #822
+1. Fix angle brackets stripped from breadcrumbs, TOC, and left nav when used in page titles, see [#706](https://github.com/retypeapp/retype/issues/706)
+1. Fix same-page anchor links not expanding collapsed Panels, see [#822](https://github.com/retypeapp/retype/issues/822)
 
-
----
-
-## v4.5.0 [!badge @next|info]
-
-Expected early Q2 2026.
++++
 
 ---
 
-## v4.4.0 [!badge @latest|info]
+## v4.4.0
 
 **Released:** [2026-03-24](https://github.com/retypeapp/retype/releases/tag/v4.4.0)
 
