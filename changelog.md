@@ -1,6 +1,6 @@
 # Changelog
 
-The latest release of Retype is `v4.5.0-preview6`.
+The latest release of Retype is `v4.5.0`.
 
 You can find which version you have installed by running the command [`retype --version`](/guides/cli.md).
 
@@ -11,6 +11,61 @@ Do have a suggestion for a new feature in Retype? Please open an [issue](https:/
 !!!
 
 Please also check out the [Feature Log](/feature-log.md) for a summary of all new features in each release.
+
+---
+
+## v4.5.0
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-04-07](https://github.com/retypeapp/retype/releases/tag/v4.5.0)
+
+# Version 4.5.0
+
+There were 34 changes in Retype 4.5.0.
+
+## New
+
+1. Automatically output sanitized .md source files along side .html files for each page
+1. Expose sanitized markdown via rel=\"alternate\" link tag
+1. New menu item separator configured using `type: separator`
+1. New page action button with Print, Copy, and other action options, see #761
+1. New `tags` in the left menu, see #791
+1. New handlers for executing basic client-side functionality
+1. New templating `https://retype.com/changelog.md` property to get file path to sanitized `.md` file
+1. Action plugins for buttons, menus, and links
+1. New `signal` Card layout
+1. New `snap` Card layout
+1. New table style options including `clean`, `striped`, and `equal`
+1. Support Instagram auto-embed from standalone Markdown links
+1. New Google Maps component support
+1. New llms.txt support for AI-friendly documentation discovery
+
+## Improved
+
+1. Tidy up html output of markdown lists containing block elements
+1. Ensure 100% CommonMark spec html output compliance
+1. Optimize Backlinks generation and page output
+1. Remove permalink from page primary H1 heading
+1. Copy permalink link to clipboard when permalink clicked
+1. New square button style for permalink
+1. Click on TOC column title scrolls page to top
+1. Upgrade Octicons icons library from v19.22.0 to v19.23.1
+1. Add sitemap.xml output and page-level sitemap discovery, see #590
+1. New git-based lastUpdated.date for sitemap lastmod
+1. Remove `<priority>` elements from sitemap.xml while preserving URL ordering
+1. Cache git last-modified metadata once per build
+
+## Fixed
+
+1. Fixed Steps component number to label alignment issue
+1. Fixed inline and block comments failing to be removed under some inline and block comment scenarios
+1. Headings should clear floated image alignments, see #343
+1. Clicking back-to-top button should remove #anchor
+1. Local server served sanitized .md files without UTF-8 charset
+1. Fix Octicons workflow run in the CI process
+1. Fix angle brackets stripped from breadcrumbs, TOC, and left nav when used in page titles, see #706
+1. Fix same-page anchor links not expanding collapsed Panels, see #822
 
 ---
 
