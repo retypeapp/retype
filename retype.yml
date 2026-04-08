@@ -18,6 +18,8 @@ nav:
   mode: stack   # Pro key required
   icons:
     mode: pages # Pro key required
+  tags:
+    enabled: true
 
 theme:
   base:
