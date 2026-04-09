@@ -17,6 +17,24 @@ Please also check out the [[Feature Log]] for a summary of all new features in e
 
 ---
 
+## v4.5.3
+
+[!badge text="LATEST" variant="info"]
+
+Released: [2026-04-09](https://github.com/retypeapp/retype/releases/tag/v4.5.3)
+
+Getting info about the 'v4.5.3' milestone: 1 open milestones, failed.
+::error::No milestone matching version: 4.5.3
+- Looked for: v4.5.3)
+- List of available milestones:
+v4.6.0
+---
+
+Aborting execution.
+
+
+---
+
 ## v4.6.0 [!badge @next|info]
 
 Expected mid Q2 2026.

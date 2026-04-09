@@ -154,7 +154,7 @@ links:
     target: blank
 
 data:
-  version: "4.5.2"
+  version: "4.5.3"
   # abbreviations:
   #   HTML: Hyper Text Markup Language
   #   CSS: Cascading Style Sheet
