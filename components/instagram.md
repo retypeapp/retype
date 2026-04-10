@@ -9,10 +9,10 @@ Retype can automatically embed Instagram posts and Reels by placing a standalone
 Paste an Instagram URL on its own line and Retype converts it into an embedded post.
 
 ```md
-https://www.instagram.com/reel/DSu-vbYDDlf/
+https://www.instagram.com/reel/DLHx_WNoXoY/
 ```
 
-https://www.instagram.com/reel/DSu-vbYDDlf/
+https://www.instagram.com/reel/DLHx_WNoXoY/
 
 ---
 
@@ -23,7 +23,7 @@ Both post (`/p/`) and Reel (`/reel/`) URL formats are supported, with or without
 | Format | Example |
 |---|---|
 | Post | `https://www.instagram.com/p/C08-b3uM0U9/` |
-| Reel | `https://www.instagram.com/reel/DSu-vbYDDlf/` |
+| Reel | `https://www.instagram.com/reel/DLHx_WNoXoY/` |
 | No `www.` prefix | `https://instagram.com/reel/DWowsEjjQlE/` |
 
 ---
@@ -33,11 +33,11 @@ Both post (`/p/`) and Reel (`/reel/`) URL formats are supported, with or without
 Place multiple Instagram URLs on consecutive lines to render each as its own embed block.
 
 ```md
-https://www.instagram.com/reel/DSu-vbYDDlf/
+https://www.instagram.com/reel/DLHx_WNoXoY/
 https://instagram.com/reel/DWowsEjjQlE/
 https://www.instagram.com/p/C08-b3uM0U9/
 ```
 
-https://www.instagram.com/reel/DSu-vbYDDlf/
+https://www.instagram.com/reel/DLHx_WNoXoY/
 https://instagram.com/reel/DWowsEjjQlE/
 https://www.instagram.com/p/C08-b3uM0U9/
