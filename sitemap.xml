@@ -28,12 +28,12 @@
     <lastmod>2026-02-23T20:22:20Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/configuration/project/</loc>
-    <lastmod>2026-03-16T18:00:30Z</lastmod>
+    <loc>https://retype.com/feature-log/</loc>
+    <lastmod>2026-04-14T23:49:18Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/feature-log/</loc>
-    <lastmod>2026-03-24T21:16:22Z</lastmod>
+    <loc>https://retype.com/configuration/project/</loc>
+    <lastmod>2026-03-16T18:00:30Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/blog/2026-03-17-whats-new-in-retype-v430/</loc>
@@ -264,6 +264,14 @@
     <lastmod>2026-03-27T04:27:25Z</lastmod>
   </url>
   <url>
+    <loc>https://retype.com/components/google-maps/</loc>
+    <lastmod>2026-04-03T17:56:46Z</lastmod>
+  </url>
+  <url>
+    <loc>https://retype.com/components/instagram/</loc>
+    <lastmod>2026-04-10T13:34:01Z</lastmod>
+  </url>
+  <url>
     <loc>https://retype.com/components/list/</loc>
     <lastmod>2025-06-06T16:10:25Z</lastmod>
   </url>
@@ -280,20 +288,12 @@
     <lastmod>2026-02-18T16:52:24Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/components/google-maps/</loc>
-    <lastmod>2026-04-03T17:56:46Z</lastmod>
-  </url>
-  <url>
-    <loc>https://retype.com/components/instagram/</loc>
-    <lastmod>2026-04-10T13:34:01Z</lastmod>
+    <loc>https://retype.com/components/table/</loc>
+    <lastmod>2026-04-01T22:18:11Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/hosting/gitlab-pages/</loc>
     <lastmod>2026-03-12T00:57:35Z</lastmod>
-  </url>
-  <url>
-    <loc>https://retype.com/components/table/</loc>
-    <lastmod>2026-04-01T22:18:11Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/youtube/</loc>

@@ -44,6 +44,9 @@ The following features require a Retype [!badge PRO](/pro/pro.md) or Enterprise 
 [Navigation icon](/configuration/project.md#nav-icons) control
 : Show or hide navigation icons for all, some, or no items with the `nav.icons.mode` setting. Options include `all`, `folders`, `pages`, `top`, and `none`.
 
+Navigation tags in the left menu
+: Automatically generate a tag summary section in the sidebar from the tags used across your site. Use `nav.tags` options to control the title, layout, alignment, ordering, variant, and include/exclude filtering.
+
 [Next/Previous](/configuration/project.md#nextprev) navigation control
 : Configure the visibility and sequencing of Next and Previous navigation buttons. Supports `show`, `hide`, and `exclude` modes at [project](/configuration/project.md#nextprev), [page](/configuration/page.md#nextprev), and folder levels.
 
@@ -67,6 +70,34 @@ Strict [build](/guides/cli.md) mode
 
 [Table of contents](/configuration/project.md#toc)
 : Enable and configure the table of contents with the `toc` setting. Configurable at [project](/configuration/project.md#toc) and [page](/configuration/page.md#toc) levels, with control over heading depth and label.
+
+---
+
+## v4.5.0
+
+[!badge PRO](/pro/pro.md) Tags in the left menu
+: Automatically generate a sidebar tags section from the tags used across your project. Configure the title, layout, alignment, ordering, limit, include/exclude rules, and badge variant using `nav.tags`, see [#791](https://github.com/retypeapp/retype/issues/791).
+
+`llms.txt` support for AI-friendly docs
+: Retype can now generate or deploy an `llms.txt` file that provides a clean, machine-friendly summary of key pages and blog posts for AI tools and assistants. Hidden, redirect, and generated pagination pages are excluded automatically.
+
+Action plugins and page action menu
+: Buttons, menus, and links can now trigger reusable actions such as copying the current page link, viewing the sanitized Markdown source, or opening the print dialog. Retype also adds a new page action button with support for menu separators and built-in action handlers, see [#761](https://github.com/retypeapp/retype/issues/761).
+
+`signal` and `snap` layouts for [Card](/components/card.md)
+: Two new card layouts make it easier to build compact navigation grids and richer link previews. Use `[!card signal]` or `[!card snap]` for more app-like, modern card styling, see [docs](/components/card.md).
+
+Table style options
+: Tables now support `clean`, `striped`, and `equal` styles for clearer comparisons and denser data presentation. These can also be combined with `compact` for concise reference tables, see [docs](/components/table.md).
+
+Instagram and Google Maps auto-embed
+: Paste a standalone Instagram post or Reel URL, or a Google Maps embed URL or `<iframe>` snippet, on its own line and Retype converts it into a responsive embedded component, see [Instagram](/components/instagram.md) and [Google Maps](/components/google-maps.md).
+
+Sanitized Markdown output and `page.md`
+: Every generated page now has a sanitized `.md` version alongside the HTML output. The new `page.md` template property exposes the full URL to that Markdown file, making copy, export, and AI-assisted workflows much easier, see [Page properties](/templating/page-properties.md).
+
+`sitemap.xml` output and smarter discovery
+: Retype now generates a `sitemap.xml` file with page-level discovery and git-based `lastmod` values, improving SEO and crawler visibility while keeping the output focused, see [#590](https://github.com/retypeapp/retype/issues/590).
 
 ---
 

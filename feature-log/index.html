@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.829203462570">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.829547385506">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -43,14 +43,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.829203462570" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.3.829547385506" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.829203462570" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.829547385506" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.829203462570" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.829547385506" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.829203462570" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.3.829547385506" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -375,6 +375,8 @@
 <dd>Add a badge to any page&#x27;s entry in the left sidebar navigation. Supports all badge variants and the pipe shorthand notation.</dd>
 <dt id="navigation-icon-control"><a href="/configuration/project/#nav-icons">Navigation icon</a> control</dt>
 <dd>Show or hide navigation icons for all, some, or no items with the <code translate="no" v-pre>nav.icons.mode</code> setting. Options include <code translate="no" v-pre>all</code>, <code translate="no" v-pre>folders</code>, <code translate="no" v-pre>pages</code>, <code translate="no" v-pre>top</code>, and <code translate="no" v-pre>none</code>.</dd>
+<dt id="navigation-tags-in-the-left-menu">Navigation tags in the left menu</dt>
+<dd>Automatically generate a tag summary section in the sidebar from the tags used across your site. Use <code translate="no" v-pre>nav.tags</code> options to control the title, layout, alignment, ordering, variant, and include/exclude filtering.</dd>
 <dt id="nextprevious-navigation-control"><a href="/configuration/project/#nextprev">Next/Previous</a> navigation control</dt>
 <dd>Configure the visibility and sequencing of Next and Previous navigation buttons. Supports <code translate="no" v-pre>show</code>, <code translate="no" v-pre>hide</code>, and <code translate="no" v-pre>exclude</code> modes at <a href="/configuration/project/#nextprev">project</a>, <a href="/configuration/page/#nextprev">page</a>, and folder levels.</dd>
 <dt id="outbound-links"><a href="/configuration/project/#outbound">Outbound</a> links</dt>
@@ -391,6 +393,28 @@
 <dd>The <code translate="no" v-pre>--strict</code> flag on <code translate="no" v-pre>retype build</code> returns a non-zero exit code when the build produces any errors or warnings. Useful for enforcing quality gates in CI pipelines.</dd>
 <dt id="table-of-contents"><a href="/configuration/project/#toc">Table of contents</a></dt>
 <dd>Enable and configure the table of contents with the <code translate="no" v-pre>toc</code> setting. Configurable at <a href="/configuration/project/#toc">project</a> and <a href="/configuration/page/#toc">page</a> levels, with control over heading depth and label.</dd>
+</dl>
+<hr>
+<h2 id="v450">v4.5.0</h2>
+<dl>
+<dt id="pro-tags-in-the-left-menu"><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> Tags in the left menu</dt>
+<dd>Automatically generate a sidebar tags section from the tags used across your project. Configure the title, layout, alignment, ordering, limit, include/exclude rules, and badge variant using <code translate="no" v-pre>nav.tags</code>, see <a href="https://github.com/retypeapp/retype/issues/791">#791</a>.</dd>
+<dt id="support-for-ai-friendly-docs"><code translate="no" v-pre>llms.txt</code> support for AI-friendly docs</dt>
+<dd>Retype can now generate or deploy an <code translate="no" v-pre>llms.txt</code> file that provides a clean, machine-friendly summary of key pages and blog posts for AI tools and assistants. Hidden, redirect, and generated pagination pages are excluded automatically.</dd>
+<dt id="action-plugins-and-page-action-menu">Action plugins and page action menu</dt>
+<dd>Buttons, menus, and links can now trigger reusable actions such as copying the current page link, viewing the sanitized Markdown source, or opening the print dialog. Retype also adds a new page action button with support for menu separators and built-in action handlers, see <a href="https://github.com/retypeapp/retype/issues/761">#761</a>.</dd>
+<dt id="and--layouts-for-card"><code translate="no" v-pre>signal</code> and <code translate="no" v-pre>snap</code> layouts for <a href="/components/card/">Card</a></dt>
+<dd>Two new card layouts make it easier to build compact navigation grids and richer link previews. Use <code translate="no" v-pre>[!card signal]</code> or <code translate="no" v-pre>[!card snap]</code> for more app-like, modern card styling, see <a href="/components/card/">docs</a>.</dd>
+<dt id="table-style-options">Table style options</dt>
+<dd>Tables now support <code translate="no" v-pre>clean</code>, <code translate="no" v-pre>striped</code>, and <code translate="no" v-pre>equal</code> styles for clearer comparisons and denser data presentation. These can also be combined with <code translate="no" v-pre>compact</code> for concise reference tables, see <a href="/components/table/">docs</a>.</dd>
+<dt id="instagram-and-google-maps-auto-embed">Instagram and Google Maps auto-embed</dt>
+<dd>Paste a standalone Instagram post or Reel URL, or a Google Maps embed URL or <code translate="no" v-pre>&lt;iframe&gt;</code> snippet, on its own line and Retype converts it into a responsive embedded component, see <a href="/components/instagram/">Instagram</a> and <a href="/components/google-maps/">Google Maps</a>.</dd>
+<dt id="sanitized-markdown-output-and">Sanitized Markdown output and <code translate="no" v-pre>page.md</code></dt>
+<dd>Every generated page now has a sanitized <code translate="no" v-pre>.md</code> version alongside the HTML output. The new <code translate="no" v-pre>page.md</code> template property exposes the full URL to that Markdown file, making copy, export, and AI-assisted workflows much easier, see <a href="/templating/page-properties/">Page properties</a>.</dd>
+<dt id="output-and-smarter-discovery"><code translate="no" v-pre>sitemap.xml</code> output and smarter discovery</dt>
+<dd>Retype now generates a <code translate="no" v-pre>sitemap.xml</code> file with page-level discovery and git-based <code translate="no" v-pre>lastmod</code> values, improving SEO and crawler visibility while keeping the output focused, see <a href="https://github.com/retypeapp/retype/issues/590">#590</a>.</dd>
 </dl>
 <hr>
 <h2 id="v440">v4.4.0</h2>
@@ -686,8 +710,8 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-24T21:16:22" title="2026-03-24" data-absolute-label="Last updated on 2026-03-24" data-absolute-label-html="Last updated on 2026-03-24" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-24
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-14T23:49:18" title="2026-04-14" data-absolute-label="Last updated on 2026-04-14" data-absolute-label-html="Last updated on 2026-04-14" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-04-14
                     </time>
                 </div>
 
