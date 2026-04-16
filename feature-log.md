@@ -100,7 +100,7 @@ Instagram and Google Maps auto-embed
 : Paste a standalone Instagram post or Reel URL, or a Google Maps embed URL or `<iframe>` snippet, on its own line and Retype converts it into a responsive embedded component, see [Instagram](/components/instagram.md) and [Google Maps](/components/google-maps.md).
 
 Sanitized Markdown output and `page.md`
-: Every generated page now has a sanitized `.md` version alongside the HTML output. The new `page.md` template property exposes the full URL to that Markdown file, making copy, export, and AI-assisted workflows much easier, see [Page properties](/templating/page-properties.md).
+: Every generated page now has a sanitized `.md` version alongside the HTML output.  The new `{{ page.md }}` template property exposes the full URL to that Markdown file, making copy, export, and AI-assisted workflows much easier, see [Page properties](/templating/page-properties.md).
 
 `sitemap.xml` output and smarter discovery
 : Retype now generates a `sitemap.xml` file with page-level discovery and git-based `lastmod` values, improving SEO and crawler visibility while keeping the output focused, see [#590](https://github.com/retypeapp/retype/issues/590).
