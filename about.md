@@ -3,13 +3,13 @@ layout: page
 ---
 # About
 
-[Retype](https://retype.com/) is professionally built and supported by a small dedicated team of software engineers.
+[Retype](https://retype.com/) is professionally built and supported by a small, dedicated team of software engineers.
 
 Technical support questions, bug reports, and feature requests are best started as an [Issue](https://github.com/retypeapp/retype/issues).
 
 ## Credits :clap:
 
-Retype is only made possible because of the hard work of other amazing open-source and commercial projects.
+Retype is made possible only by the hard work of other amazing open-source and commercial projects.
 
 | Library                                                  | License                                                                    | Role                                                                   |
 | -------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
