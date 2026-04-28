@@ -99,21 +99,21 @@ The date format settings can be configured with the following specifiers:
 | `MM` | Two-digit month | `dateFormat: MM` | 04 |
 | `MMM` | Abbreviated month name | `dateFormat: MMM` | Apr |
 | `MMMM` | Full month name | `dateFormat: MMMM` | April |
-| `d` | Day of month | `dateFormat: d` | 16 |
-| `dd` | Two-digit day of month | `dateFormat: dd` | 16 |
-| `ddd` | Abbreviated day name | `dateFormat: ddd` | Thu |
-| `dddd` | Full day name | `dateFormat: dddd` | Thursday |
+| `d` | Day of month | `dateFormat: d` | 28 |
+| `dd` | Two-digit day of month | `dateFormat: dd` | 28 |
+| `ddd` | Abbreviated day name | `dateFormat: ddd` | Tue |
+| `dddd` | Full day name | `dateFormat: dddd` | Tuesday |
 
 Common full date string configurations can be composed by combining individual specifiers:
 
 | Template sample | Output | {.compact}
 | --- | --- |
-| `dateFormat: yyyy-MM-dd` | 2026-04-16 |
-| `dateFormat: MM/dd/yyyy` | 04/16/2026 |
-| `dateFormat: dd MMM yyyy` | 16 Apr 2026 |
-| `dateFormat: MMM d, yyyy` | Apr 16, 2026 |
-| `dateFormat: MMMM d, yyyy` | April 16, 2026 |
-| `dateFormat: dddd, MMMM d, yyyy` | Thursday, April 16, 2026 |
+| `dateFormat: yyyy-MM-dd` | 2026-04-28 |
+| `dateFormat: MM/dd/yyyy` | 04/28/2026 |
+| `dateFormat: dd MMM yyyy` | 28 Apr 2026 |
+| `dateFormat: MMM d, yyyy` | Apr 28, 2026 |
+| `dateFormat: MMMM d, yyyy` | April 28, 2026 |
+| `dateFormat: dddd, MMMM d, yyyy` | Tuesday, April 28, 2026 |
 
 The date format also respects the `locale` setting. For example, using the `locale: fr` configuration in your project will output French month and day names.
 

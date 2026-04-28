@@ -1,4 +1,4 @@
-# Build docs from Markdown
+# Markdown-first documentation website builder
 
 ![](/static/retype-hero.png)
 
