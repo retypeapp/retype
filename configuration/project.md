@@ -1106,22 +1106,45 @@ By default, if Retype discovers any of the following file types, they will be au
 
 File types that are automatically included:
 
-1. `*.ai`
-1. `*.bmp`
-1. `*.eps`
-1. `*.gif`
-1. `*.heif`
-1. `*.htm`
-1. `*.html`
-1. `*.jpeg`
-1. `*.jpg`
-1. `*.pdf`
-1. `*.png`
-1. `*.svg`
-1. `*.tiff`
-1. `*.txt`
-1. `*.webp`
-1. `*.zip`
+||| Media
+
+1. `avif`
+1. `bmp`
+1. `flac`
+1. `gif`
+1. `heif`
+1. `ico`
+1. `jpeg`
+1. `jpg`
+1. `m4a`
+1. `mkv`
+1. `mov`
+1. `mp3`
+1. `mp4`
+1. `ogg`
+1. `ogv`
+1. `pdf`
+1. `png`
+1. `svg`
+1. `tiff`
+1. `wav`
+1. `webm`
+1. `webp`
+1. `3gp`
+
+||| Resources
+
+1. `ai`
+1. `css`
+1. `eps`
+1. `htm`
+1. `html`
+1. `js`
+1. `json`
+1. `txt`
+1. `zip`
+
+|||
 
 By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the `output` unchanged. If you require any other folders, please add to the `include` config.
 
