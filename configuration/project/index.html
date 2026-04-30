@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830729711542">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830862253396">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.830729711542" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.3.830862253396" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.830729711542" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.830862253396" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.830729711542" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.830729711542" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.830862253396" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.830862253396" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.830729711542" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.3.830862253396" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -1344,24 +1344,54 @@ generator:
 <p>Retype treats all <code translate="no" v-pre>.md</code> and <strong>.yml</strong> files as parsable content files that will be converted into <code translate="no" v-pre>.html</code> files and are not copied over to the <doc-anchor-trigger to="#output"><code translate="no" v-pre>output</code></doc-anchor-trigger>. All other included file types would be copied straight across to the <code translate="no" v-pre>output</code> unchanged and become static files that can be linked to.</p>
 <p>By default, if Retype discovers any of the following file types, they will be automatically included and copied over to the <code translate="no" v-pre>output</code> unchanged. If you require any other file types, they would need to be explicitly added to the <code translate="no" v-pre>include</code> config.</p>
 <p>File types that are automatically included:</p>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white border-r">
+        <span>Media</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>Resources</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-base-border">
 <ol>
-<li><code translate="no" v-pre>*.ai</code></li>
-<li><code translate="no" v-pre>*.bmp</code></li>
-<li><code translate="no" v-pre>*.eps</code></li>
-<li><code translate="no" v-pre>*.gif</code></li>
-<li><code translate="no" v-pre>*.heif</code></li>
-<li><code translate="no" v-pre>*.htm</code></li>
-<li><code translate="no" v-pre>*.html</code></li>
-<li><code translate="no" v-pre>*.jpeg</code></li>
-<li><code translate="no" v-pre>*.jpg</code></li>
-<li><code translate="no" v-pre>*.pdf</code></li>
-<li><code translate="no" v-pre>*.png</code></li>
-<li><code translate="no" v-pre>*.svg</code></li>
-<li><code translate="no" v-pre>*.tiff</code></li>
-<li><code translate="no" v-pre>*.txt</code></li>
-<li><code translate="no" v-pre>*.webp</code></li>
-<li><code translate="no" v-pre>*.zip</code></li>
+<li><code translate="no" v-pre>avif</code></li>
+<li><code translate="no" v-pre>bmp</code></li>
+<li><code translate="no" v-pre>flac</code></li>
+<li><code translate="no" v-pre>gif</code></li>
+<li><code translate="no" v-pre>heif</code></li>
+<li><code translate="no" v-pre>ico</code></li>
+<li><code translate="no" v-pre>jpeg</code></li>
+<li><code translate="no" v-pre>jpg</code></li>
+<li><code translate="no" v-pre>m4a</code></li>
+<li><code translate="no" v-pre>mkv</code></li>
+<li><code translate="no" v-pre>mov</code></li>
+<li><code translate="no" v-pre>mp3</code></li>
+<li><code translate="no" v-pre>mp4</code></li>
+<li><code translate="no" v-pre>ogg</code></li>
+<li><code translate="no" v-pre>ogv</code></li>
+<li><code translate="no" v-pre>pdf</code></li>
+<li><code translate="no" v-pre>png</code></li>
+<li><code translate="no" v-pre>svg</code></li>
+<li><code translate="no" v-pre>tiff</code></li>
+<li><code translate="no" v-pre>wav</code></li>
+<li><code translate="no" v-pre>webm</code></li>
+<li><code translate="no" v-pre>webp</code></li>
+<li><code translate="no" v-pre>3gp</code></li>
 </ol>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<ol>
+<li><code translate="no" v-pre>ai</code></li>
+<li><code translate="no" v-pre>css</code></li>
+<li><code translate="no" v-pre>eps</code></li>
+<li><code translate="no" v-pre>htm</code></li>
+<li><code translate="no" v-pre>html</code></li>
+<li><code translate="no" v-pre>js</code></li>
+<li><code translate="no" v-pre>json</code></li>
+<li><code translate="no" v-pre>txt</code></li>
+<li><code translate="no" v-pre>zip</code></li>
+</ol>
+    </div>
+</div>
 <p>By default, if Retype discovers any of the following folders anywhere within the project, the folder and its entire contents will be copied over to the <code translate="no" v-pre>output</code> unchanged. If you require any other folders, please add to the <code translate="no" v-pre>include</code> config.</p>
 <p>Included folders:</p>
 <ol>
@@ -1910,25 +1940,25 @@ labels:
 <td><code translate="no" v-pre>d</code></td>
 <td>Day of month</td>
 <td><code translate="no" v-pre>dateFormat: d</code></td>
-<td>28</td>
+<td>30</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dd</code></td>
 <td>Two-digit day of month</td>
 <td><code translate="no" v-pre>dateFormat: dd</code></td>
-<td>28</td>
+<td>30</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ddd</code></td>
 <td>Abbreviated day name</td>
 <td><code translate="no" v-pre>dateFormat: ddd</code></td>
-<td>Tue</td>
+<td>Thu</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dddd</code></td>
 <td>Full day name</td>
 <td><code translate="no" v-pre>dateFormat: dddd</code></td>
-<td>Tuesday</td>
+<td>Thursday</td>
 </tr>
 </tbody>
 </table>
@@ -1945,27 +1975,27 @@ labels:
 <tbody>
 <tr>
 <td><code translate="no" v-pre>dateFormat: yyyy-MM-dd</code></td>
-<td>2026-04-28</td>
+<td>2026-04-30</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MM/dd/yyyy</code></td>
-<td>04/28/2026</td>
+<td>04/30/2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dd MMM yyyy</code></td>
-<td>28 Apr 2026</td>
+<td>30 Apr 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMM d, yyyy</code></td>
-<td>Apr 28, 2026</td>
+<td>Apr 30, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMMM d, yyyy</code></td>
-<td>April 28, 2026</td>
+<td>April 30, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dddd, MMMM d, yyyy</code></td>
-<td>Tuesday, April 28, 2026</td>
+<td>Thursday, April 30, 2026</td>
 </tr>
 </tbody>
 </table>
@@ -3385,8 +3415,8 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-16T18:00:30" title="2026-03-16" data-absolute-label="Last updated on 2026-03-16" data-absolute-label-html="Last updated on 2026-03-16" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-16
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-30T05:03:35" title="2026-04-30" data-absolute-label="Last updated on 2026-04-30" data-absolute-label-html="Last updated on 2026-04-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-04-30
                     </time>
                 </div>
 
