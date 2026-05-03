@@ -255,3 +255,23 @@ Name   | Long Message                                                    | Descr
 Item 1 | This is an extra long message that should not wrap in the table | This is a description
 Item 2 | Another long content item                                       | Another description
 Item 3 | A third example with similarly long content on one line         | A final description
+
+---
+
+## Column styling
+
+Add attributes to a header cell to apply the same styling to every cell in that column. In this sample, the `Status` column uses a gray background and stronger header-style text.
+
+```md
+Project              | Status {style="background-color: var(--gray-100);"} | Owner
+---                  | ---                                                                                                 | ---
+Website Redesign     | [!badge Review]                                                                                     | Operations
+Quarterly Forecast   | [!badge Approved|success]                                                                            | Finance
+Customer Onboarding  | [!badge Draft|secondary]                                                                             | Product
+```
+
+Project              | Status {style="background-color: var(--gray-100); color: var(--base-text-strong); font-weight: 600;"} | Owner
+---                  | ---                                                                                                 | ---
+Website Redesign     | [!badge Review]                                                                                     | Operations
+Quarterly Forecast   | [!badge Approved|success]                                                                            | Finance
+Customer Onboarding  | [!badge Draft|secondary]                                                                             | Product
