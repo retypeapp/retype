@@ -95,25 +95,25 @@ The date format settings can be configured with the following specifiers:
 | --- | --- | --- | --- |
 | `yy` | Two-digit year | `dateFormat: yy` | 26 |
 | `yyyy` | Four-digit year | `dateFormat: yyyy` | 2026 |
-| `M` | Month number | `dateFormat: M` | 4 |
-| `MM` | Two-digit month | `dateFormat: MM` | 04 |
-| `MMM` | Abbreviated month name | `dateFormat: MMM` | Apr |
-| `MMMM` | Full month name | `dateFormat: MMMM` | April |
-| `d` | Day of month | `dateFormat: d` | 30 |
-| `dd` | Two-digit day of month | `dateFormat: dd` | 30 |
-| `ddd` | Abbreviated day name | `dateFormat: ddd` | Thu |
-| `dddd` | Full day name | `dateFormat: dddd` | Thursday |
+| `M` | Month number | `dateFormat: M` | 5 |
+| `MM` | Two-digit month | `dateFormat: MM` | 05 |
+| `MMM` | Abbreviated month name | `dateFormat: MMM` | May |
+| `MMMM` | Full month name | `dateFormat: MMMM` | May |
+| `d` | Day of month | `dateFormat: d` | 3 |
+| `dd` | Two-digit day of month | `dateFormat: dd` | 03 |
+| `ddd` | Abbreviated day name | `dateFormat: ddd` | Sun |
+| `dddd` | Full day name | `dateFormat: dddd` | Sunday |
 
 Common full date string configurations can be composed by combining individual specifiers:
 
 | Template sample | Output | {.compact}
 | --- | --- |
-| `dateFormat: yyyy-MM-dd` | 2026-04-30 |
-| `dateFormat: MM/dd/yyyy` | 04/30/2026 |
-| `dateFormat: dd MMM yyyy` | 30 Apr 2026 |
-| `dateFormat: MMM d, yyyy` | Apr 30, 2026 |
-| `dateFormat: MMMM d, yyyy` | April 30, 2026 |
-| `dateFormat: dddd, MMMM d, yyyy` | Thursday, April 30, 2026 |
+| `dateFormat: yyyy-MM-dd` | 2026-05-03 |
+| `dateFormat: MM/dd/yyyy` | 05/03/2026 |
+| `dateFormat: dd MMM yyyy` | 03 May 2026 |
+| `dateFormat: MMM d, yyyy` | May 3, 2026 |
+| `dateFormat: MMMM d, yyyy` | May 3, 2026 |
+| `dateFormat: dddd, MMMM d, yyyy` | Sunday, May 3, 2026 |
 
 The date format also respects the `locale` setting. For example, using the `locale: fr` configuration in your project will output French month and day names.
 

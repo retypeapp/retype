@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830898874342">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831094754921">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.830898874342" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.3.831094754921" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.830898874342" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831094754921" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.830898874342" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.830898874342" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831094754921" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831094754921" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.830898874342" rel="stylesheet">
+    <link href="/static/styles.css?v=4.5.3.831094754921" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -880,6 +880,50 @@ Item 3 | A third example with similarly long content on one line         | A fin
 </tbody>
 </table>
 </div>
+<hr>
+<h2 id="column-styling">Column styling</h2>
+<p>Add attributes to a header cell to apply the same styling to every cell in that column. In this sample, the <code translate="no" v-pre>Status</code> column uses a gray background and stronger header-style text.</p>
+<div id="column-styling-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">Project              | Status {style=&quot;background-color: var(--gray-100);&quot;} | Owner
+---                  | ---                                                                                                 | ---
+Website Redesign     | [!badge Review]                                                                                     | Operations
+Quarterly Forecast   | [!badge Approved|success]                                                                            | Finance
+Customer Onboarding  | [!badge Draft|secondary]                                                                             | Product</code></pre>
+</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable" style="background-color: var(--gray-100); color: var(--base-text-strong); font-weight: 600;">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status </th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 
@@ -893,8 +937,8 @@ Item 3 | A third example with similarly long content on one line         | A fin
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-01T22:18:11" title="2026-04-01" data-absolute-label="Last updated on 2026-04-01" data-absolute-label-html="Last updated on 2026-04-01" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-04-01
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-02T20:38:46" title="2026-05-02" data-absolute-label="Last updated on 2026-05-02" data-absolute-label-html="Last updated on 2026-05-02" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-05-02
                     </time>
                 </div>
 
