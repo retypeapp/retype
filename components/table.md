@@ -275,3 +275,34 @@ Project              | Status {style="background-color: var(--gray-100); color: 
 Website Redesign     | [!badge Review]                                                                                     | Operations
 Quarterly Forecast   | [!badge Approved|success]                                                                            | Finance
 Customer Onboarding  | [!badge Draft|secondary]                                                                             | Product
+
+## Wide tables
+
+Tables that exceed the available page width can be scrolled horizontally. This can happen when a cell contains a large image.
+
+```md
+Asset              | Preview                                                            | Notes
+---                | ---                                                                | ---
+Launch screenshot  | ![](/static/sample-large.jpg){width="960" style="max-width: none;"} | The image keeps its full width inside the cell.
+```
+
+Asset              | Preview                                                            | Notes
+---                | ---                                                                | ---
+Launch screenshot  | ![](/static/sample-large.jpg){width="960" style="max-width: none;"} | The image keeps its full width inside the cell.
+
+Tables with many columns can also overflow the page body and scroll horizontally.
+
+```md
+Region | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | Total | Forecast | Owner
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+North America | 42 | 48 | 53 | 58 | 61 | 67 | 71 | 73 | 69 | 64 | 59 | 55 | 720 | [!badge On track|success] | Operations
+Europe | 31 | 34 | 39 | 44 | 49 | 52 | 57 | 59 | 56 | 50 | 46 | 41 | 558 | [!badge Watch|warning] | Growth
+Asia Pacific | 28 | 32 | 37 | 43 | 47 | 51 | 55 | 58 | 61 | 63 | 66 | 70 | 611 | [!badge Rising|primary] | Product
+```
+
+Region | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | Total | Forecast | Owner
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+North America | 42 | 48 | 53 | 58 | 61 | 67 | 71 | 73 | 69 | 64 | 59 | 55 | 720 | [!badge On track|success] | Operations
+Europe | 31 | 34 | 39 | 44 | 49 | 52 | 57 | 59 | 56 | 50 | 46 | 41 | 558 | [!badge Watch|warning] | Growth
+Asia Pacific | 28 | 32 | 37 | 43 | 47 | 51 | 55 | 58 | 61 | 63 | 66 | 70 | 611 | [!badge Rising|primary] | Product
+
