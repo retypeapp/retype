@@ -149,7 +149,7 @@ Tag | Page count
 Tag | Page count {.compact}
 --- | ---
 [!badge community|info](/tags/community) | 2
-[!badge component|info](/tags/component) | 26
+[!badge component|info](/tags/component) | 27
 [!badge config|info](/tags/config) | 6
 [!badge ftp|info](/tags/ftp) | 1
 [!badge github|info](/tags/github) | 4
@@ -294,7 +294,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Feature log (0 children)
 - Features (0 children)
 - Samples (7 children)
-- Components (30 children)
+- Components (31 children)
 - Pro (1 children)
 - Guides (9 children)
 - Configuration (7 children)
