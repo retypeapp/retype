@@ -103,7 +103,6 @@ The following table lists all the keys and default values that can be customized
 | `Callout_Tip_Title` | {{ project.labels["Callout_Tip_Title"] }} | {{ project.labels.es["Callout_Tip_Title"] }} |
 | `API_AccessFilter_Label` | {{ project.labels["API_AccessFilter_Label"] }} | {{ project.labels.es["API_AccessFilter_Label"] }} |
 | `API_ClassType_Name` | {{ project.labels["API_ClassType_Name"] }} | {{ project.labels.es["API_ClassType_Name"] }} |
-| `API_CopiedAckHint_Label` | {{ project.labels["API_CopiedAckHint_Label"] }} | {{ project.labels.es["API_CopiedAckHint_Label"] }} |
 | `API_CopyHint_Label` | {{ project.labels["API_CopyHint_Label"] }} | {{ project.labels.es["API_CopyHint_Label"] }} |
 | `API_CopyLinkHint_Label` | {{ project.labels["API_CopyLinkHint_Label"] }} | {{ project.labels.es["API_CopyLinkHint_Label"] }} |
 | `API_CopyNameHint_Label` | {{ project.labels["API_CopyNameHint_Label"] }} | {{ project.labels.es["API_CopyNameHint_Label"] }} |
