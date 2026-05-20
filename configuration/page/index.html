@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Page configuration - Write On! with Retype</title>
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -73,7 +73,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -803,6 +803,12 @@ lastUpdatedBy: Documentation Team
     <template #title>layout : <code translate="no" v-pre>string</code></template>
 <p>The layout for the page. Default is <code translate="no" v-pre>default</code>.</p>
 <p>Supported values: <code translate="no" v-pre>default</code>, <code translate="no" v-pre>central</code>, <code translate="no" v-pre>page</code>, and <code translate="no" v-pre>blog</code>.</p>
+<retype-table copy-text="Layout | Description
+--- | ---
+`default` | The default layout for all `.md` pages. The page is added to the main navigation.
+`page` | Similar to `default` layout, but is not added to the main navigation.
+`central` | A page with no left or right sidebar columns.
+`blog` | A blog page layout. Blog pages are not added to the main navigation and include blog specific `&lt; Newer` and `Older &gt;` navigation buttons at the bottom of each blog page.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -831,6 +837,7 @@ lastUpdatedBy: Documentation Team
 </tbody>
 </table>
 </div>
+</retype-table>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">layout: page</code></pre>
 </doc-codeblock></div>
@@ -939,6 +946,16 @@ nav:
 # Sample Page</code></pre>
 </doc-codeblock></div>
 <p>The badge supports all the same properties as the <a href="/components/badge/">Badge</a> component, including:</p>
+<retype-table copy-text="Property | Type | Description
+--- | --- | ---
+`text` | `string` | The text content of the badge
+`variant` | `string` | Add Badge variants supported, including: `base`, `primary` (default), `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `ghost`, `contrast`
+`size` | `string` | Badge size: `xs`, `s`, `m`, `l`, `xl`, `2xl`, `3xl` (default: `s`)
+`corners` | `string` | Badge corner style: `round`, `square`, `pill`
+`icon` | `string` | Icon name from [[Octicons]] or custom icon
+`iconAlign` | `string` | Icon position: `left` or `right`
+`link` | `string` | Page or URL to navigate to when badge is clicked
+`target` | `string` | Link target: `blank`, `self`, `parent`, `top`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -992,6 +1009,7 @@ nav:
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <h3 id="nav-mode">mode</h3>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
@@ -1000,6 +1018,10 @@ nav:
 <doc-panel id="mode--string">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code translate="no" v-pre>mode</code> is <code translate="no" v-pre>default</code>.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`default` | Create the navigation as a Tree structure where top-level folders are expandable and collapsible.
+`stack`   | Create the navigation where the top-level folders are automatically expanded, creating a &quot;stacked&quot; view of the navigation path.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1020,6 +1042,7 @@ nav:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The <code translate="no" v-pre>nav.mode</code> setting can be configured on any page within a top-level folder to convert only that specific folder into a &quot;stack&quot; navigation structure. The remaining top-level folders will maintain their default tree navigation behavior.</p>
 <p>The following sample demonstrates how to configure the &quot;stacked&quot; navigation structure for a specific top-level folder:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1039,6 +1062,11 @@ nav:
 <doc-panel id="mode--string-1">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.</p>
+<retype-table copy-text="Option | Description
+--- | ---
+`show` | Show Next and Previous buttons and include page in sequence (Default)
+`hide` | Hide buttons but keep page in sequential order
+`exclude` | Hide buttons and exclude page from sequential order">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1063,6 +1091,7 @@ nav:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The default value is <code translate="no" v-pre>show</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
@@ -1103,6 +1132,14 @@ nextprev:
     </div>
 </div>
 <p>In order of precedence, the <code translate="no" v-pre>order</code> of a page in the navigation would be determined with the following priority:</p>
+<retype-table copy-text="Value type | Description
+--- | ---
+`number` (positive) | A larger positive number gets more _weight_ or _priority_ and is pushed higher in the navigation. Largest number at the top. Example: `order: 100` will be ordered above `order: 10`.
+`alpha` (high) | Setting `order` with an alpha-numeric value is possible and those pages will be ordered against the `label` value of all other pages that do not have an `order` configured.  Example: `order: alpha` will be ordered above `order: beta` or a page configured with `label: bravo`.
+no `order` set | If no `order` is configured, all pages will be ordered alphabetically based on its `label`, `title`, the first `h1` title, or the file name values. The `label` config has the highest priority.
+`alpha` (low) | Example: `order: zulu` will be ordered below `order: zebra` or a page configured with `label: yakee`.
+`vSemver` (newer) | Page `order` configured with a [semver](https://semver.org/) value are ordered with the newest version above an older version. These pages are also moved towards the bottom of the navigation. Example: `order: v1.1` will be ordered above `order: v1.0`.
+`number` (negative) | A negative number gets less _weight_ or _priority_ and is pushed to the bottom of the navigation. Setting the `order` with a negative number is a simple way to push a page to the bottom of the navigation. Example: `order: -100` will be ordered below `order: -10`.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1139,6 +1176,7 @@ nextprev:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>By default, the home page of the website has an order of <code translate="no" v-pre>10000</code>. To add a page in the navigation just above the home page, set a value of <code translate="no" v-pre>order: 10001</code> or greater. To add a page in the navigation just below the home page, set a value of <code translate="no" v-pre>order: 9999</code> or lower. To move the home page to the bottom of the navigation, set a negative value, such as <code translate="no" v-pre>order: -10000</code>.</p>
 <h3 id="order-by-number">Order by number</h3>
 <p>Larger number = order higher in the stack.</p>
@@ -1225,6 +1263,10 @@ permalink: /tutorials
 ---
 # Tutorials</code></pre>
 </doc-codeblock></div>
+<retype-table copy-text="File path | Old URL | New URL
+-- | -- | --
+`/guides/readme.md` | `/guides` | `/tutorials`
+`/guides/configuration.md` | `/guides/configuration` | `/tutorials/configuration`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1248,6 +1290,7 @@ permalink: /tutorials
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <hr>
 <h2 id="redirect">redirect</h2>
@@ -1340,6 +1383,12 @@ target: blank
 This page will open in a new tab when clicked in the navigation.</code></pre>
 </doc-codeblock></div>
 <p>Supported values:</p>
+<retype-table copy-text="Value | Transformed To | Description
+--- | --- | ---
+`blank` | `_blank` | Opens the link in a new tab
+`self` | `_self` | Opens the link in the current tab (default)
+`parent` | `_parent` | Opens the link in the parent frame
+`top` | `_top` | Opens the link in the top-most frame">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1373,6 +1422,7 @@ This page will open in a new tab when clicked in the navigation.</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>Retype automatically transforms common values like <code translate="no" v-pre>blank</code> to <code translate="no" v-pre>_blank</code>.</p>
 <p>This setting is useful when a page redirects to an external location, allowing new tabs to open without losing the current documentation context.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1450,6 +1500,15 @@ Some content here.</code></pre>
 <p>The <code translate="no" v-pre>toc</code> can be configured at the Page or Project levels.</p>
 <p>Configuring the <code translate="no" v-pre>toc</code> at the Page level overrides the Project level settings.</p>
 <p>Acceptable values for <code translate="no" v-pre>depth</code> include:</p>
+<retype-table copy-text="Value | Description
+--- | ---
+2 | Include `H2` headings only
+2-3 | `default` Include `H2` to `H3` headings
+1-4 | Include `H1` to `H3` headings
+2,3 | Include `H2` and `H3` headings
+2,4 | Include `H2` and `H4` headings
+1,3-4 | Include `H1` and `H3` to `H4` headings, skip `H2`
+1,2,3,4 | Include `H1`, `H2`, `H3`, and `H4` headings">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1490,6 +1549,7 @@ Some content here.</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <h3 id="toc-label">label</h3>
 <doc-panel id="label--string-1">
@@ -1505,6 +1565,12 @@ Some content here.</code></pre>
 <doc-panel id="visibility--publichiddenprotectedprivate">
     <template #title>visibility : <code translate="no" v-pre>public|hidden|protected|private</code></template>
 <p>Configure the visibility of the page to be <code translate="no" v-pre>public</code>, <code translate="no" v-pre>hidden</code>, <code translate="no" v-pre>protected</code>, or <code translate="no" v-pre>private</code>. Default is <code translate="no" v-pre>public</code>.</p>
+<retype-table copy-text="| Mode | Navigation | Search | Password | Description |
+| --- | :---: | :---: | :---: | --- |
+`public` | :white_check_mark: | :white_check_mark: | :no_entry_sign: | The page is public and visible in the main navigation. A password is not required to view this page.
+[`hidden`](#visibility-hidden) | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | The page will not be included in the navigation or search results, and a password is NOT required to view the page. This visibility is helpful for sharing a draft page before exposing the page to be public ([sample](/samples/hidden.md)).
+[`protected`](#visibility-protected) | :white_check_mark: | :no_entry_sign: | :white_check_mark: | The page is added to the public navigation but requires a password to access the content of the page ([sample](/samples/protected.md) password: `test`).
+[`private`](#visibility-private) | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | The page is hidden, not added to the navigation, and a password is required for access ([sample](/samples/private.md) password: `test`).">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1548,6 +1614,7 @@ Some content here.</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <h3 id="visibility-hidden">hidden</h3>
 <p>With <code translate="no" v-pre>hidden</code>, the page will still be created and added to the final website, but it is <em>hidden</em>. You can still link to the page or share a link to the page.</p>
@@ -1688,7 +1755,7 @@ retype build --password &lt;your-password&gt;</code></pre>
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/></svg></span>
                 <span class="card-compact-title">Changelog</span>
             </div>
-            <p class="card-compact-description">The latest release of Retype is v4.5.3.</p>
+            <p class="card-compact-description">The latest release of Retype is v4.6.0-preview.</p>
         </div>
     </a>
 </div>
@@ -1806,9 +1873,6 @@ retype build --password &lt;your-password&gt;</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-24T03:07:55" title="2026-03-24" data-absolute-label="Last updated on 2026-03-24" data-absolute-label-html="Last updated on 2026-03-24" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-24
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

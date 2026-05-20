@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Icon - Write On! with Retype</title>
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -79,7 +79,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -483,6 +483,11 @@ This is a sample page.</code></pre>
 <li>icon name → <code translate="no" v-pre>.svg</code> file name without the extension</li>
 </ul>
 <p>Examples:</p>
+<retype-table copy-text="| File path | Icon name | Shortcode |
+| --- | --- | --- |
+| `_components/icon/lucide/rocket.svg` | `lucide-rocket` | `:icon-lucide-rocket:` |
+| `_components/icon/brand/logo.svg` | `brand-logo` | `:icon-brand-logo:` |
+| `_components/icon/custom/help-circle.svg` | `custom-help-circle` | `:icon-custom-help-circle:` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -511,10 +516,22 @@ This is a sample page.</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The folder name does not need to match a public icon library name. You can choose any pack name that makes sense for your project.</p>
 <hr>
 <h2 id="popular-icon-pack-examples">Popular icon pack examples</h2>
 <p>Here are a few common packs you can add using the same folder-based approach:</p>
+<retype-table copy-text="Icons | Count (March 2026) | Shortcode | Sample
+--- | --- | --- | ---
+[Octicons](/components/octicons.md) (default) | 371 | `:icon-rocket:` | :icon-rocket:
+[Bootstrap](https://icons.getbootstrap.com/) | &gt;2000 | `:icon-boot-rocket:` | :icon-boot-rocket:
+[Font Awesome](https://fontawesome.com/) | &gt;2000 | `:icon-fa-rocket:` | :icon-fa-rocket:
+[Hero](https://heroicons.com/) | 316 | `:icon-hero-rocket:` | :icon-hero-rocket:
+[Lucide](https://lucide.dev/) | 1685 | `:icon-lucide-rocket:` | :icon-lucide-rocket:
+[Phosphor](https://phosphoricons.com/) | 9072 | `:icon-pho-rocket:` | :icon-pho-rocket:
+[Remix](https://remixicon.com/) | 3229 | `:icon-remix-rocket:` | :icon-remix-rocket:
+[Simple](https://simpleicons.org/) | 3414 | `:icon-simple-rocket:` | :icon-simple-rocket:
+[Tabler](https://tabler.io/icons) | 6074 | `:icon-tabler-rocket:` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -594,6 +611,7 @@ This is a sample page.</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>For the <code translate="no" v-pre>rocket</code> examples above, the SVG files are organized like this:</p>
 <figure class="content-center">
     <img src="/blog/images/2026-03-23-rocket-icons.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="197" height="483" />
@@ -640,9 +658,6 @@ This is a sample page.</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-28T06:50:14" title="2026-03-28" data-absolute-label="Last updated on 2026-03-28" data-absolute-label-html="Last updated on 2026-03-28" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-28
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Components - Write On! with Retype</title>
@@ -43,14 +43,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -72,7 +72,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -332,6 +332,14 @@
 <!-- Add content to _includes/top.md to include here -->
 <h1 id="components">Components</h1>
 <p>Retype Flavored <a href="/guides/markdown/">Markdown</a> (RFM) supports custom <strong>Components</strong>, including:</p>
+<retype-table copy-text="| Text | Layout | Code |
+| --   | --     | --   |
+| [:icon-id-badge: Badge](badge.md) | [:icon-columns: Column](column.md) | [:icon-code-square: Code Block](code-block.md) |
+| [:+1: Emoji](emoji.md) | [:icon-container: Container](container.md) | [:icon-code: Code Snippet](code-snippet.md) |
+| [:icon-heading: Headings](headings.md) | [:icon-rows: Panel](panel.md) | [:icon-diff-added: Math Formulas](math-formulas.md) |
+| [:icon-smiley: Icon](icon.md) | [:icon-browser: Tab](tab.md) | [:mermaid: Mermaid](mermaid.md) |
+| [:icon-mark-github: Octicons](octicons.md) | | [:icon-note: Card](card.md) |
+| [:icon-code-review: Comments](comments.md) | | [:icon-paintbrush: Color Chip](color-chip.md) |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable equal">
 <thead>
@@ -375,6 +383,15 @@
 </tbody>
 </table>
 </div>
+</retype-table>
+<retype-table copy-text="| Lists | Media | Interactive |
+| --    | --    | --          |
+| [:icon-list-unordered: List](list.md) | [:icon-image: Image](image.md) | [:icon-play: Button](button.md)
+| [:icon-table: Table](table.md) | [:icon-download: File Download](file-download.md) | [:icon-info: Callout](callout.md)
+| [:icon-workflow: Steps](steps.md) | [:icon-video: YouTube](youtube.md) | [:icon-link: Reference Link](reference-link.md)
+|  | [:icon-code-review: Embed](embed.md) | [:icon-iterations: Backlinks](backlinks.md)
+|  | [:icon-location: Google Maps](google-maps.md) | [:icon-history: Last Updated](last-updated.md)
+|  | [:icon-brand-instagram: Instagram](instagram.md) |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable equal">
 <thead>
@@ -420,16 +437,11 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 
-                <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-04T06:27:57" title="2026-05-04" data-absolute-label="Last updated on 2026-05-04" data-absolute-label-html="Last updated on 2026-05-04" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-05-04
-                    </time>
-                </div>
-
                 <!-- Required only on API pages -->
                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
             </div>

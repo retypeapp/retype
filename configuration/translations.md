@@ -94,7 +94,6 @@ The following table lists all the keys and default values that can be customized
 | `Callout_Tip_Title` | TIP | CONSEJO |
 | `API_AccessFilter_Label` | Access | Acceso |
 | `API_ClassType_Name` | Class | Clase |
-| `API_CopiedAckHint_Label` | Copied! | Copiado! |
 | `API_CopyHint_Label` | Copy | Copiar |
 | `API_CopyLinkHint_Label` | Copy link | Copiar enlace |
 | `API_CopyNameHint_Label` | Copy name | Copiar nombre |

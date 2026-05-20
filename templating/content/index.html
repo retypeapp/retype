@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Content - Write On! with Retype</title>
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -73,7 +73,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -358,6 +358,13 @@
 <hr>
 <h3 id="page-properties">Page properties</h3>
 <p>Once you have a page reference, you can access all the <a href="/configuration/page/">page</a> settings, including:</p>
+<retype-table copy-text="Property | Description
+--- | ---
+`.description` | The page description or excerpt
+`.filePath` | The file system path to the source file
+`.path` | The root-relative path to the page
+`.title` | The page title
+`.url` | The full URL of the page">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -390,6 +397,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <div id="page-properties-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">title: {{ content[&quot;getting-started&quot;].title }}
 description: {{ content[&quot;getting-started&quot;].description }}
@@ -538,40 +546,98 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 [!badge {{ tag.title }}|info](/tags/{{ tag.title }}) | {{ tag.pages | array.size }}
 {{ end }}</code></pre>
 </doc-codeblock></div>
-<p class="compact">Tag | Page count --- | ---
-<a href="/tags/community/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="Tag | Page count
+--- | ---
+[!badge community|info](/tags/community) | 2
+[!badge component|info](/tags/component) | 27
+[!badge config|info](/tags/config) | 6
+[!badge ftp|info](/tags/ftp) | 1
+[!badge github|info](/tags/github) | 4
+[!badge guide|info](/tags/guide) | 13
+[!badge hosting|info](/tags/hosting) | 5
+[!badge icon|info](/tags/icon) | 1
+[!badge pro|info](/tags/pro) | 3
+[!badge templating|info](/tags/templating) | 6
+[!badge theme|info](/tags/theme) | 1">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Tag</th>
+<th class="compact">Page count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/tags/community/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>community</span>
-</a> | 2
-<a href="/tags/component/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">2</td>
+</tr>
+<tr>
+<td><a href="/tags/component/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>component</span>
-</a> | 27
-<a href="/tags/config/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">27</td>
+</tr>
+<tr>
+<td><a href="/tags/config/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>config</span>
-</a> | 6
-<a href="/tags/ftp/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">6</td>
+</tr>
+<tr>
+<td><a href="/tags/ftp/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>ftp</span>
-</a> | 1
-<a href="/tags/github/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">1</td>
+</tr>
+<tr>
+<td><a href="/tags/github/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>github</span>
-</a> | 4
-<a href="/tags/guide/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">4</td>
+</tr>
+<tr>
+<td><a href="/tags/guide/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>guide</span>
-</a> | 14
-<a href="/tags/hosting/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">13</td>
+</tr>
+<tr>
+<td><a href="/tags/hosting/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>hosting</span>
-</a> | 6
-<a href="/tags/icon/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">5</td>
+</tr>
+<tr>
+<td><a href="/tags/icon/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>icon</span>
-</a> | 1
-<a href="/tags/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">1</td>
+</tr>
+<tr>
+<td><a href="/tags/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>pro</span>
-</a> | 3
-<a href="/tags/templating/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">3</td>
+</tr>
+<tr>
+<td><a href="/tags/templating/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>templating</span>
-</a> | 6
-<a href="/tags/theme/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+</a></td>
+<td class="compact">6</td>
+</tr>
+<tr>
+<td><a href="/tags/theme/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>theme</span>
-</a> | 1</p>
+</a></td>
+<td class="compact">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <h3 id="pages-for-a-specific-tag">Pages for a specific tag</h3>
 <p>The following sample demonstrates how to get all the Pages based on a specific tag:</p>
 <div id="pages-for-a-specific-tag-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -580,6 +646,12 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 {{ end }}</code></pre>
 </doc-codeblock></div>
 <ul>
+<li><a href="/hosting/cloudflare/">Cloudflare Pages</a></li>
+<li><a href="/hosting/docker/">Docker</a></li>
+<li><a href="/hosting/ftp/">Publish using FTP</a></li>
+<li><a href="/hosting/github-pages/">GitHub Pages</a></li>
+<li><a href="/hosting/gitlab-pages/">GitLab Pages</a></li>
+<li><a href="/hosting/netlify/">Netlify</a></li>
 <li><a href="/guides/blogging/">Blogging</a></li>
 <li><a href="/guides/cli/">Retype CLI</a></li>
 <li><a href="/guides/getting-started/">Getting Started</a></li>
@@ -587,13 +659,6 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li><a href="/guides/markdown/">Markdown</a></li>
 <li><a href="/guides/themes/">Themes</a></li>
 <li><a href="/guides/troubleshooting/">Troubleshooting</a></li>
-<li><a href="/hosting/cloudflare/">Cloudflare Pages</a></li>
-<li><a href="/hosting/docker/">Docker</a></li>
-<li><a href="/hosting/ftp/">Publish using FTP</a></li>
-<li><a href="/hosting/github-pages/">GitHub Pages</a></li>
-<li><a href="/hosting/gitlab-pages/">GitLab Pages</a></li>
-<li><a href="/hosting/heroku/">Heroku</a></li>
-<li><a href="/hosting/netlify/">Netlify</a></li>
 </ul>
 <hr>
 <h2 id="categories">Categories</h2>
@@ -739,15 +804,14 @@ description: {{ content.search(&quot;getting started&quot;)[0].description }}</c
 <li>Community (0 children)</li>
 <li>Faq (0 children)</li>
 <li>Feature log (0 children)</li>
-<li>Features (0 children)</li>
-<li>Samples (7 children)</li>
-<li>Components (31 children)</li>
-<li>Pro (1 children)</li>
-<li>Guides (9 children)</li>
-<li>Configuration (7 children)</li>
-<li>Blog (12 children)</li>
-<li>Hosting (8 children)</li>
+<li>Hosting (7 children)</li>
+<li>Components (30 children)</li>
 <li>Templating (5 children)</li>
+<li>Blog (12 children)</li>
+<li>Pro (0 children)</li>
+<li>Samples (5 children)</li>
+<li>Configuration (7 children)</li>
+<li>Guides (9 children)</li>
 <li>Not Found (0 children)</li>
 </ul>
 <hr>
@@ -781,10 +845,6 @@ templating: false
 </doc-codeblock></div>
 <h3 id="project-level-escaping">Project-level escaping</h3>
 <p>To disable templating project-wide, update your <code translate="no" v-pre>retype.yml</code> with the following:</p>
-<div id="project-level-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
-  enabled: false</code></pre>
-</doc-codeblock></div>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -806,7 +866,7 @@ templating: false
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/></svg></span>
                 <span class="card-compact-title">Changelog</span>
             </div>
-            <p class="card-compact-description">The latest release of Retype is v4.5.3.</p>
+            <p class="card-compact-description">The latest release of Retype is v4.6.0-preview.</p>
         </div>
     </a>
 </div>
@@ -823,6 +883,10 @@ templating: false
 </div>
 </div>
 </div>
+<div id="project-level-escaping-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">templating:
+  enabled: false</code></pre>
+</doc-codeblock></div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 
@@ -836,9 +900,6 @@ templating: false
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-29T11:12:57" title="2026-03-29" data-absolute-label="Last updated on 2026-03-29" data-absolute-label-html="Last updated on 2026-03-29" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-29
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

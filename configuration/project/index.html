@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Project configuration - Write On! with Retype</title>
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -79,7 +79,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -522,6 +522,10 @@ footer:
 <doc-panel id="label--object">
     <template #title>label : <code translate="no" v-pre>object</code></template>
 <p>Configure colors for the optional branding label shown beside the project title or logo.</p>
+<retype-table copy-text="| Option | Type | Description |
+| ------ | ---- | ----------- |
+| `text` | `string` | Custom text color for the branding label. |
+| `background` | `string` | Custom background color for the branding label. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -545,6 +549,7 @@ footer:
 </tbody>
 </table>
 </div>
+</retype-table>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">branding:
   colors:
@@ -813,6 +818,11 @@ footer:
 <p>Cache busting configuration for the website resources, such as the JavaScript (.js) and CSS (.css) files.</p>
 <p>Helps to ensure a loaded page refers to the most recent JavaScript and CSS resources.</p>
 <p>Specifies the approach Retype will use for cache invalidation.</p>
+<retype-table copy-text="| Strategy     | Description |
+| ------------ | ----------- |
+| `none`       | Cache invalidation is disabled. |
+| `path`       | Cache invalidation is achieved by concatinating the file name with a version token. |
+| `query`      | Cache invalidation is achieved by adding a query parameter with a version token value. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -837,6 +847,7 @@ footer:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>Default is <code translate="no" v-pre>query</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">cache:
@@ -1152,6 +1163,11 @@ generator:
 <doc-panel id="paths--string">
     <template #title>paths : <code translate="no" v-pre>string</code></template>
 <p>Configures url kind preference for resolved urls. Supported values: <code translate="no" v-pre>source</code>, <code translate="no" v-pre>relative</code>, and <code translate="no" v-pre>root</code>.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`relative` | Link paths are constructed using relative paths. Example: `../../guide/introduction/`. This is the default.
+`root`     | Link paths are constructed using paths resolving to the website root. Example: `/guide/introduction/`
+`source`   | Link paths are constructed using paths resolving to the source file root.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1176,6 +1192,7 @@ generator:
 </tbody>
 </table>
 </div>
+</retype-table>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
   paths: relative</code></pre>
@@ -1186,6 +1203,10 @@ generator:
     <template #title>recase : <code translate="no" v-pre>string</code></template>
 <p>Instructs Retype on how to recase the project file and folder names created by the author. Default is <code translate="no" v-pre>all</code>.</p>
 <p>By default, Retype will recase all the generated file and folder names to all lowercase.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`all`  | Covert all file and folder names in the generated [`output`](#output) to all lowercase. This is the default.
+`none` | Do not change the case of any file or folder names.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1206,6 +1227,7 @@ generator:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>To have Retype NOT change the casing of any of your file or folder names, set <code translate="no" v-pre>recase</code> to <code translate="no" v-pre>none</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">generator:
@@ -1267,6 +1289,15 @@ generator:
 <p>If no <code translate="no" v-pre>target</code> is configured, the link will open in the current tab.</p>
 <p>The <code translate="no" v-pre>target</code> can be set to any value, although <code translate="no" v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code translate="no" v-pre>blank</code> into <code translate="no" v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
 <p>There are several other values that may be prefixed with an <code translate="no" v-pre>_</code> character, including <code translate="no" v-pre>self</code>, <code translate="no" v-pre>parent</code>, and <code translate="no" v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code translate="no" v-pre>target</code> values.</p>
+<retype-table copy-text="| Config `target` value | Runtime `target` value |
+| --------------------- | ---------------------- |
+| `blank`               | `_blank`               |
+| `parent`              | `_parent`              |
+| `top`                 | `_top`                 |
+| `self`                | `_self`                |
+| `news1`               | `news1`                |
+| `nEWs2`               | `news2`                |
+| `recent NEWS`         | `recent-news`          |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -1307,6 +1338,7 @@ generator:
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <hr>
 <h2 id="include">include</h2>
@@ -1457,6 +1489,16 @@ generator:
     <template #title>default : <code translate="no" v-pre>string</code></template>
 <p>The default profile image to return from Gravatar queries whenever no image is assigned to the queried email address. Default value is <code translate="no" v-pre>mp</code>.</p>
 <p>Either a full URL to the image can be configured or one of the options listed below:</p>
+<retype-table copy-text="| Value | Sample |
+| --- | --- |
+| `404` | Broken image |
+| `mp` (default) | ![](/static/gravatar-sample-mp.png) |
+| `identicon` | ![](/static/gravatar-sample-identicon.png) |
+| `monsterid` | ![](/static/gravatar-sample-monsterid.png) |
+| `wavatar` | ![](/static/gravatar-sample-wavatar.png) |
+| `retro` | ![](/static/gravatar-sample-retro.png) |
+| `robohash` | ![](/static/gravatar-sample-robohash.png) |
+| `blank` | Blank image |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1501,6 +1543,7 @@ generator:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>Please see the <a href="https://en.gravatar.com/site/implement/images#default-image" class="outbound" target="_blank" rel="noopener noreferrer"><span>Default Image</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> documentation on the Gravatar website.</p>
 </doc-panel>
 <h4 id="integrations-gravatar-enabled">enabled</h4>
@@ -1758,6 +1801,15 @@ labels:
 <p>If no <code translate="no" v-pre>target</code> is configured, the link will open in the current tab.</p>
 <p>The <code translate="no" v-pre>target</code> can be set to any value, although <code translate="no" v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code translate="no" v-pre>blank</code> into <code translate="no" v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
 <p>There are several other values that may be prefixed with an <code translate="no" v-pre>_</code> character, including <code translate="no" v-pre>self</code>, <code translate="no" v-pre>parent</code>, and <code translate="no" v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code translate="no" v-pre>target</code> values.</p>
+<retype-table copy-text="| Config `target` value | Runtime `target` value |
+| --------------------- | ---------------------- |
+| `blank`               | `_blank`               |
+| `parent`              | `_parent`              |
+| `top`                 | `_top`                 |
+| `self`                | `_self`                |
+| `news1`               | `news1`                |
+| `nEWs2`               | `news2`                |
+| `recent NEWS`         | `recent-news`          |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -1798,6 +1850,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <h3 id="links-items">items</h3>
 <doc-panel id="items--list">
@@ -1892,6 +1945,18 @@ labels:
 <p>If <code translate="no" v-pre>dateFormat</code> is not configured, Retype uses the resolved default date format for the active locale. A custom default can also be configured using the <code translate="no" v-pre>Default_DateFormat</code> label key in <doc-anchor-trigger to="#labels"><code translate="no" v-pre>labels</code></doc-anchor-trigger>.</p>
 <p>If both <code translate="no" v-pre>locale.dateFormat</code> and <code translate="no" v-pre>labels.default.Default_DateFormat</code> are configured, <code translate="no" v-pre>locale.dateFormat</code> takes precedence.</p>
 <p>The following format specifiers are supported:</p>
+<retype-table copy-text="| Specifier | Meaning | Template sample | Output |
+| --- | --- | --- | --- |
+| `yy` | Two-digit year | `dateFormat: yy` | 26 |
+| `yyyy` | Four-digit year | `dateFormat: yyyy` | 2026 |
+| `M` | Month number | `dateFormat: M` | 5 |
+| `MM` | Two-digit month | `dateFormat: MM` | 05 |
+| `MMM` | Abbreviated month name | `dateFormat: MMM` | May |
+| `MMMM` | Full month name | `dateFormat: MMMM` | May |
+| `d` | Day of month | `dateFormat: d` | 20 |
+| `dd` | Two-digit day of month | `dateFormat: dd` | 20 |
+| `ddd` | Abbreviated day name | `dateFormat: ddd` | Wed |
+| `dddd` | Full day name | `dateFormat: dddd` | Wednesday |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -1943,30 +2008,39 @@ labels:
 <td><code translate="no" v-pre>d</code></td>
 <td>Day of month</td>
 <td><code translate="no" v-pre>dateFormat: d</code></td>
-<td>3</td>
+<td>20</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dd</code></td>
 <td>Two-digit day of month</td>
 <td><code translate="no" v-pre>dateFormat: dd</code></td>
-<td>03</td>
+<td>20</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ddd</code></td>
 <td>Abbreviated day name</td>
 <td><code translate="no" v-pre>dateFormat: ddd</code></td>
-<td>Sun</td>
+<td>Wed</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dddd</code></td>
 <td>Full day name</td>
 <td><code translate="no" v-pre>dateFormat: dddd</code></td>
-<td>Sunday</td>
+<td>Wednesday</td>
 </tr>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>Common full date strings can be composed by combining the supported specifiers:</p>
+<retype-table copy-text="| Template sample | Output |
+| --- | --- |
+| `dateFormat: yyyy-MM-dd` | 2026-05-20 |
+| `dateFormat: MM/dd/yyyy` | 05/20/2026 |
+| `dateFormat: dd MMM yyyy` | 20 May 2026 |
+| `dateFormat: MMM d, yyyy` | May 20, 2026 |
+| `dateFormat: MMMM d, yyyy` | May 20, 2026 |
+| `dateFormat: dddd, MMMM d, yyyy` | Wednesday, May 20, 2026 |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -1978,34 +2052,67 @@ labels:
 <tbody>
 <tr>
 <td><code translate="no" v-pre>dateFormat: yyyy-MM-dd</code></td>
-<td>2026-05-03</td>
+<td>2026-05-20</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MM/dd/yyyy</code></td>
-<td>05/03/2026</td>
+<td>05/20/2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dd MMM yyyy</code></td>
-<td>03 May 2026</td>
+<td>20 May 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMM d, yyyy</code></td>
-<td>May 3, 2026</td>
+<td>May 20, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMMM d, yyyy</code></td>
-<td>May 3, 2026</td>
+<td>May 20, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dddd, MMMM d, yyyy</code></td>
-<td>Sunday, May 3, 2026</td>
+<td>Wednesday, May 20, 2026</td>
 </tr>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>Month and day names generated by <code translate="no" v-pre>dateFormat</code> respect the active <code translate="no" v-pre>locale</code>. For example, <code translate="no" v-pre>locale: fr</code> outputs French month and day names.</p>
 </doc-panel>
 <h3 id="supported-languages">Supported Languages</h3>
+<retype-table copy-text="Code | Language | Native name
+---  | --- | ---
+`ar` | Arabic | العربية
+`da` | Danish | Dansk
+`de` | German | Deutsch
+`el` [!badge variant=&quot;info&quot; size=&quot;xs&quot; text=&quot;as of v3.8&quot;]| Greek | Ελληνικά (Elliniká)
+`en` [!badge variant=&quot;info&quot; size=&quot;xs&quot; text=&quot;default&quot;] | English | English
+`es` | Spanish | Español
+`fi` | Finnish | Suomalainen
+`fr` | French | Français
+`he` [!badge variant=&quot;info&quot; size=&quot;xs&quot; text=&quot;as of v3.8&quot;] | Hebrew ((Ivrit)) | עברית
+`hi` | Hindi | हिन्दी
+`hu` | Hungarian | Magyar
+`hy` | Armenian (Hayeren) | Հայերեն
+`it` | Italian | Italiano
+`ja` | Japanese | 日本語
+`kn` | Kannada | ಕನ್ನಡ
+`ko` | Korean | 한국어
+`nb` | Norwegian (Bokmål) | Norsk (Bokmål)
+`nl` | Dutch | Nederlands
+`pt` | Portuguese (Brazil) | Português (Brasil)
+`pt-PT` | Portuguese (Portugal) | Português (Portugal)
+`ro` | Romanian | Română
+`ru` | Russian | Русский
+`sa` | Sankrit (Saṁskṛtam) | संस्कृतम्
+`sv` | Swedish | Svenska
+`ta` | Tamil | தமிழ்
+`te` | Telugu | తెలుగు
+`th` | Thai | ไทย
+`tr` | Turkish | Türkçe
+`vi` | Vietnamese | Tiếng Việt
+`zh` | Chinese | 中文">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -2175,6 +2282,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h2 id="markdown">markdown</h2>
 <p>Markdown configuration options.</p>
@@ -2249,6 +2357,10 @@ labels:
 <doc-panel id="mode--string">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the sidebar navigation is created and functions. The default functionality is to create the navigation as an expandable Tree structure. The default value for <code translate="no" v-pre>mode</code> is <code translate="no" v-pre>default</code>.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`default` | Create the navigation as a Tree structure where top-level folders are expandable and collapsible.
+`stack`   | Create the navigation where the top-level folders are automatically expanded, creating a &quot;stacked&quot; view of the navigation path.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2269,6 +2381,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The following sample demonstrates how to configure the &quot;stacked&quot; navigation structure:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
@@ -2291,6 +2404,13 @@ labels:
   icons:
     mode: all|none|folders|pages|top # Default is all</code></pre>
 </doc-codeblock></div>
+<retype-table copy-text="| Mode    | Description                                                            |
+|---------|------------------------------------------------------------------------|
+| `all`     | Show icons for all navigation items (default)                          |
+| `folders` | Show icons only for folder/category items                              |
+| `pages`   | Show icons only for page items                                         |
+| `top`     | Show icons only for top-level pages and folders, hide for nested items |
+| `none`    | Hide all navigation icons                                              |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2323,6 +2443,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>To hide icons for all pages and folders, add the following setting to your project <code translate="no" v-pre>retype.yml</code> configuration file:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
@@ -2341,6 +2462,11 @@ labels:
 <doc-panel id="mode--string-2">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls how the Next/Previous navigation buttons are displayed and whether the page is included in the navigation sequence.</p>
+<retype-table copy-text="Option | Description
+--- | ---
+`show` | Show Next and Previous buttons and include page in sequence (Default)
+`hide` | Hide buttons but keep page in sequential order
+`exclude` | Hide buttons and exclude page from sequential order">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2365,6 +2491,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The default value is <code translate="no" v-pre>show</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nextprev:
@@ -2523,6 +2650,11 @@ labels:
 <doc-panel id="mode--string-3">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>Controls the default color scheme for the website. The default value is <code translate="no" v-pre>system</code>, which will automatically switch between <code translate="no" v-pre>dark</code> and <code translate="no" v-pre>light</code> modes based on the visitor&#x27;s system preference.</p>
+<retype-table copy-text="| Mode     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| `system` | (default) Automatically use the visitor's system color scheme preference.   |
+| `dark`   | Always render the website in dark mode.                                     |
+| `light`  | Always render the website in light mode.                                    |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2547,6 +2679,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>To configure Retype to always render in dark mode, add the following to your <code translate="no" v-pre>retype.yml</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">scheme:
@@ -2667,6 +2800,11 @@ labels:
 <doc-panel id="mode--string-4">
     <template #title>mode : <code translate="no" v-pre>string</code></template>
 <p>The search index creation mode. Default is <code translate="no" v-pre>full</code>.</p>
+<retype-table copy-text="Mode | Description
+--- | ---
+`full` | A full-text search index of the project content is made. Includes all headings and all text content.
+`partial` | All headings plus the first paragraph under each heading is used to create the search index. The Page `description` config is also included if not empty.
+`basic` | All headings plus only the first paragraph of each page is used to create the search index. The Page `description` config is also included if not empty.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2691,6 +2829,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The following sample demonstrates how to configure <code translate="no" v-pre>search.mode</code> with a new value:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">search:
@@ -2813,6 +2952,10 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>If <code translate="no" v-pre>memory</code>, the entire website is built and then stored in memory during development with no files being written to disk.</p>
 <p>If <code translate="no" v-pre>disk</code>, the entire website is built and written to disk, then the web server will host those files from their disk location.</p>
 <p>Default is <code translate="no" v-pre>memory</code>.</p>
+<retype-table copy-text="| Mode     | Description |
+| -------- | ----------- |
+| `memory` | No output files are written to a disk. Retype serves a website from the in-memory storage. |
+| `disk`   | Output files are written to the [`output`](#output) directory, and updated with each incremental build accordingly. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2833,6 +2976,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tbody>
 </table>
 </div>
+</retype-table>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   watch:
@@ -2848,6 +2992,11 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>If <code translate="no" v-pre>true</code>, Retype will poll for file changes within your projects <doc-anchor-trigger to="#input">input</doc-anchor-trigger> directory. By default, the polling interval is 1000 milliseconds (1 second).</p>
 <p>The poll interval is configurable by setting a <code translate="no" v-pre>number</code> value. For instance, setting <code translate="no" v-pre>polling: 500</code> would configure a 500ms interval.</p>
 <p>Default is <code translate="no" v-pre>false</code>.</p>
+<retype-table copy-text="| Polling  | Description |
+| -------- | ----------- |
+| `false`  | Use native filesystem event listeners to receive file change notifications the project [input](#input) directory. |
+| `true`   | Poll the [input](#input) directory for changes every 1000 milliseconds (1 second). |
+| `number` | Poll the [input](#input) directory in milliseconds. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2872,6 +3021,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tbody>
 </table>
 </div>
+</retype-table>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">serve:
   watch:
@@ -2902,6 +3052,11 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
     <template #title>validation : <code translate="no" v-pre>string</code></template>
 <p>Configure how thorough Retype is while looking for changed files.</p>
 <p>Default value is <code translate="no" v-pre>optimal</code>.</p>
+<retype-table copy-text="| Validation | Description |
+| ---------- | ----------- |
+| `fast`     | Compare file system metadata only (reported file size and last modification time). |
+| `full`     | Perform full SHA2 comparison on every tracked file. |
+| `optimal`  | Compare file system metadata and, for every file with changes, perform SHA2 comparison. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2926,6 +3081,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <hr>
 <h2 id="showsidebarfilter">showSidebarFilter</h2>
@@ -3190,6 +3346,15 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <p>The <code translate="no" v-pre>toc</code> can be configured at the Project or Page levels.</p>
 <p>Configuring the <code translate="no" v-pre>toc</code> at the Page level overrides the Project level settings.</p>
 <p>Acceptable values for <code translate="no" v-pre>depth</code> include:</p>
+<retype-table copy-text="Value | Description
+--- | ---
+2 | Include `H2` headings only
+2-3 | `default` Include `H2` to `H3` headings
+1-4 | Include `H1` to `H3` headings
+2,3 | Include `H2` and `H3` headings
+2,4 | Include `H2` and `H4` headings
+1,3-4 | Include `H1` and `H3` to `H4` headings, skip `H2`
+1,2,3,4 | Include `H1`, `H2`, `H3`, and `H4` headings">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -3230,6 +3395,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-panel>
 <h3 id="toc-label">label</h3>
 <doc-panel id="label--string-2">
@@ -3310,7 +3476,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/></svg></span>
                 <span class="card-compact-title">Changelog</span>
             </div>
-            <p class="card-compact-description">The latest release of Retype is v4.5.3.</p>
+            <p class="card-compact-description">The latest release of Retype is v4.6.0-preview.</p>
         </div>
     </a>
 </div>
@@ -3418,9 +3584,6 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-30T15:14:03" title="2026-04-30" data-absolute-label="Last updated on 2026-04-30" data-absolute-label-html="Last updated on 2026-04-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-04-30
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

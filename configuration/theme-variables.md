@@ -254,6 +254,12 @@ Variables controlling the header appearance.
 | --- | --- | --- | --- |
 | `header-bg` | Header background color | `base-bg` | `base-bg` |
 | `header-border` | Header border color | `base-border` | `base-border` |
+| `header-title-font-size` | Header title font size | `1.5rem`, or `1.25rem` for long titles | `1.5rem`, or `1.25rem` for long titles |
+| `header-title-font-size-md` | Header title font size on medium and wider screens | `header-title-font-size` | `header-title-font-size` |
+| `header-title-font-weight` | Header title font weight | `700` | `700` |
+| `header-title-line-height` | Header title line height | `1.375` | `1.375` |
+| `header-title-line-height-md` | Header title line height on medium and wider screens | `header-title-line-height` | `header-title-line-height` |
+| `header-title-max-width` | Header title maximum width | `none` | `none` |
 | `header-text` | Header text color | `base-link` | `base-link` |
 | `header-text-weight` | Header text font weight | `base-link-weight` | `base-link-weight` |
 | `header-text-hover` | Header text hover color | `base-link-hover` | `base-link-hover` |

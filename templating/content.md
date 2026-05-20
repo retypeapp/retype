@@ -153,8 +153,8 @@ Tag | Page count {.compact}
 [!badge config|info](/tags/config) | 6
 [!badge ftp|info](/tags/ftp) | 1
 [!badge github|info](/tags/github) | 4
-[!badge guide|info](/tags/guide) | 14
-[!badge hosting|info](/tags/hosting) | 6
+[!badge guide|info](/tags/guide) | 13
+[!badge hosting|info](/tags/hosting) | 5
 [!badge icon|info](/tags/icon) | 1
 [!badge pro|info](/tags/pro) | 3
 [!badge templating|info](/tags/templating) | 6
@@ -170,6 +170,12 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+- [Cloudflare Pages](/hosting/cloudflare.md)
+- [Docker](/hosting/docker.md)
+- [Publish using FTP](/hosting/ftp.md)
+- [GitHub Pages](/hosting/github-pages.md)
+- [GitLab Pages](/hosting/gitlab-pages.md)
+- [Netlify](/hosting/netlify.md)
 - [Blogging](/guides/blogging.md)
 - [Retype CLI](/guides/cli.md)
 - [Getting Started](/guides/getting-started.md)
@@ -177,13 +183,6 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - [Markdown](/guides/markdown.md)
 - [Themes](/guides/themes.md)
 - [Troubleshooting](/guides/troubleshooting.md)
-- [Cloudflare Pages](/hosting/cloudflare.md)
-- [Docker](/hosting/docker.md)
-- [Publish using FTP](/hosting/ftp.md)
-- [GitHub Pages](/hosting/github-pages.md)
-- [GitLab Pages](/hosting/gitlab-pages.md)
-- [Heroku](/hosting/heroku.md)
-- [Netlify](/hosting/netlify.md)
 
 ---
 
@@ -292,15 +291,14 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Community (0 children)
 - Faq (0 children)
 - Feature log (0 children)
-- Features (0 children)
-- Samples (7 children)
-- Components (31 children)
-- Pro (1 children)
-- Guides (9 children)
-- Configuration (7 children)
-- Blog (12 children)
-- Hosting (8 children)
+- Hosting (7 children)
+- Components (30 children)
 - Templating (5 children)
+- Blog (12 children)
+- Pro (0 children)
+- Samples (5 children)
+- Configuration (7 children)
+- Guides (9 children)
 - Not Found (0 children)
 
 ---

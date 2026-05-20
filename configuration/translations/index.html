@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Translations - Write On! with Retype</title>
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -73,7 +73,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -397,6 +397,113 @@ labels:
 <p>The above outputs the value: <code translate="no" v-pre>Désolé, aucun résultat trouvé.</code></p>
 <h2 id="keys">Keys</h2>
 <p>The following table lists all the keys and default values that can be customized in a Retype project. The <code translate="no" v-pre>es</code> (Spanish) values are also provided for reference.</p>
+<retype-table copy-text="| Key | `default` (English) | `es` (Spanish) |
+| --- | --- | --- |
+| `Callout_Caution_Title` | CAUTION | PRECAUCIÓN |
+| `Callout_Danger_Title` | DANGER | PELIGRO |
+| `Callout_Info_Title` | INFO | INFORMACIÓN |
+| `Callout_Note_Title` | NOTE | NOTA |
+| `Callout_Tip_Title` | TIP | CONSEJO |
+| `API_AccessFilter_Label` | Access | Acceso |
+| `API_ClassType_Name` | Class | Clase |
+| `API_CopyHint_Label` | Copy | Copiar |
+| `API_CopyLinkHint_Label` | Copy link | Copiar enlace |
+| `API_CopyNameHint_Label` | Copy name | Copiar nombre |
+| `API_DefaultParameterValue_Label` | Default value | Valor predeterminado |
+| `API_DelegateType_Name` | Delegate | Delegado |
+| `API_EnumType_Name` | Enum | Enumeración |
+| `API_EventGroup_Title` | Events | Eventos |
+| `API_FieldGroup_Title` | Fields | Campos |
+| `API_InheritedFilter_Label` | Inherited | Heredado |
+| `API_InterfaceType_Name` | Interface | Interfaz |
+| `API_MethodGroup_Title` | Methods | Métodos |
+| `API_MoreDropdownItems_Label` | More | Más |
+| `API_MoreOverloads_Label` | more | más |
+| `API_OptionalParameter_Label` | optional | opcional |
+| `API_ParameterSection_Label` | PARAMETERS | PARÁMETROS |
+| `API_PropertyGroup_Title` | Properties | Propiedades |
+| `API_ProtectedAccess_Name` | Protected | Protegido |
+| `API_PublicAccess_Name` | Public | Público |
+| `API_RecordType_Name` | Record | Registro |
+| `API_SecurityAlert_Title` | Security | Seguridad |
+| `API_SecurityNoteAlert_Title` | Security Note | Nota de seguridad |
+| `API_SignatureSection_Label` | SIGNATURE | FIRMA |
+| `API_StructType_Name` | Struct | Structura |
+| `API_TypeHierarchyPanel_Title` | Hierarchy | Jerarquía |
+| `ContentFooter_NewerButton_Label` | Newer | Más nuevo |
+| `ContentFooter_NextButton_Label` | Next | Siguiente |
+| `ContentFooter_OlderButton_Label` | Older | Más antiguo |
+| `ContentFooter_PrevButton_Label` | Previous | Anterior |
+| `ContentFooter_LastUpdated_AbsoluteTemplate` | Last updated on {0} | Última actualización el {0} |
+| `ContentFooter_LastUpdated_AbsoluteByTemplate` | Last updated on {0} by {1} | Última actualización el {0} por {1} |
+| `ContentFooter_LastUpdated_RelativeTemplate` | Last updated {0} | Última actualización {0} |
+| `ContentFooter_LastUpdated_RelativeByTemplate` | Last updated {0} by {1} | Última actualización {0} por {1} |
+| `Default_DateFormat` | yyyy-MM-dd | yyyy-MM-dd |
+| `Editor_CancelButton_Label` | Cancel | Cancelar |
+| `Editor_EditButton_Label` | Edit | Editar |
+| `Editor_SaveButton_Label` | Save | Guardar |
+| `Filter_NoMembersFound_Label` | No member names found containing the query | No se encontraron nombres de miembros que contengan la consulta |
+| `History_AgoTime_Label` | ago | hace |
+| `History_ClearLink_Label` | Clear | Limpiar |
+| `History_DayTime_Label` | d | d |
+| `History_HourTime_Label` | h | h |
+| `History_JustNowTime_Label` | just now | justo ahora |
+| `History_MinuteTime_Label` | m | min |
+| `History_MonthTime_Label` | mo | mes |
+| `History_NoHistory_Label` | No history items | No hay elementos de historial |
+| `History_SecondTime_Label` | s | s |
+| `History_Title_Label` | History | Historial |
+| `History_YearTime_Label` | y | año |
+| `Note_Question_Title` | Question | Pregunta |
+| `Note_Caution_Title` | Caution | Precaución |
+| `Note_Important_Title` | Important | Importante |
+| `Note_Note_Title` | Note | Nota |
+| `Note_Tip_Title` | Tip | Consejo |
+| `Note_Warning_Title` | Warning | Advertencia |
+| `PageMeta_By_Label` | By | Por |
+| `PageMeta_In_Label` | In | En |
+| `PageMeta_Published_Label` | Published | Publicado |
+| `Panel_Title_Details` | Details | Detalles |
+| `Page_404_GoToHomeButton_Label` | Go to homepage | Ir a la página principal |
+| `Page_404_MessageBody` | You may have mistyped the address or the page may have been moved. | Puede que haya escrito incorrectamente la dirección o que la página se haya movido. |
+| `Page_404_MessageTitle` | Oops! The page you’re looking for doesn’t exist. | ¡Vaya! La página que buscas no existe. |
+| `Page_404_Title` | Not Found | No encontrado |
+| `Page_Blog_Title` | Blog | Blog |
+| `Page_Page` | Page | Page |
+| `Page_Categories_Title` | Categories | Categorías |
+| `Page_Category_Categories_Label` | categories | categorías |
+| `Page_Category_SeeAll_Label` | See all | Ver todas |
+| `Page_Category_Title` | Category | Categoría |
+| `Page_Docs_Title` | Docs | Documentos |
+| `Page_Tags_Title` | Tags | Etiquetas |
+| `Page_Tag_SeeAll_Label` | See all | Ver todas |
+| `Page_Tag_Tags_Label` | tags | etiquetas |
+| `Page_Tag_Title` | Tag | Etiqueta |
+| `Page_Welcome_Title` | Welcome | Bienvenido/a |
+| `Plugin_Edit_EditThisPage_Label` | Edit this page | Editar esta página |
+| `PrivatePage_Password_Label` | Enter password: | Introduzca la contraseña: |
+| `PrivatePage_Password_Title` | This page is password protected | Esta página está protegida con contraseña |
+| `PrivatePage_Password_Unlock` | Unlock | Desbloquear |
+| `PrivatePage_Password_Wrong` | Wrong password! | ¡Contraseña incorrecta! |
+| `Project_DefaultTitle_Value` | Project Name | Nombre del proyecto |
+| `Search_Input_Placeholder` | Search | Buscar |
+| `Search_Navigate_Label` | navigate | navegar |
+| `Search_NoResults_Label` | Sorry, no results found. | Lo siento, no se encontraron resultados. |
+| `Search_Open_Label` | open | abrir |
+| `Search_Close_Label` | close | cerrar |
+| `Search_TopResults_Label` | Top {0} results | Top {0} resultados |
+| `Search_Result_Singular_Label` | {0} result | {0} resultado |
+| `Search_Result_Plural_Label` | {0} results | {0} resultados |
+| `Sidebar_Filter_Placeholder` | Filter | Filtrar |
+| `Toc_Contents_Label` | Contents | Contenidos |
+| `Toc_RelatedClasses_Label` | Related Classes | Clases relacionadas |
+| `Toolbar_Access_Placeholder` | Access | Acceso |
+| `Toolbar_Filters_Placeholder` | Filters | Filtros |
+| `Toolbar_Filter_Placeholder` | Filter | Filtrar |
+| `Text_Light` | Light | Claro |
+| `Text_Dark` | Dark | Oscuro |
+| `Text_System` | System | Sistema |
+| `Backlinks_Title` | See also | Véase también |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -441,11 +548,6 @@ labels:
 <td><code translate="no" v-pre>API_ClassType_Name</code></td>
 <td>Class</td>
 <td>Clase</td>
-</tr>
-<tr>
-<td><code translate="no" v-pre>API_CopiedAckHint_Label</code></td>
-<td>Copied!</td>
-<td>Copiado!</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>API_CopyHint_Label</code></td>
@@ -940,6 +1042,7 @@ labels:
 </tbody>
 </table>
 </div>
+</retype-table>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -979,9 +1082,6 @@ labels:
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-03T17:28:04" title="2026-04-03" data-absolute-label="Last updated on 2026-04-03" data-absolute-label-html="Last updated on 2026-04-03" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-04-03
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v4.3 - Write On! with Retype</title>
@@ -50,15 +50,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -78,7 +78,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -390,6 +390,11 @@
 </doc-codeblock></div>
 <p>Menus are supported to one level deep. Each item supports the same properties as a top-level link, including <code translate="no" v-pre>text</code>, <code translate="no" v-pre>link</code>, <code translate="no" v-pre>icon</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>description</code>.</p>
 <p>The dropdown menu width and horizontal offsets are customizable using the CSS <a href="/guides/themes/">theme</a> variables:</p>
+<retype-table copy-text="| Theme Variable | Description | Default |
+| --- | --- | --- |
+| `header-links-dropdown-max-width` | Maximum width of the dropdown menu | `300px` |
+| `header-links-dropdown-offset` | Horizontal offset of the dropdown menu | `0` |
+| `header-links-dropdown-gap` | Vertical gap between the dropdown menu and the link | `0.5rem` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -418,6 +423,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>On the retype.com website, we adjust the horizontal position of the menu using the following configuration:</p>
 <div id="new-header-dropdown-menus-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">theme:
@@ -469,6 +475,18 @@
 </doc-codeblock></div>
 <p>If <code translate="no" v-pre>locale.dateFormat</code> is configured, it takes precedence over the <code translate="no" v-pre>Default_DateFormat</code> label.</p>
 <p>The date format settings can be configured with the following specifiers:</p>
+<retype-table copy-text="| Specifier | Meaning | Template sample | Output |
+| --- | --- | --- | --- |
+| `yy` | Two-digit year | `dateFormat: yy` | 26 |
+| `yyyy` | Four-digit year | `dateFormat: yyyy` | 2026 |
+| `M` | Month number | `dateFormat: M` | 5 |
+| `MM` | Two-digit month | `dateFormat: MM` | 05 |
+| `MMM` | Abbreviated month name | `dateFormat: MMM` | May |
+| `MMMM` | Full month name | `dateFormat: MMMM` | May |
+| `d` | Day of month | `dateFormat: d` | 20 |
+| `dd` | Two-digit day of month | `dateFormat: dd` | 20 |
+| `ddd` | Abbreviated day name | `dateFormat: ddd` | Wed |
+| `dddd` | Full day name | `dateFormat: dddd` | Wednesday |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -520,30 +538,39 @@
 <td><code translate="no" v-pre>d</code></td>
 <td>Day of month</td>
 <td><code translate="no" v-pre>dateFormat: d</code></td>
-<td>3</td>
+<td>20</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dd</code></td>
 <td>Two-digit day of month</td>
 <td><code translate="no" v-pre>dateFormat: dd</code></td>
-<td>03</td>
+<td>20</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ddd</code></td>
 <td>Abbreviated day name</td>
 <td><code translate="no" v-pre>dateFormat: ddd</code></td>
-<td>Sun</td>
+<td>Wed</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dddd</code></td>
 <td>Full day name</td>
 <td><code translate="no" v-pre>dateFormat: dddd</code></td>
-<td>Sunday</td>
+<td>Wednesday</td>
 </tr>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>Common full date string configurations can be composed by combining individual specifiers:</p>
+<retype-table copy-text="| Template sample | Output |
+| --- | --- |
+| `dateFormat: yyyy-MM-dd` | 2026-05-20 |
+| `dateFormat: MM/dd/yyyy` | 05/20/2026 |
+| `dateFormat: dd MMM yyyy` | 20 May 2026 |
+| `dateFormat: MMM d, yyyy` | May 20, 2026 |
+| `dateFormat: MMMM d, yyyy` | May 20, 2026 |
+| `dateFormat: dddd, MMMM d, yyyy` | Wednesday, May 20, 2026 |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -555,31 +582,32 @@
 <tbody>
 <tr>
 <td><code translate="no" v-pre>dateFormat: yyyy-MM-dd</code></td>
-<td>2026-05-03</td>
+<td>2026-05-20</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MM/dd/yyyy</code></td>
-<td>05/03/2026</td>
+<td>05/20/2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dd MMM yyyy</code></td>
-<td>03 May 2026</td>
+<td>20 May 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMM d, yyyy</code></td>
-<td>May 3, 2026</td>
+<td>May 20, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMMM d, yyyy</code></td>
-<td>May 3, 2026</td>
+<td>May 20, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dddd, MMMM d, yyyy</code></td>
-<td>Sunday, May 3, 2026</td>
+<td>Wednesday, May 20, 2026</td>
 </tr>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>The date format also respects the <code translate="no" v-pre>locale</code> setting. For example, using the <code translate="no" v-pre>locale: fr</code> configuration in your project will output French month and day names.</p>
 <hr>
 <h2 id="new-keyboard-navigation">New keyboard navigation</h2>
@@ -716,13 +744,7 @@ backlinks:
 </ol>
 </div>
 
-            <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
             
-                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-23T18:35:12" title="2026-03-23" data-absolute-label="Last updated on 2026-03-23" data-absolute-label-html="Last updated on 2026-03-23" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                    Last updated on 2026-03-23
-                </time>
-            </div>
-
             <!-- Required only on API pages -->
             <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
         </div>

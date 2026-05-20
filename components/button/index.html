@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Button - Write On! with Retype</title>
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -73,7 +73,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -377,6 +377,20 @@ Using text|variant shorthand notation
 // With link and variant
 [!button text=&quot;My Button&quot; variant=&quot;success&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
+<retype-table copy-text="| Variant             | Example                                        |
+| ------------------- | ---------------------------------------------- |
+| `base`              | [!button variant=&quot;base&quot; text=&quot;Base&quot;]           |
+| `primary` (default) | [!button variant=&quot;primary&quot; text=&quot;Primary&quot;]     |
+| `secondary`         | [!button variant=&quot;secondary&quot; text=&quot;Secondary&quot;] |
+| `success`           | [!button variant=&quot;success&quot; text=&quot;Success&quot;]     |
+| `question`          | [!button variant=&quot;question&quot; text=&quot;Question&quot;]   |
+| `danger`            | [!button variant=&quot;danger&quot; text=&quot;Danger&quot;]       |
+| `warning`           | [!button variant=&quot;warning&quot; text=&quot;Warning&quot;]     |
+| `info`              | [!button variant=&quot;info&quot; text=&quot;Info&quot;]           |
+| `light`             | [!button variant=&quot;light&quot; text=&quot;Light&quot;]         |
+| `dark`              | [!button variant=&quot;dark&quot; text=&quot;Dark&quot;]           |
+| `ghost`             | [!button variant=&quot;ghost&quot; text=&quot;Ghost&quot;]         |
+| `contrast`          | [!button variant=&quot;contrast&quot; text=&quot;Contrast&quot;]   |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -461,6 +475,7 @@ Using text|variant shorthand notation
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h2 id="corners">Corners</h2>
 <div id="corners-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -468,6 +483,11 @@ Using text|variant shorthand notation
 [!button corners=&quot;square&quot; text=&quot;Square&quot;](button.md)
 [!button corners=&quot;pill&quot; text=&quot;Button Pill&quot;](button.md)</code></pre>
 </doc-codeblock></div>
+<retype-table copy-text="| Size | Example |
+| --- | --- |
+| `round` (default) | [!button text=&quot;Default&quot;] |
+| `square` | [!button corners=&quot;square&quot; text=&quot;Square&quot;] |
+| `pill` | [!button corners=&quot;pill&quot; text=&quot;Button Pill&quot;] |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -498,11 +518,21 @@ Using text|variant shorthand notation
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h2 id="size">Size</h2>
 <div id="size-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button size=&quot;m&quot; text=&quot;Medium&quot;](button.md)</code></pre>
 </doc-codeblock></div>
+<retype-table copy-text="| Size | Example |
+| --- | --- |
+| `xs` | [!button size=&quot;xs&quot; text=&quot;XSmall&quot;] |
+| `s` | [!button size=&quot;s&quot; text=&quot;Small&quot;] |
+| `m` (default) | [!button size=&quot;m&quot; text=&quot;Medium&quot;] |
+| `l` | [!button size=&quot;l&quot; text=&quot;Large&quot;] |
+| `xl` | [!button size=&quot;xl&quot; text=&quot;XLarge&quot;] |
+| `2xl` | [!button size=&quot;2xl&quot; text=&quot;2XLarge&quot;] |
+| `3xl` | [!button size=&quot;3xl&quot; text=&quot;3XLarge&quot;] |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -557,6 +587,7 @@ Using text|variant shorthand notation
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h2 id="target">Target</h2>
 <p>Sets the <code translate="no" v-pre>target</code> attribute of the button and specifies which window or tab to open the link into.</p>
@@ -569,6 +600,15 @@ Using text|variant shorthand notation
 <p>If no <code translate="no" v-pre>target</code> is configured, the link will open in the current tab.</p>
 <p>The <code translate="no" v-pre>target</code> can be set to any value, although <code translate="no" v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code translate="no" v-pre>blank</code> into <code translate="no" v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
 <p>There are several other values that may be prefixed with an <code translate="no" v-pre>_</code> character, including <code translate="no" v-pre>self</code>, <code translate="no" v-pre>parent</code>, and <code translate="no" v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code translate="no" v-pre>target</code> values.</p>
+<retype-table copy-text="Config `target` value | Runtime `target` value
+--- | ---
+`blank` | `_blank`
+`parent` | `_parent`
+`top` | `_top`
+`self` | `_self`
+`news1` | `news1`
+`nEWs2` | `news2`
+`recent NEWS` | `recent-news`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -609,6 +649,7 @@ Using text|variant shorthand notation
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>See also the <a href="/configuration/project/#links-target"><code translate="no" v-pre>links.target</code></a> configuration.</p>
 <hr>
 <h2 id="icon-and-emoji">Icon and Emoji</h2>
@@ -704,9 +745,6 @@ Using text|variant shorthand notation
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-26T15:54:20" title="2026-03-26" data-absolute-label="Last updated on 2026-03-26" data-absolute-label-html="Last updated on 2026-03-26" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-26
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

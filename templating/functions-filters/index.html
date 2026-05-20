@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831162803190">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832568622076">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Functions and Filters - Write On! with Retype</title>
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.831162803190" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.5.3.831162803190" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview.832568622076" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview.832568622076" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.5.3.831162803190" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview.832568622076" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -73,7 +73,7 @@
                             <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
                             <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
                         </span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.5</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -365,6 +365,37 @@
 </doc-codeblock></div>
 <hr>
 <h2 id="string-functions">String functions</h2>
+<retype-table copy-text="Function | Description
+--- | ---
+`string.upcase` | Converts to uppercase
+`string.downcase` | Converts to lowercase
+`string.capitalize` | Uppercases the first character only
+`string.capitalizewords` | Uppercases the first character of each word
+`string.strip` | Removes leading and trailing whitespace
+`string.lstrip` | Removes leading whitespace
+`string.rstrip` | Removes trailing whitespace
+`string.strip_newlines` | Removes all newline characters
+`string.append` | Appends a string to the end
+`string.prepend` | Prepends a string to the beginning
+`string.replace` | Replaces all occurrences of a substring
+`string.replace_first` | Replaces the first occurrence of a substring
+`string.remove` | Removes all occurrences of a substring
+`string.remove_first` | Removes the first occurrence of a substring
+`string.remove_last` | Removes the last occurrence of a substring
+`string.contains` | Returns `true` if the string contains a value
+`string.starts_with` | Returns `true` if the string starts with a value
+`string.ends_with` | Returns `true` if the string ends with a value
+`string.size` | Returns the number of characters
+`string.slice` | Returns a substring starting at an index
+`string.split` | Splits a string into an array by a delimiter
+`string.truncate` | Truncates to a character count and appends an ellipsis
+`string.truncatewords` | Truncates to a word count and appends an ellipsis
+`string.pluralize` | Returns the singular or plural form based on a number
+`string.handleize` | Converts to a URL-friendly handle
+`string.pad_left` | Pads with leading spaces to a total width
+`string.pad_right` | Pads with trailing spaces to a total width
+`string.base64_encode` | Encodes to Base64
+`string.base64_decode` | Decodes from Base64">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -493,6 +524,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="case-and-whitespace">Case and whitespace</h3>
 <div id="case-and-whitespace-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;hello world&quot; | string.upcase }}           {{# HELLO WORLD #}}
@@ -555,6 +587,27 @@
 </doc-codeblock></div>
 <hr>
 <h2 id="array-functions">Array functions</h2>
+<retype-table copy-text="Function | Description
+--- | ---
+`array.first` | Returns the first element
+`array.last` | Returns the last element
+`array.size` | Returns the number of elements
+`array.limit` | Returns up to `n` elements from the start
+`array.offset` | Returns elements starting after index `n`
+`array.reverse` | Reverses the array
+`array.sort` | Sorts elements by value, or by a named member
+`array.map` | Extracts a named property from each object element
+`array.join` | Joins elements into a string with a delimiter
+`array.compact` | Removes `null` values
+`array.uniq` | Removes duplicate values
+`array.contains` | Returns `true` if the array contains a specific item
+`array.any` | Returns `true` if any element satisfies a function
+`array.each` | Applies a function to each element and returns the transformed array
+`array.filter` | Returns only elements that satisfy a function
+`array.add` | Adds a value to the end of the array
+`array.add_range` | Concatenates two arrays
+`array.insert_at` | Inserts a value at a specific index
+`array.remove_at` | Removes the element at a specific index">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -643,6 +696,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="accessing-elements">Accessing elements</h3>
 <div id="accessing-elements-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.tags | array.first }}             {{# first tag #}}
@@ -697,6 +751,16 @@
 <hr>
 <h2 id="date-functions">Date functions</h2>
 <p>A date object returned by <code translate="no" v-pre>date.now</code> or <code translate="no" v-pre>date.parse</code> exposes the following properties:</p>
+<retype-table copy-text="Property | Description
+--- | ---
+`.year` | The year
+`.month` | The month (1–12)
+`.day` | The day of the month (1–31)
+`.day_of_year` | The day within the year (1–366)
+`.hour` | The hour (0–23)
+`.minute` | The minute (0–59)
+`.second` | The second (0–59)
+`.millisecond` | The millisecond">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -741,6 +805,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="current-date-and-time">Current date and time</h3>
 <p>Date properties are accessed with dot notation directly on <code translate="no" v-pre>date.now</code>:</p>
 <div id="current-date-and-time-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -758,6 +823,21 @@
 {{ date.now | date.to_string &quot;%I:%M %p&quot; }}            {{# 09:30 AM #}}</code></pre>
 </doc-codeblock></div>
 <p>Common format tokens:</p>
+<retype-table copy-text="Token | Output | Description
+--- | --- | ---
+`%Y` | `2026` | Four-digit year
+`%m` | `03` | Two-digit month
+`%d` | `02` | Two-digit day
+`%B` | `March` | Full month name
+`%b` | `Mar` | Abbreviated month name
+`%A` | `Monday` | Full weekday name
+`%H` | `09` | Hour (24-hour clock)
+`%I` | `09` | Hour (12-hour clock)
+`%M` | `30` | Minutes
+`%S` | `00` | Seconds
+`%p` | `AM` | AM/PM
+`%F` | `2026-03-02` | ISO 8601 date (`%Y-%m-%d`)
+`%T` | `09:30:00` | Time (`%H:%M:%S`)">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -836,6 +916,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="parsing-a-date-string">Parsing a date string</h3>
 <div id="parsing-a-date-string-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ date.parse &quot;2026-03-02&quot; | date.to_string &quot;%B %d, %Y&quot; }}
@@ -870,6 +951,21 @@ Summer edition
 </doc-codeblock></div>
 <hr>
 <h2 id="math-functions">Math functions</h2>
+<retype-table copy-text="Function | Description
+--- | ---
+`math.abs` | Absolute value
+`math.ceil` | Rounds up to nearest integer
+`math.floor` | Rounds down to nearest integer
+`math.round` | Rounds to nearest integer, or to specified decimal places
+`math.plus` | Addition
+`math.minus` | Subtraction
+`math.times` | Multiplication
+`math.divided_by` | Division (integer divisor truncates result to integer)
+`math.modulo` | Remainder after division
+`math.format` | Formats a number using .NET numeric format strings
+`math.is_number` | Returns `true` if the value is a number
+`math.random` | Generates a random integer in a range
+`math.uuid` | Generates a new UUID">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -934,6 +1030,7 @@ Summer edition
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="basic-operations">Basic operations</h3>
 <div id="basic-operations-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ -15.5 | math.abs }}                         {{# 15.5 #}}
@@ -962,6 +1059,13 @@ Summer edition
 </doc-codeblock></div>
 <hr>
 <h2 id="html-functions">HTML functions</h2>
+<retype-table copy-text="Function | Description
+--- | ---
+`html.strip` | Removes all HTML tags, leaving plain text
+`html.escape` | Escapes `&lt;`, `&gt;`, `&amp;`, and `&quot;` as HTML entities
+`html.newline_to_br` | Replaces newlines with `&lt;br /&gt;` tags
+`html.url_encode` | Percent-encodes URL-unsafe characters (e.g. `@` → `%40`)
+`html.url_escape` | Escapes characters not permitted in URLs">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -994,6 +1098,7 @@ Summer edition
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="examples">Examples</h3>
 <div id="examples-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ &quot;&lt;p&gt;Hello &lt;strong&gt;world&lt;/strong&gt;&lt;/p&gt;&quot; | html.strip }}
@@ -1010,6 +1115,16 @@ Summer edition
 </doc-codeblock></div>
 <hr>
 <h2 id="object-functions">Object functions</h2>
+<retype-table copy-text="Function | Description
+--- | ---
+`object.default` | Returns a fallback value if the input is `null` or an empty string
+`object.has_key` | Returns `true` if the object has a named member
+`object.has_value` | Returns `true` if the named member exists and has a non-null value
+`object.keys` | Returns an array of the object's member names
+`object.values` | Returns an array of the object's member values
+`object.size` | Returns the count of members (object), elements (array), or characters (string)
+`object.typeof` | Returns a type string: `string`, `boolean`, `number`, `array`, or `object`
+`object.kind` | Returns a detailed type: `int`, `double`, `bool`, `string`, `array`, `object`, etc.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1054,6 +1169,7 @@ Summer edition
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="default-value">Default value</h3>
 <div id="default-value-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{{ page.description | object.default &quot;No description provided.&quot; }}</code></pre>
@@ -1156,9 +1272,6 @@ Written by {{ format_author page.author }}.</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-09T12:18:08" title="2026-03-09" data-absolute-label="Last updated on 2026-03-09" data-absolute-label-html="Last updated on 2026-03-09" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-09
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->
