@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <!-- Add content to _includes/head-top.html to include here -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview2.832721970813">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 4.6.0-preview2">
+
+    <!-- Primary Meta Tags -->
+    <title>What&#39;s New in Retype v4.5 - Write On! with Retype</title>
+    <meta name="title" content="What's New in Retype v4.5 - Write On! with Retype">
+    <meta name="description" content="Documentation that sits still isn't working hard enough. Retype v4.5 delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://retype.com/blog/2026-04-07-whats-new-in-retype-v450/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://retype.com/sitemap.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://retype.com/blog/2026-04-07-whats-new-in-retype-v450/">
+    <meta property="og:title" content="What's New in Retype v4.5 - Write On! with Retype">
+    <meta property="og:description" content="Documentation that sits still isn't working hard enough. Retype v4.5 delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box.">
+    <meta property="og:image" content="https://retype.com/blog/images/2026-04-07-whats-new-in-retype-v450.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="What's New in Retype v4.5 - Write On! with Retype">
+    <meta property="og:site_name" content="Retype">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://retype.com/blog/2026-04-07-whats-new-in-retype-v450/">
+    <meta name="twitter:title" content="What's New in Retype v4.5 - Write On! with Retype">
+    <meta name="twitter:description" content="Documentation that sits still isn't working hard enough. Retype v4.5 delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box.">
+    <meta name="twitter:image" content="https://retype.com/blog/images/2026-04-07-whats-new-in-retype-v450.png">
+    <meta name="twitter:image:alt" content="What's New in Retype v4.5 - Write On! with Retype">
+    <meta name="twitter:creator" content="@geoffreymcgill">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Retype News by RSS" href="https://retype.com/blog/feed.xml">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://retype.com/blog/2026-04-07-whats-new-in-retype-v450.md">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
+    <link href="/resources/css/retype.css?v=4.6.0-preview2.832721970813" rel="stylesheet">
+
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview2.832721970813" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview2.832721970813" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview2.832721970813" defer></script>
+    <script id="instagram-js" data-cfasync="false" src="/resources/js/instagram.js?v=4.6.0-preview2.832721970813" defer></script>
+
+    <!-- Add content to _includes/head.html to include here -->
+    <link href="/static/styles.css?v=4.6.0-preview2.832721970813" rel="stylesheet">
+</head>
+<body>
+    <!-- Add content to _includes/body-top.html to include here -->
+
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+    
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
+                        <span class="grow-0 shrink-0 overflow-hidden">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo.svg" alt="Retype" width="150" height="31">
+                            <img class="max-h-10 hidden dark:inline-block" src="/static/logo-dark.svg" alt="Retype" width="150" height="31">
+                        </span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">v4.6-pre</span>
+                </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6 relative group/nav" data-retype-header-link-group>
+                            <span class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text cursor-default group-hover/nav:text-header-text-hover group-focus-within/nav:text-header-text-hover" title="Latest updates, announcements, and articles">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M9.002 2.5a.75.75 0 0 1 .691.464l6.302 15.305 2.56-6.301a.75.75 0 0 1 .695-.468h4a.75.75 0 0 1 0 1.5h-3.495l-3.06 7.532a.75.75 0 0 1-1.389.004L8.997 5.21l-3.054 7.329A.75.75 0 0 1 5.25 13H.75a.75.75 0 0 1 0-1.5h4l3.558-8.538a.75.75 0 0 1 .694-.462Z"/>
+                                </svg>
+                                <span>What&#x27;s New</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 opacity-60" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                            <span class="absolute bottom-full md:bottom-auto md:top-full" style="left: var(--header-links-dropdown-offset, 0rem); width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem)); height: var(--header-links-dropdown-gap, 0.5rem);"></span>
+                            <div class="absolute bottom-full md:bottom-auto md:top-full z-50 min-w-[180px] w-max opacity-0 invisible -translate-y-1 md:translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0 group-hover/nav:opacity-100 group-focus-within/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:visible pointer-events-none group-hover/nav:pointer-events-auto group-focus-within/nav:pointer-events-auto transition-all duration-150 ease-out" data-retype-header-link-menu style="left: var(--header-links-dropdown-offset, 0rem); margin-bottom: var(--header-links-dropdown-gap, 0.5rem); margin-top: var(--header-links-dropdown-gap, 0.5rem); max-width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem));">
+                                <ul class="flex flex-col rounded-lg border border-base-border bg-base-bg shadow-lg overflow-hidden w-full">
+                                    <li>
+                                        <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/blog/" title="Visit the Retype Blog">
+                                            <span class="inline-flex items-center justify-center mr-1.5 w-[18px] shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="block" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                    <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
+                                                </svg>
+                                            </span>
+                                            <span class="min-w-0 max-w-full">
+                                                <span class="block font-header-text leading-tight">Blog &amp; News</span>
+                                                <span class="block text-xs font-normal leading-tight mt-1.5 text-base-text-muted whitespace-normal break-words">News and updates from Retype</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/changelog/" title="All the new features and fixes">
+                                            <span class="inline-flex items-center justify-center mr-1.5 w-[18px] shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="block" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                    <path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/>
+                                                </svg>
+                                            </span>
+                                            <span class="min-w-0 max-w-full">
+                                                <span class="block font-header-text leading-tight">Changelog</span>
+                                                <span class="block text-xs font-normal leading-tight mt-1.5 text-base-text-muted whitespace-normal break-words">Full history of every release</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/feature-log/" title="Top new features in each release">
+                                            <span class="inline-flex items-center justify-center mr-1.5 w-[18px] shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="block" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                    <path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/>
+                                                </svg>
+                                            </span>
+                                            <span class="min-w-0 max-w-full">
+                                                <span class="block font-header-text leading-tight">Feature Log</span>
+                                                <span class="block text-xs font-normal leading-tight mt-1.5 text-base-text-muted whitespace-normal break-words">Highlights of the best new features</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
+                                </svg>
+                                <span>Pro Pricing</span>
+                            </a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
+                                </svg>
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
+                                </svg>
+                                <span>Social</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="relative flex mx-auto bg-white max-w-core">
+        <div class="md:hidden">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            
+                <div class="flex items-center h-16 px-6">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6 relative group/nav" data-retype-header-link-group>
+                                        <span class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text cursor-default group-hover/nav:text-header-text-hover group-focus-within/nav:text-header-text-hover" title="Latest updates, announcements, and articles">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                <path d="M9.002 2.5a.75.75 0 0 1 .691.464l6.302 15.305 2.56-6.301a.75.75 0 0 1 .695-.468h4a.75.75 0 0 1 0 1.5h-3.495l-3.06 7.532a.75.75 0 0 1-1.389.004L8.997 5.21l-3.054 7.329A.75.75 0 0 1 5.25 13H.75a.75.75 0 0 1 0-1.5h4l3.558-8.538a.75.75 0 0 1 .694-.462Z"/>
+                                            </svg>
+                                            <span>What&#x27;s New</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 opacity-60" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                        </span>
+                                        <span class="absolute bottom-full md:bottom-auto md:top-full" style="left: var(--header-links-dropdown-offset, 0rem); width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem)); height: var(--header-links-dropdown-gap, 0.5rem);"></span>
+                                        <div class="absolute bottom-full md:bottom-auto md:top-full z-50 min-w-[180px] w-max opacity-0 invisible -translate-y-1 md:translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0 group-hover/nav:opacity-100 group-focus-within/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:visible pointer-events-none group-hover/nav:pointer-events-auto group-focus-within/nav:pointer-events-auto transition-all duration-150 ease-out" data-retype-header-link-menu style="left: var(--header-links-dropdown-offset, 0rem); margin-bottom: var(--header-links-dropdown-gap, 0.5rem); margin-top: var(--header-links-dropdown-gap, 0.5rem); max-width: min(var(--header-links-dropdown-max-width, 300px), calc(100vw - 2rem));">
+                                            <ul class="flex flex-col rounded-lg border border-base-border bg-base-bg shadow-lg overflow-hidden w-full">
+                                                <li>
+                                                    <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/blog/" title="Visit the Retype Blog">
+                                                        <span class="inline-flex items-center justify-center mr-1.5 w-[18px] shrink-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="block" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                                <path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="min-w-0 max-w-full">
+                                                            <span class="block font-header-text leading-tight">Blog &amp; News</span>
+                                                            <span class="block text-xs font-normal leading-tight mt-1.5 text-base-text-muted whitespace-normal break-words">News and updates from Retype</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/changelog/" title="All the new features and fixes">
+                                                        <span class="inline-flex items-center justify-center mr-1.5 w-[18px] shrink-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="block" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                                <path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="min-w-0 max-w-full">
+                                                            <span class="block font-header-text leading-tight">Changelog</span>
+                                                            <span class="block text-xs font-normal leading-tight mt-1.5 text-base-text-muted whitespace-normal break-words">Full history of every release</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="flex items-start pl-4 pr-3 py-3 text-sm transition-colors duration-200 ease-linear text-header-text hover:text-header-text-hover hover:bg-base-item-bg-hover" href="/feature-log/" title="Top new features in each release">
+                                                        <span class="inline-flex items-center justify-center mr-1.5 w-[18px] shrink-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="block" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                                <path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="min-w-0 max-w-full">
+                                                            <span class="block font-header-text leading-tight">Feature Log</span>
+                                                            <span class="block text-xs font-normal leading-tight mt-1.5 text-base-text-muted whitespace-normal break-words">Highlights of the best new features</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="/pro/" title="View Retype Pro plans and pricing options">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                <path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/>
+                                            </svg>
+                                            <span>Pro Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/retypeapp/retype/issues" target="_blank" title="Latest updates, announcements, and articles">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
+                                            </svg>
+                                            <span>Support</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://twitter.com/retypeapp/" target="_blank" title="Follow Retype on Twitter for updates">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                                <path d="M20.226 7.25c-2.623-4.542-8.432-6.098-12.974-3.475-4.543 2.622-6.099 8.431-3.477 12.974 2.623 4.542 8.431 6.099 12.974 3.477a.75.75 0 0 1 .75 1.299c-5.26 3.037-11.987 1.235-15.024-4.026C-.562 12.24 1.24 5.512 6.501 2.475 11.76-.562 18.488 1.24 21.525 6.501a10.959 10.959 0 0 1 1.455 4.826c.013.056.02.113.02.173v2.25a3.5 3.5 0 0 1-6.623 1.581 5.5 5.5 0 1 1 1.112-3.682.802.802 0 0 1 .011.129v1.972a2 2 0 1 0 4 0v-1.766a9.456 9.456 0 0 0-1.274-4.733ZM16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
+                                            </svg>
+                                            <span>Social</span>
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+        </div>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render page content -->
+<div class="grow min-w-0 px-6">
+    <main class="relative pt-6 pb-16">
+        <div class="relative retype-markdown" id="retype-content">
+            <!-- Rendered if sidebar right is enabled -->
+            <div id="retype-sidebar-right-toggle"></div>
+            <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                <ol role="list">
+                    <li class="pr-4">
+                        <a href="/" class="pr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
+                            </svg>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                        </svg>
+                    </li>
+                    <li class="pr-4">
+                        <a href="/blog/" class="pr-4">
+                            Blog &amp; News
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                        </svg>
+                    </li>
+                    <li class="pr-4">
+                        <a href="/blog/2026-04-07-whats-new-in-retype-v450/" class="pr-4">
+                            What&#39;s New in Retype v​4.​5
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+
+            <doc-page-actions></doc-page-actions>
+
+            <!-- Page content  -->
+<!-- Add content to _includes/top.md to include here -->
+<h1 id="whats-new-in-retype-v45">What&#x27;s New in Retype v4.5</h1>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <a href="https://github.com/retypeapp"><img class="object-cover" src="https://www.gravatar.com/avatar/b310802dddbcef37ee2e14abbdc25cfa?d=mp"></a>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350"><a href="https://github.com/retypeapp">@geoffreymcgill</a></div>
+        </div>
+    </div>
+    <div class="mx-2">&#9679;</div>
+    <div>In&nbsp;</div>
+    <div><a href="/categories/release/">release</a></div>
+    <div class="mx-2">&#9679;</div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2026-04-07</span></div>
+</div>
+
+<figure class="content-center">
+    <img src="/blog/images/2026-04-07-whats-new-in-retype-v450.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1200" height="630" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<p>Documentation that sits still isn&#x27;t working hard enough. Retype <code translate="no" v-pre>v4.5</code> delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box.</p>
+<p>This release introduces the new <strong>Tags in the left menu</strong> feature, plus automatic <code translate="no" v-pre>llms.txt</code> generation, sanitized Markdown output, Page Actions, new Card layouts, new Table styles, Instagram and Google Maps embeds, and <code translate="no" v-pre>sitemap.xml</code> generation.</p>
+<p>See the full <a href="/changelog/#v450">Changelog</a> and <a href="/feature-log/#v450">Feature Log</a> for a detailed list of updates in the <code translate="no" v-pre>v4.5</code> release.</p>
+<hr>
+<h2 id="tags-in-the-left-menu">Tags in the left menu</h2>
+<p>Retype can now automatically add a tag summary section to the left sidebar navigation.</p>
+<figure class="content-center">
+    <img src="/blog/images/2026-04-07-sidebar-tags.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="320" height="101" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<p>The new <a href="/configuration/project/#nav-tags"><code translate="no" v-pre>nav.tags</code></a> feature collects the <a href="/configuration/page/#tags"><code translate="no" v-pre>tags</code></a> used across your pages and renders them into the bottom of the left navigation, giving readers a quick way to navigate by topics.</p>
+<div id="tags-in-the-left-menu-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    enabled: true
+    title: Topics
+    limit: 12</code></pre>
+</doc-codeblock></div>
+<p>Pages already support <code translate="no" v-pre>tags</code> in frontmatter:</p>
+<div id="tags-in-the-left-menu-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">---
+tags: [guides, deployment, github]
+---
+# Deploy to GitHub Pages</code></pre>
+</doc-codeblock></div>
+<p>With <code translate="no" v-pre>nav.tags</code> enabled, Retype builds the sidebar tag list from those page tags automatically. The feature can also be tuned with include and exclude filters, a display limit, layout options, alignment, ordering, and badge variant.</p>
+<div id="tags-in-the-left-menu-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    enabled: true
+    title: Popular topics
+    layout: stack
+    align: left
+    order: count
+    variant: info
+    include:
+      - guides
+      - reference
+      - deployment
+    exclude:
+      - draft-*</code></pre>
+</doc-codeblock></div>
+<p>This is especially useful for larger projects where the left navigation is organized by folder, but readers also need another path into the content by product area, role, feature, or workflow.</p>
+<hr>
+<h2 id="llmstxt-support">llms.txt support</h2>
+<p>Retype now automatically generates a clean <a href="/llms.txt"><code translate="no" v-pre>llms.txt</code></a> file for AI-friendly documentation discovery.</p>
+<p>An <code translate="no" v-pre>llms.txt</code> file gives AI systems a concise map of the most important pages in your project, with links to Markdown-friendly versions of those pages. It is designed for documentation consumption, not visual browsing, so tools can quickly understand where the homepage, installation guide, configuration reference, components, templating docs, hosting guides, and other important resources live.</p>
+<p>For example, the <a href="/llms.txt"><code translate="no" v-pre>llms.txt</code></a> file can point tools toward Markdown URLs such as:</p>
+<div id="llmstxt-support-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">- [Installation](https://retype.com/guides/installation.md): Install Retype using npm, Yarn, or dotnet.
+- [Project Configuration](https://retype.com/configuration/project.md): Site-wide settings in retype.yml.
+- [Components](https://retype.com/components/components.md): Full index of built-in authoring components.</code></pre>
+</doc-codeblock></div>
+<p>This pairs nicely with the new generated Markdown output in <code translate="no" v-pre>v4.5</code>, giving both humans and automated systems another option for consuming content.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-tip" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M7.90625 2.15625C4.50944 2.15625 2.15625 4.58563 2.15625 7.54688C2.15625 8.96138 2.76575 9.88281 3.57075 10.8589L3.87837 11.2226C4.19894 11.6021 4.554 12.0218 4.84581 12.4416C5.25406 13.0324 5.61775 13.7296 5.7385 14.5834C5.76728 14.8608 5.68746 15.1386 5.51579 15.3583C5.34413 15.5781 5.09399 15.7228 4.8179 15.7621C4.5418 15.8013 4.26124 15.7321 4.03512 15.5689C3.809 15.4056 3.65493 15.1612 3.60525 14.8867C3.54775 14.4814 3.37094 14.1004 3.07338 13.6692C2.8306 13.3302 2.57055 13.0039 2.29425 12.6917C2.1735 12.5479 2.04556 12.397 1.909 12.2317C1.00769 11.1406 0 9.72613 0 7.54688C0 3.32062 3.39681 0 7.90625 0C12.4157 0 15.8125 3.32062 15.8125 7.54688C15.8125 9.72613 14.8048 11.1406 13.9035 12.2317C13.7669 12.397 13.639 12.5479 13.5183 12.6903C13.2207 13.0424 12.9677 13.3414 12.7406 13.6692C12.4416 14.1004 12.2662 14.4814 12.2087 14.8867C12.1557 15.1584 12.0003 15.3994 11.7747 15.5598C11.5492 15.7202 11.2706 15.7879 10.9965 15.7488C10.7225 15.7096 10.474 15.5667 10.3023 15.3496C10.1306 15.1325 10.0489 14.8577 10.074 14.582C10.1948 13.7296 10.5584 13.0324 10.9667 12.4416C11.2585 12.0218 11.6136 11.6021 11.9341 11.2226C12.0419 11.0961 12.1454 10.9739 12.2403 10.8589C13.0468 9.88281 13.6562 8.96138 13.6562 7.54688C13.6562 4.58563 11.3031 2.15625 7.90625 2.15625ZM4.67188 17.25H11.1406C11.4266 17.25 11.7008 17.3636 11.903 17.5658C12.1052 17.768 12.2188 18.0422 12.2188 18.3281C12.2188 18.6141 12.1052 18.8883 11.903 19.0905C11.7008 19.2927 11.4266 19.4062 11.1406 19.4062H4.67188C4.38594 19.4062 4.11171 19.2927 3.90953 19.0905C3.70734 18.8883 3.59375 18.6141 3.59375 18.3281C3.59375 18.0422 3.70734 17.768 3.90953 17.5658C4.11171 17.3636 4.38594 17.25 4.67188 17.25ZM5.03125 21.9219C5.03125 21.6359 5.14484 21.3617 5.34703 21.1595C5.54921 20.9573 5.82344 20.8438 6.10938 20.8438H9.70312C9.98906 20.8438 10.2633 20.9573 10.4655 21.1595C10.6677 21.3617 10.7812 21.6359 10.7812 21.9219C10.7812 22.2078 10.6677 22.482 10.4655 22.6842C10.2633 22.8864 9.98906 23 9.70312 23H6.10938C5.82344 23 5.54921 22.8864 5.34703 22.6842C5.14484 22.482 5.03125 22.2078 5.03125 21.9219Z" />
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Authors can use the generated <strong>llms.txt</strong> file as a starting point to create their own custom <strong>llms.txt</strong> file. Save your custom <strong>llms.txt</strong> into the root of your project and Retype will use that file instead of automatically generating one.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<h2 id="markdown-pages">Markdown pages</h2>
+<p>Every generated page now includes a sanitized <code translate="no" v-pre>.md</code> source file alongside the <code translate="no" v-pre>.html</code> output.</p>
+<p>That means a page such as <a href="/guides/installation/"><code translate="no" v-pre>/guides/installation/</code></a> are also published as <a href="/guides/installation.md"><code>/guides/installation.md</code></a>.</p>
+<p>Just add the <code translate="no" v-pre>.md</code> extension to any page url to see the <code translate="no" v-pre>.md</code> version of the content.</p>
+<p>The generated Markdown is cleaned for downstream use and exposed in the HTML page metadata with a <code translate="no" v-pre>rel=&quot;alternate&quot;</code> link tag, making it easier for external tools to discover the Markdown version of the current page.</p>
+<p>Retype also adds a new <code translate="no" v-pre>{{ page.md }}</code> template property for linking to the generated Markdown file from templates, components, menus, and custom UI.</p>
+<div id="markdown-pages-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button text=&quot;View Markdown&quot;]({{ page.md }})</code></pre>
+</doc-codeblock></div>
+<p><a href="https://retype.com/blog/2026-04-07-whats-new-in-retype-v450.md" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span>View Markdown</span>
+</a></p>
+<p>This new functionality opens the door for smoother copy, export, and AI-assisted workflows. Readers can stay on the rendered page when they want the full website experience, or jump to the Markdown version when they need a clean source representation.</p>
+<hr>
+<h2 id="page-actions">Page Actions</h2>
+<p>Retype <code translate="no" v-pre>v4.5</code> introduces Action plugins for buttons, menus, and links, plus a new page action button that can appear on every page.</p>
+<p>Actions let you attach common behavior to UI items using an <code translate="no" v-pre>action</code> value instead of hardcoding a URL. Built-in actions include copying the current page link, copying the page Markdown, viewing the Markdown source, opening print, and opening the current page in AI tools.</p>
+<p>The <code translate="no" v-pre>actions.items</code> configuration controls the page action menu:</p>
+<div id="page-actions-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - text: Copy link
+      action: copy-page-link
+      icon: link
+    - type: separator
+    - text: View as Markdown
+      action: view-page-markdown
+      icon: markdown
+    - text: Print page
+      action: print-page
+      icon: brand-printer</code></pre>
+</doc-codeblock></div>
+<p>Menu item separators are configured using <code translate="no" v-pre>type: separator</code>, making longer menus easier to scan and provide visual grouping.</p>
+<p>The same action system can be used by other linkable UI, including buttons and menu items. This gives project authors a consistent way to expose page-level utilities without building custom JavaScript for every workflow.</p>
+<hr>
+<h2 id="new-card-layouts">New Card layouts</h2>
+<p>The <a href="/components/card/">Card</a> component now includes two new layouts: <a href="/components/card/#signal"><code translate="no" v-pre>signal</code></a> and <a href="/components/card/#snap"><code translate="no" v-pre>snap</code></a>.</p>
+<h3 id="signal-cards">Signal cards</h3>
+<p>Use <a href="/components/card/#signal"><code translate="no" v-pre>signal</code></a> for compact navigation rows. They work well for homepages, intros, quick-start sections, and any page that needs a clean list of important next steps.</p>
+<div id="signal-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card signal](/guides/installation.md)
+[!card signal](/guides/getting-started.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-signal-group">
+<div class="card-signal-container">
+    <a href="/guides/installation/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Installation</div>
+            <p class="card-signal-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
+        </div>
+    </a>
+</div>
+<div class="card-signal-container">
+    <a href="/guides/getting-started/" class="group card-signal no-link">
+        <div class="card-signal-body">
+            <div class="card-signal-media-row">
+                <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+            </div>
+            <div class="card-signal-title">Getting Started</div>
+            <p class="card-signal-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<p>Signal cards can resolve the title and icon from local page metadata, and they support custom <code translate="no" v-pre>title</code>, <code translate="no" v-pre>text</code>, <code translate="no" v-pre>kicker</code>, and <code translate="no" v-pre>icon</code> values.</p>
+<h3 id="snap-cards">Snap cards</h3>
+<p>Use <a href="/components/card/#snap"><code translate="no" v-pre>snap</code></a> for tile-style cards with a prominent icon or image. Snap cards are a good fit for app pickers, integration lists, tool directories, or compact launch surfaces.</p>
+<div id="snap-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card snap](/guides/installation.md)
+[!card snap](/guides/getting-started.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-snap-group">
+<div class="card-snap-container">
+    <a href="/guides/installation/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
+            <div class="card-snap-title">Installation</div>
+        </div>
+    </a>
+</div>
+<div class="card-snap-container">
+    <a href="/guides/getting-started/" class="group card-snap no-link">
+        <div class="card-snap-body">
+                <span class="card-snap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+            <div class="card-snap-title">Getting Started</div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<p>For local pages, <code translate="no" v-pre>snap</code> can auto-resolve the icon from page metadata and fall back to the page image when no icon is configured.</p>
+<hr>
+<h2 id="new-table-styles">New table styles</h2>
+<p>Tables now support <code translate="no" v-pre>clean</code>, <code translate="no" v-pre>striped</code>, and <code translate="no" v-pre>equal</code> styles for clearer comparisons and denser reference content.</p>
+<p>Use <a href="/components/table/#clean"><code translate="no" v-pre>clean</code></a> to remove borders:</p>
+<div id="new-table-styles-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.clean}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<retype-table copy-text="Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product">
+<div class="table-wrapper clean scrollbar overflow-hidden">
+<table class="comfortable clean">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Use <a href="/components/table/#striped"><code translate="no" v-pre>striped</code></a> to alternate row backgrounds:</p>
+<div id="new-table-styles-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.striped}
+Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product</code></pre>
+</doc-codeblock></div>
+<retype-table copy-text="Project              | Status                     | Owner
+---                  | ---                        | ---
+Website Redesign     | [!badge Review]            | Operations
+Quarterly Forecast   | [!badge Approved|success]  | Finance
+Customer Onboarding  | [!badge Draft|secondary]   | Product">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable striped">
+<thead>
+<tr>
+<th>Project</th>
+<th>Status</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website Redesign</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Review</span>
+</span></td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Quarterly Forecast</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Approved</span>
+</span></td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Customer Onboarding</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>Draft</span>
+</span></td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Use <a href="/components/table/#equal"><code translate="no" v-pre>equal</code></a> when you want column widths distributed evenly across the table:</p>
+<div id="new-table-styles-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.equal}
+Feature              | Free                       | Pro
+---                  | ---                        | ---
+Search               | [!badge Included|success]  | [!badge Included|success]
+Navigation tags      | [!badge No|secondary]      | [!badge Yes|success]
+Custom themes        | [!badge No|secondary]      | [!badge Yes|success]</code></pre>
+</doc-codeblock></div>
+<retype-table copy-text="Feature              | Free                       | Pro
+---                  | ---                        | ---
+Search               | [!badge Included|success]  | [!badge Included|success]
+Navigation tags      | [!badge No|secondary]      | [!badge Yes|success]
+Custom themes        | [!badge No|secondary]      | [!badge Yes|success]">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable equal">
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Included</span>
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Included</span>
+</span></td>
+</tr>
+<tr>
+<td>Navigation tags</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>No</span>
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Yes</span>
+</span></td>
+</tr>
+<tr>
+<td>Custom themes</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>No</span>
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Yes</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>These styles can be <a href="/components/table/#clean-3">combined</a> together and also used with <code translate="no" v-pre>compact</code> when you need concise reference tables that still read clearly.</p>
+<div id="new-table-styles-code-4" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">{.clean .striped .equal .compact}
+Feature              | Free                       | Pro
+---                  | ---                        | ---
+Search               | [!badge Included|success]  | [!badge Included|success]
+Navigation tags      | [!badge No|secondary]      | [!badge Yes|success]
+Custom themes        | [!badge No|secondary]      | [!badge Yes|success]</code></pre>
+</doc-codeblock></div>
+<retype-table copy-text="Feature              | Free                       | Pro
+---                  | ---                        | ---
+Search               | [!badge Included|success]  | [!badge Included|success]
+Navigation tags      | [!badge No|secondary]      | [!badge Yes|success]
+Custom themes        | [!badge No|secondary]      | [!badge Yes|success]">
+<div class="table-wrapper clean scrollbar overflow-hidden">
+<table class="clean striped equal compact">
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Included</span>
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Included</span>
+</span></td>
+</tr>
+<tr>
+<td>Navigation tags</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>No</span>
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Yes</span>
+</span></td>
+</tr>
+<tr>
+<td>Custom themes</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+    <span>No</span>
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Yes</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<hr>
+<h2 id="instagram-and-google-maps-embeds">Instagram and Google Maps embeds</h2>
+<p>Retype now includes first-class support for <strong>Instagram</strong> and <strong>Google Maps</strong> embeds.</p>
+<h3 id="instagram">Instagram</h3>
+<p>Paste a standalone <a href="/components/instagram/">Instagram</a> post or Reel URL on its own line and Retype converts it into an embedded post.</p>
+<div id="instagram-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.instagram.com/reel/DLHx_WNoXoY/</code></pre>
+</doc-codeblock></div>
+<div class="card-vert-group retype-instagram-group">
+    <div class="card-vert-container retype-instagram-container">
+        <blockquote class="instagram-media retype-instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DLHx_WNoXoY/" data-instgrm-version="14">
+            <a href="https://www.instagram.com/reel/DLHx_WNoXoY/">View this reel on Instagram</a>
+        </blockquote>
+    </div>
+</div>
+<p>Both <code translate="no" v-pre>/p/</code> post URLs and <code translate="no" v-pre>/reel/</code> URLs are supported, with or without the <code translate="no" v-pre>www.</code> prefix.</p>
+<h3 id="google-maps">Google Maps</h3>
+<p>Paste a <a href="/components/google-maps/">Google Maps</a> embed URL on its own line and Retype renders a responsive map embed.</p>
+<div id="google-maps-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">https://www.google.com/maps/embed?pb=...</code></pre>
+</doc-codeblock></div>
+<div class="retype-google-maps aspect-video w-full rounded-lg overflow-hidden mb-6 shadow-lg dark:shadow-lg">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198778.33914254082!2d103.70358128993288!3d1.3237428276302825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2sca!4v1775257132373!5m2!1sen!2sca" frameborder="0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+</div>
+<p>You can also paste the <code translate="no" v-pre>&lt;iframe&gt;</code> snippet generated by Google Maps&#x27; <strong>Share -&gt; Embed a map</strong> option, and Retype will normalize it into the same responsive embed component.</p>
+<p>Only Google Maps <code translate="no" v-pre>maps/embed</code> URLs trigger the auto-embed behavior. Regular place pages and short share links remain normal hyperlinks.</p>
+<hr>
+<h2 id="other-enhancements">Other Enhancements</h2>
+<p>Retype <code translate="no" v-pre>v4.5</code> also includes a set of focused improvements across HTML output, navigation behavior, and page ergonomics.</p>
+<dl>
+<dt id="commonmark-html-compliance">CommonMark HTML compliance</dt>
+<dd>Retype now produces HTML output that is fully aligned with the CommonMark spec, including tidier output for Markdown lists that contain block elements.</dd>
+<dt id="backlinks-performance">Backlinks performance</dt>
+<dd>Backlinks generation and page output have been optimized, which should help larger projects with many cross-page links build more efficiently.</dd>
+<dt id="permalink-behavior">Permalink behavior</dt>
+<dd>Page primary H1 headings no longer render a permalink. Other heading permalinks now use a button style, and clicking a permalink automatically copies the link to the clipboard.</dd>
+<dt id="table-of-contents-shortcut">Table of contents shortcut</dt>
+<dd>Clicking the table of contents column title now scrolls the page back to the top.</dd>
+</dl>
+<hr>
+<h2 id="write-on">Write On!</h2>
+<p>Retype <code translate="no" v-pre>v4.5</code> brings together several pieces that make documentation sites easier to discover, easier to reuse, and easier to act on. Navigation tags give readers a new path through large projects, <code translate="no" v-pre>llms.txt</code> and generated Markdown output make docs more useful for AI-assisted workflows, and page actions put copy, print, source, and external tool handoffs within reach.</p>
+<p>The new Card layouts, table styles, embeds, and sitemap generation round out a release focused on practical polish for real documentation projects.</p>
+<p><a href="/guides/installation/">Install or upgrade</a> Retype to try the latest release. Share your feedback on <a href="https://x.com/retypeapp" class="outbound" target="_blank" rel="noopener noreferrer"><span>X</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> or open a GitHub <a href="https://github.com/retypeapp/retype/issues">Issue</a>. Your input continues to shape the future of Retype.</p>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/guides/blogging/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg></span>
+                <span class="card-compact-title">Blogging</span>
+            </div>
+            <p class="card-compact-description">Adding a blog to your Retype website is as quick as adding a new .md file to your project.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/components/card/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></svg></span>
+                <span class="card-compact-title">Card</span>
+            </div>
+            <p class="card-compact-description">The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/templating/content/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></svg></span>
+                <span class="card-compact-title">Content</span>
+            </div>
+            <p class="card-compact-description">Use content to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and iterate over collections such as tags, categories, authors, blog posts, and navigation items.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/blog/2026-02-23-whats-new-in-retype-v400/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">What's New in Retype v4.0</span>
+            </div>
+            <p class="card-compact-description">Retype v4.0 is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+<!-- Add content to _includes/bottom.md to include here -->
+<!-- Project wide abbreviations -->
+
+            <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
+            
+                <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-21T17:39:03" title="2026-05-21" data-absolute-label="Last updated on 2026-05-21" data-absolute-label-html="Last updated on 2026-05-21" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    Last updated on 2026-05-21
+                </time>
+            </div>
+
+            <!-- Required only on API pages -->
+            <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+        </div>
+        <footer id="retype-content-footer" class="clear-both">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-14">
+                <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link hover:text-body-link-hover hover:underline" href="https://github.com/retypeapp/retype/blob/main/blog/2026-04-07-whats-new-in-retype-v450.md" target="_blank" rel="noopener">
+                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                    <span>Edit this page</span>
+                </a>
+            </div>
+        
+            <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                <div class="w-1/2">
+                </div>
+        
+                <div class="w-1/2">
+                    <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/blog/2026-03-23-whats-new-in-retype-v440/">
+                        <span>
+                            <span class="block text-xs font-normal text-right text-base-text-muted">Older</span>
+                            <span class="block mt-1">What&#39;s New in Retype v​4.​4</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                    </a>
+                </div>
+            </nav>
+        </footer>
+    </main>
+</div>
+
+        </div>
+    </div>
+
+    <div class="border-t dark:border-base-border">
+        <div class="max-w-core mx-auto px-6 py-6">
+            <footer>
+                <div class="flex flex-wrap items-center justify-between">
+                    <div id="retype-footer-links" class="pt-3 print:hidden">
+                        <ul class="flex flex-wrap items-center text-sm">
+                            <li>
+                                <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="/about/" title="Learn more about Retype">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="/license/" title="View the software license agreement">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"/><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>License</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="retype-copyright" class="print:justify-center pt-3 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026 - <a href="https://retype.com/" title="Retype Markdown Docs Generator">Retype</a> | All rights reserved | Made in Canada <span class="docs-emoji">&#x1F1E8;&#x1F1E6;</span></p></div>
+                </div>
+            
+                <div class="flex justify-center">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+        <script data-cfasync="false">window.__DOCS__ = { "title": "What's New in Retype v4.5", level: 2, icon: "file", hasPrism: true, hasInstagram: true, hasMermaid: false, hasMath: false, tocDepth: 234, tocLabel: "On this page", "md": "/blog/2026-04-07-whats-new-in-retype-v450.md", pageActions: [{"edit-on-github":{"link":"https://github.com/retypeapp/retype/edit/main/blog/2026-04-07-whats-new-in-retype-v450.md"}},{"open-in-chatgpt":{"link":"https://chatgpt.com/?q=Read%20and%20summarize%20the%20content%20of%20this%20page%20on%20Retype.%20Then%20help%20answer%20follow-up%20questions%20about%20it.%0A%0Ahttps%3A%2F%2Fretype.com%2Fblog%2F2026-04-07-whats-new-in-retype-v450%2F"}},{"open-in-claude":{"link":"https://claude.ai/new?q=Read%20and%20summarize%20the%20content%20of%20this%20page%20on%20Retype.%20Then%20help%20answer%20follow-up%20questions%20about%20it.%0A%0Ahttps%3A%2F%2Fretype.com%2Fblog%2F2026-04-07-whats-new-in-retype-v450%2F"}}] }</script>
+
+    <!-- Add content to _includes/body.html to include here -->
+</body>
+</html>

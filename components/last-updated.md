@@ -1,6 +1,6 @@
 # Last Updated
 
-The "Last updated" label shows readers when a page was last refreshed.
+The "Last updated" label shows readers when the content of a page was last updated.
 
 You do not add this component with markdown syntax. Retype renders it automatically in the page footer when [`lastUpdated`](/configuration/project.md#lastupdated) is configured.
 

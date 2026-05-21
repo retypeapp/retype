@@ -13,10 +13,10 @@ See the full [Changelog](/changelog.md) and [Feature Log](/feature-log.md) for a
 The new [Card](/components/card.md) component creates styled preview cards that link to other pages in your project. Cards automatically pull in the target page's title, category, description, date, and image. No manual configuration needed.
 
 ```md
-[!card](/blog/2026-03-23-whats-new-in-retype-v440.md)
+[!card](/blog/2026-04-07-whats-new-in-retype-v450.md)
 ```
 
-[!card](/blog/2026-03-23-whats-new-in-retype-v440.md)
+[!card](/blog/2026-04-07-whats-new-in-retype-v450.md)
 
 ### Card Layout
 
@@ -29,8 +29,8 @@ The Card component supports both horizontal (default) and vertical (or `vert`) c
 
 Place multiple vertical cards together and they automatically form a responsive grid. Two cards display side by side. Three cards create a balanced row and the layout adapts to screen size.
 
+  [!card vert](/blog/2026-03-23-whats-new-in-retype-v440.md)
   [!card vert](/blog/2026-03-17-whats-new-in-retype-v430.md)
-  [!card vert](/blog/2026-03-10-whats-new-in-retype-v420.md)
 
 See the [Card](/components/card.md) documentation for more examples.
 

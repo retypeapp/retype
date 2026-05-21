@@ -17,6 +17,8 @@ If you run the command `retype start` and do not have a **retype.yml** project c
 
 You can also explicitly have Retype generate a **retype.yml** file by running the command `retype init`.
 
+## Sample
+
 The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.
 
 ```yml retype.yml
@@ -42,6 +44,73 @@ footer:
 ```
 
 [!card](/samples/advanced-project-config.md)
+
+## Project partials
+
+Project configuration can also be split across multiple files using [Project partials](project-partials.md) and [`extends`](#extends). For example, use **retype.build.yml** in addition to **retype.yml** to apply production-only settings during the [`retype build`](/guides/cli.md#retype-build) process:
+
+```yml retype.build.yml
+# Applied only during `retype build`
+lastUpdated:
+  date:
+    enabled: true
+```
+
+Use [`extends`](#extends), automatic config fragments, and build or start files to share common settings or keep build and start settings separate.
+
+The main **retype.yml** file is merged first, then files referenced by `extends`, automatic fragments, and build or start files are merged over it. This means project partials can override values from the main project configuration.
+
+---
+
+## actions
+
+The `actions` configuration controls the page action menu shown to the right of the page title. 
+
+Page actions can copy the generated Markdown for the current page, copy the page link, open the Markdown export, print the page, or run a custom action from your project's **_components/actions/** folder. See the [actions](/configuration/actions.md) documentation for more details.
+
+```yml
+actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - text: Copy link
+      action: copy-page-link
+      icon: link
+    - type: separator
+    - text: View as Markdown
+      action: view-page-markdown
+      icon: markdown
+    - text: Print page
+      action: print-page
+      icon: brand-printer
+```
+
+The `actions` configuration is for the page action button menu. To run actions from top-bar links, footer links, or nested header menu links, use [`links.action`](#links-action) or [`footer.links[]`](#footer-links).
+
+### items {#actions-items}
+
+=== items : `list`
+
+Defines the page action menu items.
+
+Each item supports the same common properties as individual [`links`](#links) items, including [`text`](#links-text), [`link`](#links-link), [`action`](#links-action), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), [`title`](#links-title), and `description`.
+
+Page action menu items and nested header menu items also support `type: separator` for grouping related items.
+
+```yml
+actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - type: separator
+    - text: Print page
+      action: print-page
+      icon: brand-printer
+```
+
+===
 
 ---
 
@@ -818,6 +887,42 @@ To explicitly include any files or folders that might have been excluded, please
 
 ---
 
+## extends
+
+=== extends : `string` or `list`
+
+Extend the current project configuration with one or more local config files.
+
+Use `extends` when you want to share common configuration across projects, split large project settings into smaller files, or keep reusable theme and branding settings outside of the main **retype.yml** file.
+
+```yml retype.yml
+extends: ./config/base.yml
+
+url: docs.example.com
+branding:
+  title: Product Docs
+```
+
+Multiple files can be configured as a list:
+
+```yml retype.yml
+extends:
+  - ./config/base.yml
+  - ./config/theme.yml
+
+url: docs.example.com
+```
+
+Extended files are resolved relative to the config file that declares them. Remote extension paths are not supported.
+
+The current config file is merged first, then extended files are merged over it. Later files win over earlier files. Objects are deep merged, while arrays and strings, numbers, Boolean values, and other non-object values are replaced.
+
+For more details on `extends`, automatic **retype.&lt;id&gt;.yml** fragments, **retype.build.yml**, **retype.start.yml**, merge order, and watch behavior, see [Project partials](project-partials.md).
+
+===
+
+---
+
 ## favicon
 
 === favicon : `string`
@@ -1480,32 +1585,42 @@ links:
     link: https://retype.com/getting_started/
 ```
 
-### text {#links-text}
+### action {#links-action}
 
-=== text : `string`
+=== action : `string`
 
-The link text label.
+The Retype action to run when the link is clicked. Use `action` instead of `link` for menu items that should copy content, print the page, scroll, or run another browser-side behavior.
 
-```yml
-links:
-  - text: Demos
-    link: https://demo.example.com/
-```
-===
-
-### link {#links-link}
-
-=== link : `string`
-
-The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
-
-If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
+Individual `links` items support `action`, but they do not support `handler` directly. To call a handler from a link item, define an action in **_components/actions/** and set the link item's `action` value to that action id.
 
 ```yml
 links:
-  - text: About us
-    link: /about/
+  - text: Copy link
+    icon: link
+    action: copy-page-link
+  - text: Print
+    icon: brand-printer
+    action: print-page
 ```
+
+Actions can call built-in `handlers` such as `clipboard`, `fetch`, `print`, and `scroll`.
+
+```yml _components/actions/copy-page-title.yml
+steps:
+  - handler: clipboard
+    with:
+      value: "{{ page.title }}"
+```
+
+```yml retype.yml
+links:
+  - text: Copy title
+    icon: copy
+    action: copy-page-title
+```
+
+See [Actions](actions.md) for the full action definition format, built-in actions, and handler samples.
+
 ===
 
 ### icon {#links-icon}
@@ -1555,6 +1670,45 @@ links:
 ```
 ===
 
+### items {#links-items}
+
+=== items : `list`
+
+Add nested menu items to a top-level [`links`](#links) entry to render a header dropdown menu.
+
+```yml
+links:
+  - text: Guides
+    items:
+      - text: Installation
+        link: /guides/installation.md
+        icon: download
+      - text: Configuration
+        link: /configuration/project.md
+        title: Project configuration options
+```
+
+When `items` are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.
+
+Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`action`](#links-action), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
+
+===
+
+### link {#links-link}
+
+=== link : `string`
+
+The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
+
+If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
+
+```yml
+links:
+  - text: About us
+    link: /about/
+```
+===
+
 ### target {#links-target}
 
 === target : `string`
@@ -1587,28 +1741,17 @@ There are several other values that may be prefixed with an `_` character, inclu
 
 ===
 
-### items {#links-items}
+### text {#links-text}
 
-=== items : `list`
+=== text : `string`
 
-Add nested menu items to a top-level [`links`](#links) entry to render a header dropdown menu.
+The link text label.
 
 ```yml
 links:
-  - text: Guides
-    items:
-      - text: Installation
-        link: /guides/installation.md
-        icon: download
-      - text: Configuration
-        link: /configuration/project.md
-        title: Project configuration options
+  - text: Demos
+    link: https://demo.example.com/
 ```
-
-When `items` are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.
-
-Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
-
 ===
 
 ### title {#links-title}
@@ -1885,11 +2028,204 @@ The `nav.icons.mode` setting can be used in conjunction with [`nav.mode: stack`]
 
 ===
 
+### tags {#nav-tags}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `tags` configuration enables a generated tag summary section in the left sidebar navigation. Retype builds the list from the `tags` frontmatter configured on pages within your project.
+
+When [enabled](#nav-tags-enabled), each tag is rendered as a link to the generated tag page. The tag summary can be customized with a [title](#nav-tags-title), [include](#nav-tags-include) and [exclude](#nav-tags-exclude) filters, a display [limit](#nav-tags-limit), [layout](#nav-tags-layout) options, [alignment](#nav-tags-align), [ordering](#nav-tags-order), and badge [variant](#nav-tags-variant).
+
+```yml
+nav:
+  tags:
+    enabled: true
+    title: Popular topics
+    limit: 8
+    layout: stack
+    align: left
+    order: count
+    variant: info
+    include:
+      - guides
+      - reference
+      - deployment
+```
+
+#### enabled {#nav-tags-enabled}
+
+=== enabled : `boolean`
+
+Enable or disable the generated tag summary section in the left sidebar navigation. Default is `true` for Retype Pro projects and Pro preview builds.
+
+```yml
+nav:
+  tags:
+    enabled: true
+```
+
+Set `enabled` to `false` to hide the tag summary section:
+
+```yml
+nav:
+  tags:
+    enabled: false
+```
+
+===
+
+#### limit {#nav-tags-limit}
+
+=== limit : `number`
+
+Set the maximum number of tags to display in the left sidebar navigation. Default is `null`, which displays all matching tags.
+
+```yml
+nav:
+  tags:
+    limit: 10
+```
+
+Only values greater than `0` are applied.
+
+===
+
+#### include {#nav-tags-include}
+
+=== include : `list`
+
+Include only tags matching one or more configured patterns.
+
+The wildcards `?` and `*` are supported. Pattern matching is case-insensitive.
+
+```yml
+nav:
+  tags:
+    include:
+      - guides
+      - api-*
+```
+
+When `include` is configured, only matching tags are displayed in the navigation tag summary.
+
+===
+
+#### exclude {#nav-tags-exclude}
+
+=== exclude : `list`
+
+Exclude tags matching one or more configured patterns.
+
+The wildcards `?` and `*` are supported. Pattern matching is case-insensitive.
+
+```yml
+nav:
+  tags:
+    exclude:
+      - draft-*
+      - internal
+```
+
+The `exclude` rules are ignored when [`include`](#nav-tags-include) is configured.
+
+===
+
+#### title {#nav-tags-title}
+
+=== title : `string`
+
+Set a custom heading for the generated tag summary section. Default is an empty string.
+
+```yml
+nav:
+  tags:
+    title: Popular topics
+```
+
+===
+
+#### layout {#nav-tags-layout}
+
+=== layout : `string`
+
+Configure the layout used to render the tags in the sidebar navigation. Default is `flex`.
+
+Option | Description
+---    | ---
+`flex` | Render tags in a compact wrapping layout.
+`stack` | Render tags in a vertical stacked layout.
+
+```yml
+nav:
+  tags:
+    layout: stack
+```
+
+===
+
+#### align {#nav-tags-align}
+
+=== align : `string`
+
+Configure the tag alignment within the tag summary section. Default is `right`.
+
+Option | Description
+---    | ---
+`left` | Align tags to the left.
+`right` | Align tags to the right.
+
+```yml
+nav:
+  tags:
+    align: left
+```
+
+===
+
+#### order {#nav-tags-order}
+
+=== order : `string`
+
+Configure the order used to sort tags in the tag summary section. Default is `asc`.
+
+Option | Description
+---    | ---
+`asc` | Sort tags alphabetically from A to Z.
+`desc` | Sort tags alphabetically from Z to A.
+`count` | Sort tags by the number of pages using each tag, from highest to lowest.
+`count-asc` | Sort tags by the number of pages using each tag, from lowest to highest.
+
+```yml
+nav:
+  tags:
+    order: count
+```
+
+The `order` setting also supports the aliases `alpha-desc`, `name-desc`, `title-desc`, `count-desc`, `popular`, `popularity`, `frequency`, `popular-asc`, `popularity-asc`, and `frequency-asc`.
+
+===
+
+#### variant {#nav-tags-variant}
+
+=== variant : `string`
+
+Set the visual variant applied to each rendered navigation tag. Default is `info`.
+
+```yml
+nav:
+  tags:
+    variant: success
+```
+
+The `variant` supports the same values as the [[badge]] component.
+
+===
+
 ---
 
 ## nextprev
 
-This setting is Retype [!badge PRO](/pro/pro.md) only.
+This setting is Ret[badge](/components/badge.md)ge PRO](/pro/pro.md) only.
 
 The `nextprev` configuration controls the display of "Next" and "Previous" navigation buttons at the bottom of each page and whether a page is included in the navigation sequence.
 

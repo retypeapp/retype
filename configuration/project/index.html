@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview2.832716579831">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview2.832721970813">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0-preview2">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0-preview2.832716579831" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview2.832721970813" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview2.832716579831" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview2.832721970813" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview2" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview2.832716579831" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview2.832716579831" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview2.832721970813" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview2.832721970813" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0-preview2.832716579831" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview2.832721970813" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -369,8 +369,9 @@
 <p>The <strong>retype.yml</strong> file is actually optional (not required), but is recommended as you will almost certainly want to customize some options, so adding a <strong>retype.yml</strong> is a good first step.</p>
 <p>If you run the command <code translate="no" v-pre>retype start</code> and do not have a <strong>retype.yml</strong> project configuration file within the root of your project, Retype will auto-generate a basic <strong>retype.yml</strong> file for your project. You can then edit the file to customize your project.</p>
 <p>You can also explicitly have Retype generate a <strong>retype.yml</strong> file by running the command <code translate="no" v-pre>retype init</code>.</p>
+<h2 id="sample">Sample</h2>
 <p>The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.</p>
-<div id="project-configuration-retypeyml" class="codeblock-wrapper"><doc-codeblock>
+<div id="sample-retypeyml" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">input: .
 output: .retype
@@ -403,6 +404,57 @@ footer:
     </a>
 </div>
 </p>
+<h2 id="project-partials">Project partials</h2>
+<p>Project configuration can also be split across multiple files using <a href="/configuration/project-partials/">Project partials</a> and <doc-anchor-trigger to="#extends"><code translate="no" v-pre>extends</code></doc-anchor-trigger>. For example, use <strong>retype.build.yml</strong> in addition to <strong>retype.yml</strong> to apply production-only settings during the <a href="/guides/cli/#retype-build"><code translate="no" v-pre>retype build</code></a> process:</p>
+<div id="project-partials-retypebuildyml" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.build.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml"># Applied only during `retype build`
+lastUpdated:
+  date:
+    enabled: true</code></pre>
+</doc-codeblock></div>
+<p>Use <doc-anchor-trigger to="#extends"><code translate="no" v-pre>extends</code></doc-anchor-trigger>, automatic config fragments, and build or start files to share common settings or keep build and start settings separate.</p>
+<p>The main <strong>retype.yml</strong> file is merged first, then files referenced by <code translate="no" v-pre>extends</code>, automatic fragments, and build or start files are merged over it. This means project partials can override values from the main project configuration.</p>
+<hr>
+<h2 id="actions">actions</h2>
+<p>The <code translate="no" v-pre>actions</code> configuration controls the page action menu shown to the right of the page title.</p>
+<p>Page actions can copy the generated Markdown for the current page, copy the page link, open the Markdown export, print the page, or run a custom action from your project&#x27;s <strong>_components/actions/</strong> folder. See the <a href="/configuration/actions/">actions</a> documentation for more details.</p>
+<div id="actions-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - text: Copy link
+      action: copy-page-link
+      icon: link
+    - type: separator
+    - text: View as Markdown
+      action: view-page-markdown
+      icon: markdown
+    - text: Print page
+      action: print-page
+      icon: brand-printer</code></pre>
+</doc-codeblock></div>
+<p>The <code translate="no" v-pre>actions</code> configuration is for the page action button menu. To run actions from top-bar links, footer links, or nested header menu links, use <doc-anchor-trigger to="#links-action"><code translate="no" v-pre>links.action</code></doc-anchor-trigger> or <doc-anchor-trigger to="#footer-links"><code translate="no" v-pre>footer.links[]</code></doc-anchor-trigger>.</p>
+<h3 id="actions-items">items</h3>
+<doc-panel id="items--list">
+    <template #title>items : <code translate="no" v-pre>list</code></template>
+<p>Defines the page action menu items.</p>
+<p>Each item supports the same common properties as individual <doc-anchor-trigger to="#links"><code translate="no" v-pre>links</code></doc-anchor-trigger> items, including <doc-anchor-trigger to="#links-text"><code translate="no" v-pre>text</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-action"><code translate="no" v-pre>action</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-icon"><code translate="no" v-pre>icon</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-iconalign"><code translate="no" v-pre>iconAlign</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-target"><code translate="no" v-pre>target</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-title"><code translate="no" v-pre>title</code></doc-anchor-trigger>, and <code translate="no" v-pre>description</code>.</p>
+<p>Page action menu items and nested header menu items also support <code translate="no" v-pre>type: separator</code> for grouping related items.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - type: separator
+    - text: Print page
+      action: print-page
+      icon: brand-printer</code></pre>
+</doc-codeblock></div>
+</doc-panel>
 <hr>
 <h2 id="backlinks">backlinks</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
@@ -1064,6 +1116,33 @@ footer:
     </div>
 </div>
 <p>To explicitly include any files or folders that might have been excluded, please see the <doc-anchor-trigger to="#include"><code translate="no" v-pre>include</code></doc-anchor-trigger> config.</p>
+</doc-panel>
+<hr>
+<h2 id="extends">extends</h2>
+<doc-panel id="extends--string-or-list">
+    <template #title>extends : <code translate="no" v-pre>string</code> or <code translate="no" v-pre>list</code></template>
+<p>Extend the current project configuration with one or more local config files.</p>
+<p>Use <code translate="no" v-pre>extends</code> when you want to share common configuration across projects, split large project settings into smaller files, or keep reusable theme and branding settings outside of the main <strong>retype.yml</strong> file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">extends: ./config/base.yml
+
+url: docs.example.com
+branding:
+  title: Product Docs</code></pre>
+</doc-codeblock></div>
+<p>Multiple files can be configured as a list:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">extends:
+  - ./config/base.yml
+  - ./config/theme.yml
+
+url: docs.example.com</code></pre>
+</doc-codeblock></div>
+<p>Extended files are resolved relative to the config file that declares them. Remote extension paths are not supported.</p>
+<p>The current config file is merged first, then extended files are merged over it. Later files win over earlier files. Objects are deep merged, while arrays and strings, numbers, Boolean values, and other non-object values are replaced.</p>
+<p>For more details on <code translate="no" v-pre>extends</code>, automatic <strong>retype.&lt;id&gt;.yml</strong> fragments, <strong>retype.build.yml</strong>, <strong>retype.start.yml</strong>, merge order, and watch behavior, see <a href="/configuration/project-partials/">Project partials</a>.</p>
 </doc-panel>
 <hr>
 <h2 id="favicon">favicon</h2>
@@ -1728,26 +1807,36 @@ labels:
   - text: Getting Started
     link: https://retype.com/getting_started/</code></pre>
 </doc-codeblock></div>
-<h3 id="links-text">text</h3>
-<doc-panel id="text--string">
-    <template #title>text : <code translate="no" v-pre>string</code></template>
-<p>The link text label.</p>
+<h3 id="links-action">action</h3>
+<doc-panel id="action--string">
+    <template #title>action : <code translate="no" v-pre>string</code></template>
+<p>The Retype action to run when the link is clicked. Use <code translate="no" v-pre>action</code> instead of <code translate="no" v-pre>link</code> for menu items that should copy content, print the page, scroll, or run another browser-side behavior.</p>
+<p>Individual <code translate="no" v-pre>links</code> items support <code translate="no" v-pre>action</code>, but they do not support <code translate="no" v-pre>handler</code> directly. To call a handler from a link item, define an action in <strong>_components/actions/</strong> and set the link item&#x27;s <code translate="no" v-pre>action</code> value to that action id.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
-  - text: Demos
-    link: https://demo.example.com/</code></pre>
+  - text: Copy link
+    icon: link
+    action: copy-page-link
+  - text: Print
+    icon: brand-printer
+    action: print-page</code></pre>
 </doc-codeblock></div>
-</doc-panel>
-<h3 id="links-link">link</h3>
-<doc-panel id="link--string-1">
-    <template #title>link : <code translate="no" v-pre>string</code></template>
-<p>The URL to use for the link. The link can be a <code translate="no" v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
-<p>If a <code translate="no" v-pre>.md</code> file set, such as <code translate="no" v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code translate="no" v-pre>sample.md</code> value will be replaced with the path to the actual generated HTML file.</p>
+<p>Actions can call built-in <code translate="no" v-pre>handlers</code> such as <code translate="no" v-pre>clipboard</code>, <code translate="no" v-pre>fetch</code>, <code translate="no" v-pre>print</code>, and <code translate="no" v-pre>scroll</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
-  - text: About us
-    link: /about/</code></pre>
+<div class="codeblock-title">_components/actions/copy-page-title.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">steps:
+  - handler: clipboard
+    with:
+      value: &quot;{{ page.title }}&quot;</code></pre>
 </doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Copy title
+    icon: copy
+    action: copy-page-title</code></pre>
+</doc-codeblock></div>
+<p>See <a href="/configuration/actions/">Actions</a> for the full action definition format, built-in actions, and handler samples.</p>
 </doc-panel>
 <h3 id="links-icon">icon</h3>
 <doc-panel id="icon--string">
@@ -1787,6 +1876,35 @@ labels:
     link: https://demo.example.com/
     icon: link-external
     iconAlign: right</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<h3 id="links-items">items</h3>
+<doc-panel id="items--list-1">
+    <template #title>items : <code translate="no" v-pre>list</code></template>
+<p>Add nested menu items to a top-level <doc-anchor-trigger to="#links"><code translate="no" v-pre>links</code></doc-anchor-trigger> entry to render a header dropdown menu.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: Guides
+    items:
+      - text: Installation
+        link: /guides/installation.md
+        icon: download
+      - text: Configuration
+        link: /configuration/project.md
+        title: Project configuration options</code></pre>
+</doc-codeblock></div>
+<p>When <code translate="no" v-pre>items</code> are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.</p>
+<p>Each nested item supports the same link properties as a top-level link, including <doc-anchor-trigger to="#links-text"><code translate="no" v-pre>text</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-action"><code translate="no" v-pre>action</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-icon"><code translate="no" v-pre>icon</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-iconalign"><code translate="no" v-pre>iconAlign</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-target"><code translate="no" v-pre>target</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#links-title"><code translate="no" v-pre>title</code></doc-anchor-trigger>.</p>
+</doc-panel>
+<h3 id="links-link">link</h3>
+<doc-panel id="link--string-1">
+    <template #title>link : <code translate="no" v-pre>string</code></template>
+<p>The URL to use for the link. The link can be a <code translate="no" v-pre>.md</code> file name, or to any internal path, or to any external URL.</p>
+<p>If a <code translate="no" v-pre>.md</code> file set, such as <code translate="no" v-pre>sample.md</code>, Retype will automatically resolve the path and in the generated website, the <code translate="no" v-pre>sample.md</code> value will be replaced with the path to the actual generated HTML file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
+  - text: About us
+    link: /about/</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <h3 id="links-target">target</h3>
@@ -1853,23 +1971,15 @@ labels:
 </div>
 </retype-table>
 </doc-panel>
-<h3 id="links-items">items</h3>
-<doc-panel id="items--list">
-    <template #title>items : <code translate="no" v-pre>list</code></template>
-<p>Add nested menu items to a top-level <doc-anchor-trigger to="#links"><code translate="no" v-pre>links</code></doc-anchor-trigger> entry to render a header dropdown menu.</p>
+<h3 id="links-text">text</h3>
+<doc-panel id="text--string">
+    <template #title>text : <code translate="no" v-pre>string</code></template>
+<p>The link text label.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
-  - text: Guides
-    items:
-      - text: Installation
-        link: /guides/installation.md
-        icon: download
-      - text: Configuration
-        link: /configuration/project.md
-        title: Project configuration options</code></pre>
+  - text: Demos
+    link: https://demo.example.com/</code></pre>
 </doc-codeblock></div>
-<p>When <code translate="no" v-pre>items</code> are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.</p>
-<p>Each nested item supports the same link properties as a top-level link, including <doc-anchor-trigger to="#links-text"><code translate="no" v-pre>text</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-link"><code translate="no" v-pre>link</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-icon"><code translate="no" v-pre>icon</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-iconalign"><code translate="no" v-pre>iconAlign</code></doc-anchor-trigger>, <doc-anchor-trigger to="#links-target"><code translate="no" v-pre>target</code></doc-anchor-trigger>, and <doc-anchor-trigger to="#links-title"><code translate="no" v-pre>title</code></doc-anchor-trigger>.</p>
 </doc-panel>
 <h3 id="links-title">title</h3>
 <doc-panel id="title--string-4">
@@ -2453,6 +2563,219 @@ labels:
 </doc-codeblock></div>
 <p>The <code translate="no" v-pre>nav.icons.mode</code> setting can be used in conjunction with <doc-anchor-trigger to="#nav-mode"><code translate="no" v-pre>nav.mode: stack</code></doc-anchor-trigger> to handle many different icon and navigation rendering combinations.</p>
 </doc-panel>
+<h3 id="nav-tags">tags</h3>
+<p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>PRO</span>
+</a> only.</p>
+<p>The <code translate="no" v-pre>tags</code> configuration enables a generated tag summary section in the left sidebar navigation. Retype builds the list from the <code translate="no" v-pre>tags</code> frontmatter configured on pages within your project.</p>
+<p>When <doc-anchor-trigger to="#nav-tags-enabled">enabled</doc-anchor-trigger>, each tag is rendered as a link to the generated tag page. The tag summary can be customized with a <doc-anchor-trigger to="#nav-tags-title">title</doc-anchor-trigger>, <doc-anchor-trigger to="#nav-tags-include">include</doc-anchor-trigger> and <doc-anchor-trigger to="#nav-tags-exclude">exclude</doc-anchor-trigger> filters, a display <doc-anchor-trigger to="#nav-tags-limit">limit</doc-anchor-trigger>, <doc-anchor-trigger to="#nav-tags-layout">layout</doc-anchor-trigger> options, <doc-anchor-trigger to="#nav-tags-align">alignment</doc-anchor-trigger>, <doc-anchor-trigger to="#nav-tags-order">ordering</doc-anchor-trigger>, and badge <doc-anchor-trigger to="#nav-tags-variant">variant</doc-anchor-trigger>.</p>
+<div id="nav-tags-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    enabled: true
+    title: Popular topics
+    limit: 8
+    layout: stack
+    align: left
+    order: count
+    variant: info
+    include:
+      - guides
+      - reference
+      - deployment</code></pre>
+</doc-codeblock></div>
+<h4 id="nav-tags-enabled">enabled</h4>
+<doc-panel id="enabled--boolean-6">
+    <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
+<p>Enable or disable the generated tag summary section in the left sidebar navigation. Default is <code translate="no" v-pre>true</code> for Retype Pro projects and Pro preview builds.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    enabled: true</code></pre>
+</doc-codeblock></div>
+<p>Set <code translate="no" v-pre>enabled</code> to <code translate="no" v-pre>false</code> to hide the tag summary section:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    enabled: false</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<h4 id="nav-tags-limit">limit</h4>
+<doc-panel id="limit--number">
+    <template #title>limit : <code translate="no" v-pre>number</code></template>
+<p>Set the maximum number of tags to display in the left sidebar navigation. Default is <code translate="no" v-pre>null</code>, which displays all matching tags.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    limit: 10</code></pre>
+</doc-codeblock></div>
+<p>Only values greater than <code translate="no" v-pre>0</code> are applied.</p>
+</doc-panel>
+<h4 id="nav-tags-include">include</h4>
+<doc-panel id="include--list-2">
+    <template #title>include : <code translate="no" v-pre>list</code></template>
+<p>Include only tags matching one or more configured patterns.</p>
+<p>The wildcards <code translate="no" v-pre>?</code> and <code translate="no" v-pre>*</code> are supported. Pattern matching is case-insensitive.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    include:
+      - guides
+      - api-*</code></pre>
+</doc-codeblock></div>
+<p>When <code translate="no" v-pre>include</code> is configured, only matching tags are displayed in the navigation tag summary.</p>
+</doc-panel>
+<h4 id="nav-tags-exclude">exclude</h4>
+<doc-panel id="exclude--list-2">
+    <template #title>exclude : <code translate="no" v-pre>list</code></template>
+<p>Exclude tags matching one or more configured patterns.</p>
+<p>The wildcards <code translate="no" v-pre>?</code> and <code translate="no" v-pre>*</code> are supported. Pattern matching is case-insensitive.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    exclude:
+      - draft-*
+      - internal</code></pre>
+</doc-codeblock></div>
+<p>The <code translate="no" v-pre>exclude</code> rules are ignored when <doc-anchor-trigger to="#nav-tags-include"><code translate="no" v-pre>include</code></doc-anchor-trigger> is configured.</p>
+</doc-panel>
+<h4 id="nav-tags-title">title</h4>
+<doc-panel id="title--string-6">
+    <template #title>title : <code translate="no" v-pre>string</code></template>
+<p>Set a custom heading for the generated tag summary section. Default is an empty string.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    title: Popular topics</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<h4 id="nav-tags-layout">layout</h4>
+<doc-panel id="layout--string-1">
+    <template #title>layout : <code translate="no" v-pre>string</code></template>
+<p>Configure the layout used to render the tags in the sidebar navigation. Default is <code translate="no" v-pre>flex</code>.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`flex` | Render tags in a compact wrapping layout.
+`stack` | Render tags in a vertical stacked layout.">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>flex</code></td>
+<td>Render tags in a compact wrapping layout.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>stack</code></td>
+<td>Render tags in a vertical stacked layout.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    layout: stack</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<h4 id="nav-tags-align">align</h4>
+<doc-panel id="align--string">
+    <template #title>align : <code translate="no" v-pre>string</code></template>
+<p>Configure the tag alignment within the tag summary section. Default is <code translate="no" v-pre>right</code>.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`left` | Align tags to the left.
+`right` | Align tags to the right.">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>left</code></td>
+<td>Align tags to the left.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>right</code></td>
+<td>Align tags to the right.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    align: left</code></pre>
+</doc-codeblock></div>
+</doc-panel>
+<h4 id="nav-tags-order">order</h4>
+<doc-panel id="order--string">
+    <template #title>order : <code translate="no" v-pre>string</code></template>
+<p>Configure the order used to sort tags in the tag summary section. Default is <code translate="no" v-pre>asc</code>.</p>
+<retype-table copy-text="Option | Description
+---    | ---
+`asc` | Sort tags alphabetically from A to Z.
+`desc` | Sort tags alphabetically from Z to A.
+`count` | Sort tags by the number of pages using each tag, from highest to lowest.
+`count-asc` | Sort tags by the number of pages using each tag, from lowest to highest.">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>asc</code></td>
+<td>Sort tags alphabetically from A to Z.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>desc</code></td>
+<td>Sort tags alphabetically from Z to A.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>count</code></td>
+<td>Sort tags by the number of pages using each tag, from highest to lowest.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>count-asc</code></td>
+<td>Sort tags by the number of pages using each tag, from lowest to highest.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    order: count</code></pre>
+</doc-codeblock></div>
+<p>The <code translate="no" v-pre>order</code> setting also supports the aliases <code translate="no" v-pre>alpha-desc</code>, <code translate="no" v-pre>name-desc</code>, <code translate="no" v-pre>title-desc</code>, <code translate="no" v-pre>count-desc</code>, <code translate="no" v-pre>popular</code>, <code translate="no" v-pre>popularity</code>, <code translate="no" v-pre>frequency</code>, <code translate="no" v-pre>popular-asc</code>, <code translate="no" v-pre>popularity-asc</code>, and <code translate="no" v-pre>frequency-asc</code>.</p>
+</doc-panel>
+<h4 id="nav-tags-variant">variant</h4>
+<doc-panel id="variant--string">
+    <template #title>variant : <code translate="no" v-pre>string</code></template>
+<p>Set the visual variant applied to each rendered navigation tag. Default is <code translate="no" v-pre>info</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">nav:
+  tags:
+    variant: success</code></pre>
+</doc-codeblock></div>
+<p>The <code translate="no" v-pre>variant</code> supports the same values as the <a href="/components/badge/">badge</a> component.</p>
+</doc-panel>
 <hr>
 <h2 id="nextprev">nextprev</h2>
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
@@ -2514,7 +2837,7 @@ labels:
 <p>The <code translate="no" v-pre>outbound</code> functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the <code translate="no" v-pre>outbound</code> configuration and functionality is ignored.</p>
 <p>If <code translate="no" v-pre>outbound</code> is enabled, Retype will find all external (outbound) links within the project, add a trailing <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg> icon, and set the link to open in a new tab when clicked.</p>
 <h3 id="outbound-enabled">enabled</h3>
-<doc-panel id="enabled--boolean-6">
+<doc-panel id="enabled--boolean-7">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Controls whether the outbound links feature is enabled.</p>
 <p>The default is <code translate="no" v-pre>true</code> for <strong>Retype Pro</strong> projects.</p>
@@ -2567,7 +2890,7 @@ labels:
 </doc-codeblock></div>
 </doc-panel>
 <h3 id="outbound-exclude">exclude</h3>
-<doc-panel id="exclude--list-2">
+<doc-panel id="exclude--list-3">
     <template #title>exclude : <code translate="no" v-pre>list</code></template>
 <p>A list of outbound link patterns to be excluded from being captured by the Retype outbound functionality. This is useful if you do not want certain links to open in new tabs.</p>
 <p>This configuration accepts similar path patterns as the <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> config.</p>
@@ -2580,7 +2903,7 @@ labels:
 <p>Please also see <doc-anchor-trigger to="#outbound-include"><code translate="no" v-pre>outbound.include</code></doc-anchor-trigger>.</p>
 </doc-panel>
 <h3 id="outbound-include">include</h3>
-<doc-panel id="include--list-2">
+<doc-panel id="include--list-3">
     <template #title>include : <code translate="no" v-pre>list</code></template>
 <p>A list of outbound link patterns to be included for the Retype outbound functionality. This is useful if you only want certain links to open in new tabs. The default value of <code translate="no" v-pre>*</code> includes all links.</p>
 <p>This configuration accepts similar path patterns as the <doc-anchor-trigger to="#include"><code translate="no" v-pre>include</code></doc-anchor-trigger> config.</p>
@@ -2726,7 +3049,7 @@ labels:
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="exclude--list-3">
+<doc-panel id="exclude--list-4">
     <template #title>exclude : <code translate="no" v-pre>list</code></template>
 <p>Exclude pages, folders, or patterns from the search index while still generating that content in the final website.</p>
 <p>Use <code translate="no" v-pre>search.exclude</code> when you want content to remain accessible on the website, but not appear in search results. If you want to exclude content from the generated website entirely, use the project <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> config instead.</p>
@@ -2743,7 +3066,7 @@ labels:
 <p>This setting is Retype <a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border hover:text-badge-primary-text-hover hover:bg-badge-primary-hover hover:border-badge-primary-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>PRO</span>
 </a> only.</p>
-<doc-panel id="include--list-3">
+<doc-panel id="include--list-4">
     <template #title>include : <code translate="no" v-pre>list</code></template>
 <p>Explicitly include pages, folders, or patterns in the search index that might otherwise be filtered out by <doc-anchor-trigger to="#search-exclude"><code translate="no" v-pre>search.exclude</code></doc-anchor-trigger>.</p>
 <p>Search filtering rules use the same path and pattern behavior as the project-level <doc-anchor-trigger to="#exclude"><code translate="no" v-pre>exclude</code></doc-anchor-trigger> and <doc-anchor-trigger to="#include"><code translate="no" v-pre>include</code></doc-anchor-trigger> configs. The wildcards <code translate="no" v-pre>?</code>, <code translate="no" v-pre>*</code>, <code translate="no" v-pre>**</code>, and <code translate="no" v-pre>!</code> are supported.</p>
@@ -3164,7 +3487,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <h2 id="templating">templating</h2>
 <p>Configurations to control the Retype content templating engine for this project.</p>
 <h3 id="templating-enabled">enabled</h3>
-<doc-panel id="enabled--boolean-7">
+<doc-panel id="enabled--boolean-8">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>A project-wide option to enable or disable the Retype content templating engine. Default is <code translate="no" v-pre>true</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -3585,6 +3908,9 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                 </a></span>
                     </span>
                 
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-21T17:09:58" title="2026-05-21" data-absolute-label="Last updated on 2026-05-21" data-absolute-label-html="Last updated on 2026-05-21" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-05-21
+                    </time>
                 </div>
 
                 <!-- Required only on API pages -->

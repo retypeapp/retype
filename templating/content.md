@@ -150,7 +150,7 @@ Tag | Page count {.compact}
 --- | ---
 [!badge community|info](/tags/community) | 2
 [!badge component|info](/tags/component) | 27
-[!badge config|info](/tags/config) | 6
+[!badge config|info](/tags/config) | 8
 [!badge ftp|info](/tags/ftp) | 1
 [!badge github|info](/tags/github) | 4
 [!badge guide|info](/tags/guide) | 13
@@ -198,7 +198,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
-- [release](/categories/release) (10 pages)
+- [release](/categories/release) (11 pages)
 - [news](/categories/news) (1 pages)
 - [blog](/categories/blog) (1 pages)
 
@@ -236,7 +236,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 [!card]({{ content.blog.posts[0].filePath }})
 ```
 
-[!card](/blog/2026-03-23-whats-new-in-retype-v440.md)
+[!card](/blog/2026-04-07-whats-new-in-retype-v450.md)
 
 ### List all blog posts
 
@@ -246,6 +246,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+1. [What's New in Retype v4.5](/blog/2026-04-07-whats-new-in-retype-v450.md)
 1. [What's New in Retype v4.4](/blog/2026-03-23-whats-new-in-retype-v440.md)
 1. [What's New in Retype v4.3](/blog/2026-03-17-whats-new-in-retype-v430.md)
 1. [What's New in Retype v4.2](/blog/2026-03-10-whats-new-in-retype-v420.md)
@@ -267,9 +268,9 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+[!card vert](/blog/2026-04-07-whats-new-in-retype-v450.md)
 [!card vert](/blog/2026-03-23-whats-new-in-retype-v440.md)
 [!card vert](/blog/2026-03-17-whats-new-in-retype-v430.md)
-[!card vert](/blog/2026-03-10-whats-new-in-retype-v420.md)
 
 ---
 
@@ -294,10 +295,10 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Hosting (7 children)
 - Components (30 children)
 - Templating (5 children)
-- Blog (12 children)
+- Blog (13 children)
 - Pro (0 children)
 - Samples (5 children)
-- Configuration (7 children)
+- Configuration (9 children)
 - Guides (9 children)
 - Not Found (0 children)
 
