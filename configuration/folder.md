@@ -1,5 +1,6 @@
 ---
 label: Folder
+order: 50
 icon: file-directory
 tags: [config]
 ---
