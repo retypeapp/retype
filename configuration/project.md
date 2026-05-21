@@ -1381,7 +1381,7 @@ The default project behavior is equivalent to:
 ```yml
 lastUpdated:
   date:
-    enabled: true
+    enabled: false
     source: committer
   by:
     enabled: false
@@ -1398,15 +1398,15 @@ Controls the automatic last updated **date** in the page footer.
 
 === enabled : `boolean`
 
-Enable or disable automatic last updated date generation. Default is `true`.
+Enable or disable automatic last updated date generation. Default is `false`.
 
 ```yml
 lastUpdated:
   date:
-    enabled: false
+    enabled: true
 ```
 
-Set `date.enabled: false` when you do not want Retype to show a generated last updated date in the footer.
+Set `date.enabled: true` when you want Retype to show a generated last updated date in the footer.
 
 ===
 
@@ -1419,6 +1419,7 @@ Choose which Git revision timestamp is used for the last updated date. Supported
 ```yml
 lastUpdated:
   date:
+    enabled: true
     source: author
 ```
 
