@@ -10,7 +10,8 @@ category:
 
 ![](images/2026-04-07-whats-new-in-retype-v450.png)
 
-Retype `v4.5` is a practical release for teams building richer documentation sites, especially projects that need better discovery, cleaner content reuse, and more ways to help readers take action from any page.
+
+Documentation that sits still isn't working hard enough. Retype `v4.5` delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box.
 
 This release introduces the new **Tags in the left menu** feature, plus automatic `llms.txt` generation, sanitized Markdown output, Page Actions, new Card layouts, new Table styles, Instagram and Google Maps embeds, and `sitemap.xml` generation.
 
