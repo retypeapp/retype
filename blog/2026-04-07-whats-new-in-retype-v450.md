@@ -115,7 +115,7 @@ This new functionality opens the door for smoother copy, export, and AI-assisted
 
 ## Page Actions
 
-Retype `v4.5` introduces Action plugins for buttons, menus, and links, plus a new page action button that can appear on every page.
+Retype `v4.5` introduces [Actions](/configuration/actions.md) plugins for menus and links, plus a new Page Action button that can appear on every page.
 
 Actions let you attach common behavior to UI items using an `action` value instead of hardcoding a URL. Built-in actions include copying the current page link, copying the page Markdown, viewing the Markdown source, opening print, and opening the current page in AI tools.
 
