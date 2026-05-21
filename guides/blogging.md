@@ -1,8 +1,6 @@
 ---
 icon: pencil
 tags: [guide]
-nav:
-  badge: NEW|info
 ---
 # Blogging
 

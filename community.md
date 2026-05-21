@@ -4,8 +4,6 @@ order: 1200
 tags:
   - community
   - github
-nav:
-  badge: NEW|info
 ---
 # Community Keys
 
