@@ -24,7 +24,7 @@ Retype can now automatically add a tag summary section to the left sidebar navig
 
 ![](images/2026-04-07-sidebar-tags.png)
 
-The new `nav.tags` feature collects the `tags` used across your pages and renders them into the bottom of the left navigation, giving readers a quick way to navigate by topics.
+The new [`nav.tags`](/configuration/project.md#nav-tags) feature collects the [`tags`](/configuration/page.md#tags) used across your pages and renders them into the bottom of the left navigation, giving readers a quick way to navigate by topics.
 
 ```yml
 nav:
