@@ -1902,7 +1902,7 @@ This setting is Retype [!badge PRO](/pro/pro.md) only.
 
 The `tags` configuration enables a generated tag summary section in the left sidebar navigation. Retype builds the list from the `tags` frontmatter configured on pages within your project.
 
-When enabled, each tag is rendered as a link to the generated tag page. The tag summary can be customized with include and exclude filters, a display limit, layout options, alignment, ordering, and badge variant.
+When [enabled](#nav-tags-enabled), each tag is rendered as a link to the generated tag page. The tag summary can be customized with [include](#nav-tags-include) and [exclude](#nav-tags-exclude) filters, a display [limit](#nav-tags-limit), [layout](#nav-tags-layout) options, [alignment](#nav-tags-align), [ordering](#nav-tags-order), and badge [variant](#nav-tags-variant).
 
 ```yml
 nav:
