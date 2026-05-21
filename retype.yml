@@ -63,7 +63,7 @@ output: .retype
 url: retype.com
 
 branding:
-  label: v4.5
+  label: v4.6-pre
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
@@ -152,7 +152,7 @@ links:
     target: blank
 
 data:
-  version: "4.5.3"
+  version: "4.6.0-preview2"
   # abbreviations:
   #   HTML: Hyper Text Markup Language
   #   CSS: Cascading Style Sheet
