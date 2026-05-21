@@ -1896,6 +1896,199 @@ The `nav.icons.mode` setting can be used in conjunction with [`nav.mode: stack`]
 
 ===
 
+### tags {#nav-tags}
+
+This setting is Retype [!badge PRO](/pro/pro.md) only.
+
+The `tags` configuration enables a generated tag summary section in the left sidebar navigation. Retype builds the list from the `tags` frontmatter configured on pages within your project.
+
+When enabled, each tag is rendered as a link to the generated tag page. The tag summary can be customized with include and exclude filters, a display limit, layout options, alignment, ordering, and badge variant.
+
+```yml
+nav:
+  tags:
+    enabled: true
+    title: Popular topics
+    limit: 8
+    layout: stack
+    align: left
+    order: count
+    variant: info
+    include:
+      - guides
+      - reference
+      - deployment
+```
+
+#### enabled {#nav-tags-enabled}
+
+=== enabled : `boolean`
+
+Enable or disable the generated tag summary section in the left sidebar navigation. Default is `true` for Retype Pro projects.
+
+```yml
+nav:
+  tags:
+    enabled: true
+```
+
+Set `enabled` to `false` to hide the tag summary section:
+
+```yml
+nav:
+  tags:
+    enabled: false
+```
+
+===
+
+#### limit {#nav-tags-limit}
+
+=== limit : `number`
+
+Set the maximum number of tags to display in the left sidebar navigation. Default is `null`, which displays all matching tags.
+
+```yml
+nav:
+  tags:
+    limit: 10
+```
+
+Only values greater than `0` are applied.
+
+===
+
+#### include {#nav-tags-include}
+
+=== include : `list`
+
+Include only tags matching one or more configured patterns.
+
+The wildcards `?` and `*` are supported. Pattern matching is case-insensitive.
+
+```yml
+nav:
+  tags:
+    include:
+      - guides
+      - api-*
+```
+
+When `include` is configured, only matching tags are displayed in the navigation tag summary.
+
+===
+
+#### exclude {#nav-tags-exclude}
+
+=== exclude : `list`
+
+Exclude tags matching one or more configured patterns.
+
+The wildcards `?` and `*` are supported. Pattern matching is case-insensitive.
+
+```yml
+nav:
+  tags:
+    exclude:
+      - draft-*
+      - internal
+```
+
+The `exclude` rules are ignored when [`include`](#nav-tags-include) is configured.
+
+===
+
+#### title {#nav-tags-title}
+
+=== title : `string`
+
+Set a custom heading for the generated tag summary section. Default is an empty string.
+
+```yml
+nav:
+  tags:
+    title: Popular topics
+```
+
+===
+
+#### layout {#nav-tags-layout}
+
+=== layout : `string`
+
+Configure the layout used to render the tags in the sidebar navigation. Default is `flex`.
+
+Option | Description
+---    | ---
+`flex` | Render tags in a compact wrapping layout.
+`stack` | Render tags in a vertical stacked layout.
+
+```yml
+nav:
+  tags:
+    layout: stack
+```
+
+===
+
+#### align {#nav-tags-align}
+
+=== align : `string`
+
+Configure the tag alignment within the tag summary section. Default is `right`.
+
+Option | Description
+---    | ---
+`left` | Align tags to the left.
+`right` | Align tags to the right.
+
+```yml
+nav:
+  tags:
+    align: left
+```
+
+===
+
+#### order {#nav-tags-order}
+
+=== order : `string`
+
+Configure the order used to sort tags in the tag summary section. Default is `asc`.
+
+Option | Description
+---    | ---
+`asc` | Sort tags alphabetically from A to Z.
+`desc` | Sort tags alphabetically from Z to A.
+`count` | Sort tags by the number of pages using each tag, from highest to lowest.
+`count-asc` | Sort tags by the number of pages using each tag, from lowest to highest.
+
+```yml
+nav:
+  tags:
+    order: count
+```
+
+The `order` setting also supports the aliases `alpha-desc`, `name-desc`, `title-desc`, `count-desc`, `popular`, `popularity`, `frequency`, `popular-asc`, `popularity-asc`, and `frequency-asc`.
+
+===
+
+#### variant {#nav-tags-variant}
+
+=== variant : `string`
+
+Set the visual variant applied to each rendered navigation tag. Default is `info`.
+
+```yml
+nav:
+  tags:
+    variant: success
+```
+
+The `variant` supports the same values as the [[badge]] component.
+
+===
+
 ---
 
 ## nextprev
