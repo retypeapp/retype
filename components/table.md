@@ -305,4 +305,3 @@ Region | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 North America | 42 | 48 | 53 | 58 | 61 | 67 | 71 | 73 | 69 | 64 | 59 | 55 | 720 | [!badge On track|success] | Operations
 Europe | 31 | 34 | 39 | 44 | 49 | 52 | 57 | 59 | 56 | 50 | 46 | 41 | 558 | [!badge Watch|warning] | Growth
 Asia Pacific | 28 | 32 | 37 | 43 | 47 | 51 | 55 | 58 | 61 | 63 | 66 | 70 | 611 | [!badge Rising|primary] | Product
-
