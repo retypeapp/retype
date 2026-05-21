@@ -25,6 +25,8 @@ If you run the command `retype start` and do not have a **retype.yml** project c
 
 You can also explicitly have Retype generate a **retype.yml** file by running the command `retype init`.
 
+## Sample
+
 The following sample demonstrates a common set of project configuration options and everything can be customized to your requirements.
 
 {%{
@@ -52,6 +54,21 @@ footer:
 }%}
 
 [!card](/samples/advanced-project-config.md)
+
+## Project partials
+
+Project configuration can also be split across multiple files using [Project partials](project-partials.md) and [`extends`](#extends). For example, use **retype.build.yml** in addition to **retype.yml** to apply production-only settings during the [`retype build`](/guides/cli.md#retype-build) process:
+
+```yml retype.build.yml
+# Applied only during `retype build`
+lastUpdated:
+  date:
+    enabled: true
+```
+
+Use [`extends`](#extends), automatic config fragments, and build or start files to share common settings or keep build and start settings separate.
+
+The main **retype.yml** file is merged first, then files referenced by `extends`, automatic fragments, and build or start files are merged over it. This means project partials can override values from the main project configuration.
 
 ---
 
@@ -824,6 +841,42 @@ As well, any `node_modules` folder will be excluded.
 !!!
 
 To explicitly include any files or folders that might have been excluded, please see the [`include`](#include) config.
+===
+
+---
+
+## extends
+
+=== extends : `string` or `list`
+
+Extend the current project configuration with one or more local config files.
+
+Use `extends` when you want to share common configuration across projects, split large project settings into smaller files, or keep reusable theme and branding settings outside of the main **retype.yml** file.
+
+```yml retype.yml
+extends: ./config/base.yml
+
+url: docs.example.com
+branding:
+  title: Product Docs
+```
+
+Multiple files can be configured as a list:
+
+```yml retype.yml
+extends:
+  - ./config/base.yml
+  - ./config/theme.yml
+
+url: docs.example.com
+```
+
+Extended files are resolved relative to the config file that declares them. Remote extension paths are not supported.
+
+The current config file is merged first, then extended files are merged over it. Later files win over earlier files. Objects are deep merged, while arrays and strings, numbers, Boolean values, and other non-object values are replaced.
+
+For more details on `extends`, automatic **retype.&lt;id&gt;.yml** fragments, **retype.build.yml**, **retype.start.yml**, merge order, and watch behavior, see [Project partials](project-partials.md).
+
 ===
 
 ---
