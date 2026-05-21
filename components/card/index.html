@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview2.832619622649">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview2.832716557650">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0-preview2">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0-preview2.832619622649" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0-preview2.832716557650" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview2.832619622649" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0-preview2.832716557650" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0-preview2" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview2.832619622649" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview2.832619622649" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0-preview2.832716557650" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0-preview2.832716557650" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0-preview2.832619622649" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0-preview2.832716557650" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -371,7 +371,7 @@
 [!card signal](path/to/page.md)
 [!card snap](path/to/page.md)
 [!card layout=&quot;compact&quot;](path/to/page.md)
-[!card title=&quot;Custom title&quot; text=&quot;Custom text&quot;](https://retype.com/)</code></pre>
+[!card title=&quot;Custom title&quot; text=&quot;Custom text&quot; target=&quot;blank&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
 <p>For local pages, Retype can automatically resolve:</p>
 <ul>
@@ -385,7 +385,115 @@
 <p>The link target always comes from the destination in parentheses. There is no separate <code translate="no" v-pre>link</code> Card attribute.</p>
 <p>Use shorthand labels such as <code translate="no" v-pre>vert</code> only when no other Card properties are set. If you combine a layout with custom properties, set it with the <code translate="no" v-pre>layout</code> attribute, such as <code translate="no" v-pre>layout=&quot;vert&quot;</code>, <code translate="no" v-pre>layout=&quot;vertical&quot;</code>, <code translate="no" v-pre>layout=&quot;compact&quot;</code>, <code translate="no" v-pre>layout=&quot;signal&quot;</code>, or <code translate="no" v-pre>layout=&quot;snap&quot;</code>.</p>
 <hr>
-<h2 id="layouts">Layouts</h2>
+<h2 id="footer">Footer</h2>
+<p>Overrides the footer rendered below the Card content. The <code translate="no" v-pre>footer</code> property is used by horizontal and vertical Cards. Compact, signal, and snap Cards ignore <code translate="no" v-pre>footer</code>.</p>
+<p>For local pages, Retype can automatically resolve the footer from <code translate="no" v-pre>date</code> or <code translate="no" v-pre>created</code> page metadata.</p>
+<div id="footer-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; footer=&quot;Custom footer&quot;](/blog/2026-03-23-whats-new-in-retype-v440.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-23-whats-new-in-retype-v440.png">
+        </div>
+        <div class="card-vert-body p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
+            <div class="card-vert-footer">
+                <div class="text-card-footer text-card-footer-text"><span>Custom footer</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<h2 id="icon">Icon</h2>
+<p>Overrides the Card icon. The <code translate="no" v-pre>icon</code> property is rendered by compact, signal, and snap Cards.</p>
+<p>The <code translate="no" v-pre>icon</code> can be an Octicon name, an Emoji shortcode, an image file, or an inline SVG.</p>
+<div id="icon-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Retype website&quot; text=&quot;Visit retype.com&quot; icon=&quot;home&quot; layout=&quot;compact&quot;](https://retype.com/)
+[!card icon=&quot;:rocket:&quot; layout=&quot;compact&quot;](/guides/getting-started.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="https://retype.com/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <span class="card-compact-title">Retype website</span>
+            </div>
+            <p class="card-compact-description">Visit retype.com</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/guides/getting-started/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F680;</span></span>
+                <span class="card-compact-title">Getting Started</span>
+            </div>
+            <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<h2 id="image">Image</h2>
+<p>Overrides the Card image. The <code translate="no" v-pre>image</code> property is used by horizontal, vertical, and snap Cards. Signal and compact Cards ignore <code translate="no" v-pre>image</code>.</p>
+<div id="image-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; image=&quot;/static/community-hero.png&quot;](/guides/blogging.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/guides/blogging/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/community-hero.png">
+        </div>
+        <div class="card-vert-body p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Guides</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Blogging</div>
+            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Adding a blog to your Retype website is as quick as adding a new <code translate="no" v-pre>.md</code> file to your project.</p></div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<h2 id="kicker">Kicker</h2>
+<p>Overrides the small label rendered above the Card title. The <code translate="no" v-pre>kicker</code> property is used by horizontal, vertical, and signal Cards. Compact and snap Cards ignore <code translate="no" v-pre>kicker</code>.</p>
+<p>For local pages, Retype can automatically resolve the kicker from categories or parent navigation labels.</p>
+<div id="kicker-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; kicker=&quot;Release note&quot;](/blog/2026-03-23-whats-new-in-retype-v440.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-23-whats-new-in-retype-v440.png">
+        </div>
+        <div class="card-vert-body p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Release note</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
+            <div class="card-vert-footer">
+                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<h2 id="layout">Layout</h2>
 <p>Cards support five layout modes: horizontal, vertical, compact, signal, and snap.</p>
 <h3 id="horizontal-default">Horizontal (default)</h3>
 <p>The default layout shows the image beside the content and works well for a single prominent card.</p>
@@ -702,90 +810,72 @@
 </div>
 </p>
 <hr>
-<h2 id="property-overrides">Property overrides</h2>
-<p>You can override any combination of supported Card fields.</p>
-<retype-table copy-text="| Property | Description | Notes |
-| --- | --- | --- |
-| `layout` | Sets the Card layout. | `vert` / `vertical`, `compact`, `signal`, `snap`. Default is horizontal. |
-| `title` | Overrides the title. | Works with all layouts. |
-| `text` | Overrides the description or excerpt. | Horizontal and vertical render formatted text. Compact and signal render plain text. Snap ignores this property. |
-| `icon` | Overrides the icon. | Compact, signal, and snap render the icon. |
-| `image` | Overrides the image. | Used by horizontal, vertical, and snap. Signal and compact ignore it. |
-| `kicker` | Overrides the kicker above the title. | Used by horizontal, vertical, and signal. Compact and snap ignore it. |
-| `footer` | Overrides the footer below the content. | Used by horizontal and vertical. Compact, signal, and snap ignore it. |">
+<h2 id="target">Target</h2>
+<p>Sets the <code translate="no" v-pre>target</code> attribute of the Card link and specifies which window or tab opens the link.</p>
+<div id="target-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Retype&quot; text=&quot;Open the Retype website in a new tab.&quot; target=&quot;blank&quot;](https://retype.com/)</code></pre>
+</doc-codeblock></div>
+<p>If no <code translate="no" v-pre>target</code> is configured, the link opens in the current tab.</p>
+<p>The <code translate="no" v-pre>target</code> can be set to any value, although <code translate="no" v-pre>blank</code> is common and opens the link in a new tab. Retype automatically transforms <code translate="no" v-pre>blank</code> into <code translate="no" v-pre>_blank</code>, which is the browser value for opening a hyperlink in a new tab.</p>
+<retype-table copy-text="Config `target` value | Runtime `target` value
+--- | ---
+`blank` | `_blank`
+`parent` | `_parent`
+`top` | `_top`
+`self` | `_self`
+`news1` | `news1`
+`nEWs2` | `news2`
+`recent NEWS` | `recent-news`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>Property</th>
-<th>Description</th>
-<th>Notes</th>
+<th>Config <code translate="no" v-pre>target</code> value</th>
+<th>Runtime <code translate="no" v-pre>target</code> value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code translate="no" v-pre>layout</code></td>
-<td>Sets the Card layout.</td>
-<td><code translate="no" v-pre>vert</code> / <code translate="no" v-pre>vertical</code>, <code translate="no" v-pre>compact</code>, <code translate="no" v-pre>signal</code>, <code translate="no" v-pre>snap</code>. Default is horizontal.</td>
+<td><code translate="no" v-pre>blank</code></td>
+<td><code translate="no" v-pre>_blank</code></td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>title</code></td>
-<td>Overrides the title.</td>
-<td>Works with all layouts.</td>
+<td><code translate="no" v-pre>parent</code></td>
+<td><code translate="no" v-pre>_parent</code></td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>text</code></td>
-<td>Overrides the description or excerpt.</td>
-<td>Horizontal and vertical render formatted text. Compact and signal render plain text. Snap ignores this property.</td>
+<td><code translate="no" v-pre>top</code></td>
+<td><code translate="no" v-pre>_top</code></td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>icon</code></td>
-<td>Overrides the icon.</td>
-<td>Compact, signal, and snap render the icon.</td>
+<td><code translate="no" v-pre>self</code></td>
+<td><code translate="no" v-pre>_self</code></td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>image</code></td>
-<td>Overrides the image.</td>
-<td>Used by horizontal, vertical, and snap. Signal and compact ignore it.</td>
+<td><code translate="no" v-pre>news1</code></td>
+<td><code translate="no" v-pre>news1</code></td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>kicker</code></td>
-<td>Overrides the kicker above the title.</td>
-<td>Used by horizontal, vertical, and signal. Compact and snap ignore it.</td>
+<td><code translate="no" v-pre>nEWs2</code></td>
+<td><code translate="no" v-pre>news2</code></td>
 </tr>
 <tr>
-<td><code translate="no" v-pre>footer</code></td>
-<td>Overrides the footer below the content.</td>
-<td>Used by horizontal and vertical. Compact, signal, and snap ignore it.</td>
+<td><code translate="no" v-pre>recent NEWS</code></td>
+<td><code translate="no" v-pre>recent-news</code></td>
 </tr>
 </tbody>
 </table>
 </div>
 </retype-table>
-<p>See the layout examples above for <code translate="no" v-pre>layout</code>. The following samples focus on the content properties.</p>
-<h3 id="title-and-text">Title and text</h3>
-<p>Override one field and let the remaining values fall back to the target page.</p>
-<div id="title-and-text-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; title=&quot;Start with v4.2&quot;](/blog/2026-03-23-whats-new-in-retype-v440.md)
-[!card layout=&quot;vert&quot; text=&quot;Read the `v4.1` release summary.&quot;](/blog/2026-03-17-whats-new-in-retype-v430.md)</code></pre>
+<hr>
+<h2 id="text">Text</h2>
+<p>Overrides the Card description text. If no <code translate="no" v-pre>text</code> is configured for a local page, Retype uses the target page excerpt or description.</p>
+<p>Horizontal and vertical Cards render basic markdown syntax in <code translate="no" v-pre>text</code>. Compact and signal Cards render plain text. Snap Cards ignore <code translate="no" v-pre>text</code>.</p>
+<div id="text-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; text=&quot;Read the `v4.1` release summary.&quot;](/blog/2026-03-17-whats-new-in-retype-v430.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-vert-group">
-<div class="card-vert-container">
-    <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-23-whats-new-in-retype-v440.png">
-        </div>
-        <div class="card-vert-body p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Start with v4.2</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
-            <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
-            </div>
-        </div>
-    </a>
-</div>
 <div class="card-vert-container">
     <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="group card-vert no-link">
         <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
@@ -804,42 +894,14 @@
 </div>
 </p>
 <hr>
-<h3 id="image-kicker-and-footer">Image, kicker, and footer</h3>
-<p>These properties let you replace the metadata-style parts of a horizontal or vertical card.</p>
-<div id="image-kicker-and-footer-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; image=&quot;/static/community-hero.png&quot;](/guides/blogging.md)
-[!card layout=&quot;vert&quot; kicker=&quot;Release note&quot;](/blog/2026-03-23-whats-new-in-retype-v440.md)
-[!card layout=&quot;vert&quot; footer=&quot;Custom footer&quot;](/blog/2026-03-23-whats-new-in-retype-v440.md)</code></pre>
+<h2 id="title">Title</h2>
+<p>Overrides the Card title. If no <code translate="no" v-pre>title</code> is configured for a local page, Retype uses the target page title.</p>
+<p>The <code translate="no" v-pre>title</code> property works with all Card layouts.</p>
+<div id="title-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card layout=&quot;vert&quot; title=&quot;Start with v4.2&quot;](/blog/2026-03-23-whats-new-in-retype-v440.md)</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-vert-group">
-<div class="card-vert-container">
-    <a href="/guides/blogging/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/static/community-hero.png">
-        </div>
-        <div class="card-vert-body p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Guides</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Blogging</div>
-            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Adding a blog to your Retype website is as quick as adding a new <code translate="no" v-pre>.md</code> file to your project.</p></div>
-        </div>
-    </a>
-</div>
-<div class="card-vert-container">
-    <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card-vert no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-23-whats-new-in-retype-v440.png">
-        </div>
-        <div class="card-vert-body p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Release note</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
-            <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
-            </div>
-        </div>
-    </a>
-</div>
 <div class="card-vert-container">
     <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card-vert no-link">
         <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
@@ -847,10 +909,10 @@
         </div>
         <div class="card-vert-body p-card-padding">
             <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Start with v4.2</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>Custom footer</span></div>
+                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
             </div>
         </div>
     </a>
@@ -858,39 +920,83 @@
 </div>
 </p>
 <hr>
-<h3 id="icon">Icon</h3>
-<p>The <code translate="no" v-pre>icon</code> override is rendered by compact, signal, and snap cards.</p>
-<div id="icon-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Retype website&quot; text=&quot;Visit retype.com&quot; icon=&quot;home&quot; layout=&quot;compact&quot;](https://retype.com/)
-[!card icon=&quot;:rocket:&quot; layout=&quot;compact&quot;](/guides/getting-started.md)</code></pre>
+<h2 id="list-pair-cards">List pair cards</h2>
+<p>You can create an array of cards from list pairs by using a wikilink as the top-level list item and a nested list item for the description.</p>
+<p>The link must be a wikilink to a local page in your project. The nested text is always configured manually and is not pulled from the linked page.</p>
+<div id="list-pair-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- [[Blogging]]
+  - Create blog posts and let Retype generate the rss feed and pages automatically.
+- [[Installation]]
+  - Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.
+- [[Community]]
+  - Get a free Retype Pro key for use in GitHub Pages projects.</code></pre>
 </doc-codeblock></div>
 <p>
 <div class="card-compact-group">
 <div class="card-compact-container">
-    <a href="https://retype.com/" class="group card-compact no-link">
+    <a href="/guides/blogging/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
-                <span class="card-compact-title">Retype website</span>
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg></span>
+                <span class="card-compact-title">Blogging</span>
             </div>
-            <p class="card-compact-description">Visit retype.com</p>
+            <p class="card-compact-description">Create blog posts and let Retype generate the rss feed and pages automatically.</p>
         </div>
     </a>
 </div>
+ 
 <div class="card-compact-container">
-    <a href="/guides/getting-started/" class="group card-compact no-link">
+    <a href="/guides/installation/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F680;</span></span>
-                <span class="card-compact-title">Getting Started</span>
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
+                <span class="card-compact-title">Installation</span>
             </div>
-            <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
+            <p class="card-compact-description">Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.</p>
+        </div>
+    </a>
+</div>
+ 
+<div class="card-compact-container">
+    <a href="/community/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></svg></span>
+                <span class="card-compact-title">Community</span>
+            </div>
+            <p class="card-compact-description">Get a free Retype Pro key for use in GitHub Pages projects.</p>
         </div>
     </a>
 </div>
 </div>
 </p>
 <hr>
+<h2 id="template-driven-cards">Template-driven cards</h2>
+<p>The Retype <a href="/templating/">templating</a> engine can read from content collections, which makes it easy to generate Cards dynamically instead of hardcoding paths.</p>
+<p>The following sample demonstrates how to display the latest blog post by passing its <code translate="no" v-pre>filePath</code> to the Card component.</p>
+<div id="template-driven-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card]({{ content.blog.posts[0].filePath }})</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-container">
+    <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-23-whats-new-in-retype-v440.png">
+        </div>
+        <div class="p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
+            <div class="flex mt-card-footer-margin-top items-center">
+                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+</p>
+<p>The <a href="/templating/content/#blog-posts"><code translate="no" v-pre>content.blog.posts</code></a> array contains all blog posts in your project sorted by date, newest first.</p>
+<hr>
+<h2 id="samples">Samples</h2>
 <h3 id="automatic-and-manual-versions-of-the-same-vertical-card">Automatic and manual versions of the same vertical card</h3>
 <p>The first card uses page metadata. The second manually configures the same values to provide a side-by-side comparison.</p>
 <div id="automatic-and-manual-versions-of-the-same-vertical-card-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -976,82 +1082,6 @@
 </div>
 </div>
 </p>
-<hr>
-<h2 id="list-pair-cards">List pair cards</h2>
-<p>You can create an array of cards from list pairs by using a wikilink as the top-level list item and a nested list item for the description.</p>
-<p>The link must be a wikilink to a local page in your project. The nested text is always configured manually and is not pulled from the linked page.</p>
-<div id="list-pair-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">- [[Blogging]]
-  - Create blog posts and let Retype generate the rss feed and pages automatically.
-- [[Installation]]
-  - Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.
-- [[Community]]
-  - Get a free Retype Pro key for use in GitHub Pages projects.</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="card-compact-group">
-<div class="card-compact-container">
-    <a href="/guides/blogging/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg></span>
-                <span class="card-compact-title">Blogging</span>
-            </div>
-            <p class="card-compact-description">Create blog posts and let Retype generate the rss feed and pages automatically.</p>
-        </div>
-    </a>
-</div>
- 
-<div class="card-compact-container">
-    <a href="/guides/installation/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
-                <span class="card-compact-title">Installation</span>
-            </div>
-            <p class="card-compact-description">Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.</p>
-        </div>
-    </a>
-</div>
- 
-<div class="card-compact-container">
-    <a href="/community/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></svg></span>
-                <span class="card-compact-title">Community</span>
-            </div>
-            <p class="card-compact-description">Get a free Retype Pro key for use in GitHub Pages projects.</p>
-        </div>
-    </a>
-</div>
-</div>
-</p>
-<hr>
-<h2 id="template-driven-cards">Template-driven cards</h2>
-<p>The Retype <a href="/templating/">templating</a> engine can read from content collections, which makes it easy to generate Cards dynamically instead of hardcoding paths.</p>
-<p>The following sample demonstrates how to display the latest blog post by passing its <code translate="no" v-pre>filePath</code> to the Card component.</p>
-<div id="template-driven-cards-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card]({{ content.blog.posts[0].filePath }})</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="card-container">
-    <a href="/blog/2026-03-23-whats-new-in-retype-v440/" class="group card no-link">
-        <div class="relative shrink-0 overflow-hidden bg-card-image-bg md:w-5/12 pb-9/16 md:pb-0 border-b md:border-b-0 md:border-r border-card-image-inner-border">
-            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-03-23-whats-new-in-retype-v440.png">
-        </div>
-        <div class="p-card-padding">
-            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
-            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
-            <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
-            </div>
-        </div>
-    </a>
-</div>
-</p>
-<p>The <a href="/templating/content/#blog-posts"><code translate="no" v-pre>content.blog.posts</code></a> array contains all blog posts in your project sorted by date, newest first.</p>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 

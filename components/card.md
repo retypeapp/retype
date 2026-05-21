@@ -21,7 +21,7 @@ Use the destination in parentheses for the link target. Add an optional layout s
 [!card signal](path/to/page.md)
 [!card snap](path/to/page.md)
 [!card layout="compact"](path/to/page.md)
-[!card title="Custom title" text="Custom text"](https://retype.com/)
+[!card title="Custom title" text="Custom text" target="blank"](https://retype.com/)
 ```
 
 For local pages, Retype can automatically resolve:
@@ -40,7 +40,63 @@ Use shorthand labels such as `vert` only when no other Card properties are set. 
 
 ---
 
-## Layouts
+## Footer
+
+Overrides the footer rendered below the Card content. The `footer` property is used by horizontal and vertical Cards. Compact, signal, and snap Cards ignore `footer`.
+
+For local pages, Retype can automatically resolve the footer from `date` or `created` page metadata.
+
+```md
+[!card layout="vert" footer="Custom footer"](/blog/2026-03-23-whats-new-in-retype-v440.md)
+```
+
+[!card layout="vert" footer="Custom footer"](/blog/2026-03-23-whats-new-in-retype-v440.md)
+
+---
+
+## Icon
+
+Overrides the Card icon. The `icon` property is rendered by compact, signal, and snap Cards.
+
+The `icon` can be an Octicon name, an Emoji shortcode, an image file, or an inline SVG.
+
+```md
+[!card title="Retype website" text="Visit retype.com" icon="home" layout="compact"](https://retype.com/)
+[!card icon=":rocket:" layout="compact"](/guides/getting-started.md)
+```
+
+[!card title="Retype website" text="Visit retype.com" icon="home" layout="compact"](https://retype.com/)
+[!card icon=":rocket:" layout="compact"](/guides/getting-started.md)
+
+---
+
+## Image
+
+Overrides the Card image. The `image` property is used by horizontal, vertical, and snap Cards. Signal and compact Cards ignore `image`.
+
+```md
+[!card layout="vert" image="/static/community-hero.png"](/guides/blogging.md)
+```
+
+[!card layout="vert" image="/static/community-hero.png"](/guides/blogging.md)
+
+---
+
+## Kicker
+
+Overrides the small label rendered above the Card title. The `kicker` property is used by horizontal, vertical, and signal Cards. Compact and snap Cards ignore `kicker`.
+
+For local pages, Retype can automatically resolve the kicker from categories or parent navigation labels.
+
+```md
+[!card layout="vert" kicker="Release note"](/blog/2026-03-23-whats-new-in-retype-v440.md)
+```
+
+[!card layout="vert" kicker="Release note"](/blog/2026-03-23-whats-new-in-retype-v440.md)
+
+---
+
+## Layout
 
 Cards support five layout modes: horizontal, vertical, compact, signal, and snap.
 
@@ -148,93 +204,55 @@ For local pages, snap auto-resolves the icon from page metadata and falls back t
 
 ---
 
-## Property overrides
+## Target
 
-You can override any combination of supported Card fields.
-
-| Property | Description | Notes |
-| --- | --- | --- |
-| `layout` | Sets the Card layout. | `vert` / `vertical`, `compact`, `signal`, `snap`. Default is horizontal. |
-| `title` | Overrides the title. | Works with all layouts. |
-| `text` | Overrides the description or excerpt. | Horizontal and vertical render formatted text. Compact and signal render plain text. Snap ignores this property. |
-| `icon` | Overrides the icon. | Compact, signal, and snap render the icon. |
-| `image` | Overrides the image. | Used by horizontal, vertical, and snap. Signal and compact ignore it. |
-| `kicker` | Overrides the kicker above the title. | Used by horizontal, vertical, and signal. Compact and snap ignore it. |
-| `footer` | Overrides the footer below the content. | Used by horizontal and vertical. Compact, signal, and snap ignore it. |
-
-See the layout examples above for `layout`. The following samples focus on the content properties.
-
-### Title and text
-
-Override one field and let the remaining values fall back to the target page.
+Sets the `target` attribute of the Card link and specifies which window or tab opens the link.
 
 ```md
-[!card layout="vert" title="Start with v4.2"](/blog/2026-03-23-whats-new-in-retype-v440.md)
+[!card title="Retype" text="Open the Retype website in a new tab." target="blank"](https://retype.com/)
+```
+
+If no `target` is configured, the link opens in the current tab.
+
+The `target` can be set to any value, although `blank` is common and opens the link in a new tab. Retype automatically transforms `blank` into `_blank`, which is the browser value for opening a hyperlink in a new tab.
+
+Config `target` value | Runtime `target` value
+--- | ---
+`blank` | `_blank`
+`parent` | `_parent`
+`top` | `_top`
+`self` | `_self`
+`news1` | `news1`
+`nEWs2` | `news2`
+`recent NEWS` | `recent-news`
+
+---
+
+## Text
+
+Overrides the Card description text. If no `text` is configured for a local page, Retype uses the target page excerpt or description.
+
+Horizontal and vertical Cards render basic markdown syntax in `text`. Compact and signal Cards render plain text. Snap Cards ignore `text`.
+
+```md
 [!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-03-17-whats-new-in-retype-v430.md)
 ```
 
-[!card layout="vert" title="Start with v4.2"](/blog/2026-03-23-whats-new-in-retype-v440.md)
 [!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-03-17-whats-new-in-retype-v430.md)
 
 ---
 
-### Image, kicker, and footer
+## Title
 
-These properties let you replace the metadata-style parts of a horizontal or vertical card.
+Overrides the Card title. If no `title` is configured for a local page, Retype uses the target page title.
 
-```md
-[!card layout="vert" image="/static/community-hero.png"](/guides/blogging.md)
-[!card layout="vert" kicker="Release note"](/blog/2026-03-23-whats-new-in-retype-v440.md)
-[!card layout="vert" footer="Custom footer"](/blog/2026-03-23-whats-new-in-retype-v440.md)
-```
-
-[!card layout="vert" image="/static/community-hero.png"](/guides/blogging.md)
-[!card layout="vert" kicker="Release note"](/blog/2026-03-23-whats-new-in-retype-v440.md)
-[!card layout="vert" footer="Custom footer"](/blog/2026-03-23-whats-new-in-retype-v440.md)
-
----
-
-### Icon
-
-The `icon` override is rendered by compact, signal, and snap cards.
+The `title` property works with all Card layouts.
 
 ```md
-[!card title="Retype website" text="Visit retype.com" icon="home" layout="compact"](https://retype.com/)
-[!card icon=":rocket:" layout="compact"](/guides/getting-started.md)
+[!card layout="vert" title="Start with v4.2"](/blog/2026-03-23-whats-new-in-retype-v440.md)
 ```
 
-[!card title="Retype website" text="Visit retype.com" icon="home" layout="compact"](https://retype.com/)
-[!card icon=":rocket:" layout="compact"](/guides/getting-started.md)
-
----
-
-### Automatic and manual versions of the same vertical card
-
-The first card uses page metadata. The second manually configures the same values to provide a side-by-side comparison.
-
-```md
-[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
-[!card kicker="Release" footer="2026-03-02" image="/blog/images/2026-03-02-whats-new-in-retype-v410.png" title="What's NEW in Retype v4.1" layout="vert" text="Retype `v4.1` has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release."](/blog/2026-03-02-whats-new-in-retype-v410.md)
-```
-
-[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
-[!card kicker="Release" footer="2026-03-02" image="/blog/images/2026-03-02-whats-new-in-retype-v410.png" title="What's NEW in Retype v4.1" layout="vert" text="Retype `v4.1` has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release."](/blog/2026-03-02-whats-new-in-retype-v410.md)
-
----
-
-### Compact cards with manual values
-
-Compact cards are useful when you want a smaller inline set of links, including cards for external URLs.
-
-```md
-[!card compact](/guides/getting-started.md)
-[!card title="Install Retype" text="Install the Retype CLI." layout="compact"](/guides/installation.md)
-[!card title="Retype website" text="Visit retype.com." icon=":smile:" layout="compact"](https://retype.com/)
-```
-
-[!card compact](/guides/getting-started.md)
-[!card title="Install Retype" text="Install the Retype CLI." layout="compact"](/guides/installation.md)
-[!card title="Retype website" text="Visit retype.com." icon=":smile:" layout="compact"](https://retype.com/)
+[!card layout="vert" title="Start with v4.2"](/blog/2026-03-23-whats-new-in-retype-v440.md)
 
 ---
 
@@ -275,3 +293,35 @@ The following sample demonstrates how to display the latest blog post by passing
 [!card](/blog/2026-03-23-whats-new-in-retype-v440.md)
 
 The [`content.blog.posts`](/templating/content.md#blog-posts) array contains all blog posts in your project sorted by date, newest first.
+
+---
+
+## Samples
+
+### Automatic and manual versions of the same vertical card
+
+The first card uses page metadata. The second manually configures the same values to provide a side-by-side comparison.
+
+```md
+[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card kicker="Release" footer="2026-03-02" image="/blog/images/2026-03-02-whats-new-in-retype-v410.png" title="What's NEW in Retype v4.1" layout="vert" text="Retype `v4.1` has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release."](/blog/2026-03-02-whats-new-in-retype-v410.md)
+```
+
+[!card vert](/blog/2026-03-02-whats-new-in-retype-v410.md)
+[!card kicker="Release" footer="2026-03-02" image="/blog/images/2026-03-02-whats-new-in-retype-v410.png" title="What's NEW in Retype v4.1" layout="vert" text="Retype `v4.1` has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release."](/blog/2026-03-02-whats-new-in-retype-v410.md)
+
+---
+
+### Compact cards with manual values
+
+Compact cards are useful when you want a smaller inline set of links, including cards for external URLs.
+
+```md
+[!card compact](/guides/getting-started.md)
+[!card title="Install Retype" text="Install the Retype CLI." layout="compact"](/guides/installation.md)
+[!card title="Retype website" text="Visit retype.com." icon=":smile:" layout="compact"](https://retype.com/)
+```
+
+[!card compact](/guides/getting-started.md)
+[!card title="Install Retype" text="Install the Retype CLI." layout="compact"](/guides/installation.md)
+[!card title="Retype website" text="Visit retype.com." icon=":smile:" layout="compact"](https://retype.com/)
