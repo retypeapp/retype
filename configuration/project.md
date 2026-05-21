@@ -1572,6 +1572,44 @@ links:
 ```
 ===
 
+### action {#links-action}
+
+=== action : `string`
+
+The Retype action to run when the link is clicked. Use `action` instead of `link` for menu items that should copy content, print the page, scroll, or run another browser-side behavior.
+
+```yml
+links:
+  - text: Copy link
+    icon: link
+    action: copy-page-link
+  - text: Print
+    icon: brand-printer
+    action: print-page
+```
+
+Actions can call built-in `handlers` such as `clipboard`, `fetch`, `print`, and `scroll`.
+
+{%{
+```yml _components/actions/copy-page-title.yml
+steps:
+  - handler: clipboard
+    with:
+      value: "{{ page.title }}"
+```
+}%}
+
+```yml retype.yml
+links:
+  - text: Copy title
+    icon: copy
+    action: copy-page-title
+```
+
+See [Actions](actions.md) for the full action definition format, built-in actions, and handler samples.
+
+===
+
 ### icon {#links-icon}
 
 === icon : `string`
@@ -1671,7 +1709,7 @@ links:
 
 When `items` are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.
 
-Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
+Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`action`](#links-action), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
 
 ===
 
