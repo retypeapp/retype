@@ -72,6 +72,58 @@ The main **retype.yml** file is merged first, then files referenced by `extends`
 
 ---
 
+## actions
+
+The `actions` configuration controls the page action menu shown to the right of the page title. 
+
+Page actions can copy the generated Markdown for the current page, copy the page link, open the Markdown export, print the page, or run a custom action from your project's **_components/actions/** folder. See the [actions](/configuration/actions.md) documentation for more details.
+
+```yml
+actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - text: Copy link
+      action: copy-page-link
+      icon: link
+    - type: separator
+    - text: View as Markdown
+      action: view-page-markdown
+      icon: markdown
+    - text: Print page
+      action: print-page
+      icon: brand-printer
+```
+
+The `actions` configuration is for the page action button menu. To run actions from top-bar links, footer links, or nested header menu links, use [`links.action`](#links-action) or [`footer.links[]`](#footer-links).
+
+### items {#actions-items}
+
+=== items : `list`
+
+Defines the page action menu items.
+
+Each item supports the same common properties as individual [`links`](#links) items, including [`text`](#links-text), [`link`](#links-link), [`action`](#links-action), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), [`title`](#links-title), and `description`.
+
+Page action menu items and nested header menu items also support `type: separator` for grouping related items.
+
+```yml
+actions:
+  items:
+    - text: Copy page
+      action: copy-page-markdown
+      icon: copy
+    - type: separator
+    - text: Print page
+      action: print-page
+      icon: brand-printer
+```
+
+===
+
+---
+
 ## backlinks
 
 This setting is Retype [!badge PRO](/pro/pro.md) only.
@@ -1544,39 +1596,13 @@ links:
     link: https://retype.com/getting_started/
 ```
 
-### text {#links-text}
-
-=== text : `string`
-
-The link text label.
-
-```yml
-links:
-  - text: Demos
-    link: https://demo.example.com/
-```
-===
-
-### link {#links-link}
-
-=== link : `string`
-
-The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
-
-If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
-
-```yml
-links:
-  - text: About us
-    link: /about/
-```
-===
-
 ### action {#links-action}
 
 === action : `string`
 
 The Retype action to run when the link is clicked. Use `action` instead of `link` for menu items that should copy content, print the page, scroll, or run another browser-side behavior.
+
+Individual `links` items support `action`, but they do not support `handler` directly. To call a handler from a link item, define an action in **_components/actions/** and set the link item's `action` value to that action id.
 
 ```yml
 links:
@@ -1657,6 +1683,45 @@ links:
 ```
 ===
 
+### items {#links-items}
+
+=== items : `list`
+
+Add nested menu items to a top-level [`links`](#links) entry to render a header dropdown menu.
+
+```yml
+links:
+  - text: Guides
+    items:
+      - text: Installation
+        link: /guides/installation.md
+        icon: download
+      - text: Configuration
+        link: /configuration/project.md
+        title: Project configuration options
+```
+
+When `items` are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.
+
+Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`action`](#links-action), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
+
+===
+
+### link {#links-link}
+
+=== link : `string`
+
+The URL to use for the link. The link can be a `.md` file name, or to any internal path, or to any external URL.
+
+If a `.md` file set, such as `sample.md`, Retype will automatically resolve the path and in the generated website, the `sample.md` value will be replaced with the path to the actual generated HTML file.
+
+```yml
+links:
+  - text: About us
+    link: /about/
+```
+===
+
 ### target {#links-target}
 
 === target : `string`
@@ -1689,28 +1754,17 @@ There are several other values that may be prefixed with an `_` character, inclu
 
 ===
 
-### items {#links-items}
+### text {#links-text}
 
-=== items : `list`
+=== text : `string`
 
-Add nested menu items to a top-level [`links`](#links) entry to render a header dropdown menu.
+The link text label.
 
 ```yml
 links:
-  - text: Guides
-    items:
-      - text: Installation
-        link: /guides/installation.md
-        icon: download
-      - text: Configuration
-        link: /configuration/project.md
-        title: Project configuration options
+  - text: Demos
+    link: https://demo.example.com/
 ```
-
-When `items` are configured, Retype renders the parent link as a dropdown trigger in the header navigation. Dropdown menus are supported one level deep.
-
-Each nested item supports the same link properties as a top-level link, including [`text`](#links-text), [`link`](#links-link), [`action`](#links-action), [`icon`](#links-icon), [`iconAlign`](#links-iconalign), [`target`](#links-target), and [`title`](#links-title).
-
 ===
 
 ### title {#links-title}
