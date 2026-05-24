@@ -8,6 +8,8 @@ Retype includes several built-in actions and also discovers custom action defini
 
 The `actions.items` configuration controls the menu options on the page action menu button added to the right of the page title.
 
+![](/blog/images/2026-04-07-action-button.png)
+
 ```yml retype.yml
 actions:
   items:

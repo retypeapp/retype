@@ -108,6 +108,8 @@ Retype `v4.5` introduces [Actions](/configuration/actions.md) plugins for menus 
 
 Actions let you attach common behavior to UI items using an `action` value instead of hardcoding a URL. Built-in actions include copying the current page link, copying the page Markdown, viewing the Markdown source, opening print, and opening the current page in AI tools.
 
+![](images/2026-04-07-action-button.png)
+
 The `actions.items` configuration controls the page action menu:
 
 ```yml
@@ -168,7 +170,7 @@ For local pages, `snap` can auto-resolve the icon from page metadata and fall ba
 
 ---
 
-## New table styles
+## New Table styles
 
 Tables now support `clean`, `striped`, and `equal` styles for clearer comparisons and denser reference content.
 

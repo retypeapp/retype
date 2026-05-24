@@ -59,7 +59,7 @@ Use the Retype templating engine to dynamically render a [Card](/components/card
 [!card]({{ content.blog.posts[0].filePath }})
 ```
 
-[!card](/blog/2026-04-07-whats-new-in-retype-v450.md)
+[!card](/blog/2026-05-25-retype-for-obsidian.md)
 
 ### Three Posts
 
@@ -71,9 +71,9 @@ Combine a `for` loop with vertical cards to display your three most recent posts
 {{ end }}
 ```
 
+[!card vert](/blog/2026-05-25-retype-for-obsidian.md)
 [!card vert](/blog/2026-04-07-whats-new-in-retype-v450.md)
 [!card vert](/blog/2026-03-23-whats-new-in-retype-v440.md)
-[!card vert](/blog/2026-03-17-whats-new-in-retype-v430.md)
 
 ---
 

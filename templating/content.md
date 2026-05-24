@@ -103,6 +103,8 @@ Use `content.search("term")` to find pages whose title contains the search term.
 ```
 
 - [Self-hosting Obsidian Vault with Retype](/blog/2026-02-25-self-hosting-obsidian-vault-with-retype.md)
+- [Retype for Obsidian](/blog/2026-05-25-retype-for-obsidian.md)
+- [Retype for Obsidian Plugin](/guides/obsidian-plugin.md)
 
 ### Access a specific result
 
@@ -153,9 +155,10 @@ Tag | Page count {.compact}
 [!badge config|info](/tags/config) | 8
 [!badge ftp|info](/tags/ftp) | 1
 [!badge github|info](/tags/github) | 4
-[!badge guide|info](/tags/guide) | 13
+[!badge guide|info](/tags/guide) | 14
 [!badge hosting|info](/tags/hosting) | 5
 [!badge icon|info](/tags/icon) | 1
+[!badge obsidian|info](/tags/obsidian) | 1
 [!badge pro|info](/tags/pro) | 3
 [!badge templating|info](/tags/templating) | 6
 [!badge theme|info](/tags/theme) | 1
@@ -181,6 +184,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - [Getting Started](/guides/getting-started.md)
 - [GitHub Actions](/guides/github-actions.md)
 - [Markdown](/guides/markdown.md)
+- [Retype for Obsidian Plugin](/guides/obsidian-plugin.md)
 - [Themes](/guides/themes.md)
 - [Troubleshooting](/guides/troubleshooting.md)
 
@@ -200,7 +204,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 
 - [release](/categories/release) (11 pages)
 - [news](/categories/news) (1 pages)
-- [blog](/categories/blog) (1 pages)
+- [blog](/categories/blog) (2 pages)
 
 ---
 
@@ -236,7 +240,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 [!card]({{ content.blog.posts[0].filePath }})
 ```
 
-[!card](/blog/2026-04-07-whats-new-in-retype-v450.md)
+[!card](/blog/2026-05-25-retype-for-obsidian.md)
 
 ### List all blog posts
 
@@ -246,6 +250,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+1. [Retype for Obsidian](/blog/2026-05-25-retype-for-obsidian.md)
 1. [What's New in Retype v4.5](/blog/2026-04-07-whats-new-in-retype-v450.md)
 1. [What's New in Retype v4.4](/blog/2026-03-23-whats-new-in-retype-v440.md)
 1. [What's New in Retype v4.3](/blog/2026-03-17-whats-new-in-retype-v430.md)
@@ -268,9 +273,9 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+[!card vert](/blog/2026-05-25-retype-for-obsidian.md)
 [!card vert](/blog/2026-04-07-whats-new-in-retype-v450.md)
 [!card vert](/blog/2026-03-23-whats-new-in-retype-v440.md)
-[!card vert](/blog/2026-03-17-whats-new-in-retype-v430.md)
 
 ---
 
@@ -295,11 +300,11 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Hosting (7 children)
 - Components (30 children)
 - Templating (5 children)
-- Blog (13 children)
+- Blog (14 children)
 - Pro (0 children)
 - Samples (5 children)
 - Configuration (9 children)
-- Guides (9 children)
+- Guides (10 children)
 - Not Found (0 children)
 
 ---
