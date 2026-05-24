@@ -6,8 +6,9 @@ authors:
 category:
   - blog
 ---
-
 # Retype for Obsidian
+
+![](images/2026-05-23-retype-for-obsidian-hero.png)
 
 [Obsidian](https://obsidian.md/) is where a lot of great documentation starts. [Retype](https://retype.com/) is how that Markdown becomes a fast, polished, self-hosted website. Now Retype is available directly inside Obsidian.
 
