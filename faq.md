@@ -2,38 +2,36 @@
 
 ## Is Retype free to use?
 
-Yes, Retype is free to use with both open-source and commercial projects up to 100 pages per project.
+Yes, Retype is free to use with both open-source and commercial projects.
 
-With [Retype Pro](/pro/pro.md), you get the following additional features:
+With [Retype Pro](/pro/pro.md), you get all the [Pro Features](/feature-log.md#pro-features), including:
 
-1. No page limit
-2. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
-3. [!badge text="NEW" variant="info"] Password protected [`private`](/configuration/page.md#visibility-private) and [`protected`](/configuration/page.md#visibility-protected) pages
-4. [!badge text="NEW" variant="info"] [Outbound](/configuration/project.md#outbound) link configuration
-5. [!badge text="NEW" variant="info"] [Breadcrumb](/configuration/project.md#breadcrumb) navigation
-5. [!badge text="NEW" variant="info"] [Hub](/configuration/project.md#hub) link
-5. [!badge text="NEW" variant="info"] [Table of Contents](/configuration/project.md#toc) configuration
+1. The [`Powered by Retype`](/configuration/project.md#poweredbyretype) branding can be removed
+2. Password protected [`private`](/configuration/page.md#visibility-private) and [`protected`](/configuration/page.md#visibility-protected) pages
+3. [Outbound](/configuration/project.md#outbound) link configuration
+4. [Breadcrumb](/configuration/project.md#breadcrumb) navigation
+5. [Hub](/configuration/project.md#hub) link
+6. [Table of Contents](/configuration/project.md#toc) configuration
 
 ## How do I install Retype?
 
-Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](/guides/getting-started.md) guide for detailed installation instructions.
+Installing Retype is super simple and takes only a few seconds. Please see our [Getting Started](/guides/getting-started.md) and [Installation](/guides/installation.md) guides for detailed instructions.
 
-If you ain't got no time for that, just run the following two commands on a folder that contains at least one `.md` file, depending on your preferred [package manager](/guides/installation.md).
+If you are using :icon-brand-obsidian: Obsidian, you can also install Retype using the [Retype for Obsidian](/guides/obsidian-plugin.md) plugin.
+
+If you ain't got no time for that, just run the following commands on a folder that contains at least one `.md` file, depending on your preferred [package manager](/guides/installation.md).
 
 +++ npm
 ```
-npm install retypeapp --global
-retype start
+npm install retypeapp --global && retype start
 ```
 +++ yarn
 ```
-yarn global add retypeapp
-retype start
+yarn global add retypeapp && retype start
 ```
 +++ dotnet
 ```
-dotnet tool install retypeapp --global
-retype start
+dotnet tool install retypeapp --global && retype start
 ```
 +++
 

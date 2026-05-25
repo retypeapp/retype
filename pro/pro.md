@@ -13,8 +13,8 @@ Build more pages and unlock powerful **Pro** only features.
 |        | [!button Install|info](/guides/installation.md) | [!button Buy](https://buy.stripe.com/5kAaGyfU3cWSaQg7sP) | [!button Buy](https://buy.stripe.com/28EbJ1agXcyHgk67Kr9IQ0r) |
 | Pricing [:icon-question:](#please-summarize-how-the-licensing-works) | Free | $149 | $499 |
 | Free upgrades [:icon-question:](#please-summarize-how-the-licensing-works) | :icon-check-circle-fill: | 3 years, or<br>[+$149 Forever](https://buy.stripe.com/3cIfZh4WD7en3xk0hZ9IQ0t) | 3 years, or<br>[+$499 Forever](https://buy.stripe.com/8x2dR90GngOXfg2e8P9IQ0s) |
-| Projects [:icon-question:](#what-is-a-project) | Unlimited | 1&nbsp;^[*](#what-is-a-project)^ | Unlimited&nbsp;^[*](#what-is-a-project)^ |
-| Max pages per project [:icon-question:](#what-is-a-project) | 100 | Unlimited | Unlimited |
+| Projects [:icon-question:](#what-is-a-project) | Unlimited | 3&nbsp;^[*](#what-is-a-project)^ | Unlimited&nbsp;^[*](#what-is-a-project)^ |
+| Max pages per project [:icon-question:](#what-is-a-project) | Unlimited | Unlimited | Unlimited |
 | Users [:icon-question:](#we-have-5-people-on-our-team-do-we-require-5-licenses) | Unlimited | Unlimited | Unlimited |
 | Commercial use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
 | Open source use | :icon-check-circle-fill: | :icon-check-circle-fill: | :icon-check-circle-fill: |
@@ -45,7 +45,7 @@ Build more pages and unlock powerful **Pro** only features.
 1. [If I do not renew, does my website stop working?](#if-i-do-not-renew-does-my-website-stop-working)
 1. [Is Retype Pro a separate product?](#is-retype-pro-a-separate-product)
 1. [What is a project?](#what-is-a-project)
-1. [What if I have more than one Pro project?](#what-if-i-have-more-than-one-pro-project)
+1. [What if I have more than three Pro projects?](#what-if-i-have-more-than-three-pro-projects)
 1. [What if I need to change the location and URL of my project?](#what-if-i-need-to-change-the-location-and-url-of-my-project)
 1. [We have 5 people on our team, do we require 5 licenses?](#we-have-5-people-on-our-team-do-we-require-5-licenses)
 1. [What happens when the key expires?](#what-happens-when-the-key-expires)
@@ -64,7 +64,7 @@ start:
   pro: true
 ```
 
-The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will still be enabled and the 100 page limit will remain in place, but all other Retype Pro features will be available for testing.
+The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will still be enabled, but all other Retype Pro features will be available for testing.
 
 ## Please summarize how the licensing works?
 
@@ -78,9 +78,9 @@ The [`poweredByRetype`](/configuration/project.md#poweredbyretype) branding will
 {.compact}
 License | Key required | Price | Free upgrades | Renewal | Pro&nbsp;projects<br>^* per domain^ | Max&nbsp;Pages<br>^* per project^
 -- | :--: | -- | -- | -- | :--: | :--:
-Free | No | Free | Free | $0 | 0 | 100
-Pro | Yes | $149 | 3 years | 20% off | 1 | Unlimited
-Pro+ | Yes | $298 | Forever | n/a | 1 | Unlimited
+Free | No | Free | Free | $0 | 0 | Unlimited
+Pro | Yes | $149 | 3 years | 20% off | 3 | Unlimited
+Pro+ | Yes | $298 | Forever | n/a | 3 | Unlimited
 Enterprise | Yes | $499 | 3 years | 20% off | Unlimited ^[*](#what-is-a-project)^ | Unlimited
 Enterprise+ | Yes | $998 | Forever | n/a | Unlimited ^[*](#what-is-a-project)^ | Unlimited
 
@@ -127,15 +127,15 @@ Each subdomain name counts as one unique URL, except the `www` subdomain. Both `
 
 The `url` is included inside the key. You can have any number of instances of the project running on any number of developer machines or servers using the same key, but the key will be limited to building only those projects with a **retype.yml** file where the [`url`](/configuration/project.md#url) is set with the same URL defined in your key.
 
-## What if I have more than one Pro project?
+## What if I have more than three Pro projects?
 
-Please purchase one license for each Retype Pro project you require.
+Each Pro license includes 3 projects. Each project can be licensed to a unique [url](/configuration/project.md#url). If you require more than 3 projects, please purchase additional licenses.
 
 Retype Pro licenses can be purchased in any quantity. You can purchase one now and additional licenses at a future time.
 
 Each license is created and managed separately.
 
-Retype Enterprise licenses can be purchased to unlock an entire domain name and all subdomain names. Perfect for an organization that has multiple projects and requires the flexibility to publish to any subdomain.
+Retype Enterprise licenses can be purchased to unlock an entire domain name and all subdomain names of that domain. Perfect for an organization that has multiple projects and requires the flexibility to publish to any subdomain.
 
 ## What if I need to change the location and URL of my project?
 

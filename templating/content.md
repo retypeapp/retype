@@ -202,7 +202,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
-- [release](/categories/release) (11 pages)
+- [release](/categories/release) (12 pages)
 - [news](/categories/news) (1 pages)
 - [blog](/categories/blog) (2 pages)
 
@@ -240,7 +240,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 [!card]({{ content.blog.posts[0].filePath }})
 ```
 
-[!card](/blog/2026-05-25-retype-for-obsidian.md)
+[!card](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 ### List all blog posts
 
@@ -250,6 +250,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+1. [What's New in Retype v4.6](/blog/2026-05-26-whats-new-in-retype-v460.md)
 1. [Retype for Obsidian](/blog/2026-05-25-retype-for-obsidian.md)
 1. [What's New in Retype v4.5](/blog/2026-04-07-whats-new-in-retype-v450.md)
 1. [What's New in Retype v4.4](/blog/2026-03-23-whats-new-in-retype-v440.md)
@@ -273,9 +274,9 @@ The following sample demonstrates how to get all the Pages based on a specific t
 {{ end }}
 ```
 
+[!card vert](/blog/2026-05-26-whats-new-in-retype-v460.md)
 [!card vert](/blog/2026-05-25-retype-for-obsidian.md)
 [!card vert](/blog/2026-04-07-whats-new-in-retype-v450.md)
-[!card vert](/blog/2026-03-23-whats-new-in-retype-v440.md)
 
 ---
 
@@ -300,7 +301,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Hosting (7 children)
 - Components (30 children)
 - Templating (5 children)
-- Blog (14 children)
+- Blog (15 children)
 - Pro (0 children)
 - Samples (5 children)
 - Configuration (9 children)

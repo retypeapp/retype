@@ -3,10 +3,10 @@
 The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.
 
 ```md
-[!card](/blog/2026-05-25-retype-for-obsidian.md)
+[!card](/blog/2026-05-26-whats-new-in-retype-v460.md)
 ```
 
-[!card](/blog/2026-05-25-retype-for-obsidian.md)
+[!card](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 ---
 
@@ -47,10 +47,10 @@ Overrides the footer rendered below the Card content. The `footer` property is u
 For local pages, Retype can automatically resolve the footer from `date` or `created` page metadata.
 
 ```md
-[!card layout="vert" footer="Custom footer"](/blog/2026-05-25-retype-for-obsidian.md)
+[!card layout="vert" footer="Custom footer"](/blog/2026-05-26-whats-new-in-retype-v460.md)
 ```
 
-[!card layout="vert" footer="Custom footer"](/blog/2026-05-25-retype-for-obsidian.md)
+[!card layout="vert" footer="Custom footer"](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 ---
 
@@ -89,10 +89,10 @@ Overrides the small label rendered above the Card title. The `kicker` property i
 For local pages, Retype can automatically resolve the kicker from categories or parent navigation labels.
 
 ```md
-[!card layout="vert" kicker="Release note"](/blog/2026-05-25-retype-for-obsidian.md)
+[!card layout="vert" kicker="Release note"](/blog/2026-05-26-whats-new-in-retype-v460.md)
 ```
 
-[!card layout="vert" kicker="Release note"](/blog/2026-05-25-retype-for-obsidian.md)
+[!card layout="vert" kicker="Release note"](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 ---
 
@@ -105,22 +105,22 @@ Cards support five layout modes: horizontal, vertical, compact, signal, and snap
 The default layout shows the image beside the content and works well for a single prominent card.
 
 ```md
-[!card](/blog/2026-05-25-retype-for-obsidian.md)
+[!card](/blog/2026-05-26-whats-new-in-retype-v460.md)
 ```
 
-[!card](/blog/2026-05-25-retype-for-obsidian.md)
+[!card](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 ### Vertical
 
 Use `vertical` or `vert` for stacked cards with the image above the content. Consecutive vertical cards form a responsive group automatically.
 
 ```md
-[!card vert](/blog/2026-05-25-retype-for-obsidian.md)
-[!card layout="vertical"](/blog/2026-04-07-whats-new-in-retype-v450.md)
+[!card vert](/blog/2026-05-26-whats-new-in-retype-v460.md)
+[!card layout="vertical"](/blog/2026-05-25-retype-for-obsidian.md)
 ```
 
-[!card vert](/blog/2026-05-25-retype-for-obsidian.md)
-[!card layout="vertical"](/blog/2026-04-07-whats-new-in-retype-v450.md)
+[!card vert](/blog/2026-05-26-whats-new-in-retype-v460.md)
+[!card layout="vertical"](/blog/2026-05-25-retype-for-obsidian.md)
 
 ### Compact
 
@@ -235,10 +235,10 @@ Overrides the Card description text. If no `text` is configured for a local page
 Horizontal and vertical Cards render basic markdown syntax in `text`. Compact and signal Cards render plain text. Snap Cards ignore `text`.
 
 ```md
-[!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-04-07-whats-new-in-retype-v450.md)
+[!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-05-25-retype-for-obsidian.md)
 ```
 
-[!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-04-07-whats-new-in-retype-v450.md)
+[!card layout="vert" text="Read the `v4.1` release summary."](/blog/2026-05-25-retype-for-obsidian.md)
 
 ---
 
@@ -249,10 +249,10 @@ Overrides the Card title. If no `title` is configured for a local page, Retype u
 The `title` property works with all Card layouts.
 
 ```md
-[!card layout="vert" title="Start with v4.2"](/blog/2026-05-25-retype-for-obsidian.md)
+[!card layout="vert" title="Start with v4.2"](/blog/2026-05-26-whats-new-in-retype-v460.md)
 ```
 
-[!card layout="vert" title="Start with v4.2"](/blog/2026-05-25-retype-for-obsidian.md)
+[!card layout="vert" title="Start with v4.2"](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 ---
 
@@ -290,7 +290,7 @@ The following sample demonstrates how to display the latest blog post by passing
 [!card]({{ content.blog.posts[0].filePath }})
 ```
 
-[!card](/blog/2026-05-25-retype-for-obsidian.md)
+[!card](/blog/2026-05-26-whats-new-in-retype-v460.md)
 
 The [`content.blog.posts`](/templating/content.md#blog-posts) array contains all blog posts in your project sorted by date, newest first.
 
