@@ -238,6 +238,22 @@ Item 1 | This is an extra long message that should not wrap in the table | This 
 Item 2 | Another long content item                                       | Another description
 Item 3 | A third example with similarly long content on one line         | A final description
 
+The css class can also be applied to an individual column in the table:
+
+```md
+Name   | Long Message {.whitespace-nowrap}                               | Description
+---    | ---                                                             | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item                                       | Another description
+Item 3 | A third example with similarly long content on one line         | A final description
+```
+
+Name   | Long Message {.whitespace-nowrap}                               | Description
+---    | ---                                                             | ---
+Item 1 | This is an extra long message that should not wrap in the table | This is a description
+Item 2 | Another long content item                                       | Another description
+Item 3 | A third example with similarly long content on one line         | A final description
+
 You can also apply multiple custom CSS classes to combine formatting options:
 
 ```md
