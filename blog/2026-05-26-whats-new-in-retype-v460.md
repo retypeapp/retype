@@ -32,6 +32,20 @@ This is a meaningful change for the community as Retype is always free and stays
 
 ---
 
+## Retype Pro now includes 3 projects
+
+Starting in v4.6, every [Retype Pro](/pro/pro.md) license now includes 3 projects. Previously, a Pro license only included one project.
+
+This makes Pro a stronger fit for teams and builders who manage more than one site. Agencies handling client documentation get more flexibility without stacking separate licenses up front. Teams maintaining separate product docs, an internal knowledge base, and a help center can cover all three under one Pro license. Builders running sandbox, staging, and production environments get the full Pro experience across all three.
+
+The extra capacity is built in. No add-ons required.
+
+If you have been considering Pro, the expanded project count is a good reason to take a closer look. Custom themes, private pages, breadcrumb navigation, and branding removal are all included across every project in your license.
+
+[!button text="See Retype Pro" icon="verified"](/pro/pro.md)
+
+---
+
 ## Project Partials
 
 Retype projects can now be configured from partial `.yml` project files using the new [`extends`](/configuration/project-partials.md) setting and other command specific configuration files.
