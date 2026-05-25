@@ -13,7 +13,7 @@ category:
 [Obsidian](https://obsidian.md/) is where a lot of great documentation starts. [Retype](https://retype.com/) is how that Markdown becomes a fast, polished, self-hosted website. Now Retype is available directly inside Obsidian.
 
 {.callout}
-> Write in Obsidian. Preview with Retype. Publish anywhere.
+> Write in Obsidian. Build with Retype. Publish anywhere.
 
 The official Retype plugin is available in the [Obsidian Community plugin directory](https://community.obsidian.md/plugins/retype). Install Retype directly from Obsidian, and manage your Retype projects from inside your vault.
 
