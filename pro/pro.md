@@ -51,7 +51,7 @@ Build more pages and unlock powerful **Pro** only features.
 1. [If I do not renew, does my website stop working?](#if-i-do-not-renew-does-my-website-stop-working)
 1. [Is Retype Pro a separate product?](#is-retype-pro-a-separate-product)
 1. [What is a project?](#what-is-a-project)
-1. [What if I have more than one Pro project?](#what-if-i-have-more-than-one-pro-project)
+1. [What if I have more than three Pro projects?](#what-if-i-have-more-than-three-pro-projects)
 1. [What if I need to change the location and URL of my project?](#what-if-i-need-to-change-the-location-and-url-of-my-project)
 1. [We have 5 people on our team, do we require 5 licenses?](#we-have-5-people-on-our-team-do-we-require-5-licenses)
 1. [What happens when the key expires?](#what-happens-when-the-key-expires)
@@ -133,15 +133,15 @@ Each subdomain name counts as one unique URL, except the `www` subdomain. Both `
 
 The `url` is included inside the key. You can have any number of instances of the project running on any number of developer machines or servers using the same key, but the key will be limited to building only those projects with a **retype.yml** file where the [`url`](/configuration/project.md#url) is set with the same URL defined in your key.
 
-## What if I have more than one Pro project?
+## What if I have more than three Pro projects?
 
-Each Pro license includes 3 projects. If you require more than 3 projects, please purchase additional licenses.
+Each Pro license includes 3 projects. Each project can be licensed to a unique [url](/configuration/project.md#url). If you require more than 3 projects, please purchase additional licenses.
 
 Retype Pro licenses can be purchased in any quantity. You can purchase one now and additional licenses at a future time.
 
 Each license is created and managed separately.
 
-Retype Enterprise licenses can be purchased to unlock an entire domain name and all subdomain names. Perfect for an organization that has multiple projects and requires the flexibility to publish to any subdomain.
+Retype Enterprise licenses can be purchased to unlock an entire domain name and all subdomain names of that domain. Perfect for an organization that has multiple projects and requires the flexibility to publish to any subdomain.
 
 ## What if I need to change the location and URL of my project?
 
