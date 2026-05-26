@@ -79,6 +79,31 @@ Strict [build](/guides/cli.md) mode
 
 ---
 
+## v4.6.0
+
+Unlimited pages for Retype Free
+: Retype Free projects can now build unlimited pages without hitting a page-count limit. Larger public docs, growing knowledge bases, and long-running projects can keep expanding on the free version while Pro remains focused on Pro-tier features, see [blog post](/blog/2026-05-26-whats-new-in-retype-v460.md#unlimited-pages-for-retype-free).
+
+Retype Pro includes 3 projects
+: Every [Retype Pro](/pro/pro.md) license now includes 3 projects, making one license a better fit for teams managing separate documentation sites, internal knowledge bases, staging and production environments, or multiple client projects, see [blog post](/blog/2026-05-26-whats-new-in-retype-v460.md#retype-pro-now-includes-3-projects).
+
+Project partials and command-specific config files
+: Compose a project configuration from multiple `.yml` files using [`extends`](/configuration/project-partials.md#extends), automatic fragments, and command-specific files such as **retype.start.yml** and **retype.build.yml**. This makes it easier to share base settings, separate theme config, and keep local preview behavior apart from production build settings, see [#776](https://github.com/retypeapp/retype/issues/776).
+
+Copy Table as Markdown
+: Tables now show a copy button on hover that copies a clean Markdown version of the table to the clipboard. This is useful for specs, comparison tables, reference data, and AI-assisted workflows where readers want to reuse table content outside the site, see [Table docs](/components/table.md).
+
+Table column styling
+: Markdown table header [attributes](/components/table.md#column-styling) now propagate down the full column, allowing a class or style on a header cell to apply to every body cell in that column. This helps keep IDs, command names, version strings, and other reference values readable in dense tables.
+
+Card `target` property
+: [[Card]] components now support `target`, matching Button and Badge behavior. Authors can open Card links in a new tab with `target="blank"` across all Card layouts, including `signal` and `snap`, see [Card docs](/components/card.md).
+
+Smarter `[!file]` downloads
+: Files explicitly referenced by the [`[!file]`](/components/file-download.md) download component are now copied to output when they live inside the project input tree, even if their file type is not otherwise included by project configuration, see [#833](https://github.com/retypeapp/retype/issues/833).
+
+---
+
 ## v4.5.0
 
 [!badge PRO](/pro/pro.md) Tags in the left menu
