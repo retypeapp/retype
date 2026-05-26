@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://retype.com/changelog/</loc>
-    <lastmod>2026-05-26T13:22:48Z</lastmod>
+    <lastmod>2026-05-26T16:54:41Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/feature-log/</loc>
@@ -279,6 +279,10 @@
     <lastmod>2026-04-03T17:56:46Z</lastmod>
   </url>
   <url>
+    <loc>https://retype.com/components/instagram/</loc>
+    <lastmod>2026-04-10T13:34:01Z</lastmod>
+  </url>
+  <url>
     <loc>https://retype.com/components/mermaid/</loc>
     <lastmod>2026-03-26T15:54:20Z</lastmod>
   </url>
@@ -297,10 +301,6 @@
   <url>
     <loc>https://retype.com/components/headings/</loc>
     <lastmod>2026-05-04T06:27:57Z</lastmod>
-  </url>
-  <url>
-    <loc>https://retype.com/components/instagram/</loc>
-    <lastmod>2026-04-10T13:34:01Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/list/</loc>

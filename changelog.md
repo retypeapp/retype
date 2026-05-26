@@ -30,36 +30,34 @@ See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v460) for highlights.
 
 +++ New :icon-shield-check:
 
-1. New unlimited pages for Retype Free version
-1. New Table copy markdown to clipboard button
-1. Support extendable, partial, and command-specific Retype config files, see [#776](https://github.com/retypeapp/retype/issues/776)
+1. New [Unlimited](/blog/2026-05-26-whats-new-in-retype-v460.md#unlimited-pages-for-retype-free) pages for Retype Free version
+1. New [Table](/components/table.md) copy markdown to clipboard button
+1. Support extendable, [partial](/configuration/project-partials.md), and command-specific Retype config files, see [#776](https://github.com/retypeapp/retype/issues/776)
+1. Extensive performance review and improvements
 
 +++ Improved :icon-thumbsup:
 
-1. Upgrade Octicons icons library from v19.23.1 to v19.24.1
-1. Copy in-project files referenced by `!file` even when not otherwise included, see [#833](https://github.com/retypeapp/retype/issues/833)
-1. Add support for Instagram component URL patterns with usernames
-1. Assign a css class to a markdown table column and have it propagate down that column
+1. Copy in-project files referenced by [`!file`](/components/file-download.md) even when not otherwise included, see [#833](https://github.com/retypeapp/retype/issues/833)
+1. Add support for [Instagram](/components/instagram.md) component URL patterns with usernames
+1. [Assign](/components/table.md#column-styling) a css class to a markdown table column and have it propagate down that column
 1. Reduce the size of permalink button on H4-H6 headings
-1. Improve performance
-1. Revised project setting `lastUpdated` to enabled false
+1. Revised project setting [`lastUpdated`](/configuration/project.md#lastupdated) to enabled false
 1. Sort pages in a folder by `YYYY-MM-DD` or `YYYY-MM` date desc
-1. Add `target` property support to Card components
-1. Upgrade Octicons icons library from v19.24.1 to v19.25.0
+1. Add [`target`](/components/card.md#target) property support to Card components
 1. Update all client libraries to their latest release
 1. Refreshed the Code Block copy button icon states
-1. New theme options for header title typography, see [#832](https://github.com/retypeapp/retype/issues/832)
-1. Upgrade Octicons icons library from v19.25.0 to v19.27.0
+1. New theme options for [Header](/configuration/theme-variables.md#header) title typography, see [#832](https://github.com/retypeapp/retype/issues/832)
+1. Upgrade [Octicons](/components/octicons.md) icons library from v19.23.1 to v19.27.0
 
 +++ Fixed :icon-bug:
 
-1. Tags in the navigation are not automatically rendering if pro mode
-1. Fix inline SVG image class styling regression introduced by automatic image dimension inference, see [#828](https://github.com/retypeapp/retype/issues/828)
+1. Fixed Tags in the navigation are not automatically rendering if Pro mode
+1. Fixed inline SVG image class styling regression introduced by automatic image dimension inference, see [#828](https://github.com/retypeapp/retype/issues/828)
 1. Fix include rules hiding sibling resources from `:::code` and `!file`, see [#833](https://github.com/retypeapp/retype/issues/833)
-1. Preserve page anchor fragments in card links, see [#831](https://github.com/retypeapp/retype/issues/831)
+1. Fixed preserve page anchor fragments in card links, see [#831](https://github.com/retypeapp/retype/issues/831)
 1. Fix icon font-color on stack nav grouping
-1. Improve horizontal scroll for extra wide tables
-1. Sidebar stack mode regression with nav icons mode all, see [#835](https://github.com/retypeapp/retype/issues/835)
+1. Fixed horizontal scroll for extra wide tables
+1. Fixed sidebar stack mode regression with nav icons mode all, see [#835](https://github.com/retypeapp/retype/issues/835)
 1. Fixed Exception thrown and not handled gracefully if CNAME file value does not match project url setting
 1. Fixed custom SVG card icons fail to render in signal and snap layouts
 

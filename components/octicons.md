@@ -40,43 +40,13 @@ The following [!badge NEW|info] icons are included in Retype **v4.6.0**:
 
 | Icon | Shortcode | Sample |
 | :---: | --- | --- |
-| :icon-agent: | agent | `:icon-agent:` |
-| :icon-boolean-off: | boolean-off | `:icon-boolean-off:` |
-| :icon-boolean-on: | boolean-on | `:icon-boolean-on:` |
-| :icon-checkbox-fill: | checkbox-fill | `:icon-checkbox-fill:` |
-| :icon-comment-ai: | comment-ai | `:icon-comment-ai:` |
-| :icon-compose: | compose | `:icon-compose:` |
-| :icon-crosshairs: | crosshairs | `:icon-crosshairs:` |
-| :icon-dice: | dice | `:icon-dice:` |
-| :icon-exclamation: | exclamation | `:icon-exclamation:` |
-| :icon-file-check: | file-check | `:icon-file-check:` |
-| :icon-flowchart: | flowchart | `:icon-flowchart:` |
-| :icon-focus-center: | focus-center | `:icon-focus-center:` |
-| :icon-git-branch-check: | git-branch-check | `:icon-git-branch-check:` |
-| :icon-graph-bar-horizontal: | graph-bar-horizontal | `:icon-graph-bar-horizontal:` |
-| :icon-graph-bar-vertical: | graph-bar-vertical | `:icon-graph-bar-vertical:` |
-| :icon-inbox-fill: | inbox-fill | `:icon-inbox-fill:` |
-| :icon-maximize: | maximize | `:icon-maximize:` |
-| :icon-mcp: | mcp | `:icon-mcp:` |
-| :icon-minimize: | minimize | `:icon-minimize:` |
-| :icon-node: | node | `:icon-node:` |
-| :icon-pencil-ai: | pencil-ai | `:icon-pencil-ai:` |
-| :icon-smiley-frown: | smiley-frown | `:icon-smiley-frown:` |
-| :icon-smiley-frustrated: | smiley-frustrated | `:icon-smiley-frustrated:` |
-| :icon-smiley-grin: | smiley-grin | `:icon-smiley-grin:` |
-| :icon-smiley-neutral: | smiley-neutral | `:icon-smiley-neutral:` |
-| :icon-space: | space | `:icon-space:` |
-| :icon-spacing-large: | spacing-large | `:icon-spacing-large:` |
-| :icon-spacing-medium: | spacing-medium | `:icon-spacing-medium:` |
-| :icon-spacing-small: | spacing-small | `:icon-spacing-small:` |
-| :icon-split-view: | split-view | `:icon-split-view:` |
-| :icon-unwrap: | unwrap | `:icon-unwrap:` |
-| :icon-vscode: | vscode | `:icon-vscode:` |
-| :icon-wrap: | wrap | `:icon-wrap:` |
+| :icon-sandbox: | sandbox | `:icon-sandbox:` |
+| :icon-stack-check: | stack-check | `:icon-stack-check:` |
+| :icon-stack-remove: | stack-remove | `:icon-stack-remove:` |
 
 ## All icons
 
-As of v4.6.0, there are 371 [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
+As of v4.6.0, there are 375 [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
 
 | Icon | Shortcode | Sample |
 | :---: | --- | --- |
@@ -285,6 +255,7 @@ As of v4.6.0, there are 371 [Octicons](https://primer.github.io/octicons/) suppo
 | :icon-list-unordered: | list-unordered | `:icon-list-unordered:` |
 | :icon-location: | location | `:icon-location:` |
 | :icon-lock: | lock | `:icon-lock:` |
+| :icon-lockup-github: | lockup-github | `:icon-lockup-github:` |
 | :icon-log: | log | `:icon-log:` |
 | :icon-logo-gist: | logo-gist | `:icon-logo-gist:` |
 | :icon-logo-github: | logo-github | `:icon-logo-github:` |
@@ -361,6 +332,7 @@ As of v4.6.0, there are 371 [Octicons](https://primer.github.io/octicons/) suppo
 | :icon-rows: | rows | `:icon-rows:` |
 | :icon-rss: | rss | `:icon-rss:` |
 | :icon-ruby: | ruby | `:icon-ruby:` |
+| :icon-sandbox: | sandbox | `:icon-sandbox:` |
 | :icon-screen-full: | screen-full | `:icon-screen-full:` |
 | :icon-screen-normal: | screen-normal | `:icon-screen-normal:` |
 | :icon-search: | search | `:icon-search:` |
@@ -401,6 +373,8 @@ As of v4.6.0, there are 371 [Octicons](https://primer.github.io/octicons/) suppo
 | :icon-square-fill: | square-fill | `:icon-square-fill:` |
 | :icon-squirrel: | squirrel | `:icon-squirrel:` |
 | :icon-stack: | stack | `:icon-stack:` |
+| :icon-stack-check: | stack-check | `:icon-stack-check:` |
+| :icon-stack-remove: | stack-remove | `:icon-stack-remove:` |
 | :icon-star: | star | `:icon-star:` |
 | :icon-star-fill: | star-fill | `:icon-star-fill:` |
 | :icon-stop: | stop | `:icon-stop:` |
