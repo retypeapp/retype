@@ -14,26 +14,30 @@ Please also check out the [Feature Log](/feature-log.md) for a summary of all ne
 
 ---
 
-## v4.6.0
+## v4.7.0 [!badge @next|info]
 
-[!badge text="LATEST" variant="info"]
+Expected early Q3 2026.
 
-Released: [2026-05-25](https://github.com/retypeapp/retype/releases/tag/v4.6.0)
+---
 
-# Version 4.6.0
+## v4.6.0 [!badge @latest|info]
 
-There were 26 changes in Retype 4.6.0.
+**Released:** [2026-05-25](https://github.com/retypeapp/retype/releases/tag/v4.6.0)
 
-## New
+There were **26 changes** in Retype 4.6.0.
+
+See the [:icon-sparkles-fill: Feature Log](/feature-log.md#v460) for highlights.
+
++++ New :icon-shield-check:
 
 1. New unlimited pages for Retype Free version
 1. New Table copy markdown to clipboard button
-1. Support extendable, partial, and command-specific Retype config files, see #776
+1. Support extendable, partial, and command-specific Retype config files, see [#776](https://github.com/retypeapp/retype/issues/776)
 
-## Improved
++++ Improved :icon-thumbsup:
 
 1. Upgrade Octicons icons library from v19.23.1 to v19.24.1
-1. Copy in-project files referenced by `!file` even when not otherwise included, see #833
+1. Copy in-project files referenced by `!file` even when not otherwise included, see [#833](https://github.com/retypeapp/retype/issues/833)
 1. Add support for Instagram component URL patterns with usernames
 1. Assign a css class to a markdown table column and have it propagate down that column
 1. Reduce the size of permalink button on H4-H6 headings
@@ -44,30 +48,26 @@ There were 26 changes in Retype 4.6.0.
 1. Upgrade Octicons icons library from v19.24.1 to v19.25.0
 1. Update all client libraries to their latest release
 1. Refreshed the Code Block copy button icon states
-1. New theme options for header title typography, see #832
+1. New theme options for header title typography, see [#832](https://github.com/retypeapp/retype/issues/832)
 1. Upgrade Octicons icons library from v19.25.0 to v19.27.0
 
-## Fixed
++++ Fixed :icon-bug:
 
 1. Tags in the navigation are not automatically rendering if pro mode
-1. Fix inline SVG image class styling regression introduced by automatic image dimension inference, see #828
-1. Fix include rules hiding sibling resources from `:::code` and `!file`, see #833
-1. Preserve page anchor fragments in card links, see #831
+1. Fix inline SVG image class styling regression introduced by automatic image dimension inference, see [#828](https://github.com/retypeapp/retype/issues/828)
+1. Fix include rules hiding sibling resources from `:::code` and `!file`, see [#833](https://github.com/retypeapp/retype/issues/833)
+1. Preserve page anchor fragments in card links, see [#831](https://github.com/retypeapp/retype/issues/831)
 1. Fix icon font-color on stack nav grouping
 1. Improve horizontal scroll for extra wide tables
-1. Sidebar stack mode regression with nav icons mode all, see #835
+1. Sidebar stack mode regression with nav icons mode all, see [#835](https://github.com/retypeapp/retype/issues/835)
 1. Fixed Exception thrown and not handled gracefully if CNAME file value does not match project url setting
 1. Fixed custom SVG card icons fail to render in signal and snap layouts
 
----
-
-## v4.6.0 [!badge @next|info]
-
-Expected mid Q2 2026.
++++
 
 ---
 
-## v4.5.3 [!badge @latest|info]
+## v4.5.3
 
 **Released:** [2026-04-09](https://github.com/retypeapp/retype/releases/tag/v4.5.3)
 

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833057459737">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833138594288">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -43,14 +43,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833057459737" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833138594288" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833057459737" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833138594288" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833057459737" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833138594288" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833057459737" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833138594288" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -393,6 +393,24 @@
 <dd>The <code translate="no" v-pre>--strict</code> flag on <code translate="no" v-pre>retype build</code> returns a non-zero exit code when the build produces any errors or warnings. Useful for enforcing quality gates in CI pipelines.</dd>
 <dt id="table-of-contents"><a href="/configuration/project/#toc">Table of contents</a></dt>
 <dd>Enable and configure the table of contents with the <code translate="no" v-pre>toc</code> setting. Configurable at <a href="/configuration/project/#toc">project</a> and <a href="/configuration/page/#toc">page</a> levels, with control over heading depth and label.</dd>
+</dl>
+<hr>
+<h2 id="v460">v4.6.0</h2>
+<dl>
+<dt id="unlimited-pages-for-retype-free">Unlimited pages for Retype Free</dt>
+<dd>Retype Free projects can now build unlimited pages without hitting a page-count limit. Larger public docs, growing knowledge bases, and long-running projects can keep expanding on the free version while Pro remains focused on Pro-tier features, see <a href="/blog/2026-05-26-whats-new-in-retype-v460/#unlimited-pages-for-retype-free">blog post</a>.</dd>
+<dt id="retype-pro-includes-3-projects">Retype Pro includes 3 projects</dt>
+<dd>Every <a href="/pro/">Retype Pro</a> license now includes 3 projects, making one license a better fit for teams managing separate documentation sites, internal knowledge bases, staging and production environments, or multiple client projects, see <a href="/blog/2026-05-26-whats-new-in-retype-v460/#retype-pro-now-includes-3-projects">blog post</a>.</dd>
+<dt id="project-partials-and-command-specific-config-files">Project partials and command-specific config files</dt>
+<dd>Compose a project configuration from multiple <code translate="no" v-pre>.yml</code> files using <a href="/configuration/project-partials/#extends"><code translate="no" v-pre>extends</code></a>, automatic fragments, and command-specific files such as <strong>retype.start.yml</strong> and <strong>retype.build.yml</strong>. This makes it easier to share base settings, separate theme config, and keep local preview behavior apart from production build settings, see <a href="https://github.com/retypeapp/retype/issues/776">#776</a>.</dd>
+<dt id="copy-table-as-markdown">Copy Table as Markdown</dt>
+<dd>Tables now show a copy button on hover that copies a clean Markdown version of the table to the clipboard. This is useful for specs, comparison tables, reference data, and AI-assisted workflows where readers want to reuse table content outside the site, see <a href="/components/table/">Table docs</a>.</dd>
+<dt id="table-column-styling">Table column styling</dt>
+<dd>Markdown table header <a href="/components/table/#column-styling">attributes</a> now propagate down the full column, allowing a class or style on a header cell to apply to every body cell in that column. This helps keep IDs, command names, version strings, and other reference values readable in dense tables.</dd>
+<dt id="card--property">Card <code translate="no" v-pre>target</code> property</dt>
+<dd><a href="/components/card/">Card</a> components now support <code translate="no" v-pre>target</code>, matching Button and Badge behavior. Authors can open Card links in a new tab with <code translate="no" v-pre>target=&quot;blank&quot;</code> across all Card layouts, including <code translate="no" v-pre>signal</code> and <code translate="no" v-pre>snap</code>, see <a href="/components/card/">Card docs</a>.</dd>
+<dt id="smarter--downloads">Smarter <code translate="no" v-pre>[!file]</code> downloads</dt>
+<dd>Files explicitly referenced by the <a href="/components/file-download/"><code translate="no" v-pre>[!file]</code></a> download component are now copied to output when they live inside the project input tree, even if their file type is not otherwise included by project configuration, see <a href="https://github.com/retypeapp/retype/issues/833">#833</a>.</dd>
 </dl>
 <hr>
 <h2 id="v450">v4.5.0</h2>
@@ -741,8 +759,8 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-15T23:43:05" title="2026-04-15" data-absolute-label="Last updated on 2026-04-15" data-absolute-label-html="Last updated on 2026-04-15" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-04-15
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-26T13:22:48" title="2026-05-26" data-absolute-label="Last updated on 2026-05-26" data-absolute-label-html="Last updated on 2026-05-26" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-05-26
                     </time>
                 </div>
 
