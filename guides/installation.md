@@ -6,6 +6,10 @@ icon: download
 
 Retype is a command line tool. Installation is super quick and you can be up and running within seconds.
 
+See the new [:icon-brand-obsidian: Retype for Obsidian](/guides/obsidian-plugin.md) plugin:
+
+[!card layout="snap" icon="brand-obsidian" title="Install Obsidian plugin"](https://community.obsidian.md/plugins/retype)
+
 ## New install
 
 >>> Confirm Prerequisites
