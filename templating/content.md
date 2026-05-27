@@ -298,14 +298,14 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Community (0 children)
 - Faq (0 children)
 - Feature log (0 children)
+- Configuration (9 children)
+- Pro (0 children)
 - Hosting (7 children)
-- Components (30 children)
+- Samples (5 children)
 - Templating (5 children)
 - Blog (15 children)
-- Pro (0 children)
-- Samples (5 children)
-- Configuration (9 children)
 - Guides (10 children)
+- Components (30 children)
 - Not Found (0 children)
 
 ---
