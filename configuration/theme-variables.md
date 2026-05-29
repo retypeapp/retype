@@ -18,6 +18,15 @@ theme:
     base-bg: "#303446"
 ```
 
+!!!base Pro Feature
+The theme functionality requires a [Retype Pro](/pro/pro.md) key or adding the following [`pro`](/configuration/project.md#start-pro) trial mode setting into your project `retype.yml` configuration file:
+
+```yaml
+start
+  pro: true
+```
+!!!
+
 ## Base{#base-variables}
 
 Core variables that define the fundamental appearance of your site.
