@@ -155,7 +155,7 @@ Tag | Page count {.compact}
 [!badge config|info](/tags/config) | 8
 [!badge ftp|info](/tags/ftp) | 1
 [!badge github|info](/tags/github) | 4
-[!badge guide|info](/tags/guide) | 14
+[!badge guide|info](/tags/guide) | 15
 [!badge hosting|info](/tags/hosting) | 5
 [!badge icon|info](/tags/icon) | 1
 [!badge obsidian|info](/tags/obsidian) | 1
@@ -183,6 +183,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - [Retype CLI](/guides/cli.md)
 - [Getting Started](/guides/getting-started.md)
 - [GitHub Actions](/guides/github-actions.md)
+- [llms.txt](/guides/llms.md)
 - [Markdown](/guides/markdown.md)
 - [Retype for Obsidian Plugin](/guides/obsidian-plugin.md)
 - [Themes](/guides/themes.md)
@@ -304,7 +305,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Samples (5 children)
 - Templating (5 children)
 - Blog (15 children)
-- Guides (10 children)
+- Guides (11 children)
 - Components (30 children)
 - Not Found (0 children)
 
