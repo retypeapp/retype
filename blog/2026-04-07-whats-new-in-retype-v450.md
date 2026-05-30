@@ -69,11 +69,13 @@ This is especially useful for larger projects where the left navigation is organ
 
 ## llms.txt support
 
-Retype now automatically generates a clean [`llms.txt`](/llms.txt) file for AI-friendly documentation discovery.
+Retype now automatically generates a clean [`llms.txt`](/guides/llms.md) file for AI-friendly documentation discovery.
+
+[!button icon="agent" text="View the llms.txt for retype.com" corners="pill" variant="info"](/llms.txt)
 
 An `llms.txt` file gives AI systems a concise map of the most important pages in your project, with links to Markdown-friendly versions of those pages. It is designed for documentation consumption, not visual browsing, so tools can quickly understand where the homepage, installation guide, configuration reference, components, templating docs, hosting guides, and other important resources live.
 
-For example, the [`llms.txt`](/llms.txt) file can point tools toward Markdown URLs such as:
+For example, the `llms.txt` file can point tools toward Markdown URLs such as:
 
 ```txt
 - [Installation](https://retype.com/guides/installation.md): Install Retype using npm, Yarn, or dotnet.
@@ -84,7 +86,7 @@ For example, the [`llms.txt`](/llms.txt) file can point tools toward Markdown UR
 This pairs nicely with the new generated Markdown output in `v4.5`, giving both humans and automated systems another option for consuming content.
 
 !!!tip
-Authors can use the generated **llms.txt** file as a starting point to create their own custom **llms.txt** file. Save your custom **llms.txt** into the root of your project and Retype will use that file instead of automatically generating one.
+Authors can use the generated `llms.txt` file as a starting point to create their own custom `llms.txt` file. Save your custom `llms.txt` into the root of your project and Retype will use that file instead of automatically generating one.
 !!!
 
 ---

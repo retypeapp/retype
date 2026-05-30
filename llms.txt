@@ -28,6 +28,7 @@ Use the links below as primary entry points for understanding the product, setup
 ## Authoring
 
 - [Markdown Guide](https://retype.com/guides/markdown.md): Markdown syntax and Retype Flavored Markdown (RFM) extensions.
+- [llms.txt Guide](https://retype.com/guides/llms.md): How Retype generates `llms.txt` for AI-friendly documentation discovery and how to provide a custom file.
 - [Components](https://retype.com/components/components.md): Full index of built-in authoring components. Includes: Backlinks, Badge, Button, Callout, Code Block, Code Snippet, Color Chip, Column, Comments, Container, Embed, Emoji, File Download, Google Maps, Icon, Image, Instagram, Last Updated, List, Math Formulas, Mermaid diagrams, Octicons, Panel, Reference Link, Steps, Tab, Table, and YouTube.
 - [Templating](https://retype.com/templating/index.md): Scriban-powered templating engine for embedding dynamic content — variables, loops, conditionals, and includes — directly in Markdown pages with no separate build step.
 - [Blogging](https://retype.com/guides/blogging.md): Set up a blog within a Retype project; covers post layout, tags, and RSS.
