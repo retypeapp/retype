@@ -31,7 +31,7 @@ start
 
 Core variables that define the fundamental appearance of your site.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `base-color` | Brand color | `#5495f1` | `#5495f1` |
 | `base-white` | Pure white color | `#ffffff` | `#ffffff` |
@@ -56,7 +56,7 @@ Core variables that define the fundamental appearance of your site.
 
 Semantic color variants are used throughout Retype components. These colors provide consistent theming for different types of content and actions. Each variant is available as a full color palette from `50` (lightest) to `900` (darkest).
 
-| Variable | Description | Default&nbsp;`base`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  |
 | --- | --- | --- |
 | `base` | Foundation brand color for main actions and highlights | `#5495f1` |
 | `primary` | Primary color variant used for actions, highlights, and key elements across components | `#5495f1` |
@@ -73,7 +73,7 @@ System elements and `base` variants for Components are derived from the `base-co
 
 Color variations based on your `base-color` setting:
 
-| Variable | Description |
+| Variable {.whitespace-nowrap} | Description |
 | --- | --- |
 | `base-50` | Lightest base color shade (10% mix with white) |
 | `base-100` | Very light base color shade (15% mix with white) |
@@ -185,7 +185,7 @@ Semantic palette `royal` with shades `50` through `900`
 
 Predefined gray color variations:
 
-| Variable    | Description           | Default&nbsp;`base` |
+| Variable {.whitespace-nowrap}    | Description           | Default&nbsp;`base` |
 |-------------|----------------------|----------------|
 | `gray-50`   | Lightest gray        | `#f8f9fc`      |
 | `gray-100`  | Very light gray      | `#f4f6fc`      |
@@ -210,7 +210,7 @@ Predefined gray color variations:
 
 Specialized dark mode color variations:
 
-| Variable | Description | Default&nbsp;`base` |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base` |
 | --- | --- | --- |
 | `dark-50` | Lightest dark mode color | `#fafafa` |
 | `dark-100` | Very light dark mode color | `#f7f7f7` |
@@ -235,7 +235,7 @@ Specialized dark mode color variations:
 
 Utility variables used throughout the theme system.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `transparent` | Transparent color value | `transparent` | `transparent` |
 | `skeleton-bg` | Skeleton loading background | `gray-200` | `dark-600` |
@@ -244,7 +244,7 @@ Utility variables used throughout the theme system.
 
 Variables for customizing text selection highlight appearance.
 
-| Variable | Description | Default `base`  | Default `dark`  |
+| Variable {.whitespace-nowrap} | Description | Default `base`  | Default `dark`  |
 | --- | --- | --- | --- |
 | `selection-bg` | Text selection background color | `var(--base-200)` | `var(--base-700)` |
 | `selection-text` | Text selection text color | `var(--base-text-strong)` | `var(--base-white)` |
@@ -253,7 +253,7 @@ Variables for customizing text selection highlight appearance.
 
 Variables for customizing branding elements.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `branding-label-text` | Branding label text color | `base-500` | `base-500` |
 | `branding-label-bg` | Branding label background | `base-50` | `transparent` |
@@ -263,7 +263,7 @@ Variables for customizing branding elements.
 
 Variables controlling the header appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `header-bg` | Header background color | `base-bg` | `base-bg` |
 | `header-border` | Header border color | `base-border` | `base-border` |
@@ -281,7 +281,7 @@ Variables controlling the header appearance.
 
 Variables for customizing search functionality appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `search-text` | Search input text color | `base-text` | `base-text` |
 | `search-placeholder` | Search placeholder text color | `base-text-muted` | `base-text-muted` |
@@ -297,7 +297,7 @@ Variables for customizing search functionality appearance.
 
 Variables for customizing filter functionality.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `filter-text` | Filter input text color | `base-text` | `base-text` |
 | `filter-placeholder` | Filter placeholder text color | `base-text-muted` | `base-text-muted` |
@@ -310,7 +310,7 @@ Variables for customizing filter functionality.
 
 Variables controlling the main content area.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `body-bg` | Main content background | `base-bg` | `base-bg` |
 | `body-text` | Main content text color | `base-text` | `base-text` |
@@ -322,7 +322,7 @@ Variables controlling the main content area.
 
 Variables for heading text styling.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `heading-text` | Heading text color | `gray-900` | `base-white` |
 | `heading-weight` | Default heading font weight | `700` | `700` |
@@ -374,7 +374,7 @@ Variables for heading text styling.
 
 Variables for the Light/Dark switcher component.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `scheme-menu-item-bg` | Switcher item background | `base-item-bg` | `base-item-bg` |
 | `scheme-menu-item-bg-hover` | Switcher item hover background | `base-item-bg-hover` | `base-item-bg-hover` |
@@ -386,7 +386,7 @@ Variables for the Light/Dark switcher component.
 
 Variables controlling the left and right sidebars.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `sidebar-left-bg` | Left sidebar background | `base-bg` | `base-bg` |
 | `sidebar-left-border` | Left sidebar border | `base-border` | `base-border` |
@@ -397,7 +397,7 @@ Variables controlling the left and right sidebars.
 
 Variables for customizing navigation appearance and behavior.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `nav-bg` | Navigation background | `sidebar-left-bg` | `sidebar-left-bg` |
 | `nav-item-bg-hover` | Navigation item hover background | `base-item-bg-hover` | `base-item-bg-hover` |
@@ -421,7 +421,7 @@ Variables for customizing navigation appearance and behavior.
 
 Variables controlling the Table of Contents appearance in the right sidebar.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `toc-heading` | Table of contents heading color | `gray-700` | `dark-400` |
 | `toc-text` | Table of contents text color | `gray-700` | `dark-300` |
@@ -435,18 +435,20 @@ Variables controlling the Table of Contents appearance in the right sidebar.
 
 Variables controlling the footer appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `footer-text` | Footer text color | `gray-500` | `dark-350` |
 | `footer-link` | Footer link color | `base-link` | `base-link` |
 | `footer-link-hover` | Footer link hover color | `base-link-hover` | `base-link-hover` |
 | `footer-link-weight` | Footer link font weight | `base-link-weight` | `base-link-weight` |
+| `footer-content-max-width` | Maximum width for constrained footer containers | `49.75rem` | `49.75rem` |
+| `footer-padding-y` | Vertical footer padding for constrained footer containers | `1.5rem` | `1.5rem` |
 
 ## Backlinks Component
 
 Variables for customizing backlinks appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `backlinks-display` | Backlinks display mode | `block` | `block` |
 | `backlinks-margin-top` | Backlinks top margin | `0` | `0` |
@@ -476,7 +478,7 @@ Variables for customizing badge components across all variants.
 
 ### Base Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-base` | Base badge background | `base-100` | `base-100` |
 | `badge-base-hover` | Base badge hover background | `base-100` | `base-200` |
@@ -487,7 +489,7 @@ Variables for customizing badge components across all variants.
 
 ### Primary Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-primary` | Primary badge background | `primary-100` | `primary-100` |
 | `badge-primary-hover` | Primary badge hover background | `primary-100` | `primary-200` |
@@ -498,7 +500,7 @@ Variables for customizing badge components across all variants.
 
 ### Secondary Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-secondary` | Secondary badge background | `gray-100` | `gray-100` |
 | `badge-secondary-hover` | Secondary badge hover background | `gray-100` | `gray-250` |
@@ -509,7 +511,7 @@ Variables for customizing badge components across all variants.
 
 ### Success Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-success` | Success badge background | `success-100` | `success-100` |
 | `badge-success-hover` | Success badge hover background | `success-100` | `success-200` |
@@ -520,7 +522,7 @@ Variables for customizing badge components across all variants.
 
 ### Question Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-question` | Question badge background | `royal-100` | `royal-100` |
 | `badge-question-hover` | Question badge hover background | `royal-100` | `royal-200` |
@@ -531,7 +533,7 @@ Variables for customizing badge components across all variants.
 
 ### Danger Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-danger` | Danger badge background | `danger-100` | `danger-100` |
 | `badge-danger-hover` | Danger badge hover background | `danger-100` | `danger-200` |
@@ -542,7 +544,7 @@ Variables for customizing badge components across all variants.
 
 ### Warning Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-warning` | Warning badge background | `warning-100` | `warning-100` |
 | `badge-warning-hover` | Warning badge hover background | `warning-100` | `warning-200` |
@@ -553,7 +555,7 @@ Variables for customizing badge components across all variants.
 
 ### Info Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-info` | Info badge background | `transparent` | `transparent` |
 | `badge-info-hover` | Info badge hover background | `transparent` | `transparent` |
@@ -564,7 +566,7 @@ Variables for customizing badge components across all variants.
 
 ### Light Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-light` | Light badge background | `base-white` | `base-white` |
 | `badge-light-hover` | Light badge hover background | `gray-100` | `dark-200` |
@@ -575,7 +577,7 @@ Variables for customizing badge components across all variants.
 
 ### Dark Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-dark` | Dark badge background | `gray-700` | `dark-450` |
 | `badge-dark-hover` | Dark badge hover background | `gray-600` | `dark-400` |
@@ -586,7 +588,7 @@ Variables for customizing badge components across all variants.
 
 ### Ghost Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-ghost` | Ghost badge background | `body-bg` | `dark-550` |
 | `badge-ghost-hover` | Ghost badge hover background | `gray-50` | `dark-450` |
@@ -597,7 +599,7 @@ Variables for customizing badge components across all variants.
 
 ### Contrast Badge
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `badge-contrast` | Contrast badge background | `gray-900` | `base-white` |
 | `badge-contrast-hover` | Contrast badge hover background | `gray-600` | `dark-200` |
@@ -612,7 +614,7 @@ Variables for customizing button components across all variants.
 
 ### Base Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-base` | Base button background | `base-500` | `base-500` |
 | `button-base-hover` | Base button hover background | `base-700` | `base-700` |
@@ -620,7 +622,7 @@ Variables for customizing button components across all variants.
 
 ### Primary Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-primary` | Primary button background | `primary-500` | `primary-500` |
 | `button-primary-hover` | Primary button hover background | `primary-700` | `primary-700` |
@@ -628,7 +630,7 @@ Variables for customizing button components across all variants.
 
 ### Secondary Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-secondary` | Secondary button background | `gray-500` | `gray-500` |
 | `button-secondary-hover` | Secondary button hover background | `gray-700` | `dark-450` |
@@ -636,7 +638,7 @@ Variables for customizing button components across all variants.
 
 ### Success Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-success` | Success button background | `success-500` | `success-500` |
 | `button-success-hover` | Success button hover background | `success-700` | `success-700` |
@@ -644,7 +646,7 @@ Variables for customizing button components across all variants.
 
 ### Question Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-question` | Question button background | `royal-500` | `royal-500` |
 | `button-question-hover` | Question button hover background | `royal-700` | `royal-700` |
@@ -655,7 +657,7 @@ Variables for customizing button components across all variants.
 
 ### Danger Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-danger` | Danger button background | `danger-500` | `danger-500` |
 | `button-danger-hover` | Danger button hover background | `danger-700` | `danger-700` |
@@ -663,7 +665,7 @@ Variables for customizing button components across all variants.
 
 ### Warning Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-warning` | Warning button background | `warning-500` | `warning-500` |
 | `button-warning-hover` | Warning button hover background | `warning-600` | `warning-600` |
@@ -671,7 +673,7 @@ Variables for customizing button components across all variants.
 
 ### Info Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-info` | Info button background | `transparent` | `transparent` |
 | `button-info-hover` | Info button hover background | `transparent` | `transparent` |
@@ -682,7 +684,7 @@ Variables for customizing button components across all variants.
 
 ### Light Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-light` | Light button background | `gray-200` | `dark-250` |
 | `button-light-hover` | Light button hover background | `gray-300` | `dark-350` |
@@ -690,7 +692,7 @@ Variables for customizing button components across all variants.
 
 ### Dark Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-dark` | Dark button background | `gray-700` | `dark-550` |
 | `button-dark-hover` | Dark button hover background | `gray-600` | `dark-450` |
@@ -698,7 +700,7 @@ Variables for customizing button components across all variants.
 
 ### Ghost Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-ghost` | Ghost button background | `gray-100` | `dark-600` |
 | `button-ghost-hover` | Ghost button hover background | `gray-150` | `dark-450` |
@@ -706,7 +708,7 @@ Variables for customizing button components across all variants.
 
 ### Contrast Button
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `button-contrast` | Contrast button background | `gray-900` | `base-white` |
 | `button-contrast-hover` | Contrast button hover background | `gray-700` | `dark-300` |
@@ -718,7 +720,7 @@ Variables for customizing callout components.
 
 ### Base Callout
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `callout-base-bg` | Base callout background | `base-white` | `dark-800` |
 | `callout-base-border` | Base callout border | `base-border` | `base-border` |
@@ -726,7 +728,7 @@ Variables for customizing callout components.
 
 ### Callout Accent Colors
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `callout-primary` | Primary callout accent color | `primary-500` | `primary-500` |
 | `callout-secondary` | Secondary callout accent color | `gray-500` | `gray-500` |
@@ -748,7 +750,7 @@ Variables for customizing callout components.
 
 Variables for customizing card appearance. Cards are used for blog listings, category pages, tag pages, and inline `[!card]` components.
 
-| Variable | Description | Default `base` | Default `dark` |
+| Variable {.whitespace-nowrap} | Description | Default `base` | Default `dark` |
 | --- | --- | --- | --- |
 | `card-bg` | Card background color | `var(--base-bg)` | `var(--base-bg)` |
 | `card-border` | Card border color | `var(--gray-200)` | `var(--dark-700)` |
@@ -782,7 +784,7 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 
 Variables for customizing color preview appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `color-preview-display` | Color preview display mode | `inline-block` | `inline-block` |
 | `color-preview-width` | Color preview width | `12px` | `12px` |
@@ -794,7 +796,7 @@ Variables for customizing color preview appearance.
 
 Variables for customizing description block appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `description-font-size` | Description block font size | `1.2rem` | `1.2rem` |
 | `description-weight` | Description block font weight | `500` | `500` |
@@ -810,7 +812,7 @@ Variables for customizing description block appearance.
 
 Variables for customizing image appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `image-rounded` | Image border radius | `0px` | `0px` |
 | `image-border` | Image border color | `base-border` | `base-border` |
@@ -820,7 +822,7 @@ Variables for customizing image appearance.
 
 Variables for customizing list appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `list-checked` | Checked list item color | `base-500` | `base-500` |
 | `list-unchecked` | Unchecked list item color | `gray-300` | `dark-400` |
@@ -829,7 +831,7 @@ Variables for customizing list appearance.
 
 Variables for customizing blog pagination appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `pager-margin-top` | Pager top margin | `2.5rem` | `2.5rem` |
 | `pager-margin-bottom` | Pager bottom margin | `1.5rem` | `1.5rem` |
@@ -858,7 +860,7 @@ Variables for customizing blog pagination appearance.
 
 Variables for customizing tab appearance.
 
-| Variable | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `tab-text` | Tab text color | `gray-500` | `dark-350` |
 | `tab-text-hover` | Tab hover text color | `base-500` | `base-500` |
