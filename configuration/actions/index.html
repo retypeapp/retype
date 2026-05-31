@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511146865">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511239512">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833511146865" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833511239512" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511146865" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511146865" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511146865" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511239512" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833511146865" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833511239512" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -350,11 +350,18 @@
 <p>Retype includes several built-in actions and also discovers custom action definitions from the <strong>_components/actions/</strong> folder in your project.</p>
 <h2 id="page-action-button">Page action button</h2>
 <p>The <code translate="no" v-pre>actions.items</code> configuration controls the menu options on the page action menu button added to the right of the page title.</p>
+<p>Use <code translate="no" v-pre>actions.enabled</code> to toggle the page action menu button globally. Default is <code translate="no" v-pre>true</code>.</p>
+<div id="page-action-button-retypeyml" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
+  enabled: false</code></pre>
+</doc-codeblock></div>
+<p>When <code translate="no" v-pre>actions.enabled</code> is set to <code translate="no" v-pre>false</code>, Retype does not render the page action menu button even if <code translate="no" v-pre>actions.items</code> are configured.</p>
 <figure class="content-center">
     <img src="/blog/images/2026-04-07-action-button.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="253" height="252" />
     <figcaption class="caption"></figcaption>
 </figure>
-<div id="page-action-button-retypeyml" class="codeblock-wrapper"><doc-codeblock>
+<div id="page-action-button-retypeyml-1" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
   items:
@@ -386,7 +393,7 @@
 </doc-codeblock></div>
 <p>Each item supports the same common link properties as top-bar <a href="/configuration/project/#links">links</a>, including <code translate="no" v-pre>text</code>, <code translate="no" v-pre>link</code>, <code translate="no" v-pre>action</code>, <code translate="no" v-pre>icon</code>, <code translate="no" v-pre>iconAlign</code>, <code translate="no" v-pre>target</code>, <code translate="no" v-pre>title</code>, and <code translate="no" v-pre>description</code>.</p>
 <p>Use <code translate="no" v-pre>actions.items</code> for the page action menu. To run actions from top-bar links, footer links, or nested header menu links, use the <code translate="no" v-pre>action</code> property on those link items instead of <code translate="no" v-pre>link</code>.</p>
-<div id="page-action-button-retypeyml-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="page-action-button-retypeyml-2" class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">retype.yml</div>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">links:
   - text: Copy link
@@ -900,7 +907,7 @@ steps:
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T20:51:59" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T20:53:30" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-05-30
                     </time>
                 </div>

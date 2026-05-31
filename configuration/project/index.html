@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511146865">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511239512">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833511146865" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833511239512" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511146865" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511146865" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511146865" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511239512" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833511146865" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833511239512" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -437,6 +437,18 @@ lastUpdated:
       icon: brand-printer</code></pre>
 </doc-codeblock></div>
 <p>The <code translate="no" v-pre>actions</code> configuration is for the page action button menu. To run actions from top-bar links, footer links, or nested header menu links, use <doc-anchor-trigger to="#links-action"><code translate="no" v-pre>links.action</code></doc-anchor-trigger> or <doc-anchor-trigger to="#footer-links"><code translate="no" v-pre>footer.links[]</code></doc-anchor-trigger>.</p>
+<h3 id="actions-enabled">enabled</h3>
+<doc-panel id="enabled--boolean">
+    <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
+<p>Enable or disable the page action menu button for the entire project. Default is <code translate="no" v-pre>true</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
+  enabled: false # See editor.enabled for live editor options while running retype start</code></pre>
+</doc-codeblock></div>
+<p>When set to <code translate="no" v-pre>false</code>, Retype does not render the page action menu button, even if <code translate="no" v-pre>actions.items</code> are configured.</p>
+<p>This setting controls configured page action items. During local <code translate="no" v-pre>retype start</code> sessions with the editor enabled, the action button can still appear to host editor actions.</p>
+<p>See <doc-anchor-trigger to="#editor">Editor</doc-anchor-trigger> for additional options that can affect page actions during local <code translate="no" v-pre>retype start</code> sessions.</p>
+</doc-panel>
 <h3 id="actions-items">items</h3>
 <doc-panel id="items--list">
     <template #title>items : <code translate="no" v-pre>list</code></template>
@@ -463,7 +475,7 @@ lastUpdated:
 <p>The <code translate="no" v-pre>backlinks</code> configuration controls the automatic display of inbound links from other pages in your project. Backlinks help users discover related content by showing which pages reference the current page.</p>
 <p>When enabled, backlinks are automatically included at the end of pages that have inbound links from other pages. The feature leverages Retype&#x27;s dependency tracking system to build a web of interconnected content.</p>
 <h3 id="backlinks-enabled">enabled</h3>
-<doc-panel id="enabled--boolean">
+<doc-panel id="enabled--boolean-1">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable backlinks for the entire project. Default is <code translate="no" v-pre>true</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -698,7 +710,7 @@ lastUpdated:
 </a> only.</p>
 <p>The breadcrumb navigation provides a hierarchical representation of the user&#x27;s location within the website. The breadcrumb simplifies navigating website content structures, allowing for easier backtracking and understanding of the website layout.</p>
 <h3 id="breadcrumb-enabled">enabled</h3>
-<doc-panel id="enabled--boolean-1">
+<doc-panel id="enabled--boolean-2">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>To enable or disable the breadcrumb navigation within Retype Pro projects. Default is <code translate="no" v-pre>true</code>.</p>
 <p>For Retype Pro projects, breadcrumb navigation will be enabled by default.</p>
@@ -1073,14 +1085,15 @@ lastUpdated:
 <h2 id="editor">editor</h2>
 <p>Custom configuration to control the page live editor functionality that is only available when <code translate="no" v-pre>retype start</code> is running.</p>
 <h3 id="editor-enabled">enabled</h3>
-<doc-panel id="enabled--boolean-2">
+<doc-panel id="enabled--boolean-3">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>To enable or disable the live editor. Default is <code translate="no" v-pre>true</code>.</p>
 <p>Set to <code translate="no" v-pre>false</code> to disable and hide the live editor.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-yaml"><code v-pre class="language-yaml">editor:
-  enabled: false # Default is true</code></pre>
+  enabled: false # See actions.enabled for page action menu options</code></pre>
 </doc-codeblock></div>
+<p>See <doc-anchor-trigger to="#actions">Page Actions</doc-anchor-trigger> for additional options to disable configured <a href="/configuration/actions/">page action</a> menu items.</p>
 </doc-panel>
 <hr>
 <h2 id="exclude">exclude</h2>
@@ -1626,7 +1639,7 @@ generator:
 <p>Please see the <a href="https://en.gravatar.com/site/implement/images#default-image" class="outbound" target="_blank" rel="noopener noreferrer"><span>Default Image</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> documentation on the Gravatar website.</p>
 </doc-panel>
 <h4 id="integrations-gravatar-enabled">enabled</h4>
-<doc-panel id="enabled--boolean-3">
+<doc-panel id="enabled--boolean-4">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Whether Retype should use Gravatar to pull profile images. Default is <code translate="no" v-pre>true</code>.</p>
 <p>Setting to <code translate="no" v-pre>false</code> will show the default image or specified resource.</p>
@@ -1742,7 +1755,7 @@ labels:
 <h3 id="lastupdated-date">date</h3>
 <p>Controls the automatic last updated <strong>date</strong> in the page footer.</p>
 <h4 id="lastupdated-date-enabled">enabled</h4>
-<doc-panel id="enabled--boolean-4">
+<doc-panel id="enabled--boolean-5">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable automatic last updated date generation. Default is <code translate="no" v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -1767,7 +1780,7 @@ labels:
 <h3 id="lastupdated-by">by</h3>
 <p>Controls the automatic last updated <strong>by</strong> value in the page footer.</p>
 <h4 id="lastupdated-by-enabled">enabled</h4>
-<doc-panel id="enabled--boolean-5">
+<doc-panel id="enabled--boolean-6">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable automatic last updated by generation. Default is <code translate="no" v-pre>false</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2585,7 +2598,7 @@ labels:
       - deployment</code></pre>
 </doc-codeblock></div>
 <h4 id="nav-tags-enabled">enabled</h4>
-<doc-panel id="enabled--boolean-6">
+<doc-panel id="enabled--boolean-7">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Enable or disable the generated tag summary section in the left sidebar navigation. Default is <code translate="no" v-pre>true</code> for Retype Pro projects and Pro preview builds.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -2837,7 +2850,7 @@ labels:
 <p>The <code translate="no" v-pre>outbound</code> functionality will be automatically enabled for Retype Pro project. For projects that do not have a Retype Pro license, the <code translate="no" v-pre>outbound</code> configuration and functionality is ignored.</p>
 <p>If <code translate="no" v-pre>outbound</code> is enabled, Retype will find all external (outbound) links within the project, add a trailing <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></g></svg> icon, and set the link to open in a new tab when clicked.</p>
 <h3 id="outbound-enabled">enabled</h3>
-<doc-panel id="enabled--boolean-7">
+<doc-panel id="enabled--boolean-8">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>Controls whether the outbound links feature is enabled.</p>
 <p>The default is <code translate="no" v-pre>true</code> for <strong>Retype Pro</strong> projects.</p>
@@ -3487,7 +3500,7 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
 <h2 id="templating">templating</h2>
 <p>Configurations to control the Retype content templating engine for this project.</p>
 <h3 id="templating-enabled">enabled</h3>
-<doc-panel id="enabled--boolean-8">
+<doc-panel id="enabled--boolean-9">
     <template #title>enabled : <code translate="no" v-pre>boolean</code></template>
 <p>A project-wide option to enable or disable the Retype content templating engine. Default is <code translate="no" v-pre>true</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -3908,8 +3921,8 @@ retype start --host 127.0.0.1 --port 5005  # serve from a custom host and port</
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-21T17:09:58" title="2026-05-21" data-absolute-label="Last updated on 2026-05-21" data-absolute-label-html="Last updated on 2026-05-21" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-05-21
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T20:53:30" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-05-30
                     </time>
                 </div>
 
