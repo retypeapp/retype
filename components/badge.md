@@ -200,3 +200,19 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All badge theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Badge Component](/configuration/theme-variables.md#badge-component) theme variables for the latest options.
 !!!
+
+---
+
+## Action
+
+A Badge can run an [Action](/configuration/actions.md) instead of navigating to a link. This is useful for built-in actions such as `print-page`.
+
+```md
+[!badge action="print-page" text="Print page"]
+
+[!badge Print page](action:print-page)
+```
+
+[!badge action="print-page" text="Print page"]
+
+[!badge Print page](action:print-page)

@@ -11,6 +11,8 @@ Actions add reusable behavior for navigation [links](/configuration/project.md#l
 
 Retype includes several built-in actions and also discovers custom action definitions from the **_components/actions/** folder in your project.
 
+---
+
 ## Page action button
 
 The `actions.items` configuration controls the menu options on the page action menu button added to the right of the page title.
@@ -76,6 +78,8 @@ footer:
 ```
 
 See [`actions`](project.md#actions) and [`links.action`](project.md#links-action) in the project configuration reference.
+
+---
 
 ## Built-in actions
 
@@ -184,6 +188,8 @@ actions:
       icon: markdown
 ```
 
+---
+
 ## Custom actions
 
 Custom actions are defined in **_components/actions/**. Retype reads **.yml** and Markdown files with YAML frontmatter from that folder.
@@ -232,6 +238,8 @@ actions:
       action: edit-on-github
       target: blank
 ```
+
+---
 
 ## Action definitions
 
@@ -290,6 +298,8 @@ Property | Description
 
 If a step does not include `with`, Retype passes the previous step output into the next step. This makes simple chains concise.
 
+---
+
 ## Template context
 
 Action templates can use page, project, content, inputs, and previous step data.
@@ -308,6 +318,60 @@ Variable | Description
 `context.project` | The project context.
 `context.content` | The content context.
 `context.component` | Reserved for component context. If unavailable, the value is `null`.
+
+---
+
+## Component action
+
+Markdown links and linkable components can run actions too. Configure the `action` attribute, or use the `action:<name>` destination shorthand.
+
+```md
+[Print page](action:print-page)
+
+[!button action="print-page" text="Print page"]
+[!button Print page](action:print-page)
+
+[!badge action="print-page" text="Print page"]
+[!badge Print page](action:print-page)
+```
+
+Cards work well with build-time actions that return a `link`.
+
+```md
+[!card title="Edit on GitHub" text="Open this page in GitHub"](action:edit-on-github)
+```
+
+Reference links, file downloads, and linked images can also use the `action:<name>` destination shorthand.
+
+```md
+[!ref Print page](action:print-page)
+
+[!file Print page](action:print-page)
+
+[![](/static/sample.jpg)](action:print-page)
+```
+
+Custom actions in **_components/actions/** can return a `link` and component-specific properties. For example, the following action builds an Edit on GitHub Button during the build and sets the Button `text`, `variant`, `corners`, and `icon`.
+
+{%{
+```yml _components/actions/edit-on-github.md
+---
+steps:
+  - with:
+      link: https://github.com/retypeapp/retype/edit/main{{ page.filePath }}
+      text: Edit on GitHub
+      variant: success
+      corners: pill
+      icon: mark-github
+---
+```
+}%}
+
+```md
+[!button Edit](action:edit-on-github)
+```
+
+---
 
 ## handlers
 

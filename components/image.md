@@ -71,7 +71,6 @@ The following demonstrates adding an outbound link to another page:
 [![](/static/sample.jpg)](/guides/getting-started.md)
 
 ---
-
 ## Dimensions
 
 You can control the size of your images by specifying custom dimensions using the pipe `|` separator followed by width and/or height values.
@@ -205,3 +204,15 @@ The **plus** alignment options only apply when the page is `layout: central` or 
 For default page layouts with a left navigation and/or the right table of contents, the **plus** positions will fallback to their non-plus equivalents. For instance, `rightplus` will fallback to `right` and the `centerplus` will fallback to `center`.
 
 Photo credits to [carlos aranda](https://unsplash.com/@carlosaranda).
+
+---
+
+## Action
+
+An image wrapped in a link can run an [Action](/configuration/actions.md) instead of navigating to a URL. Use `action:<name>` as the link destination.
+
+```md
+[![](/static/sample.jpg)](action:print-page)
+```
+
+[![](/static/sample.jpg)](action:print-page)

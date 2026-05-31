@@ -48,7 +48,6 @@ The link target always comes from the destination in parentheses. There is no se
 Use shorthand labels such as `vert` only when no other Card properties are set. If you combine a layout with custom properties, set it with the `layout` attribute, such as `layout="vert"`, `layout="vertical"`, `layout="compact"`, `layout="signal"`, or `layout="snap"`.
 
 ---
-
 ## Footer
 
 Overrides the footer rendered below the Card content. The `footer` property is used by horizontal and vertical Cards. Compact, signal, and snap Cards ignore `footer`.
@@ -336,3 +335,15 @@ Compact cards are useful when you want a smaller inline set of links, including 
 [!card compact](/guides/getting-started.md)
 [!card title="Install Retype" text="Install the Retype CLI." layout="compact"](/guides/installation.md)
 [!card title="Retype website" text="Visit retype.com." icon=":smile:" layout="compact"](https://retype.com/)
+
+---
+
+## Action
+
+A Card can use an [Action](/configuration/actions.md) as its destination. If the action returns a `link` during the build, the Card becomes a normal link to that URL.
+
+```md
+[!card title="Edit on GitHub" text="Open this page in GitHub"](action:edit-on-github)
+```
+
+[!card title="Edit on GitHub" text="Open this page in GitHub"](action:edit-on-github)

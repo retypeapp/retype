@@ -190,3 +190,39 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All button theme variables can be customized in this way. Please refer to the [Button Component](/configuration/theme-variables.md#button-component) theme variables for the latest options.
 !!!
+
+---
+
+## Action
+
+A Button can run an [Action](/configuration/actions.md) instead of navigating to a link. This is useful for built-in actions such as `print-page` and [Custom Actions](/configuration/actions.md#custom-actions).
+
+```md
+[!button action="print-page" text="Print page"]
+
+[!button Print page](action:print-page)
+```
+
+[!button action="print-page" text="Print page"]
+
+[!button Print page](action:print-page)
+
+Custom actions in `_components/actions/` can also return Button properties. The following action builds an **Edit on GitHub** link and updates the Button `text`, `variant`, `corners`, and `icon` during the build.
+
+{%{
+```yml _components/actions/edit-on-github.md
+---
+steps:
+  - with:
+      link: https://github.com/retypeapp/retype/edit/main{{ page.filePath }}
+      text: Edit on GitHub
+      variant: success
+      corners: pill
+      icon: mark-github
+---
+```
+}%}
+
+```md
+[!button Edit](action:edit-on-github)
+```
