@@ -15,6 +15,15 @@ Retype includes several built-in actions and also discovers custom action defini
 
 The `actions.items` configuration controls the menu options on the page action menu button added to the right of the page title.
 
+Use `actions.enabled` to toggle the page action menu button globally. Default is `true`.
+
+```yml retype.yml
+actions:
+  enabled: false
+```
+
+When `actions.enabled` is set to `false`, Retype does not render the page action menu button even if `actions.items` are configured.
+
 ![](/blog/images/2026-04-07-action-button.png)
 
 ```yml retype.yml
