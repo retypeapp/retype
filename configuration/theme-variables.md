@@ -276,6 +276,25 @@ Variables controlling the header appearance.
 | `header-text` | Header text color | `base-link` | `base-link` |
 | `header-text-weight` | Header text font weight | `base-link-weight` | `base-link-weight` |
 | `header-text-hover` | Header text hover color | `base-link-hover` | `base-link-hover` |
+| `header-height-mobile` | Header height on mobile | `4rem` | `4rem` |
+| `header-height-desktop` | Header height on desktop | `5rem` | `5rem` |
+
+## Layout
+
+Variables controlling layout dimensions for content, sidebars, header height, and footer spacing.
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `layout-site-max-width` | Maximum width for the overall site container (header, main content shell, and constrained footer areas) | `1800px` | `1800px` |
+| `layout-default-content-min-width` | Minimum width for default layout content area | `0` | `0` |
+| `layout-default-content-max-width` | Maximum width for default layout content area | `none` | `none` |
+| `layout-blog-content-min-width` | Minimum width for blog layout content area | `0` | `0` |
+| `layout-blog-content-max-width` | Maximum width for blog layout content area | `49.75rem` | `49.75rem` |
+| `layout-central-content-min-width` | Minimum width for central layout content area | `0` | `0` |
+| `layout-central-content-max-width` | Maximum width for central layout content area | `49.75rem` | `49.75rem` |
+| `layout-sidebar-left-width` | Left sidebar width | `18.75rem` | `18.75rem` |
+| `layout-sidebar-right-width-md` | Right sidebar width at medium breakpoint | `26rem` | `26rem` |
+| `layout-sidebar-right-width-lg` | Right sidebar width at large breakpoint | `16rem` | `16rem` |
 
 ## Search
 
