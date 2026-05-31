@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833493739208">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833501231222">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833493739208" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833501231222" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833493739208" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833501231222" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833493739208" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833493739208" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833501231222" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833501231222" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833493739208" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833501231222" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -2064,10 +2064,10 @@ labels:
 | `MM` | Two-digit month | `dateFormat: MM` | 05 |
 | `MMM` | Abbreviated month name | `dateFormat: MMM` | May |
 | `MMMM` | Full month name | `dateFormat: MMMM` | May |
-| `d` | Day of month | `dateFormat: d` | 30 |
-| `dd` | Two-digit day of month | `dateFormat: dd` | 30 |
-| `ddd` | Abbreviated day name | `dateFormat: ddd` | Sat |
-| `dddd` | Full day name | `dateFormat: dddd` | Saturday |">
+| `d` | Day of month | `dateFormat: d` | 31 |
+| `dd` | Two-digit day of month | `dateFormat: dd` | 31 |
+| `ddd` | Abbreviated day name | `dateFormat: ddd` | Sun |
+| `dddd` | Full day name | `dateFormat: dddd` | Sunday |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -2119,25 +2119,25 @@ labels:
 <td><code translate="no" v-pre>d</code></td>
 <td>Day of month</td>
 <td><code translate="no" v-pre>dateFormat: d</code></td>
-<td>30</td>
+<td>31</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dd</code></td>
 <td>Two-digit day of month</td>
 <td><code translate="no" v-pre>dateFormat: dd</code></td>
-<td>30</td>
+<td>31</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ddd</code></td>
 <td>Abbreviated day name</td>
 <td><code translate="no" v-pre>dateFormat: ddd</code></td>
-<td>Sat</td>
+<td>Sun</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dddd</code></td>
 <td>Full day name</td>
 <td><code translate="no" v-pre>dateFormat: dddd</code></td>
-<td>Saturday</td>
+<td>Sunday</td>
 </tr>
 </tbody>
 </table>
@@ -2146,12 +2146,12 @@ labels:
 <p>Common full date strings can be composed by combining the supported specifiers:</p>
 <retype-table copy-text="| Template sample | Output |
 | --- | --- |
-| `dateFormat: yyyy-MM-dd` | 2026-05-30 |
-| `dateFormat: MM/dd/yyyy` | 05/30/2026 |
-| `dateFormat: dd MMM yyyy` | 30 May 2026 |
-| `dateFormat: MMM d, yyyy` | May 30, 2026 |
-| `dateFormat: MMMM d, yyyy` | May 30, 2026 |
-| `dateFormat: dddd, MMMM d, yyyy` | Saturday, May 30, 2026 |">
+| `dateFormat: yyyy-MM-dd` | 2026-05-31 |
+| `dateFormat: MM/dd/yyyy` | 05/31/2026 |
+| `dateFormat: dd MMM yyyy` | 31 May 2026 |
+| `dateFormat: MMM d, yyyy` | May 31, 2026 |
+| `dateFormat: MMMM d, yyyy` | May 31, 2026 |
+| `dateFormat: dddd, MMMM d, yyyy` | Sunday, May 31, 2026 |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
@@ -2163,27 +2163,27 @@ labels:
 <tbody>
 <tr>
 <td><code translate="no" v-pre>dateFormat: yyyy-MM-dd</code></td>
-<td>2026-05-30</td>
+<td>2026-05-31</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MM/dd/yyyy</code></td>
-<td>05/30/2026</td>
+<td>05/31/2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dd MMM yyyy</code></td>
-<td>30 May 2026</td>
+<td>31 May 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMM d, yyyy</code></td>
-<td>May 30, 2026</td>
+<td>May 31, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: MMMM d, yyyy</code></td>
-<td>May 30, 2026</td>
+<td>May 31, 2026</td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dateFormat: dddd, MMMM d, yyyy</code></td>
-<td>Saturday, May 30, 2026</td>
+<td>Sunday, May 31, 2026</td>
 </tr>
 </tbody>
 </table>
