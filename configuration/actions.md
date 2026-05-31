@@ -79,6 +79,7 @@ Action {.whitespace-nowrap} | Description
 `copy-to-clipboard` | Copies the current browser URL to the clipboard. In custom action definitions, use the `clipboard` handler when you need to copy a specific value.
 `print-page` | Opens the browser print dialog.
 `scroll-to-top` | Smoothly scrolls to the top of the page.
+`share-page` | Opens the native share panel for the current page when available, otherwise copies the current browser URL to the clipboard.
 `view-page-markdown` | Opens the generated Markdown export for the current page in a new tab.
 
 ### copy-page-markdown
@@ -148,6 +149,18 @@ actions:
     - text: Scroll to top
       action: scroll-to-top
       icon: arrow-up
+```
+
+### share-page
+
+The `share-page` action opens the native browser or operating system share panel for the current page when supported. If native sharing is not available, Retype copies the current page URL to the clipboard.
+
+```yml retype.yml
+actions:
+  items:
+    - text: Share page
+      action: share-page
+      icon: share
 ```
 
 ### view-page-markdown
@@ -297,6 +310,7 @@ Handler | Description
 `fetch` | Fetch text content from a URL.
 `print` | Open the browser print dialog.
 `scroll` | Scroll to the top of the page or to a page target.
+`share` | Open the native share panel, or copy the shared URL when native sharing is unavailable.
 
 ### clipboard
 
@@ -355,3 +369,20 @@ steps:
 ```
 
 The handler returns an object with `success` and `target`.
+
+### share
+
+The `share` handler opens the native browser or operating system share panel. The input can include `title`, `text`, and `url`.
+
+{%{
+```yml _components/actions/share-site.yml
+steps:
+  - handler: share
+    with:
+      title: "{{ page.title }}"
+      text: "{{ project.meta.siteName }}"
+      url: "{{ page.url }}"
+```
+}%}
+
+If native sharing is not available, Retype copies the `url` value to the clipboard. The handler returns an object with `success`, and may include `fallback` and `value` when the clipboard fallback is used.
