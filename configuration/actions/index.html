@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833501231222">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511146865">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833501231222" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833511146865" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833501231222" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511146865" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833501231222" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833501231222" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511146865" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511146865" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833501231222" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833511146865" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -409,6 +409,7 @@ footer:
 `copy-to-clipboard` | Copies the current browser URL to the clipboard. In custom action definitions, use the `clipboard` handler when you need to copy a specific value.
 `print-page` | Opens the browser print dialog.
 `scroll-to-top` | Smoothly scrolls to the top of the page.
+`share-page` | Opens the native share panel for the current page when available, otherwise copies the current browser URL to the clipboard.
 `view-page-markdown` | Opens the generated Markdown export for the current page in a new tab.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -438,6 +439,10 @@ footer:
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>scroll-to-top</code></td>
 <td>Smoothly scrolls to the top of the page.</td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>share-page</code></td>
+<td>Opens the native share panel for the current page when available, otherwise copies the current browser URL to the clipboard.</td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>view-page-markdown</code></td>
@@ -503,6 +508,16 @@ footer:
     - text: Scroll to top
       action: scroll-to-top
       icon: arrow-up</code></pre>
+</doc-codeblock></div>
+<h3 id="share-page">share-page</h3>
+<p>The <code translate="no" v-pre>share-page</code> action opens the native browser or operating system share panel for the current page when supported. If native sharing is not available, Retype copies the current page URL to the clipboard.</p>
+<div id="share-page-retypeyml" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">retype.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">actions:
+  items:
+    - text: Share page
+      action: share-page
+      icon: share</code></pre>
 </doc-codeblock></div>
 <h3 id="view-page-markdown">view-page-markdown</h3>
 <p>The <code translate="no" v-pre>view-page-markdown</code> action opens the generated Markdown export for the current page in a new tab.</p>
@@ -757,7 +772,8 @@ steps:
 `clipboard` | Copy a value to the clipboard.
 `fetch` | Fetch text content from a URL.
 `print` | Open the browser print dialog.
-`scroll` | Scroll to the top of the page or to a page target.">
+`scroll` | Scroll to the top of the page or to a page target.
+`share` | Open the native share panel, or copy the shared URL when native sharing is unavailable.">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -782,6 +798,10 @@ steps:
 <tr>
 <td><code translate="no" v-pre>scroll</code></td>
 <td>Scroll to the top of the page or to a page target.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>share</code></td>
+<td>Open the native share panel, or copy the shared URL when native sharing is unavailable.</td>
 </tr>
 </tbody>
 </table>
@@ -829,6 +849,18 @@ steps:
       behavior: smooth</code></pre>
 </doc-codeblock></div>
 <p>The handler returns an object with <code translate="no" v-pre>success</code> and <code translate="no" v-pre>target</code>.</p>
+<h3 id="share">share</h3>
+<p>The <code translate="no" v-pre>share</code> handler opens the native browser or operating system share panel. The input can include <code translate="no" v-pre>title</code>, <code translate="no" v-pre>text</code>, and <code translate="no" v-pre>url</code>.</p>
+<div id="share-_componentsactionsshare-siteyml" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">_components/actions/share-site.yml</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">steps:
+  - handler: share
+    with:
+      title: &quot;{{ page.title }}&quot;
+      text: &quot;{{ project.meta.siteName }}&quot;
+      url: &quot;{{ page.url }}&quot;</code></pre>
+</doc-codeblock></div>
+<p>If native sharing is not available, Retype copies the <code translate="no" v-pre>url</code> value to the clipboard. The handler returns an object with <code translate="no" v-pre>success</code>, and may include <code translate="no" v-pre>fallback</code> and <code translate="no" v-pre>value</code> when the clipboard fallback is used.</p>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -868,8 +900,8 @@ steps:
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-23T11:40:41" title="2026-05-23" data-absolute-label="Last updated on 2026-05-23" data-absolute-label-html="Last updated on 2026-05-23" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-05-23
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T20:51:59" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-05-30
                     </time>
                 </div>
 
