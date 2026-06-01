@@ -773,14 +773,16 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | --- | --- | --- | --- |
 | `card-bg` | Card background color | `var(--base-bg)` | `var(--base-bg)` |
 | `card-border` | Card border color | `var(--gray-200)` | `var(--dark-700)` |
-| `card-border-hover` | Card hover border color | `var(--gray-400)` | `var(--dark-450)` |
+| `card-border-hover` | Card hover border color | `var(--base-border-hover)` | `var(--base-border-hover)` |
 | `card-rounded` | Card border radius | `0.5rem` | `0.5rem` |
 | `card-padding` | Card content padding | `1.5rem` | `1.5rem` |
+| `card-shadow-hover` | Card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
 | `card-margin-bottom` | Card bottom margin | `1.5rem` | `1.5rem` |
 | `card-max-width` | Card maximum width (wide screens) | `960px` | `960px` |
-| `card-max-width-sm` | Card maximum width (narrow screens) | `558px` | `558px` |
-| `card-min-width` | Card minimum width | `250px` | `250px` |
+| `card-max-width-sm` | Card maximum width (narrow screens) | `613px` | `613px` |
+| `card-min-width` | Card minimum width | `280px` | `280px` |
 | `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |
+| `card-image-inner-border` | Card image inner border color | `var(--gray-200)` | `var(--dark-700)` |
 | `card-image-width` | Card image width percentage | `41.666667%` | `41.666667%` |
 | `card-title-text` | Card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
 | `card-title-font-size` | Card title font size | `1.125rem` | `1.125rem` |
@@ -789,15 +791,84 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | `card-title-leading` | Card title line height | `1.375` | `1.375` |
 | `card-description-text` | Card description text color | `var(--body-text)` | `var(--body-text)` |
 | `card-description-margin-top` | Card description top margin | `0.5rem` | `0.5rem` |
-| `card-category-text` | Card category text color | `var(--body-link)` | `var(--body-link)` |
-| `card-category-font-size` | Card category font size | `0.8125rem` | `0.8125rem` |
-| `card-category-font-weight` | Card category font weight | `600` | `600` |
-| `card-category-case` | Card category text transform | `uppercase` | `uppercase` |
-| `card-date-text` | Card date text color | `var(--gray-500)` | `var(--dark-350)` |
-| `card-date-font-size` | Card date font size | `0.875rem` | `0.875rem` |
-| `card-date-margin-top` | Card date top margin | `0.75rem` | `0.75rem` |
-| `card-group-gap` | Portrait card group gap spacing | `1.5rem` | `1.5rem` |
-| `card-group-margin-bottom` | Portrait card group bottom margin | `1.5rem` | `1.5rem` |
+| `card-kicker-text` | Card kicker text color | `var(--body-link)` | `var(--body-link)` |
+| `card-kicker-font-size` | Card kicker font size | `0.8125rem` | `0.8125rem` |
+| `card-kicker-font-weight` | Card kicker font weight | `600` | `600` |
+| `card-kicker-case` | Card kicker text transform | `uppercase` | `uppercase` |
+| `card-footer-text` | Card footer text color | `var(--gray-500)` | `var(--dark-350)` |
+| `card-footer-font-size` | Card footer font size | `0.875rem` | `0.875rem` |
+| `card-footer-margin-top` | Card footer top margin | `0.75rem` | `0.75rem` |
+| `card-group-gap` | Vertical, compact, signal, and snap card group gap spacing | `1.5rem` | `1.5rem` |
+| `card-group-margin-bottom` | Card group bottom margin | `1.5rem` | `1.5rem` |
+| `card-vert-max-width` | Vertical card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-vert-min-width` | Vertical card minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-compact-border` | Compact card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-compact-border-hover` | Compact card hover border color | `var(--card-border-hover)` | `var(--card-border-hover)` |
+| `card-compact-rounded` | Compact card border radius | `var(--card-rounded)` | `var(--card-rounded)` |
+| `card-compact-padding` | Compact card padding | `1rem` | `1rem` |
+| `card-compact-shadow-hover` | Compact card hover shadow | `var(--card-shadow-hover)` | `var(--card-shadow-hover)` |
+| `card-compact-title-text` | Compact card title text color | `var(--backlinks-link)` | `var(--backlinks-link)` |
+| `card-compact-title-hover-text` | Compact card title hover text color | `var(--backlinks-link-hover)` | `var(--backlinks-link-hover)` |
+| `card-compact-title-font-size` | Compact card title font size | `var(--backlinks-link-font-size)` | `var(--backlinks-link-font-size)` |
+| `card-compact-title-font-weight` | Compact card title font weight | `var(--body-link-weight)` | `var(--body-link-weight)` |
+| `card-compact-title-line-height` | Compact card title line height | `1.375` | `1.375` |
+| `card-compact-title-gap` | Compact card title icon gap | `0.5rem` | `0.5rem` |
+| `card-compact-title-margin-bottom` | Compact card title bottom margin | `0.25rem` | `0.25rem` |
+| `card-compact-description-text` | Compact card description text color | `var(--backlinks-text)` | `var(--backlinks-text)` |
+| `card-compact-description-font-size` | Compact card description font size | `var(--backlinks-text-font-size)` | `var(--backlinks-text-font-size)` |
+| `card-compact-description-font-weight` | Compact card description font weight | `var(--backlinks-text-font-weight)` | `var(--backlinks-text-font-weight)` |
+| `card-compact-icon-color` | Compact card icon color | `var(--backlinks-link)` | `var(--backlinks-link)` |
+| `card-compact-icon-size` | Compact card icon size | `1rem` | `1rem` |
+| `card-compact-image-size` | Compact card image size | `5rem` | `5rem` |
+| `card-compact-max-width` | Compact card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-compact-grid-min-width` | Compact card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-signal-border` | Signal card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-signal-border-hover` | Signal card hover border color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-rounded` | Signal card border radius | `var(--radius-2xl)` | `var(--radius-2xl)` |
+| `card-signal-padding` | Signal card padding | `1.25rem` | `1.25rem` |
+| `card-signal-padding-y` | Signal card vertical padding | `1.125rem` | `1.125rem` |
+| `card-signal-shadow-hover` | Signal card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `card-signal-title-text` | Signal card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-signal-title-hover-text` | Signal card title hover text color | `var(--body-link-hover)` | `var(--body-link-hover)` |
+| `card-signal-title-font-size` | Signal card title font size | `1rem` | `1rem` |
+| `card-signal-title-font-weight` | Signal card title font weight | `700` | `700` |
+| `card-signal-title-line-height` | Signal card title line height | `1.45` | `1.45` |
+| `card-signal-description-text` | Signal card description text color | `var(--body-text)` | `var(--body-text)` |
+| `card-signal-description-font-size` | Signal card description font size | `1rem` | `1rem` |
+| `card-signal-description-line-height` | Signal card description line height | `1.45` | `1.45` |
+| `card-signal-icon-color` | Signal card icon color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-icon-stroke-width` | Signal card icon stroke width | `2.2` | `2.2` |
+| `card-signal-icon-size` | Signal card icon size | `2rem` | `2rem` |
+| `card-signal-media-size` | Signal card media size | `3.25rem` | `3.25rem` |
+| `card-signal-media-rounded` | Signal card media border radius | `9999px` | `9999px` |
+| `card-signal-kicker-text` | Signal card kicker text color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-kicker-font-size` | Signal card kicker font size | `0.875rem` | `0.875rem` |
+| `card-signal-kicker-font-weight` | Signal card kicker font weight | `600` | `600` |
+| `card-signal-grid-min-width` | Signal card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-signal-max-width` | Signal card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-snap-border` | Snap card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-snap-border-hover` | Snap card hover border color | `var(--body-link)` | `var(--body-link)` |
+| `card-snap-rounded` | Snap card border radius | `var(--radius-xl)` | `var(--radius-xl)` |
+| `card-snap-padding` | Snap card padding | `var(--card-signal-padding)` | `var(--card-signal-padding)` |
+| `card-snap-padding-y` | Snap card vertical padding | `var(--card-signal-padding-y)` | `var(--card-signal-padding-y)` |
+| `card-snap-shadow-hover` | Snap card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `card-snap-title-text` | Snap card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-title-hover-text` | Snap card title hover text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-title-font-size` | Snap card title font size | `1.0625rem` | `1.0625rem` |
+| `card-snap-title-font-weight` | Snap card title font weight | `600` | `600` |
+| `card-snap-title-line-height` | Snap card title line height | `1.3` | `1.3` |
+| `card-snap-icon-color` | Snap card icon color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-icon-stroke-width` | Snap card icon stroke width | `var(--card-signal-icon-stroke-width)` | `var(--card-signal-icon-stroke-width)` |
+| `card-snap-icon-size` | Snap card icon size | `var(--card-signal-icon-size)` | `var(--card-signal-icon-size)` |
+| `card-snap-media-size` | Snap card media size | `var(--card-signal-media-size)` | `var(--card-signal-media-size)` |
+| `card-snap-media-rounded` | Snap card media border radius | `9999px` | `9999px` |
+| `card-snap-image-rounded` | Snap card image border radius | `var(--card-snap-media-rounded)` | `var(--card-snap-media-rounded)` |
+| `card-snap-media-background` | Snap card media background color | `var(--base-white)` | `var(--base-white)` |
+| `card-snap-media-border` | Snap card media border color | `var(--gray-200)` | `var(--gray-200)` |
+| `card-snap-media-padding` | Snap card media padding | `0.75rem` | `0.75rem` |
+| `card-snap-gap` | Snap card content gap | `1rem` | `1rem` |
+| `card-snap-grid-min-width` | Snap card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-snap-max-width` | Snap card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
 
 ## Color Preview Component
 
