@@ -60,6 +60,7 @@ With link and variant
 | `dark` | [!badge variant="dark" text="Dark"] | [!badge variant="dark" text="Dark"](#variant) |
 | `ghost` | [!badge variant="ghost" text="Ghost"] | [!badge variant="ghost" text="Ghost"](#variant) |
 | `contrast` | [!badge variant="contrast" text="Contrast"] | [!badge variant="contrast" text="Contrast"](#variant) |
+| `clean` | [!badge variant="clean" text="Clean"] | [!badge variant="clean" text="Clean"](#variant) |
 
 ---
 
