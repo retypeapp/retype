@@ -85,6 +85,10 @@ edit:
 
 actions:
   items:
+    - text: Share
+      action: share-page
+      icon: share 
+    - type: separator
     - text: Copy page
       action: copy-page-markdown
       icon: copy

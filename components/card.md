@@ -62,6 +62,20 @@ For local pages, Retype can automatically resolve the footer from `date` or `cre
 
 ---
 
+## FooterAlign
+
+Sets the alignment of the Card footer content. The `footerAlign` property is used by horizontal and vertical Cards when a `footer` is configured. Compact, signal, and snap Cards ignore `footerAlign` because they do not render a `footer`.
+
+The supported values are `left`, `center`, and `right`. Default value is `left`.
+
+```md
+[!card footerAlign="center" layout="vert" footer="View the full article"]({{ page1 }})
+```
+
+[!card footerAlign="center" layout="vert" footer="View the full article"]({{ page1 }})
+
+---
+
 ## Icon
 
 Overrides the Card icon. The `icon` property is rendered by compact, signal, and snap Cards.
