@@ -36,20 +36,21 @@ Using text|variant shorthand notation
 [!button text="My Button" variant="success"](https://retype.com/)
 ```
 
-| Variant             | Example                                        |
-| ------------------- | ---------------------------------------------- |
-| `base`              | [!button variant="base" text="Base"]           |
-| `primary` (default) | [!button variant="primary" text="Primary"]     |
-| `secondary`         | [!button variant="secondary" text="Secondary"] |
-| `success`           | [!button variant="success" text="Success"]     |
-| `question`          | [!button variant="question" text="Question"]   |
-| `danger`            | [!button variant="danger" text="Danger"]       |
-| `warning`           | [!button variant="warning" text="Warning"]     |
-| `info`              | [!button variant="info" text="Info"]           |
-| `light`             | [!button variant="light" text="Light"]         |
-| `dark`              | [!button variant="dark" text="Dark"]           |
-| `ghost`             | [!button variant="ghost" text="Ghost"]         |
-| `contrast`          | [!button variant="contrast" text="Contrast"]   |
+| Variant             | Text only                                      | With link                                                    |
+| ------------------- | ---------------------------------------------- | ------------------------------------------------------------ |
+| `base`              | [!button variant="base" text="Base"]           | [!button variant="base" text="Base"](#variant)             |
+| `primary` (default) | [!button variant="primary" text="Primary"]     | [!button variant="primary" text="Primary"](#variant)       |
+| `secondary`         | [!button variant="secondary" text="Secondary"] | [!button variant="secondary" text="Secondary"](#variant)   |
+| `success`           | [!button variant="success" text="Success"]     | [!button variant="success" text="Success"](#variant)       |
+| `question`          | [!button variant="question" text="Question"]   | [!button variant="question" text="Question"](#variant)     |
+| `danger`            | [!button variant="danger" text="Danger"]       | [!button variant="danger" text="Danger"](#variant)         |
+| `warning`           | [!button variant="warning" text="Warning"]     | [!button variant="warning" text="Warning"](#variant)       |
+| `info`              | [!button variant="info" text="Info"]           | [!button variant="info" text="Info"](#variant)             |
+| `light`             | [!button variant="light" text="Light"]         | [!button variant="light" text="Light"](#variant)           |
+| `dark`              | [!button variant="dark" text="Dark"]           | [!button variant="dark" text="Dark"](#variant)             |
+| `ghost`             | [!button variant="ghost" text="Ghost"]         | [!button variant="ghost" text="Ghost"](#variant)           |
+| `contrast`          | [!button variant="contrast" text="Contrast"]   | [!button variant="contrast" text="Contrast"](#variant)     |
+| `clean`             | [!button variant="clean" text="Clean"]         | [!button variant="clean" text="Clean"](#variant)           |
 
 ---
 

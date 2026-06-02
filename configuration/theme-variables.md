@@ -36,6 +36,7 @@ Core variables that define the fundamental appearance of your site.
 | `base-color` | Brand color | `#5495f1` | `#5495f1` |
 | `base-white` | Pure white color | `#ffffff` | `#ffffff` |
 | `base-black` | Pure black color | `#000000` | `#000000` |
+| `base-dark` | Pure dark color | `#121212` | `#121212` |
 | `base-bg` | Main background color | `base-white` | `dark-900` |
 | `base-text` | Primary text color | `gray-700` | `dark-300` |
 | `base-text-muted` | Muted text color | `gray-400` | `gray-400` |
@@ -660,8 +661,8 @@ Variables for customizing badge components across all variants.
 
 | Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `badge-light` | Light badge background | `base-white` | `base-white` |
-| `badge-light-hover` | Light badge hover background | `gray-100` | `dark-200` |
+| `badge-light` | Light badge background | `gray-50` | `gray-50` |
+| `badge-light-hover` | Light badge hover background | `gray-150` | `dark-200` |
 | `badge-light-text` | Light badge text color | `gray-600` | `dark-600` |
 | `badge-light-text-hover` | Light badge hover text color | `gray-600` | `dark-600` |
 | `badge-light-border` | Light badge border color | `gray-200` | `transparent` |
@@ -699,6 +700,15 @@ Variables for customizing badge components across all variants.
 | `badge-contrast-text-hover` | Contrast badge hover text color | `base-white` | `dark-850` |
 | `badge-contrast-border` | Contrast badge border color | `gray-900` | `base-white` |
 | `badge-contrast-border-hover` | Contrast badge hover border color | `gray-800` | `base-white` |
+
+### Clean Badge
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `badge-clean` | Clean badge background | `base-white` | `base-dark` |
+| `badge-clean-hover` | Clean badge hover background | `gray-100` | `dark-600` |
+| `badge-clean-text` | Clean badge text color | `gray-600` | `base-white` |
+| `badge-clean-border` | Clean badge border color | `gray-600` | `base-white` |
 
 ## Button Component
 
@@ -778,9 +788,12 @@ Variables for customizing button components across all variants.
 
 | Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `button-light` | Light button background | `gray-200` | `dark-250` |
-| `button-light-hover` | Light button hover background | `gray-300` | `dark-350` |
-| `button-light-text` | Light button text color | `gray-900` | `base-black` |
+| `button-light` | Light button background | `gray-50` | `gray-50` |
+| `button-light-hover` | Light button hover background | `gray-150` | `dark-200` |
+| `button-light-text` | Light button text color | `gray-600` | `dark-600` |
+| `button-light-text-hover` | Light button hover text color | `gray-600` | `dark-600` |
+| `button-light-border` | Light button border color | `gray-200` | `transparent` |
+| `button-light-border-hover` | Light button hover border color | `gray-400` | `gray-400` |
 
 ### Dark Button
 
@@ -805,6 +818,15 @@ Variables for customizing button components across all variants.
 | `button-contrast` | Contrast button background | `gray-900` | `base-white` |
 | `button-contrast-hover` | Contrast button hover background | `gray-700` | `dark-300` |
 | `button-contrast-text` | Contrast button text color | `gray-50` | `base-black` |
+
+### Clean Button
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `button-clean` | Clean button background | `base-white` | `base-dark` |
+| `button-clean-hover` | Clean button hover background | `gray-100` | `dark-600` |
+| `button-clean-text` | Clean button text color | `gray-600` | `base-white` |
+| `button-clean-border` | Clean button border color | `gray-600` | `base-white` |
 
 ## Callout Component
 
@@ -854,7 +876,7 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | `card-max-width` | Card maximum width (wide screens) | `960px` | `960px` |
 | `card-max-width-sm` | Card maximum width (narrow screens) | `613px` | `613px` |
 | `card-min-width` | Card minimum width | `280px` | `280px` |
-| `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |
+| `card-image-bg` | Card image placeholder background | `var(--gray-50)` | `var(--dark-800)` |
 | `card-image-inner-border` | Card image inner border color | `var(--gray-200)` | `var(--dark-700)` |
 | `card-image-width` | Card image width percentage | `41.666667%` | `41.666667%` |
 | `card-title-text` | Card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
@@ -868,6 +890,7 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | `card-kicker-font-size` | Card kicker font size | `0.8125rem` | `0.8125rem` |
 | `card-kicker-font-weight` | Card kicker font weight | `600` | `600` |
 | `card-kicker-case` | Card kicker text transform | `uppercase` | `uppercase` |
+| `card-vert-kicker-title-gap` | Vertical Card gap between kicker and title | `0.75rem` | `0.75rem` |
 | `card-footer-text` | Card footer text color | `var(--gray-500)` | `var(--dark-350)` |
 | `card-footer-font-size` | Card footer font size | `0.875rem` | `0.875rem` |
 | `card-footer-margin-top` | Card footer top margin | `0.75rem` | `0.75rem` |
