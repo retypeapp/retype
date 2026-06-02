@@ -92,7 +92,7 @@ This is a sample page.
 
 The backlinks component will only render when:
 
-1. The backlinks feature is enabled ([project](/configuration/project.md##backlinks-enabled) or [page](/configuration/page.md##backlinks-enabled) level)
+1. The backlinks feature is enabled ([project](/configuration/project.md#backlinks-enabled) or [page](/configuration/page.md#backlinks-enabled) level)
 2. At least one other Page in your project links to the current page
 3. A valid Retype [Pro](/pro/pro.md) license is active
 
