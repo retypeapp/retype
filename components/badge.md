@@ -56,6 +56,7 @@ With link and variant
 | `dark` | [!badge variant="dark" text="Dark"] | [!badge variant="dark" text="Dark"](#variant) |
 | `ghost` | [!badge variant="ghost" text="Ghost"] | [!badge variant="ghost" text="Ghost"](#variant) |
 | `contrast` | [!badge variant="contrast" text="Contrast"] | [!badge variant="contrast" text="Contrast"](#variant) |
+| `clean` | [!badge variant="clean" text="Clean"] | [!badge variant="clean" text="Clean"](#variant) |
 
 ---
 
@@ -149,6 +150,20 @@ Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojeei
 [!badge variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!badge variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
 
+### Custom icon
+
+Project icons can be used by setting the `icon` property to the custom icon name.
+
+```md
+[!badge variant="light" icon="brand-printer" text="Print" action="print-page"] 
+
+[!badge variant="clean" icon="brand-printer" text="Print" action="print-page" corners="pill"]
+```
+
+[!badge variant="light" icon="brand-printer" text="Print" action="print-page"] 
+
+[!badge variant="clean" icon="brand-printer" text="Print" action="print-page" corners="pill"]
+
 ### Image file
 
 Any image file can be used as the `icon`.
@@ -196,3 +211,19 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All badge theme variables can be customized in this way. The full list of available variables is shown below, and you can always refer to the [Badge Component](/configuration/theme-variables.md#badge-component) theme variables for the latest options.
 !!!
+
+---
+
+## Action
+
+A Badge can run an [Action](/configuration/actions.md) instead of navigating to a link. This is useful for built-in actions such as `print-page`.
+
+```md
+[!badge action="print-page" text="Print page"]
+
+[!badge Print page](action:print-page)
+```
+
+[!badge action="print-page" text="Print page"]
+
+[!badge Print page](action:print-page)

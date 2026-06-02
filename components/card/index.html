@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511239512">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833693543825">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833693543825" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511239512" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833693543825" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833693543825" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -404,6 +404,32 @@
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="card-vert-footer">
                 <div class="text-card-footer text-card-footer-text"><span>Custom footer</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</p>
+<hr>
+<h2 id="footeralign">FooterAlign</h2>
+<p>Sets the alignment of the Card footer content. The <code translate="no" v-pre>footerAlign</code> property is used by horizontal and vertical Cards when a <code translate="no" v-pre>footer</code> is configured. Compact, signal, and snap Cards ignore <code translate="no" v-pre>footerAlign</code> because they do not render a <code translate="no" v-pre>footer</code>.</p>
+<p>The supported values are <code translate="no" v-pre>left</code>, <code translate="no" v-pre>center</code>, and <code translate="no" v-pre>right</code>. Default value is <code translate="no" v-pre>left</code>.</p>
+<div id="footeralign-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card footerAlign=&quot;center&quot; layout=&quot;vert&quot; footer=&quot;View the full article&quot;](/blog/2026-05-26-whats-new-in-retype-v460.md)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-vert-group">
+<div class="card-vert-container">
+    <a href="/blog/2026-05-26-whats-new-in-retype-v460/" class="group card-vert no-link">
+        <div class="relative shrink-0 overflow-hidden bg-card-image-bg pb-9/16 border-b border-card-image-inner-border">
+            <img class="absolute object-cover w-full h-full transition-transform duration-300 ease-out group-hover:scale-105" src="/blog/images/2026-05-26-whats-new-in-retype-v460.png">
+        </div>
+        <div class="card-vert-body p-card-padding">
+            <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
+            <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
+            <div class="card-vert-footer">
+                <div class="text-card-footer text-card-footer-text"><span>View the full article</span></div>
             </div>
         </div>
     </a>
@@ -1082,6 +1108,22 @@
 </div>
 </div>
 </p>
+<hr>
+<h2 id="action">Action</h2>
+<p>A Card can use an <a href="/configuration/actions/">Action</a> as its destination. If the action returns a <code translate="no" v-pre>link</code> during the build, the Card becomes a normal link to that URL.</p>
+<div id="action-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Edit on GitHub&quot; text=&quot;Open this page in GitHub&quot;](action:edit-on-github)</code></pre>
+</doc-codeblock></div>
+<p>
+<div class="card-container">
+    <a href="action:edit-on-github" class="group card no-link">
+        <div class="p-card-padding">
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Edit on GitHub</div>
+            <div class="line-clamp-7"><p class="mt-card-description-margin-top text-card-description-text">Open this page in GitHub</p></div>
+        </div>
+    </a>
+</div>
+</p>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 
@@ -1095,8 +1137,8 @@
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-21T16:08:08" title="2026-05-21" data-absolute-label="Last updated on 2026-05-21" data-absolute-label-html="Last updated on 2026-05-21" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-05-21
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-06-01T23:31:51" title="2026-06-01" data-absolute-label="Last updated on 2026-06-01" data-absolute-label-html="Last updated on 2026-06-01" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-06-01
                     </time>
                 </div>
 

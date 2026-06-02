@@ -149,7 +149,7 @@ It works well for long-lived guides, release notes, and migration pages that con
 
 ## Card component upgrade
 
-`v4.2` adds a new [`compact`](/components/card.md#compact) Card layout and new customizable [properties](/components/card.md#property-overrides) such as `title`, `text`, `icon`, `image`, `kicker`, and `footer`.
+`v4.2` adds a new [`compact`](/components/card.md#compact) Card layout and new customizable properties such as `title`, `text`, `icon`, `image`, `kicker`, and `footer`.
 
 Use the `compact` layout when you want a smaller card without an image.
 

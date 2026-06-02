@@ -151,7 +151,7 @@ Tag | Page count
 Tag | Page count {.compact}
 --- | ---
 [!badge community|info](/tags/community) | 2
-[!badge component|info](/tags/component) | 27
+[!badge component|info](/tags/component) | 28
 [!badge config|info](/tags/config) | 8
 [!badge ftp|info](/tags/ftp) | 1
 [!badge github|info](/tags/github) | 4
@@ -306,7 +306,7 @@ The following sample demonstrates how to get all the Pages based on a specific t
 - Templating (5 children)
 - Blog (15 children)
 - Guides (11 children)
-- Components (30 children)
+- Components (31 children)
 - Not Found (0 children)
 
 ---

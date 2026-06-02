@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511239512">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833693543825">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833693543825" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511239512" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833693543825" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833693543825" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -380,6 +380,7 @@
 | `base-color` | Brand color | `#5495f1` | `#5495f1` |
 | `base-white` | Pure white color | `#ffffff` | `#ffffff` |
 | `base-black` | Pure black color | `#000000` | `#000000` |
+| `base-dark` | Pure dark color | `#121212` | `#121212` |
 | `base-bg` | Main background color | `base-white` | `dark-900` |
 | `base-text` | Primary text color | `gray-700` | `dark-300` |
 | `base-text-muted` | Muted text color | `gray-400` | `gray-400` |
@@ -423,6 +424,12 @@
 <td>Pure black color</td>
 <td><code translate="no" class="whitespace-nowrap" v-pre>#000000<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#000000;"></span></code></td>
 <td><code translate="no" class="whitespace-nowrap" v-pre>#000000<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#000000;"></span></code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>base-dark</code></td>
+<td>Pure dark color</td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#121212<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#121212;"></span></code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#121212<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#121212;"></span></code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>base-bg</code></td>
@@ -1241,7 +1248,20 @@
 <retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
 | --- | --- | --- | --- |
 | `transparent` | Transparent color value | `transparent` | `transparent` |
-| `skeleton-bg` | Skeleton loading background | `gray-200` | `dark-600` |">
+| `skeleton-bg` | Skeleton loading background | `gray-200` | `dark-600` |
+| `selector` | Browser accent color used by controls that inherit the selector color | `#5495f1` | `#5495f1` |
+| `grid` | Grid guide color | `#5495f1` | `#5495f1` |
+| `radius-xl` | Extra large shared radius token | `0.75rem` | `0.75rem` |
+| `radius-2xl` | Two extra large shared radius token | `1rem` | `1rem` |
+| `mix-50` | Color mixing percentage for the `50` palette stop | `10%` | `10%` |
+| `mix-100` | Color mixing percentage for the `100` palette stop | `15%` | `15%` |
+| `mix-200` | Color mixing percentage for the `200` palette stop | `30%` | `30%` |
+| `mix-300` | Color mixing percentage for the `300` palette stop | `50%` | `50%` |
+| `mix-400` | Color mixing percentage for the `400` palette stop | `70%` | `70%` |
+| `mix-600` | Color mixing percentage for the `600` palette stop | `90%` | `90%` |
+| `mix-700` | Color mixing percentage for the `700` palette stop | `80%` | `80%` |
+| `mix-800` | Color mixing percentage for the `800` palette stop | `60%` | `60%` |
+| `mix-900` | Color mixing percentage for the `900` palette stop | `40%` | `40%` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1264,6 +1284,84 @@
 <td>Skeleton loading background</td>
 <td><code translate="no" v-pre>gray-200</code></td>
 <td><code translate="no" v-pre>dark-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>selector</code></td>
+<td>Browser accent color used by controls that inherit the selector color</td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>grid</code></td>
+<td>Grid guide color</td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
+<td><code translate="no" class="whitespace-nowrap" v-pre>#5495f1<span class="color-preview-display ml-color-preview-margin-left border border-color-preview-border rounded-full h-color-preview-height w-color-preview-width" style="background-color:#5495f1;"></span></code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>radius-xl</code></td>
+<td>Extra large shared radius token</td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>radius-2xl</code></td>
+<td>Two extra large shared radius token</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-50</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>50</code> palette stop</td>
+<td><code translate="no" v-pre>10%</code></td>
+<td><code translate="no" v-pre>10%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-100</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>100</code> palette stop</td>
+<td><code translate="no" v-pre>15%</code></td>
+<td><code translate="no" v-pre>15%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-200</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>200</code> palette stop</td>
+<td><code translate="no" v-pre>30%</code></td>
+<td><code translate="no" v-pre>30%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-300</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>300</code> palette stop</td>
+<td><code translate="no" v-pre>50%</code></td>
+<td><code translate="no" v-pre>50%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-400</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>400</code> palette stop</td>
+<td><code translate="no" v-pre>70%</code></td>
+<td><code translate="no" v-pre>70%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-600</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>600</code> palette stop</td>
+<td><code translate="no" v-pre>90%</code></td>
+<td><code translate="no" v-pre>90%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-700</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>700</code> palette stop</td>
+<td><code translate="no" v-pre>80%</code></td>
+<td><code translate="no" v-pre>80%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-800</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>800</code> palette stop</td>
+<td><code translate="no" v-pre>60%</code></td>
+<td><code translate="no" v-pre>60%</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>mix-900</code></td>
+<td>Color mixing percentage for the <code translate="no" v-pre>900</code> palette stop</td>
+<td><code translate="no" v-pre>40%</code></td>
+<td><code translate="no" v-pre>40%</code></td>
 </tr>
 </tbody>
 </table>
@@ -1356,7 +1454,9 @@
 | `header-title-max-width` | Header title maximum width | `none` | `none` |
 | `header-text` | Header text color | `base-link` | `base-link` |
 | `header-text-weight` | Header text font weight | `base-link-weight` | `base-link-weight` |
-| `header-text-hover` | Header text hover color | `base-link-hover` | `base-link-hover` |">
+| `header-text-hover` | Header text hover color | `base-link-hover` | `base-link-hover` |
+| `header-height-mobile` | Header height on mobile | `4rem` | `4rem` |
+| `header-height-desktop` | Header height on desktop | `5rem` | `5rem` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1434,6 +1534,107 @@
 <td><code translate="no" v-pre>base-link-hover</code></td>
 <td><code translate="no" v-pre>base-link-hover</code></td>
 </tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>header-height-mobile</code></td>
+<td>Header height on mobile</td>
+<td><code translate="no" v-pre>4rem</code></td>
+<td><code translate="no" v-pre>4rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>header-height-desktop</code></td>
+<td>Header height on desktop</td>
+<td><code translate="no" v-pre>5rem</code></td>
+<td><code translate="no" v-pre>5rem</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<h2 id="layout">Layout</h2>
+<p>Variables controlling layout dimensions for content, sidebars, header height, and footer spacing.</p>
+<retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `layout-site-max-width` | Maximum width for the overall site container (header, main content shell, and constrained footer areas) | `1800px` | `1800px` |
+| `layout-default-content-min-width` | Minimum width for default layout content area | `0` | `0` |
+| `layout-default-content-max-width` | Maximum width for default layout content area | `none` | `none` |
+| `layout-blog-content-min-width` | Minimum width for blog layout content area | `0` | `0` |
+| `layout-blog-content-max-width` | Maximum width for blog layout content area | `49.75rem` | `49.75rem` |
+| `layout-central-content-min-width` | Minimum width for central layout content area | `0` | `0` |
+| `layout-central-content-max-width` | Maximum width for central layout content area | `49.75rem` | `49.75rem` |
+| `layout-sidebar-left-width` | Left sidebar width | `18.75rem` | `18.75rem` |
+| `layout-sidebar-right-width-md` | Right sidebar width at medium breakpoint | `26rem` | `26rem` |
+| `layout-sidebar-right-width-lg` | Right sidebar width at large breakpoint | `16rem` | `16rem` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th class="whitespace-nowrap">Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-site-max-width</code></td>
+<td>Maximum width for the overall site container (header, main content shell, and constrained footer areas)</td>
+<td><code translate="no" v-pre>1800px</code></td>
+<td><code translate="no" v-pre>1800px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-default-content-min-width</code></td>
+<td>Minimum width for default layout content area</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-default-content-max-width</code></td>
+<td>Maximum width for default layout content area</td>
+<td><code translate="no" v-pre>none</code></td>
+<td><code translate="no" v-pre>none</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-blog-content-min-width</code></td>
+<td>Minimum width for blog layout content area</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-blog-content-max-width</code></td>
+<td>Maximum width for blog layout content area</td>
+<td><code translate="no" v-pre>49.75rem</code></td>
+<td><code translate="no" v-pre>49.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-central-content-min-width</code></td>
+<td>Minimum width for central layout content area</td>
+<td><code translate="no" v-pre>0</code></td>
+<td><code translate="no" v-pre>0</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-central-content-max-width</code></td>
+<td>Maximum width for central layout content area</td>
+<td><code translate="no" v-pre>49.75rem</code></td>
+<td><code translate="no" v-pre>49.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-sidebar-left-width</code></td>
+<td>Left sidebar width</td>
+<td><code translate="no" v-pre>18.75rem</code></td>
+<td><code translate="no" v-pre>18.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-sidebar-right-width-md</code></td>
+<td>Right sidebar width at medium breakpoint</td>
+<td><code translate="no" v-pre>26rem</code></td>
+<td><code translate="no" v-pre>26rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>layout-sidebar-right-width-lg</code></td>
+<td>Right sidebar width at large breakpoint</td>
+<td><code translate="no" v-pre>16rem</code></td>
+<td><code translate="no" v-pre>16rem</code></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1448,9 +1649,32 @@
 | `search-border` | Search input border color | `base-border` | `base-border-hover` |
 | `search-border-hover` | Search input hover border color | `base-border-hover` | `base-border-strong` |
 | `search-border-focus` | Search input focus border color | `base-border-hover` | `base-border-strong` |
+| `search-highlight-bg` | Search result highlight background | `base-100` | `base-800` |
 | `search-hint-text` | Search hint text color | `search-placeholder` | `search-placeholder` |
 | `search-hint-bg` | Search hint background | `header-bg` | `header-bg` |
-| `search-hint-border` | Search hint border color | `search-border` | `search-border` |">
+| `search-hint-border` | Search hint border color | `search-border` | `search-border` |
+| `search-result-heading` | Search result heading text color | `base-text-strong` | `base-text-strong` |
+| `search-result-text` | Search result summary text color | `gray-400` | `dark-350` |
+| `search-result-breadcrumb` | Search result breadcrumb text color | `header-text` | `header-text` |
+| `search-result-breadcrumb-hover` | Search result breadcrumb hover text color | `header-text-hover` | `header-text-hover` |
+| `search-result-icon` | Search result icon color | `base-text-muted` | `base-text-muted` |
+| `search-result-hover` | Search result hover background | `base-item-bg-hover` | `dark-450` |
+| `search-result-active-bg` | Active search result background | `search-result-hover` | `search-result-hover` |
+| `search-result-active-ring` | Active search result ring color | `base-200` | `dark-650` |
+| `search-result-active-ring-width` | Active search result ring width | `1px` | `1px` |
+| `search-result-active-radius` | Active search result border radius | `0.5rem` | `0.5rem` |
+| `search-result-border` | Search result border color | `gray-100` | `dark-500` |
+| `search-result-code-bg` | Search result inline code background | `gray-100` | `dark-600` |
+| `search-result-count` | Search result count text color | `base-text-muted` | `base-text-muted` |
+| `search-no-results-text` | Search no-results text color | `base-text-muted` | `base-text-muted` |
+| `search-no-results-icon` | Search no-results icon color | `gray-300` | `gray-600` |
+| `search-footer-text` | Search footer text color | `base-text-muted` | `base-text-muted` |
+| `search-footer-kbd-bg` | Search footer keyboard key background | `gray-100` | `dark-500` |
+| `search-modal-bg` | Search modal background | `base-white` | `dark-650` |
+| `search-modal-border` | Search modal border color | `gray-200` | `dark-500` |
+| `search-results-bg` | Search results panel background | `base-white` | `dark-700` |
+| `search-backdrop` | Search modal backdrop background | `rgba(75, 85, 99, 0.7)` | `rgba(18, 18, 18, 0.8)` |
+| `search-backdrop-blur` | Search modal backdrop blur | `4px` | `4px` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1499,6 +1723,12 @@
 <td><code translate="no" v-pre>base-border-strong</code></td>
 </tr>
 <tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-highlight-bg</code></td>
+<td>Search result highlight background</td>
+<td><code translate="no" v-pre>base-100</code></td>
+<td><code translate="no" v-pre>base-800</code></td>
+</tr>
+<tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>search-hint-text</code></td>
 <td>Search hint text color</td>
 <td><code translate="no" v-pre>search-placeholder</code></td>
@@ -1515,6 +1745,138 @@
 <td>Search hint border color</td>
 <td><code translate="no" v-pre>search-border</code></td>
 <td><code translate="no" v-pre>search-border</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-heading</code></td>
+<td>Search result heading text color</td>
+<td><code translate="no" v-pre>base-text-strong</code></td>
+<td><code translate="no" v-pre>base-text-strong</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-text</code></td>
+<td>Search result summary text color</td>
+<td><code translate="no" v-pre>gray-400</code></td>
+<td><code translate="no" v-pre>dark-350</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-breadcrumb</code></td>
+<td>Search result breadcrumb text color</td>
+<td><code translate="no" v-pre>header-text</code></td>
+<td><code translate="no" v-pre>header-text</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-breadcrumb-hover</code></td>
+<td>Search result breadcrumb hover text color</td>
+<td><code translate="no" v-pre>header-text-hover</code></td>
+<td><code translate="no" v-pre>header-text-hover</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-icon</code></td>
+<td>Search result icon color</td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-hover</code></td>
+<td>Search result hover background</td>
+<td><code translate="no" v-pre>base-item-bg-hover</code></td>
+<td><code translate="no" v-pre>dark-450</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-active-bg</code></td>
+<td>Active search result background</td>
+<td><code translate="no" v-pre>search-result-hover</code></td>
+<td><code translate="no" v-pre>search-result-hover</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-active-ring</code></td>
+<td>Active search result ring color</td>
+<td><code translate="no" v-pre>base-200</code></td>
+<td><code translate="no" v-pre>dark-650</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-active-ring-width</code></td>
+<td>Active search result ring width</td>
+<td><code translate="no" v-pre>1px</code></td>
+<td><code translate="no" v-pre>1px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-active-radius</code></td>
+<td>Active search result border radius</td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-border</code></td>
+<td>Search result border color</td>
+<td><code translate="no" v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>dark-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-code-bg</code></td>
+<td>Search result inline code background</td>
+<td><code translate="no" v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>dark-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-result-count</code></td>
+<td>Search result count text color</td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-no-results-text</code></td>
+<td>Search no-results text color</td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-no-results-icon</code></td>
+<td>Search no-results icon color</td>
+<td><code translate="no" v-pre>gray-300</code></td>
+<td><code translate="no" v-pre>gray-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-footer-text</code></td>
+<td>Search footer text color</td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+<td><code translate="no" v-pre>base-text-muted</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-footer-kbd-bg</code></td>
+<td>Search footer keyboard key background</td>
+<td><code translate="no" v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>dark-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-modal-bg</code></td>
+<td>Search modal background</td>
+<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>dark-650</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-modal-border</code></td>
+<td>Search modal border color</td>
+<td><code translate="no" v-pre>gray-200</code></td>
+<td><code translate="no" v-pre>dark-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-results-bg</code></td>
+<td>Search results panel background</td>
+<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>dark-700</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-backdrop</code></td>
+<td>Search modal backdrop background</td>
+<td><code translate="no" v-pre>rgba(75, 85, 99, 0.7)</code></td>
+<td><code translate="no" v-pre>rgba(18, 18, 18, 0.8)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>search-backdrop-blur</code></td>
+<td>Search modal backdrop blur</td>
+<td><code translate="no" v-pre>4px</code></td>
+<td><code translate="no" v-pre>4px</code></td>
 </tr>
 </tbody>
 </table>
@@ -1589,7 +1951,12 @@
 | `body-text` | Main content text color | `base-text` | `base-text` |
 | `body-link` | Body link color | `base-link` | `base-link` |
 | `body-link-hover` | Body link hover color | `base-link-hover` | `base-link-hover` |
-| `body-link-weight` | Body link font weight | `base-link-weight` | `base-link-weight` |">
+| `body-link-weight` | Body link font weight | `base-link-weight` | `base-link-weight` |
+| `body-link-decoration-line` | Body link text decoration line | `underline` | `underline` |
+| `body-link-decoration-thickness` | Body link underline thickness | `1px` | `1px` |
+| `body-link-underline-offset` | Body link underline offset | `4px` | `4px` |
+| `body-link-decoration-color` | Body link underline color | `base-200` | `base-800` |
+| `body-link-decoration-color-hover` | Body link hover underline color | `base-600` | `base-500` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1630,6 +1997,36 @@
 <td>Body link font weight</td>
 <td><code translate="no" v-pre>base-link-weight</code></td>
 <td><code translate="no" v-pre>base-link-weight</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>body-link-decoration-line</code></td>
+<td>Body link text decoration line</td>
+<td><code translate="no" v-pre>underline</code></td>
+<td><code translate="no" v-pre>underline</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>body-link-decoration-thickness</code></td>
+<td>Body link underline thickness</td>
+<td><code translate="no" v-pre>1px</code></td>
+<td><code translate="no" v-pre>1px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>body-link-underline-offset</code></td>
+<td>Body link underline offset</td>
+<td><code translate="no" v-pre>4px</code></td>
+<td><code translate="no" v-pre>4px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>body-link-decoration-color</code></td>
+<td>Body link underline color</td>
+<td><code translate="no" v-pre>base-200</code></td>
+<td><code translate="no" v-pre>base-800</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>body-link-decoration-color-hover</code></td>
+<td>Body link hover underline color</td>
+<td><code translate="no" v-pre>base-600</code></td>
+<td><code translate="no" v-pre>base-500</code></td>
 </tr>
 </tbody>
 </table>
@@ -2218,7 +2615,14 @@
 | `toc-text-active` | Table of contents active text color | `base-500` | `base-500` |
 | `toc-border-active` | Table of contents active border color | `base-500` | `base-500` |
 | `toc-heading-case` | Table of contents heading text transform | `uppercase` | `uppercase` |
-| `toc-heading-weight` | Table of contents heading font weight | `600` | `600` |">
+| `toc-heading-weight` | Table of contents heading font weight | `600` | `600` |
+| `toc-label-text` | Table of contents label text color | `toc-heading` | `toc-heading` |
+| `toc-label-text-hover` | Table of contents label hover text color | `body-link` | `body-link` |
+| `toc-label-decoration-line` | Table of contents label text decoration line | `inherit` | `inherit` |
+| `toc-label-decoration-thickness` | Table of contents label text decoration thickness | `inherit` | `inherit` |
+| `toc-label-underline-offset` | Table of contents label underline offset | `inherit` | `inherit` |
+| `toc-label-decoration-color` | Table of contents label decoration color | `currentColor` | `currentColor` |
+| `toc-label-decoration-color-hover` | Table of contents label hover decoration color | `currentColor` | `currentColor` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -2271,6 +2675,48 @@
 <td>Table of contents heading font weight</td>
 <td><code translate="no" v-pre>600</code></td>
 <td><code translate="no" v-pre>600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-text</code></td>
+<td>Table of contents label text color</td>
+<td><code translate="no" v-pre>toc-heading</code></td>
+<td><code translate="no" v-pre>toc-heading</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-text-hover</code></td>
+<td>Table of contents label hover text color</td>
+<td><code translate="no" v-pre>body-link</code></td>
+<td><code translate="no" v-pre>body-link</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-decoration-line</code></td>
+<td>Table of contents label text decoration line</td>
+<td><code translate="no" v-pre>inherit</code></td>
+<td><code translate="no" v-pre>inherit</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-decoration-thickness</code></td>
+<td>Table of contents label text decoration thickness</td>
+<td><code translate="no" v-pre>inherit</code></td>
+<td><code translate="no" v-pre>inherit</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-underline-offset</code></td>
+<td>Table of contents label underline offset</td>
+<td><code translate="no" v-pre>inherit</code></td>
+<td><code translate="no" v-pre>inherit</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-decoration-color</code></td>
+<td>Table of contents label decoration color</td>
+<td><code translate="no" v-pre>currentColor</code></td>
+<td><code translate="no" v-pre>currentColor</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>toc-label-decoration-color-hover</code></td>
+<td>Table of contents label hover decoration color</td>
+<td><code translate="no" v-pre>currentColor</code></td>
+<td><code translate="no" v-pre>currentColor</code></td>
 </tr>
 </tbody>
 </table>
@@ -2337,6 +2783,179 @@
 </table>
 </div>
 </retype-table>
+<h2 id="action-component">Action Component</h2>
+<p>Variables for customizing action buttons and action menus.</p>
+<retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `action-border-width` | Action border width | `1px` | `1px` |
+| `action-height` | Action button height | `1.75rem` | `1.75rem` |
+| `action-gap` | Gap between action button items | `0.375rem` | `0.375rem` |
+| `action-padding-x` | Action button horizontal padding | `1.25rem` | `1.25rem` |
+| `action-toggle-size` | Action menu toggle size | `1.75rem` | `1.75rem` |
+| `action-menu-offset-y` | Action menu vertical offset | `0.5rem` | `0.5rem` |
+| `action-menu-max-width` | Action menu maximum width | `min(300px, calc(100vw - 2rem))` | `min(300px, calc(100vw - 2rem))` |
+| `action-z-index` | Action button z-index | `10` | `10` |
+| `action-menu-z-index` | Action menu z-index | `10` | `10` |
+| `action-background` | Action button background | `search-bg` | `search-bg` |
+| `action-border-color` | Action button border color | `search-border` | `search-border` |
+| `action-border-color-hover` | Action button hover border color | `search-border-hover` | `search-border-hover` |
+| `action-text` | Action button text color | `search-text` | `search-text` |
+| `action-text-muted` | Action muted text color | `search-placeholder` | `search-placeholder` |
+| `action-primary-hover-text` | Primary action hover text color | `gray-700` | `dark-200` |
+| `action-toggle-hover-text` | Action menu toggle hover text color | `gray-600` | `dark-200` |
+| `action-menu-panel-background` | Action menu panel background | `base-bg` | `base-bg` |
+| `action-menu-panel-border` | Action menu panel border color | `base-border` | `base-border` |
+| `action-menu-item-text` | Action menu item text color | `base-text` | `base-text` |
+| `action-menu-item-description-text` | Action menu item description text color | `gray-400` | `dark-350` |
+| `action-menu-item-hover-text` | Action menu item hover text color | `gray-600` | `dark-200` |
+| `action-menu-item-hover-bg` | Action menu item hover background | `base-item-bg-hover` | `base-item-bg-hover` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th class="whitespace-nowrap">Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-border-width</code></td>
+<td>Action border width</td>
+<td><code translate="no" v-pre>1px</code></td>
+<td><code translate="no" v-pre>1px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-height</code></td>
+<td>Action button height</td>
+<td><code translate="no" v-pre>1.75rem</code></td>
+<td><code translate="no" v-pre>1.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-gap</code></td>
+<td>Gap between action button items</td>
+<td><code translate="no" v-pre>0.375rem</code></td>
+<td><code translate="no" v-pre>0.375rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-padding-x</code></td>
+<td>Action button horizontal padding</td>
+<td><code translate="no" v-pre>1.25rem</code></td>
+<td><code translate="no" v-pre>1.25rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-toggle-size</code></td>
+<td>Action menu toggle size</td>
+<td><code translate="no" v-pre>1.75rem</code></td>
+<td><code translate="no" v-pre>1.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-offset-y</code></td>
+<td>Action menu vertical offset</td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-max-width</code></td>
+<td>Action menu maximum width</td>
+<td><code translate="no" v-pre>min(300px, calc(100vw - 2rem))</code></td>
+<td><code translate="no" v-pre>min(300px, calc(100vw - 2rem))</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-z-index</code></td>
+<td>Action button z-index</td>
+<td><code translate="no" v-pre>10</code></td>
+<td><code translate="no" v-pre>10</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-z-index</code></td>
+<td>Action menu z-index</td>
+<td><code translate="no" v-pre>10</code></td>
+<td><code translate="no" v-pre>10</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-background</code></td>
+<td>Action button background</td>
+<td><code translate="no" v-pre>search-bg</code></td>
+<td><code translate="no" v-pre>search-bg</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-border-color</code></td>
+<td>Action button border color</td>
+<td><code translate="no" v-pre>search-border</code></td>
+<td><code translate="no" v-pre>search-border</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-border-color-hover</code></td>
+<td>Action button hover border color</td>
+<td><code translate="no" v-pre>search-border-hover</code></td>
+<td><code translate="no" v-pre>search-border-hover</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-text</code></td>
+<td>Action button text color</td>
+<td><code translate="no" v-pre>search-text</code></td>
+<td><code translate="no" v-pre>search-text</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-text-muted</code></td>
+<td>Action muted text color</td>
+<td><code translate="no" v-pre>search-placeholder</code></td>
+<td><code translate="no" v-pre>search-placeholder</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-primary-hover-text</code></td>
+<td>Primary action hover text color</td>
+<td><code translate="no" v-pre>gray-700</code></td>
+<td><code translate="no" v-pre>dark-200</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-toggle-hover-text</code></td>
+<td>Action menu toggle hover text color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>dark-200</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-panel-background</code></td>
+<td>Action menu panel background</td>
+<td><code translate="no" v-pre>base-bg</code></td>
+<td><code translate="no" v-pre>base-bg</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-panel-border</code></td>
+<td>Action menu panel border color</td>
+<td><code translate="no" v-pre>base-border</code></td>
+<td><code translate="no" v-pre>base-border</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-item-text</code></td>
+<td>Action menu item text color</td>
+<td><code translate="no" v-pre>base-text</code></td>
+<td><code translate="no" v-pre>base-text</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-item-description-text</code></td>
+<td>Action menu item description text color</td>
+<td><code translate="no" v-pre>gray-400</code></td>
+<td><code translate="no" v-pre>dark-350</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-item-hover-text</code></td>
+<td>Action menu item hover text color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>dark-200</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>action-menu-item-hover-bg</code></td>
+<td>Action menu item hover background</td>
+<td><code translate="no" v-pre>base-item-bg-hover</code></td>
+<td><code translate="no" v-pre>base-item-bg-hover</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <h2 id="backlinks-component">Backlinks Component</h2>
 <p>Variables for customizing backlinks appearance.</p>
 <retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
@@ -2352,10 +2971,6 @@
 | `backlinks-title-margin-bottom` | Backlinks title bottom margin | `heading-h2-margin-bottom` | `heading-h2-margin-bottom` |
 | `backlinks-title-font-size` | Backlinks title font size | `heading-h2-font-size` | `heading-h2-font-size` |
 | `backlinks-title-font-weight` | Backlinks title font weight | `heading-h2-weight` | `heading-h2-weight` |
-| `backlinks-card-border` | Backlinks card border color | `base-border` | `base-border` |
-| `backlinks-card-border-hover` | Backlinks card hover border color | `base-border-hover` | `base-border-hover` |
-| `backlinks-card-rounded` | Backlinks card border radius | `0.5rem` | `0.5rem` |
-| `backlinks-card-shadow-hover` | Backlinks card hover shadow | `shadow-xs` | `shadow-xs` |
 | `backlinks-link` | Backlinks link color | `base-link` | `base-link` |
 | `backlinks-link-hover` | Backlinks link hover color | `base-link-hover` | `base-link-hover` |
 | `backlinks-link-font-size` | Backlinks link font size | `0.875rem` | `0.875rem` |
@@ -2438,30 +3053,6 @@
 <td>Backlinks title font weight</td>
 <td><code translate="no" v-pre>heading-h2-weight</code></td>
 <td><code translate="no" v-pre>heading-h2-weight</code></td>
-</tr>
-<tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>backlinks-card-border</code></td>
-<td>Backlinks card border color</td>
-<td><code translate="no" v-pre>base-border</code></td>
-<td><code translate="no" v-pre>base-border</code></td>
-</tr>
-<tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>backlinks-card-border-hover</code></td>
-<td>Backlinks card hover border color</td>
-<td><code translate="no" v-pre>base-border-hover</code></td>
-<td><code translate="no" v-pre>base-border-hover</code></td>
-</tr>
-<tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>backlinks-card-rounded</code></td>
-<td>Backlinks card border radius</td>
-<td><code translate="no" v-pre>0.5rem</code></td>
-<td><code translate="no" v-pre>0.5rem</code></td>
-</tr>
-<tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>backlinks-card-shadow-hover</code></td>
-<td>Backlinks card hover shadow</td>
-<td><code translate="no" v-pre>shadow-xs</code></td>
-<td><code translate="no" v-pre>shadow-xs</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>backlinks-link</code></td>
@@ -2988,8 +3579,8 @@
 <h3 id="light-badge">Light Badge</h3>
 <retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `badge-light` | Light badge background | `base-white` | `base-white` |
-| `badge-light-hover` | Light badge hover background | `gray-100` | `dark-200` |
+| `badge-light` | Light badge background | `gray-50` | `gray-50` |
+| `badge-light-hover` | Light badge hover background | `gray-150` | `dark-200` |
 | `badge-light-text` | Light badge text color | `gray-600` | `dark-600` |
 | `badge-light-text-hover` | Light badge hover text color | `gray-600` | `dark-600` |
 | `badge-light-border` | Light badge border color | `gray-200` | `transparent` |
@@ -3008,13 +3599,13 @@
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>badge-light</code></td>
 <td>Light badge background</td>
-<td><code translate="no" v-pre>base-white</code></td>
-<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>gray-50</code></td>
+<td><code translate="no" v-pre>gray-50</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>badge-light-hover</code></td>
 <td>Light badge hover background</td>
-<td><code translate="no" v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>gray-150</code></td>
 <td><code translate="no" v-pre>dark-200</code></td>
 </tr>
 <tr>
@@ -3219,6 +3810,52 @@
 <td class="whitespace-nowrap"><code translate="no" v-pre>badge-contrast-border-hover</code></td>
 <td>Contrast badge hover border color</td>
 <td><code translate="no" v-pre>gray-800</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<h3 id="clean-badge">Clean Badge</h3>
+<retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `badge-clean` | Clean badge background | `base-white` | `base-dark` |
+| `badge-clean-hover` | Clean badge hover background | `gray-100` | `dark-600` |
+| `badge-clean-text` | Clean badge text color | `gray-600` | `base-white` |
+| `badge-clean-border` | Clean badge border color | `gray-600` | `base-white` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th class="whitespace-nowrap">Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>badge-clean</code></td>
+<td>Clean badge background</td>
+<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>base-dark</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>badge-clean-hover</code></td>
+<td>Clean badge hover background</td>
+<td><code translate="no" v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>dark-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>badge-clean-text</code></td>
+<td>Clean badge text color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>badge-clean-border</code></td>
+<td>Clean badge border color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
 <td><code translate="no" v-pre>base-white</code></td>
 </tr>
 </tbody>
@@ -3584,9 +4221,12 @@
 <h3 id="light-button">Light Button</h3>
 <retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `button-light` | Light button background | `gray-200` | `dark-250` |
-| `button-light-hover` | Light button hover background | `gray-300` | `dark-350` |
-| `button-light-text` | Light button text color | `gray-900` | `base-black` |">
+| `button-light` | Light button background | `gray-50` | `gray-50` |
+| `button-light-hover` | Light button hover background | `gray-150` | `dark-200` |
+| `button-light-text` | Light button text color | `gray-600` | `dark-600` |
+| `button-light-text-hover` | Light button hover text color | `gray-600` | `dark-600` |
+| `button-light-border` | Light button border color | `gray-200` | `transparent` |
+| `button-light-border-hover` | Light button hover border color | `gray-400` | `gray-400` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -3601,20 +4241,38 @@
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>button-light</code></td>
 <td>Light button background</td>
-<td><code translate="no" v-pre>gray-200</code></td>
-<td><code translate="no" v-pre>dark-250</code></td>
+<td><code translate="no" v-pre>gray-50</code></td>
+<td><code translate="no" v-pre>gray-50</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>button-light-hover</code></td>
 <td>Light button hover background</td>
-<td><code translate="no" v-pre>gray-300</code></td>
-<td><code translate="no" v-pre>dark-350</code></td>
+<td><code translate="no" v-pre>gray-150</code></td>
+<td><code translate="no" v-pre>dark-200</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>button-light-text</code></td>
 <td>Light button text color</td>
-<td><code translate="no" v-pre>gray-900</code></td>
-<td><code translate="no" v-pre>base-black</code></td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>dark-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-light-text-hover</code></td>
+<td>Light button hover text color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>dark-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-light-border</code></td>
+<td>Light button border color</td>
+<td><code translate="no" v-pre>gray-200</code></td>
+<td><code translate="no" v-pre>transparent</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-light-border-hover</code></td>
+<td>Light button hover border color</td>
+<td><code translate="no" v-pre>gray-400</code></td>
+<td><code translate="no" v-pre>gray-400</code></td>
 </tr>
 </tbody>
 </table>
@@ -3732,6 +4390,52 @@
 <td>Contrast button text color</td>
 <td><code translate="no" v-pre>gray-50</code></td>
 <td><code translate="no" v-pre>base-black</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<h3 id="clean-button">Clean Button</h3>
+<retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `button-clean` | Clean button background | `base-white` | `base-dark` |
+| `button-clean-hover` | Clean button hover background | `gray-100` | `dark-600` |
+| `button-clean-text` | Clean button text color | `gray-600` | `base-white` |
+| `button-clean-border` | Clean button border color | `gray-600` | `base-white` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th class="whitespace-nowrap">Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-clean</code></td>
+<td>Clean button background</td>
+<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>base-dark</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-clean-hover</code></td>
+<td>Clean button hover background</td>
+<td><code translate="no" v-pre>gray-100</code></td>
+<td><code translate="no" v-pre>dark-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-clean-text</code></td>
+<td>Clean button text color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>button-clean-border</code></td>
+<td>Clean button border color</td>
+<td><code translate="no" v-pre>gray-600</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
 </tr>
 </tbody>
 </table>
@@ -3907,14 +4611,16 @@
 | --- | --- | --- | --- |
 | `card-bg` | Card background color | `var(--base-bg)` | `var(--base-bg)` |
 | `card-border` | Card border color | `var(--gray-200)` | `var(--dark-700)` |
-| `card-border-hover` | Card hover border color | `var(--gray-400)` | `var(--dark-450)` |
+| `card-border-hover` | Card hover border color | `var(--base-border-hover)` | `var(--base-border-hover)` |
 | `card-rounded` | Card border radius | `0.5rem` | `0.5rem` |
 | `card-padding` | Card content padding | `1.5rem` | `1.5rem` |
+| `card-shadow-hover` | Card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
 | `card-margin-bottom` | Card bottom margin | `1.5rem` | `1.5rem` |
 | `card-max-width` | Card maximum width (wide screens) | `960px` | `960px` |
-| `card-max-width-sm` | Card maximum width (narrow screens) | `558px` | `558px` |
-| `card-min-width` | Card minimum width | `250px` | `250px` |
-| `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |
+| `card-max-width-sm` | Card maximum width (narrow screens) | `613px` | `613px` |
+| `card-min-width` | Card minimum width | `280px` | `280px` |
+| `card-image-bg` | Card image placeholder background | `var(--gray-50)` | `var(--dark-800)` |
+| `card-image-inner-border` | Card image inner border color | `var(--gray-200)` | `var(--dark-700)` |
 | `card-image-width` | Card image width percentage | `41.666667%` | `41.666667%` |
 | `card-title-text` | Card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
 | `card-title-font-size` | Card title font size | `1.125rem` | `1.125rem` |
@@ -3923,15 +4629,85 @@
 | `card-title-leading` | Card title line height | `1.375` | `1.375` |
 | `card-description-text` | Card description text color | `var(--body-text)` | `var(--body-text)` |
 | `card-description-margin-top` | Card description top margin | `0.5rem` | `0.5rem` |
-| `card-category-text` | Card category text color | `var(--body-link)` | `var(--body-link)` |
-| `card-category-font-size` | Card category font size | `0.8125rem` | `0.8125rem` |
-| `card-category-font-weight` | Card category font weight | `600` | `600` |
-| `card-category-case` | Card category text transform | `uppercase` | `uppercase` |
-| `card-date-text` | Card date text color | `var(--gray-500)` | `var(--dark-350)` |
-| `card-date-font-size` | Card date font size | `0.875rem` | `0.875rem` |
-| `card-date-margin-top` | Card date top margin | `0.75rem` | `0.75rem` |
-| `card-group-gap` | Portrait card group gap spacing | `1.5rem` | `1.5rem` |
-| `card-group-margin-bottom` | Portrait card group bottom margin | `1.5rem` | `1.5rem` |">
+| `card-kicker-text` | Card kicker text color | `var(--body-link)` | `var(--body-link)` |
+| `card-kicker-font-size` | Card kicker font size | `0.8125rem` | `0.8125rem` |
+| `card-kicker-font-weight` | Card kicker font weight | `600` | `600` |
+| `card-kicker-case` | Card kicker text transform | `uppercase` | `uppercase` |
+| `card-vert-kicker-title-gap` | Vertical Card gap between kicker and title | `0.75rem` | `0.75rem` |
+| `card-footer-text` | Card footer text color | `var(--gray-500)` | `var(--dark-350)` |
+| `card-footer-font-size` | Card footer font size | `0.875rem` | `0.875rem` |
+| `card-footer-margin-top` | Card footer top margin | `0.75rem` | `0.75rem` |
+| `card-group-gap` | Vertical, compact, signal, and snap card group gap spacing | `1.5rem` | `1.5rem` |
+| `card-group-margin-bottom` | Card group bottom margin | `1.5rem` | `1.5rem` |
+| `card-vert-max-width` | Vertical card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-vert-min-width` | Vertical card minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-compact-border` | Compact card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-compact-border-hover` | Compact card hover border color | `var(--card-border-hover)` | `var(--card-border-hover)` |
+| `card-compact-rounded` | Compact card border radius | `var(--card-rounded)` | `var(--card-rounded)` |
+| `card-compact-padding` | Compact card padding | `1rem` | `1rem` |
+| `card-compact-shadow-hover` | Compact card hover shadow | `var(--card-shadow-hover)` | `var(--card-shadow-hover)` |
+| `card-compact-title-text` | Compact card title text color | `var(--backlinks-link)` | `var(--backlinks-link)` |
+| `card-compact-title-hover-text` | Compact card title hover text color | `var(--backlinks-link-hover)` | `var(--backlinks-link-hover)` |
+| `card-compact-title-font-size` | Compact card title font size | `var(--backlinks-link-font-size)` | `var(--backlinks-link-font-size)` |
+| `card-compact-title-font-weight` | Compact card title font weight | `var(--body-link-weight)` | `var(--body-link-weight)` |
+| `card-compact-title-line-height` | Compact card title line height | `1.375` | `1.375` |
+| `card-compact-title-gap` | Compact card title icon gap | `0.5rem` | `0.5rem` |
+| `card-compact-title-margin-bottom` | Compact card title bottom margin | `0.25rem` | `0.25rem` |
+| `card-compact-description-text` | Compact card description text color | `var(--backlinks-text)` | `var(--backlinks-text)` |
+| `card-compact-description-font-size` | Compact card description font size | `var(--backlinks-text-font-size)` | `var(--backlinks-text-font-size)` |
+| `card-compact-description-font-weight` | Compact card description font weight | `var(--backlinks-text-font-weight)` | `var(--backlinks-text-font-weight)` |
+| `card-compact-icon-color` | Compact card icon color | `var(--backlinks-link)` | `var(--backlinks-link)` |
+| `card-compact-icon-size` | Compact card icon size | `1rem` | `1rem` |
+| `card-compact-image-size` | Compact card image size | `5rem` | `5rem` |
+| `card-compact-max-width` | Compact card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-compact-grid-min-width` | Compact card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-signal-border` | Signal card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-signal-border-hover` | Signal card hover border color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-rounded` | Signal card border radius | `var(--radius-2xl)` | `var(--radius-2xl)` |
+| `card-signal-padding` | Signal card padding | `1.25rem` | `1.25rem` |
+| `card-signal-padding-y` | Signal card vertical padding | `1.125rem` | `1.125rem` |
+| `card-signal-shadow-hover` | Signal card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `card-signal-title-text` | Signal card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-signal-title-hover-text` | Signal card title hover text color | `var(--body-link-hover)` | `var(--body-link-hover)` |
+| `card-signal-title-font-size` | Signal card title font size | `1rem` | `1rem` |
+| `card-signal-title-font-weight` | Signal card title font weight | `700` | `700` |
+| `card-signal-title-line-height` | Signal card title line height | `1.45` | `1.45` |
+| `card-signal-description-text` | Signal card description text color | `var(--body-text)` | `var(--body-text)` |
+| `card-signal-description-font-size` | Signal card description font size | `1rem` | `1rem` |
+| `card-signal-description-line-height` | Signal card description line height | `1.45` | `1.45` |
+| `card-signal-icon-color` | Signal card icon color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-icon-stroke-width` | Signal card icon stroke width | `2.2` | `2.2` |
+| `card-signal-icon-size` | Signal card icon size | `2rem` | `2rem` |
+| `card-signal-media-size` | Signal card media size | `3.25rem` | `3.25rem` |
+| `card-signal-media-rounded` | Signal card media border radius | `9999px` | `9999px` |
+| `card-signal-kicker-text` | Signal card kicker text color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-kicker-font-size` | Signal card kicker font size | `0.875rem` | `0.875rem` |
+| `card-signal-kicker-font-weight` | Signal card kicker font weight | `600` | `600` |
+| `card-signal-grid-min-width` | Signal card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-signal-max-width` | Signal card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-snap-border` | Snap card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-snap-border-hover` | Snap card hover border color | `var(--body-link)` | `var(--body-link)` |
+| `card-snap-rounded` | Snap card border radius | `var(--radius-xl)` | `var(--radius-xl)` |
+| `card-snap-padding` | Snap card padding | `var(--card-signal-padding)` | `var(--card-signal-padding)` |
+| `card-snap-padding-y` | Snap card vertical padding | `var(--card-signal-padding-y)` | `var(--card-signal-padding-y)` |
+| `card-snap-shadow-hover` | Snap card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `card-snap-title-text` | Snap card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-title-hover-text` | Snap card title hover text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-title-font-size` | Snap card title font size | `1.0625rem` | `1.0625rem` |
+| `card-snap-title-font-weight` | Snap card title font weight | `600` | `600` |
+| `card-snap-title-line-height` | Snap card title line height | `1.3` | `1.3` |
+| `card-snap-icon-color` | Snap card icon color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-icon-stroke-width` | Snap card icon stroke width | `var(--card-signal-icon-stroke-width)` | `var(--card-signal-icon-stroke-width)` |
+| `card-snap-icon-size` | Snap card icon size | `var(--card-signal-icon-size)` | `var(--card-signal-icon-size)` |
+| `card-snap-media-size` | Snap card media size | `var(--card-signal-media-size)` | `var(--card-signal-media-size)` |
+| `card-snap-media-rounded` | Snap card media border radius | `9999px` | `9999px` |
+| `card-snap-image-rounded` | Snap card image border radius | `var(--card-snap-media-rounded)` | `var(--card-snap-media-rounded)` |
+| `card-snap-media-background` | Snap card media background color | `var(--base-white)` | `var(--base-white)` |
+| `card-snap-media-border` | Snap card media border color | `var(--gray-200)` | `var(--gray-200)` |
+| `card-snap-media-padding` | Snap card media padding | `0.75rem` | `0.75rem` |
+| `card-snap-gap` | Snap card content gap | `1rem` | `1rem` |
+| `card-snap-grid-min-width` | Snap card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-snap-max-width` | Snap card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -3958,8 +4734,8 @@
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-border-hover</code></td>
 <td>Card hover border color</td>
-<td><code translate="no" v-pre>var(--gray-400)</code></td>
-<td><code translate="no" v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--base-border-hover)</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-rounded</code></td>
@@ -3972,6 +4748,12 @@
 <td>Card content padding</td>
 <td><code translate="no" v-pre>1.5rem</code></td>
 <td><code translate="no" v-pre>1.5rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-shadow-hover</code></td>
+<td>Card hover shadow</td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-margin-bottom</code></td>
@@ -3988,20 +4770,26 @@
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-max-width-sm</code></td>
 <td>Card maximum width (narrow screens)</td>
-<td><code translate="no" v-pre>558px</code></td>
-<td><code translate="no" v-pre>558px</code></td>
+<td><code translate="no" v-pre>613px</code></td>
+<td><code translate="no" v-pre>613px</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-min-width</code></td>
 <td>Card minimum width</td>
-<td><code translate="no" v-pre>250px</code></td>
-<td><code translate="no" v-pre>250px</code></td>
+<td><code translate="no" v-pre>280px</code></td>
+<td><code translate="no" v-pre>280px</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-image-bg</code></td>
 <td>Card image placeholder background</td>
-<td><code translate="no" v-pre>var(--gray-300)</code></td>
-<td><code translate="no" v-pre>var(--dark-450)</code></td>
+<td><code translate="no" v-pre>var(--gray-50)</code></td>
+<td><code translate="no" v-pre>var(--dark-800)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-image-inner-border</code></td>
+<td>Card image inner border color</td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--dark-700)</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-image-width</code></td>
@@ -4052,58 +4840,478 @@
 <td><code translate="no" v-pre>0.5rem</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-category-text</code></td>
-<td>Card category text color</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-kicker-text</code></td>
+<td>Card kicker text color</td>
 <td><code translate="no" v-pre>var(--body-link)</code></td>
 <td><code translate="no" v-pre>var(--body-link)</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-category-font-size</code></td>
-<td>Card category font size</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-kicker-font-size</code></td>
+<td>Card kicker font size</td>
 <td><code translate="no" v-pre>0.8125rem</code></td>
 <td><code translate="no" v-pre>0.8125rem</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-category-font-weight</code></td>
-<td>Card category font weight</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-kicker-font-weight</code></td>
+<td>Card kicker font weight</td>
 <td><code translate="no" v-pre>600</code></td>
 <td><code translate="no" v-pre>600</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-category-case</code></td>
-<td>Card category text transform</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-kicker-case</code></td>
+<td>Card kicker text transform</td>
 <td><code translate="no" v-pre>uppercase</code></td>
 <td><code translate="no" v-pre>uppercase</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-date-text</code></td>
-<td>Card date text color</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-vert-kicker-title-gap</code></td>
+<td>Vertical Card gap between kicker and title</td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-footer-text</code></td>
+<td>Card footer text color</td>
 <td><code translate="no" v-pre>var(--gray-500)</code></td>
 <td><code translate="no" v-pre>var(--dark-350)</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-date-font-size</code></td>
-<td>Card date font size</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-footer-font-size</code></td>
+<td>Card footer font size</td>
 <td><code translate="no" v-pre>0.875rem</code></td>
 <td><code translate="no" v-pre>0.875rem</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>card-date-margin-top</code></td>
-<td>Card date top margin</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-footer-margin-top</code></td>
+<td>Card footer top margin</td>
 <td><code translate="no" v-pre>0.75rem</code></td>
 <td><code translate="no" v-pre>0.75rem</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-group-gap</code></td>
-<td>Portrait card group gap spacing</td>
+<td>Vertical, compact, signal, and snap card group gap spacing</td>
 <td><code translate="no" v-pre>1.5rem</code></td>
 <td><code translate="no" v-pre>1.5rem</code></td>
 </tr>
 <tr>
 <td class="whitespace-nowrap"><code translate="no" v-pre>card-group-margin-bottom</code></td>
-<td>Portrait card group bottom margin</td>
+<td>Card group bottom margin</td>
 <td><code translate="no" v-pre>1.5rem</code></td>
 <td><code translate="no" v-pre>1.5rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-vert-max-width</code></td>
+<td>Vertical card maximum width</td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-vert-min-width</code></td>
+<td>Vertical card minimum width</td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-border</code></td>
+<td>Compact card border color</td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-border-hover</code></td>
+<td>Compact card hover border color</td>
+<td><code translate="no" v-pre>var(--card-border-hover)</code></td>
+<td><code translate="no" v-pre>var(--card-border-hover)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-rounded</code></td>
+<td>Compact card border radius</td>
+<td><code translate="no" v-pre>var(--card-rounded)</code></td>
+<td><code translate="no" v-pre>var(--card-rounded)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-padding</code></td>
+<td>Compact card padding</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-shadow-hover</code></td>
+<td>Compact card hover shadow</td>
+<td><code translate="no" v-pre>var(--card-shadow-hover)</code></td>
+<td><code translate="no" v-pre>var(--card-shadow-hover)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-text</code></td>
+<td>Compact card title text color</td>
+<td><code translate="no" v-pre>var(--backlinks-link)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-link)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-hover-text</code></td>
+<td>Compact card title hover text color</td>
+<td><code translate="no" v-pre>var(--backlinks-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-link-hover)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-font-size</code></td>
+<td>Compact card title font size</td>
+<td><code translate="no" v-pre>var(--backlinks-link-font-size)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-link-font-size)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-font-weight</code></td>
+<td>Compact card title font weight</td>
+<td><code translate="no" v-pre>var(--body-link-weight)</code></td>
+<td><code translate="no" v-pre>var(--body-link-weight)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-line-height</code></td>
+<td>Compact card title line height</td>
+<td><code translate="no" v-pre>1.375</code></td>
+<td><code translate="no" v-pre>1.375</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-gap</code></td>
+<td>Compact card title icon gap</td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+<td><code translate="no" v-pre>0.5rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-title-margin-bottom</code></td>
+<td>Compact card title bottom margin</td>
+<td><code translate="no" v-pre>0.25rem</code></td>
+<td><code translate="no" v-pre>0.25rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-description-text</code></td>
+<td>Compact card description text color</td>
+<td><code translate="no" v-pre>var(--backlinks-text)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-text)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-description-font-size</code></td>
+<td>Compact card description font size</td>
+<td><code translate="no" v-pre>var(--backlinks-text-font-size)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-text-font-size)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-description-font-weight</code></td>
+<td>Compact card description font weight</td>
+<td><code translate="no" v-pre>var(--backlinks-text-font-weight)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-text-font-weight)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-icon-color</code></td>
+<td>Compact card icon color</td>
+<td><code translate="no" v-pre>var(--backlinks-link)</code></td>
+<td><code translate="no" v-pre>var(--backlinks-link)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-icon-size</code></td>
+<td>Compact card icon size</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-image-size</code></td>
+<td>Compact card image size</td>
+<td><code translate="no" v-pre>5rem</code></td>
+<td><code translate="no" v-pre>5rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-max-width</code></td>
+<td>Compact card maximum width</td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-compact-grid-min-width</code></td>
+<td>Compact card grid minimum width</td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-border</code></td>
+<td>Signal card border color</td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-border-hover</code></td>
+<td>Signal card hover border color</td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-rounded</code></td>
+<td>Signal card border radius</td>
+<td><code translate="no" v-pre>var(--radius-2xl)</code></td>
+<td><code translate="no" v-pre>var(--radius-2xl)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-padding</code></td>
+<td>Signal card padding</td>
+<td><code translate="no" v-pre>1.25rem</code></td>
+<td><code translate="no" v-pre>1.25rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-padding-y</code></td>
+<td>Signal card vertical padding</td>
+<td><code translate="no" v-pre>1.125rem</code></td>
+<td><code translate="no" v-pre>1.125rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-shadow-hover</code></td>
+<td>Signal card hover shadow</td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-title-text</code></td>
+<td>Signal card title text color</td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-title-hover-text</code></td>
+<td>Signal card title hover text color</td>
+<td><code translate="no" v-pre>var(--body-link-hover)</code></td>
+<td><code translate="no" v-pre>var(--body-link-hover)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-title-font-size</code></td>
+<td>Signal card title font size</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-title-font-weight</code></td>
+<td>Signal card title font weight</td>
+<td><code translate="no" v-pre>700</code></td>
+<td><code translate="no" v-pre>700</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-title-line-height</code></td>
+<td>Signal card title line height</td>
+<td><code translate="no" v-pre>1.45</code></td>
+<td><code translate="no" v-pre>1.45</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-description-text</code></td>
+<td>Signal card description text color</td>
+<td><code translate="no" v-pre>var(--body-text)</code></td>
+<td><code translate="no" v-pre>var(--body-text)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-description-font-size</code></td>
+<td>Signal card description font size</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-description-line-height</code></td>
+<td>Signal card description line height</td>
+<td><code translate="no" v-pre>1.45</code></td>
+<td><code translate="no" v-pre>1.45</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-icon-color</code></td>
+<td>Signal card icon color</td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-icon-stroke-width</code></td>
+<td>Signal card icon stroke width</td>
+<td><code translate="no" v-pre>2.2</code></td>
+<td><code translate="no" v-pre>2.2</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-icon-size</code></td>
+<td>Signal card icon size</td>
+<td><code translate="no" v-pre>2rem</code></td>
+<td><code translate="no" v-pre>2rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-media-size</code></td>
+<td>Signal card media size</td>
+<td><code translate="no" v-pre>3.25rem</code></td>
+<td><code translate="no" v-pre>3.25rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-media-rounded</code></td>
+<td>Signal card media border radius</td>
+<td><code translate="no" v-pre>9999px</code></td>
+<td><code translate="no" v-pre>9999px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-kicker-text</code></td>
+<td>Signal card kicker text color</td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-kicker-font-size</code></td>
+<td>Signal card kicker font size</td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+<td><code translate="no" v-pre>0.875rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-kicker-font-weight</code></td>
+<td>Signal card kicker font weight</td>
+<td><code translate="no" v-pre>600</code></td>
+<td><code translate="no" v-pre>600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-grid-min-width</code></td>
+<td>Signal card grid minimum width</td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-signal-max-width</code></td>
+<td>Signal card maximum width</td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-border</code></td>
+<td>Snap card border color</td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+<td><code translate="no" v-pre>var(--base-border)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-border-hover</code></td>
+<td>Snap card hover border color</td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+<td><code translate="no" v-pre>var(--body-link)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-rounded</code></td>
+<td>Snap card border radius</td>
+<td><code translate="no" v-pre>var(--radius-xl)</code></td>
+<td><code translate="no" v-pre>var(--radius-xl)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-padding</code></td>
+<td>Snap card padding</td>
+<td><code translate="no" v-pre>var(--card-signal-padding)</code></td>
+<td><code translate="no" v-pre>var(--card-signal-padding)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-padding-y</code></td>
+<td>Snap card vertical padding</td>
+<td><code translate="no" v-pre>var(--card-signal-padding-y)</code></td>
+<td><code translate="no" v-pre>var(--card-signal-padding-y)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-shadow-hover</code></td>
+<td>Snap card hover shadow</td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+<td><code translate="no" v-pre>var(--shadow-xs)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-title-text</code></td>
+<td>Snap card title text color</td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-title-hover-text</code></td>
+<td>Snap card title hover text color</td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-title-font-size</code></td>
+<td>Snap card title font size</td>
+<td><code translate="no" v-pre>1.0625rem</code></td>
+<td><code translate="no" v-pre>1.0625rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-title-font-weight</code></td>
+<td>Snap card title font weight</td>
+<td><code translate="no" v-pre>600</code></td>
+<td><code translate="no" v-pre>600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-title-line-height</code></td>
+<td>Snap card title line height</td>
+<td><code translate="no" v-pre>1.3</code></td>
+<td><code translate="no" v-pre>1.3</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-icon-color</code></td>
+<td>Snap card icon color</td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+<td><code translate="no" v-pre>var(--base-text-strong)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-icon-stroke-width</code></td>
+<td>Snap card icon stroke width</td>
+<td><code translate="no" v-pre>var(--card-signal-icon-stroke-width)</code></td>
+<td><code translate="no" v-pre>var(--card-signal-icon-stroke-width)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-icon-size</code></td>
+<td>Snap card icon size</td>
+<td><code translate="no" v-pre>var(--card-signal-icon-size)</code></td>
+<td><code translate="no" v-pre>var(--card-signal-icon-size)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-media-size</code></td>
+<td>Snap card media size</td>
+<td><code translate="no" v-pre>var(--card-signal-media-size)</code></td>
+<td><code translate="no" v-pre>var(--card-signal-media-size)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-media-rounded</code></td>
+<td>Snap card media border radius</td>
+<td><code translate="no" v-pre>9999px</code></td>
+<td><code translate="no" v-pre>9999px</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-image-rounded</code></td>
+<td>Snap card image border radius</td>
+<td><code translate="no" v-pre>var(--card-snap-media-rounded)</code></td>
+<td><code translate="no" v-pre>var(--card-snap-media-rounded)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-media-background</code></td>
+<td>Snap card media background color</td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+<td><code translate="no" v-pre>var(--base-white)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-media-border</code></td>
+<td>Snap card media border color</td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+<td><code translate="no" v-pre>var(--gray-200)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-media-padding</code></td>
+<td>Snap card media padding</td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+<td><code translate="no" v-pre>0.75rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-gap</code></td>
+<td>Snap card content gap</td>
+<td><code translate="no" v-pre>1rem</code></td>
+<td><code translate="no" v-pre>1rem</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-grid-min-width</code></td>
+<td>Snap card grid minimum width</td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+<td><code translate="no" v-pre>var(--card-min-width)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>card-snap-max-width</code></td>
+<td>Snap card maximum width</td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
+<td><code translate="no" v-pre>var(--card-max-width-sm)</code></td>
 </tr>
 </tbody>
 </table>
@@ -4245,6 +5453,95 @@
 </table>
 </div>
 </retype-table>
+<h2 id="footnote-popper-component">Footnote Popper Component</h2>
+<p>Variables for customizing inline footnote popper appearance.</p>
+<retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `footnote-popper-bg` | Footnote popper background | `base-100` | `base-100` |
+| `footnote-popper-text` | Footnote popper text color | `base-500` | `base-500` |
+| `footnote-popper-border` | Footnote popper border color | `base-200` | `base-200` |
+| `footnote-popper-link` | Footnote popper link color | `base-500` | `base-500` |
+| `footnote-popper-link-hover` | Footnote popper link hover color | `base-700` | `base-600` |
+| `footnote-popper-code-bg` | Footnote popper inline code background | `base-white` | `base-white` |
+| `footnote-popper-code-border` | Footnote popper inline code border color | `base-200` | `base-200` |
+| `footnote-popper-ref-open-bg` | Open footnote reference background | `base-100` | `color-mix(in srgb, var(--base-100) 90%, transparent)` |
+| `footnote-popper-ref-open-text` | Open footnote reference text color | `base-500` | `base-500` |
+| `footnote-popper-ref-open-border` | Open footnote reference border color | `base-200` | `color-mix(in srgb, var(--base-200) 90%, transparent)` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th class="whitespace-nowrap">Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-bg</code></td>
+<td>Footnote popper background</td>
+<td><code translate="no" v-pre>base-100</code></td>
+<td><code translate="no" v-pre>base-100</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-text</code></td>
+<td>Footnote popper text color</td>
+<td><code translate="no" v-pre>base-500</code></td>
+<td><code translate="no" v-pre>base-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-border</code></td>
+<td>Footnote popper border color</td>
+<td><code translate="no" v-pre>base-200</code></td>
+<td><code translate="no" v-pre>base-200</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-link</code></td>
+<td>Footnote popper link color</td>
+<td><code translate="no" v-pre>base-500</code></td>
+<td><code translate="no" v-pre>base-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-link-hover</code></td>
+<td>Footnote popper link hover color</td>
+<td><code translate="no" v-pre>base-700</code></td>
+<td><code translate="no" v-pre>base-600</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-code-bg</code></td>
+<td>Footnote popper inline code background</td>
+<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-code-border</code></td>
+<td>Footnote popper inline code border color</td>
+<td><code translate="no" v-pre>base-200</code></td>
+<td><code translate="no" v-pre>base-200</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-ref-open-bg</code></td>
+<td>Open footnote reference background</td>
+<td><code translate="no" v-pre>base-100</code></td>
+<td><code translate="no" v-pre>color-mix(in srgb, var(--base-100) 90%, transparent)</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-ref-open-text</code></td>
+<td>Open footnote reference text color</td>
+<td><code translate="no" v-pre>base-500</code></td>
+<td><code translate="no" v-pre>base-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>footnote-popper-ref-open-border</code></td>
+<td>Open footnote reference border color</td>
+<td><code translate="no" v-pre>base-200</code></td>
+<td><code translate="no" v-pre>color-mix(in srgb, var(--base-200) 90%, transparent)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <h2 id="image-component">Image Component</h2>
 <p>Variables for customizing image appearance.</p>
 <retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
@@ -4287,6 +5584,38 @@
 </retype-table>
 <h2 id="list-component">List Component</h2>
 <p>Variables for customizing list appearance.</p>
+<retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `list-checked` | Checked list item color | `base-500` | `base-500` |
+| `list-unchecked` | Unchecked list item color | `gray-300` | `dark-400` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th class="whitespace-nowrap">Variable</th>
+<th>Description</th>
+<th>Default <code translate="no" v-pre>base</code></th>
+<th>Default <code translate="no" v-pre>dark</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>list-checked</code></td>
+<td>Checked list item color</td>
+<td><code translate="no" v-pre>base-500</code></td>
+<td><code translate="no" v-pre>base-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>list-unchecked</code></td>
+<td>Unchecked list item color</td>
+<td><code translate="no" v-pre>gray-300</code></td>
+<td><code translate="no" v-pre>dark-400</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<h2 id="steps-component">Steps Component</h2>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -4410,10 +5739,14 @@
 </div>
 </div>
 </div>
+<p>Variables for customizing steps appearance.</p>
 <retype-table copy-text="| Variable| Description | Default&amp;nbsp;`base`  | Default&amp;nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `list-checked` | Checked list item color | `base-500` | `base-500` |
-| `list-unchecked` | Unchecked list item color | `gray-300` | `dark-400` |">
+| `steps-step-number-bg` | Step number background | `base-500` | `base-500` |
+| `steps-step-number-text` | Step number text color | `base-white` | `base-white` |
+| `steps-step-number-border` | Step number border color | `base-500` | `base-500` |
+| `steps-step-line` | Step connector line color | `gray-300` | `dark-500` |
+| `steps-step-title-text` | Step title text color | `base-text-strong` | `base-text-strong` |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -4426,16 +5759,34 @@
 </thead>
 <tbody>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>list-checked</code></td>
-<td>Checked list item color</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>steps-step-number-bg</code></td>
+<td>Step number background</td>
 <td><code translate="no" v-pre>base-500</code></td>
 <td><code translate="no" v-pre>base-500</code></td>
 </tr>
 <tr>
-<td class="whitespace-nowrap"><code translate="no" v-pre>list-unchecked</code></td>
-<td>Unchecked list item color</td>
+<td class="whitespace-nowrap"><code translate="no" v-pre>steps-step-number-text</code></td>
+<td>Step number text color</td>
+<td><code translate="no" v-pre>base-white</code></td>
+<td><code translate="no" v-pre>base-white</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>steps-step-number-border</code></td>
+<td>Step number border color</td>
+<td><code translate="no" v-pre>base-500</code></td>
+<td><code translate="no" v-pre>base-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>steps-step-line</code></td>
+<td>Step connector line color</td>
 <td><code translate="no" v-pre>gray-300</code></td>
-<td><code translate="no" v-pre>dark-400</code></td>
+<td><code translate="no" v-pre>dark-500</code></td>
+</tr>
+<tr>
+<td class="whitespace-nowrap"><code translate="no" v-pre>steps-step-title-text</code></td>
+<td>Step title text color</td>
+<td><code translate="no" v-pre>base-text-strong</code></td>
+<td><code translate="no" v-pre>base-text-strong</code></td>
 </tr>
 </tbody>
 </table>
@@ -4691,8 +6042,8 @@
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T14:40:25" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-05-30
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-06-01T23:29:40" title="2026-06-01" data-absolute-label="Last updated on 2026-06-01" data-absolute-label-html="Last updated on 2026-06-01" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-06-01
                     </time>
                 </div>
 

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511239512">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833693543825">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833693543825" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511239512" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833693543825" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833693543825" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -377,26 +377,28 @@ Using text|variant shorthand notation
 // With link and variant
 [!button text=&quot;My Button&quot; variant=&quot;success&quot;](https://retype.com/)</code></pre>
 </doc-codeblock></div>
-<retype-table copy-text="| Variant             | Example                                        |
-| ------------------- | ---------------------------------------------- |
-| `base`              | [!button variant=&quot;base&quot; text=&quot;Base&quot;]           |
-| `primary` (default) | [!button variant=&quot;primary&quot; text=&quot;Primary&quot;]     |
-| `secondary`         | [!button variant=&quot;secondary&quot; text=&quot;Secondary&quot;] |
-| `success`           | [!button variant=&quot;success&quot; text=&quot;Success&quot;]     |
-| `question`          | [!button variant=&quot;question&quot; text=&quot;Question&quot;]   |
-| `danger`            | [!button variant=&quot;danger&quot; text=&quot;Danger&quot;]       |
-| `warning`           | [!button variant=&quot;warning&quot; text=&quot;Warning&quot;]     |
-| `info`              | [!button variant=&quot;info&quot; text=&quot;Info&quot;]           |
-| `light`             | [!button variant=&quot;light&quot; text=&quot;Light&quot;]         |
-| `dark`              | [!button variant=&quot;dark&quot; text=&quot;Dark&quot;]           |
-| `ghost`             | [!button variant=&quot;ghost&quot; text=&quot;Ghost&quot;]         |
-| `contrast`          | [!button variant=&quot;contrast&quot; text=&quot;Contrast&quot;]   |">
+<retype-table copy-text="| Variant             | Text only                                      | With link                                                    |
+| ------------------- | ---------------------------------------------- | ------------------------------------------------------------ |
+| `base`              | [!button variant=&quot;base&quot; text=&quot;Base&quot;]           | [!button variant=&quot;base&quot; text=&quot;Base&quot;](#variant)             |
+| `primary` (default) | [!button variant=&quot;primary&quot; text=&quot;Primary&quot;]     | [!button variant=&quot;primary&quot; text=&quot;Primary&quot;](#variant)       |
+| `secondary`         | [!button variant=&quot;secondary&quot; text=&quot;Secondary&quot;] | [!button variant=&quot;secondary&quot; text=&quot;Secondary&quot;](#variant)   |
+| `success`           | [!button variant=&quot;success&quot; text=&quot;Success&quot;]     | [!button variant=&quot;success&quot; text=&quot;Success&quot;](#variant)       |
+| `question`          | [!button variant=&quot;question&quot; text=&quot;Question&quot;]   | [!button variant=&quot;question&quot; text=&quot;Question&quot;](#variant)     |
+| `danger`            | [!button variant=&quot;danger&quot; text=&quot;Danger&quot;]       | [!button variant=&quot;danger&quot; text=&quot;Danger&quot;](#variant)         |
+| `warning`           | [!button variant=&quot;warning&quot; text=&quot;Warning&quot;]     | [!button variant=&quot;warning&quot; text=&quot;Warning&quot;](#variant)       |
+| `info`              | [!button variant=&quot;info&quot; text=&quot;Info&quot;]           | [!button variant=&quot;info&quot; text=&quot;Info&quot;](#variant)             |
+| `light`             | [!button variant=&quot;light&quot; text=&quot;Light&quot;]         | [!button variant=&quot;light&quot; text=&quot;Light&quot;](#variant)           |
+| `dark`              | [!button variant=&quot;dark&quot; text=&quot;Dark&quot;]           | [!button variant=&quot;dark&quot; text=&quot;Dark&quot;](#variant)             |
+| `ghost`             | [!button variant=&quot;ghost&quot; text=&quot;Ghost&quot;]         | [!button variant=&quot;ghost&quot; text=&quot;Ghost&quot;](#variant)           |
+| `contrast`          | [!button variant=&quot;contrast&quot; text=&quot;Contrast&quot;]   | [!button variant=&quot;contrast&quot; text=&quot;Contrast&quot;](#variant)     |
+| `clean`             | [!button variant=&quot;clean&quot; text=&quot;Clean&quot;]         | [!button variant=&quot;clean&quot; text=&quot;Clean&quot;](#variant)           |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
 <th>Variant</th>
-<th>Example</th>
+<th>Text only</th>
+<th>With link</th>
 </tr>
 </thead>
 <tbody>
@@ -405,72 +407,117 @@ Using text|variant shorthand notation
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-base hover:bg-button-base-hover text-button-base-text px-4 h-10 text-sm rounded-md">
     <span>Base</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-base hover:bg-button-base-hover text-button-base-text px-4 h-10 text-sm rounded-md">
+    <span>Base</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>primary</code> (default)</td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
     <span>Primary</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span>Primary</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>secondary</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-secondary hover:bg-button-secondary-hover text-button-secondary-text px-4 h-10 text-sm rounded-md">
     <span>Secondary</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-secondary hover:bg-button-secondary-hover text-button-secondary-text px-4 h-10 text-sm rounded-md">
+    <span>Secondary</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>success</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-success hover:bg-button-success-hover text-button-success-text px-4 h-10 text-sm rounded-md">
     <span>Success</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-success hover:bg-button-success-hover text-button-success-text px-4 h-10 text-sm rounded-md">
+    <span>Success</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>question</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-question hover:bg-button-question-hover text-button-question-text hover:text-button-question-text-hover border border-button-question-border hover:border-button-question-border-hover px-4 h-10 text-sm rounded-md">
     <span>Question</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-question hover:bg-button-question-hover text-button-question-text hover:text-button-question-text-hover border border-button-question-border hover:border-button-question-border-hover px-4 h-10 text-sm rounded-md">
+    <span>Question</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>danger</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-md">
     <span>Danger</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-md">
+    <span>Danger</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>warning</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-warning hover:bg-button-warning-hover text-button-warning-text px-4 h-10 text-sm rounded-md">
     <span>Warning</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-warning hover:bg-button-warning-hover text-button-warning-text px-4 h-10 text-sm rounded-md">
+    <span>Warning</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>info</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-info hover:bg-button-info-hover text-button-info-text hover:text-button-info-text-hover border border-button-info-border hover:border-button-info-border-hover px-4 h-10 text-sm rounded-md">
     <span>Info</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-info hover:bg-button-info-hover text-button-info-text hover:text-button-info-text-hover border border-button-info-border hover:border-button-info-border-hover px-4 h-10 text-sm rounded-md">
+    <span>Info</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>light</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-light hover:bg-button-light-hover text-button-light-text px-4 h-10 text-sm rounded-md">
     <span>Light</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-light hover:bg-button-light-hover text-button-light-text px-4 h-10 text-sm rounded-md">
+    <span>Light</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>dark</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-dark hover:bg-button-dark-hover text-button-dark-text px-4 h-10 text-sm rounded-md">
     <span>Dark</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-dark hover:bg-button-dark-hover text-button-dark-text px-4 h-10 text-sm rounded-md">
+    <span>Dark</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>ghost</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-ghost hover:bg-button-ghost-hover text-button-ghost-text px-4 h-10 text-sm rounded-md">
     <span>Ghost</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-ghost hover:bg-button-ghost-hover text-button-ghost-text px-4 h-10 text-sm rounded-md">
+    <span>Ghost</span>
+</doc-anchor-trigger></td>
 </tr>
 <tr>
 <td><code translate="no" v-pre>contrast</code></td>
 <td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-contrast hover:bg-button-contrast-hover text-button-contrast-text px-4 h-10 text-sm rounded-md">
     <span>Contrast</span>
 </button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-contrast hover:bg-button-contrast-hover text-button-contrast-text px-4 h-10 text-sm rounded-md">
+    <span>Contrast</span>
+</doc-anchor-trigger></td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>clean</code></td>
+<td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span>Clean</span>
+</button></td>
+<td><doc-anchor-trigger to="#variant" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span>Clean</span>
+</doc-anchor-trigger></td>
 </tr>
 </tbody>
 </table>
@@ -681,6 +728,27 @@ Using text|variant shorthand notation
     <span>Rocket</span>
     <span class="docs-emoji ml-2">&#x1F680;</span>
 </button></p>
+<h3 id="custom-icon">Custom icon</h3>
+<p>Project icons can be used by setting the <code translate="no" v-pre>icon</code> property to the custom icon name.</p>
+<div id="custom-icon-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button variant=&quot;light&quot; icon=&quot;brand-printer&quot; text=&quot;Print&quot; action=&quot;print-page&quot;]
+
+[!button variant=&quot;clean&quot; icon=&quot;brand-printer&quot; text=&quot;Print&quot; action=&quot;print-page&quot; corners=&quot;pill&quot;] </code></pre>
+</doc-codeblock></div>
+<p><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-light hover:bg-button-light-hover text-button-light-text px-4 h-10 text-sm rounded-md">
+    <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g fill="currentColor">
+  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+</g></g></svg></span>
+    <span>Print</span>
+</button></p>
+<p><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-full">
+    <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g fill="currentColor">
+  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+</g></g></svg></span>
+    <span>Print</span>
+</button></p>
 <h3 id="image-file">Image file</h3>
 <p>Any image file can be used as the <code translate="no" v-pre>icon</code>.</p>
 <div id="image-file-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -732,6 +800,36 @@ Using text|variant shorthand notation
         </div>
     </div>
 </div>
+<hr>
+<h2 id="action">Action</h2>
+<p>A Button can run an <a href="/configuration/actions/">Action</a> instead of navigating to a link. This is useful for built-in actions such as <code translate="no" v-pre>print-page</code> and <a href="/configuration/actions/#custom-actions">Custom Actions</a>.</p>
+<div id="action-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button action=&quot;print-page&quot; text=&quot;Print page&quot;]
+
+[!button Print page](action:print-page)</code></pre>
+</doc-codeblock></div>
+<p><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span>Print page</span>
+</button></p>
+<p><a href="action:print-page" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+    <span>Print page</span>
+</a></p>
+<p>Custom actions in <code translate="no" v-pre>_components/actions/</code> can also return Button properties. The following action builds an <strong>Edit on GitHub</strong> link and updates the Button <code translate="no" v-pre>text</code>, <code translate="no" v-pre>variant</code>, <code translate="no" v-pre>corners</code>, and <code translate="no" v-pre>icon</code> during the build.</p>
+<div id="action-_componentsactionsedit-on-githubmd" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">_components/actions/edit-on-github.md</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+steps:
+  - with:
+      link: https://github.com/retypeapp/retype/edit/main{{ page.filePath }}
+      text: Edit on GitHub
+      variant: success
+      corners: pill
+      icon: mark-github
+---</code></pre>
+</doc-codeblock></div>
+<div id="action-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button Edit](action:edit-on-github)</code></pre>
+</doc-codeblock></div>
 <!-- Add content to _includes/bottom.md to include here -->
 <!-- Project wide abbreviations -->
 
@@ -745,8 +843,8 @@ Using text|variant shorthand notation
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-03-26T15:54:20" title="2026-03-26" data-absolute-label="Last updated on 2026-03-26" data-absolute-label-html="Last updated on 2026-03-26" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-03-26
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-06-01T23:31:07" title="2026-06-01" data-absolute-label="Last updated on 2026-06-01" data-absolute-label-html="Last updated on 2026-06-01" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-06-01
                     </time>
                 </div>
 

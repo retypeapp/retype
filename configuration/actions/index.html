@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833511239512">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833693543825">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -49,15 +49,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.6.0.833693543825" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833511239512" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833511239512" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833693543825" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833693543825" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833511239512" rel="stylesheet">
+    <link href="/static/styles.css?v=4.6.0.833693543825" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -348,6 +348,7 @@
 <h1 id="actions">Actions</h1>
 <p>Actions add reusable behavior for navigation <a href="/configuration/project/#links">links</a> and page <a href="/configuration/project/#actions">action</a> menus. An action can copy the current page link, print the page, open the Markdown source, or build a custom URL from the current page context.</p>
 <p>Retype includes several built-in actions and also discovers custom action definitions from the <strong>_components/actions/</strong> folder in your project.</p>
+<hr>
 <h2 id="page-action-button">Page action button</h2>
 <p>The <code translate="no" v-pre>actions.items</code> configuration controls the menu options on the page action menu button added to the right of the page title.</p>
 <p>Use <code translate="no" v-pre>actions.enabled</code> to toggle the page action menu button globally. Default is <code translate="no" v-pre>true</code>.</p>
@@ -407,6 +408,7 @@ footer:
       action: print-page</code></pre>
 </doc-codeblock></div>
 <p>See <a href="/configuration/project/#actions"><code translate="no" v-pre>actions</code></a> and <a href="/configuration/project/#links-action"><code translate="no" v-pre>links.action</code></a> in the project configuration reference.</p>
+<hr>
 <h2 id="built-in-actions">Built-in actions</h2>
 <p>Retype ships with the following built-in actions.</p>
 <retype-table copy-text="Action| Description
@@ -536,6 +538,7 @@ footer:
       action: view-page-markdown
       icon: markdown</code></pre>
 </doc-codeblock></div>
+<hr>
 <h2 id="custom-actions">Custom actions</h2>
 <p>Custom actions are defined in <strong>_components/actions/</strong>. Retype reads <strong>.yml</strong> and Markdown files with YAML frontmatter from that folder.</p>
 <p>The action id is taken from the optional <code translate="no" v-pre>id</code> field. If no <code translate="no" v-pre>id</code> is provided, Retype uses the filename without the extension.</p>
@@ -576,6 +579,7 @@ steps:
       action: edit-on-github
       target: blank</code></pre>
 </doc-codeblock></div>
+<hr>
 <h2 id="action-definitions">Action definitions</h2>
 <p>An action definition can include metadata, inputs, outputs, data, and steps.</p>
 <div id="action-definitions-_componentsactionscopy-page-markdownyml" class="codeblock-wrapper"><doc-codeblock>
@@ -695,6 +699,7 @@ steps:
 </div>
 </retype-table>
 <p>If a step does not include <code translate="no" v-pre>with</code>, Retype passes the previous step output into the next step. This makes simple chains concise.</p>
+<hr>
 <h2 id="template-context">Template context</h2>
 <p>Action templates can use page, project, content, inputs, and previous step data.</p>
 <retype-table copy-text="Variable | Description
@@ -772,6 +777,47 @@ steps:
 </table>
 </div>
 </retype-table>
+<hr>
+<h2 id="component-action">Component action</h2>
+<p>Markdown links and linkable components can run actions too. Configure the <code translate="no" v-pre>action</code> attribute, or use the <code translate="no" v-pre>action:&lt;name&gt;</code> destination shorthand.</p>
+<div id="component-action-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[Print page](action:print-page)
+
+[!button action=&quot;print-page&quot; text=&quot;Print page&quot;]
+[!button Print page](action:print-page)
+
+[!badge action=&quot;print-page&quot; text=&quot;Print page&quot;]
+[!badge Print page](action:print-page)</code></pre>
+</doc-codeblock></div>
+<p>Cards work well with build-time actions that return a <code translate="no" v-pre>link</code>.</p>
+<div id="component-action-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!card title=&quot;Edit on GitHub&quot; text=&quot;Open this page in GitHub&quot;](action:edit-on-github)</code></pre>
+</doc-codeblock></div>
+<p>Reference links, file downloads, and linked images can also use the <code translate="no" v-pre>action:&lt;name&gt;</code> destination shorthand.</p>
+<div id="component-action-code-3" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!ref Print page](action:print-page)
+
+[!file Print page](action:print-page)
+
+[![](/static/sample.jpg)](action:print-page)</code></pre>
+</doc-codeblock></div>
+<p>Custom actions in <strong>_components/actions/</strong> can return a <code translate="no" v-pre>link</code> and component-specific properties. For example, the following action builds an Edit on GitHub Button during the build and sets the Button <code translate="no" v-pre>text</code>, <code translate="no" v-pre>variant</code>, <code translate="no" v-pre>corners</code>, and <code translate="no" v-pre>icon</code>.</p>
+<div id="component-action-_componentsactionsedit-on-githubmd" class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">_components/actions/edit-on-github.md</div>
+<pre translate="no" class="language-yaml"><code v-pre class="language-yaml">---
+steps:
+  - with:
+      link: https://github.com/retypeapp/retype/edit/main{{ page.filePath }}
+      text: Edit on GitHub
+      variant: success
+      corners: pill
+      icon: mark-github
+---</code></pre>
+</doc-codeblock></div>
+<div id="component-action-code-4" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button Edit](action:edit-on-github)</code></pre>
+</doc-codeblock></div>
+<hr>
 <h2 id="handlers">handlers</h2>
 <p>Handlers are predefined browser-side functions that can be called from an action step. They provide common client-side behavior without allowing arbitrary JavaScript execution.</p>
 <retype-table copy-text="Handler | Description
@@ -872,6 +918,61 @@ steps:
     <h2>See also</h2>
 <div class="card-compact-group">
 <div class="card-compact-container">
+    <a href="/components/badge/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M10.75 3h2.5c.464 0 .909.184 1.237.513.329.328.513.773.513 1.237V7h5.25c.464 0 .909.184 1.237.513.329.328.513.773.513 1.237v10.5c0 .464-.184.909-.513 1.237A1.746 1.746 0 0 1 20.25 21H3.75A1.75 1.75 0 0 1 2 19.25V8.75c0-.464.184-.909.513-1.237A1.746 1.746 0 0 1 3.75 7H9V4.75c0-.464.184-.909.513-1.237A1.746 1.746 0 0 1 10.75 3Zm3.646 6.573A1.753 1.753 0 0 1 13.25 10h-2.5a1.753 1.753 0 0 1-1.732-1.5H3.75a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V8.75a.25.25 0 0 0-.25-.25h-5.268c-.06.416-.268.797-.586 1.073Zm-8.25 1.573A.504.504 0 0 1 6.5 11h3c.133 0 .26.053.354.146A.504.504 0 0 1 10 11.5v5c0 .133-.053.26-.146.354A.504.504 0 0 1 9.5 17h-3a.504.504 0 0 1-.354-.146A.504.504 0 0 1 6 16.5v-5c0-.133.053-.26.146-.354ZM10.5 4.75v3.5a.25.25 0 0 0 .25.25h2.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Zm.72 7.47a.747.747 0 0 1 .53-.22h5.5c.199 0 .39.079.53.22a.747.747 0 0 1 0 1.06.747.747 0 0 1-.53.22h-5.5a.747.747 0 0 1-.53-.22.747.747 0 0 1 0-1.06Zm0 2.525a.747.747 0 0 1 .53-.22h3.5c.199 0 .39.079.53.22a.747.747 0 0 1 0 1.06.747.747 0 0 1-.53.22h-3.5a.747.747 0 0 1-.53-.22.747.747 0 0 1 0-1.06Z"/></svg></span>
+                <span class="card-compact-title">Badge</span>
+            </div>
+            <p class="card-compact-description">Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a !badge identifier.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/components/button/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></svg></span>
+                <span class="card-compact-title">Button</span>
+            </div>
+            <p class="card-compact-description">Similar to a Badge, the Button component uses the same syntax as a hyperlink, but is prefixed with a !button identifier.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/components/card/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></svg></span>
+                <span class="card-compact-title">Card</span>
+            </div>
+            <p class="card-compact-description">The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/components/file-download/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
+                <span class="card-compact-title">File Download</span>
+            </div>
+            <p class="card-compact-description">A static file download component can be configured by using the !file specifier in a link.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/components/image/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 3h14.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 19.25 21H4.75A1.75 1.75 0 0 1 3 19.25V4.75C3 3.784 3.784 3 4.75 3Zm14.5 1.5H4.75a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h.19l9.823-9.823a1.75 1.75 0 0 1 2.475 0l2.262 2.262V4.75a.25.25 0 0 0-.25-.25Zm.25 9.56-3.323-3.323a.25.25 0 0 0-.354 0L7.061 19.5H19.25a.25.25 0 0 0 .25-.25ZM8.5 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm0-1.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></span>
+                <span class="card-compact-title">Image</span>
+            </div>
+            <p class="card-compact-description">The image component embeds an image in your document. You can point to image files stored within the project, or an external URL.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
     <a href="/configuration/project/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
@@ -879,6 +980,17 @@ steps:
                 <span class="card-compact-title">Project configuration</span>
             </div>
             <p class="card-compact-description">Retype will read the retype.yml file for additional instructions on how to configure and build your project.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/components/reference-link/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg></span>
+                <span class="card-compact-title">Reference Link</span>
+            </div>
+            <p class="card-compact-description">A special type of reference link can be configured by using the !ref specifier in a link.</p>
         </div>
     </a>
 </div>
@@ -907,7 +1019,7 @@ steps:
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T20:53:30" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-30T22:08:54" title="2026-05-30" data-absolute-label="Last updated on 2026-05-30" data-absolute-label-html="Last updated on 2026-05-30" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-05-30
                     </time>
                 </div>

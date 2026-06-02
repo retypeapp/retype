@@ -16,7 +16,7 @@
   </url>
   <url>
     <loc>https://retype.com/pro/</loc>
-    <lastmod>2026-05-30T14:39:36Z</lastmod>
+    <lastmod>2026-06-01T23:28:50Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/</loc>
@@ -60,7 +60,7 @@
   </url>
   <url>
     <loc>https://retype.com/blog/2026-03-10-whats-new-in-retype-v420/</loc>
-    <lastmod>2026-03-16T17:16:00Z</lastmod>
+    <lastmod>2026-06-01T23:30:44Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/</loc>
@@ -135,6 +135,10 @@
     <lastmod>2026-05-27T11:56:13Z</lastmod>
   </url>
   <url>
+    <loc>https://retype.com/components/card/</loc>
+    <lastmod>2026-06-01T23:31:51Z</lastmod>
+  </url>
+  <url>
     <loc>https://retype.com/faq/</loc>
     <lastmod>2026-05-25T12:22:25Z</lastmod>
   </url>
@@ -147,8 +151,8 @@
     <lastmod>2026-04-03T17:28:04Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/components/card/</loc>
-    <lastmod>2026-05-21T16:08:08Z</lastmod>
+    <loc>https://retype.com/components/button/</loc>
+    <lastmod>2026-06-01T23:31:07Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/callout/</loc>
@@ -160,23 +164,23 @@
   </url>
   <url>
     <loc>https://retype.com/configuration/theme-variables/</loc>
-    <lastmod>2026-05-30T14:40:25Z</lastmod>
+    <lastmod>2026-06-01T23:29:40Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/components/button/</loc>
-    <lastmod>2026-03-26T15:54:20Z</lastmod>
+    <loc>https://retype.com/components/badge/</loc>
+    <lastmod>2026-06-01T23:31:07Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/guides/key-setup/</loc>
     <lastmod>2026-02-27T02:58:01Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/components/badge/</loc>
-    <lastmod>2026-03-16T16:08:29Z</lastmod>
-  </url>
-  <url>
     <loc>https://retype.com/guides/obsidian-plugin/</loc>
     <lastmod>2026-05-24T09:47:30Z</lastmod>
+  </url>
+  <url>
+    <loc>https://retype.com/configuration/actions/</loc>
+    <lastmod>2026-05-30T22:08:54Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/guides/llms/</loc>
@@ -200,7 +204,7 @@
   </url>
   <url>
     <loc>https://retype.com/components/backlinks/</loc>
-    <lastmod>2026-05-30T18:04:31Z</lastmod>
+    <lastmod>2026-06-01T23:30:44Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/code-block/</loc>
@@ -209,10 +213,6 @@
   <url>
     <loc>https://retype.com/components/icon/</loc>
     <lastmod>2026-03-28T06:50:14Z</lastmod>
-  </url>
-  <url>
-    <loc>https://retype.com/configuration/actions/</loc>
-    <lastmod>2026-05-30T20:53:30Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/configuration/reserved_words/</loc>
@@ -231,16 +231,20 @@
     <lastmod>2026-04-03T11:58:22Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/hosting/web-server/</loc>
-    <lastmod>2026-02-13T13:18:55Z</lastmod>
-  </url>
-  <url>
     <loc>https://retype.com/components/column/</loc>
     <lastmod>2023-09-06T04:12:07Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/comments/</loc>
     <lastmod>2026-03-27T14:11:25Z</lastmod>
+  </url>
+  <url>
+    <loc>https://retype.com/components/file-download/</loc>
+    <lastmod>2026-05-30T22:08:54Z</lastmod>
+  </url>
+  <url>
+    <loc>https://retype.com/components/image/</loc>
+    <lastmod>2026-05-30T22:08:54Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/last-updated/</loc>
@@ -251,20 +255,16 @@
     <lastmod>2025-07-01T18:41:13Z</lastmod>
   </url>
   <url>
+    <loc>https://retype.com/hosting/web-server/</loc>
+    <lastmod>2026-02-13T13:18:55Z</lastmod>
+  </url>
+  <url>
     <loc>https://retype.com/components/code-snippet/</loc>
     <lastmod>2026-03-26T15:54:20Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/color-chip/</loc>
     <lastmod>2026-05-21T16:29:15Z</lastmod>
-  </url>
-  <url>
-    <loc>https://retype.com/components/file-download/</loc>
-    <lastmod>2025-07-07T15:51:28Z</lastmod>
-  </url>
-  <url>
-    <loc>https://retype.com/components/image/</loc>
-    <lastmod>2026-03-26T15:54:20Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/panel/</loc>
@@ -312,7 +312,7 @@
   </url>
   <url>
     <loc>https://retype.com/components/reference-link/</loc>
-    <lastmod>2026-03-16T16:08:29Z</lastmod>
+    <lastmod>2026-05-30T22:08:54Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/components/tab/</loc>
@@ -320,19 +320,23 @@
   </url>
   <url>
     <loc>https://retype.com/components/table/</loc>
-    <lastmod>2026-05-25T11:46:21Z</lastmod>
+    <lastmod>2026-05-31T15:04:58Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/hosting/netlify/</loc>
     <lastmod>2026-03-27T04:27:25Z</lastmod>
   </url>
   <url>
-    <loc>https://retype.com/components/youtube/</loc>
-    <lastmod>2025-05-06T22:39:36Z</lastmod>
+    <loc>https://retype.com/components/footnote/</loc>
+    <lastmod>2026-06-01T02:28:45Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/hosting/gitlab-pages/</loc>
     <lastmod>2026-03-12T00:57:35Z</lastmod>
+  </url>
+  <url>
+    <loc>https://retype.com/components/youtube/</loc>
+    <lastmod>2025-05-06T22:39:36Z</lastmod>
   </url>
   <url>
     <loc>https://retype.com/hosting/docker/</loc>

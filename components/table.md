@@ -282,11 +282,29 @@ Quarterly Forecast   | [!badge Approved|success]                                
 Customer Onboarding  | [!badge Draft|secondary]                                                                             | Product
 ```
 
-Project              | Status {style="background-color: var(--gray-100); color: var(--base-text-strong); font-weight: 600;"} | Owner
+Project              | Status {style="background-color: var(--gray-100);"} | Owner
 ---                  | ---                                                                                                 | ---
 Website Redesign     | [!badge Review]                                                                                     | Operations
 Quarterly Forecast   | [!badge Approved|success]                                                                            | Finance
 Customer Onboarding  | [!badge Draft|secondary]                                                                             | Product
+
+## Cell styling
+
+Add custom attributes to a table cell to style only that individual cell. In this sample, one `Status` cell (row 2, col 2) uses a custom CSS class and a background-color to highlight the cell.
+
+```md
+Project              | Status                                                | Owner
+---                  | ---                                                   | ---
+Website Redesign     | [!badge Review]                                       | Operations
+Quarterly Forecast   | [!badge Approved|success] { .highlight-cell style="background-color: var(--success-500);" } | Finance
+Customer Onboarding  | [!badge Draft|secondary]                              | Product
+```
+
+Project              | Status                                                | Owner
+---                  | ---                                                   | ---
+Website Redesign     | [!badge Review]                                       | Operations
+Quarterly Forecast   | [!badge Approved|success] { .highlight-cell style="background-color: var(--success-500);" } | Finance
+Customer Onboarding  | [!badge Draft|secondary]                              | Product
 
 ## Wide tables
 
