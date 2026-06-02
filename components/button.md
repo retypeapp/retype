@@ -144,6 +144,20 @@ Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojeei
 [!button variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
 
+### Custom icon
+
+Project icons can be used by setting the `icon` property to the custom icon name.
+
+```md
+[!button variant="light" icon="brand-printer" text="Print" action="print-page"]
+
+[!button variant="clean" icon="brand-printer" text="Print" action="print-page" corners="pill"] 
+```
+
+[!button variant="light" icon="brand-printer" text="Print" action="print-page"] 
+
+[!button variant="clean" icon="brand-printer" text="Print" action="print-page" corners="pill"] 
+
 ### Image file
 
 Any image file can be used as the `icon`.
