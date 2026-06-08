@@ -68,7 +68,7 @@ output: .retype
 url: retype.com
 
 branding:
-  label: v4.6
+  label: v4.7.0-preview
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
