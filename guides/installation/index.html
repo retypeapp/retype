@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833844960366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834267785839">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0">
+    <meta name="generator" content="Retype 4.7.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Installation - Write On! with Retype</title>
@@ -43,14 +43,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -58,14 +58,14 @@
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
     <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
 
-    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full bg-header-bg border-b border-header-border layout-header-height">
         <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
             <!-- Mobile menu button skeleton -->
             <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
             <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
             <!-- Logo -->
-            <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center justify-between h-full py-2 layout-sidebar-left-width-md">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
@@ -177,7 +177,7 @@
 
     <div id="retype-container" class="container relative flex bg-white">
         <!-- Sidebar Skeleton -->
-        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar border-r h-screen md:sticky transition-transform skeleton layout-header-offset-desktop layout-sidebar-left-width">
         
             <div class="flex items-center h-16 px-6">
                 <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
@@ -301,7 +301,7 @@
         <div class="grow min-w-0 bg-body-bg">
             <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
 <div class="flex">
-    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+    <div id="retype-main" class="layout-content-default min-w-0 p-4 grow mx-auto md:px-16">
         <main class="relative pb-12 lg:pt-2">
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
@@ -341,12 +341,12 @@
 <h1 id="installation">Installation</h1>
 <p>Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
 <p>See the new <a href="/guides/obsidian-plugin/"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 96 96" role="presentation"><g fill="currentColor"><g><g fill="none">
-<rect width="96" height="96" fill="url(#pattern0_5958_212)"/>
+<rect width="96" height="96" fill="url(#icon-inline-4928-pattern0_5958_212)"/>
 <defs>
-<pattern id="pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_5958_212" transform="scale(0.0104167)"/>
+<pattern id="icon-inline-4928-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#icon-inline-4928-image0_5958_212" transform="scale(0.0104167)"/>
 </pattern>
-<image id="image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
+<image id="icon-inline-4928-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
 </defs>
 </g></g></g></svg> Retype for Obsidian</a> plugin:</p>
 <p>
@@ -355,12 +355,12 @@
     <a href="https://community.obsidian.md/plugins/retype" class="group card-snap no-link">
         <div class="card-snap-body">
                 <span class="card-snap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="presentation" fill="currentColor"><!--icon--><g fill="none">
-<rect width="96" height="96" fill="url(#card-icon-329-pattern0_5958_212)"/>
+<rect width="96" height="96" fill="url(#card-icon-4929-pattern0_5958_212)"/>
 <defs>
-<pattern id="card-icon-329-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#card-icon-329-image0_5958_212" transform="scale(0.0104167)"/>
+<pattern id="card-icon-4929-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#card-icon-4929-image0_5958_212" transform="scale(0.0104167)"/>
 </pattern>
-<image id="card-icon-329-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
+<image id="card-icon-4929-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
 </defs>
 </g></svg></span>
             <div class="card-snap-title">Install Obsidian plugin</div>
@@ -516,7 +516,7 @@
 <p><a href="https://www.npmjs.com/package/retypeapp?activeTab=versions" class="outbound" target="_blank" rel="noopener noreferrer"><span>NPM</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, Yarn, and <a href="https://www.nuget.org/packages/retypeapp/" class="outbound" target="_blank" rel="noopener noreferrer"><span>dotnet</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> offer their own syntax and methods for specifying which version or tag of a software package to install, enabling precise control over the dependencies of your projects.</p>
 <p>When using NPM or Yarn, specifying the <code translate="no" v-pre>@latest</code> tag will always install the latest public release. The <code translate="no" v-pre>@latest</code> is optional. If no <code translate="no" v-pre>@version</code> or <code translate="no" v-pre>@tag</code> is provided, Retype will install the <code translate="no" v-pre>@latest</code> release by default.</p>
 <p>Using the <code translate="no" v-pre>@next</code> tag will install an upcoming <code translate="no" v-pre>-preview</code> release, if available.</p>
-<p>In the following samples, replace <code translate="no" v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the version <code translate="no" v-pre>4.6.0</code> release of Retype using NPM, run the command <code translate="no" v-pre>npm install retypeapp@4.6.0 --global</code>.</p>
+<p>In the following samples, replace <code translate="no" v-pre>[version-or-tag]</code> with the actual version number or tag. For instance, to specifically install the version <code translate="no" v-pre>4.7.0-preview</code> release of Retype using NPM, run the command <code translate="no" v-pre>npm install retypeapp@4.7.0-preview --global</code>.</p>
 <doc-tabs>
 <doc-tab v-cloak id="npm-3">
 <template #title>npm</template>
@@ -779,7 +779,7 @@ yarn global add retypeapp-win-x86</code></pre>
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></svg></span>
-                <span class="card-compact-title">Card</span>
+                <div class="card-compact-title flex-1 w-full">Card</div>
             </div>
             <p class="card-compact-description">The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.</p>
         </div>
@@ -790,7 +790,7 @@ yarn global add retypeapp-win-x86</code></pre>
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg></span>
-                <span class="card-compact-title">Frequently Asked Questions</span>
+                <div class="card-compact-title flex-1 w-full">Frequently Asked Questions</div>
             </div>
             <p class="card-compact-description">Yes, Retype is free to use with both open-source and commercial projects.</p>
         </div>
@@ -801,7 +801,7 @@ yarn global add retypeapp-win-x86</code></pre>
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
-                <span class="card-compact-title">Getting Started</span>
+                <div class="card-compact-title flex-1 w-full">Getting Started</div>
             </div>
             <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
         </div>
@@ -812,7 +812,7 @@ yarn global add retypeapp-win-x86</code></pre>
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
-                <span class="card-compact-title">Markdown-first documentation website builder</span>
+                <div class="card-compact-title flex-1 w-full">Markdown-first documentation website builder</div>
             </div>
             <p class="card-compact-description">Retype turns your Markdown files into a beautiful, production-ready website. No design work, no coding, no recurring fees, and no vendor lock-in. Write your content, run one command, and your site is ready to share.</p>
         </div>
@@ -823,15 +823,15 @@ yarn global add retypeapp-win-x86</code></pre>
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 96 96" role="presentation" fill="currentColor"><!--icon--><g fill="none">
-<rect width="96" height="96" fill="url(#card-icon-334-pattern0_5958_212)"/>
+<rect width="96" height="96" fill="url(#card-icon-4937-pattern0_5958_212)"/>
 <defs>
-<pattern id="card-icon-334-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#card-icon-334-image0_5958_212" transform="scale(0.0104167)"/>
+<pattern id="card-icon-4937-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#card-icon-4937-image0_5958_212" transform="scale(0.0104167)"/>
 </pattern>
-<image id="card-icon-334-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
+<image id="card-icon-4937-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
 </defs>
 </g></svg></span>
-                <span class="card-compact-title">Retype for Obsidian Plugin</span>
+                <div class="card-compact-title flex-1 w-full">Retype for Obsidian Plugin</div>
             </div>
             <p class="card-compact-description">Retype for Obsidian integrates the Retype app directly into Obsidian and your vault.</p>
         </div>
@@ -842,7 +842,7 @@ yarn global add retypeapp-win-x86</code></pre>
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/></svg></span>
-                <span class="card-compact-title">Retype Pro</span>
+                <div class="card-compact-title flex-1 w-full">Retype Pro</div>
             </div>
             <p class="card-compact-description">Take your projects to the next level with Retype Pro and Enterprise.</p>
         </div>
@@ -852,7 +852,7 @@ yarn global add retypeapp-win-x86</code></pre>
     <a href="/blog/2026-02-25-self-hosting-obsidian-vault-with-retype/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">Self-hosting Obsidian Vault with Retype</span>
+                <div class="card-compact-title flex-1 w-full">Self-hosting Obsidian Vault with Retype</div>
             </div>
             <p class="card-compact-description">If you use Obsidian, chances are you’ve thought about publishing your vault online. Maybe it’s a personal digital garden, a team knowledge base, or project documentation.</p>
         </div>
@@ -862,7 +862,7 @@ yarn global add retypeapp-win-x86</code></pre>
     <a href="/blog/2026-02-23-whats-new-in-retype-v400/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v4.0</span>
+                <div class="card-compact-title flex-1 w-full">What's New in Retype v4.0</div>
             </div>
             <p class="card-compact-description">Retype v4.0 is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies.</p>
         </div>
@@ -872,7 +872,7 @@ yarn global add retypeapp-win-x86</code></pre>
     <a href="/blog/2026-03-02-whats-new-in-retype-v410/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v4.1</span>
+                <div class="card-compact-title flex-1 w-full">What's New in Retype v4.1</div>
             </div>
             <p class="card-compact-description">Retype v4.1 has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release.</p>
         </div>
@@ -882,7 +882,7 @@ yarn global add retypeapp-win-x86</code></pre>
     <a href="/blog/2026-03-17-whats-new-in-retype-v430/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v4.3</span>
+                <div class="card-compact-title flex-1 w-full">What's New in Retype v4.3</div>
             </div>
             <p class="card-compact-description">Retype v4.3 packs in notable new features and a solid round of enhancements. Header navigation now supports dropdown sub-menu support, backlinks gain fine-grained include and exclude controls, and date formatting is now fully configurable.</p>
         </div>
@@ -892,7 +892,7 @@ yarn global add retypeapp-win-x86</code></pre>
     <a href="/blog/2026-04-07-whats-new-in-retype-v450/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v4.5</span>
+                <div class="card-compact-title flex-1 w-full">What's New in Retype v4.5</div>
             </div>
             <p class="card-compact-description">Documentation that sits still isn't working hard enough. Retype v4.5 delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box.</p>
         </div>
@@ -902,7 +902,7 @@ yarn global add retypeapp-win-x86</code></pre>
     <a href="/blog/2026-05-26-whats-new-in-retype-v460/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v4.6</span>
+                <div class="card-compact-title flex-1 w-full">What's New in Retype v4.6</div>
             </div>
             <p class="card-compact-description">Retype v4.6 is a big release for growing documentation projects.</p>
         </div>
@@ -988,7 +988,7 @@ yarn global add retypeapp-win-x86</code></pre>
 
     <!-- Rendered if sidebar right is enabled -->
     <!-- Sidebar right skeleton-->
-    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:z-0 sidebar-right skeleton layout-sidebar-right-width-md layout-sidebar-right-width-lg">
         <div class="pl-5">
             <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
             <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>

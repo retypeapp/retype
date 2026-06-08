@@ -36,7 +36,7 @@ This is a sample page with a :icon-rocket: icon.
 
 ## New icons
 
-The following [!badge NEW|info] icons are included in Retype **v4.6.0**:
+The following [!badge NEW|info] icons are included in Retype **v4.7.0-preview**:
 
 | Icon | Shortcode | Sample |
 | :---: | --- | --- |
@@ -46,7 +46,7 @@ The following [!badge NEW|info] icons are included in Retype **v4.6.0**:
 
 ## All icons
 
-As of v4.6.0, there are 375 [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
+As of v4.7.0-preview, there are 375 [Octicons](https://primer.github.io/octicons/) supported and more being added with each new release.
 
 | Icon | Shortcode | Sample |
 | :---: | --- | --- |

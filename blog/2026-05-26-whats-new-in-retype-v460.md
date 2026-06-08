@@ -174,9 +174,9 @@ This new functionality also works well alongside the [recently](/blog/2026-04-07
 
 ## New Card `target` property
 
-[[Card]] components now support a `target` property, matching the behavior of [[Button]] and [[Badge]] c[Card](/components/card.md)s.
+[[Card]] components now support a `target` property, matching the behavior of [[Button]] and [[Badge]] components.
 
-Cards are often used as integration links, entry points, and navig[Button](/components/button.md)s. Au[Badge](/components/badge.md) now control whether a Card link opens in the same tab or a new one.
+Cards are often used as integrat[Card](/components/card.md)s, entry points, and navigation tiles. Authors can now control whether[Button](/components/button.md)nk op[Badge](/components/badge.md)e same tab or a new one.
 
 ```md
 [!card target="blank" title="Retype for Obsidian" icon="brand-obsidian" layout="signal"](https://github.com/retypeapp/retype-for-obsidian)

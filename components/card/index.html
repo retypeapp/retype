@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833844960366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834267785839">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0">
+    <meta name="generator" content="Retype 4.7.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Card - Write On! with Retype</title>
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833844960366" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.7.0-preview.834267785839" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -59,14 +59,14 @@
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
     <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
 
-    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full bg-header-bg border-b border-header-border layout-header-height">
         <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
             <!-- Mobile menu button skeleton -->
             <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
             <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
             <!-- Logo -->
-            <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center justify-between h-full py-2 layout-sidebar-left-width-md">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
@@ -178,7 +178,7 @@
 
     <div id="retype-container" class="container relative flex bg-white">
         <!-- Sidebar Skeleton -->
-        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar border-r h-screen md:sticky transition-transform skeleton layout-header-offset-desktop layout-sidebar-left-width">
         
             <div class="flex items-center h-16 px-6">
                 <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
@@ -302,7 +302,7 @@
         <div class="grow min-w-0 bg-body-bg">
             <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
 <div class="flex">
-    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+    <div id="retype-main" class="layout-content-default min-w-0 p-4 grow mx-auto md:px-16">
         <main class="relative pb-12 lg:pt-2">
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
@@ -355,7 +355,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -403,7 +403,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>Custom footer</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>Custom footer</span></div>
             </div>
         </div>
     </a>
@@ -428,8 +428,8 @@
             <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">release</div>
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
-            <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>View the full article</span></div>
+            <div class="card-vert-footer justify-center">
+                <div class="text-card-footer text-card-footer-text w-full text-center"><span>View the full article</span></div>
             </div>
         </div>
     </a>
@@ -451,7 +451,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
-                <span class="card-compact-title">Retype website</span>
+                <div class="card-compact-title flex-1 w-full">Retype website</div>
             </div>
             <p class="card-compact-description">Visit retype.com</p>
         </div>
@@ -462,7 +462,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F680;</span></span>
-                <span class="card-compact-title">Getting Started</span>
+                <div class="card-compact-title flex-1 w-full">Getting Started</div>
             </div>
             <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
         </div>
@@ -486,7 +486,7 @@
         <div class="card-vert-body p-card-padding">
             <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Guides</div>
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Blogging</div>
-            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text">Adding a blog to your Retype website is as quick as adding a new <code translate="no" v-pre>.md</code> file to your project.</p></div>
+            <div class="line-clamp-4"><p class="mt-card-description-margin-top text-card-description-text card-description-no-footer">Adding a blog to your Retype website is as quick as adding a new <code translate="no" v-pre>.md</code> file to your project.</p></div>
         </div>
     </a>
 </div>
@@ -511,7 +511,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -537,7 +537,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -561,7 +561,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -576,7 +576,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Retype for Obsidian</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Obsidian is where a lot of great documentation starts. Retype is how that Markdown becomes a fast, polished, self-hosted website. Now Retype is available directly inside Obsidian. The official Retype plugin is available in the Obsidian Community plugin directory. Install Retype directly from Obsidian, and manage your Retype projects from inside your vault.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-25</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-25</span></div>
             </div>
         </div>
     </a>
@@ -597,7 +597,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
-                <span class="card-compact-title">Getting Started</span>
+                <div class="card-compact-title flex-1 w-full">Getting Started</div>
             </div>
             <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
         </div>
@@ -608,7 +608,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
-                <span class="card-compact-title">Installation</span>
+                <div class="card-compact-title flex-1 w-full">Installation</div>
             </div>
             <p class="card-compact-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
         </div>
@@ -619,7 +619,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F604;</span></span>
-                <span class="card-compact-title">Retype website</span>
+                <div class="card-compact-title flex-1 w-full">Retype website</div>
             </div>
             <p class="card-compact-description">Visit retype.com.</p>
         </div>
@@ -725,7 +725,7 @@
             <div class="card-signal-title">Installation</div>
             <p class="card-signal-description">Retype is a command line tool. Installation is super quick and you can be up and running within seconds.</p>
             <div class="card-signal-footer">
-                <span class="card-signal-kicker">Install</span>
+                <div class="card-signal-kicker flex-1 w-full">Install</div>
                 <span class="card-signal-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span>
             </div>
         </div>
@@ -740,7 +740,7 @@
             <div class="card-signal-title">What's New in Retype v4.3</div>
             <p class="card-signal-description">Retype v4.3 packs in notable new features and a solid round of enhancements. Header navigation now supports dropdown sub-menu support, backlinks gain fine-grained include and exclude controls, and date formatting is now fully configurable.</p>
             <div class="card-signal-footer">
-                <span class="card-signal-kicker">Release</span>
+                <div class="card-signal-kicker flex-1 w-full">Release</div>
                 <span class="card-signal-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span>
             </div>
         </div>
@@ -755,7 +755,7 @@
             <div class="card-signal-title">Retype website</div>
             <p class="card-signal-description">Signal supports title, text, and kicker together.</p>
             <div class="card-signal-footer">
-                <span class="card-signal-kicker">Visit</span>
+                <div class="card-signal-kicker flex-1 w-full">Visit</div>
                 <span class="card-signal-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span>
             </div>
         </div>
@@ -912,7 +912,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Retype for Obsidian</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Read the <code translate="no" v-pre>v4.1</code> release summary.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-25</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-25</span></div>
             </div>
         </div>
     </a>
@@ -938,7 +938,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Start with v4.2</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -964,7 +964,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg></span>
-                <span class="card-compact-title">Blogging</span>
+                <div class="card-compact-title flex-1 w-full">Blogging</div>
             </div>
             <p class="card-compact-description">Create blog posts and let Retype generate the rss feed and pages automatically.</p>
         </div>
@@ -976,9 +976,9 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
-                <span class="card-compact-title">Installation</span>
+                <div class="card-compact-title flex-1 w-full">Installation</div>
             </div>
-            <p class="card-compact-description">Install the Retype CLI with npm, yarn, or dotnet, and you'll be up and running in minutes.</p>
+            <p class="card-compact-description">Install the Retype CLI with npm, yarn, or dotnet, and you&#x27;ll be up and running in minutes.</p>
         </div>
     </a>
 </div>
@@ -988,7 +988,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></svg></span>
-                <span class="card-compact-title">Community</span>
+                <div class="card-compact-title flex-1 w-full">Community</div>
             </div>
             <p class="card-compact-description">Get a free Retype Pro key for use in GitHub Pages projects.</p>
         </div>
@@ -1014,7 +1014,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -1041,7 +1041,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.1</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release. This release delivers a completely redesigned search experience, Unicode icon support, and new blog layout options.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-03-02</span></div>
             </div>
         </div>
     </a>
@@ -1053,10 +1053,10 @@
         </div>
         <div class="card-vert-body p-card-padding">
             <div class="text-card-kicker font-card-kicker text-card-kicker-text card-kicker-case">Release</div>
-            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's NEW in Retype v4.1</div>
+            <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What&#x27;s NEW in Retype v4.1</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.1</code> has been primarily a community-driven release shaped by suggestions and feedback from Retype users. A huge thank you to the Retype community for your contributions and ideas that made it into this release.</p></div>
             <div class="card-vert-footer">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-02</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-03-02</span></div>
             </div>
         </div>
     </a>
@@ -1078,7 +1078,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
-                <span class="card-compact-title">Getting Started</span>
+                <div class="card-compact-title flex-1 w-full">Getting Started</div>
             </div>
             <p class="card-compact-description">This guide will have you up and running generating your own Retype website in just a few minutes.</p>
         </div>
@@ -1089,7 +1089,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></svg></span>
-                <span class="card-compact-title">Install Retype</span>
+                <div class="card-compact-title flex-1 w-full">Install Retype</div>
             </div>
             <p class="card-compact-description">Install the Retype CLI.</p>
         </div>
@@ -1100,7 +1100,7 @@
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><span class="docs-emoji">&#x1F604;</span></span>
-                <span class="card-compact-title">Retype website</span>
+                <div class="card-compact-title flex-1 w-full">Retype website</div>
             </div>
             <p class="card-compact-description">Visit retype.com.</p>
         </div>
@@ -1116,7 +1116,7 @@
 </doc-codeblock></div>
 <p>
 <div class="card-container">
-    <a href="action:edit-on-github" class="group card no-link">
+    <a href="https://github.com/retypeapp/retype/edit/main/components/card.md" class="group card no-link">
         <div class="p-card-padding">
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Edit on GitHub</div>
             <div class="line-clamp-7"><p class="mt-card-description-margin-top text-card-description-text">Open this page in GitHub</p></div>
@@ -1210,7 +1210,7 @@
 
     <!-- Rendered if sidebar right is enabled -->
     <!-- Sidebar right skeleton-->
-    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:z-0 sidebar-right skeleton layout-sidebar-right-width-md layout-sidebar-right-width-lg">
         <div class="pl-5">
             <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
             <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>

@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833844960366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834267785839">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0">
+    <meta name="generator" content="Retype 4.7.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s New in Retype v4.6 - Write On! with Retype</title>
@@ -50,28 +50,28 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833844960366" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.7.0-preview.834267785839" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
 
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
-    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full bg-header-bg border-b border-header-border layout-header-height">
         <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
             <!-- Mobile menu button skeleton -->
             <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
             <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
             <!-- Logo -->
-            <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center justify-between h-full py-2 layout-sidebar-left-width-md">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
@@ -181,10 +181,10 @@
     </header>
 
 
-    <div class="relative flex mx-auto bg-white max-w-core">
+    <div class="relative flex mx-auto bg-white layout-content-blog">
         <div class="md:hidden">
             <!-- Sidebar Skeleton -->
-            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar border-r h-screen md:sticky transition-transform skeleton layout-header-offset-desktop layout-sidebar-left-width">
             
                 <div class="flex items-center h-16 px-6">
                     <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
@@ -374,7 +374,7 @@
 <h2 id="unlimited-pages-for-retype-free">Unlimited pages for Retype Free</h2>
 <p>The free version of Retype now supports unlimited pages.</p>
 <p>Previously, free projects had a page limit that could hold back growing projects. Starting in v4.6, that limit is gone. All projects can keep building without hitting a ceiling.</p>
-<p><a href="/guides/installation/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+<p><a href="/guides/installation/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text hover:bg-button-primary-hover px-4 h-10 text-sm rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
     <span>Installation Guide</span>
 </a></p>
@@ -386,7 +386,7 @@
 <p>This makes Pro a stronger fit for teams and builders who manage more than one site. Agencies handling client documentation get more flexibility without stacking separate licenses up front. Teams maintaining separate product docs, an internal knowledge base, and a help center can cover all three under one Pro license. Builders running sandbox, staging, and production environments get the full Pro experience across all three.</p>
 <p>The extra capacity is built in. No add-ons required.</p>
 <p>If you have been considering Pro, the expanded project count is a good reason to take a closer look. Custom themes, private pages, breadcrumb navigation, and branding removal are all included across every project in your license.</p>
-<p><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+<p><a href="/pro/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text hover:bg-button-primary-hover px-4 h-10 text-sm rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M17.03 9.78a.75.75 0 0 0-1.06-1.06l-5.47 5.47-2.47-2.47a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l6-6Z"/><path d="m14.136 1.2 1.375 1.01c.274.201.593.333.929.384l1.687.259a3.61 3.61 0 0 1 3.02 3.021l.259 1.686c.051.336.183.655.384.929l1.01 1.375a3.61 3.61 0 0 1 0 4.272l-1.01 1.375a2.106 2.106 0 0 0-.384.929l-.259 1.687a3.61 3.61 0 0 1-3.021 3.02l-1.686.259a2.106 2.106 0 0 0-.929.384l-1.375 1.01a3.61 3.61 0 0 1-4.272 0l-1.375-1.01a2.106 2.106 0 0 0-.929-.384l-1.687-.259a3.61 3.61 0 0 1-3.02-3.021l-.259-1.686a2.117 2.117 0 0 0-.384-.929L1.2 14.136a3.61 3.61 0 0 1 0-4.272l1.01-1.375c.201-.274.333-.593.384-.929l.259-1.687a3.61 3.61 0 0 1 3.021-3.02l1.686-.259c.336-.051.655-.183.929-.384L9.864 1.2a3.61 3.61 0 0 1 4.272 0Zm-3.384 1.209-1.375 1.01a3.614 3.614 0 0 1-1.59.658l-1.686.258a2.111 2.111 0 0 0-1.766 1.766l-.258 1.686a3.61 3.61 0 0 1-.658 1.589l-1.01 1.376a2.11 2.11 0 0 0 0 2.496l1.01 1.375c.344.469.57 1.015.658 1.59l.258 1.686c.14.911.855 1.626 1.766 1.766l1.686.258a3.61 3.61 0 0 1 1.589.658l1.376 1.01a2.11 2.11 0 0 0 2.496 0l1.375-1.01a3.613 3.613 0 0 1 1.59-.657l1.686-.26a2.11 2.11 0 0 0 1.766-1.765l.258-1.686a3.61 3.61 0 0 1 .658-1.589l1.01-1.376a2.11 2.11 0 0 0 0-2.496l-1.01-1.375a3.613 3.613 0 0 1-.657-1.59l-.26-1.686a2.11 2.11 0 0 0-1.765-1.766l-1.686-.258a3.61 3.61 0 0 1-1.589-.658l-1.376-1.01a2.11 2.11 0 0 0-2.496 0Z"/></g></svg></span>
     <span>See Retype Pro</span>
 </a></p>
@@ -625,12 +625,12 @@ Customer Onboarding  | [!badge Draft|secondary]                                 
         <div class="card-signal-body">
             <div class="card-signal-media-row">
                 <span class="card-signal-media card-signal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="presentation" fill="currentColor"><!--icon--><g fill="none">
-<rect width="96" height="96" fill="url(#card-icon-292-pattern0_5958_212)"/>
+<rect width="96" height="96" fill="url(#card-icon-4795-pattern0_5958_212)"/>
 <defs>
-<pattern id="card-icon-292-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#card-icon-292-image0_5958_212" transform="scale(0.0104167)"/>
+<pattern id="card-icon-4795-pattern0_5958_212" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#card-icon-4795-image0_5958_212" transform="scale(0.0104167)"/>
 </pattern>
-<image id="card-icon-292-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
+<image id="card-icon-4795-image0_5958_212" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAgVBMVEVHcEyff/+adPiZdPiZdPiZdfiXd/eZdPiUdPSYdPeZc/ebc/mYdPiYdPiZc/iZc/eZdPefb/+adPmXc/eXdPeZdfeZdfibc/eadPeZdfiYdPWYc/afb/eZc/eYdfeadPeZcviZdfWZdPeadPmYc/aXc/eXb/ecdfibdfmZdfiXd/creNEqAAAAK3RSTlMAEH+//88g3zDvgF/vcJ+PrxAwQGCPn0BgUHCQIM/PkFBQoK+wgCBQj29AobxPoQAAA1RJREFUeAG1mQeT4yAMheVFgeCUc2zHyfZe////26qZyyGLzZvD37S7Lbx9SEKCEER14phnnqbCB/5iVtE0zCP/UNMkLJiF5SQWTvgvq4nX5zUV5w9PKlA1rAQ2norhZywcxKCdVQXTP6Ejop63k60f6JOBeVWqvFIG+uRLti1TXgpPRDv+JPhi6a8MDPyFK7++GPD8w7ZkeQnux4CwKlheQvdPZi3bYuUluGTrQlUg/VMDFBLFYuvLcj0fclJyfd4fGhBOCWfgcYI2wLz0BJMzsFHfxAPdIgakuCF2PM5guUPDcMbj+HEDeK6eZ3LU8RhgFJwdYs+jXBDEJbZDuACPcpUxd1EiS6/pk2geUQA3PMqtkcC4QG2H4IxNcYA7HmNJn9ybZwiAsYqz8wttnZvRZR4kv4wE+H+FtV1m+MC9CayocwJXeEvDBJaE4iMgAJay8/RJBwhghbCTofYRCDKURgNLk3VagFgBtxwvvVGF4crol2jLGf5W5o19VGhWgIEvWr1Jld1MgT1aHc46Puq7n0kHjlxbdXCvdBrhFvp//6KNmqPDf1oImUF6qYKAW9hlJ+lOFTjcdZyaafu0WgMbiMUsXp8+FJMFarbZQtcCKa06nd4jg3HWBvSC0V338yf64ak7awyVGWRA8uLePXak6O4Y36QAWfaPAdykHj3lvXaRvU6FXKu9eD57Wbsvmpd9S0IXOKVBDIjjar9OFgqDFxPN8ZvkrE7oeQwnEo+cUEMXP5cZ2cXF45EHxoBPvKFVNzr7Gcxn5p3zX/qkAw2oeeeMTVbpoBnAex/v832SF8n80ZIBG9Rm/A9XXP3+qBAzAi3bSFCdirBVBcCtQHAHm7THLn52pelA1/ljQjIBj4E8SEnb8MCVAxBgJxYeiXCFW/tinoxQMZAAKXRGoWkL5x5/ytcTb8ZCRQKkEHQK40NdTuHBKsKEFlYQ9r8VMvzx4zz/wmIR6Gj6/COXwUCIQjLaMYMxABS8/BfaIUBhOHaHrgljpT8PytMRyGP6gVaeJWGIQswaUOWIKzyKAaDMEB4DiQEgBBCVTDNAFeC8MiMxxnnr+7peN+4ygoc1TjW/qV0EL+A4874J+EGHipy5qEe7wnTXlyy4iqbB903k6DrK8gEsMFeCpiVuYwAAAABJRU5ErkJggg=="/>
 </defs>
 </g></svg></span>
             </div>
@@ -721,7 +721,7 @@ date:
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.753 1.753 0 0 1-.699.409l-5.523 1.68a.748.748 0 0 1-.747-.188.748.748 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.253.253 0 0 0 .1-.059l10.273-9.806-2.94-2.939-10.279 9.813ZM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg></span>
-                <span class="card-compact-title">Blogging</span>
+                <div class="card-compact-title flex-1 w-full">Blogging</div>
             </div>
             <p class="card-compact-description">Adding a blog to your Retype website is as quick as adding a new .md file to your project.</p>
         </div>
@@ -732,7 +732,7 @@ date:
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></svg></span>
-                <span class="card-compact-title">Card</span>
+                <div class="card-compact-title flex-1 w-full">Card</div>
             </div>
             <p class="card-compact-description">The Card component renders a linked preview for another page or URL. For local pages, Retype can build the card from page metadata. You can also override individual values directly on the Card.</p>
         </div>
@@ -743,9 +743,9 @@ date:
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/><path d="M4.125 0h15.75a4.11 4.11 0 0 1 2.92 1.205A4.11 4.11 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.647 3.647 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0ZM15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.108 4.108 0 0 1-.943-2.625ZM1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.648 3.648 0 0 1-.499-1.882 4.11 4.11 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125Z"/></svg></span>
-                <span class="card-compact-title">Changelog</span>
+                <div class="card-compact-title flex-1 w-full">Changelog</div>
             </div>
-            <p class="card-compact-description">The latest release of Retype is v4.6.0.</p>
+            <p class="card-compact-description">The latest release of Retype is v4.7.0-preview.</p>
         </div>
     </a>
 </div>
@@ -754,7 +754,7 @@ date:
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M15.22 4.97a.75.75 0 0 1 1.06 0l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L21.19 12l-5.97-5.97a.75.75 0 0 1 0-1.06Zm-6.44 0a.75.75 0 0 1 0 1.06L2.81 12l5.97 5.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.5-6.5a.75.75 0 0 1 0-1.06l6.5-6.5a.75.75 0 0 1 1.06 0Z"/></svg></span>
-                <span class="card-compact-title">Content</span>
+                <div class="card-compact-title flex-1 w-full">Content</div>
             </div>
             <p class="card-compact-description">Use content to query and access any page in your project from within a template expression. You can look up pages by key, search across all pages, and iterate over collections such as tags, categories, authors, blog posts, and navigation items.</p>
         </div>
@@ -765,7 +765,7 @@ date:
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z"/></svg></span>
-                <span class="card-compact-title">Feature Log</span>
+                <div class="card-compact-title flex-1 w-full">Feature Log</div>
             </div>
             <p class="card-compact-description">A running log of notable features added to Retype, including links to relevant docs and demos.</p>
         </div>
@@ -775,7 +775,7 @@ date:
     <a href="/blog/2026-02-23-whats-new-in-retype-v400/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
-                <span class="card-compact-title">What's New in Retype v4.0</span>
+                <div class="card-compact-title flex-1 w-full">What's New in Retype v4.0</div>
             </div>
             <p class="card-compact-description">Retype v4.0 is here! This major version release brings powerful new components, expanded templating capabilities, and a complete upgrade of all internal libraries and dependencies.</p>
         </div>
@@ -826,7 +826,7 @@ date:
     </div>
 
     <div class="border-t dark:border-base-border">
-        <div class="max-w-core mx-auto px-6 py-6">
+        <div class="layout-footer-content mx-auto px-6" style="--footer-content-max-width: var(--layout-blog-content-max-width, var(--footer-content-max-width));">
             <footer>
                 <div class="flex flex-wrap items-center justify-between">
                     <div id="retype-footer-links" class="pt-3 print:hidden">

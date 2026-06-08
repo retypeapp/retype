@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833844960366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834267785839">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0">
+    <meta name="generator" content="Retype 4.7.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Octicons - Write On! with Retype</title>
@@ -43,14 +43,14 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -58,14 +58,14 @@
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
     <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
 
-    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full bg-header-bg border-b border-header-border layout-header-height">
         <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
             <!-- Mobile menu button skeleton -->
             <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
             <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
             <!-- Logo -->
-            <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center justify-between h-full py-2 layout-sidebar-left-width-md">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
@@ -177,7 +177,7 @@
 
     <div id="retype-container" class="container relative flex bg-white">
         <!-- Sidebar Skeleton -->
-        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar border-r h-screen md:sticky transition-transform skeleton layout-header-offset-desktop layout-sidebar-left-width">
         
             <div class="flex items-center h-16 px-6">
                 <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
@@ -301,7 +301,7 @@
         <div class="grow min-w-0 bg-body-bg">
             <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
 <div class="flex">
-    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+    <div id="retype-main" class="layout-content-default min-w-0 p-4 grow mx-auto md:px-16">
         <main class="relative pb-12 lg:pt-2">
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
@@ -367,10 +367,10 @@
 <td><code translate="no" v-pre>[!badge icon=&quot;rocket&quot; text=&quot;rocket&quot;]</code></td>
 </tr>
 <tr>
-<td><button class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text px-4 h-10 text-sm rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></g></svg></span>
     <span>rocket</span>
-</button></td>
+</span></td>
 <td><code translate="no" v-pre>[!button icon=&quot;rocket&quot; text=&quot;rocket&quot;]</code></td>
 </tr>
 </tbody>
@@ -391,7 +391,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <h2 id="new-icons">New icons</h2>
 <p>The following <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
     <span>NEW</span>
-</span> icons are included in Retype <strong>v4.6.0</strong>:</p>
+</span> icons are included in Retype <strong>v4.7.0-preview</strong>:</p>
 <retype-table copy-text="| Icon | Shortcode | Sample |
 | :---: | --- | --- |
 | :icon-sandbox: | sandbox | `:icon-sandbox:` |
@@ -413,12 +413,12 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <td><code translate="no" v-pre>:icon-sandbox:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M7.12208 0.392445C7.66506 0.0775182 8.33496 0.0775182 8.87794 0.392445L13.8809 3.29381C14.711 3.77549 14.7108 4.97413 13.8809 5.45592L8.87794 8.35827C8.33508 8.67301 7.66494 8.67302 7.12208 8.35827L2.11915 5.45592C1.28917 4.97413 1.28904 3.77549 2.11915 3.29381L7.12208 0.392445ZM8.12501 1.6903C8.04751 1.64541 7.95251 1.64541 7.87501 1.6903L3.24415 4.37487L7.87501 7.06041C7.95239 7.10512 8.04762 7.10512 8.12501 7.06041L12.7549 4.37487L8.12501 1.6903Z" fill="#010409"/> <path d="M1.60157 7.78917C1.80937 7.4309 2.26769 7.30897 2.62598 7.51671L7.87501 10.5607C8.23282 10.7685 8.35484 11.227 8.14747 11.5851C7.93965 11.9434 7.48039 12.0654 7.12208 11.8575L1.87403 8.81359C1.51575 8.60579 1.39382 8.14747 1.60157 7.78917Z" fill="#010409"/> <path d="M1.60157 11.2892C1.80937 10.9309 2.26769 10.809 2.62598 11.0167L7.87501 14.0607C8.23282 14.2685 8.35484 14.727 8.14747 15.0851C7.93965 15.4434 7.48039 15.5654 7.12208 15.3575L1.87403 12.3136C1.51575 12.1058 1.39382 11.6475 1.60157 11.2892Z" fill="#010409"/> <path d="M14.7012 10.4894C14.9832 10.1863 15.4575 10.1693 15.7607 10.4513C16.0639 10.7334 16.0808 11.2076 15.7988 11.5109L12.0801 15.5109C11.9422 15.6591 11.7503 15.7456 11.5479 15.7501C11.3453 15.7546 11.1493 15.6764 11.0049 15.5343L9.22364 13.7823C8.92841 13.4918 8.9253 13.016 9.21583 12.7208C9.5064 12.426 9.98128 12.4226 10.2764 12.713L11.5068 13.9239L14.7012 10.4894Z" fill="#010409"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M7.12208 0.392445C7.66506 0.0775182 8.33496 0.0775182 8.87794 0.392445L13.8809 3.29381C14.711 3.77549 14.7108 4.97413 13.8809 5.45592L8.87794 8.35827C8.33508 8.67301 7.66494 8.67302 7.12208 8.35827L2.11915 5.45592C1.28917 4.97413 1.28904 3.77549 2.11915 3.29381L7.12208 0.392445ZM8.12501 1.6903C8.04751 1.64541 7.95251 1.64541 7.87501 1.6903L3.24415 4.37487L7.87501 7.06041C7.95239 7.10512 8.04762 7.10512 8.12501 7.06041L12.7549 4.37487L8.12501 1.6903Z"/> <path d="M1.60157 7.78917C1.80937 7.4309 2.26769 7.30897 2.62598 7.51671L7.87501 10.5607C8.23282 10.7685 8.35484 11.227 8.14747 11.5851C7.93965 11.9434 7.48039 12.0654 7.12208 11.8575L1.87403 8.81359C1.51575 8.60579 1.39382 8.14747 1.60157 7.78917Z"/> <path d="M1.60157 11.2892C1.80937 10.9309 2.26769 10.809 2.62598 11.0167L7.87501 14.0607C8.23282 14.2685 8.35484 14.727 8.14747 15.0851C7.93965 15.4434 7.48039 15.5654 7.12208 15.3575L1.87403 12.3136C1.51575 12.1058 1.39382 11.6475 1.60157 11.2892Z"/> <path d="M14.7012 10.4894C14.9832 10.1863 15.4575 10.1693 15.7607 10.4513C16.0639 10.7334 16.0808 11.2076 15.7988 11.5109L12.0801 15.5109C11.9422 15.6591 11.7503 15.7456 11.5479 15.7501C11.3453 15.7546 11.1493 15.6764 11.0049 15.5343L9.22364 13.7823C8.92841 13.4918 8.9253 13.016 9.21583 12.7208C9.5064 12.426 9.98128 12.4226 10.2764 12.713L11.5068 13.9239L14.7012 10.4894Z"/></g></g></svg></td>
 <td>stack-check</td>
 <td><code translate="no" v-pre>:icon-stack-check:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M14.7193 10.2198C15.0121 9.92692 15.4869 9.92701 15.7798 10.2198C16.0727 10.5127 16.0727 10.9874 15.7798 11.2803L14.0601 13L15.7798 14.7198C16.0727 15.0127 16.0727 15.4874 15.7798 15.7803C15.4869 16.0729 15.0121 16.0731 14.7193 15.7803L12.9996 14.0606L11.2798 15.7803C10.9869 16.0729 10.5121 16.0731 10.2193 15.7803C9.92663 15.4875 9.92676 15.0127 10.2193 14.7198L11.939 13L10.2193 11.2803C9.92663 10.9875 9.92676 10.5127 10.2193 10.2198C10.5121 9.92692 10.9869 9.92701 11.2798 10.2198L12.9996 11.9395L14.7193 10.2198Z" fill="#010409"/> <path d="M1.60113 11.2891C1.80888 10.9309 2.26729 10.8091 2.62555 11.0167L7.87457 14.0606C8.23239 14.2684 8.3544 14.7269 8.14703 15.085C7.93913 15.4431 7.47985 15.5652 7.12164 15.3575L1.87359 12.3135C1.51562 12.1057 1.39367 11.6473 1.60113 11.2891Z" fill="#010409"/> <path d="M1.60113 7.78911C1.80888 7.43092 2.26729 7.30912 2.62555 7.51665L7.87457 10.5606C8.23239 10.7684 8.3544 11.2269 8.14703 11.585C7.93913 11.9431 7.47985 12.0652 7.12164 11.8575L1.87359 8.81353C1.51562 8.60571 1.39367 8.14728 1.60113 7.78911Z" fill="#010409"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.12164 0.392627C7.66455 0.0777416 8.33456 0.0778247 8.8775 0.392627L13.8804 3.29399C14.7105 3.77567 14.7104 4.97432 13.8804 5.4561L8.8775 8.35845C8.33472 8.67294 7.66435 8.67311 7.12164 8.35845L2.11871 5.4561C1.28909 4.97432 1.28912 3.7758 2.11871 3.29399L7.12164 0.392627ZM8.12457 1.69048C8.04711 1.64572 7.952 1.64563 7.87457 1.69048L3.24371 4.37505L7.87457 7.0606C7.9518 7.10522 8.04727 7.10505 8.12457 7.0606L12.7545 4.37505L8.12457 1.69048Z" fill="#010409"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M14.7193 10.2198C15.0121 9.92692 15.4869 9.92701 15.7798 10.2198C16.0727 10.5127 16.0727 10.9874 15.7798 11.2803L14.0601 13L15.7798 14.7198C16.0727 15.0127 16.0727 15.4874 15.7798 15.7803C15.4869 16.0729 15.0121 16.0731 14.7193 15.7803L12.9996 14.0606L11.2798 15.7803C10.9869 16.0729 10.5121 16.0731 10.2193 15.7803C9.92663 15.4875 9.92676 15.0127 10.2193 14.7198L11.939 13L10.2193 11.2803C9.92663 10.9875 9.92676 10.5127 10.2193 10.2198C10.5121 9.92692 10.9869 9.92701 11.2798 10.2198L12.9996 11.9395L14.7193 10.2198Z" /> <path d="M1.60113 11.2891C1.80888 10.9309 2.26729 10.8091 2.62555 11.0167L7.87457 14.0606C8.23239 14.2684 8.3544 14.7269 8.14703 15.085C7.93913 15.4431 7.47985 15.5652 7.12164 15.3575L1.87359 12.3135C1.51562 12.1057 1.39367 11.6473 1.60113 11.2891Z" /> <path d="M1.60113 7.78911C1.80888 7.43092 2.26729 7.30912 2.62555 7.51665L7.87457 10.5606C8.23239 10.7684 8.3544 11.2269 8.14703 11.585C7.93913 11.9431 7.47985 12.0652 7.12164 11.8575L1.87359 8.81353C1.51562 8.60571 1.39367 8.14728 1.60113 7.78911Z" /> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.12164 0.392627C7.66455 0.0777416 8.33456 0.0778247 8.8775 0.392627L13.8804 3.29399C14.7105 3.77567 14.7104 4.97432 13.8804 5.4561L8.8775 8.35845C8.33472 8.67294 7.66435 8.67311 7.12164 8.35845L2.11871 5.4561C1.28909 4.97432 1.28912 3.7758 2.11871 3.29399L7.12164 0.392627ZM8.12457 1.69048C8.04711 1.64572 7.952 1.64563 7.87457 1.69048L3.24371 4.37505L7.87457 7.0606C7.9518 7.10522 8.04727 7.10505 8.12457 7.0606L12.7545 4.37505L8.12457 1.69048Z" /></g></g></svg></td>
 <td>stack-remove</td>
 <td><code translate="no" v-pre>:icon-stack-remove:</code></td>
 </tr>
@@ -427,7 +427,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 </div>
 </retype-table>
 <h2 id="all-icons">All icons</h2>
-<p>As of v4.6.0, there are 375 <a href="https://primer.github.io/octicons/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> supported and more being added with each new release.</p>
+<p>As of v4.7.0-preview, there are 375 <a href="https://primer.github.io/octicons/" class="outbound" target="_blank" rel="noopener noreferrer"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> supported and more being added with each new release.</p>
 <retype-table copy-text="| Icon | Shortcode | Sample |
 | :---: | --- | --- |
 | :icon-accessibility: | accessibility | `:icon-accessibility:` |
@@ -2431,12 +2431,12 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <td><code translate="no" v-pre>:icon-stack:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M7.12208 0.392445C7.66506 0.0775182 8.33496 0.0775182 8.87794 0.392445L13.8809 3.29381C14.711 3.77549 14.7108 4.97413 13.8809 5.45592L8.87794 8.35827C8.33508 8.67301 7.66494 8.67302 7.12208 8.35827L2.11915 5.45592C1.28917 4.97413 1.28904 3.77549 2.11915 3.29381L7.12208 0.392445ZM8.12501 1.6903C8.04751 1.64541 7.95251 1.64541 7.87501 1.6903L3.24415 4.37487L7.87501 7.06041C7.95239 7.10512 8.04762 7.10512 8.12501 7.06041L12.7549 4.37487L8.12501 1.6903Z" fill="#010409"/> <path d="M1.60157 7.78917C1.80937 7.4309 2.26769 7.30897 2.62598 7.51671L7.87501 10.5607C8.23282 10.7685 8.35484 11.227 8.14747 11.5851C7.93965 11.9434 7.48039 12.0654 7.12208 11.8575L1.87403 8.81359C1.51575 8.60579 1.39382 8.14747 1.60157 7.78917Z" fill="#010409"/> <path d="M1.60157 11.2892C1.80937 10.9309 2.26769 10.809 2.62598 11.0167L7.87501 14.0607C8.23282 14.2685 8.35484 14.727 8.14747 15.0851C7.93965 15.4434 7.48039 15.5654 7.12208 15.3575L1.87403 12.3136C1.51575 12.1058 1.39382 11.6475 1.60157 11.2892Z" fill="#010409"/> <path d="M14.7012 10.4894C14.9832 10.1863 15.4575 10.1693 15.7607 10.4513C16.0639 10.7334 16.0808 11.2076 15.7988 11.5109L12.0801 15.5109C11.9422 15.6591 11.7503 15.7456 11.5479 15.7501C11.3453 15.7546 11.1493 15.6764 11.0049 15.5343L9.22364 13.7823C8.92841 13.4918 8.9253 13.016 9.21583 12.7208C9.5064 12.426 9.98128 12.4226 10.2764 12.713L11.5068 13.9239L14.7012 10.4894Z" fill="#010409"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M7.12208 0.392445C7.66506 0.0775182 8.33496 0.0775182 8.87794 0.392445L13.8809 3.29381C14.711 3.77549 14.7108 4.97413 13.8809 5.45592L8.87794 8.35827C8.33508 8.67301 7.66494 8.67302 7.12208 8.35827L2.11915 5.45592C1.28917 4.97413 1.28904 3.77549 2.11915 3.29381L7.12208 0.392445ZM8.12501 1.6903C8.04751 1.64541 7.95251 1.64541 7.87501 1.6903L3.24415 4.37487L7.87501 7.06041C7.95239 7.10512 8.04762 7.10512 8.12501 7.06041L12.7549 4.37487L8.12501 1.6903Z"/> <path d="M1.60157 7.78917C1.80937 7.4309 2.26769 7.30897 2.62598 7.51671L7.87501 10.5607C8.23282 10.7685 8.35484 11.227 8.14747 11.5851C7.93965 11.9434 7.48039 12.0654 7.12208 11.8575L1.87403 8.81359C1.51575 8.60579 1.39382 8.14747 1.60157 7.78917Z"/> <path d="M1.60157 11.2892C1.80937 10.9309 2.26769 10.809 2.62598 11.0167L7.87501 14.0607C8.23282 14.2685 8.35484 14.727 8.14747 15.0851C7.93965 15.4434 7.48039 15.5654 7.12208 15.3575L1.87403 12.3136C1.51575 12.1058 1.39382 11.6475 1.60157 11.2892Z"/> <path d="M14.7012 10.4894C14.9832 10.1863 15.4575 10.1693 15.7607 10.4513C16.0639 10.7334 16.0808 11.2076 15.7988 11.5109L12.0801 15.5109C11.9422 15.6591 11.7503 15.7456 11.5479 15.7501C11.3453 15.7546 11.1493 15.6764 11.0049 15.5343L9.22364 13.7823C8.92841 13.4918 8.9253 13.016 9.21583 12.7208C9.5064 12.426 9.98128 12.4226 10.2764 12.713L11.5068 13.9239L14.7012 10.4894Z"/></g></g></svg></td>
 <td>stack-check</td>
 <td><code translate="no" v-pre>:icon-stack-check:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M14.7193 10.2198C15.0121 9.92692 15.4869 9.92701 15.7798 10.2198C16.0727 10.5127 16.0727 10.9874 15.7798 11.2803L14.0601 13L15.7798 14.7198C16.0727 15.0127 16.0727 15.4874 15.7798 15.7803C15.4869 16.0729 15.0121 16.0731 14.7193 15.7803L12.9996 14.0606L11.2798 15.7803C10.9869 16.0729 10.5121 16.0731 10.2193 15.7803C9.92663 15.4875 9.92676 15.0127 10.2193 14.7198L11.939 13L10.2193 11.2803C9.92663 10.9875 9.92676 10.5127 10.2193 10.2198C10.5121 9.92692 10.9869 9.92701 11.2798 10.2198L12.9996 11.9395L14.7193 10.2198Z" fill="#010409"/> <path d="M1.60113 11.2891C1.80888 10.9309 2.26729 10.8091 2.62555 11.0167L7.87457 14.0606C8.23239 14.2684 8.3544 14.7269 8.14703 15.085C7.93913 15.4431 7.47985 15.5652 7.12164 15.3575L1.87359 12.3135C1.51562 12.1057 1.39367 11.6473 1.60113 11.2891Z" fill="#010409"/> <path d="M1.60113 7.78911C1.80888 7.43092 2.26729 7.30912 2.62555 7.51665L7.87457 10.5606C8.23239 10.7684 8.3544 11.2269 8.14703 11.585C7.93913 11.9431 7.47985 12.0652 7.12164 11.8575L1.87359 8.81353C1.51562 8.60571 1.39367 8.14728 1.60113 7.78911Z" fill="#010409"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.12164 0.392627C7.66455 0.0777416 8.33456 0.0778247 8.8775 0.392627L13.8804 3.29399C14.7105 3.77567 14.7104 4.97432 13.8804 5.4561L8.8775 8.35845C8.33472 8.67294 7.66435 8.67311 7.12164 8.35845L2.11871 5.4561C1.28909 4.97432 1.28912 3.7758 2.11871 3.29399L7.12164 0.392627ZM8.12457 1.69048C8.04711 1.64572 7.952 1.64563 7.87457 1.69048L3.24371 4.37505L7.87457 7.0606C7.9518 7.10522 8.04727 7.10505 8.12457 7.0606L12.7545 4.37505L8.12457 1.69048Z" fill="#010409"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 16 16" role="presentation"><g fill="currentColor"><g><path d="M14.7193 10.2198C15.0121 9.92692 15.4869 9.92701 15.7798 10.2198C16.0727 10.5127 16.0727 10.9874 15.7798 11.2803L14.0601 13L15.7798 14.7198C16.0727 15.0127 16.0727 15.4874 15.7798 15.7803C15.4869 16.0729 15.0121 16.0731 14.7193 15.7803L12.9996 14.0606L11.2798 15.7803C10.9869 16.0729 10.5121 16.0731 10.2193 15.7803C9.92663 15.4875 9.92676 15.0127 10.2193 14.7198L11.939 13L10.2193 11.2803C9.92663 10.9875 9.92676 10.5127 10.2193 10.2198C10.5121 9.92692 10.9869 9.92701 11.2798 10.2198L12.9996 11.9395L14.7193 10.2198Z" /> <path d="M1.60113 11.2891C1.80888 10.9309 2.26729 10.8091 2.62555 11.0167L7.87457 14.0606C8.23239 14.2684 8.3544 14.7269 8.14703 15.085C7.93913 15.4431 7.47985 15.5652 7.12164 15.3575L1.87359 12.3135C1.51562 12.1057 1.39367 11.6473 1.60113 11.2891Z" /> <path d="M1.60113 7.78911C1.80888 7.43092 2.26729 7.30912 2.62555 7.51665L7.87457 10.5606C8.23239 10.7684 8.3544 11.2269 8.14703 11.585C7.93913 11.9431 7.47985 12.0652 7.12164 11.8575L1.87359 8.81353C1.51562 8.60571 1.39367 8.14728 1.60113 7.78911Z" /> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.12164 0.392627C7.66455 0.0777416 8.33456 0.0778247 8.8775 0.392627L13.8804 3.29399C14.7105 3.77567 14.7104 4.97432 13.8804 5.4561L8.8775 8.35845C8.33472 8.67294 7.66435 8.67311 7.12164 8.35845L2.11871 5.4561C1.28909 4.97432 1.28912 3.7758 2.11871 3.29399L7.12164 0.392627ZM8.12457 1.69048C8.04711 1.64572 7.952 1.64563 7.87457 1.69048L3.24371 4.37505L7.87457 7.0606C7.9518 7.10522 8.04727 7.10505 8.12457 7.0606L12.7545 4.37505L8.12457 1.69048Z" /></g></g></svg></td>
 <td>stack-remove</td>
 <td><code translate="no" v-pre>:icon-stack-remove:</code></td>
 </tr>
@@ -2641,7 +2641,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 <td><code translate="no" v-pre>:icon-video:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 48 48" role="presentation"><g fill="currentColor"><g><path d="M32.59 41.758a2.41 2.41 0 0 1-2.77-.474L14.448 27.188l-6.695 5.109a1.618 1.618 0 0 1-2.074-.093l-2.147-1.963a1.64 1.64 0 0 1-.002-2.416L9.336 22.5 3.53 17.175a1.64 1.64 0 0 1 .002-2.416l2.147-1.963a1.618 1.618 0 0 1 2.074-.093l6.695 5.109L29.82 3.716a2.419 2.419 0 0 1 2.77-.475l8.03 3.884A2.451 2.451 0 0 1 42 9.333V24h-9.744V13.601L20.593 22.5l11.663 8.899V24H42v11.667c0 .941-.537 1.8-1.38 2.208l-8.03 3.883Z"/></g></g></svg></td>
+<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path fill="currentColor" fill-rule="evenodd" d="M16.8677 1.01987c.28-.04811.5684-.00852.8241.1151l4.5302 2.19147c.4754.23019.778.71482.778 1.24613V19.4279c-.0002.531-.303 1.0144-.778 1.2446l-4.5302 2.1899c-.1686.0827-.354.1293-.5417.1366-.1874.0072-.375-.0244-.5494-.0936-.1772-.0686-.3376-.1748-.4711-.31l-8.67201-7.951-3.77665 2.8821c-.1701.1294-.38039.1951-.59389.1857-.21364-.0096-.41752-.0937-.57547-.2379l-1.21233-1.108c-.09442-.0866-.16941-.1928-.22099-.31-.05143-.1171-.07824-.2435-.07826-.3714 0-.1281.02668-.2557.07826-.3729.05155-.117.12679-.2221.22099-.3085l3.27483-3.0033-3.27483-3.0048c-.09419-.08646-.16949-.19143-.22099-.30846C1.02678 8.5699 1.0001 8.44341 1 8.31556c0-.12811.02668-.25566.07826-.37292.0515-.11703.1268-.22201.22099-.30847l1.21233-1.10954c.1579-.14398.36199-.22829.57547-.23787.21349-.00945.4238.05631.59389.18569l3.77665 2.88206 8.67201-7.94944c.1998-.20219.4581-.33695.7381-.3852M10.9242 12.0002l6.5789 5.0183v-.3039H17.5V8.85728h.0031V6.98042z" clip-rule="evenodd"/></g></g></svg></td>
 <td>vscode</td>
 <td><code translate="no" v-pre>:icon-vscode:</code></td>
 </tr>
@@ -2772,7 +2772,7 @@ This is a sample page with a :icon-rocket: icon.</code></pre>
 
     <!-- Rendered if sidebar right is enabled -->
     <!-- Sidebar right skeleton-->
-    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:z-0 sidebar-right skeleton layout-sidebar-right-width-md layout-sidebar-right-width-lg">
         <div class="pl-5">
             <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
             <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>

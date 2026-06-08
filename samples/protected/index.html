@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833844960366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834267785839">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0">
+    <meta name="generator" content="Retype 4.7.0-preview">
     <meta name="robots" content="noindex">
 
     <!-- Primary Meta Tags -->
@@ -41,15 +41,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.6.0.833844960366" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.7.0-preview.834267785839" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -57,14 +57,14 @@
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
     <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
 
-    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full bg-header-bg border-b border-header-border layout-header-height">
         <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
             <!-- Mobile menu button skeleton -->
             <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
             <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
             <!-- Logo -->
-            <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center justify-between h-full py-2 layout-sidebar-left-width-md">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
@@ -176,7 +176,7 @@
 
     <div id="retype-container" class="container relative flex bg-white">
         <!-- Sidebar Skeleton -->
-        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar border-r h-screen md:sticky transition-transform skeleton layout-header-offset-desktop layout-sidebar-left-width">
         
             <div class="flex items-center h-16 px-6">
                 <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
@@ -300,7 +300,7 @@
         <div class="grow min-w-0 bg-body-bg">
             <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
 <div class="flex">
-    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+    <div id="retype-main" class="layout-content-default min-w-0 p-4 grow mx-auto md:px-16">
         <main class="relative pb-12 lg:pt-2">
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
@@ -337,7 +337,7 @@
 
                 <!-- Page content  -->
 
-<div id="protected-content" data="2553.H0h4y+HTRycIRrgjjUeQ5Q==.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" class="text-center mt-12 pb-16">
+<div id="protected-content" data="2565.jwdN7l9PjThsK5+IEympUQ==.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" class="text-center mt-12 pb-16">
     <div class="inline-block bg-gray-200 dark:bg-dark-550 dark:text-white p-6 rounded-lg">
         <div class="-mt-2 pb-6 text-2xl">
             This page is password protected
@@ -432,7 +432,7 @@
 
     <!-- Rendered if sidebar right is enabled -->
     <!-- Sidebar right skeleton-->
-    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:z-0 sidebar-right skeleton layout-sidebar-right-width-md layout-sidebar-right-width-lg">
         <div class="pl-5">
             <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
             <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>

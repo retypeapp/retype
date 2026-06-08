@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833844960366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834267785839">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0">
+    <meta name="generator" content="Retype 4.7.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Blog &amp; News - Write On! with Retype</title>
@@ -40,27 +40,27 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.6.0.833844960366" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834267785839" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.6.0.833844960366" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834267785839" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
 
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
-    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full bg-header-bg border-b border-header-border layout-header-height">
         <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
             <!-- Mobile menu button skeleton -->
             <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
             <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
             <!-- Logo -->
-            <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center justify-between h-full py-2 layout-sidebar-left-width-md">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://retype.com/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
@@ -170,10 +170,10 @@
     </header>
 
 
-    <div class="relative flex mx-auto bg-white max-w-core">
+    <div class="relative flex mx-auto bg-white layout-content-blog">
         <div class="md:hidden">
             <!-- Sidebar Skeleton -->
-            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar border-r h-screen md:sticky transition-transform skeleton layout-header-offset-desktop layout-sidebar-left-width">
             
                 <div class="flex items-center h-16 px-6">
                     <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
@@ -336,7 +336,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.6</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype v4.6 is a big release for growing documentation projects. This release removes the page limit for Retype Free, introduces partial project configuration files, adds a Table Copy button, extends Card components with <code translate="no" v-pre>target</code> support, makes <code translate="no" v-pre>[!file]</code> downloads smarter, and ships one of the largest performance passes in recent releases.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-26</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-26</span></div>
             </div>
         </div>
     </a>
@@ -351,7 +351,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">Retype for Obsidian</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Obsidian is where a lot of great documentation starts. Retype is how that Markdown becomes a fast, polished, self-hosted website. Now Retype is available directly inside Obsidian. The official Retype plugin is available in the Obsidian Community plugin directory. Install Retype directly from Obsidian, and manage your Retype projects from inside your vault.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-05-25</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-05-25</span></div>
             </div>
         </div>
     </a>
@@ -366,7 +366,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.5</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Documentation that sits still isn't working hard enough. Retype <code translate="no" v-pre>v4.5</code> delivers readers more ways to navigate, share, and act on content, and makes every page ready for AI tools right out of the box. This release introduces the new <strong>Tags in the left menu</strong> feature, plus automatic <code translate="no" v-pre>llms.txt</code> generation, sanitized Markdown output, Page Actions, new Card layouts, new Table styles, Instagram and Google Maps embeds, and <code translate="no" v-pre>sitemap.xml</code> generation.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-04-07</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-04-07</span></div>
             </div>
         </div>
     </a>
@@ -381,7 +381,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.4</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.4</code> is another big release, including two new extensibility features that we have all wanted for a long time. The all new, <strong>custom icons</strong> deliver unlimited icon options for your project, and <strong>advanced include selectors</strong> let you share and reuse content and components across pages in powerful new ways.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-23</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-03-23</span></div>
             </div>
         </div>
     </a>
@@ -396,7 +396,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.3</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.3</code> packs in notable new features and a solid round of enhancements. Header navigation now supports dropdown sub-menu support, backlinks gain fine-grained <code translate="no" v-pre>include</code> and <code translate="no" v-pre>exclude</code> controls, and date formatting is now fully configurable. See the full Changelog and Feature Log for a detailed list of updates in the <code translate="no" v-pre>v4.3</code> release.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-17</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-03-17</span></div>
             </div>
         </div>
     </a>
@@ -411,7 +411,7 @@
             <div class="mt-2 text-card-title font-card-title leading-card-title text-card-title-text md:text-card-title-md">What's New in Retype v4.2</div>
             <div class="line-clamp-3"><p class="mt-card-description-margin-top text-card-description-text">Retype <code translate="no" v-pre>v4.2</code> adds new RSS controls, customizable labels, new search indexing controls, Card component upgrades, and a few CLI updates that make publishing easier to fine tune. See the full Changelog and Feature Log for a detailed list of updates in the <code translate="no" v-pre>v4.2</code> release.</p></div>
             <div class="flex mt-card-footer-margin-top items-center">
-                <div class="text-card-footer text-card-footer-text"><span>2026-03-10</span></div>
+                <div class="text-card-footer text-card-footer-text w-full"><span>2026-03-10</span></div>
             </div>
         </div>
     </a>
@@ -444,7 +444,7 @@
     </div>
 
     <div class="border-t dark:border-base-border">
-        <div class="max-w-core mx-auto px-6 py-6">
+        <div class="layout-footer-content mx-auto px-6" style="--footer-content-max-width: var(--layout-blog-content-max-width, var(--footer-content-max-width));">
             <footer>
                 <div class="flex flex-wrap items-center justify-between">
                     <div id="retype-footer-links" class="pt-3 print:hidden">
