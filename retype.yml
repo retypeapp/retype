@@ -161,7 +161,7 @@ links:
     target: blank
 
 data:
-  version: "4.6.0"
+  version: "4.7.0-preview"
   # abbreviations:
   #   HTML: Hyper Text Markup Language
   #   CSS: Cascading Style Sheet
