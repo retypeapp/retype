@@ -36,6 +36,7 @@ Core variables that define the fundamental appearance of your site.
 | `base-color` | Brand color | `#5495f1` | `#5495f1` |
 | `base-white` | Pure white color | `#ffffff` | `#ffffff` |
 | `base-black` | Pure black color | `#000000` | `#000000` |
+| `base-dark` | Pure dark color | `#121212` | `#121212` |
 | `base-bg` | Main background color | `base-white` | `dark-900` |
 | `base-text` | Primary text color | `gray-700` | `dark-300` |
 | `base-text-muted` | Muted text color | `gray-400` | `gray-400` |
@@ -239,6 +240,19 @@ Utility variables used throughout the theme system.
 | --- | --- | --- | --- |
 | `transparent` | Transparent color value | `transparent` | `transparent` |
 | `skeleton-bg` | Skeleton loading background | `gray-200` | `dark-600` |
+| `selector` | Browser accent color used by controls that inherit the selector color | `#5495f1` | `#5495f1` |
+| `grid` | Grid guide color | `#5495f1` | `#5495f1` |
+| `radius-xl` | Extra large shared radius token | `0.75rem` | `0.75rem` |
+| `radius-2xl` | Two extra large shared radius token | `1rem` | `1rem` |
+| `mix-50` | Color mixing percentage for the `50` palette stop | `10%` | `10%` |
+| `mix-100` | Color mixing percentage for the `100` palette stop | `15%` | `15%` |
+| `mix-200` | Color mixing percentage for the `200` palette stop | `30%` | `30%` |
+| `mix-300` | Color mixing percentage for the `300` palette stop | `50%` | `50%` |
+| `mix-400` | Color mixing percentage for the `400` palette stop | `70%` | `70%` |
+| `mix-600` | Color mixing percentage for the `600` palette stop | `90%` | `90%` |
+| `mix-700` | Color mixing percentage for the `700` palette stop | `80%` | `80%` |
+| `mix-800` | Color mixing percentage for the `800` palette stop | `60%` | `60%` |
+| `mix-900` | Color mixing percentage for the `900` palette stop | `40%` | `40%` |
 
 ## Selection
 
@@ -276,6 +290,25 @@ Variables controlling the header appearance.
 | `header-text` | Header text color | `base-link` | `base-link` |
 | `header-text-weight` | Header text font weight | `base-link-weight` | `base-link-weight` |
 | `header-text-hover` | Header text hover color | `base-link-hover` | `base-link-hover` |
+| `header-height-mobile` | Header height on mobile | `4rem` | `4rem` |
+| `header-height-desktop` | Header height on desktop | `5rem` | `5rem` |
+
+## Layout
+
+Variables controlling layout dimensions for content, sidebars, header height, and footer spacing.
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `layout-site-max-width` | Maximum width for the overall site container (header, main content shell, and constrained footer areas) | `1800px` | `1800px` |
+| `layout-default-content-min-width` | Minimum width for default layout content area | `0` | `0` |
+| `layout-default-content-max-width` | Maximum width for default layout content area | `none` | `none` |
+| `layout-blog-content-min-width` | Minimum width for blog layout content area | `0` | `0` |
+| `layout-blog-content-max-width` | Maximum width for blog layout content area | `49.75rem` | `49.75rem` |
+| `layout-central-content-min-width` | Minimum width for central layout content area | `0` | `0` |
+| `layout-central-content-max-width` | Maximum width for central layout content area | `49.75rem` | `49.75rem` |
+| `layout-sidebar-left-width` | Left sidebar width | `18.75rem` | `18.75rem` |
+| `layout-sidebar-right-width-md` | Right sidebar width at medium breakpoint | `26rem` | `26rem` |
+| `layout-sidebar-right-width-lg` | Right sidebar width at large breakpoint | `16rem` | `16rem` |
 
 ## Search
 
@@ -289,9 +322,32 @@ Variables for customizing search functionality appearance.
 | `search-border` | Search input border color | `base-border` | `base-border-hover` |
 | `search-border-hover` | Search input hover border color | `base-border-hover` | `base-border-strong` |
 | `search-border-focus` | Search input focus border color | `base-border-hover` | `base-border-strong` |
+| `search-highlight-bg` | Search result highlight background | `base-100` | `base-800` |
 | `search-hint-text` | Search hint text color | `search-placeholder` | `search-placeholder` |
 | `search-hint-bg` | Search hint background | `header-bg` | `header-bg` |
 | `search-hint-border` | Search hint border color | `search-border` | `search-border` |
+| `search-result-heading` | Search result heading text color | `base-text-strong` | `base-text-strong` |
+| `search-result-text` | Search result summary text color | `gray-400` | `dark-350` |
+| `search-result-breadcrumb` | Search result breadcrumb text color | `header-text` | `header-text` |
+| `search-result-breadcrumb-hover` | Search result breadcrumb hover text color | `header-text-hover` | `header-text-hover` |
+| `search-result-icon` | Search result icon color | `base-text-muted` | `base-text-muted` |
+| `search-result-hover` | Search result hover background | `base-item-bg-hover` | `dark-450` |
+| `search-result-active-bg` | Active search result background | `search-result-hover` | `search-result-hover` |
+| `search-result-active-ring` | Active search result ring color | `base-200` | `dark-650` |
+| `search-result-active-ring-width` | Active search result ring width | `1px` | `1px` |
+| `search-result-active-radius` | Active search result border radius | `0.5rem` | `0.5rem` |
+| `search-result-border` | Search result border color | `gray-100` | `dark-500` |
+| `search-result-code-bg` | Search result inline code background | `gray-100` | `dark-600` |
+| `search-result-count` | Search result count text color | `base-text-muted` | `base-text-muted` |
+| `search-no-results-text` | Search no-results text color | `base-text-muted` | `base-text-muted` |
+| `search-no-results-icon` | Search no-results icon color | `gray-300` | `gray-600` |
+| `search-footer-text` | Search footer text color | `base-text-muted` | `base-text-muted` |
+| `search-footer-kbd-bg` | Search footer keyboard key background | `gray-100` | `dark-500` |
+| `search-modal-bg` | Search modal background | `base-white` | `dark-650` |
+| `search-modal-border` | Search modal border color | `gray-200` | `dark-500` |
+| `search-results-bg` | Search results panel background | `base-white` | `dark-700` |
+| `search-backdrop` | Search modal backdrop background | `rgba(75, 85, 99, 0.7)` | `rgba(18, 18, 18, 0.8)` |
+| `search-backdrop-blur` | Search modal backdrop blur | `4px` | `4px` |
 
 ## Filter
 
@@ -317,6 +373,11 @@ Variables controlling the main content area.
 | `body-link` | Body link color | `base-link` | `base-link` |
 | `body-link-hover` | Body link hover color | `base-link-hover` | `base-link-hover` |
 | `body-link-weight` | Body link font weight | `base-link-weight` | `base-link-weight` |
+| `body-link-decoration-line` | Body link text decoration line | `underline` | `underline` |
+| `body-link-decoration-thickness` | Body link underline thickness | `1px` | `1px` |
+| `body-link-underline-offset` | Body link underline offset | `4px` | `4px` |
+| `body-link-decoration-color` | Body link underline color | `base-200` | `base-800` |
+| `body-link-decoration-color-hover` | Body link hover underline color | `base-600` | `base-500` |
 
 ## Heading
 
@@ -430,6 +491,13 @@ Variables controlling the Table of Contents appearance in the right sidebar.
 | `toc-border-active` | Table of contents active border color | `base-500` | `base-500` |
 | `toc-heading-case` | Table of contents heading text transform | `uppercase` | `uppercase` |
 | `toc-heading-weight` | Table of contents heading font weight | `600` | `600` |
+| `toc-label-text` | Table of contents label text color | `toc-heading` | `toc-heading` |
+| `toc-label-text-hover` | Table of contents label hover text color | `body-link` | `body-link` |
+| `toc-label-decoration-line` | Table of contents label text decoration line | `inherit` | `inherit` |
+| `toc-label-decoration-thickness` | Table of contents label text decoration thickness | `inherit` | `inherit` |
+| `toc-label-underline-offset` | Table of contents label underline offset | `inherit` | `inherit` |
+| `toc-label-decoration-color` | Table of contents label decoration color | `currentColor` | `currentColor` |
+| `toc-label-decoration-color-hover` | Table of contents label hover decoration color | `currentColor` | `currentColor` |
 
 ## Footer
 
@@ -443,6 +511,35 @@ Variables controlling the footer appearance.
 | `footer-link-weight` | Footer link font weight | `base-link-weight` | `base-link-weight` |
 | `footer-content-max-width` | Maximum width for constrained footer containers | `49.75rem` | `49.75rem` |
 | `footer-padding-y` | Vertical footer padding for constrained footer containers | `1.5rem` | `1.5rem` |
+
+## Action Component
+
+Variables for customizing action buttons and action menus.
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `action-border-width` | Action border width | `1px` | `1px` |
+| `action-height` | Action button height | `1.75rem` | `1.75rem` |
+| `action-gap` | Gap between action button items | `0.375rem` | `0.375rem` |
+| `action-padding-x` | Action button horizontal padding | `1.25rem` | `1.25rem` |
+| `action-toggle-size` | Action menu toggle size | `1.75rem` | `1.75rem` |
+| `action-menu-offset-y` | Action menu vertical offset | `0.5rem` | `0.5rem` |
+| `action-menu-max-width` | Action menu maximum width | `min(300px, calc(100vw - 2rem))` | `min(300px, calc(100vw - 2rem))` |
+| `action-z-index` | Action button z-index | `10` | `10` |
+| `action-menu-z-index` | Action menu z-index | `10` | `10` |
+| `action-background` | Action button background | `search-bg` | `search-bg` |
+| `action-border-color` | Action button border color | `search-border` | `search-border` |
+| `action-border-color-hover` | Action button hover border color | `search-border-hover` | `search-border-hover` |
+| `action-text` | Action button text color | `search-text` | `search-text` |
+| `action-text-muted` | Action muted text color | `search-placeholder` | `search-placeholder` |
+| `action-primary-hover-text` | Primary action hover text color | `gray-700` | `dark-200` |
+| `action-toggle-hover-text` | Action menu toggle hover text color | `gray-600` | `dark-200` |
+| `action-menu-panel-background` | Action menu panel background | `base-bg` | `base-bg` |
+| `action-menu-panel-border` | Action menu panel border color | `base-border` | `base-border` |
+| `action-menu-item-text` | Action menu item text color | `base-text` | `base-text` |
+| `action-menu-item-description-text` | Action menu item description text color | `gray-400` | `dark-350` |
+| `action-menu-item-hover-text` | Action menu item hover text color | `gray-600` | `dark-200` |
+| `action-menu-item-hover-bg` | Action menu item hover background | `base-item-bg-hover` | `base-item-bg-hover` |
 
 ## Backlinks Component
 
@@ -461,10 +558,6 @@ Variables for customizing backlinks appearance.
 | `backlinks-title-margin-bottom` | Backlinks title bottom margin | `heading-h2-margin-bottom` | `heading-h2-margin-bottom` |
 | `backlinks-title-font-size` | Backlinks title font size | `heading-h2-font-size` | `heading-h2-font-size` |
 | `backlinks-title-font-weight` | Backlinks title font weight | `heading-h2-weight` | `heading-h2-weight` |
-| `backlinks-card-border` | Backlinks card border color | `base-border` | `base-border` |
-| `backlinks-card-border-hover` | Backlinks card hover border color | `base-border-hover` | `base-border-hover` |
-| `backlinks-card-rounded` | Backlinks card border radius | `0.5rem` | `0.5rem` |
-| `backlinks-card-shadow-hover` | Backlinks card hover shadow | `shadow-xs` | `shadow-xs` |
 | `backlinks-link` | Backlinks link color | `base-link` | `base-link` |
 | `backlinks-link-hover` | Backlinks link hover color | `base-link-hover` | `base-link-hover` |
 | `backlinks-link-font-size` | Backlinks link font size | `0.875rem` | `0.875rem` |
@@ -568,8 +661,8 @@ Variables for customizing badge components across all variants.
 
 | Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `badge-light` | Light badge background | `base-white` | `base-white` |
-| `badge-light-hover` | Light badge hover background | `gray-100` | `dark-200` |
+| `badge-light` | Light badge background | `gray-50` | `gray-50` |
+| `badge-light-hover` | Light badge hover background | `gray-150` | `dark-200` |
 | `badge-light-text` | Light badge text color | `gray-600` | `dark-600` |
 | `badge-light-text-hover` | Light badge hover text color | `gray-600` | `dark-600` |
 | `badge-light-border` | Light badge border color | `gray-200` | `transparent` |
@@ -607,6 +700,15 @@ Variables for customizing badge components across all variants.
 | `badge-contrast-text-hover` | Contrast badge hover text color | `base-white` | `dark-850` |
 | `badge-contrast-border` | Contrast badge border color | `gray-900` | `base-white` |
 | `badge-contrast-border-hover` | Contrast badge hover border color | `gray-800` | `base-white` |
+
+### Clean Badge
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `badge-clean` | Clean badge background | `base-white` | `base-dark` |
+| `badge-clean-hover` | Clean badge hover background | `gray-100` | `dark-600` |
+| `badge-clean-text` | Clean badge text color | `gray-600` | `base-white` |
+| `badge-clean-border` | Clean badge border color | `gray-600` | `base-white` |
 
 ## Button Component
 
@@ -686,9 +788,12 @@ Variables for customizing button components across all variants.
 
 | Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
 | --- | --- | --- | --- |
-| `button-light` | Light button background | `gray-200` | `dark-250` |
-| `button-light-hover` | Light button hover background | `gray-300` | `dark-350` |
-| `button-light-text` | Light button text color | `gray-900` | `base-black` |
+| `button-light` | Light button background | `gray-50` | `gray-50` |
+| `button-light-hover` | Light button hover background | `gray-150` | `dark-200` |
+| `button-light-text` | Light button text color | `gray-600` | `dark-600` |
+| `button-light-text-hover` | Light button hover text color | `gray-600` | `dark-600` |
+| `button-light-border` | Light button border color | `gray-200` | `transparent` |
+| `button-light-border-hover` | Light button hover border color | `gray-400` | `gray-400` |
 
 ### Dark Button
 
@@ -713,6 +818,15 @@ Variables for customizing button components across all variants.
 | `button-contrast` | Contrast button background | `gray-900` | `base-white` |
 | `button-contrast-hover` | Contrast button hover background | `gray-700` | `dark-300` |
 | `button-contrast-text` | Contrast button text color | `gray-50` | `base-black` |
+
+### Clean Button
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `button-clean` | Clean button background | `base-white` | `base-dark` |
+| `button-clean-hover` | Clean button hover background | `gray-100` | `dark-600` |
+| `button-clean-text` | Clean button text color | `gray-600` | `base-white` |
+| `button-clean-border` | Clean button border color | `gray-600` | `base-white` |
 
 ## Callout Component
 
@@ -754,14 +868,16 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | --- | --- | --- | --- |
 | `card-bg` | Card background color | `var(--base-bg)` | `var(--base-bg)` |
 | `card-border` | Card border color | `var(--gray-200)` | `var(--dark-700)` |
-| `card-border-hover` | Card hover border color | `var(--gray-400)` | `var(--dark-450)` |
+| `card-border-hover` | Card hover border color | `var(--base-border-hover)` | `var(--base-border-hover)` |
 | `card-rounded` | Card border radius | `0.5rem` | `0.5rem` |
 | `card-padding` | Card content padding | `1.5rem` | `1.5rem` |
+| `card-shadow-hover` | Card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
 | `card-margin-bottom` | Card bottom margin | `1.5rem` | `1.5rem` |
 | `card-max-width` | Card maximum width (wide screens) | `960px` | `960px` |
-| `card-max-width-sm` | Card maximum width (narrow screens) | `558px` | `558px` |
-| `card-min-width` | Card minimum width | `250px` | `250px` |
-| `card-image-bg` | Card image placeholder background | `var(--gray-300)` | `var(--dark-450)` |
+| `card-max-width-sm` | Card maximum width (narrow screens) | `613px` | `613px` |
+| `card-min-width` | Card minimum width | `280px` | `280px` |
+| `card-image-bg` | Card image placeholder background | `var(--gray-50)` | `var(--dark-800)` |
+| `card-image-inner-border` | Card image inner border color | `var(--gray-200)` | `var(--dark-700)` |
 | `card-image-width` | Card image width percentage | `41.666667%` | `41.666667%` |
 | `card-title-text` | Card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
 | `card-title-font-size` | Card title font size | `1.125rem` | `1.125rem` |
@@ -770,15 +886,85 @@ Variables for customizing card appearance. Cards are used for blog listings, cat
 | `card-title-leading` | Card title line height | `1.375` | `1.375` |
 | `card-description-text` | Card description text color | `var(--body-text)` | `var(--body-text)` |
 | `card-description-margin-top` | Card description top margin | `0.5rem` | `0.5rem` |
-| `card-category-text` | Card category text color | `var(--body-link)` | `var(--body-link)` |
-| `card-category-font-size` | Card category font size | `0.8125rem` | `0.8125rem` |
-| `card-category-font-weight` | Card category font weight | `600` | `600` |
-| `card-category-case` | Card category text transform | `uppercase` | `uppercase` |
-| `card-date-text` | Card date text color | `var(--gray-500)` | `var(--dark-350)` |
-| `card-date-font-size` | Card date font size | `0.875rem` | `0.875rem` |
-| `card-date-margin-top` | Card date top margin | `0.75rem` | `0.75rem` |
-| `card-group-gap` | Portrait card group gap spacing | `1.5rem` | `1.5rem` |
-| `card-group-margin-bottom` | Portrait card group bottom margin | `1.5rem` | `1.5rem` |
+| `card-kicker-text` | Card kicker text color | `var(--body-link)` | `var(--body-link)` |
+| `card-kicker-font-size` | Card kicker font size | `0.8125rem` | `0.8125rem` |
+| `card-kicker-font-weight` | Card kicker font weight | `600` | `600` |
+| `card-kicker-case` | Card kicker text transform | `uppercase` | `uppercase` |
+| `card-vert-kicker-title-gap` | Vertical Card gap between kicker and title | `0.75rem` | `0.75rem` |
+| `card-footer-text` | Card footer text color | `var(--gray-500)` | `var(--dark-350)` |
+| `card-footer-font-size` | Card footer font size | `0.875rem` | `0.875rem` |
+| `card-footer-margin-top` | Card footer top margin | `0.75rem` | `0.75rem` |
+| `card-group-gap` | Vertical, compact, signal, and snap card group gap spacing | `1.5rem` | `1.5rem` |
+| `card-group-margin-bottom` | Card group bottom margin | `1.5rem` | `1.5rem` |
+| `card-vert-max-width` | Vertical card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-vert-min-width` | Vertical card minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-compact-border` | Compact card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-compact-border-hover` | Compact card hover border color | `var(--card-border-hover)` | `var(--card-border-hover)` |
+| `card-compact-rounded` | Compact card border radius | `var(--card-rounded)` | `var(--card-rounded)` |
+| `card-compact-padding` | Compact card padding | `1rem` | `1rem` |
+| `card-compact-shadow-hover` | Compact card hover shadow | `var(--card-shadow-hover)` | `var(--card-shadow-hover)` |
+| `card-compact-title-text` | Compact card title text color | `var(--backlinks-link)` | `var(--backlinks-link)` |
+| `card-compact-title-hover-text` | Compact card title hover text color | `var(--backlinks-link-hover)` | `var(--backlinks-link-hover)` |
+| `card-compact-title-font-size` | Compact card title font size | `var(--backlinks-link-font-size)` | `var(--backlinks-link-font-size)` |
+| `card-compact-title-font-weight` | Compact card title font weight | `var(--body-link-weight)` | `var(--body-link-weight)` |
+| `card-compact-title-line-height` | Compact card title line height | `1.375` | `1.375` |
+| `card-compact-title-gap` | Compact card title icon gap | `0.5rem` | `0.5rem` |
+| `card-compact-title-margin-bottom` | Compact card title bottom margin | `0.25rem` | `0.25rem` |
+| `card-compact-description-text` | Compact card description text color | `var(--backlinks-text)` | `var(--backlinks-text)` |
+| `card-compact-description-font-size` | Compact card description font size | `var(--backlinks-text-font-size)` | `var(--backlinks-text-font-size)` |
+| `card-compact-description-font-weight` | Compact card description font weight | `var(--backlinks-text-font-weight)` | `var(--backlinks-text-font-weight)` |
+| `card-compact-icon-color` | Compact card icon color | `var(--backlinks-link)` | `var(--backlinks-link)` |
+| `card-compact-icon-size` | Compact card icon size | `1rem` | `1rem` |
+| `card-compact-image-size` | Compact card image size | `5rem` | `5rem` |
+| `card-compact-max-width` | Compact card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-compact-grid-min-width` | Compact card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-signal-border` | Signal card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-signal-border-hover` | Signal card hover border color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-rounded` | Signal card border radius | `var(--radius-2xl)` | `var(--radius-2xl)` |
+| `card-signal-padding` | Signal card padding | `1.25rem` | `1.25rem` |
+| `card-signal-padding-y` | Signal card vertical padding | `1.125rem` | `1.125rem` |
+| `card-signal-shadow-hover` | Signal card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `card-signal-title-text` | Signal card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-signal-title-hover-text` | Signal card title hover text color | `var(--body-link-hover)` | `var(--body-link-hover)` |
+| `card-signal-title-font-size` | Signal card title font size | `1rem` | `1rem` |
+| `card-signal-title-font-weight` | Signal card title font weight | `700` | `700` |
+| `card-signal-title-line-height` | Signal card title line height | `1.45` | `1.45` |
+| `card-signal-description-text` | Signal card description text color | `var(--body-text)` | `var(--body-text)` |
+| `card-signal-description-font-size` | Signal card description font size | `1rem` | `1rem` |
+| `card-signal-description-line-height` | Signal card description line height | `1.45` | `1.45` |
+| `card-signal-icon-color` | Signal card icon color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-icon-stroke-width` | Signal card icon stroke width | `2.2` | `2.2` |
+| `card-signal-icon-size` | Signal card icon size | `2rem` | `2rem` |
+| `card-signal-media-size` | Signal card media size | `3.25rem` | `3.25rem` |
+| `card-signal-media-rounded` | Signal card media border radius | `9999px` | `9999px` |
+| `card-signal-kicker-text` | Signal card kicker text color | `var(--body-link)` | `var(--body-link)` |
+| `card-signal-kicker-font-size` | Signal card kicker font size | `0.875rem` | `0.875rem` |
+| `card-signal-kicker-font-weight` | Signal card kicker font weight | `600` | `600` |
+| `card-signal-grid-min-width` | Signal card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-signal-max-width` | Signal card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
+| `card-snap-border` | Snap card border color | `var(--base-border)` | `var(--base-border)` |
+| `card-snap-border-hover` | Snap card hover border color | `var(--body-link)` | `var(--body-link)` |
+| `card-snap-rounded` | Snap card border radius | `var(--radius-xl)` | `var(--radius-xl)` |
+| `card-snap-padding` | Snap card padding | `var(--card-signal-padding)` | `var(--card-signal-padding)` |
+| `card-snap-padding-y` | Snap card vertical padding | `var(--card-signal-padding-y)` | `var(--card-signal-padding-y)` |
+| `card-snap-shadow-hover` | Snap card hover shadow | `var(--shadow-xs)` | `var(--shadow-xs)` |
+| `card-snap-title-text` | Snap card title text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-title-hover-text` | Snap card title hover text color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-title-font-size` | Snap card title font size | `1.0625rem` | `1.0625rem` |
+| `card-snap-title-font-weight` | Snap card title font weight | `600` | `600` |
+| `card-snap-title-line-height` | Snap card title line height | `1.3` | `1.3` |
+| `card-snap-icon-color` | Snap card icon color | `var(--base-text-strong)` | `var(--base-text-strong)` |
+| `card-snap-icon-stroke-width` | Snap card icon stroke width | `var(--card-signal-icon-stroke-width)` | `var(--card-signal-icon-stroke-width)` |
+| `card-snap-icon-size` | Snap card icon size | `var(--card-signal-icon-size)` | `var(--card-signal-icon-size)` |
+| `card-snap-media-size` | Snap card media size | `var(--card-signal-media-size)` | `var(--card-signal-media-size)` |
+| `card-snap-media-rounded` | Snap card media border radius | `9999px` | `9999px` |
+| `card-snap-image-rounded` | Snap card image border radius | `var(--card-snap-media-rounded)` | `var(--card-snap-media-rounded)` |
+| `card-snap-media-background` | Snap card media background color | `var(--base-white)` | `var(--base-white)` |
+| `card-snap-media-border` | Snap card media border color | `var(--gray-200)` | `var(--gray-200)` |
+| `card-snap-media-padding` | Snap card media padding | `0.75rem` | `0.75rem` |
+| `card-snap-gap` | Snap card content gap | `1rem` | `1rem` |
+| `card-snap-grid-min-width` | Snap card grid minimum width | `var(--card-min-width)` | `var(--card-min-width)` |
+| `card-snap-max-width` | Snap card maximum width | `var(--card-max-width-sm)` | `var(--card-max-width-sm)` |
 
 ## Color Preview Component
 
@@ -808,6 +994,23 @@ Variables for customizing description block appearance.
 | `description-text-transform` | Description block text transform | `none` | `none` |
 | `description-display` | Description block display mode | `block` | `block` |
 
+## Footnote Popper Component
+
+Variables for customizing inline footnote popper appearance.
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `footnote-popper-bg` | Footnote popper background | `base-100` | `base-100` |
+| `footnote-popper-text` | Footnote popper text color | `base-500` | `base-500` |
+| `footnote-popper-border` | Footnote popper border color | `base-200` | `base-200` |
+| `footnote-popper-link` | Footnote popper link color | `base-500` | `base-500` |
+| `footnote-popper-link-hover` | Footnote popper link hover color | `base-700` | `base-600` |
+| `footnote-popper-code-bg` | Footnote popper inline code background | `base-white` | `base-white` |
+| `footnote-popper-code-border` | Footnote popper inline code border color | `base-200` | `base-200` |
+| `footnote-popper-ref-open-bg` | Open footnote reference background | `base-100` | `color-mix(in srgb, var(--base-100) 90%, transparent)` |
+| `footnote-popper-ref-open-text` | Open footnote reference text color | `base-500` | `base-500` |
+| `footnote-popper-ref-open-border` | Open footnote reference border color | `base-200` | `color-mix(in srgb, var(--base-200) 90%, transparent)` |
+
 ## Image Component
 
 Variables for customizing image appearance.
@@ -826,6 +1029,18 @@ Variables for customizing list appearance.
 | --- | --- | --- | --- |
 | `list-checked` | Checked list item color | `base-500` | `base-500` |
 | `list-unchecked` | Unchecked list item color | `gray-300` | `dark-400` |
+
+## Steps Component
+
+Variables for customizing steps appearance.
+
+| Variable {.whitespace-nowrap} | Description | Default&nbsp;`base`  | Default&nbsp;`dark`  |
+| --- | --- | --- | --- |
+| `steps-step-number-bg` | Step number background | `base-500` | `base-500` |
+| `steps-step-number-text` | Step number text color | `base-white` | `base-white` |
+| `steps-step-number-border` | Step number border color | `base-500` | `base-500` |
+| `steps-step-line` | Step connector line color | `gray-300` | `dark-500` |
+| `steps-step-title-text` | Step title text color | `base-text-strong` | `base-text-strong` |
 
 ## Pager Component
 

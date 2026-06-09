@@ -31,7 +31,6 @@ Clicking anywhere within the reference link component will navigate to that new 
 From a functionality perspective, there is no difference betwen a `!ref` component and a regular hyperlink. The difference between the two is just how they are presented, with a Reference Link component being more prominent than a regular hyperlink.
 
 ---
-
 ## Custom icon
 
 The `icon` used for the reference link component can be customized using a name/value pair syntax for the `text` and `icon` attributes. This allows for setting a custom `icon` and `text` value at the same time. The `icon` attribute can be initialize with one of the following:
@@ -88,3 +87,18 @@ Config `target` value | Runtime `target` value
 `recent NEWS` | `recent-news`
 
 See also the [`links.target`](/configuration/project.md#links-target) configuration.
+
+---
+
+## Action
+
+A reference link can run an [Action](/configuration/actions.md) instead of navigating to a page. Use `action:<name>` as the destination, or set the `action` attribute directly.
+
+```md
+[!ref Print page](action:print-page)
+
+[!ref action="print-page" text="Print page"]
+```
+
+[!ref Print page](action:print-page)
+[!ref action="print-page" text="Print page"]

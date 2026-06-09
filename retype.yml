@@ -21,7 +21,13 @@ nav:
 
 theme:
   base:
-    # Catppuccin Theme: Latte
+    layout-site-max-width: 100%
+    # layout-default-content-max-width: 880px
+
+    # badge-light: var(--gray-50)
+
+    # layout-central-content-max-width: 1200px;
+    layout-blog-content-max-width: 80rem;    # Catppuccin Theme: Latte
     # base-color: "#8839ef"
     # base-bg: "#eff1f5"
     # primary: "#1e66f5" # Blue
@@ -29,7 +35,6 @@ theme:
     # danger: "#d20f39"  # Red
     # warning: "#df8e1d" # Yellow
     # royal: "#7287fd"   # Lavender
-
     base-link-weight: 500
     nav-item-text-active-weight: 700
     image-rounded: 0.75rem
@@ -63,7 +68,7 @@ output: .retype
 url: retype.com
 
 branding:
-  label: v4.6
+  label: v4.7-pre
   # baseColor: "#3D855E" # Try NEW base color theme setting
 
 blog:
@@ -85,9 +90,9 @@ edit:
 
 actions:
   items:
-    - text: Share page
+    - text: Share
       action: share-page
-      icon: share
+      icon: share 
     - type: separator
     - text: Copy page
       action: copy-page-markdown
@@ -156,7 +161,7 @@ links:
     target: blank
 
 data:
-  version: "4.6.0"
+  version: "4.7.0-preview"
   # abbreviations:
   #   HTML: Hyper Text Markup Language
   #   CSS: Cascading Style Sheet

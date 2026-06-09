@@ -36,20 +36,21 @@ Using text|variant shorthand notation
 [!button text="My Button" variant="success"](https://retype.com/)
 ```
 
-| Variant             | Example                                        |
-| ------------------- | ---------------------------------------------- |
-| `base`              | [!button variant="base" text="Base"]           |
-| `primary` (default) | [!button variant="primary" text="Primary"]     |
-| `secondary`         | [!button variant="secondary" text="Secondary"] |
-| `success`           | [!button variant="success" text="Success"]     |
-| `question`          | [!button variant="question" text="Question"]   |
-| `danger`            | [!button variant="danger" text="Danger"]       |
-| `warning`           | [!button variant="warning" text="Warning"]     |
-| `info`              | [!button variant="info" text="Info"]           |
-| `light`             | [!button variant="light" text="Light"]         |
-| `dark`              | [!button variant="dark" text="Dark"]           |
-| `ghost`             | [!button variant="ghost" text="Ghost"]         |
-| `contrast`          | [!button variant="contrast" text="Contrast"]   |
+| Variant             | Text only                                      | With link                                                    |
+| ------------------- | ---------------------------------------------- | ------------------------------------------------------------ |
+| `base`              | [!button variant="base" text="Base"]           | [!button variant="base" text="Base"](#variant)             |
+| `primary` (default) | [!button variant="primary" text="Primary"]     | [!button variant="primary" text="Primary"](#variant)       |
+| `secondary`         | [!button variant="secondary" text="Secondary"] | [!button variant="secondary" text="Secondary"](#variant)   |
+| `success`           | [!button variant="success" text="Success"]     | [!button variant="success" text="Success"](#variant)       |
+| `question`          | [!button variant="question" text="Question"]   | [!button variant="question" text="Question"](#variant)     |
+| `danger`            | [!button variant="danger" text="Danger"]       | [!button variant="danger" text="Danger"](#variant)         |
+| `warning`           | [!button variant="warning" text="Warning"]     | [!button variant="warning" text="Warning"](#variant)       |
+| `info`              | [!button variant="info" text="Info"]           | [!button variant="info" text="Info"](#variant)             |
+| `light`             | [!button variant="light" text="Light"]         | [!button variant="light" text="Light"](#variant)           |
+| `dark`              | [!button variant="dark" text="Dark"]           | [!button variant="dark" text="Dark"](#variant)             |
+| `ghost`             | [!button variant="ghost" text="Ghost"]         | [!button variant="ghost" text="Ghost"](#variant)           |
+| `contrast`          | [!button variant="contrast" text="Contrast"]   | [!button variant="contrast" text="Contrast"](#variant)     |
+| `clean`             | [!button variant="clean" text="Clean"]         | [!button variant="clean" text="Clean"](#variant)           |
 
 ---
 
@@ -176,6 +177,20 @@ Emoji `:shortcodes:` can be used for the icon. Please see [Mojee](https://mojeei
 [!button variant="light" icon=":heart:" text="Like" margin="0 8 0 0"]
 [!button variant="info" icon=":rocket:" iconAlign="right" text="Rocket"]
 
+### Custom icon
+
+Project icons can be used by setting the `icon` property to the custom icon name.
+
+```md
+[!button variant="light" icon="brand-printer" text="Print" action="print-page"]
+
+[!button variant="clean" icon="brand-printer" text="Print" action="print-page" corners="pill"] 
+```
+
+[!button variant="light" icon="brand-printer" text="Print" action="print-page"] 
+
+[!button variant="clean" icon="brand-printer" text="Print" action="print-page" corners="pill"] 
+
 ### Image file
 
 Any image file can be used as the `icon`.
@@ -223,3 +238,39 @@ To learn more about theme variables and how they work across Retype, check out t
 !!!
 All button theme variables can be customized in this way. Please refer to the [Button Component](/configuration/theme-variables.md#button-component) theme variables for the latest options.
 !!!
+
+---
+
+## Action
+
+A Button can run an [Action](/configuration/actions.md) instead of navigating to a link. This is useful for built-in actions such as `print-page` and [Custom Actions](/configuration/actions.md#custom-actions).
+
+```md
+[!button action="print-page" text="Print page"]
+
+[!button Print page](action:print-page)
+```
+
+[!button action="print-page" text="Print page"]
+
+[!button Print page](action:print-page)
+
+Custom actions in `_components/actions/` can also return Button properties. The following action builds an **Edit on GitHub** link and updates the Button `text`, `variant`, `corners`, and `icon` during the build.
+
+{%{
+```yml _components/actions/edit-on-github.md
+---
+steps:
+  - with:
+      link: https://github.com/retypeapp/retype/edit/main{{ page.filePath }}
+      text: Edit on GitHub
+      variant: success
+      corners: pill
+      icon: mark-github
+---
+```
+}%}
+
+```md
+[!button Edit](action:edit-on-github)
+```

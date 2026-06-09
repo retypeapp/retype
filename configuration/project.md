@@ -98,6 +98,25 @@ actions:
 
 The `actions` configuration is for the page action button menu. To run actions from top-bar links, footer links, or nested header menu links, use [`links.action`](#links-action) or [`footer.links[]`](#footer-links).
 
+### enabled {#actions-enabled}
+
+=== enabled : `boolean`
+
+Enable or disable the page action menu button for the entire project. Default is `true`.
+
+```yml
+actions:
+  enabled: false # See editor.enabled for live editor options while running retype start
+```
+
+When set to `false`, Retype does not render the page action menu button, even if `actions.items` are configured.
+
+This setting controls configured page action items. During local `retype start` sessions with the editor enabled, the action button can still appear to host editor actions.
+
+See [Editor](#editor) for additional options that can affect page actions during local `retype start` sessions.
+
+===
+
 ### items {#actions-items}
 
 === items : `list`
@@ -862,8 +881,10 @@ Set to `false` to disable and hide the live editor.
 
 ```yml
 editor:
-  enabled: false # Default is true
+  enabled: false # See actions.enabled for page action menu options
 ```
+
+See [Page Actions](#actions) for additional options to disable configured [page action](/configuration/actions.md) menu items.
 ===
 
 ---

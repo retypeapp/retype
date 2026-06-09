@@ -56,3 +56,18 @@ By default, the file name is used as the component text value and the text can b
 ```
 
 [!file icon="rocket" text="To the moon"](/static/sample.txt)
+
+---
+
+## Action
+
+A file download component can run an [Action](/configuration/actions.md) instead of downloading a file. Use `action:<name>` as the destination, or set the `action` attribute directly.
+
+```md
+[!file Print page](action:print-page)
+
+[!file action="print-page" text="Print page"]
+```
+
+[!file Print page](action:print-page)
+[!file action="print-page" text="Print page"]
