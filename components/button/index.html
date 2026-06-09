@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834271141687">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.834296106387">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.7.0-preview">
@@ -43,15 +43,15 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" data-href-light="/favicon.ico" data-href-dark="/favicon-dark.ico" href="/favicon.ico" />
-    <link href="/resources/css/retype.css?v=4.7.0-preview.834271141687" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.7.0-preview.834296106387" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834271141687" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.7.0-preview.834296106387" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834271141687" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.7.0-preview.834271141687" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.7.0-preview.834296106387" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="/resources/js/prism.js?v=4.7.0-preview.834296106387" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
-    <link href="/static/styles.css?v=4.7.0-preview.834271141687" rel="stylesheet">
+    <link href="/static/styles.css?v=4.7.0-preview.834296106387" rel="stylesheet">
 </head>
 <body>
     <!-- Add content to _includes/body-top.html to include here -->
@@ -636,6 +636,44 @@ Using text|variant shorthand notation
 </div>
 </retype-table>
 <hr>
+<h2 id="width">Width</h2>
+<p>Use <code translate="no" v-pre>width</code> to set the rendered width of a Button. Use <code translate="no" v-pre>maxWidth</code> to cap how wide the Button can grow.</p>
+<p>Numeric-only <code translate="no" v-pre>width</code> and <code translate="no" v-pre>maxWidth</code> values are rendered as pixel values. For example, <code translate="no" v-pre>width=&quot;240&quot;</code> is rendered as <code translate="no" v-pre>width: 240px</code>.</p>
+<p>Set <code translate="no" v-pre>width=&quot;full&quot;</code> to stretch the Button to the full width of its container. This is equivalent to <code translate="no" v-pre>width=&quot;100%&quot;</code>.</p>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white border-r">
+        <span>Demo</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-mono leading-snug text-white docs-columns-code-title">
+        <span>Source</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-base-border">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text px-4 h-10 text-sm rounded-md" style="width: 240px;">
+    <span>Fixed width</span>
+</span></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text px-4 h-10 text-sm rounded-md" style="width: 100%;">
+    <span>Full width</span>
+</span></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text px-4 h-10 text-sm rounded-md" style="width: 100%; max-width: 320px;">
+    <span>Full width capped</span>
+</span></p>
+    </div>
+    <div class="docs-columns-code docs-columns-content">
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button text=&quot;Fixed width&quot; width=&quot;240&quot;]
+
+[!button text=&quot;Full width&quot; width=&quot;full&quot;]
+
+[!button text=&quot;Full width capped&quot; width=&quot;full&quot; maxWidth=&quot;320&quot;]</code></pre>
+</doc-codeblock></div>
+    </div>
+</div>
+<p>CSS length and percentage values are also supported.</p>
+<div id="width-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-markdown"><code v-pre class="language-markdown">[!button text=&quot;Half width&quot; width=&quot;50%&quot;]
+[!button text=&quot;Capped width&quot; width=&quot;100%&quot; maxWidth=&quot;24rem&quot;]</code></pre>
+</doc-codeblock></div>
+<hr>
 <h2 id="target">Target</h2>
 <p>Sets the <code translate="no" v-pre>target</code> attribute of the button and specifies which window or tab to open the link into.</p>
 <p><a href="https://retype.com/" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-primary text-button-primary-text hover:bg-button-primary-hover px-4 h-10 text-sm rounded-md">
@@ -843,8 +881,8 @@ steps:
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-06-01T23:31:07" title="2026-06-01" data-absolute-label="Last updated on 2026-06-01" data-absolute-label-html="Last updated on 2026-06-01" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-06-01
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-06-08T22:51:18" title="2026-06-08" data-absolute-label="Last updated on 2026-06-08" data-absolute-label-html="Last updated on 2026-06-08" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-06-08
                     </time>
                 </div>
 

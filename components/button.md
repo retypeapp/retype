@@ -84,6 +84,39 @@ Using text|variant shorthand notation
 
 ---
 
+## Width
+
+Use `width` to set the rendered width of a Button. Use `maxWidth` to cap how wide the Button can grow.
+
+Numeric-only `width` and `maxWidth` values are rendered as pixel values. For example, `width="240"` is rendered as `width: 240px`.
+
+Set `width="full"` to stretch the Button to the full width of its container. This is equivalent to `width="100%"`.
+
+||| Demo
+[!button text="Fixed width" width="240"]
+
+[!button text="Full width" width="full"]
+
+[!button text="Full width capped" width="full" maxWidth="320"]
+||| Source
+```md
+[!button text="Fixed width" width="240"]
+
+[!button text="Full width" width="full"]
+
+[!button text="Full width capped" width="full" maxWidth="320"]
+```
+|||
+
+CSS length and percentage values are also supported.
+
+```md
+[!button text="Half width" width="50%"]
+[!button text="Capped width" width="100%" maxWidth="24rem"]
+```
+
+---
+
 ## Target
 
 Sets the `target` attribute of the button and specifies which window or tab to open the link into.
